@@ -1,0 +1,1202 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:bone_block",
+                        "probability": 0.4
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:iron_chain",
+                        "probability": 0.5
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_brick_stairs",
+                        "probability": 0.15
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_brick_slab",
+                        "probability": 0.15
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:chiseled_stone_bricks",
+                        "probability": 0.35
+                    },
+                    "output_state": {
+                        "id": "minecraft:infested_chiseled_stone_bricks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:cobweb",
+                        "probability": 0.6
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:oak_planks",
+                        "probability": 0.05
+                    },
+                    "output_state": {
+                        "id": "minecraft:stone"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_bricks",
+                        "probability": 0.01
+                    },
+                    "output_state": {
+                        "id": "minecraft:infested_stone"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_log",
+                            "properties": {
+                                "axis": "y"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "id": "minecraft:stripped_poplar_log",
+                        "properties": {
+                            "axis": "y"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_button",
+                            "properties": {
+                                "face": "floor",
+                                "facing": "west",
+                                "powered": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_button",
+                        "properties": {
+                            "face": "floor",
+                            "facing": "west",
+                            "powered": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_button",
+                            "properties": {
+                                "face": "wall",
+                                "facing": "south",
+                                "powered": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_button",
+                        "properties": {
+                            "face": "wall",
+                            "facing": "south",
+                            "powered": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_fence",
+                            "properties": {
+                                "east": "false",
+                                "north": "false",
+                                "south": "false",
+                                "waterlogged": "false",
+                                "west": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_fence",
+                        "properties": {
+                            "east": "false",
+                            "north": "false",
+                            "south": "false",
+                            "waterlogged": "false",
+                            "west": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_fence",
+                            "properties": {
+                                "east": "false",
+                                "north": "false",
+                                "south": "false",
+                                "waterlogged": "false",
+                                "west": "true"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_fence",
+                        "properties": {
+                            "east": "false",
+                            "north": "false",
+                            "south": "false",
+                            "waterlogged": "false",
+                            "west": "true"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_fence",
+                            "properties": {
+                                "east": "false",
+                                "north": "false",
+                                "south": "true",
+                                "waterlogged": "false",
+                                "west": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_fence",
+                        "properties": {
+                            "east": "false",
+                            "north": "false",
+                            "south": "true",
+                            "waterlogged": "false",
+                            "west": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_fence",
+                            "properties": {
+                                "east": "false",
+                                "north": "true",
+                                "south": "false",
+                                "waterlogged": "false",
+                                "west": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_fence",
+                        "properties": {
+                            "east": "false",
+                            "north": "true",
+                            "south": "false",
+                            "waterlogged": "false",
+                            "west": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_fence",
+                            "properties": {
+                                "east": "false",
+                                "north": "true",
+                                "south": "false",
+                                "waterlogged": "false",
+                                "west": "true"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_fence",
+                        "properties": {
+                            "east": "false",
+                            "north": "true",
+                            "south": "false",
+                            "waterlogged": "false",
+                            "west": "true"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_fence",
+                            "properties": {
+                                "east": "false",
+                                "north": "true",
+                                "south": "true",
+                                "waterlogged": "false",
+                                "west": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_fence",
+                        "properties": {
+                            "east": "false",
+                            "north": "true",
+                            "south": "true",
+                            "waterlogged": "false",
+                            "west": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_fence",
+                            "properties": {
+                                "east": "true",
+                                "north": "false",
+                                "south": "false",
+                                "waterlogged": "false",
+                                "west": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_fence",
+                        "properties": {
+                            "east": "true",
+                            "north": "false",
+                            "south": "false",
+                            "waterlogged": "false",
+                            "west": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_fence",
+                            "properties": {
+                                "east": "true",
+                                "north": "false",
+                                "south": "true",
+                                "waterlogged": "false",
+                                "west": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_fence",
+                        "properties": {
+                            "east": "true",
+                            "north": "false",
+                            "south": "true",
+                            "waterlogged": "false",
+                            "west": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_log",
+                            "properties": {
+                                "axis": "x"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_log",
+                        "properties": {
+                            "axis": "x"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_log",
+                            "properties": {
+                                "axis": "y"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_log",
+                        "properties": {
+                            "axis": "y"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_log",
+                            "properties": {
+                                "axis": "z"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_log",
+                        "properties": {
+                            "axis": "z"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:oak_planks"
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_planks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_pressure_plate",
+                            "properties": {
+                                "powered": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_pressure_plate",
+                        "properties": {
+                            "powered": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_slab",
+                            "properties": {
+                                "type": "bottom",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_slab",
+                        "properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_slab",
+                            "properties": {
+                                "type": "top",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_slab",
+                        "properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "facing": "east",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_stairs",
+                        "properties": {
+                            "facing": "east",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "facing": "east",
+                                "half": "top",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_stairs",
+                        "properties": {
+                            "facing": "east",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "facing": "north",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_stairs",
+                        "properties": {
+                            "facing": "north",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "facing": "north",
+                                "half": "top",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_stairs",
+                        "properties": {
+                            "facing": "north",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "facing": "south",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_stairs",
+                        "properties": {
+                            "facing": "south",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "facing": "south",
+                                "half": "top",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_stairs",
+                        "properties": {
+                            "facing": "south",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "facing": "west",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_stairs",
+                        "properties": {
+                            "facing": "west",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "facing": "west",
+                                "half": "top",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_stairs",
+                        "properties": {
+                            "facing": "west",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "east",
+                                "half": "bottom",
+                                "open": "false",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "east",
+                            "half": "bottom",
+                            "open": "false",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "east",
+                                "half": "bottom",
+                                "open": "true",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "east",
+                            "half": "bottom",
+                            "open": "true",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "east",
+                                "half": "top",
+                                "open": "false",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "east",
+                            "half": "top",
+                            "open": "false",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "east",
+                                "half": "top",
+                                "open": "true",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "east",
+                            "half": "top",
+                            "open": "true",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "north",
+                                "half": "bottom",
+                                "open": "false",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "north",
+                            "half": "bottom",
+                            "open": "false",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "north",
+                                "half": "bottom",
+                                "open": "true",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "north",
+                            "half": "bottom",
+                            "open": "true",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "north",
+                                "half": "top",
+                                "open": "false",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "north",
+                            "half": "top",
+                            "open": "false",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "north",
+                                "half": "top",
+                                "open": "true",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "north",
+                            "half": "top",
+                            "open": "true",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "south",
+                                "half": "bottom",
+                                "open": "true",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "south",
+                            "half": "bottom",
+                            "open": "true",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "south",
+                                "half": "top",
+                                "open": "false",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "south",
+                            "half": "top",
+                            "open": "false",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "south",
+                                "half": "top",
+                                "open": "true",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "south",
+                            "half": "top",
+                            "open": "true",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "west",
+                                "half": "bottom",
+                                "open": "true",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "west",
+                            "half": "bottom",
+                            "open": "true",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "west",
+                                "half": "top",
+                                "open": "false",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "west",
+                            "half": "top",
+                            "open": "false",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:oak_trapdoor",
+                            "properties": {
+                                "facing": "west",
+                                "half": "top",
+                                "open": "true",
+                                "powered": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:poplar_trapdoor",
+                        "properties": {
+                            "facing": "west",
+                            "half": "top",
+                            "open": "true",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stripped_oak_log",
+                            "properties": {
+                                "axis": "x"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:stripped_poplar_log",
+                        "properties": {
+                            "axis": "x"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stripped_oak_log",
+                            "properties": {
+                                "axis": "y"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:stripped_poplar_log",
+                        "properties": {
+                            "axis": "y"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stripped_oak_log",
+                            "properties": {
+                                "axis": "z"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:stripped_poplar_log",
+                        "properties": {
+                            "axis": "z"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

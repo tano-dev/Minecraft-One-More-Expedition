@@ -1,0 +1,23 @@
+    {
+    "schemaVersion": 1,
+    "authors": ["Hoponopono"],
+    "contact": {
+        "discord": "https://discord.gg/CZQthZJjPc"
+    },
+    "custom": {
+        "modmenu": {
+            "links": {
+                "modmenu.discord": "https://discord.gg/CZQthZJjPc",
+                "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/hopo-better-underwater-ruins",
+                "modmenu.modrinth": "https://modrinth.com/datapack/hopo-better-underwater-ruins"
+            }
+        }
+    },
+    "environment": "*",
+    "name": "Hopo Better Underwater Ruins",
+    "id": "hopobetterunderwaterruins",
+    "version": "1.2.9",
+    "description": "§7Hopo Better Underwater Ruins is a mod that makes explore oceans rewarding",
+    "license": "All Rights Reserved",
+    "icon": "icon.png"
+    }   

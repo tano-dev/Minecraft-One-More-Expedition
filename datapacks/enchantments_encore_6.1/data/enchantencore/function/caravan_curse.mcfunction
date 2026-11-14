@@ -1,1 +1,0 @@
-execute as @e[distance=..16] on leasher run effect give @s minecraft:slowness 1 2 true

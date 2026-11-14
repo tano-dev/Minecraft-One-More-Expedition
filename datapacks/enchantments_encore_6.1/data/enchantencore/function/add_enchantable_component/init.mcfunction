@@ -1,3 +1,0 @@
-schedule function enchantencore:add_enchantable_component/init 1s
-
-execute as @a[predicate=enchantencore:inventory/gets_enchantable_component] run function enchantencore:add_enchantable_component/exec

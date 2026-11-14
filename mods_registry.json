@@ -1,10 +1,15 @@
 {
-  "": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AllayOps & OneMoreExpedition Mod Registry",
-  "version": "1.0.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AllayOps & OneMoreExpedition Mod & Datapack Registry",
+  "version": "2.0.0",
   "minecraft_version": "26.3",
   "loader": "fabric-loader-0.20.1",
   "generated_for": "Agentic Self-Healing & Diagnostics System",
+  "statistics": {
+    "active_mods_count": 60,
+    "active_datapacks_count": 48,
+    "total_managed_components": 108
+  },
   "categories": {
     "core_library": "Foundational libraries, configuration frameworks, and required APIs for dependent mods",
     "server_performance": "Main tick loop optimization, pathfinding AI caching, collision algorithms, and Redstone BFS engine",
@@ -13,91 +18,29 @@
     "worldgen_and_chunks": "Parallel chunk I/O, SIMD-accelerated noise generation, structure bounding box optimization, and pre-generation",
     "bugfix_and_security": "Backported vanilla bug fixes, NBT packet crash exploit prevention, and packet payload buffer expansion",
     "entity_mechanics": "Mob despawn persistence rules and combat AI tuning to prevent unintended mob cap inflation",
+    "server_features": "Core custom server gameplay mechanics (Sidebar, Skyblock, ItemFlexer, EconomyCraft)",
+    "player_utilities": "Player-facing utilities, in-game voice chat, skin restoration, and server profiler tools",
+    "worldgen_structures": "Content expansion mods introducing custom structures, villages, temples, and paths",
     "experimental_threading": "Multi-threaded entity ticking (Experimental/Alpha) - High risk, isolated from default runtime",
     "optional_client_side": "Client visual mods (LOD) or redundant optimization mods superseded by native server settings"
   },
   "mods": [
     {
-      "mod_id": "chunky",
-      "name": "Chunky",
-      "filename": "Chunky-Fabric-1.5.66.jar",
-      "version": "1.5.66",
+      "mod_id": "adorabuild_structures",
+      "name": "AdoraBuild: Structures",
+      "filename": "adorabuild-structures-2.12.0-fabric-26.3.jar",
+      "version": "2.12.0-fabric-26.3",
       "state": "active",
-      "category": "worldgen_and_chunks",
-      "tier": "Tier-3-Utility",
-      "side": "server",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
       "risk_level": "Low",
       "dependencies": [
-        "fabricloader",
-        "fabric-api",
         "minecraft",
+        "fabricloader",
         "java"
       ],
-      "remediation_advice": "Execute /chunky start to pre-generate world chunks before launching server to players."
-    },
-    {
-      "mod_id": "forgeconfigapiport",
-      "name": "Forge Config API Port",
-      "filename": "ForgeConfigAPIPort-v26.3.1-mc26.3.x-Fabric.jar",
-      "version": "26.3.1",
-      "state": "active",
-      "category": "core_library",
-      "tier": "Tier-1-Essential",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "minecraft",
-        "fabricloader",
-        "fabric-api"
-      ],
-      "remediation_advice": "Forge Config API bridge for Fabric; required dependency for skeletonaifix."
-    },
-    {
-      "mod_id": "packetfixer",
-      "name": "Packet Fixer",
-      "filename": "PacketFixer-fabric-3.3.6.jar",
-      "version": "3.3.6",
-      "state": "active",
-      "category": "bugfix_and_security",
-      "tier": "Tier-1-Essential",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "minecraft"
-      ],
-      "remediation_advice": "Removes 2MB payload buffer limit; prevents player kick/disconnect on oversized NBT/inventory packets."
-    },
-    {
-      "mod_id": "resourcefulconfig",
-      "name": "Resourcefulconfig",
-      "filename": "ResourcefulConfig-6.0.2.jar",
-      "version": "6.0.2",
-      "state": "active",
-      "category": "core_library",
-      "tier": "Tier-1-Essential",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "minecraft"
-      ],
-      "remediation_advice": "Declarative configuration framework; required dependency for structure_layout_optimizer."
-    },
-    {
-      "mod_id": "scalablelux",
-      "name": "ScalableLux",
-      "filename": "ScalableLux-fabric-mc26.3-0.3.0-alpha.0.6-all.jar",
-      "version": "0.3.0-alpha.0.6+26.3",
-      "state": "active",
-      "category": "server_performance",
-      "tier": "Tier-2-HighEfficiency",
-      "side": "server",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "minecraft"
-      ],
-      "remediation_advice": "Optimizes vanilla 26.x lighting engine; fully integrated and concurrent with C2ME."
+      "remediation_advice": "World generation structure and village overhaul."
     },
     {
       "mod_id": "almanac",
@@ -110,13 +53,11 @@
       "side": "both",
       "risk_level": "Low",
       "dependencies": [
-        "fabricloader",
-        "fabric-api",
         "minecraft",
-        "java",
-        "dungeonconfig"
+        "fabricloader",
+        "java"
       ],
-      "remediation_advice": "Library framework by frikinjay; embeds DungeonConfig; required for letmedespawn."
+      "remediation_advice": "Foundational API / config library. Do not remove."
     },
     {
       "mod_id": "alternate-current",
@@ -125,13 +66,31 @@
       "version": "1.9.0",
       "state": "active",
       "category": "server_performance",
-      "tier": "Tier-2-HighEfficiency",
+      "tier": "Tier-1-Essential",
       "side": "server",
       "risk_level": "Low",
       "dependencies": [
-        "minecraft"
+        "minecraft",
+        "fabricloader",
+        "java"
       ],
-      "remediation_advice": "Replaces vanilla redstone lag with high-performance BFS algorithm. Lithium automatically yields redstone calculation."
+      "remediation_advice": "Essential server tick, lighting, and redstone optimization."
+    },
+    {
+      "mod_id": "async",
+      "name": "Async",
+      "filename": "async-fabric-0.2.5+alpha-26.3.jar",
+      "version": "0.2.5+alpha-26.3",
+      "state": "optional",
+      "category": "experimental_threading",
+      "tier": "Tier-Optional",
+      "side": "server",
+      "risk_level": "High",
+      "dependencies": [
+        "minecraft",
+        "fabricloader"
+      ],
+      "remediation_advice": "Isolated in mods_optional/. Multi-threaded entity ticking (Alpha); high risk of race conditions."
     },
     {
       "mod_id": "asynclogger",
@@ -140,14 +99,32 @@
       "version": "2.2.3+26.1.2-fabric",
       "state": "active",
       "category": "network_and_players",
-      "tier": "Tier-3-Utility",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Networking pipeline and high-concurrency player tracking optimization."
+    },
+    {
+      "mod_id": "balm",
+      "name": "Balm",
+      "filename": "balm-fabric-26.3-26.3.0.3.jar",
+      "version": "26.3.0.3",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
       "side": "both",
       "risk_level": "Low",
       "dependencies": [
         "minecraft",
-        "fabricloader"
+        "fabricloader",
+        "java"
       ],
-      "remediation_advice": "Offloads console and file logging I/O to background thread, preventing log-spam tick hitches."
+      "remediation_advice": "Foundational API / config library. Do not remove."
     },
     {
       "mod_id": "c2me",
@@ -156,361 +133,15 @@
       "version": "0.4.2-alpha.0.119+26.3",
       "state": "active",
       "category": "worldgen_and_chunks",
-      "tier": "Tier-2-HighEfficiency",
+      "tier": "Tier-2-Optimization",
       "side": "server",
       "risk_level": "Medium",
       "dependencies": [
-        "fabricloader",
-        "java",
         "minecraft",
-        "c2me-base"
-      ],
-      "remediation_advice": "Concurrent Chunk Management Engine (parallel chunk I/O and terrain gen). Adjust worker threads in config/c2me.toml if high CPU/OOM occurs."
-    },
-    {
-      "mod_id": "crashexploitfixer",
-      "name": "CrashExploitFixer",
-      "filename": "crashexploitfixer-fabric-2.0.0+26.3.jar",
-      "version": "2.0.0",
-      "state": "active",
-      "category": "bugfix_and_security",
-      "tier": "Tier-1-Essential",
-      "side": "server",
-      "risk_level": "Low",
-      "dependencies": [
         "fabricloader",
         "java"
       ],
-      "remediation_advice": "Hardens server against malicious NBT tag crash exploits (Paper backport)."
-    },
-    {
-      "mod_id": "debugify",
-      "name": "Debugify",
-      "filename": "debugify-26.3.0.0.jar",
-      "version": "26.3.0.0",
-      "state": "active",
-      "category": "bugfix_and_security",
-      "tier": "Tier-2-Recommended",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "minecraft",
-        "fabricloader",
-        "fabric-resource-loader-v0"
-      ],
-      "remediation_advice": "Patches dozens of vanilla bugs; individual fixes configurable via debugify.json."
-    },
-    {
-      "mod_id": "fabric-api",
-      "name": "Fabric API",
-      "filename": "fabric-api-0.166.2+26.3.jar",
-      "version": "0.166.2+26.3",
-      "state": "active",
-      "category": "core_library",
-      "tier": "Tier-1-Essential",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "java",
-        "minecraft"
-      ],
-      "remediation_advice": "Core Fabric API layer. Mandatory; verify Fabric Loader compatibility if mixin errors occur."
-    },
-    {
-      "mod_id": "ferritecore",
-      "name": "FerriteCore",
-      "filename": "ferritecore-9.0.0-fabric.jar",
-      "version": "9.0.0",
-      "state": "active",
-      "category": "memory_optimization",
-      "tier": "Tier-1-Essential",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "minecraft"
-      ],
-      "remediation_advice": "Drastically reduces memory footprint for blockstates and models. Highly stable."
-    },
-    {
-      "mod_id": "krypton",
-      "name": "Krypton",
-      "filename": "krypton-0.3.2.jar",
-      "version": "0.3.2",
-      "state": "active",
-      "category": "network_and_players",
-      "tier": "Tier-1-Essential",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "minecraft"
-      ],
-      "remediation_advice": "Optimizes Netty networking pipeline, minimizing CPU overhead during heavy client traffic."
-    },
-    {
-      "mod_id": "letmedespawn",
-      "name": "LetMeDespawn",
-      "filename": "letmedespawn-fabric-26.3-1.26.11.1.jar",
-      "version": "1.26.11.1",
-      "state": "active",
-      "category": "entity_mechanics",
-      "tier": "Tier-2-Recommended",
-      "side": "server",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "fabric-api",
-        "minecraft",
-        "java",
-        "almanac",
-        "dungeonconfig"
-      ],
-      "remediation_advice": "Allows mobs holding dropped items to despawn naturally, preventing cave/dungeon entity accumulation."
-    },
-    {
-      "mod_id": "lithium",
-      "name": "Lithium",
-      "filename": "lithium-fabric-0.26.3+mc26.3.jar",
-      "version": "0.26.3+mc26.3",
-      "state": "active",
-      "category": "server_performance",
-      "tier": "Tier-1-Essential",
-      "side": "server",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "minecraft",
-        "mixinextras"
-      ],
-      "remediation_advice": "General server tick optimization (AI, physics, chunk ticking). Modules can be toggled via config/lithium.properties."
-    },
-    {
-      "mod_id": "modernfix",
-      "name": "ModernFix",
-      "filename": "modernfix-5.27.20-build.2.jar",
-      "version": "5.27.20-build.2",
-      "state": "active",
-      "category": "memory_optimization",
-      "tier": "Tier-1-Essential",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "minecraft",
-        "fabricloader"
-      ],
-      "remediation_advice": "Optimizes class loading, dynamic resource leaks, and overall RAM usage."
-    },
-    {
-      "mod_id": "puzzleslib",
-      "name": "Puzzles Lib",
-      "filename": "puzzleslib-v26.3.18-mc26.3.x+fabric.jar",
-      "version": "26.3.18",
-      "state": "active",
-      "category": "core_library",
-      "tier": "Tier-1-Essential",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "minecraft",
-        "fabricloader",
-        "fabric-api",
-        "forgeconfigapiport"
-      ],
-      "remediation_advice": "Foundational abstraction library by Fuzs; required dependency for skeletonaifix."
-    },
-    {
-      "mod_id": "quick-pack",
-      "name": "quick-pack",
-      "filename": "quick-pack-fabric-1.5.1+26.3.jar",
-      "version": "1.5.1",
-      "state": "active",
-      "category": "worldgen_and_chunks",
-      "tier": "Tier-3-Utility",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "java"
-      ],
-      "remediation_advice": "Accelerates zip file decompression for datapacks and resourcepacks during server boot."
-    },
-    {
-      "mod_id": "servercore",
-      "name": "ServerCore",
-      "filename": "servercore-fabric-1.5.20+26.3.jar",
-      "version": "1.5.20+26.3",
-      "state": "active",
-      "category": "network_and_players",
-      "tier": "Tier-2-HighEfficiency",
-      "side": "server",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "minecraft",
-        "fabric-api-base",
-        "fabric-command-api-v2",
-        "fabric-lifecycle-events-v1"
-      ],
-      "remediation_advice": "Dynamic view/simulation distance and entity activation range limits during tick spikes."
-    },
-    {
-      "mod_id": "skeletonaifix",
-      "name": "Skeleton AI Fix",
-      "filename": "skeletonaifix-v26.3.0-mc26.3.x+fabric.jar",
-      "version": "26.3.0",
-      "state": "active",
-      "category": "entity_mechanics",
-      "tier": "Tier-3-Enhancement",
-      "side": "server",
-      "risk_level": "Low",
-      "dependencies": [
-        "minecraft",
-        "fabricloader",
-        "fabric-api",
-        "forgeconfigapiport",
-        "puzzleslib"
-      ],
-      "remediation_advice": "Fixes awkward skeleton strafing behavior to ensure smooth combat AI."
-    },
-    {
-      "mod_id": "structure_layout_optimizer",
-      "name": "Structure Layout Optimizer",
-      "filename": "structure_layout_optimizer-1.1.4+26.3-fabric.jar",
-      "version": "1.1.4+26.3-fabric",
-      "state": "active",
-      "category": "worldgen_and_chunks",
-      "tier": "Tier-2-HighEfficiency",
-      "side": "server",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "minecraft",
-        "java",
-        "fabric-api",
-        "resourcefulconfig"
-      ],
-      "remediation_advice": "Optimizes structure piece bounding box calculation during terrain generation."
-    },
-    {
-      "mod_id": "vmp",
-      "name": "Very Many Players",
-      "filename": "vmp-fabric-mc26.3-0.2.0+beta.7.238-all.jar",
-      "version": "0.2.0+beta.7.238+26.3",
-      "state": "active",
-      "category": "network_and_players",
-      "tier": "Tier-2-HighEfficiency",
-      "side": "server",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "minecraft",
-        "java"
-      ],
-      "remediation_advice": "Very Many Players: entity tracking and packet dispatch optimization for multi-player loads."
-    },
-    {
-      "mod_id": "zconfig",
-      "name": "ZConfig",
-      "filename": "zconfig-1.0.0+26.x.jar",
-      "version": "1.0.0+26.x",
-      "state": "active",
-      "category": "core_library",
-      "tier": "Tier-1-Essential",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "java"
-      ],
-      "remediation_advice": "Lightweight configuration library; required dependency for zfastnoise."
-    },
-    {
-      "mod_id": "zfastnoise",
-      "name": "Fast Noise",
-      "filename": "zfastnoise-1.1.3+26.3.jar",
-      "version": "1.1.3+26.3",
-      "state": "active",
-      "category": "worldgen_and_chunks",
-      "tier": "Tier-2-HighEfficiency",
-      "side": "server",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "minecraft",
-        "java",
-        "zconfig"
-      ],
-      "remediation_advice": "Replaces vanilla noise generation with vectorized FastNoise SIMD calculations."
-    },
-    {
-      "mod_id": "distanthorizons",
-      "name": "Distant Horizons",
-      "filename": "DistantHorizons-3.3.4-26.3-fabric-neoforge.jar",
-      "version": "3.3.4",
-      "state": "optional_disabled",
-      "category": "optional_client_side",
-      "tier": "Tier-4-Optional",
-      "side": "client",
-      "risk_level": "High-on-server",
-      "dependencies": [
-        "fabricloader",
-        "fabric-api-base",
-        "fabric-lifecycle-events-v1",
-        "fabric-resource-loader-v0",
-        "minecraft",
-        "java"
-      ],
-      "remediation_advice": "Level-of-Detail (LOD) generator. Moved to mods_optional/ due to heavy SQLite I/O and CPU overhead on dedicated servers."
-    },
-    {
-      "mod_id": "ksyxis",
-      "name": "Ksyxis",
-      "filename": "Ksyxis-1.4.6.jar",
-      "version": "1.4.6",
-      "state": "optional_disabled",
-      "category": "optional_client_side",
-      "tier": "Tier-4-Optional",
-      "side": "both",
-      "risk_level": "Medium",
-      "dependencies": [],
-      "remediation_advice": "Skips spawn chunks. Moved to mods_optional/; superseded natively by spawn-chunk-radius=1 in server.properties."
-    },
-    {
-      "mod_id": "async",
-      "name": "Async",
-      "filename": "async-fabric-0.2.5+alpha-26.3.jar",
-      "version": "0.2.5+alpha-26.3",
-      "state": "optional_disabled",
-      "category": "experimental_threading",
-      "tier": "Tier-4-Experimental",
-      "side": "server",
-      "risk_level": "High",
-      "dependencies": [
-        "fabricloader",
-        "fabric-api",
-        "minecraft",
-        "java"
-      ],
-      "remediation_advice": "Multi-threaded entity ticking (Alpha). Isolated to mods_optional/ to eliminate ConcurrentModificationException in dungeons/spawners."
-    },
-    {
-      "mod_id": "clumps",
-      "name": "Clumps",
-      "filename": "Clumps-fabric-26.3-26.3.2.jar",
-      "version": "26.3.2",
-      "state": "active",
-      "category": "entity_mechanics",
-      "tier": "Tier-2-Recommended",
-      "side": "both",
-      "risk_level": "Low",
-      "dependencies": [
-        "fabricloader",
-        "java",
-        "minecraft"
-      ],
-      "remediation_advice": "Aggregates multiple XP orbs into a single clustered orb entity, eliminating XP-induced tick stalls."
+      "remediation_advice": "Parallel chunk I/O and terrain noise calculation engine."
     },
     {
       "mod_id": "carpet",
@@ -527,7 +158,244 @@
         "fabricloader",
         "java"
       ],
-      "remediation_advice": "Technical server mechanics & TNT optimization engine. Configure /carpet optimizedTNT true and /carpet tntDoCollision false to prevent entity collision freezing during mass detonations."
+      "remediation_advice": "Essential server tick, lighting, and redstone optimization."
+    },
+    {
+      "mod_id": "chunky",
+      "name": "Chunky",
+      "filename": "Chunky-Fabric-1.5.66.jar",
+      "version": "1.5.66",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-2-Optimization",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Parallel chunk I/O and terrain noise calculation engine."
+    },
+    {
+      "mod_id": "cloth-config",
+      "name": "Cloth Config v26.3",
+      "filename": "cloth-config-fabric-26.3.159.jar",
+      "version": "26.3.159",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Foundational API / config library. Do not remove."
+    },
+    {
+      "mod_id": "clumps",
+      "name": "Clumps",
+      "filename": "Clumps-fabric-26.3-26.3.2.jar",
+      "version": "26.3.2",
+      "state": "active",
+      "category": "entity_mechanics",
+      "tier": "Tier-2-Optimization",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Entity despawn persistence, item merging, and mob AI stability."
+    },
+    {
+      "mod_id": "crashexploitfixer",
+      "name": "CrashExploitFixer",
+      "filename": "crashexploitfixer-fabric-2.0.0+26.3.jar",
+      "version": "2.0.0",
+      "state": "active",
+      "category": "bugfix_and_security",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Backported security hardening and vanilla bug fixes."
+    },
+    {
+      "mod_id": "ctov",
+      "name": "ChoiceTheorem's Overhauled Village",
+      "filename": "[fabric]ctov-26-3-4.2.2a.jar",
+      "version": "4.2.2a",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "debugify",
+      "name": "Debugify",
+      "filename": "debugify-26.3.0.0.jar",
+      "version": "26.3.0.0",
+      "state": "active",
+      "category": "bugfix_and_security",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Backported security hardening and vanilla bug fixes."
+    },
+    {
+      "mod_id": "distanthorizons",
+      "name": "Distant Horizons",
+      "filename": "DistantHorizons-3.3.4-26.3-fabric-neoforge.jar",
+      "version": "3.3.4",
+      "state": "optional",
+      "category": "optional_client_side",
+      "tier": "Tier-Optional",
+      "side": "client",
+      "risk_level": "Medium",
+      "dependencies": [
+        "minecraft",
+        "fabricloader"
+      ],
+      "remediation_advice": "Isolated in mods_optional/. LOD chunk renderer with heavy SQLite I/O; recommended client-side only."
+    },
+    {
+      "mod_id": "economycraft",
+      "name": "EconomyCraft",
+      "filename": "economycraft-fabric-1.11.0_26.3.jar",
+      "version": "1.11.0",
+      "state": "active",
+      "category": "server_features",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Core server custom gameplay feature (Expedition system)."
+    },
+    {
+      "mod_id": "expedition-sidebar",
+      "name": "Expedition Sidebar",
+      "filename": "expedition-sidebar-1.0.0.jar",
+      "version": "1.0.0",
+      "state": "active",
+      "category": "server_features",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Core server custom gameplay feature (Expedition system)."
+    },
+    {
+      "mod_id": "expedition-skyblock",
+      "name": "Expedition Skyblock",
+      "filename": "expedition-skyblock-1.0.0.jar",
+      "version": "1.0.0",
+      "state": "active",
+      "category": "server_features",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Core server custom gameplay feature (Expedition system)."
+    },
+    {
+      "mod_id": "fabric-api",
+      "name": "Fabric API",
+      "filename": "fabric-api-0.166.2+26.3.jar",
+      "version": "0.166.2+26.3",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Foundational API / config library. Do not remove."
+    },
+    {
+      "mod_id": "ferritecore",
+      "name": "FerriteCore",
+      "filename": "ferritecore-9.0.0-fabric.jar",
+      "version": "9.0.0",
+      "state": "active",
+      "category": "memory_optimization",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Heap reduction, blockstate compression, and dynamic class loading optimization."
+    },
+    {
+      "mod_id": "forgeconfigapiport",
+      "name": "Forge Config API Port",
+      "filename": "ForgeConfigAPIPort-v26.3.1-mc26.3.x-Fabric.jar",
+      "version": "26.3.1",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Foundational API / config library. Do not remove."
+    },
+    {
+      "mod_id": "formations",
+      "name": "Formations",
+      "filename": "formations-1.0.4-fabric-mc26.3.jar",
+      "version": "1.0.4",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Foundational API / config library. Do not remove."
     },
     {
       "mod_id": "getittogetherdrops",
@@ -536,52 +404,32 @@
       "version": "1.5.1",
       "state": "active",
       "category": "entity_mechanics",
-      "tier": "Tier-2-Recommended",
+      "tier": "Tier-2-Optimization",
       "side": "both",
       "risk_level": "Low",
       "dependencies": [
-        "fabric-api",
         "minecraft",
-        "java",
-        "forgeconfigapiport"
-      ],
-      "remediation_advice": "Widens gravitational radius and accelerates item merging, preventing thousands of floating block drops from choking entity ticks."
-    },
-    {
-      "mod_id": "expedition-skyblock",
-      "name": "Expedition Skyblock",
-      "filename": "expedition-skyblock-1.0.0.jar",
-      "version": "1.0.0",
-      "state": "active",
-      "category": "worldgen_and_chunks",
-      "tier": "Tier-1-Essential",
-      "side": "server",
-      "risk_level": "Low",
-      "dependencies": [
         "fabricloader",
-        "fabric-api",
-        "minecraft",
         "java"
       ],
-      "remediation_advice": "Core Skyblock dimension and anti-grief protection module. Dedicated void dimension and player island isolation mod."
+      "remediation_advice": "Entity despawn persistence, item merging, and mob AI stability."
     },
     {
-      "mod_id": "expedition-sidebar",
-      "name": "Expedition Sidebar",
-      "filename": "expedition-sidebar-1.0.0.jar",
-      "version": "1.0.0",
+      "mod_id": "invview",
+      "name": "InvView",
+      "filename": "InvView-1.4.22-26.3+.jar",
+      "version": "1.4.22-26.3+",
       "state": "active",
-      "category": "network_and_players",
-      "tier": "Tier-2-Experience",
-      "side": "server",
+      "category": "player_utilities",
+      "tier": "Tier-2-Utility",
+      "side": "both",
       "risk_level": "Low",
       "dependencies": [
-        "fabricloader",
-        "fabric-api",
         "minecraft",
+        "fabricloader",
         "java"
       ],
-      "remediation_advice": "Server-side zero-flicker Hypixel-style sidebar with dynamic EconomyCraft and Expedition Skyblock integration."
+      "remediation_advice": "Player utility, audio networking, and diagnostics."
     },
     {
       "mod_id": "itemflexer",
@@ -589,17 +437,951 @@
       "filename": "itemflexer-2.0.0.jar",
       "version": "2.0.0",
       "state": "active",
-      "category": "network_and_players",
-      "tier": "Tier-3-Utility",
+      "category": "server_features",
+      "tier": "Tier-1-Essential",
       "side": "server",
       "risk_level": "Low",
       "dependencies": [
-        "fabricloader",
-        "fabric-api",
         "minecraft",
+        "fabricloader",
         "java"
       ],
-      "remediation_advice": "Server-side item flexing mod allowing players to show held items in chat (/flex) with interactive tooltips."
+      "remediation_advice": "Core server custom gameplay feature (Expedition system)."
+    },
+    {
+      "mod_id": "krypton",
+      "name": "Krypton",
+      "filename": "krypton-0.3.2.jar",
+      "version": "0.3.2",
+      "state": "active",
+      "category": "network_and_players",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Networking pipeline and high-concurrency player tracking optimization."
+    },
+    {
+      "mod_id": "ksyxis",
+      "name": "Ksyxis",
+      "filename": "Ksyxis-1.4.6.jar",
+      "version": "1.4.6",
+      "state": "optional",
+      "category": "optional_client_side",
+      "tier": "Tier-Optional",
+      "side": "both",
+      "risk_level": "Medium",
+      "dependencies": [
+        "minecraft",
+        "fabricloader"
+      ],
+      "remediation_advice": "Isolated in mods_optional/. Skips spawn chunk loading; superseded natively by spawn-chunk-radius=1."
+    },
+    {
+      "mod_id": "letmedespawn",
+      "name": "LetMeDespawn",
+      "filename": "letmedespawn-fabric-26.3-1.26.11.1.jar",
+      "version": "1.26.11.1",
+      "state": "active",
+      "category": "entity_mechanics",
+      "tier": "Tier-2-Optimization",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Entity despawn persistence, item merging, and mob AI stability."
+    },
+    {
+      "mod_id": "lithium",
+      "name": "Lithium",
+      "filename": "lithium-fabric-0.26.3+mc26.3.jar",
+      "version": "0.26.3+mc26.3",
+      "state": "active",
+      "category": "server_performance",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Essential server tick, lighting, and redstone optimization."
+    },
+    {
+      "mod_id": "lithostitched",
+      "name": "Lithostitched",
+      "filename": "lithostitched-2.0.6-fabric-26.3.jar",
+      "version": "2.0.6",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-2-Optimization",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Parallel chunk I/O and terrain noise calculation engine."
+    },
+    {
+      "mod_id": "mes",
+      "name": "MoogsEndStructures",
+      "filename": "MoogsEndStructures-universal-1.21-2.1.1.jar",
+      "version": "2.1.1",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "mmr",
+      "name": "MoogsMineshaftsReimagined",
+      "filename": "MoogsMineshaftsReimagined-universal-1.21-1.1.0.jar",
+      "version": "1.1.0",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "mmv",
+      "name": "MoogsMissingVillages",
+      "filename": "MoogsMissingVillages-universal-1.21-2.2.0.jar",
+      "version": "2.2.0",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "mns",
+      "name": "MoogsNetherStructures",
+      "filename": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+      "version": "3.1.1",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "modernfix",
+      "name": "ModernFix",
+      "filename": "modernfix-5.27.20-build.2.jar",
+      "version": "5.27.20-build.2",
+      "state": "active",
+      "category": "memory_optimization",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Heap reduction, blockstate compression, and dynamic class loading optimization."
+    },
+    {
+      "mod_id": "moogs_paths",
+      "name": "Moog's Paths",
+      "filename": "MoogsPaths-fabric-26.3-1.2.0.jar",
+      "version": "1.2.0",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "moogs_structures",
+      "name": "Moog's Structure Lib",
+      "filename": "MoogsStructureLib-fabric-26.3-3.4.2.jar",
+      "version": "3.4.2+fabric",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "mr_vanilla_fireflies",
+      "name": "Vanilla Fireflies",
+      "filename": "vanilla-fireflies-5.1.jar",
+      "version": "5.1",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "mss",
+      "name": "MoogsSoaringStructures",
+      "filename": "MoogsSoaringStructures-universal-1.21-2.2.0.jar",
+      "version": "2.2.0",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "mtr",
+      "name": "MoogsTemplesReimagined",
+      "filename": "MoogsTemplesReimagined-universal-1.21-2.0.4.jar",
+      "version": "2.0.4",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "mvs",
+      "name": "MoogsVoyagerStructures",
+      "filename": "MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+      "version": "5.1.3",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "netherportalfix",
+      "name": "NetherPortalFix",
+      "filename": "netherportalfix-fabric-26.3-26.3.0.1.jar",
+      "version": "26.3.0.1",
+      "state": "active",
+      "category": "bugfix_and_security",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Backported security hardening and vanilla bug fixes."
+    },
+    {
+      "mod_id": "nochatreports",
+      "name": "No Chat Reports",
+      "filename": "NoChatReports-FABRIC-26.3-v2.21.0.jar",
+      "version": "26.3-v2.21.0",
+      "state": "active",
+      "category": "bugfix_and_security",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Backported security hardening and vanilla bug fixes."
+    },
+    {
+      "mod_id": "packetfixer",
+      "name": "Packet Fixer",
+      "filename": "PacketFixer-fabric-3.3.6.jar",
+      "version": "3.3.6",
+      "state": "active",
+      "category": "bugfix_and_security",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Backported security hardening and vanilla bug fixes."
+    },
+    {
+      "mod_id": "panda-anti-dupe",
+      "name": "panda-anti-dupe",
+      "filename": "panda-anti-dupe-1.1.4+26.3.jar",
+      "version": "1.1.4+26.3",
+      "state": "active",
+      "category": "bugfix_and_security",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Backported security hardening and vanilla bug fixes."
+    },
+    {
+      "mod_id": "puzzleslib",
+      "name": "Puzzles Lib",
+      "filename": "puzzleslib-v26.3.18-mc26.3.x+fabric.jar",
+      "version": "26.3.18",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Foundational API / config library. Do not remove."
+    },
+    {
+      "mod_id": "quick-pack",
+      "name": "quick-pack",
+      "filename": "quick-pack-fabric-1.5.1+26.3.jar",
+      "version": "1.5.1",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-2-Optimization",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Parallel chunk I/O and terrain noise calculation engine."
+    },
+    {
+      "mod_id": "resourcefulconfig",
+      "name": "Resourcefulconfig",
+      "filename": "ResourcefulConfig-6.0.2.jar",
+      "version": "6.0.2",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Foundational API / config library. Do not remove."
+    },
+    {
+      "mod_id": "scalablelux",
+      "name": "ScalableLux",
+      "filename": "ScalableLux-fabric-mc26.3-0.3.0-alpha.0.6-all.jar",
+      "version": "0.3.0-alpha.0.6+26.3",
+      "state": "active",
+      "category": "server_performance",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Essential server tick, lighting, and redstone optimization."
+    },
+    {
+      "mod_id": "servercore",
+      "name": "ServerCore",
+      "filename": "servercore-fabric-1.5.20+26.3.jar",
+      "version": "1.5.20+26.3",
+      "state": "active",
+      "category": "network_and_players",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Networking pipeline and high-concurrency player tracking optimization."
+    },
+    {
+      "mod_id": "skeletonaifix",
+      "name": "Skeleton AI Fix",
+      "filename": "skeletonaifix-v26.3.0-mc26.3.x+fabric.jar",
+      "version": "26.3.0",
+      "state": "active",
+      "category": "entity_mechanics",
+      "tier": "Tier-2-Optimization",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Entity despawn persistence, item merging, and mob AI stability."
+    },
+    {
+      "mod_id": "skinrestorer",
+      "name": "SkinRestorer",
+      "filename": "skinrestorer-2.11.1+26.3-fabric.jar",
+      "version": "2.11.1+26.3-fabric",
+      "state": "active",
+      "category": "player_utilities",
+      "tier": "Tier-2-Utility",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Player utility, audio networking, and diagnostics."
+    },
+    {
+      "mod_id": "spark",
+      "name": "spark",
+      "filename": "spark-1.10.187-fabric.jar",
+      "version": "1.10.187",
+      "state": "active",
+      "category": "player_utilities",
+      "tier": "Tier-2-Utility",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Player utility, audio networking, and diagnostics."
+    },
+    {
+      "mod_id": "sparsestructures",
+      "name": "SparseStructures",
+      "filename": "sparsestructures-fabric-26.3-3.1.5.jar",
+      "version": "3.1.5",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "spiral_tower_village",
+      "name": "Spiral Tower Village",
+      "filename": "spiral_tower_village-0.0.4.jar",
+      "version": "0.0.4",
+      "state": "active",
+      "category": "worldgen_structures",
+      "tier": "Tier-3-Content",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "World generation structure and village overhaul."
+    },
+    {
+      "mod_id": "structure_layout_optimizer",
+      "name": "Structure Layout Optimizer",
+      "filename": "structure_layout_optimizer-1.1.4+26.3-fabric.jar",
+      "version": "1.1.4+26.3-fabric",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-2-Optimization",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Parallel chunk I/O and terrain noise calculation engine."
+    },
+    {
+      "mod_id": "tectonic",
+      "name": "Tectonic",
+      "filename": "tectonic-3.0.32-fabric-26.3.jar",
+      "version": "3.0.32",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-2-Optimization",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Parallel chunk I/O and terrain noise calculation engine."
+    },
+    {
+      "mod_id": "unloadedactivity",
+      "name": "Unloaded Activity",
+      "filename": "unloadedactivity-0.7.3+mc26.3.jar",
+      "version": "0.7.3",
+      "state": "active",
+      "category": "entity_mechanics",
+      "tier": "Tier-2-Optimization",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Entity despawn persistence, item merging, and mob AI stability."
+    },
+    {
+      "mod_id": "vmp",
+      "name": "Very Many Players",
+      "filename": "vmp-fabric-mc26.3-0.2.0+beta.7.238-all.jar",
+      "version": "0.2.0+beta.7.238+26.3",
+      "state": "active",
+      "category": "network_and_players",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Networking pipeline and high-concurrency player tracking optimization."
+    },
+    {
+      "mod_id": "voicechat",
+      "name": "Simple Voice Chat",
+      "filename": "voicechat-fabric-2.6.27+26.3.jar",
+      "version": "2.6.27+26.3",
+      "state": "active",
+      "category": "player_utilities",
+      "tier": "Tier-2-Utility",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Player utility, audio networking, and diagnostics."
+    },
+    {
+      "mod_id": "wits",
+      "name": "WITS",
+      "filename": "wits-1.4.3+26.3-fabric.jar",
+      "version": "1.4.3+26.3-fabric",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Foundational API / config library. Do not remove."
+    },
+    {
+      "mod_id": "zconfig",
+      "name": "ZConfig",
+      "filename": "zconfig-1.0.0+26.x.jar",
+      "version": "1.0.0+26.x",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Foundational API / config library. Do not remove."
+    },
+    {
+      "mod_id": "zfastnoise",
+      "name": "Fast Noise",
+      "filename": "zfastnoise-1.1.3+26.3.jar",
+      "version": "1.1.3+26.3",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-2-Optimization",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Parallel chunk I/O and terrain noise calculation engine."
+    }
+  ],
+  "datapacks": [
+    {
+      "id": "ATi Structure V1.4.7 (26.3)",
+      "name": "ATi Structure V1.4.7 (26.3)",
+      "description": "Adds more Witch Huts",
+      "pack_format": 94
+    },
+    {
+      "id": "ATi Structures Vanilla V1.4.7 (26.3)",
+      "name": "ATi Structures Vanilla V1.4.7 (26.3)",
+      "description": "Adds more Witch Huts",
+      "pack_format": 94
+    },
+    {
+      "id": "Decubed Dungeons V1.13.1 [26.3]",
+      "name": "Decubed Dungeons V1.13.1 [26.3]",
+      "description": "Decubed Dungeons V1.13.1 [26.3]",
+      "pack_format": 94
+    },
+    {
+      "id": "DnT Ancient City Overhaul v4",
+      "name": "DnT Ancient City Overhaul v4",
+      "description": "Structure datapack overhauling the Ancient City",
+      "pack_format": 94
+    },
+    {
+      "id": "DnT Desert Temple Overhaul v2.2",
+      "name": "DnT Desert Temple Overhaul v2.2",
+      "description": "Structure datapack overhauling the Desert Temple",
+      "pack_format": 94
+    },
+    {
+      "id": "DnT Jungle Temple Overhaul v2.2",
+      "name": "DnT Jungle Temple Overhaul v2.2",
+      "description": "Structure datapack overhauling the Jungle Temple",
+      "pack_format": 94
+    },
+    {
+      "id": "DnT Mineshaft Overhaul 2.0.1",
+      "name": "DnT Mineshaft Overhaul 2.0.1",
+      "description": "Structure datapack overhauling the Mineshafts",
+      "pack_format": 94
+    },
+    {
+      "id": "DnT Nether Fortress Overhaul 3.2.1",
+      "name": "DnT Nether Fortress Overhaul 3.2.1",
+      "description": "Structure datapack overhauling the Nether Fortress",
+      "pack_format": 94
+    },
+    {
+      "id": "DnT Ocean Monument Overhaul v2.3",
+      "name": "DnT Ocean Monument Overhaul v2.3",
+      "description": "Structure datapack overhauling the Ocean Monument",
+      "pack_format": 94
+    },
+    {
+      "id": "DnT Swamp Hut Overhaul v3",
+      "name": "DnT Swamp Hut Overhaul v3",
+      "description": "Structure datapack overhauling the Swamp Hut",
+      "pack_format": 94
+    },
+    {
+      "id": "Dungeons and Taverns v6.1.0",
+      "name": "Dungeons and Taverns v6.1.0",
+      "description": "Structure datapack adding unique new structures in the vanilla style",
+      "pack_format": 94
+    },
+    {
+      "id": "Epic Dungeons v1.2.7 (26.3)",
+      "name": "Epic Dungeons v1.2.7 (26.3)",
+      "description": "Adds more Witch Huts",
+      "pack_format": 94
+    },
+    {
+      "id": "Epic Jungle Temples v1.0.4 (26.3)",
+      "name": "Epic Jungle Temples v1.0.4 (26.3)",
+      "description": "Adds more Witch Huts",
+      "pack_format": 94
+    },
+    {
+      "id": "Epic Villages 2.0.0",
+      "name": "Epic Villages 2.0.0",
+      "description": "Makes Default Villages Beautiful",
+      "pack_format": 94
+    },
+    {
+      "id": "Epic Villages Standalone 1.0.0.jar",
+      "name": "Epic Villages Standalone 1.0.0.jar",
+      "description": "Adds Beautiful Villages",
+      "pack_format": 94
+    },
+    {
+      "id": "Epic Witch Huts v1.3.2 (26.3)",
+      "name": "Epic Witch Huts v1.3.2 (26.3)",
+      "description": "Adds more Witch Huts",
+      "pack_format": 94
+    },
+    {
+      "id": "Explorify v1.6.6.dp",
+      "name": "Explorify v1.6.6.dp",
+      "description": "Explorify v1.6.6\nA structure data pack",
+      "pack_format": 94
+    },
+    {
+      "id": "Grim kingdoms (1.21+ 26.2+)",
+      "name": "Grim kingdoms (1.21+ 26.2+)",
+      "description": "This mod adds wonderful castles",
+      "pack_format": 94
+    },
+    {
+      "id": "Incendium_Legacy_v5.5.4+26.3",
+      "name": "Incendium_Legacy_v5.5.4+26.3",
+      "description": "Incendium - Legacy Edition - Nether Expansion\nCreated by Stardust Labs",
+      "pack_format": 94
+    },
+    {
+      "id": "Katters Structures v2.9",
+      "name": "Katters Structures v2.9",
+      "description": "Katters Structures\nAdds brand new vanilla like Structures\nCreated by Katter 21",
+      "pack_format": 94
+    },
+    {
+      "id": "Nullscape_v2.0.1+26.3",
+      "name": "Nullscape_v2.0.1+26.3",
+      "description": "Nullscape - End Reborn\nCreated by Stardust Labs",
+      "pack_format": 94
+    },
+    {
+      "id": "Stellarity-6.0.1",
+      "name": "Stellarity-6.0.1",
+      "description": "This ender expansion is kinda beyond hardcore :drum:",
+      "pack_format": 94
+    },
+    {
+      "id": "Structory_Towers_v1.0.19+26.3",
+      "name": "Structory_Towers_v1.0.19+26.3",
+      "description": "Structory: Towers\nCreated by Stardust Labs",
+      "pack_format": 94
+    },
+    {
+      "id": "Structory_v1.3.18+26.3",
+      "name": "Structory_v1.3.18+26.3",
+      "description": "Structory\nCreated by Stardust Labs",
+      "pack_format": 94
+    },
+    {
+      "id": "Terralith_v2.6.5+26.3",
+      "name": "Terralith_v2.6.5+26.3",
+      "description": "Terralith - Overworld Evolved\nCreated by Stardust Labs",
+      "pack_format": 94
+    },
+    {
+      "id": "Too Expensive Extractor v1.0.0 [26.3]",
+      "name": "Too Expensive Extractor v1.0.0 [26.3]",
+      "description": "Too Expensive Extractor - \nBy github.com/lullaby6",
+      "pack_format": 94
+    },
+    {
+      "id": "Trek 26.3 B0.6.2.1",
+      "name": "Trek 26.3 B0.6.2.1",
+      "description": "Trek 26.3",
+      "pack_format": 94
+    },
+    {
+      "id": "Wabi-Sabi Structures-3.0.5-1.21.11 Datapack",
+      "name": "Wabi-Sabi Structures-3.0.5-1.21.11 Datapack",
+      "description": "A collection of unique, quality, imperfect structures",
+      "pack_format": 94
+    },
+    {
+      "id": "Yggdrasil-7.1.0",
+      "name": "Yggdrasil-7.1.0",
+      "description": "Yggdrasil-7.1.0",
+      "pack_format": 94
+    },
+    {
+      "id": "ddd-v.1.0.6-MC-26.3",
+      "name": "ddd-v.1.0.6-MC-26.3",
+      "description": "Nightmare fuel",
+      "pack_format": 94
+    },
+    {
+      "id": "enchantments_encore",
+      "name": "enchantments_encore",
+      "description": "Enchantments Encore by Niceron",
+      "pack_format": 94
+    },
+    {
+      "id": "expedition_scarce_ores",
+      "name": "expedition_scarce_ores",
+      "description": "Expedition Scarce Ores - Reduces natural diamond, ancient debris, iron, gold, and emerald generation",
+      "pack_format": 94
+    },
+    {
+      "id": "hopobettermineshaft-26-3-1-3-8",
+      "name": "hopobettermineshaft-26-3-1-3-8",
+      "description": "More and better mineshafts to explore",
+      "pack_format": 94
+    },
+    {
+      "id": "hopobetterruinedportals-26-3-1-5-2",
+      "name": "hopobetterruinedportals-26-3-1-5-2",
+      "description": "Improve how the portals look in your world",
+      "pack_format": 94
+    },
+    {
+      "id": "hopobetterunderwaterruins-26-3-1-2-9",
+      "name": "hopobetterunderwaterruins-26-3-1-2-9",
+      "description": "Explore new ocean ruins to your world",
+      "pack_format": 94
+    },
+    {
+      "id": "medieval_buildings-1.2.0",
+      "name": "medieval_buildings-1.2.0",
+      "description": "Medieval Buildings for Minecraft 26.3",
+      "pack_format": 94
+    },
+    {
+      "id": "medieval_end-1.2.1",
+      "name": "medieval_end-1.2.1",
+      "description": "Medieval Buildings [The End Edition] for Minecraft 26.3",
+      "pack_format": 94
+    },
+    {
+      "id": "medieval_nether-1.2.1",
+      "name": "medieval_nether-1.2.1",
+      "description": "Medieval Buildings [The Nether Edition] for Minecraft 26.3",
+      "pack_format": 94
+    },
+    {
+      "id": "mine-treasure-1.6.5",
+      "name": "mine-treasure-1.6.5",
+      "description": "Mine Treasure v1.6.5\nby Frozytime",
+      "pack_format": 94
+    },
+    {
+      "id": "more_mobs-v1.5.11-mc1.14-26.3.9-datapack",
+      "name": "more_mobs-v1.5.11-mc1.14-26.3.9-datapack",
+      "description": "Tschipcraft's More Mobs \n\u2514 v1.5.11 \u25cf mc1.14-26.3.9",
+      "pack_format": 94
+    },
+    {
+      "id": "sunken_spires_1.20",
+      "name": "sunken_spires_1.20",
+      "description": "Remnants of an advanced prismarine civilization",
+      "pack_format": 94
+    },
+    {
+      "id": "t_and_t-datapack-26.3",
+      "name": "t_and_t-datapack-26.3",
+      "description": "T&T 26.3",
+      "pack_format": 94
+    },
+    {
+      "id": "tectonic-datapack-3.0.29",
+      "name": "tectonic-datapack-3.0.29",
+      "description": "<3Apollo",
+      "pack_format": 94
+    },
+    {
+      "id": "terratonic-datapack-3.0.31",
+      "name": "terratonic-datapack-3.0.31",
+      "description": "<3Apollo",
+      "pack_format": 94
+    },
+    {
+      "id": "tidal_towns_2.0_1.20-26.3",
+      "name": "tidal_towns_2.0_1.20-26.3",
+      "description": "tidal_towns_2.0_1.20-26.3",
+      "pack_format": 94
+    },
+    {
+      "id": "tru.e-ending-1.1.4d",
+      "name": "tru.e-ending-1.1.4d",
+      "description": "",
+      "pack_format": 94
+    },
+    {
+      "id": "u_sea-1.2.5",
+      "name": "u_sea-1.2.5",
+      "description": "Additional structures for the sea and beach biomes, focusing on an immersive expansion for the vanilla game.",
+      "pack_format": 94
+    },
+    {
+      "id": "veinminer-enchantment-1.3.6",
+      "name": "veinminer-enchantment-1.3.6",
+      "description": "\u00a76\u00a7lVeinminer Enchantment \u00a77| \u00a7626.3+\n\u00a7eBy Miraculixx",
+      "pack_format": 94
     }
   ]
 }

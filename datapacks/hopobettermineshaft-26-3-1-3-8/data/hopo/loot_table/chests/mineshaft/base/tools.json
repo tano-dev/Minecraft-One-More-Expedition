@@ -1,0 +1,343 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 6
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "hopo:chests/mineshaft/abandoned_miners_stuff",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_pickaxe",
+                    "weight": 7,
+                    "modifier": [
+                        {
+                            "type": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        },
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.05,
+                                "max": 0.3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_shovel",
+                    "weight": 7,
+                    "modifier": [
+                        {
+                            "type": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        },
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.05,
+                                "max": 0.3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_hoe",
+                    "weight": 7,
+                    "modifier": [
+                        {
+                            "type": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        },
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.05,
+                                "max": 0.3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_pickaxe",
+                    "weight": 7,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.05,
+                                "max": 0.3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_shovel",
+                    "weight": 7,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.05,
+                                "max": 0.3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_hoe",
+                    "weight": 7,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.05,
+                                "max": 0.3
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_pickaxe",
+                    "weight": 10,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.17,
+                                "max": 0.4
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_shovel",
+                    "weight": 10,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.17,
+                                "max": 0.4
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_hoe",
+                    "weight": 10,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 0.17,
+                                "max": 0.4
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_pickaxe",
+                    "weight": 10,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.17,
+                                "max": 0.4
+                            },
+                            "add": false
+                        },
+                        {
+                            "type": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_shovel",
+                    "weight": 10,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.17,
+                                "max": 0.4
+                            },
+                            "add": false
+                        },
+                        {
+                            "type": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_hoe",
+                    "weight": 6,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.17,
+                                "max": 0.4
+                            },
+                            "add": false
+                        },
+                        {
+                            "type": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_pickaxe",
+                    "weight": 9,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.3,
+                                "max": 0.7
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_shovel",
+                    "weight": 9,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.3,
+                                "max": 0.7
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_hoe",
+                    "weight": 9,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.3,
+                                "max": 0.7
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_pickaxe",
+                    "weight": 9,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.3,
+                                "max": 0.7
+                            },
+                            "add": false
+                        },
+                        {
+                            "type": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_shovel",
+                    "weight": 9,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.3,
+                                "max": 0.7
+                            },
+                            "add": false
+                        },
+                        {
+                            "type": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_hoe",
+                    "weight": 9,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.3,
+                                "max": 0.7
+                            },
+                            "add": false
+                        },
+                        {
+                            "type": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "hopo:chests/mineshaft/base/tools"
+}

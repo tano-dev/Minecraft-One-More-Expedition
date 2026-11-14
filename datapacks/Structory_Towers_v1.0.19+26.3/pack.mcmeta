@@ -1,14 +1,5 @@
 {
   "pack": {
-    "id": "structory_towers",
-    "min_format": [
-      121,
-      0
-    ],
-    "max_format": [
-      121,
-      0
-    ],
     "description": [
       {
         "text": "Structory: Towers",
@@ -24,10 +15,9 @@
       }
     ],
     "pack_format": 94,
-    "supported_formats": {
-      "min_inclusive": 15,
-      "max_inclusive": 94
-    }
+    "min_format": 94,
+    "max_format": 94,
+    "id": "structory_towers"
   },
   "overlays": {
     "entries": []

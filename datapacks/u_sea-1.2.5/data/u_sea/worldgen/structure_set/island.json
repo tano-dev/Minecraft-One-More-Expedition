@@ -1,0 +1,23 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "frequency": 0.5,
+    "spacing": 32,
+    "separation": 24,
+    "salt": 104382912
+  },
+  "structures": [
+    {
+      "structure": "u_sea:island/cold/glacier",
+      "weight": 1
+    },
+    {
+      "structure": "u_sea:island/warm/hill",
+      "weight": 1
+    },
+    {
+      "structure": "u_sea:island/warm/tower",
+      "weight": 1
+    }
+  ]
+}

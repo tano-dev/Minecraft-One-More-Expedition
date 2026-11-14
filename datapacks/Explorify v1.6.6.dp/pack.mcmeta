@@ -22,14 +22,9 @@
         "color": "#767676"
       }
     ],
-    "version": "1.6.6",
     "pack_format": 94,
-    "supported_formats": {
-      "min_inclusive": 15,
-      "max_inclusive": 94
-    },
-    "min_format": 15,
-    "max_format": 512
+    "min_format": 94,
+    "max_format": 94
   },
   "overlays": {
     "entries": [

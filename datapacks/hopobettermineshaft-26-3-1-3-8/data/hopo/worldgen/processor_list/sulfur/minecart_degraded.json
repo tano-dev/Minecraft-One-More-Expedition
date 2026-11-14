@@ -1,0 +1,1231 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:cobweb",
+                        "probability": 0.85
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_bricks",
+                        "probability": 0.05
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_sulfur"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_bricks",
+                        "probability": 0.2
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_bricks",
+                        "probability": 0.11
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_brick_wall",
+                        "probability": 0.2
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_bricks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_bricks"
+                        },
+                        "probability": 0.027
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_slab",
+                        "properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:chiseled_stone_bricks"
+                    },
+                    "output_state": {
+                        "id": "minecraft:chiseled_sulfur"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:cobblestone"
+                    },
+                    "output_state": {
+                        "id": "minecraft:cinnabar"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:infested_chiseled_stone_bricks"
+                    },
+                    "output_state": {
+                        "id": "minecraft:chiseled_sulfur"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:lantern",
+                            "properties": {
+                                "hanging": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:oxidized_copper_lantern",
+                        "properties": {
+                            "hanging": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:lantern",
+                            "properties": {
+                                "hanging": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:oxidized_copper_lantern",
+                        "properties": {
+                            "hanging": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:mossy_cobblestone"
+                    },
+                    "output_state": {
+                        "id": "minecraft:cinnabar"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:polished_andesite"
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_cinnabar"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:polished_andesite_slab",
+                            "properties": {
+                                "type": "bottom",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_cinnabar_slab",
+                        "properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:polished_andesite_slab",
+                            "properties": {
+                                "type": "top",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_cinnabar_slab",
+                        "properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:polished_andesite_stairs",
+                            "properties": {
+                                "facing": "east",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_cinnabar_stairs",
+                        "properties": {
+                            "facing": "east",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:polished_andesite_stairs",
+                            "properties": {
+                                "facing": "east",
+                                "half": "top",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_cinnabar_stairs",
+                        "properties": {
+                            "facing": "east",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:polished_andesite_stairs",
+                            "properties": {
+                                "facing": "north",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_cinnabar_stairs",
+                        "properties": {
+                            "facing": "north",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:polished_andesite_stairs",
+                            "properties": {
+                                "facing": "south",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_cinnabar_stairs",
+                        "properties": {
+                            "facing": "south",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:polished_andesite_stairs",
+                            "properties": {
+                                "facing": "west",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_cinnabar_stairs",
+                        "properties": {
+                            "facing": "west",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:polished_andesite_stairs",
+                            "properties": {
+                                "facing": "west",
+                                "half": "top",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_cinnabar_stairs",
+                        "properties": {
+                            "facing": "west",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:smooth_stone"
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_sulfur"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:smooth_stone_slab",
+                            "properties": {
+                                "type": "bottom",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_sulfur_slab",
+                        "properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:smooth_stone_slab",
+                            "properties": {
+                                "type": "top",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_sulfur_slab",
+                        "properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:stone"
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_slab",
+                            "properties": {
+                                "type": "bottom",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_slab",
+                        "properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_slab",
+                            "properties": {
+                                "type": "top",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_slab",
+                        "properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_stairs",
+                            "properties": {
+                                "facing": "east",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_stairs",
+                        "properties": {
+                            "facing": "east",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_stairs",
+                            "properties": {
+                                "facing": "east",
+                                "half": "top",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_stairs",
+                        "properties": {
+                            "facing": "east",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_stairs",
+                            "properties": {
+                                "facing": "north",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_stairs",
+                        "properties": {
+                            "facing": "north",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_stairs",
+                            "properties": {
+                                "facing": "north",
+                                "half": "top",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_stairs",
+                        "properties": {
+                            "facing": "north",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_stairs",
+                            "properties": {
+                                "facing": "south",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_stairs",
+                        "properties": {
+                            "facing": "south",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_stairs",
+                            "properties": {
+                                "facing": "south",
+                                "half": "top",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_stairs",
+                        "properties": {
+                            "facing": "south",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_stairs",
+                            "properties": {
+                                "facing": "west",
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_stairs",
+                        "properties": {
+                            "facing": "west",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_stairs",
+                            "properties": {
+                                "facing": "west",
+                                "half": "top",
+                                "shape": "straight",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_stairs",
+                        "properties": {
+                            "facing": "west",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "low",
+                                "north": "low",
+                                "south": "none",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "none"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "low",
+                            "north": "low",
+                            "south": "none",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "none"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "low",
+                                "north": "none",
+                                "south": "low",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "none"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "low",
+                            "north": "none",
+                            "south": "low",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "none"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "low",
+                                "south": "low",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "low"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "none",
+                            "north": "low",
+                            "south": "low",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "low"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "low",
+                                "south": "none",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "low"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "none",
+                            "north": "low",
+                            "south": "none",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "low"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "low",
+                                "south": "none",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "none"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "none",
+                            "north": "low",
+                            "south": "none",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "none"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "low",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "low"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "low",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "low"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "low",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "none"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "low",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "none"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "none"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "none",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "none"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "tall"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "none",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "tall"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "tall",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "none"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "tall",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "none"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "tall",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "tall"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "tall",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "tall"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "tall",
+                                "south": "none",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "none"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "none",
+                            "north": "tall",
+                            "south": "none",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "none"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "tall",
+                                "south": "none",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "tall"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "none",
+                            "north": "tall",
+                            "south": "none",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "tall"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "tall",
+                                "north": "none",
+                                "south": "none",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "none"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "tall",
+                            "north": "none",
+                            "south": "none",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "none"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "tall",
+                                "north": "none",
+                                "south": "tall",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "none"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "tall",
+                            "north": "none",
+                            "south": "tall",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "none"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_brick_wall",
+                            "properties": {
+                                "east": "tall",
+                                "north": "tall",
+                                "south": "none",
+                                "up": "true",
+                                "waterlogged": "false",
+                                "west": "none"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_brick_wall",
+                        "properties": {
+                            "east": "tall",
+                            "north": "tall",
+                            "south": "none",
+                            "up": "true",
+                            "waterlogged": "false",
+                            "west": "none"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:stone_bricks"
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_bricks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:stone_slab",
+                            "properties": {
+                                "type": "bottom",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:sulfur_slab",
+                        "properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#u_sea:has_structure/raft/cold",
+  "start_pool": "u_sea:raft/cold/cone_tide_breaker",
+  "step": "surface_structures",
+
+  "terrain_adaptation": "none",
+  "use_expansion_hack": false,
+	"project_start_to_heightmap": "WORLD_SURFACE_WG",
+
+  "max_distance_from_center": 80,
+  "size": 1,
+  "start_height": {
+    "absolute": -1
+  },
+  
+  "spawn_overrides": {}
+}

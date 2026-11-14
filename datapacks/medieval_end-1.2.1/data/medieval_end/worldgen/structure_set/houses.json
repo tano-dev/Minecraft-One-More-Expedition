@@ -1,0 +1,33 @@
+{
+
+  "structures": [
+    {
+      "structure": "medieval_end:shrine",
+      "weight": 50
+    },
+    {
+      "structure": "medieval_end:house",
+      "weight": 120
+    },
+    {
+      "structure": "medieval_end:pyramid",
+      "weight": 30
+    },
+    {
+      "structure": "medieval_end:castle",
+      "weight": 25
+    },
+    {
+      "structure": "medieval_end:ship",
+      "weight": 1
+    }
+
+  ],
+  "placement": {
+     "salt": 558271623,
+     "spacing": 28,
+
+    "separation": 22,
+     "type": "minecraft:random_spread"
+  }
+}

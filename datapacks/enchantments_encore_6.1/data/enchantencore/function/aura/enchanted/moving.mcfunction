@@ -1,1 +1,0 @@
-execute anchored feet run particle minecraft:enchant ^ ^1 ^-.5 .1 .2 .1 0 5

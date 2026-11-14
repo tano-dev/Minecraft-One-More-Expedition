@@ -1,6 +1,0 @@
-{
-  "values": [
-    { "id": "enchantencore:gallop", "required": false },
-    { "id": "enchantencore:surfer", "required": false }
-  ]
-}

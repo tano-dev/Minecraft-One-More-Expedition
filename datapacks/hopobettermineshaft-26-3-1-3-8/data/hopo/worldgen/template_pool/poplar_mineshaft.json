@@ -1,0 +1,357 @@
+{
+    "name": "hopo:poplar_mineshaft",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 80,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/path",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 90,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/path_alt",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 94,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/poplar/path_small_1",
+                "projection": "rigid",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 94,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/poplar/path_small_2",
+                "projection": "rigid",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 94,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/poplar/path_small_3",
+                "projection": "rigid",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 94,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/poplar/path_small_4",
+                "projection": "rigid",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 94,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/poplar/path_small_5",
+                "projection": "rigid",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 94,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/poplar/path_small_6",
+                "projection": "rigid",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 94,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/poplar/path_small_7",
+                "projection": "rigid",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 94,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/poplar/path_small_8",
+                "projection": "rigid",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 94,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mineshaft/poplar/path_small_9",
+                "projection": "rigid",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 94,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/path_1",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 94,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/path_1_alt",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 90,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/pathlong_1",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 90,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/pathlong_2",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/pathlong_3",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 88,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/pathlong_4",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 75,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/pathlong_5",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 90,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/pathlong_6",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/minecart_degraded"
+            }
+        },
+        {
+            "weight": 15,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/trap/trap_1",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 15,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/trap/trap_2",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 17,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/trap/trap_3",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 17,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/trap/trap_4",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 15,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/trap/trap_5",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 75,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/entrance",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 50,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/entrance_alt",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 45,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/entrance_1",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degradedentrance"
+            }
+        },
+        {
+            "weight": 80,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/entrance_1_alt",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 85,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/turn",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degradeddown"
+            }
+        },
+        {
+            "weight": 92,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/turn_1",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degradeddown"
+            }
+        },
+        {
+            "weight": 92,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/turn_2",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degradeddown"
+            }
+        },
+        {
+            "weight": 22,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/down_1",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degraded"
+            }
+        },
+        {
+            "weight": 22,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/down_2",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degradeddown"
+            }
+        },
+        {
+            "weight": 25,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/down_3",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degradeddown"
+            }
+        },
+        {
+            "weight": 20,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/down_4",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degradeddown"
+            }
+        },
+        {
+            "weight": 33,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "hopo:mineshaft/poplar/down_5",
+                "override_liquid_settings": "ignore_waterlogging",
+                "processors": "hopo:poplar/degradeddown"
+            }
+        }
+    ]
+}

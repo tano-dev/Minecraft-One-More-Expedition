@@ -1,0 +1,19 @@
+modLoader="lowcodefml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+  modId="u_sea"
+  version="1.2.5"
+  displayName="Unnamed Sea"
+  displayURL="https://modrinth.com/mod/unnamed-sea"
+  logoFile="icon.png"
+  authors="UnnamedGlitch"
+  description="Additional structures for the sea and beach biomes, focusing on an immersive expansion for the vanilla game."
+
+  [[dependencies.u_desert]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19,1.21.11]"
+    ordering="NONE"
+    side="BOTH"

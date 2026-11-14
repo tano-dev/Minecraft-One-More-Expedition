@@ -1,6 +1,0 @@
-{
-  "values": [
-    { "id": "enchantencore:fetch", "required": false },
-    { "id": "enchantencore:scent", "required": false }
-  ]
-}

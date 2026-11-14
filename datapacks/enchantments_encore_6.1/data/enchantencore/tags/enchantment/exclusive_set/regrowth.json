@@ -1,7 +1,0 @@
-{
-  "values": [
-    { "id": "enchantencore:regrowth", "required": false },
-    { "id": "minecraft:efficiency", "required": false },
-    { "id": "minecraft:silk_touch", "required": false }
-  ]
-}

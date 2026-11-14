@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "frequency": 1.0,
+    "spacing": 24,
+    "separation": 16,
+    "salt": 20547383
+  },
+  "structures": [
+    {
+      "structure": "u_sea:lighthouse",
+      "weight": 1
+    }
+  ]
+}

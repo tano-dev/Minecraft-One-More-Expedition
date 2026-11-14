@@ -1,0 +1,19 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "frequency": 0.33,
+    "spacing": 32,
+    "separation": 24,
+    "salt": 16446874
+  },
+  "structures": [
+    {
+      "structure": "u_sea:ship/cove",
+      "weight": 1
+    },
+    {
+      "structure": "u_sea:ship/hopper",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "frequency": 0.33,
+    "spacing": 32,
+    "separation": 24,
+    "salt": 18473043
+  },
+  "structures": [
+    {
+      "structure": "u_sea:raft/cold/tide_breaker",
+      "weight": 1
+    },
+    {
+      "structure": "u_sea:raft/cold/wide_tide_breaker",
+      "weight": 1
+    },
+    {
+      "structure": "u_sea:raft/cold/cone_tide_breaker",
+      "weight": 1
+    },
+    {
+      "structure": "u_sea:raft/temperate/box",
+      "weight": 1
+    },
+    {
+      "structure": "u_sea:raft/temperate/beam",
+      "weight": 1
+    },
+    {
+      "structure": "u_sea:raft/temperate/grid",
+      "weight": 1
+    },
+    {
+      "structure": "u_sea:raft/warm/skipper",
+      "weight": 1
+    },
+    {
+      "structure": "u_sea:raft/warm/cone_skipper",
+      "weight": 1
+    }
+  ]
+}

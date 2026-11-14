@@ -1,15 +1,8 @@
 {
   "pack": {
-    "pack_format": 94,
     "description": "\u00a76\u00a7lVeinminer Enchantment \u00a77| \u00a7626.3+\n\u00a7eBy Miraculixx",
-    "min_format": [
-      121,
-      0
-    ],
-    "max_format": 121,
-    "supported_formats": {
-      "min_inclusive": 15,
-      "max_inclusive": 94
-    }
+    "pack_format": 94,
+    "min_format": 94,
+    "max_format": 94
   }
 }

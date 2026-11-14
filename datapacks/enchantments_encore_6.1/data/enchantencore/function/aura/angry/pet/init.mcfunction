@@ -1,1 +1,0 @@
-function enchantencore:aura/angry/pet/exec with entity @s

@@ -1,0 +1,800 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:decorated_pot"
+                        },
+                        "probability": 0.18
+                    },
+                    "output_state": {
+                        "id": "minecraft:candle",
+                        "properties": {
+                            "candles": "3"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:decorated_pot",
+                        "probability": 0.18
+                    },
+                    "output_state": {
+                        "id": "minecraft:flower_pot"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:decorated_pot",
+                        "probability": 0.18
+                    },
+                    "output_state": {
+                        "id": "minecraft:potted_dead_bush"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:decorated_pot",
+                        "probability": 0.18
+                    },
+                    "output_state": {
+                        "id": "minecraft:cobweb"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:candle",
+                            "properties": {
+                                "candles": "1",
+                                "lit": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.15
+                    },
+                    "output_state": {
+                        "id": "minecraft:black_candle",
+                        "properties": {
+                            "candles": "2",
+                            "lit": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:candle",
+                            "properties": {
+                                "candles": "1",
+                                "lit": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.12
+                    },
+                    "output_state": {
+                        "id": "minecraft:light_gray_candle",
+                        "properties": {
+                            "candles": "2",
+                            "lit": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:candle",
+                            "properties": {
+                                "candles": "1",
+                                "lit": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.18
+                    },
+                    "output_state": {
+                        "id": "minecraft:cyan_candle",
+                        "properties": {
+                            "waterlogged": "false",
+                            "lit": "true",
+                            "candles": "2"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:barrel",
+                        "properties": {
+                            "facing": "up"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_loot",
+                        "loot_table": "hopo:chests/mineshaft/abandoned_miners_stuff"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0005
+                    },
+                    "output_state": {
+                        "id": "minecraft:raw_iron_block"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0005
+                    },
+                    "output_state": {
+                        "id": "minecraft:raw_gold_block"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0005
+                    },
+                    "output_state": {
+                        "id": "minecraft:raw_copper_block"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0005
+                    },
+                    "output_state": {
+                        "id": "minecraft:coal_block"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0005
+                    },
+                    "output_state": {
+                        "id": "minecraft:lava_cauldron"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0005
+                    },
+                    "output_state": {
+                        "id": "minecraft:water_cauldron"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.08
+                    },
+                    "output_state": {
+                        "id": "minecraft:cyan_carpet"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.001
+                    },
+                    "output_state": {
+                        "id": "minecraft:damaged_anvil"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0033
+                    },
+                    "output_state": {
+                        "id": "minecraft:furnace",
+                        "properties": {
+                            "facing": "west"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:tnt"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:skeleton_skull",
+                        "properties": {
+                            "rotation": "2"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:crafting_table"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:soul_lantern"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:stonecutter"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:cyan_banner",
+                        "properties": {
+                            "rotation": "13"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:brown_mushroom"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:red_mushroom"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:cobweb"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:glow_lichen",
+                        "properties": {
+                            "down": "true",
+                            "east": "false",
+                            "north": "false",
+                            "south": "false",
+                            "up": "false",
+                            "waterlogged": "false",
+                            "west": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:decorated_pot"
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_loot",
+                        "loot_table": "hopo:pots/mineshaft/corridor_mineshaft"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:flower_pot"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.0073
+                    },
+                    "output_state": {
+                        "id": "minecraft:cyan_candle",
+                        "properties": {
+                            "candles": "3",
+                            "waterlogged": "false",
+                            "lit": "true"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate",
+                        "probability": 0.01
+                    },
+                    "output_state": {
+                        "id": "minecraft:infested_deepslate"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate",
+                        "probability": 0.007
+                    },
+                    "output_state": {
+                        "id": "minecraft:barrel",
+                        "properties": {
+                            "facing": "up",
+                            "open": "false"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_loot",
+                        "loot_table": "hopo:chests/mineshaft/abandoned_miners_stuff"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate",
+                        "probability": 0.007
+                    },
+                    "output_state": {
+                        "id": "minecraft:suspicious_gravel",
+                        "properties": {
+                            "dusted": "0"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_loot",
+                        "loot_table": "hopo:archaeology/mineshaft_remnants"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate",
+                        "probability": 0.033
+                    },
+                    "output_state": {
+                        "id": "minecraft:gravel"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_bricks",
+                        "probability": 0.005
+                    },
+                    "output_state": {
+                        "id": "minecraft:redstone_block"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_bricks",
+                        "probability": 0.004
+                    },
+                    "output_state": {
+                        "id": "minecraft:deepslate_diamond_ore"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:rail",
+                        "probability": 0.4
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:cobweb",
+                        "probability": 0.77
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_bricks",
+                        "probability": 0.055
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_bricks",
+                        "probability": 0.08
+                    },
+                    "output_state": {
+                        "id": "minecraft:cracked_deepslate_bricks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:polished_deepslate",
+                        "probability": 0.07
+                    },
+                    "output_state": {
+                        "id": "minecraft:polished_tuff"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_bricks",
+                        "probability": 0.16
+                    },
+                    "output_state": {
+                        "id": "minecraft:cobbled_deepslate"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_bricks",
+                        "probability": 0.2
+                    },
+                    "output_state": {
+                        "id": "minecraft:tuff_bricks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_bricks",
+                        "probability": 0.2
+                    },
+                    "output_state": {
+                        "id": "minecraft:deepslate",
+                        "properties": {
+                            "axis": "y"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_bricks",
+                        "probability": 0.11
+                    },
+                    "output_state": {
+                        "id": "minecraft:infested_deepslate",
+                        "properties": {
+                            "axis": "y"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_brick_wall",
+                        "probability": 0.2
+                    },
+                    "output_state": {
+                        "id": "minecraft:deepslate_bricks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:deepslate_bricks"
+                        },
+                        "probability": 0.027
+                    },
+                    "output_state": {
+                        "id": "minecraft:deepslate_brick_slab",
+                        "properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_bricks",
+                        "probability": 1.0
+                    },
+                    "output_state": {
+                        "id": "minecraft:dripstone_block"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:polished_deepslate",
+                        "probability": 0.4839
+                    },
+                    "output_state": {
+                        "id": "minecraft:dripstone_block"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate",
+                        "probability": 0.4237
+                    },
+                    "output_state": {
+                        "id": "minecraft:dripstone_block"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:cobbled_deepslate",
+                        "probability": 0.35
+                    },
+                    "output_state": {
+                        "id": "minecraft:dripstone_block"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_tiles",
+                        "probability": 0.3
+                    },
+                    "output_state": {
+                        "id": "minecraft:dripstone_block"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone",
+                        "probability": 0.3
+                    },
+                    "output_state": {
+                        "id": "minecraft:dripstone_block"
+                    }
+                }
+            ]
+        }
+    ]
+}

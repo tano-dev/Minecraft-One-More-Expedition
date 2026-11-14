@@ -1,0 +1,163 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:spruce_planks",
+                        "probability": 0.05
+                    },
+                    "output_state": {
+                        "id": "minecraft:oak_planks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:spruce_planks",
+                        "probability": 0.01
+                    },
+                    "output_state": {
+                        "id": "minecraft:spruce_trapdoor",
+                        "properties": {
+                            "facing": "north",
+                            "half": "top",
+                            "open": "false",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:spruce_planks",
+                        "probability": 0.01
+                    },
+                    "output_state": {
+                        "id": "minecraft:spruce_trapdoor",
+                        "properties": {
+                            "facing": "east",
+                            "half": "top",
+                            "open": "false",
+                            "powered": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:cobweb",
+                        "probability": 0.85
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:spruce_planks",
+                        "probability": 0.08
+                    },
+                    "output_state": {
+                        "id": "minecraft:stone_bricks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:spruce_log",
+                            "properties": {
+                                "axis": "z"
+                            }
+                        },
+                        "probability": 0.27
+                    },
+                    "output_state": {
+                        "id": "minecraft:stripped_spruce_log",
+                        "properties": {
+                            "axis": "z"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:oak_fence",
+                        "probability": 0.15
+                    },
+                    "output_state": {
+                        "id": "minecraft:iron_chain",
+                        "properties": {
+                            "waterlogged": "false",
+                            "axis": "y"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:spruce_planks"
+                        },
+                        "probability": 0.027
+                    },
+                    "output_state": {
+                        "id": "minecraft:spruce_slab",
+                        "properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "id": "minecraft:spruce_log",
+                            "properties": {
+                                "axis": "z"
+                            }
+                        },
+                        "probability": 0.27
+                    },
+                    "output_state": {
+                        "id": "minecraft:spruce_planks"
+                    }
+                }
+            ]
+        }
+    ]
+}

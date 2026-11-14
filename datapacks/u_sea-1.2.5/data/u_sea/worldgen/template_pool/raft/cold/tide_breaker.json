@@ -1,0 +1,15 @@
+{
+  "name": "u_sea:raft/cold/tide_breaker",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "u_sea:raft/cold/tide_breaker",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

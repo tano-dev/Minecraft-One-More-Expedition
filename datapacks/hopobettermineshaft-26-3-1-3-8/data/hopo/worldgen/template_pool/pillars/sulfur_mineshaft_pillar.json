@@ -1,0 +1,13 @@
+{
+    "fallback": "hopo:pillars/sulfur_mineshaft_pillar",
+    "elements": [
+        {
+            "weight": 6,
+            "element": {
+                "element_type": "minecraft:feature_pool_element",
+                "projection": "rigid",
+                "feature": "hopo:sulfur_mineshaft_pillar"
+            }
+        }
+    ]
+}

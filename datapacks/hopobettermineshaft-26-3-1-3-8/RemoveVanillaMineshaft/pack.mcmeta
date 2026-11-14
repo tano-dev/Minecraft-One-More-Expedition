@@ -1,0 +1,43 @@
+{
+  "pack": {
+    "description": [
+      {
+        "text": "Bye",
+        "color": "#c6fbff",
+        "italic": false
+      },
+      {
+        "text": " ",
+        "color": "#c6fbff",
+        "italic": false
+      },
+      {
+        "text": "Bye",
+        "color": "#7ac4fe",
+        "italic": false
+      },
+      {
+        "text": " ",
+        "color": "#7ac4fe",
+        "italic": false
+      },
+      {
+        "text": "Vanilla",
+        "color": "#2e8cfe",
+        "italic": false
+      },
+      {
+        "text": " ",
+        "color": "#2e8cfe",
+        "italic": false
+      },
+      {
+        "text": "Mineshaft",
+        "color": "#0066fd",
+        "italic": false
+      }
+    ],
+    "min_format": [121, 0],
+    "max_format": [121, 0]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "pack": {
+    "description": [
+      {
+        "text": "Bye",
+        "color": "#c6fbff",
+        "italic": false
+      },
+      {
+        "text": " ",
+        "color": "#c6fbff",
+        "italic": false
+      },
+      {
+        "text": "Bye",
+        "color": "#8dd1fe",
+        "italic": false
+      },
+      {
+        "text": " ",
+        "color": "#8dd1fe",
+        "italic": false
+      },
+      {
+        "text": "Vanilla",
+        "color": "#54a8fe",
+        "italic": false
+      },
+      {
+        "text": " ",
+        "color": "#54a8fe",
+        "italic": false
+      },
+      {
+        "text": "Ocean",
+        "color": "#1b7ffe",
+        "italic": false
+      },
+      {
+        "text": " ",
+        "color": "#1b7ffe",
+        "italic": false
+      },
+      {
+        "text": "Ruin",
+        "color": "#0066fd",
+        "italic": false
+      }
+    ],
+    "min_format": [121, 0],
+    "max_format": [121, 0]
+  }
+}

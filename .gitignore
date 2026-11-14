@@ -1,6 +1,7 @@
 # Gradle / Java (mods_src)
 .gradle/
 build/
+bin/
 out/
 *.class
 hs_err_pid*

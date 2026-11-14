@@ -6,18 +6,8 @@
         "color": "gold"
       }
     ],
-    "min_format": [
-      121,
-      1
-    ],
-    "max_format": [
-      121,
-      1
-    ],
     "pack_format": 94,
-    "supported_formats": {
-      "min_inclusive": 15,
-      "max_inclusive": 94
-    }
+    "min_format": 94,
+    "max_format": 94
   }
 }

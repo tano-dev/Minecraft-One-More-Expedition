@@ -1,1 +1,0 @@
-execute if predicate enchantencore:percentages/10 run kill @e[type=minecraft:shulker_bullet,limit=1,sort=random,distance=..3]

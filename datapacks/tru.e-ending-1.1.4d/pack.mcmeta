@@ -1,12 +1,5 @@
 {
   "pack": {
-    "pack_format": 94,
-    "min_format": 71,
-    "max_format": 9999,
-    "supported_formats": {
-      "min_inclusive": 15,
-      "max_inclusive": 94
-    },
     "description": [
       {
         "translate": "True Ending",
@@ -23,7 +16,10 @@
         "translate": "Ender Dragon Overhaul",
         "color": "#898f96"
       }
-    ]
+    ],
+    "pack_format": 94,
+    "min_format": 94,
+    "max_format": 94
   },
   "overlays": {
     "entries": [

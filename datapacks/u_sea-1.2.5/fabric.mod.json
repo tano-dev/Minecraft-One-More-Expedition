@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "u_sea",
+  "version": "1.2.5",
+  "name": "Unnamed Sea",
+  "description": "Additional structures for the sea and beach biomes, focusing on an immersive expansion for the vanilla game.",
+  "authors": [
+    "UnnamedGlitch"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/unnamed-sea"
+  },
+  "license": "All Rights Reserved",
+  "icon": "icon.png",
+  "environment": "*",
+  "depends": {
+    "fabric-api": "*",
+    "minecraft": ">=1.19.2 <=1.21.11"
+  }
+}

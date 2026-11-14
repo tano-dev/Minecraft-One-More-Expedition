@@ -1,9 +1,9 @@
 {
   "pack": {
     "pack_format": 94,
-    "description": "\u00a7f\u00a7lThe Wither Revamp!",
-    "min_format": 108,
-    "max_format": 127,
+    "description": "§f§lThe Wither Revamp!",
+    "min_format": 94,
+    "max_format": 94,
     "supported_formats": {
       "min_inclusive": 15,
       "max_inclusive": 94
