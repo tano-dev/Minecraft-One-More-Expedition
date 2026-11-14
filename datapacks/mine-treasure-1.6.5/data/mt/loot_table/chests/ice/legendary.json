@@ -1,0 +1,542 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": {
+          "type": "minecraft:storage",
+          "storage": "mt:settings",
+          "path": "3.initial"
+        },
+        "p": {
+          "type": "minecraft:mul",
+          "inputs": [
+            {
+              "type": "minecraft:from_int",
+              "input": {
+                "type": "score",
+                "target": "this",
+                "score": "mt.total"
+              }
+            },
+            1e-06
+          ]
+        }
+      },
+      "bonus_rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:charms/legendary",
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.1
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.3
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 700000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          },
+          "modifier": [
+            {
+              "type": "minecraft:set_enchantments",
+              "enchantments": {
+                "mt:weapons/stray_bow": 1,
+                "minecraft:power": {
+                  "type": "minecraft:uniform",
+                  "min": 6,
+                  "max": 9
+                },
+                "minecraft:infinity": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 1
+                },
+                "minecraft:punch": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:repair_cost": 9999,
+                "minecraft:custom_name": {
+                  "text": "Stray Bow",
+                  "color": "gold",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "Ability:",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "Arrows apply Slowness II,",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gains additional pierce",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "and deals 2 true damage.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "weapon": "stray",
+                  "mt": "weapon"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying",
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$vanilla_mode"
+              },
+              "score": "mt.var"
+            },
+            "test": 0
+          },
+          "modifier": {
+            "type": "minecraft:set_attributes",
+            "modifiers": [
+              {
+                "id": "armor_ice",
+                "attribute": "minecraft:armor_toughness",
+                "amount": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 1
+                },
+                "operation": "add_value",
+                "slot": [
+                  "offhand"
+                ]
+              },
+              {
+                "id": "armor_ice",
+                "attribute": "minecraft:armor",
+                "amount": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 1
+                },
+                "operation": "add_value",
+                "slot": [
+                  "offhand"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mt:chests/ice/ice_boots",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.5
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 700000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "mt:runes/ice_platform",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#disable_rune"
+                  },
+                  "score": "mt.constant"
+                },
+                "test": 0
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.75
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 700000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 3
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mt:chests/ice/ice_sword",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.4
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 700000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:blue_ice",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 40,
+              "max": 60
+            },
+            "add": false
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:light_blue_shulker_box",
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.5
+          },
+          "modifier": {
+            "type": "minecraft:set_contents",
+            "component": "minecraft:container",
+            "entries": [
+              {
+                "type": "minecraft:loot_table",
+                "value": "mt:chests/ice/epic"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:enchanted_golden_apple",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 3
+            },
+            "add": false
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "mt:custom_items/frozen_apple",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 700000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 2
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:netherite_scrap",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 599999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            },
+            "add": false
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:diamond",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 599999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            },
+            "add": false
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:golden_apple",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 599999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            },
+            "add": false
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:tipped_arrow",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 600000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          },
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 8
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Arrow of Frostbite",
+                  "color": "#3C6199",
+                  "italic": false
+                },
+                "minecraft:potion_contents": {
+                  "custom_color": 3231405,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:instant_damage",
+                      "amplifier": 1,
+                      "duration": 20,
+                      "show_particles": false
+                    },
+                    {
+                      "id": "minecraft:blindness",
+                      "amplifier": 1,
+                      "duration": 100,
+                      "show_particles": false
+                    },
+                    {
+                      "id": "minecraft:wither",
+                      "amplifier": 1,
+                      "duration": 100,
+                      "show_particles": false
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "weapon": "frost"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

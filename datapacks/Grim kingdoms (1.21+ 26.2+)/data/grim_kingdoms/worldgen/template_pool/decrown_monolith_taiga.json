@@ -1,0 +1,15 @@
+{
+    "name": "grim_kingdoms:decrown_monolith_taiga",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:taiga/decrown_monolith_taiga"
+            },
+            "weight": 1
+        }
+    ]
+}

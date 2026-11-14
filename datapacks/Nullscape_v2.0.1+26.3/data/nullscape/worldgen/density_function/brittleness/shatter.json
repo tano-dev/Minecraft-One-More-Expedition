@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:range_choice",
+  "max_exclusive": 0,
+  "when_in_range": 64,
+  "when_out_of_range": {
+    "type": "minecraft:add",
+    "left": {
+      "type": "minecraft:interpolated",
+      "input": {
+        "type": "minecraft:range_choice",
+        "max_exclusive": 321,
+        "when_in_range": {
+          "type": "minecraft:add",
+          "left": -0.095,
+          "right": {
+            "type": "minecraft:mul",
+            "left": -0.06,
+            "right": {
+              "type": "minecraft:noise",
+              "noise": "nullscape:overworld_copy/noodle_thickness",
+              "xz_scale": 0.5,
+              "y_scale": 0.5
+            }
+          }
+        },
+        "when_out_of_range": 0,
+        "input": "minecraft:y",
+        "min_inclusive": -60
+      },
+      "cell_size_xz": 8,
+      "cell_size_y": 4
+    },
+    "right": {
+      "type": "minecraft:mul",
+      "left": 1.5,
+      "right": {
+        "type": "minecraft:max",
+        "left": {
+          "type": "minecraft:abs",
+          "input": {
+            "type": "minecraft:interpolated",
+            "input": {
+              "type": "minecraft:range_choice",
+              "max_exclusive": 321,
+              "when_in_range": {
+                "type": "minecraft:noise",
+                "noise": "nullscape:material/effect/brittleness/crack",
+                "xz_scale": 1,
+                "y_scale": 0.4
+              },
+              "when_out_of_range": 0,
+              "input": "minecraft:y",
+              "min_inclusive": -60
+            },
+            "cell_size_xz": 8,
+            "cell_size_y": 4
+          }
+        },
+        "right": {
+          "type": "minecraft:abs",
+          "input": {
+            "type": "minecraft:interpolated",
+            "input": {
+              "type": "minecraft:range_choice",
+              "max_exclusive": 321,
+              "when_in_range": {
+                "type": "minecraft:noise",
+                "noise": "nullscape:material/effect/brittleness/crack2",
+                "xz_scale": 1,
+                "y_scale": 1
+              },
+              "when_out_of_range": 0,
+              "input": "minecraft:y",
+              "min_inclusive": -60
+            },
+            "cell_size_xz": 8,
+            "cell_size_y": 4
+          }
+        }
+      }
+    }
+  },
+  "input": {
+    "type": "minecraft:interpolated",
+    "input": {
+      "type": "minecraft:range_choice",
+      "max_exclusive": 321,
+      "when_in_range": {
+        "type": "minecraft:noise",
+        "noise": "nullscape:material/property/brittleness",
+        "xz_scale": 2.5,
+        "y_scale": 2.5
+      },
+      "when_out_of_range": -1,
+      "input": "minecraft:y",
+      "min_inclusive": 320
+    },
+    "cell_size_xz": 8,
+    "cell_size_y": 4
+  },
+  "min_inclusive": -1000000
+}

@@ -1,0 +1,7 @@
+{
+  "values": [
+    { "id": "enchantencore:heroes_crown", "required": false },
+    { "id": "enchantencore:illumination", "required": false },
+    { "id": "enchantencore:night_vision", "required": false }
+  ]
+}

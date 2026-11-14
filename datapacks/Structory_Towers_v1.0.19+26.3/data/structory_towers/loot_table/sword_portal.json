@@ -1,0 +1,222 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 80,
+                    "name": "minecraft:gold_block"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 100,
+                    "name": "minecraft:gold_ingot",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 2,
+                            "max": 6
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:music_disc_otherside"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 80,
+                    "name": "minecraft:quartz",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 6
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 100,
+                    "name": "minecraft:book",
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 30
+                        },
+                        "options": "#minecraft:on_random_loot",
+                        "condition": {
+                            "type": "minecraft:random_chance",
+                            "chance": 0.4
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 20,
+                    "name": "minecraft:golden_apple"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:enchanted_golden_apple"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 75,
+                    "name": "minecraft:rib_armor_trim_smithing_template",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 2
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 6
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 100,
+                    "name": "minecraft:obsidian",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 2,
+                            "max": 8
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 80,
+                    "name": "minecraft:crying_obsidian",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 2,
+                            "max": 8
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 100,
+                    "name": "minecraft:blackstone",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 6,
+                            "max": 12
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 70,
+                    "name": "minecraft:warped_stem",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 8
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 40,
+                    "name": "minecraft:warped_wart_block",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 8
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 80,
+                    "name": "minecraft:warped_fungus",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 8
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 20,
+                    "name": "minecraft:warped_fungus_on_a_stick",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.1,
+                                "max": 0.7
+                            }
+                        },
+                        {
+                            "type": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot",
+                            "condition": {
+                                "type": "minecraft:random_chance",
+                                "chance": 0.1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 80,
+                    "name": "minecraft:warped_roots",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 3,
+                            "max": 10
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:chests/ruined_portal"
+                }
+            ]
+        }
+    ]
+}

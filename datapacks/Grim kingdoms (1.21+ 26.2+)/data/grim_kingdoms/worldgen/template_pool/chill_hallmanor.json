@@ -1,0 +1,17 @@
+{
+    "name": "grim_kingdoms:chill_hallmanor",
+    "fallback": "minecraft:empty",
+    "elements": [
+        
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/chill_hallmanor"
+            },
+            "weight": 1
+        }
+	
+    ]
+}

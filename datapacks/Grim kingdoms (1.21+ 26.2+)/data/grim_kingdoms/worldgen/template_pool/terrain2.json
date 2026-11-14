@@ -1,0 +1,17 @@
+{
+    "name": "grim_kingdoms:terrain2",
+    "fallback": "grim_kingdoms:terrain2",
+    "elements": [
+        
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:taiga/terrain2/terrain2"
+            },
+            "weight": 1
+                }
+
+    ]
+}

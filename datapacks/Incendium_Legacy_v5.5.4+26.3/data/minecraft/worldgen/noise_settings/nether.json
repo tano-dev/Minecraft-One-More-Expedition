@@ -1,0 +1,95 @@
+{
+  "sea_level": 32,
+  "disable_mob_generation": false,
+  "legacy_random_source": false,
+  "default_block": {
+    "id": "minecraft:netherrack"
+  },
+  "default_fluid": {
+    "id": "minecraft:lava",
+    "properties": {
+      "level": "0"
+    }
+  },
+  "noise_router": {
+    "final_density": "incendium:final_density",
+    "chunk_surface_level": {
+      "left": 4,
+      "right": {
+        "input": {
+          "left": {
+            "left": 0,
+            "right": "incendium:climate/depth",
+            "type": "minecraft:add"
+          },
+          "right": {
+            "input": "incendium:climate/factor",
+            "type": "minecraft:cache"
+          },
+          "type": "minecraft:mul"
+        },
+        "type": "minecraft:quarter_negative"
+      },
+      "type": "minecraft:mul"
+    },
+    "temperature": "incendium:climate/temperature",
+    "vegetation": "incendium:climate/humidity",
+    "continents": "incendium:climate/continentalness",
+    "erosion": "incendium:climate/erosion",
+    "depth": "incendium:climate/purity",
+    "ridges": "incendium:climate/weirdness"
+  },
+  "noise": {
+    "min_y": 0,
+    "height": 192
+  },
+  "material_rule": "incendium:nether",
+  "spawn_target": [
+    {
+      "incendium:climate/erosion": [
+        -1,
+        1
+      ],
+      "incendium:climate/depth": 0,
+      "incendium:climate/weirdness": [
+        -1,
+        -0.16
+      ],
+      "incendium:climate/temperature": [
+        -1,
+        1
+      ],
+      "incendium:climate/humidity": [
+        -1,
+        1
+      ],
+      "incendium:climate/continentalness": [
+        -0.11,
+        1
+      ]
+    },
+    {
+      "incendium:climate/erosion": [
+        -1,
+        1
+      ],
+      "incendium:climate/depth": 0,
+      "incendium:climate/weirdness": [
+        0.16,
+        1
+      ],
+      "incendium:climate/temperature": [
+        -1,
+        1
+      ],
+      "incendium:climate/humidity": [
+        -1,
+        1
+      ],
+      "incendium:climate/continentalness": [
+        -0.11,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+	"name": "nova_structures:jaggedpeak_mineshaft_overhaul/mineshaft",
+	"fallback": "nova_structures:jaggedpeak_mineshaft_overhaul/mineshaft_fallback",
+	"elements": [
+		{
+			"weight": 60,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_crossroad",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 60,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_crossroad_tall",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 70,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_intersect_1",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_intersect_2",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 70,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_intersect_3",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 70,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_intersect_staircase",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_long",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 50,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_long_cave_in",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_long_spiders",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_spider_processor"
+			}
+		},
+		{
+			"weight": 40,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_long_sideroom_connect",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 40,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_short",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_curve",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 70,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_curve_slim",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_tcross_slim",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 20,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_tcross_sideroom_connect_slim",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_tcross",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_special_3",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_special_2",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_special_1_copper",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 7,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_special_1_iron",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_special_1_gold",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_special_1_lapis",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/mineshaft/jaggedpeak_mineshaft_special_1_redstone",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mineshaft_special_processor"
+			}
+		}
+	]
+}

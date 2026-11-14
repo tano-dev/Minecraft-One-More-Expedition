@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trial_key",
+          "modifier": {
+            "components": {
+              "minecraft:custom_model_data": {
+                "floats": [
+                  718.0
+                ]
+              },
+              "minecraft:item_name": {
+                "translate": "item.dnt.piglin_outstation_key",
+                "fallback": "Piglin Outstation Key"
+              }
+            },
+            "type": "minecraft:set_components"
+          }
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

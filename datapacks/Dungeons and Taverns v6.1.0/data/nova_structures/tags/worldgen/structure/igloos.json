@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:igloo",
+	{
+		"id": "nova_structures:witch_igloo",
+		"required": false
+	},
+	{
+		"id": "nova_structures:ice_fishing_igloo",
+		"required": false
+	}
+  ]
+}

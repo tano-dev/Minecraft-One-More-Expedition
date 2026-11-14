@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+		"nova_structures:piglin_camp",
+		"nova_structures:piglin_camp_collony"
+  ]
+}

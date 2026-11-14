@@ -1,0 +1,18 @@
+{
+	"structures": [
+		{
+			"structure": "nova_structures:mangrove_witch_hut",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:dappled_witch_hut",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"spacing": 32,
+		"separation": 8,
+		"salt": 6583905,
+		"type": "minecraft:random_spread"
+	}
+}

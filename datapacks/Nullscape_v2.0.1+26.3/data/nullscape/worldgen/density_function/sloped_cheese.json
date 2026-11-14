@@ -1,0 +1,195 @@
+{
+  "type": "minecraft:add",
+  "left": {
+    "type": "minecraft:mul",
+    "left": 4,
+    "right": {
+      "type": "minecraft:quarter_negative",
+      "input": {
+        "type": "minecraft:mul",
+        "left": {
+          "type": "minecraft:add",
+          "left": "nullscape:depth",
+          "right": {
+            "type": "minecraft:mul",
+            "left": {
+              "type": "minecraft:cache",
+              "input": {
+                "type": "minecraft:slice",
+                "axis": "y",
+                "coordinate": 0,
+                "input": {
+                  "type": "minecraft:mul",
+                  "left": {
+                    "type": "minecraft:clamp",
+                    "min": 0,
+                    "max": 1.28,
+                    "input": {
+                      "type": "minecraft:spline",
+                      "spline": {
+                        "coordinate": "nullscape:overworld_copy/continents",
+                        "points": [
+                          {
+                            "location": 0,
+                            "value": {
+                              "coordinate": "nullscape:overworld_copy/erosion",
+                              "points": [
+                                {
+                                  "location": 0.3,
+                                  "value": 0,
+                                  "derivative": 0
+                                },
+                                {
+                                  "location": 0.4,
+                                  "value": {
+                                    "coordinate": "nullscape:overworld_copy/ridges",
+                                    "points": [
+                                      {
+                                        "location": 0,
+                                        "value": 0,
+                                        "derivative": 1.75
+                                      }
+                                    ]
+                                  },
+                                  "derivative": 0
+                                }
+                              ]
+                            },
+                            "derivative": 0
+                          },
+                          {
+                            "location": 0.15,
+                            "value": 0,
+                            "derivative": 0
+                          },
+                          {
+                            "location": 0.3,
+                            "value": {
+                              "coordinate": "nullscape:overworld_copy/erosion",
+                              "points": [
+                                {
+                                  "location": -0.3,
+                                  "value": {
+                                    "coordinate": "nullscape:overworld_copy/ridges",
+                                    "points": [
+                                      {
+                                        "location": -0.5,
+                                        "value": 0.65,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": -0.3,
+                                        "value": 0,
+                                        "derivative": -3
+                                      },
+                                      {
+                                        "location": 0,
+                                        "value": 0,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.3,
+                                        "value": 0,
+                                        "derivative": 4
+                                      },
+                                      {
+                                        "location": 0.5,
+                                        "value": 0.85,
+                                        "derivative": 0
+                                      }
+                                    ]
+                                  },
+                                  "derivative": 0
+                                },
+                                {
+                                  "location": 0,
+                                  "value": {
+                                    "coordinate": "nullscape:overworld_copy/ridges",
+                                    "points": [
+                                      {
+                                        "location": -0.5,
+                                        "value": 0.15,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": -0.3,
+                                        "value": 0,
+                                        "derivative": 1.5
+                                      },
+                                      {
+                                        "location": 0,
+                                        "value": 0,
+                                        "derivative": 0
+                                      }
+                                    ]
+                                  },
+                                  "derivative": 0
+                                },
+                                {
+                                  "location": 0.3,
+                                  "value": {
+                                    "coordinate": "nullscape:overworld_copy/ridges",
+                                    "points": [
+                                      {
+                                        "location": -0.5,
+                                        "value": 0,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": -0.3,
+                                        "value": 0,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0,
+                                        "value": 0,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.3,
+                                        "value": 0,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.5,
+                                        "value": 0,
+                                        "derivative": 0
+                                      }
+                                    ]
+                                  },
+                                  "derivative": 0
+                                }
+                              ]
+                            },
+                            "derivative": 0
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "right": {
+                    "type": "minecraft:cache",
+                    "input": {
+                      "type": "minecraft:blend_alpha"
+                    }
+                  }
+                }
+              }
+            },
+            "right": {
+              "type": "minecraft:half_negative",
+              "input": {
+                "type": "minecraft:noise",
+                "noise": "nullscape:overworld_copy/jagged",
+                "xz_scale": 1500,
+                "y_scale": 0
+              }
+            }
+          }
+        },
+        "right": "nullscape:base/factor"
+      }
+    }
+  },
+  "right": "nullscape:base/base_3d_noise"
+}

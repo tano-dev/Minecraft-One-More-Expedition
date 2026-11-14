@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:clamp",
+  "input": {
+    "type": "minecraft:add",
+    "left": 1,
+    "right": {
+      "type": "minecraft:mul",
+      "left": "tectonic:underground_river/noise/roof_sharpness",
+      "right": "tectonic:noise/continent/ridges_folded"
+    }
+  },
+  "min": 0,
+  "max": 1
+}

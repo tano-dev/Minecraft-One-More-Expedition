@@ -1,0 +1,17 @@
+{
+    "name": "grim_kingdoms:chillhall_plains_refuge",
+    "fallback": "minecraft:empty",
+    "elements": [
+        
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:plains/chillhall_plains_refuge"
+            },
+            "weight": 1
+        }
+	
+    ]
+}

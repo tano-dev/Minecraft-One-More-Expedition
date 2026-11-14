@@ -1,0 +1,145 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 14,
+          "name": "minecraft:sweet_berries",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 3,
+              "max": 10
+            },
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "name": "minecraft:bone",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 3,
+              "max": 6
+            },
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:spruce_leaves",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 3,
+              "max": 10
+            },
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.33
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 8,
+          "name": "minecraft:spruce_sapling",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 4
+            },
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.33
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:fern",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 5
+            },
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.33
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:spruce_log",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 8
+            },
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.33
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 8,
+          "name": "minecraft:stick",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 3,
+              "max": 8
+            },
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.45
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:short_grass",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 4
+            },
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.33
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

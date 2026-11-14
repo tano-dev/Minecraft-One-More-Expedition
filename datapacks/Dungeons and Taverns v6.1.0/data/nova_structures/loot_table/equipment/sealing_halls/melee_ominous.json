@@ -1,0 +1,517 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:iron_helmet"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:iron_chestplate"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:iron_leggings"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#nova_structures:structure/sealing_halls_ghasted"
+                      }
+                    ],
+                    "name": "minecraft:iron_boots"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_sword",
+                    "modifier": [
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#nova_structures:structure/sealing_halls_ghasted"
+                      }
+                    ]
+                  }
+                ],
+                "rolls": 1
+              }
+            ]
+          },
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:quartz",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:diamond_helmet"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:quartz",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:diamond_chestplate"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:quartz",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:diamond_leggings"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:quartz",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:diamond_boots"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_sword",
+                    "modifier": [
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#nova_structures:structure/sealing_halls_ghasted"
+                      }
+                    ]
+                  }
+                ],
+                "rolls": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:diamond",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:netherite_helmet"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:diamond",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:netherite_chestplate"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:diamond",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:netherite_leggings"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:diamond",
+                            "pattern": "minecraft:rib"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      },
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#nova_structures:structure/sealing_halls_ghasted"
+                      }
+                    ],
+                    "name": "minecraft:netherite_boots"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_sword",
+                    "modifier": [
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": {
+                          "type": "minecraft:uniform",
+                          "max": 25,
+                          "min": 10
+                        },
+                        "options": "#nova_structures:structure/sealing_halls_ghasted"
+                      }
+                    ]
+                  }
+                ],
+                "rolls": 1
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

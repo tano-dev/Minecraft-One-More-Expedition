@@ -1,0 +1,60 @@
+{
+  "name": "incendium:reactor_decor",
+  "fallback": "incendium:reactor/empty_station",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:reactor/decor/station1",
+        "processors": "incendium:reactor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:reactor/decor/station2",
+        "processors": "incendium:reactor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:reactor/decor/station3",
+        "processors": "incendium:reactor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:reactor/decor/station4",
+        "processors": "incendium:reactor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:reactor/decor/station5",
+        "processors": "incendium:reactor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:reactor/decor/station6",
+        "processors": "incendium:reactor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

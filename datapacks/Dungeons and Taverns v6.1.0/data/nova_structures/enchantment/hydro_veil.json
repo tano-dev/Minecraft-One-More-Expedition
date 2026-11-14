@@ -1,0 +1,258 @@
+{
+  "description": {
+    "translate": "enchantment.dnt.hydro_veil",
+    "fallback": "Hydro Veil"
+  },
+  "supported_items": "#minecraft:harnesses",
+  "weight": 1,
+  "max_level": 4,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 15
+  },
+  "max_cost": {
+    "base": 10,
+    "per_level_above_first": 15
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "body"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "type": "minecraft:random_chance",
+                      "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                          "type": "minecraft:lookup",
+                          "values": [
+                            100,
+                            0,
+                            0,
+                            0
+                          ],
+                          "fallback": 0
+                        }
+                      }
+                    },
+                    {
+                      "type": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "minecraft:periodic_tick": 80
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "type": "minecraft:random_chance",
+                      "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                          "type": "minecraft:lookup",
+                          "values": [
+                            0,
+                            100,
+                            0,
+                            0
+                          ],
+                          "fallback": 0
+                        }
+                      }
+                    },
+                    {
+                      "type": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "minecraft:periodic_tick": 60
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "type": "minecraft:random_chance",
+                      "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                          "type": "minecraft:lookup",
+                          "values": [
+                            0,
+                            0,
+                            100,
+                            0
+                          ],
+                          "fallback": 0
+                        }
+                      }
+                    },
+                    {
+                      "type": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "minecraft:periodic_tick": 40
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "type": "minecraft:random_chance",
+                      "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                          "type": "minecraft:lookup",
+                          "values": [
+                            0,
+                            0,
+                            0,
+                            100
+                          ],
+                          "fallback": 100
+                        }
+                      }
+                    },
+                    {
+                      "type": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "minecraft:periodic_tick": 20
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "type": "minecraft:inverted",
+                      "term": {
+                        "type": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                          "minecraft:location": {
+                            "position": {
+                              "y": {
+                                "min": 187,
+                                "max": 196
+                              }
+                            },
+                            "dimension": "minecraft:overworld"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "minecraft:inverted",
+                      "term": {
+                        "type": "minecraft:environment_attribute_check",
+                        "attribute": "minecraft:visual/cloud_color",
+                        "value": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:weather_check",
+                  "raining": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:location": {
+                    "dimension": "minecraft:the_nether"
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:weather_check",
+              "thundering": false
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:enchantment/hydro_veil_check"
+        }
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:burning_time",
+        "id": "nova_structures:hydro_veil.no_burn",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.25,
+          "per_level_above_first": -0.25
+        },
+        "operation": "add_multiplied_base"
+      },
+      {
+        "attribute": "minecraft:explosion_knockback_resistance",
+        "id": "nova_structures:hydro_veil.no_blowback",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.25,
+          "per_level_above_first": 0.25
+        },
+        "operation": "add_multiplied_base"
+      }
+    ],
+    "minecraft:damage_protection": [
+      {
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "#nova_structures:fire_and_explosions",
+                "expected": true
+              },
+              {
+                "id": "#minecraft:bypasses_invulnerability",
+                "expected": false
+              }
+            ]
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 5,
+            "per_level_above_first": 5
+          }
+        }
+      }
+    ]
+  }
+}

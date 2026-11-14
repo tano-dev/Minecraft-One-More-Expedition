@@ -1,0 +1,235 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": {
+          "type": "minecraft:storage",
+          "storage": "mt:settings",
+          "path": "3.initial"
+        },
+        "p": {
+          "type": "minecraft:mul",
+          "inputs": [
+            {
+              "type": "minecraft:from_int",
+              "input": {
+                "type": "score",
+                "target": "this",
+                "score": "mt.total"
+              }
+            },
+            1e-06
+          ]
+        }
+      },
+      "bonus_rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:charms/common",
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.025
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_stone",
+          "weight": 3,
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 599999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 3
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:potion",
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.16
+          },
+          "modifier": {
+            "type": "minecraft:set_potion",
+            "id": "minecraft:slow_falling"
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:hacks/overworld_tp",
+          "weight": 1,
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.05
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 550000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:custom_items/better_flight_rocket",
+          "weight": 1,
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 700000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chorus_fruit",
+          "weight": 3,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 3,
+              "max": 6
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_rod",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shulker_shell",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dragon_breath",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 3
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "weight": 3,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 6
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:phantom_membrane",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

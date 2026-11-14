@@ -1,0 +1,23 @@
+{
+    "schemaVersion": 1,
+    "authors": ["Hoponopono"],
+    "contact": {
+    "discord": "discord.gg/CZQthZJjPc"
+},
+"custom": {
+    "modmenu": {
+        "links": {
+            "modmenu.discord": "https://discord.gg/CZQthZJjPc",
+            "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/hopo-better-ruined-portals",
+            "modmenu.modrinth": "https://modrinth.com/datapack/hopo-better-ruined-portals"
+        }
+    }
+},
+    "environment": "*",
+    "name": "Hopo Better Ruined Portal",
+    "id": "hopobetterruinedportal",
+    "version": "1.5.2",
+    "description": "§7A mod that improve how the portals look in your world",
+    "license": "LGPL-3.0-or-later",
+    "icon": "pack.png"
+}   

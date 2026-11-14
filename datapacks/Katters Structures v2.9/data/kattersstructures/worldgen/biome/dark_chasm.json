@@ -1,0 +1,82 @@
+{
+  "attributes": {
+    "minecraft:visual/fog_start_distance": 20,
+    "minecraft:visual/fog_color": 0,
+    "minecraft:visual/sky_color": 0,
+    "minecraft:visual/water_fog_color": 0,
+    "minecraft:audio/ambient_sounds": {
+      "modifier": "override",
+      "argument": {
+        "mood": {
+          "sound": "minecraft:ambient.cave",
+          "tick_delay": 6000,
+          "block_search_extent": 8,
+          "offset": 2
+        }
+      }
+    },
+    "minecraft:gameplay/natural_mob_spawns": {
+      "modifier": "overlay",
+      "argument": {
+        "spawns_by_category": {
+          "ambient": [],
+          "creature": [],
+          "misc": [],
+          "monster": [
+            {
+              "type": "minecraft:drowned",
+              "weight": 10,
+              "count": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 5
+              }
+            },
+            {
+              "type": "minecraft:skeleton",
+              "weight": 10,
+              "count": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 5
+              }
+            }
+          ],
+          "underground_water_creature": []
+        },
+        "spawn_costs": {}
+      }
+    }
+  },
+  "temperature": 2,
+  "downfall": 2,
+  "has_precipitation": false,
+  "temperature_modifier": "none",
+  "effects": {
+    "water_color": 0,
+    "grass_color": 3352858,
+    "foliage_color": 3352858
+  },
+  "carvers": [],
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:underwater_magma",
+      "kattersstructures:underwarter_soul_sand"
+    ],
+    [],
+    [],
+    [
+      "kattersstructures:boulder",
+      "kattersstructures:dead_bush",
+      "kattersstructures:dead_coral_tree",
+      "kattersstructures:dead_corals"
+    ],
+    []
+  ]
+}

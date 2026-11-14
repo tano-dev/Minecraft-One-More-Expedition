@@ -1,0 +1,54 @@
+{
+  "_default": {
+    "note": "Vanilla: count=10/chunk. Current: count=8/chunk (-20.0%). Higher count = more veins.",
+    "vanilla_placement": [
+      {
+        "type": "minecraft:count",
+        "count": 10
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:height_range",
+        "height": {
+          "type": "minecraft:trapezoid",
+          "max_inclusive": {
+            "absolute": 56
+          },
+          "min_inclusive": {
+            "absolute": -24
+          }
+        }
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  },
+  "feature": "minecraft:ore_iron",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 8
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "max_inclusive": {
+          "absolute": 56
+        },
+        "min_inclusive": {
+          "absolute": -24
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,506 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:redstone",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 6,
+                            "max": 12
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 7,
+                    "name": "minecraft:glowstone",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 3
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:glowstone_dust",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 10,
+                            "max": 17
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 8,
+                    "name": "minecraft:amethyst_shard",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 10,
+                            "max": 12
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 22,
+                    "name": "minecraft:string",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.425
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 4
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 30,
+                    "name": "minecraft:paper",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.3
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 4
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 14,
+                    "name": "minecraft:book",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.3
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 1
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 13,
+                    "name": "minecraft:cobweb",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.3
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 3
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 13,
+                    "name": "minecraft:stick",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.3
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 5
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 9,
+                    "name": "minecraft:leather",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.25
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 2,
+                            "max": 5
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 9,
+                    "name": "minecraft:rabbit_hide",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.25
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 2,
+                            "max": 6
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:item_frame",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.25
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 2
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:bundle",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.35
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 24,
+                    "name": "minecraft:ink_sac",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.25
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 3
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:glow_ink_sac",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.25
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 3,
+                            "max": 6
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 21,
+                    "name": "minecraft:feather",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.4
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 2,
+                            "max": 6
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 17,
+                    "name": "minecraft:gunpowder",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.3
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 5,
+                            "max": 8
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:book",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.25
+                    },
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 3,
+                            "max": {
+                                "type": "minecraft:uniform",
+                                "min": 7,
+                                "max": {
+                                    "type": "minecraft:uniform",
+                                    "min": 14,
+                                    "max": 26
+                                }
+                            }
+                        },
+                        "options": "#minecraft:on_random_loot"
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 22,
+                            "max": 36
+                        },
+                        "options": "#minecraft:on_random_loot"
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:fire_resistance"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:harming"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:healing"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:invisibility"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:leaping"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:night_vision"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:poison"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:regeneration"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:slowness"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:strength"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:swiftness"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:slowness"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:water_breathing"
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_potion",
+                        "id": "minecraft:weakness"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,502 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": {
+          "type": "minecraft:storage",
+          "storage": "mt:settings",
+          "path": "3.initial"
+        },
+        "p": {
+          "type": "minecraft:mul",
+          "inputs": [
+            {
+              "type": "minecraft:from_int",
+              "input": {
+                "type": "score",
+                "target": "this",
+                "score": "mt.total"
+              }
+            },
+            1e-06
+          ]
+        }
+      },
+      "bonus_rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:charms/rare",
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.02
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 1,
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.5
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "max": 699999
+                  }
+                }
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 2
+            }
+          }
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:potion",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.1
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          },
+          "modifier": [
+            {
+              "type": "set_count",
+              "count": 1
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "item": "obreath"
+                },
+                "minecraft:max_stack_size": 5,
+                "minecraft:potion_contents": {
+                  "custom_color": 3041023,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:water_breathing",
+                      "amplifier": 1,
+                      "duration": 2400,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:regeneration",
+                      "amplifier": 0,
+                      "duration": 2400,
+                      "show_particles": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "set_name",
+              "name": [
+                {
+                  "text": "Potion of Gills",
+                  "color": "aqua",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_11",
+          "weight": 1,
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.2
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 700000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          },
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "!minecraft:jukebox_playable": {},
+                "minecraft:item_model": "command_block",
+                "minecraft:custom_data": {
+                  "spawn": "mt.dolphin_spawn"
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "sound": "intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 5,
+                  "cooldown_group": "mt:hack"
+                },
+                "damage_resistant": {
+                  "types": "#minecraft:is_fire"
+                },
+                "minecraft:rarity": "rare",
+                "!max_damage": {},
+                "!damage": {},
+                "!minecraft:tool": {},
+                "minecraft:max_stack_size": 16
+              }
+            },
+            {
+              "type": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "type": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Dolphin Hack",
+                  "color": "aqua",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "  "
+                },
+                {
+                  "text": "Spawns a Dolphin",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "weight": 1,
+          "quality": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 1,
+          "quality": 1,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "weight": 2,
+          "quality": 1,
+          "modifier": {
+            "type": "minecraft:limit_count",
+            "limit": {
+              "min": 4,
+              "max": 8
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_cod",
+          "weight": 2,
+          "quality": 1,
+          "modifier": {
+            "type": "minecraft:limit_count",
+            "limit": {
+              "min": 4,
+              "max": 8
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_salmon",
+          "weight": 2,
+          "quality": 1,
+          "modifier": {
+            "type": "minecraft:limit_count",
+            "limit": {
+              "min": 4,
+              "max": 8
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "weight": 2,
+          "quality": 1,
+          "modifier": {
+            "type": "minecraft:limit_count",
+            "limit": {
+              "min": 1,
+              "max": 2
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "weight": 2,
+          "quality": 1,
+          "modifier": {
+            "type": "minecraft:limit_count",
+            "limit": {
+              "min": 1,
+              "max": 2
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "weight": 1,
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.5
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "max": 599999
+                  }
+                }
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:enchant_with_levels",
+            "levels": 30,
+            "options": "#minecraft:in_enchanting_table"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:turtle_helmet",
+          "weight": 1,
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.4
+          },
+          "modifier": [
+            {
+              "type": "minecraft:enchant_with_levels",
+              "levels": 30
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "armor": "turt"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "quality": 1,
+          "name": "minecraft:enchanted_book",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "min": 600000
+              }
+            }
+          },
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "minecraft:loyalty": 3,
+                  "minecraft:channeling": 1,
+                  "minecraft:impaling": 5
+                }
+              }
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "quality": 1,
+          "name": "minecraft:enchanted_book",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "min": 600000
+              }
+            }
+          },
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "minecraft:riptide": 3
+                }
+              }
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "quality": 1,
+          "name": "minecraft:enchanted_book",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "min": 600000
+              }
+            }
+          },
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "minecraft:aqua_affinity": 1,
+                  "minecraft:respiration": 3,
+                  "minecraft:depth_strider": 3
+                }
+              }
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_ingot",
+          "weight": 1,
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.005
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 1
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

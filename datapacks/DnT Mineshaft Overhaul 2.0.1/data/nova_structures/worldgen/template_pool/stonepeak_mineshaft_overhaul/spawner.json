@@ -1,0 +1,33 @@
+{
+	"name": "nova_structures:stonepeak_mineshaft_overhaul/spawner",
+	"fallback": "nova_structures:stonepeak_mineshaft_overhaul/spawner",
+	"elements": [
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/stonepeak/stonepeak_spawner_spider",
+				"projection": "rigid",
+				"processors": "nova_structures:stony_mainline_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/stonepeak/stonepeak_spawner_skeleton",
+				"projection": "rigid",
+				"processors": "nova_structures:stony_mainline_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/stonepeak/stonepeak_spawner_zombie",
+				"projection": "rigid",
+				"processors": "nova_structures:stony_mainline_processor"
+			}
+		}
+	]
+}

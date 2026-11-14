@@ -1,0 +1,20 @@
+{
+  "values": [
+    "minecraft:desert",
+    {"id": "floravive:cactus_desert","required": false},
+    {"id": "floravive:shrubland","required": false},
+    {"id": "terralith:ancient_sands","required": false},
+    {"id": "terralith:desert_canyon","required": false},
+    {"id": "terralith:desert_oasis","required": false},
+    {"id": "terralith:desert_spires","required": false},
+    {"id": "terralith:lush_desert","required": false},
+    {"id": "terralith:sandstone_valley","required": false},
+    {"id": "biomesoplenty:lush_desert","required": false},
+    {"id": "natures_spirit:arid_highlands","required": false},
+    {"id": "natures_spirit:drylands","required": false},
+    {"id": "natures_spirit:scorched_dunes","required": false},
+    {"id": "natures_spirit:stratified_desert","required": false},
+    {"id": "regions_unexplored:joshua_desert","required": false},
+    {"id": "regions_unexplored:saguaro_desert","required": false}
+  ]
+}

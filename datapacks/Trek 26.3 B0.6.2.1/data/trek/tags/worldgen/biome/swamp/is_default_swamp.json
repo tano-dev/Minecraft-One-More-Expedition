@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:swamp",
+    {"id": "floravive:freshwater_swamp","required": false},
+    {"id": "terralith:orchid_swamp","required": false},
+    {"id": "biomesoplenty:bog","required": false},
+    {"id": "regions_unexplored:fen","required": false},
+    {"id": "regions_unexplored:fungal_fen","required": false},
+    {"id": "regions_unexplored:marsh","required": false}
+  ]
+}

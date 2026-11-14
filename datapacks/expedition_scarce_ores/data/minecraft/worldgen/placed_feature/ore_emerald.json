@@ -1,0 +1,54 @@
+{
+  "_default": {
+    "note": "Vanilla: count=100/chunk. Current: count=200/chunk (x2 / +100%).",
+    "vanilla_placement": [
+      {
+        "type": "minecraft:count",
+        "count": 100
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:height_range",
+        "height": {
+          "type": "minecraft:trapezoid",
+          "max_inclusive": {
+            "absolute": 480
+          },
+          "min_inclusive": {
+            "absolute": -16
+          }
+        }
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  },
+  "feature": "minecraft:ore_emerald",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 200
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "max_inclusive": {
+          "absolute": 480
+        },
+        "min_inclusive": {
+          "absolute": -16
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

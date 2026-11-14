@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/trinket/radiant_jewel"
+        }
+      ],
+      "condition": {
+        "type": "int_value_check",
+        "value": "stellarity:item_check/radiant_jewel",
+        "test": 1
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/armor/elytra/empress_wings"
+        }
+      ],
+      "condition": {
+        "type": "int_value_check",
+        "value": "stellarity:item_check/empress_wings",
+        "test": 1
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/weapon/kaleidoscope"
+        }
+      ],
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "minecraft:random_chance",
+            "chance": 0.25
+          },
+          {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/kaleidoscope",
+            "test": 1
+          }
+        ]
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:block/pixie_in_a_jar/radiant"
+        }
+      ],
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "minecraft:random_chance",
+            "chance": 0.15
+          },
+          {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/pixie_in_a_jar",
+            "test": 1
+          }
+        ]
+      }
+    }
+  ]
+}

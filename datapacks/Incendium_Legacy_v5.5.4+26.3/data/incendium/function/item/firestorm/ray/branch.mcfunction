@@ -1,0 +1,10 @@
+execute if score #hit in.fire_laser matches 0 positioned ~-0.05 ~-0.05 ~-0.05 as @n[type=#incendium:mobs,tag=!laser,dx=0] positioned ~-0.85 ~-0.85 ~-0.85 if entity @s[dx=0] run function incendium:item/firestorm/ray/hit_chain
+scoreboard players add #distance2 in.fire_laser 1
+particle minecraft:flame ~ ~ ~ 0.01 0.01 0.01 0.001 1 force
+execute positioned ^ ^ ^0.2 unless block ~ ~ ~ #incendium:airs run particle minecraft:dust{color:[1.0, 0.0, 0.0], scale:2.25} ~ ~ ~ 0 0 0 0.03 4 force
+execute if score #hit in.fire_laser matches 0 if predicate incendium:random/7 if score #distance2 in.fire_laser matches 0..80 positioned ^ ^ ^0.2 rotated ~-10 ~ if block ~ ~ ~ #incendium:airs run function incendium:item/firestorm/ray/branch
+execute if score #hit in.fire_laser matches 0 if predicate incendium:random/7 if score #distance2 in.fire_laser matches 0..80 positioned ^ ^ ^0.2 rotated ~10 ~ if block ~ ~ ~ #incendium:airs run function incendium:item/firestorm/ray/branch
+execute if score #hit in.fire_laser matches 0 if predicate incendium:random/7 if score #distance2 in.fire_laser matches 0..80 positioned ^ ^ ^0.2 rotated ~ ~-10 if block ~ ~ ~ #incendium:airs run function incendium:item/firestorm/ray/branch
+execute if score #hit in.fire_laser matches 0 if predicate incendium:random/7 if score #distance2 in.fire_laser matches 0..80 positioned ^ ^ ^0.2 rotated ~ ~10 if block ~ ~ ~ #incendium:airs run function incendium:item/firestorm/ray/branch
+execute if score #hit in.fire_laser matches 0 if predicate incendium:random/0_4 if score #distance2 in.fire_laser matches 0..80 positioned ^ ^ ^0.2 facing entity @e[type=#incendium:mobs,tag=!laser,distance=..10,sort=nearest,limit=1] eyes if block ~ ~ ~ #incendium:airs run function incendium:item/firestorm/ray/branch
+execute if score #hit in.fire_laser matches 0 if predicate incendium:random/80 if score #distance2 in.fire_laser matches ..80 positioned ^ ^ ^0.2 rotated ~ ~ if block ~ ~ ~ #incendium:airs run function incendium:item/firestorm/ray/branch

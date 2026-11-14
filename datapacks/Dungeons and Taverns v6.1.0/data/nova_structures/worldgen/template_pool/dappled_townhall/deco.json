@@ -1,0 +1,141 @@
+{
+	"name": "minecraft:jungle_house",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_1",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_2",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_3",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_4",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_5",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_6",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_7",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_slim_1",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_slim_2",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_slim_3",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_slim_4",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_slim_5",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_slim_6",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_slim_7",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/deco/townhall_deco_slim_8",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		}
+	]
+}

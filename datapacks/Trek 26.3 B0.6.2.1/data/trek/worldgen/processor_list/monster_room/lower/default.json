@@ -1,0 +1,379 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:air_water"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cobblestone"
+          },
+          "output_state": {
+            "id": "minecraft:air"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.3,
+            "max_chance": 0.3
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_bricks"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.143,
+            "max_chance": 0.143
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:cracked_deepslate_bricks"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.167,
+            "max_chance": 0.167
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:polished_deepslate"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.2,
+            "max_chance": 0.2
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:chiseled_deepslate"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.5,
+            "max_chance": 0.5
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:cobbled_deepslate"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.75,
+            "max_chance": 0.75
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_tiles"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:cracked_deepslate_tiles"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:coal_ore",
+            "probability": 0.008
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_emerald_ore"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:coal_ore",
+            "probability": 0.022
+          },
+          "output_state": {
+            "id": "minecraft:coal_block"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:coal_ore",
+            "probability": 0.021
+          },
+          "output_state": {
+            "id": "minecraft:raw_iron_block"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:coal_ore",
+            "probability": 0.021
+          },
+          "output_state": {
+            "id": "minecraft:raw_gold_block"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:coal_ore",
+            "probability": 0.032
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_diamond_ore"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:coal_ore",
+            "probability": 0.444
+          },
+          "output_state": {
+            "id": "minecraft:deepslate"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:coal_ore",
+            "probability": 0.6
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_iron_ore"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:coal_ore",
+            "probability": 0.25
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_redstone_ore"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:coal_ore",
+            "probability": 0.333
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_lapis_ore"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:coal_ore",
+            "probability": 0.7
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_gold_ore"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:coal_ore"
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_coal_ore"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:spawner",
+            "probability": 0.5
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "output_nbt": {
+            "SpawnData": {
+              "entity": {
+                "id": "minecraft:zombie"
+              }
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:zombie"
+                }
+              }
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:spawner",
+            "probability": 0.5
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "output_nbt": {
+            "SpawnData": {
+              "entity": {
+                "id": "minecraft:skeleton"
+              }
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:skeleton"
+                }
+              }
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:spawner"
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "output_nbt": {
+            "SpawnData": {
+              "entity": {
+                "id": "minecraft:spider"
+              }
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:spider"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

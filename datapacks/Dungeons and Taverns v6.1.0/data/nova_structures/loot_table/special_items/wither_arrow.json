@@ -1,0 +1,39 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "modifier": [
+            {
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 7561558,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:wither",
+                      "duration": 4800
+                    }
+                  ],
+                  "custom_name": "dnt_wither"
+                }
+              },
+              "type": "minecraft:set_components"
+            },
+            {
+              "count": {
+                "min": 10,
+                "max": 15,
+                "type": "uniform"
+              },
+              "type": "set_count"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

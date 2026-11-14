@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    "stellarity:item/holding/spirit_dagger/mainhand",
+    "stellarity:item/holding/spirit_dagger/offhand"
+  ]
+}

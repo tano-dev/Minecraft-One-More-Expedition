@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:disk",
+  "state_provider": {
+    "type": "rule_based",
+    "fallback": {
+      "type": "minecraft:simple",
+      "state": {
+        "id": "minecraft:dark_oak_fence",
+        "properties": {
+          "waterlogged": "false"
+        }
+      }
+    },
+    "rules": [
+      {
+        "if_true": {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [-1,0,0],
+              "fluids": "#minecraft:water"
+            },
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [1,0,0],
+              "fluids": "#minecraft:water"
+            },
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [0,0,-1],
+              "fluids": "#minecraft:water"
+            },
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [0,0,1],
+              "fluids": "#minecraft:water"
+            }
+          ]
+        },
+        "then": {
+          "type": "minecraft:simple",
+          "state": {
+            "id": "minecraft:dark_oak_fence",
+            "properties": {
+              "waterlogged": "true"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "radius": 0,
+  "half_height": 4,
+  "target": {
+    "type": "minecraft:matching_blocks",
+    "blocks": "minecraft:dark_oak_fence"
+  }
+}

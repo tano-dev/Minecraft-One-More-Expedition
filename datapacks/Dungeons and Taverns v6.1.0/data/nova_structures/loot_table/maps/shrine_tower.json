@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:buried_trial_chambers_map",
+          "modifier": [
+            {
+              "destination": "nova_structures:shrine_tower",
+              "decoration": "minecraft:trial_chambers",
+              "zoom": 1,
+              "search_radius": 100,
+              "skip_existing_chunks": false,
+              "type": "minecraft:exploration_map"
+            },
+            {
+              "components": {
+                "minecraft:dyed_color": 11822676,
+                "minecraft:rarity": "uncommon",
+                "minecraft:item_name": {
+                  "translate": "item.dnt.filled_map.shrine_tower",
+                  "fallback": "Shrine Tower Map"
+                },
+				        "minecraft:custom_model_data": {
+                  "floats": [],
+                  "strings": [
+                    "dnt:map"
+                ]
+               },
+               "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:dyed_color"
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

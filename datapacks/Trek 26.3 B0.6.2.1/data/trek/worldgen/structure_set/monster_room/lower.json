@@ -1,0 +1,29 @@
+{
+  "structures": [
+    {
+      "structure": "trek:monster_room/lower/deep_dark",
+      "weight": 10
+    },
+    {
+      "structure": "trek:monster_room/lower/dripstone",
+      "weight": 10
+    },
+    {
+      "structure": "trek:monster_room/lower/lush",
+      "weight": 10
+    },
+    {
+      "structure": "trek:monster_room/lower/default",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1,
+    "separation": 0,
+    "spread_type": "linear",
+    "salt": 98700016,
+    "frequency_reduction_method": "default",
+    "frequency": 1
+  }
+}

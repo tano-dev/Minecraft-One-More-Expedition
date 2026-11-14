@@ -1,0 +1,48 @@
+{
+	"type": "minecraft:generic",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:filled_map",
+					"weight": 1,
+					"modifier": [
+						{
+							"type": "minecraft:set_count",
+							"count": 1
+						},
+						{
+							"type": "minecraft:exploration_map",
+							"destination": "kattersstructures:armory",
+							"decoration": "trial_chambers",
+							"zoom": 1,
+							"skip_existing_chunks": true
+						},
+						{
+							"type": "minecraft:set_name",
+							"entity": "this",
+							"target": "custom_name",
+							"name": {
+								"translate": "item.kattersstructures.map_armory.name",
+								"fallback": "Armory Map"
+							}
+						},
+						{
+							"type": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"translate": "item.kattersstructures.map_armory.lore",
+									"fallback": "Shows the location of a Katters Structure Armory"
+								}
+							],
+							"mode": "insert"
+						}
+					]
+				}
+			]
+		}
+	]
+}

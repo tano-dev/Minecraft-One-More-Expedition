@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:condition",
+  "if_true": "nullscape:is_biome/void_barrens",
+  "then_run": {
+    "type": "minecraft:sequence",
+    "sequence": [
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:noise_threshold",
+          "noise": "nullscape:crystal/surface",
+          "min_threshold": -0.25,
+          "max_threshold": 0.25
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": "minecraft:blackstone"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:noise_threshold",
+          "noise": "nullscape:crystal/surface",
+          "min_threshold": -0.575,
+          "max_threshold": 0.575
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": "minecraft:smooth_basalt"
+        }
+      },
+      {
+        "type": "minecraft:block",
+        "result_state": {
+          "id": "minecraft:basalt",
+          "properties": {
+            "axis": "y"
+          }
+        }
+      }
+    ]
+  }
+}

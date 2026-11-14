@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:flint"
+    },
+    "title": "Wasted Enchanted Item...",
+    "description": "Obtain an Enchanted Flint And Steel From a Rare Taiga Treasure",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mt:display/taiga/rare",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:flint_and_steel"
+            ],
+            "predicates": {
+              "minecraft:custom_data": "{item:\"flint\"}"
+            }
+          }
+        }
+      }
+    }
+  }
+}

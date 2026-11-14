@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:spring_feature",
+  "state": {
+    "id": "minecraft:lava"
+  },
+  "rock_count": 5,
+  "hole_count": 3,
+  "requires_block_below": false,
+  "valid_blocks": "#trek:spring_valid_blocks"
+}

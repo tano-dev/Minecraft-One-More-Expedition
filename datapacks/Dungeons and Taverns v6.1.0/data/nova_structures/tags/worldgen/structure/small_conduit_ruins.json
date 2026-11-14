@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "nova_structures:small_conduit_ruin_cold",
+    "nova_structures:small_conduit_ruin_warm"
+  ]
+}

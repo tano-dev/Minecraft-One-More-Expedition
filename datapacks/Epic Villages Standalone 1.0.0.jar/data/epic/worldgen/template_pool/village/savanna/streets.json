@@ -1,0 +1,194 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/corner_01"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/corner_03"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/crossroad_02"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/crossroad_03"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/crossroad_04"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/crossroad_05"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/crossroad_06"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/crossroad_07"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/straight_01"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/straight_02"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/straight_03"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/straight_04"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/straight_05"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/straight_06"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/straight_07"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/straight_08"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/straight_09"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/straight_10"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/straight_11"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/split_01"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/savanna/streets/split_02"
+            },
+            "weight": 1
+        }
+    ]
+}

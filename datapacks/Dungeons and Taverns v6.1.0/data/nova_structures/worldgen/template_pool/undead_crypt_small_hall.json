@@ -1,0 +1,15 @@
+{
+	"name": "nova_structures:undead_crypt",
+	"fallback": "nova_structures:undead_crypt_lock",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:undead_crypt/small_undead_crypt_hall",
+				"projection": "rigid",
+				"processors": "nova_structures:undead_crypt_degradation"
+			}
+		}
+	]
+}

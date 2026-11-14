@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 6000
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mt:database/save/stats"
+  }
+}

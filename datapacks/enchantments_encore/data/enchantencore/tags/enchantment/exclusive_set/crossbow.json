@@ -1,0 +1,13 @@
+{
+  "values": [
+    { "id": "enchantencore:ender_shot", "required": false },
+    { "id": "enchantencore:evokers_wrath", "required": false },
+    { "id": "enchantencore:forge_shot", "required": false },
+    { "id": "enchantencore:implosion", "required": false },
+    { "id": "enchantencore:lightning_bolt", "required": false },
+    { "id": "minecraft:infinity", "required": false },
+    { "id": "minecraft:quick_charge", "required": false },
+    { "id": "enchantencore:bomber", "required": false },
+    { "id": "enchantencore:flare", "required": false }
+  ]
+}

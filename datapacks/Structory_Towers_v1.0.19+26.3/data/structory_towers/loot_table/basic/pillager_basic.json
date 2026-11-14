@@ -1,0 +1,251 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 4
+            },
+            "bonus_rolls": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 80,
+                    "name": "minecraft:string",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 3
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 100,
+                    "name": "minecraft:wheat",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 5
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 80,
+                    "name": "minecraft:bread",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 6
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 80,
+                    "name": "minecraft:leather",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 3
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 50,
+                    "name": "minecraft:iron_axe",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.2,
+                                "max": 0.9
+                            }
+                        },
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 20
+                            },
+                            "options": "#minecraft:on_random_loot",
+                            "condition": {
+                                "type": "minecraft:random_chance",
+                                "chance": 0.2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 40,
+                    "name": "minecraft:crossbow",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.2,
+                                "max": 0.9
+                            }
+                        },
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 20
+                            },
+                            "options": "#minecraft:on_random_loot",
+                            "condition": {
+                                "type": "minecraft:random_chance",
+                                "chance": 0.2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 30,
+                    "name": "minecraft:bow",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.2,
+                                "max": 0.9
+                            }
+                        },
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": 0,
+                            "options": "#minecraft:on_random_loot",
+                            "condition": {
+                                "type": "minecraft:random_chance",
+                                "chance": 0.3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 80,
+                    "name": "minecraft:emerald",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 2
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 60,
+                    "name": "minecraft:arrow",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 3
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 30,
+                    "name": "minecraft:tripwire_hook"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 60,
+                    "name": "minecraft:white_wool",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 3
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 60,
+                    "name": "minecraft:pumpkin",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 3
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 40,
+                    "name": "minecraft:hay_block"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 40,
+                    "name": "minecraft:jack_o_lantern"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:dark_oak_boat"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 20,
+                    "value": "structory_towers:horse_equipment"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 10,
+                    "value": "structory_towers:potions"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:tipped_arrow",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "type": "minecraft:set_potion",
+                            "id": "minecraft:strong_poison"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

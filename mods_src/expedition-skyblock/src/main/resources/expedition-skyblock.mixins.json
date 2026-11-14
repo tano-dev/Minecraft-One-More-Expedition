@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.onemoreexpedition.skyblock.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "EndPortalMixin",
+    "NetherPortalMixin",
+    "PlayerKeepInventoryMixin",
+    "PortalShapeMixin",
+    "ServerPlayerKeepInventoryMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

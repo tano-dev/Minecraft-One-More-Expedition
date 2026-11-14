@@ -1,0 +1,196 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/spellbook/book_of_obstruct",
+          "condition": {
+            "type": "all_of",
+            "terms": [
+              {
+                "enchantment": "minecraft:looting",
+                "unenchanted_chance": 0.1,
+                "type": "random_chance_with_enchanted_bonus",
+                "enchanted_chance": {
+                  "type": "linear",
+                  "base": 0.4,
+                  "per_level_above_first": 0.3
+                }
+              },
+              {
+                "type": "int_value_check",
+                "value": "stellarity:item_check/book_of_obstruct",
+                "test": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/spellbook/book_of_obstruct",
+          "condition": {
+            "type": "all_of",
+            "terms": [
+              {
+                "type": "random_chance_with_enchanted_bonus",
+                "enchantment": "minecraft:looting",
+                "unenchanted_chance": 0.1,
+                "enchanted_chance": {
+                  "type": "linear",
+                  "base": 0.4,
+                  "per_level_above_first": 0.3
+                }
+              },
+              {
+                "type": "int_value_check",
+                "value": "stellarity:item_check/book_of_obstruct",
+                "test": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 8,
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/food/golden_chorus_fruit",
+          "modifier": [
+            {
+              "type": "set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/food/golden_chorus_fruit",
+            "test": 1
+          }
+        },
+        {
+          "type": "item",
+          "name": "purpur_block",
+          "modifier": [
+            {
+              "type": "set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/tool/shulker_pickaxe",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/shulker_tools",
+            "test": 1
+          }
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/tool/shulker_axe",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/shulker_tools",
+            "test": 1
+          }
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/tool/shulker_sword",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/shulker_tools",
+            "test": 1
+          }
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/tool/shulker_spear",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/shulker_tools",
+            "test": 1
+          }
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/tool/shulker_shovel",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/shulker_tools",
+            "test": 1
+          }
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/tool/shulker_hoe",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/shulker_tools",
+            "test": 1
+          }
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/armor/shulker/helmet",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/shulker_armor",
+            "test": 1
+          }
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/armor/shulker/chestplate",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/shulker_armor",
+            "test": 1
+          }
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/armor/shulker/leggings",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/shulker_armor",
+            "test": 1
+          }
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/armor/shulker/boots",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/shulker_armor",
+            "test": 1
+          }
+        }
+      ]
+    }
+  ]
+}

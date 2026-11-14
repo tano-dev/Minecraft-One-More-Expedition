@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "terralith:alpha_islands","required": false},
+    {"id": "regions_unexplored:alpha_grove","required": false}
+  ]
+}

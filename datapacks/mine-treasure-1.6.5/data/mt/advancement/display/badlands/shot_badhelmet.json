@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:crossbow"
+    },
+    "title": "Good Ol' Hawkeye",
+    "description": "Shoot From a Crossbow With The Badlands Helmet",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "mt:display/badlands/legendary",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "head": {
+                "predicates": {
+                  "minecraft:custom_data": "{armor:\"badlands_helmet\"}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

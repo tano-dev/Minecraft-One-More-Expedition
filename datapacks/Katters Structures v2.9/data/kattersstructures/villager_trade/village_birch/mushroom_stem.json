@@ -1,0 +1,37 @@
+{
+	"wants": {
+		"id": "minecraft:emerald",
+		"count": 1
+	},
+	"gives": {
+		"id": "minecraft:mushroom_stem",
+		"count": 2
+	},
+	"max_uses": 12,
+	"reputation_discount": 0.05,
+	"xp": 10,
+	"merchant_predicate": {
+		"type": "minecraft:all_of",
+		"terms": [
+			{
+				"type": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"location": {
+						"structures": "kattersstructures:village_birch"
+					}
+				}
+			},
+			{
+				"type": "minecraft:inverted",
+				"term": {
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"nbt": "{Tags:[\"katters_structures.beekeeper\"]}"
+					}
+				}
+			}
+		]
+	}
+}

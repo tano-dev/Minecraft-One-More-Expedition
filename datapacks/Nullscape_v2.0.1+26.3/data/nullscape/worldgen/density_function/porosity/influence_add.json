@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:max",
+    "left": 0,
+    "right": {
+      "type": "minecraft:mul",
+      "left": 0.475,
+      "right": {
+        "type": "minecraft:noise",
+        "noise": "nullscape:material/property/porosity",
+        "xz_scale": 1,
+        "y_scale": 1
+      }
+    }
+  }
+}

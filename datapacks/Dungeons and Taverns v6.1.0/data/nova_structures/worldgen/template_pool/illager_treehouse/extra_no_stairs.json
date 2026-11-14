@@ -1,0 +1,30 @@
+{
+	"name": "nova_structures:illager_camp_fire",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"element": {
+			"element_type": "minecraft:empty_pool_element"
+			},
+			"weight": 3
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:illager_treehouse/illager_treehouse_extra_2",
+				"projection": "rigid",
+				"processors": "nova_structures:illager_treehouse"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:illager_treehouse/illager_treehouse_extra_3",
+				"projection": "rigid",
+				"processors": "nova_structures:illager_treehouse"
+			}
+		}
+	]
+}

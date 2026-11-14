@@ -1,0 +1,62 @@
+{
+	"structures": [
+		{
+			"structure": "nova_structures:small_creeping_crypt",
+			"weight": 15
+		},
+		{
+			"structure": "nova_structures:small_undead_crypt",
+			"weight": 15
+		},
+		{
+			"structure": "nova_structures:surface_dungeon_default",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:surface_dungeon_desert",
+			"weight": 4
+		},
+		{
+			"structure": "nova_structures:surface_dungeon_snowy",
+			"weight": 4
+		},
+		{
+			"structure": "nova_structures:surface_dungeon_swamp",
+			"weight": 4
+		},
+		{
+			"structure": "nova_structures:surface_trial_dungeon_default",
+			"weight": 9
+		},
+		{
+			"structure": "nova_structures:surface_trial_dungeon_desert",
+			"weight": 36
+		},
+		{
+			"structure": "nova_structures:surface_trial_dungeon_snowy",
+			"weight": 36
+		},
+		{
+			"structure": "nova_structures:surface_trial_dungeon_swamp",
+			"weight": 36
+		},
+		{
+			"structure": "nova_structures:bogged_camp",
+			"weight": 60
+		},
+		{
+			"structure": "nova_structures:parched_camp",
+			"weight": 60
+		},
+		{
+			"structure": "nova_structures:stray_camp",
+			"weight": 60
+		}
+	],
+	"placement": {
+		"spacing": 40,
+		"separation": 16,
+		"salt": 6894540,
+		"type": "minecraft:random_spread"
+	}
+}

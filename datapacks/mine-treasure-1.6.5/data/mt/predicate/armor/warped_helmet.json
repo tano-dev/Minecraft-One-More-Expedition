@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "entity_type": "minecraft:player",
+    "equipment": {
+      "head": {
+        "predicates": {
+          "minecraft:custom_data": "{armor:\"warped_helmet\"}"
+        }
+      }
+    }
+  }
+}

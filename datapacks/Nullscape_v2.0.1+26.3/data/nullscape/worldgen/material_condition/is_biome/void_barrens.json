@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:biome",
+  "biome_is": [
+    "nullscape:void_barrens"
+  ]
+}

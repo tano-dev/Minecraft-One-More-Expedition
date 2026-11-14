@@ -1,0 +1,42 @@
+{
+	"name": "nova_structures:desert_temple/desert_temple_start",
+	"fallback": "nova_structures:desert_temple/trap",
+	"elements": [
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:desert_temple/desert_chest_no_trap",
+				"projection": "rigid",
+				"processors": "nova_structures:vanilla_desert_temple_degradation"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:desert_temple/desert_chest_trap",
+				"projection": "rigid",
+				"processors": "nova_structures:vanilla_desert_temple_degradation"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:desert_temple/desert_lesser_chest_no_trap",
+				"projection": "rigid",
+				"processors": "nova_structures:vanilla_desert_temple_degradation"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:desert_temple/desert_lesser_chest_trap",
+				"projection": "rigid",
+				"processors": "nova_structures:vanilla_desert_temple_degradation"
+			}
+		}
+	]
+}

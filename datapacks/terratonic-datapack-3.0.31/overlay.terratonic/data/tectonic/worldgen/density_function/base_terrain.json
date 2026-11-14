@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:max",
+  "left": "tectonic:sloped_cheese",
+  "right": "terralith:overworld/extra_terrain_sum"
+}

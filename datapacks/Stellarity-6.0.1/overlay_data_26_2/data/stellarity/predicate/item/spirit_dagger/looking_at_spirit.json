@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific/player": {
+      "looking_at": {
+        "entity_type": "minecraft:interaction",
+        "entity_tags": {
+          "all_of": [
+            "stellarity.spirit_dagger.spirit_ready"
+          ]
+        },
+        "distance": {
+          "absolute": {
+            "max": 70
+          }
+        }
+      }
+    }
+  }
+}

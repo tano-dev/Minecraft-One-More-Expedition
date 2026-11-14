@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "armor.chest": {
+        "items": [
+          "minecraft:elytra"
+        ],
+        "predicates": {
+          "minecraft:custom_data": "{incendium:{item:'infernal_feather'}}"
+        }
+      }
+    }
+  }
+}

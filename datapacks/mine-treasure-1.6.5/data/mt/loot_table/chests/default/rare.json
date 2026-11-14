@@ -1,0 +1,478 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": {
+          "type": "minecraft:storage",
+          "storage": "mt:settings",
+          "path": "3.initial"
+        },
+        "p": {
+          "type": "minecraft:mul",
+          "inputs": [
+            {
+              "type": "minecraft:from_int",
+              "input": {
+                "type": "score",
+                "target": "this",
+                "score": "mt.total"
+              }
+            },
+            1e-06
+          ]
+        }
+      },
+      "bonus_rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:charms/rare",
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.02
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "quality": 1,
+          "name": "minecraft:gold_ingot",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 549999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:raw_gold_block",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 550000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.3
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:coal",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 504999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:raw_iron",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 549999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 3,
+              "max": 6
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:raw_iron_block",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "min": 550000
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:emerald",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "quality": 1,
+          "name": "minecraft:cobweb",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "quality": 1,
+          "name": "minecraft:redstone",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "quality": 1,
+          "name": "minecraft:experience_bottle",
+          "modifier": {
+            "type": "minecraft:limit_count",
+            "limit": {
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:iron_helmet",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 520000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.3
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:enchant_with_levels",
+            "levels": 22,
+            "options": "#minecraft:in_enchanting_table"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:iron_chestplate",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 520000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.3
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:enchant_with_levels",
+            "levels": 22,
+            "options": "#minecraft:in_enchanting_table"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:iron_leggings",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 520000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.3
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:enchant_with_levels",
+            "levels": 22,
+            "options": "#minecraft:in_enchanting_table"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:iron_boots",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 520000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.3
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:enchant_with_levels",
+            "levels": 22,
+            "options": "#minecraft:in_enchanting_table"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:chicken_spawn_egg",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 600000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.01
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          },
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Actual Chicken Egg",
+                  "color": "gold",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Hint: use this on a spawner.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:diamond",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 505000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.5
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:iron_axe",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 520000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.3
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:enchant_with_levels",
+            "levels": 22,
+            "options": "#minecraft:in_enchanting_table"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:iron_pickaxe",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 520000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.3
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:enchant_with_levels",
+            "levels": 22,
+            "options": "#minecraft:in_enchanting_table"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "nova_structures:cartographer/4/badlands_miner_outpost_chart",
+	"nova_structures:cartographer/4/catacomb_chart",
+	"nova_structures:cartographer/4/creeping_crypt_chart",
+	"nova_structures:cartographer/4/dappled_townhall_chart",
+	"nova_structures:cartographer/4/desert_ruin_chart",
+	"nova_structures:cartographer/4/illager_barracks_chart",
+	"nova_structures:cartographer/4/jungle_ruin_chart",
+	"nova_structures:cartographer/4/ocean_explorer_chart",
+	"nova_structures:cartographer/4/pale_residence_chart",
+	"nova_structures:cartographer/4/stray_fort_chart",
+	"nova_structures:cartographer/4/undead_crypt_chart",
+	"nova_structures:cartographer/4/witch_villa_chart"
+	]
+}

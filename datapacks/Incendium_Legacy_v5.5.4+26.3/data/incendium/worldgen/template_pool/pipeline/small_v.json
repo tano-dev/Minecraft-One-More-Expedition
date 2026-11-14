@@ -1,0 +1,96 @@
+{
+  "name": "incendium:pipeline/small_v",
+  "fallback": "incendium:pipeline/small_v_end",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:pipeline/small_v",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:pipeline/small_v_2",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:pipeline/small_hv",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:pipeline/small_vh",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:pipeline/small_hvup_3way",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:pipeline/small_hvdown_3way",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:pipeline/small_h_elbow_3_way_up",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:pipeline/small_h_elbow_3_way_down",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:pipeline/small_h_5way_down",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:pipeline/small_h_5way_up",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

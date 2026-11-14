@@ -1,0 +1,138 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": {
+      "type": "minecraft:uniform",
+      "min": 8,
+      "max": 10
+    }
+  },
+  "additional_wants": {
+    "id": "minecraft:map"
+  },
+  "gives": {
+    "id": "minecraft:filled_map"
+  },
+  "given_item_modifier": {
+    "type": "minecraft:sequence",
+    "functions": [
+      {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:consumable": {
+            "consume_seconds": 99999,
+            "animation": "block",
+            "has_consume_particles": false,
+            "on_consume_effects": []
+          },
+          "minecraft:custom_data": {
+            "structure": "dnt_any_campsite",
+            "dimension": "minecraft_overworld",
+            "dnt_chart_bundle": false
+          },
+          "minecraft:custom_model_data": {
+            "floats": [],
+            "strings": [
+              "dnt:chart"
+            ]
+          },
+          "minecraft:item_name": {
+            "translate": "item.dnt.chart.any_campsite",
+            "fallback": "Abandoned Camp Chart"
+          },
+          "minecraft:lore": [
+            {
+              "translate": "item.dnt.chart.description",
+              "fallback": "Interact to generate map",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          "minecraft:dyed_color": 16513514,
+          "minecraft:max_stack_size": 1,
+          "minecraft:rarity": "common",
+          "minecraft:tooltip_display": {
+            "hidden_components": [
+              "minecraft:dyed_color"
+            ]
+          }
+        },
+        "condition": {
+          "type": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      },
+      {
+        "type": "minecraft:filtered",
+        "item_filter": {
+          "components": {
+            "minecraft:item_name": {
+              "translate": "item.dnt.chart.any_campsite",
+              "fallback": "Abandoned Camp Chart"
+            }
+          }
+        },
+        "on_fail": {
+          "type": "minecraft:set_components",
+          "components": {
+            "minecraft:consumable": {
+              "consume_seconds": 99999,
+              "animation": "block",
+              "has_consume_particles": false,
+              "on_consume_effects": []
+            },
+            "minecraft:custom_data": {
+              "structure": "dnt_any_well",
+              "dimension": "minecraft_overworld",
+              "dnt_chart_bundle": true
+            },
+            "minecraft:custom_model_data": {
+              "floats": [],
+              "strings": [
+                "dnt:chart"
+              ]
+            },
+            "minecraft:item_name": {
+              "translate": "item.dnt.chart.any_well",
+              "fallback": "Well Chart"
+            },
+            "minecraft:lore": [
+              {
+                "translate": "item.dnt.chart.description",
+                "fallback": "Interact to generate map",
+                "color": "gray",
+                "italic": false
+              }
+            ],
+            "minecraft:dyed_color": 7990271,
+            "minecraft:max_stack_size": 1,
+            "minecraft:rarity": "common",
+            "minecraft:tooltip_display": {
+              "hidden_components": [
+                "minecraft:dyed_color"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "minecraft:filtered",
+        "item_filter": {
+          "components": {
+            "minecraft:lore": [
+              {
+                "translate": "item.dnt.chart.description",
+                "fallback": "Interact to generate map",
+                "color": "gray",
+                "italic": false
+              }
+            ]
+          }
+        },
+        "on_fail": {
+          "type": "minecraft:discard"
+        }
+      }
+    ]
+  }
+}

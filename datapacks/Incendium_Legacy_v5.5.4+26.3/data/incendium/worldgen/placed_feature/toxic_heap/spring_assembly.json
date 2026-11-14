@@ -1,0 +1,84 @@
+{
+  "feature": "incendium:toxic_heap/base_merge",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 12
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 2
+    },
+    {
+      "type": "minecraft:count",
+      "count": 4
+    },
+    {
+      "type": "minecraft:offset",
+      "x": {
+        "type": "minecraft:trapezoid",
+        "min": 0,
+        "max": 3,
+        "plateau": 0
+      },
+      "z": {
+        "type": "minecraft:trapezoid",
+        "min": 0,
+        "max": 3,
+        "plateau": 0
+      },
+      "y": 2
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "blocks": [
+                "air",
+                "minecraft:lava"
+              ]
+            }
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "blocks": [
+              "air"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": [
+              "sulfur",
+              "minecraft:yellow_terracotta",
+              "minecraft:green_terracotta",
+              "minecraft:lime_terracotta"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

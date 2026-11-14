@@ -1,0 +1,27 @@
+{
+  "values": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    {"id": "floravive:boreal_plains","required": false},
+    {"id": "terralith:blooming_plateau","required": false},
+    {"id": "terralith:brushland","required": false},
+    {"id": "biomesoplenty:field","required": false},
+    {"id": "biomesoplenty:grassland","required": false},
+    {"id": "biomesoplenty:overgrown_greens","required": false},
+    {"id": "biomesoplenty:pasture","required": false},
+    {"id": "natures_spirit:alpine_clearings","required": false},
+    {"id": "natures_spirit:carnation_fields","required": false},
+    {"id": "natures_spirit:chaparral","required": false},
+    {"id": "natures_spirit:cypress_fields","required": false},
+    {"id": "natures_spirit:flowering_shrubland","required": false},
+    {"id": "natures_spirit:heather_fields","required": false},
+    {"id": "natures_spirit:lavender_fields","required": false},
+    {"id": "natures_spirit:prairie","required": false},
+    {"id": "natures_spirit:shrubby_highlands","required": false},
+    {"id": "regions_unexplored:barley_fields","required": false},
+    {"id": "regions_unexplored:clover_plains","required": false},
+    {"id": "regions_unexplored:grassland","required": false},
+    {"id": "regions_unexplored:poppy_fields","required": false},
+    {"id": "regions_unexplored:pumpkin_fields","required": false}
+  ]
+}

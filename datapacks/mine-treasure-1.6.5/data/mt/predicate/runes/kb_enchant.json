@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "offhand": {
+            "items": "#mt:weapons"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "offhand": {
+            "predicates": {
+              "minecraft:custom_data": "{weapon:\"hurricane_sword\"}"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

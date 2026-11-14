@@ -1,0 +1,9 @@
+{
+  "values": [
+    { "id": "enchantencore:handyman", "required": false },
+    { "id": "enchantencore:midas_touch", "required": false },
+    { "id": "enchantencore:sacrifice", "required": false },
+    "minecraft:mending",
+    "minecraft:unbreaking"
+  ]
+}

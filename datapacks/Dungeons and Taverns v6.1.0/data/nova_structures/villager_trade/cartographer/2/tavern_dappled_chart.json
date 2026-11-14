@@ -1,0 +1,87 @@
+{
+  "gives": {
+    "count": 1,
+    "id": "minecraft:filled_map"
+  },
+  "given_item_modifier": [
+    {
+           "components": {
+              "minecraft:consumable": {
+                "consume_seconds": 99999,
+                "animation": "block",
+                "has_consume_particles": false,
+                "on_consume_effects": []
+              },
+              "minecraft:custom_data": {
+                "structure": "dnt_tavern_dappled",
+                "dimension": "minecraft_overworld",
+                "dnt_chart_bundle": false
+              },
+              "minecraft:custom_model_data": {
+                "floats": [],
+                "strings": [
+                  "dnt:chart"
+                ]
+              },
+              "minecraft:item_name": {
+                "translate": "item.dnt.chart.tavern_dappled",
+                "fallback": "Dappled Tavern Chart"
+              },
+              "minecraft:lore": [
+                {
+                  "translate": "item.dnt.chart.description",
+                  "fallback": "Interact to generate map",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "minecraft:dyed_color": 7229485,
+              "minecraft:max_stack_size": 1,
+              "minecraft:rarity": "common",
+              "minecraft:tooltip_display": {
+                "hidden_components": [
+                  "minecraft:dyed_color"
+                ]
+              }
+            },
+            "type": "minecraft:set_components"
+    }
+  ],
+  "max_uses": 3,
+  "reputation_discount": 0.05,
+  "xp": 10,
+  "merchant_predicate": {
+    "type": "minecraft:all_of",
+    "terms": [
+      {
+        "type": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:nbt": "{VillagerData:{profession:\"minecraft:cartographer\"}}",
+          "minecraft:entity_tags": {
+            "any_of": [
+              "dnt_quest_trader"
+            ]
+          }
+        }
+      },
+      {
+        "type": "minecraft:location_check",
+        "predicate": {
+          "structures": "nova_structures:tavern_jungle"
+        }
+      }
+    ]
+  },
+  "wants": {
+    "count": {
+             "type": "minecraft:uniform",
+             "min": 8,
+             "max": 10
+             },
+    "id": "minecraft:emerald"
+  },
+   "additional_wants": {
+    "id": "minecraft:map"
+  }
+}

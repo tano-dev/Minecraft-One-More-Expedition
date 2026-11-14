@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ominous_trial_key",
+          "modifier": {
+            "components": {
+              "minecraft:custom_model_data": {
+                "floats": [
+                  720.0
+                ]
+              },
+              "minecraft:item_name": {
+                "translate": "item.dnt.end_ship_key",
+                "fallback": "End Ship Key"
+              }
+            },
+            "type": "minecraft:set_components"
+          }
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

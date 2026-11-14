@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/armor/elytra/empress_wings"
+        }
+      ],
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "minecraft:random_chance",
+            "chance": 0.5
+          },
+          {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/empress_wings",
+            "test": 1
+          }
+        ]
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/weapon/fluffy_hammer"
+        }
+      ],
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "minecraft:random_chance",
+            "chance": 0.3
+          },
+          {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/fluffy_hammer_of_justice",
+            "test": 1
+          }
+        ]
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/music_disc/precipice_stereo"
+        }
+      ],
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "minecraft:random_chance",
+            "chance": 0.3
+          },
+          {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/music_discs",
+            "test": 1
+          }
+        ]
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:block/pixie_in_a_jar"
+        }
+      ],
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "minecraft:random_chance",
+            "chance": 0.3
+          },
+          {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/pixie_in_a_jar",
+            "test": 1
+          }
+        ]
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/trinket/prismatic_pearl"
+        }
+      ],
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "minecraft:random_chance",
+            "chance": 0.33
+          },
+          {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/prismatic_pearl",
+            "test": 1
+          }
+        ]
+      }
+    }
+  ]
+}

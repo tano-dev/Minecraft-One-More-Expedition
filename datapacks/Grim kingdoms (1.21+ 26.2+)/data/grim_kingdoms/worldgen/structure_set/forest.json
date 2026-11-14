@@ -1,0 +1,51 @@
+{
+  "structures": [
+    {
+      "structure": "grim_kingdoms:camp1",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:camp2",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:camp3",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:gnome_tall_tower",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:gnome_tower",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:nordic_cabin1",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:nordic_cabin2",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:nordic_cabin3",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:nordic_cabin4",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 88,
+    "locate_offset": [
+      0,
+      0,
+      0
+    ],
+    "spacing": 50,
+    "separation": 30
+  }
+}

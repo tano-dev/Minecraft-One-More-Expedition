@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "nova_structures:nether_skeleton_tower_soul",
+	  "nova_structures:nether_skeleton_camp_soul"
+  ]
+}

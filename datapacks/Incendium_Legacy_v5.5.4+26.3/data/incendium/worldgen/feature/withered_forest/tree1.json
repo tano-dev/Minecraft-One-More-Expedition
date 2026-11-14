@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:tree",
+  
+    "ignore_vines": false,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "min_clipped_height": 5,
+      "limit": 1,
+      "lower_size": 1,
+      "upper_size": 1
+    },
+    "below_trunk_provider": {
+      "type": "minecraft:simple",
+      "state": {
+        "id": "minecraft:blackstone"
+      }
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple",
+      "state": {
+        "id": "minecraft:polished_basalt",
+        "properties": {
+          "axis": "y"
+        }
+      }
+    },
+    "foliage_provider": {
+      "type": "minecraft:weighted",
+      "entries": [
+        {
+          "weight": 20,
+          "data": {
+            "id": "minecraft:basalt",
+            "properties": {
+              "axis": "x"
+            }
+          }
+        },
+        {
+          "weight": 100,
+          "data": {
+            "id": "minecraft:basalt",
+            "properties": {
+              "axis": "y"
+            }
+          }
+        },
+        {
+          "weight": 20,
+          "data": {
+            "id": "minecraft:basalt",
+            "properties": {
+              "axis": "z"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "id": "minecraft:crying_obsidian"
+          }
+        },
+        {
+          "weight": 10,
+          "data": {
+            "id": "minecraft:air"
+          }
+        }
+      ]
+    },
+    "trunk_placer": {
+      "type": "minecraft:bending_trunk_placer",
+      "base_height": 7,
+      "height_rand_a": 3,
+      "height_rand_b": 7,
+      "bend_length": 1,
+      "min_height_for_leaves": 1000
+    },
+    "foliage_placer": {
+      "type": "minecraft:jungle_foliage_placer",
+      "radius": {
+        "type": "minecraft:biased_to_bottom",
+        "min_inclusive": 1,
+        "max_inclusive": 3
+      },
+      "offset": 1,
+      "height": 1
+    },
+    "decorators": [
+      {
+        "type": "minecraft:pale_moss",
+        "leaves_probability": 0.2,
+        "trunk_probability": 0,
+        "ground_probability": 0
+      }
+    ]
+  
+}

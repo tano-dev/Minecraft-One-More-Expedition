@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": {
+      "type": "minecraft:slice",
+      "axis": "y",
+      "coordinate": 0,
+      "input": {
+        "type": "minecraft:distance_to_point",
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "metric": "euclidean"
+      }
+    },
+    "points": [
+      {
+        "location": 0,
+        "value": -1.02,
+        "derivative": 0
+      },
+      {
+        "location": 450,
+        "value": -0.7,
+        "derivative": 0.0007
+      },
+      {
+        "location": 900,
+        "value": -0.4,
+        "derivative": 0.0007
+      },
+      {
+        "location": 1000,
+        "value": 0,
+        "derivative": 0.011
+      },
+      {
+        "location": 5000,
+        "value": 64,
+        "derivative": 0
+      }
+    ]
+  }
+}

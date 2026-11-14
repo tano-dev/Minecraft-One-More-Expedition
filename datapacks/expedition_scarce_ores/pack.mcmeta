@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "description": "Expedition Scarce Ores - Reduces natural diamond, ancient debris, iron, gold, and emerald generation",
+    "min_format": 121,
+    "max_format": 121,
+    "pack_format": 94,
+    "supported_formats": {
+      "min_inclusive": 15,
+      "max_inclusive": 94
+    }
+  }
+}

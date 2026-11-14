@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:sequence",
+  "sequence": [
+    "nullscape:shadowlands",
+    "nullscape:void_barrens",
+    "nullscape:crystal_peaks",
+    "nullscape:infestation",
+    {
+      "type": "minecraft:block",
+      "result_state": "minecraft:end_stone"
+    }
+  ]
+}

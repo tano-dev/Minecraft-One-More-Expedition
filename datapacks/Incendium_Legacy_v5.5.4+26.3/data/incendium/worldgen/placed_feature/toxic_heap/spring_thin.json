@@ -1,0 +1,11 @@
+{
+  "feature": "incendium:toxic_heap/spring_thin",
+  "placement": [
+    {
+      "type": "minecraft:offset",
+      "x": 0,
+      "z": 0,
+      "y": 1
+    }
+  ]
+}

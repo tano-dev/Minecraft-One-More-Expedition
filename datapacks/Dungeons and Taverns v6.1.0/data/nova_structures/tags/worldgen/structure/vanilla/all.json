@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#nova_structures:vanilla/end",
+    "#nova_structures:vanilla/nether",
+    "#nova_structures:vanilla/overworld",
+    "#nova_structures:vanilla/overworld_buried",
+    "#nova_structures:vanilla/overworld_water"
+  ]
+}

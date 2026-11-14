@@ -1,0 +1,499 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": {
+          "type": "minecraft:storage",
+          "storage": "mt:settings",
+          "path": "3.initial"
+        },
+        "p": {
+          "type": "minecraft:mul",
+          "inputs": [
+            {
+              "type": "minecraft:from_int",
+              "input": {
+                "type": "score",
+                "target": "this",
+                "score": "mt.total"
+              }
+            },
+            1e-06
+          ]
+        }
+      },
+      "bonus_rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:charms/epic",
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.035
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:golden_apple",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:enchanted_golden_apple",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:diamond_block",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 699999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 2
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:emerald_block",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 699999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:sculk_sensor",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 599999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:turtle_egg",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 599999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:player_head",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.25
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 700000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          },
+          "modifier": [
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "panda",
+                  "attribute": "minecraft:armor",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 4,
+                    "max": 6
+                  },
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "panda",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 4,
+                    "max": 4
+                  },
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "id": [
+                    1648193673,
+                    1096304930,
+                    -1387458717,
+                    923627530
+                  ],
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE2ZTNhZDgyM2Y5NmQ0YTgwYTE0NTU2ZDhjOWM3NjMyMTYzYmJkMmE4NzZjMDExOGI0NTg5MjVkODdhNTUxMyJ9fX0="
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "armor": "mt.panda"
+                }
+              }
+            },
+            {
+              "type": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Panda Helmet",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 5
+                },
+                "minecraft:protection": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "mt:runes/roaring_jungle",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#disable_rune"
+                  },
+                  "score": "mt.constant"
+                },
+                "test": 0
+              },
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.75
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 800000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:wither_skeleton_skull",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.75
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          },
+          "modifier": [
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "wither_helmet",
+                  "attribute": "minecraft:armor",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 3.5,
+                    "max": 3.5
+                  },
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "id": "wither_helmet",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": 3.5,
+                    "max": 3.5
+                  },
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Wither Helmet",
+                  "color": "light_purple",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "armor": "wither"
+                }
+              }
+            },
+            {
+              "type": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:blast_protection": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 5
+                },
+                "minecraft:fire_protection": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 5
+                },
+                "minecraft:projectile_protection": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 5
+                },
+                "minecraft:protection": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:tipped_arrow",
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$vanilla_mode"
+              },
+              "score": "mt.var"
+            },
+            "test": 0
+          },
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Poison Arrow",
+                  "color": "#46F057",
+                  "italic": false
+                },
+                "minecraft:potion_contents": {
+                  "custom_color": 4915005,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:poison",
+                      "amplifier": 3,
+                      "duration": 140,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:slowness",
+                      "amplifier": 3,
+                      "duration": 140,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:blindness",
+                      "amplifier": 3,
+                      "duration": 140,
+                      "show_particles": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "set_lore",
+              "lore": [
+                {
+                  "text": "A deadly arrow, applies Poison II, ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Blindness and Slowness IV for 7 seconds. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

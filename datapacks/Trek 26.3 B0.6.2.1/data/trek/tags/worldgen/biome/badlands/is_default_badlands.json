@@ -1,0 +1,12 @@
+{
+  "values": [
+    "minecraft:badlands",
+    {"id": "floravive:painted_badlands","required": false},
+    {"id": "terralith:painted_mountains","required": false},
+    {"id": "terralith:red_oasis","required": false},
+    {"id": "terralith:white_mesa","required": false},
+    {"id": "natures_spirit:blooming_dunes","required": false},
+    {"id": "natures_spirit:lively_dunes","required": false},
+    {"id": "regions_unexplored:arid_mountains","required": false}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "nova_structures:well_birch",
+	"nova_structures:well_cherry",
+	"nova_structures:well_dappled",
+	"nova_structures:well_dark_oak",
+	"nova_structures:well_desert",
+	"nova_structures:well_jungle",
+	"nova_structures:well_mangrove",
+	"nova_structures:well_oak",
+	"nova_structures:well_pale",
+	"nova_structures:well_savanna",
+	"nova_structures:well_snowy",
+	"nova_structures:well_spruce",
+	"nova_structures:well_swamp"
+  ]
+}

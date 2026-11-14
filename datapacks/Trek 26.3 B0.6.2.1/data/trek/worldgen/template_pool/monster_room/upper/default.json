@@ -1,0 +1,14 @@
+{
+  "name": "default",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:feature_pool_element",
+        "projection": "rigid",
+        "feature": "trek:monster_room/upper/default"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "trek:monster_room/upper/default"
+}

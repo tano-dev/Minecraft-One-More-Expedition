@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/weapon/kaleidoscope"
+        }
+      ],
+      "condition": {
+        "type": "int_value_check",
+        "value": "stellarity:item_check/kaleidoscope",
+        "test": 1
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/trinket/soaring_insignia"
+        }
+      ],
+      "condition": {
+        "type": "int_value_check",
+        "value": "stellarity:item_check/soaring_insignia",
+        "test": 1
+      }
+    }
+  ]
+}

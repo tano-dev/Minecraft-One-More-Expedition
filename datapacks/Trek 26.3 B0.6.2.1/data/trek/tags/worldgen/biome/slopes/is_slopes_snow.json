@@ -1,0 +1,7 @@
+{
+  "values": [
+    "minecraft:snowy_slopes",
+    {"id": "terralith:gravel_beach","required": false},
+    {"id": "natures_spirit:sleeted_slopes","required": false}
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "parent": "minecraft:adventure/kill_a_mob",
+  "criteria": {
+    "find_bogged_camp": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:bogged_camp"
+            }
+          }
+        }
+      }
+    },
+    "find_parched_camp": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:parched_camp"
+            }
+          }
+        }
+      }
+    },
+    "find_stray_camp": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:stray_camp"
+            }
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.dnt.adventure.find_overworld_skull_camps",
+      "fallback": "Track down all 3 different Skeleton Camps in the Overworld"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:bone"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.dnt.adventure.find_overworld_skull_camps.title",
+      "fallback": "Bone to Pick With You"
+    }
+  },
+  "requirements": [
+    [
+      "find_bogged_camp"
+    ],
+    [
+      "find_parched_camp"
+    ],
+    [
+      "find_stray_camp"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

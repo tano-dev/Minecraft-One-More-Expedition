@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:taiga_village_map",
+          "modifier": [
+            {
+              "destination": "#minecraft:on_taiga_village_maps",
+              "decoration": "minecraft:village_taiga",
+              "zoom": 2,
+              "search_radius": 100,
+              "type": "minecraft:exploration_map"
+            },
+            {
+              "components": {
+                "minecraft:dyed_color": 10066329,
+                "minecraft:rarity": "common",
+				        "minecraft:custom_model_data": {
+                  "floats": [],
+                  "strings": [
+                    "dnt:map"
+                ]
+               },
+               "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:dyed_color"
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

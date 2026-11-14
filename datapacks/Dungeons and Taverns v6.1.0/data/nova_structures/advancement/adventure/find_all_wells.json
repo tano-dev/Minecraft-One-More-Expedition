@@ -1,0 +1,255 @@
+{
+  "parent": "nova_structures:adventure/find_well",
+  "display": {
+    "icon": {
+      "id": "minecraft:water_bucket"
+    },
+    "title": {
+      "translate": "advancement.dnt.adventure.find_all_wells.title",
+      "fallback": "Well well well well well well well well well well well well well!!"
+    },
+    "description": {
+      "translate": "advancement.dnt.adventure.find_all_wells",
+      "fallback": "Well... you went to all types of wells."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "find_dnt_birch_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_birch"
+            }
+          }
+        }
+      }
+    },
+    "find_dnt_cherry_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_cherry"
+            }
+          }
+        }
+      }
+    },
+    "find_dnt_dappled_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_dappled"
+            }
+          }
+        }
+      }
+    },
+    "find_dnt_dark_oak_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_dark_oak"
+            }
+          }
+        }
+      }
+    },
+    "find_dnt_desert_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_desert"
+            }
+          }
+        }
+      }
+    },
+    "find_vanilla_well_loot": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_tables": "minecraft:archaeology/desert_well"
+      }
+    },
+    "find_dnt_jungle_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_jungle"
+            }
+          }
+        }
+      }
+    },
+    "find_dnt_mangrove_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_mangrove"
+            }
+          }
+        }
+      }
+    },
+    "find_dnt_oak_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_oak"
+            }
+          }
+        }
+      }
+    },
+    "find_dnt_pale_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_pale"
+            }
+          }
+        }
+      }
+    },
+    "find_dnt_savanna_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_savanna"
+            }
+          }
+        }
+      }
+    },
+    "find_dnt_snowy_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_snowy"
+            }
+          }
+        }
+      }
+    },
+    "find_dnt_spruce_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_spruce"
+            }
+          }
+        }
+      }
+    },
+    "find_dnt_swamp_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:well_swamp"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "find_dnt_birch_well"
+    ],
+    [
+      "find_dnt_cherry_well"
+    ],
+    [
+      "find_dnt_dappled_well"
+    ],
+    [
+      "find_dnt_dark_oak_well"
+    ],
+    [
+      "find_dnt_desert_well",
+      "find_vanilla_well_loot"
+    ],
+    [
+      "find_dnt_jungle_well"
+    ],
+    [
+      "find_dnt_mangrove_well"
+    ],
+    [
+      "find_dnt_oak_well"
+    ],
+    [
+      "find_dnt_pale_well"
+    ],
+    [
+      "find_dnt_savanna_well"
+    ],
+    [
+      "find_dnt_snowy_well"
+    ],
+    [
+      "find_dnt_spruce_well"
+    ],
+    [
+      "find_dnt_swamp_well"
+    ]
+  ],
+  "rewards": {
+    "experience": 750
+  }
+}

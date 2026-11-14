@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "armor.head": {
+            "predicates": {
+            "custom_data": "{incendium:{item:'hazmat_suit'}}"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "armor.chest": {
+            "predicates": {
+            "custom_data": "{incendium:{item:'hazmat_suit'}}"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "armor.legs": {
+            "predicates": {
+            "custom_data": "{incendium:{item:'hazmat_suit'}}"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "armor.feet": {
+            "predicates": {
+            "custom_data": "{incendium:{item:'hazmat_suit'}}"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

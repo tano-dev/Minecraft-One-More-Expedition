@@ -1,0 +1,49 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "id": "observer",
+              "properties": {
+                "facing": "up"
+              }
+            }
+          },
+          "output_state": {
+            "id": "minecraft:observer",
+            "properties": {
+              "facing": "up"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "id": "observer",
+              "properties": {
+                "facing": "down"
+              }
+            }
+          },
+          "output_state": {
+            "id": "minecraft:observer",
+            "properties": {
+              "facing": "down"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "fallback": "joshie:village/ocean/terminators",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "joshie:village/ocean/roads/straight_02",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "joshie:village/ocean/roads/straight_05",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "joshie:village/ocean/roads/straight_pieces_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "joshie:village/ocean/roads/wonky_decor",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "joshie:village/ocean/roads/crossroad_02",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "joshie:village/ocean/roads/crossroad_03",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "joshie:village/ocean/pieces/double_house",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "joshie:village/ocean/pieces/market",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "joshie:village/ocean/pieces/large_platform_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "joshie:village/ocean/pieces/weaponsmith",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "joshie:village/ocean/houses/fisherman_hut",
+          "projection": "rigid",
+          "processors": "minecraft:empty" 
+      }
+  },
+  {
+    "weight": 1,
+    "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "joshie:village/ocean/houses/waterwheel_house",
+        "projection": "rigid",
+        "processors": "minecraft:empty" 
+    }
+}
+  ]
+}

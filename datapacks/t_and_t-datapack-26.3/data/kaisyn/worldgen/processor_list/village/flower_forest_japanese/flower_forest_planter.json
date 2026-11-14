@@ -1,0 +1,126 @@
+{
+  "processors": [
+    {
+      "rules": [
+        {
+          "output_state": {
+            "id": "minecraft:dandelion"
+          },
+          "input_predicate": {
+            "block": "minecraft:poppy",
+            "probability": 0.6,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:allium"
+          },
+          "input_predicate": {
+            "block": "minecraft:poppy",
+            "probability": 0.3,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:azure_bluet"
+          },
+          "input_predicate": {
+            "block": "minecraft:poppy",
+            "probability": 0.5,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:orange_tulip"
+          },
+          "input_predicate": {
+            "block": "minecraft:poppy",
+            "probability": 0.2,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:white_tulip"
+          },
+          "input_predicate": {
+            "block": "minecraft:poppy",
+            "probability": 0.4,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:pink_tulip"
+          },
+          "input_predicate": {
+            "block": "minecraft:poppy",
+            "probability": 0.5,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:oxeye_daisy"
+          },
+          "input_predicate": {
+            "block": "minecraft:poppy",
+            "probability": 0.4,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:cornflower"
+          },
+          "input_predicate": {
+            "block": "minecraft:poppy",
+            "probability": 0.3,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:lily_of_the_valley"
+          },
+          "input_predicate": {
+            "block": "minecraft:poppy",
+            "probability": 0.1,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        }
+      ],
+      "processor_type": "minecraft:rule"
+    }
+  ]
+}

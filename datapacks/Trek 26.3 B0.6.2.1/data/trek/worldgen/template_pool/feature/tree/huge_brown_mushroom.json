@@ -1,0 +1,17 @@
+{
+  "name": "huge_brown_mushroom",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:feature_pool_element",
+        "projection": "rigid",
+        "feature": {
+          "feature": "minecraft:huge_brown_mushroom",
+          "placement": []
+        }
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "trek:feature/tree/huge_brown_mushroom"
+}

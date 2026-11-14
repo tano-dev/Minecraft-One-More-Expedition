@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "nova_structures:cartographer/2/any_tavern_chart",
+	"nova_structures:cartographer/2/mineshaft_chart",
+	"nova_structures:cartographer/2/any_campsite_chart",
+	"nova_structures:cartographer/2/bogged_camp_chart",
+	"nova_structures:cartographer/2/parched_camp_chart",
+	"nova_structures:cartographer/2/stray_camp_chart",
+	"nova_structures:cartographer/2/surface_dungeon_chart",
+	"nova_structures:cartographer/2/small_conduit_ruin_chart",
+	"nova_structures:cartographer/2/small_creeping_crypt_chart",
+	"nova_structures:cartographer/2/small_undead_crypt_chart",
+	"nova_structures:cartographer/2/tavern_acacia_chart",
+	"nova_structures:cartographer/2/tavern_dappled_chart",
+	"nova_structures:cartographer/2/tavern_dark_oak_chart",
+	"nova_structures:cartographer/2/tavern_desert_chart",
+	"nova_structures:cartographer/2/tavern_jungle_chart",
+	"nova_structures:cartographer/2/tavern_birch_chart",
+	"nova_structures:cartographer/2/tavern_cherry_chart",
+	"nova_structures:cartographer/2/tavern_mangrove_chart",
+	"nova_structures:cartographer/2/tavern_oak_chart",
+	"nova_structures:cartographer/2/tavern_pale_chart",
+	"nova_structures:cartographer/2/tavern_snowy_chart",
+	"nova_structures:cartographer/2/tavern_spruce_chart",
+	"nova_structures:cartographer/2/tavern_swamp_chart",
+	"nova_structures:cartographer/2/village_any_chart"
+	]
+}

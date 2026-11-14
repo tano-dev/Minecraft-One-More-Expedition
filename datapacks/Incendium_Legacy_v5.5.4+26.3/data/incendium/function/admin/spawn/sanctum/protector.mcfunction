@@ -1,0 +1,1 @@
+summon vindicator ~ ~ ~ {Tags:["in.sanctum", "in.sanctum_protector"]}

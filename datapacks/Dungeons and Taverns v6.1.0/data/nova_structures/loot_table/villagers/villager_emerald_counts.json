@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "modifier": [
+            {
+              "count": {
+                "min": 8,
+                "max": 12,
+                "type": "minecraft:uniform"
+              },
+              "condition": {
+                  "type": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "type": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "entity_type": "minecraft:villager",
+                        "nbt": "{Tags:[\"dnt_quest_trader\"],VillagerData:{level:1}}"
+                      }
+                    },
+                    {
+                      "type": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "entity_type": "minecraft:villager",
+                        "nbt": "{Tags:[\"dnt_quest_trader\"],VillagerData:{level:2}}"
+                      }
+                    }
+                  ]
+                },
+              "type": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "min": 16,
+                "max": 24,
+                "type": "minecraft:uniform"
+              },
+              "condition": {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "entity_type": "minecraft:villager",
+                    "nbt": "{Tags:[\"dnt_quest_trader\"],VillagerData:{level:3}}"
+                  }
+                },
+              "type": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "min": 32,
+                "max": 40,
+                "type": "minecraft:uniform"
+              },
+              "condition": {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "entity_type": "minecraft:villager",
+                    "nbt": "{Tags:[\"dnt_quest_trader\"],VillagerData:{level:4}}"
+                  }
+                },
+              "type": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "min": 48,
+                "max": 56,
+                "type": "minecraft:uniform"
+              },
+              "condition": {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "entity_type": "minecraft:villager",
+                    "nbt": "{Tags:[\"dnt_quest_trader\"],VillagerData:{level:5}}"
+                  }
+                },
+              "type": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

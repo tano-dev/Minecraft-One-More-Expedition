@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:add",
+  "left": "minecraft:y",
+  "right": 64
+}

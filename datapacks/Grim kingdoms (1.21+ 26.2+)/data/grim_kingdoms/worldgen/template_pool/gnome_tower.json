@@ -1,0 +1,17 @@
+{
+    "name": "grim_kingdoms:gnome_tower",
+    "fallback": "minecraft:empty",
+    "elements": [
+        
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:forest/gnome_tower"
+            },
+            "weight": 1
+        }
+	
+    ]
+}

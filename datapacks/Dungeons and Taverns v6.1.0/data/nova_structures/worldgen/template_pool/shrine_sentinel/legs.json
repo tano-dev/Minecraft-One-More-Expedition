@@ -1,0 +1,195 @@
+{
+	"name": "nova_structures:well",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_left_1",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_left_2",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_left_3",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_left_4",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_left_5",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_left_6",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_right_1",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_right_2",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_right_3",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_right_4",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_right_5",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_right_6",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_center_1",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_center_2",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_center_3",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_center_4",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_center_5",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_center_6",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_center_7",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_center_8",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/shrine_sentinel/leg_center_9",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		}
+	]
+}

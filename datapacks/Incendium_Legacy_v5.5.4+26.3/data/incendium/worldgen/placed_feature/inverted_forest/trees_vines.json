@@ -1,0 +1,120 @@
+{
+  "feature": {
+    "type": "minecraft:block_column",
+  "allowed_placement": {
+    "type": "minecraft:matching_block_tag",
+    "tag": "minecraft:air"
+  },
+  "direction": "up",
+  "layers": [
+    {
+      "height": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": {
+              "type": "minecraft:uniform",
+              "max_inclusive": 7,
+              "min_inclusive": 0
+            },
+            "weight": 10
+          },
+          {
+            "data": {
+              "type": "minecraft:uniform",
+              "max_inclusive": 15,
+              "min_inclusive": 1
+            },
+            "weight": 2
+          },
+          {
+            "data": 0,
+            "weight": 3
+          }
+        ]
+      },
+      "provider": {
+        "type": "minecraft:simple",
+        "state": "minecraft:twisting_vines_plant"
+      }
+    },
+    {
+      "height": 1,
+      "provider": {
+        "type": "minecraft:randomized_int",
+        "property": "age",
+        "source": {
+          "type": "minecraft:simple",
+          "state": "minecraft:twisting_vines"
+        },
+        "values": {
+          "type": "minecraft:uniform",
+          "max_inclusive": 25,
+          "min_inclusive": 17
+        }
+      }
+    }
+  ],
+  "prioritize_tip": true
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 3
+    },
+    {
+      "type": "minecraft:count",
+      "count": 50
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 0
+        },
+        "max_inclusive": {
+          "below_top": 0
+        }
+      }
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "down",
+      "max_steps": 32,
+      "target_condition": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "blocks": [
+              "minecraft:air"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": [
+              "minecraft:warped_wart_block"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:buried_trial_chambers_map",
+          "modifier": [
+            {
+              "destination": "#minecraft:on_buried_trial_chambers_maps",
+              "decoration": "minecraft:trial_chambers",
+              "zoom": 2,
+              "search_radius": 100,
+              "type": "minecraft:exploration_map"
+            },
+            {
+              "components": {
+                "minecraft:dyed_color": 12741452,
+				        "minecraft:rarity": "uncommon",
+				        "minecraft:custom_model_data": {
+                  "floats": [],
+                  "strings": [
+                    "dnt:map"
+                ]
+               },
+               "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:dyed_color"
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "nullscape:crashed_ship/brewing_stand",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "nullscape:crashed_ship/loot/brewing_stand_air",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "nullscape:crashed_ship/loot/brewing_stand_0",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "nullscape:crashed_ship/loot/brewing_stand_1",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+	"name": "minecraft:jungle_house",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/dappled_townshall_1",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		}
+	]
+}

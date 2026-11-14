@@ -1,0 +1,156 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "id": "minecraft:potatoes",
+              "properties": {
+                "age": "7"
+              }
+            },
+            "probability": 0.125
+          },
+          "output_state": {
+            "id": "minecraft:potatoes",
+            "properties": {
+              "age": "0"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "id": "minecraft:potatoes",
+              "properties": {
+                "age": "7"
+              }
+            },
+            "probability": 0.143
+          },
+          "output_state": {
+            "id": "minecraft:potatoes",
+            "properties": {
+              "age": "1"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "id": "minecraft:potatoes",
+              "properties": {
+                "age": "7"
+              }
+            },
+            "probability": 0.167
+          },
+          "output_state": {
+            "id": "minecraft:potatoes",
+            "properties": {
+              "age": "2"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "id": "minecraft:potatoes",
+              "properties": {
+                "age": "7"
+              }
+            },
+            "probability": 0.2
+          },
+          "output_state": {
+            "id": "minecraft:potatoes",
+            "properties": {
+              "age": "3"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "id": "minecraft:potatoes",
+              "properties": {
+                "age": "7"
+              }
+            },
+            "probability": 0.25
+          },
+          "output_state": {
+            "id": "minecraft:potatoes",
+            "properties": {
+              "age": "4"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "id": "minecraft:potatoes",
+              "properties": {
+                "age": "7"
+              }
+            },
+            "probability": 0.333
+          },
+          "output_state": {
+            "id": "minecraft:potatoes",
+            "properties": {
+              "age": "5"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "id": "minecraft:potatoes",
+              "properties": {
+                "age": "7"
+              }
+            },
+            "probability": 0.5
+          },
+          "output_state": {
+            "id": "minecraft:potatoes",
+            "properties": {
+              "age": "6"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

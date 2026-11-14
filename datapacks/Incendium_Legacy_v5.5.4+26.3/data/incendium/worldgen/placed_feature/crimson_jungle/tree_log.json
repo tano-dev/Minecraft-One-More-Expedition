@@ -1,0 +1,40 @@
+{
+  "feature": "incendium:crimson_jungle/tree_log_base",
+  "placement": [
+        {
+      "type": "minecraft:count",
+      "count": 4
+    },
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 250
+    },
+    {
+      "type": "minecraft:offset",
+      "x": 0,
+      "z": 0,
+      "y": {
+        "type": "minecraft:uniform",
+        
+          "min_inclusive": 0,
+          "max_inclusive": 12
+        
+      }
+    },
+    {
+      "type": "minecraft:offset",
+      "x": 0,
+      "z": 0,
+      "y": {
+        "type": "minecraft:uniform",
+        
+          "min_inclusive": 0,
+          "max_inclusive": 12
+        
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

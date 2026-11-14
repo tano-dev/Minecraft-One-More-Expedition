@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    "incendium:holding/loaded_spectral_arrow/offhand",
+    "incendium:holding/loaded_spectral_arrow/mainhand"
+  ]
+}

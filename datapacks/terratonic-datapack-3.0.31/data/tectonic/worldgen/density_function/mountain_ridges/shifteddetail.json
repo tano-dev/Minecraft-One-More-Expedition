@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:noise",
+  "noise": "tectonic:mountain_ridges/detailed",
+  "xz_scale": 2,
+  "y_scale": 0,
+  "shift_x": {
+    "type": "minecraft:mul",
+    "left": {
+      "type": "minecraft:abs",
+      "input": "tectonic:mountain_ridges/noiseshift/slopex"
+    },
+    "right": 3000
+  },
+  "shift_y": 0,
+  "shift_z": {
+    "type": "minecraft:mul",
+    "left": {
+      "type": "minecraft:abs",
+      "input": "tectonic:mountain_ridges/noiseshift/slopez"
+    },
+    "right": 3000
+  }
+}

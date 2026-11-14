@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#trek:forest/dark_oak/is_dark_forest",
+    "#trek:is_mushroom_fields",
+    {"id": "terralith:mirage_isles","required": false},
+    {"id": "biomesoplenty:mystic_grove","required": false},
+    {"id": "regions_unexplored:fungal_fen","required": false}
+  ]
+}

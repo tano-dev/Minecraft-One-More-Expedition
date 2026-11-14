@@ -1,0 +1,37 @@
+{
+  "parent": "nova_structures:adventure/find_stray_fort",
+  "display": {
+    "icon": {
+      "id": "minecraft:blue_ice",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancement.dnt.adventure.find_lone_citadel.title",
+      "fallback": "Frozen Remnants"
+    },
+    "description": {
+      "translate": "advancement.dnt.adventure.find_lone_citadel",
+      "fallback": "Approach the Lone Citadel"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lone_citadel": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:lone_citadel"
+            }
+          }
+        }
+      }
+    }
+  }
+}

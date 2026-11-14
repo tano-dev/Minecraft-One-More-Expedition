@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:fossil",
+  "max_empty_corners_allowed": 4,
+  "fossil_structures": [
+    "trek:monster_room/dripstone"
+  ],
+  "overlay_structures": [
+    "trek:monster_room/empty"
+  ],
+  "fossil_processors": "trek:monster_room/upper/dripstone",
+  "overlay_processors": "minecraft:empty"
+}

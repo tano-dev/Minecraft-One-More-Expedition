@@ -1,0 +1,36 @@
+{
+  "enabled": true,
+  "updateIntervalTicks": 20,
+  "tipRotationSeconds": 8,
+  "serverAddress": "mckhtn.redirectme.net:2026",
+  "tips": [
+    {
+      "command": "/is",
+      "description": "Return to your Skyblock island"
+    },
+    {
+      "command": "/is visit <player>",
+      "description": "Visit another player's island"
+    },
+    {
+      "command": "/return",
+      "description": "Return from visiting an island"
+    },
+    {
+      "command": "/daily",
+      "description": "Claim your daily coin rewards"
+    },
+    {
+      "command": "/shop",
+      "description": "Buy and sell items anytime"
+    },
+    {
+      "command": "/ah",
+      "description": "Browse player auction house"
+    },
+    {
+      "command": "/eco balance",
+      "description": "Check your current coins balance"
+    }
+  ]
+}

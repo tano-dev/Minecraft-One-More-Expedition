@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "nova_structures:cartographer/5/ancient_city_chart",
+	"nova_structures:cartographer/5/illager_hideout_chart",
+	"nova_structures:cartographer/5/illager_manor_chart",
+	"nova_structures:cartographer/5/lone_citadel_chart",
+	"nova_structures:cartographer/5/toxic_lair_chart",
+	"nova_structures:cartographer/5/trident_trial_monument_chart",
+	"nova_structures:cartographer/5/woodland_explorer_chart"
+	]
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    "#enchantencore:all_horse_armor",
+    "#enchantencore:all_nautilus_armor",
+    "#minecraft:chest_armor",
+    "#minecraft:foot_armor",
+    "#minecraft:head_armor",
+    "#minecraft:leg_armor",
+    "#minecraft:skulls",
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "minecraft:elytra",
+    "minecraft:trident",
+    "minecraft:wolf_armor"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "_default": {
+    "note": "Vanilla: no rarity_filter (spawns in 100% of chunks). Current: rarity_filter chance=3 (spawns in 1 in 3 chunks = 33.3%, -66.7%). Remove rarity_filter to restore 100%, or set chance=2 for 50%.",
+    "vanilla_placement": [
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:height_range",
+        "height": {
+          "type": "minecraft:trapezoid",
+          "max_inclusive": {
+            "absolute": 24
+          },
+          "min_inclusive": {
+            "absolute": 8
+          }
+        }
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  },
+  "feature": "minecraft:ore_ancient_debris_large",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 3
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "max_inclusive": {
+          "absolute": 24
+        },
+        "min_inclusive": {
+          "absolute": 8
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

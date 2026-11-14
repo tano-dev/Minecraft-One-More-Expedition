@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:interpolated",
+  "input": {
+    "type": "minecraft:min",
+    "left": {
+      "type": "minecraft:min",
+      "left": "nullscape:porosity/bubble_small",
+      "right": "nullscape:porosity/bubble_medium"
+    },
+    "right": "nullscape:porosity/bubble_large"
+  },
+  "cell_size_xz": 8,
+  "cell_size_y": 4
+}

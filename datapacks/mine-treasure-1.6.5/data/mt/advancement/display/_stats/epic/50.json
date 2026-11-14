@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_ingot"
+    },
+    "title": "Epic Effort!",
+    "description": "Find 50 Epic Treasure!",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "mt:display/_stats/epic/25",
+  "criteria": {
+    "obtainchest": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "mt.epic_count": {
+              "min": 50
+            }
+          }
+        },
+        "recipes": "mt:advancement"
+      }
+    }
+  }
+}

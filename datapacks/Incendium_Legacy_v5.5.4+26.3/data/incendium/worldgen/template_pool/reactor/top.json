@@ -1,0 +1,15 @@
+{
+  "name": "incendium:reactor",
+  "fallback": "incendium:reactor/top",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:reactor/top_1",
+        "processors": "incendium:reactor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

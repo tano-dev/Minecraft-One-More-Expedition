@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "modifier": {
+            "components": {
+              "minecraft:potion_contents": {
+                "custom_color": 13565951,
+                "custom_effects": [
+                  {
+                    "id": "minecraft:levitation",
+                    "duration": 400
+                  }
+                ],
+                "custom_name": "dnt_levitation"
+              }
+            },
+            "type": "minecraft:set_components"
+          }
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

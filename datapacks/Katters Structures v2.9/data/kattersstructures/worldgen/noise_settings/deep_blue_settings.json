@@ -1,0 +1,256 @@
+{
+  "sea_level": 128,
+  "disable_mob_generation": false,
+  "aquifers": {
+    "barrier": 1,
+    "fluid_level_floodedness": 0,
+    "fluid_level_spread": 0,
+    "lava": 0,
+    "exclusion": 1,
+    "surface_level": {
+      "type": "minecraft:find_top_surface",
+      "density": 0,
+      "upper_bound": 128,
+      "lower_bound": -16,
+      "cell_height": 8
+    }
+  },
+  "legacy_random_source": true,
+  "default_block": "minecraft:sandstone",
+  "default_fluid": {
+    "id": "minecraft:water",
+    "properties": {
+      "level": "0"
+    }
+  },
+  "noise": {
+    "min_y": -16,
+    "height": 144,
+    "size_horizontal": 4,
+    "size_vertical": 1
+  },
+  "noise_router": {
+    "temperature": {
+      "type": "minecraft:noise",
+      "noise": "minecraft:temperature",
+      "xz_scale": 0.25,
+      "y_scale": 0,
+      "shift_x": "minecraft:shift_x",
+      "shift_y": 0,
+      "shift_z": "minecraft:shift_z"
+    },
+    "vegetation": {
+      "type": "minecraft:noise",
+      "noise": "minecraft:vegetation",
+      "xz_scale": 0.5,
+      "y_scale": 0,
+      "shift_x": "minecraft:shift_x",
+      "shift_y": 0,
+      "shift_z": "minecraft:shift_z"
+    },
+    "continents": 0,
+    "erosion": 0,
+    "depth": 0,
+    "ridges": 0,
+    "chunk_surface_level": {
+      "type": "minecraft:find_top_surface",
+      "density": 0,
+      "upper_bound": 128,
+      "lower_bound": -16,
+      "cell_height": 8
+    },
+    "final_density": {
+      "type": "minecraft:squeeze",
+      "input": {
+        "type": "minecraft:mul",
+        "left": 0.6,
+        "right": {
+          "type": "minecraft:interpolated",
+          "cell_size_xz": 4,
+          "cell_size_y": 8,
+          "input": {
+            "type": "minecraft:blend_density",
+            "input": {
+              "type": "minecraft:add",
+              "left": 2.8,
+              "right": {
+                "type": "minecraft:mul",
+                "left": {
+                  "type": "minecraft:gradient",
+                  "from_value": 0,
+                  "to_value": 1,
+                  "axis": "y",
+                  "from_coordinate": -8,
+                  "to_coordinate": 24
+                },
+                "right": {
+                  "type": "minecraft:add",
+                  "left": -2,
+                  "right": {
+                    "type": "minecraft:add",
+                    "left": 0.2,
+                    "right": {
+                      "type": "minecraft:mul",
+                      "left": {
+                        "type": "minecraft:gradient",
+                        "from_value": 1,
+                        "to_value": 0,
+                        "axis": "y",
+                        "from_coordinate": 104,
+                        "to_coordinate": 128
+                      },
+                      "right": {
+                        "type": "minecraft:add",
+                        "left": -1,
+                        "right": "minecraft:nether/base_3d_noise"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "spawn_target": [],
+  "material_rule": {
+    "type": "minecraft:sequence",
+    "sequence": [
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:vertical_gradient",
+          "random_name": "minecraft:bedrock_floor",
+          "true_at_and_below": {
+            "above_bottom": 0
+          },
+          "false_at_and_above": {
+            "above_bottom": 5
+          }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": "minecraft:bedrock"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:not",
+          "invert": {
+            "type": "minecraft:vertical_gradient",
+            "random_name": "minecraft:bedrock_roof",
+            "true_at_and_below": {
+              "below_top": 5
+            },
+            "false_at_and_above": {
+              "below_top": 0
+            }
+          }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": "minecraft:bedrock"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:stone_depth",
+          "offset": 0,
+          "surface_type": "ceiling",
+          "add_surface_depth": false,
+          "secondary_depth_range": 0
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": "minecraft:sandstone"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "kattersstructures:dark_chasm"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "minecraft:vertical_gradient",
+            "random_name": "corals",
+            "true_at_and_below": {
+              "absolute": 0
+            },
+            "false_at_and_above": {
+              "below_top": 0
+            }
+          },
+          "then_run": {
+            "type": "minecraft:block",
+            "result_state": "minecraft:dead_brain_coral_block"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "kattersstructures:dark_chasm"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "minecraft:not",
+            "invert": {
+              "type": "minecraft:vertical_gradient",
+              "random_name": "corals",
+              "true_at_and_below": {
+                "absolute": 0
+              },
+              "false_at_and_above": {
+                "absolute": 0
+              }
+            }
+          },
+          "then_run": {
+            "type": "minecraft:block",
+            "result_state": "minecraft:dead_bubble_coral_block"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "kattersstructures:deep_blue_plains",
+            "kattersstructures:coralis"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "minecraft:vertical_gradient",
+            "random_name": "sand",
+            "true_at_and_below": {
+              "absolute": 0
+            },
+            "false_at_and_above": {
+              "below_top": 0
+            }
+          },
+          "then_run": {
+            "type": "minecraft:block",
+            "result_state": "minecraft:sand"
+          }
+        }
+      }
+    ]
+  }
+}

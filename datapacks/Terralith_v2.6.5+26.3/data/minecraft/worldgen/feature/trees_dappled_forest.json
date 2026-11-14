@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:weighted_random_selector",
+  "features": [
+    {
+      "data": "minecraft:red_poplar_leaf_litter",
+      "weight": 10
+    },
+    {
+      "data": "minecraft:orange_poplar_leaf_litter",
+      "weight": 11
+    },
+    {
+      "data": "minecraft:yellow_poplar_leaf_litter",
+      "weight": 7
+    },
+    {
+      "data": "minecraft:spruce_checked",
+      "weight": 4
+    },
+    {
+      "data": "minecraft:fallen_poplar_tree",
+      "weight": 3
+    }
+  ]
+}

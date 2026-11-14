@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:water_bucket"
+    },
+    "title": {
+      "translate": "advancement.dnt.adventure.find_well.title",
+      "fallback": "Well well well!"
+    },
+    "description": {
+      "translate": "advancement.dnt.adventure.find_well",
+      "fallback": "Well, there is a well here."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "find_dnt_well": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "#nova_structures:wells"
+            }
+          }
+        }
+      }
+    },
+    "find_vanilla_well_loot": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_tables": "minecraft:archaeology/desert_well"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "find_dnt_well",
+      "find_vanilla_well_loot"
+    ]
+  ]
+}

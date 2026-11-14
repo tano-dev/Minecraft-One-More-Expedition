@@ -1,0 +1,78 @@
+{
+  "feature": {
+    "type": "minecraft:block_pile",
+    
+      "state_provider": {
+        "type": "minecraft:noise",
+        "seed": 0,
+        "noise": {
+          "base_octave": -4,
+          "octave_count": 3,
+          "amplitude_modifiers": [
+            1,
+            0.5,
+            1.75
+          ]
+        },
+        "scale": 1,
+        "states": [
+          {
+            "id": "minecraft:soul_sand"
+          },
+          {
+            "id": "minecraft:soul_soil"
+          },
+          {
+            "id": "minecraft:slime_block"
+          },
+          {
+            "id": "minecraft:slime_block"
+          },
+          {
+            "id": "minecraft:slime_block"
+          },
+          {
+            "id": "minecraft:soul_soil"
+          },
+          {
+            "id": "minecraft:soul_sand"
+          },
+          {
+            "id": "minecraft:potent_sulfur"
+          },
+          {
+            "id": "minecraft:potent_sulfur"
+          },
+          {
+            "id": "minecraft:potent_sulfur"
+          }
+        ]
+      }
+    
+  },
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 30
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 6,
+      "noise_factor": 100,
+      "noise_offset": 0.15
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 5,
+      "noise_factor": 25,
+      "noise_offset": 0.15
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 350
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

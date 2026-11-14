@@ -1,0 +1,17 @@
+{
+    "name": "grim_kingdoms:silentgale_citadel",
+    "fallback": "minecraft:empty",
+    "elements": [
+        
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/silentgale_citadel"
+            },
+            "weight": 1
+        }
+	
+    ]
+}

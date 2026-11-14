@@ -1,0 +1,116 @@
+{
+    "name": "grim_kingdoms:terrain",
+    "fallback": "grim_kingdoms:terrain",
+    "elements": [
+        
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/terrain1"
+            },
+            "weight": 1
+        },
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/path1"
+            },
+            "weight": 1
+        },
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/path2"
+            },
+            "weight": 1
+        },
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/path3"
+            },
+            "weight": 1
+        },
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/path4"
+            },
+            "weight": 1
+        },
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/path5"
+            },
+            "weight": 1
+        },
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/path6"
+            },
+            "weight": 1
+        },
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/path7"
+            },
+            "weight": 1
+        },
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/path8"
+            },
+            "weight": 1
+        },
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/path9"
+            },
+            "weight": 1
+        },
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/path10"
+            },
+            "weight": 1
+        },
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/terrain/path11"
+            },
+            "weight": 1
+        }
+
+    ]
+}

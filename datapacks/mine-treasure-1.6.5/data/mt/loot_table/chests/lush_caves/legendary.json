@@ -1,0 +1,471 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": {
+          "type": "minecraft:storage",
+          "storage": "mt:settings",
+          "path": "3.initial"
+        },
+        "p": {
+          "type": "minecraft:mul",
+          "inputs": [
+            {
+              "type": "minecraft:from_int",
+              "input": {
+                "type": "score",
+                "target": "this",
+                "score": "mt.total"
+              }
+            },
+            1e-06
+          ]
+        }
+      },
+      "bonus_rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:charms/legendary",
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.1
+          }
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:potion",
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$vanilla_mode"
+              },
+              "score": "mt.var"
+            },
+            "test": 0
+          },
+          "modifier": [
+            {
+              "type": "set_count",
+              "count": 1
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 5,
+                "minecraft:custom_name": {
+                  "text": "Potion of The Lush Caves",
+                  "color": "gold",
+                  "italic": false
+                },
+                "minecraft:potion_contents": {
+                  "custom_color": 1572662,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:instant_health",
+                      "amplifier": 1,
+                      "duration": 1
+                    },
+                    {
+                      "id": "minecraft:regeneration",
+                      "amplifier": 3,
+                      "duration": 400,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:resistance",
+                      "amplifier": 1,
+                      "duration": 400,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:absorption",
+                      "amplifier": 1,
+                      "duration": 400,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:glowing",
+                      "amplifier": 1,
+                      "duration": 400,
+                      "show_particles": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_shulker_box",
+          "weight": 2,
+          "quality": 1,
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.5
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 550000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          },
+          "modifier": {
+            "type": "minecraft:set_contents",
+            "component": "minecraft:container",
+            "entries": [
+              {
+                "type": "minecraft:loot_table",
+                "value": "mt:chests/lush_caves/epic"
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "mt:chests/lush_caves/lush_caves_leggings",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": 0.4
+              },
+              {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "mt.total": {
+                    "min": 700000
+                  }
+                }
+              },
+              {
+                "type": "minecraft:int_value_check",
+                "value": {
+                  "type": "score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "$vanilla_mode"
+                  },
+                  "score": "mt.var"
+                },
+                "test": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:golden_apple",
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 599999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:limit_count",
+            "limit": {
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "mt:custom_items/juicy_experience_drink",
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$vanilla_mode"
+              },
+              "score": "mt.var"
+            },
+            "test": 0
+          },
+          "modifier": {
+            "type": "set_count",
+            "count": 2
+          }
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$vanilla_mode"
+              },
+              "score": "mt.var"
+            },
+            "test": 0
+          },
+          "modifier": [
+            {
+              "type": "set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            },
+            {
+              "type": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 5,
+                "tooltip_display": {
+                  "hidden_components": [
+                    "potion_contents"
+                  ]
+                },
+                "minecraft:potion_contents": {
+                  "custom_color": 16736756,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:unluck",
+                      "amplifier": 193,
+                      "duration": 9600,
+                      "show_particles": true,
+                      "show_icon": true,
+                      "ambient": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "set_name",
+              "name": [
+                {
+                  "color": "white",
+                  "text": "Shrink Potion",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "type": "set_lore",
+              "lore": [
+                {
+                  "color": "blue",
+                  "text": "Shrink (08:00)",
+                  "italic": false
+                },
+                {
+                  "color": "gray",
+                  "text": "Works on players only ",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glow_ink_sac",
+          "weight": 3,
+          "condition": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "mt.total": {
+                "max": 599999
+              }
+            }
+          },
+          "modifier": {
+            "type": "minecraft:limit_count",
+            "limit": {
+              "min": 12,
+              "max": 24
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honey_block",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:limit_count",
+            "limit": {
+              "min": 12,
+              "max": 24
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:enchanted_golden_apple",
+          "modifier": {
+            "type": "minecraft:limit_count",
+            "limit": {
+              "min": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:tipped_arrow",
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$vanilla_mode"
+              },
+              "score": "mt.var"
+            },
+            "test": 0
+          },
+          "modifier": [
+            {
+              "type": "minecraft:limit_count",
+              "limit": {
+                "min": 4,
+                "max": 8
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Lush Arrow",
+                  "color": "#2DD90B",
+                  "italic": false
+                },
+                "minecraft:potion_contents": {
+                  "custom_color": 1441549,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:weakness",
+                      "amplifier": 1,
+                      "duration": 140,
+                      "show_particles": false
+                    },
+                    {
+                      "id": "minecraft:poison",
+                      "amplifier": 2,
+                      "duration": 140,
+                      "show_particles": false
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:tipped_arrow",
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$vanilla_mode"
+              },
+              "score": "mt.var"
+            },
+            "test": 0
+          },
+          "modifier": [
+            {
+              "type": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 2
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Arrow of Lusting Hunger",
+                  "color": "#998F5C",
+                  "italic": false
+                },
+                "minecraft:potion_contents": {
+                  "custom_color": 5003570,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:mining_fatigue",
+                      "amplifier": 1,
+                      "duration": 160,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:blindness",
+                      "amplifier": 1,
+                      "duration": 160,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:hunger",
+                      "amplifier": 120,
+                      "duration": 300,
+                      "show_particles": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

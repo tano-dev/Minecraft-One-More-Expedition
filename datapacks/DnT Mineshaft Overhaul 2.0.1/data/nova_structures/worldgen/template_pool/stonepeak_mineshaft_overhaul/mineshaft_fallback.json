@@ -1,0 +1,25 @@
+{
+	"name": "nova_structures:stonepeak_mineshaft_overhaul/mineshaft_fallback",
+	"fallback": "nova_structures:stonepeak_mineshaft_overhaul/mineshaft_fallback",
+	"elements": [
+		
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/stonepeak/mineshaft/stonepeak_mineshaft_intersect_deadend",
+				"projection": "rigid",
+				"processors": "nova_structures:stony_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/stonepeak/mineshaft/stonepeak_mineshaft_deadend",
+				"projection": "rigid",
+				"processors": "nova_structures:stony_mineshaft_processor"
+			}
+		}
+	]
+}

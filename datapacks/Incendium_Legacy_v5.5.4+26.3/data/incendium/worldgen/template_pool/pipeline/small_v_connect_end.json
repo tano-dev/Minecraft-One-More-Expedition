@@ -1,0 +1,24 @@
+{
+  "name": "incendium:pipeline/small_v_connect",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:pipeline/small_v_connect_up_end",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:pipeline/small_v_connect_down_end",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

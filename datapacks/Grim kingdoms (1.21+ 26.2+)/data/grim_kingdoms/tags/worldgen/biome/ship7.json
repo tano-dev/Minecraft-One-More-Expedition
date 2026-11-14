@@ -1,0 +1,34 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:ocean",
+        "minecraft:deep_ocean",
+        "minecraft:warm_ocean",
+        "minecraft:lukewarm_ocean",
+        "minecraft:deep_lukewarm_ocean",
+        "minecraft:cold_ocean",
+        "minecraft:deep_cold_ocean",
+        "minecraft:frozen_ocean",
+        "minecraft:deep_frozen_ocean",
+        {
+            "id": "biomesoplenty:oceanic_abyss",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:coral_reef",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:kelp_forest",
+            "required": false
+        },
+        {
+            "id": "wwee:ocean_deep",
+            "required": false
+        },
+        {
+            "id": "wwee:icy_ocean",
+            "required": false
+        }
+    ]
+}

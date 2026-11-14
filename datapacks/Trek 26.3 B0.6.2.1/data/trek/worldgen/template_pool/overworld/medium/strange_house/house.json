@@ -1,0 +1,15 @@
+{
+  "name": "house",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:overworld/medium/strange_house/house",
+        "projection": "rigid",
+        "processors": "trek:stone/crackify_50"
+      }
+    }
+  ]
+}

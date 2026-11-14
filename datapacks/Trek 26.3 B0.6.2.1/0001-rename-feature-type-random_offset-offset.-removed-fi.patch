@@ -1,0 +1,497 @@
+From d7b9b6e5f295153d820c70c7f4caabeaa153a9ba Mon Sep 17 00:00:00 2001
+From: Useless Guy <Useless>
+Date: Thu, 22 Oct 2026 15:09:43 +0200
+Subject: [PATCH 1/7] rename feature type random_offset -> offset. removed
+ fields xz_spread, y_spread and replaced them with fields x, y, z
+
+---
+ .../block_column/cobblestone_wall.json        | 126 ++++++++++--------
+ .../feature/block_column/dark_oak_fence.json  | 126 ++++++++++--------
+ .../feature/block_column/spruce_log.json      |   7 +-
+ .../block_column/stripped_dark_oak_log.json   |   7 +-
+ .../feature/geode/deepslate_ores.json         |  14 +-
+ 5 files changed, 160 insertions(+), 120 deletions(-)
+
+diff --git a/data/trek/worldgen/template_pool/feature/block_column/cobblestone_wall.json b/data/trek/worldgen/template_pool/feature/block_column/cobblestone_wall.json
+index e4eb933..6fca212 100644
+--- a/data/trek/worldgen/template_pool/feature/block_column/cobblestone_wall.json
++++ b/data/trek/worldgen/template_pool/feature/block_column/cobblestone_wall.json
+@@ -13,9 +13,10 @@
+               "feature": "trek:block_column/cobblestone_wall",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -1
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -1,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -27,9 +28,10 @@
+               "feature": "trek:block_column/cobblestone_wall_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -5
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -5,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -41,9 +43,10 @@
+               "feature": "trek:block_column/cobblestone_wall_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -14
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -14,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -55,14 +58,16 @@
+               "feature": "trek:block_column/cobblestone_wall_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -7
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -7,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -74,14 +79,16 @@
+               "feature": "trek:block_column/cobblestone_wall_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -93,19 +100,22 @@
+               "feature": "trek:block_column/cobblestone_wall_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -9
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -9,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -117,24 +127,28 @@
+               "feature": "trek:block_column/cobblestone_wall_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -2
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -2,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -146,24 +160,28 @@
+               "feature": "trek:block_column/cobblestone_wall_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -11
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -11,
++                  "z": 0
+                 }
+               ]
+             }
+diff --git a/data/trek/worldgen/template_pool/feature/block_column/dark_oak_fence.json b/data/trek/worldgen/template_pool/feature/block_column/dark_oak_fence.json
+index 2b96908..e1044b2 100644
+--- a/data/trek/worldgen/template_pool/feature/block_column/dark_oak_fence.json
++++ b/data/trek/worldgen/template_pool/feature/block_column/dark_oak_fence.json
+@@ -13,9 +13,10 @@
+               "feature": "trek:block_column/dark_oak_fence",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -1
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -1,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -27,9 +28,10 @@
+               "feature": "trek:block_column/dark_oak_fence_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -5
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -5,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -41,9 +43,10 @@
+               "feature": "trek:block_column/dark_oak_fence_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -14
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -14,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -55,14 +58,16 @@
+               "feature": "trek:block_column/dark_oak_fence_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -7
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -7,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -74,14 +79,16 @@
+               "feature": "trek:block_column/dark_oak_fence_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -93,19 +100,22 @@
+               "feature": "trek:block_column/dark_oak_fence_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -9
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -9,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -117,24 +127,28 @@
+               "feature": "trek:block_column/dark_oak_fence_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -2
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -2,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -146,24 +160,28 @@
+               "feature": "trek:block_column/dark_oak_fence_updater",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -16
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -16,
++                  "z": 0
+                 },
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -11
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -11,
++                  "z": 0
+                 }
+               ]
+             }
+diff --git a/data/trek/worldgen/template_pool/feature/block_column/spruce_log.json b/data/trek/worldgen/template_pool/feature/block_column/spruce_log.json
+index a7dad6f..8c5d884 100644
+--- a/data/trek/worldgen/template_pool/feature/block_column/spruce_log.json
++++ b/data/trek/worldgen/template_pool/feature/block_column/spruce_log.json
+@@ -9,9 +9,10 @@
+           "feature": "trek:block_column/spruce_log",
+           "placement": [
+             {
+-              "type": "minecraft:random_offset",
+-              "xz_spread": 0,
+-              "y_spread": -1
++              "type": "minecraft:offset",
++              "x": 0,
++              "y": -1,
++              "z": 0
+             }
+           ]
+         }
+diff --git a/data/trek/worldgen/template_pool/feature/block_column/stripped_dark_oak_log.json b/data/trek/worldgen/template_pool/feature/block_column/stripped_dark_oak_log.json
+index 0e2b540..72f456b 100644
+--- a/data/trek/worldgen/template_pool/feature/block_column/stripped_dark_oak_log.json
++++ b/data/trek/worldgen/template_pool/feature/block_column/stripped_dark_oak_log.json
+@@ -9,9 +9,10 @@
+           "feature": "trek:block_column/stripped_dark_oak_log",
+           "placement": [
+             {
+-              "type": "minecraft:random_offset",
+-              "xz_spread": 0,
+-              "y_spread": -1
++              "type": "minecraft:offset",
++              "x": 0,
++              "y": -1,
++              "z": 0
+             }
+           ]
+         }
+diff --git a/data/trek/worldgen/template_pool/feature/geode/deepslate_ores.json b/data/trek/worldgen/template_pool/feature/geode/deepslate_ores.json
+index bceb5ed..db0ead2 100644
+--- a/data/trek/worldgen/template_pool/feature/geode/deepslate_ores.json
++++ b/data/trek/worldgen/template_pool/feature/geode/deepslate_ores.json
+@@ -80,9 +80,10 @@
+               "feature": "trek:simple_block/air",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -1
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -1,
++                  "z": 0
+                 }
+               ]
+             }
+@@ -94,9 +95,10 @@
+               "feature": "trek:simple_block/air",
+               "placement": [
+                 {
+-                  "type": "minecraft:random_offset",
+-                  "xz_spread": 0,
+-                  "y_spread": -2
++                  "type": "minecraft:offset",
++                  "x": 0,
++                  "y": -2,
++                  "z": 0
+                 }
+               ]
+             }
+-- 
+2.56.0
+

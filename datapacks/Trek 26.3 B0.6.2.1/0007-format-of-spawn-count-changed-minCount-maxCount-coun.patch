@@ -1,0 +1,712 @@
+From 86c571c63b8aed636e25b76d0f4af493c41d0e61 Mon Sep 17 00:00:00 2001
+From: Useless Guy <Useless>
+Date: Thu, 22 Oct 2026 18:48:04 +0200
+Subject: [PATCH 7/7] format of spawn count changed: minCount, maxCount ->
+ count {}
+
+---
+ .../worldgen/structure/pillager_outpost.json  | 12 ++++++----
+ .../pillager_outpost_dark_forest.json         | 12 ++++++----
+ .../structure/pillager_outpost_forest.json    | 12 ++++++----
+ .../structure/pillager_outpost_mangrove.json  | 12 ++++++----
+ .../structure/pillager_outpost_swamp.json     | 12 ++++++----
+ .../overworld/common/elven_pillars.json       |  6 +++--
+ .../overworld/medium/base_pillager.json       | 12 ++++++----
+ .../overworld/medium/cold_hideout.json        |  6 +++--
+ .../overworld/medium/desert_outpost.json      | 12 ++++++----
+ .../structure/overworld/medium/fort.json      |  6 +++--
+ .../structure/overworld/medium/ice_fort.json  |  6 +++--
+ .../overworld/medium/jungle_outpost.json      | 12 ++++++----
+ .../overworld/medium/mangrove_watchtower.json |  6 +++--
+ .../medium/offshore_platform_pillager.json    | 12 ++++++----
+ .../overworld/medium/pillager_old_camp.json   |  6 +++--
+ .../overworld/medium/ship_pillager.json       |  6 +++--
+ .../overworld/medium/sorcerers_house.json     |  6 +++--
+ .../overworld/medium/strange_house.json       |  6 +++--
+ .../medium/street_vendor_pillager.json        |  6 +++--
+ .../overworld/medium/street_vendor_stall.json |  6 +++--
+ .../structure/overworld/medium/tour.json      |  6 +++--
+ .../overworld/medium/tour_desert.json         |  6 +++--
+ .../overworld/medium/tower_of_ice.json        |  6 +++--
+ .../medium/wandering_trader_dark_oak.json     |  6 +++--
+ .../medium/wandering_trader_oak.json          |  6 +++--
+ .../medium/wandering_trader_spruce.json       |  6 +++--
+ .../overworld/medium/witch_tower.json         |  6 +++--
+ .../structure/overworld/rare/castle.json      | 16 +++++++++----
+ .../structure/overworld/rare/elven_tree.json  | 12 ++++++----
+ .../overworld/rare/pillager_mansion.json      | 24 +++++++++++++------
+ .../overworld/rare/portal_sword.json          |  6 +++--
+ 31 files changed, 185 insertions(+), 89 deletions(-)
+
+diff --git a/data/minecraft/worldgen/structure/pillager_outpost.json b/data/minecraft/worldgen/structure/pillager_outpost.json
+index 918d22b..914a501 100644
+--- a/data/minecraft/worldgen/structure/pillager_outpost.json
++++ b/data/minecraft/worldgen/structure/pillager_outpost.json
+@@ -10,14 +10,18 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "maxCount": 1,
+-          "minCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 3
+         },
+         {
+           "type": "minecraft:vindicator",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/minecraft/worldgen/structure/pillager_outpost_dark_forest.json b/data/minecraft/worldgen/structure/pillager_outpost_dark_forest.json
+index a0275e5..46a4be0 100644
+--- a/data/minecraft/worldgen/structure/pillager_outpost_dark_forest.json
++++ b/data/minecraft/worldgen/structure/pillager_outpost_dark_forest.json
+@@ -10,14 +10,18 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "maxCount": 1,
+-          "minCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 3
+         },
+         {
+           "type": "minecraft:vindicator",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/minecraft/worldgen/structure/pillager_outpost_forest.json b/data/minecraft/worldgen/structure/pillager_outpost_forest.json
+index 361ea0d..97b22a4 100644
+--- a/data/minecraft/worldgen/structure/pillager_outpost_forest.json
++++ b/data/minecraft/worldgen/structure/pillager_outpost_forest.json
+@@ -10,14 +10,18 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "maxCount": 1,
+-          "minCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 3
+         },
+         {
+           "type": "minecraft:vindicator",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/minecraft/worldgen/structure/pillager_outpost_mangrove.json b/data/minecraft/worldgen/structure/pillager_outpost_mangrove.json
+index f21141c..9866fee 100644
+--- a/data/minecraft/worldgen/structure/pillager_outpost_mangrove.json
++++ b/data/minecraft/worldgen/structure/pillager_outpost_mangrove.json
+@@ -10,14 +10,18 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "maxCount": 1,
+-          "minCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 3
+         },
+         {
+           "type": "minecraft:vindicator",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/minecraft/worldgen/structure/pillager_outpost_swamp.json b/data/minecraft/worldgen/structure/pillager_outpost_swamp.json
+index c3291c8..c474b63 100644
+--- a/data/minecraft/worldgen/structure/pillager_outpost_swamp.json
++++ b/data/minecraft/worldgen/structure/pillager_outpost_swamp.json
+@@ -10,14 +10,18 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "maxCount": 1,
+-          "minCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 3
+         },
+         {
+           "type": "minecraft:vindicator",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/common/elven_pillars.json b/data/trek/worldgen/structure/overworld/common/elven_pillars.json
+index a91d7c8..345a071 100644
+--- a/data/trek/worldgen/structure/overworld/common/elven_pillars.json
++++ b/data/trek/worldgen/structure/overworld/common/elven_pillars.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "maxCount": 1,
+-          "minCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/base_pillager.json b/data/trek/worldgen/structure/overworld/medium/base_pillager.json
+index ac00c07..381045b 100644
+--- a/data/trek/worldgen/structure/overworld/medium/base_pillager.json
++++ b/data/trek/worldgen/structure/overworld/medium/base_pillager.json
+@@ -10,14 +10,18 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 3
+         },
+         {
+           "type": "minecraft:vindicator",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/cold_hideout.json b/data/trek/worldgen/structure/overworld/medium/cold_hideout.json
+index e4fc5ef..259d81d 100644
+--- a/data/trek/worldgen/structure/overworld/medium/cold_hideout.json
++++ b/data/trek/worldgen/structure/overworld/medium/cold_hideout.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:stray",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/desert_outpost.json b/data/trek/worldgen/structure/overworld/medium/desert_outpost.json
+index 55b497e..fa3e22c 100644
+--- a/data/trek/worldgen/structure/overworld/medium/desert_outpost.json
++++ b/data/trek/worldgen/structure/overworld/medium/desert_outpost.json
+@@ -10,14 +10,18 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 3
+         },
+         {
+           "type": "minecraft:vindicator",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/fort.json b/data/trek/worldgen/structure/overworld/medium/fort.json
+index 6549524..21ce6b5 100644
+--- a/data/trek/worldgen/structure/overworld/medium/fort.json
++++ b/data/trek/worldgen/structure/overworld/medium/fort.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/ice_fort.json b/data/trek/worldgen/structure/overworld/medium/ice_fort.json
+index f1ecd8c..cc6467a 100644
+--- a/data/trek/worldgen/structure/overworld/medium/ice_fort.json
++++ b/data/trek/worldgen/structure/overworld/medium/ice_fort.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:stray",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/jungle_outpost.json b/data/trek/worldgen/structure/overworld/medium/jungle_outpost.json
+index 63198ad..f9cc59f 100644
+--- a/data/trek/worldgen/structure/overworld/medium/jungle_outpost.json
++++ b/data/trek/worldgen/structure/overworld/medium/jungle_outpost.json
+@@ -10,14 +10,18 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 3
+         },
+         {
+           "type": "minecraft:vindicator",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/mangrove_watchtower.json b/data/trek/worldgen/structure/overworld/medium/mangrove_watchtower.json
+index f69f2d7..791af6a 100644
+--- a/data/trek/worldgen/structure/overworld/medium/mangrove_watchtower.json
++++ b/data/trek/worldgen/structure/overworld/medium/mangrove_watchtower.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "maxCount": 1,
+-          "minCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/offshore_platform_pillager.json b/data/trek/worldgen/structure/overworld/medium/offshore_platform_pillager.json
+index a168785..f73657a 100644
+--- a/data/trek/worldgen/structure/overworld/medium/offshore_platform_pillager.json
++++ b/data/trek/worldgen/structure/overworld/medium/offshore_platform_pillager.json
+@@ -10,14 +10,18 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 3
+         },
+         {
+           "type": "minecraft:vindicator",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/pillager_old_camp.json b/data/trek/worldgen/structure/overworld/medium/pillager_old_camp.json
+index e72eb07..0d9087b 100644
+--- a/data/trek/worldgen/structure/overworld/medium/pillager_old_camp.json
++++ b/data/trek/worldgen/structure/overworld/medium/pillager_old_camp.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/ship_pillager.json b/data/trek/worldgen/structure/overworld/medium/ship_pillager.json
+index 7b1458d..f578056 100644
+--- a/data/trek/worldgen/structure/overworld/medium/ship_pillager.json
++++ b/data/trek/worldgen/structure/overworld/medium/ship_pillager.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/sorcerers_house.json b/data/trek/worldgen/structure/overworld/medium/sorcerers_house.json
+index b2d9bc1..57a1f06 100644
+--- a/data/trek/worldgen/structure/overworld/medium/sorcerers_house.json
++++ b/data/trek/worldgen/structure/overworld/medium/sorcerers_house.json
+@@ -11,8 +11,10 @@
+         {
+           "type": "minecraft:bat",
+           "weight": 1,
+-          "minCount": 3,
+-          "maxCount": 3
++          "count": {
++            "type": "minecraft:constant",
++            "value": 3
++          }
+         }
+       ]
+     }
+diff --git a/data/trek/worldgen/structure/overworld/medium/strange_house.json b/data/trek/worldgen/structure/overworld/medium/strange_house.json
+index 6e03ba7..e740ed7 100644
+--- a/data/trek/worldgen/structure/overworld/medium/strange_house.json
++++ b/data/trek/worldgen/structure/overworld/medium/strange_house.json
+@@ -11,8 +11,10 @@
+         {
+           "type": "minecraft:bat",
+           "weight": 1,
+-          "minCount": 2,
+-          "maxCount": 2
++          "count": {
++            "type": "minecraft:constant",
++            "value": 2
++          }
+         }
+       ]
+     }
+diff --git a/data/trek/worldgen/structure/overworld/medium/street_vendor_pillager.json b/data/trek/worldgen/structure/overworld/medium/street_vendor_pillager.json
+index 0eb5dde..99dd24f 100644
+--- a/data/trek/worldgen/structure/overworld/medium/street_vendor_pillager.json
++++ b/data/trek/worldgen/structure/overworld/medium/street_vendor_pillager.json
+@@ -11,8 +11,10 @@
+         {
+           "type": "minecraft:wandering_trader",
+           "weight": 1,
+-          "minCount": 1,
+-          "maxCount": 1
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          }
+         }
+       ]
+     }
+diff --git a/data/trek/worldgen/structure/overworld/medium/street_vendor_stall.json b/data/trek/worldgen/structure/overworld/medium/street_vendor_stall.json
+index afa489d..b96f090 100644
+--- a/data/trek/worldgen/structure/overworld/medium/street_vendor_stall.json
++++ b/data/trek/worldgen/structure/overworld/medium/street_vendor_stall.json
+@@ -11,8 +11,10 @@
+         {
+           "type": "minecraft:wandering_trader",
+           "weight": 1,
+-          "minCount": 1,
+-          "maxCount": 1
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          }
+         }
+       ]
+     }
+diff --git a/data/trek/worldgen/structure/overworld/medium/tour.json b/data/trek/worldgen/structure/overworld/medium/tour.json
+index 57ad958..4f53a14 100644
+--- a/data/trek/worldgen/structure/overworld/medium/tour.json
++++ b/data/trek/worldgen/structure/overworld/medium/tour.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:skeleton",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/tour_desert.json b/data/trek/worldgen/structure/overworld/medium/tour_desert.json
+index f4ed189..fd311bd 100644
+--- a/data/trek/worldgen/structure/overworld/medium/tour_desert.json
++++ b/data/trek/worldgen/structure/overworld/medium/tour_desert.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:husk",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/tower_of_ice.json b/data/trek/worldgen/structure/overworld/medium/tower_of_ice.json
+index 88fc780..d156a22 100644
+--- a/data/trek/worldgen/structure/overworld/medium/tower_of_ice.json
++++ b/data/trek/worldgen/structure/overworld/medium/tower_of_ice.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:stray",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/medium/wandering_trader_dark_oak.json b/data/trek/worldgen/structure/overworld/medium/wandering_trader_dark_oak.json
+index 4b7d02d..578b24b 100644
+--- a/data/trek/worldgen/structure/overworld/medium/wandering_trader_dark_oak.json
++++ b/data/trek/worldgen/structure/overworld/medium/wandering_trader_dark_oak.json
+@@ -11,8 +11,10 @@
+         {
+           "type": "minecraft:wandering_trader",
+           "weight": 1,
+-          "minCount": 1,
+-          "maxCount": 1
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          }
+         }
+       ]
+     }
+diff --git a/data/trek/worldgen/structure/overworld/medium/wandering_trader_oak.json b/data/trek/worldgen/structure/overworld/medium/wandering_trader_oak.json
+index 233fd40..bf2ae1e 100644
+--- a/data/trek/worldgen/structure/overworld/medium/wandering_trader_oak.json
++++ b/data/trek/worldgen/structure/overworld/medium/wandering_trader_oak.json
+@@ -11,8 +11,10 @@
+         {
+           "type": "minecraft:wandering_trader",
+           "weight": 1,
+-          "minCount": 1,
+-          "maxCount": 1
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          }
+         }
+       ]
+     }
+diff --git a/data/trek/worldgen/structure/overworld/medium/wandering_trader_spruce.json b/data/trek/worldgen/structure/overworld/medium/wandering_trader_spruce.json
+index d490690..c15961d 100644
+--- a/data/trek/worldgen/structure/overworld/medium/wandering_trader_spruce.json
++++ b/data/trek/worldgen/structure/overworld/medium/wandering_trader_spruce.json
+@@ -11,8 +11,10 @@
+         {
+           "type": "minecraft:wandering_trader",
+           "weight": 1,
+-          "minCount": 1,
+-          "maxCount": 1
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          }
+         }
+       ]
+     }
+diff --git a/data/trek/worldgen/structure/overworld/medium/witch_tower.json b/data/trek/worldgen/structure/overworld/medium/witch_tower.json
+index 18420e7..eb895cd 100644
+--- a/data/trek/worldgen/structure/overworld/medium/witch_tower.json
++++ b/data/trek/worldgen/structure/overworld/medium/witch_tower.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:witch",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/rare/castle.json b/data/trek/worldgen/structure/overworld/rare/castle.json
+index 6ff9490..1e40de1 100644
+--- a/data/trek/worldgen/structure/overworld/rare/castle.json
++++ b/data/trek/worldgen/structure/overworld/rare/castle.json
+@@ -10,14 +10,22 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "minCount": 1,
+-          "maxCount": 2,
++          "count": {
++            "type": "minecraft:uniform",
++            "value": 1,
++            "min_inclusive": 1,
++            "max_inclusive": 2
++          },
+           "weight": 1
+         },
+         {
+           "type": "minecraft:vindicator",
+-          "minCount": 1,
+-          "maxCount": 2,
++          "count": {
++            "type": "minecraft:uniform",
++            "value": 1,
++            "min_inclusive": 1,
++            "max_inclusive": 2
++          },
+           "weight": 2
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/rare/elven_tree.json b/data/trek/worldgen/structure/overworld/rare/elven_tree.json
+index 21c4551..91c42f0 100644
+--- a/data/trek/worldgen/structure/overworld/rare/elven_tree.json
++++ b/data/trek/worldgen/structure/overworld/rare/elven_tree.json
+@@ -11,8 +11,10 @@
+         {
+           "type": "minecraft:slime",
+           "weight": 1,
+-          "minCount": 1,
+-          "maxCount": 1
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          }
+         }
+       ]
+     },
+@@ -22,8 +24,10 @@
+         {
+           "type": "minecraft:allay",
+           "weight": 1,
+-          "minCount": 1,
+-          "maxCount": 1
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          }
+         }
+       ]
+     }
+diff --git a/data/trek/worldgen/structure/overworld/rare/pillager_mansion.json b/data/trek/worldgen/structure/overworld/rare/pillager_mansion.json
+index 2ceb980..01e353a 100644
+--- a/data/trek/worldgen/structure/overworld/rare/pillager_mansion.json
++++ b/data/trek/worldgen/structure/overworld/rare/pillager_mansion.json
+@@ -10,20 +10,30 @@
+       "spawns": [
+         {
+           "type": "minecraft:pillager",
+-          "minCount": 1,
+-          "maxCount": 2,
++          "count": {
++            "type": "minecraft:uniform",
++            "value": 1,
++            "min_inclusive": 1,
++            "max_inclusive": 2
++          },
+           "weight": 1
+         },
+         {
+           "type": "minecraft:vindicator",
+-          "minCount": 1,
+-          "maxCount": 2,
++          "count": {
++            "type": "minecraft:uniform",
++            "value": 1,
++            "min_inclusive": 1,
++            "max_inclusive": 2
++          },
+           "weight": 2
+         },
+         {
+-          "type": "minecraft:illusioner",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "type": "minecraft:illusioner",
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+diff --git a/data/trek/worldgen/structure/overworld/rare/portal_sword.json b/data/trek/worldgen/structure/overworld/rare/portal_sword.json
+index 19b597b..5f878a7 100644
+--- a/data/trek/worldgen/structure/overworld/rare/portal_sword.json
++++ b/data/trek/worldgen/structure/overworld/rare/portal_sword.json
+@@ -10,8 +10,10 @@
+       "spawns": [
+         {
+           "type": "minecraft:zombified_piglin",
+-          "minCount": 1,
+-          "maxCount": 1,
++          "count": {
++            "type": "minecraft:constant",
++            "value": 1
++          },
+           "weight": 1
+         }
+       ]
+-- 
+2.56.0
+

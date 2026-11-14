@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    "incendium:holding/sentrys_wrath/offhand",
+    "incendium:holding/sentrys_wrath/mainhand"
+  ]
+}

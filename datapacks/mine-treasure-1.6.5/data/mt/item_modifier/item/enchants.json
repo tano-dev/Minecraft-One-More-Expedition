@@ -1,0 +1,67 @@
+{
+    "type": "sequence",
+    "functions": [
+        {
+            "type": "minecraft:set_enchantments",
+            "enchantments": {
+                "minecraft:protection": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 6
+                },
+                "minecraft:projectile_protection": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 6
+                },
+                "minecraft:blast_protection": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 6
+                }
+            },
+            "condition": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "offhand": {
+                            "items": "#mt:armor"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:set_enchantments",
+            "enchantments": {
+                "minecraft:sharpness": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 10
+                },
+                "minecraft:fire_aspect": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 5
+                },
+                "minecraft:looting": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 5
+                }
+            },
+            "condition": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "offhand": {
+                            "items": "#mt:weapons"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

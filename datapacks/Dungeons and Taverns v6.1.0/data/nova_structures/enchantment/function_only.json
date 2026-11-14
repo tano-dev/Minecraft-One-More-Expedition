@@ -1,0 +1,828 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.dnt.function_only",
+    "fallback": "Bug Enchant"
+  },
+  "exclusive_set": "#nova_structures:exclusive_set/loot_table_bugs",
+  "supported_items": [
+    "minecraft:stick",
+    "minecraft:flint"
+  ],
+  "weight": 20,
+  "max_level": 5,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 100,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand",
+    "head",
+    "saddle"
+  ],
+  "effects": {
+    "minecraft:prevent_equipment_drop": {},
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "nova_structures:miniboss/elder_guardian_boss_spawn_guardian"
+            },
+            {
+              "type": "minecraft:play_sound",
+              "sound": "block.trial_spawner.spawn_mob",
+              "volume": 6,
+              "pitch": 1.5
+            }
+          ]
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:random_chance",
+              "chance": 0.25
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:elder_guardian",
+                "minecraft:entity_tags": {
+                  "any_of":[
+                    "dnt_elder_guardian_boss"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "nova_structures:miniboss/elder_guardian_boss_spawn_guardian"
+            },
+            {
+              "type": "minecraft:play_sound",
+              "sound": "block.trial_spawner.spawn_mob",
+              "volume": 6,
+              "pitch": 1.5
+            }
+          ]
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:random_chance",
+              "chance": 0.35
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:elder_guardian",
+                "minecraft:entity_tags": {
+                  "any_of":[
+                    "dnt_elder_guardian_boss_ominous"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:poison",
+          "min_duration": 3,
+          "max_duration": 5,
+          "min_amplifier": 2,
+          "max_amplifier": 2
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:cave_spider",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_cave_spider_boss",
+                "dnt_cave_spider_boss_ominous"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "nova_structures:miniboss/cave_spider_boss_spawn_cave_spider"
+            },
+            {
+              "type": "minecraft:play_sound",
+              "sound": "block.trial_spawner.spawn_mob",
+              "volume": 6,
+              "pitch": 1.5
+            }
+          ]
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:cave_spider",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_cave_spider_boss_ominous"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:random_chance",
+              "chance": 0.3
+            }
+          ]
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "nova_structures:miniboss/cave_spider_boss_spawn_spider"
+            },
+            {
+              "type": "minecraft:play_sound",
+              "sound": "block.trial_spawner.spawn_mob",
+              "volume": 6,
+              "pitch": 1.5
+            }
+          ]
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:cave_spider",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_cave_spider_boss"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:random_chance",
+              "chance": 0.2
+            }
+          ]
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:slowness",
+          "min_duration": 3,
+          "max_duration": 5,
+          "min_amplifier": 2,
+          "max_amplifier": 2
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:breeze",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_breeze_boss",
+                "dnt_breeze_boss_ominous"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:levitation",
+          "min_duration": 5,
+          "max_duration": 5,
+          "min_amplifier": 2,
+          "max_amplifier": 2
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:shulker",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_shulker_boss"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:levitation",
+          "min_duration": 15,
+          "max_duration": 15,
+          "min_amplifier": 1,
+          "max_amplifier": 1
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:shulker",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_shulker_miniboss"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "minecraft:apply_mob_effect",
+              "to_apply": "minecraft:invisibility",
+              "min_duration": 3,
+              "max_duration": 5,
+              "min_amplifier": 0,
+              "max_amplifier": 0
+            },
+            {
+              "type": "run_function",
+              "function": "nova_structures:miniboss/phantom_boss_vanish"
+            }
+          ]
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:phantom",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_phantom_boss",
+                "dnt_phantom_boss_ominous"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:darkness",
+          "min_duration": 2,
+          "max_duration": 4,
+          "min_amplifier": 0,
+          "max_amplifier": 0
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:phantom",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_phantom_boss_ominous"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:miniboss/ghast_boss_fireball_damage"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:ghast",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_ghast_boss"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "#nova_structures:fireballs",
+                    "expected": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:miniboss/ghast_boss_defeat_chain"
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Health:0.0f}",
+            "minecraft:entity_type": "minecraft:ghast",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_ghast_boss"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:snowflake"
+          },
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "scale": 1
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "scale": 1
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {},
+          "speed": 0
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:breeze",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_breeze_boss",
+                "dnt_breeze_boss_ominous"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:reverse_portal"
+          },
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "scale": 1
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "scale": 1
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {},
+          "speed": 0
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:phantom",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_phantom_boss",
+                "dnt_phantom_boss_ominous"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:miniboss/ghast_boss_fireball_possess"
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:ghast",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_ghast_boss"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:soul_fire_flame"
+          },
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "scale": 1
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "scale": 1
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {},
+          "speed": 0
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:ghast",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_ghast_boss"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:miniboss/ghast_boss_summon_child"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "dnt_boss_minion": {
+                    "min": 7
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:periodic_tick": 400,
+                "minecraft:entity_type": "minecraft:ghast",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_ghast_boss"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:jockey/make_drowned_into_jockey"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:drowned",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_make_drowned_into_jockey"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:enchantment_active_check",
+              "active": false
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:jockey/spawn_bogged_horseman"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:armor_stand",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_spawn_bogged_horseman"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:enchantment_active_check",
+              "active": false
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:jockey/spawn_camel_husk_jockey"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:armor_stand",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_spawn_camel_husk_jockey"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:enchantment_active_check",
+              "active": false
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:jockey/spawn_chicken_jockey"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:armor_stand",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_spawn_chicken_jockey"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:enchantment_active_check",
+              "active": false
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:jockey/spawn_hoglin_jockey"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:armor_stand",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_spawn_hoglin_jockey"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:enchantment_active_check",
+              "active": false
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:jockey/spawn_ravager_jockey"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:armor_stand",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_spawn_ravager_jockey"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:enchantment_active_check",
+              "active": false
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:jockey/spawn_skeleton_horseman"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:armor_stand",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_spawn_skeleton_horseman"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:enchantment_active_check",
+              "active": false
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:jockey/spawn_stray_horseman"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:armor_stand",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_spawn_stray_horseman"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:enchantment_active_check",
+              "active": false
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:jockey/spawn_zautilus_jockey"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:armor_stand",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_spawn_zautilus_jockey"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:enchantment_active_check",
+              "active": false
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:jockey/spawn_zombie_horseman"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:armor_stand",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_spawn_zombie_horseman"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:enchantment_active_check",
+              "active": false
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

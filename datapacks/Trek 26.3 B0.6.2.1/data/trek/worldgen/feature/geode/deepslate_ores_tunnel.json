@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:root_system",
+  "allowed_tree_position": {
+    "type": "minecraft:matching_blocks",
+    "blocks": "minecraft:pink_glazed_terracotta"
+  },
+  "allowed_vertical_water_for_tree": 64,
+  "required_vertical_space_for_tree": 1,
+  "feature": "trek:no_op",
+  "hanging_root_placement_attempts": 1,
+  "hanging_root_radius": 1,
+  "hanging_roots_vertical_span": 1,
+  "hanging_root_state_provider": {
+    "type": "minecraft:simple",
+    "state": {
+      "id": "minecraft:air"
+    }
+  },
+  "root_column_max_height": 256,
+  "level_test_distance": 0,
+  "max_level_deviation": 0,
+  "root_placement_attempts": 128,
+  "root_radius": 2,
+  "root_replaceable": "#trek:root_system_replacable",
+  "root_state_provider": {
+    "type": "minecraft:simple",
+    "state": {
+      "id": "minecraft:air"
+    }
+  }
+}

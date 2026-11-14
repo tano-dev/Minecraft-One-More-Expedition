@@ -1,0 +1,31 @@
+{
+  "parent": "incendium:technical/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:fire_charge"]
+        },
+        "entity": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "entity_type": "minecraft:allay",
+              "entity_tags": {
+                "all_of": [
+                  "in.baby_head"
+                ]
+              }
+            }
+          }
+      }
+    },
+    "log_spam_fixer": {
+      "trigger": "minecraft:location"
+    }
+  },
+  "rewards": {
+    "function": "incendium:entity/baby_ghast/feed"
+  }
+}

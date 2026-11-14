@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:random_selector",
+  "features": [
+      {
+        "chance": 0.15,
+        "feature": "incendium:toxic_heap/spring_mid"
+      },
+      {
+        "chance": 0.35,
+        "feature": "incendium:toxic_heap/base_merge"
+      }
+    ],
+    "default": "incendium:toxic_heap/spring_thin"
+}

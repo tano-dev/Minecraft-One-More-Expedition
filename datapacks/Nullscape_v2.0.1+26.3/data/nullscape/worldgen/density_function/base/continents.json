@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:noise",
+    "noise": "nullscape:terrain/continentalness",
+    "shift_x": {
+      "type": "minecraft:mul",
+      "left": 0.125,
+      "right": {
+        "type": "minecraft:mul",
+        "left": {
+          "type": "minecraft:mul",
+          "left": "nullscape:elasticity/global",
+          "right": "nullscape:elasticity/x"
+        },
+        "right": {
+          "type": "minecraft:noise",
+          "noise": "nullscape:math/shift_x",
+          "xz_scale": 0.167,
+          "y_scale": 0.5
+        }
+      }
+    },
+    "shift_y": 0,
+    "shift_z": {
+      "type": "minecraft:mul",
+      "left": 0.125,
+      "right": {
+        "type": "minecraft:mul",
+        "left": {
+          "type": "minecraft:mul",
+          "left": "nullscape:elasticity/global",
+          "right": "nullscape:elasticity/z"
+        },
+        "right": {
+          "type": "minecraft:noise",
+          "noise": "nullscape:math/shift_z",
+          "xz_scale": 0.167,
+          "y_scale": 0.5
+        }
+      }
+    },
+    "xz_scale": 0.25,
+    "y_scale": 0.065
+  }
+}

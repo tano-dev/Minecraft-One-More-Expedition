@@ -1,0 +1,21 @@
+{
+  "feature": {
+    "type": "minecraft:template",
+    "templates": [
+      {
+        "weight": 1,
+        "data": {
+          "id": "nullscape:infestation/spike/90_mid"
+        }
+      }
+    ]
+  },
+  "placement": [
+    {
+      "type": "minecraft:offset",
+      "x": 0,
+      "y": -16,
+      "z": 0
+    }
+  ]
+}

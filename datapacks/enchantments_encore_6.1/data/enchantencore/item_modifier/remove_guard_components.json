@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "!minecraft:blocks_attacks": {}
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {
+        "enchantencore": "no_guard"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "vehicle": {},
+        "minecraft:entity_tags": {
+          "any_of": [
+            "katter.tenku.helper"
+          ]
+        }
+      }
+    }
+  ]
+}

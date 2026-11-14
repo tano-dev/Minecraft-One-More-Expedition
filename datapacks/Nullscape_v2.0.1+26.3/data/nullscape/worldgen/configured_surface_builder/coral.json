@@ -1,0 +1,14 @@
+{
+  "config": {
+    "top_material": {
+      "id": "minecraft:dead_fire_coral_block"
+    },
+    "under_material": {
+      "id": "minecraft:dead_fire_coral_block"
+    },
+    "underwater_material": {
+      "id": "minecraft:dead_fire_coral_block"
+    }
+  },
+  "type": "minecraft:default"
+}

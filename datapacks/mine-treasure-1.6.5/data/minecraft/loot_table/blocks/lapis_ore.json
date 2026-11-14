@@ -1,0 +1,117 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "mt:technical/high",
+                    "condition": {
+                        "type": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "type": "minecraft:inverted",
+                                "term": {
+                                    "type": "minecraft:match_tool",
+                                    "predicate": {
+                                        "predicates": {
+                                            "minecraft:enchantments": [
+                                                {
+                                                    "enchantments": "minecraft:silk_touch"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "terms": [
+                                    {
+                                        "type": "minecraft:match_tool",
+                                        "predicate": {
+                                            "predicates": {
+                                                "minecraft:enchantments": [
+                                                    {
+                                                        "enchantments": "minecraft:silk_touch"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:int_value_check",
+                                        "value": {
+                                            "type": "score",
+                                            "target": {
+                                                "type": "minecraft:fixed",
+                                                "name": "#disable_silk_touch"
+                                            },
+                                            "score": "mt.constant"
+                                        },
+                                        "test": 0
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:lapis_ore",
+                            "condition": {
+                                "type": "minecraft:match_tool",
+                                "predicate": {
+                                    "predicates": {
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minecraft:silk_touch",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:lapis_lazuli",
+                            "modifier": [
+                                {
+                                    "type": "minecraft:set_count",
+                                    "add": false,
+                                    "count": {
+                                        "type": "minecraft:uniform",
+                                        "max": 9,
+                                        "min": 4
+                                    }
+                                },
+                                {
+                                    "type": "minecraft:apply_bonus",
+                                    "enchantment": "minecraft:fortune",
+                                    "formula": "minecraft:ore_drops"
+                                },
+                                {
+                                    "type": "minecraft:explosion_decay"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ],
+    "random_sequence": "minecraft:blocks/lapis_ore"
+}

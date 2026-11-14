@@ -1,0 +1,31 @@
+{
+  "structures": [
+    {
+      "structure": "epic:village_plains",
+      "weight": 1
+    },
+    {
+      "structure": "epic:village_taiga",
+      "weight": 1
+    },
+    {
+      "structure": "epic:village_snowy",
+      "weight": 1
+    },
+    {
+      "structure": "epic:village_desert",
+      "weight": 1
+    },
+    {
+      "structure": "epic:village_savanna",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 50387312,
+    "locate_offset": [3, 0, 3],
+    "spacing": 40,
+    "separation": 11
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "pack_format": 94,
+    "description": "Nightmare fuel",
+    "supported_formats": {
+      "min_inclusive": 15,
+      "max_inclusive": 94
+    },
+    "min_format": 81,
+    "max_format": 900
+  }
+}

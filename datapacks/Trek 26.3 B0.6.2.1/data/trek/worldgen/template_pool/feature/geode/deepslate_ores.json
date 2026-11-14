@@ -1,0 +1,126 @@
+{
+  "name": "deepslate_ores",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:list_pool_element",
+        "projection": "rigid",
+        "elements": [
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:simple_block/pink_glazed_terracota",
+              "placement": [
+                {
+                  "type": "minecraft:height_range",
+                  "height": {
+                    "above_bottom": 32
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:geode/deepslate_ores",
+              "placement": [
+                {
+                  "type": "minecraft:height_range",
+                  "height": {
+                    "above_bottom": 64
+                  }
+                },
+                {
+                  "type": "minecraft:environment_scan",
+                  "direction_of_search": "down",
+                  "max_steps": 32,
+                  "target_condition": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:air",
+                      "minecraft:pink_glazed_terracotta"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:geode/deepslate_ores_tunnel",
+              "placement": [
+                {
+                  "type": "minecraft:height_range",
+                  "height": {
+                    "above_bottom": 64
+                  }
+                },
+                {
+                  "type": "minecraft:environment_scan",
+                  "direction_of_search": "down",
+                  "max_steps": 32,
+                  "target_condition": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:simple_block/air",
+              "placement": [
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -1,
+                  "z": 0
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:simple_block/air",
+              "placement": [
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -2,
+                  "z": 0
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:simple_block/air_update",
+              "placement": [
+                {
+                  "type": "minecraft:height_range",
+                  "height": {
+                    "above_bottom": 32
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "fallback": "trek:feature/geode/deepslate_ores"
+}

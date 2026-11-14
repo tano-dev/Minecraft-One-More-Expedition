@@ -1,0 +1,23 @@
+{
+  "pack": {
+    "description": [
+      {
+        "text": "Mine Treasure v1.6.5\nby Frozytime",
+        "color": "gold"
+      }
+    ],
+    "min_format": [
+      121,
+      1
+    ],
+    "max_format": [
+      121,
+      1
+    ],
+    "pack_format": 94,
+    "supported_formats": {
+      "min_inclusive": 15,
+      "max_inclusive": 94
+    }
+  }
+}

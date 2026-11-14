@@ -1,0 +1,1304 @@
+{
+  "type": "minecraft:tree",
+  
+    "below_trunk_provider": {
+      "type": "minecraft:simple",
+      "state": {
+        "id": "potent_sulfur"
+      }
+    },
+    "decorators": [
+      {
+        "type": "minecraft:place_on_ground",
+        "tries": 196,
+        "radius": 1,
+        "height": 5,
+        "block_state_provider": {
+          "type": "minecraft:noise",
+          "seed": 55,
+          "noise": {
+            "base_octave": -6,
+            "octave_count": 6,
+            "amplitude_modifiers": [
+              0.65,
+              1,
+              0,
+              0.5,
+              0.125,
+              0.5
+            ]
+          },
+          "scale": 1,
+          "states": [
+            {
+              "id": "minecraft:slime_block"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:slime_block"
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:attached_to_logs",
+        "probability": 1,
+        "block_provider": {
+          "type": "minecraft:rule_based",
+          "fallback": {
+            "type": "minecraft:noise",
+            "seed": 55,
+            "noise": {
+              "base_octave": -6,
+              "octave_count": 6,
+              "amplitude_modifiers": [
+                0.65,
+                1,
+                0,
+                0.5,
+                0.125,
+                0.5
+              ]
+            },
+            "scale": 1,
+            "states": [
+              {
+                "id": "minecraft:slime_block"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:slime_block"
+              }
+            ]
+          },
+          "rules": [
+            {
+              "if_true": {
+                "type": "minecraft:any_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          -1,
+                          0
+                        ],
+                        "blocks": [
+                          "lava"
+                        ]
+                      },
+                      {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -2,
+                              0
+                            ],
+                            "blocks": [
+                              "lava"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -3,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:lava"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "then": {
+                "type": "minecraft:simple",
+                "state": {
+                  "id": "minecraft:lava"
+                }
+              }
+            }
+          ]
+        },
+        "directions": [
+          "north"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_logs",
+        "probability": 1,
+        "block_provider": {
+          "type": "minecraft:rule_based",
+          "fallback": {
+            "type": "minecraft:noise",
+            "seed": 55,
+            "noise": {
+              "base_octave": -6,
+              "octave_count": 6,
+              "amplitude_modifiers": [
+                0.65,
+                1,
+                0,
+                0.5,
+                0.125,
+                0.5
+              ]
+            },
+            "scale": 1,
+            "states": [
+              {
+                "id": "minecraft:slime_block"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:slime_block"
+              }
+            ]
+          },
+          "rules": [
+            {
+              "if_true": {
+                "type": "minecraft:any_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          -1,
+                          0
+                        ],
+                        "blocks": [
+                          "lava"
+                        ]
+                      },
+                      {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -2,
+                              0
+                            ],
+                            "blocks": [
+                              "lava"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -3,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:lava"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "then": {
+                "type": "minecraft:simple",
+                "state": {
+                  "id": "minecraft:lava"
+                }
+              }
+            }
+          ]
+        },
+        "directions": [
+          "east"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_logs",
+        "probability": 1,
+        "block_provider": {
+          "type": "minecraft:rule_based",
+          "fallback": {
+            "type": "minecraft:noise",
+            "seed": 55,
+            "noise": {
+              "base_octave": -6,
+              "octave_count": 6,
+              "amplitude_modifiers": [
+                0.65,
+                1,
+                0,
+                0.5,
+                0.125,
+                0.5
+              ]
+            },
+            "scale": 1,
+            "states": [
+              {
+                "id": "minecraft:slime_block"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:slime_block"
+              }
+            ]
+          },
+          "rules": [
+            {
+              "if_true": {
+                "type": "minecraft:any_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          -1,
+                          0
+                        ],
+                        "blocks": [
+                          "lava"
+                        ]
+                      },
+                      {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -2,
+                              0
+                            ],
+                            "blocks": [
+                              "lava"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -3,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:lava"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "then": {
+                "type": "minecraft:simple",
+                "state": {
+                  "id": "minecraft:lava"
+                }
+              }
+            }
+          ]
+        },
+        "directions": [
+          "south"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_logs",
+        "probability": 1,
+        "block_provider": {
+          "type": "minecraft:rule_based",
+          "fallback": {
+            "type": "minecraft:noise",
+            "seed": 55,
+            "noise": {
+              "base_octave": -6,
+              "octave_count": 6,
+              "amplitude_modifiers": [
+                0.65,
+                1,
+                0,
+                0.5,
+                0.125,
+                0.5
+              ]
+            },
+            "scale": 1,
+            "states": [
+              {
+                "id": "minecraft:slime_block"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:sulfur"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:lime_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:green_terracotta"
+              },
+              {
+                "id": "minecraft:slime_block"
+              }
+            ]
+          },
+          "rules": [
+            {
+              "if_true": {
+                "type": "minecraft:any_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          -1,
+                          0
+                        ],
+                        "blocks": [
+                          "lava"
+                        ]
+                      },
+                      {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -2,
+                              0
+                            ],
+                            "blocks": [
+                              "lava"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -3,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:lava"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "then": {
+                "type": "minecraft:simple",
+                "state": {
+                  "id": "minecraft:lava"
+                }
+              }
+            }
+          ]
+        },
+        "directions": [
+          "west"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_logs",
+        "probability": 1,
+        "block_provider": {
+          "type": "minecraft:simple",
+          "state": {
+            "id": "potent_sulfur"
+          }
+        },
+        "directions": [
+          "down"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_leaves",
+        "probability": 0.25,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "block_provider": {
+          "type": "minecraft:noise",
+          "seed": 55,
+          "noise": {
+            "base_octave": -6,
+            "octave_count": 6,
+            "amplitude_modifiers": [
+              0.65,
+              1,
+              0,
+              0.5,
+              0.125,
+              0.5
+            ]
+          },
+          "scale": 1,
+          "states": [
+            {
+              "id": "minecraft:slime_block"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:slime_block"
+            }
+          ]
+        },
+        "directions": [
+          "east"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_leaves",
+        "probability": 0.25,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "block_provider": {
+          "type": "minecraft:noise",
+          "seed": 55,
+          "noise": {
+            "base_octave": -6,
+            "octave_count": 6,
+            "amplitude_modifiers": [
+              0.65,
+              1,
+              0,
+              0.5,
+              0.125,
+              0.5
+            ]
+          },
+          "scale": 1,
+          "states": [
+            {
+              "id": "minecraft:slime_block"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:slime_block"
+            }
+          ]
+        },
+        "directions": [
+          "west"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_leaves",
+        "probability": 0.25,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "block_provider": {
+          "type": "minecraft:noise",
+          "seed": 55,
+          "noise": {
+            "base_octave": -6,
+            "octave_count": 6,
+            "amplitude_modifiers": [
+              0.65,
+              1,
+              0,
+              0.5,
+              0.125,
+              0.5
+            ]
+          },
+          "scale": 1,
+          "states": [
+            {
+              "id": "minecraft:slime_block"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:slime_block"
+            }
+          ]
+        },
+        "directions": [
+          "south"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_leaves",
+        "probability": 0.25,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "block_provider": {
+          "type": "minecraft:noise",
+          "seed": 55,
+          "noise": {
+            "base_octave": -6,
+            "octave_count": 6,
+            "amplitude_modifiers": [
+              0.65,
+              1,
+              0,
+              0.5,
+              0.125,
+              0.5
+            ]
+          },
+          "scale": 1,
+          "states": [
+            {
+              "id": "minecraft:slime_block"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:sulfur"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:lime_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:green_terracotta"
+            },
+            {
+              "id": "minecraft:slime_block"
+            }
+          ]
+        },
+        "directions": [
+          "north"
+        ]
+      }
+    ],
+    "foliage_placer": {
+      "type": "minecraft:fancy_foliage_placer",
+      "offset": 0,
+      "radius": 1,
+      "height": 0
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple",
+      "state": {
+        "id": "minecraft:air"
+      }
+    },
+    "ignore_vines": false,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "min_clipped_height": 0,
+      "limit": 0,
+      "lower_size": 0,
+      "upper_size": 0
+    },
+    "trunk_placer": {
+      "type": "minecraft:straight_trunk_placer",
+      "base_height": 2,
+      "height_rand_a": 3,
+      "height_rand_b": 3
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple",
+      "state": {
+        "id": "minecraft:lava"
+      }
+    }
+}
+
+

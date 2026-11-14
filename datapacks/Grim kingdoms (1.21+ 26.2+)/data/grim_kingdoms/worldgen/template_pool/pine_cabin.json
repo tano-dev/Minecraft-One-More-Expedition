@@ -1,0 +1,15 @@
+{
+    "name": "grim_kingdoms:pine_cabin",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:taiga/pine_cabin"
+            },
+            "weight": 1
+        }
+    ]
+}

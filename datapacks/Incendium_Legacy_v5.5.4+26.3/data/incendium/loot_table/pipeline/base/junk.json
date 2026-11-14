@@ -1,0 +1,177 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "weight": 5,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "uniform",
+                "min": 2,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone",
+          "weight": 2,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_nugget",
+          "weight": 3,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "uniform",
+                "min": 3,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:string",
+          "weight": 5,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_sand",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "condition": {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "badlands"
+                ]
+              }
+            }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "green_terracotta",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "condition": {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "swamp"
+                ]
+              }
+            }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lime_terracotta",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "condition": {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "swamp"
+                ]
+              }
+            }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "basalt",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "condition": {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "basalt_deltas"
+                ]
+              }
+            }
+        }
+      ]
+    }
+  ]
+}

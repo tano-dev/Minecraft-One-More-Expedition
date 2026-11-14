@@ -1,0 +1,42 @@
+{
+  "name": "incendium:pipeline/small_h_connect",
+  "fallback": "incendium:pipeline/small_h_connect_end",
+  "elements": [
+    {
+      "weight": 10,
+      "element": {
+        "location": "incendium:pipeline/small_h_connect",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:pipeline/small_h_connect2",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:pipeline/small_h_connect3",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:pipeline/small_h_connect4",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:filled_map",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "type": "minecraft:exploration_map",
+              "destination": "kattersstructures:village_birch",
+              "decoration": "minecraft:village_plains",
+              "zoom": 1,
+              "skip_existing_chunks": true,
+              "condition": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "structures": "kattersstructures:village_birch"
+                }
+              }
+            },
+            {
+              "type": "minecraft:exploration_map",
+              "destination": "kattersstructures:village_cherry",
+              "decoration": "minecraft:village_plains",
+              "zoom": 1,
+              "skip_existing_chunks": true,
+              "condition": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "structures": "kattersstructures:village_cherry"
+                }
+              }
+            },
+            {
+              "type": "minecraft:exploration_map",
+              "destination": "kattersstructures:village_jungle",
+              "decoration": "minecraft:village_plains",
+              "zoom": 1,
+              "skip_existing_chunks": true,
+              "condition": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "structures": "kattersstructures:village_jungle"
+                }
+              }
+            },
+            {
+              "type": "minecraft:exploration_map",
+              "destination": "kattersstructures:village_mesa",
+              "decoration": "minecraft:village_plains",
+              "zoom": 1,
+              "skip_existing_chunks": true,
+              "condition": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "structures": "kattersstructures:village_mesa"
+                }
+              }
+            },
+            {
+              "type": "minecraft:exploration_map",
+              "destination": "kattersstructures:village_ocean",
+              "decoration": "minecraft:village_plains",
+              "zoom": 1,
+              "skip_existing_chunks": true,
+              "condition": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "structures": "kattersstructures:village_ocean"
+                }
+              }
+            },
+            {
+              "type": "minecraft:exploration_map",
+              "destination": "kattersstructures:village_sky",
+              "decoration": "minecraft:village_plains",
+              "zoom": 1,
+              "skip_existing_chunks": true,
+              "condition": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "structures": "kattersstructures:village_sky"
+                }
+              }
+            },
+            {
+              "type": "minecraft:exploration_map",
+              "destination": "kattersstructures:village_swamp",
+              "decoration": "minecraft:village_plains",
+              "zoom": 1,
+              "skip_existing_chunks": true,
+              "condition": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "structures": "kattersstructures:village_swamp"
+                }
+              }
+            },
+            {
+              "type": "minecraft:exploration_map",
+              "destination": "#kattersstructures:village",
+              "decoration": "minecraft:village_plains",
+              "zoom": 1,
+              "skip_existing_chunks": true,
+              "condition": {
+                "type": "minecraft:inverted",
+                "term": {
+                  "type": "minecraft:location_check",
+                  "predicate": {
+                    "structures": [
+                      "kattersstructures:village_birch",
+                      "kattersstructures:village_cherry",
+                      "kattersstructures:village_jungle",
+                      "kattersstructures:village_mesa",
+                      "kattersstructures:village_ocean",
+                      "kattersstructures:village_sky",
+                      "kattersstructures:village_swamp"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "translate": "item.kattersstructures.map_village.name",
+                "fallback": "Village Map"
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "item.kattersstructures.map_village.lore",
+                  "fallback": "Shows the location of a Katters Structure Village"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

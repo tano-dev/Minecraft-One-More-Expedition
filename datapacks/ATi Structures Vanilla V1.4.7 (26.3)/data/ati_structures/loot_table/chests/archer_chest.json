@@ -1,0 +1,406 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 3,
+        "max": 4
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 5,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 3,
+              "max": 5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 1,
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": []
+          },
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 10
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:infested",
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": []
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 10
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 10
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raw_gold",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": []
+          },
+          "modifier": [
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": []
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly"
+            },
+            {
+              "type": "minecraft:set_damage",
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ],
+      "modifier": []
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "condition": {
+            "type": "minecraft:all_of",
+            "terms": []
+          },
+          "modifier": [
+            {
+              "type": "minecraft:enchant_randomly"
+            },
+            {
+              "type": "minecraft:enchant_randomly"
+            },
+            {
+              "type": "minecraft:set_damage",
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_chestplate",
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate",
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          }
+        }
+      ],
+      "modifier": {
+        "type": "minecraft:set_damage",
+        "damage": {
+          "type": "minecraft:uniform",
+          "min": 0,
+          "max": 1
+        }
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_leggings",
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_leggings",
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          }
+        }
+      ],
+      "modifier": {
+        "type": "minecraft:set_damage",
+        "damage": {
+          "type": "minecraft:uniform",
+          "min": 0,
+          "max": 1
+        }
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_boots",
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_boots",
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "condition": {
+              "type": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          }
+        }
+      ],
+      "modifier": {
+        "type": "minecraft:set_damage",
+        "damage": {
+          "type": "minecraft:uniform",
+          "min": 0,
+          "max": 1
+        }
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.2
+          },
+          "modifier": {
+            "type": "minecraft:set_potion",
+            "id": "minecraft:long_slow_falling"
+          }
+        }
+      ],
+      "modifier": []
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.2
+          },
+          "modifier": {
+            "type": "minecraft:set_potion",
+            "id": "minecraft:long_strength"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.2
+          },
+          "modifier": {
+            "type": "minecraft:set_potion",
+            "id": "minecraft:strong_leaping"
+          }
+        }
+      ],
+      "modifier": []
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_pickaxe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe"
+        }
+      ],
+      "condition": {
+        "type": "minecraft:random_chance",
+        "chance": 0.3
+      },
+      "modifier": [
+        {
+          "type": "minecraft:enchant_randomly"
+        },
+        {
+          "type": "minecraft:set_damage",
+          "damage": {
+            "type": "minecraft:uniform",
+            "min": 0,
+            "max": 1
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "grim_kingdoms:zweiberg",
+    "fallback": "minecraft:empty",
+    "elements": [
+        
+{
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:snowy/zweiberg"
+            },
+            "weight": 1
+        }
+	
+    ]
+}

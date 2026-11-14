@@ -1,0 +1,328 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:random_chance",
+        "chance": 0.2
+      },
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/spellbook/book_of_jinx",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/book_of_jinx",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/spellbook/book_of_light",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/book_of_light",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/spellbook/book_of_obstruct",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/book_of_obstruct",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/spellbook/book_of_updraft",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/book_of_updraft",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/spellbook/book_of_conveyance",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/book_of_conveyance",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/spellbook/book_of_return",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/book_of_return",
+            "test": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.5
+          },
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/keys/gilded_purpur_key",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_hoe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_spear"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_pickaxe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_shovel"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots"
+        }
+      ],
+      "modifier": [
+        {
+          "type": "minecraft:enchant_with_levels",
+          "levels": {
+            "type": "minecraft:uniform",
+            "min": 30,
+            "max": 60
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 8,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/material/enderite_shard",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5,
+                "min": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/material/hallowed_ingot",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4,
+                "min": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/potion/luck_potion",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": 1,
+              "add": true
+            },
+            {
+              "type": "minecraft:limit_count",
+              "limit": {
+                "max": 1,
+                "min": 1
+              }
+            }
+          ],
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/potions/luck_potion",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/trinket/enderman_hand",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": 1,
+              "add": true
+            },
+            {
+              "type": "minecraft:limit_count",
+              "limit": {
+                "max": 1,
+                "min": 1
+              }
+            }
+          ],
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/enderman_hand",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:void_fishing/fish",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purpur_block",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 6,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purpur_pillar",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/food/fried_chorus_fruit",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 7
+              }
+            }
+          ],
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/food/fried_chorus_fruit",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_crystal"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:block/ashen_froglight",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chorus_fruit",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

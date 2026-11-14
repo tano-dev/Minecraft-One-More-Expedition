@@ -1,0 +1,67 @@
+{
+	"processors": [
+		{
+			"processor_type": "minecraft:rule",
+			"rules": [
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:block_match",
+						"block": "minecraft:water"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:block_match",
+						"block": "minecraft:cobblestone"
+					},
+					"output_state": {
+						"id": "minecraft:water",
+						"properties": {
+							"level": "0"
+						}
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:cobblestone",
+						"probability": 0.5
+					},
+					"output_state": {
+						"id": "minecraft:grass_block",
+						"properties": {
+							"snowy": "false"
+						}
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:cobblestone",
+						"probability": 0.2
+					},
+					"output_state": {
+						"id": "minecraft:gravel"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:cobblestone",
+						"probability": 0.5
+					},
+					"output_state": {
+						"id": "minecraft:mossy_cobblestone"
+					}
+				}
+			]
+		}
+	]
+}

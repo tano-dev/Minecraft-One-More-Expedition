@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 5,
+          "modifier": [
+            {
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 5578058,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:nausea",
+                      "duration": 200
+                    }
+                  ],
+                  "custom_name": "dnt_nausea"
+                }
+              },
+              "type": "minecraft:set_components"
+            },
+            {
+              "count": {
+                "min": 4,
+                "max": 8,
+                "type": "uniform"
+              },
+              "type": "set_count"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

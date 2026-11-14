@@ -1,0 +1,15 @@
+{
+  "name": "incendium:reactor_mob",
+  "fallback": "incendium:reactor/director",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:reactor/mobs/director",
+        "processors": "incendium:reactor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "feature": "nova_structures:chain_base",
+  "placement": [
+  {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:air"
+        ]
+      }
+    }
+  ]
+}

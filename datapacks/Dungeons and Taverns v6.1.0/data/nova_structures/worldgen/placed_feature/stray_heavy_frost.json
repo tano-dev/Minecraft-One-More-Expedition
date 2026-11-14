@@ -1,0 +1,30 @@
+{
+  "feature": "nova_structures:stray_heavy_frost",
+  "placement": [
+	{
+      "type": "minecraft:count",
+      "count": 160
+    },
+	{
+      "type": "minecraft:offset",
+      "x": {
+        "type": "minecraft:trapezoid",
+        "max": 3,
+        "min": -3,
+        "plateau": 0
+      },
+	  "z": {
+        "type": "minecraft:trapezoid",
+        "max": 3,
+        "min": -3,
+        "plateau": 0
+      },
+      "y": {
+        "type": "minecraft:trapezoid",
+        "max": 2,
+        "min": 0,
+        "plateau": 0
+      }
+    }
+  ]
+}

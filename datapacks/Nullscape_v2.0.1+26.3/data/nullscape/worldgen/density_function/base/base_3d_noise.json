@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:add",
+  "left": "nullscape:density/density",
+  "right": {
+    "type": "minecraft:noise",
+    "noise": "nullscape:math/base_terrain",
+    "xz_scale": 0.5,
+    "y_scale": 0.675,
+    "shift_x": {
+      "type": "minecraft:mul",
+      "left": {
+        "type": "minecraft:mul",
+        "left": "nullscape:elasticity/global",
+        "right": "nullscape:elasticity/x"
+      },
+      "right": {
+        "type": "minecraft:noise",
+        "noise": "nullscape:math/shift_x",
+        "xz_scale": 0.167,
+        "y_scale": 0.5
+      }
+    },
+    "shift_y": {
+      "type": "minecraft:mul",
+      "left": "nullscape:malleability/flatness",
+      "right": {
+        "type": "minecraft:gradient",
+        "from_coordinate": 0,
+        "to_coordinate": 384,
+        "from_value": 0,
+        "to_value": 185,
+        "axis": "y",
+        "tiling": "clamp_to_edge"
+      }
+    },
+    "shift_z": {
+      "type": "minecraft:mul",
+      "left": {
+        "type": "minecraft:mul",
+        "left": "nullscape:elasticity/global",
+        "right": "nullscape:elasticity/z"
+      },
+      "right": {
+        "type": "minecraft:noise",
+        "noise": "nullscape:math/shift_z",
+        "xz_scale": 0.167,
+        "y_scale": 0.5
+      }
+    }
+  }
+}

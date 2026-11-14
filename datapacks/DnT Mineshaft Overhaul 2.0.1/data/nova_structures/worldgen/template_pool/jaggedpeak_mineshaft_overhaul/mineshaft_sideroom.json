@@ -1,0 +1,42 @@
+{
+	"name": "nova_structures:jaggedpeak_mineshaft_overhaul/mineshaft_sideroom",
+	"fallback": "nova_structures:jaggedpeak_mineshaft_overhaul/mineshaft_sideroom_fallback",
+	"elements": [
+		{
+			"weight": 10,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/sideroom/jaggedpeak_sideroom_fail",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mainline_processor"
+			}
+		},
+		{
+			"weight": 7,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/sideroom/jaggedpeak_sideroom_1",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mainline_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/sideroom/jaggedpeak_sideroom_2",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mainline_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/jaggedpeak/sideroom/jaggedpeak_sideroom_3",
+				"projection": "rigid",
+				"processors": "nova_structures:jagged_mainline_processor"
+			}
+		}
+	]
+}

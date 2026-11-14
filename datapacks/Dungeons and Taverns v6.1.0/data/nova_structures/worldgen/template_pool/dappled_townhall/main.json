@@ -1,0 +1,33 @@
+{
+	"name": "minecraft:jungle_house",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/dappled_townshall_2",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/dappled_townshall_3",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:dappled_townhall/dappled_townshall_shelter",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		}
+	]
+}

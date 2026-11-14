@@ -1,0 +1,60 @@
+{
+    "name": "removed",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 3,
+            "element": {
+              "element_type": "minecraft:single_pool_element",
+              "projection": "rigid",
+              "location": "joshie:village/ocean/roads/straight_01",
+              "processors": "minecraft:empty"
+            }
+          },
+          {
+            "weight": 3,
+            "element": {
+              "element_type": "minecraft:single_pool_element",
+              "projection": "rigid",
+              "location": "joshie:village/ocean/roads/straight_02",
+              "processors": "minecraft:empty"
+            }
+          },
+          {
+            "weight": 3,
+            "element": {
+              "element_type": "minecraft:single_pool_element",
+              "projection": "rigid",
+              "location": "joshie:village/ocean/roads/straight_03",
+              "processors": "minecraft:empty"
+            }
+          },
+          {
+            "weight": 3,
+            "element": {
+              "element_type": "minecraft:single_pool_element",
+              "projection": "rigid",
+              "location": "joshie:village/ocean/roads/straight_04",
+              "processors": "minecraft:empty"
+            }
+          },
+          {
+            "weight": 3,
+            "element": {
+              "element_type": "minecraft:single_pool_element",
+              "projection": "rigid",
+              "location": "joshie:village/ocean/roads/straight_05",
+              "processors": "minecraft:empty"
+            }
+          },
+          {
+            "weight": 2,
+            "element": {
+              "element_type": "minecraft:single_pool_element",
+              "projection": "rigid",
+              "location": "joshie:village/ocean/roads/corner_02",
+              "processors": "minecraft:empty"
+            }
+          }
+    ]
+}

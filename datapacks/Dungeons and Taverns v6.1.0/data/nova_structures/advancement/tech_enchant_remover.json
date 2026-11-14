@@ -1,0 +1,45 @@
+{
+  "criteria": {
+    "loot_table_bug_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "nova_structures:function_only"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "loot_table_bug_book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:stored_enchantments": [
+                {
+                  "enchantments": "nova_structures:function_only"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "loot_table_bug_item",
+      "loot_table_bug_book"
+    ]
+  ],
+  "rewards": {
+    "function": "nova_structures:tech_enchant_remove"
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:air_water"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cobblestone"
+          },
+          "output_state": {
+            "id": "minecraft:air"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.4,
+            "max_chance": 0.4
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:oak_planks"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.083,
+            "max_chance": 0.083
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:oak_log",
+            "properties": {
+              "axis": "x"
+            }
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.091,
+            "max_chance": 0.091
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:oak_log",
+            "properties": {
+              "axis": "y"
+            }
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.1,
+            "max_chance": 0.1
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:oak_log",
+            "properties": {
+              "axis": "z"
+            }
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.111,
+            "max_chance": 0.111
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:stripped_oak_log",
+            "properties": {
+              "axis": "x"
+            }
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.125,
+            "max_chance": 0.125
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:stripped_oak_log",
+            "properties": {
+              "axis": "y"
+            }
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.143,
+            "max_chance": 0.143
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:stripped_oak_log",
+            "properties": {
+              "axis": "z"
+            }
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.167,
+            "max_chance": 0.167
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:oak_wood",
+            "properties": {
+              "axis": "x"
+            }
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.2,
+            "max_chance": 0.2
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:oak_wood",
+            "properties": {
+              "axis": "y"
+            }
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.25,
+            "max_chance": 0.25
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:oak_wood",
+            "properties": {
+              "axis": "z"
+            }
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.333,
+            "max_chance": 0.333
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:stripped_oak_wood",
+            "properties": {
+              "axis": "x"
+            }
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.5,
+            "max_chance": 0.5
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:stripped_oak_wood",
+            "properties": {
+              "axis": "y"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:stripped_oak_wood",
+            "properties": {
+              "axis": "z"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:spawner",
+            "probability": 0.5
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "output_nbt": {
+            "SpawnData": {
+              "entity": {
+                "id": "minecraft:zombie"
+              }
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:zombie"
+                }
+              }
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:spawner",
+            "probability": 0.5
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "output_nbt": {
+            "SpawnData": {
+              "entity": {
+                "id": "minecraft:skeleton"
+              }
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:skeleton"
+                }
+              }
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:spawner"
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "output_nbt": {
+            "SpawnData": {
+              "entity": {
+                "id": "minecraft:spider"
+              }
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:spider"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

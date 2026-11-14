@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "feet": {
+                                "items": "minecraft:leather_boots",
+                                "predicates": {
+                                    "minecraft:custom_data": "{armor:\"end_boots\"}"
+                                }
+                            }
+                        }
+                    }
+                },
+                "damage": {
+                    "dealt": 5,
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "#minecraft:is_fall",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mt:items/armor/end/pearl"
+    }
+}

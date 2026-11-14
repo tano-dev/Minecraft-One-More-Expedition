@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "itemflexer",
+  "version": "${version}",
+  "name": "ItemFlexer",
+  "description": "Server-side mod allowing players to flex items in chat (/flex) with interactive tooltips.",
+  "authors": [
+    "SilverAndro",
+    "One More Expedition Team"
+  ],
+  "contact": {
+    "homepage": "https://github.com/SilverAndro/itemflexer"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.silverandro.itemflexer.ItemFlexer"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,182 @@
+{
+    "type": "minecraft:selector",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_chestplate",
+                    "weight": 10,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 10,
+                                "max": 30
+                            },
+                            "options": "#minecraft:on_random_loot",
+                            "condition": {
+                                    "type": "minecraft:random_chance",
+                                    "chance": 0.4
+                                }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_chestplate",
+                    "weight": 14,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 10,
+                                "max": 30
+                            },
+                            "options": "#minecraft:on_random_loot",
+                            "condition": {
+                                    "type": "minecraft:random_chance",
+                                    "chance": 0.4
+                                }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_chestplate",
+                    "weight": 6,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 10,
+                                "max": 30
+                            },
+                            "options": "#minecraft:on_random_loot",
+                            "condition": {
+                                    "type": "minecraft:random_chance",
+                                    "chance": 0.7
+                                }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_chestplate",
+                    "weight": 7,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 10,
+                                "max": 30
+                            },
+                            "options": "#minecraft:on_random_loot",
+                            "condition": {
+                                    "type": "minecraft:random_chance",
+                                    "chance": 0.4
+                                }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_chestplate",
+                    "weight": 4,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 10,
+                                "max": 30
+                            },
+                            "options": "#minecraft:on_random_loot",
+                            "condition": {
+                                    "type": "minecraft:random_chance",
+                                    "chance": 0.6
+                                }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_chestplate",
+                    "weight": 1,
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0,
+                                "max": 0.3
+                            }
+                        },
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 15,
+                                "max": 30
+                            },
+                            "options": "#minecraft:on_random_loot",
+                            "condition": {
+                                    "type": "minecraft:random_chance",
+                                    "chance": 0.4
+                                }
+                        }
+                    ]
+                }
+            ],
+            "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.3
+                }
+        }
+    ]
+}

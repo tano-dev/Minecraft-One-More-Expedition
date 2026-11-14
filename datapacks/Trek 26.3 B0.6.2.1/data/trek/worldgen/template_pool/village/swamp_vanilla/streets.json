@@ -1,0 +1,150 @@
+{
+  "name": "streets",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/corner_01",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/corner_02",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/corner_03",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/straight_01",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 4
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/straight_02",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 4
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/straight_03",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 7
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/straight_04",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 7
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/straight_05",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/straight_06",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 4
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/crossroad_01",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/crossroad_02",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/crossroad_03",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/crossroad_04",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/crossroad_05",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/crossroad_06",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/streets/turn_01",
+        "processors": "trek:village/street_swamp_vanilla",
+        "projection": "terrain_matching"
+      },
+      "weight": 3
+    }
+  ],
+  "fallback": "trek:village/swamp_vanilla/terminators"
+}

@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ocean_monument_map",
+          "modifier": [
+            {
+              "destination": "nova_structures:conduit_ruin",
+              "decoration": "minecraft:monument",
+              "zoom": 1,
+              "search_radius": 100,
+              "skip_existing_chunks": false,
+              "type": "minecraft:exploration_map"
+            },
+            {
+              "components": {
+                "minecraft:dyed_color": 2195617,
+                "minecraft:rarity": "uncommon",
+                "minecraft:item_name": {
+                  "translate": "item.dnt.filled_map.conduit_ruin",
+                  "fallback": "Conduit Ruin Map"
+                },
+				"minecraft:custom_model_data": {
+                "floats": [],
+                "strings": [
+                  "dnt:map"
+                ]
+               },
+               "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:dyed_color"
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

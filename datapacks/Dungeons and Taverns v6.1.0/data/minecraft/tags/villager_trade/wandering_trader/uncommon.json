@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "nova_structures:wandering_trader/campsite_or_well_chart",
+    "nova_structures:wandering_trader/tavern_or_village_chart"
+  ]
+}

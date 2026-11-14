@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:add",
+  "left": -0.3,
+  "right": {
+    "type": "minecraft:mul",
+    "left": {
+      "type": "minecraft:gradient",
+      "axis": "y",
+      "from_coordinate": 0,
+      "to_coordinate": 64,
+      "from_value": 2,
+      "to_value": 0.5
+    },
+    "right": {
+      "type": "minecraft:add",
+      "left": {
+        "type": "minecraft:add",
+        "left": {
+          "type": "minecraft:mul",
+          "left": 2,
+          "right": {
+            "type": "minecraft:noise",
+            "noise": "tectonic:ocean1",
+            "xz_scale": 0.25,
+            "y_scale": 0
+          }
+        },
+        "right": {
+          "type": "minecraft:noise",
+          "noise": "tectonic:ocean1",
+          "xz_scale": 1,
+          "y_scale": 4
+        }
+      },
+      "right": {
+        "type": "minecraft:max",
+        "left": 0,
+        "right": {
+          "type": "minecraft:min",
+          "left": {
+            "type": "minecraft:add",
+            "left": 1,
+            "right": {
+              "type": "minecraft:mul",
+              "left": -6,
+              "right": {
+                "type": "minecraft:abs",
+                "input": {
+                  "type": "minecraft:noise",
+                  "noise": "tectonic:ocean2",
+                  "xz_scale": 0.1,
+                  "y_scale": 0
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "minecraft:add",
+            "left": -0.3,
+            "right": {
+              "type": "minecraft:mul",
+              "left": 1.5,
+              "right": {
+                "type": "minecraft:noise",
+                "noise": "tectonic:ocean2",
+                "xz_scale": 4,
+                "y_scale": 2
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

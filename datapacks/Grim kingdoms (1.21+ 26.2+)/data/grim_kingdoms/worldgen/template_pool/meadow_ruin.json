@@ -1,0 +1,15 @@
+{
+    "name": "grim_kingdoms:meadow_ruin",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:plains/meadow_ruin"
+            },
+            "weight": 1
+        }
+    ]
+}

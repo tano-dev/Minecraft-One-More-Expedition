@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:block_pile",
+  "state_provider": {
+      "type": "simple",
+        "state": {
+          "id": "minecraft:warped_stem",
+          "properties": {
+            "axis": "y"
+          }
+        }
+    }
+}

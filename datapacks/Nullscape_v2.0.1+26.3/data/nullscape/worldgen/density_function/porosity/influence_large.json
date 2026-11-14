@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:min",
+    "left": -0.135,
+    "right": {
+      "type": "minecraft:add",
+      "left": {
+        "type": "minecraft:add",
+        "left": -1,
+        "right": "nullscape:porosity/influence_add"
+      },
+      "right": {
+        "type": "minecraft:mul",
+        "left": "nullscape:porosity/influence",
+        "right": {
+          "type": "minecraft:noise",
+          "noise": "nullscape:material/sub_property/porosity/influence_large",
+          "xz_scale": 1,
+          "y_scale": 1
+        }
+      }
+    }
+  }
+}

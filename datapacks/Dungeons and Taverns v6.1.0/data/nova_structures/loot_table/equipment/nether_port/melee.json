@@ -1,0 +1,124 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": 15,
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:golden_helmet"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": 15,
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:golden_chestplate"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": 15,
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:golden_leggings"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": 15,
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ],
+                    "name": "minecraft:golden_boots"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_sword",
+                    "modifier": [
+                      {
+                        "type": "enchant_with_levels",
+                        "levels": 15,
+                        "options": "#minecraft:on_mob_spawn_equipment"
+                      }
+                    ]
+                  }
+                ],
+                "rolls": 1
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

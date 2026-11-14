@@ -1,0 +1,72 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "id": "minecraft:nether_wart",
+              "properties": {
+                "age": "0"
+              }
+            },
+            "probability": 0.25
+          },
+          "output_state": {
+            "id": "minecraft:nether_wart",
+            "properties": {
+              "age": "1"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "id": "minecraft:nether_wart",
+              "properties": {
+                "age": "0"
+              }
+            },
+            "probability": 0.25
+          },
+          "output_state": {
+            "id": "minecraft:nether_wart",
+            "properties": {
+              "age": "2"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "id": "minecraft:nether_wart",
+              "properties": {
+                "age": "0"
+              }
+            },
+            "probability": 0.33
+          },
+          "output_state": {
+            "id": "minecraft:nether_wart",
+            "properties": {
+              "age": "3"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+	"name": "nova_structures:well",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:remnant/remnant_shrine_sentinel_mass_grave",
+				"projection": "terrain_matching",
+				"processors": "nova_structures:remnantification"
+			}
+		}
+	]
+}

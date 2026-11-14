@@ -546,6 +546,60 @@
         "forgeconfigapiport"
       ],
       "remediation_advice": "Widens gravitational radius and accelerates item merging, preventing thousands of floating block drops from choking entity ticks."
+    },
+    {
+      "mod_id": "expedition-skyblock",
+      "name": "Expedition Skyblock",
+      "filename": "expedition-skyblock-1.0.0.jar",
+      "version": "1.0.0",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "fabric-api",
+        "minecraft",
+        "java"
+      ],
+      "remediation_advice": "Core Skyblock dimension and anti-grief protection module. Dedicated void dimension and player island isolation mod."
+    },
+    {
+      "mod_id": "expedition-sidebar",
+      "name": "Expedition Sidebar",
+      "filename": "expedition-sidebar-1.0.0.jar",
+      "version": "1.0.0",
+      "state": "active",
+      "category": "network_and_players",
+      "tier": "Tier-2-Experience",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "fabric-api",
+        "minecraft",
+        "java"
+      ],
+      "remediation_advice": "Server-side zero-flicker Hypixel-style sidebar with dynamic EconomyCraft and Expedition Skyblock integration."
+    },
+    {
+      "mod_id": "itemflexer",
+      "name": "ItemFlexer",
+      "filename": "itemflexer-2.0.0.jar",
+      "version": "2.0.0",
+      "state": "active",
+      "category": "network_and_players",
+      "tier": "Tier-3-Utility",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "fabric-api",
+        "minecraft",
+        "java"
+      ],
+      "remediation_advice": "Server-side item flexing mod allowing players to show held items in chat (/flex) with interactive tooltips."
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:stony_peaks",
+    {"id": "terralith:emerald_peaks","required": false},
+    {"id": "terralith:rocky_mountains","required": false},
+    {"id": "terralith:stony_spires","required": false},
+    {"id": "terralith:yosemite_cliffs","required": false},
+    {"id": "biomesoplenty:crag","required": false},
+    {"id": "natures_spirit:red_peaks","required": false},
+    {"id": "natures_spirit:snowcapped_red_peaks","required": false},
+    {"id": "regions_unexplored:mountains","required": false},
+    {"id": "regions_unexplored:towering_cliffs","required": false}
+  ]
+}

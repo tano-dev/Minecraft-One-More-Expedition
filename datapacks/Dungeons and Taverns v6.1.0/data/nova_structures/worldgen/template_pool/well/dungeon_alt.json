@@ -1,0 +1,24 @@
+{
+	"name": "nova_structures:cave_chamber/cave",
+	"fallback": "nova_structures:well/dungeon_alt_content",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:trial_dungeon/room/trial_dungeon_center",
+				"projection": "rigid",
+				"processors": "nova_structures:trial_dungeonr"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/dungeon/dungeon_well_room_main",
+				"projection": "rigid",
+				"processors": "nova_structures:trial_dungeonr"
+			}
+		}
+	]
+}

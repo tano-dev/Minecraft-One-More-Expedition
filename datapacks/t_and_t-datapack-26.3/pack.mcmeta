@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "pack_format": 94,
+    "description": "T&T 26.3",
+    "min_format": 88,
+    "max_format": 1000,
+    "supported_formats": {
+      "min_inclusive": 15,
+      "max_inclusive": 94
+    }
+  }
+}

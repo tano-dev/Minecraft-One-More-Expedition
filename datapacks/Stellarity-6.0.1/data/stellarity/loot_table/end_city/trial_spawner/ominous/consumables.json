@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/food/candied_chorus_fruit",
+          "weight": 2,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "add": false
+            }
+          ],
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/food/candied_chorus_fruit",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/food/frozen_carpaccio",
+          "weight": 3,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ],
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/food/frozen_carpaccio",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/food/chorus_juice",
+          "weight": 2,
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/food/chorus_juice",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/potion/lifeforce_potion",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/potions/lifeforce_potion",
+            "test": 1
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/potion/endurance_potion",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/potions/endurance_potion",
+            "test": 1
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "grim_kingdoms:grain_sack_keep",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:plains/grain_sack_keep"
+            },
+            "weight": 1
+        }
+    ]
+}

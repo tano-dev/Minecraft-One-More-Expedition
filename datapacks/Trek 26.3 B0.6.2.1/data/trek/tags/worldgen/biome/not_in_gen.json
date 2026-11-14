@@ -1,0 +1,12 @@
+{
+  "values": [
+    {"id": "natures_spirit:dusty_slopes","required": false},
+    {"id": "natures_spirit:golden_wilds","required": false},
+    {"id": "natures_spirit:white_cliffs","required": false},
+    {"id": "regions_unexplored:chalk_cliffs","required": false},
+    {"id": "regions_unexplored:cold_river","required": false},
+    {"id": "regions_unexplored:muddy_river","required": false},
+    {"id": "regions_unexplored:rocky_reef","required": false},
+    {"id": "regions_unexplored:tropical_river","required": false}
+  ]
+}

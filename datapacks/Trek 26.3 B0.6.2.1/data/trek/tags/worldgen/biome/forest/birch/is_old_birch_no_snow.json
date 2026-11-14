@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:old_growth_birch_forest",
+    {"id": "terralith:birch_taiga","required": false},
+    {"id": "biomesoplenty:aspen_glade","required": false},
+    {"id": "biomesoplenty:mystic_grove","required": false},
+    {"id": "natures_spirit:aspen_forest","required": false},
+    {"id": "regions_unexplored:mauve_hills","required": false}
+  ]
+}

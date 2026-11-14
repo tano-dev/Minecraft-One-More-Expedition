@@ -1,0 +1,22 @@
+{
+  "values": [
+    "minecraft:air",
+    "minecraft:water",
+    {"id": "minecraft:grass","required": false},
+    {"id": "minecraft:short_grass","required": false},
+    "minecraft:tall_grass",
+    "minecraft:fern",
+    "minecraft:large_fern",
+    "minecraft:dead_bush",
+    "minecraft:seagrass",
+    "minecraft:tall_seagrass",
+    "minecraft:kelp",
+    "minecraft:lily_pad",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "#minecraft:flowers",
+    "#minecraft:leaves",
+    "#minecraft:saplings",
+    "minecraft:vine"
+  ]
+}

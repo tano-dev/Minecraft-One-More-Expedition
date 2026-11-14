@@ -1,0 +1,145 @@
+{
+  "display": {
+    "show_toast": true,
+    "icon": {
+      "id": "minecraft:diamond_sword",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancement.dnt.adventure.kill_all_minibosses.title",
+      "fallback": "Dungeon Master"
+    },
+    "description": {
+      "translate": "advancement.dnt.adventure.kill_all_minibosses",
+      "fallback": "Slay each Dungeons and Taverns Miniboss once"
+    },
+    "frame": "challenge",
+    "hidden": true
+  },
+  "parent": "nova_structures:adventure/tavern_quest",
+  "criteria": {
+    "kill_breeze_boss": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:breeze",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_breeze_boss",
+                "dnt_breeze_boss_ominous"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "kill_cave_spider_boss": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:cave_spider",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_cave_spider_boss",
+                "dnt_cave_spider_boss_ominous"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "kill_phantom_boss": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:phantom",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_phantom_boss",
+                "dnt_phantom_boss_ominous"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "kill_guardian_boss": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:elder_guardian",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_elder_guardian_boss"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "use_sealing_boss_key": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "structures": "nova_structures:sealing_halls",
+                "block": {
+                  "blocks": "minecraft:vault",
+                  "state": {
+                    "ominous": "true"
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:ominous_trial_key",
+                "components": {
+                  "minecraft:item_name": {
+                    "translate": "item.dnt.boss_sealing_key",
+                    "fallback": "Boss Sealing Key"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill_guardian_boss"
+    ],
+    [
+      "kill_phantom_boss"
+    ],
+    [
+      "kill_cave_spider_boss"
+    ],
+    [
+      "kill_breeze_boss"
+    ],
+    [
+      "use_sealing_boss_key"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

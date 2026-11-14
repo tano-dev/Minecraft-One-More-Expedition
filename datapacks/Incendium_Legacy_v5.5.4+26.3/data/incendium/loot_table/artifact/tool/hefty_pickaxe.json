@@ -1,0 +1,65 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_pickaxe",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_name",
+                            "entity": "this",
+                            "target": "item_name",
+                            "name": {
+                                "translate": "incendium.item.hefty_pickaxe.name",
+                                "fallback": "Hefty Pickaxe",
+                                "color": "#990025",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "type": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "incendium.item.hefty_pickaxe.desc1",
+                                    "fallback": "A nether-oriented excavator",
+                                    "color": "#880012",
+                                    "italic": true
+                                },
+                                "",
+                                {
+                                    "translate": "incendium",
+                                    "fallback": "Incendium",
+                                    "color": "#FF8000",
+                                    "italic": true
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "type": "minecraft:set_custom_model_data",
+                              "floats": {
+                                  "values": [1450500],
+                                  "mode": "replace_all"
+                              }
+                        },
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {
+                                    "incendium": {
+                                        "item": "hefty_pickaxe"
+                                    }
+                                },
+                                "damage_resistant": {
+                                    "types": "#minecraft:no_knockback"
+                                    }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

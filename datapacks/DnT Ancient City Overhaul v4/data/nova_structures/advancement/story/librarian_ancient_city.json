@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_book",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancement.dnt.story.librarian_ancient_city.title",
+      "fallback": "Whispers of the Dark"
+    },
+    "description": {
+      "translate": "advancement.dnt.story.librarian_ancient_city",
+      "fallback": "Trade for a Novice Librarian's exclusive book found via taking them to the Overhauled Ancient City"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "nova_structures:adventure/find_ancient_city",
+  "criteria": {
+    "dnt_trade_enchant_sculk": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "#nova_structures:offers_trades_sculk"
+            }
+          }
+        },
+        "item": {
+          "items": "minecraft:enchanted_book",
+          "predicates": {
+            "minecraft:stored_enchantments": [
+              {
+                "enchantments": "minecraft:swift_sneak"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dnt_trade_enchant_sculk"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

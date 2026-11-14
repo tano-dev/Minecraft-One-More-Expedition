@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.offhand": {
+            "predicates": {
+            "custom_data": "{incendium:{item:'scroll_of_returning'}}"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.mainhand": {
+            "predicates": {
+            "custom_data": "{incendium:{item:'scroll_of_returning'}}"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

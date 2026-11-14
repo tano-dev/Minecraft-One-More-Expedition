@@ -1,0 +1,98 @@
+{
+  "structures": [
+    {
+      "structure": "grim_kingdoms:eldermoor",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:chillhall_plains_refuge",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:glacierfall_keep_plains",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:glimmervault_fortress_plains",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:gnomish_hut",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:grain_sack_fort",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:grain_sack_hold",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:grain_sack_keep",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:meadow_flower_ruin",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:meadow_ruin",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:mill_stone",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:river_bend_watch",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:sandfell_outpost",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:silentgale_citadel_plains",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:slate_needle",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:slate_thin_needle",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:stonyfell_outpost_plains",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:thatch_outpost",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:thatch_roof",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:tor_tower",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:weathered_colosseum",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:zweiberg_plains",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 50,
+    "separation": 30,
+    "salt": 88
+  }
+}

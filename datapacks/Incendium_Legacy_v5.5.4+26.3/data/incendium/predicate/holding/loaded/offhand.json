@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    {
+      "type": "minecraft:inverted",
+      "term": {
+        "type": "entity_properties",
+        "entity": "this",
+        "predicate": {
+          "slots": {
+            "weapon.offhand": {
+              "items": "minecraft:crossbow",
+              "components": {
+                "minecraft:charged_projectiles": [
+
+                ]
+              }
+            }
+          }
+        }
+      }
+      
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.offhand": {
+            "items": "minecraft:crossbow"
+          }
+        }
+      }
+    }
+  ]
+}

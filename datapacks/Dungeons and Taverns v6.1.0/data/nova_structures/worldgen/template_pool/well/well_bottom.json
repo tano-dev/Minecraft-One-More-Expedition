@@ -1,0 +1,132 @@
+{
+	"name": "nova_structures:well",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_allay_spring",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_archy",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_cave_chamber",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_dungeon",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_dungeon_alt",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_dungeon_alt_2",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_treasure",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_allay_spring_desert",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_archy_desert",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_cave_chamber_desert",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_dungeon_desert",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_dungeon_alt_desert",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_dungeon_alt_2_desert",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/bottom/bottom_treasure_desert",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		}
+	]
+}

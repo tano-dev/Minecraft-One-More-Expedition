@@ -1,0 +1,5492 @@
+From 25880e12beb3aaf7bbb6ec0707a218c8c773b6c2 Mon Sep 17 00:00:00 2001
+From: Useless Guy <Useless>
+Date: Thu, 22 Oct 2026 17:27:34 +0200
+Subject: [PATCH 5/7] renamed blockstate match keys Name -> id, Properties ->
+ properties
+
+---
+ .../block_column/cobblestone_wall.json        |   2 +-
+ .../cobblestone_wall_updater.json             |   8 +-
+ .../feature/block_column/dark_oak_fence.json  |   2 +-
+ .../block_column/dark_oak_fence_updater.json  |   8 +-
+ .../feature/block_column/spruce_log.json      |   4 +-
+ .../block_column/stripped_dark_oak_log.json   |   4 +-
+ .../feature/geode/deepslate_ores.json         |  22 +-
+ .../feature/geode/deepslate_ores_tunnel.json  |   4 +-
+ .../worldgen/feature/simple_block/air.json    |   2 +-
+ .../feature/simple_block/air_update.json      |   2 +-
+ .../simple_block/pink_glazed_terracota.json   |   2 +-
+ .../worldgen/feature/spring/lava_5_0.json     |   2 +-
+ .../worldgen/feature/spring/lava_5_1.json     |   2 +-
+ .../worldgen/feature/spring/lava_5_2.json     |   2 +-
+ .../worldgen/feature/spring/lava_5_3.json     |   2 +-
+ .../worldgen/feature/spring/lava_5_4.json     |   2 +-
+ .../worldgen/feature/spring/lava_5_5.json     |   2 +-
+ .../worldgen/feature/spring/water_5_0.json    |   2 +-
+ .../worldgen/feature/spring/water_5_1.json    |   2 +-
+ .../worldgen/feature/spring/water_5_2.json    |   2 +-
+ .../worldgen/feature/spring/water_5_3.json    |   2 +-
+ .../worldgen/feature/spring/water_5_4.json    |   2 +-
+ .../worldgen/feature/spring/water_5_5.json    |   2 +-
+ .../combination/crackify_20_mossify_20.json   |  14 +-
+ .../combination/crackify_20_mossify_50.json   |  14 +-
+ .../combination/crackify_20_save_tree.json    |  10 +-
+ .../combination/crackify_50_mossify_20.json   |  14 +-
+ .../combination/crackify_50_mossify_50.json   |  14 +-
+ .../monster_room/lower/deep_dark.json         |  34 ++--
+ .../monster_room/lower/default.json           |  44 ++--
+ .../monster_room/lower/dripstone.json         |  16 +-
+ .../monster_room/lower/lush.json              |  42 ++--
+ .../monster_room/upper/default.json           |  30 +--
+ .../monster_room/upper/dripstone.json         |  18 +-
+ .../monster_room/upper/lush.json              |  48 ++---
+ .../monster_room/upper/oak.json               |  58 +++---
+ .../processor_list/overworld/rare/castle.json |  10 +-
+ .../overworld/rare/tower_island/bottom.json   |   2 +-
+ .../overworld/rare/tower_island/top.json      |   8 +-
+ .../processor_list/randomise_crop/all.json    | 192 +++++++++---------
+ .../randomise_crop/beetroots.json             |  24 +--
+ .../randomise_crop/carrots.json               |  56 ++---
+ .../randomise_crop/potatoes.json              |  56 ++---
+ .../processor_list/randomise_crop/wheat.json  |  56 ++---
+ .../processor_list/remove_bookshelf_20.json   |   4 +-
+ .../processor_list/stone/crackify_20.json     |  10 +-
+ .../processor_list/stone/crackify_50.json     |  10 +-
+ .../processor_list/stone/mossify_10.json      |   4 +-
+ .../processor_list/stone/mossify_20.json      |   4 +-
+ .../processor_list/stone/mossify_50.json      |   4 +-
+ .../processor_list/village/decor_cherry.json  |  20 +-
+ .../village/house_swamp_vanilla.json          |  26 +--
+ .../processor_list/village/street_plains.json |  18 +-
+ .../village/street_swamp_vanilla.json         |  12 +-
+ .../processor_list/village/street_taiga.json  |  20 +-
+ .../village/waystone_cherry.json              | 104 +++++-----
+ .../village/waystone_plains.json              | 104 +++++-----
+ .../village/waystone_savanna.json             | 104 +++++-----
+ .../village/waystone_snowy.json               | 108 +++++-----
+ .../village/waystone_swamp.json               | 104 +++++-----
+ .../village/waystone_swamp_vanilla.json       | 116 +++++------
+ .../village/waystone_taiga.json               |  16 +-
+ 62 files changed, 816 insertions(+), 816 deletions(-)
+
+diff --git a/data/trek/worldgen/feature/block_column/cobblestone_wall.json b/data/trek/worldgen/feature/block_column/cobblestone_wall.json
+index 12c273b..727b2cb 100644
+--- a/data/trek/worldgen/feature/block_column/cobblestone_wall.json
++++ b/data/trek/worldgen/feature/block_column/cobblestone_wall.json
+@@ -13,7 +13,7 @@
+       "provider": {
+         "type": "minecraft:simple",
+         "state": {
+-          "Name": "minecraft:cobblestone_wall"
++          "id": "minecraft:cobblestone_wall"
+         }
+       }
+     }
+diff --git a/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json b/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json
+index 88c4227..09bd3ba 100644
+--- a/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json
++++ b/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json
+@@ -5,8 +5,8 @@
+     "fallback": {
+       "type": "minecraft:simple",
+       "state": {
+-        "Name": "minecraft:cobblestone_wall",
+-        "Properties": {
++        "id": "minecraft:cobblestone_wall",
++        "properties": {
+           "waterlogged": "false"
+         }
+       }
+@@ -41,8 +41,8 @@
+         "then": {
+           "type": "minecraft:simple",
+           "state": {
+-            "Name": "minecraft:cobblestone_wall",
+-            "Properties": {
++            "id": "minecraft:cobblestone_wall",
++            "properties": {
+               "waterlogged": "true"
+             }
+           }
+diff --git a/data/trek/worldgen/feature/block_column/dark_oak_fence.json b/data/trek/worldgen/feature/block_column/dark_oak_fence.json
+index 8a6afce..12ce6e5 100644
+--- a/data/trek/worldgen/feature/block_column/dark_oak_fence.json
++++ b/data/trek/worldgen/feature/block_column/dark_oak_fence.json
+@@ -13,7 +13,7 @@
+       "provider": {
+         "type": "minecraft:simple",
+         "state": {
+-          "Name": "minecraft:dark_oak_fence"
++          "id": "minecraft:dark_oak_fence"
+         }
+       }
+     }
+diff --git a/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json b/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json
+index 1d7126f..dcb2859 100644
+--- a/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json
++++ b/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json
+@@ -5,8 +5,8 @@
+     "fallback": {
+       "type": "minecraft:simple",
+       "state": {
+-        "Name": "minecraft:dark_oak_fence",
+-        "Properties": {
++        "id": "minecraft:dark_oak_fence",
++        "properties": {
+           "waterlogged": "false"
+         }
+       }
+@@ -41,8 +41,8 @@
+         "then": {
+           "type": "minecraft:simple",
+           "state": {
+-            "Name": "minecraft:dark_oak_fence",
+-            "Properties": {
++            "id": "minecraft:dark_oak_fence",
++            "properties": {
+               "waterlogged": "true"
+             }
+           }
+diff --git a/data/trek/worldgen/feature/block_column/spruce_log.json b/data/trek/worldgen/feature/block_column/spruce_log.json
+index 6c60812..400f609 100644
+--- a/data/trek/worldgen/feature/block_column/spruce_log.json
++++ b/data/trek/worldgen/feature/block_column/spruce_log.json
+@@ -13,8 +13,8 @@
+       "provider": {
+         "type": "minecraft:simple",
+         "state": {
+-          "Name": "minecraft:spruce_log",
+-          "Properties": {
++          "id": "minecraft:spruce_log",
++          "properties": {
+             "axis": "y"
+           }
+         }
+diff --git a/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json b/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json
+index 1db9d9f..3bed52d 100644
+--- a/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json
++++ b/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json
+@@ -13,8 +13,8 @@
+       "provider": {
+         "type": "minecraft:simple",
+         "state": {
+-          "Name": "minecraft:stripped_dark_oak_log",
+-          "Properties": {
++          "id": "minecraft:stripped_dark_oak_log",
++          "properties": {
+             "axis": "y"
+           }
+         }
+diff --git a/data/trek/worldgen/feature/geode/deepslate_ores.json b/data/trek/worldgen/feature/geode/deepslate_ores.json
+index 7cb112b..1316cdb 100644
+--- a/data/trek/worldgen/feature/geode/deepslate_ores.json
++++ b/data/trek/worldgen/feature/geode/deepslate_ores.json
+@@ -4,30 +4,30 @@
+     "filling_provider": {
+       "type": "minecraft:simple",
+       "state": {
+-        "Name": "minecraft:air"
++        "id": "minecraft:air"
+       }
+     },
+     "inner_placements": [
+       {
+-        "Name": "minecraft:air"
++        "id": "minecraft:air"
+       }
+     ],
+     "inner_layer_provider": {
+       "type": "minecraft:simple",
+       "state": {
+-        "Name": "minecraft:air"
++        "id": "minecraft:air"
+       }
+     },
+     "alternate_inner_layer_provider": {
+       "type": "minecraft:simple",
+       "state": {
+-        "Name": "minecraft:air"
++        "id": "minecraft:air"
+       }
+     },
+     "middle_layer_provider": {
+       "type": "minecraft:simple",
+       "state": {
+-        "Name": "minecraft:air"
++        "id": "minecraft:air"
+       }
+     },
+     "outer_layer_provider": {
+@@ -36,37 +36,37 @@
+         {
+           "weight": 170,
+           "data": {
+-            "Name": "minecraft:deepslate"
++            "id": "minecraft:deepslate"
+           }
+         },
+         {
+           "weight": 20,
+           "data": {
+-            "Name": "minecraft:deepslate_copper_ore"
++            "id": "minecraft:deepslate_copper_ore"
+           }
+         },
+         {
+           "weight": 5,
+           "data": {
+-            "Name": "minecraft:deepslate_iron_ore"
++            "id": "minecraft:deepslate_iron_ore"
+           }
+         },
+         {
+           "weight": 2,
+           "data": {
+-            "Name": "minecraft:deepslate_gold_ore"
++            "id": "minecraft:deepslate_gold_ore"
+           }
+         },
+         {
+           "weight": 1,
+           "data": {
+-            "Name": "minecraft:deepslate_diamond_ore"
++            "id": "minecraft:deepslate_diamond_ore"
+           }
+         },
+         {
+           "weight": 1,
+           "data": {
+-            "Name": "minecraft:deepslate_emerald_ore"
++            "id": "minecraft:deepslate_emerald_ore"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json b/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json
+index 98df1c9..1f8be47 100644
+--- a/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json
++++ b/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json
+@@ -13,7 +13,7 @@
+   "hanging_root_state_provider": {
+     "type": "minecraft:simple",
+     "state": {
+-      "Name": "minecraft:air"
++      "id": "minecraft:air"
+     }
+   },
+   "root_column_max_height": 256,
+@@ -25,7 +25,7 @@
+   "root_state_provider": {
+     "type": "minecraft:simple",
+     "state": {
+-      "Name": "minecraft:air"
++      "id": "minecraft:air"
+     }
+   }
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/simple_block/air.json b/data/trek/worldgen/feature/simple_block/air.json
+index ba0fe98..0c91355 100644
+--- a/data/trek/worldgen/feature/simple_block/air.json
++++ b/data/trek/worldgen/feature/simple_block/air.json
+@@ -3,7 +3,7 @@
+   "to_place": {
+     "type": "minecraft:simple",
+     "state": {
+-      "Name": "minecraft:air"
++      "id": "minecraft:air"
+     }
+   }
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/simple_block/air_update.json b/data/trek/worldgen/feature/simple_block/air_update.json
+index d6c7f31..c327627 100644
+--- a/data/trek/worldgen/feature/simple_block/air_update.json
++++ b/data/trek/worldgen/feature/simple_block/air_update.json
+@@ -5,7 +5,7 @@
+     "fallback": {
+       "type": "minecraft:simple",
+       "state": {
+-        "Name": "minecraft:air"
++        "id": "minecraft:air"
+       }
+     },
+     "rules": []
+diff --git a/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json b/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json
+index c2f7e0b..67c0fdb 100644
+--- a/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json
++++ b/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json
+@@ -3,7 +3,7 @@
+   "to_place": {
+     "type": "minecraft:simple",
+     "state": {
+-      "Name": "minecraft:pink_glazed_terracotta"
++      "id": "minecraft:pink_glazed_terracotta"
+     }
+   }
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/lava_5_0.json b/data/trek/worldgen/feature/spring/lava_5_0.json
+index 9cedb5d..08963c2 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_0.json
++++ b/data/trek/worldgen/feature/spring/lava_5_0.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:water"
++    "id": "minecraft:water"
+   },
+   "rock_count": 5,
+   "hole_count": 0,
+diff --git a/data/trek/worldgen/feature/spring/lava_5_1.json b/data/trek/worldgen/feature/spring/lava_5_1.json
+index 8a5466b..3a94b04 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_1.json
++++ b/data/trek/worldgen/feature/spring/lava_5_1.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:lava"
++    "id": "minecraft:lava"
+   },
+   "rock_count": 5,
+   "hole_count": 1,
+diff --git a/data/trek/worldgen/feature/spring/lava_5_2.json b/data/trek/worldgen/feature/spring/lava_5_2.json
+index 9ea3688..ff7074b 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_2.json
++++ b/data/trek/worldgen/feature/spring/lava_5_2.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:lava"
++    "id": "minecraft:lava"
+   },
+   "rock_count": 5,
+   "hole_count": 2,
+diff --git a/data/trek/worldgen/feature/spring/lava_5_3.json b/data/trek/worldgen/feature/spring/lava_5_3.json
+index 6378188..769e75d 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_3.json
++++ b/data/trek/worldgen/feature/spring/lava_5_3.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:lava"
++    "id": "minecraft:lava"
+   },
+   "rock_count": 5,
+   "hole_count": 3,
+diff --git a/data/trek/worldgen/feature/spring/lava_5_4.json b/data/trek/worldgen/feature/spring/lava_5_4.json
+index 1e7442e..bcc5c54 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_4.json
++++ b/data/trek/worldgen/feature/spring/lava_5_4.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:lava"
++    "id": "minecraft:lava"
+   },
+   "rock_count": 5,
+   "hole_count": 4,
+diff --git a/data/trek/worldgen/feature/spring/lava_5_5.json b/data/trek/worldgen/feature/spring/lava_5_5.json
+index 5ea94d1..4345bb2 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_5.json
++++ b/data/trek/worldgen/feature/spring/lava_5_5.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:lava"
++    "id": "minecraft:lava"
+   },
+   "rock_count": 5,
+   "hole_count": 5,
+diff --git a/data/trek/worldgen/feature/spring/water_5_0.json b/data/trek/worldgen/feature/spring/water_5_0.json
+index d969b4c..9c01813 100644
+--- a/data/trek/worldgen/feature/spring/water_5_0.json
++++ b/data/trek/worldgen/feature/spring/water_5_0.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:lava"
++    "id": "minecraft:lava"
+   },
+   "rock_count": 5,
+   "hole_count": 0,
+diff --git a/data/trek/worldgen/feature/spring/water_5_1.json b/data/trek/worldgen/feature/spring/water_5_1.json
+index 0cc72dc..8ddebae 100644
+--- a/data/trek/worldgen/feature/spring/water_5_1.json
++++ b/data/trek/worldgen/feature/spring/water_5_1.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:water"
++    "id": "minecraft:water"
+   },
+   "rock_count": 5,
+   "hole_count": 1,
+diff --git a/data/trek/worldgen/feature/spring/water_5_2.json b/data/trek/worldgen/feature/spring/water_5_2.json
+index c287bbe..7d38538 100644
+--- a/data/trek/worldgen/feature/spring/water_5_2.json
++++ b/data/trek/worldgen/feature/spring/water_5_2.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:water"
++    "id": "minecraft:water"
+   },
+   "rock_count": 5,
+   "hole_count": 2,
+diff --git a/data/trek/worldgen/feature/spring/water_5_3.json b/data/trek/worldgen/feature/spring/water_5_3.json
+index 55b922a..f5544db 100644
+--- a/data/trek/worldgen/feature/spring/water_5_3.json
++++ b/data/trek/worldgen/feature/spring/water_5_3.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:water"
++    "id": "minecraft:water"
+   },
+   "rock_count": 5,
+   "hole_count": 3,
+diff --git a/data/trek/worldgen/feature/spring/water_5_4.json b/data/trek/worldgen/feature/spring/water_5_4.json
+index 87dcdfe..75f9ee5 100644
+--- a/data/trek/worldgen/feature/spring/water_5_4.json
++++ b/data/trek/worldgen/feature/spring/water_5_4.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:water"
++    "id": "minecraft:water"
+   },
+   "rock_count": 5,
+   "hole_count": 4,
+diff --git a/data/trek/worldgen/feature/spring/water_5_5.json b/data/trek/worldgen/feature/spring/water_5_5.json
+index ec8808f..95ede6b 100644
+--- a/data/trek/worldgen/feature/spring/water_5_5.json
++++ b/data/trek/worldgen/feature/spring/water_5_5.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:spring_feature",
+   "state": {
+-    "Name": "minecraft:water"
++    "id": "minecraft:water"
+   },
+   "rock_count": 5,
+   "hole_count": 5,
+diff --git a/data/trek/worldgen/processor_list/combination/crackify_20_mossify_20.json b/data/trek/worldgen/processor_list/combination/crackify_20_mossify_20.json
+index 958ff27..2c4df5e 100644
+--- a/data/trek/worldgen/processor_list/combination/crackify_20_mossify_20.json
++++ b/data/trek/worldgen/processor_list/combination/crackify_20_mossify_20.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone"
++            "id": "minecraft:mossy_cobblestone"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_stone_bricks"
++            "id": "minecraft:cracked_stone_bricks"
+           }
+         },
+         {
+@@ -39,7 +39,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_stone_bricks"
++            "id": "minecraft:mossy_stone_bricks"
+           }
+         },
+         {
+@@ -52,7 +52,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_bricks"
++            "id": "minecraft:cracked_deepslate_bricks"
+           }
+         },
+         {
+@@ -65,7 +65,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_tiles"
++            "id": "minecraft:cracked_deepslate_tiles"
+           }
+         },
+         {
+@@ -78,7 +78,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_nether_bricks"
++            "id": "minecraft:cracked_nether_bricks"
+           }
+         },
+         {
+@@ -91,7 +91,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_polished_blackstone_bricks"
++            "id": "minecraft:cracked_polished_blackstone_bricks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/combination/crackify_20_mossify_50.json b/data/trek/worldgen/processor_list/combination/crackify_20_mossify_50.json
+index a935bf9..8e24123 100644
+--- a/data/trek/worldgen/processor_list/combination/crackify_20_mossify_50.json
++++ b/data/trek/worldgen/processor_list/combination/crackify_20_mossify_50.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone"
++            "id": "minecraft:mossy_cobblestone"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_stone_bricks"
++            "id": "minecraft:cracked_stone_bricks"
+           }
+         },
+         {
+@@ -39,7 +39,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_stone_bricks"
++            "id": "minecraft:mossy_stone_bricks"
+           }
+         },
+         {
+@@ -52,7 +52,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_bricks"
++            "id": "minecraft:cracked_deepslate_bricks"
+           }
+         },
+         {
+@@ -65,7 +65,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_tiles"
++            "id": "minecraft:cracked_deepslate_tiles"
+           }
+         },
+         {
+@@ -78,7 +78,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_nether_bricks"
++            "id": "minecraft:cracked_nether_bricks"
+           }
+         },
+         {
+@@ -91,7 +91,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_polished_blackstone_bricks"
++            "id": "minecraft:cracked_polished_blackstone_bricks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/combination/crackify_20_save_tree.json b/data/trek/worldgen/processor_list/combination/crackify_20_save_tree.json
+index 6aec265..a78c4c2 100644
+--- a/data/trek/worldgen/processor_list/combination/crackify_20_save_tree.json
++++ b/data/trek/worldgen/processor_list/combination/crackify_20_save_tree.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_stone_bricks"
++            "id": "minecraft:cracked_stone_bricks"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_bricks"
++            "id": "minecraft:cracked_deepslate_bricks"
+           }
+         },
+         {
+@@ -39,7 +39,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_tiles"
++            "id": "minecraft:cracked_deepslate_tiles"
+           }
+         },
+         {
+@@ -52,7 +52,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_nether_bricks"
++            "id": "minecraft:cracked_nether_bricks"
+           }
+         },
+         {
+@@ -65,7 +65,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_polished_blackstone_bricks"
++            "id": "minecraft:cracked_polished_blackstone_bricks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/combination/crackify_50_mossify_20.json b/data/trek/worldgen/processor_list/combination/crackify_50_mossify_20.json
+index 8a579f7..616debb 100644
+--- a/data/trek/worldgen/processor_list/combination/crackify_50_mossify_20.json
++++ b/data/trek/worldgen/processor_list/combination/crackify_50_mossify_20.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone"
++            "id": "minecraft:mossy_cobblestone"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_stone_bricks"
++            "id": "minecraft:cracked_stone_bricks"
+           }
+         },
+         {
+@@ -39,7 +39,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_stone_bricks"
++            "id": "minecraft:mossy_stone_bricks"
+           }
+         },
+         {
+@@ -52,7 +52,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_bricks"
++            "id": "minecraft:cracked_deepslate_bricks"
+           }
+         },
+         {
+@@ -65,7 +65,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_tiles"
++            "id": "minecraft:cracked_deepslate_tiles"
+           }
+         },
+         {
+@@ -78,7 +78,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_nether_bricks"
++            "id": "minecraft:cracked_nether_bricks"
+           }
+         },
+         {
+@@ -91,7 +91,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_polished_blackstone_bricks"
++            "id": "minecraft:cracked_polished_blackstone_bricks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/combination/crackify_50_mossify_50.json b/data/trek/worldgen/processor_list/combination/crackify_50_mossify_50.json
+index a330891..31136f3 100644
+--- a/data/trek/worldgen/processor_list/combination/crackify_50_mossify_50.json
++++ b/data/trek/worldgen/processor_list/combination/crackify_50_mossify_50.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone"
++            "id": "minecraft:mossy_cobblestone"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_stone_bricks"
++            "id": "minecraft:cracked_stone_bricks"
+           }
+         },
+         {
+@@ -39,7 +39,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_stone_bricks"
++            "id": "minecraft:mossy_stone_bricks"
+           }
+         },
+         {
+@@ -52,7 +52,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_bricks"
++            "id": "minecraft:cracked_deepslate_bricks"
+           }
+         },
+         {
+@@ -65,7 +65,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_tiles"
++            "id": "minecraft:cracked_deepslate_tiles"
+           }
+         },
+         {
+@@ -78,7 +78,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_nether_bricks"
++            "id": "minecraft:cracked_nether_bricks"
+           }
+         },
+         {
+@@ -91,7 +91,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_polished_blackstone_bricks"
++            "id": "minecraft:cracked_polished_blackstone_bricks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/monster_room/lower/deep_dark.json b/data/trek/worldgen/processor_list/monster_room/lower/deep_dark.json
+index f8ec947..1c72680 100644
+--- a/data/trek/worldgen/processor_list/monster_room/lower/deep_dark.json
++++ b/data/trek/worldgen/processor_list/monster_room/lower/deep_dark.json
+@@ -13,7 +13,7 @@
+             "block": "minecraft:cobblestone"
+           },
+           "output_state": {
+-            "Name": "minecraft:air"
++            "id": "minecraft:air"
+           }
+         },
+         {
+@@ -33,7 +33,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_bricks"
++            "id": "minecraft:deepslate_bricks"
+           }
+         },
+         {
+@@ -53,7 +53,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_bricks"
++            "id": "minecraft:cracked_deepslate_bricks"
+           }
+         },
+         {
+@@ -73,7 +73,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:polished_deepslate"
++            "id": "minecraft:polished_deepslate"
+           }
+         },
+         {
+@@ -93,7 +93,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:chiseled_deepslate"
++            "id": "minecraft:chiseled_deepslate"
+           }
+         },
+         {
+@@ -113,7 +113,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_tiles"
++            "id": "minecraft:deepslate_tiles"
+           }
+         },
+         {
+@@ -133,7 +133,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_tiles"
++            "id": "minecraft:cracked_deepslate_tiles"
+           }
+         },
+         {
+@@ -153,7 +153,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:gray_wool"
++            "id": "minecraft:gray_wool"
+           }
+         },
+         {
+@@ -173,7 +173,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:blue_wool"
++            "id": "minecraft:blue_wool"
+           }
+         },
+         {
+@@ -193,7 +193,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:cyan_wool"
++            "id": "minecraft:cyan_wool"
+           }
+         },
+         {
+@@ -213,7 +213,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:light_blue_wool"
++            "id": "minecraft:light_blue_wool"
+           }
+         },
+         {
+@@ -226,7 +226,7 @@
+             "probability": 0.1
+           },
+           "output_state": {
+-            "Name": "minecraft:blue_wool"
++            "id": "minecraft:blue_wool"
+           }
+         },
+         {
+@@ -239,7 +239,7 @@
+             "probability": 0.111
+           },
+           "output_state": {
+-            "Name": "minecraft:cyan_wool"
++            "id": "minecraft:cyan_wool"
+           }
+         },
+         {
+@@ -252,7 +252,7 @@
+             "probability": 0.125
+           },
+           "output_state": {
+-            "Name": "minecraft:light_blue_wool"
++            "id": "minecraft:light_blue_wool"
+           }
+         },
+         {
+@@ -265,7 +265,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -295,7 +295,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -324,7 +324,7 @@
+             "block": "minecraft:spawner"
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+diff --git a/data/trek/worldgen/processor_list/monster_room/lower/default.json b/data/trek/worldgen/processor_list/monster_room/lower/default.json
+index 91d96e2..272b11b 100644
+--- a/data/trek/worldgen/processor_list/monster_room/lower/default.json
++++ b/data/trek/worldgen/processor_list/monster_room/lower/default.json
+@@ -13,7 +13,7 @@
+             "block": "minecraft:cobblestone"
+           },
+           "output_state": {
+-            "Name": "minecraft:air"
++            "id": "minecraft:air"
+           }
+         },
+         {
+@@ -32,7 +32,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_bricks"
++            "id": "minecraft:deepslate_bricks"
+           }
+         },
+         {
+@@ -51,7 +51,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_bricks"
++            "id": "minecraft:cracked_deepslate_bricks"
+           }
+         },
+         {
+@@ -70,7 +70,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:polished_deepslate"
++            "id": "minecraft:polished_deepslate"
+           }
+         },
+         {
+@@ -89,7 +89,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:chiseled_deepslate"
++            "id": "minecraft:chiseled_deepslate"
+           }
+         },
+         {
+@@ -108,7 +108,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:cobbled_deepslate"
++            "id": "minecraft:cobbled_deepslate"
+           }
+         },
+         {
+@@ -127,7 +127,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_tiles"
++            "id": "minecraft:deepslate_tiles"
+           }
+         },
+         {
+@@ -139,7 +139,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_tiles"
++            "id": "minecraft:cracked_deepslate_tiles"
+           }
+         },
+         {
+@@ -152,7 +152,7 @@
+             "probability": 0.008
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_emerald_ore"
++            "id": "minecraft:deepslate_emerald_ore"
+           }
+         },
+         {
+@@ -165,7 +165,7 @@
+             "probability": 0.022
+           },
+           "output_state": {
+-            "Name": "minecraft:coal_block"
++            "id": "minecraft:coal_block"
+           }
+         },
+         {
+@@ -178,7 +178,7 @@
+             "probability": 0.021
+           },
+           "output_state": {
+-            "Name": "minecraft:raw_iron_block"
++            "id": "minecraft:raw_iron_block"
+           }
+         },
+         {
+@@ -191,7 +191,7 @@
+             "probability": 0.021
+           },
+           "output_state": {
+-            "Name": "minecraft:raw_gold_block"
++            "id": "minecraft:raw_gold_block"
+           }
+         },
+         {
+@@ -204,7 +204,7 @@
+             "probability": 0.032
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_diamond_ore"
++            "id": "minecraft:deepslate_diamond_ore"
+           }
+         },
+         {
+@@ -217,7 +217,7 @@
+             "probability": 0.444
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate"
++            "id": "minecraft:deepslate"
+           }
+         },
+         {
+@@ -230,7 +230,7 @@
+             "probability": 0.6
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_iron_ore"
++            "id": "minecraft:deepslate_iron_ore"
+           }
+         },
+         {
+@@ -243,7 +243,7 @@
+             "probability": 0.25
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_redstone_ore"
++            "id": "minecraft:deepslate_redstone_ore"
+           }
+         },
+         {
+@@ -256,7 +256,7 @@
+             "probability": 0.333
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_lapis_ore"
++            "id": "minecraft:deepslate_lapis_ore"
+           }
+         },
+         {
+@@ -269,7 +269,7 @@
+             "probability": 0.7
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_gold_ore"
++            "id": "minecraft:deepslate_gold_ore"
+           }
+         },
+         {
+@@ -281,7 +281,7 @@
+             "block": "minecraft:coal_ore"
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_coal_ore"
++            "id": "minecraft:deepslate_coal_ore"
+           }
+         },
+         {
+@@ -294,7 +294,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -324,7 +324,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -353,7 +353,7 @@
+             "block": "minecraft:spawner"
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+diff --git a/data/trek/worldgen/processor_list/monster_room/lower/dripstone.json b/data/trek/worldgen/processor_list/monster_room/lower/dripstone.json
+index 9caca77..687b3e6 100644
+--- a/data/trek/worldgen/processor_list/monster_room/lower/dripstone.json
++++ b/data/trek/worldgen/processor_list/monster_room/lower/dripstone.json
+@@ -13,7 +13,7 @@
+             "block": "minecraft:cobblestone"
+           },
+           "output_state": {
+-            "Name": "minecraft:air"
++            "id": "minecraft:air"
+           }
+         },
+         {
+@@ -32,7 +32,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate"
++            "id": "minecraft:deepslate"
+           }
+         },
+         {
+@@ -51,7 +51,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:tuff"
++            "id": "minecraft:tuff"
+           }
+         },
+         {
+@@ -63,7 +63,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:dripstone_block"
++            "id": "minecraft:dripstone_block"
+           }
+         },
+         {
+@@ -75,7 +75,7 @@
+             "block": "minecraft:copper_ore"
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_copper_ore"
++            "id": "minecraft:deepslate_copper_ore"
+           }
+         },
+         {
+@@ -88,7 +88,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -118,7 +118,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -147,7 +147,7 @@
+             "block": "minecraft:spawner"
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+diff --git a/data/trek/worldgen/processor_list/monster_room/lower/lush.json b/data/trek/worldgen/processor_list/monster_room/lower/lush.json
+index 0d5b261..e657915 100644
+--- a/data/trek/worldgen/processor_list/monster_room/lower/lush.json
++++ b/data/trek/worldgen/processor_list/monster_room/lower/lush.json
+@@ -13,7 +13,7 @@
+             "block": "minecraft:cobblestone"
+           },
+           "output_state": {
+-            "Name": "minecraft:air"
++            "id": "minecraft:air"
+           }
+         },
+         {
+@@ -32,7 +32,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate"
++            "id": "minecraft:deepslate"
+           }
+         },
+         {
+@@ -51,7 +51,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:cobbled_deepslate"
++            "id": "minecraft:cobbled_deepslate"
+           }
+         },
+         {
+@@ -70,7 +70,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:tuff"
++            "id": "minecraft:tuff"
+           }
+         },
+         {
+@@ -89,7 +89,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:clay"
++            "id": "minecraft:clay"
+           }
+         },
+         {
+@@ -101,7 +101,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:moss_block"
++            "id": "minecraft:moss_block"
+           }
+         },
+         {
+@@ -111,15 +111,15 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_slab",
+-              "Properties": {
++              "id": "minecraft:stone_slab",
++              "properties": {
+                 "type": "bottom"
+               }
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobbled_deepslate_slab",
+-            "Properties": {
++            "id": "minecraft:cobbled_deepslate_slab",
++            "properties": {
+               "type": "bottom"
+             }
+           }
+@@ -131,8 +131,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:cobblestone_wall",
+-              "Properties": {
++              "id": "minecraft:cobblestone_wall",
++              "properties": {
+                 "east": "low",
+                 "north": "low",
+                 "south": "none",
+@@ -142,8 +142,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobbled_deepslate_wall",
+-              "Properties": {
++            "id": "minecraft:cobbled_deepslate_wall",
++              "properties": {
+                 "east": "low",
+                 "north": "low",
+                 "south": "none",
+@@ -159,8 +159,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:cobblestone_wall",
+-              "Properties": {
++              "id": "minecraft:cobblestone_wall",
++              "properties": {
+                 "east": "low",
+                 "north": "none",
+                 "south": "low",
+@@ -170,8 +170,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobbled_deepslate_wall",
+-              "Properties": {
++            "id": "minecraft:cobbled_deepslate_wall",
++              "properties": {
+                 "east": "low",
+                 "north": "none",
+                 "south": "low",
+@@ -190,7 +190,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -220,7 +220,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -249,7 +249,7 @@
+             "block": "minecraft:spawner"
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+diff --git a/data/trek/worldgen/processor_list/monster_room/upper/default.json b/data/trek/worldgen/processor_list/monster_room/upper/default.json
+index 12af631..ee8e25a 100644
+--- a/data/trek/worldgen/processor_list/monster_room/upper/default.json
++++ b/data/trek/worldgen/processor_list/monster_room/upper/default.json
+@@ -13,7 +13,7 @@
+             "block": "minecraft:cobblestone"
+           },
+           "output_state": {
+-            "Name": "minecraft:air"
++            "id": "minecraft:air"
+           }
+         },
+         {
+@@ -33,7 +33,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:stone_bricks"
++            "id": "minecraft:stone_bricks"
+           }
+         },
+         {
+@@ -53,7 +53,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_stone_bricks"
++            "id": "minecraft:mossy_stone_bricks"
+           }
+         },
+         {
+@@ -73,7 +73,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone"
++            "id": "minecraft:cobblestone"
+           }
+         },
+         {
+@@ -93,7 +93,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone"
++            "id": "minecraft:mossy_cobblestone"
+           }
+         },
+         {
+@@ -113,7 +113,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:grass_block"
++            "id": "minecraft:grass_block"
+           }
+         },
+         {
+@@ -126,7 +126,7 @@
+             "probability": 0.008
+           },
+           "output_state": {
+-            "Name": "minecraft:emerald_ore"
++            "id": "minecraft:emerald_ore"
+           }
+         },
+         {
+@@ -139,7 +139,7 @@
+             "probability": 0.022
+           },
+           "output_state": {
+-            "Name": "minecraft:coal_block"
++            "id": "minecraft:coal_block"
+           }
+         },
+         {
+@@ -152,7 +152,7 @@
+             "probability": 0.021
+           },
+           "output_state": {
+-            "Name": "minecraft:raw_iron_block"
++            "id": "minecraft:raw_iron_block"
+           }
+         },
+         {
+@@ -165,7 +165,7 @@
+             "probability": 0.368
+           },
+           "output_state": {
+-            "Name": "minecraft:stone"
++            "id": "minecraft:stone"
+           }
+         },
+         {
+@@ -178,7 +178,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:iron_ore"
++            "id": "minecraft:iron_ore"
+           }
+         },
+         {
+@@ -190,7 +190,7 @@
+             "block": "minecraft:coal_ore"
+           },
+           "output_state": {
+-            "Name": "minecraft:coal_ore"
++            "id": "minecraft:coal_ore"
+           }
+         },
+         {
+@@ -203,7 +203,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -233,7 +233,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -262,7 +262,7 @@
+             "block": "minecraft:spawner"
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+diff --git a/data/trek/worldgen/processor_list/monster_room/upper/dripstone.json b/data/trek/worldgen/processor_list/monster_room/upper/dripstone.json
+index 3557cf8..663a2d6 100644
+--- a/data/trek/worldgen/processor_list/monster_room/upper/dripstone.json
++++ b/data/trek/worldgen/processor_list/monster_room/upper/dripstone.json
+@@ -13,7 +13,7 @@
+             "block": "minecraft:cobblestone"
+           },
+           "output_state": {
+-            "Name": "minecraft:air"
++            "id": "minecraft:air"
+           }
+         },
+         {
+@@ -33,7 +33,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:stone"
++            "id": "minecraft:stone"
+           }
+         },
+         {
+@@ -53,7 +53,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:andesite"
++            "id": "minecraft:andesite"
+           }
+         },
+         {
+@@ -73,7 +73,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:granite"
++            "id": "minecraft:granite"
+           }
+         },
+         {
+@@ -93,7 +93,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:dripstone_block"
++            "id": "minecraft:dripstone_block"
+           }
+         },
+         {
+@@ -113,7 +113,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:dirt"
++            "id": "minecraft:dirt"
+           }
+         },
+         {
+@@ -126,7 +126,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -156,7 +156,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -185,7 +185,7 @@
+             "block": "minecraft:spawner"
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+diff --git a/data/trek/worldgen/processor_list/monster_room/upper/lush.json b/data/trek/worldgen/processor_list/monster_room/upper/lush.json
+index 7b0225d..e102ff0 100644
+--- a/data/trek/worldgen/processor_list/monster_room/upper/lush.json
++++ b/data/trek/worldgen/processor_list/monster_room/upper/lush.json
+@@ -13,7 +13,7 @@
+             "block": "minecraft:cobblestone"
+           },
+           "output_state": {
+-            "Name": "minecraft:air"
++            "id": "minecraft:air"
+           }
+         },
+         {
+@@ -32,7 +32,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:stone_bricks"
++            "id": "minecraft:stone_bricks"
+           }
+         },
+         {
+@@ -51,7 +51,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:chiseled_stone_bricks"
++            "id": "minecraft:chiseled_stone_bricks"
+           }
+         },
+         {
+@@ -70,7 +70,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_stone_bricks"
++            "id": "minecraft:cracked_stone_bricks"
+           }
+         },
+         {
+@@ -89,7 +89,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_stone_bricks"
++            "id": "minecraft:mossy_stone_bricks"
+           }
+         },
+         {
+@@ -108,7 +108,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone"
++            "id": "minecraft:cobblestone"
+           }
+         },
+         {
+@@ -127,7 +127,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone"
++            "id": "minecraft:mossy_cobblestone"
+           }
+         },
+         {
+@@ -146,7 +146,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:clay"
++            "id": "minecraft:clay"
+           }
+         },
+         {
+@@ -158,7 +158,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:moss_block"
++            "id": "minecraft:moss_block"
+           }
+         },
+         {
+@@ -168,15 +168,15 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_slab",
+-              "Properties": {
++              "id": "minecraft:stone_slab",
++              "properties": {
+                 "type": "bottom"
+               }
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone_slab",
+-            "Properties": {
++            "id": "minecraft:mossy_cobblestone_slab",
++            "properties": {
+               "type": "bottom"
+             }
+           }
+@@ -188,8 +188,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:cobblestone_wall",
+-              "Properties": {
++              "id": "minecraft:cobblestone_wall",
++              "properties": {
+                 "east": "low",
+                 "north": "low",
+                 "south": "none",
+@@ -199,8 +199,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone_wall",
+-              "Properties": {
++            "id": "minecraft:mossy_cobblestone_wall",
++              "properties": {
+                 "east": "low",
+                 "north": "low",
+                 "south": "none",
+@@ -216,8 +216,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:cobblestone_wall",
+-              "Properties": {
++              "id": "minecraft:cobblestone_wall",
++              "properties": {
+                 "east": "low",
+                 "north": "none",
+                 "south": "low",
+@@ -227,8 +227,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone_wall",
+-              "Properties": {
++            "id": "minecraft:mossy_cobblestone_wall",
++              "properties": {
+                 "east": "low",
+                 "north": "none",
+                 "south": "low",
+@@ -247,7 +247,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -277,7 +277,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -306,7 +306,7 @@
+             "block": "minecraft:spawner"
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+diff --git a/data/trek/worldgen/processor_list/monster_room/upper/oak.json b/data/trek/worldgen/processor_list/monster_room/upper/oak.json
+index a4fddac..48f69f1 100644
+--- a/data/trek/worldgen/processor_list/monster_room/upper/oak.json
++++ b/data/trek/worldgen/processor_list/monster_room/upper/oak.json
+@@ -13,7 +13,7 @@
+             "block": "minecraft:cobblestone"
+           },
+           "output_state": {
+-            "Name": "minecraft:air"
++            "id": "minecraft:air"
+           }
+         },
+         {
+@@ -32,7 +32,7 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_planks"
++            "id": "minecraft:oak_planks"
+           }
+         },
+         {
+@@ -51,8 +51,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_log",
+-            "Properties": {
++            "id": "minecraft:oak_log",
++            "properties": {
+               "axis": "x"
+             }
+           }
+@@ -73,8 +73,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_log",
+-            "Properties": {
++            "id": "minecraft:oak_log",
++            "properties": {
+               "axis": "y"
+             }
+           }
+@@ -95,8 +95,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_log",
+-            "Properties": {
++            "id": "minecraft:oak_log",
++            "properties": {
+               "axis": "z"
+             }
+           }
+@@ -117,8 +117,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:stripped_oak_log",
+-            "Properties": {
++            "id": "minecraft:stripped_oak_log",
++            "properties": {
+               "axis": "x"
+             }
+           }
+@@ -139,8 +139,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:stripped_oak_log",
+-            "Properties": {
++            "id": "minecraft:stripped_oak_log",
++            "properties": {
+               "axis": "y"
+             }
+           }
+@@ -161,8 +161,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:stripped_oak_log",
+-            "Properties": {
++            "id": "minecraft:stripped_oak_log",
++            "properties": {
+               "axis": "z"
+             }
+           }
+@@ -183,8 +183,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_wood",
+-            "Properties": {
++            "id": "minecraft:oak_wood",
++            "properties": {
+               "axis": "x"
+             }
+           }
+@@ -205,8 +205,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_wood",
+-            "Properties": {
++            "id": "minecraft:oak_wood",
++            "properties": {
+               "axis": "y"
+             }
+           }
+@@ -227,8 +227,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_wood",
+-            "Properties": {
++            "id": "minecraft:oak_wood",
++            "properties": {
+               "axis": "z"
+             }
+           }
+@@ -249,8 +249,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:stripped_oak_wood",
+-            "Properties": {
++            "id": "minecraft:stripped_oak_wood",
++            "properties": {
+               "axis": "x"
+             }
+           }
+@@ -271,8 +271,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:stripped_oak_wood",
+-            "Properties": {
++            "id": "minecraft:stripped_oak_wood",
++            "properties": {
+               "axis": "y"
+             }
+           }
+@@ -286,8 +286,8 @@
+             "tag": "trek:mosnter_room/default_wall"
+           },
+           "output_state": {
+-            "Name": "minecraft:stripped_oak_wood",
+-            "Properties": {
++            "id": "minecraft:stripped_oak_wood",
++            "properties": {
+               "axis": "z"
+             }
+           }
+@@ -302,7 +302,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -332,7 +332,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+@@ -361,7 +361,7 @@
+             "block": "minecraft:spawner"
+           },
+           "output_state": {
+-            "Name": "minecraft:spawner"
++            "id": "minecraft:spawner"
+           },
+           "output_nbt": {
+             "SpawnData": {
+diff --git a/data/trek/worldgen/processor_list/overworld/rare/castle.json b/data/trek/worldgen/processor_list/overworld/rare/castle.json
+index 911d90c..43c4de9 100644
+--- a/data/trek/worldgen/processor_list/overworld/rare/castle.json
++++ b/data/trek/worldgen/processor_list/overworld/rare/castle.json
+@@ -13,7 +13,7 @@
+             "probability": 0.1
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone"
++            "id": "minecraft:cobblestone"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "probability": 0.167
+           },
+           "output_state": {
+-            "Name": "minecraft:stone_bricks"
++            "id": "minecraft:stone_bricks"
+           }
+         },
+         {
+@@ -39,7 +39,7 @@
+             "probability": 0.133
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_stone_bricks"
++            "id": "minecraft:cracked_stone_bricks"
+           }
+         },
+         {
+@@ -52,7 +52,7 @@
+             "probability": 0.077
+           },
+           "output_state": {
+-            "Name": "minecraft:tuff"
++            "id": "minecraft:tuff"
+           }
+         },
+         {
+@@ -65,7 +65,7 @@
+             "probability": 0.083
+           },
+           "output_state": {
+-            "Name": "minecraft:polished_andesite"
++            "id": "minecraft:polished_andesite"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/overworld/rare/tower_island/bottom.json b/data/trek/worldgen/processor_list/overworld/rare/tower_island/bottom.json
+index 3a4ce5f..1e7d34c 100644
+--- a/data/trek/worldgen/processor_list/overworld/rare/tower_island/bottom.json
++++ b/data/trek/worldgen/processor_list/overworld/rare/tower_island/bottom.json
+@@ -28,7 +28,7 @@
+             "block": "minecraft:stone"
+           },
+           "output_state": {
+-            "Name": "minecraft:granite"
++            "id": "minecraft:granite"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/overworld/rare/tower_island/top.json b/data/trek/worldgen/processor_list/overworld/rare/tower_island/top.json
+index 1092e87..c5d2356 100644
+--- a/data/trek/worldgen/processor_list/overworld/rare/tower_island/top.json
++++ b/data/trek/worldgen/processor_list/overworld/rare/tower_island/top.json
+@@ -13,7 +13,7 @@
+             "probability": 0.3
+           },
+           "output_state": {
+-            "Name": "minecraft:granite"
++            "id": "minecraft:granite"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone"
++            "id": "minecraft:mossy_cobblestone"
+           }
+         },
+         {
+@@ -39,7 +39,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_stone_bricks"
++            "id": "minecraft:mossy_stone_bricks"
+           }
+         },
+         {
+@@ -52,7 +52,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_stone_bricks"
++            "id": "minecraft:cracked_stone_bricks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/randomise_crop/all.json b/data/trek/worldgen/processor_list/randomise_crop/all.json
+index 8a594b4..f16c40f 100644
+--- a/data/trek/worldgen/processor_list/randomise_crop/all.json
++++ b/data/trek/worldgen/processor_list/randomise_crop/all.json
+@@ -10,16 +10,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.125
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "0"
+             }
+           }
+@@ -31,16 +31,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.143
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "1"
+             }
+           }
+@@ -52,16 +52,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.167
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "2"
+             }
+           }
+@@ -73,16 +73,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.2
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "3"
+             }
+           }
+@@ -94,16 +94,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.25
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "4"
+             }
+           }
+@@ -115,16 +115,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.333
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "5"
+             }
+           }
+@@ -136,16 +136,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "6"
+             }
+           }
+@@ -157,16 +157,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:beetroots",
+-              "Properties": {
++              "id": "minecraft:beetroots",
++              "properties": {
+                 "age": "3"
+               }
+             },
+             "probability": 0.25
+           },
+           "output_state": {
+-            "Name": "minecraft:beetroots",
+-            "Properties": {
++            "id": "minecraft:beetroots",
++            "properties": {
+               "age": "0"
+             }
+           }
+@@ -178,16 +178,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:beetroots",
+-              "Properties": {
++              "id": "minecraft:beetroots",
++              "properties": {
+                 "age": "3"
+               }
+             },
+             "probability": 0.333
+           },
+           "output_state": {
+-            "Name": "minecraft:beetroots",
+-            "Properties": {
++            "id": "minecraft:beetroots",
++            "properties": {
+               "age": "1"
+             }
+           }
+@@ -199,16 +199,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:beetroots",
+-              "Properties": {
++              "id": "minecraft:beetroots",
++              "properties": {
+                 "age": "3"
+               }
+             },
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:beetroots",
+-            "Properties": {
++            "id": "minecraft:beetroots",
++            "properties": {
+               "age": "2"
+             }
+           }
+@@ -220,16 +220,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.125
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "0"
+             }
+           }
+@@ -241,16 +241,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.143
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "1"
+             }
+           }
+@@ -262,16 +262,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.167
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "2"
+             }
+           }
+@@ -283,16 +283,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.2
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "3"
+             }
+           }
+@@ -304,16 +304,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.25
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "4"
+             }
+           }
+@@ -325,16 +325,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.333
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "5"
+             }
+           }
+@@ -346,16 +346,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "6"
+             }
+           }
+@@ -367,16 +367,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.125
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "0"
+             }
+           }
+@@ -388,16 +388,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.143
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "1"
+             }
+           }
+@@ -409,16 +409,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.167
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "2"
+             }
+           }
+@@ -430,16 +430,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.2
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "3"
+             }
+           }
+@@ -451,16 +451,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.25
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "4"
+             }
+           }
+@@ -472,16 +472,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.333
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "5"
+             }
+           }
+@@ -493,16 +493,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "6"
+             }
+           }
+diff --git a/data/trek/worldgen/processor_list/randomise_crop/beetroots.json b/data/trek/worldgen/processor_list/randomise_crop/beetroots.json
+index 34da170..15d027a 100644
+--- a/data/trek/worldgen/processor_list/randomise_crop/beetroots.json
++++ b/data/trek/worldgen/processor_list/randomise_crop/beetroots.json
+@@ -10,16 +10,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:beetroots",
+-              "Properties": {
++              "id": "minecraft:beetroots",
++              "properties": {
+                 "age": "3"
+               }
+             },
+             "probability": 0.25
+           },
+           "output_state": {
+-            "Name": "minecraft:beetroots",
+-            "Properties": {
++            "id": "minecraft:beetroots",
++            "properties": {
+               "age": "0"
+             }
+           }
+@@ -31,16 +31,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:beetroots",
+-              "Properties": {
++              "id": "minecraft:beetroots",
++              "properties": {
+                 "age": "3"
+               }
+             },
+             "probability": 0.333
+           },
+           "output_state": {
+-            "Name": "minecraft:beetroots",
+-            "Properties": {
++            "id": "minecraft:beetroots",
++            "properties": {
+               "age": "1"
+             }
+           }
+@@ -52,16 +52,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:beetroots",
+-              "Properties": {
++              "id": "minecraft:beetroots",
++              "properties": {
+                 "age": "3"
+               }
+             },
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:beetroots",
+-            "Properties": {
++            "id": "minecraft:beetroots",
++            "properties": {
+               "age": "2"
+             }
+           }
+diff --git a/data/trek/worldgen/processor_list/randomise_crop/carrots.json b/data/trek/worldgen/processor_list/randomise_crop/carrots.json
+index b19084c..4be5571 100644
+--- a/data/trek/worldgen/processor_list/randomise_crop/carrots.json
++++ b/data/trek/worldgen/processor_list/randomise_crop/carrots.json
+@@ -10,16 +10,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.125
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "0"
+             }
+           }
+@@ -31,16 +31,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.143
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "1"
+             }
+           }
+@@ -52,16 +52,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.167
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "2"
+             }
+           }
+@@ -73,16 +73,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.2
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "3"
+             }
+           }
+@@ -94,16 +94,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.25
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "4"
+             }
+           }
+@@ -115,16 +115,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.333
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "5"
+             }
+           }
+@@ -136,16 +136,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:carrots",
+-              "Properties": {
++              "id": "minecraft:carrots",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:carrots",
+-            "Properties": {
++            "id": "minecraft:carrots",
++            "properties": {
+               "age": "6"
+             }
+           }
+diff --git a/data/trek/worldgen/processor_list/randomise_crop/potatoes.json b/data/trek/worldgen/processor_list/randomise_crop/potatoes.json
+index b263651..6a454c3 100644
+--- a/data/trek/worldgen/processor_list/randomise_crop/potatoes.json
++++ b/data/trek/worldgen/processor_list/randomise_crop/potatoes.json
+@@ -10,16 +10,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.125
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "0"
+             }
+           }
+@@ -31,16 +31,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.143
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "1"
+             }
+           }
+@@ -52,16 +52,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.167
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "2"
+             }
+           }
+@@ -73,16 +73,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.2
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "3"
+             }
+           }
+@@ -94,16 +94,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.25
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "4"
+             }
+           }
+@@ -115,16 +115,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.333
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "5"
+             }
+           }
+@@ -136,16 +136,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:potatoes",
+-              "Properties": {
++              "id": "minecraft:potatoes",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:potatoes",
+-            "Properties": {
++            "id": "minecraft:potatoes",
++            "properties": {
+               "age": "6"
+             }
+           }
+diff --git a/data/trek/worldgen/processor_list/randomise_crop/wheat.json b/data/trek/worldgen/processor_list/randomise_crop/wheat.json
+index 09132b3..fcbab16 100644
+--- a/data/trek/worldgen/processor_list/randomise_crop/wheat.json
++++ b/data/trek/worldgen/processor_list/randomise_crop/wheat.json
+@@ -10,16 +10,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.125
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "0"
+             }
+           }
+@@ -31,16 +31,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.143
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "1"
+             }
+           }
+@@ -52,16 +52,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.167
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "2"
+             }
+           }
+@@ -73,16 +73,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.2
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "3"
+             }
+           }
+@@ -94,16 +94,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.25
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "4"
+             }
+           }
+@@ -115,16 +115,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.333
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "5"
+             }
+           }
+@@ -136,16 +136,16 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:random_blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:wheat",
+-              "Properties": {
++              "id": "minecraft:wheat",
++              "properties": {
+                 "age": "7"
+               }
+             },
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:wheat",
+-            "Properties": {
++            "id": "minecraft:wheat",
++            "properties": {
+               "age": "6"
+             }
+           }
+diff --git a/data/trek/worldgen/processor_list/remove_bookshelf_20.json b/data/trek/worldgen/processor_list/remove_bookshelf_20.json
+index 2a1ad79..f1704bf 100644
+--- a/data/trek/worldgen/processor_list/remove_bookshelf_20.json
++++ b/data/trek/worldgen/processor_list/remove_bookshelf_20.json
+@@ -13,8 +13,8 @@
+             "probability": 0.2
+           },
+           "output_state": {
+-            "Name": "minecraft:stripped_oak_wood",
+-            "Properties": {
++            "id": "minecraft:stripped_oak_wood",
++            "properties": {
+               "axis": "x"
+             }
+           }
+diff --git a/data/trek/worldgen/processor_list/stone/crackify_20.json b/data/trek/worldgen/processor_list/stone/crackify_20.json
+index ad37812..ecdc40e 100644
+--- a/data/trek/worldgen/processor_list/stone/crackify_20.json
++++ b/data/trek/worldgen/processor_list/stone/crackify_20.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_stone_bricks"
++            "id": "minecraft:cracked_stone_bricks"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_bricks"
++            "id": "minecraft:cracked_deepslate_bricks"
+           }
+         },
+         {
+@@ -39,7 +39,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_tiles"
++            "id": "minecraft:cracked_deepslate_tiles"
+           }
+         },
+         {
+@@ -52,7 +52,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_nether_bricks"
++            "id": "minecraft:cracked_nether_bricks"
+           }
+         },
+         {
+@@ -65,7 +65,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_polished_blackstone_bricks"
++            "id": "minecraft:cracked_polished_blackstone_bricks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/stone/crackify_50.json b/data/trek/worldgen/processor_list/stone/crackify_50.json
+index e827929..b2b0a7d 100644
+--- a/data/trek/worldgen/processor_list/stone/crackify_50.json
++++ b/data/trek/worldgen/processor_list/stone/crackify_50.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_stone_bricks"
++            "id": "minecraft:cracked_stone_bricks"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_bricks"
++            "id": "minecraft:cracked_deepslate_bricks"
+           }
+         },
+         {
+@@ -39,7 +39,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_deepslate_tiles"
++            "id": "minecraft:cracked_deepslate_tiles"
+           }
+         },
+         {
+@@ -52,7 +52,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_nether_bricks"
++            "id": "minecraft:cracked_nether_bricks"
+           }
+         },
+         {
+@@ -65,7 +65,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:cracked_polished_blackstone_bricks"
++            "id": "minecraft:cracked_polished_blackstone_bricks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/stone/mossify_10.json b/data/trek/worldgen/processor_list/stone/mossify_10.json
+index 9e026ad..2bebe41 100644
+--- a/data/trek/worldgen/processor_list/stone/mossify_10.json
++++ b/data/trek/worldgen/processor_list/stone/mossify_10.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone"
++            "id": "minecraft:mossy_cobblestone"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_stone_bricks"
++            "id": "minecraft:mossy_stone_bricks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/stone/mossify_20.json b/data/trek/worldgen/processor_list/stone/mossify_20.json
+index c813e3d..192be29 100644
+--- a/data/trek/worldgen/processor_list/stone/mossify_20.json
++++ b/data/trek/worldgen/processor_list/stone/mossify_20.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone"
++            "id": "minecraft:mossy_cobblestone"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_stone_bricks"
++            "id": "minecraft:mossy_stone_bricks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/stone/mossify_50.json b/data/trek/worldgen/processor_list/stone/mossify_50.json
+index ec654d7..5cb87ad 100644
+--- a/data/trek/worldgen/processor_list/stone/mossify_50.json
++++ b/data/trek/worldgen/processor_list/stone/mossify_50.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_cobblestone"
++            "id": "minecraft:mossy_cobblestone"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:mossy_stone_bricks"
++            "id": "minecraft:mossy_stone_bricks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/village/decor_cherry.json b/data/trek/worldgen/processor_list/village/decor_cherry.json
+index bb3fefb..dcc19be 100644
+--- a/data/trek/worldgen/processor_list/village/decor_cherry.json
++++ b/data/trek/worldgen/processor_list/village/decor_cherry.json
+@@ -13,7 +13,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:soul_lantern"
++            "id": "minecraft:soul_lantern"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "probability": 0.1
+           },
+           "output_state": {
+-            "Name": "minecraft:orange_stained_glass"
++            "id": "minecraft:orange_stained_glass"
+           }
+         },
+         {
+@@ -39,7 +39,7 @@
+             "probability": 0.111
+           },
+           "output_state": {
+-            "Name": "minecraft:yellow_stained_glass"
++            "id": "minecraft:yellow_stained_glass"
+           }
+         },
+         {
+@@ -52,7 +52,7 @@
+             "probability": 0.125
+           },
+           "output_state": {
+-            "Name": "minecraft:lime_stained_glass"
++            "id": "minecraft:lime_stained_glass"
+           }
+         },
+         {
+@@ -65,7 +65,7 @@
+             "probability": 0.143
+           },
+           "output_state": {
+-            "Name": "minecraft:light_blue_stained_glass"
++            "id": "minecraft:light_blue_stained_glass"
+           }
+         },
+         {
+@@ -78,7 +78,7 @@
+             "probability": 0.167
+           },
+           "output_state": {
+-            "Name": "minecraft:orange_stained_glass"
++            "id": "minecraft:orange_stained_glass"
+           }
+         },
+         {
+@@ -91,7 +91,7 @@
+             "probability": 0.2
+           },
+           "output_state": {
+-            "Name": "minecraft:blue_stained_glass"
++            "id": "minecraft:blue_stained_glass"
+           }
+         },
+         {
+@@ -104,7 +104,7 @@
+             "probability": 0.25
+           },
+           "output_state": {
+-            "Name": "minecraft:purple_stained_glass"
++            "id": "minecraft:purple_stained_glass"
+           }
+         },
+         {
+@@ -117,7 +117,7 @@
+             "probability": 0.333
+           },
+           "output_state": {
+-            "Name": "minecraft:magenta_stained_glass"
++            "id": "minecraft:magenta_stained_glass"
+           }
+         },
+         {
+@@ -130,7 +130,7 @@
+             "probability": 0.5
+           },
+           "output_state": {
+-            "Name": "minecraft:pink_stained_glass"
++            "id": "minecraft:pink_stained_glass"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/village/house_swamp_vanilla.json b/data/trek/worldgen/processor_list/village/house_swamp_vanilla.json
+index 36d19e1..a5f9bbe 100644
+--- a/data/trek/worldgen/processor_list/village/house_swamp_vanilla.json
++++ b/data/trek/worldgen/processor_list/village/house_swamp_vanilla.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_planks"
++            "id": "minecraft:dark_oak_planks"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_planks"
++            "id": "minecraft:dark_oak_planks"
+           }
+         },
+         {
+@@ -36,15 +36,15 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:dark_oak_slab",
+-              "Properties": {
++              "id": "minecraft:dark_oak_slab",
++              "properties": {
+                 "type": "bottom"
+               }
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_slab",
+-            "Properties": {
++            "id": "minecraft:dark_oak_slab",
++            "properties": {
+               "type": "bottom"
+             }
+           }
+@@ -57,15 +57,15 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:dark_oak_slab",
+-              "Properties": {
++              "id": "minecraft:dark_oak_slab",
++              "properties": {
+                 "type": "top"
+               }
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_slab",
+-            "Properties": {
++            "id": "minecraft:dark_oak_slab",
++            "properties": {
+               "type": "top"
+             }
+           }
+@@ -77,14 +77,14 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:dark_oak_slab",
+-              "Properties": {
++              "id": "minecraft:dark_oak_slab",
++              "properties": {
+                 "type": "top"
+               }
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dirt"
++            "id": "minecraft:dirt"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/village/street_plains.json b/data/trek/worldgen/processor_list/village/street_plains.json
+index a511d48..d21957f 100644
+--- a/data/trek/worldgen/processor_list/village/street_plains.json
++++ b/data/trek/worldgen/processor_list/village/street_plains.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_planks"
++            "id": "minecraft:oak_planks"
+           }
+         },
+         {
+@@ -26,8 +26,8 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:grass_block",
+-            "Properties": {
++            "id": "minecraft:grass_block",
++            "properties": {
+               "snowy": "false"
+             }
+           }
+@@ -42,8 +42,8 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:grass_block",
+-            "Properties": {
++            "id": "minecraft:grass_block",
++            "properties": {
+               "snowy": "false"
+             }
+           }
+@@ -58,8 +58,8 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:water",
+-            "Properties": {
++            "id": "minecraft:water",
++            "properties": {
+               "level": "0"
+             }
+           }
+@@ -74,8 +74,8 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:water",
+-            "Properties": {
++            "id": "minecraft:water",
++            "properties": {
+               "level": "0"
+             }
+           }
+diff --git a/data/trek/worldgen/processor_list/village/street_swamp_vanilla.json b/data/trek/worldgen/processor_list/village/street_swamp_vanilla.json
+index ba668b2..53b35da 100644
+--- a/data/trek/worldgen/processor_list/village/street_swamp_vanilla.json
++++ b/data/trek/worldgen/processor_list/village/street_swamp_vanilla.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_planks"
++            "id": "minecraft:dark_oak_planks"
+           }
+         },
+         {
+@@ -26,8 +26,8 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:grass_block",
+-            "Properties": {
++            "id": "minecraft:grass_block",
++            "properties": {
+               "snowy": "false"
+             }
+           }
+@@ -42,8 +42,8 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:water",
+-            "Properties": {
++            "id": "minecraft:water",
++            "properties": {
+               "level": "0"
+             }
+           }
+@@ -58,7 +58,7 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_planks"
++            "id": "minecraft:dark_oak_planks"
+           }
+         }
+       ]
+diff --git a/data/trek/worldgen/processor_list/village/street_taiga.json b/data/trek/worldgen/processor_list/village/street_taiga.json
+index 51e74d7..d705441 100644
+--- a/data/trek/worldgen/processor_list/village/street_taiga.json
++++ b/data/trek/worldgen/processor_list/village/street_taiga.json
+@@ -13,7 +13,7 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_planks"
++            "id": "minecraft:spruce_planks"
+           }
+         },
+         {
+@@ -26,7 +26,7 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_planks"
++            "id": "minecraft:spruce_planks"
+           }
+         },
+         {
+@@ -39,8 +39,8 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:grass_block",
+-            "Properties": {
++            "id": "minecraft:grass_block",
++            "properties": {
+               "snowy": "false"
+             }
+           }
+@@ -55,8 +55,8 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:grass_block",
+-            "Properties": {
++            "id": "minecraft:grass_block",
++            "properties": {
+               "snowy": "false"
+             }
+           }
+@@ -71,8 +71,8 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:water",
+-            "Properties": {
++            "id": "minecraft:water",
++            "properties": {
+               "level": "0"
+             }
+           }
+@@ -87,8 +87,8 @@
+             "predicate_type": "minecraft:block_match"
+           },
+           "output_state": {
+-            "Name": "minecraft:water",
+-            "Properties": {
++            "id": "minecraft:water",
++            "properties": {
+               "level": "0"
+             }
+           }
+diff --git a/data/trek/worldgen/processor_list/village/waystone_cherry.json b/data/trek/worldgen/processor_list/village/waystone_cherry.json
+index 1f1a438..a20d1ad 100644
+--- a/data/trek/worldgen/processor_list/village/waystone_cherry.json
++++ b/data/trek/worldgen/processor_list/village/waystone_cherry.json
+@@ -12,7 +12,7 @@
+             "block": "minecraft:stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:stone"
++            "id": "minecraft:stone"
+           }
+         },
+         {
+@@ -24,7 +24,7 @@
+             "block": "minecraft:chiseled_stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:polished_andesite"
++            "id": "minecraft:polished_andesite"
+           }
+         },
+         {
+@@ -36,8 +36,8 @@
+             "block": "minecraft:polished_andesite"
+           },
+           "output_state": {
+-            "Name": "minecraft:cherry_log",
+-            "Properties": {
++            "id": "minecraft:cherry_log",
++            "properties": {
+               "axis": "y"
+             }
+           }
+@@ -49,8 +49,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -58,8 +58,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "straight"
+@@ -73,8 +73,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -82,8 +82,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "straight"
+@@ -97,8 +97,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -106,8 +106,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "straight"
+@@ -121,8 +121,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -130,8 +130,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "straight"
+@@ -145,8 +145,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -154,8 +154,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -169,8 +169,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -178,8 +178,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -193,8 +193,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -202,8 +202,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -217,8 +217,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -226,8 +226,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -241,8 +241,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -250,8 +250,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -265,8 +265,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -274,8 +274,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -289,8 +289,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -298,8 +298,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -313,8 +313,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -322,8 +322,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:deepslate_brick_stairs",
+-            "Properties": {
++            "id": "minecraft:deepslate_brick_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_right"
+diff --git a/data/trek/worldgen/processor_list/village/waystone_plains.json b/data/trek/worldgen/processor_list/village/waystone_plains.json
+index fec1193..0e3cedc 100644
+--- a/data/trek/worldgen/processor_list/village/waystone_plains.json
++++ b/data/trek/worldgen/processor_list/village/waystone_plains.json
+@@ -12,7 +12,7 @@
+             "block": "minecraft:stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_planks"
++            "id": "minecraft:oak_planks"
+           }
+         },
+         {
+@@ -24,7 +24,7 @@
+             "block": "minecraft:chiseled_stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_planks"
++            "id": "minecraft:oak_planks"
+           }
+         },
+         {
+@@ -36,8 +36,8 @@
+             "block": "minecraft:polished_andesite"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_log",
+-            "Properties": {
++            "id": "minecraft:oak_log",
++            "properties": {
+               "axis": "y"
+             }
+           }
+@@ -49,8 +49,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -58,8 +58,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "straight"
+@@ -73,8 +73,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -82,8 +82,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "straight"
+@@ -97,8 +97,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -106,8 +106,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "straight"
+@@ -121,8 +121,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -130,8 +130,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "straight"
+@@ -145,8 +145,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -154,8 +154,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -169,8 +169,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -178,8 +178,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -193,8 +193,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -202,8 +202,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -217,8 +217,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -226,8 +226,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -241,8 +241,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -250,8 +250,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -265,8 +265,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -274,8 +274,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -289,8 +289,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -298,8 +298,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -313,8 +313,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -322,8 +322,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_right"
+diff --git a/data/trek/worldgen/processor_list/village/waystone_savanna.json b/data/trek/worldgen/processor_list/village/waystone_savanna.json
+index 0f2de68..6cc10e2 100644
+--- a/data/trek/worldgen/processor_list/village/waystone_savanna.json
++++ b/data/trek/worldgen/processor_list/village/waystone_savanna.json
+@@ -12,7 +12,7 @@
+             "block": "minecraft:stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_planks"
++            "id": "minecraft:acacia_planks"
+           }
+         },
+         {
+@@ -24,7 +24,7 @@
+             "block": "minecraft:chiseled_stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_planks"
++            "id": "minecraft:acacia_planks"
+           }
+         },
+         {
+@@ -36,8 +36,8 @@
+             "block": "minecraft:polished_andesite"
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_log",
+-            "Properties": {
++            "id": "minecraft:acacia_log",
++            "properties": {
+               "axis": "y"
+             }
+           }
+@@ -49,8 +49,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -58,8 +58,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "straight"
+@@ -73,8 +73,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -82,8 +82,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "straight"
+@@ -97,8 +97,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -106,8 +106,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "straight"
+@@ -121,8 +121,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -130,8 +130,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "straight"
+@@ -145,8 +145,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -154,8 +154,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -169,8 +169,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -178,8 +178,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -193,8 +193,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -202,8 +202,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -217,8 +217,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -226,8 +226,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -241,8 +241,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -250,8 +250,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -265,8 +265,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -274,8 +274,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -289,8 +289,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -298,8 +298,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -313,8 +313,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -322,8 +322,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:acacia_stairs",
+-            "Properties": {
++            "id": "minecraft:acacia_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_right"
+diff --git a/data/trek/worldgen/processor_list/village/waystone_snowy.json b/data/trek/worldgen/processor_list/village/waystone_snowy.json
+index c2bc51f..90eca06 100644
+--- a/data/trek/worldgen/processor_list/village/waystone_snowy.json
++++ b/data/trek/worldgen/processor_list/village/waystone_snowy.json
+@@ -12,8 +12,8 @@
+             "block": "minecraft:stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:stripped_spruce_wood",
+-            "Properties": {
++            "id": "minecraft:stripped_spruce_wood",
++            "properties": {
+               "axis": "z"
+             }
+           }
+@@ -27,8 +27,8 @@
+             "block": "minecraft:chiseled_stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:stripped_spruce_wood",
+-            "Properties": {
++            "id": "minecraft:stripped_spruce_wood",
++            "properties": {
+               "axis": "x"
+             }
+           }
+@@ -42,8 +42,8 @@
+             "block": "minecraft:polished_andesite"
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_log",
+-            "Properties": {
++            "id": "minecraft:spruce_log",
++            "properties": {
+               "axis": "y"
+             }
+           }
+@@ -55,8 +55,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -64,8 +64,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "straight"
+@@ -79,8 +79,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -88,8 +88,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "straight"
+@@ -103,8 +103,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -112,8 +112,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "straight"
+@@ -127,8 +127,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -136,8 +136,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "straight"
+@@ -151,8 +151,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -160,8 +160,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -175,8 +175,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -184,8 +184,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -199,8 +199,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -208,8 +208,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -223,8 +223,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -232,8 +232,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -247,8 +247,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -256,8 +256,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -271,8 +271,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -280,8 +280,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -295,8 +295,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -304,8 +304,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -319,8 +319,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -328,8 +328,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_stairs",
+-            "Properties": {
++            "id": "minecraft:spruce_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_right"
+diff --git a/data/trek/worldgen/processor_list/village/waystone_swamp.json b/data/trek/worldgen/processor_list/village/waystone_swamp.json
+index fec1193..0e3cedc 100644
+--- a/data/trek/worldgen/processor_list/village/waystone_swamp.json
++++ b/data/trek/worldgen/processor_list/village/waystone_swamp.json
+@@ -12,7 +12,7 @@
+             "block": "minecraft:stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_planks"
++            "id": "minecraft:oak_planks"
+           }
+         },
+         {
+@@ -24,7 +24,7 @@
+             "block": "minecraft:chiseled_stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_planks"
++            "id": "minecraft:oak_planks"
+           }
+         },
+         {
+@@ -36,8 +36,8 @@
+             "block": "minecraft:polished_andesite"
+           },
+           "output_state": {
+-            "Name": "minecraft:oak_log",
+-            "Properties": {
++            "id": "minecraft:oak_log",
++            "properties": {
+               "axis": "y"
+             }
+           }
+@@ -49,8 +49,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -58,8 +58,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "straight"
+@@ -73,8 +73,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -82,8 +82,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "straight"
+@@ -97,8 +97,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -106,8 +106,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "straight"
+@@ -121,8 +121,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -130,8 +130,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "straight"
+@@ -145,8 +145,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -154,8 +154,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -169,8 +169,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -178,8 +178,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -193,8 +193,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -202,8 +202,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -217,8 +217,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -226,8 +226,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -241,8 +241,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -250,8 +250,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -265,8 +265,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -274,8 +274,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -289,8 +289,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -298,8 +298,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -313,8 +313,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -322,8 +322,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:cobblestone_stairs",
+-            "Properties": {
++            "id": "minecraft:cobblestone_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_right"
+diff --git a/data/trek/worldgen/processor_list/village/waystone_swamp_vanilla.json b/data/trek/worldgen/processor_list/village/waystone_swamp_vanilla.json
+index da31841..9f3e165 100644
+--- a/data/trek/worldgen/processor_list/village/waystone_swamp_vanilla.json
++++ b/data/trek/worldgen/processor_list/village/waystone_swamp_vanilla.json
+@@ -7,8 +7,8 @@
+           "location_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:bell",
+-              "Properties": {
++              "id": "minecraft:bell",
++              "properties": {
+                 "attachment": "ceiling",
+                 "facing": "east",
+                 "powered": "false"
+@@ -19,8 +19,8 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:bell",
+-            "Properties": {
++            "id": "minecraft:bell",
++            "properties": {
+               "attachment": "ceiling",
+               "facing": "east",
+               "powered": "false"
+@@ -36,8 +36,8 @@
+             "block": "minecraft:stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_wood",
+-            "Properties": {
++            "id": "minecraft:dark_oak_wood",
++            "properties": {
+               "axis": "y"
+             }
+           }
+@@ -51,8 +51,8 @@
+             "block": "minecraft:chiseled_stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_wood",
+-            "Properties": {
++            "id": "minecraft:dark_oak_wood",
++            "properties": {
+               "axis": "y"
+             }
+           }
+@@ -66,7 +66,7 @@
+             "block": "minecraft:polished_andesite"
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_fence"
++            "id": "minecraft:dark_oak_fence"
+           }
+         },
+         {
+@@ -78,7 +78,7 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_planks"
++            "id": "minecraft:dark_oak_planks"
+           }
+         },
+         {
+@@ -88,8 +88,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -97,8 +97,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "straight"
+@@ -112,8 +112,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -121,8 +121,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "straight"
+@@ -136,8 +136,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -145,8 +145,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "straight"
+@@ -160,8 +160,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "straight"
+@@ -169,8 +169,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "straight"
+@@ -184,8 +184,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -193,8 +193,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -208,8 +208,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "east",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -217,8 +217,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "east",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -232,8 +232,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -241,8 +241,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -256,8 +256,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "west",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -265,8 +265,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "west",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -280,8 +280,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -289,8 +289,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -304,8 +304,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "north",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -313,8 +313,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "north",
+               "half": "bottom",
+               "shape": "outer_right"
+@@ -328,8 +328,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_left"
+@@ -337,8 +337,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_left"
+@@ -352,8 +352,8 @@
+           "input_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:stone_brick_stairs",
+-              "Properties": {
++              "id": "minecraft:stone_brick_stairs",
++              "properties": {
+                 "facing": "south",
+                 "half": "bottom",
+                 "shape": "outer_right"
+@@ -361,8 +361,8 @@
+             }
+           },
+           "output_state": {
+-            "Name": "minecraft:dark_oak_stairs",
+-            "Properties": {
++            "id": "minecraft:dark_oak_stairs",
++            "properties": {
+               "facing": "south",
+               "half": "bottom",
+               "shape": "outer_right"
+diff --git a/data/trek/worldgen/processor_list/village/waystone_taiga.json b/data/trek/worldgen/processor_list/village/waystone_taiga.json
+index 3942b83..fa152ea 100644
+--- a/data/trek/worldgen/processor_list/village/waystone_taiga.json
++++ b/data/trek/worldgen/processor_list/village/waystone_taiga.json
+@@ -7,8 +7,8 @@
+           "location_predicate": {
+             "predicate_type": "minecraft:blockstate_match",
+             "block_state": {
+-              "Name": "minecraft:bell",
+-              "Properties": {
++              "id": "minecraft:bell",
++              "properties": {
+                 "attachment": "ceiling",
+                 "facing": "east",
+                 "powered": "false"
+@@ -19,8 +19,8 @@
+             "predicate_type": "minecraft:always_true"
+           },
+           "output_state": {
+-            "Name": "minecraft:bell",
+-            "Properties": {
++            "id": "minecraft:bell",
++            "properties": {
+               "attachment": "ceiling",
+               "facing": "east",
+               "powered": "false"
+@@ -36,7 +36,7 @@
+             "block": "minecraft:stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_planks"
++            "id": "minecraft:spruce_planks"
+           }
+         },
+         {
+@@ -48,7 +48,7 @@
+             "block": "minecraft:chiseled_stone_bricks"
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_planks"
++            "id": "minecraft:spruce_planks"
+           }
+         },
+         {
+@@ -60,8 +60,8 @@
+             "block": "minecraft:polished_andesite"
+           },
+           "output_state": {
+-            "Name": "minecraft:spruce_log",
+-            "Properties": {
++            "id": "minecraft:spruce_log",
++            "properties": {
+               "axis": "y"
+             }
+           }
+-- 
+2.56.0
+

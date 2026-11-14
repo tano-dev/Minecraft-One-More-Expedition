@@ -1,0 +1,129 @@
+{
+  "description": {
+    "translate": "enchantment.dnt.swift_soar",
+    "fallback": "Swift Soar"
+  },
+  "supported_items": "#minecraft:harnesses",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "body"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:camera_distance",
+        "id": "nova_structures:swift_soar.camera_distance",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.33333334,
+          "per_level_above_first": 0.33333334
+        },
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:flying_speed",
+        "id": "nova_structures:swift_soar.flying_speed",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.05
+        },
+        "operation": "add_multiplied_base"
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:enchantment/swift_soar"
+        }
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:attribute",
+              "attribute": "minecraft:camera_distance",
+              "id": "nova_structures:swift_soar.camera_distance.sprint",
+              "amount": {
+                "type": "minecraft:lookup",
+                "values": [
+                  1,
+                  2,
+                  3
+                ],
+                "fallback": 3
+              },
+              "operation": "add_value"
+            },
+            {
+              "type": "minecraft:attribute",
+              "attribute": "minecraft:flying_speed",
+              "id": "nova_structures:swift_soar.flying_speed.sprint",
+              "amount": {
+                "type": "minecraft:linear",
+                "base": 0.1,
+                "per_level_above_first": 0.1
+              },
+              "operation": "add_multiplied_base"
+            },
+            {
+              "type": "minecraft:spawn_particles",
+              "particle": {
+                "type": "minecraft:small_gust"
+              },
+              "horizontal_position": {
+                "type": "in_bounding_box",
+                "scale": 1.05
+              },
+              "vertical_position": {
+                "type": "in_bounding_box",
+                "scale": 1.05
+              },
+              "horizontal_velocity": {
+                "base": 0,
+                "movement_scale": 1
+              },
+              "vertical_velocity": {
+                "base": 0,
+                "movement_scale": 1
+              },
+              "speed": 1
+            }
+          ]
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_harness_sprinting"
+              ]
+            },
+            "minecraft:passenger": {
+              "minecraft:type_specific/player": {
+                "input": {
+                  "forward": true
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

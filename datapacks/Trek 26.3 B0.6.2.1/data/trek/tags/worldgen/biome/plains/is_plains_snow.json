@@ -1,0 +1,7 @@
+{
+  "values": [
+    "minecraft:snowy_plains",
+    {"id": "natures_spirit:tundra","required": false},
+    {"id": "regions_unexplored:frozen_tundra","required": false}
+  ]
+}

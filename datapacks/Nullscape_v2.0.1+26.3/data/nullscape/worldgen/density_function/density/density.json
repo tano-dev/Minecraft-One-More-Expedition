@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:add",
+  "left": {
+    "type": "minecraft:mul",
+    "left": -0.2,
+    "right": "nullscape:elasticity/global"
+  },
+  "right": {
+    "type": "minecraft:add",
+    "left": -0.165,
+    "right": {
+      "type": "minecraft:noise",
+      "noise": "nullscape:material/property/density",
+      "xz_scale": 1,
+      "y_scale": 1,
+      "shift_x": 0,
+      "shift_y": 0,
+      "shift_z": 0
+    }
+  }
+}

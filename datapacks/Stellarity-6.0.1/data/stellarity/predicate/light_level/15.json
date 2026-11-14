@@ -1,0 +1,13 @@
+{
+  "type": "any_of",
+  "terms": [
+    {
+      "type": "location_check",
+      "predicate": {
+        "light": {
+          "light": 15
+        }
+      }
+    }
+  ]
+}

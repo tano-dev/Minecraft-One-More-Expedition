@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.mainhand": {
+            "items": "minecraft:netherite_scrap",
+            "components": {
+              "minecraft:enchantments": {
+                "minecraft:unbreaking": 10
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.offhand": {
+            "items": "minecraft:netherite_scrap",
+            "components": {
+              "minecraft:enchantments": {
+                "minecraft:unbreaking": 10
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

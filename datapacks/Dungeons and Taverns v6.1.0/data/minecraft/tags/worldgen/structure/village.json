@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "nova_structures:village_birch",
+    "nova_structures:village_dappled",
+    "nova_structures:village_jungle",
+    "nova_structures:village_swamp"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    "minecraft:sparse_jungle",
+    {"id": "terralith:tropical_jungle","required": false},
+    {"id": "biomesoplenty:fungal_jungle","required": false},
+    {"id": "biomesoplenty:rocky_rainforest","required": false},
+    {"id": "biomesoplenty:tropics","required": false},
+    {"id": "natures_spirit:sparse_tropical_woods","required": false},
+    {"id": "natures_spirit:sparse_rainforest","required": false},
+    {"id": "natures_spirit:tropics","required": false}
+  ]
+}

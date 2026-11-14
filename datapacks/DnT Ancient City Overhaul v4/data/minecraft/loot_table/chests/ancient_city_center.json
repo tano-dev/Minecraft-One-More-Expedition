@@ -1,0 +1,745 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 3,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:enchanted_golden_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:music_disc_otherside"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:diamond",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 2
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:iron_ingot",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 10
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:redstone",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 10
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:sculk_catalyst",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 2
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 8,
+          "name": "minecraft:diamond_hoe",
+          "modifier": [
+            {
+              "count": 1,
+              "add": false,
+              "type": "minecraft:set_count"
+            },
+            {
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.9,
+                "max": 0.1
+              },
+              "add": false,
+              "type": "minecraft:set_damage"
+            },
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:diamond_pickaxe",
+          "modifier": [
+            {
+              "count": 1,
+              "add": false,
+              "type": "minecraft:set_count"
+            },
+            {
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.9,
+                "max": 0.1
+              },
+              "add": false,
+              "type": "minecraft:set_damage"
+            },
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 45
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:diamond_axe",
+          "modifier": [
+            {
+              "count": 1,
+              "add": false,
+              "type": "minecraft:set_count"
+            },
+            {
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.9,
+                "max": 0.1
+              },
+              "add": false,
+              "type": "minecraft:set_damage"
+            },
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 45
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:diamond_shovel",
+          "modifier": [
+            {
+              "count": 1,
+              "add": false,
+              "type": "minecraft:set_count"
+            },
+            {
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.9,
+                "max": 0.1
+              },
+              "add": false,
+              "type": "minecraft:set_damage"
+            },
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 45
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:diamond_sword",
+          "modifier": [
+            {
+              "count": 1,
+              "add": false,
+              "type": "minecraft:set_count"
+            },
+            {
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.9,
+                "max": 0.1
+              },
+              "add": false,
+              "type": "minecraft:set_damage"
+            },
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 45
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_hoe",
+          "modifier": [
+            {
+              "count": 1,
+              "add": false,
+              "type": "minecraft:set_count"
+            },
+            {
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.9,
+                "max": 0.1
+              },
+              "add": false,
+              "type": "minecraft:set_damage"
+            },
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_pickaxe",
+          "modifier": [
+            {
+              "count": 1,
+              "add": false,
+              "type": "minecraft:set_count"
+            },
+            {
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.9,
+                "max": 0.1
+              },
+              "add": false,
+              "type": "minecraft:set_damage"
+            },
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 45
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "modifier": [
+            {
+              "count": 1,
+              "add": false,
+              "type": "minecraft:set_count"
+            },
+            {
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.9,
+                "max": 0.1
+              },
+              "add": false,
+              "type": "minecraft:set_damage"
+            },
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 45
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:iron_shovel",
+          "modifier": [
+            {
+              "count": 1,
+              "add": false,
+              "type": "minecraft:set_count"
+            },
+            {
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.9,
+                "max": 0.1
+              },
+              "add": false,
+              "type": "minecraft:set_damage"
+            },
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 45
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "modifier": [
+            {
+              "count": 1,
+              "add": false,
+              "type": "minecraft:set_count"
+            },
+            {
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.9,
+                "max": 0.1
+              },
+              "add": false,
+              "type": "minecraft:set_damage"
+            },
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 45
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:music_disc_13"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:diamond_boots",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            },
+            {
+              "damage": {
+                "min": 0.1,
+                "max": 0.9,
+                "type": "minecraft:uniform"
+              },
+              "type": "set_damage"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 12,
+          "name": "minecraft:diamond_leggings",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            },
+            {
+              "damage": {
+                "min": 0.1,
+                "max": 0.9,
+                "type": "minecraft:uniform"
+              },
+              "type": "set_damage"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:diamond_chestplate",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            },
+            {
+              "damage": {
+                "min": 0.1,
+                "max": 0.9,
+                "type": "minecraft:uniform"
+              },
+              "type": "set_damage"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:diamond_helmet",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            },
+            {
+              "damage": {
+                "min": 0.1,
+                "max": 0.9,
+                "type": "minecraft:uniform"
+              },
+              "type": "set_damage"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:iron_boots",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            },
+            {
+              "damage": {
+                "min": 0.1,
+                "max": 0.9,
+                "type": "minecraft:uniform"
+              },
+              "type": "set_damage"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "name": "minecraft:iron_leggings",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            },
+            {
+              "damage": {
+                "min": 0.1,
+                "max": 0.9,
+                "type": "minecraft:uniform"
+              },
+              "type": "set_damage"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:iron_chestplate",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            },
+            {
+              "damage": {
+                "min": 0.1,
+                "max": 0.9,
+                "type": "minecraft:uniform"
+              },
+              "type": "set_damage"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:iron_helmet",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "options": "#nova_structures:structure/overworld",
+              "type": "minecraft:enchant_with_levels"
+            },
+            {
+              "damage": {
+                "min": 0.1,
+                "max": 0.9,
+                "type": "minecraft:uniform"
+              },
+              "type": "set_damage"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "modifier": {
+            "options": "minecraft:swift_sneak",
+            "type": "minecraft:enchant_randomly"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:sculk",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 10
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:sculk_sensor",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 3
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:candle",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 4
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "minecraft:echo_shard",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 3
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:disc_fragment_5",
+          "weight": 4,
+          "modifier": {
+            "add": false,
+            "count": {
+              "type": "minecraft:uniform",
+              "max": 3,
+              "min": 1
+            },
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "minecraft:book",
+          "modifier": {
+            "options": "#nova_structures:structure/overworld",
+            "type": "minecraft:enchant_randomly"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:sculk_shrieker"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sculk_catalyst"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sculk_sensor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sculk_vein",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 5
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sculk",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 5
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 15
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 33
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ward_armor_trim_smithing_template",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:silence_armor_trim_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 8,
+          "modifier": {
+            "options": "minecraft:mending",
+            "type": "minecraft:enchant_randomly"
+          }
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

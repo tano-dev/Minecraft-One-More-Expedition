@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:entity_type": "minecraft:villager",
+    "nbt": "{VillagerData: {profession:\"minecraft:farmer\", level: 3}}",
+    "minecraft:entity_tags": {
+      "any_of": [
+        "katters_structures.beekeeper_2"
+      ]
+    }
+  }
+}

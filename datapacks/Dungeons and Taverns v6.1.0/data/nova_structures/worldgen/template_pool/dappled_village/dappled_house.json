@@ -1,0 +1,276 @@
+{
+	"name": "minecraft:jungle_house",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_animalpen1",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_animalpen2",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_animalpen3",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_armorer",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_butcher",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_cartographer",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_cleric",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_deco1",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_deco2",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_deco3",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_farm_1",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_farm_2",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_farm_3",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_farm_4",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_farm_5",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_fisherman",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_fletcher",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_house1",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor_house"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_house2",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor_house"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_house3",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor_house"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_house4",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor_house"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_house5",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor_house"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_house6",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor_house"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_house7",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor_house"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_house8",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor_house"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_leatherworker",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_mason",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_shepherd",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_toolsmith",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:village/dappled/dappled_village_weaponsmith",
+				"projection": "rigid",
+				"processors": "nova_structures:dappled_village_processor"
+			}
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "modifier": {
+            "components": {
+              "minecraft:potion_contents": {
+                "custom_color": 4866583,
+                "custom_effects": [
+                  {
+                    "id": "minecraft:mining_fatigue",
+                    "duration": 600
+                  }
+                ],
+                "custom_name": "dnt_mining_fatigue"
+              }
+            },
+            "type": "minecraft:set_components"
+          }
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

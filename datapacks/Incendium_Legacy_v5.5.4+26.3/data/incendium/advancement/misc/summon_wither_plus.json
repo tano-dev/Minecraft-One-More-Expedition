@@ -1,0 +1,29 @@
+{
+  "parent": "incendium:root",
+  "criteria": {
+    "impossible": {
+    "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "§4§kWITHER AWAY"
+    },
+    "icon": {
+      "id": "minecraft:nether_star",
+      "components": {
+        "enchantment_glint_override": true
+      }
+    },
+    "description": {
+      "text": "Withering Depths"
+    },
+    "hidden": true,
+    "frame": "challenge"
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

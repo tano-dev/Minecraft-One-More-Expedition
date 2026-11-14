@@ -1,0 +1,25 @@
+From 5d6ad4ffcf5bf17d2d39bc05812ffd934f2d558c Mon Sep 17 00:00:00 2001
+From: Useless Guy <Useless>
+Date: Thu, 22 Oct 2026 18:46:16 +0200
+Subject: [PATCH 6/7] make it so number providers specify the type field (as
+ required now)
+
+---
+ .../overworld/rare/villager_castle/defending_tower.json          | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/data/trek/loot_table/overworld/rare/villager_castle/defending_tower.json b/data/trek/loot_table/overworld/rare/villager_castle/defending_tower.json
+index 9934ff3..c30088e 100644
+--- a/data/trek/loot_table/overworld/rare/villager_castle/defending_tower.json
++++ b/data/trek/loot_table/overworld/rare/villager_castle/defending_tower.json
+@@ -3,6 +3,7 @@
+   "pools": [
+     {
+       "rolls": {
++        "type": "minecraft:uniform",
+         "min": 2,
+         "max": 4
+       },
+-- 
+2.56.0
+

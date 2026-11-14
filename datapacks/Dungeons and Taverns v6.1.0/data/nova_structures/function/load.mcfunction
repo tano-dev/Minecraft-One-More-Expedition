@@ -1,0 +1,4 @@
+scoreboard objectives add dnt_health health
+scoreboard objectives add dnt_mob_health dummy
+scoreboard objectives add dnt_mob_max_health dummy
+scoreboard objectives add dnt_boss_minion dummy

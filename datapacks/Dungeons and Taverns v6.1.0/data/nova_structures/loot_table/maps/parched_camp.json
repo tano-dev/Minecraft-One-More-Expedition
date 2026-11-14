@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:abandoned_camp_map",
+          "modifier": [
+            {
+              "destination": "#nova_structures:parched_camp",
+              "decoration": "minecraft:abandoned_camp",
+              "zoom": 1,
+              "search_radius": 100,
+              "skip_existing_chunks": false,
+              "type": "minecraft:exploration_map"
+            },
+            {
+              "components": {
+                "minecraft:dyed_color": 14538413,
+                "minecraft:rarity": "common",
+                "minecraft:item_name": {
+                  "translate": "item.dnt.filled_map.parched_camp",
+                  "fallback": "Parched Camp Map"
+                },
+				"minecraft:custom_model_data": {
+                "floats": [],
+                "strings": [
+                  "dnt:map"
+                ]
+               },
+               "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:dyed_color"
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

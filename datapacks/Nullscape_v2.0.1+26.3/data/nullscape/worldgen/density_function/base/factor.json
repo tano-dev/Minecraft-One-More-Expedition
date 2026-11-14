@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:add",
+  "left": {
+    "type": "minecraft:mul",
+    "left": 10,
+    "right": {
+      "type": "minecraft:sub",
+      "left": 1,
+      "right": {
+        "type": "minecraft:cache",
+        "input": {
+          "type": "minecraft:blend_alpha"
+        }
+      }
+    }
+  },
+  "right": {
+    "type": "minecraft:mul",
+    "left": {
+      "type": "minecraft:clamp",
+      "min": 0,
+      "max": 8,
+      "input": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "nullscape:base/continents",
+          "points": [
+            {
+              "location": 0,
+              "value": {
+                "coordinate": "nullscape:overworld_copy/erosion",
+                "points": [
+                  {
+                    "location": -0.15,
+                    "value": 2,
+                    "derivative": 0
+                  },
+                  {
+                    "location": -0.1,
+                    "value": 0.25,
+                    "derivative": 0
+                  }
+                ]
+              },
+              "derivative": 0
+            },
+            {
+              "location": 0.15,
+              "value": 0.25,
+              "derivative": 0
+            },
+            {
+              "location": 0.175,
+              "value": 0.275,
+              "derivative": 20
+            },
+            {
+              "location": 0.3,
+              "value": 3,
+              "derivative": 0
+            }
+          ]
+        }
+      }
+    },
+    "right": {
+      "type": "minecraft:cache",
+      "input": {
+        "type": "minecraft:blend_alpha"
+      }
+    }
+  }
+}

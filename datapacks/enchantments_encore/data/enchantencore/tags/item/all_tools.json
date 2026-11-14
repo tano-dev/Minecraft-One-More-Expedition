@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#minecraft:axes",
+    "#minecraft:enchantable/melee_weapon",
+    "#minecraft:hoes",
+    "#minecraft:pickaxes",
+    "#minecraft:shovels",
+    "minecraft:brush",
+    "minecraft:flint_and_steel",
+    "minecraft:mace",
+    "minecraft:shears",
+    "minecraft:trident"
+  ]
+}

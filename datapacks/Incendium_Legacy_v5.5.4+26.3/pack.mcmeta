@@ -1,0 +1,32 @@
+{
+  "pack": {
+    "id": "incendium",
+    "min_format": [
+      121,
+      0
+    ],
+    "max_format": [
+      121,
+      0
+    ],
+    "description": [
+      {
+        "text": "Incendium - Legacy Edition",
+        "color": "#e27a1f"
+      },
+      {
+        "text": " - Nether Expansion\nCreated by ",
+        "color": "gray"
+      },
+      {
+        "text": "Stardust Labs",
+        "color": "#683edd"
+      }
+    ],
+    "pack_format": 94,
+    "supported_formats": {
+      "min_inclusive": 15,
+      "max_inclusive": 94
+    }
+  }
+}

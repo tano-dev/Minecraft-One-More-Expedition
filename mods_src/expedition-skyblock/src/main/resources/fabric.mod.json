@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "expedition-skyblock",
+  "version": "${version}",
+  "name": "Expedition Skyblock",
+  "description": "Server-side isolated Skyblock void dimension with island allocation, return teleports, visitors, keepInventory, and void rescue.",
+  "authors": [
+    "OneMoreExpedition Team"
+  ],
+  "contact": {
+    "sources": "https://github.com/tano-dev/Minecraft-One-More-Expedition"
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "net.onemoreexpedition.skyblock.ExpeditionSkyblockMod"
+    ]
+  },
+  "mixins": [
+    "expedition-skyblock.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3-",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

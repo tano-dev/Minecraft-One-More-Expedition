@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "nova_structures:equipment/normal_mobs/equipment"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bow"
+        }
+      ],
+      "modifier": [
+        {
+          "type": "set_damage",
+          "damage": {
+            "type": "minecraft:uniform",
+            "max": 1,
+            "min": 0
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:equipment/trial_chamber"
+}

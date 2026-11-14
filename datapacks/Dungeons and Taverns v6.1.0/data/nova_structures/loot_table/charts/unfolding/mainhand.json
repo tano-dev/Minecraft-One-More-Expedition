@@ -1,0 +1,2030 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/ancient_city",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_ancient_city",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/any_campsite",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_any_campsite",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/any_tavern",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_any_tavern",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/any_village",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_any_village",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/any_well",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_any_well",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/badlands_miner_outpost",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_badlands_miner_outpost",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/bastion_remnant",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_bastion_remnant",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/bogged_camp",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_bogged_camp",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/buried_treasure",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_buried_treasure",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/catacomb",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_catacomb",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/cave_chamber_colony",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_cave_chamber_colony",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/conduit_ruin",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_conduit_ruin",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/creeping_crypt",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_creeping_crypt",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/dappled_townhall",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_dappled_townhall",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/desert_ruin",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_desert_ruin",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/desert_temple",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_desert_temple",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/end_castle",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_end_castle",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/illager_barracks",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_illager_barracks",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/illager_camp",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_illager_camp",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/illager_hideout",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_illager_hideout",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/illager_manor",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_illager_manor",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/jungle_ruin",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_jungle_ruin",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/jungle_temple",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_jungle_temple",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/lone_citadel",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_lone_citadel",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/mangrove_witch_hut",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_mangrove_witch_hut",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/mineshaft",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_mineshaft",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_fortress",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_nether_fortress",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_keep",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_keep",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_port",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_port",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_camp_crimson",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_camp_crimson",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_camp_fort",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_camp_fort",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_camp_soul",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_camp_soul",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_camp_warped",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_camp_warped",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_encampment_crimson",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_encampment_crimson",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_encampment_fort",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_encampment_fort",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_encampment_soul",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_encampment_soul",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_encampment_warped",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_encampment_warped",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_tower_crimson",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_tower_crimson",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_tower_fort",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_tower_fort",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_tower_soul",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_tower_soul",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/nether_skeleton_tower_warped",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_nether_skeleton_tower_warped",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/ocean_explorer",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_monument",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/ocean_ruins",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_ocean_ruins",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/pale_residence",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_pale_residence",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/parched_camp",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_parched_camp",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/piglin_camp",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_piglin_camps",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/piglin_donjon",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_piglin_donjon",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/piglin_hamlet",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_piglin_hamlet",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/piglin_outstation",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_piglin_outstation",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/pillager_outpost",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_pillager_outpost",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/ruin_town",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_ruin_town",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/sealing_halls",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_sealing_halls",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/shrine_all_normal",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_shrine_all_normal",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/shrine_tier_1",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_shrine_tier_1",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/shrine_tier_2",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_shrine_tier_2",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/shrine_tier_3",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_shrine_tier_3",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/shrine_tier_4",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_shrine_tier_4",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/shrine_tier_5",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_shrine_tier_5",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/shrine_tier_6",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_shrine_tier_6",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/shrine_tower",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_shrine_tower",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/small_conduit_ruin",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_small_conduit_ruin",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/small_creeping_crypt",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_small_creeping_crypt",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/small_undead_crypt",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_small_undead_crypt",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/stray_camp",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_stray_camp",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/stray_fort",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_stray_fort",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/stray_outlook",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_stray_outlook",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/stronghold",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_stronghold",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/surface_dungeon",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_surface_dungeon",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_acacia",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_acacia",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_birch",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_birch",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_cherry",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_cherry",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_dappled",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_dappled",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_dark_oak",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_dark_oak",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_desert",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_desert",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_jungle",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_jungle",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_mangrove",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_mangrove",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_oak",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_oak",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_pale",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_pale",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_snowy",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_snowy",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_spruce",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_spruce",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/tavern_swamp",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_tavern_swamp",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/toxic_lair",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_toxic_lair",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/trail_ruins",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_trail_ruins",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/trial_dungeon",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_trial_dungeon",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/trial_explorer",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_trial_chambers",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/trident_trial_monument",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_trident_trial_monument",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/undead_crypt",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_undead_crypt",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/village_birch",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_village_birch",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/village_dappled",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_village_dappled",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/village_desert",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_village_desert",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/village_jungle",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_village_jungle",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/village_plains",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_village_plains",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/village_savanna",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_village_savanna",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/village_snowy",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_village_snowy",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/village_swamp",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_village_swamp",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/village_taiga",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_village_taiga",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/witch_villa",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_witch_villa",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/woodland_explorer",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "minecraft_mansion",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+		{
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/dappled_witch_hut",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_dappled_witch_hut",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+		{
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/swamp_hut",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_swamp_hut",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+		{
+          "type": "minecraft:loot_table",
+          "value": "nova_structures:maps/igloo",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "structure": "dnt_igloo",
+                      "dnt_chart_bundle": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

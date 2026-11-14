@@ -1,0 +1,29 @@
+{
+  "feature": "trek:monster_room/upper/dripstone",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 10
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 800
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:very_biased_to_bottom",
+        "max_inclusive": {
+          "below_top": 0
+        },
+        "min_inclusive": {
+          "absolute": 24
+        },
+        "inner": 10
+      }
+    }
+  ]
+}

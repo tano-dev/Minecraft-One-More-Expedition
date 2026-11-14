@@ -1,0 +1,83 @@
+{
+  "structures": [
+    {
+      "structure": "grim_kingdoms:blackridge_watch_taiga",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:bramblepath",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:east_spur_tower",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:frozen_onion_fort_taiga",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:high_spur_tower",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:long_pine_cabin",
+      "weight": 1
+    },
+     {
+      "structure": "grim_kingdoms:old_timber_watch",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:north_spur_tower",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:pine_cabin",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:secluded_cabin",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:south_spur_tower",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:spruce_needle",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:spruce_thin_needle",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:west_spur_tower",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:decrown_monolith_taiga",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:winterhold_citadel_taiga",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:zweiberg_taiga",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 88,
+    "locate_offset": [
+      0,
+      0,
+      0
+    ],
+    "spacing": 50,
+    "separation": 30
+  }
+}

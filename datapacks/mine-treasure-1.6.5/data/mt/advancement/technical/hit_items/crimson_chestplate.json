@@ -1,0 +1,60 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "mt.crimson_chestplate": {
+                  "min": 10
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {},
+                "equipment": {
+                  "chest": {
+                    "items": "minecraft:leather_chestplate",
+                    "predicates": {
+                      "minecraft:custom_data": "{armor:\"crimson_chestplate\"}"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "#mt:player_attack",
+                "expected": true
+              }
+            ]
+          }
+        },
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:regeneration": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mt:technical/hit_items/crimson_chestplate"
+  }
+}

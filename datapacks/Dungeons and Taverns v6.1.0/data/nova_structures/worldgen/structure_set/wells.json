@@ -1,0 +1,62 @@
+{
+	"structures": [
+		{
+			"structure": "nova_structures:well_spruce",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_birch",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_dark_oak",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_jungle",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_oak",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_savanna",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_desert",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_cherry",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_dappled",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_mangrove",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_swamp",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_pale",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:well_snowy",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"spacing": 32,
+		"separation": 8,
+		"salt": 430930,
+		"type": "minecraft:random_spread"
+	}
+}

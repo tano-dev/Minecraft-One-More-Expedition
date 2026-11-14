@@ -1,0 +1,49 @@
+DEVELOPERS:
+
+Nova_Ember - Lead developer of Dungeons and Taverns and all its related datapacks, builds the structures and codes the whole placement of them
+
+WhityLee https://twitter.com/WhityLee_ - Implemented Charts and previous Tavern Quest Trader systems, Boss Behavior functions, & Brazilian Portuguese Translation
+
+MiziraGamez - Custom enchantments, datapack optimizations, and loot table / advancement / function assistance
+
+CONTRIBUTORS:
+
+Konci - Coded the allay to vex conversion system in prior versions, implemented resource pack features for Charts and Keys, and various function assistance
+
+Apollo - assisted with 26.3 port, structure set expertise on occasion.
+
+Badooga - Helped coding most of the advancements in prior versions
+
+Seby - Created the Logos for Dungeons and Taverns and all its related datapacks
+
+Walls - Various loot tables and enchantments for prior versions
+
+Special thanks to Kirt (@kirtails) for the initial Charts concept
+
+TRANSLATORS:
+
+Yewen - Responsible for the French Translation for Dungeons and Taverns
+
+Twizinho - Helped with the Brazilian Portuguese Translation for Dungeons and Taverns
+
+Zloydada - Responsible for the Russian Translation for Dungeons and Taverns
+
+Opliz https://modrinth.com/user/Opliz - Responsible for the Italian Translation for Dungeons and Taverns
+
+Sasaki Akari(MCID:YanHuang_Sora), and co-translater MCID Diaorenmoshushi - Responsible for the Simplified Chinese Translation for Dungeons and Taverns
+
+雪碧 - Responsible for the Traditional Chinese Translation for Dungeons and Taverns
+
+Daik - Responsible for the Korean translation for Dungeons and Taverns
+
+Reispfannenfresser - Responsible for the German Translation for Dungeons and Taverns
+
+godkyo98 - Responsible for the Vietnamese Translation for Dungeons and Taverns
+
+Chris Panza / LinkJaGames - Responsible for the European Spanish Translation for Dungeons and Taverns
+
+Yugeniele - Responsible for the Russian translation for Dungeons and Taverns 5.1 onward
+
+Ricko#7083 - Russian Translation for DnT v4.7.3
+
+jallerxv - for the Polish Translation of Dungeons and Taverns

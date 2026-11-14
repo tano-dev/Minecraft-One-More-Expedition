@@ -1,0 +1,195 @@
+{
+  "name": "dark_oak_fence",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:list_pool_element",
+        "projection": "rigid",
+        "elements": [
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:block_column/dark_oak_fence",
+              "placement": [
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -1,
+                  "z": 0
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:block_column/dark_oak_fence_updater",
+              "placement": [
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -5,
+                  "z": 0
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:block_column/dark_oak_fence_updater",
+              "placement": [
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -14,
+                  "z": 0
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:block_column/dark_oak_fence_updater",
+              "placement": [
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -16,
+                  "z": 0
+                },
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -7,
+                  "z": 0
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:block_column/dark_oak_fence_updater",
+              "placement": [
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -16,
+                  "z": 0
+                },
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -16,
+                  "z": 0
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:block_column/dark_oak_fence_updater",
+              "placement": [
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -16,
+                  "z": 0
+                },
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -16,
+                  "z": 0
+                },
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -9,
+                  "z": 0
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:block_column/dark_oak_fence_updater",
+              "placement": [
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -16,
+                  "z": 0
+                },
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -16,
+                  "z": 0
+                },
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -16,
+                  "z": 0
+                },
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -2,
+                  "z": 0
+                }
+              ]
+            }
+          },
+          {
+            "element_type": "minecraft:feature_pool_element",
+            "projection": "rigid",
+            "feature": {
+              "feature": "trek:block_column/dark_oak_fence_updater",
+              "placement": [
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -16,
+                  "z": 0
+                },
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -16,
+                  "z": 0
+                },
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -16,
+                  "z": 0
+                },
+                {
+                  "type": "minecraft:offset",
+                  "x": 0,
+                  "y": -11,
+                  "z": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "trek:feature/block_column/dark_oak_fence"
+}

@@ -1,0 +1,137 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:taiga",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:windswept_forest",
+        {
+            "id": "biomesoplenty:coniferous_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:spruce_woods",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:redwood_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:redwood_forest_edge",
+            "required": false
+        },
+        {
+            "id": "otbwg:coniferous_forest",
+            "required": false
+        },
+        {
+            "id": "otbwg:maple_taiga",
+            "required": false
+        },
+        {
+            "id": "otbwg:aspen_boreal",
+            "required": false
+        },
+        {
+            "id": "otbwg:redwood_thicket",
+            "required": false
+        },
+        {
+            "id": "otbwg:canadian_shield",
+            "required": false
+        },
+        {
+            "id": "otbwg:ironwood_grove",
+            "required": false
+        },
+        {
+            "id": "terralith:birch_taiga",
+            "required": false
+        },
+        {
+            "id": "terralith:siberian_taiga",
+            "required": false
+        },
+        {
+            "id": "terralith:siberian_grove",
+            "required": false
+        },
+        {
+            "id": "terralith:yosemite_lowlands",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:boreal_taiga",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:boreal_taiga",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:coniferous_covert",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:fir_forest",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:amber_covert",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:woody_highlands",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:aspen_forest",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:boreal_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:golden_boreal_taiga",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:blackwood_taiga",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:pine_taiga",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:redwoods",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:sparse_redwoods",
+            "required": false
+        },
+        {
+            "id": "wwoo:taiga",
+            "required": false
+        },
+        {
+            "id": "wwoo:giant_tree_taiga",
+            "required": false
+        },
+        {
+            "id": "wwoo:giant_spruce_taiga",
+            "required": false
+        },
+        {
+            "id": "wwee:thermal_taiga",
+            "required": false
+        },
+        {
+            "id": "nml:dark_taiga",
+            "required": false
+        }
+    ]
+}

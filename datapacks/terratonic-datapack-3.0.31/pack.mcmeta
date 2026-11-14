@@ -1,0 +1,33 @@
+{
+  "pack": {
+    "min_format": 121,
+    "max_format": 121,
+    "description": [
+      "Made with ",
+      {
+        "text": "<3",
+        "color": "red"
+      },
+      " by ",
+      {
+        "text": "Apollo",
+        "color": "#b891ff"
+      },
+      "\n"
+    ],
+    "pack_format": 94,
+    "supported_formats": {
+      "min_inclusive": 15,
+      "max_inclusive": 94
+    }
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "overlay.terratonic",
+        "min_format": 121,
+        "max_format": 121
+      }
+    ]
+  }
+}

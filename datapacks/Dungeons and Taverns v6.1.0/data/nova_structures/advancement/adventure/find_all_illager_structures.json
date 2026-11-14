@@ -1,0 +1,281 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "badland_miner_outpost": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:badlands_miner_outpost"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "illager_barracks": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:illager_barracks"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "illager_hideout": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:illager_hideout"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "illager_camp_and_treehouse": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "#nova_structures:illager_camp_and_treehouse"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "illager_manor": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:illager_manor"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "mangrove_witch_hut": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:mangrove_witch_hut"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "mansion": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "minecraft:mansion"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "pale_residence": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:pale_residence"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "dappled_townhall": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:dappled_townhall"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "pillager_outpost": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "minecraft:pillager_outpost"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "swamp_hut": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "minecraft:swamp_hut"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "swamp_village": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:village_swamp"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "tavern_dark_oak": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:tavern_dark_oak"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "toxic_lair": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:toxic_lair"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "witch_villa": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:witch_villa"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.dnt.adventure.find_all_illager_structures",
+      "fallback": "Visit all Illager and Witch structures"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:dark_oak_log"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.dnt.adventure.find_all_illager_structures.title",
+      "fallback": "The Ill Manored"
+    }
+  },
+  "requirements": [
+    [
+      "badland_miner_outpost"
+    ],
+    [
+      "illager_barracks"
+    ],
+    [
+      "illager_hideout"
+    ],
+    [
+      "illager_camp_and_treehouse"
+    ],
+    [
+      "illager_manor"
+    ],
+    [
+      "mangrove_witch_hut"
+    ],
+    [
+      "mansion"
+    ],
+    [
+      "pale_residence"
+    ],
+    [
+      "dappled_townhall"
+    ],
+    [
+      "pillager_outpost"
+    ],
+    [
+      "swamp_hut"
+    ],
+    [
+      "swamp_village"
+    ],
+    [
+      "tavern_dark_oak"
+    ],
+    [
+      "toxic_lair"
+    ],
+    [
+      "witch_villa"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,60 @@
+{
+	"name": "nova_structures:surface_mineshaft_overhaul/mainline",
+	"fallback": "nova_structures:surface_mineshaft_overhaul/mainline_fallback",
+	"elements": [
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/surface/mainline/surface_mainline_1",
+				"projection": "rigid",
+				"processors": "nova_structures:surfacemine_mainline_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/surface/mainline/surface_mainline_2",
+				"projection": "rigid",
+				"processors": "nova_structures:surfacemine_mainline_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/surface/mainline/surface_mainline_3",
+				"projection": "rigid",
+				"processors": "nova_structures:surfacemine_mainline_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/surface/mainline/surface_mainline_intersect_1",
+				"projection": "rigid",
+				"processors": "nova_structures:surfacemine_mainline_processor"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/surface/mainline/surface_mainline_intersect_2",
+				"projection": "rigid",
+				"processors": "nova_structures:surfacemine_mainline_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/surface/mainline/surface_mainline_intersect_3",
+				"projection": "rigid",
+				"processors": "nova_structures:surfacemine_mainline_processor"
+			}
+		}
+	]
+}

@@ -1,0 +1,27 @@
+##cleanup
+scoreboard objectives remove enchantencore.leaf_jumper
+scoreboard objectives remove enchantencore.pegasus
+scoreboard objectives remove enchantencore.sneaktime
+scoreboard objectives remove enchantencore.grapple.used
+scoreboard objectives remove enchantencore.grapple.anchored
+
+##add scoreboards
+scoreboard objectives add enchantencore.sneaktime minecraft.custom:minecraft.sneak_time
+scoreboard objectives add enchantencore.technical dummy
+scoreboard objectives add enchantencore.leaf_jumper dummy
+scoreboard objectives add enchantencore.pegasus dummy
+scoreboard objectives add enchantencore.idle_time dummy
+scoreboard objectives add enchantencore.strafe.timer dummy
+scoreboard objectives add enchantencore.pickpocket dummy
+scoreboard objectives add enchantencore.cleansing minecraft.used:minecraft.shield
+scoreboard objectives add enchantencore.refuel minecraft.used:minecraft.firework_rocket
+scoreboard objectives add enchantencore.ownership dummy
+
+##start repeating loops
+function enchantencore:start
+
+##set data pack version
+data modify storage eden:datapack enchantments_encore.version set value "6.1"
+
+##additional cleanup for v4.5
+scoreboard objectives remove enchantencore.dialog_trigger.wiki

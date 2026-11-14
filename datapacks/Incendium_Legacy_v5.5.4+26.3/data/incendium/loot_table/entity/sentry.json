@@ -1,0 +1,45 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "modifier": [
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 23,
+                                "max": 39
+                            },
+                            "options": "#minecraft:on_random_loot"
+                        },
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "damage_resistant": {
+                                    "types": "#no_knockback"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "incendium:artifact/tool/torch_of_lunacy",
+                    "condition": {
+                            "type": "minecraft:random_chance",
+                            "chance": 0.7
+                        }
+                }
+            ]
+        }
+    ]
+}

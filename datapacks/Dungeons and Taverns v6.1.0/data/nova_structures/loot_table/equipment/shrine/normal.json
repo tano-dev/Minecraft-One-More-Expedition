@@ -1,0 +1,318 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.75,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:emerald",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      }
+                    ],
+                    "name": "minecraft:copper_helmet"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.75,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:emerald",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      }
+                    ],
+                    "name": "minecraft:copper_chestplate"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.75,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_sword",
+                    "weight": 8
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_spear"
+                  }
+                ],
+                "rolls": 1
+              }
+            ]
+          },
+          "weight": 8
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.75,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      }
+                    ],
+                    "name": "minecraft:iron_helmet"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.75,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      }
+                    ],
+                    "name": "minecraft:iron_chestplate"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.75,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_sword",
+                    "weight": 8
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_spear"
+                  }
+                ],
+                "rolls": 1
+              }
+            ]
+          },
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.6,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      }
+                    ],
+                    "name": "minecraft:diamond_helmet"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.6,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      }
+                    ],
+                    "name": "minecraft:diamond_chestplate"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.4,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_sword",
+                    "weight": 8
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_spear"
+                  }
+                ],
+                "rolls": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.9,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      }
+                    ],
+                    "name": "minecraft:golden_helmet"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.9,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:copper",
+                            "pattern": "minecraft:bolt"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      }
+                    ],
+                    "name": "minecraft:golden_chestplate"
+                  }
+                ],
+                "rolls": 1
+              },
+              {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.5,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_sword",
+                    "weight": 8
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_spear"
+                  }
+                ],
+                "rolls": 1
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

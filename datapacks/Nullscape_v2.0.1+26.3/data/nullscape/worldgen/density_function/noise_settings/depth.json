@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:max",
+  "left": {
+    "type": "minecraft:range_choice",
+    "input": {
+      "type": "minecraft:gradient",
+      "from_coordinate": 0,
+      "to_coordinate": 384,
+      "from_value": 0,
+      "to_value": 384,
+      "axis": "y",
+      "tiling": "clamp_to_edge"
+    },
+    "min_inclusive": 0,
+    "max_exclusive": 4,
+    "when_in_range": 40,
+    "when_out_of_range": "nullscape:depth"
+  },
+  "right": "nullscape:void/emergency_exit"
+}

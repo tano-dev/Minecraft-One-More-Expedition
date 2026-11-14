@@ -1,0 +1,1 @@
+execute if predicate {predicate:{structures:"minecraft:end_city"},type:"minecraft:location_check"} run tell @s minecraft:end_city

@@ -1,0 +1,42 @@
+{
+  "display": {
+    "show_toast": true,
+    "announce_to_chat": true,
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "id": "minecraft:breeze_rod",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancement.dnt.adventure.kill_breeze_boss.title",
+      "fallback": "Freezing Breeze"
+    },
+    "description": {
+      "translate": "advancement.dnt.adventure.kill_breeze_boss",
+      "fallback": "Extinguish the Freeze Miniboss"
+    }
+  },
+  "parent": "nova_structures:adventure/find_lone_citadel",
+  "criteria": {
+    "kill_breeze_boss": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:breeze",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_breeze_boss",
+                "dnt_breeze_boss_ominous"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,30 @@
+{
+  "values": [
+    "#nova_structures:cave_chambers",
+    "#nova_structures:shrine",
+    "nova_structures:shrine_combat_tier_6",
+    "nova_structures:bunker",
+    "nova_structures:catacomb",
+    "nova_structures:cave_hut",
+    "nova_structures:creeping_crypt",
+    "nova_structures:deepslate_camp",
+    "nova_structures:illager_hideout",
+    {
+      "id": "nova_structures:mineshaft_jaggedpeak",
+      "required": false
+    },
+    {
+      "id": "nova_structures:mineshaft_stonepeak",
+      "required": false
+    },
+    {
+      "id": "nova_structures:mineshaft_surface",
+      "required": false
+    },
+    "nova_structures:small_creeping_crypt",
+    "nova_structures:small_undead_crypt",
+    "nova_structures:trial_dungeon",
+    "nova_structures:undead_crypt",
+    "nova_structures:underground_house"
+  ]
+}

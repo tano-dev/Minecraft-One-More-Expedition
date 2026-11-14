@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_ore"
+    },
+    "title": "Rare Find!",
+    "description": "Find your first Rare Treasure!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mt:display/_stats/common/1",
+  "criteria": {
+    "obtainchest": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "mt.rare_count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        "recipes": "mt:advancement"
+      }
+    }
+  }
+}

@@ -1,0 +1,1374 @@
+From abb864dfbdd67825c7d27dd3ac8fc5c2230d5b59 Mon Sep 17 00:00:00 2001
+From: Useless Guy <Useless>
+Date: Thu, 22 Oct 2026 16:57:11 +0200
+Subject: [PATCH 3/7] lift config keys to top level in worldgen/feature
+
+---
+ .../block_column/cobblestone_wall.json        |  34 ++-
+ .../cobblestone_wall_updater.json             | 104 +++++-----
+ .../feature/block_column/dark_oak_fence.json  |  34 ++-
+ .../block_column/dark_oak_fence_updater.json  | 104 +++++-----
+ .../feature/block_column/spruce_log.json      |  38 ++--
+ .../block_column/stripped_dark_oak_log.json   |  38 ++--
+ .../feature/geode/deepslate_ores.json         | 196 +++++++++---------
+ .../feature/geode/deepslate_ores_tunnel.json  |  54 +++--
+ .../feature/monster_room/lower/deep_dark.json |  20 +-
+ .../feature/monster_room/lower/default.json   |  20 +-
+ .../feature/monster_room/lower/dripstone.json |  20 +-
+ .../feature/monster_room/lower/lush.json      |  20 +-
+ .../feature/monster_room/upper/default.json   |  20 +-
+ .../feature/monster_room/upper/dripstone.json |  20 +-
+ .../feature/monster_room/upper/lush.json      |  20 +-
+ .../feature/monster_room/upper/oak.json       |  20 +-
+ data/trek/worldgen/feature/no_op.json         |   5 +-
+ .../worldgen/feature/simple_block/air.json    |  18 +-
+ .../feature/simple_block/air_update.json      |  36 ++--
+ .../simple_block/pink_glazed_terracota.json   |  18 +-
+ .../worldgen/feature/spring/lava_5_0.json     |  16 +-
+ .../worldgen/feature/spring/lava_5_1.json     |  16 +-
+ .../worldgen/feature/spring/lava_5_2.json     |  16 +-
+ .../worldgen/feature/spring/lava_5_3.json     |  16 +-
+ .../worldgen/feature/spring/lava_5_4.json     |  16 +-
+ .../worldgen/feature/spring/lava_5_5.json     |  16 +-
+ .../worldgen/feature/spring/water_5_0.json    |  16 +-
+ .../worldgen/feature/spring/water_5_1.json    |  16 +-
+ .../worldgen/feature/spring/water_5_2.json    |  16 +-
+ .../worldgen/feature/spring/water_5_3.json    |  16 +-
+ .../worldgen/feature/spring/water_5_4.json    |  16 +-
+ .../worldgen/feature/spring/water_5_5.json    |  16 +-
+ 32 files changed, 484 insertions(+), 547 deletions(-)
+
+diff --git a/data/trek/worldgen/feature/block_column/cobblestone_wall.json b/data/trek/worldgen/feature/block_column/cobblestone_wall.json
+index 3c884bc..0263676 100644
+--- a/data/trek/worldgen/feature/block_column/cobblestone_wall.json
++++ b/data/trek/worldgen/feature/block_column/cobblestone_wall.json
+@@ -1,23 +1,21 @@
+ {
+   "type": "minecraft:block_column",
+-  "config": {
+-    "direction": "down",
+-    "allowed_placement": {
+-      "type": "minecraft:matching_block_tag",
+-      "offset": [0,1,0],
+-      "tag": "trek:block_column_replacable"
+-    },
+-    "prioritize_tip": false,
+-    "layers": [
+-      {
+-        "height": 63,
+-        "provider": {
+-          "type": "minecraft:simple_state_provider",
+-          "state": {
+-            "Name": "minecraft:cobblestone_wall"
+-          }
++  "direction": "down",
++  "allowed_placement": {
++    "type": "minecraft:matching_block_tag",
++    "offset": [0,1,0],
++    "tag": "trek:block_column_replacable"
++  },
++  "prioritize_tip": false,
++  "layers": [
++    {
++      "height": 63,
++      "provider": {
++        "type": "minecraft:simple_state_provider",
++        "state": {
++          "Name": "minecraft:cobblestone_wall"
+         }
+       }
+-    ]
+-  }
++    }
++  ]
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json b/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json
+index d841ce2..2a1e815 100644
+--- a/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json
++++ b/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json
+@@ -1,61 +1,59 @@
+ {
+   "type": "minecraft:disk",
+-  "config": {
+-    "state_provider": {
+-      "type" : "rule_based_state_provider",
+-      "fallback": {
+-        "type": "minecraft:simple_state_provider",
+-        "state": {
+-          "Name": "minecraft:cobblestone_wall",
+-          "Properties": {
+-            "waterlogged": "false"
+-          }
++  "state_provider": {
++    "type": "rule_based_state_provider",
++    "fallback": {
++      "type": "minecraft:simple_state_provider",
++      "state": {
++        "Name": "minecraft:cobblestone_wall",
++        "Properties": {
++          "waterlogged": "false"
+         }
+-      },
+-      "rules": [
+-        {
+-          "if_true": {
+-            "type": "minecraft:any_of",
+-            "predicates": [
+-              {
+-                "type": "minecraft:matching_fluids",
+-                "offset": [-1,0,0],
+-                "fluids": "#minecraft:water"
+-              },
+-              {
+-                "type": "minecraft:matching_fluids",
+-                "offset": [1,0,0],
+-                "fluids": "#minecraft:water"
+-              },
+-              {
+-                "type": "minecraft:matching_fluids",
+-                "offset": [0,0,-1],
+-                "fluids": "#minecraft:water"
+-              },
+-              {
+-                "type": "minecraft:matching_fluids",
+-                "offset": [0,0,1],
+-                "fluids": "#minecraft:water"
+-              }
+-            ]
+-          },
+-          "then": {
+-            "type": "minecraft:simple_state_provider",
+-            "state": {
+-              "Name": "minecraft:cobblestone_wall",
+-              "Properties": {
+-                "waterlogged": "true"
+-              }
++      }
++    },
++    "rules": [
++      {
++        "if_true": {
++          "type": "minecraft:any_of",
++          "predicates": [
++            {
++              "type": "minecraft:matching_fluids",
++              "offset": [-1,0,0],
++              "fluids": "#minecraft:water"
++            },
++            {
++              "type": "minecraft:matching_fluids",
++              "offset": [1,0,0],
++              "fluids": "#minecraft:water"
++            },
++            {
++              "type": "minecraft:matching_fluids",
++              "offset": [0,0,-1],
++              "fluids": "#minecraft:water"
++            },
++            {
++              "type": "minecraft:matching_fluids",
++              "offset": [0,0,1],
++              "fluids": "#minecraft:water"
++            }
++          ]
++        },
++        "then": {
++          "type": "minecraft:simple_state_provider",
++          "state": {
++            "Name": "minecraft:cobblestone_wall",
++            "Properties": {
++              "waterlogged": "true"
+             }
+           }
+         }
+-      ]
+-    },
+-    "radius": 0,
+-    "half_height": 4,
+-    "target": {
+-      "type": "minecraft:matching_blocks",
+-      "blocks": "minecraft:cobblestone_wall"
+-    }
++      }
++    ]
++  },
++  "radius": 0,
++  "half_height": 4,
++  "target": {
++    "type": "minecraft:matching_blocks",
++    "blocks": "minecraft:cobblestone_wall"
+   }
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/block_column/dark_oak_fence.json b/data/trek/worldgen/feature/block_column/dark_oak_fence.json
+index a56d813..7376404 100644
+--- a/data/trek/worldgen/feature/block_column/dark_oak_fence.json
++++ b/data/trek/worldgen/feature/block_column/dark_oak_fence.json
+@@ -1,23 +1,21 @@
+ {
+   "type": "minecraft:block_column",
+-  "config": {
+-    "direction": "down",
+-    "allowed_placement": {
+-      "type": "minecraft:matching_block_tag",
+-      "offset": [0,1,0],
+-      "tag": "trek:block_column_replacable"
+-    },
+-    "prioritize_tip": false,
+-    "layers": [
+-      {
+-        "height": 63,
+-        "provider": {
+-          "type": "minecraft:simple_state_provider",
+-          "state": {
+-            "Name": "minecraft:dark_oak_fence"
+-          }
++  "direction": "down",
++  "allowed_placement": {
++    "type": "minecraft:matching_block_tag",
++    "offset": [0,1,0],
++    "tag": "trek:block_column_replacable"
++  },
++  "prioritize_tip": false,
++  "layers": [
++    {
++      "height": 63,
++      "provider": {
++        "type": "minecraft:simple_state_provider",
++        "state": {
++          "Name": "minecraft:dark_oak_fence"
+         }
+       }
+-    ]
+-  }
++    }
++  ]
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json b/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json
+index 3546ff6..de60ec6 100644
+--- a/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json
++++ b/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json
+@@ -1,61 +1,59 @@
+ {
+   "type": "minecraft:disk",
+-  "config": {
+-    "state_provider": {
+-      "type" : "rule_based_state_provider",
+-      "fallback": {
+-        "type": "minecraft:simple_state_provider",
+-        "state": {
+-          "Name": "minecraft:dark_oak_fence",
+-          "Properties": {
+-            "waterlogged": "false"
+-          }
++  "state_provider": {
++    "type": "rule_based_state_provider",
++    "fallback": {
++      "type": "minecraft:simple_state_provider",
++      "state": {
++        "Name": "minecraft:dark_oak_fence",
++        "Properties": {
++          "waterlogged": "false"
+         }
+-      },
+-      "rules": [
+-        {
+-          "if_true": {
+-            "type": "minecraft:any_of",
+-            "predicates": [
+-              {
+-                "type": "minecraft:matching_fluids",
+-                "offset": [-1,0,0],
+-                "fluids": "#minecraft:water"
+-              },
+-              {
+-                "type": "minecraft:matching_fluids",
+-                "offset": [1,0,0],
+-                "fluids": "#minecraft:water"
+-              },
+-              {
+-                "type": "minecraft:matching_fluids",
+-                "offset": [0,0,-1],
+-                "fluids": "#minecraft:water"
+-              },
+-              {
+-                "type": "minecraft:matching_fluids",
+-                "offset": [0,0,1],
+-                "fluids": "#minecraft:water"
+-              }
+-            ]
+-          },
+-          "then": {
+-            "type": "minecraft:simple_state_provider",
+-            "state": {
+-              "Name": "minecraft:dark_oak_fence",
+-              "Properties": {
+-                "waterlogged": "true"
+-              }
++      }
++    },
++    "rules": [
++      {
++        "if_true": {
++          "type": "minecraft:any_of",
++          "predicates": [
++            {
++              "type": "minecraft:matching_fluids",
++              "offset": [-1,0,0],
++              "fluids": "#minecraft:water"
++            },
++            {
++              "type": "minecraft:matching_fluids",
++              "offset": [1,0,0],
++              "fluids": "#minecraft:water"
++            },
++            {
++              "type": "minecraft:matching_fluids",
++              "offset": [0,0,-1],
++              "fluids": "#minecraft:water"
++            },
++            {
++              "type": "minecraft:matching_fluids",
++              "offset": [0,0,1],
++              "fluids": "#minecraft:water"
++            }
++          ]
++        },
++        "then": {
++          "type": "minecraft:simple_state_provider",
++          "state": {
++            "Name": "minecraft:dark_oak_fence",
++            "Properties": {
++              "waterlogged": "true"
+             }
+           }
+         }
+-      ]
+-    },
+-    "radius": 0,
+-    "half_height": 4,
+-    "target": {
+-      "type": "minecraft:matching_blocks",
+-      "blocks": "minecraft:dark_oak_fence"
+-    }
++      }
++    ]
++  },
++  "radius": 0,
++  "half_height": 4,
++  "target": {
++    "type": "minecraft:matching_blocks",
++    "blocks": "minecraft:dark_oak_fence"
+   }
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/block_column/spruce_log.json b/data/trek/worldgen/feature/block_column/spruce_log.json
+index fca41a6..9c4d1cb 100644
+--- a/data/trek/worldgen/feature/block_column/spruce_log.json
++++ b/data/trek/worldgen/feature/block_column/spruce_log.json
+@@ -1,26 +1,24 @@
+ {
+   "type": "minecraft:block_column",
+-  "config": {
+-    "direction": "down",
+-    "allowed_placement": {
+-      "type": "minecraft:matching_block_tag",
+-      "offset": [0,1,0],
+-      "tag": "trek:block_column_replacable"
+-    },
+-    "prioritize_tip": false,
+-    "layers": [
+-      {
+-        "height": 63,
+-        "provider": {
+-          "type": "minecraft:simple_state_provider",
+-          "state": {
+-            "Name": "minecraft:spruce_log",
+-            "Properties": {
+-              "axis": "y"
+-            }
++  "direction": "down",
++  "allowed_placement": {
++    "type": "minecraft:matching_block_tag",
++    "offset": [0,1,0],
++    "tag": "trek:block_column_replacable"
++  },
++  "prioritize_tip": false,
++  "layers": [
++    {
++      "height": 63,
++      "provider": {
++        "type": "minecraft:simple_state_provider",
++        "state": {
++          "Name": "minecraft:spruce_log",
++          "Properties": {
++            "axis": "y"
+           }
+         }
+       }
+-    ]
+-  }
++    }
++  ]
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json b/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json
+index 95ce667..e45b28e 100644
+--- a/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json
++++ b/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json
+@@ -1,26 +1,24 @@
+ {
+   "type": "minecraft:block_column",
+-  "config": {
+-    "direction": "down",
+-    "allowed_placement": {
+-      "type": "minecraft:matching_block_tag",
+-      "offset": [0,1,0],
+-      "tag": "trek:block_column_replacable"
+-    },
+-    "prioritize_tip": false,
+-    "layers": [
+-      {
+-        "height": 63,
+-        "provider": {
+-          "type": "minecraft:simple_state_provider",
+-          "state": {
+-            "Name": "minecraft:stripped_dark_oak_log",
+-            "Properties": {
+-              "axis": "y"
+-            }
++  "direction": "down",
++  "allowed_placement": {
++    "type": "minecraft:matching_block_tag",
++    "offset": [0,1,0],
++    "tag": "trek:block_column_replacable"
++  },
++  "prioritize_tip": false,
++  "layers": [
++    {
++      "height": 63,
++      "provider": {
++        "type": "minecraft:simple_state_provider",
++        "state": {
++          "Name": "minecraft:stripped_dark_oak_log",
++          "Properties": {
++            "axis": "y"
+           }
+         }
+       }
+-    ]
+-  }
++    }
++  ]
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/geode/deepslate_ores.json b/data/trek/worldgen/feature/geode/deepslate_ores.json
+index 603b8f9..17fa7ba 100644
+--- a/data/trek/worldgen/feature/geode/deepslate_ores.json
++++ b/data/trek/worldgen/feature/geode/deepslate_ores.json
+@@ -1,100 +1,98 @@
+-{
+-  "type": "minecraft:geode",
+-  "config": {
+-    "blocks": {
+-      "filling_provider": {
+-        "type": "minecraft:simple_state_provider",
+-        "state": {
+-          "Name": "minecraft:air"
+-        }
+-      },
+-      "inner_placements": [
+-        {
+-          "Name": "minecraft:air"
+-        }
+-      ],
+-      "inner_layer_provider": {
+-        "type": "minecraft:simple_state_provider",
+-        "state": {
+-          "Name": "minecraft:air"
+-        }
+-      },
+-      "alternate_inner_layer_provider": {
+-        "type": "minecraft:simple_state_provider",
+-        "state": {
+-          "Name": "minecraft:air"
+-        }
+-      },
+-      "middle_layer_provider": {
+-        "type": "minecraft:simple_state_provider",
+-        "state": {
+-          "Name": "minecraft:air"
+-        }
+-      },
+-      "outer_layer_provider": {
+-        "type": "minecraft:weighted_state_provider",
+-        "entries": [
+-          {
+-            "weight": 170,
+-            "data": {
+-              "Name": "minecraft:deepslate"
+-            }
+-          },
+-          {
+-            "weight": 20,
+-            "data": {
+-              "Name": "minecraft:deepslate_copper_ore"
+-            }
+-          },
+-          {
+-            "weight": 5,
+-            "data": {
+-              "Name": "minecraft:deepslate_iron_ore"
+-            }
+-          },
+-          {
+-            "weight": 2,
+-            "data": {
+-              "Name": "minecraft:deepslate_gold_ore"
+-            }
+-          },
+-          {
+-            "weight": 1,
+-            "data": {
+-              "Name": "minecraft:deepslate_diamond_ore"
+-            }
+-          },
+-          {
+-            "weight": 1,
+-            "data": {
+-              "Name": "minecraft:deepslate_emerald_ore"
+-            }
+-          }
+-        ]
+-      },
+-      "cannot_replace": "#trek:geode/deepstape_ores",
+-      "invalid_blocks": "#trek:geode/invalid_blocks"
+-    },
+-    "layers": {
+-      "filling": 1,
+-      "inner_layer": 1,
+-      "middle_layer": 20,
+-      "outer_layer": 30
+-    },
+-    "crack": {
+-      "generate_crack_chance": 0,
+-      "base_crack_size": 1,
+-      "crack_point_offset": 1
+-    },
+-    "noise_multiplier": 0.1,
+-    "use_potential_placements_chance": 0,
+-    "use_alternate_layer0_chance": 0,
+-    "placements_require_layer0_alternate": false,
+-    "outer_wall_distance": 1,
+-    "distribution_points": 1,
+-    "point_offset": 1,
+-    "min_gen_offset": -20,
+-    "max_gen_offset": 20,
+-    "invalid_blocks_threshold": 1
+-  }
++{
++  "type": "minecraft:geode",
++  "blocks": {
++    "filling_provider": {
++      "type": "minecraft:simple_state_provider",
++      "state": {
++        "Name": "minecraft:air"
++      }
++    },
++    "inner_placements": [
++      {
++        "Name": "minecraft:air"
++      }
++    ],
++    "inner_layer_provider": {
++      "type": "minecraft:simple_state_provider",
++      "state": {
++        "Name": "minecraft:air"
++      }
++    },
++    "alternate_inner_layer_provider": {
++      "type": "minecraft:simple_state_provider",
++      "state": {
++        "Name": "minecraft:air"
++      }
++    },
++    "middle_layer_provider": {
++      "type": "minecraft:simple_state_provider",
++      "state": {
++        "Name": "minecraft:air"
++      }
++    },
++    "outer_layer_provider": {
++      "type": "minecraft:weighted_state_provider",
++      "entries": [
++        {
++          "weight": 170,
++          "data": {
++            "Name": "minecraft:deepslate"
++          }
++        },
++        {
++          "weight": 20,
++          "data": {
++            "Name": "minecraft:deepslate_copper_ore"
++          }
++        },
++        {
++          "weight": 5,
++          "data": {
++            "Name": "minecraft:deepslate_iron_ore"
++          }
++        },
++        {
++          "weight": 2,
++          "data": {
++            "Name": "minecraft:deepslate_gold_ore"
++          }
++        },
++        {
++          "weight": 1,
++          "data": {
++            "Name": "minecraft:deepslate_diamond_ore"
++          }
++        },
++        {
++          "weight": 1,
++          "data": {
++            "Name": "minecraft:deepslate_emerald_ore"
++          }
++        }
++      ]
++    },
++    "cannot_replace": "#trek:geode/deepstape_ores",
++    "invalid_blocks": "#trek:geode/invalid_blocks"
++  },
++  "layers": {
++    "filling": 1,
++    "inner_layer": 1,
++    "middle_layer": 20,
++    "outer_layer": 30
++  },
++  "crack": {
++    "generate_crack_chance": 0,
++    "base_crack_size": 1,
++    "crack_point_offset": 1
++  },
++  "noise_multiplier": 0.1,
++  "use_potential_placements_chance": 0,
++  "use_alternate_layer0_chance": 0,
++  "placements_require_layer0_alternate": false,
++  "outer_wall_distance": 1,
++  "distribution_points": 1,
++  "point_offset": 1,
++  "min_gen_offset": -20,
++  "max_gen_offset": 20,
++  "invalid_blocks_threshold": 1
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json b/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json
+index 83d66f2..37969ad 100644
+--- a/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json
++++ b/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json
+@@ -1,33 +1,31 @@
+ {
+   "type": "minecraft:root_system",
+-  "config": {
+-    "allowed_tree_position": {
+-      "type": "minecraft:matching_blocks",
+-      "blocks": "minecraft:pink_glazed_terracotta"
+-    },
+-    "allowed_vertical_water_for_tree": 64,
+-    "required_vertical_space_for_tree": 1,
+-    "feature": "trek:no_op",
+-    "hanging_root_placement_attempts": 1,
+-    "hanging_root_radius": 1,
+-    "hanging_roots_vertical_span": 1,
+-    "hanging_root_state_provider": {
+-      "type": "minecraft:simple_state_provider",
+-      "state": {
+-        "Name": "minecraft:air"
+-      }
+-    },
+-    "root_column_max_height": 256,
+-    "level_test_distance": 0,
+-    "max_level_deviation": 0,
+-    "root_placement_attempts": 128,
+-    "root_radius": 2,
+-    "root_replaceable": "#trek:root_system_replacable",
+-    "root_state_provider": {
+-      "type": "minecraft:simple_state_provider",
+-      "state": {
+-        "Name": "minecraft:air"
+-      }
++  "allowed_tree_position": {
++    "type": "minecraft:matching_blocks",
++    "blocks": "minecraft:pink_glazed_terracotta"
++  },
++  "allowed_vertical_water_for_tree": 64,
++  "required_vertical_space_for_tree": 1,
++  "feature": "trek:no_op",
++  "hanging_root_placement_attempts": 1,
++  "hanging_root_radius": 1,
++  "hanging_roots_vertical_span": 1,
++  "hanging_root_state_provider": {
++    "type": "minecraft:simple_state_provider",
++    "state": {
++      "Name": "minecraft:air"
++    }
++  },
++  "root_column_max_height": 256,
++  "level_test_distance": 0,
++  "max_level_deviation": 0,
++  "root_placement_attempts": 128,
++  "root_radius": 2,
++  "root_replaceable": "#trek:root_system_replacable",
++  "root_state_provider": {
++    "type": "minecraft:simple_state_provider",
++    "state": {
++      "Name": "minecraft:air"
+     }
+   }
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/monster_room/lower/deep_dark.json b/data/trek/worldgen/feature/monster_room/lower/deep_dark.json
+index b01dad6..1d8b74a 100644
+--- a/data/trek/worldgen/feature/monster_room/lower/deep_dark.json
++++ b/data/trek/worldgen/feature/monster_room/lower/deep_dark.json
+@@ -1,14 +1,12 @@
+ {
+   "type": "minecraft:fossil",
+-  "config": {
+-    "max_empty_corners_allowed": 4,
+-    "fossil_structures": [
+-      "trek:monster_room/lower/deep_dark"
+-    ],
+-    "overlay_structures": [
+-      "trek:monster_room/empty"
+-    ],
+-    "fossil_processors": "trek:monster_room/lower/deep_dark",
+-    "overlay_processors": "minecraft:empty"
+-  }
++  "max_empty_corners_allowed": 4,
++  "fossil_structures": [
++    "trek:monster_room/lower/deep_dark"
++  ],
++  "overlay_structures": [
++    "trek:monster_room/empty"
++  ],
++  "fossil_processors": "trek:monster_room/lower/deep_dark",
++  "overlay_processors": "minecraft:empty"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/monster_room/lower/default.json b/data/trek/worldgen/feature/monster_room/lower/default.json
+index 00e774b..cfd58f4 100644
+--- a/data/trek/worldgen/feature/monster_room/lower/default.json
++++ b/data/trek/worldgen/feature/monster_room/lower/default.json
+@@ -1,14 +1,12 @@
+ {
+   "type": "minecraft:fossil",
+-  "config": {
+-    "max_empty_corners_allowed": 4,
+-    "fossil_structures": [
+-      "trek:monster_room/default"
+-    ],
+-    "overlay_structures": [
+-      "trek:monster_room/empty"
+-    ],
+-    "fossil_processors": "trek:monster_room/lower/default",
+-    "overlay_processors": "minecraft:empty"
+-  }
++  "max_empty_corners_allowed": 4,
++  "fossil_structures": [
++    "trek:monster_room/default"
++  ],
++  "overlay_structures": [
++    "trek:monster_room/empty"
++  ],
++  "fossil_processors": "trek:monster_room/lower/default",
++  "overlay_processors": "minecraft:empty"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/monster_room/lower/dripstone.json b/data/trek/worldgen/feature/monster_room/lower/dripstone.json
+index dd75890..1df40b8 100644
+--- a/data/trek/worldgen/feature/monster_room/lower/dripstone.json
++++ b/data/trek/worldgen/feature/monster_room/lower/dripstone.json
+@@ -1,14 +1,12 @@
+ {
+   "type": "minecraft:fossil",
+-  "config": {
+-    "max_empty_corners_allowed": 4,
+-    "fossil_structures": [
+-      "trek:monster_room/dripstone"
+-    ],
+-    "overlay_structures": [
+-      "trek:monster_room/empty"
+-    ],
+-    "fossil_processors": "trek:monster_room/lower/dripstone",
+-    "overlay_processors": "minecraft:empty"
+-  }
++  "max_empty_corners_allowed": 4,
++  "fossil_structures": [
++    "trek:monster_room/dripstone"
++  ],
++  "overlay_structures": [
++    "trek:monster_room/empty"
++  ],
++  "fossil_processors": "trek:monster_room/lower/dripstone",
++  "overlay_processors": "minecraft:empty"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/monster_room/lower/lush.json b/data/trek/worldgen/feature/monster_room/lower/lush.json
+index 6542e6f..1c357fb 100644
+--- a/data/trek/worldgen/feature/monster_room/lower/lush.json
++++ b/data/trek/worldgen/feature/monster_room/lower/lush.json
+@@ -1,14 +1,12 @@
+ {
+   "type": "minecraft:fossil",
+-  "config": {
+-    "max_empty_corners_allowed": 4,
+-    "fossil_structures": [
+-      "trek:monster_room/lush"
+-    ],
+-    "overlay_structures": [
+-      "trek:monster_room/empty"
+-    ],
+-    "fossil_processors": "trek:monster_room/lower/lush",
+-    "overlay_processors": "minecraft:empty"
+-  }
++  "max_empty_corners_allowed": 4,
++  "fossil_structures": [
++    "trek:monster_room/lush"
++  ],
++  "overlay_structures": [
++    "trek:monster_room/empty"
++  ],
++  "fossil_processors": "trek:monster_room/lower/lush",
++  "overlay_processors": "minecraft:empty"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/monster_room/upper/default.json b/data/trek/worldgen/feature/monster_room/upper/default.json
+index c6a860e..28e3d4a 100644
+--- a/data/trek/worldgen/feature/monster_room/upper/default.json
++++ b/data/trek/worldgen/feature/monster_room/upper/default.json
+@@ -1,14 +1,12 @@
+ {
+   "type": "minecraft:fossil",
+-  "config": {
+-    "max_empty_corners_allowed": 4,
+-    "fossil_structures": [
+-      "trek:monster_room/default"
+-    ],
+-    "overlay_structures": [
+-      "trek:monster_room/empty"
+-    ],
+-    "fossil_processors": "trek:monster_room/upper/default",
+-    "overlay_processors": "minecraft:empty"
+-  }
++  "max_empty_corners_allowed": 4,
++  "fossil_structures": [
++    "trek:monster_room/default"
++  ],
++  "overlay_structures": [
++    "trek:monster_room/empty"
++  ],
++  "fossil_processors": "trek:monster_room/upper/default",
++  "overlay_processors": "minecraft:empty"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/monster_room/upper/dripstone.json b/data/trek/worldgen/feature/monster_room/upper/dripstone.json
+index de3238d..d646461 100644
+--- a/data/trek/worldgen/feature/monster_room/upper/dripstone.json
++++ b/data/trek/worldgen/feature/monster_room/upper/dripstone.json
+@@ -1,14 +1,12 @@
+ {
+   "type": "minecraft:fossil",
+-  "config": {
+-    "max_empty_corners_allowed": 4,
+-    "fossil_structures": [
+-      "trek:monster_room/dripstone"
+-    ],
+-    "overlay_structures": [
+-      "trek:monster_room/empty"
+-    ],
+-    "fossil_processors": "trek:monster_room/upper/dripstone",
+-    "overlay_processors": "minecraft:empty"
+-  }
++  "max_empty_corners_allowed": 4,
++  "fossil_structures": [
++    "trek:monster_room/dripstone"
++  ],
++  "overlay_structures": [
++    "trek:monster_room/empty"
++  ],
++  "fossil_processors": "trek:monster_room/upper/dripstone",
++  "overlay_processors": "minecraft:empty"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/monster_room/upper/lush.json b/data/trek/worldgen/feature/monster_room/upper/lush.json
+index 16904d8..a763630 100644
+--- a/data/trek/worldgen/feature/monster_room/upper/lush.json
++++ b/data/trek/worldgen/feature/monster_room/upper/lush.json
+@@ -1,14 +1,12 @@
+ {
+   "type": "minecraft:fossil",
+-  "config": {
+-    "max_empty_corners_allowed": 4,
+-    "fossil_structures": [
+-      "trek:monster_room/lush"
+-    ],
+-    "overlay_structures": [
+-      "trek:monster_room/empty"
+-    ],
+-    "fossil_processors": "trek:monster_room/upper/lush",
+-    "overlay_processors": "minecraft:empty"
+-  }
++  "max_empty_corners_allowed": 4,
++  "fossil_structures": [
++    "trek:monster_room/lush"
++  ],
++  "overlay_structures": [
++    "trek:monster_room/empty"
++  ],
++  "fossil_processors": "trek:monster_room/upper/lush",
++  "overlay_processors": "minecraft:empty"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/monster_room/upper/oak.json b/data/trek/worldgen/feature/monster_room/upper/oak.json
+index d075497..dbb4939 100644
+--- a/data/trek/worldgen/feature/monster_room/upper/oak.json
++++ b/data/trek/worldgen/feature/monster_room/upper/oak.json
+@@ -1,14 +1,12 @@
+ {
+   "type": "minecraft:fossil",
+-  "config": {
+-    "max_empty_corners_allowed": 4,
+-    "fossil_structures": [
+-      "trek:monster_room/upper/oak"
+-    ],
+-    "overlay_structures": [
+-      "trek:monster_room/empty"
+-    ],
+-    "fossil_processors": "trek:monster_room/upper/oak",
+-    "overlay_processors": "minecraft:empty"
+-  }
++  "max_empty_corners_allowed": 4,
++  "fossil_structures": [
++    "trek:monster_room/upper/oak"
++  ],
++  "overlay_structures": [
++    "trek:monster_room/empty"
++  ],
++  "fossil_processors": "trek:monster_room/upper/oak",
++  "overlay_processors": "minecraft:empty"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/no_op.json b/data/trek/worldgen/feature/no_op.json
+index 70be87d..a80af9f 100644
+--- a/data/trek/worldgen/feature/no_op.json
++++ b/data/trek/worldgen/feature/no_op.json
+@@ -1,4 +1,3 @@
+-{
+-  "type": "minecraft:no_op",
+-  "config": {}
++{
++  "type": "minecraft:no_op"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/simple_block/air.json b/data/trek/worldgen/feature/simple_block/air.json
+index 372fba6..2eb8a85 100644
+--- a/data/trek/worldgen/feature/simple_block/air.json
++++ b/data/trek/worldgen/feature/simple_block/air.json
+@@ -1,11 +1,9 @@
+-{
+-  "type": "minecraft:simple_block",
+-  "config": {
+-    "to_place": {
+-      "type": "minecraft:simple_state_provider",
+-      "state": {
+-        "Name": "minecraft:air"
+-      }
+-    }
+-  }
++{
++  "type": "minecraft:simple_block",
++  "to_place": {
++    "type": "minecraft:simple_state_provider",
++    "state": {
++      "Name": "minecraft:air"
++    }
++  }
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/simple_block/air_update.json b/data/trek/worldgen/feature/simple_block/air_update.json
+index 4487049..3860ac4 100644
+--- a/data/trek/worldgen/feature/simple_block/air_update.json
++++ b/data/trek/worldgen/feature/simple_block/air_update.json
+@@ -1,20 +1,18 @@
+-{
+-  "type": "minecraft:disk",
+-  "config": {
+-    "state_provider": {
+-      "type": "minecraft:rule_based_state_provider",
+-      "fallback": {
+-        "type": "minecraft:simple_state_provider",
+-        "state": {
+-          "Name": "minecraft:air"
+-        }
+-      },
+-      "rules": []
+-    },
+-    "radius": 0,
+-    "half_height": 0,
+-    "target": {
+-      "type": "minecraft:true"
+-    }
+-  }
++{
++  "type": "minecraft:disk",
++  "state_provider": {
++    "type": "minecraft:rule_based_state_provider",
++    "fallback": {
++      "type": "minecraft:simple_state_provider",
++      "state": {
++        "Name": "minecraft:air"
++      }
++    },
++    "rules": []
++  },
++  "radius": 0,
++  "half_height": 0,
++  "target": {
++    "type": "minecraft:true"
++  }
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json b/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json
+index 9c38988..96fa6ca 100644
+--- a/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json
++++ b/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json
+@@ -1,11 +1,9 @@
+-{
+-  "type": "minecraft:simple_block",
+-  "config": {
+-    "to_place": {
+-      "type": "minecraft:simple_state_provider",
+-      "state": {
+-        "Name": "minecraft:pink_glazed_terracotta"
+-      }
+-    }
+-  }
++{
++  "type": "minecraft:simple_block",
++  "to_place": {
++    "type": "minecraft:simple_state_provider",
++    "state": {
++      "Name": "minecraft:pink_glazed_terracotta"
++    }
++  }
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/lava_5_0.json b/data/trek/worldgen/feature/spring/lava_5_0.json
+index e2f7312..9cedb5d 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_0.json
++++ b/data/trek/worldgen/feature/spring/lava_5_0.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:water"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 0,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:water"
++  },
++  "rock_count": 5,
++  "hole_count": 0,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/lava_5_1.json b/data/trek/worldgen/feature/spring/lava_5_1.json
+index d78f199..8a5466b 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_1.json
++++ b/data/trek/worldgen/feature/spring/lava_5_1.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:lava"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 1,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:lava"
++  },
++  "rock_count": 5,
++  "hole_count": 1,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/lava_5_2.json b/data/trek/worldgen/feature/spring/lava_5_2.json
+index f51a809..9ea3688 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_2.json
++++ b/data/trek/worldgen/feature/spring/lava_5_2.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:lava"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 2,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:lava"
++  },
++  "rock_count": 5,
++  "hole_count": 2,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/lava_5_3.json b/data/trek/worldgen/feature/spring/lava_5_3.json
+index ee076a8..6378188 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_3.json
++++ b/data/trek/worldgen/feature/spring/lava_5_3.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:lava"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 3,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:lava"
++  },
++  "rock_count": 5,
++  "hole_count": 3,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/lava_5_4.json b/data/trek/worldgen/feature/spring/lava_5_4.json
+index 6419b4c..1e7442e 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_4.json
++++ b/data/trek/worldgen/feature/spring/lava_5_4.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:lava"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 4,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:lava"
++  },
++  "rock_count": 5,
++  "hole_count": 4,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/lava_5_5.json b/data/trek/worldgen/feature/spring/lava_5_5.json
+index 09a3360..5ea94d1 100644
+--- a/data/trek/worldgen/feature/spring/lava_5_5.json
++++ b/data/trek/worldgen/feature/spring/lava_5_5.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:lava"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 5,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:lava"
++  },
++  "rock_count": 5,
++  "hole_count": 5,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/water_5_0.json b/data/trek/worldgen/feature/spring/water_5_0.json
+index 3691f79..d969b4c 100644
+--- a/data/trek/worldgen/feature/spring/water_5_0.json
++++ b/data/trek/worldgen/feature/spring/water_5_0.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:lava"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 0,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:lava"
++  },
++  "rock_count": 5,
++  "hole_count": 0,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/water_5_1.json b/data/trek/worldgen/feature/spring/water_5_1.json
+index e4db56a..0cc72dc 100644
+--- a/data/trek/worldgen/feature/spring/water_5_1.json
++++ b/data/trek/worldgen/feature/spring/water_5_1.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:water"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 1,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:water"
++  },
++  "rock_count": 5,
++  "hole_count": 1,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/water_5_2.json b/data/trek/worldgen/feature/spring/water_5_2.json
+index 9ead982..c287bbe 100644
+--- a/data/trek/worldgen/feature/spring/water_5_2.json
++++ b/data/trek/worldgen/feature/spring/water_5_2.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:water"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 2,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:water"
++  },
++  "rock_count": 5,
++  "hole_count": 2,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/water_5_3.json b/data/trek/worldgen/feature/spring/water_5_3.json
+index b2bf0c7..55b922a 100644
+--- a/data/trek/worldgen/feature/spring/water_5_3.json
++++ b/data/trek/worldgen/feature/spring/water_5_3.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:water"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 3,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:water"
++  },
++  "rock_count": 5,
++  "hole_count": 3,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/water_5_4.json b/data/trek/worldgen/feature/spring/water_5_4.json
+index 3291c85..87dcdfe 100644
+--- a/data/trek/worldgen/feature/spring/water_5_4.json
++++ b/data/trek/worldgen/feature/spring/water_5_4.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:water"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 4,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:water"
++  },
++  "rock_count": 5,
++  "hole_count": 4,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+diff --git a/data/trek/worldgen/feature/spring/water_5_5.json b/data/trek/worldgen/feature/spring/water_5_5.json
+index 7935444..ec8808f 100644
+--- a/data/trek/worldgen/feature/spring/water_5_5.json
++++ b/data/trek/worldgen/feature/spring/water_5_5.json
+@@ -1,12 +1,10 @@
+ {
+   "type": "minecraft:spring_feature",
+-  "config": {
+-    "state": {
+-      "Name": "minecraft:water"
+-    },
+-    "rock_count": 5,
+-    "hole_count": 5,
+-    "requires_block_below": false,
+-    "valid_blocks": "#trek:spring_valid_blocks"
+-  }
++  "state": {
++    "Name": "minecraft:water"
++  },
++  "rock_count": 5,
++  "hole_count": 5,
++  "requires_block_below": false,
++  "valid_blocks": "#trek:spring_valid_blocks"
+ }
+\ No newline at end of file
+-- 
+2.56.0
+

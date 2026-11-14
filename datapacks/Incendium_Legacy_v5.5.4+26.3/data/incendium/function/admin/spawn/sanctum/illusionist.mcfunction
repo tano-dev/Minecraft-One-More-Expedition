@@ -1,0 +1,1 @@
+summon illusioner ~ ~ ~ {Tags:["in.sanctum", "in.sanctum_illusionist"]}

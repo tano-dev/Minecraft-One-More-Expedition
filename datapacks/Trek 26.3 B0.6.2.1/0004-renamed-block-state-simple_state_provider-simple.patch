@@ -1,0 +1,231 @@
+From 7db1337f9c204c91cfc998d58748e6933f7ba6ac Mon Sep 17 00:00:00 2001
+From: Useless Guy <Useless>
+Date: Thu, 22 Oct 2026 17:18:32 +0200
+Subject: [PATCH 4/7] renamed block state simple_state_provider -> simple
+
+---
+ .../feature/block_column/cobblestone_wall.json         |  2 +-
+ .../feature/block_column/cobblestone_wall_updater.json |  6 +++---
+ .../worldgen/feature/block_column/dark_oak_fence.json  |  2 +-
+ .../feature/block_column/dark_oak_fence_updater.json   |  6 +++---
+ .../trek/worldgen/feature/block_column/spruce_log.json |  2 +-
+ .../feature/block_column/stripped_dark_oak_log.json    |  2 +-
+ data/trek/worldgen/feature/geode/deepslate_ores.json   | 10 +++++-----
+ .../worldgen/feature/geode/deepslate_ores_tunnel.json  |  4 ++--
+ data/trek/worldgen/feature/simple_block/air.json       |  2 +-
+ .../trek/worldgen/feature/simple_block/air_update.json |  4 ++--
+ .../feature/simple_block/pink_glazed_terracota.json    |  2 +-
+ 11 files changed, 21 insertions(+), 21 deletions(-)
+
+diff --git a/data/trek/worldgen/feature/block_column/cobblestone_wall.json b/data/trek/worldgen/feature/block_column/cobblestone_wall.json
+index 0263676..12c273b 100644
+--- a/data/trek/worldgen/feature/block_column/cobblestone_wall.json
++++ b/data/trek/worldgen/feature/block_column/cobblestone_wall.json
+@@ -11,7 +11,7 @@
+     {
+       "height": 63,
+       "provider": {
+-        "type": "minecraft:simple_state_provider",
++        "type": "minecraft:simple",
+         "state": {
+           "Name": "minecraft:cobblestone_wall"
+         }
+diff --git a/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json b/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json
+index 2a1e815..88c4227 100644
+--- a/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json
++++ b/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json
+@@ -1,9 +1,9 @@
+ {
+   "type": "minecraft:disk",
+   "state_provider": {
+-    "type": "rule_based_state_provider",
++    "type": "rule_based",
+     "fallback": {
+-      "type": "minecraft:simple_state_provider",
++      "type": "minecraft:simple",
+       "state": {
+         "Name": "minecraft:cobblestone_wall",
+         "Properties": {
+@@ -39,7 +39,7 @@
+           ]
+         },
+         "then": {
+-          "type": "minecraft:simple_state_provider",
++          "type": "minecraft:simple",
+           "state": {
+             "Name": "minecraft:cobblestone_wall",
+             "Properties": {
+diff --git a/data/trek/worldgen/feature/block_column/dark_oak_fence.json b/data/trek/worldgen/feature/block_column/dark_oak_fence.json
+index 7376404..8a6afce 100644
+--- a/data/trek/worldgen/feature/block_column/dark_oak_fence.json
++++ b/data/trek/worldgen/feature/block_column/dark_oak_fence.json
+@@ -11,7 +11,7 @@
+     {
+       "height": 63,
+       "provider": {
+-        "type": "minecraft:simple_state_provider",
++        "type": "minecraft:simple",
+         "state": {
+           "Name": "minecraft:dark_oak_fence"
+         }
+diff --git a/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json b/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json
+index de60ec6..1d7126f 100644
+--- a/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json
++++ b/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json
+@@ -1,9 +1,9 @@
+ {
+   "type": "minecraft:disk",
+   "state_provider": {
+-    "type": "rule_based_state_provider",
++    "type": "rule_based",
+     "fallback": {
+-      "type": "minecraft:simple_state_provider",
++      "type": "minecraft:simple",
+       "state": {
+         "Name": "minecraft:dark_oak_fence",
+         "Properties": {
+@@ -39,7 +39,7 @@
+           ]
+         },
+         "then": {
+-          "type": "minecraft:simple_state_provider",
++          "type": "minecraft:simple",
+           "state": {
+             "Name": "minecraft:dark_oak_fence",
+             "Properties": {
+diff --git a/data/trek/worldgen/feature/block_column/spruce_log.json b/data/trek/worldgen/feature/block_column/spruce_log.json
+index 9c4d1cb..6c60812 100644
+--- a/data/trek/worldgen/feature/block_column/spruce_log.json
++++ b/data/trek/worldgen/feature/block_column/spruce_log.json
+@@ -11,7 +11,7 @@
+     {
+       "height": 63,
+       "provider": {
+-        "type": "minecraft:simple_state_provider",
++        "type": "minecraft:simple",
+         "state": {
+           "Name": "minecraft:spruce_log",
+           "Properties": {
+diff --git a/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json b/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json
+index e45b28e..1db9d9f 100644
+--- a/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json
++++ b/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json
+@@ -11,7 +11,7 @@
+     {
+       "height": 63,
+       "provider": {
+-        "type": "minecraft:simple_state_provider",
++        "type": "minecraft:simple",
+         "state": {
+           "Name": "minecraft:stripped_dark_oak_log",
+           "Properties": {
+diff --git a/data/trek/worldgen/feature/geode/deepslate_ores.json b/data/trek/worldgen/feature/geode/deepslate_ores.json
+index 17fa7ba..7cb112b 100644
+--- a/data/trek/worldgen/feature/geode/deepslate_ores.json
++++ b/data/trek/worldgen/feature/geode/deepslate_ores.json
+@@ -2,7 +2,7 @@
+   "type": "minecraft:geode",
+   "blocks": {
+     "filling_provider": {
+-      "type": "minecraft:simple_state_provider",
++      "type": "minecraft:simple",
+       "state": {
+         "Name": "minecraft:air"
+       }
+@@ -13,25 +13,25 @@
+       }
+     ],
+     "inner_layer_provider": {
+-      "type": "minecraft:simple_state_provider",
++      "type": "minecraft:simple",
+       "state": {
+         "Name": "minecraft:air"
+       }
+     },
+     "alternate_inner_layer_provider": {
+-      "type": "minecraft:simple_state_provider",
++      "type": "minecraft:simple",
+       "state": {
+         "Name": "minecraft:air"
+       }
+     },
+     "middle_layer_provider": {
+-      "type": "minecraft:simple_state_provider",
++      "type": "minecraft:simple",
+       "state": {
+         "Name": "minecraft:air"
+       }
+     },
+     "outer_layer_provider": {
+-      "type": "minecraft:weighted_state_provider",
++      "type": "minecraft:weighted",
+       "entries": [
+         {
+           "weight": 170,
+diff --git a/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json b/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json
+index 37969ad..98df1c9 100644
+--- a/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json
++++ b/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json
+@@ -11,7 +11,7 @@
+   "hanging_root_radius": 1,
+   "hanging_roots_vertical_span": 1,
+   "hanging_root_state_provider": {
+-    "type": "minecraft:simple_state_provider",
++    "type": "minecraft:simple",
+     "state": {
+       "Name": "minecraft:air"
+     }
+@@ -23,7 +23,7 @@
+   "root_radius": 2,
+   "root_replaceable": "#trek:root_system_replacable",
+   "root_state_provider": {
+-    "type": "minecraft:simple_state_provider",
++    "type": "minecraft:simple",
+     "state": {
+       "Name": "minecraft:air"
+     }
+diff --git a/data/trek/worldgen/feature/simple_block/air.json b/data/trek/worldgen/feature/simple_block/air.json
+index 2eb8a85..ba0fe98 100644
+--- a/data/trek/worldgen/feature/simple_block/air.json
++++ b/data/trek/worldgen/feature/simple_block/air.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:simple_block",
+   "to_place": {
+-    "type": "minecraft:simple_state_provider",
++    "type": "minecraft:simple",
+     "state": {
+       "Name": "minecraft:air"
+     }
+diff --git a/data/trek/worldgen/feature/simple_block/air_update.json b/data/trek/worldgen/feature/simple_block/air_update.json
+index 3860ac4..d6c7f31 100644
+--- a/data/trek/worldgen/feature/simple_block/air_update.json
++++ b/data/trek/worldgen/feature/simple_block/air_update.json
+@@ -1,9 +1,9 @@
+ {
+   "type": "minecraft:disk",
+   "state_provider": {
+-    "type": "minecraft:rule_based_state_provider",
++    "type": "minecraft:rule_based",
+     "fallback": {
+-      "type": "minecraft:simple_state_provider",
++      "type": "minecraft:simple",
+       "state": {
+         "Name": "minecraft:air"
+       }
+diff --git a/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json b/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json
+index 96fa6ca..c2f7e0b 100644
+--- a/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json
++++ b/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json
+@@ -1,7 +1,7 @@
+ {
+   "type": "minecraft:simple_block",
+   "to_place": {
+-    "type": "minecraft:simple_state_provider",
++    "type": "minecraft:simple",
+     "state": {
+       "Name": "minecraft:pink_glazed_terracotta"
+     }
+-- 
+2.56.0
+

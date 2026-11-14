@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "Adds more Witch Huts",
+    "pack_format": 94,
+    "supported_formats": {
+      "min_inclusive": 15,
+      "max_inclusive": 94
+    }
+  }
+}

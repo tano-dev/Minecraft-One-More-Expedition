@@ -1,0 +1,18 @@
+{
+  "values": [
+    "#minecraft:base_stone_overworld",
+    "#minecraft:dirt",
+    "#minecraft:terracotta",
+    "#trek:ore",
+    "#trek:fluid",
+    "#trek:ametyst_geode_block",
+    "#trek:mineshaft_block",
+    "minecraft:gravel",
+    "minecraft:sand",
+    "minecraft:red_sand",
+    "minecraft:sandstone",
+    "minecraft:red_sandstone",
+    "minecraft:clay",
+    "minecraft:dripstone_block"
+  ]
+}

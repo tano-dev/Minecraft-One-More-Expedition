@@ -1,0 +1,24 @@
+{
+  "name": "nullscape:crashed_ship/elytra",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "nullscape:crashed_ship/loot/elytra",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "nullscape:crashed_ship/loot/elytra_empty",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

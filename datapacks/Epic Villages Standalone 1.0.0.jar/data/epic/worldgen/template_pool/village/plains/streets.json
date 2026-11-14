@@ -1,0 +1,123 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/corner_01"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/corner_02"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/corner_03"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/crossroad_01"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/crossroad_02"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/crossroad_03"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/crossroad_04"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/straight_01"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/straight_02"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/straight_03"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/straight_04"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/straight_05"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:village/plains/streets/straight_06"
+            },
+            "weight": 1
+        }
+
+    ]
+}

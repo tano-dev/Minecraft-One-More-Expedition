@@ -1,0 +1,120 @@
+{
+  "attributes": {
+    "minecraft:visual/fog_color": 0,
+    "minecraft:visual/sky_color": 0,
+    "minecraft:visual/water_fog_color": 13357282,
+    "minecraft:audio/ambient_sounds": {
+      "modifier": "override",
+      "argument": {
+        "mood": {
+          "sound": "minecraft:ambient.cave",
+          "tick_delay": 6000,
+          "block_search_extent": 8,
+          "offset": 2
+        }
+      }
+    },
+    "minecraft:gameplay/natural_mob_spawns": {
+      "modifier": "overlay",
+      "argument": {
+        "spawns_by_category": {
+          "ambient": [],
+          "axolotls": [
+            {
+              "type": "minecraft:axolotl",
+              "weight": 1,
+              "count": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 2
+              }
+            }
+          ],
+          "creature": [],
+          "misc": [],
+          "underground_water_creature": [
+            {
+              "type": "minecraft:glow_squid",
+              "weight": 1,
+              "count": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 10
+              }
+            }
+          ],
+          "water_ambient": [
+            {
+              "type": "minecraft:cod",
+              "weight": 15,
+              "count": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 3,
+                "max_inclusive": 6
+              }
+            },
+            {
+              "type": "minecraft:pufferfish",
+              "weight": 5,
+              "count": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 3
+              }
+            },
+            {
+              "type": "minecraft:tropical_fish",
+              "weight": 25,
+              "count": 8
+            }
+          ],
+          "water_creature": [
+            {
+              "type": "minecraft:squid",
+              "weight": 10,
+              "count": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 2
+              }
+            }
+          ]
+        },
+        "spawn_costs": {}
+      }
+    }
+  },
+  "temperature": 2,
+  "downfall": 2,
+  "has_precipitation": false,
+  "temperature_modifier": "none",
+  "effects": {
+    "water_color": 11593202,
+    "grass_color": 445213,
+    "foliage_color": 445213
+  },
+  "carvers": [],
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:underwater_magma",
+      "kattersstructures:horn_coral_patch",
+      "kattersstructures:fire_coral_patch"
+    ],
+    [
+      "kattersstructures:light_collum"
+    ],
+    [],
+    [
+      "kattersstructures:bubble_coral_tree",
+      "kattersstructures:fire_coral_tree",
+      "kattersstructures:corals"
+    ],
+    []
+  ]
+}

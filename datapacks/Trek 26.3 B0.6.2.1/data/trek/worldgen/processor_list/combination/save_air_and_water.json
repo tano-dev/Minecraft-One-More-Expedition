@@ -1,0 +1,12 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:protected_blocks",
+      "value": "#trek:air"
+    },
+    {
+      "processor_type": "minecraft:protected_blocks",
+      "value": "#trek:water"
+    }
+  ]
+}

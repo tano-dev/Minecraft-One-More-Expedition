@@ -1,0 +1,7 @@
+{
+  "values": [
+    "minecraft:wooded_badlands",
+    {"id": "terralith:bryce_canyon","required": false},
+    {"id": "natures_spirit:wooded_drylands","required": false}
+  ]
+}

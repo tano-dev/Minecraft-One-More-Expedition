@@ -1,0 +1,25 @@
+{
+	"name": "nova_structures:badland_mineshaft_overhaul/mineshaft_fallback",
+	"fallback": "nova_structures:badland_mineshaft_overhaul/mineshaft_fallback",
+	"elements": [
+		
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/badland/mineshaft/badlands_mineshaft_intersect_deadend",
+				"projection": "rigid",
+				"processors": "nova_structures:mesa_mineshaft_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/badland/mineshaft/badlands_mineshaft_deadend",
+				"projection": "rigid",
+				"processors": "nova_structures:mesa_mineshaft_processor"
+			}
+		}
+	]
+}

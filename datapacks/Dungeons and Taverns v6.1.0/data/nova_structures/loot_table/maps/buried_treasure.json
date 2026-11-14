@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:buried_treasure_map",
+          "modifier": [
+            {
+              "destination": "minecraft:buried_treasure",
+              "decoration": "minecraft:red_x",
+              "skip_existing_chunks": false,
+              "zoom": 1,
+              "search_radius": 50,
+              "type": "minecraft:exploration_map"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

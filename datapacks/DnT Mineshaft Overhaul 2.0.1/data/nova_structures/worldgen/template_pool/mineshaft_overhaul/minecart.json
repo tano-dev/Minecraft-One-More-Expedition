@@ -1,0 +1,15 @@
+{
+	"name": "nova_structures:mineshaft_overhaul/minecart",
+	"fallback": "nova_structures:mineshaft_overhaul/minecart",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/minecart_chest",
+				"projection": "rigid",
+				"processors": "nova_structures:mainline_processor"
+			}
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:plains_village_map",
+          "modifier": [
+            {
+              "destination": "nova_structures:tavern_oak",
+              "decoration": "minecraft:village_plains",
+              "zoom": 1,
+              "search_radius": 100,
+              "skip_existing_chunks": false,
+              "type": "minecraft:exploration_map"
+            },
+            {
+              "components": {
+                "minecraft:dyed_color": 11242072,
+                "minecraft:rarity": "common",
+                "minecraft:item_name": {
+                  "translate": "item.dnt.filled_map.tavern_oak",
+                  "fallback": "Oak Tavern Map"
+                },
+				        "minecraft:custom_model_data": {
+                  "floats": [],
+                  "strings": [
+                    "dnt:map"
+                ]
+               },
+               "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:dyed_color"
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:overlay",
+    "features": [
+      { 
+	  "feature": "nova_structures:plank_base",
+	  "placement": []
+	  },
+	  { 
+	  "feature": "nova_structures:fallback_base",
+	  "placement": [
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [
+					0,
+					-13,
+					0
+					],
+				"blocks": "minecraft:water" 
+				}
+			}
+		]
+	  },
+	  { 
+	  "feature": "nova_structures:fallback_base",
+	  "placement": [
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [
+					0,
+					-13,
+					0
+					],
+				"blocks": "minecraft:lava" 
+				}
+			}
+		]
+	  },	  
+	  { 
+	  "feature": "nova_structures:chain_preparer_base",
+	  "placement": [
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [
+					0,
+					-13,
+					0
+					],
+				"blocks": "minecraft:air" 
+				}
+			}
+		]
+	  },
+      { 
+	  "feature": "nova_structures:chain_base",
+	  "placement": [
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [
+					0,
+					-2,
+					0
+					],
+				"blocks": "minecraft:air" 
+				}
+			}
+		]
+	  },
+	  { 
+	  "feature": "nova_structures:chain_preventer",
+	  "placement": [
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		}
+		]
+	  }
+    ]
+}

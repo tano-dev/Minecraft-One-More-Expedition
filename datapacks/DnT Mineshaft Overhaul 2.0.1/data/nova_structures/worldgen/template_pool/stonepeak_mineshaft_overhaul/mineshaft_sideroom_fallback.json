@@ -1,0 +1,15 @@
+{
+	"name": "nova_structures:stonepeak_mineshaft_overhaul/mineshaft_sideroom_fallback",
+	"fallback": "nova_structures:stonepeak_mineshaft_overhaul/mineshaft_sideroom_fallback",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/stonepeak/sideroom/stonepeak_sideroom_fail",
+				"projection": "rigid",
+				"processors": "nova_structures:stony_mainline_processor"
+			}
+		}
+	]
+}

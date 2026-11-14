@@ -1,0 +1,16 @@
+{
+    "item.minecraft.lingering_potion.effect.dnt_blindness": "Trwała mikstura ślepoty",
+    "item.minecraft.lingering_potion.effect.dnt_mining_fatigue": "Trwała mikstura zmęczenia",
+    "item.minecraft.lingering_potion.effect.dnt_levitation": "Trwała mikstura lewitacji",
+    "item.minecraft.lingering_potion.effect.dnt_nausea": "Trwała mikstura zawrotu głowy",
+    "item.minecraft.lingering_potion.effect.dnt_wither": "Trwała mikstura rozkładu",
+    "item.minecraft.potion.effect.dnt_levitation": "Mikstura lewitacji",
+    "item.minecraft.potion.effect.dnt_wither": "Mikstura rozkładu",
+    "item.minecraft.splash_potion.effect.dnt_dolphins_grace": "Miotana mikstura delfina",
+    "item.minecraft.splash_potion.effect.dnt_levitation": "Miotana mikstura lewitacji",
+    "item.minecraft.splash_potion.effect.dnt_water_breathing": "Miotana mikstura oddychania pod wodą",
+    "item.minecraft.splash_potion.effect.dnt_wither": "Miotana mikstura rozkładu",
+    "item.minecraft.tipped_arrow.effect.dnt_levitation": "Strzała lewitacji",
+    "item.minecraft.tipped_arrow.effect.dnt_nausea": "Strzała zawrotu głowy",
+    "item.minecraft.tipped_arrow.effect.dnt_wither": "Strzała rozkładu"
+}

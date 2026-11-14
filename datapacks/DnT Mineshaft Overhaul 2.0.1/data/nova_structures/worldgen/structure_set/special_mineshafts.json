@@ -1,0 +1,26 @@
+{
+	"structures": [
+		{
+			"structure": "nova_structures:mineshaft_jaggedpeak",
+			"weight": 1
+		},
+		{
+			"structure": "nova_structures:mineshaft_stonepeak",
+			"weight": 1
+		},
+		{
+			"structure": "minecraft:mineshaft_mesa",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 15
+    },
+		"spacing": 25,
+		"separation": 10,
+		"salt": 594839393,
+		"type": "minecraft:random_spread"
+	}
+}

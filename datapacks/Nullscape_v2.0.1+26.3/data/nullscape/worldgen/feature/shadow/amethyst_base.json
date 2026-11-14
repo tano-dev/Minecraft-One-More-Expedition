@@ -1,0 +1,183 @@
+{
+    "type": "minecraft:vegetation_patch",
+    "surface": "floor",
+    "depth": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 6,
+        "max_inclusive": 10
+    },
+    "vertical_range": 10,
+    "extra_bottom_block_chance": 0.15,
+    "extra_edge_column_chance": 0.5,
+    "vegetation_chance": 1,
+    "xz_radius": {
+        "type": "minecraft:biased_to_bottom",
+        "min_inclusive": 0,
+        "max_inclusive": 1
+    },
+    "replaceable": "#nullscape:amethyst_dx",
+    "ground_state": {
+        "type": "minecraft:weighted",
+        "entries": [
+            {
+                "weight": 500,
+                "data": {
+                    "id": "minecraft:amethyst_block"
+                }
+            },
+            {
+                "weight": 1,
+                "data": {
+                    "id": "minecraft:budding_amethyst"
+                }
+            }
+        ]
+    },
+    "vegetation_feature": {
+        "feature": {
+            "type": "minecraft:random_selector",
+            "features": [
+                {
+                    "chance": 0.12,
+                    "feature": {
+                        "feature": {
+                            "type": "minecraft:netherrack_replace_blobs",
+                            "state": {
+                                "id": "minecraft:air"
+                            },
+                            "target": {
+                                "id": "minecraft:budding_amethyst"
+                            },
+                            "radius": 0
+                        },
+                        "placement": []
+                    }
+                },
+                {
+                    "chance": 0.12,
+                    "feature": {
+                        "feature": {
+                            "type": "minecraft:netherrack_replace_blobs",
+                            "state": {
+                                "id": "minecraft:air"
+                            },
+                            "target": {
+                                "id": "minecraft:amethyst_block"
+                            },
+                            "radius": 0
+                        },
+                        "placement": []
+                    }
+                },
+                {
+                    "chance": 0.125,
+                    "feature": {
+                        "feature": {
+                            "type": "minecraft:ore",
+                            "size": 64,
+                            "discard_chance_on_air_exposure": 0,
+                            "targets": [
+                                {
+                                    "target": {
+                                        "predicate_type": "minecraft:tag_match",
+                                        "tag": "nullscape:amethyst_cut"
+                                    },
+                                    "state": {
+                                        "id": "minecraft:basalt",
+                                        "properties": {
+                                            "axis": "y"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "placement": []
+                    }
+                },
+                {
+                    "chance": 0.3,
+                    "feature": {
+                        "feature": {
+                            "type": "minecraft:ore",
+                            "size": 48,
+                            "discard_chance_on_air_exposure": 0,
+                            "targets": [
+                                {
+                                    "target": {
+                                        "predicate_type": "minecraft:tag_match",
+                                        "tag": "nullscape:amethyst_cut"
+                                    },
+                                    "state": {
+                                        "id": "minecraft:smooth_basalt"
+                                    }
+                                },
+                                {
+                                    "target": {
+                                        "predicate_type": "minecraft:block_match",
+                                        "block": "minecraft:basalt"
+                                    },
+                                    "state": {
+                                        "id": "minecraft:smooth_basalt"
+                                    }
+                                }
+                            ]
+                        },
+                        "placement": []
+                    }
+                },
+                {
+                    "chance": 0.3,
+                    "feature": {
+                        "feature": {
+                            "type": "minecraft:ore",
+                            "size": 28,
+                            "discard_chance_on_air_exposure": 0,
+                            "targets": [
+                                {
+                                    "target": {
+                                        "predicate_type": "minecraft:tag_match",
+                                        "tag": "nullscape:amethyst_cut"
+                                    },
+                                    "state": {
+                                        "id": "minecraft:blackstone"
+                                    }
+                                },
+                                {
+                                    "target": {
+                                        "predicate_type": "minecraft:block_match",
+                                        "block": "minecraft:smooth_basalt"
+                                    },
+                                    "state": {
+                                        "id": "minecraft:blackstone"
+                                    }
+                                },
+                                {
+                                    "target": {
+                                        "predicate_type": "minecraft:block_match",
+                                        "block": "minecraft:basalt"
+                                    },
+                                    "state": {
+                                        "id": "minecraft:blackstone"
+                                    }
+                                }
+                            ]
+                        },
+                        "placement": []
+                    }
+                }
+            ],
+            "default": {
+                "feature": {
+                    "type": "minecraft:no_op"
+                },
+                "placement": []
+            }
+        },
+        "placement": [
+            {
+                "type": "minecraft:count",
+                "count": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,450 @@
+{
+  "processors": [
+    {
+		"processor_type": "minecraft:protected_blocks",
+		"value": "#nova_structures:bunker_protected"
+	},
+	{
+      "processor_type": "minecraft:rule",
+      "rules": [
+		{
+          "input_predicate": {
+            "block": "minecraft:stone",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.02
+          },
+          "location_predicate": {
+            "block": "minecraft:deepslate",
+            "predicate_type": "minecraft:block_match"
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_redstone_ore"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:stone",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.02
+          },
+          "location_predicate": {
+            "block": "minecraft:stone",
+            "predicate_type": "minecraft:block_match"
+          },
+          "output_state": {
+            "id": "minecraft:redstone_ore"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:stone",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.02
+          },
+          "location_predicate": {
+            "block": "minecraft:tuff",
+            "predicate_type": "minecraft:block_match"
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_redstone_ore"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:stone",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.02
+          },
+          "location_predicate": {
+            "block": "minecraft:dripstone_block",
+            "predicate_type": "minecraft:block_match"
+          },
+          "output_state": {
+            "id": "minecraft:redstone_ore"
+          }
+        }
+	  ]
+	},
+	{
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "nova_structures:lava_and_water"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stone"
+          },
+          "output_state": {
+              "id": "minecraft:stone"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stone"
+          },
+          "output_state": {
+            "id": "minecraft:structure_void"
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:block_ignore",
+      "blocks": [
+        {
+          "id": "minecraft:structure_void"
+        }
+      ]
+    },
+	{
+      "processor_type": "minecraft:rule",
+      "rules": [
+		{
+          "input_predicate": {
+            "block": "minecraft:wall_torch",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.97
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:air"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:rail",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.33
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:air"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:deepslate"
+          },
+          "input_predicate": {
+            "block": "minecraft:stone",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:deepslate",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:air"
+          },
+          "input_predicate": {
+            "block": "minecraft:cobweb",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:air",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:terracotta"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:terracotta",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:orange_terracotta"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:orange_terracotta",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:yellow_terracotta"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:yellow_terracotta",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:red_terracotta"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:red_terracotta",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:white_terracotta"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:white_terracotta",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:brown_terracotta"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:brown_terracotta",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:black_terracotta"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:black_terracotta",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:stone"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:stone",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:deepslate"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:deepslate",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:dark_oak_planks"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:air",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:stone"
+          },
+          "input_predicate": {
+            "block": "minecraft:stone",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:water",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:stone"
+          },
+          "input_predicate": {
+            "block": "minecraft:stone",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:lava",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:air"
+          },
+          "input_predicate": {
+            "block": "minecraft:stone",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:air",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:deepslate"
+          },
+          "input_predicate": {
+            "block": "minecraft:deepslate",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:water",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:deepslate"
+          },
+          "input_predicate": {
+            "block": "minecraft:deepslate",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:lava",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:air"
+          },
+          "input_predicate": {
+            "block": "minecraft:deepslate",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:air",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:cobweb",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.6
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:air"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:mossy_cobblestone",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.1
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:cobblestone"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:deepslate_iron_ore"
+          },
+          "input_predicate": {
+            "block": "minecraft:iron_ore",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:deepslate",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:deepslate_gold_ore"
+          },
+          "input_predicate": {
+            "block": "minecraft:gold_ore",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:deepslate",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:deepslate_lapis_ore"
+          },
+          "input_predicate": {
+            "block": "minecraft:lapis_ore",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:deepslate",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+		{
+          "output_state": {
+            "id": "minecraft:deepslate_copper_ore"
+          },
+          "input_predicate": {
+            "block": "minecraft:copper_ore",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:deepslate",
+            "predicate_type": "minecraft:block_match"
+          }
+        }
+	]
+	}
+	]
+}

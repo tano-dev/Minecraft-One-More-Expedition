@@ -1,0 +1,8 @@
+{
+  "values": [
+    "minecraft:birch_forest",
+    {"id": "terralith:temperate_highlands","required": false},
+    {"id": "terralith:white_cliffs","required": false},
+    {"id": "regions_unexplored:silver_birch_forest","required": false}
+  ]
+}

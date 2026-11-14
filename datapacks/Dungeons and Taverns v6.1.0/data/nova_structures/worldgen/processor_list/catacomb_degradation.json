@@ -1,0 +1,233 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+		{
+          "input_predicate": {
+            "block": "minecraft:soul_lantern",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.7
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:air"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:potted_fern",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.3
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:potted_fern"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:potted_fern",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.3
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:potted_spruce_sapling"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:potted_fern",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.3
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:potted_poppy"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:potted_fern",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.3
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:potted_dandelion"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:deepslate_bricks",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.3
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:cracked_deepslate_bricks"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:deepslate_bricks",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.1
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:cobbled_deepslate"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:deepslate_tiles",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.3
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:cracked_deepslate_tiles"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:polished_deepslate",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.3
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:cobbled_deepslate"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:skeleton_skull",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.05
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:amethyst_cluster"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:skeleton_skull",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.05
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:bone_block"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:skeleton_skull",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.1
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:cobweb"
+          }
+        },
+		{
+          "input_predicate": {
+            "block": "minecraft:skeleton_skull",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.1
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:packed_ice"
+          }
+        },
+		{
+            "input_predicate": {
+              "predicate_type": "blockstate_match",
+              "block_state": {
+                "id": "minecraft:skeleton_skull"
+							}
+            },
+            "location_predicate": {
+              "predicate_type": "always_true"
+            },
+            "output_state": {
+              "id": "minecraft:blue_candle",
+              "properties": {
+                "candles": "3"
+              }
+            }
+        },
+		{
+            "input_predicate": {
+              "predicate_type": "blockstate_match",
+              "block_state": {
+                "id": "minecraft:skeleton_skull"
+							}
+            },
+            "location_predicate": {
+              "predicate_type": "always_true"
+            },
+            "output_state": {
+              "id": "minecraft:light_blue_candle",
+              "properties": {
+                "candles": "3"
+              }
+            }
+        },
+		{
+            "input_predicate": {
+              "predicate_type": "blockstate_match",
+              "block_state": {
+                "id": "minecraft:skeleton_skull"
+							}
+            },
+            "location_predicate": {
+              "predicate_type": "always_true"
+            },
+            "output_state": {
+              "id": "minecraft:black_candle",
+              "properties": {
+                "candles": "3"
+              }
+            }
+        }
+        ]
+      },
+	  {
+		"processor_type": "minecraft:protected_blocks",
+		"value": "#nova_structures:catacomb_protected"
+	}
+  ]
+}

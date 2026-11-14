@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "modifier": [
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:strength"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/potion/endurance_potion",
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/potions/endurance_potion",
+            "test": 1
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "state": {
+      "id": "minecraft:air"
+    },
+    "target": {
+      "id": "minecraft:basalt",
+      "properties": {
+        "axis": "y"
+      }
+    },
+    "radius": 12
+}

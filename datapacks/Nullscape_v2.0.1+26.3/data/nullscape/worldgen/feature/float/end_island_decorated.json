@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:random_selector",
+  "features": [],
+  "default": "end_island_decorated"
+}

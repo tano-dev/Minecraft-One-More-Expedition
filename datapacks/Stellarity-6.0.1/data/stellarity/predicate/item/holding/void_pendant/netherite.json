@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "container.*": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "stellarity:item": "void_pendant"
+          },
+          "minecraft:enchantments": [
+            {
+              "enchantments": "stellarity:_technical/void_pendant/netherite"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

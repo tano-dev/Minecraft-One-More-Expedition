@@ -1,0 +1,33 @@
+{
+	"name": "nova_structures:nether_skeleton_camp/start_soul",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 3,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:nether_skeleton_camp/nether_skeleton_camp_base_small",
+				"projection": "rigid",
+				"processors": "nova_structures:nether_skeleton_camp_soul_processor"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:nether_skeleton_camp/nether_skeleton_camp_base_medium",
+				"projection": "rigid",
+				"processors": "nova_structures:nether_skeleton_camp_soul_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:nether_skeleton_camp/nether_skeleton_camp_base_large",
+				"projection": "rigid",
+				"processors": "nova_structures:nether_skeleton_camp_soul_processor"
+			}
+		}
+	]
+}

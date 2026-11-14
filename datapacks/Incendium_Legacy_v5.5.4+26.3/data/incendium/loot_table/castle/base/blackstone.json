@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "items": "#incendium:blackstone_blocks",
+          "expand": false,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "uniform",
+                "min": 20,
+                "max": 50
+              }
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": 0,
+              "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.85
+                }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

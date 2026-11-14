@@ -1,0 +1,24 @@
+{
+  "name": "town_centers",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/town_centers/swamp_meeting_point_1",
+        "processors": "trek:village/house_swamp_vanilla",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/swamp_vanilla/town_centers/swamp_meeting_point_2",
+        "processors": "trek:village/house_swamp_vanilla",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

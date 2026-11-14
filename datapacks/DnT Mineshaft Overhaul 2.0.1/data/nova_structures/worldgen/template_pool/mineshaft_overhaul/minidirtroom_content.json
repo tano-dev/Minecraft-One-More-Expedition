@@ -1,0 +1,61 @@
+{
+	"name": "nova_structures:mineshaft_overhaul/mineshaft",
+	"fallback": "nova_structures:mineshaft_overhaul/minidirtroom_content",
+	"elements": [
+		
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/normal/mineshaft/minidirtroom_content_1",
+				"projection": "rigid",
+				"processors": "nova_structures:mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/normal/mineshaft/minidirtroom_content_2",
+				"projection": "rigid",
+				"processors": "nova_structures:mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/normal/mineshaft/minidirtroom_content_3",
+				"projection": "rigid",
+				"processors": "nova_structures:mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/normal/mineshaft/minidirtroom_content_4",
+				"projection": "rigid",
+				"processors": "nova_structures:mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/normal/mineshaft/minidirtroom_content_5",
+				"projection": "rigid",
+				"processors": "nova_structures:mineshaft_special_processor"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:mineshaft_overhaul/normal/mineshaft/minidirtroom_content_6",
+				"projection": "rigid",
+				"processors": "nova_structures:mineshaft_spider_processor"
+			}
+		}
+	]
+}

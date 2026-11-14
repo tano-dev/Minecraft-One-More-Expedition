@@ -1,0 +1,23 @@
+{
+  "gives": {
+    "count": 1,
+    "id": "minecraft:lodestone"
+  },
+  "max_uses": 12,
+  "reputation_discount": 0.05,
+  "xp": 2,
+  "merchant_predicate": {
+    "type": "minecraft:location_check",
+    "predicate": {
+      "structures": "#nova_structures:taverns"
+    }
+  },
+  "wants": {
+    "count": {
+             "type": "minecraft:uniform",
+             "min": 2,
+             "max": 4
+             },
+    "id": "minecraft:emerald"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "values": [
+    { "id": "enchantencore:midas_touch", "required": false },
+    { "id": "enchantencore:red_moon", "required": false },
+    "minecraft:blast_protection"
+  ]
+}

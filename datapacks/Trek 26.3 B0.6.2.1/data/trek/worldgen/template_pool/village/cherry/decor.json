@@ -1,0 +1,75 @@
+{
+  "name": "decor",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/cherry/decor/cherry_decor_1",
+        "processors": "trek:village/decor_cherry",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/cherry/decor/cherry_decor_2",
+        "processors": "trek:village/decor_cherry",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/cherry/decor/cherry_decor_3",
+        "processors": "trek:village/decor_cherry",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/cherry/decor/cherry_decor_4",
+        "processors": "trek:village/decor_cherry",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/cherry/decor/cherry_decor_5",
+        "processors": "trek:village/decor_cherry",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/cherry/decor/cherry_decor_6",
+        "processors": "trek:village/decor_cherry",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "trek:village/cherry/decor/cherry_decor_7",
+        "processors": "trek:village/decor_cherry",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:empty_pool_element"
+      },
+      "weight": 7
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

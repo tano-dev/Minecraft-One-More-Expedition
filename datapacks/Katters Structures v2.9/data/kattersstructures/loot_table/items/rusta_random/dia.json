@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:generic",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:diamond"
+				}
+			],
+			"modifier": [
+				{
+					"type": "minecraft:set_name",
+					"name": {
+						"translate": "item.kattersstructures.rusta_present_2",
+						"fallback": "a Present!"
+					}
+				}
+			]
+		}
+	]
+}

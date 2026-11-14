@@ -1,0 +1,1 @@
+summon evoker ~ ~ ~ {Tags:["in.sanctum", "in.sanctum_ritualist"]}

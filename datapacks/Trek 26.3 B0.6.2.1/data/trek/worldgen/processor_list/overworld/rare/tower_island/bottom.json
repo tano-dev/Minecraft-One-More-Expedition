@@ -1,0 +1,37 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:protected_blocks",
+      "value": "#trek:air"
+    },
+    {
+      "processor_type": "minecraft:protected_blocks",
+      "value": "#minecraft:base_stone_overworld"
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:axis_aligned_linear_pos",
+            "axis": "y",
+            "min_dist": 1,
+            "max_dist": 6,
+            "min_chance": 0.3,
+            "max_chance": 0
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:stone"
+          },
+          "output_state": {
+            "id": "minecraft:granite"
+          }
+        }
+      ]
+    }
+  ]
+}

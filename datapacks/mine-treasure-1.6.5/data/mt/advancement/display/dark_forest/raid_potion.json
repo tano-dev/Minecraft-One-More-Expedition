@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_sword"
+    },
+    "title": "Wait... That Worked?",
+    "description": "Consume a Raid Potion in a Village",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mt:display/dark_forest/rare",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {}
+        },
+        "effects": {
+          "minecraft:bad_omen": {
+            "duration": 20,
+            "visible": true
+          }
+        }
+      }
+    }
+  }
+}

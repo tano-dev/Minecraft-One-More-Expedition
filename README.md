@@ -12,6 +12,7 @@ This repository independently maintains all **Fabric Mods (`mods/`, `mods_src/`)
 Minecraft-One-More-Expedition/
 ├── mods/                 # Verified, production-grade Fabric server mods
 ├── mods_optional/        # Client-only, redundant, or isolated experimental mods
+├── config/               # Version-controlled configuration files for all mods
 ├── mods_src/             # Fabric mod source code (Gradle / Java 25)
 ├── datapacks/            # Custom world datapacks (synced to world/datapacks/)
 ├── mods_registry.json    # Machine-readable mod registry for AI Agentic Self-Healing

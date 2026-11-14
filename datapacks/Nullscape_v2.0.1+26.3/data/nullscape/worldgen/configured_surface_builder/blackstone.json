@@ -1,0 +1,14 @@
+{
+  "config": {
+    "top_material": {
+      "id": "minecraft:blackstone"
+    },
+    "under_material": {
+      "id": "minecraft:blackstone"
+    },
+    "underwater_material": {
+      "id": "minecraft:blackstone"
+    }
+  },
+  "type": "minecraft:default"
+}

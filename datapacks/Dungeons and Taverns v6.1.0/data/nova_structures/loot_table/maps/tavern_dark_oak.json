@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:woodland_mansion_map",
+          "modifier": [
+            {
+              "destination": "nova_structures:tavern_dark_oak",
+              "decoration": "minecraft:mansion",
+              "zoom": 1,
+              "search_radius": 100,
+              "skip_existing_chunks": false,
+              "type": "minecraft:exploration_map"
+            },
+            {
+              "components": {
+                "minecraft:dyed_color": 5058840,
+                "minecraft:rarity": "common",
+                "minecraft:item_name": {
+                  "translate": "item.dnt.filled_map.tavern_dark_oak",
+                  "fallback": "Dark Oak Tavern Map"
+                },
+				      "minecraft:custom_model_data": {
+                  "floats": [],
+                  "strings": [
+                    "dnt:map"
+                ]
+               },
+               "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:dyed_color"
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

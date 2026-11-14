@@ -1,0 +1,145 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.dnt.wax_wings",
+    "fallback": "Wax Wings"
+  },
+  "effects": {
+    "minecraft:item_damage": [
+      {
+        "requirements": {
+          "type": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:damage": {
+                "damage": {
+                  "max": 428
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": -1
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": 3
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:equipment": {
+              "chest": {
+                "predicates": {
+                  "minecraft:damage": {
+                    "damage": {
+                      "max": 428
+                    }
+                  }
+                }
+              }
+            },
+            "minecraft:movement": {
+              "speed": {
+                "min": 30
+              }
+            },
+            "minecraft:flags": {
+              "is_fall_flying": true
+            },
+            "minecraft:periodic_tick": 10,
+            "minecraft:location": {
+              "position": {
+                "y": {
+                  "min": -100,
+                  "max": 500
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": 2
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:weather_check",
+              "thundering": false,
+              "raining": false
+            },
+            {
+              "type": "minecraft:time_check",
+              "clock": "minecraft:overworld",
+              "value": {
+                "min": 0,
+                "max": 12000
+              },
+              "period": 24000
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "movement": {
+                  "speed": {
+                    "min": 30
+                  }
+                },
+                "flags": {
+                  "is_fall_flying": true
+                },
+                "location": {
+                  "position": {
+                    "y": {
+                      "min": 501,
+                      "max": 9999
+                    }
+                  },
+                  "can_see_sky": true
+                },
+                "minecraft:equipment": {
+                  "chest": {
+                    "predicates": {
+                      "minecraft:damage": {
+                        "damage": {
+                          "max": 428
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "exclusive_set": "#nova_structures:exclusive_set/elytra",
+  "max_cost": {
+    "base": 55,
+    "per_level_above_first": 8
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "chest"
+  ],
+  "supported_items": "minecraft:elytra",
+  "weight": 5
+}

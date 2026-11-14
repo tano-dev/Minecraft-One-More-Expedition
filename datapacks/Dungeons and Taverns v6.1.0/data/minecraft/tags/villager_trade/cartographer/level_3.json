@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "nova_structures:cartographer/3/cave_chamber_colony_chart",
+	"nova_structures:cartographer/3/conduit_ruin_chart",
+	"nova_structures:cartographer/3/mangrove_witch_hut_chart",
+	"nova_structures:cartographer/3/dappled_witch_hut_chart",
+	"nova_structures:cartographer/3/swamp_hut_chart",
+	"nova_structures:cartographer/3/igloo_chart",
+	"nova_structures:cartographer/3/ruin_town_chart",
+	"nova_structures:cartographer/3/shrine_tower_chart",
+	"nova_structures:cartographer/3/stray_outlook_chart",
+	"nova_structures:cartographer/3/trail_ruins_chart",
+	"nova_structures:cartographer/3/trial_dungeon_chart",
+	"nova_structures:cartographer/3/trial_explorer_chart",
+	"nova_structures:cartographer/3/village_birch_chart",
+	"nova_structures:cartographer/3/village_dappled_chart",
+	"nova_structures:cartographer/3/village_swamp_chart",
+	"nova_structures:cartographer/3/village_jungle_chart"
+  ]
+}

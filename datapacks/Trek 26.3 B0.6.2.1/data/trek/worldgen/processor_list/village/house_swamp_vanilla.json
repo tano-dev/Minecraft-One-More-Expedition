@@ -1,0 +1,93 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "block": "minecraft:water",
+            "predicate_type": "minecraft:block_match"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt_path",
+            "predicate_type": "minecraft:block_match"
+          },
+          "output_state": {
+            "id": "minecraft:dark_oak_planks"
+          }
+        },
+        {
+          "location_predicate": {
+            "block": "minecraft:water",
+            "predicate_type": "minecraft:block_match"
+          },
+          "input_predicate": {
+            "block": "minecraft:dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "output_state": {
+            "id": "minecraft:dark_oak_planks"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "id": "minecraft:dark_oak_slab",
+              "properties": {
+                "type": "bottom"
+              }
+            }
+          },
+          "output_state": {
+            "id": "minecraft:dark_oak_slab",
+            "properties": {
+              "type": "bottom"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:block_column_replacable"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "id": "minecraft:dark_oak_slab",
+              "properties": {
+                "type": "top"
+              }
+            }
+          },
+          "output_state": {
+            "id": "minecraft:dark_oak_slab",
+            "properties": {
+              "type": "top"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "id": "minecraft:dark_oak_slab",
+              "properties": {
+                "type": "top"
+              }
+            }
+          },
+          "output_state": {
+            "id": "minecraft:dirt"
+          }
+        }
+      ]
+    }
+  ]
+}

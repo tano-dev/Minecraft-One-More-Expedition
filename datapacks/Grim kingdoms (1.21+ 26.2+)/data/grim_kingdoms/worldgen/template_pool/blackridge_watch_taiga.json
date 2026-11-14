@@ -1,0 +1,15 @@
+{
+    "name": "grim_kingdoms:blackridge_watch_taiga",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:taiga/blackridge_watch_taiga"
+            },
+            "weight": 1
+        }
+    ]
+}

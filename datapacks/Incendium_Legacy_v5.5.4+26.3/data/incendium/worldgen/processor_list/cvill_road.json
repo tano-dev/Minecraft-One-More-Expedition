@@ -1,0 +1,97 @@
+{
+    "processors": [
+        {
+            "rules": [
+                {
+                    "position_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        },
+                        "id": "minecraft:crimson_slab"
+                    },
+                    "input_predicate": {
+                        "block": "minecraft:crimson_planks",
+                        "probability": 0.12,
+                        "predicate_type": "minecraft:random_block_match"
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    }
+                },
+                {
+                    "position_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        },
+                        "id": "minecraft:crimson_slab"
+                    },
+                    "input_predicate": {
+                        "block": "minecraft:crimson_planks",
+                        "probability": 0.12,
+                        "predicate_type": "minecraft:random_block_match"
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    }
+                },
+                {
+                    "position_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    },
+                    "input_predicate": {
+                        "block": "minecraft:crimson_planks",
+                        "probability": 0.05,
+                        "predicate_type": "minecraft:random_block_match"
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    }
+                },
+                {
+                    "position_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "id": "minecraft:cobweb"
+                    },
+                    "input_predicate": {
+                        "block": "minecraft:crimson_planks",
+                        "probability": 0.01,
+                        "predicate_type": "minecraft:random_block_match"
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    }
+                },
+                {
+                    "position_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "id": "minecraft:air"
+                    },
+                    "input_predicate": {
+                        "block": "minecraft:lantern",
+                        "probability": 0.6,
+                        "predicate_type": "minecraft:random_block_match"
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    }
+                }
+            ],
+            "processor_type": "minecraft:rule"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+  "cooldown": 0,
+  "commandName": "flex",
+  "chatMessage": "%player% is flexing their %item%",
+  "chatMessageWithCount": "%player% is flexing their %count% %item%",
+  "failureNoItem": "Can't flex empty item",
+  "failureOnCooldown": "On Cooldown: %cooldown% seconds left"
+}

@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:poplar_sapling",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancement.dnt.adventure.find_dappled_townhall.title",
+      "fallback": "Pumpkin Pastures"
+    },
+    "description": {
+      "translate": "advancement.dnt.adventure.find_dappled_townhall",
+      "fallback": "Find and save a Dappled Townhall!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "nova_structures:adventure/find_all_illager_structures",
+  "criteria": {
+    "dappled_townhall": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:dappled_townhall"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dappled_townhall"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

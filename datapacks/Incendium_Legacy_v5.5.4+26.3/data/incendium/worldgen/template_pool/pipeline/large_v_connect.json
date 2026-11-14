@@ -1,0 +1,24 @@
+{
+  "name": "incendium:pipeline/large_v_connect",
+  "fallback": "incendium:pipeline/large_v_connect_end",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:pipeline/large_v_connect",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:pipeline/large_v_connect2",
+        "processors": "incendium:pipeline_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:barrier"
+    },
+    "title": "The Floor Isn't Lava?",
+    "description": "Place Floor is Spikes",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mt:display/dripstone_caves/epic",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:armor_stand"
+            ],
+            "predicates": {
+              "minecraft:custom_data": {
+                "mt.floor_is_spikes": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:oak_log",
+    "minecraft:oak_planks",
+    "minecraft:oak_fence",
+    "minecraft:torch",
+    "minecraft:rail",
+    "minecraft:cobweb",
+    "minecraft:spawner",
+    {"id": "minecraft:chain", "required": false},
+    {"id": "minecraft:iron_chain", "required": false}
+  ]
+}

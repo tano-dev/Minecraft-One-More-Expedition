@@ -1,0 +1,42 @@
+{
+        "type": "minecraft:set_attributes",
+        "modifiers": [
+            {
+                "attribute": "minecraft:attack_damage",
+                "id": "minecraft:base_attack_damage",
+                "amount": 5,
+                "operation": "add_value",
+                "slot": "mainhand"
+            },
+            {
+                "attribute": "minecraft:attack_speed",
+                "id": "minecraft:base_attack_speed",
+                "amount": -2.8,
+                "operation": "add_value",
+                "slot": "mainhand"
+            },
+            {
+                "attribute": "minecraft:block_break_speed",
+                "id": "incendium:block_break_speed.hefty_pickaxe",
+                "amount": {
+                    "type": "mul",
+                    "inputs": [
+                        {
+                            "type": "from_int",
+                            "input": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "$mining_speed"
+                            },
+                            "score": "in.dummy"
+                            }
+                        },
+                        0.1
+                    ]
+                },
+                "operation": "add_value",
+                "slot": "mainhand"
+            }
+        ]
+    }

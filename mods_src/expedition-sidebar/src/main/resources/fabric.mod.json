@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "expedition-sidebar",
+  "version": "${version}",
+  "name": "Expedition Sidebar",
+  "description": "Server-side professional Hypixel-style sidebar with dynamic EconomyCraft, Skyblock, and combat tracking.",
+  "authors": [
+    "One More Expedition Team"
+  ],
+  "contact": {
+    "homepage": "https://onemoreexpedition.net"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.onemoreexpedition.sidebar.ExpeditionSidebarMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "expedition-skyblock": "*",
+    "economycraft": "*"
+  }
+}

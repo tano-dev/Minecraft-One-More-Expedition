@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific/player": {
+      "looking_at": {
+        "entity_type": "#mt:targets",
+        "distance": {
+          "absolute": {
+            "min": 0,
+            "max": 5
+          }
+        },
+        "effects": {
+          "minecraft:resistance": {}
+        }
+      }
+    }
+  }
+}

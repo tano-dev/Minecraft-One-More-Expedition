@@ -1,0 +1,24 @@
+{
+	"name": "nova_structures:surface_dungeon/start_normal",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:surface_dungeon/swamp/skull_camp_swamp_trial",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:surface_dungeon/swamp/surface_dungeon_swamp_trial",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		}
+	]
+}

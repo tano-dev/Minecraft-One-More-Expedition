@@ -1,0 +1,36 @@
+{
+    "feature": "kattersstructures:corals",
+    "placement": [
+      {
+        "type": "minecraft:count_on_every_layer",
+        "count": 50
+      },
+      {
+        "type": "minecraft:biome"
+      },
+      {
+        "type": "minecraft:block_predicate_filter",
+        "predicate": {
+          "type": "minecraft:all_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "blocks": [
+                "minecraft:sand",
+                "minecraft:sandstone",
+                "minecraft:horn_coral_block",
+                "minecraft:fire_coral_block"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  
+  

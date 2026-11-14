@@ -1,0 +1,452 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 5,
+        "max": 8
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brick",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 10
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bricks",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 5
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brick_stairs",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 5
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mud_bricks",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 5
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mud_brick_stairs",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 5
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brown_dye",
+          "weight": 4,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 5
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_dye",
+          "weight": 4,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 5
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:light_gray_dye",
+          "weight": 4,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 5
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gray_dye",
+          "weight": 4,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 5
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "weight": 4,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 10
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_star",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 5
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "weight": 4,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 5
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay_ball",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 15
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_brick",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 8
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:scaffolding",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 6,
+                "max": 8
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_shovel",
+          "modifier": [
+            {
+              "name": {
+                "translate": "Chinese Construction Tool",
+                "color": "#ff5757",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "The design is very human",
+                  "color": "#aa4b4b"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "enchantments": {
+                "minecraft:looting": 2,
+                "minecraft:fortune": 2,
+                "minecraft:efficiency": 2,
+                "minecraft:unbreaking": 2
+              },
+              "type": "minecraft:set_enchantments"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dirt",
+          "condition": {
+            "chance": 0.3,
+            "type": "minecraft:random_chance"
+          },
+          "modifier": [
+            {
+              "name": {
+                "translate": "Soil from Kepler22B",
+                "color": "#01fe9d",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "𓅓𓅱𓈖𓎼𓅱𓃭𓇋𓄿 𓇋𓋴 𓈖𓅱𓏏 𓂋𓅂𓄿𓃭",
+                  "color": "#65e6b5"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "enchantments": {
+                "minecraft:impaling": 7,
+                "minecraft:fire_aspect": 1,
+                "minecraft:lure": 3
+              },
+              "type": "minecraft:set_enchantments"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "condition": {
+            "chance": 0.3,
+            "type": "minecraft:random_chance"
+          },
+          "modifier": [
+            {
+              "name": {
+                "translate": "Mystical Tree Vest",
+                "color": "#56c268",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "made from Plant Cell Walls",
+                  "color": "#3c863d"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:thorns": 4,
+                "minecraft:unbreaking": 4
+              },
+              "type": "minecraft:set_enchantments"
+            },
+            {
+              "components": {
+                "minecraft:dyed_color": 10223028
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "condition": {
+            "chance": 0.3,
+            "type": "minecraft:random_chance"
+          },
+          "modifier": [
+            {
+              "name": {
+                "translate": "Amethyst Helm",
+                "color": "#d380f9",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "Purple quartz is very delicious",
+                  "color": "#8842a9"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "enchantments": {
+                "minecraft:mending": 1,
+                "minecraft:protection": 5,
+                "minecraft:unbreaking": 5
+              },
+              "type": "minecraft:set_enchantments"
+            },
+            {
+              "components": {
+                "minecraft:trim": {
+                  "material": "minecraft:amethyst",
+                  "pattern": "minecraft:bolt"
+                },
+                "minecraft:dyed_color": 10507007
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "condition": {
+            "chance": 0.5,
+            "type": "minecraft:random_chance"
+          },
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 30,
+                "max": 50
+              },
+              "condition": {
+                "chance": 0.5,
+                "type": "minecraft:random_chance"
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:terracotta",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 10,
+                "max": 32
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

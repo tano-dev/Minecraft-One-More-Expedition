@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:entities/zombie"
+        }
+      ],
+      "modifier": {
+        "type": "minecraft:filtered",
+        "item_filter": {
+          "items": "minecraft:music_disc_lava_chicken"
+        },
+        "on_pass": {
+          "type": "minecraft:discard"
+        }
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_lava_chicken"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "nova_structures:entities/chicken_jockey_zombie"
+}

@@ -1,0 +1,64 @@
+{
+  "parent": "nova_structures:adventure/find_tavern",
+  "criteria": {
+    "tavern_chart": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "dnt_quest_trader"
+              ]
+            }
+          }
+        },
+        "item": {
+          "items": "minecraft:filled_map",
+          "components": {
+            "minecraft:custom_model_data": {
+              "strings": [
+                "dnt:chart"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "components": {
+        "minecraft:custom_model_data": {
+          "strings": [
+            "dnt:chart"
+          ]
+        },
+        "minecraft:dyed_color": 7755069
+      },
+      "count": 1,
+      "id": "minecraft:filled_map"
+    },
+    "title": {
+      "translate": "advancement.dnt.adventure.tavern_quest.title",
+      "fallback": "Call for Adventure"
+    },
+    "description": {
+      "translate": "advancement.dnt.adventure.tavern_quest",
+      "fallback": "Level up a novice Cartographer inside a Tavern, then recieve a Quest Chart"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "tavern_chart"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

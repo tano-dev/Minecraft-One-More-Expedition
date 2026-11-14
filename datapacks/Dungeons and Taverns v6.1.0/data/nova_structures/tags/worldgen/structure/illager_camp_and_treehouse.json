@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#nova_structures:illager_camp",
+	"#nova_structures:illager_treehouse"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "nova_structures:surface_dungeon_default",
+	"nova_structures:surface_dungeon_desert",
+	"nova_structures:surface_dungeon_snowy",
+	"nova_structures:surface_dungeon_swamp",
+	"nova_structures:surface_trial_dungeon_default",
+	"nova_structures:surface_trial_dungeon_desert",
+	"nova_structures:surface_trial_dungeon_snowy",
+	"nova_structures:surface_trial_dungeon_swamp"
+  ]
+}

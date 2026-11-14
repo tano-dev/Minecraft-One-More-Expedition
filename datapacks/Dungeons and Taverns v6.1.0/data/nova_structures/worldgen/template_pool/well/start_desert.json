@@ -1,0 +1,42 @@
+{
+	"name": "nova_structures:well",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/main/well_archy_desert",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/main/well_cave_chamber_desert",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/main/well_dungeon_desert",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "nova_structures:well/main/well_treasure_desert",
+				"projection": "rigid",
+				"processors": "nova_structures:well_well_well"
+			}
+		}
+	]
+}

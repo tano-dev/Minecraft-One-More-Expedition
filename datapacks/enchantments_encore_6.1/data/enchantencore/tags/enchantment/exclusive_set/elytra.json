@@ -1,0 +1,6 @@
+{
+  "values": [
+    { "id": "enchantencore:cushion", "required": false },
+    { "id": "enchantencore:safe_landing", "required": false }
+  ]
+}

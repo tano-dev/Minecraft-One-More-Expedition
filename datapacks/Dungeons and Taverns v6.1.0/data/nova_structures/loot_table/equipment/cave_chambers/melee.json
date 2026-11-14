@@ -1,0 +1,232 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_sword"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.75
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_pickaxe"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.75
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_helmet"
+                  }
+                ],
+                "modifier": [],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.75
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_chestplate"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.75
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_boots"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.75
+                  }
+              }
+            ]
+          },
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_sword"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_pickaxe"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_helmet"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_chestplate"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_boots"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.6
+                  }
+              }
+            ]
+          },
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_sword"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.4
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_pickaxe",
+                    "modifier": []
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.4
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_helmet"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.4
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_chestplate"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.4
+                  }
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_boots"
+                  }
+                ],
+                "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.4
+                  }
+              }
+            ]
+          },
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

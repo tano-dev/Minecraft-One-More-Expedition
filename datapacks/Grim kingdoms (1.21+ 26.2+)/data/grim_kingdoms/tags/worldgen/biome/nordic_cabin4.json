@@ -1,0 +1,96 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:dark_forest",
+        "minecraft:sparse_jungle",
+        "minecraft:bamboo_jungle",
+        {
+            "id": "biomesoplenty:dead_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:rainforest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:temperate_rainforest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:bamboo_grove",
+            "required": false
+        },
+        {
+            "id": "otbwg:black_forest",
+            "required": false
+        },
+        {
+            "id": "otbwg:ebony_woods",
+            "required": false
+        },
+        {
+            "id": "terralith:cloud_forest",
+            "required": false
+        },
+        {
+            "id": "terralith:amethyst_rainforest",
+            "required": false
+        },
+        {
+            "id": "terralith:tropical_islands",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:rainforest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:sparse_rainforest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:bamboo_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:eucalyptus_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:cold_deciduous_forest",
+            "required": false
+        },
+        {
+            "id": "wwoo:dark_forest",
+            "required": false
+        },
+        {
+            "id": "wwoo:sparse_jungle",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:ancient_forest",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:wisteria_forest",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:bamboo_wetlands",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:cedar_thicket",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:willow_forest",
+            "required": false
+        },
+        {
+            "id": "wwoo:bamboo_jungle",
+            "required": false
+        }
+    ]
+}

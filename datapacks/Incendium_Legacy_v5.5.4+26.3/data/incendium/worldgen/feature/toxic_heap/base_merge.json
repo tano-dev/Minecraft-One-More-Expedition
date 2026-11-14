@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:sequence",
+  "features": [
+      "incendium:toxic_heap/base",
+      "incendium:toxic_heap/spring_thin"
+    ]
+}

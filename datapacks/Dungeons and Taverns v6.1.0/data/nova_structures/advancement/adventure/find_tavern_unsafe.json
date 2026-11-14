@@ -1,0 +1,73 @@
+{
+  "parent": "nova_structures:adventure/find_tavern",
+  "criteria": {
+    "nova_structures:tavern_dark_oak": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:tavern_dark_oak"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "nova_structures:tavern_mangrove": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:tavern_mangrove"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "nova_structures:tavern_swamp": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "nova_structures:tavern_swamp"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.dnt.adventure.find_tavern_unsafe",
+      "fallback": "Are you sure it's safe..?"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:bell"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.dnt.adventure.find_tavern_unsafe.title",
+      "fallback": "Safe Haven..?"
+    }
+  },
+  "requirements": [
+    [
+      "nova_structures:tavern_dark_oak",
+      "nova_structures:tavern_mangrove",
+      "nova_structures:tavern_swamp"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

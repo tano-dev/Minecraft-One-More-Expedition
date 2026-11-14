@@ -1,0 +1,173 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:air_water"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cobblestone"
+          },
+          "output_state": {
+            "id": "minecraft:air"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.3,
+            "max_chance": 0.3
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:deepslate"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 1,
+            "min_chance": 0.429,
+            "max_chance": 0.429
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:tuff"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "trek:mosnter_room/default_wall"
+          },
+          "output_state": {
+            "id": "minecraft:dripstone_block"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:copper_ore"
+          },
+          "output_state": {
+            "id": "minecraft:deepslate_copper_ore"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:spawner",
+            "probability": 0.5
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "output_nbt": {
+            "SpawnData": {
+              "entity": {
+                "id": "minecraft:zombie"
+              }
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:zombie"
+                }
+              }
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:spawner",
+            "probability": 0.5
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "output_nbt": {
+            "SpawnData": {
+              "entity": {
+                "id": "minecraft:skeleton"
+              }
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:skeleton"
+                }
+              }
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:spawner"
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "output_nbt": {
+            "SpawnData": {
+              "entity": {
+                "id": "minecraft:spider"
+              }
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:spider"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

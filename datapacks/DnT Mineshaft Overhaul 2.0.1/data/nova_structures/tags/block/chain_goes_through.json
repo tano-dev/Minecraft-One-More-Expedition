@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:air",
+    "minecraft:void_air",
+	"#minecraft:planks",
+	"#minecraft:logs",
+    "glow_lichen",
+    "cave_vines",
+    "vine",
+    "cave_vines_plant",
+    "#rails",
+    "#flower_pots"
+  ]
+}

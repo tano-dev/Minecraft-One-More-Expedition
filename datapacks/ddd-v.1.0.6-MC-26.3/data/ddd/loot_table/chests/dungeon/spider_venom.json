@@ -1,0 +1,61 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "modifier": [
+            {
+              "type": "minecraft:set_custom_model_data",
+              "strings": {
+                "values": [
+                  "decayed_crystallized_venom"
+                ],
+                "mode": "append"
+              }
+            },
+            {
+              "type": "minecraft:set_name",
+              "entity": "this",
+              "target": "custom_name",
+              "name": {
+                "text": "Decayed Crystallized Venom"
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:awkward",
+                  "custom_color": 16384,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:poison",
+                      "duration": 300
+                    }
+                  ]
+                },
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": false,
+                  "hidden_components": [
+                    "minecraft:item_name"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

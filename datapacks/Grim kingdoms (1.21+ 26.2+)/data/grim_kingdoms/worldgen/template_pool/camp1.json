@@ -1,0 +1,15 @@
+{
+  "name": "grim_kingdoms:camp1",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "processors": "minecraft:empty",
+        "location": "grim_kingdoms:forest/camp1"
+      },
+      "weight": 1
+    }
+  ]
+}

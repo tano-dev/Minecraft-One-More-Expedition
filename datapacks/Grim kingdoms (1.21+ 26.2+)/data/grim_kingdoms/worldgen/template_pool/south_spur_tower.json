@@ -1,0 +1,15 @@
+{
+    "name": "grim_kingdoms:south_spur_tower",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "grim_kingdoms:taiga/south_spur_tower"
+            },
+            "weight": 1
+        }
+    ]
+}

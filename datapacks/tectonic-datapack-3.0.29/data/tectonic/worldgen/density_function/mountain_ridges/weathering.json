@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:add",
+  "left": 1,
+  "right": {
+    "type": "minecraft:mul",
+    "left": -1,
+    "right": {
+      "type": "minecraft:clamp",
+      "input": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": {
+            "type": "minecraft:abs",
+            "input": {
+              "type": "minecraft:noise",
+              "noise": "tectonic:mountain_ridges/weathering",
+              "xz_scale": 2.5,
+              "y_scale": 2
+            }
+          },
+          "points": [
+            {
+              "location": 0.025,
+              "derivative": 20,
+              "value": 0
+            },
+            {
+              "location": 1,
+              "derivative": 0,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "min": 0,
+      "max": 1
+    }
+  }
+}

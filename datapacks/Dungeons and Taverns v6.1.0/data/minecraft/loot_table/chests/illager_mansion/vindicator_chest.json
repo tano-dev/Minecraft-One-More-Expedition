@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+  {
+  "rolls": 1,
+      "entries": [
+    {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/illager_mansion/generic",
+          "weight": 2
+    },
+	{
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/illager_mansion/vindicator_chest_base",
+          "weight": 3
+    }
+	]
+  }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

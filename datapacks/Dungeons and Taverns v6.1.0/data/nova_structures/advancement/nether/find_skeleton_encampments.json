@@ -1,0 +1,94 @@
+{
+  "parent": "nova_structures:nether/find_nether_skeleton",
+  "criteria": {
+    "nova_structures:nether_skeleton_encampment_crimson": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "#nova_structures:nether_skeleton_encampment_crimson"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "nova_structures:nether_skeleton_encampment_fort": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "#nova_structures:nether_skeleton_encampment_fort"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "nova_structures:nether_skeleton_encampment_soul": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "#nova_structures:nether_skeleton_encampment_soul"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    },
+    "nova_structures:nether_skeleton_encampment_warped": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "structures": "#nova_structures:nether_skeleton_encampment_warped"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.dnt.nether.find_skeleton_encampments",
+      "fallback": "Visit all 4 Nether Skeleton Encampments"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:bone_block"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.dnt.nether.find_skeleton_encampments.title",
+      "fallback": "Bone Crusher"
+    }
+  },
+  "requirements": [
+    [
+      "nova_structures:nether_skeleton_encampment_crimson"
+    ],
+    [
+      "nova_structures:nether_skeleton_encampment_fort"
+    ],
+    [
+      "nova_structures:nether_skeleton_encampment_soul"
+    ],
+    [
+      "nova_structures:nether_skeleton_encampment_warped"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

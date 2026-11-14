@@ -1,0 +1,54 @@
+{
+  "_default": {
+    "note": "Vanilla: rarity_filter chance=9 (1 in 9 chunks). Current: chance=26 (1 in 26 chunks, -65.4%). Lower chance = more common.",
+    "vanilla_placement": [
+      {
+        "type": "minecraft:rarity_filter",
+        "chance": 9
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:height_range",
+        "height": {
+          "type": "minecraft:trapezoid",
+          "max_inclusive": {
+            "above_bottom": 80
+          },
+          "min_inclusive": {
+            "above_bottom": -80
+          }
+        }
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  },
+  "feature": "minecraft:ore_diamond_large",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 26
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "max_inclusive": {
+          "above_bottom": 80
+        },
+        "min_inclusive": {
+          "above_bottom": -80
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

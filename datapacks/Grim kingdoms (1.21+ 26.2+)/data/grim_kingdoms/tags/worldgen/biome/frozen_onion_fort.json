@@ -1,0 +1,169 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:snowy_taiga",
+        "minecraft:snowy_plains",
+        "minecraft:ice_spikes",
+        "minecraft:snowy_slopes",
+        "minecraft:jagged_peaks",
+        "minecraft:frozen_peaks",
+        "minecraft:frozen_river",
+        "minecraft:snowy_beach",
+        {
+            "id": "biomesoplenty:snowy_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:snowy_dead_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:arctic",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:polar",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:polar_chasm",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:snowy_tundra",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:tundra",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:icy_hills",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:snowy_coniferous_forest",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:snowy_fir_forest",
+            "required": false
+        },
+        {
+            "id": "natures_spirit:snowy_aspen_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:alps",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:snowblossom_grove",
+            "required": false
+        },
+        {
+            "id": "otbwg:frosted_coniferous_forest",
+            "required": false
+        },
+        {
+            "id": "otbwg:frosted_taiga",
+            "required": false
+        },
+        {
+            "id": "otbwg:shattered_glacier",
+            "required": false
+        },
+        {
+            "id": "terralith:snowy_maple_forest",
+            "required": false
+        },
+        {
+            "id": "terralith:frozen_cliffs",
+            "required": false
+        },
+        {
+            "id": "terralith:glacial_chasm",
+            "required": false
+        },
+        {
+            "id": "terralith:ice_marsh",
+            "required": false
+        },
+        {
+            "id": "terralith:snowy_cherry_grove",
+            "required": false
+        },
+        {
+            "id": "terralith:snowy_shield",
+            "required": false
+        },
+        {
+            "id": "terralith:wintry_forest",
+            "required": false
+        },
+        {
+            "id": "terralith:wintry_lowlands",
+            "required": false
+        },
+        {
+            "id": "terralith:alpha_islands_winter",
+            "required": false
+        },
+        {
+            "id": "terralith:skylands_winter",
+            "required": false
+        },
+        {
+            "id": "terralith:snowy_badlands",
+            "required": false
+        },
+        {
+            "id": "terralith:alpine_grove",
+            "required": false
+        },
+        {
+            "id": "terralith:scarlet_mountains",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:frozen_pine_taiga",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:frozen_tundra",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:icy_heights",
+            "required": false
+        },
+        {
+            "id": "wwoo:snowy_taiga_variants",
+            "required": false
+        },
+        {
+            "id": "wwoo:snowy_tundra",
+            "required": false
+        },
+        {
+            "id": "wwoo:snowy_beach",
+            "required": false
+        },
+        {
+            "id": "wwoo:snowy_mountains",
+            "required": false
+        },
+        {
+            "id": "wwoo:icy_spikes",
+            "required": false
+        },
+        {
+            "id": "nml:snowy_taiga",
+            "required": false
+        },
+        {
+            "id": "#c:climate_frozen",
+            "required": false
+        }
+    ]
+}

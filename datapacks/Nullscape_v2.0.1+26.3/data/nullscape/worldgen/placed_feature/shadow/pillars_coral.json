@@ -1,0 +1,386 @@
+{
+    "feature": {
+        "type": "minecraft:simple_random_selector",
+        "features": [
+            {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "to_place": {
+                        "type": "minecraft:noise",
+                        "seed": 25646,
+                        "noise": {
+                            "base_octave": -4,
+                            "amplitude_modifiers": [
+                                1,
+                                1,
+                                1.5,
+                                2.5,
+                                2.5
+                            ],
+                            "octave_count": 5,
+                            "normalize": "legacy",
+                            "base_amplitude": 1.0
+                        },
+                        "scale": 1,
+                        "states": [
+                            {
+                                "id": "minecraft:dead_brain_coral_wall_fan",
+                                "properties": {
+                                    "facing": "east",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_bubble_coral_wall_fan",
+                                "properties": {
+                                    "facing": "east",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_fire_coral_wall_fan",
+                                "properties": {
+                                    "facing": "east",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_horn_coral_wall_fan",
+                                "properties": {
+                                    "facing": "east",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_tube_coral_wall_fan",
+                                "properties": {
+                                    "facing": "east",
+                                    "waterlogged": "false"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:replaceable"
+                                },
+                                {
+                                    "type": "minecraft:matching_block_tag",
+                                    "offset": [
+                                        -1,
+                                        0,
+                                        0
+                                    ],
+                                    "tag": "nullscape:coral"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "to_place": {
+                        "type": "minecraft:noise",
+                        "seed": 25646,
+                        "noise": {
+                            "base_octave": -4,
+                            "amplitude_modifiers": [
+                                1,
+                                1,
+                                1.5,
+                                2.5,
+                                2.5
+                            ],
+                            "octave_count": 5,
+                            "normalize": "legacy",
+                            "base_amplitude": 1.0
+                        },
+                        "scale": 1,
+                        "states": [
+                            {
+                                "id": "minecraft:dead_brain_coral_wall_fan",
+                                "properties": {
+                                    "facing": "west",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_bubble_coral_wall_fan",
+                                "properties": {
+                                    "facing": "west",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_fire_coral_wall_fan",
+                                "properties": {
+                                    "facing": "west",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_horn_coral_wall_fan",
+                                "properties": {
+                                    "facing": "west",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_tube_coral_wall_fan",
+                                "properties": {
+                                    "facing": "west",
+                                    "waterlogged": "false"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:replaceable"
+                                },
+                                {
+                                    "type": "minecraft:matching_block_tag",
+                                    "offset": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "tag": "nullscape:coral"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "to_place": {
+                        "type": "minecraft:noise",
+                        "seed": 25646,
+                        "noise": {
+                            "base_octave": -4,
+                            "amplitude_modifiers": [
+                                1,
+                                1,
+                                1.5,
+                                2.5,
+                                2.5
+                            ],
+                            "octave_count": 5,
+                            "normalize": "legacy",
+                            "base_amplitude": 1.0
+                        },
+                        "scale": 1,
+                        "states": [
+                            {
+                                "id": "minecraft:dead_brain_coral_wall_fan",
+                                "properties": {
+                                    "facing": "north",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_bubble_coral_wall_fan",
+                                "properties": {
+                                    "facing": "north",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_fire_coral_wall_fan",
+                                "properties": {
+                                    "facing": "north",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_horn_coral_wall_fan",
+                                "properties": {
+                                    "facing": "north",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_tube_coral_wall_fan",
+                                "properties": {
+                                    "facing": "north",
+                                    "waterlogged": "false"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:replaceable"
+                                },
+                                {
+                                    "type": "minecraft:matching_block_tag",
+                                    "offset": [
+                                        0,
+                                        0,
+                                        1
+                                    ],
+                                    "tag": "nullscape:coral"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "to_place": {
+                        "type": "minecraft:noise",
+                        "seed": 25646,
+                        "noise": {
+                            "base_octave": -4,
+                            "amplitude_modifiers": [
+                                1,
+                                1,
+                                1.5,
+                                2.5,
+                                2.5
+                            ],
+                            "octave_count": 5,
+                            "normalize": "legacy",
+                            "base_amplitude": 1.0
+                        },
+                        "scale": 1,
+                        "states": [
+                            {
+                                "id": "minecraft:dead_brain_coral_wall_fan",
+                                "properties": {
+                                    "facing": "south",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_bubble_coral_wall_fan",
+                                "properties": {
+                                    "facing": "south",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_fire_coral_wall_fan",
+                                "properties": {
+                                    "facing": "south",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_horn_coral_wall_fan",
+                                "properties": {
+                                    "facing": "south",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            {
+                                "id": "minecraft:dead_tube_coral_wall_fan",
+                                "properties": {
+                                    "facing": "south",
+                                    "waterlogged": "false"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:replaceable"
+                                },
+                                {
+                                    "type": "minecraft:matching_block_tag",
+                                    "offset": [
+                                        0,
+                                        0,
+                                        -1
+                                    ],
+                                    "tag": "nullscape:coral"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 9
+        },
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": 256
+        },
+        {
+            "type": "minecraft:offset",
+            "x": {
+                "type": "minecraft:uniform",
+                "min_inclusive": -4,
+                "max_inclusive": 4
+            },
+            "z": {
+                "type": "minecraft:uniform",
+                "min_inclusive": -4,
+                "max_inclusive": 4
+            },
+            "y": {
+                "type": "minecraft:clamped",
+                "min_inclusive": 0,
+                "max_inclusive": 16,
+                "source": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": -5,
+                    "max_inclusive": 16
+                }
+            }
+        },
+        {
+            "type": "minecraft:offset",
+            "x": 0,
+            "z": 0,
+            "y": {
+                "type": "minecraft:clamped",
+                "min_inclusive": 0,
+                "max_inclusive": 16,
+                "source": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": -5,
+                    "max_inclusive": 16
+                }
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

@@ -1,0 +1,308 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 11,
+                    "name": "minecraft:iron_pickaxe",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": [
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 6,
+                                "max": {
+                                    "type": "minecraft:uniform",
+                                    "min": 14,
+                                    "max": 22
+                                }
+                            },
+                            "options": "#minecraft:on_random_loot"
+                        },
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.3,
+                                "max": 0.7
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:iron_shovel",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": [
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 6,
+                                "max": {
+                                    "type": "minecraft:uniform",
+                                    "min": 14,
+                                    "max": 22
+                                }
+                            },
+                            "options": "#minecraft:on_random_loot"
+                        },
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.3,
+                                "max": 0.7
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:iron_axe",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.5
+                    },
+                    "modifier": [
+                        {
+                            "type": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "type": "minecraft:uniform",
+                                "min": 6,
+                                "max": {
+                                    "type": "minecraft:uniform",
+                                    "min": 14,
+                                    "max": 22
+                                }
+                            },
+                            "options": "#minecraft:on_random_loot"
+                        },
+                        {
+                            "type": "minecraft:set_damage",
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "min": 0.3,
+                                "max": 0.7
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:moss_block",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.3
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 2,
+                            "max": 6
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:moss_carpet",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.3
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 3,
+                            "max": 7
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:short_grass",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.3
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 2,
+                            "max": 8
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:stick",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.3
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 4
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:coal",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.4
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 4,
+                            "max": 7
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:gunpowder",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.425
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 7,
+                            "max": 15
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:iron_ingot",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.3
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 3,
+                            "max": 7
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:gold_ingot",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.3
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 3,
+                            "max": 7
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:raw_iron",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.4
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 4
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:raw_gold",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.4
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 4
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:copper_ingot",
+                    "condition": {
+                        "type": "minecraft:random_chance",
+                        "chance": 0.4
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 7,
+                            "max": 12
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

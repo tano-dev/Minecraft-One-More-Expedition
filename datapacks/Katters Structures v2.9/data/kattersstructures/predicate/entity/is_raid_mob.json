@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:entity_type": [
+          "minecraft:vindicator",
+          "minecraft:evoker",
+          "minecraft:witch",
+          "minecraft:pillager"
+        ],
+        "minecraft:entity_tags": {
+          "any_of": [
+            "katter.rusta"
+          ]
+        }
+      }
+    }
+  ]
+}

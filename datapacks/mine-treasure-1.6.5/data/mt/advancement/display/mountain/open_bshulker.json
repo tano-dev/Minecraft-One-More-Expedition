@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:brown_shulker_box"
+    },
+    "title": "A Brown Shulker Box?",
+    "description": "Open a Filled Mountain Shulker",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mt:display/mountain/legendary",
+  "criteria": {
+    "obtainchest": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_tables": "mt:chests/mountain/mineshaft"
+      }
+    }
+  }
+}

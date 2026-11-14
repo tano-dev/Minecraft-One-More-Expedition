@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#minecraft:has_structure/nether_fortress",
+  "start_pool": "nova_structures:nether_skeleton_camp/start_fort",
+  "max_distance_from_center": 127,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 33
+    },
+    "max_inclusive": {
+      "absolute": 50
+    }
+  },
+  "spawn_overrides": {},
+  "pool_aliases": [
+	{
+      "type": "minecraft:random",
+      "alias": "nova_structures:nether_skeleton_camp/small_defence",
+      "targets": [
+		{	
+		"data": "nova_structures:nether_skeleton_camp/small_defence_fort",
+          "weight": 1
+		}
+	  ]
+    },
+	{
+      "type": "minecraft:random",
+      "alias": "nova_structures:nether_skeleton_camp/tower_solo",
+      "targets": [
+		{	
+		"data": "nova_structures:nether_skeleton_camp/tower_solo_fort",
+          "weight": 1
+		}
+	  ]
+    },
+	{
+      "type": "minecraft:random",
+      "alias": "nova_structures:nether_skeleton_camp/fake_caves",
+      "targets": [
+		{	
+		"data": "nova_structures:nether_skeleton_camp/fake_caves_fort",
+          "weight": 1
+		}
+	  ]
+    },
+	{
+      "type": "minecraft:random",
+      "alias": "nova_structures:nether_skeleton_camp/fake_caves_only_cave",
+      "targets": [
+		{	
+		"data": "nova_structures:nether_skeleton_camp/fake_caves_only_cave_fort",
+          "weight": 1
+		}
+	  ]
+    }
+  ],
+  "step": "surface_structures",
+  "size": 3,
+  "use_expansion_hack": false
+}

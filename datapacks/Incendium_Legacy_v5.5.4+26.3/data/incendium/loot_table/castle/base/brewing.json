@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:tag",
+                    "items": "#incendium:brewing_ingredients",
+                    "weight": 1,
+                    "expand": true
+                }
+            ]
+        }
+    ],
+    "modifier": [
+        {
+            "type": "minecraft:set_count",
+            "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 12
+            }
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+  "structures": [
+    {
+      "structure": "grim_kingdoms:ship2",
+      "weight": 1
+    },
+    {
+      "structure": "grim_kingdoms:shipwreck1",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 99,
+    "locate_offset": [
+      0,
+      0,
+      0
+    ],
+    "spacing": 70,
+    "separation": 45
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "floravive:snowy_forest","required": false},
+    {"id": "regions_unexplored:cold_deciduous_forest","required": false}
+  ]
+}

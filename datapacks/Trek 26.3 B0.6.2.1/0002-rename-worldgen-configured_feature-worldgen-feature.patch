@@ -1,0 +1,203 @@
+From ec08dee15cc87b1598082ff687096f19c4c6f6fe Mon Sep 17 00:00:00 2001
+From: Useless Guy <Useless>
+Date: Thu, 22 Oct 2026 15:50:26 +0200
+Subject: [PATCH 2/7] rename worldgen/configured_feature -> worldgen/feature
+
+---
+ .../block_column/cobblestone_wall.json                            | 0
+ .../block_column/cobblestone_wall_updater.json                    | 0
+ .../block_column/dark_oak_fence.json                              | 0
+ .../block_column/dark_oak_fence_updater.json                      | 0
+ .../{configured_feature => feature}/block_column/spruce_log.json  | 0
+ .../block_column/stripped_dark_oak_log.json                       | 0
+ .../{configured_feature => feature}/geode/deepslate_ores.json     | 0
+ .../geode/deepslate_ores_tunnel.json                              | 0
+ .../monster_room/lower/deep_dark.json                             | 0
+ .../monster_room/lower/default.json                               | 0
+ .../monster_room/lower/dripstone.json                             | 0
+ .../{configured_feature => feature}/monster_room/lower/lush.json  | 0
+ .../monster_room/upper/default.json                               | 0
+ .../monster_room/upper/dripstone.json                             | 0
+ .../{configured_feature => feature}/monster_room/upper/lush.json  | 0
+ .../{configured_feature => feature}/monster_room/upper/oak.json   | 0
+ data/trek/worldgen/{configured_feature => feature}/no_op.json     | 0
+ .../{configured_feature => feature}/simple_block/air.json         | 0
+ .../{configured_feature => feature}/simple_block/air_update.json  | 0
+ .../simple_block/pink_glazed_terracota.json                       | 0
+ .../worldgen/{configured_feature => feature}/spring/lava_5_0.json | 0
+ .../worldgen/{configured_feature => feature}/spring/lava_5_1.json | 0
+ .../worldgen/{configured_feature => feature}/spring/lava_5_2.json | 0
+ .../worldgen/{configured_feature => feature}/spring/lava_5_3.json | 0
+ .../worldgen/{configured_feature => feature}/spring/lava_5_4.json | 0
+ .../worldgen/{configured_feature => feature}/spring/lava_5_5.json | 0
+ .../{configured_feature => feature}/spring/water_5_0.json         | 0
+ .../{configured_feature => feature}/spring/water_5_1.json         | 0
+ .../{configured_feature => feature}/spring/water_5_2.json         | 0
+ .../{configured_feature => feature}/spring/water_5_3.json         | 0
+ .../{configured_feature => feature}/spring/water_5_4.json         | 0
+ .../{configured_feature => feature}/spring/water_5_5.json         | 0
+ 32 files changed, 0 insertions(+), 0 deletions(-)
+ rename data/trek/worldgen/{configured_feature => feature}/block_column/cobblestone_wall.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/block_column/cobblestone_wall_updater.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/block_column/dark_oak_fence.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/block_column/dark_oak_fence_updater.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/block_column/spruce_log.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/block_column/stripped_dark_oak_log.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/geode/deepslate_ores.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/geode/deepslate_ores_tunnel.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/monster_room/lower/deep_dark.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/monster_room/lower/default.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/monster_room/lower/dripstone.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/monster_room/lower/lush.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/monster_room/upper/default.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/monster_room/upper/dripstone.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/monster_room/upper/lush.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/monster_room/upper/oak.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/no_op.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/simple_block/air.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/simple_block/air_update.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/simple_block/pink_glazed_terracota.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/lava_5_0.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/lava_5_1.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/lava_5_2.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/lava_5_3.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/lava_5_4.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/lava_5_5.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/water_5_0.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/water_5_1.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/water_5_2.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/water_5_3.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/water_5_4.json (100%)
+ rename data/trek/worldgen/{configured_feature => feature}/spring/water_5_5.json (100%)
+
+diff --git a/data/trek/worldgen/configured_feature/block_column/cobblestone_wall.json b/data/trek/worldgen/feature/block_column/cobblestone_wall.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/block_column/cobblestone_wall.json
+rename to data/trek/worldgen/feature/block_column/cobblestone_wall.json
+diff --git a/data/trek/worldgen/configured_feature/block_column/cobblestone_wall_updater.json b/data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/block_column/cobblestone_wall_updater.json
+rename to data/trek/worldgen/feature/block_column/cobblestone_wall_updater.json
+diff --git a/data/trek/worldgen/configured_feature/block_column/dark_oak_fence.json b/data/trek/worldgen/feature/block_column/dark_oak_fence.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/block_column/dark_oak_fence.json
+rename to data/trek/worldgen/feature/block_column/dark_oak_fence.json
+diff --git a/data/trek/worldgen/configured_feature/block_column/dark_oak_fence_updater.json b/data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/block_column/dark_oak_fence_updater.json
+rename to data/trek/worldgen/feature/block_column/dark_oak_fence_updater.json
+diff --git a/data/trek/worldgen/configured_feature/block_column/spruce_log.json b/data/trek/worldgen/feature/block_column/spruce_log.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/block_column/spruce_log.json
+rename to data/trek/worldgen/feature/block_column/spruce_log.json
+diff --git a/data/trek/worldgen/configured_feature/block_column/stripped_dark_oak_log.json b/data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/block_column/stripped_dark_oak_log.json
+rename to data/trek/worldgen/feature/block_column/stripped_dark_oak_log.json
+diff --git a/data/trek/worldgen/configured_feature/geode/deepslate_ores.json b/data/trek/worldgen/feature/geode/deepslate_ores.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/geode/deepslate_ores.json
+rename to data/trek/worldgen/feature/geode/deepslate_ores.json
+diff --git a/data/trek/worldgen/configured_feature/geode/deepslate_ores_tunnel.json b/data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/geode/deepslate_ores_tunnel.json
+rename to data/trek/worldgen/feature/geode/deepslate_ores_tunnel.json
+diff --git a/data/trek/worldgen/configured_feature/monster_room/lower/deep_dark.json b/data/trek/worldgen/feature/monster_room/lower/deep_dark.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/monster_room/lower/deep_dark.json
+rename to data/trek/worldgen/feature/monster_room/lower/deep_dark.json
+diff --git a/data/trek/worldgen/configured_feature/monster_room/lower/default.json b/data/trek/worldgen/feature/monster_room/lower/default.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/monster_room/lower/default.json
+rename to data/trek/worldgen/feature/monster_room/lower/default.json
+diff --git a/data/trek/worldgen/configured_feature/monster_room/lower/dripstone.json b/data/trek/worldgen/feature/monster_room/lower/dripstone.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/monster_room/lower/dripstone.json
+rename to data/trek/worldgen/feature/monster_room/lower/dripstone.json
+diff --git a/data/trek/worldgen/configured_feature/monster_room/lower/lush.json b/data/trek/worldgen/feature/monster_room/lower/lush.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/monster_room/lower/lush.json
+rename to data/trek/worldgen/feature/monster_room/lower/lush.json
+diff --git a/data/trek/worldgen/configured_feature/monster_room/upper/default.json b/data/trek/worldgen/feature/monster_room/upper/default.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/monster_room/upper/default.json
+rename to data/trek/worldgen/feature/monster_room/upper/default.json
+diff --git a/data/trek/worldgen/configured_feature/monster_room/upper/dripstone.json b/data/trek/worldgen/feature/monster_room/upper/dripstone.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/monster_room/upper/dripstone.json
+rename to data/trek/worldgen/feature/monster_room/upper/dripstone.json
+diff --git a/data/trek/worldgen/configured_feature/monster_room/upper/lush.json b/data/trek/worldgen/feature/monster_room/upper/lush.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/monster_room/upper/lush.json
+rename to data/trek/worldgen/feature/monster_room/upper/lush.json
+diff --git a/data/trek/worldgen/configured_feature/monster_room/upper/oak.json b/data/trek/worldgen/feature/monster_room/upper/oak.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/monster_room/upper/oak.json
+rename to data/trek/worldgen/feature/monster_room/upper/oak.json
+diff --git a/data/trek/worldgen/configured_feature/no_op.json b/data/trek/worldgen/feature/no_op.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/no_op.json
+rename to data/trek/worldgen/feature/no_op.json
+diff --git a/data/trek/worldgen/configured_feature/simple_block/air.json b/data/trek/worldgen/feature/simple_block/air.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/simple_block/air.json
+rename to data/trek/worldgen/feature/simple_block/air.json
+diff --git a/data/trek/worldgen/configured_feature/simple_block/air_update.json b/data/trek/worldgen/feature/simple_block/air_update.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/simple_block/air_update.json
+rename to data/trek/worldgen/feature/simple_block/air_update.json
+diff --git a/data/trek/worldgen/configured_feature/simple_block/pink_glazed_terracota.json b/data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/simple_block/pink_glazed_terracota.json
+rename to data/trek/worldgen/feature/simple_block/pink_glazed_terracota.json
+diff --git a/data/trek/worldgen/configured_feature/spring/lava_5_0.json b/data/trek/worldgen/feature/spring/lava_5_0.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/lava_5_0.json
+rename to data/trek/worldgen/feature/spring/lava_5_0.json
+diff --git a/data/trek/worldgen/configured_feature/spring/lava_5_1.json b/data/trek/worldgen/feature/spring/lava_5_1.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/lava_5_1.json
+rename to data/trek/worldgen/feature/spring/lava_5_1.json
+diff --git a/data/trek/worldgen/configured_feature/spring/lava_5_2.json b/data/trek/worldgen/feature/spring/lava_5_2.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/lava_5_2.json
+rename to data/trek/worldgen/feature/spring/lava_5_2.json
+diff --git a/data/trek/worldgen/configured_feature/spring/lava_5_3.json b/data/trek/worldgen/feature/spring/lava_5_3.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/lava_5_3.json
+rename to data/trek/worldgen/feature/spring/lava_5_3.json
+diff --git a/data/trek/worldgen/configured_feature/spring/lava_5_4.json b/data/trek/worldgen/feature/spring/lava_5_4.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/lava_5_4.json
+rename to data/trek/worldgen/feature/spring/lava_5_4.json
+diff --git a/data/trek/worldgen/configured_feature/spring/lava_5_5.json b/data/trek/worldgen/feature/spring/lava_5_5.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/lava_5_5.json
+rename to data/trek/worldgen/feature/spring/lava_5_5.json
+diff --git a/data/trek/worldgen/configured_feature/spring/water_5_0.json b/data/trek/worldgen/feature/spring/water_5_0.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/water_5_0.json
+rename to data/trek/worldgen/feature/spring/water_5_0.json
+diff --git a/data/trek/worldgen/configured_feature/spring/water_5_1.json b/data/trek/worldgen/feature/spring/water_5_1.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/water_5_1.json
+rename to data/trek/worldgen/feature/spring/water_5_1.json
+diff --git a/data/trek/worldgen/configured_feature/spring/water_5_2.json b/data/trek/worldgen/feature/spring/water_5_2.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/water_5_2.json
+rename to data/trek/worldgen/feature/spring/water_5_2.json
+diff --git a/data/trek/worldgen/configured_feature/spring/water_5_3.json b/data/trek/worldgen/feature/spring/water_5_3.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/water_5_3.json
+rename to data/trek/worldgen/feature/spring/water_5_3.json
+diff --git a/data/trek/worldgen/configured_feature/spring/water_5_4.json b/data/trek/worldgen/feature/spring/water_5_4.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/water_5_4.json
+rename to data/trek/worldgen/feature/spring/water_5_4.json
+diff --git a/data/trek/worldgen/configured_feature/spring/water_5_5.json b/data/trek/worldgen/feature/spring/water_5_5.json
+similarity index 100%
+rename from data/trek/worldgen/configured_feature/spring/water_5_5.json
+rename to data/trek/worldgen/feature/spring/water_5_5.json
+-- 
+2.56.0
+

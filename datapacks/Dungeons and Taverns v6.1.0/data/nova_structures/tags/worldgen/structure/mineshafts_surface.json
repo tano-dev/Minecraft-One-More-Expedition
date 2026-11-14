@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "nova_structures:mineshaft_surface",
+      "required": false
+    }
+  ]
+}

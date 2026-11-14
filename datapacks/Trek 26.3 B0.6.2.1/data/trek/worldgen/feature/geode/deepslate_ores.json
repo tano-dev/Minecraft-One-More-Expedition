@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:geode",
+  "blocks": {
+    "filling_provider": {
+      "type": "minecraft:simple",
+      "state": {
+        "id": "minecraft:air"
+      }
+    },
+    "inner_placements": [
+      {
+        "id": "minecraft:air"
+      }
+    ],
+    "inner_layer_provider": {
+      "type": "minecraft:simple",
+      "state": {
+        "id": "minecraft:air"
+      }
+    },
+    "alternate_inner_layer_provider": {
+      "type": "minecraft:simple",
+      "state": {
+        "id": "minecraft:air"
+      }
+    },
+    "middle_layer_provider": {
+      "type": "minecraft:simple",
+      "state": {
+        "id": "minecraft:air"
+      }
+    },
+    "outer_layer_provider": {
+      "type": "minecraft:weighted",
+      "entries": [
+        {
+          "weight": 170,
+          "data": {
+            "id": "minecraft:deepslate"
+          }
+        },
+        {
+          "weight": 20,
+          "data": {
+            "id": "minecraft:deepslate_copper_ore"
+          }
+        },
+        {
+          "weight": 5,
+          "data": {
+            "id": "minecraft:deepslate_iron_ore"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "id": "minecraft:deepslate_gold_ore"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "id": "minecraft:deepslate_diamond_ore"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "id": "minecraft:deepslate_emerald_ore"
+          }
+        }
+      ]
+    },
+    "cannot_replace": "#trek:geode/deepstape_ores",
+    "invalid_blocks": "#trek:geode/invalid_blocks"
+  },
+  "layers": {
+    "filling": 1,
+    "inner_layer": 1,
+    "middle_layer": 20,
+    "outer_layer": 30
+  },
+  "crack": {
+    "generate_crack_chance": 0,
+    "base_crack_size": 1,
+    "crack_point_offset": 1
+  },
+  "noise_multiplier": 0.1,
+  "use_potential_placements_chance": 0,
+  "use_alternate_layer0_chance": 0,
+  "placements_require_layer0_alternate": false,
+  "outer_wall_distance": 1,
+  "distribution_points": 1,
+  "point_offset": 1,
+  "min_gen_offset": -20,
+  "max_gen_offset": 20,
+  "invalid_blocks_threshold": 1
+}

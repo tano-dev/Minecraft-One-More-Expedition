@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "nova_structures:equipment/normal_mobs/equipment",
+          "modifier": {
+            "item_filter": {
+              "items": "#minecraft:head_armor"
+            },
+            "on_pass": {
+              "type": "minecraft:set_count",
+              "count": 0
+            },
+            "type": "minecraft:filtered"
+          }
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_sword"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_spear"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "weight": 2
+        }
+      ],
+      "condition": {
+          "type": "random_chance",
+          "chance": 0.01
+        },
+      "modifier": [
+        {
+          "type": "enchant_with_levels",
+          "levels": {
+            "type": "minecraft:uniform",
+            "max": 22,
+            "min": 5
+          },
+          "options": "#minecraft:on_mob_spawn_equipment",
+          "condition": {
+              "type": "random_chance",
+              "chance": 0.25
+            }
+        },
+        {
+          "type": "set_damage",
+          "damage": {
+            "type": "minecraft:uniform",
+            "max": 1,
+            "min": 0
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_helmet",
+          "weight": 75
+        },
+        {
+          "type": "item",
+          "name": "chainmail_helmet",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "iron_helmet",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "diamond_helmet",
+          "weight": 1
+        }
+      ],
+      "modifier": [
+        {
+          "type": "enchant_with_levels",
+          "levels": {
+            "type": "minecraft:uniform",
+            "max": 22,
+            "min": 5
+          },
+          "options": "#minecraft:on_mob_spawn_equipment",
+          "condition": {
+              "type": "random_chance",
+              "chance": 0.5
+            }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:equipment/trial_chamber"
+}

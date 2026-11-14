@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "trek:village/desert",
+    "trek:village/plains",
+    "trek:village/savanna",
+    "trek:village/snowy",
+    "trek:village/taiga",
+    "trek:village/swamp_vanilla",
+    "trek:village/cherry"
+  ]
+}
