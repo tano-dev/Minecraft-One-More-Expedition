@@ -1,30 +1,43 @@
 # Minecraft - One More Expedition
 
-> **Modding & Datapacks Repository for [AllayOps](https://github.com/tano-dev/AllayOps)**
+> **Dedicated Modding & Datapacks Repository for [AllayOps](https://github.com/tano-dev/AllayOps)**
 
-Repository này quản lý độc lập toàn bộ **Fabric Mods (`mods/`, `mods_src/`)** và **World Datapacks (`datapacks/`)** cho server **Minecraft - One More Expedition** (MC 26.3 / Fabric Loader 0.20.1), tách biệt khỏi hệ thống Agentic Self-Healing tại `AllayOps`.
+This repository independently maintains all **Fabric Mods (`mods/`, `mods_src/`)** and **World Datapacks (`datapacks/`)** for the **Minecraft - One More Expedition** server runtime (MC 26.3 / Fabric Loader 0.20.1 / Java 25 with ZGC), isolated from the Agentic Self-Healing control plane in `AllayOps`.
 
 ---
 
-## Cấu trúc thư mục
+## Directory Structure
 
 ```text
 Minecraft-One-More-Expedition/
-├── mods_src/       # Mã nguồn Fabric Mod (Gradle / Java 25)
-├── mods/           # File .jar mod đã build hoặc mod tuyển chọn
-├── datapacks/      # Các datapack tùy chỉnh (đồng bộ vào world/datapacks/)
+├── mods/                 # Verified, production-grade Fabric server mods
+├── mods_optional/        # Client-only, redundant, or isolated experimental mods
+├── mods_src/             # Fabric mod source code (Gradle / Java 25)
+├── datapacks/            # Custom world datapacks (synced to world/datapacks/)
+├── mods_registry.json    # Machine-readable mod registry for AI Agentic Self-Healing
+├── MODS_CATALOG.md       # Diagnostic matrix and categorization documentation
 └── README.md
 ```
 
 ---
 
-## Đồng bộ sang server `AllayOps`
+## Mod Architecture & Diagnostics
 
-- **Đồng bộ khi đang phát triển local (tại `D:\AllayOps`):**
+All server optimization mods are cataloged, classified by tier, and tagged with risk levels to allow autonomous diagnostic agents in `AllayOps` to perform root-cause analysis and automated self-healing.
+
+- Detailed documentation: [`MODS_CATALOG.md`](MODS_CATALOG.md)
+- Machine-readable registry: [`mods_registry.json`](mods_registry.json)
+
+---
+
+## Synchronization to `AllayOps` Server Runtime
+
+- **Local Development Sync (from `D:\AllayOps`):**
   ```powershell
   python scripts/sync_content.py --local-source D:\Minecraft-One-More-Expedition
   ```
-- **Đồng bộ từ GitHub:**
+
+- **Remote Synchronization (from GitHub):**
   ```powershell
   python scripts/sync_content.py
   ```

@@ -1,0 +1,551 @@
+{
+  "": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AllayOps & OneMoreExpedition Mod Registry",
+  "version": "1.0.0",
+  "minecraft_version": "26.3",
+  "loader": "fabric-loader-0.20.1",
+  "generated_for": "Agentic Self-Healing & Diagnostics System",
+  "categories": {
+    "core_library": "Foundational libraries, configuration frameworks, and required APIs for dependent mods",
+    "server_performance": "Main tick loop optimization, pathfinding AI caching, collision algorithms, and Redstone BFS engine",
+    "memory_optimization": "JVM heap optimization, memory footprint reduction for blockstates, models, and dynamic class loading",
+    "network_and_players": "Netty packet pipeline optimization, player broadcast batching, and high-concurrency entity tracking",
+    "worldgen_and_chunks": "Parallel chunk I/O, SIMD-accelerated noise generation, structure bounding box optimization, and pre-generation",
+    "bugfix_and_security": "Backported vanilla bug fixes, NBT packet crash exploit prevention, and packet payload buffer expansion",
+    "entity_mechanics": "Mob despawn persistence rules and combat AI tuning to prevent unintended mob cap inflation",
+    "experimental_threading": "Multi-threaded entity ticking (Experimental/Alpha) - High risk, isolated from default runtime",
+    "optional_client_side": "Client visual mods (LOD) or redundant optimization mods superseded by native server settings"
+  },
+  "mods": [
+    {
+      "mod_id": "chunky",
+      "name": "Chunky",
+      "filename": "Chunky-Fabric-1.5.66.jar",
+      "version": "1.5.66",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-3-Utility",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "fabric-api",
+        "minecraft",
+        "java"
+      ],
+      "remediation_advice": "Execute /chunky start to pre-generate world chunks before launching server to players."
+    },
+    {
+      "mod_id": "forgeconfigapiport",
+      "name": "Forge Config API Port",
+      "filename": "ForgeConfigAPIPort-v26.3.1-mc26.3.x-Fabric.jar",
+      "version": "26.3.1",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "fabric-api"
+      ],
+      "remediation_advice": "Forge Config API bridge for Fabric; required dependency for skeletonaifix."
+    },
+    {
+      "mod_id": "packetfixer",
+      "name": "Packet Fixer",
+      "filename": "PacketFixer-fabric-3.3.6.jar",
+      "version": "3.3.6",
+      "state": "active",
+      "category": "bugfix_and_security",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft"
+      ],
+      "remediation_advice": "Removes 2MB payload buffer limit; prevents player kick/disconnect on oversized NBT/inventory packets."
+    },
+    {
+      "mod_id": "resourcefulconfig",
+      "name": "Resourcefulconfig",
+      "filename": "ResourcefulConfig-6.0.2.jar",
+      "version": "6.0.2",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "minecraft"
+      ],
+      "remediation_advice": "Declarative configuration framework; required dependency for structure_layout_optimizer."
+    },
+    {
+      "mod_id": "scalablelux",
+      "name": "ScalableLux",
+      "filename": "ScalableLux-fabric-mc26.3-0.3.0-alpha.0.6-all.jar",
+      "version": "0.3.0-alpha.0.6+26.3",
+      "state": "active",
+      "category": "server_performance",
+      "tier": "Tier-2-HighEfficiency",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "minecraft"
+      ],
+      "remediation_advice": "Optimizes vanilla 26.x lighting engine; fully integrated and concurrent with C2ME."
+    },
+    {
+      "mod_id": "almanac",
+      "name": "Almanac",
+      "filename": "almanac-fabric-26.3-1.26.11.1.jar",
+      "version": "1.26.11.1",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "fabric-api",
+        "minecraft",
+        "java",
+        "dungeonconfig"
+      ],
+      "remediation_advice": "Library framework by frikinjay; embeds DungeonConfig; required for letmedespawn."
+    },
+    {
+      "mod_id": "alternate-current",
+      "name": "Alternate Current",
+      "filename": "alternate-current-mc26.3-1.9.0.jar",
+      "version": "1.9.0",
+      "state": "active",
+      "category": "server_performance",
+      "tier": "Tier-2-HighEfficiency",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft"
+      ],
+      "remediation_advice": "Replaces vanilla redstone lag with high-performance BFS algorithm. Lithium automatically yields redstone calculation."
+    },
+    {
+      "mod_id": "asynclogger",
+      "name": "Async Logger",
+      "filename": "asynclogger-2.2.3+26.1.2-fabric.jar",
+      "version": "2.2.3+26.1.2-fabric",
+      "state": "active",
+      "category": "network_and_players",
+      "tier": "Tier-3-Utility",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader"
+      ],
+      "remediation_advice": "Offloads console and file logging I/O to background thread, preventing log-spam tick hitches."
+    },
+    {
+      "mod_id": "c2me",
+      "name": "Concurrent Chunk Management Engine",
+      "filename": "c2me-fabric-mc26.3-0.4.2-alpha.0.119.jar",
+      "version": "0.4.2-alpha.0.119+26.3",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-2-HighEfficiency",
+      "side": "server",
+      "risk_level": "Medium",
+      "dependencies": [
+        "fabricloader",
+        "java",
+        "minecraft",
+        "c2me-base"
+      ],
+      "remediation_advice": "Concurrent Chunk Management Engine (parallel chunk I/O and terrain gen). Adjust worker threads in config/c2me.toml if high CPU/OOM occurs."
+    },
+    {
+      "mod_id": "crashexploitfixer",
+      "name": "CrashExploitFixer",
+      "filename": "crashexploitfixer-fabric-2.0.0+26.3.jar",
+      "version": "2.0.0",
+      "state": "active",
+      "category": "bugfix_and_security",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Hardens server against malicious NBT tag crash exploits (Paper backport)."
+    },
+    {
+      "mod_id": "debugify",
+      "name": "Debugify",
+      "filename": "debugify-26.3.0.0.jar",
+      "version": "26.3.0.0",
+      "state": "active",
+      "category": "bugfix_and_security",
+      "tier": "Tier-2-Recommended",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "fabric-resource-loader-v0"
+      ],
+      "remediation_advice": "Patches dozens of vanilla bugs; individual fixes configurable via debugify.json."
+    },
+    {
+      "mod_id": "fabric-api",
+      "name": "Fabric API",
+      "filename": "fabric-api-0.166.2+26.3.jar",
+      "version": "0.166.2+26.3",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "java",
+        "minecraft"
+      ],
+      "remediation_advice": "Core Fabric API layer. Mandatory; verify Fabric Loader compatibility if mixin errors occur."
+    },
+    {
+      "mod_id": "ferritecore",
+      "name": "FerriteCore",
+      "filename": "ferritecore-9.0.0-fabric.jar",
+      "version": "9.0.0",
+      "state": "active",
+      "category": "memory_optimization",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "minecraft"
+      ],
+      "remediation_advice": "Drastically reduces memory footprint for blockstates and models. Highly stable."
+    },
+    {
+      "mod_id": "krypton",
+      "name": "Krypton",
+      "filename": "krypton-0.3.2.jar",
+      "version": "0.3.2",
+      "state": "active",
+      "category": "network_and_players",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "minecraft"
+      ],
+      "remediation_advice": "Optimizes Netty networking pipeline, minimizing CPU overhead during heavy client traffic."
+    },
+    {
+      "mod_id": "letmedespawn",
+      "name": "LetMeDespawn",
+      "filename": "letmedespawn-fabric-26.3-1.26.11.1.jar",
+      "version": "1.26.11.1",
+      "state": "active",
+      "category": "entity_mechanics",
+      "tier": "Tier-2-Recommended",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "fabric-api",
+        "minecraft",
+        "java",
+        "almanac",
+        "dungeonconfig"
+      ],
+      "remediation_advice": "Allows mobs holding dropped items to despawn naturally, preventing cave/dungeon entity accumulation."
+    },
+    {
+      "mod_id": "lithium",
+      "name": "Lithium",
+      "filename": "lithium-fabric-0.26.3+mc26.3.jar",
+      "version": "0.26.3+mc26.3",
+      "state": "active",
+      "category": "server_performance",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "minecraft",
+        "mixinextras"
+      ],
+      "remediation_advice": "General server tick optimization (AI, physics, chunk ticking). Modules can be toggled via config/lithium.properties."
+    },
+    {
+      "mod_id": "modernfix",
+      "name": "ModernFix",
+      "filename": "modernfix-5.27.20-build.2.jar",
+      "version": "5.27.20-build.2",
+      "state": "active",
+      "category": "memory_optimization",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader"
+      ],
+      "remediation_advice": "Optimizes class loading, dynamic resource leaks, and overall RAM usage."
+    },
+    {
+      "mod_id": "puzzleslib",
+      "name": "Puzzles Lib",
+      "filename": "puzzleslib-v26.3.18-mc26.3.x+fabric.jar",
+      "version": "26.3.18",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "fabric-api",
+        "forgeconfigapiport"
+      ],
+      "remediation_advice": "Foundational abstraction library by Fuzs; required dependency for skeletonaifix."
+    },
+    {
+      "mod_id": "quick-pack",
+      "name": "quick-pack",
+      "filename": "quick-pack-fabric-1.5.1+26.3.jar",
+      "version": "1.5.1",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-3-Utility",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Accelerates zip file decompression for datapacks and resourcepacks during server boot."
+    },
+    {
+      "mod_id": "servercore",
+      "name": "ServerCore",
+      "filename": "servercore-fabric-1.5.20+26.3.jar",
+      "version": "1.5.20+26.3",
+      "state": "active",
+      "category": "network_and_players",
+      "tier": "Tier-2-HighEfficiency",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "minecraft",
+        "fabric-api-base",
+        "fabric-command-api-v2",
+        "fabric-lifecycle-events-v1"
+      ],
+      "remediation_advice": "Dynamic view/simulation distance and entity activation range limits during tick spikes."
+    },
+    {
+      "mod_id": "skeletonaifix",
+      "name": "Skeleton AI Fix",
+      "filename": "skeletonaifix-v26.3.0-mc26.3.x+fabric.jar",
+      "version": "26.3.0",
+      "state": "active",
+      "category": "entity_mechanics",
+      "tier": "Tier-3-Enhancement",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "fabric-api",
+        "forgeconfigapiport",
+        "puzzleslib"
+      ],
+      "remediation_advice": "Fixes awkward skeleton strafing behavior to ensure smooth combat AI."
+    },
+    {
+      "mod_id": "structure_layout_optimizer",
+      "name": "Structure Layout Optimizer",
+      "filename": "structure_layout_optimizer-1.1.4+26.3-fabric.jar",
+      "version": "1.1.4+26.3-fabric",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-2-HighEfficiency",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "minecraft",
+        "java",
+        "fabric-api",
+        "resourcefulconfig"
+      ],
+      "remediation_advice": "Optimizes structure piece bounding box calculation during terrain generation."
+    },
+    {
+      "mod_id": "vmp",
+      "name": "Very Many Players",
+      "filename": "vmp-fabric-mc26.3-0.2.0+beta.7.238-all.jar",
+      "version": "0.2.0+beta.7.238+26.3",
+      "state": "active",
+      "category": "network_and_players",
+      "tier": "Tier-2-HighEfficiency",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "minecraft",
+        "java"
+      ],
+      "remediation_advice": "Very Many Players: entity tracking and packet dispatch optimization for multi-player loads."
+    },
+    {
+      "mod_id": "zconfig",
+      "name": "ZConfig",
+      "filename": "zconfig-1.0.0+26.x.jar",
+      "version": "1.0.0+26.x",
+      "state": "active",
+      "category": "core_library",
+      "tier": "Tier-1-Essential",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Lightweight configuration library; required dependency for zfastnoise."
+    },
+    {
+      "mod_id": "zfastnoise",
+      "name": "Fast Noise",
+      "filename": "zfastnoise-1.1.3+26.3.jar",
+      "version": "1.1.3+26.3",
+      "state": "active",
+      "category": "worldgen_and_chunks",
+      "tier": "Tier-2-HighEfficiency",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "minecraft",
+        "java",
+        "zconfig"
+      ],
+      "remediation_advice": "Replaces vanilla noise generation with vectorized FastNoise SIMD calculations."
+    },
+    {
+      "mod_id": "distanthorizons",
+      "name": "Distant Horizons",
+      "filename": "DistantHorizons-3.3.4-26.3-fabric-neoforge.jar",
+      "version": "3.3.4",
+      "state": "optional_disabled",
+      "category": "optional_client_side",
+      "tier": "Tier-4-Optional",
+      "side": "client",
+      "risk_level": "High-on-server",
+      "dependencies": [
+        "fabricloader",
+        "fabric-api-base",
+        "fabric-lifecycle-events-v1",
+        "fabric-resource-loader-v0",
+        "minecraft",
+        "java"
+      ],
+      "remediation_advice": "Level-of-Detail (LOD) generator. Moved to mods_optional/ due to heavy SQLite I/O and CPU overhead on dedicated servers."
+    },
+    {
+      "mod_id": "ksyxis",
+      "name": "Ksyxis",
+      "filename": "Ksyxis-1.4.6.jar",
+      "version": "1.4.6",
+      "state": "optional_disabled",
+      "category": "optional_client_side",
+      "tier": "Tier-4-Optional",
+      "side": "both",
+      "risk_level": "Medium",
+      "dependencies": [],
+      "remediation_advice": "Skips spawn chunks. Moved to mods_optional/; superseded natively by spawn-chunk-radius=1 in server.properties."
+    },
+    {
+      "mod_id": "async",
+      "name": "Async",
+      "filename": "async-fabric-0.2.5+alpha-26.3.jar",
+      "version": "0.2.5+alpha-26.3",
+      "state": "optional_disabled",
+      "category": "experimental_threading",
+      "tier": "Tier-4-Experimental",
+      "side": "server",
+      "risk_level": "High",
+      "dependencies": [
+        "fabricloader",
+        "fabric-api",
+        "minecraft",
+        "java"
+      ],
+      "remediation_advice": "Multi-threaded entity ticking (Alpha). Isolated to mods_optional/ to eliminate ConcurrentModificationException in dungeons/spawners."
+    },
+    {
+      "mod_id": "clumps",
+      "name": "Clumps",
+      "filename": "Clumps-fabric-26.3-26.3.2.jar",
+      "version": "26.3.2",
+      "state": "active",
+      "category": "entity_mechanics",
+      "tier": "Tier-2-Recommended",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabricloader",
+        "java",
+        "minecraft"
+      ],
+      "remediation_advice": "Aggregates multiple XP orbs into a single clustered orb entity, eliminating XP-induced tick stalls."
+    },
+    {
+      "mod_id": "carpet",
+      "name": "Carpet Mod",
+      "filename": "fabric-carpet-26.3+v260915.jar",
+      "version": "26.3+v260915",
+      "state": "active",
+      "category": "server_performance",
+      "tier": "Tier-1-Essential",
+      "side": "server",
+      "risk_level": "Low",
+      "dependencies": [
+        "minecraft",
+        "fabricloader",
+        "java"
+      ],
+      "remediation_advice": "Technical server mechanics & TNT optimization engine. Configure /carpet optimizedTNT true and /carpet tntDoCollision false to prevent entity collision freezing during mass detonations."
+    },
+    {
+      "mod_id": "getittogetherdrops",
+      "name": "Get It Together, Drops!",
+      "filename": "getittogetherdrops-fabric-26.1.1-1.5.1.jar",
+      "version": "1.5.1",
+      "state": "active",
+      "category": "entity_mechanics",
+      "tier": "Tier-2-Recommended",
+      "side": "both",
+      "risk_level": "Low",
+      "dependencies": [
+        "fabric-api",
+        "minecraft",
+        "java",
+        "forgeconfigapiport"
+      ],
+      "remediation_advice": "Widens gravitational radius and accelerates item merging, preventing thousands of floating block drops from choking entity ticks."
+    }
+  ]
+}
