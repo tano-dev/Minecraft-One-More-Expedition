@@ -18,7 +18,6 @@
   "slots": [
     "mainhand"
   ],
-  "exclusive_set": "#enchantencore:exclusive_set/shot_arrow",
   "effects": {
     "minecraft:post_attack": [
       {

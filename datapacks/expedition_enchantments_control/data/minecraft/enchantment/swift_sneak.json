@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.minecraft.swift_sneak",
     "fallback": "Swift Sneak",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "exclusive_set": "#enchantencore:exclusive_set/leggings",
   "supported_items": "#minecraft:enchantable/leg_armor",

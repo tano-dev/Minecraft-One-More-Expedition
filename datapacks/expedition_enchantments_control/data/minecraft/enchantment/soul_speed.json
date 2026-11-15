@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.minecraft.soul_speed",
     "fallback": "Soul Speed",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "exclusive_set": "#enchantencore:exclusive_set/boots",
   "supported_items": "#minecraft:enchantable/foot_armor",
