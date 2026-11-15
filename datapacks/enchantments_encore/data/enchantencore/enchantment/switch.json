@@ -8,11 +8,11 @@
   "weight": 2,
   "max_level": 1,
   "min_cost": {
-    "base": 17,
+    "base": 1,
     "per_level_above_first": 7
   },
   "max_cost": {
-    "base": 50,
+    "base": 51,
     "per_level_above_first": 0
   },
   "anvil_cost": 4,

@@ -36,7 +36,7 @@
   },
   "exclusive_set": "#minecraft:exclusive_set/armor",
   "max_cost": {
-    "base": 13,
+    "base": 32,
     "per_level_above_first": 8
   },
   "max_level": 4,

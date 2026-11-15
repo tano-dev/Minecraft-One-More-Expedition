@@ -23,10 +23,10 @@
 | **Bow** | 5 | 39 | 2 | **5.13%** |
 | **Crossbow** | 4 | 43 | 1 | **2.33%** |
 | **Trident** | 6 | 65 | 1 | **3.08%** |
-| **Helmet** | 17 | 163 | 3 | **1.84%** |
-| **Chestplate** | 17 | 168 | 3 | **2.38%** |
-| **Leggings** | 14 | 131 | 3 | **2.29%** |
-| **Boots** | 18 | 156 | 5 | **3.85%** |
+| **Helmet** | 17 | 160 | 3 | **1.88%** |
+| **Chestplate** | 17 | 165 | 3 | **2.42%** |
+| **Leggings** | 14 | 128 | 3 | **2.34%** |
+| **Boots** | 18 | 153 | 5 | **3.92%** |
 
 ## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (49)
 
@@ -367,11 +367,11 @@
 | `minecraft:piercing` | - | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/crossbow` |
 | `minecraft:power` | 5 | `Enchants Plus v2.1 26.3` | Yes | 10 | `minecraft:bow, minecraft:crossbow` |
 | `minecraft:projectile_protection` | - | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/armor` |
-| `minecraft:protection` | - | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/armor` |
+| `minecraft:protection` | 4 | `enchantments_encore` | Yes | 10 | `#minecraft:enchantable/armor` |
 | `minecraft:punch` | - | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/bow` |
 | `minecraft:quick_charge` | - | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/crossbow` |
 | `minecraft:respiration` | - | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/head_armor` |
-| `minecraft:sharpness` | - | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/sharp_weapon` |
+| `minecraft:sharpness` | 5 | `enchantments_encore` | Yes | 10 | `#minecraft:enchantable/sharp_weapon` |
 | `minecraft:smite` | - | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/weapon` |
 | `minecraft:sweeping_edge` | - | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/sword` |
 | `minecraft:thorns` | - | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/armor` |

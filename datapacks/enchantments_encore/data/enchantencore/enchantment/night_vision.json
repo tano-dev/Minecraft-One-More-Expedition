@@ -5,15 +5,15 @@
   },
   "exclusive_set": "#enchantencore:exclusive_set/helmet",
   "supported_items": "#minecraft:enchantable/head_armor",
-  "weight": 2,
+  "weight": 1,
   "max_level": 1,
   "min_cost": {
     "base": 1,
-    "per_level_above_first": 5
+    "per_level_above_first": 0
   },
   "max_cost": {
     "base": 51,
-    "per_level_above_first": 50
+    "per_level_above_first": 0
   },
   "anvil_cost": 4,
   "slots": [

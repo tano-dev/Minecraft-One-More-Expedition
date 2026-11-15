@@ -5631,8 +5631,8 @@
       "description": "Projectile Protection"
     },
     "minecraft:protection": {
-      "source_pack": "minecraft (vanilla)",
-      "source_file": null,
+      "source_pack": "enchantments_encore",
+      "source_file": "datapacks\\enchantments_encore\\data\\minecraft\\enchantment\\protection.json",
       "vanilla": true,
       "enabled": true,
       "tier": "common",
@@ -5641,10 +5641,12 @@
       "table": true,
       "tradeable": true,
       "loot": true,
-      "table_weight": 15,
+      "table_weight": 12,
       "loot_weight": 10,
+      "max_level": 4,
+      "anvil_cost": 1,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Protection"
+      "description": "enchantment.minecraft.protection"
     },
     "minecraft:punch": {
       "source_pack": "minecraft (vanilla)",
@@ -5711,8 +5713,8 @@
       "description": "Riptide"
     },
     "minecraft:sharpness": {
-      "source_pack": "minecraft (vanilla)",
-      "source_file": null,
+      "source_pack": "enchantments_encore",
+      "source_file": "datapacks\\enchantments_encore\\data\\minecraft\\enchantment\\sharpness.json",
       "vanilla": true,
       "enabled": true,
       "tier": "common",
@@ -5723,8 +5725,10 @@
       "loot": true,
       "table_weight": 12,
       "loot_weight": 10,
+      "max_level": 5,
+      "anvil_cost": 1,
       "supported_items": "#minecraft:enchantable/sharp_weapon",
-      "description": "Sharpness"
+      "description": "enchantment.minecraft.sharpness"
     },
     "minecraft:silk_touch": {
       "source_pack": "minecraft (vanilla)",
