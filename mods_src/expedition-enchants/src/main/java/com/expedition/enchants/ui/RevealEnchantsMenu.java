@@ -52,9 +52,9 @@ public class RevealEnchantsMenu extends ChestMenu {
         if (isGodroll) {
             player.level().playSound(null, player.blockPosition(), SoundEvents.FIREWORK_ROCKET_LAUNCH, SoundSource.PLAYERS, 1.0f, 1.0f);
             if (player.level().getServer() != null) {
-                Component msg = Component.literal("§6§l✦ GODROLL! §e" + player.getName().getString() + " §7vừa phù phép ra ")
+                Component msg = Component.literal("§6§l✦ GODROLL! §e" + player.getName().getString() + " §7just enchanted ")
                     .append(enchantedItem.getHoverName())
-                    .append(Component.literal(" §6(" + entries.size() + " dòng)§7!"));
+                    .append(Component.literal(" §6(" + entries.size() + " enchants)§7!"));
                 player.level().getServer().getPlayerList().broadcastSystemMessage(msg, false);
             }
         }
