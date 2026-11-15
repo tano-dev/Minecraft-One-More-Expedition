@@ -71,8 +71,6 @@ public class RevealEnchantsMenu extends ChestMenu {
             container.setItem(i, filler.copy());
         }
 
-        container.setItem(PREVIEW_SLOT, previewItem);
-
         int count = Math.min(entries.size(), 7);
         int startCol = (9 - count) / 2;
         for (int i = 0; i < count; i++) {
