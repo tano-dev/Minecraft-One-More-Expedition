@@ -106,11 +106,7 @@
           "type": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "minecraft:entity_type": [
-              "minecraft:arrow",
-              "minecraft:trident",
-              "minecraft:spectral_arrow"
-            ]
+            "minecraft:entity_type": "#enchantencore:hard_projectiles"
           }
         }
       }

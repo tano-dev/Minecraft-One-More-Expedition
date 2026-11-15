@@ -15,6 +15,9 @@ Thumbs.db
 # Temp & Runtime Logs
 *.tmp
 *.bak
+*.pyc
+__pycache__/
+*.log
 config/**/logs/
 config/**/data/
 config/**/tmp/

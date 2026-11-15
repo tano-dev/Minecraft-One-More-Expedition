@@ -71,7 +71,7 @@
                 "state": "minecraft:farmland"
               },
               "predicate": {
-                "minecraft:entity_type": "minecraft:all_of",
+                "type": "minecraft:all_of",
                 "predicates": [
                   {
                     "type": "minecraft:matching_blocks",
@@ -145,7 +145,7 @@
                 0
               ],
               "predicate": {
-                "minecraft:entity_type": "minecraft:all_of",
+                "type": "minecraft:all_of",
                 "predicates": [
                   {
                     "type": "minecraft:matching_blocks",
