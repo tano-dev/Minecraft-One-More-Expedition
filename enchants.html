@@ -1678,7 +1678,97 @@
       renderCards();
     }
 
+    const FILTER_STORAGE_KEY = "ome_enchants_filter_settings_v1";
+
+    function saveFilterSettings() {
+      try {
+        localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify({
+          currentSort,
+          currentTier,
+          currentGear,
+          currentPack,
+          currentGroup,
+          currentObtain,
+          currentSearch,
+          excludedPacks: [...excludedPacks],
+          excludedTiers: [...excludedTiers],
+          excludedGears: [...excludedGears],
+          excludedProps: [...excludedProps],
+          excludedGroups: [...excludedGroups]
+        }));
+      } catch (e) {}
+    }
+
+    function loadFilterSettings() {
+      try {
+        const raw = localStorage.getItem(FILTER_STORAGE_KEY);
+        if (!raw) return;
+        const s = JSON.parse(raw);
+        if (s.currentSort && sortSelect.querySelector(`option[value="${s.currentSort}"]`)) {
+          currentSort = s.currentSort;
+          sortSelect.value = s.currentSort;
+        }
+        if (s.currentTier) {
+          currentTier = s.currentTier;
+          document.querySelectorAll("#tierTabs .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.tier === currentTier));
+        }
+        if (s.currentGear) {
+          currentGear = s.currentGear;
+          document.querySelectorAll("#gearChips .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.gear === currentGear));
+        }
+        if (s.currentPack && packSelect.querySelector(`option[value="${s.currentPack}"]`)) {
+          currentPack = s.currentPack;
+          packSelect.value = s.currentPack;
+        }
+        if (s.currentGroup && groupSelect.querySelector(`option[value="${s.currentGroup}"]`)) {
+          currentGroup = s.currentGroup;
+          groupSelect.value = s.currentGroup;
+        }
+        if (s.currentObtain && obtainSelect.querySelector(`option[value="${s.currentObtain}"]`)) {
+          currentObtain = s.currentObtain;
+          obtainSelect.value = s.currentObtain;
+        }
+        if (typeof s.currentSearch === "string") {
+          currentSearch = s.currentSearch;
+          searchInput.value = s.currentSearch;
+          clearSearchBtn.classList.toggle("visible", s.currentSearch.length > 0);
+        }
+        if (Array.isArray(s.excludedPacks)) {
+          s.excludedPacks.forEach(v => excludedPacks.add(v));
+          document.querySelectorAll("#excludePackChecks input[type='checkbox']").forEach(cb => {
+            cb.checked = excludedPacks.has(cb.dataset.pack || cb.parentElement?.textContent?.trim());
+          });
+        }
+        if (Array.isArray(s.excludedTiers)) {
+          s.excludedTiers.forEach(v => excludedTiers.add(v));
+          document.querySelectorAll("#excludeTierChecks input[type='checkbox']").forEach(cb => {
+            cb.checked = excludedTiers.has(cb.value);
+          });
+        }
+        if (Array.isArray(s.excludedGears)) {
+          s.excludedGears.forEach(v => excludedGears.add(v));
+          document.querySelectorAll("#excludeGearChecks input[type='checkbox']").forEach(cb => {
+            cb.checked = excludedGears.has(cb.value);
+          });
+        }
+        if (Array.isArray(s.excludedProps)) {
+          s.excludedProps.forEach(v => excludedProps.add(v));
+          document.querySelectorAll("#excludePropChecks input[type='checkbox']").forEach(cb => {
+            cb.checked = excludedProps.has(cb.value);
+          });
+        }
+        if (Array.isArray(s.excludedGroups)) {
+          s.excludedGroups.forEach(v => excludedGroups.add(v));
+          document.querySelectorAll("#excludeGroupChecks input[type='checkbox']").forEach(cb => {
+            cb.checked = excludedGroups.has(cb.dataset.group || cb.parentElement?.textContent?.trim());
+          });
+        }
+        updateExcludeBadge();
+      } catch (e) {}
+    }
+
     function renderCards() {
+      saveFilterSettings();
       const filtered = filterAndSortData();
       const total = filtered.length;
       resultsCount.innerHTML = `Showing <strong>${total}</strong> / <strong>${allData.length}</strong> enchantments`;
@@ -2270,6 +2360,7 @@
       }).catch(() => {});
     }
 
+    loadFilterSettings();
     renderCards();
   </script>
 </body>
