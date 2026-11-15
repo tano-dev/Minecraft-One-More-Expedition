@@ -1,7 +1,9 @@
 {
   "description": {
     "translate": "enchantment.enchantplus.miningplus",
-    "fallback": "Mining+"
+    "fallback": "Mining+",
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#enchantplus:exclusive_set/mining",
   "supported_items": "#minecraft:enchantable/mining_loot",

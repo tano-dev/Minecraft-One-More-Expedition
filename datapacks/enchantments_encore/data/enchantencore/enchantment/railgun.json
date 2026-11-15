@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Railgun",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#enchantencore:exclusive_set/ultimate_bow",
   "supported_items": "minecraft:crossbow",

@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Warped Trident",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_warped_trident",
   "supported_items": "#minecraft:enchantable/trident",

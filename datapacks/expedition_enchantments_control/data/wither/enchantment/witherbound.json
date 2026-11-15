@@ -2,7 +2,8 @@
   "anvil_cost": 1,
   "description": {
     "text": "Witherbound",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "max_cost": {
     "base": 1,

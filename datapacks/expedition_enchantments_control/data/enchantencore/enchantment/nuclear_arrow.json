@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Nuclear Arrow",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_nuclear_arrow",
   "supported_items": "#enchantencore:all_bows",

@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Crystalize Arrow",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_crystalize_arrow",
   "supported_items": "#enchantencore:all_bows",

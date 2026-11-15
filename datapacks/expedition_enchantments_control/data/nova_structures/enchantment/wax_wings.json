@@ -3,7 +3,8 @@
   "description": {
     "translate": "enchantment.dnt.wax_wings",
     "fallback": "Wax Wings",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "effects": {
     "minecraft:item_damage": [

@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Heroes Crown",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_heroes_crown",
   "supported_items": "#minecraft:enchantable/head_armor",

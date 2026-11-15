@@ -1,7 +1,8 @@
 {
   "description": {
     "translate": "enchantment.stellarity.critical_strike",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/stellarity_critical_strike",
   "supported_items": "#minecraft:enchantable/sharp_weapon",

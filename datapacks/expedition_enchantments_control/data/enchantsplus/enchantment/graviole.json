@@ -2,7 +2,8 @@
   "description": {
     "translate": "enchantment.enchantsplus.graviole",
     "fallback": "Graviole",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "supported_items": "minecraft:elytra",
   "weight": 1,

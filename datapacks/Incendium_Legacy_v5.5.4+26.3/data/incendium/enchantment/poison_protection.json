@@ -1,7 +1,9 @@
 {
   "description": {
     "translate": "incendium.enchantment.poison_protection",
-    "fallback": "Poison Protection"
+    "fallback": "Poison Protection",
+    "color": "gold",
+    "bold": true
   },
   "supported_items": "#enchantable/armor",
   "weight": 1,

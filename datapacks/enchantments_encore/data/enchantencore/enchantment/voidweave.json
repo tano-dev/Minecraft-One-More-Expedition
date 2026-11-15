@@ -1,7 +1,9 @@
 {
   "description": {
     "translate": "enchantment.enchantencore.voidweave",
-    "fallback": "Voidweave"
+    "fallback": "Voidweave",
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#enchantencore:exclusive_set/repair",
   "supported_items": "#minecraft:enchantable/durability",

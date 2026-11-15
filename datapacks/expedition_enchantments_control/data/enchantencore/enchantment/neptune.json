@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Neptune",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_neptune",
   "supported_items": "#minecraft:enchantable/trident",

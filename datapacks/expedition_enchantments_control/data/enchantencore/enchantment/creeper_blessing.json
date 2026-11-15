@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Creeper Blessing",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_creeper_blessing",
   "supported_items": "#minecraft:enchantable/leg_armor",

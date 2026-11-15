@@ -1,7 +1,9 @@
 {
   "description": {
     "translate": "enchantment.enchantsplus.crabs_touch",
-    "fallback": "Crab's Touch"
+    "fallback": "Crab's Touch",
+    "color": "gold",
+    "bold": true
   },
   "supported_items": "#enchantsplus:tools",
   "weight": 1,

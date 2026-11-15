@@ -1,7 +1,8 @@
 {
   "description": {
     "translate": "enchantment.stellarity.dune_speed",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/stellarity_dune_speed",
   "supported_items": "#minecraft:enchantable/foot_armor",

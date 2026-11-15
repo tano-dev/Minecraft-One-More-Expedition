@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Perfected Protection",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#enchantencore:exclusive_set/ultimate_protection",
   "supported_items": "#minecraft:enchantable/armor",

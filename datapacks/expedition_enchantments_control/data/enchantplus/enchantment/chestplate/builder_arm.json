@@ -2,7 +2,8 @@
   "description": {
     "translate": "enchantment.enchantplus.builder_arm",
     "fallback": "Builder Arm",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "supported_items": "#minecraft:enchantable/chest_armor",
   "weight": 1,

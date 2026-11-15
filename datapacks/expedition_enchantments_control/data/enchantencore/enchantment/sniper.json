@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Sniper",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_sniper",
   "supported_items": "#enchantencore:all_bows",

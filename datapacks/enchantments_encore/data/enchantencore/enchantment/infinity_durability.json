@@ -3,7 +3,8 @@
   "anvil_cost": 2,
   "description": {
     "text": "Infinity Durability",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "effects": {
     "minecraft:item_damage": [

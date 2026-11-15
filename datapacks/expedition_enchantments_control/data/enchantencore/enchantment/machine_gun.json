@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Machine Gun",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_machine_gun",
   "supported_items": "#minecraft:enchantable/crossbow",

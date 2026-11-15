@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Nightmare",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#enchantencore:ultimate",
   "supported_items": "#minecraft:enchantable/fire_aspect",

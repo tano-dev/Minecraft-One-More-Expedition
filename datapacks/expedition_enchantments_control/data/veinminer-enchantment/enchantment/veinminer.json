@@ -2,7 +2,8 @@
   "description": {
     "translate": "enchantment.veinmine",
     "fallback": "Veinmine",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "supported_items": "#minecraft:pickaxes",
   "weight": 1,

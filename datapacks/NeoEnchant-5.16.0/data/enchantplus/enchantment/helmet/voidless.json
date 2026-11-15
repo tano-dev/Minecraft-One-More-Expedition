@@ -1,7 +1,9 @@
 {
   "description": {
     "translate": "enchantment.enchantplus.voidless",
-    "fallback": "Voidless"
+    "fallback": "Voidless",
+    "color": "gold",
+    "bold": true
   },
   "supported_items": "#minecraft:enchantable/head_armor",
   "weight": 8,

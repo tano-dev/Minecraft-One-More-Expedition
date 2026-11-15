@@ -3,7 +3,8 @@
   "description": {
     "translate": "enchantment.dnt.photosynthesis",
     "fallback": "Photosynthesis",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "effects": {
     "minecraft:tick": [

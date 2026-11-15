@@ -3,7 +3,7 @@
     "biomes": "#yggdrasil:has_structure/alfheim_tree",
     "liquid_settings": "ignore_waterlogging",
     "step": "surface_structures",
-    "terrain_adaptation": "beard_thin",
+    "terrain_adaptation": "none",
     "spawn_overrides": {},
     "start_pool": "yggdrasil:alfheim_tree/tree/middle",
     "size": 16,

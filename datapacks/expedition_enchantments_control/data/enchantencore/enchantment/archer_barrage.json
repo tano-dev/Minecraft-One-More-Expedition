@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Archer Barrage",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_archer_barrage",
   "supported_items": "minecraft:bow",

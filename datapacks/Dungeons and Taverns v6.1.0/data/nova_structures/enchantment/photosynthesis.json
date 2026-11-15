@@ -2,7 +2,9 @@
   "anvil_cost": 8,
   "description": {
     "translate": "enchantment.dnt.photosynthesis",
-    "fallback": "Photosynthesis"
+    "fallback": "Photosynthesis",
+    "color": "gold",
+    "bold": true
   },
   "effects": {
     "minecraft:tick": [

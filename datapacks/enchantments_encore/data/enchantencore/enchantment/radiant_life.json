@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Radiant Life",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#enchantencore:exclusive_set/sword_leech",
   "supported_items": "#enchantencore:weapons",

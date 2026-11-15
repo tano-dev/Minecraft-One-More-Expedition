@@ -3,7 +3,7 @@
     "biomes": "#yggdrasil:has_structure/asgard",
     "liquid_settings": "ignore_waterlogging",
     "step": "surface_structures",
-    "terrain_adaptation": "beard_thin",
+    "terrain_adaptation": "none",
     "spawn_overrides": {},
     "start_pool": "yggdrasil:asgard/main",
     "size": 20,

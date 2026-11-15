@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Frenzy",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_frenzy",
   "supported_items": "#minecraft:enchantable/leg_armor",

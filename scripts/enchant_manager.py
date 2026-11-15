@@ -437,12 +437,19 @@ def cmd_scan():
     print(f"       Enabled: {config_out['statistics']['enabled']}, Disabled/Duplicates: {config_out['statistics']['disabled_duplicates']}")
 
 
-def _apply_color_to_desc(desc, color):
+def _apply_color_to_desc(desc, color, bold=False):
     if isinstance(desc, dict):
         d = dict(desc)
         d["color"] = color
+        if bold:
+            d["bold"] = True
+        elif "bold" in d and not bold:
+            d.pop("bold", None)
         return d
-    return {"text": str(desc), "color": color}
+    res = {"text": str(desc), "color": color}
+    if bold:
+        res["bold"] = True
+    return res
 
 
 # Item-type mapping for accurate real-world Enchanting Table Rare % calculation
@@ -578,9 +585,10 @@ def cmd_build():
         tier = cfg.get("tier", "common")
         is_curse = cfg.get("curse", False)
         color = "red" if is_curse else TIER_DEFAULTS[tier]["color"]
+        bold = (tier == "ultimate" and not is_curse)
 
         if "description" in raw:
-            raw["description"] = _apply_color_to_desc(raw["description"], color)
+            raw["description"] = _apply_color_to_desc(raw["description"], color, bold=bold)
 
         if "max_level" in cfg:
             raw["max_level"] = cfg["max_level"]

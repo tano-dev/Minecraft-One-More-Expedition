@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Bomber",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_bomber",
   "supported_items": "#enchantencore:all_bows",

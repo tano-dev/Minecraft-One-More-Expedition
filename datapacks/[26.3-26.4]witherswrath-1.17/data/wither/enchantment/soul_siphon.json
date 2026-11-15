@@ -2,7 +2,8 @@
   "anvil_cost": 1,
   "description": {
     "text": "Soul Siphon",
-    "color": "dark_aqua"
+    "color": "gold",
+    "bold": true
   },
   "max_cost": {
     "base": 1,

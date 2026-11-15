@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Vitality",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_vitality",
   "supported_items": "#minecraft:enchantable/armor",

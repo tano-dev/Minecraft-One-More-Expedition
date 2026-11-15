@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Aurora",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#enchantencore:ultimate",
   "supported_items": "#minecraft:enchantable/head_armor",

@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Radiant Life",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_radiant_life",
   "supported_items": "#enchantencore:weapons",

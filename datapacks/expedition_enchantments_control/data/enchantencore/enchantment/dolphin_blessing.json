@@ -1,7 +1,8 @@
 {
   "description": {
     "text": "Dolphin Blessing",
-    "color": "gold"
+    "color": "gold",
+    "bold": true
   },
   "supported_items": "#minecraft:enchantable/foot_armor",
   "exclusive_set": "#expedition:exclusive/enchantencore_dolphin_blessing",

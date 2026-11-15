@@ -1,7 +1,9 @@
 {
   "description": {
     "translate": "enchantment.enchantplus.bedrock_breaker",
-    "fallback": "Bedrock Breaker"
+    "fallback": "Bedrock Breaker",
+    "color": "gold",
+    "bold": true
   },
   "exclusive_set": "#enchantplus:exclusive_set/mining",
   "supported_items": "#voxel:enchantable/pickaxes",
