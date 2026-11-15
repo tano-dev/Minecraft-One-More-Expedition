@@ -22,19 +22,15 @@
   "effects": {
     "minecraft:post_attack": [
       {
-        "requirements": [
-          {
-            "type": "minecraft:damage_source_properties",
-            "predicate": {
-              "is_direct": false
-            }
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "is_direct": false
           }
-        ],
+        },
         "effect": {
           "type": "minecraft:apply_mob_effect",
-          "to_apply": [
-            "minecraft:speed"
-          ],
+          "to_apply": "minecraft:speed",
           "min_duration": {
             "type": "minecraft:linear",
             "base": 4,
@@ -52,19 +48,15 @@
         "affected": "attacker"
       },
       {
-        "requirements": [
-          {
-            "type": "minecraft:damage_source_properties",
-            "predicate": {
-              "is_direct": false
-            }
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "is_direct": false
           }
-        ],
+        },
         "effect": {
           "type": "minecraft:apply_mob_effect",
-          "to_apply": [
-            "minecraft:strength"
-          ],
+          "to_apply": "minecraft:strength",
           "min_duration": {
             "type": "minecraft:linear",
             "base": 4,

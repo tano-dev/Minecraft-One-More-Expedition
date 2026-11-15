@@ -50,7 +50,7 @@
             "state": "minecraft:air"
           },
           "predicate": {
-            "type": "minecraft:all_of",
+            "minecraft:entity_type": "minecraft:all_of",
             "predicates": [
               {
                 "type": "minecraft:matching_blocks",

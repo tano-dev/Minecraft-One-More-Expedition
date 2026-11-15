@@ -22,25 +22,28 @@
   "effects": {
     "minecraft:tick": [
       {
-        "requirements": [
-          {
-            "type": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "hearty": {
-                "min": 1,
-                "max": 8
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "hearty": {
+                  "min": 1,
+                  "max": 8
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "periodic_tick": 20
               }
             }
-          },
-          {
-            "type": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "periodic_tick": 20
-            }
-          }
-        ],
+          ]
+        },
         "effect": {
           "type": "minecraft:apply_mob_effect",
           "to_apply": "minecraft:resistance",
@@ -71,25 +74,28 @@
         }
       },
       {
-        "requirements": [
-          {
-            "type": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "hearty": {
-                "min": 1,
-                "max": 10
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "hearty": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "periodic_tick": 20
               }
             }
-          },
-          {
-            "type": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "periodic_tick": 20
-            }
-          }
-        ],
+          ]
+        },
         "effect": {
           "type": "minecraft:apply_mob_effect",
           "to_apply": "minecraft:speed",
@@ -140,25 +146,28 @@
         }
       },
       {
-        "requirements": [
-          {
-            "type": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "hearty": {
-                "min": 1,
-                "max": 10
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "hearty": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "periodic_tick": 20
               }
             }
-          },
-          {
-            "type": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "periodic_tick": 20
-            }
-          }
-        ],
+          ]
+        },
         "effect": {
           "type": "minecraft:apply_mob_effect",
           "to_apply": "minecraft:fire_resistance",

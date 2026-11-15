@@ -5,7 +5,7 @@
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_nightmare",
   "supported_items": "#minecraft:enchantable/fire_aspect",
-  "primary_items": "#minecraft:enchantable/sword",
+  "primary_items": "#minecraft:enchantable/sharp_weapon",
   "weight": 1,
   "max_level": 3,
   "min_cost": {
@@ -65,23 +65,41 @@
           }
         },
         "effect": {
-          "type": "minecraft:apply_mob_effect",
-          "to_apply": [
-            "minecraft:blindness",
-            "minecraft:darkness"
-          ],
-          "min_duration": {
-            "type": "minecraft:linear",
-            "base": 5,
-            "per_level_above_first": 3
-          },
-          "max_duration": {
-            "type": "minecraft:linear",
-            "base": 5,
-            "per_level_above_first": 3
-          },
-          "min_amplifier": 0,
-          "max_amplifier": 0
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:apply_mob_effect",
+              "to_apply": "minecraft:blindness",
+              "min_duration": {
+                "type": "minecraft:linear",
+                "base": 5,
+                "per_level_above_first": 3
+              },
+              "max_duration": {
+                "type": "minecraft:linear",
+                "base": 5,
+                "per_level_above_first": 3
+              },
+              "min_amplifier": 0,
+              "max_amplifier": 0
+            },
+            {
+              "type": "minecraft:apply_mob_effect",
+              "to_apply": "minecraft:darkness",
+              "min_duration": {
+                "type": "minecraft:linear",
+                "base": 5,
+                "per_level_above_first": 3
+              },
+              "max_duration": {
+                "type": "minecraft:linear",
+                "base": 5,
+                "per_level_above_first": 3
+              },
+              "min_amplifier": 0,
+              "max_amplifier": 0
+            }
+          ]
         },
         "enchanted": "attacker",
         "affected": "victim"

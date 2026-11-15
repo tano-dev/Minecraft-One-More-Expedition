@@ -5,7 +5,7 @@
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_radiant_life",
   "supported_items": "#enchantencore:weapons",
-  "primary_items": "#minecraft:enchantable/sword",
+  "primary_items": "#minecraft:enchantable/sharp_weapon",
   "weight": 1,
   "max_level": 3,
   "min_cost": {

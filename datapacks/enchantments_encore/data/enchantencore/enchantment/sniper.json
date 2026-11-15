@@ -30,33 +30,31 @@
             "per_level_above_first": 0.5
           }
         },
-        "requirements": [
-          {
-            "type": "minecraft:all_of",
-            "terms": [
-              {
-                "type": "minecraft:damage_source_properties",
-                "predicate": {
-                  "source_entity": {
-                    "distance": {
-                      "absolute": {
-                        "min": 50,
-                        "max": 2000
-                      }
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:damage_source_properties",
+              "predicate": {
+                "source_entity": {
+                  "distance": {
+                    "absolute": {
+                      "min": 50,
+                      "max": 2000
                     }
                   }
                 }
-              },
-              {
-                "type": "minecraft:entity_properties",
-                "entity": "direct_attacker",
-                "predicate": {
-                  "type": "#minecraft:arrows"
-                }
               }
-            ]
-          }
-        ]
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "minecraft:entity_type": "#minecraft:arrows"
+              }
+            }
+          ]
+        }
       },
       {
         "effect": {
@@ -67,33 +65,31 @@
             "per_level_above_first": 0.4
           }
         },
-        "requirements": [
-          {
-            "type": "minecraft:all_of",
-            "terms": [
-              {
-                "type": "minecraft:damage_source_properties",
-                "predicate": {
-                  "source_entity": {
-                    "distance": {
-                      "absolute": {
-                        "min": 40,
-                        "max": 50
-                      }
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:damage_source_properties",
+              "predicate": {
+                "source_entity": {
+                  "distance": {
+                    "absolute": {
+                      "min": 40,
+                      "max": 50
                     }
                   }
                 }
-              },
-              {
-                "type": "minecraft:entity_properties",
-                "entity": "direct_attacker",
-                "predicate": {
-                  "type": "#minecraft:arrows"
-                }
               }
-            ]
-          }
-        ]
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "minecraft:entity_type": "#minecraft:arrows"
+              }
+            }
+          ]
+        }
       },
       {
         "effect": {
@@ -104,33 +100,31 @@
             "per_level_above_first": 0.3
           }
         },
-        "requirements": [
-          {
-            "type": "minecraft:all_of",
-            "terms": [
-              {
-                "type": "minecraft:damage_source_properties",
-                "predicate": {
-                  "source_entity": {
-                    "distance": {
-                      "absolute": {
-                        "min": 30,
-                        "max": 40
-                      }
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:damage_source_properties",
+              "predicate": {
+                "source_entity": {
+                  "distance": {
+                    "absolute": {
+                      "min": 30,
+                      "max": 40
                     }
                   }
                 }
-              },
-              {
-                "type": "minecraft:entity_properties",
-                "entity": "direct_attacker",
-                "predicate": {
-                  "type": "#minecraft:arrows"
-                }
               }
-            ]
-          }
-        ]
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "minecraft:entity_type": "#minecraft:arrows"
+              }
+            }
+          ]
+        }
       },
       {
         "effect": {
@@ -141,33 +135,31 @@
             "per_level_above_first": 0.2
           }
         },
-        "requirements": [
-          {
-            "type": "minecraft:all_of",
-            "terms": [
-              {
-                "type": "minecraft:damage_source_properties",
-                "predicate": {
-                  "source_entity": {
-                    "distance": {
-                      "absolute": {
-                        "min": 20,
-                        "max": 30
-                      }
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:damage_source_properties",
+              "predicate": {
+                "source_entity": {
+                  "distance": {
+                    "absolute": {
+                      "min": 20,
+                      "max": 30
                     }
                   }
                 }
-              },
-              {
-                "type": "minecraft:entity_properties",
-                "entity": "direct_attacker",
-                "predicate": {
-                  "type": "#minecraft:arrows"
-                }
               }
-            ]
-          }
-        ]
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "minecraft:entity_type": "#minecraft:arrows"
+              }
+            }
+          ]
+        }
       },
       {
         "effect": {
@@ -178,33 +170,31 @@
             "per_level_above_first": 0.1
           }
         },
-        "requirements": [
-          {
-            "type": "minecraft:all_of",
-            "terms": [
-              {
-                "type": "minecraft:damage_source_properties",
-                "predicate": {
-                  "source_entity": {
-                    "distance": {
-                      "absolute": {
-                        "min": 10,
-                        "max": 20
-                      }
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:damage_source_properties",
+              "predicate": {
+                "source_entity": {
+                  "distance": {
+                    "absolute": {
+                      "min": 10,
+                      "max": 20
                     }
                   }
                 }
-              },
-              {
-                "type": "minecraft:entity_properties",
-                "entity": "direct_attacker",
-                "predicate": {
-                  "type": "#minecraft:arrows"
-                }
               }
-            ]
-          }
-        ]
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "minecraft:entity_type": "#minecraft:arrows"
+              }
+            }
+          ]
+        }
       }
     ]
   }

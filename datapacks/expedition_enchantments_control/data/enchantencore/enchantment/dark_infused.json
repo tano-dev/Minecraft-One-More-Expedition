@@ -22,14 +22,12 @@
   "effects": {
     "minecraft:post_attack": [
       {
-        "requirements": [
-          {
-            "type": "minecraft:damage_source_properties",
-            "predicate": {
-              "is_direct": false
-            }
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "is_direct": false
           }
-        ],
+        },
         "effect": {
           "type": "minecraft:apply_mob_effect",
           "to_apply": "minecraft:blindness",
