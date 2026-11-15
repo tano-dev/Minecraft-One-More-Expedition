@@ -1,6 +1,8 @@
 package com.expedition.enchants.mixin;
 
+import com.expedition.enchants.command.EnchantRigManager;
 import com.expedition.enchants.config.EnchantRollConfig;
+import com.expedition.enchants.roll.CustomEnchantRoller;
 import com.expedition.enchants.ui.RevealEnchantsMenu;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Container;
@@ -20,15 +22,27 @@ public class EnchantmentMenuMixin {
     @Final
     private Container enchantSlots;
 
+    @Inject(method = "clickMenuButton", at = @At("HEAD"))
+    private void expedition$beforeClickMenuButton(Player player, int id, CallbackInfoReturnable<Boolean> cir) {
+        if (player instanceof ServerPlayer sp) {
+            EnchantRigManager.setCurrentPlayer(sp);
+        }
+    }
+
     @Inject(method = "clickMenuButton", at = @At("RETURN"))
     private void expedition$openRevealUi(Player player, int id, CallbackInfoReturnable<Boolean> cir) {
-        if (!cir.getReturnValue()) return;
-        if (!EnchantRollConfig.get().enableRevealUi) return;
-        if (!(player instanceof ServerPlayer sp)) return;
+        try {
+            if (!cir.getReturnValue()) return;
+            boolean isGodroll = CustomEnchantRoller.consumeLastRollGodroll();
+            if (!EnchantRollConfig.get().enableRevealUi) return;
+            if (!(player instanceof ServerPlayer sp)) return;
 
-        ItemStack enchanted = this.enchantSlots.getItem(0);
-        if (!enchanted.isEmpty()) {
-            RevealEnchantsMenu.open(sp, enchanted);
+            ItemStack enchanted = this.enchantSlots.getItem(0);
+            if (!enchanted.isEmpty()) {
+                RevealEnchantsMenu.open(sp, enchanted, isGodroll);
+            }
+        } finally {
+            EnchantRigManager.setCurrentPlayer(null);
         }
     }
 }

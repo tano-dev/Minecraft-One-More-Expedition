@@ -27,12 +27,19 @@ public class EnchantRollConfig {
         "rare", 0.05
     ));
 
-    // Weights for how many enchantments are rolled on an item at Lv 30
+    // Godroll settings (at Lv 30, disabled below Lv 20)
+    public double godrollChance = 0.015;
+    public double godrollEpicChance = 0.15;
+    public double godrollRareChance = 0.35;
+    public int godrollMinEnchants = 4;
+    public int godrollMaxEnchants = 5;
+
+    // Target weights for how many enchantments are rolled on an item at Lv 30 (2-5 enchants)
     public Map<String, Integer> enchantCountWeights = new LinkedHashMap<>(Map.of(
-        "1", 20,
-        "2", 45,
-        "3", 28,
-        "4", 7
+        "2", 20,
+        "3", 50,
+        "4", 22,
+        "5", 8
     ));
 
     // Level distribution weights keyed by max_level (at Lv 30)

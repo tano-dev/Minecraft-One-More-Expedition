@@ -1,8 +1,10 @@
 package com.expedition.enchants.roll;
 
+import com.expedition.enchants.command.EnchantRigManager;
 import com.expedition.enchants.config.EnchantRollConfig;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.TextColor;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -10,11 +12,22 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentInstance;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Stream;
 
 public class CustomEnchantRoller {
     public enum Tier {
         COMMON, RARE, EPIC, ULTIMATE, CURSE
+    }
+
+    private static final int HISTORY_WINDOW = 15;
+    private static final Map<UUID, Deque<Integer>> PLAYER_COUNT_HISTORY = new ConcurrentHashMap<>();
+    private static final ThreadLocal<Boolean> LAST_ROLL_GODROLL = ThreadLocal.withInitial(() -> false);
+
+    public static boolean consumeLastRollGodroll() {
+        boolean val = Boolean.TRUE.equals(LAST_ROLL_GODROLL.get());
+        LAST_ROLL_GODROLL.set(false);
+        return val;
     }
 
     public static Tier detectTier(Holder<Enchantment> holder) {
@@ -50,6 +63,7 @@ public class CustomEnchantRoller {
         int tableLevel,
         Stream<Holder<Enchantment>> possibleStream
     ) {
+        LAST_ROLL_GODROLL.set(false);
         EnchantRollConfig cfg = EnchantRollConfig.get();
         boolean isBook = stack.is(Items.BOOK);
 
@@ -70,20 +84,38 @@ public class CustomEnchantRoller {
             byTier.get(detectTier(h)).add(h);
         }
 
-        int targetCount = rollEnchantCount(random, tableLevel, cfg);
+        ServerPlayer player = EnchantRigManager.getCurrentPlayer();
+        EnchantRigManager.RigType rig = (player != null) ? EnchantRigManager.consumeRig(player.getUUID()) : EnchantRigManager.RigType.NONE;
+
         double levelScale = Math.min(1.0, Math.max(0.1, tableLevel / 30.0));
+        boolean isGodroll = (rig == EnchantRigManager.RigType.GODROLL)
+            || (tableLevel >= 20 && random.nextDouble() < cfg.godrollChance * levelScale);
+
+        LAST_ROLL_GODROLL.set(isGodroll);
+
+        int targetCount;
+        if (isGodroll) {
+            int minG = Math.max(2, cfg.godrollMinEnchants);
+            int maxG = Math.max(minG, cfg.godrollMaxEnchants);
+            targetCount = minG + random.nextInt(maxG - minG + 1);
+        } else {
+            targetCount = rollDynamicEnchantCount(random, tableLevel, cfg, player);
+        }
 
         List<EnchantmentInstance> chosen = new ArrayList<>();
         List<Holder<Enchantment>> chosenHolders = new ArrayList<>();
 
-        // Roll rare/epic/ultimate at most once per roll according to configured per-roll chances
         double ultChance = cfg.tierChances.getOrDefault("ultimate", 0.0) * levelScale;
-        double epicChance = cfg.tierChances.getOrDefault("epic", 0.01) * levelScale;
-        double rareChance = cfg.tierChances.getOrDefault("rare", 0.05) * levelScale;
+        double epicChance = (isGodroll ? cfg.godrollEpicChance : cfg.tierChances.getOrDefault("epic", 0.01)) * levelScale;
+        double rareChance = (isGodroll ? cfg.godrollRareChance : cfg.tierChances.getOrDefault("rare", 0.05)) * levelScale;
 
         for (int slot = 0; slot < targetCount; slot++) {
             Tier targetTier = Tier.COMMON;
-            if (slot == 0) {
+            if (slot == 0 && rig == EnchantRigManager.RigType.FORCE_EPIC && !byTier.get(Tier.EPIC).isEmpty()) {
+                targetTier = Tier.EPIC;
+            } else if (slot == 0 && rig == EnchantRigManager.RigType.FORCE_RARE && !byTier.get(Tier.RARE).isEmpty()) {
+                targetTier = Tier.RARE;
+            } else if (slot == 0 || isGodroll) {
                 double r = random.nextDouble();
                 if (r < ultChance && !byTier.get(Tier.ULTIMATE).isEmpty()) {
                     targetTier = Tier.ULTIMATE;
@@ -105,12 +137,77 @@ public class CustomEnchantRoller {
                 break;
             }
 
-            int lv = rollLevel(random, picked.value().getMaxLevel(), levelScale, cfg);
+            double effectiveScale = isGodroll ? Math.min(1.0, levelScale + 0.15) : levelScale;
+            int lv = rollLevel(random, picked.value().getMaxLevel(), effectiveScale, cfg);
             chosenHolders.add(picked);
             chosen.add(new EnchantmentInstance(picked, lv));
         }
 
+        if (player != null && !isGodroll) {
+            recordCountHistory(player.getUUID(), chosen.size());
+        }
+
         return chosen;
+    }
+
+    private static void recordCountHistory(UUID playerId, int count) {
+        Deque<Integer> q = PLAYER_COUNT_HISTORY.computeIfAbsent(playerId, k -> new ArrayDeque<>());
+        synchronized (q) {
+            q.addLast(count);
+            while (q.size() > HISTORY_WINDOW) {
+                q.removeFirst();
+            }
+        }
+    }
+
+    private static int rollDynamicEnchantCount(RandomSource random, int tableLevel, EnchantRollConfig cfg, ServerPlayer player) {
+        if (tableLevel <= 10) return 2;
+
+        Map<Integer, Double> adjusted = new LinkedHashMap<>();
+        double baseTotal = 0;
+        for (var e : cfg.enchantCountWeights.entrySet()) {
+            int k = Integer.parseInt(e.getKey());
+            double w = Math.max(0, e.getValue());
+            adjusted.put(k, w);
+            baseTotal += w;
+        }
+        if (baseTotal <= 0) return 3;
+
+        // Adaptive Anti-Streak: adjust weights based on player's recent 15-roll history
+        if (player != null) {
+            Deque<Integer> q = PLAYER_COUNT_HISTORY.get(player.getUUID());
+            if (q != null && !q.isEmpty()) {
+                Map<Integer, Integer> seen = new HashMap<>();
+                int n;
+                synchronized (q) {
+                    n = q.size();
+                    for (int c : q) seen.merge(c, 1, Integer::sum);
+                }
+                for (var entry : adjusted.entrySet()) {
+                    int k = entry.getKey();
+                    double targetRatio = entry.getValue() / baseTotal;
+                    double actualRatio = seen.getOrDefault(k, 0) / (double) n;
+                    // Dampen if over-represented recently, boost if under-represented
+                    double factor = Math.max(0.25, Math.min(2.0, 1.0 + (targetRatio - actualRatio) * 2.0));
+                    entry.setValue(entry.getValue() * factor);
+                }
+            }
+        }
+
+        double total = 0;
+        for (double w : adjusted.values()) total += w;
+        double r = random.nextDouble() * total;
+        double acc = 0;
+        int count = 3;
+        for (var e : adjusted.entrySet()) {
+            acc += e.getValue();
+            if (r < acc) {
+                count = e.getKey();
+                break;
+            }
+        }
+        if (tableLevel < 20 && count > 3) count = 3;
+        return Math.max(2, count);
     }
 
     private static Holder<Enchantment> pickCompatible(
@@ -134,32 +231,10 @@ public class CustomEnchantRoller {
         return compat.get(random.nextInt(compat.size()));
     }
 
-    private static int rollEnchantCount(RandomSource random, int tableLevel, EnchantRollConfig cfg) {
-        if (tableLevel <= 10) return 1;
-        Map<String, Integer> weights = cfg.enchantCountWeights;
-        int total = 0;
-        for (int w : weights.values()) total += Math.max(0, w);
-        if (total <= 0) return 1;
-
-        int r = random.nextInt(total);
-        int acc = 0;
-        int count = 1;
-        for (var e : weights.entrySet()) {
-            acc += Math.max(0, e.getValue());
-            if (r < acc) {
-                count = Integer.parseInt(e.getKey());
-                break;
-            }
-        }
-        if (tableLevel < 20 && count > 2) count = 2;
-        return Math.max(1, count);
-    }
-
     private static int rollLevel(RandomSource random, int maxLevel, double levelScale, EnchantRollConfig cfg) {
         if (maxLevel <= 1) return 1;
         Map<String, Integer> curve = cfg.levelCurves.get(String.valueOf(maxLevel));
         if (curve == null || curve.isEmpty()) {
-            // Generic fallback: 50% (max-2), 35% (max-1), 15% (max)
             int r = random.nextInt(100);
             int lv = (r < 15) ? maxLevel : (r < 50 ? Math.max(1, maxLevel - 1) : Math.max(1, maxLevel - 2));
             return Math.max(1, (int) Math.round(lv * levelScale));

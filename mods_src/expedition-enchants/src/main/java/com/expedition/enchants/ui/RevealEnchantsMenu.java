@@ -40,7 +40,7 @@ public class RevealEnchantsMenu extends ChestMenu {
         }
     }
 
-    public static void open(ServerPlayer player, ItemStack enchantedItem) {
+    public static void open(ServerPlayer player, ItemStack enchantedItem, boolean isGodroll) {
         ItemEnchantments enchants = enchantedItem.getOrDefault(DataComponents.ENCHANTMENTS, ItemEnchantments.EMPTY);
         if (enchants.isEmpty()) {
             enchants = enchantedItem.getOrDefault(DataComponents.STORED_ENCHANTMENTS, ItemEnchantments.EMPTY);
@@ -48,9 +48,24 @@ public class RevealEnchantsMenu extends ChestMenu {
         if (enchants.isEmpty()) return;
 
         List<Map.Entry<Holder<Enchantment>, Integer>> entries = new ArrayList<>(enchants.entrySet());
+
+        if (isGodroll) {
+            player.level().playSound(null, player.blockPosition(), SoundEvents.FIREWORK_ROCKET_LAUNCH, SoundSource.PLAYERS, 1.0f, 1.0f);
+            if (player.level().getServer() != null) {
+                Component msg = Component.literal("§6§l✦ GODROLL! §e" + player.getName().getString() + " §7vừa phù phép ra ")
+                    .append(enchantedItem.getHoverName())
+                    .append(Component.literal(" §6(" + entries.size() + " dòng)§7!"));
+                player.level().getServer().getPlayerList().broadcastSystemMessage(msg, false);
+            }
+        }
+
+        Component title = isGodroll
+            ? Component.literal("§6§l✦ GODROLL! §8[§bReveal Enchants§8]")
+            : Component.literal("§8[§bReveal Enchants§8]");
+
         player.openMenu(new SimpleMenuProvider(
             (syncId, inv, p) -> new RevealEnchantsMenu(syncId, inv, enchantedItem.copy(), entries),
-            Component.literal("§8[§bReveal Enchants§8]")
+            title
         ));
     }
 
