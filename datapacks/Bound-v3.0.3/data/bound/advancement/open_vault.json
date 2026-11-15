@@ -3,24 +3,21 @@
     "requirement": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "player": [],
-        "location": [
-          {
-            "type": "minecraft:all_of",
-            "terms": [
-              {
-                "type": "minecraft:match_tool",
-                "predicate": {
-                  "items": "minecraft:ominous_trial_key"
-                }
-              },
-              {
-                "type": "minecraft:block_state_property",
-                "block": "minecraft:vault"
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:ominous_trial_key"
               }
-            ]
-          }
-        ]
+            },
+            {
+              "type": "minecraft:block_state_property",
+              "block": "minecraft:vault"
+            }
+          ]
+        }
       }
     }
   },
