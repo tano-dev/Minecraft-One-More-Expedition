@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "enchantencore:night_protection",
+      "required": false
+    },
+    {
+      "id": "enchantencore:day_protection",
+      "required": false
+    },
+    {
+      "id": "enchantencore:nether_protection",
+      "required": false
+    },
+    {
+      "id": "enchantencore:end_protection",
+      "required": false
+    },
+    {
+      "id": "#enchantencore:ultimate",
+      "required": false
+    },
+    {
+      "id": "minecraft:protection",
+      "required": false
+    },
+    {
+      "id": "minecraft:fire_protection",
+      "required": false
+    },
+    {
+      "id": "minecraft:blast_protection",
+      "required": false
+    },
+    {
+      "id": "minecraft:projectile_protection",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "minecraft:riptide",
+      "required": false
+    },
+    {
+      "id": "minecraft:loyalty",
+      "required": false
+    },
+    {
+      "id": "#enchantencore:ultimate",
+      "required": false
+    }
+  ]
+}

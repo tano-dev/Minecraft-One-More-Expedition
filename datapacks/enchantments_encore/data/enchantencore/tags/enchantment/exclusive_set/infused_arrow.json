@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "enchantencore:archer_barrage",
+      "required": false
+    },
+    {
+      "id": "enchantencore:web_infused",
+      "required": false
+    },
+    {
+      "id": "enchantencore:dark_infused",
+      "required": false
+    },
+    {
+      "id": "enchantencore:wither_infused",
+      "required": false
+    },
+    {
+      "id": "enchantencore:poison_infused",
+      "required": false
+    },
+    {
+      "id": "enchantencore:lightning_bolt",
+      "required": false
+    }
+  ]
+}

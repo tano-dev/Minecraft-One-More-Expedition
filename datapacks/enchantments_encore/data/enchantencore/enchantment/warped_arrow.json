@@ -1,0 +1,50 @@
+{
+  "description": {
+    "text": "Warped Arrow",
+    "color": "yellow"
+  },
+  "exclusive_set": "#enchantencore:exclusive_set/ultimate_bow",
+  "supported_items": "#enchantencore:all_bows",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:projectile_spawned": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:warpedarrow"
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "requirements": [
+          {
+            "type": "minecraft:damage_source_properties",
+            "predicate": {
+              "is_direct": false
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:warpedarrow_impact"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  }
+}

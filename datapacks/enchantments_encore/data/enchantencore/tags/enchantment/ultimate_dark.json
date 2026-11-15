@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "enchantencore:nightmare",
+      "required": false
+    },
+    {
+      "id": "enchantencore:perfect_protection",
+      "required": false
+    },
+    {
+      "id": "enchantencore:spectral_form",
+      "required": false
+    },
+    {
+      "id": "enchantencore:vitality",
+      "required": false
+    },
+    {
+      "id": "enchantencore:warden",
+      "required": false
+    },
+    {
+      "id": "enchantencore:creeper_blessing",
+      "required": false
+    }
+  ]
+}

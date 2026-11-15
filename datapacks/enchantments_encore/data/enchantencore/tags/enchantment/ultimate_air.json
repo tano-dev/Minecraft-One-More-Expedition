@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "enchantencore:infinity_durability",
+      "required": false
+    },
+    {
+      "id": "enchantencore:perfect_protection",
+      "required": false
+    },
+    {
+      "id": "enchantencore:spectral_form",
+      "required": false
+    },
+    {
+      "id": "enchantencore:wind_spirit",
+      "required": false
+    },
+    {
+      "id": "enchantencore:adrenaline",
+      "required": false
+    },
+    {
+      "id": "enchantencore:reflection",
+      "required": false
+    }
+  ]
+}

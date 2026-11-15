@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "enchantencore:dolphin_blessing",
+      "required": false
+    },
+    {
+      "id": "enchantencore:infinity_durability",
+      "required": false
+    },
+    {
+      "id": "enchantencore:neptune",
+      "required": false
+    },
+    {
+      "id": "enchantencore:poseidon",
+      "required": false
+    },
+    {
+      "id": "enchantencore:warped_trident",
+      "required": false
+    },
+    {
+      "id": "enchantencore:perfect_protection",
+      "required": false
+    }
+  ]
+}

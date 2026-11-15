@@ -31,7 +31,7 @@
           "function": "enchantplus:actions/eternal_frost"
         },
         "requirements": {
-          "condition": "minecraft:entity_properties",
+          "type": "minecraft:entity_properties",
           "entity": "direct_attacker",
           "predicate": {
             "minecraft:entity_type": "#minecraft:arrows"
@@ -74,7 +74,7 @@
           "function": "enchantplus:actions/eternal_frost"
         },
         "requirements": {
-          "condition": "minecraft:entity_properties",
+          "type": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
             "minecraft:entity_type": "#minecraft:arrows"
@@ -85,10 +85,10 @@
         "effect": {
           "type": "minecraft:replace_disk",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
+            "type": "minecraft:simple",
             "state": {
-              "Name": "minecraft:frosted_ice",
-              "Properties": {
+              "id": "minecraft:frosted_ice",
+              "properties": {
                 "age": "0"
               }
             }
@@ -130,7 +130,7 @@
           "trigger_game_event": "minecraft:block_place"
         },
         "requirements": {
-          "condition": "minecraft:entity_properties",
+          "type": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
             "minecraft:entity_type": "#minecraft:arrows"

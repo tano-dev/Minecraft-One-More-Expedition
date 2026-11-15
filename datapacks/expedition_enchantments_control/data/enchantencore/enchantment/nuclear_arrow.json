@@ -1,0 +1,116 @@
+{
+  "description": {
+    "text": "Nuclear Arrow",
+    "color": "gold"
+  },
+  "exclusive_set": "#expedition:exclusive/enchantencore_nuclear_arrow",
+  "supported_items": "#enchantencore:all_bows",
+  "weight": 1,
+  "max_level": 5,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 6,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:explode",
+          "damage_type": "minecraft:explosion",
+          "radius": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 0.25
+          },
+          "offset": [
+            0,
+            0.5,
+            0
+          ],
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:explosion_emitter"
+          },
+          "large_particle": {
+            "type": "minecraft:explosion_emitter"
+          },
+          "sound": "minecraft:entity.generic.explode",
+          "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+          "knockback_multiplier": {
+            "type": "minecraft:linear",
+            "base": 0.2,
+            "per_level_above_first": 0.2
+          }
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "type": "#enchantencore:hard_projectiles"
+          }
+        }
+      }
+    ],
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:explode",
+          "damage_type": "minecraft:explosion",
+          "radius": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 0.25
+          },
+          "offset": [
+            0,
+            0.5,
+            0
+          ],
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:explosion_emitter"
+          },
+          "large_particle": {
+            "type": "minecraft:explosion_emitter"
+          },
+          "sound": "minecraft:entity.generic.explode",
+          "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+          "knockback_multiplier": {
+            "type": "minecraft:linear",
+            "base": 0.2,
+            "per_level_above_first": 0.2
+          }
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#enchantencore:hard_projectiles"
+          }
+        }
+      }
+    ],
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 10,
+            "per_level_above_first": 2
+          }
+        }
+      }
+    ]
+  }
+}

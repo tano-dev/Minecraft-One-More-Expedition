@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "enchantencore:radiant_life",
+      "required": false
+    },
+    {
+      "id": "enchantencore:heroes_crown",
+      "required": false
+    },
+    {
+      "id": "enchantencore:perfect_protection",
+      "required": false
+    }
+  ]
+}

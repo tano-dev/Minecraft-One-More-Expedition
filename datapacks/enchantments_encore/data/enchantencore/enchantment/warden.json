@@ -1,0 +1,75 @@
+{
+  "description": {
+    "text": "Warden",
+    "color": "yellow"
+  },
+  "exclusive_set": "#enchantencore:ultimate",
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 3,
+  "max_level": 5,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:blindness",
+          "min_duration": 4,
+          "max_duration": 4,
+          "min_amplifier": 0,
+          "max_amplifier": 0
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 60
+          }
+        }
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:sweeping_damage_ratio",
+        "id": "enchantencore:warden_sweeping_damage",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.05,
+          "per_level_above_first": 0.05
+        },
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "enchantencore:warden_attack_damage",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        },
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "minecraft:movement_speed",
+        "id": "enchantencore:warden_movement_speed",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.02,
+          "per_level_above_first": -0.02
+        },
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
+}

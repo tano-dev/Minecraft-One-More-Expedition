@@ -1,0 +1,96 @@
+{
+  "description": {
+    "text": "Blaze Blessing",
+    "color": "yellow"
+  },
+  "exclusive_set": "#enchantencore:ultimate",
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "weight": 3,
+  "max_level": 5,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "legs"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.2,
+          "per_level_above_first": -0.2
+        },
+        "attribute": "minecraft:burning_time",
+        "id": "minecraft:enchantment.fire_protection",
+        "operation": "add_multiplied_base"
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:ignite",
+          "duration": {
+            "type": "minecraft:linear",
+            "base": 3,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ],
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 10,
+            "per_level_above_first": 5
+          }
+        },
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "#minecraft:is_explosion"
+              },
+              {
+                "expected": false,
+                "id": "#minecraft:bypasses_invulnerability"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:fire_resistance",
+          "min_duration": 15,
+          "max_duration": 15,
+          "min_amplifier": 0,
+          "max_amplifier": 0
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 200
+          }
+        }
+      }
+    ]
+  }
+}

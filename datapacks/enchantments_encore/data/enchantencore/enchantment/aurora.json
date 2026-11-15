@@ -1,0 +1,64 @@
+{
+  "description": {
+    "text": "Aurora",
+    "color": "yellow"
+  },
+  "exclusive_set": "#enchantencore:ultimate",
+  "supported_items": "#minecraft:enchantable/head_armor",
+  "weight": 3,
+  "max_level": 5,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:regeneration",
+          "min_duration": {
+            "type": "minecraft:linear",
+            "base": 5,
+            "per_level_above_first": 1
+          },
+          "max_duration": {
+            "type": "minecraft:linear",
+            "base": 5,
+            "per_level_above_first": 1
+          },
+          "min_amplifier": 1,
+          "max_amplifier": 1
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 500
+          }
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 500
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:aurora"
+        }
+      }
+    ]
+  }
+}

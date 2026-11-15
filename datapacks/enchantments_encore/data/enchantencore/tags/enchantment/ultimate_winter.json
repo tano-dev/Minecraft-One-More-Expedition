@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "enchantencore:nightmare",
+      "required": false
+    },
+    {
+      "id": "enchantencore:creeper_blessing",
+      "required": false
+    },
+    {
+      "id": "enchantencore:infinity_durability",
+      "required": false
+    },
+    {
+      "id": "enchantencore:perfect_protection",
+      "required": false
+    },
+    {
+      "id": "enchantencore:aurora",
+      "required": false
+    },
+    {
+      "id": "enchantencore:absolute_unit",
+      "required": false
+    }
+  ]
+}

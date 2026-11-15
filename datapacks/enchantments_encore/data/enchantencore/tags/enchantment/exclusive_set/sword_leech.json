@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "#enchantencore:ultimate",
+      "required": false
+    },
+    {
+      "id": "enchantencore:leech",
+      "required": false
+    }
+  ]
+}

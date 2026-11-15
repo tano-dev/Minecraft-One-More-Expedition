@@ -1,0 +1,144 @@
+{
+  "description": {
+    "text": "Frenzy",
+    "color": "gold"
+  },
+  "exclusive_set": "#expedition:exclusive/enchantencore_frenzy",
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "weight": 1,
+  "max_level": 5,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "legs"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": [
+          {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "hearty": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          },
+          {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "periodic_tick": 20
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:strength",
+          "min_duration": 2,
+          "max_duration": 2,
+          "min_amplifier": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "fallback": 1
+          },
+          "max_amplifier": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "fallback": 1
+          }
+        }
+      },
+      {
+        "requirements": [
+          {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "hearty": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          },
+          {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "periodic_tick": 20
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:haste",
+          "min_duration": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              2,
+              2,
+              2,
+              2
+            ],
+            "fallback": 2
+          },
+          "max_duration": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              2,
+              2,
+              2,
+              2
+            ],
+            "fallback": 2
+          },
+          "min_amplifier": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              1,
+              2,
+              2
+            ],
+            "fallback": 2
+          },
+          "max_amplifier": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              1,
+              2,
+              2
+            ],
+            "fallback": 2
+          }
+        }
+      }
+    ]
+  }
+}

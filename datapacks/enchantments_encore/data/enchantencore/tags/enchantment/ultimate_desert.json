@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "enchantencore:radiant_life",
+      "required": false
+    },
+    {
+      "id": "enchantencore:reflection",
+      "required": false
+    },
+    {
+      "id": "enchantencore:perfect_protection",
+      "required": false
+    },
+    {
+      "id": "enchantencore:vitality",
+      "required": false
+    },
+    {
+      "id": "enchantencore:adrenaline",
+      "required": false
+    }
+  ]
+}

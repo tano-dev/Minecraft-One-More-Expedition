@@ -1,0 +1,86 @@
+{
+  "description": {
+    "text": "Adrenaline",
+    "color": "yellow"
+  },
+  "exclusive_set": "#enchantencore:ultimate",
+  "supported_items": "#enchantencore:all_bows",
+  "weight": 1,
+  "max_level": 4,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": [
+          {
+            "type": "minecraft:damage_source_properties",
+            "predicate": {
+              "is_direct": false
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": [
+            "minecraft:speed"
+          ],
+          "min_duration": {
+            "type": "minecraft:linear",
+            "base": 4,
+            "per_level_above_first": 2
+          },
+          "max_duration": {
+            "type": "minecraft:linear",
+            "base": 4,
+            "per_level_above_first": 2
+          },
+          "min_amplifier": 0,
+          "max_amplifier": 0
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      },
+      {
+        "requirements": [
+          {
+            "type": "minecraft:damage_source_properties",
+            "predicate": {
+              "is_direct": false
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": [
+            "minecraft:strength"
+          ],
+          "min_duration": {
+            "type": "minecraft:linear",
+            "base": 4,
+            "per_level_above_first": 2
+          },
+          "max_duration": {
+            "type": "minecraft:linear",
+            "base": 4,
+            "per_level_above_first": 2
+          },
+          "min_amplifier": 0,
+          "max_amplifier": 0
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  }
+}

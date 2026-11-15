@@ -1,0 +1,97 @@
+{
+  "description": {
+    "text": "Creeper Blessing",
+    "color": "yellow"
+  },
+  "exclusive_set": "#enchantencore:ultimate",
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "weight": 3,
+  "max_level": 5,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "legs"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:explode",
+          "damage_type": "minecraft:explosion",
+          "radius": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              0.5,
+              0.75,
+              1
+            ],
+            "fallback": 1
+          },
+          "offset": [
+            0,
+            0.5,
+            0
+          ],
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:gust_emitter_small"
+          },
+          "large_particle": {
+            "type": "minecraft:gust_emitter_large"
+          },
+          "sound": "minecraft:entity.generic.explode",
+          "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+          "knockback_multiplier": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              0.5,
+              0.75,
+              1
+            ],
+            "fallback": 1
+          }
+        }
+      }
+    ],
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 10,
+            "per_level_above_first": 5
+          }
+        },
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "#minecraft:is_explosion"
+              },
+              {
+                "expected": false,
+                "id": "#minecraft:bypasses_invulnerability"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

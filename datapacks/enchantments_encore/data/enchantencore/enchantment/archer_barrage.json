@@ -1,0 +1,66 @@
+{
+  "description": {
+    "text": "Archer Barrage",
+    "color": "yellow"
+  },
+  "exclusive_set": "#enchantencore:exclusive_set/ultimate_bow",
+  "supported_items": "minecraft:bow",
+  "weight": 3,
+  "max_level": 5,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:projectile_count": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 5,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ],
+    "minecraft:projectile_spread": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 7,
+            "per_level_above_first": 7
+          }
+        }
+      }
+    ],
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:lookup",
+            "values": [
+              7,
+              7,
+              7,
+              7,
+              7
+            ],
+            "fallback": 5
+          }
+        }
+      }
+    ]
+  }
+}

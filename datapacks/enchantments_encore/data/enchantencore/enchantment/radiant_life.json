@@ -1,0 +1,63 @@
+{
+  "description": {
+    "text": "Radiant Life",
+    "color": "yellow"
+  },
+  "exclusive_set": "#enchantencore:exclusive_set/sword_leech",
+  "supported_items": "#enchantencore:weapons",
+  "primary_items": "#minecraft:enchantable/sword",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:absorption",
+          "min_duration": 1,
+          "max_duration": {
+            "type": "minecraft:lookup",
+            "values": [
+              1,
+              2,
+              1.5
+            ],
+            "fallback": 2.5
+          },
+          "min_amplifier": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              1
+            ],
+            "fallback": 1
+          },
+          "max_amplifier": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              1
+            ],
+            "fallback": 1
+          }
+        }
+      }
+    ]
+  }
+}

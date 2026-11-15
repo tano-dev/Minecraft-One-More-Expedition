@@ -1,0 +1,116 @@
+{
+  "description": {
+    "text": "Neptune",
+    "color": "yellow"
+  },
+  "exclusive_set": "#enchantencore:exclusive_set/ultimate_trident",
+  "supported_items": "#minecraft:enchantable/trident",
+  "weight": 2,
+  "max_level": 5,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 10,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:conduit_power",
+          "min_duration": 4,
+          "max_duration": 4,
+          "min_amplifier": 0,
+          "max_amplifier": 0
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 60
+          }
+        }
+      }
+    ],
+    "minecraft:trident_sound": [
+      "minecraft:item.trident.riptide_1",
+      "minecraft:item.trident.riptide_2",
+      "minecraft:item.trident.riptide_3"
+    ],
+    "minecraft:trident_spin_attack_strength": {
+      "type": "minecraft:add",
+      "value": {
+        "type": "minecraft:linear",
+        "base": 5,
+        "per_level_above_first": 1
+      }
+    },
+    "minecraft:knockback": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "is_direct": true
+          }
+        },
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:poison",
+          "min_duration": {
+            "type": "minecraft:lookup",
+            "values": [
+              3,
+              4,
+              4,
+              5,
+              5
+            ],
+            "fallback": 6
+          },
+          "max_duration": {
+            "type": "minecraft:lookup",
+            "values": [
+              3,
+              4,
+              4,
+              5,
+              5
+            ],
+            "fallback": 6
+          },
+          "min_amplifier": 1,
+          "max_amplifier": 1
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:fall_damage_multiplier",
+        "id": "enchantencore:neptune_fall_damage_multiplier",
+        "amount": -0.85,
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
+}

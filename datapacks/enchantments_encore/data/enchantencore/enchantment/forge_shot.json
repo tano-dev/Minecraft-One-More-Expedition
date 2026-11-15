@@ -1,7 +1,6 @@
 {
   "description": {
-    "translate": "enchantment.enchantencore.forge_shot",
-    "fallback": "Forge Shot"
+    "text": "Forge Shot"
   },
   "exclusive_set": "#enchantencore:exclusive_set/shot_arrow",
   "supported_items": "#enchantencore:all_bows",
@@ -27,7 +26,7 @@
           "effects": [
             {
               "type": "minecraft:run_function",
-              "function": "enchantencore:forge_shot/init"
+              "function": "enchantencore:forge_shot"
             }
           ]
         },
@@ -35,7 +34,7 @@
           "type": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "minecraft:entity_type": "#enchantencore:hard_projectiles"
+            "type": "#enchantencore:hard_projectiles"
           }
         }
       }
@@ -49,7 +48,7 @@
           "effects": [
             {
               "type": "minecraft:run_function",
-              "function": "enchantencore:forge_shot/init"
+              "function": "enchantencore:forge_shot"
             }
           ]
         },
@@ -60,7 +59,7 @@
               "type": "minecraft:entity_properties",
               "entity": "direct_attacker",
               "predicate": {
-                "minecraft:entity_type": "#enchantencore:hard_projectiles"
+                "type": "#enchantencore:hard_projectiles"
               }
             }
           ]

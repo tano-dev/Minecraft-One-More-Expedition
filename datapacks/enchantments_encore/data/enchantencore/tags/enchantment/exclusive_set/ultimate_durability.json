@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "#enchantencore:ultimate",
+      "required": false
+    },
+    {
+      "id": "minecraft:mending",
+      "required": false
+    },
+    {
+      "id": "enchantencore:handyman",
+      "required": false
+    },
+    {
+      "id": "enchantencore:sacrifice",
+      "required": false
+    }
+  ]
+}

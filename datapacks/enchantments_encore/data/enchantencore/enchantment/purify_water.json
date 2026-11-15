@@ -1,0 +1,41 @@
+{
+  "description": {
+    "text": "Purify Water",
+    "color": "aqua"
+  },
+  "exclusive_set": [],
+  "supported_items": "#minecraft:enchantable/trident",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 6
+  },
+  "max_cost": {
+    "base": 51,
+    "per_level_above_first": 6
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "type": "minecraft:trident"
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:purify_water"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "enchantencore:archer_barrage",
+      "required": false
+    },
+    {
+      "id": "enchantencore:sniper",
+      "required": false
+    },
+    {
+      "id": "enchantencore:creeper_blessing",
+      "required": false
+    },
+    {
+      "id": "enchantencore:heroes_crown",
+      "required": false
+    },
+    {
+      "id": "enchantencore:infinity_durability",
+      "required": false
+    },
+    {
+      "id": "enchantencore:machine_gun",
+      "required": false
+    },
+    {
+      "id": "enchantencore:reflection",
+      "required": false
+    },
+    {
+      "id": "enchantencore:perfect_protection",
+      "required": false
+    },
+    {
+      "id": "enchantencore:vitality",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "description": {
+    "text": "Absolute Unit",
+    "color": "yellow"
+  },
+  "exclusive_set": "#enchantencore:ultimate",
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "weight": 2,
+  "max_level": 5,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "legs"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:absorption",
+          "min_duration": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 0.25
+          },
+          "max_duration": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 0.25
+          },
+          "min_amplifier": 1,
+          "max_amplifier": 1
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": true,
+              "is_sneaking": true
+            },
+            "periodic_tick": 100
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:absolute_unit"
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": true,
+              "is_sneaking": true
+            },
+            "periodic_tick": 20
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:resistance",
+          "min_duration": 2,
+          "max_duration": 2,
+          "min_amplifier": 2,
+          "max_amplifier": 2
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": true,
+              "is_sneaking": true
+            },
+            "periodic_tick": 20
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:absolute_unit"
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": true,
+              "is_sneaking": true
+            },
+            "periodic_tick": 20
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:weakness",
+          "min_duration": 2,
+          "max_duration": 2,
+          "min_amplifier": 3,
+          "max_amplifier": 3
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": true,
+              "is_sneaking": true
+            },
+            "periodic_tick": 20
+          }
+        }
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -1,
+          "per_level_above_first": 0.075
+        },
+        "attribute": "minecraft:sneaking_speed",
+        "id": "minecraft:enchantment.swift_sneak",
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
+}

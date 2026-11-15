@@ -1,20 +1,19 @@
 {
   "description": {
-    "translate": "enchantment.enchantencore.heroes_crown",
-    "fallback": "Heroes Crown",
-    "color": "light_purple"
+    "text": "Heroes Crown",
+    "color": "gold"
   },
-  "exclusive_set": "#enchantencore:exclusive_set/helmet",
+  "exclusive_set": "#expedition:exclusive/enchantencore_heroes_crown",
   "supported_items": "#minecraft:enchantable/head_armor",
-  "weight": 2,
-  "max_level": 1,
+  "weight": 1,
+  "max_level": 5,
   "min_cost": {
-    "base": 31,
-    "per_level_above_first": 0
+    "base": 200,
+    "per_level_above_first": 20
   },
   "max_cost": {
-    "base": 41,
-    "per_level_above_first": 0
+    "base": 300,
+    "per_level_above_first": 20
   },
   "anvil_cost": 4,
   "slots": [
@@ -28,8 +27,16 @@
           "to_apply": "minecraft:hero_of_the_village",
           "min_duration": 15,
           "max_duration": 15,
-          "min_amplifier": 0,
-          "max_amplifier": 0
+          "min_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          },
+          "max_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          }
         },
         "requirements": {
           "type": "minecraft:entity_properties",
@@ -52,7 +59,7 @@
           "amount": {
             "type": "minecraft:linear",
             "base": 2.5,
-            "per_level_above_first": 0
+            "per_level_above_first": 1.5
           }
         }
       }

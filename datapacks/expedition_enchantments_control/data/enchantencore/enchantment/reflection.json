@@ -1,0 +1,78 @@
+{
+  "description": {
+    "text": "Reflection",
+    "color": "gold"
+  },
+  "exclusive_set": "#expedition:exclusive/enchantencore_reflection",
+  "supported_items": "#minecraft:chest_armor",
+  "weight": 1,
+  "max_level": 5,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "chest"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:damage_entity",
+          "damage_type": "minecraft:thorns",
+          "min_damage": {
+            "type": "minecraft:linear",
+            "base": 4,
+            "per_level_above_first": 0.5
+          },
+          "max_damage": {
+            "type": "minecraft:linear",
+            "base": 4,
+            "per_level_above_first": 0.5
+          }
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "type": "#minecraft:arrows"
+          }
+        }
+      }
+    ],
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 2
+          }
+        },
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "#minecraft:is_projectile"
+              },
+              {
+                "expected": false,
+                "id": "#minecraft:bypasses_invulnerability"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

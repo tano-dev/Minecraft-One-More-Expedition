@@ -1,0 +1,47 @@
+{
+  "description": {
+    "text": "Warped Trident",
+    "color": "gold"
+  },
+  "exclusive_set": "#expedition:exclusive/enchantencore_warped_trident",
+  "supported_items": "#minecraft:enchantable/trident",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 10,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:warpedtrident_teleport"
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:trident"
+          }
+        }
+      }
+    ],
+    "minecraft:trident_return_acceleration": [
+      {
+        "effect": {
+          "type": "minecraft:set",
+          "value": 3
+        }
+      }
+    ]
+  }
+}

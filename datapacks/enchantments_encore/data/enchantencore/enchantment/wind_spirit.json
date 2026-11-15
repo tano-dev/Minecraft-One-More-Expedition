@@ -1,0 +1,180 @@
+{
+  "description": {
+    "text": "Wind Spirit",
+    "color": "yellow"
+  },
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "exclusive_set": "#enchantencore:ultimate",
+  "weight": 3,
+  "max_level": 3,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": -1,
+        "attribute": "minecraft:fall_damage_multiplier",
+        "id": "enchantencore:wind_spirit_fall_damage",
+        "operation": "add_multiplied_total"
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:strength",
+          "min_duration": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              4,
+              4
+            ],
+            "fallback": 4
+          },
+          "max_duration": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              4,
+              4
+            ],
+            "fallback": 4
+          },
+          "min_amplifier": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              1
+            ],
+            "fallback": 1
+          },
+          "max_amplifier": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              1
+            ],
+            "fallback": 1
+          }
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": false,
+              "is_flying": true
+            },
+            "periodic_tick": 60
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:invisibility",
+          "min_duration": 4,
+          "max_duration": 4,
+          "min_amplifier": 0,
+          "max_amplifier": 0
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": false,
+              "is_flying": true
+            },
+            "periodic_tick": 60
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:resistance",
+          "min_duration": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              4,
+              4
+            ],
+            "fallback": 4
+          },
+          "max_duration": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              4,
+              4
+            ],
+            "fallback": 4
+          },
+          "min_amplifier": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              1
+            ],
+            "fallback": 1
+          },
+          "max_amplifier": {
+            "type": "minecraft:lookup",
+            "values": [
+              0,
+              0,
+              1
+            ],
+            "fallback": 1
+          }
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": false,
+              "is_flying": true
+            },
+            "periodic_tick": 60
+          }
+        }
+      }
+    ],
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 20
+        },
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "#minecraft:fly_into_wall"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

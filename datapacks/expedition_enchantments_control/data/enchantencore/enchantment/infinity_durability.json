@@ -1,0 +1,32 @@
+{
+  "exclusive_set": "#expedition:exclusive/enchantencore_infinity_durability",
+  "anvil_cost": 2,
+  "description": {
+    "text": "Infinity Durability",
+    "color": "gold"
+  },
+  "effects": {
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": 1
+        }
+      }
+    ]
+  },
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "max_level": 1,
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/durability",
+  "weight": 1
+}

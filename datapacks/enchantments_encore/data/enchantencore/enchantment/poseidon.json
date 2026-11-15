@@ -1,0 +1,86 @@
+{
+  "description": {
+    "text": "Poseidon",
+    "color": "yellow"
+  },
+  "exclusive_set": "#enchantencore:exclusive_set/ultimate_trident",
+  "supported_items": "#minecraft:enchantable/trident",
+  "weight": 1,
+  "max_level": 5,
+  "min_cost": {
+    "base": 200,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 300,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 10,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:damage": [
+      {
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "type": "minecraft:trident"
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "is_direct": false
+          }
+        },
+        "effect": {
+          "type": "minecraft:summon_entity",
+          "entity": "minecraft:lightning_bolt"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:trident_return_acceleration": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 0.5
+          }
+        }
+      }
+    ],
+    "minecraft:hit_block": [
+      {
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:trident"
+          }
+        },
+        "effect": {
+          "type": "minecraft:summon_entity",
+          "entity": "minecraft:lightning_bolt"
+        }
+      }
+    ]
+  }
+}
