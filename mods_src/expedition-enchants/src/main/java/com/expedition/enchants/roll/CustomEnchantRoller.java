@@ -55,7 +55,7 @@ public class CustomEnchantRoller {
 
         List<Holder<Enchantment>> eligible = new ArrayList<>();
         possibleStream.forEach(h -> {
-            if (isBook || h.value().canEnchant(stack)) {
+            if (isBook || h.value().isPrimaryItem(stack)) {
                 eligible.add(h);
             }
         });
