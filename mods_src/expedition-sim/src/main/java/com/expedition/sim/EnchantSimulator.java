@@ -9,8 +9,10 @@ import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.EnchantmentTags;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
@@ -29,10 +31,59 @@ public class EnchantSimulator {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final DateTimeFormatter TS_FMT = DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss");
 
+    private static final List<String> ALL_ENCHANTABLE_ITEMS = List.of(
+        "minecraft:diamond_sword",
+        "minecraft:diamond_axe",
+        "minecraft:diamond_pickaxe",
+        "minecraft:diamond_shovel",
+        "minecraft:diamond_hoe",
+        "minecraft:diamond_helmet",
+        "minecraft:diamond_chestplate",
+        "minecraft:diamond_leggings",
+        "minecraft:diamond_boots",
+        "minecraft:bow",
+        "minecraft:crossbow",
+        "minecraft:trident",
+        "minecraft:fishing_rod",
+        "minecraft:mace",
+        "minecraft:shield",
+        "minecraft:elytra",
+        "minecraft:book"
+    );
+
+    public static int runAll(CommandSourceStack source, int count, int level) {
+        long startAll = System.nanoTime();
+        int successCount = 0;
+        for (String itemId : ALL_ENCHANTABLE_ITEMS) {
+            Item item = BuiltInRegistries.ITEM.getValue(Identifier.parse(itemId));
+            ItemStack stack = new ItemStack(item);
+            if (!stack.isEmpty()) {
+                successCount += runStack(source, stack, itemId, count, level, false);
+            }
+        }
+        long totalMs = (System.nanoTime() - startAll) / 1_000_000L;
+        int finalSuccess = successCount;
+        source.sendSuccess(() -> Component.literal(String.format(
+            "§a[Sim] Batch complete: §f%d/%d §7items (n=%,d, lv=%d) in §e%d ms§7 -> §bsim_output/json/ & sim_output/csv/",
+            finalSuccess, ALL_ENCHANTABLE_ITEMS.size(), count, level, totalMs
+        )), false);
+        return finalSuccess > 0 ? 1 : 0;
+    }
+
     public static int run(CommandSourceStack source, ItemInput itemInput, int count, int level) {
         try {
             ItemStack stack = itemInput.createItemStack(1);
             String itemId = BuiltInRegistries.ITEM.getKey(stack.getItem()).toString();
+            return runStack(source, stack, itemId, count, level, true);
+        } catch (Exception e) {
+            ExpeditionSimMod.LOGGER.error("[Sim] Error running enchant simulation", e);
+            source.sendFailure(Component.literal("[Sim] Error: " + e.getMessage()));
+            return 0;
+        }
+    }
+
+    private static int runStack(CommandSourceStack source, ItemStack stack, String itemId, int count, int level, boolean verbose) {
+        try {
 
             var enchRegistry = source.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
             Optional<HolderSet.Named<Enchantment>> tableTag = enchRegistry.get(EnchantmentTags.IN_ENCHANTING_TABLE);
@@ -73,33 +124,36 @@ public class EnchantSimulator {
             List<Map.Entry<String, int[]>> sorted = new ArrayList<>(countsByEnch.entrySet());
             sorted.sort((a, b) -> Integer.compare(b.getValue()[0], a.getValue()[0]));
 
-            // Export CSV & JSON
-            Path outDir = Path.of("sim_output");
-            Files.createDirectories(outDir);
+            // Export CSV & JSON into separate folders
+            Path csvDir = Path.of("sim_output", "csv");
+            Path jsonDir = Path.of("sim_output", "json");
+            Files.createDirectories(csvDir);
+            Files.createDirectories(jsonDir);
             String safeItem = itemId.replace(':', '_').replace('/', '_');
             String ts = LocalDateTime.now().format(TS_FMT);
             String baseName = String.format("enchant_%s_lv%d_n%d_%s", safeItem, level, count, ts);
-            Path csvPath = outDir.resolve(baseName + ".csv");
-            Path jsonPath = outDir.resolve(baseName + ".json");
+            Path csvPath = csvDir.resolve(baseName + ".csv");
+            Path jsonPath = jsonDir.resolve(baseName + ".json");
 
             writeCsv(csvPath, sorted, count, maxLevelSeen);
             writeJson(jsonPath, itemId, count, level, elapsedMs, emptyRolls, totalEnchantsApplied, sorted, maxLevelSeen);
 
             double avgEnch = (double) totalEnchantsApplied / count;
             source.sendSuccess(() -> Component.literal(String.format(
-                "§a[Sim] §f%s §7(n=%,d, lv=%d) done in §e%d ms§7 | Avg enchants/roll: §b%.2f§7 | Unique: §b%d",
+                "§a[Sim] §f%s §7(n=%,d, lv=%d) done in §e%d ms§7 | Avg: §b%.2f§7 | Unique: §b%d",
                 itemId, count, level, elapsedMs, avgEnch, sorted.size()
             )), false);
 
-            int topN = Math.min(10, sorted.size());
-            for (int i = 0; i < topN; i++) {
-                var e = sorted.get(i);
-                double pct = (e.getValue()[0] * 100.0) / count;
-                String msg = String.format("  §7#%d §f%s §7- §e%,d §7(§a%.2f%%§7)", i + 1, e.getKey(), e.getValue()[0], pct);
-                source.sendSuccess(() -> Component.literal(msg), false);
+            if (verbose) {
+                int topN = Math.min(10, sorted.size());
+                for (int i = 0; i < topN; i++) {
+                    var e = sorted.get(i);
+                    double pct = (e.getValue()[0] * 100.0) / count;
+                    String msg = String.format("  §7#%d §f%s §7- §e%,d §7(§a%.2f%%§7)", i + 1, e.getKey(), e.getValue()[0], pct);
+                    source.sendSuccess(() -> Component.literal(msg), false);
+                }
+                source.sendSuccess(() -> Component.literal("§7Exported: §b" + csvPath.toString().replace('\\', '/')), false);
             }
-
-            source.sendSuccess(() -> Component.literal("§7Exported: §b" + csvPath.toString().replace('\\', '/')), false);
             return 1;
         } catch (Exception e) {
             ExpeditionSimMod.LOGGER.error("[Sim] Error running enchant simulation", e);

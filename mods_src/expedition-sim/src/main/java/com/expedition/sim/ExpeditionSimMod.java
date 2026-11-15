@@ -33,8 +33,19 @@ public class ExpeditionSimMod implements ModInitializer {
                             )
                         )
                     )
+                    .then(Commands.literal("enchant_all")
+                        .then(Commands.argument("count", IntegerArgumentType.integer(1, 1_000_000))
+                            .then(Commands.argument("level", IntegerArgumentType.integer(1, 50))
+                                .executes(ctx -> {
+                                    int count = IntegerArgumentType.getInteger(ctx, "count");
+                                    int level = IntegerArgumentType.getInteger(ctx, "level");
+                                    return EnchantSimulator.runAll(ctx.getSource(), count, level);
+                                })
+                            )
+                        )
+                    )
             );
         });
-        LOGGER.info("[ExpeditionSim] Initialized OP simulator commands (/sim enchant <item> <count> <level>).");
+        LOGGER.info("[ExpeditionSim] Initialized OP simulator commands (/sim enchant, /sim enchant_all).");
     }
 }
