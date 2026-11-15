@@ -3,7 +3,7 @@
   "description": {
     "translate": "enchantment.enchantencore.magma_walker",
     "fallback": "Magma Walker",
-    "color": "gray"
+    "color": "light_purple"
   },
   "effects": {
     "minecraft:damage_immunity": [
