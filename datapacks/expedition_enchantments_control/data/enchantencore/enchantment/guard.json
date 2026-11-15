@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.guard",
     "fallback": "Guard",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#enchantencore:can_block",
   "primary_items": "#minecraft:enchantable/melee_weapon",
-  "weight": 5,
+  "weight": 10,
   "max_level": 1,
   "min_cost": {
     "base": 10,
@@ -16,7 +16,7 @@
     "base": 40,
     "per_level_above_first": 10
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "any"
   ]

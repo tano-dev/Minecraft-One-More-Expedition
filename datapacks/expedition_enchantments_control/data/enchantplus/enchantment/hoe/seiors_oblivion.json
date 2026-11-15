@@ -2,10 +2,10 @@
   "description": {
     "translate": "enchantment.enchantplus.seiors_oblivion",
     "fallback": "Seior's Oblivion",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#voxel:enchantable/hoes",
-  "weight": 5,
+  "weight": 10,
   "max_level": 1,
   "min_cost": {
     "base": 12,
@@ -15,7 +15,7 @@
     "base": 29,
     "per_level_above_first": 5
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "mainhand"
   ],

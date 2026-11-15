@@ -1,10 +1,10 @@
 {
   "description": {
     "translate": "enchantment.stellarity.soaring",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "supported_items": "#stellarity:enchantable/elytra",
-  "weight": 2,
+  "weight": 5,
   "max_level": 4,
   "min_cost": {
     "base": 8,
@@ -14,7 +14,7 @@
     "base": 19,
     "per_level_above_first": 8
   },
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "slots": [
     "chest"
   ],

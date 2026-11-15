@@ -1,11 +1,11 @@
 {
   "description": {
     "text": "Poppy Peace",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#enchantencore:weapons",
   "exclusive_set": "#enchantencore:exclusive_set/poppy",
-  "weight": 5,
+  "weight": 10,
   "max_level": 1,
   "min_cost": {
     "base": 25,
@@ -15,7 +15,7 @@
     "base": 55,
     "per_level_above_first": 8
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "mainhand"
   ],

@@ -1,9 +1,9 @@
 {
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "description": {
     "translate": "enchantment.enchantencore.regrowth",
     "fallback": "Regrowth",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "effects": {
     "minecraft:hit_block": [
@@ -151,5 +151,5 @@
     "mainhand"
   ],
   "supported_items": "#minecraft:hoes",
-  "weight": 2
+  "weight": 5
 }

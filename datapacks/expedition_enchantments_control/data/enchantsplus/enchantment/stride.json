@@ -2,10 +2,10 @@
   "description": {
     "translate": "enchantment.enchantsplus.stride",
     "fallback": "Stride",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#minecraft:enchantable/leg_armor",
-  "weight": 1,
+  "weight": 10,
   "max_level": 3,
   "min_cost": {
     "base": 1,
@@ -15,7 +15,7 @@
     "base": 41,
     "per_level_above_first": 0
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "legs"
   ],

@@ -2,14 +2,14 @@
   "description": {
     "translate": "enchantment.enchantsplus.precision",
     "fallback": "Precision",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": [
     "minecraft:crossbow",
     "minecraft:bow"
   ],
   "primary_items": "#minecraft:enchantable/crossbow",
-  "weight": 1,
+  "weight": 10,
   "max_level": 2,
   "min_cost": {
     "base": 20,
@@ -19,7 +19,7 @@
     "base": 50,
     "per_level_above_first": 0
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "mainhand",
     "offhand"

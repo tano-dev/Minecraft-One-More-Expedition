@@ -1,9 +1,9 @@
 {
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "description": {
     "translate": "enchantment.dnt.wax_wings",
     "fallback": "Wax Wings",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "effects": {
     "minecraft:item_damage": [
@@ -142,5 +142,5 @@
     "chest"
   ],
   "supported_items": "minecraft:elytra",
-  "weight": 2
+  "weight": 5
 }

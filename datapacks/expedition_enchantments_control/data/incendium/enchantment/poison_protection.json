@@ -2,10 +2,10 @@
   "description": {
     "translate": "incendium.enchantment.poison_protection",
     "fallback": "Poison Protection",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "supported_items": "#enchantable/armor",
-  "weight": 2,
+  "weight": 5,
   "max_level": 1,
   "min_cost": {
     "base": 0,
@@ -15,7 +15,7 @@
     "base": 0,
     "per_level_above_first": 0
   },
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "slots": [
     "any"
   ],

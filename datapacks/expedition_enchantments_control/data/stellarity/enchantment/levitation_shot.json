@@ -1,10 +1,10 @@
 {
   "description": {
     "translate": "enchantment.stellarity.levitation_shot",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "supported_items": "#minecraft:enchantable/bow",
-  "weight": 2,
+  "weight": 5,
   "max_level": 5,
   "min_cost": {
     "base": 29,
@@ -14,7 +14,7 @@
     "base": 50,
     "per_level_above_first": 10
   },
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "slots": [
     "mainhand"
   ],

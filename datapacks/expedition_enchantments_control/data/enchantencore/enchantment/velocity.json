@@ -2,14 +2,14 @@
   "description": {
     "translate": "enchantment.enchantencore.velocity",
     "fallback": "Velocity",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "supported_items": [
     "minecraft:bow",
     "minecraft:crossbow",
     "minecraft:trident"
   ],
-  "weight": 2,
+  "weight": 5,
   "max_level": 1,
   "min_cost": {
     "base": 10,
@@ -19,7 +19,7 @@
     "base": 46,
     "per_level_above_first": 7
   },
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "slots": [
     "mainhand"
   ],

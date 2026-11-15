@@ -6,7 +6,7 @@
   },
   "exclusive_set": "#enchantplus:exclusive_set/sword_attribute",
   "supported_items": "#minecraft:enchantable/melee_weapon",
-  "weight": 5,
+  "weight": 1,
   "max_level": 3,
   "min_cost": {
     "base": 8,

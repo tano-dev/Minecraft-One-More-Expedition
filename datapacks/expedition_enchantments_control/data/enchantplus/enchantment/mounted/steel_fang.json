@@ -2,10 +2,10 @@
   "description": {
     "translate": "enchantment.enchantplus.steel_fang",
     "fallback": "Steel Fang",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#enchantplus:enchantable/dog",
-  "weight": 5,
+  "weight": 10,
   "max_level": 5,
   "min_cost": {
     "base": 6,
@@ -15,7 +15,7 @@
     "base": 20,
     "per_level_above_first": 17
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "body"
   ],

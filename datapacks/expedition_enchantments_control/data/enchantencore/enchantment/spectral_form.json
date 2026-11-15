@@ -1,11 +1,11 @@
 {
   "description": {
     "text": "Spectral Form",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#minecraft:enchantable/foot_armor",
   "exclusive_set": "#enchantencore:ultimate",
-  "weight": 5,
+  "weight": 10,
   "max_level": 1,
   "min_cost": {
     "base": 200,
@@ -15,7 +15,7 @@
     "base": 300,
     "per_level_above_first": 20
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "feet"
   ],

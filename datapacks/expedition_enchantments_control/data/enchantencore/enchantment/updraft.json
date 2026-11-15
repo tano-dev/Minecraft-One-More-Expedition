@@ -2,10 +2,10 @@
   "description": {
     "translate": "enchantment.enchantencore.updraft",
     "fallback": "Updraft",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "minecraft:elytra",
-  "weight": 5,
+  "weight": 10,
   "max_level": 3,
   "min_cost": {
     "base": 15,
@@ -15,7 +15,7 @@
     "base": 45,
     "per_level_above_first": 10
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "chest"
   ],

@@ -1,10 +1,10 @@
 {
   "description": {
     "text": "DO NOT USE",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#minecraft:enchantable/head_armor",
-  "weight": 5,
+  "weight": 10,
   "max_level": 255,
   "min_cost": {
     "base": 99999,
@@ -14,7 +14,7 @@
     "base": 99999,
     "per_level_above_first": 99999
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "any"
   ],

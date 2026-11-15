@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.rainweave",
     "fallback": "Rainweave",
-    "color": "aqua"
+    "color": "gray"
   },
   "exclusive_set": "#enchantencore:exclusive_set/repair",
   "supported_items": "#minecraft:enchantable/durability",
-  "weight": 5,
+  "weight": 10,
   "max_level": 1,
   "min_cost": {
     "base": 25,
@@ -16,7 +16,7 @@
     "base": 75,
     "per_level_above_first": 25
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "any"
   ],

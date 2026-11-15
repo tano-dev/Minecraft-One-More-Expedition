@@ -1,9 +1,9 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "description": {
     "translate": "enchantment.dnt.antidote",
     "fallback": "Antidote",
-    "color": "aqua"
+    "color": "gray"
   },
   "effects": {
     "minecraft:damage_immunity": [
@@ -161,5 +161,5 @@
     "armor"
   ],
   "supported_items": "#minecraft:enchantable/chest_armor",
-  "weight": 5
+  "weight": 10
 }

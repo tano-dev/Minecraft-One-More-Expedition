@@ -2,10 +2,10 @@
   "description": {
     "translate": "enchantment.enchantplus.cavalier_egis",
     "fallback": "Rider Egis",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#enchantplus:enchantable/mounted",
-  "weight": 5,
+  "weight": 10,
   "max_level": 3,
   "min_cost": {
     "base": 8,
@@ -15,7 +15,7 @@
     "base": 21,
     "per_level_above_first": 9
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "body"
   ],

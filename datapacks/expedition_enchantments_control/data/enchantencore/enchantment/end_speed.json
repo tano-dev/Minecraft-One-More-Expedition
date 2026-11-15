@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.end_speed",
     "fallback": "End Speed",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "exclusive_set": "#enchantencore:exclusive_set/boots",
   "supported_items": "#minecraft:enchantable/foot_armor",
-  "weight": 2,
+  "weight": 5,
   "max_level": 3,
   "min_cost": {
     "base": 10,
@@ -16,7 +16,7 @@
     "base": 25,
     "per_level_above_first": 30
   },
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "slots": [
     "feet"
   ],

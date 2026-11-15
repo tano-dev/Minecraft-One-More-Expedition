@@ -1,10 +1,10 @@
 {
   "exclusive_set": "#enchantencore:exclusive_set/saddle",
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "description": {
     "translate": "enchantment.enchantencore.surfer",
     "fallback": "Surfer",
-    "color": "aqua"
+    "color": "gray"
   },
   "effects": {
     "minecraft:location_changed": [
@@ -45,5 +45,5 @@
     "saddle"
   ],
   "supported_items": "minecraft:saddle",
-  "weight": 5
+  "weight": 10
 }

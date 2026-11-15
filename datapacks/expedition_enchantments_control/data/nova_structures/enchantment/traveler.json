@@ -1,9 +1,9 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "description": {
     "translate": "enchantment.dnt.traveler",
     "fallback": "Traveler",
-    "color": "aqua"
+    "color": "gray"
   },
   "effects": {
     "minecraft:location_changed": [
@@ -122,5 +122,5 @@
     "feet"
   ],
   "supported_items": "#minecraft:enchantable/foot_armor",
-  "weight": 1
+  "weight": 10
 }

@@ -2,12 +2,12 @@
   "description": {
     "translate": "enchantment.enchantencore.weaving_aspect",
     "fallback": "Weaving Aspect",
-    "color": "aqua"
+    "color": "gray"
   },
   "exclusive_set": "#enchantencore:exclusive_set/aspect",
   "supported_items": "#minecraft:enchantable/fire_aspect",
   "primary_items": "#minecraft:enchantable/melee_weapon",
-  "weight": 5,
+  "weight": 10,
   "max_level": 2,
   "min_cost": {
     "base": 10,
@@ -17,7 +17,7 @@
     "base": 60,
     "per_level_above_first": 20
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "mainhand"
   ],

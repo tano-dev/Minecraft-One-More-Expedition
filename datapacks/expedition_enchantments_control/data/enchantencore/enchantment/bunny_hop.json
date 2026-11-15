@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.bunny_hop",
     "fallback": "Bunny Hop",
-    "color": "aqua"
+    "color": "gray"
   },
   "exclusive_set": "#enchantencore:exclusive_set/leggings",
   "supported_items": "#minecraft:enchantable/leg_armor",
-  "weight": 5,
+  "weight": 10,
   "max_level": 3,
   "min_cost": {
     "base": 25,
@@ -16,7 +16,7 @@
     "base": 75,
     "per_level_above_first": 45
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "legs"
   ],

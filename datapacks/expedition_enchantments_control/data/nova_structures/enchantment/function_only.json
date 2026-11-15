@@ -1,16 +1,16 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "description": {
     "translate": "enchantment.dnt.function_only",
     "fallback": "Bug Enchant",
-    "color": "aqua"
+    "color": "gray"
   },
   "exclusive_set": "#nova_structures:exclusive_set/loot_table_bugs",
   "supported_items": [
     "minecraft:stick",
     "minecraft:flint"
   ],
-  "weight": 5,
+  "weight": 10,
   "max_level": 5,
   "min_cost": {
     "base": 1,

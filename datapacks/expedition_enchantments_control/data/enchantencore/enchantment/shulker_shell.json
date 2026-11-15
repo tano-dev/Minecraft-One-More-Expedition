@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.shulker_shell",
     "fallback": "Shulker Shell",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "exclusive_set": "#enchantencore:exclusive_set/alloy",
   "supported_items": "#minecraft:chest_armor",
-  "weight": 2,
+  "weight": 5,
   "max_level": 1,
   "min_cost": {
     "base": 31,
@@ -16,7 +16,7 @@
     "base": 55,
     "per_level_above_first": 8
   },
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "slots": [
     "chest"
   ],

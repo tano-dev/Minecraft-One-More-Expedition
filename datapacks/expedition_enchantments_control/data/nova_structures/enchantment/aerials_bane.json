@@ -1,9 +1,9 @@
 {
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "description": {
     "translate": "enchantment.dnt.aerials_bane",
     "fallback": "Aerial's Bane",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "effects": {
     "minecraft:damage": [
@@ -187,5 +187,5 @@
     "mainhand"
   ],
   "supported_items": "#nova_structures:enchantable/combat_tools",
-  "weight": 2
+  "weight": 5
 }

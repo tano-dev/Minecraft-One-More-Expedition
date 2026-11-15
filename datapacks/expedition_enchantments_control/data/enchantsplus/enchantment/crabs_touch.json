@@ -2,10 +2,10 @@
   "description": {
     "translate": "enchantment.enchantsplus.crabs_touch",
     "fallback": "Crab's Touch",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "supported_items": "#enchantsplus:tools",
-  "weight": 2,
+  "weight": 5,
   "max_level": 3,
   "min_cost": {
     "base": 40,
@@ -15,7 +15,7 @@
     "base": 70,
     "per_level_above_first": 10
   },
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "slots": [
     "mainhand",
     "offhand"

@@ -1,11 +1,11 @@
 {
   "description": {
     "text": "Purify Water",
-    "color": "aqua"
+    "color": "gray"
   },
   "exclusive_set": [],
   "supported_items": "#minecraft:enchantable/trident",
-  "weight": 5,
+  "weight": 10,
   "max_level": 1,
   "min_cost": {
     "base": 1,
@@ -15,7 +15,7 @@
     "base": 51,
     "per_level_above_first": 6
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "mainhand"
   ],

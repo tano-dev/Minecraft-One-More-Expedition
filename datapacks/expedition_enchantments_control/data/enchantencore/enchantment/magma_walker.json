@@ -1,9 +1,9 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "description": {
     "translate": "enchantment.enchantencore.magma_walker",
     "fallback": "Magma Walker",
-    "color": "aqua"
+    "color": "gray"
   },
   "effects": {
     "minecraft:damage_immunity": [
@@ -123,5 +123,5 @@
     "feet"
   ],
   "supported_items": "#minecraft:enchantable/foot_armor",
-  "weight": 5
+  "weight": 10
 }

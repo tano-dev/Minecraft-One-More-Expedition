@@ -1,9 +1,9 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "description": {
     "translate": "enchantment.enchantencore.thorns_protection",
     "fallback": "Thorns Protection",
-    "color": "aqua"
+    "color": "gray"
   },
   "effects": {
     "minecraft:damage_protection": [
@@ -48,5 +48,5 @@
     "armor"
   ],
   "supported_items": "#minecraft:enchantable/armor",
-  "weight": 5
+  "weight": 10
 }

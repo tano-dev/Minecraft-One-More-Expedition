@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.kattersstructures.blunt",
     "fallback": "Blunt",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "exclusive_set": "#kattersstructures:exclusive_set/blunt",
   "supported_items": "#minecraft:enchantable/sharp_weapon",
-  "weight": 2,
+  "weight": 5,
   "max_level": 1,
   "min_cost": {
     "base": 0,
@@ -16,7 +16,7 @@
     "base": 0,
     "per_level_above_first": 0
   },
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "slots": [
     "mainhand"
   ],

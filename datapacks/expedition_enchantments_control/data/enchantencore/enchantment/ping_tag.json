@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.ping_tag",
     "fallback": "Ping Tag",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#enchantencore:valid_for_ping_tag",
   "primary_items": "minecraft:bow",
-  "weight": 5,
+  "weight": 10,
   "max_level": 1,
   "min_cost": {
     "base": 11,
@@ -16,7 +16,7 @@
     "base": 21,
     "per_level_above_first": 10
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "mainhand"
   ],

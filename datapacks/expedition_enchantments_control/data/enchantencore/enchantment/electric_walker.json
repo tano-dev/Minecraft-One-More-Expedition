@@ -1,9 +1,9 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "description": {
     "translate": "enchantment.enchantencore.electric_walker",
     "fallback": "Electric Walker",
-    "color": "aqua"
+    "color": "gray"
   },
   "effects": {
     "minecraft:location_changed": [
@@ -68,5 +68,5 @@
     "feet"
   ],
   "supported_items": "#minecraft:enchantable/foot_armor",
-  "weight": 5
+  "weight": 10
 }

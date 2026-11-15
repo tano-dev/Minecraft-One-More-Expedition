@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.moonwalk",
     "fallback": "Moonwalk",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "supported_items": [
     "minecraft:elytra",
@@ -12,7 +12,7 @@
     "minecraft:leather_horse_armor",
     "minecraft:netherite_horse_armor"
   ],
-  "weight": 2,
+  "weight": 5,
   "max_level": 3,
   "min_cost": {
     "base": 15,
@@ -22,7 +22,7 @@
     "base": 65,
     "per_level_above_first": 9
   },
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "slots": [
     "armor",
     "body"

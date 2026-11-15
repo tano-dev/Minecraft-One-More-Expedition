@@ -1,9 +1,9 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "description": {
     "translate": "enchantment.dnt.illagers_bane",
     "fallback": "Illagers Bane",
-    "color": "aqua"
+    "color": "gray"
   },
   "effects": {
     "minecraft:damage": [
@@ -40,5 +40,5 @@
     "mainhand"
   ],
   "supported_items": "#nova_structures:enchantable/combat_weapons",
-  "weight": 1
+  "weight": 10
 }

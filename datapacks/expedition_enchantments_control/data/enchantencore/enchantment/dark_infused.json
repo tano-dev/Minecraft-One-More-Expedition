@@ -1,11 +1,11 @@
 {
   "description": {
     "text": "Dark Infused",
-    "color": "aqua"
+    "color": "gray"
   },
   "exclusive_set": "#enchantencore:exclusive_set/shot_arrow",
   "supported_items": "#enchantencore:all_bows",
-  "weight": 5,
+  "weight": 10,
   "max_level": 3,
   "min_cost": {
     "base": 21,
@@ -15,7 +15,7 @@
     "base": 51,
     "per_level_above_first": 30
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "mainhand"
   ],

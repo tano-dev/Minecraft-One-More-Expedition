@@ -1,13 +1,13 @@
 {
   "description": {
     "translate": "enchantment.stellarity.draconic",
-    "color": "light_purple"
+    "color": "gray"
   },
   "exclusive_set": [],
   "supported_items": [
     "minecraft:netherite_sword"
   ],
-  "weight": 2,
+  "weight": 10,
   "max_level": 1,
   "min_cost": {
     "base": 0,
@@ -17,7 +17,7 @@
     "base": 0,
     "per_level_above_first": 0
   },
-  "anvil_cost": 6,
+  "anvil_cost": 2,
   "slots": [
     "mainhand"
   ],

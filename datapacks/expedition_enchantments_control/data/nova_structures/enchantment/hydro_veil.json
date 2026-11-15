@@ -2,10 +2,10 @@
   "description": {
     "translate": "enchantment.dnt.hydro_veil",
     "fallback": "Hydro Veil",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "supported_items": "#minecraft:harnesses",
-  "weight": 2,
+  "weight": 5,
   "max_level": 4,
   "min_cost": {
     "base": 10,
@@ -15,7 +15,7 @@
     "base": 10,
     "per_level_above_first": 15
   },
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "slots": [
     "body"
   ],

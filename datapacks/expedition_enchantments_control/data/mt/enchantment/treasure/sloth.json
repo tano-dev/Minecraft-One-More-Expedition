@@ -1,11 +1,11 @@
 {
   "description": {
     "text": "Technical, do not touch",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#minecraft:enchantable/armor",
   "primary_items": "#minecraft:enchantable/chest_armor",
-  "weight": 5,
+  "weight": 10,
   "max_level": 1,
   "min_cost": {
     "base": 999999,
@@ -15,7 +15,7 @@
     "base": 999999,
     "per_level_above_first": 9999
   },
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "slots": [
     "any"
   ],
