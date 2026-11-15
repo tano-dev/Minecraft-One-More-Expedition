@@ -1,0 +1,102 @@
+{
+  "group_to_tag": {
+    "Ultimate (Max 1/item)": "#expedition:exclusive_set/ultimate",
+    "Aspect (Melee Status)": "#enchantencore:exclusive_set/aspect",
+    "Sword Buffs (Fire / Ice / Web)": "#minecraft:sword_buffs",
+    "Damage (Sharpness / Bane)": "#minecraft:exclusive_set/damage",
+    "Armor Protection": "#minecraft:exclusive_set/armor",
+    "Armor (Lifeplus / Fury / Prot)": "#enchantplus:exclusive_set/armor",
+    "Chestplate Alloy": "#enchantencore:exclusive_set/alloy",
+    "Bow Arrow Effects": "#enchantencore:exclusive_set/shot_arrow",
+    "Bow Infused Arrows": "#enchantencore:exclusive_set/infused_arrow",
+    "Bow Special (Enchant+)": "#enchantplus:exclusive_set/bow",
+    "Bow (Structure Multishot/Piercing)": "#nova_structures:exclusive_set/structure_bow",
+    "Bow (Infinity / Mending)": "#minecraft:exclusive_set/bow",
+    "Crossbow Shots": "#enchantencore:exclusive_set/crossbow",
+    "Crossbow (Multishot / Piercing)": "#minecraft:exclusive_set/crossbow",
+    "Boots Movement": "#enchantencore:exclusive_set/boots",
+    "Boots Walker": "#minecraft:exclusive_set/boots",
+    "Boots (Soul Speed / Traveler)": "#nova_structures:exclusive_set/boots",
+    "Leggings Movement": "#enchantencore:exclusive_set/leggings",
+    "Size / Height": "#enchantencore:exclusive_set/height",
+    "Auto-Repair / Durability": "#enchantencore:exclusive_set/repair",
+    "Elytra": "#enchantencore:exclusive_set/elytra",
+    "Shield": "#enchantencore:exclusive_set/shield",
+    "Trident / Water Aura": "#enchantencore:exclusive_set/pufferfish",
+    "Trident (Riptide / Loyalty)": "#minecraft:exclusive_set/riptide",
+    "Trident (Channeling / Gungnir)": "#enchantplus:exclusive_set/trident",
+    "Cosmetic Aura": "#enchantencore:aura",
+    "Spirit Wolf": "#enchantencore:exclusive_set/spirit_wolf",
+    "Vision Curses": "#enchantencore:exclusive_set/vision_based",
+    "Sword Attributes (Enchant+)": "#enchantplus:exclusive_set/sword_attribute",
+    "Sword Effects (Enchant+)": "#enchantplus:exclusive_set/sword_effect",
+    "Mining (Fortune / Silk Touch)": "#minecraft:exclusive_set/mining",
+    "Mining / Haste": "#enchantencore:exclusive_set/haste",
+    "XP Boost / Scholar": "#enchantencore:exclusive_set/exp",
+    "Helmet Utility": "#enchantencore:exclusive_set/helmet",
+    "Horse Armor": "#enchantencore:exclusive_set/horse_armor",
+    "Saddle / Mount": "#enchantencore:exclusive_set/saddle",
+    "Wolf Armor": "#enchantencore:exclusive_set/wolf_armor",
+    "Mace Strike": "#enchantencore:exclusive_set/mace_strike",
+    "Pacifier / Poppy": "#enchantencore:exclusive_set/poppy",
+    "Reach": "#enchantencore:exclusive_set/reach",
+    "Tool Utility (Crab Claw / Gluttony)": "#enchantencore:exclusive_set/all_tools",
+    "Bow (Infinity / Replenish)": "#enchantencore:exclusive_set/replenish"
+  },
+  "enchant_overrides": {
+    "stellarity:levitation_shot": {
+      "exclusive_set": "#enchantencore:exclusive_set/shot_arrow"
+    },
+    "bound:bound": {
+      "exclusive_set": "#enchantencore:exclusive_set/boots"
+    },
+    "enchantencore:crab_claw": {
+      "supported_items": "#minecraft:enchantable/mining"
+    },
+    "enchantplus:sword/reach": {
+      "exclusive_set": "#enchantencore:exclusive_set/reach",
+      "remove_from_tags": [
+        "#minecraft:exclusive_set/damage",
+        "#enchantplus:exclusive_set/sword_attribute"
+      ]
+    },
+    "enchantplus:sword/fear": {
+      "exclusive_set": null,
+      "remove_from_tags": [
+        "#minecraft:exclusive_set/damage",
+        "#enchantplus:exclusive_set/sword_effect"
+      ]
+    },
+    "kattersstructures:blunt": {
+      "exclusive_set": null
+    },
+    "enchantencore:thorns_protection": {
+      "exclusive_set": null,
+      "remove_from_tags": [
+        "#minecraft:exclusive_set/armor"
+      ]
+    },
+    "enchantencore:haste": {
+      "exclusive_set": null,
+      "supported_items": "#minecraft:enchantable/mining",
+      "remove_from_tags": [
+        "#enchantencore:exclusive_set/haste"
+      ]
+    },
+    "enchantsplus:pyrolysis": {
+      "exclusive_set": null
+    },
+    "enchantencore:heroes_crown": {
+      "exclusive_set": "#enchantencore:exclusive_set/helmet",
+      "remove_from_tags": [
+        "#enchantencore:ultimate"
+      ]
+    },
+    "minecraft:unbreaking": {
+      "remove_from_tags": [
+        "#enchantplus:exclusive_set/durability",
+        "#nova_structures:exclusive_set/elytra"
+      ]
+    }
+  }
+}

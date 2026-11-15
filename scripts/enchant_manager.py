@@ -547,8 +547,31 @@ def _apply_protection_nerfs(eid, raw):
             eff["value"] = rule
 
 
+CUSTOM_RULES_PATH = os.path.join(REPO_ROOT, "custom_enchant_rules.json")
+
+
+def _load_custom_rules():
+    if os.path.exists(CUSTOM_RULES_PATH):
+        with open(CUSTOM_RULES_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"group_to_tag": {}, "enchant_overrides": {}}
+
+
 def _apply_custom_overrides(eid, raw, color, bold):
     """Apply custom renames, stat tweaks, and exclusivity rules."""
+    rules = _load_custom_rules().get("enchant_overrides", {})
+    ov = rules.get(eid)
+    if ov:
+        if "exclusive_set" in ov:
+            if ov["exclusive_set"] is None:
+                raw.pop("exclusive_set", None)
+            else:
+                raw["exclusive_set"] = ov["exclusive_set"]
+        if "supported_items" in ov:
+            raw["supported_items"] = ov["supported_items"]
+        if "max_level" in ov:
+            raw["max_level"] = ov["max_level"]
+
     if eid == "enchantplus:armor/lifeplus":
         raw["description"] = {"text": "Walking Fortress", "color": color, "bold": bold}
         for attr in raw.get("effects", {}).get("minecraft:attributes", []):
@@ -809,6 +832,62 @@ def cmd_build():
         os.makedirs(os.path.dirname(tp), exist_ok=True)
         with open(tp, "w", encoding="utf-8") as tf:
             json.dump({"replace": True, "values": vals}, tf, indent=2)
+
+    # 4b-dyn. Dynamic tag overrides driven by custom_enchant_rules.json (from Web Editor)
+    dyn_rules = _load_custom_rules().get("enchant_overrides", {})
+    tag_removals = defaultdict(set)
+    tag_additions = defaultdict(set)
+    for eid_r, ov in dyn_rules.items():
+        for t in ov.get("remove_from_tags", []):
+            tag_removals[t].add(eid_r)
+        exc_v = ov.get("exclusive_set")
+        if isinstance(exc_v, str) and exc_v.startswith("#"):
+            tag_additions[exc_v].add(eid_r)
+        elif isinstance(exc_v, list):
+            for x in exc_v:
+                if isinstance(x, str) and x.startswith("#"):
+                    tag_additions[x].add(eid_r)
+
+    affected_tags = set(tag_removals.keys()) | set(tag_additions.keys())
+    for tag_id in affected_tags:
+        if not tag_id.startswith("#") or ":" not in tag_id:
+            continue
+        tns, trel = tag_id[1:].split(":", 1)
+        tp = os.path.join(CONTROLLER_DIR, "data", tns, "tags", "enchantment", trel + ".json")
+        # Collect baseline values from all non-control datapacks (or existing override if already written)
+        base_vals = []
+        seen_ids = set()
+        if os.path.exists(tp):
+            with open(tp, "r", encoding="utf-8") as tf:
+                for v in json.load(tf).get("values", []):
+                    vid = v["id"] if isinstance(v, dict) else v
+                    if vid not in seen_ids:
+                        seen_ids.add(vid)
+                        base_vals.append(vid)
+        else:
+            for dp_name in sorted(os.listdir(DATAPACKS_DIR)):
+                if dp_name == CONTROLLER_NAME:
+                    continue
+                cand = os.path.join(DATAPACKS_DIR, dp_name, "data", tns, "tags", "enchantment", trel + ".json")
+                if os.path.exists(cand):
+                    try:
+                        with open(cand, "r", encoding="utf-8") as cf:
+                            for v in json.load(cf).get("values", []):
+                                vid = v["id"] if isinstance(v, dict) else v
+                                if vid not in seen_ids:
+                                    seen_ids.add(vid)
+                                    base_vals.append(vid)
+                    except Exception:
+                        pass
+        rems = tag_removals.get(tag_id, set())
+        adds = tag_additions.get(tag_id, set())
+        final_vals = [v for v in base_vals if v not in rems]
+        for a in sorted(adds):
+            if a not in final_vals and a not in rems:
+                final_vals.append(a)
+        os.makedirs(os.path.dirname(tp), exist_ok=True)
+        with open(tp, "w", encoding="utf-8") as tf:
+            json.dump({"replace": True, "values": final_vals}, tf, indent=2)
 
     # 4c. Custom standalone / vanilla overrides (Bound + 3 vanilla Banes at +2/lv)
     bound_src = os.path.join(REPO_ROOT, "datapacks", "Bound-v3.0.3", "data", "bound", "enchantment", "bound.json")

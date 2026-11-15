@@ -759,6 +759,7 @@ def build_all():
             "max_level": max_lv,
             "anvil_cost": anvil_cost,
             "table": entry.get("table", False),
+            "table_weight": entry.get("table_weight", 1),
             "tradeable": entry.get("tradeable", False),
             "loot": entry.get("loot", True),
             "source_pack": entry.get("source_pack", "vanilla"),
