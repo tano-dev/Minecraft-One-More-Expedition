@@ -6,7 +6,7 @@
   },
   "supported_items": "#enchantencore:valid_for_ping_tag",
   "primary_items": "minecraft:bow",
-  "weight": 10,
+  "weight": 12,
   "max_level": 1,
   "min_cost": {
     "base": 11,

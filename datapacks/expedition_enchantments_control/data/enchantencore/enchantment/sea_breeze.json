@@ -6,7 +6,7 @@
   },
   "exclusive_set": "#enchantencore:exclusive_set/pufferfish",
   "supported_items": "#minecraft:enchantable/trident",
-  "weight": 12,
+  "weight": 1,
   "max_level": 1,
   "min_cost": {
     "base": 15,

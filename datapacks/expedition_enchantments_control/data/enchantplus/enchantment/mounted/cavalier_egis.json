@@ -5,7 +5,7 @@
     "color": "gray"
   },
   "supported_items": "#enchantplus:enchantable/mounted",
-  "weight": 10,
+  "weight": 12,
   "max_level": 3,
   "min_cost": {
     "base": 8,

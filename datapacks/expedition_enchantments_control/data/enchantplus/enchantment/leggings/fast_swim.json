@@ -5,7 +5,7 @@
     "color": "aqua"
   },
   "supported_items": "#minecraft:enchantable/leg_armor",
-  "weight": 5,
+  "weight": 2,
   "max_level": 1,
   "min_cost": {
     "base": 15,

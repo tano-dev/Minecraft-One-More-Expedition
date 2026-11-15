@@ -5,7 +5,7 @@
   },
   "exclusive_set": [],
   "supported_items": "#minecraft:enchantable/trident",
-  "weight": 10,
+  "weight": 18,
   "max_level": 1,
   "min_cost": {
     "base": 1,

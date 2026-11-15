@@ -6,7 +6,7 @@
   },
   "exclusive_set": "#enchantencore:exclusive_set/height",
   "supported_items": "#enchantencore:valid_for_growth",
-  "weight": 10,
+  "weight": 12,
   "max_level": 5,
   "min_cost": {
     "base": 12,

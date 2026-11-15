@@ -5,7 +5,7 @@
   },
   "exclusive_set": "#enchantencore:ultimate",
   "supported_items": "#minecraft:enchantable/head_armor",
-  "weight": 5,
+  "weight": 3,
   "max_level": 1,
   "min_cost": {
     "base": 200,

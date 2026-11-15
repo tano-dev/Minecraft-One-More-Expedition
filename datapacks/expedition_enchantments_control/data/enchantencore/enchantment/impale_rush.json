@@ -6,7 +6,7 @@
   },
   "exclusive_set": "#enchantencore:exclusive_set/spear",
   "supported_items": "#minecraft:enchantable/lunge",
-  "weight": 10,
+  "weight": 12,
   "max_level": 1,
   "min_cost": {
     "base": 12,

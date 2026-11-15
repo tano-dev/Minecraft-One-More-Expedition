@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.gluttony",
     "fallback": "Gluttony",
-    "color": "gray"
+    "color": "aqua"
   },
   "exclusive_set": "#enchantencore:exclusive_set/all_tools",
   "supported_items": "#enchantencore:all_tools",
-  "weight": 10,
+  "weight": 1,
   "max_level": 5,
   "min_cost": {
     "base": 18,

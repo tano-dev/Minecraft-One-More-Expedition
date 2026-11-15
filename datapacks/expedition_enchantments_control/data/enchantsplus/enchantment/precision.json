@@ -9,7 +9,7 @@
     "minecraft:bow"
   ],
   "primary_items": "#minecraft:enchantable/crossbow",
-  "weight": 10,
+  "weight": 12,
   "max_level": 2,
   "min_cost": {
     "base": 20,

@@ -6,7 +6,7 @@
   },
   "exclusive_set": "#enchantencore:exclusive_set/leggings",
   "supported_items": "#minecraft:enchantable/leg_armor",
-  "weight": 10,
+  "weight": 2,
   "max_level": 3,
   "min_cost": {
     "base": 25,

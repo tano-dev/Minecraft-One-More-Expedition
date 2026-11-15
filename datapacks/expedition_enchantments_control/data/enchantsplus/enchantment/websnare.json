@@ -7,7 +7,7 @@
   "exclusive_set": "#minecraft:sword_buffs",
   "supported_items": "#minecraft:enchantable/fire_aspect",
   "primary_items": "#minecraft:enchantable/sweeping",
-  "weight": 10,
+  "weight": 1,
   "max_level": 2,
   "min_cost": {
     "base": 10,

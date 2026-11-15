@@ -6,7 +6,7 @@
   },
   "exclusive_set": "#minecraft:exclusive_set/armor",
   "supported_items": "#minecraft:enchantable/armor",
-  "weight": 5,
+  "weight": 12,
   "max_level": 4,
   "min_cost": {
     "base": 1,
