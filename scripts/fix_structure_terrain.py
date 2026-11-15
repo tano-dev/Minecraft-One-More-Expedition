@@ -318,6 +318,16 @@ def fix_surface_terrain_adaptation():
                     if d.get("step") != "surface_structures":
                         continue
 
+                    dist = d.get("max_distance_from_center", 0)
+                    horiz_dist = dist.get("horizontal", 0) if isinstance(dist, dict) else (dist if isinstance(dist, (int, float)) else 0)
+                    if horiz_dist > 116:
+                        if d.get("terrain_adaptation") != "none":
+                            d["terrain_adaptation"] = "none"
+                            with open(fp, "w", encoding="utf-8") as jf:
+                                json.dump(d, jf, indent=4, ensure_ascii=False)
+                            changed += 1
+                        continue
+
                     ta = d.get("terrain_adaptation", "none")
                     if ta in ("none", "beard_box"):
                         d["terrain_adaptation"] = "beard_thin"
