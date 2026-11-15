@@ -31,8 +31,8 @@ public class EnchantRollConfig {
     public double godrollChance = 0.015;
     public double godrollEpicChance = 0.15;
     public double godrollRareChance = 0.35;
-    public int godrollMinEnchants = 4;
-    public int godrollMaxEnchants = 5;
+    public int godrollMinEnchants = 6;
+    public int godrollMaxEnchants = 6;
 
     // Target weights for how many enchantments are rolled on an item at Lv 30 (2-5 enchants)
     public Map<String, Integer> enchantCountWeights = new LinkedHashMap<>(Map.of(
