@@ -165,7 +165,7 @@ MISC_EN = {
 
 ENCHANTPLUS_EN = {
     "enchantplus:armor/fury": (3, 3, ["armor"], "Armor", "Fury", "Trades -10% (-7.5%/lvl above I) Armor and -4.5% (-3.5%/lvl) armor effectiveness for +7.5% (+6.5%/lvl above I) Attack Damage."),
-    "enchantplus:armor/lifeplus": (5, 1, ["armor"], "Armor", "Life+", "Grants +2 HP (+1 heart) max health per level (up to +10 HP / +5 hearts at Lv V)."),
+    "enchantplus:armor/lifeplus": (5, 8, ["armor"], "Armor", "Walking Fortress", "Grants +1.2 HP (+0.6 hearts) max health per level (up to +6 HP / +3 hearts per piece at Lv V). [ULTIMATE]"),
     "enchantplus:armor/venom_protection": (1, 2, ["armor"], "Armor", "Venom Protection", "Protects and clears negative poison/venom effects."),
     "enchantplus:boots/agility": (5, 1, ["armor"], "Boots", "Agility", "Increases movement speed by +20% per level (up to +100% speed at Lv V)."),
     "enchantplus:bow/accuracy_shot": (1, 4, ["ranged"], "Bows & Crossbows", "Accuracy Shot", "Arrows fly in a completely straight line without gravity drop."),
@@ -423,7 +423,7 @@ ENCORE_EN = {
     "enchantencore:sting": (1, 4, ["ranged"], "Crossbows", "Sting", "Fires bee-stinger bolts with hive audio cues that sting targets on impact."),
     "enchantencore:strafe": (1, 4, ["armor"], "Boots", "Strafe", "Sprinting left or right triggers a rapid lateral dash impulse (magnitude 3) at a 1–3 durability cost."),
     "enchantencore:summer_walker": (1, 4, ["armor"], "Boots", "Summer Walker", "Transforms water/lava edges or foliage safely underfoot and grants immunity to cactus/sweet berry damage."),
-    "enchantencore:sunweave": (1, 4, ["universal"], "All Durable Gear", "Sunweave", "Passively repairs item durability over time under open daytime sky."),
+    "enchantencore:sunweave": (1, 4, ["universal"], "All Durable Gear", "Lunar Mend", "Passively repairs item durability over time under open nighttime sky."),
     "enchantencore:surfer": (3, 4, ["mount"], "Saddles", "Surfer", "Increases mount water movement efficiency by +1.5 (+1.75 per level above I, up to +5.0 at Lv III) while ridden."),
     "enchantencore:switch": (1, 4, ["weapon", "ranged"], "Tridents", "Switch", "Thrown tridents swap positions between the thrower and the struck target."),
     "enchantencore:thorns_protection": (4, 2, ["armor"], "Armor", "Thorns Protection", "Adds +3.5 protection EPF (+3 per level above I, up to +12.5 EPF at Lv IV) against Thorns, cactus, and sweet berry damage."),

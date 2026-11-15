@@ -1,9 +1,0 @@
-{
-  "replace": true,
-  "values": [
-    {
-      "id": "#expedition:exclusive_set/ultimate",
-      "required": false
-    }
-  ]
-}

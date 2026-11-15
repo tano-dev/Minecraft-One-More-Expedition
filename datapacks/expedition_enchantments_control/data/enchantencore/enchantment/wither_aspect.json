@@ -4,7 +4,9 @@
     "fallback": "Wither Aspect",
     "color": "aqua"
   },
-  "exclusive_set": "#enchantencore:exclusive_set/aspect",
+  "exclusive_set": [
+    "nova_structures:wither_coated"
+  ],
   "supported_items": "#minecraft:enchantable/fire_aspect",
   "primary_items": "#minecraft:enchantable/melee_weapon",
   "weight": 5,

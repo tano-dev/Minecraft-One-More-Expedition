@@ -133,28 +133,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bomber\":3}}] 1"
   },
   {
-    "id": "enchantplus:chestplate/builder_arm",
-    "namespace": "enchantplus",
-    "raw_name": "chestplate/builder_arm",
-    "name": "Builder Arm",
-    "name_vi": "Builder Arm",
-    "tier": "ultimate",
-    "tier_order": 1,
-    "max_level": 3,
-    "anvil_cost": 8,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "description": "Extends block placement/breaking reach by +1 block (+2 blocks per level above I, up to +5 blocks at Lv III). [ULTIMATE]",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:chestplate/builder_arm\":3}}] 1"
-  },
-  {
     "id": "enchantencore:creeper_blessing",
     "namespace": "enchantencore",
     "raw_name": "creeper_blessing",
@@ -219,28 +197,6 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Bows & Crossbows",
     "description": "Arrows summon an End Crystal on block impact; extra durability cost scales from 60 down to 30 (-15 per level above I). [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crystalize_arrow\":3}}] 1"
-  },
-  {
-    "id": "enchantsplus:graviole",
-    "namespace": "enchantsplus",
-    "raw_name": "graviole",
-    "name": "Graviole",
-    "name_vi": "Graviole",
-    "tier": "ultimate",
-    "tier_order": 1,
-    "max_level": 3,
-    "anvil_cost": 8,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "minecraft:elytra",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Elytra",
-    "description": "Reduces gravity by -15% per level (up to -45% at Lv III) for extended gliding control. [ULTIMATE]",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:graviole\":3}}] 1"
   },
   {
     "id": "enchantplus:trident/gungnir_breath",
@@ -330,28 +286,6 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Helmets",
     "description": "Grants Resistance I when below 4 hearts and Speed I when below 5 hearts. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:last_stand\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:armor/lifeplus",
-    "namespace": "enchantplus",
-    "raw_name": "armor/lifeplus",
-    "name": "Life+",
-    "name_vi": "Life+",
-    "tier": "ultimate",
-    "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 8,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "description": "Grants +2 HP (+1 heart) max health per level (up to +10 HP / +5 hearts at Lv V). [ULTIMATE]",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:armor/lifeplus\":5}}] 1"
   },
   {
     "id": "enchantencore:machine_gun",
@@ -750,6 +684,28 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Helmets",
     "description": "Grants brief Levitation when falling into The Void to save your life. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:helmet/voidless\":1}}] 1"
+  },
+  {
+    "id": "enchantplus:armor/lifeplus",
+    "namespace": "enchantplus",
+    "raw_name": "armor/lifeplus",
+    "name": "Walking Fortress",
+    "name_vi": "Walking Fortress",
+    "tier": "ultimate",
+    "tier_order": 1,
+    "max_level": 5,
+    "anvil_cost": 8,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "description": "Grants +1.2 HP (+0.6 hearts) max health per level (up to +6 HP / +3 hearts per piece at Lv V). [ULTIMATE]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:armor/lifeplus\":5}}] 1"
   },
   {
     "id": "enchantencore:warden",
@@ -1546,50 +1502,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:breach\":4}}] 1"
   },
   {
-    "id": "enchantsplus:breeze_burst",
-    "namespace": "enchantsplus",
-    "raw_name": "breeze_burst",
-    "name": "Breeze Burst",
-    "name_vi": "Breeze Burst",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#minecraft:enchantable/bow",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows",
-    "description": "Arrows trigger a Breeze wind charge explosion on impact, knocking back nearby entities.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:breeze_burst\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:helmet/bright_vision",
-    "namespace": "enchantplus",
-    "raw_name": "helmet/bright_vision",
-    "name": "Bright Vision",
-    "name_vi": "Bright Vision",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 21,
-    "anvil_cost": 2,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "description": "Grants permanent Night Vision while equipped.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:helmet/bright_vision\":21}}] 1"
-  },
-  {
     "id": "nova_structures:function_only",
     "namespace": "nova_structures",
     "raw_name": "function_only",
@@ -1744,28 +1656,6 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Chestplates & Tools",
     "description": "Increases both block and entity interaction reach by +1 block per level (up to +3 blocks at Lv III).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crab_claw\":3}}] 1"
-  },
-  {
-    "id": "enchantsplus:crabs_touch",
-    "namespace": "enchantsplus",
-    "raw_name": "crabs_touch",
-    "name": "Crab's Touch",
-    "name_vi": "Crab's Touch",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#enchantsplus:tools",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Pickaxes & Tools",
-    "description": "Increases block interaction range by +1 block per level (up to +3 blocks at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:crabs_touch\":3}}] 1"
   },
   {
     "id": "enchantencore:creeper_alloy",
@@ -2941,28 +2831,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/drylands_piercer\":1}}] 1"
   },
   {
-    "id": "stellarity:dune_speed",
-    "namespace": "stellarity",
-    "raw_name": "dune_speed",
-    "name": "Dune Speed",
-    "name_vi": "Dune Speed",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Stellarity-6.0.1",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "description": "Grants swift movement speed on sand and red sand; speed scales across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:dune_speed\":3}}] 1"
-  },
-  {
     "id": "enchantplus:leggings/dwarfed",
     "namespace": "enchantplus",
     "raw_name": "leggings/dwarfed",
@@ -4020,28 +3888,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:handyman\":1}}] 1"
   },
   {
-    "id": "enchantplus:mounted/happy_boost",
-    "namespace": "enchantplus",
-    "raw_name": "mounted/happy_boost",
-    "name": "Happy Boost",
-    "name_vi": "Happy Boost",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:harnesses",
-    "gear_categories": [
-      "mount"
-    ],
-    "supported_display": "Happy Ghast Harnesses",
-    "description": "Increases Happy Ghast flying speed by +50% (+30%/lvl above I, up to +110% at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/happy_boost\":3}}] 1"
-  },
-  {
     "id": "enchantencore:hardened",
     "namespace": "enchantencore",
     "raw_name": "hardened",
@@ -4084,28 +3930,6 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Fishing Rods",
     "description": "Reeling in hooked entities pulls them forcefully toward the angler with extra force.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:harpoon\":1}}] 1"
-  },
-  {
-    "id": "enchantsplus:harvest",
-    "namespace": "enchantsplus",
-    "raw_name": "harvest",
-    "name": "Harvest",
-    "name_vi": "Harvest",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#minecraft:hoes",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Hoes",
-    "description": "Automatically replants crops in an area immediately upon harvesting mature crops.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:harvest\":1}}] 1"
   },
   {
     "id": "enchantencore:haste",
@@ -4421,10 +4245,10 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "illagers_bane",
     "name": "Illagers Bane",
     "name_vi": "Illagers Bane",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 5,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -5035,6 +4859,28 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:luck_of_the_sea\":3}}] 1"
   },
   {
+    "id": "enchantencore:sunweave",
+    "namespace": "enchantencore",
+    "raw_name": "sunweave",
+    "name": "Lunar Mend",
+    "name_vi": "Lunar Mend",
+    "tier": "epic",
+    "tier_order": 99,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/durability",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Durable Gear",
+    "description": "Passively repairs item durability over time under open nighttime sky.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sunweave\":1}}] 1"
+  },
+  {
     "id": "minecraft:lure",
     "namespace": "minecraft",
     "raw_name": "lure",
@@ -5638,10 +5484,10 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "outreach",
     "name": "Outreach",
     "name_vi": "Outreach",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 4,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -6846,28 +6692,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scholar_of_mobs\":3}}] 1"
   },
   {
-    "id": "enchantsplus:scorch_walker",
-    "namespace": "enchantsplus",
-    "raw_name": "scorch_walker",
-    "name": "Scorch Walker",
-    "name_vi": "Scorch Walker",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 4,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "description": "Converts lava beneath your feet into temporary magma/stone blocks and grants fire/lava immunity; radius scales across Lv I–II.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:scorch_walker\":2}}] 1"
-  },
-  {
     "id": "enchantencore:scorpion_spirit",
     "namespace": "enchantencore",
     "raw_name": "scorpion_spirit",
@@ -6888,28 +6712,6 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Wolf Armor",
     "description": "Shrinks wolf by -50%, -5 Armor, +5 Attack Speed, -100 base damage, and 50% chance on hit to inflict Poison and Wither.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scorpion_spirit\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:hoe/scyther",
-    "namespace": "enchantplus",
-    "raw_name": "hoe/scyther",
-    "name": "Scyther",
-    "name_vi": "Scyther",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 2,
-    "table": true,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#voxel:enchantable/hoes",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Hoes",
-    "description": "Tills soil in a larger disk radius per level (scales across Lv I–III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:hoe/scyther\":3}}] 1"
   },
   {
     "id": "enchantencore:sea_breeze",
@@ -7221,28 +7023,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:smite\":5}}] 1"
   },
   {
-    "id": "stellarity:soaring",
-    "namespace": "stellarity",
-    "raw_name": "soaring",
-    "name": "Soaring",
-    "name_vi": "Soaring",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 4,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Stellarity-6.0.1",
-    "supported_items": "#stellarity:enchantable/elytra",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Elytra",
-    "description": "Reduces gravity by -5% per level (up to -20% at Lv IV) for smoother Elytra flight.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:soaring\":4}}] 1"
-  },
-  {
     "id": "enchantencore:sonic",
     "namespace": "enchantencore",
     "raw_name": "sonic",
@@ -7508,28 +7288,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sting\":1}}] 1"
   },
   {
-    "id": "enchantplus:bow/storm_arrow",
-    "namespace": "enchantplus",
-    "raw_name": "bow/storm_arrow",
-    "name": "Storm Arrow",
-    "name_vi": "Storm Arrow",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#voxel:enchantable/range",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows & Crossbows",
-    "description": "Summons a lightning bolt at the arrow's impact location.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:bow/storm_arrow\":1}}] 1"
-  },
-  {
     "id": "enchantencore:strafe",
     "namespace": "enchantencore",
     "raw_name": "strafe",
@@ -7638,28 +7396,6 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Boots",
     "description": "Transforms water/lava edges or foliage safely underfoot and grants immunity to cactus/sweet berry damage.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:summer_walker\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:sunweave",
-    "namespace": "enchantencore",
-    "raw_name": "sunweave",
-    "name": "Sunweave",
-    "name_vi": "Sunweave",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Durable Gear",
-    "description": "Passively repairs item durability over time under open daytime sky.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sunweave\":1}}] 1"
   },
   {
     "id": "enchantencore:surfer",
@@ -7927,28 +7663,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:tideweave\":1}}] 1"
   },
   {
-    "id": "enchantsplus:toxic",
-    "namespace": "enchantsplus",
-    "raw_name": "toxic",
-    "name": "Toxic",
-    "name_vi": "Toxic",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#enchantsplus:bows",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows",
-    "description": "Arrows inflict Poison on hit targets.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:toxic\":1}}] 1"
-  },
-  {
     "id": "nova_structures:traveler",
     "namespace": "nova_structures",
     "raw_name": "traveler",
@@ -8125,28 +7839,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/velocity\":3}}] 1"
   },
   {
-    "id": "enchantplus:armor/venom_protection",
-    "namespace": "enchantplus",
-    "raw_name": "armor/venom_protection",
-    "name": "Venom Protection",
-    "name_vi": "Venom Protection",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "description": "Protects and clears negative poison/venom effects.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:armor/venom_protection\":1}}] 1"
-  },
-  {
     "id": "enchantencore:vitality",
     "namespace": "enchantencore",
     "raw_name": "vitality",
@@ -8167,28 +7859,6 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Armor",
     "description": "Increases Max Health by +1 HP (+0.5 hearts) per level (up to +3 HP / +1.5 hearts per piece at Lv III).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:vitality\":3}}] 1"
-  },
-  {
-    "id": "enchantsplus:vitality",
-    "namespace": "enchantsplus",
-    "raw_name": "vitality",
-    "name": "Vitality",
-    "name_vi": "Vitality",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#minecraft:enchantable/chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "description": "Increases max health by +2 HP (+1 heart) per level (up to +6 HP / +3 hearts at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:vitality\":3}}] 1"
   },
   {
     "id": "stellarity:_technical/void_pendant/amethyst",
@@ -8702,10 +8372,10 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "wither_coated",
     "name": "Wither Coated",
     "name_vi": "Wither Coated",
-    "tier": "rare",
+    "tier": "epic",
     "tier_order": 99,
     "max_level": 3,
-    "anvil_cost": 4,
+    "anvil_cost": 6,
     "table": false,
     "tradeable": false,
     "loot": true,

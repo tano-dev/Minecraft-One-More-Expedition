@@ -547,6 +547,26 @@ def _apply_protection_nerfs(eid, raw):
             eff["value"] = rule
 
 
+def _apply_custom_overrides(eid, raw, color, bold):
+    """Apply custom renames, stat tweaks, and exclusivity rules."""
+    if eid == "enchantencore:sunweave":
+        raw["description"] = {"text": "Lunar Mend", "color": color, "bold": bold}
+        # Switch daylight check to nighttime (13000..23000)
+        for eff_entry in raw.get("effects", {}).get("minecraft:tick", []):
+            for term in eff_entry.get("requirements", {}).get("terms", []):
+                if term.get("type") == "minecraft:time_check":
+                    term["value"] = {"min": 13000, "max": 23000}
+    elif eid == "enchantplus:armor/lifeplus":
+        raw["description"] = {"text": "Walking Fortress", "color": color, "bold": bold}
+        for attr in raw.get("effects", {}).get("minecraft:attributes", []):
+            if attr.get("attribute") == "minecraft:max_health":
+                attr["amount"] = {"type": "minecraft:linear", "base": 1.2, "per_level_above_first": 1.2}
+    elif eid == "nova_structures:wither_coated":
+        raw["exclusive_set"] = ["enchantencore:wither_aspect"]
+    elif eid == "enchantencore:wither_aspect":
+        raw["exclusive_set"] = ["nova_structures:wither_coated"]
+
+
 def cmd_build():
     """Compile enchantments_config.json into expedition_enchantments_control datapack & catalog."""
     if not os.path.exists(CONFIG_PATH):
@@ -659,6 +679,7 @@ def cmd_build():
             raw["exclusive_set"] = f"#expedition:exclusive/{ns}_{safe_name}"
 
         _apply_protection_nerfs(eid, raw)
+        _apply_custom_overrides(eid, raw, color, bold)
 
         ns, name = eid.split(":", 1)
         out_path = os.path.join(CONTROLLER_DIR, "data", ns, "enchantment", *name.split("/")) + ".json"

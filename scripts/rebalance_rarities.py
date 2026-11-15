@@ -11,6 +11,24 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_PATH = os.path.join(REPO_ROOT, "enchantments_config.json")
 BUILD_EN_PATH = os.path.join(REPO_ROOT, "scripts", "build_english_database.py")
 
+DISABLED_IDS = {
+    "enchantplus:helmet/bright_vision",
+    "enchantsplus:scorch_walker",
+    "stellarity:dune_speed",
+    "enchantsplus:harvest",
+    "enchantplus:hoe/scyther",
+    "enchantplus:chestplate/builder_arm",
+    "enchantsplus:crabs_touch",
+    "enchantsplus:breeze_burst",
+    "enchantplus:bow/storm_arrow",
+    "enchantsplus:toxic",
+    "enchantsplus:vitality",
+    "enchantplus:armor/venom_protection",
+    "enchantplus:mounted/happy_boost",
+    "enchantsplus:graviole",
+    "stellarity:soaring",
+}
+
 # True Curses (34 total)
 TRUE_CURSES = {
     "enchantencore:blindness_curse",
@@ -127,6 +145,7 @@ EPIC_IDS = {
     "nova_structures:ghasted",
     "nova_structures:multishot",
     "nova_structures:photosynthesis",
+    "nova_structures:wither_coated",
     "stellarity:ambush",
     "stellarity:plated",
 }
@@ -197,10 +216,11 @@ RARE_IDS = {
     "minecraft:riptide",
     "minecraft:silk_touch",
     "nova_structures:gravity",
+    "nova_structures:illagers_bane",
+    "nova_structures:outreach",
     "nova_structures:piercing",
     "nova_structures:power",
     "nova_structures:spiteful",
-    "nova_structures:wither_coated",
     # Moved from Epic -> Rare (solid upgrades, niche immunities, or terrain speeds)
     "enchantencore:boar_spirit",
     "enchantencore:crab_claw",
@@ -360,6 +380,13 @@ def main():
     changed = 0
 
     for eid, entry in cfg["enchantments"].items():
+        if eid in DISABLED_IDS:
+            entry["enabled"] = False
+            entry["table"] = False
+            entry["tradeable"] = False
+            entry["loot"] = False
+            changed += 1
+            continue
         if not entry.get("enabled", True):
             continue
 

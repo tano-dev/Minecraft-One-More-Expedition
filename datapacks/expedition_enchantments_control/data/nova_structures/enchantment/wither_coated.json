@@ -2,12 +2,14 @@
   "description": {
     "translate": "enchantment.dnt.wither_coated",
     "fallback": "Wither Coated",
-    "color": "aqua"
+    "color": "light_purple"
   },
-  "exclusive_set": "#nova_structures:exclusive_set/weapon_aspect",
+  "exclusive_set": [
+    "enchantencore:wither_aspect"
+  ],
   "supported_items": "#nova_structures:enchantable/wither_coated",
   "primary_items": "#minecraft:swords",
-  "weight": 5,
+  "weight": 2,
   "max_level": 3,
   "min_cost": {
     "base": 0,
@@ -17,7 +19,7 @@
     "base": 0,
     "per_level_above_first": 0
   },
-  "anvil_cost": 4,
+  "anvil_cost": 6,
   "slots": [
     "mainhand"
   ],
