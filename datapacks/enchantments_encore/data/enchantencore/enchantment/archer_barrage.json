@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Archer Barrage",
-    "color": "yellow"
+    "color": "gold"
   },
   "exclusive_set": "#enchantencore:exclusive_set/ultimate_bow",
   "supported_items": "minecraft:bow",

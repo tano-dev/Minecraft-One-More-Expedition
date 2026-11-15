@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Poseidon",
-    "color": "yellow"
+    "color": "gold"
   },
   "exclusive_set": "#enchantencore:exclusive_set/ultimate_trident",
   "supported_items": "#minecraft:enchantable/trident",

@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Nuclear Arrow",
-    "color": "yellow"
+    "color": "gold"
   },
   "exclusive_set": "#enchantencore:exclusive_set/ultimate_bow",
   "supported_items": "#enchantencore:all_bows",

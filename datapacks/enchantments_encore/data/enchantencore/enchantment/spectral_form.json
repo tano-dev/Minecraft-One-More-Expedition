@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Spectral Form",
-    "color": "yellow"
+    "color": "gold"
   },
   "supported_items": "#minecraft:enchantable/foot_armor",
   "exclusive_set": "#enchantencore:ultimate",

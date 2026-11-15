@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Absolute Unit",
-    "color": "yellow"
+    "color": "gold"
   },
   "exclusive_set": "#enchantencore:ultimate",
   "supported_items": "#minecraft:enchantable/leg_armor",

@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Machine Gun",
-    "color": "yellow"
+    "color": "gold"
   },
   "exclusive_set": "#enchantencore:ultimate",
   "supported_items": "#minecraft:enchantable/crossbow",

@@ -5863,8 +5863,8 @@
       "description": "Vanishing Curse"
     },
     "minecraft:wind_burst": {
-      "source_pack": "minecraft (vanilla)",
-      "source_file": null,
+      "source_pack": "enchantments_encore",
+      "source_file": "datapacks\\enchantments_encore\\data\\minecraft\\enchantment\\wind_burst.json",
       "vanilla": true,
       "enabled": true,
       "tier": "ultimate",
@@ -5875,8 +5875,10 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
+      "max_level": 3,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/mace",
-      "description": "Wind Burst"
+      "description": "enchantment.minecraft.wind_burst"
     },
     "mt:armor/basalt_boots": {
       "source_pack": "mine-treasure-1.6.5",

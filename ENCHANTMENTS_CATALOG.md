@@ -73,7 +73,7 @@
 | `enchantsplus:crabs_touch` | 3 | `Enchants Plus v2.1 26.3` | No | 1 | `#enchantsplus:tools` |
 | `enchantsplus:graviole` | 3 | `Enchants Plus v2.1 26.3` | No | 1 | `minecraft:elytra` |
 | `incendium:poison_protection` | 1 | `Incendium_Legacy_v5.5.4+26.3` | No | 1 | `#enchantable/armor` |
-| `minecraft:wind_burst` | - | `minecraft (vanilla)` | No | 1 | `#minecraft:enchantable/mace` |
+| `minecraft:wind_burst` | 3 | `enchantments_encore` | No | 1 | `#minecraft:enchantable/mace` |
 | `nova_structures:photosynthesis` | 1 | `Dungeons and Taverns v6.1.0` | No | 1 | `#minecraft:enchantable/durability` |
 | `nova_structures:wax_wings` | 1 | `Dungeons and Taverns v6.1.0` | No | 1 | `minecraft:elytra` |
 | `stellarity:critical_strike` | 3 | `Stellarity-6.0.1` | No | 1 | `#minecraft:enchantable/sharp_weapon` |
