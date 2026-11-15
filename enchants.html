@@ -997,7 +997,7 @@
       ultimate: allData.filter(x => x.tier === "ultimate").length,
       epic: allData.filter(x => x.tier === "epic").length,
       rare: allData.filter(x => x.tier === "rare").length,
-      common: allData.filter(x => x.tier === "common").length,
+      common: allData.filter(x => x.tier === "common" && !isCurseItem(x)).length,
       curse: allData.filter(isCurseItem).length
     };
 
@@ -1067,16 +1067,13 @@
     }
 
     function getTierBadgeHtml(item) {
-      const badges = [];
-      if (item.tier === "ultimate") badges.push('<span class="badge badge-ult">👑 Ultimate</span>');
-      else if (item.tier === "epic") badges.push('<span class="badge badge-epic">🟣 Epic</span>');
-      else if (item.tier === "rare") badges.push('<span class="badge badge-rare">💎 Rare</span>');
-      else badges.push('<span class="badge badge-common">⚪ Common</span>');
-
       if (isCurseItem(item)) {
-        badges.push('<span class="badge badge-curse">☠️ Curse</span>');
+        return '<span class="badge badge-curse">☠️ Curse</span>';
       }
-      return badges.join("");
+      if (item.tier === "ultimate") return '<span class="badge badge-ult">👑 Ultimate</span>';
+      if (item.tier === "epic") return '<span class="badge badge-epic">🟣 Epic</span>';
+      if (item.tier === "rare") return '<span class="badge badge-rare">💎 Rare</span>';
+      return '<span class="badge badge-common">⚪ Common</span>';
     }
 
     function getObtainBadgeHtml(item) {
@@ -1097,6 +1094,8 @@
       const filtered = allData.filter(item => {
         if (currentTier === "curse") {
           if (!isCurseItem(item)) return false;
+        } else if (currentTier === "common") {
+          if (item.tier !== "common" || isCurseItem(item)) return false;
         } else if (currentTier !== "all" && item.tier !== currentTier) {
           return false;
         }
