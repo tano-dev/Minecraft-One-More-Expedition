@@ -3,7 +3,7 @@
     "text": "Heroes Crown",
     "color": "aqua"
   },
-  "exclusive_set": "#enchantencore:ultimate",
+  "exclusive_set": "#enchantencore:exclusive_set/helmet",
   "supported_items": "#minecraft:enchantable/head_armor",
   "weight": 3,
   "max_level": 1,

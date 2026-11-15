@@ -1,9 +1,10 @@
 {
   "description": {
     "text": "Adrenaline",
-    "color": "light_purple"
+    "color": "gold",
+    "bold": true
   },
-  "exclusive_set": "#enchantencore:ultimate",
+  "exclusive_set": "#expedition:exclusive/enchantencore_adrenaline",
   "supported_items": "#enchantencore:all_bows",
   "weight": 2,
   "max_level": 4,

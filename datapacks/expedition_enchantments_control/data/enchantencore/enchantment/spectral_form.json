@@ -1,11 +1,12 @@
 {
   "description": {
     "text": "Spectral Form",
-    "color": "gray"
+    "color": "gold",
+    "bold": true
   },
   "supported_items": "#minecraft:enchantable/foot_armor",
-  "exclusive_set": "#enchantencore:ultimate",
-  "weight": 12,
+  "exclusive_set": "#expedition:exclusive/enchantencore_spectral_form",
+  "weight": 10,
   "max_level": 1,
   "min_cost": {
     "base": 200,

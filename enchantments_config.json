@@ -69,7 +69,7 @@
       "source_file": "datapacks\\enchantments_encore\\data\\enchantencore\\enchantment\\adrenaline.json",
       "vanilla": false,
       "enabled": true,
-      "tier": "epic",
+      "tier": "ultimate",
       "curse": false,
       "enchantable_rare": false,
       "table": false,
@@ -80,7 +80,7 @@
       "max_level": 4,
       "anvil_cost": 6,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Ranged hits grant Speed I and Strength I for 4s (+2s per level above I, up to 10s at Lv IV).",
+      "description": "Ranged hits grant Speed I and Strength I for 4s (+2s per level above I, up to 10s at Lv IV). [ULTIMATE]",
       "name_vi": "Adrenaline"
     },
     "enchantencore:anchor": {
@@ -810,7 +810,7 @@
       "source_file": "datapacks\\enchantments_encore\\data\\enchantencore\\enchantment\\dolphin_blessing.json",
       "vanilla": false,
       "enabled": true,
-      "tier": "epic",
+      "tier": "ultimate",
       "curse": false,
       "enchantable_rare": false,
       "table": false,
@@ -821,7 +821,7 @@
       "max_level": 1,
       "anvil_cost": 6,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Grants +0.4 water movement efficiency, Dolphin's Grace, and Health Boost while swimming in water.",
+      "description": "Grants +0.4 water movement efficiency, Dolphin's Grace, and Health Boost while swimming in water. [ULTIMATE]",
       "name_vi": "Dolphin's Blessing"
     },
     "enchantencore:echoing_aura": {
@@ -1152,7 +1152,7 @@
       "source_file": "datapacks\\enchantments_encore\\data\\enchantencore\\enchantment\\frenzy.json",
       "vanilla": false,
       "enabled": true,
-      "tier": "epic",
+      "tier": "ultimate",
       "curse": false,
       "enchantable_rare": false,
       "table": false,
@@ -1163,7 +1163,7 @@
       "max_level": 3,
       "anvil_cost": 6,
       "supported_items": "#minecraft:enchantable/leg_armor",
-      "description": "Grants Strength and scaling Haste (Amp I–III across Lv I–III) for 2s when the wearer is at low health.",
+      "description": "Grants Strength and scaling Haste (Amp I–III across Lv I–III) for 2s when the wearer is at low health. [ULTIMATE]",
       "name_vi": "Frenzy"
     },
     "enchantencore:gallop": {
@@ -1285,7 +1285,7 @@
       "source_file": "datapacks\\enchantments_encore\\data\\enchantencore\\enchantment\\habanero.json",
       "vanilla": false,
       "enabled": true,
-      "tier": "rare",
+      "tier": "ultimate",
       "curse": false,
       "enchantable_rare": false,
       "table": false,
@@ -1296,7 +1296,7 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Grants Strength III (1s) when struck in combat, at the cost of periodic Weakness II.",
+      "description": "Grants Strength III (1s) when struck in combat, at the cost of periodic Weakness II. [ULTIMATE]",
       "name_vi": "Habanero"
     },
     "enchantencore:handyman": {
@@ -3006,10 +3006,10 @@
       "source_file": "datapacks\\enchantments_encore\\data\\enchantencore\\enchantment\\spectral_form.json",
       "vanilla": false,
       "enabled": true,
-      "tier": "common",
+      "tier": "ultimate",
       "curse": false,
       "enchantable_rare": false,
-      "table": true,
+      "table": false,
       "tradeable": false,
       "loot": true,
       "table_weight": 12,
@@ -3017,7 +3017,7 @@
       "max_level": 1,
       "anvil_cost": 2,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Periodically grants Speed I (15s) at a 12-durability cost per cycle.",
+      "description": "Periodically grants Speed I (15s) at a 12-durability cost per cycle. [ULTIMATE]",
       "name_vi": "Spectral Form"
     },
     "enchantencore:spider_vision_curse": {
@@ -3333,7 +3333,7 @@
       "source_file": "datapacks\\enchantments_encore\\data\\enchantencore\\enchantment\\vitality.json",
       "vanilla": false,
       "enabled": true,
-      "tier": "epic",
+      "tier": "ultimate",
       "curse": false,
       "enchantable_rare": false,
       "table": false,
@@ -3344,7 +3344,7 @@
       "max_level": 3,
       "anvil_cost": 6,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Increases Max Health by +1 HP (+0.5 hearts) per level (up to +3 HP / +1.5 hearts per piece at Lv III).",
+      "description": "Increases Max Health by +1 HP (+0.5 hearts) per level (up to +3 HP / +1.5 hearts per piece at Lv III). [ULTIMATE]",
       "name_vi": "Vitality"
     },
     "enchantencore:void_vision_curse": {

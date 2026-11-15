@@ -27,6 +27,32 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:absolute_unit\":5}}] 1"
   },
   {
+    "id": "enchantencore:adrenaline",
+    "namespace": "enchantencore",
+    "raw_name": "adrenaline",
+    "name": "Adrenaline",
+    "name_vi": "Adrenaline",
+    "tier": "ultimate",
+    "tier_order": 1,
+    "max_level": 4,
+    "anvil_cost": 6,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_bows",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows & Crossbows",
+    "exclusive_groups": [
+      "Ultimate (Max 1/item)"
+    ],
+    "conflicts": [],
+    "description": "Ranged hits grant Speed I and Strength I for 4s (+2s per level above I, up to 10s at Lv IV). [ULTIMATE]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:adrenaline\":4}}] 1"
+  },
+  {
     "id": "enchantencore:archer_barrage",
     "namespace": "enchantencore",
     "raw_name": "archer_barrage",
@@ -421,6 +447,58 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crystalize_arrow\":3}}] 1"
   },
   {
+    "id": "enchantencore:dolphin_blessing",
+    "namespace": "enchantencore",
+    "raw_name": "dolphin_blessing",
+    "name": "Dolphin's Blessing",
+    "name_vi": "Dolphin's Blessing",
+    "tier": "ultimate",
+    "tier_order": 1,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Ultimate (Max 1/item)"
+    ],
+    "conflicts": [],
+    "description": "Grants +0.4 water movement efficiency, Dolphin's Grace, and Health Boost while swimming in water. [ULTIMATE]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:dolphin_blessing\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:frenzy",
+    "namespace": "enchantencore",
+    "raw_name": "frenzy",
+    "name": "Frenzy",
+    "name_vi": "Frenzy",
+    "tier": "ultimate",
+    "tier_order": 1,
+    "max_level": 3,
+    "anvil_cost": 6,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Leggings",
+    "exclusive_groups": [
+      "Ultimate (Max 1/item)"
+    ],
+    "conflicts": [],
+    "description": "Grants Strength and scaling Haste (Amp I–III across Lv I–III) for 2s when the wearer is at low health. [ULTIMATE]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:frenzy\":3}}] 1"
+  },
+  {
     "id": "enchantplus:trident/gungnir_breath",
     "namespace": "enchantplus",
     "raw_name": "trident/gungnir_breath",
@@ -452,6 +530,32 @@ window.ALL_ENCHANTMENTS = [
     ],
     "description": "Freezes water and inflicts Slowness II+ (+1 amplifier/lvl, 3s + 1s/lvl above I). [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:trident/gungnir_breath\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:habanero",
+    "namespace": "enchantencore",
+    "raw_name": "habanero",
+    "name": "Habanero",
+    "name_vi": "Habanero",
+    "tier": "ultimate",
+    "tier_order": 1,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [
+      "Ultimate (Max 1/item)"
+    ],
+    "conflicts": [],
+    "description": "Grants Strength III (1s) when struck in combat, at the cost of periodic Weakness II. [ULTIMATE]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:habanero\":1}}] 1"
   },
   {
     "id": "enchantencore:infinity_durability",
@@ -1009,6 +1113,32 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:pickaxe/spawner_touch\":1}}] 1"
   },
   {
+    "id": "enchantencore:spectral_form",
+    "namespace": "enchantencore",
+    "raw_name": "spectral_form",
+    "name": "Spectral Form",
+    "name_vi": "Spectral Form",
+    "tier": "ultimate",
+    "tier_order": 1,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Ultimate (Max 1/item)"
+    ],
+    "conflicts": [],
+    "description": "Periodically grants Speed I (15s) at a 12-durability cost per cycle. [ULTIMATE]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:spectral_form\":1}}] 1"
+  },
+  {
     "id": "enchantplus:mace/teluric_wave",
     "namespace": "enchantplus",
     "raw_name": "mace/teluric_wave",
@@ -1039,6 +1169,32 @@ window.ALL_ENCHANTMENTS = [
     ],
     "description": "Crouch-striking the ground unleashes seismic waves and inflicts Slowness (5s); wave power scales across Lv I–III. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mace/teluric_wave\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:vitality",
+    "namespace": "enchantencore",
+    "raw_name": "vitality",
+    "name": "Vitality",
+    "name_vi": "Vitality",
+    "tier": "ultimate",
+    "tier_order": 1,
+    "max_level": 3,
+    "anvil_cost": 6,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [
+      "Ultimate (Max 1/item)"
+    ],
+    "conflicts": [],
+    "description": "Increases Max Health by +1 HP (+0.5 hearts) per level (up to +3 HP / +1.5 hearts per piece at Lv III). [ULTIMATE]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:vitality\":3}}] 1"
   },
   {
     "id": "stellarity:void_shot",
@@ -1391,32 +1547,6 @@ window.ALL_ENCHANTMENTS = [
     "conflicts": [],
     "description": "Arrows fly in a completely straight line without gravity drop.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:bow/accuracy_shot\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:adrenaline",
-    "namespace": "enchantencore",
-    "raw_name": "adrenaline",
-    "name": "Adrenaline",
-    "name_vi": "Adrenaline",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 6,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_bows",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows & Crossbows",
-    "exclusive_groups": [
-      "Ultimate (Max 1/item)"
-    ],
-    "conflicts": [],
-    "description": "Ranged hits grant Speed I and Strength I for 4s (+2s per level above I, up to 10s at Lv IV).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:adrenaline\":4}}] 1"
   },
   {
     "id": "nova_structures:aerials_bane",
@@ -5016,32 +5146,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:dismount\":1}}] 1"
   },
   {
-    "id": "enchantencore:dolphin_blessing",
-    "namespace": "enchantencore",
-    "raw_name": "dolphin_blessing",
-    "name": "Dolphin's Blessing",
-    "name_vi": "Dolphin's Blessing",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Ultimate (Max 1/item)"
-    ],
-    "conflicts": [],
-    "description": "Grants +0.4 water movement efficiency, Dolphin's Grace, and Health Boost while swimming in water.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:dolphin_blessing\":1}}] 1"
-  },
-  {
     "id": "stellarity:_technical/draconic",
     "namespace": "stellarity",
     "raw_name": "_technical/draconic",
@@ -6998,32 +7102,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:fortune\":3}}] 1"
   },
   {
-    "id": "enchantencore:frenzy",
-    "namespace": "enchantencore",
-    "raw_name": "frenzy",
-    "name": "Frenzy",
-    "name_vi": "Frenzy",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/leg_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Leggings",
-    "exclusive_groups": [
-      "Ultimate (Max 1/item)"
-    ],
-    "conflicts": [],
-    "description": "Grants Strength and scaling Haste (Amp I–III across Lv I–III) for 2s when the wearer is at low health.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:frenzy\":3}}] 1"
-  },
-  {
     "id": "minecraft:frost_walker",
     "namespace": "minecraft",
     "raw_name": "frost_walker",
@@ -7587,32 +7665,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:guard\":1}}] 1"
   },
   {
-    "id": "enchantencore:habanero",
-    "namespace": "enchantencore",
-    "raw_name": "habanero",
-    "name": "Habanero",
-    "name_vi": "Habanero",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "exclusive_groups": [
-      "Ultimate (Max 1/item)"
-    ],
-    "conflicts": [],
-    "description": "Grants Strength III (1s) when struck in combat, at the cost of periodic Weakness II.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:habanero\":1}}] 1"
-  },
-  {
     "id": "enchantencore:handyman",
     "namespace": "enchantencore",
     "raw_name": "handyman",
@@ -7938,8 +7990,7 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Helmets",
     "exclusive_groups": [
-      "Helmet Utility",
-      "Ultimate (Max 1/item)"
+      "Helmet Utility"
     ],
     "conflicts": [
       {
@@ -13911,32 +13962,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sparking_aura\":1}}] 1"
   },
   {
-    "id": "enchantencore:spectral_form",
-    "namespace": "enchantencore",
-    "raw_name": "spectral_form",
-    "name": "Spectral Form",
-    "name_vi": "Spectral Form",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Ultimate (Max 1/item)"
-    ],
-    "conflicts": [],
-    "description": "Periodically grants Speed I (15s) at a 12-durability cost per cycle.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:spectral_form\":1}}] 1"
-  },
-  {
     "id": "nova_structures:spiteful",
     "namespace": "nova_structures",
     "raw_name": "spiteful",
@@ -15033,32 +15058,6 @@ window.ALL_ENCHANTMENTS = [
     "conflicts": [],
     "description": "Increases mount movement speed by +55% (+30%/lvl above I, up to +115% at Lv III).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/velocity\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:vitality",
-    "namespace": "enchantencore",
-    "raw_name": "vitality",
-    "name": "Vitality",
-    "name_vi": "Vitality",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "exclusive_groups": [
-      "Ultimate (Max 1/item)"
-    ],
-    "conflicts": [],
-    "description": "Increases Max Health by +1 HP (+0.5 hearts) per level (up to +3 HP / +1.5 hearts per piece at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:vitality\":3}}] 1"
   },
   {
     "id": "stellarity:_technical/void_pendant/amethyst",

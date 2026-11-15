@@ -580,6 +580,8 @@ def _apply_custom_overrides(eid, raw, color, bold):
     elif eid == "enchantencore:haste":
         raw.pop("exclusive_set", None)
         raw["supported_items"] = "#minecraft:enchantable/mining"
+    elif eid == "enchantencore:heroes_crown":
+        raw["exclusive_set"] = "#enchantencore:exclusive_set/helmet"
     elif eid == "enchantsplus:ice_aspect":
         raw["description"] = {"text": "Icicle Impale", "color": color, "bold": bold}
     elif eid in ("enchantencore:day_protection", "enchantencore:night_protection"):
@@ -783,6 +785,23 @@ def cmd_build():
             "enchantencore:nether_protection", "enchantencore:night_protection",
             "enchantencore:wither_protection", "nova_structures:antidote",
             "enchantplus:armor/fury", "enchantplus:armor/lifeplus",
+        ],
+        ("enchantencore", "ultimate.json"): [
+            "enchantencore:absolute_unit", "enchantencore:adrenaline",
+            "enchantencore:archer_barrage", "enchantencore:aurora",
+            "enchantencore:blaze_blessing", "enchantencore:bomber",
+            "enchantencore:creeper_blessing", "enchantencore:crystalize_arrow",
+            "enchantencore:dolphin_blessing", "enchantencore:frenzy",
+            "enchantencore:habanero", "enchantencore:infinity_durability",
+            "enchantencore:last_stand", "enchantencore:machine_gun",
+            "enchantencore:neptune", "enchantencore:nightmare",
+            "enchantencore:nuclear_arrow", "enchantencore:perfect_protection",
+            "enchantencore:poseidon", "enchantencore:radiant_life",
+            "enchantencore:railgun", "enchantencore:reflection",
+            "enchantencore:sniper", "enchantencore:spectral_form",
+            "enchantencore:vitality", "enchantencore:warden",
+            "enchantencore:warped_arrow", "enchantencore:warped_trident",
+            "enchantencore:wind_spirit",
         ],
     }
     for (ns, rel_tag), vals in custom_tag_overrides.items():

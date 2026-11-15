@@ -6,10 +6,10 @@
 
 | Tier | Màu sắc | Số lượng | Nguồn kiếm chính | Quy tắc đặc biệt |
 | :--- | :--- | :---: | :--- | :--- |
-| **Ultimate** | Gold (`gold`) | **35** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
-| **Epic** | Light Purple (`light_purple`) | **73** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
-| **Rare** | Aqua (`aqua`) | **107** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
-| **Common** | Gray (`gray`) | **133** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
+| **Ultimate** | Gold (`gold`) | **41** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
+| **Epic** | Light Purple (`light_purple`) | **69** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
+| **Rare** | Aqua (`aqua`) | **106** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
+| **Common** | Gray (`gray`) | **132** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
 | **Curses** | Red (`red`) | **31** | Rương kho báu / Curse | Lời nguyền |
 | **Filtered Duplicates** | — | **38** | Đã tắt | Lọc trùng giữa các pack |
 
@@ -26,19 +26,23 @@
 | **Helmet** | 19 | 167 | 3 | **4.79%** |
 | **Chestplate** | 16 | 108 | 5 | **4.63%** |
 | **Leggings** | 15 | 120 | 3 | **4.17%** |
-| **Boots** | 23 | 182 | 6 | **4.95%** |
+| **Boots** | 22 | 170 | 6 | **5.29%** |
 
-## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (35)
+## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (41)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
 | `enchantencore:absolute_unit` | 5 | `enchantments_encore` | No | 1 | `#minecraft:enchantable/leg_armor` |
+| `enchantencore:adrenaline` | 4 | `enchantments_encore` | No | 2 | `#enchantencore:all_bows` |
 | `enchantencore:archer_barrage` | 3 | `enchantments_encore` | No | 1 | `minecraft:bow` |
 | `enchantencore:aurora` | 1 | `enchantments_encore` | No | 1 | `#minecraft:enchantable/head_armor` |
 | `enchantencore:blaze_blessing` | 1 | `enchantments_encore` | No | 1 | `#minecraft:enchantable/leg_armor` |
 | `enchantencore:bomber` | 3 | `enchantments_encore` | No | 1 | `#enchantencore:all_bows` |
 | `enchantencore:creeper_blessing` | 1 | `enchantments_encore` | No | 1 | `#minecraft:enchantable/leg_armor` |
 | `enchantencore:crystalize_arrow` | 3 | `enchantments_encore` | No | 1 | `#enchantencore:all_bows` |
+| `enchantencore:dolphin_blessing` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/foot_armor` |
+| `enchantencore:frenzy` | 3 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/leg_armor` |
+| `enchantencore:habanero` | 1 | `enchantments_encore` | No | 5 | `#minecraft:chest_armor` |
 | `enchantencore:infinity_durability` | 1 | `enchantments_encore` | No | 1 | `#minecraft:enchantable/durability` |
 | `enchantencore:last_stand` | 1 | `enchantments_encore` | No | 1 | `#minecraft:enchantable/head_armor` |
 | `enchantencore:machine_gun` | 1 | `enchantments_encore` | No | 1 | `#minecraft:enchantable/crossbow` |
@@ -51,6 +55,8 @@
 | `enchantencore:railgun` | 1 | `enchantments_encore` | No | 1 | `minecraft:crossbow` |
 | `enchantencore:reflection` | 3 | `enchantments_encore` | No | 1 | `#minecraft:chest_armor` |
 | `enchantencore:sniper` | 3 | `enchantments_encore` | No | 1 | `#enchantencore:all_bows` |
+| `enchantencore:spectral_form` | 1 | `enchantments_encore` | No | 10 | `#minecraft:enchantable/foot_armor` |
+| `enchantencore:vitality` | 3 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/armor` |
 | `enchantencore:warden` | 1 | `enchantments_encore` | No | 1 | `#minecraft:enchantable/armor` |
 | `enchantencore:warped_arrow` | 1 | `enchantments_encore` | No | 1 | `#enchantencore:all_bows` |
 | `enchantencore:warped_trident` | 1 | `enchantments_encore` | No | 1 | `#minecraft:enchantable/trident` |
@@ -68,19 +74,16 @@
 | `wither:soul_siphon` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/weapon` |
 | `wither:witherbound` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/armor` |
 
-## 4. Epic Enchants (Chỉ kiếm từ Kho báu / Hầm ngục) (73)
+## 4. Epic Enchants (Chỉ kiếm từ Kho báu / Hầm ngục) (69)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
 | `bound:bound` | 3 | `Bound-v3.0.3` | No | None | `#minecraft:enchantable/foot_armor` |
-| `enchantencore:adrenaline` | 4 | `enchantments_encore` | No | 2 | `#enchantencore:all_bows` |
 | `enchantencore:bear_spirit` | 1 | `enchantments_encore` | No | 2 | `minecraft:wolf_armor` |
 | `enchantencore:crab_claw` | 3 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/mining` |
 | `enchantencore:creeper_alloy` | 1 | `enchantments_encore` | No | 10 | `#minecraft:chest_armor` |
-| `enchantencore:dolphin_blessing` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/foot_armor` |
 | `enchantencore:emberweave` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/durability` |
 | `enchantencore:flare` | 1 | `enchantments_encore` | No | 5 | `#enchantencore:all_bows` |
-| `enchantencore:frenzy` | 3 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/leg_armor` |
 | `enchantencore:ghost_spirit` | 1 | `enchantments_encore` | No | 2 | `minecraft:wolf_armor` |
 | `enchantencore:hardened` | 3 | `enchantments_encore` | No | 10 | `minecraft:shield` |
 | `enchantencore:haste` | 3 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/mining` |
@@ -93,7 +96,6 @@
 | `enchantencore:refuel` | 1 | `enchantments_encore` | No | 2 | `minecraft:elytra` |
 | `enchantencore:tideweave` | 1 | `enchantments_encore` | No | 10 | `#minecraft:enchantable/durability` |
 | `enchantencore:trial_runner` | 1 | `enchantments_encore` | No | 5 | `#minecraft:foot_armor` |
-| `enchantencore:vitality` | 3 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/armor` |
 | `enchantencore:voidweave` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/durability` |
 | `enchantplus:boots/agility` | 5 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/foot_armor` |
 | `enchantplus:helmet/auto_feed` | 1 | `NeoEnchant-5.16.0` | No | 10 | `#minecraft:enchantable/head_armor` |
@@ -146,7 +148,7 @@
 | `stellarity:ambush` | 3 | `Stellarity-6.0.1` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
 | `stellarity:plated` | 4 | `Stellarity-6.0.1` | No | 2 | `#stellarity:enchantable/elytra` |
 
-## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (107)
+## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (106)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -165,7 +167,6 @@
 | `enchantencore:fetch` | 1 | `enchantments_encore` | No | 5 | `minecraft:wolf_armor` |
 | `enchantencore:fire_alloy` | 1 | `enchantments_encore` | Yes | 10 | `#minecraft:chest_armor` |
 | `enchantencore:gluttony` | 5 | `enchantments_encore` | Yes | 10 | `#enchantencore:all_tools` |
-| `enchantencore:habanero` | 1 | `enchantments_encore` | No | 5 | `#minecraft:chest_armor` |
 | `enchantencore:heroes_crown` | 1 | `enchantments_encore` | Yes | 5 | `#minecraft:enchantable/head_armor` |
 | `enchantencore:hurricane` | 1 | `enchantments_encore` | No | 5 | `minecraft:bow, minecraft:trident...` |
 | `enchantencore:ice_alloy` | 1 | `enchantments_encore` | Yes | 10 | `#minecraft:chest_armor` |
@@ -258,7 +259,7 @@
 | `stellarity:levitation_shot` | 5 | `Stellarity-6.0.1` | No | 5 | `#minecraft:enchantable/bow` |
 | `veinminer-enchantment:veinminer` | 1 | `veinminer-enchantment-1.3.6` | No | 1 | `#minecraft:pickaxes` |
 
-## 6. Common Enchants (133)
+## 6. Common Enchants (132)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -318,7 +319,6 @@
 | `enchantencore:seeker` | 3 | `enchantments_encore` | Yes | 10 | `#minecraft:enchantable/head_armor` |
 | `enchantencore:shrinkage` | 1 | `enchantments_encore` | No | 10 | `#enchantencore:valid_for_shrinkage` |
 | `enchantencore:sparking_aura` | 1 | `enchantments_encore` | No | 10 | `#minecraft:head_armor` |
-| `enchantencore:spectral_form` | 1 | `enchantments_encore` | Yes | 10 | `#minecraft:enchantable/foot_armor` |
 | `enchantencore:sticky_aura` | 1 | `enchantments_encore` | No | 10 | `#minecraft:head_armor` |
 | `enchantencore:sting` | 1 | `enchantments_encore` | Yes | 10 | `minecraft:crossbow` |
 | `enchantencore:strafe` | 1 | `enchantments_encore` | No | 10 | `#minecraft:foot_armor` |

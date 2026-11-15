@@ -1,9 +1,10 @@
 {
   "description": {
     "text": "Frenzy",
-    "color": "light_purple"
+    "color": "gold",
+    "bold": true
   },
-  "exclusive_set": "#enchantencore:ultimate",
+  "exclusive_set": "#expedition:exclusive/enchantencore_frenzy",
   "supported_items": "#minecraft:enchantable/leg_armor",
   "weight": 2,
   "max_level": 3,
