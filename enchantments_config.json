@@ -308,7 +308,7 @@
       "max_level": 1,
       "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/leg_armor",
-      "description": "Grants Fire Resistance (15s), +7 explosion protection EPF, -20% burn time, and ignites attackers for 3s. [ULTIMATE]",
+      "description": "Grants Fire Resistance (15s), +10 explosion protection EPF, -20% burn time, and ignites attackers for 3s. [ULTIMATE]",
       "name_vi": "Blaze's Blessing"
     },
     "enchantencore:blindness_curse": {
@@ -612,7 +612,7 @@
       "max_level": 1,
       "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/leg_armor",
-      "description": "Grants +7 explosion protection EPF and blasts nearby attackers away when struck. [ULTIMATE]",
+      "description": "Grants +10 explosion protection EPF and blasts nearby attackers away when struck. [ULTIMATE]",
       "name_vi": "Creeper's Blessing"
     },
     "enchantencore:creeper_vision_curse": {
@@ -764,7 +764,7 @@
       "max_level": 4,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) during Overworld daytime.",
+      "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) during Overworld daytime.",
       "name_vi": "Day Protection"
     },
     "enchantencore:death_curse": {
@@ -916,7 +916,7 @@
       "max_level": 4,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) while in The End.",
+      "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) while in The End.",
       "name_vi": "End Protection"
     },
     "enchantencore:end_speed": {
@@ -1821,16 +1821,16 @@
       "source_file": "datapacks\\enchantments_encore\\data\\enchantencore\\enchantment\\magic_protection.json",
       "vanilla": false,
       "enabled": true,
-      "tier": "common",
+      "tier": "rare",
       "curse": false,
       "enchantable_rare": false,
-      "table": true,
-      "tradeable": true,
+      "table": false,
+      "tradeable": false,
       "loot": true,
-      "table_weight": 12,
-      "loot_weight": 10,
+      "table_weight": 1,
+      "loot_weight": 5,
       "max_level": 4,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/armor",
       "description": "Adds +0.4 magic damage protection EPF per level (up to +1.6 EPF per piece at Lv IV).",
       "name_vi": "Magic Protection"
@@ -1991,7 +1991,7 @@
       "max_level": 4,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) while in The Nether.",
+      "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) while in The Nether.",
       "name_vi": "Nether Protection"
     },
     "enchantencore:night_protection": {
@@ -2010,7 +2010,7 @@
       "max_level": 4,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) during Overworld nighttime.",
+      "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) during Overworld nighttime.",
       "name_vi": "Night Protection"
     },
     "enchantencore:night_vision": {
@@ -2257,7 +2257,7 @@
       "max_level": 1,
       "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Grants +0.5 all-damage EPF, +1.2 projectile/fire/explosion EPF, -4% burn time, and +15% explosion knockback resistance. [ULTIMATE]",
+      "description": "Grants +0.75 all-damage EPF, +1.5 projectile/fire/explosion EPF, -4% burn time, and +15% explosion knockback resistance. [ULTIMATE]",
       "name_vi": "Perfect Protection"
     },
     "enchantencore:phantom_menace": {
@@ -2599,7 +2599,7 @@
       "max_level": 3,
       "anvil_cost": 8,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Adds +1.5 projectile protection EPF per level (up to +4.5 at Lv III) and reflects 4 (+0.5 per level above I) thorns damage back at archers. [ULTIMATE]",
+      "description": "Adds +2 projectile protection EPF (+3 per level above I, up to +8 EPF at Lv III) and reflects 4 (+0.5 per level above I) thorns damage back at archers. [ULTIMATE]",
       "name_vi": "Reflection"
     },
     "enchantencore:refuel": {

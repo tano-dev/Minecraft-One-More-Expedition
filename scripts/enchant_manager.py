@@ -513,22 +513,19 @@ def _apply_protection_nerfs(eid, raw):
 
     # Format: eid -> list of (base, per_level_above_first) or scalar per effect entry
     nerf_map = {
-        # Broad / conditional all-damage protections (-33% to -50%)
-        "enchantencore:day_protection": [(1, 1)],
-        "enchantencore:night_protection": [(1, 1)],
-        "enchantencore:end_protection": [(1, 1)],
-        "enchantencore:nether_protection": [(1, 1)],
-        "enchantencore:perfect_protection": [(1.2, 1.2), (1.2, 1.2), (1.2, 1.2), (0.5, 0.5)],
+        # Broad / conditional all-damage protections
+        "enchantencore:day_protection": [(1.5, 1.5)],
+        "enchantencore:night_protection": [(1.5, 1.5)],
+        "enchantencore:end_protection": [(1.5, 1.5)],
+        "enchantencore:nether_protection": [(1.5, 1.5)],
         "enchantplus:elytra/armored": [6],
         "enchantsplus:skyguard": [(0.75, 0.75)],
         "enchantplus:mounted/cavalier_egis": [(0.75, 0.75)],
-        # Niche / single-type protections (-20% to -33%)
+        # Niche / single-type protections & Ultimate buffs
         "enchantencore:magic_protection": [(0.4, 0.4)],
-        "enchantencore:reflection": [(1.5, 1.5)],
+        "enchantencore:reflection": [(2, 3)],
         "enchantencore:thorns_protection": [(3.5, 3)],
         "enchantencore:wither_protection": [(3.5, 3)],
-        "enchantencore:blaze_blessing": [(7, 3.5)],
-        "enchantencore:creeper_blessing": [(7, 3.5)],
         "enchantencore:cushion": [(5, 5)],
         "enchantsplus:kinetic_protection": [(3, 3)],
         "enchantencore:wind_spirit": [15],

@@ -1,8 +1,8 @@
 {
-  "anvil_cost": 2,
+  "anvil_cost": 4,
   "description": {
     "text": "Magic Protection",
-    "color": "gray"
+    "color": "aqua"
   },
   "effects": {
     "minecraft:damage_protection": [
@@ -46,5 +46,5 @@
     "armor"
   ],
   "supported_items": "#minecraft:enchantable/armor",
-  "weight": 12
+  "weight": 5
 }

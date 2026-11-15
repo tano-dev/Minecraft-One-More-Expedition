@@ -8,8 +8,8 @@
 | :--- | :--- | :---: | :--- | :--- |
 | **Ultimate** | Gold (`gold`) | **40** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
 | **Epic** | Light Purple (`light_purple`) | **67** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
-| **Rare** | Aqua (`aqua`) | **103** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
-| **Common** | Gray (`gray`) | **156** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
+| **Rare** | Aqua (`aqua`) | **104** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
+| **Common** | Gray (`gray`) | **155** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
 | **Curses** | Red (`red`) | **34** | Rương kho báu / Curse | Lời nguyền |
 | **Filtered Duplicates** | — | **16** | Đã tắt | Lọc trùng giữa các pack |
 
@@ -23,10 +23,10 @@
 | **Bow** | 5 | 39 | 2 | **5.13%** |
 | **Crossbow** | 4 | 43 | 1 | **2.33%** |
 | **Trident** | 6 | 64 | 1 | **1.56%** |
-| **Helmet** | 12 | 111 | 2 | **1.8%** |
-| **Chestplate** | 11 | 103 | 2 | **1.94%** |
-| **Leggings** | 9 | 79 | 2 | **2.53%** |
-| **Boots** | 12 | 102 | 3 | **2.94%** |
+| **Helmet** | 11 | 99 | 2 | **2.02%** |
+| **Chestplate** | 10 | 91 | 2 | **2.2%** |
+| **Leggings** | 8 | 67 | 2 | **2.99%** |
+| **Boots** | 11 | 90 | 3 | **3.33%** |
 
 ## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (40)
 
@@ -145,7 +145,7 @@
 | `stellarity:ambush` | 3 | `Stellarity-6.0.1` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
 | `stellarity:plated` | 4 | `Stellarity-6.0.1` | No | 2 | `#stellarity:enchantable/elytra` |
 
-## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (103)
+## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (104)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -170,6 +170,7 @@
 | `enchantencore:incognito` | 1 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/head_armor` |
 | `enchantencore:jousting` | 3 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/lunge` |
 | `enchantencore:levitation_aspect` | 2 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/fire_aspect` |
+| `enchantencore:magic_protection` | 4 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/armor` |
 | `enchantencore:meteor` | 1 | `enchantments_encore` | No | 5 | `minecraft:mace` |
 | `enchantencore:moonwalk` | 3 | `enchantments_encore` | No | 5 | `minecraft:elytra, minecraft:diamond_horse_armor...` |
 | `enchantencore:nether_protection` | 4 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/armor` |
@@ -253,7 +254,7 @@
 | `stellarity:levitation_shot` | 5 | `Stellarity-6.0.1` | No | 5 | `#minecraft:enchantable/bow` |
 | `stellarity:soaring` | 4 | `Stellarity-6.0.1` | No | 5 | `#stellarity:enchantable/elytra` |
 
-## 6. Common Enchants (156)
+## 6. Common Enchants (155)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -298,7 +299,6 @@
 | `enchantencore:lingering` | 1 | `enchantments_encore` | No | 10 | `#enchantencore:all_bows` |
 | `enchantencore:lovely_aura` | 1 | `enchantments_encore` | No | 10 | `#minecraft:head_armor` |
 | `enchantencore:lush_aura` | 1 | `enchantments_encore` | No | 10 | `#minecraft:head_armor` |
-| `enchantencore:magic_protection` | 4 | `enchantments_encore` | Yes | 10 | `#minecraft:enchantable/armor` |
 | `enchantencore:magma_walker` | 1 | `enchantments_encore` | No | 10 | `#minecraft:enchantable/foot_armor` |
 | `enchantencore:muddy_aura` | 1 | `enchantments_encore` | No | 10 | `#minecraft:head_armor` |
 | `enchantencore:ominous_aura` | 1 | `enchantments_encore` | No | 10 | `#minecraft:head_armor` |

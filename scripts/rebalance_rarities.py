@@ -137,6 +137,7 @@ RARE_IDS = {
     "enchantencore:bane_of_bosses",
     "enchantencore:day_protection",
     "enchantencore:end_protection",
+    "enchantencore:magic_protection",
     "enchantencore:nether_protection",
     "enchantencore:night_protection",
     "enchantencore:scholar_of_blocks",

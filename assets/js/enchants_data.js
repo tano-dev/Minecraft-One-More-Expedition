@@ -107,7 +107,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Leggings",
-    "description": "Grants Fire Resistance (15s), +7 explosion protection EPF, -20% burn time, and ignites attackers for 3s. [ULTIMATE]",
+    "description": "Grants Fire Resistance (15s), +10 explosion protection EPF, -20% burn time, and ignites attackers for 3s. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:blaze_blessing\":1}}] 1"
   },
   {
@@ -173,7 +173,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Leggings",
-    "description": "Grants +7 explosion protection EPF and blasts nearby attackers away when struck. [ULTIMATE]",
+    "description": "Grants +10 explosion protection EPF and blasts nearby attackers away when struck. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_blessing\":1}}] 1"
   },
   {
@@ -483,7 +483,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Grants +0.5 all-damage EPF, +1.2 projectile/fire/explosion EPF, -4% burn time, and +15% explosion knockback resistance. [ULTIMATE]",
+    "description": "Grants +0.75 all-damage EPF, +1.5 projectile/fire/explosion EPF, -4% burn time, and +15% explosion knockback resistance. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:perfect_protection\":1}}] 1"
   },
   {
@@ -572,7 +572,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Chestplates",
-    "description": "Adds +1.5 projectile protection EPF per level (up to +4.5 at Lv III) and reflects 4 (+0.5 per level above I) thorns damage back at archers. [ULTIMATE]",
+    "description": "Adds +2 projectile protection EPF (+3 per level above I, up to +8 EPF at Lv III) and reflects 4 (+0.5 per level above I) thorns damage back at archers. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:reflection\":3}}] 1"
   },
   {
@@ -2673,7 +2673,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) during Overworld daytime.",
+    "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) during Overworld daytime.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:day_protection\":4}}] 1"
   },
   {
@@ -3135,7 +3135,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) while in The End.",
+    "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) while in The End.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:end_protection\":4}}] 1"
   },
   {
@@ -5106,12 +5106,12 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "magic_protection",
     "name": "Magic Protection",
     "name_vi": "Magic Protection",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 4,
-    "anvil_cost": 2,
-    "table": true,
-    "tradeable": true,
+    "anvil_cost": 4,
+    "table": false,
+    "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#minecraft:enchantable/armor",
@@ -5429,7 +5429,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) while in The Nether.",
+    "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) while in The Nether.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:nether_protection\":4}}] 1"
   },
   {
@@ -5451,7 +5451,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) during Overworld nighttime.",
+    "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) during Overworld nighttime.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:night_protection\":4}}] 1"
   },
   {
