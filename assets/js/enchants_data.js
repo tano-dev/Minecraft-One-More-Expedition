@@ -107,7 +107,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Leggings",
-    "description": "Grants Fire Resistance (15s), +10 explosion protection EPF, -20% burn time, and ignites attackers for 3s. [ULTIMATE]",
+    "description": "Grants Fire Resistance (15s), +7 explosion protection EPF, -20% burn time, and ignites attackers for 3s. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:blaze_blessing\":1}}] 1"
   },
   {
@@ -173,7 +173,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Leggings",
-    "description": "Grants +10 explosion protection EPF and blasts nearby attackers away when struck. [ULTIMATE]",
+    "description": "Grants +7 explosion protection EPF and blasts nearby attackers away when struck. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_blessing\":1}}] 1"
   },
   {
@@ -483,7 +483,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Grants +0.75 all-damage EPF, +1.5 projectile/fire/explosion EPF, -4% burn time, and +15% explosion knockback resistance. [ULTIMATE]",
+    "description": "Grants +0.5 all-damage EPF, +1.2 projectile/fire/explosion EPF, -4% burn time, and +15% explosion knockback resistance. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:perfect_protection\":1}}] 1"
   },
   {
@@ -572,7 +572,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Chestplates",
-    "description": "Adds +2 projectile protection EPF per level (up to +6 at Lv III) and reflects 4 (+0.5 per level above I) thorns damage back at archers. [ULTIMATE]",
+    "description": "Adds +1.5 projectile protection EPF per level (up to +4.5 at Lv III) and reflects 4 (+0.5 per level above I) thorns damage back at archers. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:reflection\":3}}] 1"
   },
   {
@@ -1146,7 +1146,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Elytra",
-    "description": "Reduces damage taken while wearing Elytra (grants +9 EPF protection scaling across Lv I–IV).",
+    "description": "Reduces damage taken while wearing Elytra (grants +6 EPF protection).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:elytra/armored\":4}}] 1"
   },
   {
@@ -1674,7 +1674,7 @@ window.ALL_ENCHANTMENTS = [
       "mount"
     ],
     "supported_display": "Saddles & Mounts",
-    "description": "Grants +1 damage protection per level (up to +3 EPF at Lv III) while riding a mount.",
+    "description": "Grants +0.75 damage protection EPF per level (up to +2.25 EPF at Lv III) while riding a mount.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/cavalier_egis\":3}}] 1"
   },
   {
@@ -2585,7 +2585,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Elytra",
-    "description": "Adds +7.5 Elytra wall-collision protection EPF per level (up to +30 EPF at Lv IV).",
+    "description": "Adds +5 Elytra wall-collision protection EPF per level (up to +20 EPF at Lv IV).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:cushion\":4}}] 1"
   },
   {
@@ -2673,7 +2673,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Adds +2 protection EPF per level (2x vanilla Protection, up to +8 EPF at Lv IV) during Overworld daytime.",
+    "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) during Overworld daytime.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:day_protection\":4}}] 1"
   },
   {
@@ -3135,7 +3135,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Adds +2 protection EPF per level (2x vanilla Protection, up to +8 EPF at Lv IV) while in The End.",
+    "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) while in The End.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:end_protection\":4}}] 1"
   },
   {
@@ -4302,7 +4302,7 @@ window.ALL_ENCHANTMENTS = [
       "mount"
     ],
     "supported_display": "Happy Ghast Harnesses",
-    "description": "Grants Happy Ghast -25% burn time per level, +25% explosion knockback resistance per level, and +5 fire/blast protection per level (up to +20 at Lv IV).",
+    "description": "Grants Happy Ghast -25% burn time per level, +25% explosion knockback resistance per level, and +3.75 fire/blast protection EPF per level (up to +15 at Lv IV).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:hydro_veil\":4}}] 1"
   },
   {
@@ -4766,7 +4766,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Helmets",
-    "description": "Reduces Elytra wall-collision kinetic damage by +4 EPF per level (up to +16 at Lv IV).",
+    "description": "Reduces Elytra wall-collision kinetic damage by +3 EPF per level (up to +12 at Lv IV).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:kinetic_protection\":4}}] 1"
   },
   {
@@ -5119,7 +5119,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Adds +0.5 magic damage protection EPF per level (up to +2 EPF per piece at Lv IV).",
+    "description": "Adds +0.4 magic damage protection EPF per level (up to +1.6 EPF per piece at Lv IV).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:magic_protection\":4}}] 1"
   },
   {
@@ -5429,7 +5429,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Adds +2 protection EPF per level (2x vanilla Protection, up to +8 EPF at Lv IV) while in The Nether.",
+    "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) while in The Nether.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:nether_protection\":4}}] 1"
   },
   {
@@ -5451,7 +5451,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Adds +2 protection EPF per level (2x vanilla Protection, up to +8 EPF at Lv IV) during Overworld nighttime.",
+    "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) during Overworld nighttime.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:night_protection\":4}}] 1"
   },
   {
@@ -7129,7 +7129,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Elytra",
-    "description": "Grants +1 damage protection per level (up to +4 EPF at Lv IV) while gliding with Elytra.",
+    "description": "Grants +0.75 damage protection EPF per level (up to +3 EPF at Lv IV) while gliding with Elytra.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:skyguard\":4}}] 1"
   },
   {
@@ -7901,7 +7901,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Adds +5 protection EPF (+4 per level above I, up to +17 EPF at Lv IV) against Thorns, cactus, and sweet berry damage.",
+    "description": "Adds +3.5 protection EPF (+3 per level above I, up to +12.5 EPF at Lv IV) against Thorns, cactus, and sweet berry damage.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:thorns_protection\":4}}] 1"
   },
   {
@@ -8759,7 +8759,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "description": "Adds +5 protection EPF (+4 per level above I, up to +17 EPF at Lv IV) against Wither and Wither Skull damage.",
+    "description": "Adds +3.5 protection EPF (+3 per level above I, up to +12.5 EPF at Lv IV) against Wither and Wither Skull damage.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wither_protection\":4}}] 1"
   },
   {

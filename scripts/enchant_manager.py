@@ -505,6 +505,51 @@ def _compute_table_probabilities(enchantments):
     return report
 
 
+def _apply_protection_nerfs(eid, raw):
+    """Apply balanced EPF nerfs to protection enchantments relative to minecraft:protection."""
+    dp = raw.get("effects", {}).get("minecraft:damage_protection")
+    if not dp:
+        return
+
+    # Format: eid -> list of (base, per_level_above_first) or scalar per effect entry
+    nerf_map = {
+        # Broad / conditional all-damage protections (-33% to -50%)
+        "enchantencore:day_protection": [(1, 1)],
+        "enchantencore:night_protection": [(1, 1)],
+        "enchantencore:end_protection": [(1, 1)],
+        "enchantencore:nether_protection": [(1, 1)],
+        "enchantencore:perfect_protection": [(1.2, 1.2), (1.2, 1.2), (1.2, 1.2), (0.5, 0.5)],
+        "enchantplus:elytra/armored": [6],
+        "enchantsplus:skyguard": [(0.75, 0.75)],
+        "enchantplus:mounted/cavalier_egis": [(0.75, 0.75)],
+        # Niche / single-type protections (-20% to -33%)
+        "enchantencore:magic_protection": [(0.4, 0.4)],
+        "enchantencore:reflection": [(1.5, 1.5)],
+        "enchantencore:thorns_protection": [(3.5, 3)],
+        "enchantencore:wither_protection": [(3.5, 3)],
+        "enchantencore:blaze_blessing": [(7, 3.5)],
+        "enchantencore:creeper_blessing": [(7, 3.5)],
+        "enchantencore:cushion": [(5, 5)],
+        "enchantsplus:kinetic_protection": [(3, 3)],
+        "enchantencore:wind_spirit": [15],
+        "nova_structures:hydro_veil": [(3.75, 3.75)],
+    }
+
+    spec = nerf_map.get(eid)
+    if not spec:
+        return
+
+    for idx, rule in enumerate(spec):
+        if idx >= len(dp):
+            break
+        eff = dp[idx].get("effect", {})
+        if isinstance(rule, tuple):
+            base_v, per_lv = rule
+            eff["value"] = {"type": "minecraft:linear", "base": base_v, "per_level_above_first": per_lv}
+        else:
+            eff["value"] = rule
+
+
 def cmd_build():
     """Compile enchantments_config.json into expedition_enchantments_control datapack & catalog."""
     if not os.path.exists(CONFIG_PATH):
@@ -615,6 +660,8 @@ def cmd_build():
             with open(excl_tag_path, "w", encoding="utf-8") as ef:
                 json.dump({"replace": True, "values": excl_values}, ef, indent=2)
             raw["exclusive_set"] = f"#expedition:exclusive/{ns}_{safe_name}"
+
+        _apply_protection_nerfs(eid, raw)
 
         ns, name = eid.split(":", 1)
         out_path = os.path.join(CONTROLLER_DIR, "data", ns, "enchantment", *name.split("/")) + ".json"

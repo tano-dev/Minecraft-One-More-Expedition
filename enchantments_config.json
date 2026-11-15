@@ -308,7 +308,7 @@
       "max_level": 1,
       "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/leg_armor",
-      "description": "Grants Fire Resistance (15s), +10 explosion protection EPF, -20% burn time, and ignites attackers for 3s. [ULTIMATE]",
+      "description": "Grants Fire Resistance (15s), +7 explosion protection EPF, -20% burn time, and ignites attackers for 3s. [ULTIMATE]",
       "name_vi": "Blaze's Blessing"
     },
     "enchantencore:blindness_curse": {
@@ -612,7 +612,7 @@
       "max_level": 1,
       "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/leg_armor",
-      "description": "Grants +10 explosion protection EPF and blasts nearby attackers away when struck. [ULTIMATE]",
+      "description": "Grants +7 explosion protection EPF and blasts nearby attackers away when struck. [ULTIMATE]",
       "name_vi": "Creeper's Blessing"
     },
     "enchantencore:creeper_vision_curse": {
@@ -707,7 +707,7 @@
       "max_level": 4,
       "anvil_cost": 2,
       "supported_items": "minecraft:elytra",
-      "description": "Adds +7.5 Elytra wall-collision protection EPF per level (up to +30 EPF at Lv IV).",
+      "description": "Adds +5 Elytra wall-collision protection EPF per level (up to +20 EPF at Lv IV).",
       "name_vi": "Cushion"
     },
     "enchantencore:dark_infused": {
@@ -764,7 +764,7 @@
       "max_level": 4,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Adds +2 protection EPF per level (2x vanilla Protection, up to +8 EPF at Lv IV) during Overworld daytime.",
+      "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) during Overworld daytime.",
       "name_vi": "Day Protection"
     },
     "enchantencore:death_curse": {
@@ -916,7 +916,7 @@
       "max_level": 4,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Adds +2 protection EPF per level (2x vanilla Protection, up to +8 EPF at Lv IV) while in The End.",
+      "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) while in The End.",
       "name_vi": "End Protection"
     },
     "enchantencore:end_speed": {
@@ -1832,7 +1832,7 @@
       "max_level": 4,
       "anvil_cost": 2,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Adds +0.5 magic damage protection EPF per level (up to +2 EPF per piece at Lv IV).",
+      "description": "Adds +0.4 magic damage protection EPF per level (up to +1.6 EPF per piece at Lv IV).",
       "name_vi": "Magic Protection"
     },
     "enchantencore:magma_walker": {
@@ -1991,7 +1991,7 @@
       "max_level": 4,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Adds +2 protection EPF per level (2x vanilla Protection, up to +8 EPF at Lv IV) while in The Nether.",
+      "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) while in The Nether.",
       "name_vi": "Nether Protection"
     },
     "enchantencore:night_protection": {
@@ -2010,7 +2010,7 @@
       "max_level": 4,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Adds +2 protection EPF per level (2x vanilla Protection, up to +8 EPF at Lv IV) during Overworld nighttime.",
+      "description": "Adds +1 protection EPF per level (up to +4 EPF at Lv IV) during Overworld nighttime.",
       "name_vi": "Night Protection"
     },
     "enchantencore:night_vision": {
@@ -2257,7 +2257,7 @@
       "max_level": 1,
       "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Grants +0.75 all-damage EPF, +1.5 projectile/fire/explosion EPF, -4% burn time, and +15% explosion knockback resistance. [ULTIMATE]",
+      "description": "Grants +0.5 all-damage EPF, +1.2 projectile/fire/explosion EPF, -4% burn time, and +15% explosion knockback resistance. [ULTIMATE]",
       "name_vi": "Perfect Protection"
     },
     "enchantencore:phantom_menace": {
@@ -2599,7 +2599,7 @@
       "max_level": 3,
       "anvil_cost": 8,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Adds +2 projectile protection EPF per level (up to +6 at Lv III) and reflects 4 (+0.5 per level above I) thorns damage back at archers. [ULTIMATE]",
+      "description": "Adds +1.5 projectile protection EPF per level (up to +4.5 at Lv III) and reflects 4 (+0.5 per level above I) thorns damage back at archers. [ULTIMATE]",
       "name_vi": "Reflection"
     },
     "enchantencore:refuel": {
@@ -3207,7 +3207,7 @@
       "max_level": 4,
       "anvil_cost": 2,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Adds +5 protection EPF (+4 per level above I, up to +17 EPF at Lv IV) against Thorns, cactus, and sweet berry damage.",
+      "description": "Adds +3.5 protection EPF (+3 per level above I, up to +12.5 EPF at Lv IV) against Thorns, cactus, and sweet berry damage.",
       "name_vi": "Thorns Protection"
     },
     "enchantencore:tideweave": {
@@ -3610,7 +3610,7 @@
       "max_level": 4,
       "anvil_cost": 2,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Adds +5 protection EPF (+4 per level above I, up to +17 EPF at Lv IV) against Wither and Wither Skull damage.",
+      "description": "Adds +3.5 protection EPF (+3 per level above I, up to +12.5 EPF at Lv IV) against Wither and Wither Skull damage.",
       "name_vi": "Wither Protection"
     },
     "enchantencore:yoink": {
@@ -3971,7 +3971,7 @@
       "max_level": 4,
       "anvil_cost": 4,
       "supported_items": "#voxel:enchantable/elytra",
-      "description": "Reduces damage taken while wearing Elytra (grants +9 EPF protection scaling across Lv I–IV).",
+      "description": "Reduces damage taken while wearing Elytra (grants +6 EPF protection).",
       "name_vi": "Armored"
     },
     "enchantplus:elytra/kinetic_protection": {
@@ -4294,7 +4294,7 @@
       "max_level": 3,
       "anvil_cost": 2,
       "supported_items": "#enchantplus:enchantable/mounted",
-      "description": "Grants +1 damage protection per level (up to +3 EPF at Lv III) while riding a mount.",
+      "description": "Grants +0.75 damage protection EPF per level (up to +2.25 EPF at Lv III) while riding a mount.",
       "name_vi": "Cavalier Egis"
     },
     "enchantplus:mounted/ethereal_leap": {
@@ -4997,7 +4997,7 @@
       "max_level": 4,
       "anvil_cost": 2,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Reduces Elytra wall-collision kinetic damage by +4 EPF per level (up to +16 at Lv IV).",
+      "description": "Reduces Elytra wall-collision kinetic damage by +3 EPF per level (up to +12 at Lv IV).",
       "name_vi": "Kinetic Protection"
     },
     "enchantsplus:outreach": {
@@ -5114,7 +5114,7 @@
       "max_level": 4,
       "anvil_cost": 2,
       "supported_items": "minecraft:elytra",
-      "description": "Grants +1 damage protection per level (up to +4 EPF at Lv IV) while gliding with Elytra.",
+      "description": "Grants +0.75 damage protection EPF per level (up to +3 EPF at Lv IV) while gliding with Elytra.",
       "name_vi": "Skyguard"
     },
     "enchantsplus:stride": {
@@ -7267,7 +7267,7 @@
       "max_level": 4,
       "anvil_cost": 4,
       "supported_items": "#minecraft:harnesses",
-      "description": "Grants Happy Ghast -25% burn time per level, +25% explosion knockback resistance per level, and +5 fire/blast protection per level (up to +20 at Lv IV).",
+      "description": "Grants Happy Ghast -25% burn time per level, +25% explosion knockback resistance per level, and +3.75 fire/blast protection EPF per level (up to +15 at Lv IV).",
       "name_vi": "Hydro Veil"
     },
     "nova_structures:illagers_bane": {
