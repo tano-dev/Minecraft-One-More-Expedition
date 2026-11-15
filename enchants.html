@@ -1635,12 +1635,18 @@
         return true;
       });
 
+      const TIER_RANK = { ultimate: 0, epic: 1, rare: 2, common: 3, curse: 4 };
       filtered.sort((a, b) => {
-        if (currentSort === "tier") return a.tier_order - b.tier_order || a.name.localeCompare(b.name);
-        if (currentSort === "level") return b.max_level - a.max_level || a.name.localeCompare(b.name);
-        if (currentSort === "name_asc") return a.name.localeCompare(b.name);
-        if (currentSort === "name_desc") return b.name.localeCompare(a.name);
-        if (currentSort === "anvil") return b.anvil_cost - a.anvil_cost || a.name.localeCompare(b.name);
+        const nameCmp = (a.name || "").localeCompare(b.name || "");
+        if (currentSort === "tier") {
+          const ra = TIER_RANK[a.tier] ?? (typeof a.tier_order === "number" ? a.tier_order : 99);
+          const rb = TIER_RANK[b.tier] ?? (typeof b.tier_order === "number" ? b.tier_order : 99);
+          return ra - rb || nameCmp;
+        }
+        if (currentSort === "level") return (Number(b.max_level) || 0) - (Number(a.max_level) || 0) || nameCmp;
+        if (currentSort === "name_asc") return nameCmp;
+        if (currentSort === "name_desc") return (b.name || "").localeCompare(a.name || "");
+        if (currentSort === "anvil") return (Number(b.anvil_cost) || 0) - (Number(a.anvil_cost) || 0) || nameCmp;
         return 0;
       });
 
