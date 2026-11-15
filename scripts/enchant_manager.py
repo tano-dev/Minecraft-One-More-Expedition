@@ -908,7 +908,7 @@ def cmd_build():
         "smite.json": {
             "description": {"translate": "enchantment.minecraft.smite"},
             "supported_items": "#minecraft:enchantable/weapon",
-            "primary_items": "#minecraft:enchantable/sword",
+            "primary_items": "#minecraft:enchantable/melee_weapon",
             "exclusive_set": "#minecraft:exclusive_set/damage",
             "weight": 5, "max_level": 5,
             "min_cost": {"base": 5, "per_level_above_first": 8},
@@ -916,13 +916,13 @@ def cmd_build():
             "anvil_cost": 2, "slots": ["mainhand"],
             "effects": {"minecraft:damage": [{
                 "effect": {"type": "minecraft:add", "value": {"type": "minecraft:linear", "base": 2, "per_level_above_first": 2}},
-                "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"type": "#minecraft:sensitive_to_smite"}},
+                "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraft:entity_type": "#minecraft:sensitive_to_smite"}},
             }]},
         },
         "bane_of_arthropods.json": {
             "description": {"translate": "enchantment.minecraft.bane_of_arthropods"},
             "supported_items": "#minecraft:enchantable/weapon",
-            "primary_items": "#minecraft:enchantable/sword",
+            "primary_items": "#minecraft:enchantable/melee_weapon",
             "exclusive_set": "#minecraft:exclusive_set/damage",
             "weight": 5, "max_level": 5,
             "min_cost": {"base": 5, "per_level_above_first": 8},
@@ -931,7 +931,7 @@ def cmd_build():
             "effects": {
                 "minecraft:damage": [{
                     "effect": {"type": "minecraft:add", "value": {"type": "minecraft:linear", "base": 2, "per_level_above_first": 2}},
-                    "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"type": "#minecraft:sensitive_to_bane_of_arthropods"}},
+                    "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraft:entity_type": "#minecraft:sensitive_to_bane_of_arthropods"}},
                 }],
                 "minecraft:post_attack": [{
                     "enchanted": "attacker", "affected": "victim",
@@ -940,7 +940,7 @@ def cmd_build():
                         "min_duration": 1.5, "max_duration": {"type": "minecraft:linear", "base": 1.5, "per_level_above_first": 0.5},
                         "min_amplifier": 3, "max_amplifier": 3,
                     },
-                    "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"type": "#minecraft:sensitive_to_bane_of_arthropods"}},
+                    "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraft:entity_type": "#minecraft:sensitive_to_bane_of_arthropods"}},
                 }],
             },
         },
@@ -954,7 +954,7 @@ def cmd_build():
             "anvil_cost": 4, "slots": ["mainhand"],
             "effects": {"minecraft:damage": [{
                 "effect": {"type": "minecraft:add", "value": {"type": "minecraft:linear", "base": 2, "per_level_above_first": 2}},
-                "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"type": "#minecraft:sensitive_to_impaling"}},
+                "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraft:entity_type": "#minecraft:sensitive_to_impaling"}},
             }]},
         },
     }

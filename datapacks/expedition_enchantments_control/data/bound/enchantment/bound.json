@@ -27,7 +27,6 @@
           "function": "bound:check"
         },
         "requirements": {
-          "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
             "type_specific/player": {
@@ -41,7 +40,8 @@
               "is_on_ground": false,
               "is_flying": false
             }
-          }
+          },
+          "type": "minecraft:entity_properties"
         }
       }
     ]
