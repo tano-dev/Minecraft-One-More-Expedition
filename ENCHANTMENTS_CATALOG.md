@@ -6,7 +6,7 @@
 
 | Tier | Màu sắc | Số lượng | Nguồn kiếm chính | Quy tắc đặc biệt |
 | :--- | :--- | :---: | :--- | :--- |
-| **Ultimate** | Gold (`gold`) | **42** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
+| **Ultimate** | Yellow (`yellow`) | **42** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
 | **Epic** | Light Purple (`light_purple`) | **69** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
 | **Rare** | Aqua (`aqua`) | **107** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
 | **Common** | Gray (`gray`) | **130** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |

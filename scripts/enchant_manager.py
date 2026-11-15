@@ -894,7 +894,7 @@ def cmd_build():
     if os.path.exists(bound_src):
         with open(bound_src, "r", encoding="utf-8") as bf:
             bdata = json.load(bf)
-        b_tier = enchants.get("bound:bound", {}).get("tier", "epic")
+        b_tier = cfg.get("enchantments", {}).get("bound:bound", {}).get("tier", "epic")
         b_color = TIER_DEFAULTS.get(b_tier, TIER_DEFAULTS["epic"])["color"]
         b_desc = {"text": "Bound", "color": b_color}
         if b_tier == "ultimate":
