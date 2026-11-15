@@ -2,11 +2,10 @@
   "description": {
     "translate": "incendium.enchantment.poison_protection",
     "fallback": "Poison Protection",
-    "color": "gold",
-    "bold": true
+    "color": "light_purple"
   },
   "supported_items": "#enchantable/armor",
-  "weight": 1,
+  "weight": 2,
   "max_level": 1,
   "min_cost": {
     "base": 0,
@@ -16,7 +15,7 @@
     "base": 0,
     "per_level_above_first": 0
   },
-  "anvil_cost": 0,
+  "anvil_cost": 6,
   "slots": [
     "any"
   ],
@@ -190,6 +189,5 @@
         }
       }
     ]
-  },
-  "exclusive_set": "#expedition:exclusive/incendium_poison_protection"
+  }
 }

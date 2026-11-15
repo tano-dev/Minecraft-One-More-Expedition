@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.haste",
     "fallback": "Haste",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "exclusive_set": "#enchantencore:exclusive_set/haste",
   "supported_items": "#minecraft:enchantable/mining",
-  "weight": 5,
+  "weight": 2,
   "max_level": 3,
   "min_cost": {
     "base": 21,
@@ -16,7 +16,7 @@
     "base": 51,
     "per_level_above_first": 20
   },
-  "anvil_cost": 1,
+  "anvil_cost": 6,
   "slots": [
     "mainhand"
   ],

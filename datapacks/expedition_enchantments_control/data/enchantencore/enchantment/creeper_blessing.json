@@ -7,7 +7,7 @@
   "exclusive_set": "#expedition:exclusive/enchantencore_creeper_blessing",
   "supported_items": "#minecraft:enchantable/leg_armor",
   "weight": 1,
-  "max_level": 5,
+  "max_level": 1,
   "min_cost": {
     "base": 200,
     "per_level_above_first": 20

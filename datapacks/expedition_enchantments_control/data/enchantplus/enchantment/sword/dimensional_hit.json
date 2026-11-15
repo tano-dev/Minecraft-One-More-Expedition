@@ -7,7 +7,7 @@
   "exclusive_set": "#enchantplus:exclusive_set/sword_attribute",
   "supported_items": "#minecraft:enchantable/melee_weapon",
   "weight": 5,
-  "max_level": 5,
+  "max_level": 3,
   "min_cost": {
     "base": 8,
     "per_level_above_first": 11
@@ -16,7 +16,7 @@
     "base": 21,
     "per_level_above_first": 9
   },
-  "anvil_cost": 2,
+  "anvil_cost": 4,
   "slots": [
     "mainhand"
   ],

@@ -2,12 +2,12 @@
   "description": {
     "translate": "enchantment.enchantsplus.swift_strike",
     "fallback": "Swift Strike",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "exclusive_set": "enchantsplus:outreach",
   "supported_items": "#minecraft:enchantable/sharp_weapon",
   "primary_items": "#minecraft:enchantable/sweeping",
-  "weight": 1,
+  "weight": 2,
   "max_level": 5,
   "min_cost": {
     "base": 25,
@@ -17,7 +17,7 @@
     "base": 50,
     "per_level_above_first": 5
   },
-  "anvil_cost": 8,
+  "anvil_cost": 6,
   "slots": [
     "mainhand"
   ],

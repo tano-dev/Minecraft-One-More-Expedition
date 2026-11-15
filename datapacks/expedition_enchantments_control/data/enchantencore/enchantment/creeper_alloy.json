@@ -7,7 +7,7 @@
   "exclusive_set": "#enchantencore:exclusive_set/alloy",
   "supported_items": "#minecraft:chest_armor",
   "weight": 12,
-  "max_level": 3,
+  "max_level": 1,
   "min_cost": {
     "base": 1,
     "per_level_above_first": 11
@@ -16,7 +16,7 @@
     "base": 12,
     "per_level_above_first": 11
   },
-  "anvil_cost": 1,
+  "anvil_cost": 2,
   "slots": [
     "chest"
   ],

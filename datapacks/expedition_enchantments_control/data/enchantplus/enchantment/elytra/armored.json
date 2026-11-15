@@ -1,5 +1,5 @@
 {
-  "anvil_cost": 10,
+  "anvil_cost": 4,
   "description": {
     "translate": "enchantment.enchantplus.armored",
     "fallback": "Armored",

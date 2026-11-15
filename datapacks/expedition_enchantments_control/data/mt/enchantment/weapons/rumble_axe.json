@@ -1,10 +1,10 @@
 {
   "description": {
     "text": "Rumble Tumble",
-    "color": "red"
+    "color": "light_purple"
   },
   "supported_items": "minecraft:golden_sword",
-  "weight": 10,
+  "weight": 2,
   "max_level": 1,
   "min_cost": {
     "base": 9999,
@@ -14,7 +14,7 @@
     "base": 9999,
     "per_level_above_first": 9999
   },
-  "anvil_cost": 9999,
+  "anvil_cost": 6,
   "slots": [
     "mainhand"
   ],

@@ -1,9 +1,9 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 6,
   "description": {
     "translate": "enchantment.enchantplus.xp_boost",
     "fallback": "Xp Boost",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "effects": {
     "minecraft:mob_experience": [
@@ -45,5 +45,5 @@
   ],
   "exclusive_set": "#enchantplus:exclusive_set/experience",
   "supported_items": "#voxel:enchantable/mining_and_damage",
-  "weight": 5
+  "weight": 2
 }

@@ -16,7 +16,7 @@
     "base": 21,
     "per_level_above_first": 6
   },
-  "anvil_cost": 5,
+  "anvil_cost": 4,
   "slots": [
     "chest"
   ],

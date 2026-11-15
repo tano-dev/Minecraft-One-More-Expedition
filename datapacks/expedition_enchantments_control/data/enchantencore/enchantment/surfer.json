@@ -1,6 +1,6 @@
 {
   "exclusive_set": "#enchantencore:exclusive_set/saddle",
-  "anvil_cost": 8,
+  "anvil_cost": 4,
   "description": {
     "translate": "enchantment.enchantencore.surfer",
     "fallback": "Surfer",

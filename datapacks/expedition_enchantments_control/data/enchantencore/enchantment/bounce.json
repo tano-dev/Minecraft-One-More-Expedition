@@ -7,7 +7,7 @@
   "exclusive_set": "#enchantencore:exclusive_set/boots",
   "supported_items": "#minecraft:enchantable/foot_armor",
   "weight": 5,
-  "max_level": 3,
+  "max_level": 1,
   "min_cost": {
     "base": 25,
     "per_level_above_first": 25
@@ -16,7 +16,7 @@
     "base": 75,
     "per_level_above_first": 25
   },
-  "anvil_cost": 8,
+  "anvil_cost": 4,
   "slots": [
     "feet"
   ],

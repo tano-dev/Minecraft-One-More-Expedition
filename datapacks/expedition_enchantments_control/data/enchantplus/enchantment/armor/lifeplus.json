@@ -2,9 +2,10 @@
   "description": {
     "translate": "enchantment.enchantplus.lifeplus",
     "fallback": "Life+",
-    "color": "aqua"
+    "color": "gold",
+    "bold": true
   },
-  "exclusive_set": "#enchantplus:exclusive_set/armor",
+  "exclusive_set": "#expedition:exclusive/enchantplus_armor_lifeplus",
   "supported_items": "#minecraft:enchantable/armor",
   "weight": 1,
   "max_level": 5,
@@ -16,7 +17,7 @@
     "base": 21,
     "per_level_above_first": 11
   },
-  "anvil_cost": 1,
+  "anvil_cost": 8,
   "slots": [
     "armor"
   ],

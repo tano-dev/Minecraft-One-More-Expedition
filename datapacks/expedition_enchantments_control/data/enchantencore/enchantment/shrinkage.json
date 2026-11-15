@@ -7,7 +7,7 @@
   "exclusive_set": "#enchantencore:exclusive_set/height",
   "supported_items": "#enchantencore:valid_for_shrinkage",
   "weight": 5,
-  "max_level": 5,
+  "max_level": 1,
   "min_cost": {
     "base": 12,
     "per_level_above_first": 21
@@ -16,7 +16,7 @@
     "base": 51,
     "per_level_above_first": 21
   },
-  "anvil_cost": 2,
+  "anvil_cost": 4,
   "slots": [
     "chest",
     "body"

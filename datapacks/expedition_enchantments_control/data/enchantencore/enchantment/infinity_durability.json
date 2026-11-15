@@ -1,6 +1,6 @@
 {
   "exclusive_set": "#expedition:exclusive/enchantencore_infinity_durability",
-  "anvil_cost": 2,
+  "anvil_cost": 8,
   "description": {
     "text": "Infinity Durability",
     "color": "gold",

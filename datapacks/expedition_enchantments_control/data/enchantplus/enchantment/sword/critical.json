@@ -2,12 +2,12 @@
   "description": {
     "translate": "enchantment.enchantplus.critical_hit",
     "fallback": "Critical Hit",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "exclusive_set": "#enchantplus:exclusive_set/sword_attribute",
   "supported_items": "#minecraft:enchantable/melee_weapon",
-  "weight": 1,
-  "max_level": 4,
+  "weight": 2,
+  "max_level": 3,
   "min_cost": {
     "base": 8,
     "per_level_above_first": 11
@@ -16,7 +16,7 @@
     "base": 21,
     "per_level_above_first": 9
   },
-  "anvil_cost": 2,
+  "anvil_cost": 6,
   "slots": [
     "mainhand"
   ],

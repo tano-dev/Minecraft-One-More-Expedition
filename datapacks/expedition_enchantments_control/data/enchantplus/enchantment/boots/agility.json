@@ -2,13 +2,13 @@
   "description": {
     "translate": "enchantment.enchantplus.agility",
     "fallback": "Agility",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "slots": [
     "feet"
   ],
   "supported_items": "#minecraft:enchantable/foot_armor",
-  "weight": 1,
+  "weight": 2,
   "max_level": 5,
   "min_cost": {
     "base": 1,
@@ -18,7 +18,7 @@
     "base": 25,
     "per_level_above_first": 9
   },
-  "anvil_cost": 1,
+  "anvil_cost": 6,
   "effects": {
     "minecraft:attributes": [
       {

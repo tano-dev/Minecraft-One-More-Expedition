@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.invisibility_cloak",
     "fallback": "Invisibility Cloak",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "supported_items": "#minecraft:enchantable/foot_armor",
   "exclusive_set": "#enchantencore:exclusive_set/boots",
-  "weight": 5,
+  "weight": 2,
   "max_level": 1,
   "min_cost": {
     "base": 1,
@@ -16,7 +16,7 @@
     "base": 51,
     "per_level_above_first": 11
   },
-  "anvil_cost": 2,
+  "anvil_cost": 6,
   "slots": [
     "feet"
   ],

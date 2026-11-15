@@ -7,7 +7,7 @@
   "exclusive_set": "#expedition:exclusive/enchantencore_reflection",
   "supported_items": "#minecraft:chest_armor",
   "weight": 1,
-  "max_level": 5,
+  "max_level": 3,
   "min_cost": {
     "base": 200,
     "per_level_above_first": 20
@@ -16,7 +16,7 @@
     "base": 300,
     "per_level_above_first": 20
   },
-  "anvil_cost": 2,
+  "anvil_cost": 8,
   "slots": [
     "chest"
   ],

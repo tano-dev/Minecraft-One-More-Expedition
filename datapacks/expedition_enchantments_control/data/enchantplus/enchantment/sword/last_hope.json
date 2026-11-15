@@ -2,11 +2,12 @@
   "description": {
     "translate": "enchantment.enchantplus.last_hope",
     "fallback": "Last Hope",
-    "color": "aqua"
+    "color": "gold",
+    "bold": true
   },
-  "exclusive_set": "#enchantplus:exclusive_set/sword_effect",
+  "exclusive_set": "#expedition:exclusive/enchantplus_sword_last_hope",
   "supported_items": "#minecraft:enchantable/melee_weapon",
-  "weight": 5,
+  "weight": 1,
   "max_level": 1,
   "min_cost": {
     "base": 8,
@@ -16,7 +17,7 @@
     "base": 21,
     "per_level_above_first": 9
   },
-  "anvil_cost": 2,
+  "anvil_cost": 8,
   "slots": [
     "mainhand"
   ],

@@ -1,17 +1,16 @@
 {
   "description": {
     "text": "Vitality",
-    "color": "gold",
-    "bold": true
+    "color": "light_purple"
   },
-  "exclusive_set": "#expedition:exclusive/enchantencore_vitality",
+  "exclusive_set": "#enchantencore:ultimate",
   "supported_items": "#minecraft:enchantable/armor",
   "slots": [
     "armor"
   ],
-  "weight": 1,
-  "max_level": 5,
-  "anvil_cost": 3,
+  "weight": 2,
+  "max_level": 3,
+  "anvil_cost": 6,
   "min_cost": {
     "base": 200,
     "per_level_above_first": 20

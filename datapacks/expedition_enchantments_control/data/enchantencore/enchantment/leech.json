@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.leech",
     "fallback": "Leech",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "supported_items": "#enchantencore:weapons",
   "primary_items": "#minecraft:enchantable/melee_weapon",
-  "weight": 1,
+  "weight": 2,
   "max_level": 1,
   "min_cost": {
     "base": 30,
@@ -16,7 +16,7 @@
     "base": 90,
     "per_level_above_first": 20
   },
-  "anvil_cost": 4,
+  "anvil_cost": 6,
   "slots": [
     "mainhand"
   ],

@@ -7,7 +7,7 @@
   "exclusive_set": "#expedition:exclusive/enchantencore_nuclear_arrow",
   "supported_items": "#enchantencore:all_bows",
   "weight": 1,
-  "max_level": 5,
+  "max_level": 1,
   "min_cost": {
     "base": 200,
     "per_level_above_first": 20
@@ -16,7 +16,7 @@
     "base": 300,
     "per_level_above_first": 20
   },
-  "anvil_cost": 6,
+  "anvil_cost": 8,
   "slots": [
     "mainhand"
   ],

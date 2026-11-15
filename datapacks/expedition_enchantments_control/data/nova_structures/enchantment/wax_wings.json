@@ -1,10 +1,9 @@
 {
-  "anvil_cost": 2,
+  "anvil_cost": 6,
   "description": {
     "translate": "enchantment.dnt.wax_wings",
     "fallback": "Wax Wings",
-    "color": "gold",
-    "bold": true
+    "color": "light_purple"
   },
   "effects": {
     "minecraft:item_damage": [
@@ -129,7 +128,7 @@
       }
     ]
   },
-  "exclusive_set": "#expedition:exclusive/nova_structures_wax_wings",
+  "exclusive_set": "#nova_structures:exclusive_set/elytra",
   "max_cost": {
     "base": 55,
     "per_level_above_first": 8
@@ -143,5 +142,5 @@
     "chest"
   ],
   "supported_items": "minecraft:elytra",
-  "weight": 1
+  "weight": 2
 }

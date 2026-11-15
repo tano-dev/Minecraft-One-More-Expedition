@@ -2,10 +2,10 @@
   "description": {
     "translate": "enchantment.enchantencore.scholar_of_fishing",
     "fallback": "Scholar of Fishing",
-    "color": "gray"
+    "color": "aqua"
   },
   "supported_items": "#minecraft:enchantable/fishing",
-  "weight": 12,
+  "weight": 5,
   "max_level": 3,
   "min_cost": {
     "base": 5,
@@ -15,7 +15,7 @@
     "base": 35,
     "per_level_above_first": 10
   },
-  "anvil_cost": 2,
+  "anvil_cost": 4,
   "slots": [
     "mainhand",
     "offhand"

@@ -6,7 +6,7 @@
   },
   "supported_items": "#enchantplus:enchantable/mounted",
   "weight": 5,
-  "max_level": 7,
+  "max_level": 3,
   "min_cost": {
     "base": 2,
     "per_level_above_first": 11
@@ -15,7 +15,7 @@
     "base": 9,
     "per_level_above_first": 9
   },
-  "anvil_cost": 2,
+  "anvil_cost": 4,
   "slots": [
     "body"
   ],

@@ -2,10 +2,10 @@
   "description": {
     "translate": "enchantment.enchantsplus.retrieval",
     "fallback": "Retrieval",
-    "color": "gray"
+    "color": "aqua"
   },
   "supported_items": "#minecraft:enchantable/chest_armor",
-  "weight": 12,
+  "weight": 5,
   "max_level": 4,
   "min_cost": {
     "base": 10,

@@ -2,11 +2,10 @@
   "description": {
     "translate": "enchantment.enchantsplus.crabs_touch",
     "fallback": "Crab's Touch",
-    "color": "gold",
-    "bold": true
+    "color": "light_purple"
   },
   "supported_items": "#enchantsplus:tools",
-  "weight": 1,
+  "weight": 2,
   "max_level": 3,
   "min_cost": {
     "base": 40,
@@ -34,6 +33,5 @@
         "operation": "add_value"
       }
     ]
-  },
-  "exclusive_set": "#expedition:exclusive/enchantsplus_crabs_touch"
+  }
 }

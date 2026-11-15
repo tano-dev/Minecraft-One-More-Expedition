@@ -1,10 +1,11 @@
 {
   "description": {
     "translate": "enchantment.stellarity.void_strike",
-    "color": "red"
+    "color": "gold",
+    "bold": true
   },
   "supported_items": "#minecraft:enchantable/sharp_weapon",
-  "weight": 10,
+  "weight": 1,
   "max_level": 1,
   "min_cost": {
     "base": 75,
@@ -14,7 +15,7 @@
     "base": 100,
     "per_level_above_first": 0
   },
-  "anvil_cost": 10,
+  "anvil_cost": 8,
   "slots": [
     "mainhand"
   ],
@@ -45,5 +46,6 @@
         }
       }
     ]
-  }
+  },
+  "exclusive_set": "#expedition:exclusive/stellarity_void_strike"
 }

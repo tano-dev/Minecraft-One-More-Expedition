@@ -6,7 +6,7 @@
   },
   "supported_items": "#enchantplus:enchantable/dog",
   "weight": 5,
-  "max_level": 3,
+  "max_level": 5,
   "min_cost": {
     "base": 6,
     "per_level_above_first": 17
@@ -15,7 +15,7 @@
     "base": 20,
     "per_level_above_first": 17
   },
-  "anvil_cost": 2,
+  "anvil_cost": 4,
   "slots": [
     "body"
   ],

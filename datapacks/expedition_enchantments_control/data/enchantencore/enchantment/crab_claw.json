@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.crab_claw",
     "fallback": "Crab Claw",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "supported_items": "#enchantencore:valid_for_crab_claw",
   "exclusive_set": "#enchantencore:exclusive_set/reach",
-  "weight": 5,
+  "weight": 2,
   "max_level": 3,
   "min_cost": {
     "base": 15,
@@ -16,7 +16,7 @@
     "base": 65,
     "per_level_above_first": 9
   },
-  "anvil_cost": 4,
+  "anvil_cost": 6,
   "slots": [
     "mainhand"
   ],

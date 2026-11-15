@@ -1,12 +1,12 @@
 {
   "description": {
     "text": "HIGHLY PRESSURIZED",
-    "color": "red"
+    "color": "aqua"
   },
   "exclusive_set": "#minecraft:exclusive_set/damage",
   "supported_items": "#minecraft:enchantable/sharp_weapon",
   "primary_items": "#enchantable/sweeping",
-  "weight": 10,
+  "weight": 5,
   "max_level": 1,
   "min_cost": {
     "base": 9999999,
@@ -16,7 +16,7 @@
     "base": 9999999,
     "per_level_above_first": 9999999
   },
-  "anvil_cost": 9999999,
+  "anvil_cost": 4,
   "slots": [
     "any"
   ],

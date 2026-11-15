@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantencore.flaming_aura",
     "fallback": "Flaming Aura",
-    "color": "aqua"
+    "color": "gray"
   },
   "exclusive_set": "#enchantencore:aura",
   "supported_items": "#minecraft:head_armor",
-  "weight": 5,
+  "weight": 10,
   "max_level": 1,
   "min_cost": {
     "base": 3,
@@ -16,7 +16,7 @@
     "base": 5,
     "per_level_above_first": 5
   },
-  "anvil_cost": 1,
+  "anvil_cost": 2,
   "slots": [
     "head"
   ],

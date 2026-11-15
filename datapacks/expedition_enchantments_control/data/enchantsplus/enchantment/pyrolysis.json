@@ -2,11 +2,11 @@
   "description": {
     "translate": "enchantment.enchantsplus.pyrolysis",
     "fallback": "Pyrolysis",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "exclusive_set": "#minecraft:exclusive_set/mining",
   "supported_items": "#minecraft:enchantable/mining_loot",
-  "weight": 5,
+  "weight": 2,
   "max_level": 1,
   "min_cost": {
     "base": 25,
@@ -16,7 +16,7 @@
     "base": 85,
     "per_level_above_first": 0
   },
-  "anvil_cost": 12,
+  "anvil_cost": 6,
   "slots": [
     "mainhand"
   ]

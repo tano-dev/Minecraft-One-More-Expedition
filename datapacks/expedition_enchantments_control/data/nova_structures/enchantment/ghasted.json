@@ -1,9 +1,9 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 6,
   "description": {
     "translate": "enchantment.dnt.ghasted",
     "fallback": "Ghasted",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "effects": {
     "minecraft:projectile_spawned": [
@@ -130,5 +130,5 @@
     "mainhand"
   ],
   "supported_items": "#minecraft:enchantable/crossbow",
-  "weight": 5
+  "weight": 2
 }

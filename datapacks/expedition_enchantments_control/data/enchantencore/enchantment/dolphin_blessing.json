@@ -1,13 +1,12 @@
 {
   "description": {
     "text": "Dolphin Blessing",
-    "color": "gold",
-    "bold": true
+    "color": "light_purple"
   },
   "supported_items": "#minecraft:enchantable/foot_armor",
-  "exclusive_set": "#expedition:exclusive/enchantencore_dolphin_blessing",
-  "weight": 1,
-  "max_level": 3,
+  "exclusive_set": "#enchantencore:ultimate",
+  "weight": 2,
+  "max_level": 1,
   "min_cost": {
     "base": 200,
     "per_level_above_first": 20
@@ -16,7 +15,7 @@
     "base": 300,
     "per_level_above_first": 20
   },
-  "anvil_cost": 2,
+  "anvil_cost": 6,
   "slots": [
     "feet"
   ],

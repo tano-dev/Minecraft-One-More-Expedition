@@ -5,7 +5,7 @@
     "color": "red"
   },
   "supported_items": "#minecraft:enchantable/durability",
-  "weight": 10,
+  "weight": 2,
   "max_level": 1,
   "min_cost": {
     "base": 5,
@@ -15,7 +15,7 @@
     "base": 55,
     "per_level_above_first": 8
   },
-  "anvil_cost": 2,
+  "anvil_cost": 8,
   "slots": [
     "any"
   ],

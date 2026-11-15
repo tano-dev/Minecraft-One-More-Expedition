@@ -1,10 +1,10 @@
 {
   "description": {
     "text": "DEATH TO THE WARDEN!",
-    "color": "red"
+    "color": "light_purple"
   },
   "supported_items": "minecraft:echo_shard",
-  "weight": 10,
+  "weight": 2,
   "max_level": 1,
   "min_cost": {
     "base": 999999,
@@ -14,7 +14,7 @@
     "base": 999999,
     "per_level_above_first": 9999
   },
-  "anvil_cost": 9999,
+  "anvil_cost": 6,
   "slots": [
     "mainhand"
   ],

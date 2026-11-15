@@ -5,7 +5,7 @@
     "color": "red"
   },
   "supported_items": "#enchantsplus:toolsnsword",
-  "weight": 10,
+  "weight": 2,
   "max_level": 1,
   "min_cost": {
     "base": 25,

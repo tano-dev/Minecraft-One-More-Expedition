@@ -5,7 +5,7 @@
     "color": "red"
   },
   "supported_items": "#enchantencore:all_tools",
-  "weight": 10,
+  "weight": 2,
   "max_level": 1,
   "min_cost": {
     "base": 21,
@@ -15,7 +15,7 @@
     "base": 51,
     "per_level_above_first": 6
   },
-  "anvil_cost": 5,
+  "anvil_cost": 8,
   "slots": [
     "mainhand"
   ],

@@ -1,12 +1,13 @@
 {
   "description": {
     "translate": "enchantment.stellarity.dune_speed",
-    "color": "gold",
-    "bold": true
+    "color": "light_purple"
   },
-  "exclusive_set": "#expedition:exclusive/stellarity_dune_speed",
+  "exclusive_set": [
+    "minecraft:soul_speed"
+  ],
   "supported_items": "#minecraft:enchantable/foot_armor",
-  "weight": 1,
+  "weight": 2,
   "max_level": 3,
   "min_cost": {
     "base": 35,
@@ -16,7 +17,7 @@
     "base": 50,
     "per_level_above_first": 10
   },
-  "anvil_cost": 8,
+  "anvil_cost": 6,
   "slots": [
     "feet"
   ],

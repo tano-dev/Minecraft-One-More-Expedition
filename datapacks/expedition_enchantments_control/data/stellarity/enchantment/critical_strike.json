@@ -17,7 +17,7 @@
     "base": 75,
     "per_level_above_first": 15
   },
-  "anvil_cost": 4,
+  "anvil_cost": 8,
   "slots": [
     "mainhand"
   ],

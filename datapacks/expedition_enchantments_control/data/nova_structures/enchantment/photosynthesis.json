@@ -1,10 +1,9 @@
 {
-  "anvil_cost": 8,
+  "anvil_cost": 6,
   "description": {
     "translate": "enchantment.dnt.photosynthesis",
     "fallback": "Photosynthesis",
-    "color": "gold",
-    "bold": true
+    "color": "light_purple"
   },
   "effects": {
     "minecraft:tick": [
@@ -100,7 +99,7 @@
       }
     ]
   },
-  "exclusive_set": "#expedition:exclusive/nova_structures_photosynthesis",
+  "exclusive_set": "#nova_structures:exclusive_set/longevity",
   "max_cost": {
     "base": 0,
     "per_level_above_first": 0
@@ -114,5 +113,5 @@
     "any"
   ],
   "supported_items": "#minecraft:enchantable/durability",
-  "weight": 1
+  "weight": 2
 }

@@ -1,13 +1,12 @@
 {
   "description": {
     "text": "Frenzy",
-    "color": "gold",
-    "bold": true
+    "color": "light_purple"
   },
-  "exclusive_set": "#expedition:exclusive/enchantencore_frenzy",
+  "exclusive_set": "#enchantencore:ultimate",
   "supported_items": "#minecraft:enchantable/leg_armor",
-  "weight": 1,
-  "max_level": 5,
+  "weight": 2,
+  "max_level": 3,
   "min_cost": {
     "base": 200,
     "per_level_above_first": 20
@@ -16,7 +15,7 @@
     "base": 300,
     "per_level_above_first": 20
   },
-  "anvil_cost": 8,
+  "anvil_cost": 6,
   "slots": [
     "legs"
   ],

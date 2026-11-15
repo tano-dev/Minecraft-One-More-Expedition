@@ -6,7 +6,7 @@
   },
   "exclusive_set": "#enchantencore:exclusive_set/vision_based",
   "supported_items": "#minecraft:enchantable/head_armor",
-  "weight": 10,
+  "weight": 2,
   "max_level": 1,
   "min_cost": {
     "base": 1,
@@ -16,7 +16,7 @@
     "base": 51,
     "per_level_above_first": 50
   },
-  "anvil_cost": 4,
+  "anvil_cost": 8,
   "slots": [
     "head"
   ]

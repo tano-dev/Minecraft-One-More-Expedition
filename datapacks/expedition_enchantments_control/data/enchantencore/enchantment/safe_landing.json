@@ -7,7 +7,7 @@
   "supported_items": "minecraft:elytra",
   "exclusive_set": "#enchantencore:exclusive_set/elytra",
   "weight": 12,
-  "max_level": 5,
+  "max_level": 3,
   "min_cost": {
     "base": 10,
     "per_level_above_first": 10
@@ -16,7 +16,7 @@
     "base": 31,
     "per_level_above_first": 10
   },
-  "anvil_cost": 1,
+  "anvil_cost": 2,
   "slots": [
     "any"
   ],

@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantsplus.vitality",
     "fallback": "Vitality",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "supported_items": "#minecraft:enchantable/chest_armor",
   "primary_items": "#minecraft:enchantable/chest_armor",
@@ -16,7 +16,7 @@
     "base": 40,
     "per_level_above_first": 10
   },
-  "anvil_cost": 4,
+  "anvil_cost": 6,
   "slots": [
     "chest"
   ],

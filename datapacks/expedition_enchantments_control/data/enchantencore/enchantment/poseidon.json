@@ -7,7 +7,7 @@
   "exclusive_set": "#expedition:exclusive/enchantencore_poseidon",
   "supported_items": "#minecraft:enchantable/trident",
   "weight": 1,
-  "max_level": 5,
+  "max_level": 1,
   "min_cost": {
     "base": 200,
     "per_level_above_first": 20
@@ -16,7 +16,7 @@
     "base": 300,
     "per_level_above_first": 20
   },
-  "anvil_cost": 10,
+  "anvil_cost": 8,
   "slots": [
     "mainhand"
   ],

@@ -6,7 +6,7 @@
   "exclusive_set": "#enchantencore:exclusive_set/shot_arrow",
   "supported_items": "minecraft:crossbow",
   "weight": 5,
-  "max_level": 5,
+  "max_level": 3,
   "min_cost": {
     "base": 21,
     "per_level_above_first": 20
@@ -15,7 +15,7 @@
     "base": 46,
     "per_level_above_first": 20
   },
-  "anvil_cost": 6,
+  "anvil_cost": 4,
   "slots": [
     "mainhand"
   ],

@@ -489,6 +489,10 @@ def build_all():
 
         if eid in master:
             max_lv, anvil_cost, gear_cats, gear_display, name_en, desc = master[eid]
+            desc = desc.replace(" [ULTIMATE - Max 1/item]", "").replace(" [ULTIMATE]", "").strip()
+            if tier == "ultimate":
+                desc = f"{desc} [ULTIMATE]"
+            anvil_cost = entry.get("anvil_cost", anvil_cost)
         else:
             missing_ids.append(eid)
             max_lv = entry.get("max_level", 1) or 1
