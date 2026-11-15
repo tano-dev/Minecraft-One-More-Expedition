@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.tideweave",
     "fallback": "Tideweave",
-    "color": "gray"
+    "color": "light_purple"
   },
   "exclusive_set": "#enchantencore:exclusive_set/repair",
   "supported_items": "#minecraft:enchantable/durability",

@@ -4,7 +4,7 @@
     "fallback": "Crab Claw",
     "color": "light_purple"
   },
-  "supported_items": "#minecraft:enchantable/mining",
+  "supported_items": "#enchantencore:valid_for_crab_claw",
   "exclusive_set": "#enchantencore:exclusive_set/reach",
   "weight": 5,
   "max_level": 3,

@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.weakness_aspect",
     "fallback": "Weakness Aspect",
-    "color": "gray"
+    "color": "aqua"
   },
   "exclusive_set": "#enchantencore:exclusive_set/aspect",
   "supported_items": "#minecraft:enchantable/fire_aspect",

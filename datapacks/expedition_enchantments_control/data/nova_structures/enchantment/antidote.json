@@ -3,7 +3,7 @@
   "description": {
     "translate": "enchantment.dnt.antidote",
     "fallback": "Antidote",
-    "color": "gray"
+    "color": "light_purple"
   },
   "effects": {
     "minecraft:damage_immunity": [

@@ -3,7 +3,7 @@
   "description": {
     "translate": "enchantment.enchantencore.thorns_protection",
     "fallback": "Thorns Protection",
-    "color": "gray"
+    "color": "aqua"
   },
   "effects": {
     "minecraft:damage_protection": [

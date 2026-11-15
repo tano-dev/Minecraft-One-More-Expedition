@@ -2,12 +2,12 @@
   "description": {
     "translate": "enchantment.enchantencore.day_protection",
     "fallback": "Day Protection",
-    "color": "aqua"
+    "color": "gray"
   },
   "exclusive_set": "#minecraft:exclusive_set/armor",
   "supported_items": "#minecraft:enchantable/armor",
   "weight": 1,
-  "max_level": 4,
+  "max_level": 5,
   "min_cost": {
     "base": 1,
     "per_level_above_first": 11

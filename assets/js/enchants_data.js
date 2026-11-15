@@ -334,8 +334,16 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "minecraft:impaling",
         "name": "Impaling"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -1503,6 +1511,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "nova_structures:ghasted",
         "name": "Ghasted"
       },
@@ -1517,6 +1529,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:power",
         "name": "Power"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -1691,7 +1707,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "antidote",
     "name": "Antidote",
     "name_vi": "Antidote",
-    "tier": "common",
+    "tier": "epic",
     "tier_order": 99,
     "max_level": 1,
     "anvil_cost": 2,
@@ -2050,6 +2066,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
+        "id": "kattersstructures:blunt",
+        "name": "Blunt"
+      },
+      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2066,6 +2086,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2076,6 +2100,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2090,7 +2118,7 @@ window.ALL_ENCHANTMENTS = [
         "name": "Soul Harvest"
       }
     ],
-    "description": "Increases damage against Arthropods (Spiders, Bees, Silverfish) by +2.5 per level (up to +12.5 at Lv V) and inflicts Slowness IV (1s + 0.5s per level).",
+    "description": "Increases damage against Arthropods (Spiders, Bees, Silverfish) by +2 per level (up to +10 at Lv V) and inflicts Slowness IV (1s + 0.5s per level).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:bane_of_arthropods\":5}}] 1"
   },
   {
@@ -2137,6 +2165,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
+        "id": "kattersstructures:blunt",
+        "name": "Blunt"
+      },
+      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2153,6 +2185,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2163,6 +2199,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2236,6 +2276,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2246,6 +2290,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2303,6 +2351,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
+        "id": "kattersstructures:blunt",
+        "name": "Blunt"
+      },
+      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2319,6 +2371,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2329,6 +2385,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2387,6 +2447,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Netherborn"
       },
       {
+        "id": "kattersstructures:blunt",
+        "name": "Blunt"
+      },
+      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2403,6 +2467,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2417,6 +2485,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2659,8 +2731,35 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      }
+    ],
     "description": "Increases damage dealt against armored targets.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:blunt\":1}}] 1"
   },
@@ -2877,6 +2976,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2887,6 +2990,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2950,8 +3057,16 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "minecraft:impaling",
         "name": "Impaling"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -3333,6 +3448,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/dimensional_hit",
         "name": "Dimensional Hit"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "enchantplus:sword/runic_despair",
@@ -4616,9 +4735,9 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "day_protection",
     "name": "Day Protection",
     "name_vi": "Day Protection",
-    "tier": "rare",
+    "tier": "common",
     "tier_order": 99,
-    "max_level": 4,
+    "max_level": 5,
     "anvil_cost": 4,
     "table": true,
     "tradeable": false,
@@ -4687,7 +4806,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) during Overworld daytime.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:day_protection\":4}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:day_protection\":5}}] 1"
   },
   {
     "id": "stellarity:_technical/daybroken",
@@ -4748,6 +4867,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/dimensional_hit",
         "name": "Dimensional Hit"
+      },
+      {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
       },
       {
         "id": "enchantplus:sword/tears_of_asflors",
@@ -4841,6 +4964,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Critical Strike"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -4851,6 +4978,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -4974,6 +5105,14 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/death_touch",
         "name": "Death Touch"
+      },
+      {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "enchantplus:sword/runic_despair",
@@ -5563,7 +5702,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "end_protection",
     "name": "End Protection",
     "name_vi": "End Protection",
-    "tier": "rare",
+    "tier": "common",
     "tier_order": 99,
     "max_level": 4,
     "anvil_cost": 4,
@@ -6311,8 +6450,88 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Swords & Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)",
+      "Sword Effects (Enchant+)"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "nova_structures:function_only",
+        "name": "Bug Enchant"
+      },
+      {
+        "id": "stellarity:critical_strike",
+        "name": "Critical Strike"
+      },
+      {
+        "id": "enchantplus:sword/death_touch",
+        "name": "Death Touch"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "enchantplus:sword/dimensional_hit",
+        "name": "Dimensional Hit"
+      },
+      {
+        "id": "mt:technical/grenade",
+        "name": "Grenade Window"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "mt:technical/kinetic_bomb",
+        "name": "Kinetic Bomb"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      },
+      {
+        "id": "enchantplus:sword/tears_of_asflors",
+        "name": "Tears of Asflors"
+      }
+    ],
     "description": "Delays Creeper fuse explosions on hit; delay scales across Lv I–III.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/fear\":3}}] 1"
   },
@@ -7496,8 +7715,16 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "minecraft:impaling",
         "name": "Impaling"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -8465,12 +8692,20 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -8481,7 +8716,7 @@ window.ALL_ENCHANTMENTS = [
         "name": "Smite"
       }
     ],
-    "description": "Increases trident damage against aquatic mobs by +2.5 per level (up to +12.5 at Lv V).",
+    "description": "Increases trident damage against aquatic mobs by +2 per level (up to +10 at Lv V).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:impaling\":5}}] 1"
   },
   {
@@ -9031,8 +9266,16 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "minecraft:impaling",
         "name": "Impaling"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -10363,7 +10606,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "nether_protection",
     "name": "Nether Protection",
     "name_vi": "Nether Protection",
-    "tier": "rare",
+    "tier": "common",
     "tier_order": 99,
     "max_level": 4,
     "anvil_cost": 4,
@@ -10442,9 +10685,9 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "night_protection",
     "name": "Night Protection",
     "name_vi": "Night Protection",
-    "tier": "rare",
+    "tier": "common",
     "tier_order": 99,
-    "max_level": 4,
+    "max_level": 5,
     "anvil_cost": 4,
     "table": true,
     "tradeable": false,
@@ -10513,7 +10756,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) during Overworld nighttime.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:night_protection\":4}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:night_protection\":5}}] 1"
   },
   {
     "id": "enchantencore:night_vision",
@@ -12317,16 +12560,94 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Swords & Melee Weapons",
     "exclusive_groups": [
-      "Reach"
+      "Damage (Sharpness / Bane)",
+      "Reach",
+      "Sword Attributes (Enchant+)"
     ],
     "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "nova_structures:function_only",
+        "name": "Bug Enchant"
+      },
       {
         "id": "enchantencore:crab_claw",
         "name": "Crab Claw"
       },
       {
+        "id": "enchantplus:sword/critical",
+        "name": "Critical"
+      },
+      {
+        "id": "stellarity:critical_strike",
+        "name": "Critical Strike"
+      },
+      {
         "id": "enchantencore:reach_curse",
         "name": "Curse of Reach"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "enchantplus:sword/dimensional_hit",
+        "name": "Dimensional Hit"
+      },
+      {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
+        "id": "mt:technical/grenade",
+        "name": "Grenade Window"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "mt:technical/kinetic_bomb",
+        "name": "Kinetic Bomb"
+      },
+      {
+        "id": "enchantplus:sword/runic_despair",
+        "name": "Runic Despair"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
       }
     ],
     "description": "Extends melee entity attack range by +1 block (+0.5 per level above I, up to +2.0 blocks at Lv III).",
@@ -12708,6 +13029,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/dimensional_hit",
         "name": "Dimensional Hit"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       }
     ],
     "description": "Multiplies melee damage dealt inside the Runic Dimension across Lv I–III.",
@@ -13246,6 +13571,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
+        "id": "kattersstructures:blunt",
+        "name": "Blunt"
+      },
+      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -13262,6 +13591,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -13272,6 +13605,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
       },
       {
         "id": "minecraft:smite",
@@ -13492,7 +13829,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "slowness_aspect",
     "name": "Slowness Aspect",
     "name_vi": "Slowness Aspect",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 2,
     "anvil_cost": 2,
@@ -13609,6 +13946,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
+        "id": "kattersstructures:blunt",
+        "name": "Blunt"
+      },
+      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -13625,6 +13966,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
+      },
+      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -13637,6 +13982,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Kinetic Bomb"
       },
       {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
+      },
+      {
         "id": "minecraft:sharpness",
         "name": "Sharpness"
       },
@@ -13645,7 +13994,7 @@ window.ALL_ENCHANTMENTS = [
         "name": "Soul Harvest"
       }
     ],
-    "description": "Increases damage against Undead mobs (Zombie, Skeleton, Wither, Phantom) by +2.5 per level (up to +12.5 at Lv V).",
+    "description": "Increases damage against Undead mobs (Zombie, Skeleton, Wither, Phantom) by +2 per level (up to +10 at Lv V).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:smite\":5}}] 1"
   },
   {
@@ -14670,6 +15019,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/dimensional_hit",
         "name": "Dimensional Hit"
+      },
+      {
+        "id": "enchantplus:sword/fear",
+        "name": "Fear"
       }
     ],
     "description": "Converts XP into +3 bonus damage (+1 per level above I, up to +5 at Lv III) on hit.",
@@ -14705,7 +15058,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "thorns_protection",
     "name": "Thorns Protection",
     "name_vi": "Thorns Protection",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 4,
     "anvil_cost": 2,
@@ -14780,7 +15133,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "tideweave",
     "name": "Tideweave",
     "name_vi": "Tideweave",
-    "tier": "common",
+    "tier": "epic",
     "tier_order": 99,
     "max_level": 1,
     "anvil_cost": 2,
@@ -15532,7 +15885,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "weakness_aspect",
     "name": "Weakness Aspect",
     "name_vi": "Weakness Aspect",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 2,
     "anvil_cost": 2,
