@@ -1060,18 +1060,6 @@
           <div class="stat-card-count" style="color: var(--curse);" id="statCurse">0</div>
         </div>
       </div>
-
-      <div class="filter-row" id="excludeRow" style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.08); flex-wrap: wrap; gap: 8px; align-items: center;">
-        <span style="font-size: 0.8rem; color: #f87171; font-weight: 600;">🚫 Loại trừ (Ẩn):</span>
-        <div class="pill-group" id="excludePackChips"></div>
-        <div class="pill-group" id="excludePropChips">
-          <button class="filter-btn" data-ex-prop="table">🚫 Table</button>
-          <button class="filter-btn" data-ex-prop="tradeable">🚫 Tradeable</button>
-          <button class="filter-btn" data-ex-prop="loot">🚫 Loot</button>
-          <button class="filter-btn" data-ex-prop="conflict">🚫 Có xung khắc</button>
-          <button class="filter-btn" data-ex-prop="curse">🚫 Curse</button>
-        </div>
-      </div>
     </section>
 
     <!-- Filters -->
@@ -1484,7 +1472,6 @@
     let excludedPacks = new Set();
     let excludedProps = new Set();
 
-    // Populate exclude pack chips
     const excludePackChips = document.getElementById("excludePackChips");
     const uniqueNamespaces = [...new Set(allData.map(i => i.namespace).filter(Boolean))].sort();
     uniqueNamespaces.forEach(ns => {
@@ -1499,14 +1486,7 @@
         btn.style.borderColor = excludedPacks.has(ns) ? "#ef4444" : "";
         btn.style.color = excludedPacks.has(ns) ? "#fca5a5" : "";
         currentPage = 1;
-        excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
-      renderCards();
+        renderCards();
       };
       excludePackChips.appendChild(btn);
     });
@@ -1520,14 +1500,7 @@
         btn.style.borderColor = excludedProps.has(p) ? "#ef4444" : "";
         btn.style.color = excludedProps.has(p) ? "#fca5a5" : "";
         currentPage = 1;
-        excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
-      renderCards();
+        renderCards();
       };
     });
 
@@ -1781,14 +1754,7 @@
             groupSelect.value = g;
             currentPage = 1;
             closeModal();
-            excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
-      renderCards();
+            renderCards();
           };
           modalConflictGroups.appendChild(btn);
         });
@@ -1846,13 +1812,6 @@
       currentSearch = e.target.value.trim();
       clearSearchBtn.classList.toggle("visible", currentSearch.length > 0);
       currentPage = 1;
-      excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
       renderCards();
     });
 
@@ -1861,13 +1820,6 @@
       currentSearch = "";
       clearSearchBtn.classList.remove("visible");
       currentPage = 1;
-      excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
       renderCards();
       searchInput.focus();
     };
@@ -1875,52 +1827,24 @@
     packSelect.addEventListener("change", (e) => {
       currentPack = e.target.value;
       currentPage = 1;
-      excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
       renderCards();
     });
 
     groupSelect.addEventListener("change", (e) => {
       currentGroup = e.target.value;
       currentPage = 1;
-      excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
       renderCards();
     });
 
     obtainSelect.addEventListener("change", (e) => {
       currentObtain = e.target.value;
       currentPage = 1;
-      excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
       renderCards();
     });
 
     sortSelect.addEventListener("change", (e) => {
       currentSort = e.target.value;
       currentPage = 1;
-      excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
       renderCards();
     });
 
@@ -1929,13 +1853,6 @@
       currentPage = 1;
       document.querySelectorAll("#tierTabs .filter-btn").forEach(b => {
         b.classList.toggle("active", b.dataset.tier === tier);
-      });
-      excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
       });
       renderCards();
     }
@@ -1954,41 +1871,20 @@
         btn.classList.add("active");
         currentGear = btn.dataset.gear;
         currentPage = 1;
-        excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
-      renderCards();
+        renderCards();
       };
     });
 
     prevPageBtn.onclick = () => {
       if (currentPage > 1) {
         currentPage--;
-        excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
-      renderCards();
+        renderCards();
         window.scrollTo({ top: 320, behavior: "smooth" });
       }
     };
 
     nextPageBtn.onclick = () => {
       currentPage++;
-      excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
       renderCards();
       window.scrollTo({ top: 320, behavior: "smooth" });
     };
@@ -2042,13 +1938,6 @@
       const merged = { ...(pendingChanges[eid] || {}), ...patch };
       pendingChanges[eid] = merged;
       refreshDirtyBar();
-      excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
       renderCards();
       if (currentModalItem && currentModalItem.id === eid) {
         populateModalEditor(getEffectiveItem(base));
@@ -2240,13 +2129,6 @@
     discardChangesBtn.onclick = () => {
       Object.keys(pendingChanges).forEach(k => delete pendingChanges[k]);
       refreshDirtyBar();
-      excludedPacks.clear();
-      excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
       renderCards();
       if (currentModalItem && modal.classList.contains("active")) {
         populateModalEditor(currentModalItem);
