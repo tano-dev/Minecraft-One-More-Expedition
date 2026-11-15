@@ -1041,32 +1041,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mace/teluric_wave\":3}}] 1"
   },
   {
-    "id": "veinminer-enchantment:veinminer",
-    "namespace": "veinminer-enchantment",
-    "raw_name": "veinminer",
-    "name": "Veinmine",
-    "name_vi": "Veinmine",
-    "tier": "ultimate",
-    "tier_order": 1,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "veinminer-enchantment-1.3.6",
-    "supported_items": "#minecraft:pickaxes",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Pickaxes",
-    "exclusive_groups": [
-      "Ultimate (Max 1/item)"
-    ],
-    "conflicts": [],
-    "description": "Automatically mines all connected ore blocks of the same type in a single break. [ULTIMATE]",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"veinminer-enchantment:veinminer\":1}}] 1"
-  },
-  {
     "id": "stellarity:void_shot",
     "namespace": "stellarity",
     "raw_name": "void_shot",
@@ -14987,6 +14961,30 @@ window.ALL_ENCHANTMENTS = [
     "conflicts": [],
     "description": "Applies an upward thermal impulse (0.045 + 0.015 per level above I) when gliding over lava, magma, or fire.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:updraft\":3}}] 1"
+  },
+  {
+    "id": "veinminer-enchantment:veinminer",
+    "namespace": "veinminer-enchantment",
+    "raw_name": "veinminer",
+    "name": "Veinmine",
+    "name_vi": "Veinmine",
+    "tier": "rare",
+    "tier_order": 99,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "veinminer-enchantment-1.3.6",
+    "supported_items": "#minecraft:pickaxes",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Pickaxes",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Automatically mines all connected ore blocks of the same type in a single break.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"veinminer-enchantment:veinminer\":1}}] 1"
   },
   {
     "id": "enchantencore:velocity",

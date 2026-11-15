@@ -2,8 +2,7 @@
   "description": {
     "translate": "enchantment.veinmine",
     "fallback": "Veinmine",
-    "color": "gold",
-    "bold": true
+    "color": "aqua"
   },
   "supported_items": "#minecraft:pickaxes",
   "weight": 1,
@@ -29,6 +28,5 @@
         }
       }
     ]
-  },
-  "exclusive_set": "#expedition:exclusive/veinminer-enchantment_veinminer"
+  }
 }

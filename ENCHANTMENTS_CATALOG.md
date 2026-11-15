@@ -6,9 +6,9 @@
 
 | Tier | Màu sắc | Số lượng | Nguồn kiếm chính | Quy tắc đặc biệt |
 | :--- | :--- | :---: | :--- | :--- |
-| **Ultimate** | Gold (`gold`) | **36** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
+| **Ultimate** | Gold (`gold`) | **35** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
 | **Epic** | Light Purple (`light_purple`) | **71** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
-| **Rare** | Aqua (`aqua`) | **105** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
+| **Rare** | Aqua (`aqua`) | **106** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
 | **Common** | Gray (`gray`) | **136** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
 | **Curses** | Red (`red`) | **31** | Rương kho báu / Curse | Lời nguyền |
 | **Filtered Duplicates** | — | **38** | Đã tắt | Lọc trùng giữa các pack |
@@ -28,7 +28,7 @@
 | **Leggings** | 8 | 67 | 0 | **0.0%** |
 | **Boots** | 10 | 89 | 0 | **0.0%** |
 
-## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (36)
+## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (35)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -65,7 +65,6 @@
 | `stellarity:critical_strike` | 3 | `Stellarity-6.0.1` | No | 1 | `#minecraft:enchantable/sharp_weapon` |
 | `stellarity:void_shot` | 1 | `Stellarity-6.0.1` | No | 1 | `#stellarity:enchantable/ranged` |
 | `stellarity:void_strike` | 1 | `Stellarity-6.0.1` | No | 1 | `#minecraft:enchantable/sharp_weapon` |
-| `veinminer-enchantment:veinminer` | 1 | `veinminer-enchantment-1.3.6` | No | 1 | `#minecraft:pickaxes` |
 | `wither:soul_siphon` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/weapon` |
 | `wither:witherbound` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/armor` |
 
@@ -145,7 +144,7 @@
 | `stellarity:ambush` | 3 | `Stellarity-6.0.1` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
 | `stellarity:plated` | 4 | `Stellarity-6.0.1` | No | 2 | `#stellarity:enchantable/elytra` |
 
-## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (105)
+## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (106)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -254,6 +253,7 @@
 | `nova_structures:swift_soar` | 3 | `Dungeons and Taverns v6.1.0` | No | 5 | `#minecraft:harnesses` |
 | `nova_structures:wax_wings` | 1 | `Dungeons and Taverns v6.1.0` | No | 5 | `minecraft:elytra` |
 | `stellarity:levitation_shot` | 5 | `Stellarity-6.0.1` | No | 5 | `#minecraft:enchantable/bow` |
+| `veinminer-enchantment:veinminer` | 1 | `veinminer-enchantment-1.3.6` | No | 1 | `#minecraft:pickaxes` |
 
 ## 6. Common Enchants (136)
 
