@@ -2050,10 +2050,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
-      },
-      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2141,10 +2137,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
-      },
-      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2181,7 +2173,7 @@ window.ALL_ENCHANTMENTS = [
         "name": "Smite"
       }
     ],
-    "description": "Deals +2.5 damage per level (up to +12.5 at Lv V) against boss mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
+    "description": "Deals +2 damage per level (up to +10 at Lv V) against boss mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_bosses\":5}}] 1"
   },
   {
@@ -2264,7 +2256,7 @@ window.ALL_ENCHANTMENTS = [
         "name": "Smite"
       }
     ],
-    "description": "Deals +2.5 damage per level (up to +12.5 at Lv V) against End mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
+    "description": "Deals +2 damage per level (up to +10 at Lv V) against End mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_endborn\":5}}] 1"
   },
   {
@@ -2311,10 +2303,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
-      },
-      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2351,7 +2339,7 @@ window.ALL_ENCHANTMENTS = [
         "name": "Smite"
       }
     ],
-    "description": "Deals +2.5 damage per level (up to +12.5 at Lv V) against Nether mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
+    "description": "Deals +2 damage per level (up to +10 at Lv V) against Nether mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_netherborn\":5}}] 1"
   },
   {
@@ -2399,10 +2387,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Netherborn"
       },
       {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
-      },
-      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2443,7 +2427,7 @@ window.ALL_ENCHANTMENTS = [
         "name": "Smite"
       }
     ],
-    "description": "Deals +2.5 damage per level (up to +12.5 at Lv V) against Illagers and raiders, inflicting Slowness IV (1.5s, +0.5s max duration per level above I).",
+    "description": "Deals +2 damage per level (up to +10 at Lv V) against Illagers and raiders, inflicting Slowness IV (1.5s, +0.5s max duration per level above I).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_raiders\":5}}] 1"
   },
   {
@@ -2675,35 +2659,8 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
+    "exclusive_groups": [],
+    "conflicts": [],
     "description": "Increases damage dealt against armored targets.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:blunt\":1}}] 1"
   },
@@ -13289,10 +13246,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
-      },
-      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -13654,10 +13607,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:bane_of_raiders",
         "name": "Bane of Raiders"
-      },
-      {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
       },
       {
         "id": "minecraft:breach",

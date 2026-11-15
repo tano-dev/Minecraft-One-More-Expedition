@@ -213,7 +213,7 @@
       "max_level": 5,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:weapons",
-      "description": "Deals +2.5 damage per level (up to +12.5 at Lv V) against boss mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
+      "description": "Deals +2 damage per level (up to +10 at Lv V) against boss mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
       "name_vi": "Bane of Bosses"
     },
     "enchantencore:bane_of_endborn": {
@@ -232,7 +232,7 @@
       "max_level": 5,
       "anvil_cost": 2,
       "supported_items": "#enchantencore:weapons",
-      "description": "Deals +2.5 damage per level (up to +12.5 at Lv V) against End mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
+      "description": "Deals +2 damage per level (up to +10 at Lv V) against End mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
       "name_vi": "Bane of Endborn"
     },
     "enchantencore:bane_of_netherborn": {
@@ -251,7 +251,7 @@
       "max_level": 5,
       "anvil_cost": 2,
       "supported_items": "#enchantencore:weapons",
-      "description": "Deals +2.5 damage per level (up to +12.5 at Lv V) against Nether mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
+      "description": "Deals +2 damage per level (up to +10 at Lv V) against Nether mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
       "name_vi": "Bane of Netherborn"
     },
     "enchantencore:bane_of_raiders": {
@@ -270,7 +270,7 @@
       "max_level": 5,
       "anvil_cost": 2,
       "supported_items": "#enchantencore:weapons",
-      "description": "Deals +2.5 damage per level (up to +12.5 at Lv V) against Illagers and raiders, inflicting Slowness IV (1.5s, +0.5s max duration per level above I).",
+      "description": "Deals +2 damage per level (up to +10 at Lv V) against Illagers and raiders, inflicting Slowness IV (1.5s, +0.5s max duration per level above I).",
       "name_vi": "Bane of Raiders"
     },
     "enchantencore:bear_spirit": {
