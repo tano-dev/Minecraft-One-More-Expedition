@@ -15431,7 +15431,7 @@ window.ALL_ENCHANTMENTS = [
     "max_level": 1,
     "anvil_cost": 8,
     "table": true,
-    "table_weight": 1,
+    "table_weight": 3,
     "tradeable": false,
     "loot": true,
     "source_pack": "veinminer-enchantment-1.3.6",

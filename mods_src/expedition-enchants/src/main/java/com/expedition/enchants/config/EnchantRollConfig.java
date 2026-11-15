@@ -23,7 +23,7 @@ public class EnchantRollConfig {
     // Chance per enchanting roll at Lv 30 (scaled linearly for lower table levels)
     public Map<String, Double> tierChances = new LinkedHashMap<>(Map.of(
         "ultimate", 0.00,
-        "epic", 0.01,
+        "epic", 0.005,
         "rare", 0.05
     ));
 

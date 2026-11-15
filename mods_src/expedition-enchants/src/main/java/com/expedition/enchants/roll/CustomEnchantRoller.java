@@ -106,7 +106,7 @@ public class CustomEnchantRoller {
         List<Holder<Enchantment>> chosenHolders = new ArrayList<>();
 
         double ultChance = cfg.tierChances.getOrDefault("ultimate", 0.0) * levelScale;
-        double epicChance = (isGodroll ? cfg.godrollEpicChance : cfg.tierChances.getOrDefault("epic", 0.01)) * levelScale;
+        double epicChance = (isGodroll ? cfg.godrollEpicChance : cfg.tierChances.getOrDefault("epic", 0.005)) * levelScale;
         double rareChance = (isGodroll ? cfg.godrollRareChance : cfg.tierChances.getOrDefault("rare", 0.05)) * levelScale;
 
         for (int slot = 0; slot < targetCount; slot++) {
