@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.lingering",
     "fallback": "Lingering",
-    "color": "gray"
+    "color": "aqua"
   },
   "supported_items": "#enchantencore:all_bows",
   "primary_items": "minecraft:bow",

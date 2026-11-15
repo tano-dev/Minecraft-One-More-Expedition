@@ -3,7 +3,7 @@
   "description": {
     "translate": "enchantment.enchantplus.auto_feed",
     "fallback": "Auto Feed",
-    "color": "gray"
+    "color": "light_purple"
   },
   "effects": {
     "minecraft:tick": [
