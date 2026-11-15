@@ -17,14 +17,14 @@
 
 | Loại trang bị | Tổng Enchant | Tổng Weight | Số Rare Enchantable | Tỉ lệ Rare (%) |
 | :--- | :---: | :---: | :---: | :---: |
-| **Sword** | 24 | 186 | 8 | **6.45%** |
+| **Sword** | 23 | 185 | 8 | **6.49%** |
 | **Pickaxe** | 5 | 53 | 2 | **3.77%** |
 | **Axe** | 13 | 134 | 3 | **2.24%** |
 | **Bow** | 6 | 52 | 3 | **5.77%** |
 | **Crossbow** | 5 | 44 | 2 | **4.55%** |
 | **Trident** | 8 | 79 | 3 | **5.06%** |
 | **Helmet** | 19 | 167 | 3 | **4.79%** |
-| **Chestplate** | 17 | 120 | 5 | **4.17%** |
+| **Chestplate** | 16 | 108 | 5 | **4.63%** |
 | **Leggings** | 15 | 120 | 3 | **4.17%** |
 | **Boots** | 23 | 182 | 6 | **4.95%** |
 
@@ -76,7 +76,7 @@
 | `enchantencore:adrenaline` | 4 | `enchantments_encore` | No | 2 | `#enchantencore:all_bows` |
 | `enchantencore:bear_spirit` | 1 | `enchantments_encore` | No | 2 | `minecraft:wolf_armor` |
 | `enchantencore:crab_claw` | 3 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/mining` |
-| `enchantencore:creeper_alloy` | 1 | `enchantments_encore` | Yes | 10 | `#minecraft:chest_armor` |
+| `enchantencore:creeper_alloy` | 1 | `enchantments_encore` | No | 10 | `#minecraft:chest_armor` |
 | `enchantencore:dolphin_blessing` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/foot_armor` |
 | `enchantencore:emberweave` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/durability` |
 | `enchantencore:flare` | 1 | `enchantments_encore` | No | 5 | `#enchantencore:all_bows` |
@@ -100,8 +100,8 @@
 | `enchantplus:mace/striker` | 1 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/mace` |
 | `enchantplus:mace/wind_propulsion` | 3 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/mace` |
 | `enchantplus:sword/critical` | 3 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/melee_weapon` |
-| `enchantplus:sword/reach` | 3 | `NeoEnchant-5.16.0` | Yes | 5 | `#minecraft:enchantable/melee_weapon` |
-| `enchantsplus:ice_aspect` | 2 | `Enchants Plus v2.1 26.3` | Yes | 5 | `#minecraft:enchantable/fire_aspect` |
+| `enchantplus:sword/reach` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/melee_weapon` |
+| `enchantsplus:ice_aspect` | 2 | `Enchants Plus v2.1 26.3` | No | 5 | `#minecraft:enchantable/fire_aspect` |
 | `enchantsplus:pyrolysis` | 1 | `Enchants Plus v2.1 26.3` | No | 2 | `#minecraft:enchantable/mining_loot` |
 | `enchantsplus:swift_strike` | 5 | `Enchants Plus v2.1 26.3` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
 | `mt:armor/basalt_boots` | 1 | `mine-treasure-1.6.5` | No | 2 | `#minecraft:foot_armor` |

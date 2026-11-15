@@ -33,5 +33,5 @@
   ],
   "exclusive_set": "#enchantencore:exclusive_set/reach",
   "supported_items": "#minecraft:enchantable/melee_weapon",
-  "weight": 1
+  "weight": 5
 }
