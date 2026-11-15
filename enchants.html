@@ -264,7 +264,7 @@
 
     .search-sort-row {
       display: grid;
-      grid-template-columns: 1fr auto auto;
+      grid-template-columns: 1fr auto auto auto;
       gap: 10px;
       align-items: center;
     }
@@ -507,6 +507,7 @@
     .badge-common { background: var(--common-soft); color: var(--common); border: 1px solid var(--common-border); }
     .badge-curse { background: var(--curse-soft); color: var(--curse); border: 1px solid var(--curse-border); }
     .badge-obtain { background: rgba(255, 255, 255, 0.04); color: var(--text-muted); border: 1px solid var(--border-subtle); }
+    .badge-pack { background: rgba(168, 85, 247, 0.14); color: #d8b4fe; border: 1px solid rgba(168, 85, 247, 0.35); }
 
     .card-desc {
       font-size: 0.855rem;
@@ -855,6 +856,13 @@
           <button class="clear-search-btn" id="clearSearchBtn" title="Clear search">✕</button>
         </div>
 
+        <select id="packSelect" class="filter-select" title="Filter by special pack">
+          <option value="all">Pack: Tất cả</option>
+          <option value="stellarity">✨ Stellarity</option>
+          <option value="incendium">🔥 Incendium</option>
+          <option value="mt">💎 Mine Treasure</option>
+        </select>
+
         <select id="obtainSelect" class="filter-select" title="Filter by how to obtain">
           <option value="all">Nguồn: Tất cả</option>
           <option value="table">🔮 Bàn phù phép (Table)</option>
@@ -971,6 +979,7 @@
     let currentPage = 1;
     let currentTier = "all";
     let currentGear = "all";
+    let currentPack = "all";
     let currentObtain = "all";
     let currentSearch = "";
     let currentSort = "tier";
@@ -1012,6 +1021,7 @@
     const resultsCount = document.getElementById("resultsCount");
     const searchInput = document.getElementById("searchInput");
     const clearSearchBtn = document.getElementById("clearSearchBtn");
+    const packSelect = document.getElementById("packSelect");
     const obtainSelect = document.getElementById("obtainSelect");
     const sortSelect = document.getElementById("sortSelect");
     const prevPageBtn = document.getElementById("prevPageBtn");
@@ -1076,6 +1086,13 @@
       return '<span class="badge badge-obtain">🎁 Loot Only</span>';
     }
 
+    function getPackBadgeHtml(item) {
+      if (item.namespace === "stellarity") return '<span class="badge badge-pack">✨ Stellarity</span>';
+      if (item.namespace === "incendium") return '<span class="badge badge-pack">🔥 Incendium</span>';
+      if (item.namespace === "mt") return '<span class="badge badge-pack">💎 Mine Treasure</span>';
+      return "";
+    }
+
     function filterAndSortData() {
       const filtered = allData.filter(item => {
         if (currentTier === "curse") {
@@ -1088,6 +1105,8 @@
           const cats = item.gear_categories || [];
           if (!cats.includes(currentGear) && !cats.includes("universal")) return false;
         }
+
+        if (currentPack !== "all" && item.namespace !== currentPack) return false;
 
         if (currentObtain === "table" && !item.table) return false;
         if (currentObtain === "tradeable" && !item.tradeable) return false;
@@ -1121,11 +1140,13 @@
     function resetAllFilters() {
       currentTier = "all";
       currentGear = "all";
+      currentPack = "all";
       currentObtain = "all";
       currentSearch = "";
       currentPage = 1;
       searchInput.value = "";
       clearSearchBtn.classList.remove("visible");
+      packSelect.value = "all";
       obtainSelect.value = "all";
       document.querySelectorAll("#tierTabs .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.tier === "all"));
       document.querySelectorAll("#gearChips .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.gear === "all"));
@@ -1176,6 +1197,7 @@
           <div class="card-badges">
             ${getTierBadgeHtml(item)}
             ${getObtainBadgeHtml(item)}
+            ${getPackBadgeHtml(item)}
           </div>
 
           <p class="card-desc">${highlightNumbers(item.description)}</p>
@@ -1279,6 +1301,12 @@
       renderCards();
       searchInput.focus();
     };
+
+    packSelect.addEventListener("change", (e) => {
+      currentPack = e.target.value;
+      currentPage = 1;
+      renderCards();
+    });
 
     obtainSelect.addEventListener("change", (e) => {
       currentObtain = e.target.value;
