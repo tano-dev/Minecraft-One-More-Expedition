@@ -28,7 +28,7 @@ public class EnchantRollConfig {
     ));
 
     // Godroll settings (at Lv 30, disabled below Lv 20)
-    public double godrollChance = 0.015;
+    public double godrollChance = 0.008;
     public double godrollEpicChance = 0.15;
     public double godrollRareChance = 0.35;
     public int godrollMinEnchants = 6;
