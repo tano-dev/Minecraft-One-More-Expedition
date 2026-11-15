@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.crab_claw",
     "fallback": "Crab Claw",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "supported_items": "#enchantencore:valid_for_crab_claw",
   "exclusive_set": "#enchantencore:exclusive_set/reach",

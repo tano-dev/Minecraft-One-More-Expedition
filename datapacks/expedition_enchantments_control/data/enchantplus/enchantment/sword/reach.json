@@ -3,7 +3,7 @@
   "description": {
     "translate": "enchantment.enchantplus.reach",
     "fallback": "Reach",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "effects": {
     "minecraft:attributes": [

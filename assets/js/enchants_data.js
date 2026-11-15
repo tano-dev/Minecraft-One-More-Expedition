@@ -232,10 +232,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Implosion"
       },
       {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
-      },
-      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -344,10 +340,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -503,54 +495,6 @@ window.ALL_ENCHANTMENTS = [
     ],
     "description": "Completely prevents the item from losing durability on use. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:infinity_durability\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:sword/last_hope",
-    "namespace": "enchantplus",
-    "raw_name": "sword/last_hope",
-    "name": "Last Hope",
-    "name_vi": "Last Hope",
-    "tier": "ultimate",
-    "tier_order": 1,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/melee_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords & Melee Weapons",
-    "exclusive_groups": [
-      "Sword Effects (Enchant+)",
-      "Ultimate (Max 1/item)"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantplus:sword/death_touch",
-        "name": "Death Touch"
-      },
-      {
-        "id": "enchantplus:sword/dimensional_hit",
-        "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
-      },
-      {
-        "id": "enchantplus:sword/tears_of_asflors",
-        "name": "Tears of Asflors"
-      }
-    ],
-    "description": "Sacrifices the weapon's entire remaining durability to unleash an infinite-damage strike. [ULTIMATE]",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/last_hope\":1}}] 1"
   },
   {
     "id": "enchantencore:last_stand",
@@ -1587,10 +1531,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Power"
       },
       {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
-      },
-      {
         "id": "enchantplus:sword/reach",
         "name": "Reach"
       },
@@ -2162,10 +2102,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Kinetic Bomb"
       },
       {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
-      },
-      {
         "id": "enchantplus:sword/reach",
         "name": "Reach"
       },
@@ -2265,10 +2201,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Kinetic Bomb"
       },
       {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
-      },
-      {
         "id": "enchantplus:sword/reach",
         "name": "Reach"
       },
@@ -2358,10 +2290,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -2457,10 +2385,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -2561,10 +2485,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -3072,10 +2992,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Kinetic Bomb"
       },
       {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
-      },
-      {
         "id": "enchantplus:sword/reach",
         "name": "Reach"
       },
@@ -3147,10 +3063,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -3385,7 +3297,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "crab_claw",
     "name": "Crab Claw",
     "name_vi": "Crab Claw",
-    "tier": "rare",
+    "tier": "epic",
     "tier_order": 99,
     "max_level": 3,
     "anvil_cost": 4,
@@ -3393,7 +3305,7 @@ window.ALL_ENCHANTMENTS = [
     "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:valid_for_crab_claw",
+    "supported_items": "#minecraft:enchantable/mining",
     "gear_categories": [
       "armor",
       "tool"
@@ -4961,14 +4873,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Fear"
       },
       {
-        "id": "enchantplus:sword/last_hope",
-        "name": "Last Hope"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
-      },
-      {
         "id": "enchantplus:sword/tears_of_asflors",
         "name": "Tears of Asflors"
       }
@@ -5074,10 +4978,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -5209,14 +5109,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/fear",
         "name": "Fear"
-      },
-      {
-        "id": "enchantplus:sword/last_hope",
-        "name": "Last Hope"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -5458,10 +5350,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:implosion",
         "name": "Implosion"
-      },
-      {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:lightning_bolt",
@@ -6106,10 +5994,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Infinity"
       },
       {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
-      },
-      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -6332,10 +6216,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Infinity"
       },
       {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
-      },
-      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -6464,10 +6344,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Implosion"
       },
       {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
-      },
-      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -6561,7 +6437,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "sword/fear",
     "name": "Fear",
     "name_vi": "Fear",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 3,
     "anvil_cost": 2,
@@ -6638,14 +6514,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/last_hope",
-        "name": "Last Hope"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -7141,10 +7009,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Infinity"
       },
       {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
-      },
-      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -7299,10 +7163,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:infinity",
         "name": "Infinity"
-      },
-      {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:lightning_bolt",
@@ -7861,10 +7721,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -8848,10 +8704,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Kinetic Bomb"
       },
       {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
-      },
-      {
         "id": "enchantplus:sword/reach",
         "name": "Reach"
       },
@@ -8930,10 +8782,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:infinity",
         "name": "Infinity"
-      },
-      {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:lightning_bolt",
@@ -9184,10 +9032,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Implosion"
       },
       {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
-      },
-      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -9428,10 +9272,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -9687,51 +9527,8 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Bows",
-    "exclusive_groups": [
-      "Bow Arrow Effects"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bomber",
-        "name": "Bomber"
-      },
-      {
-        "id": "enchantplus:bow/echo_shot",
-        "name": "Echo Shot"
-      },
-      {
-        "id": "enchantencore:ender_shot",
-        "name": "Ender Shot"
-      },
-      {
-        "id": "enchantencore:evokers_wrath",
-        "name": "Evoker's Wrath"
-      },
-      {
-        "id": "enchantplus:bow/explosive_arrow",
-        "name": "Explosive Arrow"
-      },
-      {
-        "id": "enchantencore:flare",
-        "name": "Flare"
-      },
-      {
-        "id": "enchantencore:forge_shot",
-        "name": "Forge Shot"
-      },
-      {
-        "id": "enchantencore:implosion",
-        "name": "Implosion"
-      },
-      {
-        "id": "minecraft:infinity",
-        "name": "Infinity"
-      },
-      {
-        "id": "enchantencore:lightning_bolt",
-        "name": "Lightning Bolt"
-      }
-    ],
+    "exclusive_groups": [],
+    "conflicts": [],
     "description": "Arrows inflict Levitation I for 7s (+0.5s per level above I, up to 9s at Lv V).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:levitation_shot\":5}}] 1"
   },
@@ -9842,10 +9639,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:infinity",
         "name": "Infinity"
-      },
-      {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:nuclear_arrow",
@@ -10313,8 +10106,7 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "All Durable Gear",
     "exclusive_groups": [
       "Auto-Repair / Durability",
-      "Bow (Infinity / Mending)",
-      "XP Boost / Scholar"
+      "Bow (Infinity / Mending)"
     ],
     "conflicts": [
       {
@@ -10368,10 +10160,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:voidweave",
         "name": "Voidweave"
-      },
-      {
-        "id": "enchantplus:sword/xp_boost",
-        "name": "XP Boost"
       }
     ],
     "description": "Repairs item durability using collected XP orbs (+2 durability per 1 XP point).",
@@ -12462,118 +12250,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pufferfish\":1}}] 1"
   },
   {
-    "id": "enchantplus:sword/pull",
-    "namespace": "enchantplus",
-    "raw_name": "sword/pull",
-    "name": "Pull",
-    "name_vi": "Pull",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords & Melee Weapons",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)",
-      "Sword Effects (Enchant+)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
-        "id": "enchantplus:sword/death_touch",
-        "name": "Death Touch"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "enchantplus:sword/dimensional_hit",
-        "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/last_hope",
-        "name": "Last Hope"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      },
-      {
-        "id": "enchantplus:sword/tears_of_asflors",
-        "name": "Tears of Asflors"
-      }
-    ],
-    "description": "Grants a chance for slain mobs to drop their Spawn Egg; drop chance scales across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/pull\":3}}] 1"
-  },
-  {
     "id": "minecraft:punch",
     "namespace": "minecraft",
     "raw_name": "punch",
@@ -12870,7 +12546,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "sword/reach",
     "name": "Reach",
     "name_vi": "Reach",
-    "tier": "rare",
+    "tier": "epic",
     "tier_order": 99,
     "max_level": 3,
     "anvil_cost": 4,
@@ -12960,10 +12636,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/runic_despair",
@@ -13608,10 +13280,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:scholar_of_mobs",
         "name": "Scholar of Mobs"
-      },
-      {
-        "id": "enchantplus:sword/xp_boost",
-        "name": "XP Boost"
       }
     ],
     "description": "Multiplies XP dropped from mining blocks by 1.5x (+1.0x per level above I, up to 3.5x at Lv III).",
@@ -13667,10 +13335,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:scholar_of_blocks",
         "name": "Scholar of Blocks"
-      },
-      {
-        "id": "enchantplus:sword/xp_boost",
-        "name": "XP Boost"
       }
     ],
     "description": "Multiplies XP dropped by slain mobs by 1.5x (+1.0x per level above I, up to 3.5x at Lv III).",
@@ -13941,10 +13605,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -14320,10 +13980,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       },
       {
         "id": "enchantplus:sword/reach",
@@ -15367,14 +15023,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/fear",
         "name": "Fear"
-      },
-      {
-        "id": "enchantplus:sword/last_hope",
-        "name": "Last Hope"
-      },
-      {
-        "id": "enchantplus:sword/pull",
-        "name": "Pull"
       }
     ],
     "description": "Converts XP into +3 bonus damage (+1 per level above I, up to +5 at Lv III) on hit.",
@@ -16960,45 +16608,6 @@ window.ALL_ENCHANTMENTS = [
     "conflicts": [],
     "description": "Inflicts continuous Wither decay damage on hit.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/wither_sword\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:sword/xp_boost",
-    "namespace": "enchantplus",
-    "raw_name": "sword/xp_boost",
-    "name": "XP Boost",
-    "name_vi": "XP Boost",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#voxel:enchantable/mining_and_damage",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords & Melee Weapons",
-    "exclusive_groups": [
-      "XP Boost / Scholar"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:mending",
-        "name": "Mending"
-      },
-      {
-        "id": "enchantencore:scholar_of_blocks",
-        "name": "Scholar of Blocks"
-      },
-      {
-        "id": "enchantencore:scholar_of_mobs",
-        "name": "Scholar of Mobs"
-      }
-    ],
-    "description": "Multiplies XP dropped from killed mobs and mined blocks across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/xp_boost\":3}}] 1"
   },
   {
     "id": "enchantencore:yoink",

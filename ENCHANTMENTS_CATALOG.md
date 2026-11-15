@@ -6,12 +6,12 @@
 
 | Tier | Màu sắc | Số lượng | Nguồn kiếm chính | Quy tắc đặc biệt |
 | :--- | :--- | :---: | :--- | :--- |
-| **Ultimate** | Gold (`gold`) | **37** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
-| **Epic** | Light Purple (`light_purple`) | **61** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
-| **Rare** | Aqua (`aqua`) | **100** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
-| **Common** | Gray (`gray`) | **152** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
+| **Ultimate** | Gold (`gold`) | **36** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
+| **Epic** | Light Purple (`light_purple`) | **62** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
+| **Rare** | Aqua (`aqua`) | **98** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
+| **Common** | Gray (`gray`) | **151** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
 | **Curses** | Red (`red`) | **33** | Rương kho báu / Curse | Lời nguyền |
-| **Filtered Duplicates** | — | **33** | Đã tắt | Lọc trùng giữa các pack |
+| **Filtered Duplicates** | — | **36** | Đã tắt | Lọc trùng giữa các pack |
 
 ## 2. Xác Suất Rare Khi Enchant Theo Loại Trang Bị (Mục tiêu 2% – 5%)
 
@@ -28,7 +28,7 @@
 | **Leggings** | 8 | 67 | 2 | **2.99%** |
 | **Boots** | 10 | 89 | 2 | **2.25%** |
 
-## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (37)
+## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (36)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -60,7 +60,6 @@
 | `enchantplus:mace/teluric_wave` | 3 | `NeoEnchant-5.16.0` | No | 1 | `#minecraft:enchantable/mace` |
 | `enchantplus:pickaxe/bedrock_breaker` | 1 | `NeoEnchant-5.16.0` | No | 1 | `#voxel:enchantable/pickaxes` |
 | `enchantplus:pickaxe/spawner_touch` | 1 | `NeoEnchant-5.16.0` | No | 1 | `#voxel:enchantable/pickaxes` |
-| `enchantplus:sword/last_hope` | 1 | `NeoEnchant-5.16.0` | No | 1 | `#minecraft:enchantable/melee_weapon` |
 | `enchantplus:tools/miningplus` | 1 | `NeoEnchant-5.16.0` | No | 1 | `#minecraft:enchantable/mining_loot` |
 | `enchantplus:trident/gungnir_breath` | 3 | `NeoEnchant-5.16.0` | No | 1 | `#minecraft:enchantable/trident` |
 | `stellarity:critical_strike` | 3 | `Stellarity-6.0.1` | No | 1 | `#minecraft:enchantable/sharp_weapon` |
@@ -70,12 +69,13 @@
 | `wither:soul_siphon` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/weapon` |
 | `wither:witherbound` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/armor` |
 
-## 4. Epic Enchants (Chỉ kiếm từ Kho báu / Hầm ngục) (61)
+## 4. Epic Enchants (Chỉ kiếm từ Kho báu / Hầm ngục) (62)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
 | `enchantencore:adrenaline` | 4 | `enchantments_encore` | No | 2 | `#enchantencore:all_bows` |
 | `enchantencore:bear_spirit` | 1 | `enchantments_encore` | No | 2 | `minecraft:wolf_armor` |
+| `enchantencore:crab_claw` | 3 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/mining` |
 | `enchantencore:dolphin_blessing` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/foot_armor` |
 | `enchantencore:emberweave` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/durability` |
 | `enchantencore:frenzy` | 3 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/leg_armor` |
@@ -93,7 +93,7 @@
 | `enchantplus:mace/striker` | 1 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/mace` |
 | `enchantplus:mace/wind_propulsion` | 3 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/mace` |
 | `enchantplus:sword/critical` | 3 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/melee_weapon` |
-| `enchantplus:sword/xp_boost` | 3 | `NeoEnchant-5.16.0` | No | 2 | `#voxel:enchantable/mining_and_damage` |
+| `enchantplus:sword/reach` | 3 | `NeoEnchant-5.16.0` | Yes | 5 | `#minecraft:enchantable/melee_weapon` |
 | `enchantsplus:pyrolysis` | 1 | `Enchants Plus v2.1 26.3` | No | 2 | `#minecraft:enchantable/mining_loot` |
 | `enchantsplus:swift_strike` | 5 | `Enchants Plus v2.1 26.3` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
 | `mt:armor/basalt_boots` | 1 | `mine-treasure-1.6.5` | No | 2 | `#minecraft:foot_armor` |
@@ -136,7 +136,7 @@
 | `stellarity:ambush` | 3 | `Stellarity-6.0.1` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
 | `stellarity:plated` | 4 | `Stellarity-6.0.1` | No | 2 | `#stellarity:enchantable/elytra` |
 
-## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (100)
+## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (98)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -145,7 +145,6 @@
 | `enchantencore:boar_spirit` | 1 | `enchantments_encore` | No | 5 | `minecraft:wolf_armor` |
 | `enchantencore:boltbringer` | 1 | `enchantments_encore` | No | 5 | `minecraft:mace` |
 | `enchantencore:bulletproof` | 1 | `enchantments_encore` | No | 5 | `#minecraft:chest_armor` |
-| `enchantencore:crab_claw` | 3 | `enchantments_encore` | No | 5 | `#enchantencore:valid_for_crab_claw` |
 | `enchantencore:day_protection` | 4 | `enchantments_encore` | Yes | 5 | `#minecraft:enchantable/armor` |
 | `enchantencore:end_protection` | 4 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/armor` |
 | `enchantencore:end_speed` | 3 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/foot_armor` |
@@ -200,8 +199,7 @@
 | `enchantplus:mounted/velocity` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#enchantplus:enchantable/mounted` |
 | `enchantplus:sword/death_touch` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/weapon` |
 | `enchantplus:sword/dimensional_hit` | 3 | `NeoEnchant-5.16.0` | Yes | 5 | `#minecraft:enchantable/melee_weapon` |
-| `enchantplus:sword/pull` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/weapon` |
-| `enchantplus:sword/reach` | 3 | `NeoEnchant-5.16.0` | Yes | 5 | `#minecraft:enchantable/melee_weapon` |
+| `enchantplus:sword/fear` | 3 | `NeoEnchant-5.16.0` | No | 10 | `#minecraft:enchantable/melee_weapon` |
 | `enchantplus:sword/runic_despair` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/melee_weapon` |
 | `enchantplus:sword/tears_of_asflors` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/melee_weapon` |
 | `enchantsplus:ice_aspect` | 2 | `Enchants Plus v2.1 26.3` | Yes | 5 | `#minecraft:enchantable/fire_aspect` |
@@ -241,7 +239,7 @@
 | `nova_structures:wax_wings` | 1 | `Dungeons and Taverns v6.1.0` | No | 5 | `minecraft:elytra` |
 | `stellarity:levitation_shot` | 5 | `Stellarity-6.0.1` | No | 5 | `#minecraft:enchantable/bow` |
 
-## 6. Common Enchants (152)
+## 6. Common Enchants (151)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -331,7 +329,6 @@
 | `enchantplus:hoe/seiors_oblivion` | 1 | `NeoEnchant-5.16.0` | No | 10 | `#voxel:enchantable/hoes` |
 | `enchantplus:mounted/cavalier_egis` | 3 | `NeoEnchant-5.16.0` | No | 10 | `#enchantplus:enchantable/mounted` |
 | `enchantplus:mounted/steel_fang` | 5 | `NeoEnchant-5.16.0` | No | 10 | `#enchantplus:enchantable/dog` |
-| `enchantplus:sword/fear` | 3 | `NeoEnchant-5.16.0` | No | 10 | `#minecraft:enchantable/melee_weapon` |
 | `enchantsplus:kinetic_protection` | 4 | `Enchants Plus v2.1 26.3` | Yes | 10 | `#minecraft:enchantable/head_armor` |
 | `enchantsplus:precision` | 2 | `Enchants Plus v2.1 26.3` | No | 10 | `minecraft:crossbow, minecraft:bow` |
 | `enchantsplus:skyguard` | 4 | `Enchants Plus v2.1 26.3` | Yes | 10 | `minecraft:elytra` |
@@ -398,7 +395,7 @@
 | `stellarity:_technical/void_pendant/netherite` | 1 | `Stellarity-6.0.1` | No | 10 | `minecraft:iron_nugget` |
 | `stellarity:_technical/void_pendant/quartz` | 1 | `Stellarity-6.0.1` | No | 10 | `minecraft:iron_nugget` |
 
-## 7. Enchants Bị Lọc Do Trùng Lặp (33)
+## 7. Enchants Bị Lọc Do Trùng Lặp (36)
 
 | Enchantment ID (Đã tắt) | Nguồn Pack | Thay thế bởi (`duplicate_of`) |
 | :--- | :--- | :--- |
@@ -421,8 +418,11 @@
 | `enchantplus:pickaxe/vein_miner` | `NeoEnchant-5.16.0` | `veinminer-enchantment:veinminer` |
 | `enchantplus:sword/attack_speed` | `NeoEnchant-5.16.0` | `enchantsplus:swift_strike` |
 | `enchantplus:sword/curse_of_clumsiness` | `NeoEnchant-5.16.0` | `enchantsplus:clumsiness_curse` |
+| `enchantplus:sword/last_hope` | `NeoEnchant-5.16.0` | `manual` |
 | `enchantplus:sword/life_steal` | `NeoEnchant-5.16.0` | `enchantencore:leech` |
 | `enchantplus:sword/poison_aspect` | `NeoEnchant-5.16.0` | `enchantencore:poison_aspect` |
+| `enchantplus:sword/pull` | `NeoEnchant-5.16.0` | `manual` |
+| `enchantplus:sword/xp_boost` | `NeoEnchant-5.16.0` | `manual` |
 | `enchantplus:tools/auto_smelt` | `NeoEnchant-5.16.0` | `enchantsplus:pyrolysis` |
 | `enchantsplus:breeze_burst` | `Enchants Plus v2.1 26.3` | `manual` |
 | `enchantsplus:crabs_touch` | `Enchants Plus v2.1 26.3` | `manual` |
