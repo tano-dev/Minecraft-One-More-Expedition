@@ -3936,6 +3936,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Moonweave"
       },
       {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
         "id": "enchantencore:rainweave",
         "name": "Rainweave"
       },
@@ -5695,6 +5699,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:moonweave",
         "name": "Moonweave"
+      },
+      {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
       },
       {
         "id": "enchantencore:rainweave",
@@ -7921,6 +7929,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Moonweave"
       },
       {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
         "id": "enchantencore:rainweave",
         "name": "Rainweave"
       },
@@ -9050,10 +9062,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:nuclear_arrow",
         "name": "Nuclear Arrow"
-      },
-      {
-        "id": "nova_structures:photosynthesis",
-        "name": "Photosynthesis"
       },
       {
         "id": "enchantencore:poison_infused",
@@ -10459,6 +10467,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Mending"
       },
       {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
         "id": "enchantencore:rainweave",
         "name": "Rainweave"
       },
@@ -11582,12 +11594,40 @@ window.ALL_ENCHANTMENTS = [
     ],
     "conflicts": [
       {
-        "id": "minecraft:infinity",
-        "name": "Infinity"
+        "id": "enchantencore:corrosion_curse",
+        "name": "Curse of Corrosion"
+      },
+      {
+        "id": "enchantencore:emberweave",
+        "name": "Emberweave"
+      },
+      {
+        "id": "enchantencore:handyman",
+        "name": "Handyman"
       },
       {
         "id": "minecraft:mending",
         "name": "Mending"
+      },
+      {
+        "id": "enchantencore:moonweave",
+        "name": "Moonweave"
+      },
+      {
+        "id": "enchantencore:rainweave",
+        "name": "Rainweave"
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "name": "Sacrifice"
+      },
+      {
+        "id": "enchantencore:tideweave",
+        "name": "Tideweave"
+      },
+      {
+        "id": "enchantencore:voidweave",
+        "name": "Voidweave"
       }
     ],
     "description": "Gradually repairs item durability when exposed to direct daylight.",
@@ -12520,6 +12560,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Moonweave"
       },
       {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
         "id": "enchantencore:sacrifice",
         "name": "Sacrifice"
       },
@@ -13114,6 +13158,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:moonweave",
         "name": "Moonweave"
+      },
+      {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
       },
       {
         "id": "enchantencore:rainweave",
@@ -15117,6 +15165,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Moonweave"
       },
       {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
         "id": "enchantencore:rainweave",
         "name": "Rainweave"
       },
@@ -15711,6 +15763,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:moonweave",
         "name": "Moonweave"
+      },
+      {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
       },
       {
         "id": "enchantencore:rainweave",

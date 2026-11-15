@@ -605,6 +605,8 @@ def _apply_custom_overrides(eid, raw, color, bold):
         raw["supported_items"] = "#minecraft:enchantable/mining"
     elif eid == "enchantencore:heroes_crown":
         raw["exclusive_set"] = "#enchantencore:exclusive_set/helmet"
+    elif eid == "nova_structures:photosynthesis":
+        raw["exclusive_set"] = "#enchantencore:exclusive_set/repair"
     elif eid == "enchantsplus:ice_aspect":
         raw["description"] = {"text": "Icicle Impale", "color": color, "bold": bold}
     elif eid in ("enchantencore:day_protection", "enchantencore:night_protection"):

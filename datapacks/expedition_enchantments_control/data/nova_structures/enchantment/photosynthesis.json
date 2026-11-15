@@ -99,7 +99,7 @@
       }
     ]
   },
-  "exclusive_set": "#nova_structures:exclusive_set/longevity",
+  "exclusive_set": "#enchantencore:exclusive_set/repair",
   "max_cost": {
     "base": 0,
     "per_level_above_first": 0
