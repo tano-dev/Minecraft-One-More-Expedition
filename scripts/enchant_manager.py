@@ -549,14 +549,7 @@ def _apply_protection_nerfs(eid, raw):
 
 def _apply_custom_overrides(eid, raw, color, bold):
     """Apply custom renames, stat tweaks, and exclusivity rules."""
-    if eid == "enchantencore:sunweave":
-        raw["description"] = {"text": "Lunar Mend", "color": color, "bold": bold}
-        # Switch daylight check to nighttime (13000..23000)
-        for eff_entry in raw.get("effects", {}).get("minecraft:tick", []):
-            for term in eff_entry.get("requirements", {}).get("terms", []):
-                if term.get("type") == "minecraft:time_check":
-                    term["value"] = {"min": 13000, "max": 23000}
-    elif eid == "enchantplus:armor/lifeplus":
+    if eid == "enchantplus:armor/lifeplus":
         raw["description"] = {"text": "Walking Fortress", "color": color, "bold": bold}
         for attr in raw.get("effects", {}).get("minecraft:attributes", []):
             if attr.get("attribute") == "minecraft:max_health":
@@ -565,6 +558,10 @@ def _apply_custom_overrides(eid, raw, color, bold):
         raw["exclusive_set"] = ["enchantencore:wither_aspect"]
     elif eid == "enchantencore:wither_aspect":
         raw["exclusive_set"] = ["nova_structures:wither_coated"]
+    elif eid == "nova_structures:illagers_bane":
+        raw["exclusive_set"] = ["enchantencore:bane_of_raiders"]
+    elif eid == "enchantencore:bane_of_raiders":
+        raw["exclusive_set"] = ["nova_structures:illagers_bane"]
 
 
 def cmd_build():

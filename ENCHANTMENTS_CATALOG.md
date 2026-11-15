@@ -6,12 +6,12 @@
 
 | Tier | Màu sắc | Số lượng | Nguồn kiếm chính | Quy tắc đặc biệt |
 | :--- | :--- | :---: | :--- | :--- |
-| **Ultimate** | Gold (`gold`) | **38** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
+| **Ultimate** | Gold (`gold`) | **37** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
 | **Epic** | Light Purple (`light_purple`) | **67** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
 | **Rare** | Aqua (`aqua`) | **98** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
 | **Common** | Gray (`gray`) | **148** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
-| **Curses** | Red (`red`) | **34** | Rương kho báu / Curse | Lời nguyền |
-| **Filtered Duplicates** | — | **31** | Đã tắt | Lọc trùng giữa các pack |
+| **Curses** | Red (`red`) | **33** | Rương kho báu / Curse | Lời nguyền |
+| **Filtered Duplicates** | — | **33** | Đã tắt | Lọc trùng giữa các pack |
 
 ## 2. Xác Suất Rare Khi Enchant Theo Loại Trang Bị (Mục tiêu 2% – 5%)
 
@@ -28,7 +28,7 @@
 | **Leggings** | 8 | 67 | 2 | **2.99%** |
 | **Boots** | 11 | 90 | 3 | **3.33%** |
 
-## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (38)
+## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (37)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -63,7 +63,6 @@
 | `enchantplus:sword/last_hope` | 1 | `NeoEnchant-5.16.0` | No | 1 | `#minecraft:enchantable/melee_weapon` |
 | `enchantplus:tools/miningplus` | 1 | `NeoEnchant-5.16.0` | No | 1 | `#minecraft:enchantable/mining_loot` |
 | `enchantplus:trident/gungnir_breath` | 3 | `NeoEnchant-5.16.0` | No | 1 | `#minecraft:enchantable/trident` |
-| `minecraft:wind_burst` | 3 | `enchantments_encore` | No | 1 | `#minecraft:enchantable/mace` |
 | `stellarity:critical_strike` | 3 | `Stellarity-6.0.1` | No | 1 | `#minecraft:enchantable/sharp_weapon` |
 | `stellarity:void_shot` | 1 | `Stellarity-6.0.1` | No | 1 | `#stellarity:enchantable/ranged` |
 | `stellarity:void_strike` | 1 | `Stellarity-6.0.1` | No | 1 | `#minecraft:enchantable/sharp_weapon` |
@@ -88,11 +87,11 @@
 | `enchantencore:moonweave` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/durability` |
 | `enchantencore:pegasus` | 1 | `enchantments_encore` | No | 2 | `#enchantencore:all_horse_armor` |
 | `enchantencore:refuel` | 1 | `enchantments_encore` | No | 2 | `minecraft:elytra` |
-| `enchantencore:sunweave` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/durability` |
 | `enchantencore:vitality` | 3 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/armor` |
 | `enchantencore:voidweave` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/durability` |
 | `enchantplus:boots/agility` | 5 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/foot_armor` |
 | `enchantplus:mace/striker` | 1 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/mace` |
+| `enchantplus:mace/wind_propulsion` | 3 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/mace` |
 | `enchantplus:sword/critical` | 3 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/melee_weapon` |
 | `enchantplus:sword/xp_boost` | 3 | `NeoEnchant-5.16.0` | No | 2 | `#voxel:enchantable/mining_and_damage` |
 | `enchantsplus:pyrolysis` | 1 | `Enchants Plus v2.1 26.3` | No | 2 | `#minecraft:enchantable/mining_loot` |
@@ -202,7 +201,6 @@
 | `enchantplus:elytra/armored` | 4 | `NeoEnchant-5.16.0` | No | 5 | `#voxel:enchantable/elytra` |
 | `enchantplus:elytra/propulsion` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#voxel:enchantable/elytra` |
 | `enchantplus:leggings/fast_swim` | 1 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/leg_armor` |
-| `enchantplus:mace/wind_propulsion` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/mace` |
 | `enchantplus:midas_touch` | 1 | `NeoEnchant-5.16.0` | No | 5 | `minecraft:stick` |
 | `enchantplus:mounted/ethereal_leap` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#enchantplus:enchantable/mounted` |
 | `enchantplus:mounted/velocity` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#enchantplus:enchantable/mounted` |
@@ -234,6 +232,7 @@
 | `minecraft:multishot` | 1 | `minecraft (vanilla)` | Yes | 5 | `#minecraft:enchantable/crossbow` |
 | `minecraft:riptide` | 3 | `minecraft (vanilla)` | Yes | 5 | `#minecraft:enchantable/trident` |
 | `minecraft:silk_touch` | 1 | `minecraft (vanilla)` | Yes | 5 | `#minecraft:enchantable/mining_loot` |
+| `minecraft:wind_burst` | 3 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/mace` |
 | `nova_structures:aerials_bane` | 5 | `Dungeons and Taverns v6.1.0` | No | 5 | `#nova_structures:enchantable/combat_tools` |
 | `nova_structures:gravity` | 3 | `Dungeons and Taverns v6.1.0` | No | 5 | `#minecraft:enchantable/crossbow` |
 | `nova_structures:hydro_veil` | 4 | `Dungeons and Taverns v6.1.0` | No | 5 | `#minecraft:harnesses` |
@@ -399,10 +398,11 @@
 | `stellarity:_technical/void_pendant/netherite` | 1 | `Stellarity-6.0.1` | No | 10 | `minecraft:iron_nugget` |
 | `stellarity:_technical/void_pendant/quartz` | 1 | `Stellarity-6.0.1` | No | 10 | `minecraft:iron_nugget` |
 
-## 7. Enchants Bị Lọc Do Trùng Lặp (31)
+## 7. Enchants Bị Lọc Do Trùng Lặp (33)
 
 | Enchantment ID (Đã tắt) | Nguồn Pack | Thay thế bởi (`duplicate_of`) |
 | :--- | :--- | :--- |
+| `enchantencore:sunweave` | `enchantments_encore` | `manual` |
 | `enchantencore:swift_slash` | `enchantments_encore` | `enchantsplus:swift_strike` |
 | `enchantplus:armor/venom_protection` | `NeoEnchant-5.16.0` | `manual` |
 | `enchantplus:axe/timber` | `NeoEnchant-5.16.0` | `enchantencore:lumberjack` |
@@ -411,6 +411,7 @@
 | `enchantplus:bow/breezing_arrow` | `NeoEnchant-5.16.0` | `enchantsplus:breeze_burst` |
 | `enchantplus:bow/storm_arrow` | `NeoEnchant-5.16.0` | `manual` |
 | `enchantplus:chestplate/builder_arm` | `NeoEnchant-5.16.0` | `manual` |
+| `enchantplus:durability/curse_of_breaking` | `NeoEnchant-5.16.0` | `manual` |
 | `enchantplus:elytra/kinetic_protection` | `NeoEnchant-5.16.0` | `enchantsplus:kinetic_protection` |
 | `enchantplus:helmet/bright_vision` | `NeoEnchant-5.16.0` | `manual` |
 | `enchantplus:hoe/harvest` | `NeoEnchant-5.16.0` | `enchantsplus:harvest` |

@@ -775,28 +775,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:warped_trident\":1}}] 1"
   },
   {
-    "id": "minecraft:wind_burst",
-    "namespace": "minecraft",
-    "raw_name": "wind_burst",
-    "name": "Wind Burst",
-    "name_vi": "Wind Burst",
-    "tier": "ultimate",
-    "tier_order": 1,
-    "max_level": 3,
-    "anvil_cost": 8,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/mace",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Maces",
-    "description": "Triggers a wind explosion on Mace smash hits, launching the attacker upward (scales strongly across Levels I–III). [ULTIMATE]",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:wind_burst\":3}}] 1"
-  },
-  {
     "id": "enchantencore:wind_spirit",
     "namespace": "enchantencore",
     "raw_name": "wind_spirit",
@@ -1810,28 +1788,6 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Helmets",
     "description": "Periodically inflicts Blindness on the wearer.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:blindness_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:durability/curse_of_breaking",
-    "namespace": "enchantplus",
-    "raw_name": "durability/curse_of_breaking",
-    "name": "Curse of Breaking",
-    "name_vi": "Curse of Breaking",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 8,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Durable Gear",
-    "description": "Increases durability loss by +1 extra point per level on every use (up to +5 extra at Lv V).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:durability/curse_of_breaking\":5}}] 1"
   },
   {
     "id": "enchantsplus:breaking_curse",
@@ -4857,28 +4813,6 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Fishing Rods",
     "description": "Increases treasure catch chance while fishing by ~+2.1% per level and reduces junk chance.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:luck_of_the_sea\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:sunweave",
-    "namespace": "enchantencore",
-    "raw_name": "sunweave",
-    "name": "Lunar Mend",
-    "name_vi": "Lunar Mend",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Durable Gear",
-    "description": "Passively repairs item durability over time under open nighttime sky.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sunweave\":1}}] 1"
   },
   {
     "id": "minecraft:lure",
@@ -8301,6 +8235,28 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wind_aspect\":2}}] 1"
   },
   {
+    "id": "minecraft:wind_burst",
+    "namespace": "minecraft",
+    "raw_name": "wind_burst",
+    "name": "Wind Burst",
+    "name_vi": "Wind Burst",
+    "tier": "rare",
+    "tier_order": 99,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/mace",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Maces",
+    "description": "Triggers a wind explosion on Mace smash hits, launching the attacker upward (scales strongly across Levels I–III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:wind_burst\":3}}] 1"
+  },
+  {
     "id": "mt:armor/wind_chestplate",
     "namespace": "mt",
     "raw_name": "armor/wind_chestplate",
@@ -8328,10 +8284,10 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "mace/wind_propulsion",
     "name": "Wind Propulsion",
     "name_vi": "Wind Propulsion",
-    "tier": "rare",
+    "tier": "epic",
     "tier_order": 99,
     "max_level": 3,
-    "anvil_cost": 4,
+    "anvil_cost": 6,
     "table": false,
     "tradeable": false,
     "loot": true,

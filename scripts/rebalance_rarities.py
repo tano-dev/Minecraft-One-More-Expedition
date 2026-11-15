@@ -27,6 +27,8 @@ DISABLED_IDS = {
     "enchantplus:mounted/happy_boost",
     "enchantsplus:graviole",
     "stellarity:soaring",
+    "enchantplus:durability/curse_of_breaking",
+    "enchantencore:sunweave",
 }
 
 # True Curses (34 total)
@@ -102,7 +104,6 @@ ULTIMATE_IDS = {
     "enchantplus:tools/miningplus",
     "enchantplus:trident/gungnir_breath",
     "enchantsplus:graviole",
-    "minecraft:wind_burst",
     "stellarity:critical_strike",
     "stellarity:void_shot",
     "stellarity:void_strike",
@@ -131,6 +132,7 @@ EPIC_IDS = {
     "enchantencore:voidweave",
     "enchantplus:boots/agility",
     "enchantplus:mace/striker",
+    "enchantplus:mace/wind_propulsion",
     "enchantplus:sword/critical",
     "enchantplus:sword/xp_boost",
     "enchantsplus:pyrolysis",
@@ -193,8 +195,8 @@ RARE_IDS = {
     "enchantplus:elytra/armored",
     "enchantplus:elytra/propulsion",
     "enchantplus:leggings/fast_swim",
-    "enchantplus:mace/wind_propulsion",
     "enchantplus:midas_touch",
+    "minecraft:wind_burst",
     "enchantplus:mounted/ethereal_leap",
     "enchantplus:mounted/happy_boost",
     "enchantplus:mounted/velocity",

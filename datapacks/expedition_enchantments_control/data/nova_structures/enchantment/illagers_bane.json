@@ -26,7 +26,9 @@
       }
     ]
   },
-  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "exclusive_set": [
+    "enchantencore:bane_of_raiders"
+  ],
   "max_cost": {
     "base": 25,
     "per_level_above_first": 8

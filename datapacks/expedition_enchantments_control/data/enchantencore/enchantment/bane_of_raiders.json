@@ -4,7 +4,9 @@
     "fallback": "Bane of Raiders",
     "color": "gray"
   },
-  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "exclusive_set": [
+    "nova_structures:illagers_bane"
+  ],
   "supported_items": "#enchantencore:weapons",
   "primary_items": "#minecraft:enchantable/melee_weapon",
   "weight": 12,

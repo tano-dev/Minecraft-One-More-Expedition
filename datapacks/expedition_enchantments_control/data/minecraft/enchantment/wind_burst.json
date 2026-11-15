@@ -1,9 +1,8 @@
 {
-  "anvil_cost": 8,
+  "anvil_cost": 4,
   "description": {
     "translate": "enchantment.minecraft.wind_burst",
-    "color": "gold",
-    "bold": true
+    "color": "aqua"
   },
   "effects": {
     "minecraft:post_attack": [
@@ -66,6 +65,5 @@
     "mainhand"
   ],
   "supported_items": "#minecraft:enchantable/mace",
-  "weight": 1,
-  "exclusive_set": "#expedition:exclusive/minecraft_wind_burst"
+  "weight": 5
 }

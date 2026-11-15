@@ -2,10 +2,10 @@
   "description": {
     "translate": "enchantment.enchantplus.wind_propulsion",
     "fallback": "Wind Propulsion",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "supported_items": "#minecraft:enchantable/mace",
-  "weight": 5,
+  "weight": 2,
   "max_level": 3,
   "min_cost": {
     "base": 15,
@@ -15,7 +15,7 @@
     "base": 65,
     "per_level_above_first": 9
   },
-  "anvil_cost": 4,
+  "anvil_cost": 6,
   "slots": [
     "mainhand"
   ],
