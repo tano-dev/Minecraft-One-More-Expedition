@@ -18,15 +18,15 @@
 | Loại trang bị | Tổng Enchant | Tổng Weight | Số Rare Enchantable | Tỉ lệ Rare (%) |
 | :--- | :---: | :---: | :---: | :---: |
 | **Sword** | 13 | 116 | 3 | **2.59%** |
-| **Pickaxe** | 4 | 41 | 2 | **4.88%** |
-| **Axe** | 10 | 109 | 2 | **1.83%** |
+| **Pickaxe** | 3 | 40 | 1 | **2.5%** |
+| **Axe** | 9 | 108 | 1 | **0.93%** |
 | **Bow** | 5 | 39 | 2 | **5.13%** |
 | **Crossbow** | 4 | 43 | 1 | **2.33%** |
 | **Trident** | 6 | 64 | 1 | **1.56%** |
 | **Helmet** | 11 | 99 | 2 | **2.02%** |
 | **Chestplate** | 10 | 91 | 2 | **2.2%** |
 | **Leggings** | 8 | 67 | 2 | **2.99%** |
-| **Boots** | 11 | 90 | 3 | **3.33%** |
+| **Boots** | 10 | 89 | 2 | **2.25%** |
 
 ## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (37)
 
@@ -224,14 +224,14 @@
 | `kattersstructures:rusta_shot` | 3 | `Katters Structures v2.9` | No | 5 | `minecraft:crossbow` |
 | `kattersstructures:web_walker` | 3 | `Katters Structures v2.9` | No | 5 | `#minecraft:enchantable/foot_armor` |
 | `minecraft:channeling` | 1 | `minecraft (vanilla)` | No | 5 | `#minecraft:enchantable/trident` |
-| `minecraft:feather_falling` | 4 | `minecraft (vanilla)` | Yes | 5 | `#minecraft:enchantable/foot_armor` |
+| `minecraft:feather_falling` | 4 | `minecraft (vanilla)` | No | 5 | `#minecraft:enchantable/foot_armor` |
 | `minecraft:flame` | 1 | `minecraft (vanilla)` | Yes | 5 | `#minecraft:enchantable/bow` |
 | `minecraft:fortune` | 3 | `minecraft (vanilla)` | Yes | 5 | `#minecraft:enchantable/mining_loot` |
 | `minecraft:infinity` | 1 | `minecraft (vanilla)` | Yes | 5 | `#minecraft:enchantable/bow` |
 | `minecraft:looting` | 3 | `minecraft (vanilla)` | Yes | 5 | `#minecraft:enchantable/sword` |
 | `minecraft:multishot` | 1 | `minecraft (vanilla)` | Yes | 5 | `#minecraft:enchantable/crossbow` |
 | `minecraft:riptide` | 3 | `minecraft (vanilla)` | Yes | 5 | `#minecraft:enchantable/trident` |
-| `minecraft:silk_touch` | 1 | `minecraft (vanilla)` | Yes | 5 | `#minecraft:enchantable/mining_loot` |
+| `minecraft:silk_touch` | 1 | `minecraft (vanilla)` | No | 5 | `#minecraft:enchantable/mining_loot` |
 | `minecraft:wind_burst` | 3 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/mace` |
 | `nova_structures:aerials_bane` | 5 | `Dungeons and Taverns v6.1.0` | No | 5 | `#nova_structures:enchantable/combat_tools` |
 | `nova_structures:gravity` | 3 | `Dungeons and Taverns v6.1.0` | No | 5 | `#minecraft:enchantable/crossbow` |
