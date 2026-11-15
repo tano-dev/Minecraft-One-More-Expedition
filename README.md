@@ -12,7 +12,7 @@ This repository independently maintains all **Fabric Mods (`mods/`, `mods_src/`)
 - **Fabric Loader:** `0.20.1`
 - **Java Runtime:** Eclipse Adoptium OpenJDK 25 (with enterprise G1GC)
 - **Active Fabric Mods:** `60` mods in `mods/` (plus 3 optional mods in `mods_optional/`)
-- **Active World Datapacks:** `48` normalized datapacks in `datapacks/` (Schema format 94)
+- **Active World Datapacks:** `49` normalized datapacks in `datapacks/` (Schema format 94)
 - **Custom Native Fabric Mods:** `expedition-sidebar` (1.0.0), `expedition-skyblock` (1.0.0), `itemflexer` (2.0.0)
 
 ---
@@ -28,7 +28,7 @@ Minecraft-One-More-Expedition/
 │   ├── expedition-sidebar/
 │   ├── expedition-skyblock/
 │   └── itemflexer/
-├── datapacks/            # 48 custom worldgen & overhaul datapacks (synced to world/datapacks/)
+├── datapacks/            # 49 custom worldgen & overhaul datapacks (synced to world/datapacks/)
 ├── mods_registry.json    # Machine-readable registry for AI Agentic Self-Healing (v2.0.0)
 ├── MODS_CATALOG.md       # Full architectural classification & diagnostics matrix
 └── README.md

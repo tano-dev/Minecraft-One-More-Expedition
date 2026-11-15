@@ -1,0 +1,48 @@
+{
+  "economy": {
+    "starting_balance": 1000,
+    "max_balance": 1000000000000000000,
+    "daily_reward": 100,
+    "tax_rate": 0.15
+  },
+  "display": {
+    "balance_separator": ".",
+    "currency_symbol": "$",
+    "currency_symbol_position": "prefix",
+    "currency_name": "",
+    "scoreboard_enabled": true
+  },
+  "commands": {
+    "standalone": true,
+    "standalone_admin": false
+  },
+  "shop": {
+    "enabled": true
+  },
+  "selling": {
+    "enabled": true,
+    "daily_limit": 10000,
+    "worth_enabled": true
+  },
+  "dynamic_prices": {
+    "enabled": false,
+    "min_multiplier": 0.5,
+    "max_multiplier": 5.0,
+    "min_active_days": 30,
+    "update_minutes": 60
+  },
+  "auction": {
+    "enabled": true,
+    "expiration_hours": 168,
+    "max_active_per_player": 0
+  },
+  "orders": {
+    "enabled": true,
+    "expiration_hours": 168,
+    "max_active_per_player": 0
+  },
+  "transaction_log": {
+    "enabled": true,
+    "retention_days": 7
+  }
+}

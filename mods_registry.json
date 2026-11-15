@@ -7,8 +7,8 @@
   "generated_for": "Agentic Self-Healing & Diagnostics System",
   "statistics": {
     "active_mods_count": 60,
-    "active_datapacks_count": 48,
-    "total_managed_components": 108
+    "active_datapacks_count": 49,
+    "total_managed_components": 109
   },
   "categories": {
     "core_library": "Foundational libraries, configuration frameworks, and required APIs for dependent mods",
@@ -1096,6 +1096,12 @@
   ],
   "datapacks": [
     {
+      "id": "[26.3-26.4]witherswrath-1.17",
+      "name": "[26.3-26.4]witherswrath-1.17",
+      "description": "The Wither Revamp - Overhauls the Wither boss fight, mechanics, and drops",
+      "pack_format": 94
+    },
+    {
       "id": "ATi Structure V1.4.7 (26.3)",
       "name": "ATi Structure V1.4.7 (26.3)",
       "description": "Adds more Witch Huts",
@@ -1105,6 +1111,12 @@
       "id": "ATi Structures Vanilla V1.4.7 (26.3)",
       "name": "ATi Structures Vanilla V1.4.7 (26.3)",
       "description": "Adds more Witch Huts",
+      "pack_format": 94
+    },
+    {
+      "id": "ddd-v.1.0.6-MC-26.3",
+      "name": "ddd-v.1.0.6-MC-26.3",
+      "description": "Nightmare fuel",
       "pack_format": 94
     },
     {
@@ -1162,6 +1174,12 @@
       "pack_format": 94
     },
     {
+      "id": "enchantments_encore",
+      "name": "enchantments_encore",
+      "description": "Enchantments Encore by Niceron",
+      "pack_format": 94
+    },
+    {
       "id": "Epic Dungeons v1.2.7 (26.3)",
       "name": "Epic Dungeons v1.2.7 (26.3)",
       "description": "Adds more Witch Huts",
@@ -1192,6 +1210,12 @@
       "pack_format": 94
     },
     {
+      "id": "expedition_scarce_ores",
+      "name": "expedition_scarce_ores",
+      "description": "Expedition Scarce Ores - Reduces natural diamond, ancient debris, iron, gold, and emerald generation",
+      "pack_format": 94
+    },
+    {
       "id": "Explorify v1.6.6.dp",
       "name": "Explorify v1.6.6.dp",
       "description": "Explorify v1.6.6\nA structure data pack",
@@ -1201,90 +1225,6 @@
       "id": "Grim kingdoms (1.21+ 26.2+)",
       "name": "Grim kingdoms (1.21+ 26.2+)",
       "description": "This mod adds wonderful castles",
-      "pack_format": 94
-    },
-    {
-      "id": "Incendium_Legacy_v5.5.4+26.3",
-      "name": "Incendium_Legacy_v5.5.4+26.3",
-      "description": "Incendium - Legacy Edition - Nether Expansion\nCreated by Stardust Labs",
-      "pack_format": 94
-    },
-    {
-      "id": "Katters Structures v2.9",
-      "name": "Katters Structures v2.9",
-      "description": "Katters Structures\nAdds brand new vanilla like Structures\nCreated by Katter 21",
-      "pack_format": 94
-    },
-    {
-      "id": "Nullscape_v2.0.1+26.3",
-      "name": "Nullscape_v2.0.1+26.3",
-      "description": "Nullscape - End Reborn\nCreated by Stardust Labs",
-      "pack_format": 94
-    },
-    {
-      "id": "Stellarity-6.0.1",
-      "name": "Stellarity-6.0.1",
-      "description": "This ender expansion is kinda beyond hardcore :drum:",
-      "pack_format": 94
-    },
-    {
-      "id": "Structory_Towers_v1.0.19+26.3",
-      "name": "Structory_Towers_v1.0.19+26.3",
-      "description": "Structory: Towers\nCreated by Stardust Labs",
-      "pack_format": 94
-    },
-    {
-      "id": "Structory_v1.3.18+26.3",
-      "name": "Structory_v1.3.18+26.3",
-      "description": "Structory\nCreated by Stardust Labs",
-      "pack_format": 94
-    },
-    {
-      "id": "Terralith_v2.6.5+26.3",
-      "name": "Terralith_v2.6.5+26.3",
-      "description": "Terralith - Overworld Evolved\nCreated by Stardust Labs",
-      "pack_format": 94
-    },
-    {
-      "id": "Too Expensive Extractor v1.0.0 [26.3]",
-      "name": "Too Expensive Extractor v1.0.0 [26.3]",
-      "description": "Too Expensive Extractor - \nBy github.com/lullaby6",
-      "pack_format": 94
-    },
-    {
-      "id": "Trek 26.3 B0.6.2.1",
-      "name": "Trek 26.3 B0.6.2.1",
-      "description": "Trek 26.3",
-      "pack_format": 94
-    },
-    {
-      "id": "Wabi-Sabi Structures-3.0.5-1.21.11 Datapack",
-      "name": "Wabi-Sabi Structures-3.0.5-1.21.11 Datapack",
-      "description": "A collection of unique, quality, imperfect structures",
-      "pack_format": 94
-    },
-    {
-      "id": "Yggdrasil-7.1.0",
-      "name": "Yggdrasil-7.1.0",
-      "description": "Yggdrasil-7.1.0",
-      "pack_format": 94
-    },
-    {
-      "id": "ddd-v.1.0.6-MC-26.3",
-      "name": "ddd-v.1.0.6-MC-26.3",
-      "description": "Nightmare fuel",
-      "pack_format": 94
-    },
-    {
-      "id": "enchantments_encore",
-      "name": "enchantments_encore",
-      "description": "Enchantments Encore by Niceron",
-      "pack_format": 94
-    },
-    {
-      "id": "expedition_scarce_ores",
-      "name": "expedition_scarce_ores",
-      "description": "Expedition Scarce Ores - Reduces natural diamond, ancient debris, iron, gold, and emerald generation",
       "pack_format": 94
     },
     {
@@ -1303,6 +1243,18 @@
       "id": "hopobetterunderwaterruins-26-3-1-2-9",
       "name": "hopobetterunderwaterruins-26-3-1-2-9",
       "description": "Explore new ocean ruins to your world",
+      "pack_format": 94
+    },
+    {
+      "id": "Incendium_Legacy_v5.5.4+26.3",
+      "name": "Incendium_Legacy_v5.5.4+26.3",
+      "description": "Incendium - Legacy Edition - Nether Expansion\nCreated by Stardust Labs",
+      "pack_format": 94
+    },
+    {
+      "id": "Katters Structures v2.9",
+      "name": "Katters Structures v2.9",
+      "description": "Katters Structures\nAdds brand new vanilla like Structures\nCreated by Katter 21",
       "pack_format": 94
     },
     {
@@ -1332,7 +1284,31 @@
     {
       "id": "more_mobs-v1.5.11-mc1.14-26.3.9-datapack",
       "name": "more_mobs-v1.5.11-mc1.14-26.3.9-datapack",
-      "description": "Tschipcraft's More Mobs \n\u2514 v1.5.11 \u25cf mc1.14-26.3.9",
+      "description": "Tschipcraft's More Mobs \n└ v1.5.11 ● mc1.14-26.3.9",
+      "pack_format": 94
+    },
+    {
+      "id": "Nullscape_v2.0.1+26.3",
+      "name": "Nullscape_v2.0.1+26.3",
+      "description": "Nullscape - End Reborn\nCreated by Stardust Labs",
+      "pack_format": 94
+    },
+    {
+      "id": "Stellarity-6.0.1",
+      "name": "Stellarity-6.0.1",
+      "description": "This ender expansion is kinda beyond hardcore :drum:",
+      "pack_format": 94
+    },
+    {
+      "id": "Structory_Towers_v1.0.19+26.3",
+      "name": "Structory_Towers_v1.0.19+26.3",
+      "description": "Structory: Towers\nCreated by Stardust Labs",
+      "pack_format": 94
+    },
+    {
+      "id": "Structory_v1.3.18+26.3",
+      "name": "Structory_v1.3.18+26.3",
+      "description": "Structory\nCreated by Stardust Labs",
       "pack_format": 94
     },
     {
@@ -1354,6 +1330,12 @@
       "pack_format": 94
     },
     {
+      "id": "Terralith_v2.6.5+26.3",
+      "name": "Terralith_v2.6.5+26.3",
+      "description": "Terralith - Overworld Evolved\nCreated by Stardust Labs",
+      "pack_format": 94
+    },
+    {
       "id": "terratonic-datapack-3.0.31",
       "name": "terratonic-datapack-3.0.31",
       "description": "<3Apollo",
@@ -1363,6 +1345,18 @@
       "id": "tidal_towns_2.0_1.20-26.3",
       "name": "tidal_towns_2.0_1.20-26.3",
       "description": "tidal_towns_2.0_1.20-26.3",
+      "pack_format": 94
+    },
+    {
+      "id": "Too Expensive Extractor v1.0.0 [26.3]",
+      "name": "Too Expensive Extractor v1.0.0 [26.3]",
+      "description": "Too Expensive Extractor - \nBy github.com/lullaby6",
+      "pack_format": 94
+    },
+    {
+      "id": "Trek 26.3 B0.6.2.1",
+      "name": "Trek 26.3 B0.6.2.1",
+      "description": "Trek 26.3",
       "pack_format": 94
     },
     {
@@ -1380,7 +1374,19 @@
     {
       "id": "veinminer-enchantment-1.3.6",
       "name": "veinminer-enchantment-1.3.6",
-      "description": "\u00a76\u00a7lVeinminer Enchantment \u00a77| \u00a7626.3+\n\u00a7eBy Miraculixx",
+      "description": "§6§lVeinminer Enchantment §7| §626.3+\n§eBy Miraculixx",
+      "pack_format": 94
+    },
+    {
+      "id": "Wabi-Sabi Structures-3.0.5-1.21.11 Datapack",
+      "name": "Wabi-Sabi Structures-3.0.5-1.21.11 Datapack",
+      "description": "A collection of unique, quality, imperfect structures",
+      "pack_format": 94
+    },
+    {
+      "id": "Yggdrasil-7.1.0",
+      "name": "Yggdrasil-7.1.0",
+      "description": "Yggdrasil-7.1.0",
       "pack_format": 94
     }
   ]
