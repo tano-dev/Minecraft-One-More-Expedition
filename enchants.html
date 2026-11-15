@@ -856,11 +856,8 @@
           <button class="clear-search-btn" id="clearSearchBtn" title="Clear search">✕</button>
         </div>
 
-        <select id="packSelect" class="filter-select" title="Filter by special pack">
+        <select id="packSelect" class="filter-select" title="Filter by pack">
           <option value="all">Pack: Tất cả</option>
-          <option value="stellarity">✨ Stellarity</option>
-          <option value="incendium">🔥 Incendium</option>
-          <option value="mt">💎 Mine Treasure</option>
         </select>
 
         <select id="obtainSelect" class="filter-select" title="Filter by how to obtain">
@@ -1023,6 +1020,33 @@
     const clearSearchBtn = document.getElementById("clearSearchBtn");
     const packSelect = document.getElementById("packSelect");
     const obtainSelect = document.getElementById("obtainSelect");
+
+    // Populate all packs dynamically
+    const packLabels = {
+      enchantencore: "Enchantments Encore",
+      minecraft: "Minecraft Vanilla",
+      enchantplus: "NeoEnchant",
+      mt: "Mine Treasure",
+      stellarity: "Stellarity",
+      nova_structures: "Nova Structures (DnT)",
+      enchantsplus: "Enchants+",
+      kattersstructures: "Katters Structures",
+      incendium: "Incendium",
+      wither: "Wither",
+      "veinminer-enchantment": "Veinminer"
+    };
+    const packCounts = {};
+    allData.forEach(x => {
+      packCounts[x.namespace] = (packCounts[x.namespace] || 0) + 1;
+    });
+    Object.entries(packCounts)
+      .sort((a, b) => b[1] - a[1])
+      .forEach(([ns, cnt]) => {
+        const opt = document.createElement("option");
+        opt.value = ns;
+        opt.textContent = `${packLabels[ns] || ns} (${cnt})`;
+        packSelect.appendChild(opt);
+      });
     const sortSelect = document.getElementById("sortSelect");
     const prevPageBtn = document.getElementById("prevPageBtn");
     const nextPageBtn = document.getElementById("nextPageBtn");
