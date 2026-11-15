@@ -1,0 +1,34 @@
+package com.expedition.enchants.mixin;
+
+import com.expedition.enchants.config.EnchantRollConfig;
+import com.expedition.enchants.ui.RevealEnchantsMenu;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.Container;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.EnchantmentMenu;
+import net.minecraft.world.item.ItemStack;
+import org.spongepowered.asm.mixin.Final;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+@Mixin(EnchantmentMenu.class)
+public class EnchantmentMenuMixin {
+    @Shadow
+    @Final
+    private Container enchantSlots;
+
+    @Inject(method = "clickMenuButton", at = @At("RETURN"))
+    private void expedition$openRevealUi(Player player, int id, CallbackInfoReturnable<Boolean> cir) {
+        if (!cir.getReturnValue()) return;
+        if (!EnchantRollConfig.get().enableRevealUi) return;
+        if (!(player instanceof ServerPlayer sp)) return;
+
+        ItemStack enchanted = this.enchantSlots.getItem(0);
+        if (!enchanted.isEmpty()) {
+            RevealEnchantsMenu.open(sp, enchanted);
+        }
+    }
+}

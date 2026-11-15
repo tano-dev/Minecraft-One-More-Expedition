@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "expedition-enchants",
+  "version": "${version}",
+  "name": "Expedition Enchants",
+  "description": "Configurable custom enchantment roll engine (tier rates & level curves) and interactive Reveal Enchants UI.",
+  "authors": ["Expedition"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.expedition.enchants.ExpeditionEnchantsMod"
+    ]
+  },
+  "mixins": [
+    "expedition-enchants.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
