@@ -83,7 +83,7 @@ public class RevealEnchantsMenu extends ChestMenu {
             container.setItem(slot, createMysteryPane(tier));
         }
 
-        ItemStack revealAll = new ItemStack(Items.NETHER_STAR);
+        ItemStack revealAll = new ItemStack(Items.AMETHYST_SHARD);
         revealAll.set(DataComponents.CUSTOM_NAME, Component.literal("§e§lReveal All"));
         container.setItem(REVEAL_ALL_SLOT, revealAll);
     }
