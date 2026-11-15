@@ -1,6 +1,7 @@
 {
   "replace": true,
   "values": [
+    "bound:bound",
     "enchantencore:absolute_unit",
     "enchantencore:adrenaline",
     "enchantencore:archer_barrage",

@@ -1095,7 +1095,7 @@
       "source_file": "datapacks\\enchantments_encore\\data\\enchantencore\\enchantment\\flare.json",
       "vanilla": false,
       "enabled": true,
-      "tier": "rare",
+      "tier": "epic",
       "curse": false,
       "enchantable_rare": false,
       "table": false,
@@ -7999,6 +7999,19 @@
       "supported_items": "#minecraft:enchantable/armor",
       "description": "Binds your soul to Wither energy, granting immunity to Wither decay damage. [ULTIMATE]",
       "name_vi": "Witherbound"
+    },
+    "bound:bound": {
+      "enabled": true,
+      "tier": "epic",
+      "max_level": 3,
+      "anvil_cost": 4,
+      "table": false,
+      "tradeable": false,
+      "loot": true,
+      "supported_items": "#minecraft:enchantable/foot_armor",
+      "source_pack": "Bound-v3.0.3",
+      "description": "Allows mid-air double jumping while wearing Boots; extra jumps scale across Lv I–III.",
+      "name_vi": "Bound"
     }
   }
 }

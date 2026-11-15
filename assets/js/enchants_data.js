@@ -2917,6 +2917,30 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bounce\":1}}] 1"
   },
   {
+    "id": "bound:bound",
+    "namespace": "bound",
+    "raw_name": "bound",
+    "name": "Bound",
+    "name_vi": "Bound",
+    "tier": "epic",
+    "tier_order": 99,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Bound-v3.0.3",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Allows mid-air double jumping while wearing Boots; extra jumps scale across Lv I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"bound:bound\":3}}] 1"
+  },
+  {
     "id": "minecraft:breach",
     "namespace": "minecraft",
     "raw_name": "breach",
@@ -6942,7 +6966,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "flare",
     "name": "Flare",
     "name_vi": "Flare",
-    "tier": "rare",
+    "tier": "epic",
     "tier_order": 99,
     "max_level": 1,
     "anvil_cost": 4,

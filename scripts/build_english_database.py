@@ -698,6 +698,7 @@ def build_all():
     master = {}
     for d in ALL_DICTS:
         master.update(d)
+    master["bound:bound"] = (3, 4, ["armor"], "Boots", "Bound", "Allows mid-air double jumping while wearing Boots; extra jumps scale across Lv I–III.")
 
     enabled_ids = {eid for eid, entry in cfg["enchantments"].items() if entry.get("enabled", True)}
     names_by_id = {}

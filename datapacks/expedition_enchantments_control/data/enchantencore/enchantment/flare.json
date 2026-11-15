@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.flare",
     "fallback": "Flare",
-    "color": "aqua"
+    "color": "light_purple"
   },
   "exclusive_set": "#enchantencore:exclusive_set/shot_arrow",
   "supported_items": "#enchantencore:all_bows",
