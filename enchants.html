@@ -1060,6 +1060,18 @@
           <div class="stat-card-count" style="color: var(--curse);" id="statCurse">0</div>
         </div>
       </div>
+
+      <div class="filter-row" id="excludeRow" style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.08); flex-wrap: wrap; gap: 8px; align-items: center;">
+        <span style="font-size: 0.8rem; color: #f87171; font-weight: 600;">🚫 Loại trừ (Ẩn):</span>
+        <div class="pill-group" id="excludePackChips"></div>
+        <div class="pill-group" id="excludePropChips">
+          <button class="filter-btn" data-ex-prop="table">🚫 Table</button>
+          <button class="filter-btn" data-ex-prop="tradeable">🚫 Tradeable</button>
+          <button class="filter-btn" data-ex-prop="loot">🚫 Loot</button>
+          <button class="filter-btn" data-ex-prop="conflict">🚫 Có xung khắc</button>
+          <button class="filter-btn" data-ex-prop="curse">🚫 Curse</button>
+        </div>
+      </div>
     </section>
 
     <!-- Filters -->
@@ -1112,6 +1124,18 @@
           <button class="filter-btn" data-gear="armor">🛡️ Armor & Elytra</button>
           <button class="filter-btn" data-gear="tool">⛏️ Tools</button>
           <button class="filter-btn" data-gear="mount">🐺 Mounts & Pets</button>
+        </div>
+      </div>
+
+      <div class="filter-row" id="excludeRow" style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.08); flex-wrap: wrap; gap: 8px; align-items: center;">
+        <span style="font-size: 0.8rem; color: #f87171; font-weight: 600;">🚫 Loại trừ (Ẩn):</span>
+        <div class="pill-group" id="excludePackChips"></div>
+        <div class="pill-group" id="excludePropChips">
+          <button class="filter-btn" data-ex-prop="table">🚫 Table</button>
+          <button class="filter-btn" data-ex-prop="tradeable">🚫 Tradeable</button>
+          <button class="filter-btn" data-ex-prop="loot">🚫 Loot</button>
+          <button class="filter-btn" data-ex-prop="conflict">🚫 Có xung khắc</button>
+          <button class="filter-btn" data-ex-prop="curse">🚫 Curse</button>
         </div>
       </div>
     </section>
@@ -1457,6 +1481,56 @@
       return `<span class="badge badge-group" title="Nhóm xung khắc: ${escapeHtml(groups.join(', '))}">⚔️ ${escapeHtml(label)}${extra}</span>`;
     }
 
+    let excludedPacks = new Set();
+    let excludedProps = new Set();
+
+    // Populate exclude pack chips
+    const excludePackChips = document.getElementById("excludePackChips");
+    const uniqueNamespaces = [...new Set(allData.map(i => i.namespace).filter(Boolean))].sort();
+    uniqueNamespaces.forEach(ns => {
+      const btn = document.createElement("button");
+      btn.className = "filter-btn";
+      btn.dataset.exPack = ns;
+      btn.textContent = "🚫 " + ns;
+      btn.onclick = () => {
+        if (excludedPacks.has(ns)) excludedPacks.delete(ns);
+        else excludedPacks.add(ns);
+        btn.classList.toggle("active", excludedPacks.has(ns));
+        btn.style.borderColor = excludedPacks.has(ns) ? "#ef4444" : "";
+        btn.style.color = excludedPacks.has(ns) ? "#fca5a5" : "";
+        currentPage = 1;
+        excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
+      renderCards();
+      };
+      excludePackChips.appendChild(btn);
+    });
+
+    document.querySelectorAll("#excludePropChips [data-ex-prop]").forEach(btn => {
+      btn.onclick = () => {
+        const p = btn.dataset.exProp;
+        if (excludedProps.has(p)) excludedProps.delete(p);
+        else excludedProps.add(p);
+        btn.classList.toggle("active", excludedProps.has(p));
+        btn.style.borderColor = excludedProps.has(p) ? "#ef4444" : "";
+        btn.style.color = excludedProps.has(p) ? "#fca5a5" : "";
+        currentPage = 1;
+        excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
+      renderCards();
+      };
+    });
+
     function filterAndSortData() {
       const filtered = allData.map(getEffectiveItem).filter(item => {
         if (item.enabled === false && currentTier !== "all") return false;
@@ -1485,6 +1559,13 @@
         if (currentObtain === "table" && !item.table) return false;
         if (currentObtain === "tradeable" && !item.tradeable) return false;
         if (currentObtain === "loot_only" && (item.table || item.tradeable)) return false;
+
+        if (excludedPacks.has(item.namespace)) return false;
+        if (excludedProps.has("table") && item.table) return false;
+        if (excludedProps.has("tradeable") && item.tradeable) return false;
+        if (excludedProps.has("loot") && item.loot) return false;
+        if (excludedProps.has("conflict") && (item.exclusive_groups || []).length > 0) return false;
+        if (excludedProps.has("curse") && isCurseItem(item)) return false;
 
         if (currentSearch) {
           const q = currentSearch.toLowerCase();
@@ -1527,6 +1608,13 @@
       obtainSelect.value = "all";
       document.querySelectorAll("#tierTabs .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.tier === "all"));
       document.querySelectorAll("#gearChips .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.gear === "all"));
+      excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
       renderCards();
     }
 
@@ -1693,7 +1781,14 @@
             groupSelect.value = g;
             currentPage = 1;
             closeModal();
-            renderCards();
+            excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
+      renderCards();
           };
           modalConflictGroups.appendChild(btn);
         });
@@ -1751,6 +1846,13 @@
       currentSearch = e.target.value.trim();
       clearSearchBtn.classList.toggle("visible", currentSearch.length > 0);
       currentPage = 1;
+      excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
       renderCards();
     });
 
@@ -1759,6 +1861,13 @@
       currentSearch = "";
       clearSearchBtn.classList.remove("visible");
       currentPage = 1;
+      excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
       renderCards();
       searchInput.focus();
     };
@@ -1766,24 +1875,52 @@
     packSelect.addEventListener("change", (e) => {
       currentPack = e.target.value;
       currentPage = 1;
+      excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
       renderCards();
     });
 
     groupSelect.addEventListener("change", (e) => {
       currentGroup = e.target.value;
       currentPage = 1;
+      excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
       renderCards();
     });
 
     obtainSelect.addEventListener("change", (e) => {
       currentObtain = e.target.value;
       currentPage = 1;
+      excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
       renderCards();
     });
 
     sortSelect.addEventListener("change", (e) => {
       currentSort = e.target.value;
       currentPage = 1;
+      excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
       renderCards();
     });
 
@@ -1792,6 +1929,13 @@
       currentPage = 1;
       document.querySelectorAll("#tierTabs .filter-btn").forEach(b => {
         b.classList.toggle("active", b.dataset.tier === tier);
+      });
+      excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
       });
       renderCards();
     }
@@ -1810,20 +1954,41 @@
         btn.classList.add("active");
         currentGear = btn.dataset.gear;
         currentPage = 1;
-        renderCards();
+        excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
+      renderCards();
       };
     });
 
     prevPageBtn.onclick = () => {
       if (currentPage > 1) {
         currentPage--;
-        renderCards();
+        excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
+      renderCards();
         window.scrollTo({ top: 320, behavior: "smooth" });
       }
     };
 
     nextPageBtn.onclick = () => {
       currentPage++;
+      excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
       renderCards();
       window.scrollTo({ top: 320, behavior: "smooth" });
     };
@@ -1877,6 +2042,13 @@
       const merged = { ...(pendingChanges[eid] || {}), ...patch };
       pendingChanges[eid] = merged;
       refreshDirtyBar();
+      excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
       renderCards();
       if (currentModalItem && currentModalItem.id === eid) {
         populateModalEditor(getEffectiveItem(base));
@@ -2068,6 +2240,13 @@
     discardChangesBtn.onclick = () => {
       Object.keys(pendingChanges).forEach(k => delete pendingChanges[k]);
       refreshDirtyBar();
+      excludedPacks.clear();
+      excludedProps.clear();
+      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.borderColor = "";
+        b.style.color = "";
+      });
       renderCards();
       if (currentModalItem && modal.classList.contains("active")) {
         populateModalEditor(currentModalItem);
