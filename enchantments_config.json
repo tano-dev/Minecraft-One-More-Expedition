@@ -61,8 +61,8 @@
       "max_level": 5,
       "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/leg_armor",
-      "description": "Chế độ Tanker Tối Thượng: Khi ngồi xổm trên mặt đất, nhận hiệu ứng Hấp thụ (Absorption II) và Kháng cự (Resistance III), tạo sóng âm chấn động hất tung kẻ thù xung quanh.",
-      "name_vi": "Absolute Unit"
+      "description": "Chế độ Tanker Tối Thượng: Khi ngồi xổm trên mặt đất, nhận hiệu ứng Hấp thụ (Absorption II) và Kháng cự (Resistance III), tạo sóng âm chấn động Sonic Boom hất tung và gây sát thương đẩy lùi mọi kẻ thù xung quanh. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Thể Đứng Bất Hoại (Absolute Unit)"
     },
     "enchantencore:adrenaline": {
       "source_pack": "enchantments_encore",
@@ -78,10 +78,10 @@
       "table_weight": 1,
       "loot_weight": 1,
       "max_level": 4,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Bắn cung trúng đích tăng mạnh tốc độ di chuyển và hồi phục sinh lực dồn dập trong giao tranh khốc liệt.",
-      "name_vi": "Adrenaline"
+      "description": "Bắn cung hoặc nỏ trúng đích kích hoạt trạng thái Adrenaline: Tăng vọt tốc độ di chuyển và hồi phục sinh lực dồn dập trong giao tranh ác liệt. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Kích Hoạt Adrenaline"
     },
     "enchantencore:anchor": {
       "source_pack": "enchantments_encore",
@@ -97,10 +97,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 1,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#enchantencore:valid_for_anchor",
-      "description": "Giữ cố định thực thể/thú cưỡi đứng yên tại chỗ khi không có người cưỡi.",
-      "name_vi": "Râu neo"
+      "description": "Mỏ neo giữ chân: Giữ cố định thực thể hoặc thú cưỡi đứng yên vững chãi tại chỗ khi không có người chơi cưỡi, ngăn không bị trôi dạt hoặc kẻ thù đẩy đi.",
+      "name_vi": "Mỏ Neo Cố Định"
     },
     "enchantencore:angry_aura": {
       "source_pack": "enchantments_encore",
@@ -118,8 +118,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang giận dữ thẩm mỹ cho người mặc, thú cưng và đạn bắn ra.",
-      "name_vi": "Hào quang giận dữ"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang ngọn lửa đỏ giận dữ bao quanh người mặc, thú cưng và các phát đạn.",
+      "name_vi": "Hào Quang Phẫn Nộ"
     },
     "enchantencore:aquatic_aura": {
       "source_pack": "enchantments_encore",
@@ -137,8 +137,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang biển cả mát lạnh cho người mặc, thú cưng và đạn bắn ra.",
-      "name_vi": "Hào quang biển cả"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang bọt nước biển cả xanh ngọc mát lạnh bao quanh người mặc, thú cưng và các phát bắn.",
+      "name_vi": "Hào Quang Đại Dương"
     },
     "enchantencore:archer_barrage": {
       "source_pack": "enchantments_encore",
@@ -153,11 +153,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 4,
+      "max_level": 3,
+      "anvil_cost": 8,
       "supported_items": "minecraft:bow",
-      "description": "Bắn ra một cơn mưa tên liên hoàn từ cung, quét sạch mọi kẻ thù trước mắt.",
-      "name_vi": "Archer Barrage"
+      "description": "Cung thuật tối thượng: Bắn ra một cơn mưa tên liên hoàn dày đặc theo hình nón từ Cung, quét sạch toàn bộ đội hình kẻ thù trước mắt. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Bão Tên Liên Hoàn"
     },
     "enchantencore:armor_piercing": {
       "source_pack": "enchantments_encore",
@@ -172,11 +172,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 5,
-      "anvil_cost": 6,
+      "max_level": 3,
+      "anvil_cost": 4,
       "supported_items": "minecraft:crossbow",
-      "description": "Mũi tên bắn ra bỏ qua toàn bộ chỉ số giáp phòng ngự của mục tiêu, gây sát thương chuẩn.",
-      "name_vi": "Armor Piercing"
+      "description": "Mũi tên bắn ra có khả năng xuyên phá cực cao, bỏ qua toàn bộ chỉ số giáp phòng ngự của mục tiêu để gây sát thương chuẩn trực tiếp vào máu.",
+      "name_vi": "Tiễn Xuyên Giáp"
     },
     "enchantencore:aurora": {
       "source_pack": "enchantments_encore",
@@ -191,11 +191,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 4,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Mũ giáp phát quang hào quang cực quang tuyệt đẹp, liên tục hồi máu cho bản thân và đồng minh xung quanh.",
-      "name_vi": "Aurora"
+      "description": "Mũ giáp phát quang hào quang cực quang tuyệt đẹp: Liên tục tỏa ra sóng ánh sáng hồi phục sinh lực cho bản thân và toàn bộ đồng minh xung quanh. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Cực Quang Huyền Diệu"
     },
     "enchantencore:bane_of_bosses": {
       "source_pack": "enchantments_encore",
@@ -211,10 +211,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 5,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#enchantencore:weapons",
-      "description": "Gây thêm lượng lớn sát thương lên các sinh vật trùm (Ender Dragon, Wither, Warden, Elder Guardian...).",
-      "name_vi": "Tai ương của trùm"
+      "description": "Tăng lượng lớn sát thương gây ra lên toàn bộ các sinh vật Boss trùm sừng sỏ (Ender Dragon, Wither, Warden, Elder Guardian...). Hiệu quả tăng mạnh theo từng cấp độ.",
+      "name_vi": "Tai Ương Của Trùm"
     },
     "enchantencore:bane_of_endborn": {
       "source_pack": "enchantments_encore",
@@ -232,8 +232,8 @@
       "max_level": 5,
       "anvil_cost": 2,
       "supported_items": "#enchantencore:weapons",
-      "description": "Tăng mạnh sát thương lên các loài sinh vật thế giới End (Enderman, Shulker, Endermite).",
-      "name_vi": "Tai ương của thế giới End"
+      "description": "Gia tăng mạnh mẽ sát thương gây ra lên các sinh vật thuộc chiều không gian The End (Enderman, Shulker, Endermite), giúp tiêu diệt chúng nhanh chóng.",
+      "name_vi": "Tai Ương Thế Giới End"
     },
     "enchantencore:bane_of_netherborn": {
       "source_pack": "enchantments_encore",
@@ -251,8 +251,8 @@
       "max_level": 5,
       "anvil_cost": 2,
       "supported_items": "#enchantencore:weapons",
-      "description": "Tăng mạnh sát thương lên các sinh vật thế giới Địa Ngục Nether (Blaze, Ghast, Piglin, Wither Skeleton...).",
-      "name_vi": "Tai ương của địa ngục"
+      "description": "Gia tăng mạnh mẽ sát thương gây ra lên các sinh vật thuộc Địa Ngục Nether (Quỷ Lửa Blaze, Ghast, Piglin, Wither Skeleton, Magma Cube...).",
+      "name_vi": "Tai Ương Địa Ngục"
     },
     "enchantencore:bane_of_raiders": {
       "source_pack": "enchantments_encore",
@@ -270,8 +270,8 @@
       "max_level": 5,
       "anvil_cost": 2,
       "supported_items": "#enchantencore:weapons",
-      "description": "Tăng mạnh sát thương lên các quái vật trong sự kiện đột kích làng (Raid: Pillager, Ravager, Evoker...).",
-      "name_vi": "Tai ương của kẻ xâm lược"
+      "description": "Tăng sát thương chí mạng lên các quái vật trong sự kiện Đột kích làng (Raid: Pillager, Vindicator, Ravager, Evoker, Witch).",
+      "name_vi": "Tai Ương Kẻ Đột Kích"
     },
     "enchantencore:bear_spirit": {
       "source_pack": "enchantments_encore",
@@ -289,8 +289,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:wolf_armor",
-      "description": "Truyền sức mạnh của loài Gấu cho Chó sói: Tăng sức chịu đựng và lượng máu tối đa.",
-      "name_vi": "Bear Spirit"
+      "description": "Truyền sức mạnh loài Gấu vào Chó sói: Kích thước Chó sói tăng +100% (to gấp đôi), Giáp +10 điểm, Sát thương +3, Miễn nhiễm ngạt khi kẹt trong tường, 10% đòn đánh gây Yếu Đuối và Làm Chậm.",
+      "name_vi": "Linh Hồn Của Gấu (Bear Spirit)"
     },
     "enchantencore:blaze_blessing": {
       "source_pack": "enchantments_encore",
@@ -305,11 +305,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
+      "max_level": 1,
       "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/leg_armor",
-      "description": "Ban phước từ Quỷ Lửa: Kháng hoàn toàn lửa và dung nham, thiêu đốt kẻ địch xung quanh khi bị tấn công.",
-      "name_vi": "Blaze Blessing"
+      "description": "Ban phước từ Quỷ Lửa Blaze: Kháng hoàn toàn sát thương từ lửa và dung nham, thiêu đốt kẻ địch xung quanh khi bạn nhận sát thương. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Ban Phước Của Quỷ Lửa"
     },
     "enchantencore:blindness_curse": {
       "source_pack": "enchantments_encore",
@@ -325,9 +325,9 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Gây hiệu ứng Mù lòa (Blindness) làm tối đen tầm nhìn của người mặc.",
+      "description": "Lời nguyền bóng tối: Khi đội mũ vào người, liên tục áp đặt hiệu ứng Mù Lòa (Blindness), thu hẹp tầm nhìn của người chơi xuống chỉ còn vài bước chân.",
       "name_vi": "Lời Nguyền Mù Lòa"
     },
     "enchantencore:boar_spirit": {
@@ -346,8 +346,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:wolf_armor",
-      "description": "Truyền sức mạnh của loài Heo rừng cho Chó sói: Tăng lực húc và độ đẩy lùi đối thủ.",
-      "name_vi": "Boar Spirit"
+      "description": "Truyền sức mạnh Heo rừng vào Chó sói: Kích thước tăng +25%, Giáp +5 điểm, đòn đánh của sói có 15% cơ hội kích hoạt hiệu ứng Sức Mạnh (Strength) và Tăng Tốc Độ (Speed).",
+      "name_vi": "Linh Hồn Heo Rừng (Boar Spirit)"
     },
     "enchantencore:boltbringer": {
       "source_pack": "enchantments_encore",
@@ -365,8 +365,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:mace",
-      "description": "Triệu hồi sấm sét giáng xuống khi tấn công trúng mục tiêu sau khi rơi tự do ít nhất 8 khối.",
-      "name_vi": "Kẻ phóng sét"
+      "description": "Quyền năng sấm sét của Chùy: Khi tấn công mục tiêu sau khi rơi tự do ít nhất 8 khối, triệu hồi một tia sét sấm sét giáng thẳng từ trên trời xuống nạn nhân.",
+      "name_vi": "Kẻ Phóng Sét"
     },
     "enchantencore:bomber": {
       "source_pack": "enchantments_encore",
@@ -382,10 +382,10 @@
       "table_weight": 1,
       "loot_weight": 1,
       "max_level": 3,
-      "anvil_cost": 6,
+      "anvil_cost": 8,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Mũi tên bắn ra phát nổ cực mạnh khi chạm vào bất kỳ kẻ địch hoặc khối nào.",
-      "name_vi": "Kẻ đặt bom"
+      "description": "Mũi tên bắn ra mang đầu đạn thuốc nổ uy lực: Tự động phát nổ cực mạnh ngay khi chạm vào bất kỳ kẻ địch hoặc khối nào. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Tiễn Bom Công Phá"
     },
     "enchantencore:bounce": {
       "source_pack": "enchantments_encore",
@@ -400,11 +400,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
-      "anvil_cost": 8,
+      "max_level": 1,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Giúp người mặc nảy tưng bừng trên mọi bề mặt tiếp đất.",
-      "name_vi": "Nảy"
+      "description": "Độ đàn hồi cực đại: Biến đôi giày thành đệm lò xo, giúp người mặc nảy tưng bừng liên tục trên mọi bề mặt tiếp đất mà không bị mất đà di chuyển.",
+      "name_vi": "Bật Nảy Tưng Bừng"
     },
     "enchantencore:breeze_curse": {
       "source_pack": "enchantments_encore",
@@ -420,10 +420,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/melee_weapon",
-      "description": "Kích hoạt luồng gió bão hất tung đối thủ khi tấn công.",
-      "name_vi": "Lời nguyền gió"
+      "description": "Lời nguyền gió nghịch: Mỗi đòn tấn công sẽ kích hoạt luồng gió bão Breeze hất văng mục tiêu nhưng đồng thời đẩy bật cả người chơi ra xa, làm gián đoạn combo.",
+      "name_vi": "Lời Nguyền Gió Lốc"
     },
     "enchantencore:bulletproof": {
       "source_pack": "enchantments_encore",
@@ -439,10 +439,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 1,
-      "anvil_cost": 5,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Có 10% cơ hội miễn nhiễm và triệt tiêu hoàn toàn đạn của Shulker.",
-      "name_vi": "Chống đạn"
+      "description": "Lớp phòng thủ đặc chế: Có 10% cơ hội miễn nhiễm và triệt tiêu hoàn toàn sát thương cũng như hiệu ứng bay lơ lửng từ đạn của Shulker.",
+      "name_vi": "Áo Chống Đạn Shulker"
     },
     "enchantencore:bunny_hop": {
       "source_pack": "enchantments_encore",
@@ -460,8 +460,8 @@
       "max_level": 3,
       "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/leg_armor",
-      "description": "Tăng cường sức bật, cho phép người mang nhảy cao hơn bình thường.",
-      "name_vi": "Nhảy cao"
+      "description": "Gia tăng mạnh mẽ lực bật nhảy (+0.15 + 0.1/cấp độ) và tăng độ cao rơi an toàn, cho phép người chơi dễ dàng nhảy vượt qua các chướng ngại vật cao.",
+      "name_vi": "Nhảy Thỏ Siêu Phàm"
     },
     "enchantencore:caravan_curse": {
       "source_pack": "enchantments_encore",
@@ -477,10 +477,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Làm người chơi bị giảm tốc độ di chuyển khi đang dắt động vật bằng dây thừng.",
-      "name_vi": "Lời nguyền của đoàn lữ hành"
+      "description": "Lời nguyền nặng nề: Khiến người chơi bị làm chậm tốc độ di chuyển nghiêm trọng mỗi khi dắt động vật hoặc sinh vật bằng dây thừng (Lead).",
+      "name_vi": "Lời Nguyền Đoàn Lữ Hành"
     },
     "enchantencore:cleansing": {
       "source_pack": "enchantments_encore",
@@ -498,8 +498,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:shield",
-      "description": "Giơ khiên lên giúp thanh tẩy toàn bộ hiệu ứng trên người, chỉ tiêu hao độ bền khi có hiệu ứng bị xóa.",
-      "name_vi": "Thanh tẩy"
+      "description": "Giơ khiên lên đỡ đòn sẽ ngay lập tức thanh tẩy sạch toàn bộ mọi hiệu ứng bất lợi trên cơ thể. Độ bền của khiên chỉ bị tiêu hao khi có hiệu ứng được xóa bỏ.",
+      "name_vi": "Khiên Thanh Tẩy"
     },
     "enchantencore:color_blindness_curse": {
       "source_pack": "enchantments_encore",
@@ -515,10 +515,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Khiến tầm nhìn của người mặc chuyển sang đơn sắc mù màu.",
-      "name_vi": "Curse of Color Blindness"
+      "description": "Lời nguyền quang học: Khiến tầm nhìn của người mặc chuyển sang chế độ đơn sắc trắng đen hoàn toàn khi trang bị mũ.",
+      "name_vi": "Lời Nguyền Mù Màu"
     },
     "enchantencore:corrosion_curse": {
       "source_pack": "enchantments_encore",
@@ -534,9 +534,9 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/durability",
-      "description": "Từ từ làm hao mòn độ bền của vật phẩm khi ở dưới trời mưa hoặc lặn dưới nước.",
+      "description": "Làm rỉ sét và ăn mòn trang bị: Độ bền của vật phẩm bị giảm dần liên tục theo thời gian mỗi khi người chơi đứng dưới trời mưa hoặc bơi dưới nước.",
       "name_vi": "Lời Nguyền Ăn Mòn"
     },
     "enchantencore:crab_claw": {
@@ -555,7 +555,7 @@
       "max_level": 3,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:valid_for_crab_claw",
-      "description": "Mở rộng tầm với tương tác với các khối và thực thể xung quanh.",
+      "description": "Sải tay siêu dài: Gia tăng đáng kể phạm vi tương tác với khối và tầm với đánh trúng thực thể từ khoảng cách xa hơn bình thường.",
       "name_vi": "Càng Cua"
     },
     "enchantencore:crank_curse": {
@@ -572,10 +572,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Gây sát thương đau đớn lên người mặc nếu đứng yên một chỗ quá lâu không di chuyển.",
-      "name_vi": "Lời nguyền kì lạ"
+      "description": "Lời nguyền buộc phải di chuyển: Người mặc sẽ liên tục nhận sát thương đau đớn nếu đứng yên một chỗ quá lâu mà không bước đi.",
+      "name_vi": "Lời Nguyền Bất Động"
     },
     "enchantencore:creeper_alloy": {
       "source_pack": "enchantments_encore",
@@ -590,11 +590,11 @@
       "loot": true,
       "table_weight": 12,
       "loot_weight": 10,
-      "max_level": 3,
-      "anvil_cost": 1,
+      "max_level": 1,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Kích nổ một vụ nổ lớn xung quanh khi bạn phải chịu sát thương.",
-      "name_vi": "Hợp kim nổ"
+      "description": "Lớp giáp tích nổ: Kích hoạt một vụ nổ sóng xung kích lớn xung quanh người chơi mỗi khi bạn bị kẻ địch tấn công trúng, đẩy lùi mọi kẻ địch.",
+      "name_vi": "Hợp Kim Creeper"
     },
     "enchantencore:creeper_blessing": {
       "source_pack": "enchantments_encore",
@@ -609,11 +609,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
+      "max_level": 1,
       "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/leg_armor",
-      "description": "Khi lượng máu xuống mức nguy kịch, kích hoạt làn sóng nổ đẩy lùi và tạo khiên bảo vệ chủ nhân.",
-      "name_vi": "Creeper Blessing"
+      "description": "Khi lượng máu của bạn tụt xuống mức báo động hiểm nghèo, tự động kích hoạt làn sóng nổ đẩy lùi kẻ thù và tạo khiên bảo vệ chủ nhân. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Ban Phước Của Creeper"
     },
     "enchantencore:creeper_vision_curse": {
       "source_pack": "enchantments_encore",
@@ -629,10 +629,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Khiến tầm nhìn của người mặc chuyển sang góc nhìn màu xanh lá ma mị của Creeper.",
-      "name_vi": "Curse of Creeper Vision"
+      "description": "Khiến toàn bộ tầm nhìn của người mặc chuyển sang góc nhìn màu xanh lục ma quái đặc trưng của loài Creeper.",
+      "name_vi": "Lời Nguyền Mắt Creeper"
     },
     "enchantencore:crispbread": {
       "source_pack": "enchantments_encore",
@@ -647,11 +647,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:shield",
-      "description": "Cung cấp hiệu ứng Độ no (Saturation) liên tục, không bao giờ lo đói bụng.",
-      "name_vi": "Bánh mì mỏng"
+      "description": "Cung cấp hiệu ứng Độ No (Saturation) vĩnh viễn khi đội mũ, duy trì thanh thức ăn luôn đầy ắp mà không cần phải mang theo đồ ăn.",
+      "name_vi": "Bánh Mì Giòn Tan"
     },
     "enchantencore:crop_dance": {
       "source_pack": "enchantments_encore",
@@ -669,8 +669,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Ngồi xổm nhấp nhô liên tục (Sneak-Dance) để kích thích cây trồng xung quanh lớn nhanh vượt bậc.",
-      "name_vi": "Nhảy để trồng trọt"
+      "description": "Ngồi xổm nhấp nhô liên tục (Sneak-Dance) nhịp nhàng sẽ kích thích toàn bộ cây trồng trong khu vực xung quanh phát triển nhanh vượt bậc như được bón bột xương.",
+      "name_vi": "Vũ Điệu Mùa Màng"
     },
     "enchantencore:crystalize_arrow": {
       "source_pack": "enchantments_encore",
@@ -686,10 +686,10 @@
       "table_weight": 1,
       "loot_weight": 1,
       "max_level": 3,
-      "anvil_cost": 6,
+      "anvil_cost": 8,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Mũi tên pha lê làm đóng băng và giam cầm mục tiêu trong tinh thể pha lê bất động.",
-      "name_vi": "Crystalize Arrow"
+      "description": "Mũi tên pha lê giam cầm: Làm đóng băng và nhốt chặt mục tiêu trong khối tinh thể pha lê bất động, vô hiệu hóa khả năng di chuyển và tấn công. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Tiễn Tinh Thể Pha Lê"
     },
     "enchantencore:cushion": {
       "source_pack": "enchantments_encore",
@@ -705,10 +705,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 4,
-      "anvil_cost": 1,
+      "anvil_cost": 4,
       "supported_items": "minecraft:elytra",
-      "description": "Bảo vệ giảm sát thương khi lỡ va chạm vào tường ở tốc độ cao bằng Elytra.",
-      "name_vi": "Cushion"
+      "description": "Lớp đệm hấp thụ động năng: Giảm tới 7.5 điểm (+7.5 mỗi cấp) sát thương va chạm khi bay với tốc độ cao đâm vào vách tường bằng Cánh Elytra.",
+      "name_vi": "Đệm Giảm Chấn"
     },
     "enchantencore:dark_infused": {
       "source_pack": "enchantments_encore",
@@ -726,8 +726,8 @@
       "max_level": 3,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Tẩm độc tố bóng tối gây mù lòa và làm giảm thị lực đối thủ bị trúng đòn.",
-      "name_vi": "Dark Infused"
+      "description": "Tẩm độc tố bóng tối hắc ám: Đòn đánh hoặc mũi tên trúng đích gây hiệu ứng Bóng Tối (Darkness) và Mù Lòa, cướp đi thị lực của đối thủ.",
+      "name_vi": "Tẩm Độc Bóng Tối"
     },
     "enchantencore:darkness_alloy": {
       "source_pack": "enchantments_encore",
@@ -742,11 +742,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Gây hiệu ứng Bóng tối (Darkness) lên kẻ tấn công bạn.",
-      "name_vi": "Hợp kim bóng tối"
+      "description": "Phản xạ hắc ám: Kẻ địch khi tấn công cận chiến trúng bạn sẽ ngay lập tức bị nhiễm hiệu ứng Bóng Tối (Darkness) trong vài giây.",
+      "name_vi": "Hợp Kim Bóng Tối"
     },
     "enchantencore:day_protection": {
       "source_pack": "enchantments_encore",
@@ -764,8 +764,8 @@
       "max_level": 4,
       "anvil_cost": 1,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Bảo vệ giảm sát thương gấp đôi so với phù phép thường nhưng chỉ có tác dụng vào ban ngày.",
-      "name_vi": "Bảo vệ ban ngày"
+      "description": "Bảo vệ ánh dương: Cung cấp chỉ số giảm sát thương nhận vào cao gấp đôi so với phù phép Bảo Vệ (Protection) thường, nhưng chỉ kích hoạt vào ban ngày ở Overworld.",
+      "name_vi": "Bảo Vệ Ban Ngày"
     },
     "enchantencore:death_curse": {
       "source_pack": "enchantments_encore",
@@ -781,10 +781,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/melee_weapon",
-      "description": "Có tỉ lệ nhỏ bất ngờ tử nạn ngay lập tức khi tung đòn tấn công.",
-      "name_vi": "Lời nguyền chết"
+      "description": "Lời nguyền cực độc: Mỗi đòn tấn công vung ra có một tỉ lệ nhỏ bất ngờ khiến người chơi tử vong ngay lập tức.",
+      "name_vi": "Lời Nguyền Tử Thần"
     },
     "enchantencore:dismount": {
       "source_pack": "enchantments_encore",
@@ -800,10 +800,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 1,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/lunge",
-      "description": "Đòn đâm đinh ba/thương kích lực đánh bật đối thủ văng khỏi thú cưỡi của chúng.",
-      "name_vi": "Hất Ngựa"
+      "description": "Đòn đâm kích lực từ Đinh ba hoặc Thương sẽ đánh văng đối thủ rớt khỏi lưng ngựa hoặc thú cưỡi của chúng ngay tức thì.",
+      "name_vi": "Hất Tung Khỏi Ngựa"
     },
     "enchantencore:dolphin_blessing": {
       "source_pack": "enchantments_encore",
@@ -818,11 +818,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 3,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Tốc độ bơi lội siêu việt dưới nước như cá heo thần thoại, ban lượng oxy vô tận.",
-      "name_vi": "Dolphin Blessing"
+      "description": "Tốc độ bơi lội siêu việt dưới nước như cá heo thần thoại, tăng tốc độ bơi tối đa và ban lượng oxy vô tận không bao giờ cạn. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Ban Phước Của Cá Heo"
     },
     "enchantencore:echoing_aura": {
       "source_pack": "enchantments_encore",
@@ -840,8 +840,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang vang vọng Deep Dark kỳ bí cho người mặc và thú cưng.",
-      "name_vi": "Hào quang vang vọng"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang sóng âm Deep Dark xanh đen kỳ bí bao quanh người mặc và thú cưng.",
+      "name_vi": "Hào Quang Vang Vọng"
     },
     "enchantencore:electric_walker": {
       "source_pack": "enchantments_encore",
@@ -859,8 +859,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Kích hoạt truyền tín hiệu đá đỏ trong thoáng chốc khi bước chân qua các đường dây Redstone.",
-      "name_vi": "Chân điện"
+      "description": "Chân truyền điện: Tự động kích hoạt cấp nguồn năng lượng đá đỏ Redstone trong thoáng chốc mỗi khi bước chân qua các đường dây đá đỏ.",
+      "name_vi": "Bước Chân Phát Điện"
     },
     "enchantencore:emberweave": {
       "source_pack": "enchantments_encore",
@@ -875,10 +875,10 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/durability",
-      "description": "Từ từ tự động sửa chữa độ bền của trang bị khi người chơi ở trong chiều không gian Nether.",
+      "description": "Hấp thu nhiệt lượng: Trang bị tự động hồi phục độ bền dần dần theo thời gian khi người chơi ở trong chiều không gian Nether.",
       "name_vi": "Dệt Than Hồng"
     },
     "enchantencore:enchanted_aura": {
@@ -897,8 +897,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang ma pháp lấp lánh cho người mặc và thú cưng.",
-      "name_vi": "Hào quang nâng cấp"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang ký tự ma thuật lấp lánh như bàn phù phép bao quanh người mặc và thú cưng.",
+      "name_vi": "Hào Quang Cổ Thuật"
     },
     "enchantencore:end_protection": {
       "source_pack": "enchantments_encore",
@@ -916,8 +916,8 @@
       "max_level": 4,
       "anvil_cost": 1,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Bảo vệ giảm sát thương gấp đôi so với phù phép thường nhưng chỉ kích hoạt khi ở The End.",
-      "name_vi": "Bảo vệ End"
+      "description": "Giảm sát thương nhận vào gấp đôi so với phù phép Bảo Vệ thường, nhưng chỉ kích hoạt khi người chơi ở trong chiều không gian The End.",
+      "name_vi": "Bảo Vệ Thế Giới End"
     },
     "enchantencore:end_speed": {
       "source_pack": "enchantments_encore",
@@ -933,10 +933,10 @@
       "table_weight": 1,
       "loot_weight": 2,
       "max_level": 3,
-      "anvil_cost": 8,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Gia tăng đáng kể tốc độ chạy và di chuyển khi ở trong chiều không gian The End.",
-      "name_vi": "End Speed"
+      "description": "Gia tăng đáng kể tốc độ chạy và di chuyển của nhân vật khi đang ở trong chiều không gian The End.",
+      "name_vi": "Tốc Độ Thế Giới End"
     },
     "enchantencore:ender_aura": {
       "source_pack": "enchantments_encore",
@@ -954,8 +954,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang Ender tím huyền ảo cho người mặc và đạn bắn ra.",
-      "name_vi": "Hào quang của Ender"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang bụi sao tím huyền bí của thế giới Ender bao quanh người mặc và các phát bắn.",
+      "name_vi": "Hào Quang Ender"
     },
     "enchantencore:ender_shot": {
       "source_pack": "enchantments_encore",
@@ -973,8 +973,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Dịch chuyển ngẫu nhiên kẻ địch bị bắn trúng ra các vị trí khác trên bề mặt đất.",
-      "name_vi": "Phát bắn dịch chuyển"
+      "description": "Mũi tên dịch chuyển: Bắn trúng kẻ địch sẽ ngẫu nhiên dịch chuyển tức thời mục tiêu đến một vị trí khác trên bề mặt đất, phá vỡ đội hình đối phương.",
+      "name_vi": "Tiễn Dịch Chuyển"
     },
     "enchantencore:ender_vision_curse": {
       "source_pack": "enchantments_encore",
@@ -990,10 +990,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Khiến tầm nhìn của người mặc đảo ngược màu sắc theo góc nhìn của Enderman.",
-      "name_vi": "Curse of Ender Vision"
+      "description": "Khiến tầm nhìn của người mặc bị đảo ngược màu sắc âm bản theo góc nhìn kỳ dị của Enderman.",
+      "name_vi": "Lời Nguyền Mắt Enderman"
     },
     "enchantencore:enderscape": {
       "source_pack": "enchantments_encore",
@@ -1009,10 +1009,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 1,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:leg_armor",
-      "description": "Tự động dịch chuyển tức thời ngẫu nhiên trong bán kính 5 khối khi bị trúng đòn.",
-      "name_vi": "Dịch chuyển tức thời"
+      "description": "Tự động dịch chuyển tức thời ngẫu nhiên người chơi trong bán kính 5 khối mỗi khi phải chịu sát thương trên mặt đất để thoát khỏi combo đòn đánh.",
+      "name_vi": "Thoát Biến Ender"
     },
     "enchantencore:evokers_wrath": {
       "source_pack": "enchantments_encore",
@@ -1030,8 +1030,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/crossbow",
-      "description": "Mũi tên triệu hồi những chiếc hàm sắt Evoker Fangs trồi lên cắn xé kẻ thù tại điểm rơi.",
-      "name_vi": "Sự phẫn nộ của kẻ triệu hồi"
+      "description": "Mũi tên ma thuật: Khi tiếp đất hoặc trúng đích, triệu hồi những chiếc hàm sắt Evoker Fangs cắn xé dữ dội mọi kẻ thù tại điểm nổ.",
+      "name_vi": "Phẫn Nộ Kẻ Triệu Hồi"
     },
     "enchantencore:fetch": {
       "source_pack": "enchantments_encore",
@@ -1049,8 +1049,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:wolf_armor",
-      "description": "Chó sói cưng có tỉ lệ tự động nhặt và tha chiến lợi phẩm rơi trên đất về cho chủ nhân.",
-      "name_vi": "Fetch"
+      "description": "Chó sói cưng có tỉ lệ tự động chạy đến nhặt và tha các món chiến lợi phẩm rơi rải rác trên mặt đất về tận chân cho chủ nhân.",
+      "name_vi": "Thu Nhặt Đồ"
     },
     "enchantencore:fire_alloy": {
       "source_pack": "enchantments_encore",
@@ -1065,11 +1065,11 @@
       "loot": true,
       "table_weight": 12,
       "loot_weight": 10,
-      "max_level": 3,
-      "anvil_cost": 1,
+      "max_level": 1,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Thiêu đốt kẻ tấn công khi bạn nhận sát thương.",
-      "name_vi": "Hợp kim lửa"
+      "description": "Áo giáp rực lửa: Thiêu đốt bất kỳ kẻ địch nào dám tung đòn tấn công cận chiến vào người mặc.",
+      "name_vi": "Hợp Kim Lửa"
     },
     "enchantencore:flaming_aura": {
       "source_pack": "enchantments_encore",
@@ -1087,8 +1087,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang rực lửa thẩm mỹ cho người mặc và mũi tên bắn ra.",
-      "name_vi": "Hào quang lửa"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang tàn tro và tia lửa bốc cháy bao quanh người mặc, thú cưng và mũi tên.",
+      "name_vi": "Hào Quang Rực Lửa"
     },
     "enchantencore:flare": {
       "source_pack": "enchantments_encore",
@@ -1103,11 +1103,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 2,
-      "max_level": 5,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Mũi tên phát nổ rực rỡ như pháo hoa khi chạm đất hoặc bắn trúng sinh vật.",
-      "name_vi": "Lửa"
+      "description": "Mũi tên bắn ra phát nổ rực rỡ như một quả pháo hoa khi chạm đất hoặc bắn trúng sinh vật, gây sát thương lan.",
+      "name_vi": "Tiễn Pháo Hoa"
     },
     "enchantencore:forge_shot": {
       "source_pack": "enchantments_encore",
@@ -1125,8 +1125,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Mũi tên triệu hồi Đe sắt rơi từ trên trời xuống đè bẹp kẻ thù tại điểm tiếp đất.",
-      "name_vi": "Cú bắn của thợ rèn"
+      "description": "Mũi tên công nghệ: Triệu hồi một chiếc Đe sắt nặng nề từ trên trời rơi thẳng xuống đè bẹp kẻ thù tại điểm mũi tên chạm đích.",
+      "name_vi": "Tiễn Đe Sắt"
     },
     "enchantencore:fragility_curse": {
       "source_pack": "enchantments_encore",
@@ -1144,8 +1144,8 @@
       "max_level": 1,
       "anvil_cost": 8,
       "supported_items": "#enchantencore:weapons",
-      "description": "Làm hao mòn điểm độ bền nhanh hơn bình thường rất nhiều khi sử dụng.",
-      "name_vi": "Lời nguyền mỏng manh"
+      "description": "Làm suy yếu kết cấu trang bị, khiến điểm độ bền của vật phẩm bị tiêu hao nhanh gấp nhiều lần bình thường mỗi khi sử dụng.",
+      "name_vi": "Lời Nguyền Dễ Vỡ"
     },
     "enchantencore:frenzy": {
       "source_pack": "enchantments_encore",
@@ -1160,11 +1160,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
+      "max_level": 3,
       "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/leg_armor",
-      "description": "Mỗi đòn đánh trúng tăng thêm tốc độ đánh và tốc độ di chuyển dồn dập trong trạng thái cuồng nộ.",
-      "name_vi": "Frenzy"
+      "description": "Mỗi đòn đánh trúng mục tiêu sẽ tăng tốc độ đánh và tốc độ di chuyển dồn dập, đưa nhân vật vào trạng thái cuồng nộ áp đảo. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Trạng Thái Cuồng Nộ"
     },
     "enchantencore:gallop": {
       "source_pack": "enchantments_encore",
@@ -1180,10 +1180,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 3,
-      "anvil_cost": 8,
+      "anvil_cost": 4,
       "supported_items": "minecraft:saddle",
-      "description": "Thú cưỡi được gia tăng đáng kể tốc độ di chuyển khi có người cưỡi.",
-      "name_vi": "Gallop"
+      "description": "Gia tăng mạnh mẽ tốc độ phi nước đại của thú cưỡi khi có người chơi ngồi trên yên, giúp vượt địa hình chớp nhoáng.",
+      "name_vi": "Phi Nước Đại (Gallop)"
     },
     "enchantencore:ghost_spirit": {
       "source_pack": "enchantments_encore",
@@ -1201,8 +1201,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:wolf_armor",
-      "description": "Khiến Chó sói gần như bất tử nhưng sát thương tấn công giảm về 0.",
-      "name_vi": "Vong hồn"
+      "description": "Biến Chó sói thành bóng ma bất tử: Giảm 999.999 sát thương nhận vào (gần như bất tử), tự sửa giáp sói liên tục, nhưng sát thương tấn công của sói giảm về 0.",
+      "name_vi": "Linh Hồn Bóng Ma (Ghost Spirit)"
     },
     "enchantencore:gluttony": {
       "source_pack": "enchantments_encore",
@@ -1220,8 +1220,8 @@
       "max_level": 5,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_tools",
-      "description": "Tự động hút toàn bộ vật phẩm rơi trên đất trong bán kính 2–10 khối về phía người chơi.",
-      "name_vi": "Háu ăn"
+      "description": "Tạo lực hút cực mạnh: Tự động gom và hút toàn bộ các khối tài nguyên rơi trên đất trong bán kính 2–10 khối về thẳng túi đồ của người chơi.",
+      "name_vi": "Háu Ăn Hút Vật Phẩm"
     },
     "enchantencore:grass_walker": {
       "source_pack": "enchantments_encore",
@@ -1236,11 +1236,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 2,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Tự động biến các khối đất thô thành khối cỏ xanh tươi khi bước chân qua.",
-      "name_vi": "Chân cỏ"
+      "description": "Phục hồi thiên nhiên: Tự động biến các khối đất thô dưới chân thành khối cỏ xanh tươi tốt khi người chơi bước qua.",
+      "name_vi": "Bước Chân Ươm Mầm"
     },
     "enchantencore:growth": {
       "source_pack": "enchantments_encore",
@@ -1255,11 +1255,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 5,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 4,
       "supported_items": "#enchantencore:valid_for_growth",
-      "description": "Tăng kích thước cơ thể và độ cao bước chân tự động vượt qua các khối cao.",
-      "name_vi": "To lớn"
+      "description": "Tăng kích thước cơ thể của người chơi hoặc thú cưỡi lên to lớn hơn, gia tăng tầm với tương tác và khả năng bước qua khối cao.",
+      "name_vi": "Thể Tạng Khổng Lồ"
     },
     "enchantencore:guard": {
       "source_pack": "enchantments_encore",
@@ -1277,8 +1277,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:can_block",
-      "description": "Cho phép dùng vũ khí/vật phẩm này để chặn các đòn đánh cận chiến như khiên.",
-      "name_vi": "Guard"
+      "description": "Cho phép sử dụng trực tiếp kiếm, rìu hoặc chùy để chặn đỡ các đòn đánh cận chiến của kẻ thù như một chiếc khiên chắn.",
+      "name_vi": "Đỡ Đòn Cận Chiến"
     },
     "enchantencore:habanero": {
       "source_pack": "enchantments_encore",
@@ -1293,11 +1293,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Thiêu đốt mặt đất và gây sát thương bỏng cực kỳ khủng khiếp lên mọi kẻ địch lân cận.",
-      "name_vi": "Habanero"
+      "description": "Thiêu đốt mặt đất dưới chân thành biển lửa bỏng rát và gây lượng sát thương cháy cực kỳ khủng khiếp lên mọi kẻ địch lân cận. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Hỏa Ngục Habanero"
     },
     "enchantencore:handyman": {
       "source_pack": "enchantments_encore",
@@ -1315,8 +1315,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_enchantable",
-      "description": "Giữ cho chi phí sửa chữa trên đe sắt luôn ở mức thấp, không bao giờ bị 'Quá đắt!'.",
-      "name_vi": "Kẻ chăm chỉ"
+      "description": "Giữ cho chi phí sửa chữa và kết hợp trên Đe sắt luôn ở mức tối thiểu, ngăn chặn hoàn toàn tình trạng trang bị bị rơi vào trạng thái 'Quá đắt!' (Too Expensive!).",
+      "name_vi": "Thợ Thủ Công"
     },
     "enchantencore:hardened": {
       "source_pack": "enchantments_encore",
@@ -1331,11 +1331,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 5,
+      "max_level": 3,
       "anvil_cost": 4,
       "supported_items": "minecraft:shield",
-      "description": "Gia tăng thêm các điểm giáp phòng ngự bảo hộ khi trang bị.",
-      "name_vi": "Cứng cáp"
+      "description": "Gia cố thêm +2 điểm giáp phòng ngự (+1 điểm/cấp độ) cho nhân vật mỗi khi cầm khiên chắn trên tay.",
+      "name_vi": "Khiên Cứng Cáp"
     },
     "enchantencore:harpoon": {
       "source_pack": "enchantments_encore",
@@ -1350,11 +1350,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fishing",
-      "description": "Kéo giật mạnh quái vật bị dính lưỡi câu về thẳng vị trí của bạn.",
-      "name_vi": "Lao Móc"
+      "description": "Móc câu biến thành mũi lao kéo giật: Kéo văng quái vật hoặc thực thể bị dính câu thẳng về vị trí của bạn với tốc độ cao.",
+      "name_vi": "Lưỡi Lao Harpoon"
     },
     "enchantencore:haste": {
       "source_pack": "enchantments_encore",
@@ -1370,10 +1370,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 3,
-      "anvil_cost": 1,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/mining",
-      "description": "Cung cấp hiệu ứng Đào Nhanh (Haste) liên tục khi cầm trên tay chính.",
-      "name_vi": "Nhanh nhẹn"
+      "description": "Ban hiệu ứng Đào Nhanh (Haste) liên tục khi cầm công cụ hoặc vũ khí trên tay chính, giúp gia tăng mạnh mẽ tốc độ khai khoáng và tốc độ xuất chiêu.",
+      "name_vi": "Đào Nhanh Cấp Tốc"
     },
     "enchantencore:heavenly_aura": {
       "source_pack": "enchantments_encore",
@@ -1391,8 +1391,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang thiên đường thánh thiện thẩm mỹ cho người mặc và thú cưng.",
-      "name_vi": "Hào quang thiên đường"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang thiên thần trắng vàng thánh thiện bao quanh người mặc và thú cưng.",
+      "name_vi": "Hào Quang Thiên Đường"
     },
     "enchantencore:heroes_crown": {
       "source_pack": "enchantments_encore",
@@ -1407,11 +1407,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 4,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Trao hiệu ứng Anh Hùng Làng (Hero of the Village V) liên tục, giảm giá giao dịch tối đa với dân làng.",
-      "name_vi": "Heroes Crown"
+      "description": "Trao hiệu ứng Anh Hùng Làng (Hero of the Village V) vĩnh viễn, giảm giá giao dịch tối đa với tất cả dân làng. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Vương Miện Anh Hùng"
     },
     "enchantencore:hiding_curse": {
       "source_pack": "enchantments_encore",
@@ -1427,10 +1427,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/melee_weapon",
-      "description": "Kẻ địch bị đánh trúng sẽ tàng hình biến mất trong chốc lát.",
-      "name_vi": "Lời nguyền ẩn giấu"
+      "description": "Lời nguyền trớ trêu: Kẻ địch khi bị bạn đánh trúng sẽ lập tức tàng hình biến mất trong chốc lát, gây khó khăn cho việc truy đuổi.",
+      "name_vi": "Lời Nguyền Ẩn Mình"
     },
     "enchantencore:hunger_aspect": {
       "source_pack": "enchantments_encore",
@@ -1448,7 +1448,7 @@
       "max_level": 2,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Đòn đánh làm hao mòn thanh thức ăn của đối thủ.",
+      "description": "Đòn tấn công cận chiến làm ăn mòn và rút cạn thanh thức ăn của đối thủ, gây hiệu ứng Đói Cồn Cào.",
       "name_vi": "Đói Diện"
     },
     "enchantencore:hurricane": {
@@ -1464,15 +1464,15 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 4,
       "supported_items": [
         "minecraft:bow",
         "minecraft:trident",
         "minecraft:crossbow"
       ],
-      "description": "Tạo ra cơn cuồng phong lốc xoáy thổi bay mọi thực thể xung quanh điểm trúng tên.",
-      "name_vi": "Hurricane"
+      "description": "Mũi tên tạo ra một cơn bão lốc xoáy cực mạnh tại điểm tiếp đất, thổi bay và hất tung toàn bộ kẻ địch lân cận lên trời.",
+      "name_vi": "Cuồng Phong Bão Tố"
     },
     "enchantencore:ice_alloy": {
       "source_pack": "enchantments_encore",
@@ -1487,11 +1487,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Đóng băng kẻ tấn công bạn khi bạn nhận phải sát thương.",
-      "name_vi": "Hợp băng"
+      "description": "Khi bạn bị tấn công cận chiến, kẻ tấn công sẽ ngay lập tức bị đóng băng giá lạnh và giảm mạnh tốc độ di chuyển.",
+      "name_vi": "Hợp Kim Băng Giá"
     },
     "enchantencore:illumination": {
       "source_pack": "enchantments_encore",
@@ -1506,11 +1506,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Tự động thắp sáng rực rỡ khu vực xung quanh khi đầu không bị che chắn.",
-      "name_vi": "Phát quang"
+      "description": "Tự động phát ra ánh sáng rực rỡ soi tỏ các hang động và khu vực xung quanh người chơi khi đầu không bị khối che chắn.",
+      "name_vi": "Hào Quang Soi Sáng"
     },
     "enchantencore:impale_rush": {
       "source_pack": "enchantments_encore",
@@ -1525,11 +1525,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/lunge",
-      "description": "Đòn đâm thương/đinh ba kích lực ghim chặt và làm bất động mục tiêu tại chỗ.",
-      "name_vi": "Xung Phong Xuyên Thấu"
+      "description": "Đòn đâm kích lực từ Đinh ba hoặc Thương sẽ ghim chặt và làm bất động mục tiêu tại chỗ trong vài giây.",
+      "name_vi": "Đâm Ghim Giữ Chân"
     },
     "enchantencore:implosion": {
       "source_pack": "enchantments_encore",
@@ -1547,8 +1547,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Kéo các quái vật thù địch trong bán kính 5 khối lại gần nhau.",
-      "name_vi": "Phát nổ"
+      "description": "Tạo lực hút chân không: Hút toàn bộ quái vật thù địch trong bán kính 5 khối lại gần nhau để tung đòn quét diện rộng.",
+      "name_vi": "Hút Nổ Đảo Nghịch"
     },
     "enchantencore:incognito": {
       "source_pack": "enchantments_encore",
@@ -1566,8 +1566,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Ẩn hoàn toàn bảng tên nhân vật, giúp ẩn náu hoàn hảo trước người chơi khác.",
-      "name_vi": "Ẩn Danh"
+      "description": "Ẩn hoàn toàn bảng tên nhân vật trên đầu, giúp bạn ẩn náu tuyệt đối và không bị người chơi khác phát hiện qua vách tường.",
+      "name_vi": "Ẩn Danh Hoàn Hảo"
     },
     "enchantencore:infested_aspect": {
       "source_pack": "enchantments_encore",
@@ -1585,7 +1585,7 @@
       "max_level": 2,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Đòn đánh triệu hồi Silverfish ký sinh tấn công mục tiêu.",
+      "description": "Đòn chém triệu hồi bầy Silverfish ký sinh chui ra cắn xé kẻ địch bị trúng đòn.",
       "name_vi": "Ký Sinh Diện"
     },
     "enchantencore:infinity_durability": {
@@ -1602,10 +1602,10 @@
       "table_weight": 1,
       "loot_weight": 1,
       "max_level": 1,
-      "anvil_cost": 2,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/durability",
-      "description": "Độ bền vĩnh cửu: Vật phẩm không bao giờ bị giảm độ bền hoặc vỡ khi sử dụng.",
-      "name_vi": "Infinity Durability"
+      "description": "Độ bền bất hoại vĩnh cửu: Vật phẩm không bao giờ bị giảm độ bền hoặc vỡ hỏng trong suốt quá trình sử dụng. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Độ Bền Vĩnh Cửu"
     },
     "enchantencore:invisibility_cloak": {
       "source_pack": "enchantments_encore",
@@ -1621,10 +1621,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 1,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Ngồi xổm (sneak) sẽ kích hoạt khả năng tàng hình hoàn toàn.",
-      "name_vi": "Áo choàng tàng hình"
+      "description": "Khi ngồi xổm (sneak), kích hoạt khả năng tàng hình hoàn toàn, giúp người chơi biến mất khỏi tầm mắt của quái vật.",
+      "name_vi": "Áo Choàng Tàng Hình"
     },
     "enchantencore:jousting": {
       "source_pack": "enchantments_encore",
@@ -1640,10 +1640,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 3,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/lunge",
-      "description": "Gây thêm lượng lớn sát thương khi đang cưỡi thú chiến đấu.",
-      "name_vi": "Đấu Thương"
+      "description": "Gia tăng một lượng lớn sát thương cho các đòn đâm thương khi bạn đang cưỡi ngựa hoặc thú chiến đấu lao vào kẻ thù.",
+      "name_vi": "Kỵ Sĩ Thương Thuật"
     },
     "enchantencore:last_stand": {
       "source_pack": "enchantments_encore",
@@ -1658,11 +1658,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 4,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Khi sắp cạn máu, ngay lập tức hồi sinh một lượng máu lớn và tạo khiên phòng thủ bất hoại.",
-      "name_vi": "Last Stand"
+      "description": "Khi lượng máu của bạn sắp cạn kiệt, ngay lập tức hồi sinh một lượng máu lớn và tạo khiên phòng thủ bất hoại trong giây lát. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Lãnh Địa Bất Tử"
     },
     "enchantencore:leaf_jumper": {
       "source_pack": "enchantments_encore",
@@ -1680,8 +1680,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Tạo ra các khối lá cây tạm thời dưới chân khi nhảy đúp trên không trung.",
-      "name_vi": "Leaf Jumper"
+      "description": "Tạo ra các khối lá cây tạm thời nâng đỡ dưới chân khi nhảy đúp trên không trung, cho phép leo lên cao mà không cần bắc khối.",
+      "name_vi": "Bước Nhảy Lá Cây"
     },
     "enchantencore:leech": {
       "source_pack": "enchantments_encore",
@@ -1699,8 +1699,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:weapons",
-      "description": "Hồi phục một phần máu cho bản thân mỗi khi đánh trúng kẻ địch.",
-      "name_vi": "Hút máu"
+      "description": "Hồi phục sinh lực cho bản thân: Nhận hiệu ứng Hồi Máu (Regeneration I-II) trong 3 giây mỗi khi tấn công trúng sinh vật.",
+      "name_vi": "Hút Huyết Sinh Mệnh"
     },
     "enchantencore:levitation_aspect": {
       "source_pack": "enchantments_encore",
@@ -1718,7 +1718,7 @@
       "max_level": 2,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Đòn đánh khiến đối thủ bị lơ lửng bay lên không trung.",
+      "description": "Đòn chém cận chiến khiến đối thủ bị dính hiệu ứng Bay Lơ Lửng (Levitation), trôi dạt lên không trung mất kiểm soát.",
       "name_vi": "Lơ Lửng Diện"
     },
     "enchantencore:lightning_bolt": {
@@ -1735,10 +1735,10 @@
       "table_weight": 1,
       "loot_weight": 2,
       "max_level": 1,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Có cơ hội triệu hồi tia sét giáng xuống kẻ địch nếu chúng đứng dưới bầu trời.",
-      "name_vi": "Tia sét"
+      "description": "Có cơ hội triệu hồi một tia sét sấm sét giáng thẳng xuống đầu mục tiêu nếu chúng đang đứng dưới bầu trời thoáng đãng.",
+      "name_vi": "Tia Sét Giáng Trần"
     },
     "enchantencore:lingering": {
       "source_pack": "enchantments_encore",
@@ -1756,8 +1756,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Để lại một đám mây thuốc kéo dài mang hiệu ứng của mũi tên khi trúng khối.",
-      "name_vi": "Kéo dài"
+      "description": "Mũi tên thuốc khi bắn trúng khối sẽ để lại một đám mây thuốc kéo dài (Lingering Cloud) mang đầy đủ hiệu ứng của mũi tên đó.",
+      "name_vi": "Tiễn Khói Kéo Dài"
     },
     "enchantencore:lovely_aura": {
       "source_pack": "enchantments_encore",
@@ -1775,8 +1775,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang tình yêu lãng mạn thẩm mỹ cho người mặc và thú cưng.",
-      "name_vi": "Hào quang tình yêu"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang trái tim hồng lãng mạn bao quanh người mặc, thú cưng và mũi tên.",
+      "name_vi": "Hào Quang Tình Yêu"
     },
     "enchantencore:lush_aura": {
       "source_pack": "enchantments_encore",
@@ -1794,8 +1794,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang cây cỏ tươi tốt thẩm mỹ cho người mặc và thú cưng.",
-      "name_vi": "Hào quang tươi mới"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang hoa lá thiên nhiên tươi tốt bao quanh người mặc và thú cưng.",
+      "name_vi": "Hào Quang Rừng Tươi"
     },
     "enchantencore:machine_gun": {
       "source_pack": "enchantments_encore",
@@ -1810,11 +1810,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 4,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/crossbow",
-      "description": "Tốc độ nạp và bắn nỏ siêu thanh liên thanh liên tục như súng máy tự động.",
-      "name_vi": "Machine Gun"
+      "description": "Tốc độ nạp và bắn nỏ siêu thanh liên tục như súng máy tự động, xả đạn không có thời gian trễ. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Nỏ Liên Thanh Súng Máy"
     },
     "enchantencore:magic_protection": {
       "source_pack": "enchantments_encore",
@@ -1829,11 +1829,11 @@
       "loot": true,
       "table_weight": 12,
       "loot_weight": 10,
-      "max_level": 5,
-      "anvil_cost": 2,
+      "max_level": 4,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Giảm mạnh sát thương từ các nguồn phép thuật (Potion, Poison, Wither, Evoker Fangs).",
-      "name_vi": "Magic Protection"
+      "description": "Giảm mạnh sát thương gánh chịu từ toàn bộ các nguồn phép thuật (Thuốc Độc, Ngộ Độc, Héo Mòn Wither, Răng Nanh Evoker Fangs, Ma Thuật Guardian).",
+      "name_vi": "Bảo Vệ Ma Pháp"
     },
     "enchantencore:magma_walker": {
       "source_pack": "enchantments_encore",
@@ -1848,11 +1848,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 2,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Biến dung nham dưới chân thành khối Magma tạm thời để bước qua.",
-      "name_vi": "Chân dung nham"
+      "description": "Tự động biến mặt dung nham dưới chân thành các khối Magma tạm thời để người chơi đi bộ an toàn băng qua biển dung nham.",
+      "name_vi": "Bước Đi Trên Magma"
     },
     "enchantencore:meteor": {
       "source_pack": "enchantments_encore",
@@ -1870,8 +1870,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:mace",
-      "description": "Đòn đập Chùy sau khi rơi ít nhất 8 khối sẽ thiêu đốt cả khu vực xung quanh thành biển lửa.",
-      "name_vi": "Thiên Thạch"
+      "description": "Đòn đập Chùy Smash Attack từ độ cao ít nhất 8 khối sẽ thiêu đốt cả khu vực xung quanh điểm va chạm thành một biển lửa rực cháy.",
+      "name_vi": "Sao Băng Rơi"
     },
     "enchantencore:mirror_vision_curse": {
       "source_pack": "enchantments_encore",
@@ -1887,10 +1887,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Khiến toàn bộ tầm nhìn của người mặc bị đảo ngược trái phải như trong gương.",
-      "name_vi": "Curse of Mirror Vision"
+      "description": "Khiến toàn bộ góc nhìn và tầm nhìn của người mặc bị đảo ngược trái - phải như soi gương khi đội mũ.",
+      "name_vi": "Lời Nguyền Mắt Gương"
     },
     "enchantencore:moonwalk": {
       "source_pack": "enchantments_encore",
@@ -1915,8 +1915,8 @@
         "minecraft:leather_horse_armor",
         "minecraft:netherite_horse_armor"
       ],
-      "description": "Giảm trọng lực tác động lên người chơi, cho phép rơi chậm và nhảy xa.",
-      "name_vi": "Vũ điệu mặt trăng"
+      "description": "Giảm trọng lực tác động lên người chơi hoặc ngựa, cho phép thực hiện những bước nhảy cực cao và rơi chậm lướt gió.",
+      "name_vi": "Bước Chân Mặt Trăng"
     },
     "enchantencore:moonweave": {
       "source_pack": "enchantments_encore",
@@ -1931,10 +1931,10 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/durability",
-      "description": "Từ từ tự động sửa chữa độ bền trang bị dưới bầu trời đêm quang đãng.",
+      "description": "Hấp thu ánh trăng: Trang bị tự động sửa chữa và hồi phục độ bền dần dần khi người chơi ở dưới bầu trời ban đêm.",
       "name_vi": "Dệt Ánh Trăng"
     },
     "enchantencore:muddy_aura": {
@@ -1953,8 +1953,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang bùn lầy thẩm mỹ cho người mặc và thú cưng.",
-      "name_vi": "Hào quang bùn"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang đất bùn đầm lầy độc đáo bao quanh người mặc và thú cưng.",
+      "name_vi": "Hào Quang Bùn Lầy"
     },
     "enchantencore:neptune": {
       "source_pack": "enchantments_encore",
@@ -1969,11 +1969,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 10,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/trident",
-      "description": "Đinh ba mang sức mạnh của Thần biển Neptune, triệu hồi bão tố và sát thương biển cả áp đảo.",
-      "name_vi": "Neptune"
+      "description": "Đinh ba mang sức mạnh của Thần biển Neptune: Triệu hồi bão tố và sát thương biển cả áp đảo nghiền nát đối thủ. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Quyền Uy Hải Vương Neptune"
     },
     "enchantencore:nether_protection": {
       "source_pack": "enchantments_encore",
@@ -1991,8 +1991,8 @@
       "max_level": 4,
       "anvil_cost": 1,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Giảm sát thương gấp đôi so với phù phép thường nhưng chỉ có tác dụng trong Nether.",
-      "name_vi": "Bảo vệ khỏi địa ngục"
+      "description": "Giảm sát thương nhận vào gấp đôi so với phù phép Bảo Vệ thường, nhưng chỉ kích hoạt khi người chơi ở trong chiều không gian Nether.",
+      "name_vi": "Bảo Vệ Địa Ngục"
     },
     "enchantencore:night_protection": {
       "source_pack": "enchantments_encore",
@@ -2010,8 +2010,8 @@
       "max_level": 4,
       "anvil_cost": 1,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Bảo vệ giảm sát thương gấp đôi so với phù phép thường nhưng chỉ có tác dụng vào ban đêm.",
-      "name_vi": "Night Protection"
+      "description": "Cung cấp khả năng giảm sát thương nhận vào gấp đôi so với phù phép thường, nhưng chỉ kích hoạt vào ban đêm ở Overworld.",
+      "name_vi": "Bảo Vệ Ban Đêm"
     },
     "enchantencore:night_vision": {
       "source_pack": "enchantments_encore",
@@ -2029,8 +2029,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Biến chiếc mũ thành kính nhìn đêm, ban hiệu ứng Tầm nhìn bóng đêm (Night Vision).",
-      "name_vi": "Nhìn đêm"
+      "description": "Biến chiếc mũ thành kính nhìn đêm chuyên dụng: Ban hiệu ứng Tầm nhìn bóng đêm (Night Vision) vĩnh viễn khi đội mũ.",
+      "name_vi": "Kính Nhìn Đêm"
     },
     "enchantencore:nightmare": {
       "source_pack": "enchantments_encore",
@@ -2045,11 +2045,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 3,
-      "anvil_cost": 4,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Đòn đánh gây bóng tối hắc ám và làm suy yếu ý chí chiến đấu của kẻ địch.",
-      "name_vi": "Nightmare"
+      "description": "Đòn đánh gieo rắc nỗi kinh hoàng: Gây hiệu ứng Bóng Tối và làm suy yếu ý chí chiến đấu của kẻ địch, ăn mòn sinh lực đối phương. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Ác Mộng Hắc Ám"
     },
     "enchantencore:nuclear_arrow": {
       "source_pack": "enchantments_encore",
@@ -2064,11 +2064,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 6,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Mũi tên nguyên tử tạo ra vụ nổ hủy diệt trên diện rộng với uy lực tối thượng.",
-      "name_vi": "Nuclear Arrow"
+      "description": "Vũ khí tối thượng: Mũi tên nguyên tử tạo ra một vụ nổ hủy diệt khổng lồ trên diện cực rộng với uy lực áp đảo toàn bộ chiến trường. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Tiễn Nguyên Tử Hủy Diệt"
     },
     "enchantencore:ominous_aura": {
       "source_pack": "enchantments_encore",
@@ -2086,8 +2086,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang điềm gở hắc ám thẩm mỹ cho người mặc và thú cưng.",
-      "name_vi": "Hào quang quan ngại"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang hắc ám điềm gở sương mù xanh xám bao quanh người mặc và thú cưng.",
+      "name_vi": "Hào Quang Điềm Gở"
     },
     "enchantencore:ominous_healing": {
       "source_pack": "enchantments_encore",
@@ -2105,8 +2105,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:shield",
-      "description": "Có 60% cơ hội tạo đám mây thuốc hồi máu khi máu giảm xuống dưới 3.5 tim.",
-      "name_vi": "Điềm Gở Hồi Phục"
+      "description": "Có 60% cơ hội tự động tạo đám mây thuốc Hồi Máu kéo dài tại vị trí của bạn mỗi khi máu tụt xuống dưới 3.5 trái tim.",
+      "name_vi": "Hồi Máu Nguy Cấp"
     },
     "enchantencore:ominous_rain": {
       "source_pack": "enchantments_encore",
@@ -2124,8 +2124,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/trident",
-      "description": "Triệu hồi cơn mưa đạn ma quái giáng xuống điểm rơi của mũi tên.",
-      "name_vi": "Mưa điềm gở"
+      "description": "Triệu hồi một cơn mưa đạn ma quái giáng xuống khu vực điểm rơi của mũi tên, gây sát thương liên hoàn.",
+      "name_vi": "Mưa Tên Điềm Gở"
     },
     "enchantencore:oozing_aspect": {
       "source_pack": "enchantments_encore",
@@ -2143,7 +2143,7 @@
       "max_level": 2,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Đòn đánh khiến mục tiêu phát nổ ra Slime khi bị tiêu diệt.",
+      "description": "Đòn đánh khiến đối thủ bị nhiễm hiệu ứng Oozing: Khi mục tiêu bị tiêu diệt, phát nổ sinh ra bầy Slime.",
       "name_vi": "Chất Nhầy Diện"
     },
     "enchantencore:ownership_curse": {
@@ -2160,10 +2160,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Người chơi nhận sát thương đồng thời mỗi khi thú cưng của mình chịu đòn.",
-      "name_vi": "Lời nguyền sở hữu"
+      "description": "Liên kết sát thương: Người chơi sẽ phải nhận sát thương đồng thời mỗi khi thú cưng của mình bị kẻ địch tấn công.",
+      "name_vi": "Lời Nguyền Đồng Cam Cộng Khổ"
     },
     "enchantencore:pacifier": {
       "source_pack": "enchantments_encore",
@@ -2178,11 +2178,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Làm dịu cơn thịnh nộ và làm mất trạng thái hung hãn của đối thủ.",
-      "name_vi": "Bình Định Diện"
+      "description": "Làm dịu cơn thịnh nộ: Đòn đánh tước đi trạng thái hung hãn và thù địch của quái vật, khiến chúng ngừng tấn công bạn.",
+      "name_vi": "Bình Định Dịu Giọng"
     },
     "enchantencore:pale_aura": {
       "source_pack": "enchantments_encore",
@@ -2200,8 +2200,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang nhợt nhạt u ám thẩm mỹ cho người mặc và thú cưng.",
-      "name_vi": "Hào quang mờ nhạt"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang sương khói mờ ảo u sầu bao quanh người mặc và thú cưng.",
+      "name_vi": "Hào Quang Nhợt Nhạt"
     },
     "enchantencore:path_speed": {
       "source_pack": "enchantments_encore",
@@ -2217,10 +2217,10 @@
       "table_weight": 1,
       "loot_weight": 2,
       "max_level": 3,
-      "anvil_cost": 8,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Tăng tốc độ chạy đáng kể khi di chuyển trên các khối đường đất (Dirt Path).",
-      "name_vi": "Path Speed"
+      "description": "Gia tăng mạnh mẽ tốc độ chạy nước rút khi di chuyển trên các khối đường đất (Dirt Path) trong các ngôi làng.",
+      "name_vi": "Tốc Độ Đường Mòn"
     },
     "enchantencore:pegasus": {
       "source_pack": "enchantments_encore",
@@ -2238,8 +2238,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_horse_armor",
-      "description": "Ngựa có khả năng bay vút lên tới 30 khối trên không trung, khi xuống ngựa nhận hiệu ứng rơi chậm an toàn.",
-      "name_vi": "Mã thần"
+      "description": "Ban khả năng bay cho Ngựa: Cho phép ngựa phi nước đại bay vút lên tới 30 khối trên không trung; khi nhảy xuống nhận hiệu ứng Rơi Chậm an toàn.",
+      "name_vi": "Mã Thần Pegasus"
     },
     "enchantencore:perfect_protection": {
       "source_pack": "enchantments_encore",
@@ -2254,11 +2254,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 1,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Bộ giáp bảo hộ hoàn mỹ: Giảm 40% mọi nguồn sát thương gánh chịu từ mọi phía.",
-      "name_vi": "Perfect Protection"
+      "description": "Bộ giáp bảo hộ tuyệt đối: Giảm trực tiếp 40% mọi nguồn sát thương gánh chịu từ mọi hướng tấn công. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Bảo Hộ Hoàn Mỹ"
     },
     "enchantencore:phantom_menace": {
       "source_pack": "enchantments_encore",
@@ -2273,11 +2273,11 @@
       "loot": true,
       "table_weight": 12,
       "loot_weight": 10,
-      "max_level": 5,
-      "anvil_cost": 4,
+      "max_level": 3,
+      "anvil_cost": 2,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Tăng lượng lớn sát thương gây ra lên bóng ma Phantom.",
-      "name_vi": "Hiểm Họa Bóng Ma"
+      "description": "Gia tăng một lượng lớn sát thương chí mạng khi tấn công các bóng ma Phantom đang bay lượn trên bầu trời đêm.",
+      "name_vi": "Khắc Chế Bóng Ma"
     },
     "enchantencore:pickpocket": {
       "source_pack": "enchantments_encore",
@@ -2293,10 +2293,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 1,
-      "anvil_cost": 5,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Nhấp chuột phải vào dân làng để móc túi cướp lấy vật phẩm trong túi đồ của họ.",
-      "name_vi": "Pickpocket"
+      "description": "Kỹ năng đạo tặc: Cho phép nhấp chuột phải vào dân làng để móc túi cướp lấy các vật phẩm quý giá trong kho đồ của họ.",
+      "name_vi": "Móc Túi Dân Làng"
     },
     "enchantencore:ping_tag": {
       "source_pack": "enchantments_encore",
@@ -2312,10 +2312,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 2,
       "supported_items": "#enchantencore:valid_for_ping_tag",
-      "description": "Phát ra âm thanh 'ping' rõ ràng thông báo mỗi khi có kẻ địch bị trúng đòn từ xa.",
-      "name_vi": "Chỉ điểm"
+      "description": "Hỗ trợ xạ thủ: Phát ra âm thanh 'ping' rõ ràng báo hiệu ngay lập tức mỗi khi bắn trúng một kẻ địch từ khoảng cách cực xa.",
+      "name_vi": "Báo Hiệu Trúng Đích"
     },
     "enchantencore:plow": {
       "source_pack": "enchantments_encore",
@@ -2331,10 +2331,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 3,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:hoes",
-      "description": "Cày xới đất trên một diện tích rộng lớn chỉ bằng một cú nhấp chuột trái.",
-      "name_vi": "Cày Cuốc"
+      "description": "Cày xới đất trên diện tích cực rộng chỉ bằng một cú nhấp chuột trái, chuẩn bị đất canh tác nhanh gấp hàng chục lần.",
+      "name_vi": "Cày Bừa Ruộng Đồng"
     },
     "enchantencore:poison_aspect": {
       "source_pack": "enchantments_encore",
@@ -2352,7 +2352,7 @@
       "max_level": 2,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Đòn đánh gây trúng độc nặng (Poison) lên mục tiêu.",
+      "description": "Đòn đánh cận chiến tẩm độc tố kịch độc, gây hiệu ứng Trúng Độc (Poison) ăn mòn máu đối thủ liên tục.",
       "name_vi": "Độc Diện"
     },
     "enchantencore:poison_infused": {
@@ -2371,8 +2371,8 @@
       "max_level": 3,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Mũi tên tẩm độc gây trúng độc nặng lên kẻ địch trúng phải.",
-      "name_vi": "Poison Infused"
+      "description": "Mũi tên tẩm độc tố cực mạnh, gây trúng độc nặng và làm suy giảm thể lực của mọi kẻ địch bị bắn trúng.",
+      "name_vi": "Tiễn Kịch Độc"
     },
     "enchantencore:poppy_peace": {
       "source_pack": "enchantments_encore",
@@ -2388,10 +2388,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 1,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#enchantencore:weapons",
-      "description": "Lan tỏa thông điệp hòa bình, khiến quái vật trung lập không chủ động tấn công người chơi.",
-      "name_vi": "Poppy Peace"
+      "description": "Lan tỏa thông điệp hòa bình: Khiến toàn bộ các quái vật và sinh vật trung lập không bao giờ chủ động tấn công người chơi.",
+      "name_vi": "Sứ Giả Hòa Bình"
     },
     "enchantencore:poseidon": {
       "source_pack": "enchantments_encore",
@@ -2406,11 +2406,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 10,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/trident",
-      "description": "Đinh ba triệu hồi dòng nước xoáy và sóng thần nghiền nát mục tiêu.",
-      "name_vi": "Poseidon"
+      "description": "Đinh ba của Thần biển Poseidon: Triệu hồi các đợt xoáy nước khổng lồ và sóng thần nghiền nát toàn bộ mục tiêu. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Sóng Thần Poseidon"
     },
     "enchantencore:propeller": {
       "source_pack": "enchantments_encore",
@@ -2426,10 +2426,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 5,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:harnesses",
-      "description": "Gia tăng tốc độ bay lượn trên không của Ghast Vui Vẻ.",
-      "name_vi": "Cánh quạt"
+      "description": "Gia tăng mạnh mẽ tốc độ bay lượn trên không trung của Ghast Vui Vẻ khi người chơi cưỡi.",
+      "name_vi": "Cánh Quạt Động Lực"
     },
     "enchantencore:pufferfish": {
       "source_pack": "enchantments_encore",
@@ -2447,8 +2447,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/trident",
-      "description": "Có cơ hội triệu hồi cá nóc độc khi mục tiêu bị tấn công đang ở dưới nước.",
-      "name_vi": "Pufferfish"
+      "description": "Có cơ hội triệu hồi một con cá nóc độc phát nổ gai độc khi mục tiêu bị tấn công đang ở dưới môi trường nước.",
+      "name_vi": "Cá Nóc Độc Thủy"
     },
     "enchantencore:purify_water": {
       "source_pack": "enchantments_encore",
@@ -2464,10 +2464,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 1,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/trident",
-      "description": "Thanh lọc nước xung quanh và làm tan biến các hiệu ứng xấu dưới nước.",
-      "name_vi": "Purify Water"
+      "description": "Thanh lọc toàn bộ vùng nước xung quanh và làm tan biến sạch sẽ các hiệu ứng bất lợi khi bơi lội dưới nước.",
+      "name_vi": "Thanh Lọc Nước"
     },
     "enchantencore:rabbit_foot": {
       "source_pack": "enchantments_encore",
@@ -2482,11 +2482,11 @@
       "loot": true,
       "table_weight": 12,
       "loot_weight": 10,
-      "max_level": 5,
-      "anvil_cost": 1,
+      "max_level": 3,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:foot_armor",
-      "description": "Gia tăng chỉ số may mắn tổng thể của người chơi.",
-      "name_vi": "Rabbit Foot"
+      "description": "Gia tăng chỉ số May Mắn (Luck) tổng thể của người chơi khi câu cá và mở rương kho báu trong hầm ngục.",
+      "name_vi": "Chân Thỏ May Mắn"
     },
     "enchantencore:radiant_life": {
       "source_pack": "enchantments_encore",
@@ -2502,10 +2502,10 @@
       "table_weight": 1,
       "loot_weight": 1,
       "max_level": 3,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#enchantencore:weapons",
-      "description": "Mỗi đòn chém hồi phục trực tiếp một lượng máu dồi dào cho người sử dụng.",
-      "name_vi": "Radiant Life"
+      "description": "Đòn chém phát sáng: Mỗi đòn đánh trúng đích hồi phục trực tiếp một lượng máu dồi dào cho người sử dụng. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Hào Quang Hút Máu"
     },
     "enchantencore:railgun": {
       "source_pack": "enchantments_encore",
@@ -2520,11 +2520,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 3,
-      "anvil_cost": 6,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "minecraft:crossbow",
-      "description": "Mũi tên điện từ bay với vận tốc ánh sáng theo đường thẳng tuyệt đối, xuyên phá mọi mục tiêu.",
-      "name_vi": "Railgun"
+      "description": "Mũi tên điện từ bay với vận tốc ánh sáng theo đường thẳng tuyệt đối, công phá và xuyên thủng mọi mục tiêu trên đường bay. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Pháo Điện Từ Railgun"
     },
     "enchantencore:rainweave": {
       "source_pack": "enchantments_encore",
@@ -2539,11 +2539,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/durability",
-      "description": "Từ từ hồi phục độ bền cho trang bị khi có mưa rơi trên người bạn.",
-      "name_vi": "Dệt Mưa"
+      "description": "Trang bị tự động hấp thụ nước mưa để phục hồi độ bền liên tục mỗi khi có mưa rơi trên người chơi.",
+      "name_vi": "Dệt Mưa Giông"
     },
     "enchantencore:randomness_curse": {
       "source_pack": "enchantments_encore",
@@ -2559,10 +2559,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 5,
+      "anvil_cost": 8,
       "supported_items": "#enchantencore:all_tools",
-      "description": "Ngẫu nhiên thay đổi và tráo đổi các dòng phù phép của vũ khí sau mỗi đòn đánh.",
-      "name_vi": "Curse of Randomness"
+      "description": "Lời nguyền hỗn loạn: Ngẫu nhiên thay đổi và tráo đổi toàn bộ các dòng phù phép của vũ khí sau mỗi đòn chém trúng đích.",
+      "name_vi": "Lời Nguyền Ngẫu Nhiên"
     },
     "enchantencore:reach_curse": {
       "source_pack": "enchantments_encore",
@@ -2578,10 +2578,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#enchantencore:all_tools",
-      "description": "Làm giảm tầm với tương tác với các khối và thực thể xung quanh.",
-      "name_vi": "Curse of Reach"
+      "description": "Làm thu hẹp đáng kể tầm với tương tác của người chơi, khiến bạn phải đứng cực sát mới có thể đánh trúng hoặc đập khối.",
+      "name_vi": "Lời Nguyền Tay Ngắn"
     },
     "enchantencore:reflection": {
       "source_pack": "enchantments_encore",
@@ -2596,11 +2596,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 2,
+      "max_level": 3,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Phản lại toàn bộ mũi tên và đạn bắn tầm xa trở ngược lại kẻ tấn công.",
-      "name_vi": "Reflection"
+      "description": "Phản lại toàn bộ mũi tên, đạn Shulker và đạn bắn tầm xa trở ngược lại kẻ tấn công với uy lực gấp đôi. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Phản Đạn Toàn Năng"
     },
     "enchantencore:refuel": {
       "source_pack": "enchantments_encore",
@@ -2618,8 +2618,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:elytra",
-      "description": "Tự động nạp thêm pháo hoa từ túi đồ vào tay mỗi khi dùng pháo hoa để bay lượn.",
-      "name_vi": "Refuel"
+      "description": "Tiện ích bay lượn: Tự động rút pháo hoa từ trong kho đồ để nạp vào tay mỗi khi bạn sử dụng một quả pháo hoa để lướt cánh Elytra.",
+      "name_vi": "Tự Nạp Pháo Hoa"
     },
     "enchantencore:regrowth": {
       "source_pack": "enchantments_encore",
@@ -2635,10 +2635,10 @@
       "table_weight": 1,
       "loot_weight": 2,
       "max_level": 1,
-      "anvil_cost": 8,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:hoes",
-      "description": "Tự động gieo trồng lại cây nông nghiệp ngay khi thu hoạch cây đã chín.",
-      "name_vi": "Tái sinh"
+      "description": "Tự động gieo trồng lại hạt giống ngay lập tức mỗi khi bạn thu hoạch một cây trồng nông nghiệp đã chín.",
+      "name_vi": "Tái Sinh Nông Nghiệp"
     },
     "enchantencore:rejuvenation": {
       "source_pack": "enchantments_encore",
@@ -2656,8 +2656,8 @@
       "max_level": 4,
       "anvil_cost": 4,
       "supported_items": "minecraft:shield",
-      "description": "Gia tăng lượng máu tối đa của nhân vật.",
-      "name_vi": "Rejuvenation"
+      "description": "Tăng thêm lượng máu tối đa (+1 điểm, tức nửa tim máu đỏ mỗi cấp độ) cho nhân vật khi cầm khiên chắn trên tay.",
+      "name_vi": "Cường Hóa Sinh Lực"
     },
     "enchantencore:replenish": {
       "source_pack": "enchantments_encore",
@@ -2673,10 +2673,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 1,
-      "anvil_cost": 8,
+      "anvil_cost": 4,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Có 50% cơ hội không tiêu tốn đạn (mũi tên thường, mũi tên thuốc, tên quang phổ, pháo hoa) khi bắn.",
-      "name_vi": "Bổ sung"
+      "description": "Có 50% cơ hội không tiêu tốn đạn khi bắn (áp dụng cho cả mũi tên thường, mũi tên thuốc, tên quang phổ và pháo hoa).",
+      "name_vi": "Bổ Sung Đạn Dược"
     },
     "enchantencore:sacrifice": {
       "source_pack": "enchantments_encore",
@@ -2691,11 +2691,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 5,
-      "anvil_cost": 1,
+      "max_level": 3,
+      "anvil_cost": 4,
       "supported_items": "#enchantencore:all_enchantable_wolf_armor",
-      "description": "Tự động sửa chữa độ bền cho công cụ/giáp khi người mặc bị quái vật đánh trúng.",
-      "name_vi": "Sacrifice"
+      "description": "Tự động sửa chữa phục hồi độ bền cho công cụ và giáp trụ mỗi khi người mặc bị quái vật tấn công trúng.",
+      "name_vi": "Hi Sinh Phục Hồi"
     },
     "enchantencore:safe_landing": {
       "source_pack": "enchantments_encore",
@@ -2710,11 +2710,11 @@
       "loot": true,
       "table_weight": 12,
       "loot_weight": 10,
-      "max_level": 5,
-      "anvil_cost": 1,
+      "max_level": 3,
+      "anvil_cost": 4,
       "supported_items": "minecraft:elytra",
-      "description": "Tăng độ cao tiếp đất an toàn, giảm thiểu tối đa sát thương khi rơi.",
-      "name_vi": "Safe Landing"
+      "description": "Gia tăng độ cao tiếp đất an toàn thêm +2 khối (+2.5 khối mỗi cấp), giảm thiểu tối đa sát thương khi rơi tiếp đất.",
+      "name_vi": "Tiếp Đất An Toàn"
     },
     "enchantencore:sand_speed": {
       "source_pack": "enchantments_encore",
@@ -2730,10 +2730,10 @@
       "table_weight": 1,
       "loot_weight": 2,
       "max_level": 3,
-      "anvil_cost": 8,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Tăng tốc độ chạy và di chuyển khi đi trên bề mặt cát.",
-      "name_vi": "Sand Speed"
+      "description": "Gia tăng đáng kể tốc độ di chuyển và chạy nước rút của nhân vật khi bước đi trên cát và cát đỏ.",
+      "name_vi": "Tốc Độ Trên Cát"
     },
     "enchantencore:scent": {
       "source_pack": "enchantments_encore",
@@ -2748,11 +2748,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:wolf_armor",
-      "description": "Chó sói cưng di chuyển sẽ làm các sinh vật xung quanh phát sáng lộ diện.",
-      "name_vi": "Scent"
+      "description": "Chó sói cưng di chuyển sẽ tự động đánh hơi và làm toàn bộ sinh vật cũng như kẻ thù xung quanh phát sáng lộ diện.",
+      "name_vi": "Khứu Giác Săn Mồi"
     },
     "enchantencore:scholar_of_blocks": {
       "source_pack": "enchantments_encore",
@@ -2768,10 +2768,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 3,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#enchantencore:no_weapons",
-      "description": "Thu được thêm nhiều điểm kinh nghiệm XP hơn khi đập phá các khối tài nguyên.",
-      "name_vi": "Scholar of Blocks"
+      "description": "Gia tăng lượng điểm kinh nghiệm XP thu được mỗi khi đào phá các khối khoáng sản tài nguyên.",
+      "name_vi": "Học Giả Khai Khoáng"
     },
     "enchantencore:scholar_of_fishing": {
       "source_pack": "enchantments_encore",
@@ -2787,10 +2787,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 3,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fishing",
-      "description": "Tăng lượng điểm kinh nghiệm XP thu được khi câu cá.",
-      "name_vi": "Scholar of Fishing"
+      "description": "Gia tăng đáng kể lượng điểm kinh nghiệm XP nhận được mỗi khi câu trúng cá hoặc kéo được kho báu từ dưới nước.",
+      "name_vi": "Học Giả Câu Cá"
     },
     "enchantencore:scholar_of_mobs": {
       "source_pack": "enchantments_encore",
@@ -2806,10 +2806,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 3,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "#enchantencore:weapons",
-      "description": "Gia tăng lượng điểm kinh nghiệm XP nhận được khi tiêu diệt quái vật và sinh vật.",
-      "name_vi": "Scholar of Mobs"
+      "description": "Gia tăng mạnh mẽ lượng điểm kinh nghiệm XP rơi ra mỗi khi bạn tiêu diệt thành công một sinh vật hoặc quái vật.",
+      "name_vi": "Học Giả Săn Quái"
     },
     "enchantencore:scorpion_spirit": {
       "source_pack": "enchantments_encore",
@@ -2827,8 +2827,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "minecraft:wolf_armor",
-      "description": "Truyền sức mạnh của Bọ cạp cho Chó sói: Đòn đánh tẩm nọc độc gây ăn mòn máu kẻ thù.",
-      "name_vi": "Scorpion Spirit"
+      "description": "Truyền sức mạnh Bọ cạp vào Chó sói: Kích thước thu nhỏ -50%, Tốc độ tấn công tăng cực nhanh (+5), 50% đòn đánh gây Trúng Độc và Héo Mòn Wither liên tục.",
+      "name_vi": "Linh Hồn Bọ Cạp (Scorpion Spirit)"
     },
     "enchantencore:sea_breeze": {
       "source_pack": "enchantments_encore",
@@ -2843,11 +2843,11 @@
       "loot": true,
       "table_weight": 12,
       "loot_weight": 10,
-      "max_level": 3,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/trident",
-      "description": "Tạo luồng gió bão hất văng kẻ địch ra xa khi bị trúng đinh ba ném.",
-      "name_vi": "Gió biển"
+      "description": "Đinh ba ném trúng mục tiêu sẽ tạo ra luồng gió bão Breeze hất văng kẻ địch ra xa một khoảng cách lớn.",
+      "name_vi": "Gió Biển Đẩy Lùi"
     },
     "enchantencore:seeker": {
       "source_pack": "enchantments_encore",
@@ -2865,8 +2865,8 @@
       "max_level": 3,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Làm nổi bật và phát sáng các vật phẩm rơi rải rác trên đất trong bán kính 4–12 khối.",
-      "name_vi": "Kẻ kiếm tìm"
+      "description": "Tự động làm nổi bật và phát sáng các vật phẩm rơi rải rác trên mặt đất trong bán kính 4–12 khối xung quanh người đội mũ.",
+      "name_vi": "Mắt Soi Tìm Kiếm"
     },
     "enchantencore:shortsight_curse": {
       "source_pack": "enchantments_encore",
@@ -2882,10 +2882,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Làm mờ mịt và nhòe nhoẹt tầm nhìn của người mặc trang bị.",
-      "name_vi": "Curse of Shortsight"
+      "description": "Làm nhòe nhoẹt và mờ mịt toàn bộ tầm nhìn của người mặc ở cự ly xa, buộc người chơi phải lại gần mới nhìn rõ.",
+      "name_vi": "Lời Nguyền Cận Thị"
     },
     "enchantencore:shrinkage": {
       "source_pack": "enchantments_encore",
@@ -2900,11 +2900,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 5,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 4,
       "supported_items": "#enchantencore:valid_for_shrinkage",
-      "description": "Thu nhỏ kích thước cơ thể và giảm chiều cao bước chân.",
-      "name_vi": "Shrinkage"
+      "description": "Thu nhỏ kích thước cơ thể của người chơi hoặc thú cưỡi, giúp luồn lách qua các khe hẹp dễ dàng.",
+      "name_vi": "Thể Tạng Thu Nhỏ"
     },
     "enchantencore:shulker_shell": {
       "source_pack": "enchantments_encore",
@@ -2922,8 +2922,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:chest_armor",
-      "description": "Khi đứng yên, các loại mũi tên, pháo hoa và đinh ba bắn tới sẽ tự động rơi rụng xuống đất.",
-      "name_vi": "Vỏ Shulker"
+      "description": "Khi người mặc đứng yên một chỗ, toàn bộ các loại mũi tên, pháo hoa và đinh ba bắn tới sẽ tự động rơi rụng xuống đất mà không gây sát thương.",
+      "name_vi": "Vỏ Shulker Phòng Thủ"
     },
     "enchantencore:slowness_aspect": {
       "source_pack": "enchantments_encore",
@@ -2941,7 +2941,7 @@
       "max_level": 2,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Đòn đánh làm giảm tốc độ di chuyển của kẻ địch.",
+      "description": "Đòn tấn công cận chiến làm giảm mạnh tốc độ di chuyển của đối thủ trong vài giây (Slowness).",
       "name_vi": "Chậm Chạp Diện"
     },
     "enchantencore:sniper": {
@@ -2957,11 +2957,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 4,
+      "max_level": 3,
+      "anvil_cost": 8,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Sát thương mũi tên tăng theo cấp số nhân dựa trên khoảng cách bắn cực xa.",
-      "name_vi": "Sniper"
+      "description": "Sát thương của mũi tên tăng theo cấp số nhân dựa trên khoảng cách bắn càng xa, tiêu diệt mục tiêu chỉ với 1 phát bắn tỉa. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Xạ Thủ Bắn Tỉa"
     },
     "enchantencore:sonic": {
       "source_pack": "enchantments_encore",
@@ -2977,10 +2977,10 @@
       "table_weight": 1,
       "loot_weight": 2,
       "max_level": 3,
-      "anvil_cost": 8,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:foot_armor",
-      "description": "Tăng mạnh tốc độ đi bộ nhưng làm chậm tốc độ khi ngồi xổm.",
-      "name_vi": "Sonic"
+      "description": "Gia tăng mạnh mẽ tốc độ đi bộ (+0.015 + 0.01/cấp độ) nhưng làm giảm nhẹ tốc độ khi ngồi xổm.",
+      "name_vi": "Tốc Độ Siêu Thanh Sonic"
     },
     "enchantencore:sparking_aura": {
       "source_pack": "enchantments_encore",
@@ -2998,8 +2998,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang tia lửa thẩm mỹ cho người mặc và thú cưng.",
-      "name_vi": "Hào quang pháo hoa"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang các tia pháo hoa rực sáng lung linh bao quanh người mặc và các phát đạn.",
+      "name_vi": "Hào Quang Pháo Hoa"
     },
     "enchantencore:spectral_form": {
       "source_pack": "enchantments_encore",
@@ -3014,11 +3014,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 3,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Biến thân thành thể linh hồn: Miễn nhiễm sát thương vật lý trong chốc lát.",
-      "name_vi": "Spectral Form"
+      "description": "Biến thân thành thể linh hồn: Miễn nhiễm hoàn toàn sát thương vật lý trong chốc lát sau khi nhận đòn đánh nặng. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Thể Linh Hồn Vô Địch"
     },
     "enchantencore:spider_vision_curse": {
       "source_pack": "enchantments_encore",
@@ -3034,10 +3034,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Khiến tầm nhìn của người mặc chia thành nhiều góc nhìn ghép của loài Nhện.",
-      "name_vi": "Curse of Spider Vision"
+      "description": "Khiến toàn bộ góc nhìn và tầm nhìn của người mặc chia thành nhiều góc nhìn ghép mắt đa hợp của loài Nhện.",
+      "name_vi": "Lời Nguyền Mắt Nhện"
     },
     "enchantencore:sticky_aura": {
       "source_pack": "enchantments_encore",
@@ -3055,8 +3055,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang dính bết thẩm mỹ cho người mặc và thú cưng.",
-      "name_vi": "Hào quang bám dính"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang giọt chất nhầy Slime xanh lá bao quanh người mặc và thú cưng.",
+      "name_vi": "Hào Quang Bám Dính"
     },
     "enchantencore:sting": {
       "source_pack": "enchantments_encore",
@@ -3072,10 +3072,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 1,
-      "anvil_cost": 2,
+      "anvil_cost": 4,
       "supported_items": "minecraft:crossbow",
-      "description": "Khiến ong xung quanh phát điên và đồng loạt lao vào tấn công kẻ địch bị trúng đòn.",
-      "name_vi": "Sting"
+      "description": "Khiến đàn ong xung quanh nổi giận và đồng loạt lao vào tấn công kẻ địch bị bạn chém trúng.",
+      "name_vi": "Bầy Ong Cuồng Nộ"
     },
     "enchantencore:strafe": {
       "source_pack": "enchantments_encore",
@@ -3093,8 +3093,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:foot_armor",
-      "description": "Chạy nước rút kết hợp phím Trái/Phải giúp lướt nhanh thần tốc sang hướng đó.",
-      "name_vi": "Strafe"
+      "description": "Kỹ năng né đòn: Khi đang chạy nước rút, nhấn tổ hợp phím Trái hoặc Phải cho phép bạn lướt nhanh thần tốc sang hướng đó.",
+      "name_vi": "Lướt Nhanh Strafe"
     },
     "enchantencore:summer_walker": {
       "source_pack": "enchantments_encore",
@@ -3109,11 +3109,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 2,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Tự động làm tan chảy các lớp tuyết dày dưới chân khi bước qua.",
-      "name_vi": "Summer Walker"
+      "description": "Ấm áp dưới chân: Tự động làm tan chảy các lớp tuyết dày dưới chân khi bước qua, ngăn không bị lún tuyết.",
+      "name_vi": "Bước Đi Mùa Hè"
     },
     "enchantencore:sunweave": {
       "source_pack": "enchantments_encore",
@@ -3128,10 +3128,10 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/durability",
-      "description": "Từ từ tự động hồi phục độ bền cho trang bị dưới bầu trời ban ngày thông thoáng.",
+      "description": "Trang bị tự động hồi phục độ bền dần dần khi người chơi đứng dưới ánh sáng mặt trời tự nhiên ban ngày.",
       "name_vi": "Dệt Ánh Dương"
     },
     "enchantencore:surfer": {
@@ -3148,10 +3148,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 3,
-      "anvil_cost": 8,
+      "anvil_cost": 4,
       "supported_items": "minecraft:saddle",
-      "description": "Gia tăng đáng kể tốc độ bơi lội dưới nước cho sinh vật và thú cưỡi.",
-      "name_vi": "Lướt Sóng"
+      "description": "Gia tăng đáng kể tốc độ bơi lội dưới nước cho thú cưỡi khi có người chơi ngồi trên lưng.",
+      "name_vi": "Lướt Sóng Hải Mã"
     },
     "enchantencore:swift_slash": {
       "source_pack": "enchantments_encore",
@@ -3188,8 +3188,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/trident",
-      "description": "Hoán đổi vị trí tức thời với kẻ địch bị bắn trúng.",
-      "name_vi": "Switch"
+      "description": "Hoán đổi vị trí tức thời giữa bạn và kẻ địch bị trúng đòn, tạo ra những pha xử lý bất ngờ.",
+      "name_vi": "Hoán Đổi Vị Trí"
     },
     "enchantencore:thorns_protection": {
       "source_pack": "enchantments_encore",
@@ -3205,10 +3205,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 4,
-      "anvil_cost": 4,
+      "anvil_cost": 2,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Bảo vệ giảm sát thương phản lại từ Gai nhọn, bụi dâu ngọt và cây xương rồng.",
-      "name_vi": "Thorns Protection"
+      "description": "Bảo vệ giảm sát thương phản lại từ phù phép Gai Nhọn (Thorns), bụi dâu ngọt và cây xương rồng.",
+      "name_vi": "Chống Gai Nhọn"
     },
     "enchantencore:tideweave": {
       "source_pack": "enchantments_encore",
@@ -3223,10 +3223,10 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
+      "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/durability",
-      "description": "Từ từ tự động sửa chữa độ bền cho trang bị khi lặn ngập dưới nước.",
+      "description": "Trang bị tự động sửa chữa và hồi phục độ bền liên tục khi người chơi lặn ngập dưới nước.",
       "name_vi": "Dệt Thủy Triều"
     },
     "enchantencore:trial_aura": {
@@ -3245,8 +3245,8 @@
       "max_level": 1,
       "anvil_cost": 1,
       "supported_items": "#minecraft:head_armor",
-      "description": "Tạo hiệu ứng hào quang thử thách Trial Chamber cho người mặc và thú cưng.",
-      "name_vi": "Hào quang thử nghiệm"
+      "description": "Hiệu ứng thẩm mỹ: Hào quang ngọn lửa đồng và gió xoáy Trial Chamber bao quanh người mặc và thú cưng.",
+      "name_vi": "Hào Quang Thử Nghiệm"
     },
     "enchantencore:trial_runner": {
       "source_pack": "enchantments_encore",
@@ -3264,8 +3264,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:foot_armor",
-      "description": "Ban hiệu ứng Điềm Báo Thử Thách (Trial Omen) nhưng làm hao mòn độ bền của trang bị.",
-      "name_vi": "Trial Runner"
+      "description": "Ban hiệu ứng Điềm Báo Thử Thách (Trial Omen) liên tục để kích hoạt các thử thách Ominous Trial Spawner nhưng tiêu hao độ bền trang bị.",
+      "name_vi": "Kẻ Chinh Phục Thử Thách"
     },
     "enchantencore:undying_curse": {
       "source_pack": "enchantments_encore",
@@ -3281,10 +3281,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#enchantencore:all_tools",
-      "description": "Biến công cụ thành một Vật Tổ Trường Sinh (Totem of Undying) cứu mạng khi bạn cạn máu.",
-      "name_vi": "Curse of Undying"
+      "description": "Biến công cụ thành một Vật Tổ Trường Sinh (Totem of Undying), cứu mạng người chơi khi cạn máu nhưng phá hủy vĩnh viễn công cụ.",
+      "name_vi": "Lời Nguyền Trường Sinh"
     },
     "enchantencore:updraft": {
       "source_pack": "enchantments_encore",
@@ -3302,7 +3302,7 @@
       "max_level": 3,
       "anvil_cost": 4,
       "supported_items": "minecraft:elytra",
-      "description": "Lướt cánh qua dung nham, khối magma hoặc lửa sẽ tạo luồng khí nóng nâng bạn bay vút lên cao.",
+      "description": "Khí động học nhiệt: Lướt cánh Elytra qua dung nham, khối magma hoặc ngọn lửa sẽ tạo luồng khí nóng đẩy bạn vút lên không trung.",
       "name_vi": "Luồng Gió Nâng"
     },
     "enchantencore:velocity": {
@@ -3325,8 +3325,8 @@
         "minecraft:crossbow",
         "minecraft:trident"
       ],
-      "description": "Nhân đôi tốc độ bay của các loại mũi tên, đinh ba và đạn bắn ra.",
-      "name_vi": "Gia Tốc"
+      "description": "Nhân đôi tốc độ bay của các loại mũi tên, đinh ba và đạn bắn ra, giúp đường đạn bay thẳng và trúng mục tiêu chớp nhoáng.",
+      "name_vi": "Gia Tốc Đạn Bắn"
     },
     "enchantencore:vitality": {
       "source_pack": "enchantments_encore",
@@ -3341,11 +3341,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 3,
+      "max_level": 3,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Tăng vĩnh viễn lượng máu tối đa của nhân vật lên thêm nhiều trái tim vàng.",
-      "name_vi": "Vitality"
+      "description": "Tăng vĩnh viễn lượng máu tối đa của nhân vật lên thêm nhiều trái tim vàng rực rỡ. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Sinh Khí Dồi Dào"
     },
     "enchantencore:void_vision_curse": {
       "source_pack": "enchantments_encore",
@@ -3361,10 +3361,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/head_armor",
-      "description": "Khiến tầm nhìn của người mặc chìm trong màn sương đen của Vực thẳm Hư Không.",
-      "name_vi": "Curse of Void Vision"
+      "description": "Khiến tầm nhìn của người mặc chìm trong màn sương đen u ám đặc trưng của Vực thẳm Hư Không.",
+      "name_vi": "Lời Nguyền Mắt Hư Không"
     },
     "enchantencore:voidweave": {
       "source_pack": "enchantments_encore",
@@ -3379,10 +3379,10 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 3,
-      "anvil_cost": 4,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/durability",
-      "description": "Từ từ hồi phục độ bền cho trang bị khi người chơi ở trong chiều không gian The End.",
+      "description": "Trang bị tự động hồi phục độ bền liên tục khi người chơi ở trong chiều không gian The End. [ULTIMATE - Tối đa 1/món]",
       "name_vi": "Dệt Hư Không"
     },
     "enchantencore:warden": {
@@ -3398,11 +3398,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 5,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Khai mở sức mạnh bóng tối của Warden: Đòn đánh phát ra sóng xung kích Sonic Boom xuyên giáp.",
-      "name_vi": "Warden"
+      "description": "Đòn đánh cận chiến giải phóng luồng sóng xung kích Sonic Boom xuyên giáp của Warden, phá hủy hoàn toàn phòng ngự của kẻ thù. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Quyền Uy Warden"
     },
     "enchantencore:warped_arrow": {
       "source_pack": "enchantments_encore",
@@ -3418,10 +3418,10 @@
       "table_weight": 1,
       "loot_weight": 1,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Mũi tên dị giới dịch chuyển tức thời người bắn đến vị trí tên chạm đất.",
-      "name_vi": "Warped Arrow"
+      "description": "Mũi tên dị giới mở cổng không gian: Dịch chuyển tức thời người bắn đến vị trí mũi tên tiếp đất. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Tiễn Dịch Chuyển Dị Giới"
     },
     "enchantencore:warped_trident": {
       "source_pack": "enchantments_encore",
@@ -3437,10 +3437,10 @@
       "table_weight": 1,
       "loot_weight": 1,
       "max_level": 1,
-      "anvil_cost": 10,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/trident",
-      "description": "Dịch chuyển tức thời đến bất kỳ vị trí nào mà cây Đinh ba cắm trúng.",
-      "name_vi": "Warped Trident"
+      "description": "Dịch chuyển tức thời người ném đến bất kỳ vị trí nào mà cây Đinh ba cắm trúng. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Đinh Ba Dịch Chuyển"
     },
     "enchantencore:weakness_aspect": {
       "source_pack": "enchantments_encore",
@@ -3458,7 +3458,7 @@
       "max_level": 2,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Đòn đánh gây hiệu ứng Yếu đuối (Weakness), làm giảm sát thương đối thủ.",
+      "description": "Đòn đánh làm suy giảm thể lực của kẻ thù, gây hiệu ứng Suy Yếu (Weakness) làm giảm sát thương gây ra của đối thủ.",
       "name_vi": "Suy Yếu Diện"
     },
     "enchantencore:weaving_aspect": {
@@ -3477,7 +3477,7 @@
       "max_level": 2,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Đòn đánh bẫy kẻ thù trong mạng nhện tơ khi di chuyển.",
+      "description": "Đòn đánh bẫy kẻ thù trong mạng nhện tơ khi di chuyển, làm giảm tốc độ chạy của mục tiêu.",
       "name_vi": "Mạng Nhện Diện"
     },
     "enchantencore:web_infused": {
@@ -3496,8 +3496,8 @@
       "max_level": 3,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Tạo ra mạng nhện giữ chân kẻ thù ngay tại điểm mũi tên tiếp đất.",
-      "name_vi": "Web Infused"
+      "description": "Mũi tên tạo ra mạng nhện giữ chân kẻ thù ngay tại điểm mũi tên tiếp đất, làm chúng bất động.",
+      "name_vi": "Tiễn Giăng Tơ Nhện"
     },
     "enchantencore:welfare_curse": {
       "source_pack": "enchantments_encore",
@@ -3513,10 +3513,10 @@
       "table_weight": 12,
       "loot_weight": 10,
       "max_level": 1,
-      "anvil_cost": 4,
+      "anvil_cost": 8,
       "supported_items": "#enchantencore:all_tools",
-      "description": "Tự động phá hủy và làm biến mất các vật phẩm rơi trong bán kính 3 khối.",
-      "name_vi": "Curse of Welfare"
+      "description": "Tự động phá hủy và làm biến mất hoàn toàn các vật phẩm rơi rải rác trên đất trong bán kính 3 khối xung quanh người chơi.",
+      "name_vi": "Lời Nguyền Phung Phí"
     },
     "enchantencore:wind_aspect": {
       "source_pack": "enchantments_encore",
@@ -3534,7 +3534,7 @@
       "max_level": 2,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Đòn đánh tạo sóng gió đẩy văng mục tiêu ra xa.",
+      "description": "Đòn đánh tạo ra các đợt sóng gió bão hất văng mục tiêu ra xa, giải tỏa vòng vây kẻ địch.",
       "name_vi": "Gió Lốc Diện"
     },
     "enchantencore:wind_spirit": {
@@ -3550,11 +3550,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 1,
-      "max_level": 3,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 8,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Tăng vọt tốc độ di chuyển và khả năng nhảy cao bay lượn trên không như ngọn gió.",
-      "name_vi": "Wind Spirit"
+      "description": "Tăng vọt tốc độ di chuyển và khả năng bay lượn, miễn nhiễm sát thương rơi và nhận hiệu ứng Kháng Cự khi ở trên không. [ULTIMATE - Tối đa 1/món]",
+      "name_vi": "Linh Hồn Của Gió"
     },
     "enchantencore:wither_aspect": {
       "source_pack": "enchantments_encore",
@@ -3572,7 +3572,7 @@
       "max_level": 2,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fire_aspect",
-      "description": "Đòn đánh làm mục tiêu bị héo mòn máu liên tục bởi hiệu ứng Wither.",
+      "description": "Đòn đánh truyền chất độc Héo Mòn Wither, ăn mòn máu mục tiêu liên tục theo thời gian.",
       "name_vi": "Héo Mòn Diện"
     },
     "enchantencore:wither_infused": {
@@ -3591,8 +3591,8 @@
       "max_level": 3,
       "anvil_cost": 4,
       "supported_items": "#enchantencore:all_bows",
-      "description": "Tẩm nguyền rủa Wither ăn mòn máu của mục tiêu liên tục theo thời gian.",
-      "name_vi": "Wither Infused"
+      "description": "Tẩm nguyền rủa Wither ăn mòn máu của mục tiêu liên tục theo thời gian khi bị trúng đòn.",
+      "name_vi": "Tẩm Độc Wither"
     },
     "enchantencore:wither_protection": {
       "source_pack": "enchantments_encore",
@@ -3608,10 +3608,10 @@
       "table_weight": 1,
       "loot_weight": 5,
       "max_level": 4,
-      "anvil_cost": 4,
+      "anvil_cost": 2,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Bảo vệ giảm mạnh sát thương từ hiệu ứng Héo Mòn Wither và đầu lâu quỷ Wither.",
-      "name_vi": "Wither Protection"
+      "description": "Giảm mạnh sát thương nhận vào từ hiệu ứng Héo Mòn Wither và các quả cầu đầu lâu của quỷ Wither.",
+      "name_vi": "Kháng Hiệu Ứng Wither"
     },
     "enchantencore:yoink": {
       "source_pack": "enchantments_encore",
@@ -3626,11 +3626,11 @@
       "loot": true,
       "table_weight": 1,
       "loot_weight": 5,
-      "max_level": 3,
-      "anvil_cost": 2,
+      "max_level": 1,
+      "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/fishing",
-      "description": "Giật dây câu trúng quái vật sẽ cướp lấy vật phẩm nó đang cầm trên tay.",
-      "name_vi": "Chôm"
+      "description": "Kỹ năng câu cướp: Giật lưỡi câu trúng quái vật sẽ cướp lấy trực tiếp vật phẩm hoặc vũ khí nó đang cầm trên tay đưa về túi đồ bạn.",
+      "name_vi": "Móc Câu Cướp Đoạt (Yoink)"
     },
     "enchantplus:armor/fury": {
       "source_pack": "NeoEnchant-5.16.0",
@@ -5342,8 +5342,8 @@
       "max_level": 3,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/armor",
-      "description": "Gia tăng độ nhanh nhẹn và tốc độ di chuyển nhưng giảm nhẹ giáp phòng ngự.",
-      "name_vi": "Nhẹ Nhàng"
+      "description": "Phù phép đặc thù nâng cấp sức mạnh cho Light.",
+      "name_vi": "Light"
     },
     "kattersstructures:ocean_heart": {
       "source_pack": "Katters Structures v2.9",
@@ -5361,8 +5361,8 @@
       "max_level": 1,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/chest_armor",
-      "description": "Ban hiệu ứng Sức Mạnh Thần Biển (Conduit Power) liên tục khi ở dưới nước.",
-      "name_vi": "Trái Tim Biển Cả"
+      "description": "Phù phép đặc thù nâng cấp sức mạnh cho Ocean Heart.",
+      "name_vi": "Ocean Heart"
     },
     "kattersstructures:raj_ambient": {
       "source_pack": "Katters Structures v2.9",
@@ -5437,8 +5437,8 @@
       "max_level": 3,
       "anvil_cost": 4,
       "supported_items": "minecraft:crossbow",
-      "description": "Mũi tên mang năng lượng ma thuật Rusta cổ xưa, phát nổ khi trúng đích.",
-      "name_vi": "Tiễn Rusta Ma Thuật"
+      "description": "Phù phép đặc thù nâng cấp sức mạnh cho Rusta Shot.",
+      "name_vi": "Rusta Shot"
     },
     "kattersstructures:web_walker": {
       "source_pack": "Katters Structures v2.9",
@@ -5456,8 +5456,8 @@
       "max_level": 3,
       "anvil_cost": 4,
       "supported_items": "#minecraft:enchantable/foot_armor",
-      "description": "Cho phép di chuyển nhanh qua mạng nhện tơ và tạo mạng nhện làm chậm kẻ thù.",
-      "name_vi": "Bước Đi Trên Tơ"
+      "description": "Phù phép đặc thù nâng cấp sức mạnh cho Web Walker.",
+      "name_vi": "Web Walker"
     },
     "minecraft:aqua_affinity": {
       "source_pack": "minecraft (vanilla)",

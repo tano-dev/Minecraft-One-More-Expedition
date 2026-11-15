@@ -5,7 +5,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "absolute_unit",
     "name": "Absolute Unit",
-    "name_vi": "Absolute Unit",
+    "name_vi": "Thể Đứng Bất Hoại (Absolute Unit)",
     "tier": "ultimate",
     "tier_order": 1,
     "max_level": 5,
@@ -19,7 +19,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Quần",
-    "description": "Chế độ Tanker Tối Thượng: Khi ngồi xổm trên mặt đất, nhận hiệu ứng Hấp thụ (Absorption II) và Kháng cự (Resistance III), tạo sóng âm chấn động hất tung kẻ thù xung quanh.",
+    "description": "Chế độ Tanker Tối Thượng: Khi ngồi xổm trên mặt đất, nhận hiệu ứng Hấp thụ (Absorption II) và Kháng cự (Resistance III), tạo sóng âm chấn động Sonic Boom hất tung và gây sát thương đẩy lùi mọi kẻ thù xung quanh. [ULTIMATE - Tối đa 1/món]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:absolute_unit\":5}}] 1"
   },
   {
@@ -27,11 +27,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "adrenaline",
     "name": "Adrenaline",
-    "name_vi": "Adrenaline",
+    "name_vi": "Kích Hoạt Adrenaline",
     "tier": "ultimate",
     "tier_order": 1,
     "max_level": 4,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -41,7 +41,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Bắn cung trúng đích tăng mạnh tốc độ di chuyển và hồi phục sinh lực dồn dập trong giao tranh khốc liệt.",
+    "description": "Bắn cung hoặc nỏ trúng đích kích hoạt trạng thái Adrenaline: Tăng vọt tốc độ di chuyển và hồi phục sinh lực dồn dập trong giao tranh ác liệt. [ULTIMATE - Tối đa 1/món]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:adrenaline\":4}}] 1"
   },
   {
@@ -49,11 +49,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "archer_barrage",
     "name": "Archer Barrage",
-    "name_vi": "Archer Barrage",
+    "name_vi": "Bão Tên Liên Hoàn",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 4,
+    "max_level": 3,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -63,19 +63,19 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung",
-    "description": "Bắn ra một cơn mưa tên liên hoàn từ cung, quét sạch mọi kẻ thù trước mắt.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:archer_barrage\":5}}] 1"
+    "description": "Cung thuật tối thượng: Bắn ra một cơn mưa tên liên hoàn dày đặc theo hình nón từ Cung, quét sạch toàn bộ đội hình kẻ thù trước mắt. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:archer_barrage\":3}}] 1"
   },
   {
     "id": "enchantencore:aurora",
     "namespace": "enchantencore",
     "raw_name": "aurora",
     "name": "Aurora",
-    "name_vi": "Aurora",
+    "name_vi": "Cực Quang Huyền Diệu",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -85,8 +85,8 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Mũ giáp phát quang hào quang cực quang tuyệt đẹp, liên tục hồi máu cho bản thân và đồng minh xung quanh.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:aurora\":5}}] 1"
+    "description": "Mũ giáp phát quang hào quang cực quang tuyệt đẹp: Liên tục tỏa ra sóng ánh sáng hồi phục sinh lực cho bản thân và toàn bộ đồng minh xung quanh. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:aurora\":1}}] 1"
   },
   {
     "id": "enchantplus:pickaxe/bedrock_breaker",
@@ -115,10 +115,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "blaze_blessing",
     "name": "Blaze Blessing",
-    "name_vi": "Blaze Blessing",
+    "name_vi": "Ban Phước Của Quỷ Lửa",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
+    "max_level": 1,
     "anvil_cost": 8,
     "table": false,
     "tradeable": false,
@@ -128,20 +128,20 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Giáp thân",
-    "description": "Ban phước từ Quỷ Lửa: Kháng hoàn toàn lửa và dung nham, thiêu đốt kẻ địch xung quanh khi bị tấn công.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:blaze_blessing\":5}}] 1"
+    "supported_display": "Áo giáp thân",
+    "description": "Ban phước từ Quỷ Lửa Blaze: Kháng hoàn toàn sát thương từ lửa và dung nham, thiêu đốt kẻ địch xung quanh khi bạn nhận sát thương. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:blaze_blessing\":1}}] 1"
   },
   {
     "id": "enchantencore:bomber",
     "namespace": "enchantencore",
     "raw_name": "bomber",
     "name": "Bomber",
-    "name_vi": "Kẻ đặt bom",
+    "name_vi": "Tiễn Bom Công Phá",
     "tier": "ultimate",
     "tier_order": 1,
     "max_level": 3,
-    "anvil_cost": 6,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -151,7 +151,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Mũi tên bắn ra phát nổ cực mạnh khi chạm vào bất kỳ kẻ địch hoặc khối nào.",
+    "description": "Mũi tên bắn ra mang đầu đạn thuốc nổ uy lực: Tự động phát nổ cực mạnh ngay khi chạm vào bất kỳ kẻ địch hoặc khối nào. [ULTIMATE - Tối đa 1/món]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bomber\":3}}] 1"
   },
   {
@@ -203,10 +203,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "creeper_blessing",
     "name": "Creeper Blessing",
-    "name_vi": "Creeper Blessing",
+    "name_vi": "Ban Phước Của Creeper",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
+    "max_level": 1,
     "anvil_cost": 8,
     "table": false,
     "tradeable": false,
@@ -216,9 +216,9 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Giáp thân",
-    "description": "Khi lượng máu xuống mức nguy kịch, kích hoạt làn sóng nổ đẩy lùi và tạo khiên bảo vệ chủ nhân.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_blessing\":5}}] 1"
+    "supported_display": "Áo giáp thân",
+    "description": "Khi lượng máu của bạn tụt xuống mức báo động hiểm nghèo, tự động kích hoạt làn sóng nổ đẩy lùi kẻ thù và tạo khiên bảo vệ chủ nhân. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_blessing\":1}}] 1"
   },
   {
     "id": "stellarity:critical_strike",
@@ -247,11 +247,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "crystalize_arrow",
     "name": "Crystalize Arrow",
-    "name_vi": "Crystalize Arrow",
+    "name_vi": "Tiễn Tinh Thể Pha Lê",
     "tier": "ultimate",
     "tier_order": 1,
     "max_level": 3,
-    "anvil_cost": 6,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -261,7 +261,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung",
-    "description": "Mũi tên pha lê làm đóng băng và giam cầm mục tiêu trong tinh thể pha lê bất động.",
+    "description": "Mũi tên pha lê giam cầm: Làm đóng băng và nhốt chặt mục tiêu trong khối tinh thể pha lê bất động, vô hiệu hóa khả năng di chuyển và tấn công. [ULTIMATE - Tối đa 1/món]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crystalize_arrow\":3}}] 1"
   },
   {
@@ -269,11 +269,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "dolphin_blessing",
     "name": "Dolphin Blessing",
-    "name_vi": "Dolphin Blessing",
+    "name_vi": "Ban Phước Của Cá Heo",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 3,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -283,8 +283,8 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Tốc độ bơi lội siêu việt dưới nước như cá heo thần thoại, ban lượng oxy vô tận.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:dolphin_blessing\":3}}] 1"
+    "description": "Tốc độ bơi lội siêu việt dưới nước như cá heo thần thoại, tăng tốc độ bơi tối đa và ban lượng oxy vô tận không bao giờ cạn. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:dolphin_blessing\":1}}] 1"
   },
   {
     "id": "stellarity:dune_speed",
@@ -313,10 +313,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "frenzy",
     "name": "Frenzy",
-    "name_vi": "Frenzy",
+    "name_vi": "Trạng Thái Cuồng Nộ",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
+    "max_level": 3,
     "anvil_cost": 8,
     "table": false,
     "tradeable": false,
@@ -326,9 +326,9 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Kiếm & Vũ khí cận chiến",
-    "description": "Mỗi đòn đánh trúng tăng thêm tốc độ đánh và tốc độ di chuyển dồn dập trong trạng thái cuồng nộ.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:frenzy\":5}}] 1"
+    "supported_display": "Kiếm & Vũ khí",
+    "description": "Mỗi đòn đánh trúng mục tiêu sẽ tăng tốc độ đánh và tốc độ di chuyển dồn dập, đưa nhân vật vào trạng thái cuồng nộ áp đảo. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:frenzy\":3}}] 1"
   },
   {
     "id": "enchantsplus:graviole",
@@ -380,11 +380,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "habanero",
     "name": "Habanero",
-    "name_vi": "Habanero",
+    "name_vi": "Hỏa Ngục Habanero",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -394,19 +394,19 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Thiêu đốt mặt đất và gây sát thương bỏng cực kỳ khủng khiếp lên mọi kẻ địch lân cận.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:habanero\":5}}] 1"
+    "description": "Thiêu đốt mặt đất dưới chân thành biển lửa bỏng rát và gây lượng sát thương cháy cực kỳ khủng khiếp lên mọi kẻ địch lân cận. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:habanero\":1}}] 1"
   },
   {
     "id": "enchantencore:heroes_crown",
     "namespace": "enchantencore",
     "raw_name": "heroes_crown",
     "name": "Heroes Crown",
-    "name_vi": "Heroes Crown",
+    "name_vi": "Vương Miện Anh Hùng",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -416,19 +416,19 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Trao hiệu ứng Anh Hùng Làng (Hero of the Village V) liên tục, giảm giá giao dịch tối đa với dân làng.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:heroes_crown\":5}}] 1"
+    "description": "Trao hiệu ứng Anh Hùng Làng (Hero of the Village V) vĩnh viễn, giảm giá giao dịch tối đa với tất cả dân làng. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:heroes_crown\":1}}] 1"
   },
   {
     "id": "enchantencore:infinity_durability",
     "namespace": "enchantencore",
     "raw_name": "infinity_durability",
     "name": "Infinity Durability",
-    "name_vi": "Infinity Durability",
+    "name_vi": "Độ Bền Vĩnh Cửu",
     "tier": "ultimate",
     "tier_order": 1,
     "max_level": 1,
-    "anvil_cost": 2,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -438,7 +438,7 @@ window.ALL_ENCHANTMENTS = [
       "universal"
     ],
     "supported_display": "Mọi trang bị có độ bền",
-    "description": "Độ bền vĩnh cửu: Vật phẩm không bao giờ bị giảm độ bền hoặc vỡ khi sử dụng.",
+    "description": "Độ bền bất hoại vĩnh cửu: Vật phẩm không bao giờ bị giảm độ bền hoặc vỡ hỏng trong suốt quá trình sử dụng. [ULTIMATE - Tối đa 1/món]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:infinity_durability\":1}}] 1"
   },
   {
@@ -446,11 +446,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "last_stand",
     "name": "Last Stand",
-    "name_vi": "Last Stand",
+    "name_vi": "Lãnh Địa Bất Tử",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -459,20 +459,20 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Giáp thân",
-    "description": "Khi sắp cạn máu, ngay lập tức hồi sinh một lượng máu lớn và tạo khiên phòng thủ bất hoại.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:last_stand\":5}}] 1"
+    "supported_display": "Áo giáp thân",
+    "description": "Khi lượng máu của bạn sắp cạn kiệt, ngay lập tức hồi sinh một lượng máu lớn và tạo khiên phòng thủ bất hoại trong giây lát. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:last_stand\":1}}] 1"
   },
   {
     "id": "enchantencore:machine_gun",
     "namespace": "enchantencore",
     "raw_name": "machine_gun",
     "name": "Machine Gun",
-    "name_vi": "Machine Gun",
+    "name_vi": "Nỏ Liên Thanh Súng Máy",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -482,8 +482,8 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Nỏ",
-    "description": "Tốc độ nạp và bắn nỏ siêu thanh liên thanh liên tục như súng máy tự động.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:machine_gun\":5}}] 1"
+    "description": "Tốc độ nạp và bắn nỏ siêu thanh liên tục như súng máy tự động, xả đạn không có thời gian trễ. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:machine_gun\":1}}] 1"
   },
   {
     "id": "enchantplus:tools/miningplus",
@@ -512,11 +512,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "neptune",
     "name": "Neptune",
-    "name_vi": "Neptune",
+    "name_vi": "Quyền Uy Hải Vương Neptune",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 10,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -527,19 +527,19 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Đinh ba",
-    "description": "Đinh ba mang sức mạnh của Thần biển Neptune, triệu hồi bão tố và sát thương biển cả áp đảo.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:neptune\":5}}] 1"
+    "description": "Đinh ba mang sức mạnh của Thần biển Neptune: Triệu hồi bão tố và sát thương biển cả áp đảo nghiền nát đối thủ. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:neptune\":1}}] 1"
   },
   {
     "id": "enchantencore:nightmare",
     "namespace": "enchantencore",
     "raw_name": "nightmare",
     "name": "Nightmare",
-    "name_vi": "Nightmare",
+    "name_vi": "Ác Mộng Hắc Ám",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 3,
-    "anvil_cost": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -548,20 +548,20 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Kiếm & Vũ khí cận chiến",
-    "description": "Đòn đánh gây bóng tối hắc ám và làm suy yếu ý chí chiến đấu của kẻ địch.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:nightmare\":3}}] 1"
+    "supported_display": "Kiếm & Vũ khí",
+    "description": "Đòn đánh gieo rắc nỗi kinh hoàng: Gây hiệu ứng Bóng Tối và làm suy yếu ý chí chiến đấu của kẻ địch, ăn mòn sinh lực đối phương. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:nightmare\":1}}] 1"
   },
   {
     "id": "enchantencore:nuclear_arrow",
     "namespace": "enchantencore",
     "raw_name": "nuclear_arrow",
     "name": "Nuclear Arrow",
-    "name_vi": "Nuclear Arrow",
+    "name_vi": "Tiễn Nguyên Tử Hủy Diệt",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 6,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -571,19 +571,19 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung",
-    "description": "Mũi tên nguyên tử tạo ra vụ nổ hủy diệt trên diện rộng với uy lực tối thượng.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:nuclear_arrow\":5}}] 1"
+    "description": "Vũ khí tối thượng: Mũi tên nguyên tử tạo ra một vụ nổ hủy diệt khổng lồ trên diện cực rộng với uy lực áp đảo toàn bộ chiến trường. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:nuclear_arrow\":1}}] 1"
   },
   {
     "id": "enchantencore:perfect_protection",
     "namespace": "enchantencore",
     "raw_name": "perfect_protection",
     "name": "Perfect Protection",
-    "name_vi": "Perfect Protection",
+    "name_vi": "Bảo Hộ Hoàn Mỹ",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 1,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -592,9 +592,9 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Giáp thân",
-    "description": "Bộ giáp bảo hộ hoàn mỹ: Giảm 40% mọi nguồn sát thương gánh chịu từ mọi phía.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:perfect_protection\":5}}] 1"
+    "supported_display": "Áo giáp thân",
+    "description": "Bộ giáp bảo hộ tuyệt đối: Giảm trực tiếp 40% mọi nguồn sát thương gánh chịu từ mọi hướng tấn công. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:perfect_protection\":1}}] 1"
   },
   {
     "id": "nova_structures:photosynthesis",
@@ -645,11 +645,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "poseidon",
     "name": "Poseidon",
-    "name_vi": "Poseidon",
+    "name_vi": "Sóng Thần Poseidon",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 10,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -660,19 +660,19 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Đinh ba",
-    "description": "Đinh ba triệu hồi dòng nước xoáy và sóng thần nghiền nát mục tiêu.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:poseidon\":5}}] 1"
+    "description": "Đinh ba của Thần biển Poseidon: Triệu hồi các đợt xoáy nước khổng lồ và sóng thần nghiền nát toàn bộ mục tiêu. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:poseidon\":1}}] 1"
   },
   {
     "id": "enchantencore:radiant_life",
     "namespace": "enchantencore",
     "raw_name": "radiant_life",
     "name": "Radiant Life",
-    "name_vi": "Radiant Life",
+    "name_vi": "Hào Quang Hút Máu",
     "tier": "ultimate",
     "tier_order": 1,
     "max_level": 3,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -681,8 +681,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Kiếm & Vũ khí cận chiến",
-    "description": "Mỗi đòn chém hồi phục trực tiếp một lượng máu dồi dào cho người sử dụng.",
+    "supported_display": "Kiếm & Vũ khí",
+    "description": "Đòn chém phát sáng: Mỗi đòn đánh trúng đích hồi phục trực tiếp một lượng máu dồi dào cho người sử dụng. [ULTIMATE - Tối đa 1/món]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:radiant_life\":3}}] 1"
   },
   {
@@ -690,11 +690,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "railgun",
     "name": "Railgun",
-    "name_vi": "Railgun",
+    "name_vi": "Pháo Điện Từ Railgun",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 3,
-    "anvil_cost": 6,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -704,19 +704,19 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Mũi tên điện từ bay với vận tốc ánh sáng theo đường thẳng tuyệt đối, xuyên phá mọi mục tiêu.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:railgun\":3}}] 1"
+    "description": "Mũi tên điện từ bay với vận tốc ánh sáng theo đường thẳng tuyệt đối, công phá và xuyên thủng mọi mục tiêu trên đường bay. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:railgun\":1}}] 1"
   },
   {
     "id": "enchantencore:reflection",
     "namespace": "enchantencore",
     "raw_name": "reflection",
     "name": "Reflection",
-    "name_vi": "Reflection",
+    "name_vi": "Phản Đạn Toàn Năng",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 2,
+    "max_level": 3,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -726,19 +726,19 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Khiên & Giáp thân",
-    "description": "Phản lại toàn bộ mũi tên và đạn bắn tầm xa trở ngược lại kẻ tấn công.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:reflection\":5}}] 1"
+    "description": "Phản lại toàn bộ mũi tên, đạn Shulker và đạn bắn tầm xa trở ngược lại kẻ tấn công với uy lực gấp đôi. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:reflection\":3}}] 1"
   },
   {
     "id": "enchantencore:sniper",
     "namespace": "enchantencore",
     "raw_name": "sniper",
     "name": "Sniper",
-    "name_vi": "Sniper",
+    "name_vi": "Xạ Thủ Bắn Tỉa",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 4,
+    "max_level": 3,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -748,8 +748,8 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung",
-    "description": "Sát thương mũi tên tăng theo cấp số nhân dựa trên khoảng cách bắn cực xa.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sniper\":5}}] 1"
+    "description": "Sát thương của mũi tên tăng theo cấp số nhân dựa trên khoảng cách bắn càng xa, tiêu diệt mục tiêu chỉ với 1 phát bắn tỉa. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sniper\":3}}] 1"
   },
   {
     "id": "wither:soul_siphon",
@@ -800,11 +800,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "spectral_form",
     "name": "Spectral Form",
-    "name_vi": "Spectral Form",
+    "name_vi": "Thể Linh Hồn Vô Địch",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 3,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -813,9 +813,9 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Giáp thân",
-    "description": "Biến thân thành thể linh hồn: Miễn nhiễm sát thương vật lý trong chốc lát.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:spectral_form\":3}}] 1"
+    "supported_display": "Áo giáp thân",
+    "description": "Biến thân thành thể linh hồn: Miễn nhiễm hoàn toàn sát thương vật lý trong chốc lát sau khi nhận đòn đánh nặng. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:spectral_form\":1}}] 1"
   },
   {
     "id": "enchantplus:mace/teluric_wave",
@@ -866,11 +866,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "vitality",
     "name": "Vitality",
-    "name_vi": "Vitality",
+    "name_vi": "Sinh Khí Dồi Dào",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 3,
+    "max_level": 3,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -879,9 +879,9 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Giáp thân",
-    "description": "Tăng vĩnh viễn lượng máu tối đa của nhân vật lên thêm nhiều trái tim vàng.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:vitality\":5}}] 1"
+    "supported_display": "Áo giáp thân",
+    "description": "Tăng vĩnh viễn lượng máu tối đa của nhân vật lên thêm nhiều trái tim vàng rực rỡ. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:vitality\":3}}] 1"
   },
   {
     "id": "enchantplus:helmet/voidless",
@@ -913,8 +913,8 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Dệt Hư Không",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 3,
-    "anvil_cost": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -924,19 +924,19 @@ window.ALL_ENCHANTMENTS = [
       "universal"
     ],
     "supported_display": "Mọi trang bị có độ bền",
-    "description": "Từ từ hồi phục độ bền cho trang bị khi người chơi ở trong chiều không gian The End.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:voidweave\":3}}] 1"
+    "description": "Trang bị tự động hồi phục độ bền liên tục khi người chơi ở trong chiều không gian The End. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:voidweave\":1}}] 1"
   },
   {
     "id": "enchantencore:warden",
     "namespace": "enchantencore",
     "raw_name": "warden",
     "name": "Warden",
-    "name_vi": "Warden",
+    "name_vi": "Quyền Uy Warden",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 5,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -946,19 +946,19 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Khai mở sức mạnh bóng tối của Warden: Đòn đánh phát ra sóng xung kích Sonic Boom xuyên giáp.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:warden\":5}}] 1"
+    "description": "Đòn đánh cận chiến giải phóng luồng sóng xung kích Sonic Boom xuyên giáp của Warden, phá hủy hoàn toàn phòng ngự của kẻ thù. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:warden\":1}}] 1"
   },
   {
     "id": "enchantencore:warped_arrow",
     "namespace": "enchantencore",
     "raw_name": "warped_arrow",
     "name": "Warped Arrow",
-    "name_vi": "Warped Arrow",
+    "name_vi": "Tiễn Dịch Chuyển Dị Giới",
     "tier": "ultimate",
     "tier_order": 1,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -968,7 +968,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung",
-    "description": "Mũi tên dị giới dịch chuyển tức thời người bắn đến vị trí tên chạm đất.",
+    "description": "Mũi tên dị giới mở cổng không gian: Dịch chuyển tức thời người bắn đến vị trí mũi tên tiếp đất. [ULTIMATE - Tối đa 1/món]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:warped_arrow\":1}}] 1"
   },
   {
@@ -976,11 +976,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "warped_trident",
     "name": "Warped Trident",
-    "name_vi": "Warped Trident",
+    "name_vi": "Đinh Ba Dịch Chuyển",
     "tier": "ultimate",
     "tier_order": 1,
     "max_level": 1,
-    "anvil_cost": 10,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -991,7 +991,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Đinh ba",
-    "description": "Dịch chuyển tức thời đến bất kỳ vị trí nào mà cây Đinh ba cắm trúng.",
+    "description": "Dịch chuyển tức thời người ném đến bất kỳ vị trí nào mà cây Đinh ba cắm trúng. [ULTIMATE - Tối đa 1/món]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:warped_trident\":1}}] 1"
   },
   {
@@ -1043,11 +1043,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "wind_spirit",
     "name": "Wind Spirit",
-    "name_vi": "Wind Spirit",
+    "name_vi": "Linh Hồn Của Gió",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 3,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -1057,8 +1057,8 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Tăng vọt tốc độ di chuyển và khả năng nhảy cao bay lượn trên không như ngọn gió.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wind_spirit\":3}}] 1"
+    "description": "Tăng vọt tốc độ di chuyển và khả năng bay lượn, miễn nhiễm sát thương rơi và nhận hiệu ứng Kháng Cự khi ở trên không. [ULTIMATE - Tối đa 1/món]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wind_spirit\":1}}] 1"
   },
   {
     "id": "wither:witherbound",
@@ -1154,7 +1154,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "bear_spirit",
     "name": "Bear Spirit",
-    "name_vi": "Bear Spirit",
+    "name_vi": "Linh Hồn Của Gấu (Bear Spirit)",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -1165,11 +1165,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "minecraft:wolf_armor",
     "gear_categories": [
-      "armor",
       "mount"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày, Yên cương & Thú cưỡi",
-    "description": "Truyền sức mạnh của loài Gấu cho Chó sói: Tăng sức chịu đựng và lượng máu tối đa.",
+    "supported_display": "Giáp Sói",
+    "description": "Truyền sức mạnh loài Gấu vào Chó sói: Kích thước Chó sói tăng +100% (to gấp đôi), Giáp +10 điểm, Sát thương +3, Miễn nhiễm ngạt khi kẹt trong tường, 10% đòn đánh gây Yếu Đuối và Làm Chậm.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bear_spirit\":1}}] 1"
   },
   {
@@ -1199,7 +1198,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "boar_spirit",
     "name": "Boar Spirit",
-    "name_vi": "Boar Spirit",
+    "name_vi": "Linh Hồn Heo Rừng (Boar Spirit)",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -1210,11 +1209,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "minecraft:wolf_armor",
     "gear_categories": [
-      "armor",
       "mount"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày, Yên cương & Thú cưỡi",
-    "description": "Truyền sức mạnh của loài Heo rừng cho Chó sói: Tăng lực húc và độ đẩy lùi đối thủ.",
+    "supported_display": "Giáp Sói",
+    "description": "Truyền sức mạnh Heo rừng vào Chó sói: Kích thước tăng +25%, Giáp +5 điểm, đòn đánh của sói có 15% cơ hội kích hoạt hiệu ứng Sức Mạnh (Strength) và Tăng Tốc Độ (Speed).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:boar_spirit\":1}}] 1"
   },
   {
@@ -1332,11 +1330,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "end_speed",
     "name": "End Speed",
-    "name_vi": "End Speed",
+    "name_vi": "Tốc Độ Thế Giới End",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 3,
-    "anvil_cost": 8,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -1346,7 +1344,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Gia tăng đáng kể tốc độ chạy và di chuyển khi ở trong chiều không gian The End.",
+    "description": "Gia tăng đáng kể tốc độ chạy và di chuyển của nhân vật khi đang ở trong chiều không gian The End.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:end_speed\":3}}] 1"
   },
   {
@@ -1398,7 +1396,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "fetch",
     "name": "Fetch",
-    "name_vi": "Fetch",
+    "name_vi": "Thu Nhặt Đồ",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -1409,11 +1407,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "minecraft:wolf_armor",
     "gear_categories": [
-      "armor",
       "mount"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày, Yên cương & Thú cưỡi",
-    "description": "Chó sói cưng có tỉ lệ tự động nhặt và tha chiến lợi phẩm rơi trên đất về cho chủ nhân.",
+    "supported_display": "Giáp Sói",
+    "description": "Chó sói cưng có tỉ lệ tự động chạy đến nhặt và tha các món chiến lợi phẩm rơi rải rác trên mặt đất về tận chân cho chủ nhân.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:fetch\":1}}] 1"
   },
   {
@@ -1421,10 +1418,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "flare",
     "name": "Flare",
-    "name_vi": "Lửa",
+    "name_vi": "Tiễn Pháo Hoa",
     "tier": "epic",
     "tier_order": 2,
-    "max_level": 5,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -1435,8 +1432,8 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Mũi tên phát nổ rực rỡ như pháo hoa khi chạm đất hoặc bắn trúng sinh vật.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:flare\":5}}] 1"
+    "description": "Mũi tên bắn ra phát nổ rực rỡ như một quả pháo hoa khi chạm đất hoặc bắn trúng sinh vật, gây sát thương lan.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:flare\":1}}] 1"
   },
   {
     "id": "mt:technical/floor_is_spikes",
@@ -1487,7 +1484,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "ghost_spirit",
     "name": "Ghost Spirit",
-    "name_vi": "Vong hồn",
+    "name_vi": "Linh Hồn Bóng Ma (Ghost Spirit)",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -1498,11 +1495,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "minecraft:wolf_armor",
     "gear_categories": [
-      "armor",
       "mount"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày, Yên cương & Thú cưỡi",
-    "description": "Khiến Chó sói gần như bất tử nhưng sát thương tấn công giảm về 0.",
+    "supported_display": "Giáp Sói",
+    "description": "Biến Chó sói thành bóng ma bất tử: Giảm 999.999 sát thương nhận vào (gần như bất tử), tự sửa giáp sói liên tục, nhưng sát thương tấn công của sói giảm về 0.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ghost_spirit\":1}}] 1"
   },
   {
@@ -1576,7 +1572,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "incognito",
     "name": "Incognito",
-    "name_vi": "Ẩn Danh",
+    "name_vi": "Ẩn Danh Hoàn Hảo",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -1590,7 +1586,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Ẩn hoàn toàn bảng tên nhân vật, giúp ẩn náu hoàn hảo trước người chơi khác.",
+    "description": "Ẩn hoàn toàn bảng tên nhân vật trên đầu, giúp bạn ẩn náu tuyệt đối và không bị người chơi khác phát hiện qua vách tường.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:incognito\":1}}] 1"
   },
   {
@@ -1643,7 +1639,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "kattersstructures",
     "raw_name": "light",
     "name": "Light",
-    "name_vi": "Nhẹ Nhàng",
+    "name_vi": "Light",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 3,
@@ -1654,10 +1650,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "Katters Structures v2.9",
     "supported_items": "#minecraft:enchantable/armor",
     "gear_categories": [
-      "armor"
+      "other"
     ],
-    "supported_display": "Mũ, Áo giáp, Quần, Giày",
-    "description": "Gia tăng độ nhanh nhẹn và tốc độ di chuyển nhưng giảm nhẹ giáp phòng ngự.",
+    "supported_display": "Trang bị đặc thù",
+    "description": "Phù phép đặc thù nâng cấp sức mạnh cho Light.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:light\":3}}] 1"
   },
   {
@@ -1665,21 +1661,22 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "lightning_bolt",
     "name": "Lightning Bolt",
-    "name_vi": "Tia sét",
+    "name_vi": "Tia Sét Giáng Trần",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:all_bows",
     "gear_categories": [
+      "weapon",
       "ranged"
     ],
-    "supported_display": "Cung & Nỏ",
-    "description": "Có cơ hội triệu hồi tia sét giáng xuống kẻ địch nếu chúng đứng dưới bầu trời.",
+    "supported_display": "Vũ khí & Cung",
+    "description": "Có cơ hội triệu hồi một tia sét sấm sét giáng thẳng xuống đầu mục tiêu nếu chúng đang đứng dưới bầu trời thoáng đãng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:lightning_bolt\":1}}] 1"
   },
   {
@@ -1732,7 +1729,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "moonwalk",
     "name": "Moonwalk",
-    "name_vi": "Vũ điệu mặt trăng",
+    "name_vi": "Bước Chân Mặt Trăng",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 3,
@@ -1746,8 +1743,8 @@ window.ALL_ENCHANTMENTS = [
       "armor",
       "mount"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày, Cánh Elytra, Yên cương & Thú cưỡi",
-    "description": "Giảm trọng lực tác động lên người chơi, cho phép rơi chậm và nhảy xa.",
+    "supported_display": "Cánh Elytra & Giáp ngựa",
+    "description": "Giảm trọng lực tác động lên người chơi hoặc ngựa, cho phép thực hiện những bước nhảy cực cao và rơi chậm lướt gió.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:moonwalk\":3}}] 1"
   },
   {
@@ -1777,7 +1774,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "night_vision",
     "name": "Night Vision",
-    "name_vi": "Nhìn đêm",
+    "name_vi": "Kính Nhìn Đêm",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -1791,7 +1788,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Biến chiếc mũ thành kính nhìn đêm, ban hiệu ứng Tầm nhìn bóng đêm (Night Vision).",
+    "description": "Biến chiếc mũ thành kính nhìn đêm chuyên dụng: Ban hiệu ứng Tầm nhìn bóng đêm (Night Vision) vĩnh viễn khi đội mũ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:night_vision\":1}}] 1"
   },
   {
@@ -1799,7 +1796,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "kattersstructures",
     "raw_name": "ocean_heart",
     "name": "Ocean Heart",
-    "name_vi": "Trái Tim Biển Cả",
+    "name_vi": "Ocean Heart",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -1810,10 +1807,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "Katters Structures v2.9",
     "supported_items": "#minecraft:enchantable/chest_armor",
     "gear_categories": [
-      "armor"
+      "other"
     ],
-    "supported_display": "Áo giáp thân",
-    "description": "Ban hiệu ứng Sức Mạnh Thần Biển (Conduit Power) liên tục khi ở dưới nước.",
+    "supported_display": "Trang bị đặc thù",
+    "description": "Phù phép đặc thù nâng cấp sức mạnh cho Ocean Heart.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:ocean_heart\":1}}] 1"
   },
   {
@@ -1821,11 +1818,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "path_speed",
     "name": "Path Speed",
-    "name_vi": "Path Speed",
+    "name_vi": "Tốc Độ Đường Mòn",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 3,
-    "anvil_cost": 8,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -1835,7 +1832,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Tăng tốc độ chạy đáng kể khi di chuyển trên các khối đường đất (Dirt Path).",
+    "description": "Gia tăng mạnh mẽ tốc độ chạy nước rút khi di chuyển trên các khối đường đất (Dirt Path) trong các ngôi làng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:path_speed\":3}}] 1"
   },
   {
@@ -1843,7 +1840,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "pegasus",
     "name": "Pegasus",
-    "name_vi": "Mã thần",
+    "name_vi": "Mã Thần Pegasus",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -1854,11 +1851,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:all_horse_armor",
     "gear_categories": [
-      "armor",
       "mount"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày, Yên cương & Thú cưỡi",
-    "description": "Ngựa có khả năng bay vút lên tới 30 khối trên không trung, khi xuống ngựa nhận hiệu ứng rơi chậm an toàn.",
+    "supported_display": "Giáp ngựa",
+    "description": "Ban khả năng bay cho Ngựa: Cho phép ngựa phi nước đại bay vút lên tới 30 khối trên không trung; khi nhảy xuống nhận hiệu ứng Rơi Chậm an toàn.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pegasus\":1}}] 1"
   },
   {
@@ -1998,7 +1994,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "refuel",
     "name": "Refuel",
-    "name_vi": "Refuel",
+    "name_vi": "Tự Nạp Pháo Hoa",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -2012,7 +2008,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Cánh Elytra",
-    "description": "Tự động nạp thêm pháo hoa từ túi đồ vào tay mỗi khi dùng pháo hoa để bay lượn.",
+    "description": "Tiện ích bay lượn: Tự động rút pháo hoa từ trong kho đồ để nạp vào tay mỗi khi bạn sử dụng một quả pháo hoa để lướt cánh Elytra.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:refuel\":1}}] 1"
   },
   {
@@ -2020,11 +2016,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "regrowth",
     "name": "Regrowth",
-    "name_vi": "Tái sinh",
+    "name_vi": "Tái Sinh Nông Nghiệp",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
-    "anvil_cost": 8,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -2034,7 +2030,7 @@ window.ALL_ENCHANTMENTS = [
       "tool"
     ],
     "supported_display": "Cuốc làm nông",
-    "description": "Tự động gieo trồng lại cây nông nghiệp ngay khi thu hoạch cây đã chín.",
+    "description": "Tự động gieo trồng lại hạt giống ngay lập tức mỗi khi bạn thu hoạch một cây trồng nông nghiệp đã chín.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:regrowth\":1}}] 1"
   },
   {
@@ -2042,7 +2038,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "kattersstructures",
     "raw_name": "rusta_shot",
     "name": "Rusta Shot",
-    "name_vi": "Tiễn Rusta Ma Thuật",
+    "name_vi": "Rusta Shot",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 3,
@@ -2053,10 +2049,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "Katters Structures v2.9",
     "supported_items": "minecraft:crossbow",
     "gear_categories": [
-      "ranged"
+      "other"
     ],
-    "supported_display": "Cung & Nỏ",
-    "description": "Mũi tên mang năng lượng ma thuật Rusta cổ xưa, phát nổ khi trúng đích.",
+    "supported_display": "Trang bị đặc thù",
+    "description": "Phù phép đặc thù nâng cấp sức mạnh cho Rusta Shot.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:rusta_shot\":3}}] 1"
   },
   {
@@ -2064,11 +2060,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "sand_speed",
     "name": "Sand Speed",
-    "name_vi": "Sand Speed",
+    "name_vi": "Tốc Độ Trên Cát",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 3,
-    "anvil_cost": 8,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -2078,7 +2074,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Tăng tốc độ chạy và di chuyển khi đi trên bề mặt cát.",
+    "description": "Gia tăng đáng kể tốc độ di chuyển và chạy nước rút của nhân vật khi bước đi trên cát và cát đỏ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sand_speed\":3}}] 1"
   },
   {
@@ -2086,7 +2082,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "scorpion_spirit",
     "name": "Scorpion Spirit",
-    "name_vi": "Scorpion Spirit",
+    "name_vi": "Linh Hồn Bọ Cạp (Scorpion Spirit)",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -2097,11 +2093,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "minecraft:wolf_armor",
     "gear_categories": [
-      "armor",
       "mount"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày, Yên cương & Thú cưỡi",
-    "description": "Truyền sức mạnh của Bọ cạp cho Chó sói: Đòn đánh tẩm nọc độc gây ăn mòn máu kẻ thù.",
+    "supported_display": "Giáp Sói",
+    "description": "Truyền sức mạnh Bọ cạp vào Chó sói: Kích thước thu nhỏ -50%, Tốc độ tấn công tăng cực nhanh (+5), 50% đòn đánh gây Trúng Độc và Héo Mòn Wither liên tục.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scorpion_spirit\":1}}] 1"
   },
   {
@@ -2131,7 +2126,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "shulker_shell",
     "name": "Shulker Shell",
-    "name_vi": "Vỏ Shulker",
+    "name_vi": "Vỏ Shulker Phòng Thủ",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -2145,7 +2140,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Áo giáp thân",
-    "description": "Khi đứng yên, các loại mũi tên, pháo hoa và đinh ba bắn tới sẽ tự động rơi rụng xuống đất.",
+    "description": "Khi người mặc đứng yên một chỗ, toàn bộ các loại mũi tên, pháo hoa và đinh ba bắn tới sẽ tự động rơi rụng xuống đất mà không gây sát thương.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shulker_shell\":1}}] 1"
   },
   {
@@ -2219,11 +2214,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "sonic",
     "name": "Sonic",
-    "name_vi": "Sonic",
+    "name_vi": "Tốc Độ Siêu Thanh Sonic",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 3,
-    "anvil_cost": 8,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -2233,7 +2228,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Tăng mạnh tốc độ đi bộ nhưng làm chậm tốc độ khi ngồi xổm.",
+    "description": "Gia tăng mạnh mẽ tốc độ đi bộ (+0.015 + 0.01/cấp độ) nhưng làm giảm nhẹ tốc độ khi ngồi xổm.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sonic\":3}}] 1"
   },
   {
@@ -2373,7 +2368,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "trial_runner",
     "name": "Trial Runner",
-    "name_vi": "Trial Runner",
+    "name_vi": "Kẻ Chinh Phục Thử Thách",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -2384,10 +2379,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "#minecraft:foot_armor",
     "gear_categories": [
-      "armor"
+      "universal"
     ],
-    "supported_display": "Giày",
-    "description": "Ban hiệu ứng Điềm Báo Thử Thách (Trial Omen) nhưng làm hao mòn độ bền của trang bị.",
+    "supported_display": "Mọi trang bị có độ bền",
+    "description": "Ban hiệu ứng Điềm Báo Thử Thách (Trial Omen) liên tục để kích hoạt các thử thách Ominous Trial Spawner nhưng tiêu hao độ bền trang bị.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:trial_runner\":1}}] 1"
   },
   {
@@ -2395,7 +2390,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "velocity",
     "name": "Velocity",
-    "name_vi": "Gia Tốc",
+    "name_vi": "Gia Tốc Đạn Bắn",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 1,
@@ -2406,11 +2401,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "['minecraft:bow', 'minecraft:crossbow', 'minecraft:trident']",
     "gear_categories": [
-      "ranged",
-      "weapon"
+      "ranged"
     ],
-    "supported_display": "Cung & Nỏ, Đinh ba",
-    "description": "Nhân đôi tốc độ bay của các loại mũi tên, đinh ba và đạn bắn ra.",
+    "supported_display": "Cung, Nỏ, Đinh ba",
+    "description": "Nhân đôi tốc độ bay của các loại mũi tên, đinh ba và đạn bắn ra, giúp đường đạn bay thẳng và trúng mục tiêu chớp nhoáng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:velocity\":1}}] 1"
   },
   {
@@ -2616,7 +2610,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "kattersstructures",
     "raw_name": "web_walker",
     "name": "Web Walker",
-    "name_vi": "Bước Đi Trên Tơ",
+    "name_vi": "Web Walker",
     "tier": "epic",
     "tier_order": 2,
     "max_level": 3,
@@ -2627,10 +2621,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "Katters Structures v2.9",
     "supported_items": "#minecraft:enchantable/foot_armor",
     "gear_categories": [
-      "armor"
+      "other"
     ],
-    "supported_display": "Giày",
-    "description": "Cho phép di chuyển nhanh qua mạng nhện tơ và tạo mạng nhện làm chậm kẻ thù.",
+    "supported_display": "Trang bị đặc thù",
+    "description": "Phù phép đặc thù nâng cấp sức mạnh cho Web Walker.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:web_walker\":3}}] 1"
   },
   {
@@ -2682,21 +2676,21 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "anchor",
     "name": "Anchor",
-    "name_vi": "Râu neo",
+    "name_vi": "Mỏ Neo Cố Định",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:valid_for_anchor",
     "gear_categories": [
-      "other"
+      "mount"
     ],
-    "supported_display": "Trang bị đặc biệt",
-    "description": "Giữ cố định thực thể/thú cưỡi đứng yên tại chỗ khi không có người cưỡi.",
+    "supported_display": "Yên ngựa & Dây cương",
+    "description": "Mỏ neo giữ chân: Giữ cố định thực thể hoặc thú cưỡi đứng yên vững chãi tại chỗ khi không có người chơi cưỡi, ngăn không bị trôi dạt hoặc kẻ thù đẩy đi.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:anchor\":1}}] 1"
   },
   {
@@ -2704,7 +2698,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "angry_aura",
     "name": "Angry Aura",
-    "name_vi": "Hào quang giận dữ",
+    "name_vi": "Hào Quang Phẫn Nộ",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -2718,7 +2712,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang giận dữ thẩm mỹ cho người mặc, thú cưng và đạn bắn ra.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang ngọn lửa đỏ giận dữ bao quanh người mặc, thú cưng và các phát đạn.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:angry_aura\":1}}] 1"
   },
   {
@@ -2748,7 +2742,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "aquatic_aura",
     "name": "Aquatic Aura",
-    "name_vi": "Hào quang biển cả",
+    "name_vi": "Hào Quang Đại Dương",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -2762,7 +2756,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang biển cả mát lạnh cho người mặc, thú cưng và đạn bắn ra.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang bọt nước biển cả xanh ngọc mát lạnh bao quanh người mặc, thú cưng và các phát bắn.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:aquatic_aura\":1}}] 1"
   },
   {
@@ -2770,11 +2764,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "armor_piercing",
     "name": "Armor Piercing",
-    "name_vi": "Armor Piercing",
+    "name_vi": "Tiễn Xuyên Giáp",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 5,
-    "anvil_cost": 6,
+    "max_level": 3,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -2784,8 +2778,8 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Mũi tên bắn ra bỏ qua toàn bộ chỉ số giáp phòng ngự của mục tiêu, gây sát thương chuẩn.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:armor_piercing\":5}}] 1"
+    "description": "Mũi tên bắn ra có khả năng xuyên phá cực cao, bỏ qua toàn bộ chỉ số giáp phòng ngự của mục tiêu để gây sát thương chuẩn trực tiếp vào máu.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:armor_piercing\":3}}] 1"
   },
   {
     "id": "enchantplus:elytra/armored",
@@ -2858,7 +2852,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "boltbringer",
     "name": "Boltbringer",
-    "name_vi": "Kẻ phóng sét",
+    "name_vi": "Kẻ Phóng Sét",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -2871,8 +2865,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Vũ khí cận chiến",
-    "description": "Triệu hồi sấm sét giáng xuống khi tấn công trúng mục tiêu sau khi rơi tự do ít nhất 8 khối.",
+    "supported_display": "Chùy (Mace)",
+    "description": "Quyền năng sấm sét của Chùy: Khi tấn công mục tiêu sau khi rơi tự do ít nhất 8 khối, triệu hồi một tia sét sấm sét giáng thẳng từ trên trời xuống nạn nhân.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:boltbringer\":1}}] 1"
   },
   {
@@ -2880,11 +2874,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "bounce",
     "name": "Bounce",
-    "name_vi": "Nảy",
+    "name_vi": "Bật Nảy Tưng Bừng",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
-    "anvil_cost": 8,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -2894,8 +2888,8 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Giúp người mặc nảy tưng bừng trên mọi bề mặt tiếp đất.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bounce\":3}}] 1"
+    "description": "Độ đàn hồi cực đại: Biến đôi giày thành đệm lò xo, giúp người mặc nảy tưng bừng liên tục trên mọi bề mặt tiếp đất mà không bị mất đà di chuyển.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bounce\":1}}] 1"
   },
   {
     "id": "enchantsplus:breeze_burst",
@@ -2968,11 +2962,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "bulletproof",
     "name": "Bulletproof",
-    "name_vi": "Chống đạn",
+    "name_vi": "Áo Chống Đạn Shulker",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
-    "anvil_cost": 5,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -2982,7 +2976,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Áo giáp thân",
-    "description": "Có 10% cơ hội miễn nhiễm và triệt tiêu hoàn toàn đạn của Shulker.",
+    "description": "Lớp phòng thủ đặc chế: Có 10% cơ hội miễn nhiễm và triệt tiêu hoàn toàn sát thương cũng như hiệu ứng bay lơ lửng từ đạn của Shulker.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bulletproof\":1}}] 1"
   },
   {
@@ -2990,7 +2984,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "bunny_hop",
     "name": "Bunny Hop",
-    "name_vi": "Nhảy cao",
+    "name_vi": "Nhảy Thỏ Siêu Phàm",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 3,
@@ -3004,7 +2998,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Quần",
-    "description": "Tăng cường sức bật, cho phép người mang nhảy cao hơn bình thường.",
+    "description": "Gia tăng mạnh mẽ lực bật nhảy (+0.15 + 0.1/cấp độ) và tăng độ cao rơi an toàn, cho phép người chơi dễ dàng nhảy vượt qua các chướng ngại vật cao.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bunny_hop\":3}}] 1"
   },
   {
@@ -3057,7 +3051,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "cleansing",
     "name": "Cleansing",
-    "name_vi": "Thanh tẩy",
+    "name_vi": "Khiên Thanh Tẩy",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3070,8 +3064,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Khiên",
-    "description": "Giơ khiên lên giúp thanh tẩy toàn bộ hiệu ứng trên người, chỉ tiêu hao độ bền khi có hiệu ứng bị xóa.",
+    "supported_display": "Khiên chắn",
+    "description": "Giơ khiên lên đỡ đòn sẽ ngay lập tức thanh tẩy sạch toàn bộ mọi hiệu ứng bất lợi trên cơ thể. Độ bền của khiên chỉ bị tiêu hao khi có hiệu ứng được xóa bỏ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:cleansing\":1}}] 1"
   },
   {
@@ -3090,10 +3084,11 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:valid_for_crab_claw",
     "gear_categories": [
-      "other"
+      "tool",
+      "weapon"
     ],
-    "supported_display": "Trang bị đặc biệt",
-    "description": "Mở rộng tầm với tương tác với các khối và thực thể xung quanh.",
+    "supported_display": "Vũ khí & Công cụ",
+    "description": "Sải tay siêu dài: Gia tăng đáng kể phạm vi tương tác với khối và tầm với đánh trúng thực thể từ khoảng cách xa hơn bình thường.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crab_claw\":3}}] 1"
   },
   {
@@ -3101,10 +3096,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "crispbread",
     "name": "Crispbread",
-    "name_vi": "Bánh mì mỏng",
+    "name_vi": "Bánh Mì Giòn Tan",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -3114,9 +3109,9 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Khiên",
-    "description": "Cung cấp hiệu ứng Độ no (Saturation) liên tục, không bao giờ lo đói bụng.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crispbread\":3}}] 1"
+    "supported_display": "Mũ",
+    "description": "Cung cấp hiệu ứng Độ No (Saturation) vĩnh viễn khi đội mũ, duy trì thanh thức ăn luôn đầy ắp mà không cần phải mang theo đồ ăn.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crispbread\":1}}] 1"
   },
   {
     "id": "enchantplus:sword/critical",
@@ -3145,7 +3140,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "crop_dance",
     "name": "Crop Dance",
-    "name_vi": "Nhảy để trồng trọt",
+    "name_vi": "Vũ Điệu Mùa Màng",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3159,7 +3154,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Ngồi xổm nhấp nhô liên tục (Sneak-Dance) để kích thích cây trồng xung quanh lớn nhanh vượt bậc.",
+    "description": "Ngồi xổm nhấp nhô liên tục (Sneak-Dance) nhịp nhàng sẽ kích thích toàn bộ cây trồng trong khu vực xung quanh phát triển nhanh vượt bậc như được bón bột xương.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crop_dance\":1}}] 1"
   },
   {
@@ -3167,7 +3162,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "dark_infused",
     "name": "Dark Infused",
-    "name_vi": "Dark Infused",
+    "name_vi": "Tẩm Độc Bóng Tối",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 3,
@@ -3182,7 +3177,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Kiếm & Cung",
-    "description": "Tẩm độc tố bóng tối gây mù lòa và làm giảm thị lực đối thủ bị trúng đòn.",
+    "description": "Tẩm độc tố bóng tối hắc ám: Đòn đánh hoặc mũi tên trúng đích gây hiệu ứng Bóng Tối (Darkness) và Mù Lòa, cướp đi thị lực của đối thủ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:dark_infused\":3}}] 1"
   },
   {
@@ -3190,11 +3185,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "darkness_alloy",
     "name": "Darkness Alloy",
-    "name_vi": "Hợp kim bóng tối",
+    "name_vi": "Hợp Kim Bóng Tối",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -3204,8 +3199,8 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Áo giáp thân",
-    "description": "Gây hiệu ứng Bóng tối (Darkness) lên kẻ tấn công bạn.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:darkness_alloy\":3}}] 1"
+    "description": "Phản xạ hắc ám: Kẻ địch khi tấn công cận chiến trúng bạn sẽ ngay lập tức bị nhiễm hiệu ứng Bóng Tối (Darkness) trong vài giây.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:darkness_alloy\":1}}] 1"
   },
   {
     "id": "enchantplus:sword/dimensional_hit",
@@ -3234,11 +3229,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "dismount",
     "name": "Dismount",
-    "name_vi": "Hất Ngựa",
+    "name_vi": "Hất Tung Khỏi Ngựa",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -3248,8 +3243,8 @@ window.ALL_ENCHANTMENTS = [
       "ranged",
       "weapon"
     ],
-    "supported_display": "Đinh ba",
-    "description": "Đòn đâm đinh ba/thương kích lực đánh bật đối thủ văng khỏi thú cưỡi của chúng.",
+    "supported_display": "Đinh ba / Thương",
+    "description": "Đòn đâm kích lực từ Đinh ba hoặc Thương sẽ đánh văng đối thủ rớt khỏi lưng ngựa hoặc thú cưỡi của chúng ngay tức thì.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:dismount\":1}}] 1"
   },
   {
@@ -3279,7 +3274,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "echoing_aura",
     "name": "Echoing Aura",
-    "name_vi": "Hào quang vang vọng",
+    "name_vi": "Hào Quang Vang Vọng",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3293,7 +3288,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang vang vọng Deep Dark kỳ bí cho người mặc và thú cưng.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang sóng âm Deep Dark xanh đen kỳ bí bao quanh người mặc và thú cưng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:echoing_aura\":1}}] 1"
   },
   {
@@ -3301,7 +3296,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "electric_walker",
     "name": "Electric Walker",
-    "name_vi": "Chân điện",
+    "name_vi": "Bước Chân Phát Điện",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3315,7 +3310,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Kích hoạt truyền tín hiệu đá đỏ trong thoáng chốc khi bước chân qua các đường dây Redstone.",
+    "description": "Chân truyền điện: Tự động kích hoạt cấp nguồn năng lượng đá đỏ Redstone trong thoáng chốc mỗi khi bước chân qua các đường dây đá đỏ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:electric_walker\":1}}] 1"
   },
   {
@@ -3326,7 +3321,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Dệt Than Hồng",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -3337,15 +3332,15 @@ window.ALL_ENCHANTMENTS = [
       "universal"
     ],
     "supported_display": "Mọi trang bị có độ bền",
-    "description": "Từ từ tự động sửa chữa độ bền của trang bị khi người chơi ở trong chiều không gian Nether.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:emberweave\":3}}] 1"
+    "description": "Hấp thu nhiệt lượng: Trang bị tự động hồi phục độ bền dần dần theo thời gian khi người chơi ở trong chiều không gian Nether.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:emberweave\":1}}] 1"
   },
   {
     "id": "enchantencore:enchanted_aura",
     "namespace": "enchantencore",
     "raw_name": "enchanted_aura",
     "name": "Enchanted Aura",
-    "name_vi": "Hào quang nâng cấp",
+    "name_vi": "Hào Quang Cổ Thuật",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3359,7 +3354,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang ma pháp lấp lánh cho người mặc và thú cưng.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang ký tự ma thuật lấp lánh như bàn phù phép bao quanh người mặc và thú cưng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:enchanted_aura\":1}}] 1"
   },
   {
@@ -3367,7 +3362,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "ender_aura",
     "name": "Ender Aura",
-    "name_vi": "Hào quang của Ender",
+    "name_vi": "Hào Quang Ender",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3381,7 +3376,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang Ender tím huyền ảo cho người mặc và đạn bắn ra.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang bụi sao tím huyền bí của thế giới Ender bao quanh người mặc và các phát bắn.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ender_aura\":1}}] 1"
   },
   {
@@ -3389,7 +3384,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "ender_shot",
     "name": "Ender Shot",
-    "name_vi": "Phát bắn dịch chuyển",
+    "name_vi": "Tiễn Dịch Chuyển",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3403,7 +3398,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Dịch chuyển ngẫu nhiên kẻ địch bị bắn trúng ra các vị trí khác trên bề mặt đất.",
+    "description": "Mũi tên dịch chuyển: Bắn trúng kẻ địch sẽ ngẫu nhiên dịch chuyển tức thời mục tiêu đến một vị trí khác trên bề mặt đất, phá vỡ đội hình đối phương.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ender_shot\":1}}] 1"
   },
   {
@@ -3411,11 +3406,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "enderscape",
     "name": "Enderscape",
-    "name_vi": "Dịch chuyển tức thời",
+    "name_vi": "Thoát Biến Ender",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -3424,8 +3419,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Quần",
-    "description": "Tự động dịch chuyển tức thời ngẫu nhiên trong bán kính 5 khối khi bị trúng đòn.",
+    "supported_display": "Mũ, Áo, Quần, Giày",
+    "description": "Tự động dịch chuyển tức thời ngẫu nhiên người chơi trong bán kính 5 khối mỗi khi phải chịu sát thương trên mặt đất để thoát khỏi combo đòn đánh.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:enderscape\":1}}] 1"
   },
   {
@@ -3476,8 +3471,8 @@ window.ALL_ENCHANTMENTS = [
     "id": "enchantencore:evokers_wrath",
     "namespace": "enchantencore",
     "raw_name": "evokers_wrath",
-    "name": "Evokers Wrath",
-    "name_vi": "Sự phẫn nộ của kẻ triệu hồi",
+    "name": "Evoker's Wrath",
+    "name_vi": "Phẫn Nộ Kẻ Triệu Hồi",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3491,7 +3486,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Mũi tên triệu hồi những chiếc hàm sắt Evoker Fangs trồi lên cắn xé kẻ thù tại điểm rơi.",
+    "description": "Mũi tên ma thuật: Khi tiếp đất hoặc trúng đích, triệu hồi những chiếc hàm sắt Evoker Fangs cắn xé dữ dội mọi kẻ thù tại điểm nổ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:evokers_wrath\":1}}] 1"
   },
   {
@@ -3609,7 +3604,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "flaming_aura",
     "name": "Flaming Aura",
-    "name_vi": "Hào quang lửa",
+    "name_vi": "Hào Quang Rực Lửa",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3623,7 +3618,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang rực lửa thẩm mỹ cho người mặc và mũi tên bắn ra.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang tàn tro và tia lửa bốc cháy bao quanh người mặc, thú cưng và mũi tên.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:flaming_aura\":1}}] 1"
   },
   {
@@ -3631,7 +3626,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "forge_shot",
     "name": "Forge Shot",
-    "name_vi": "Cú bắn của thợ rèn",
+    "name_vi": "Tiễn Đe Sắt",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3645,7 +3640,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Mũi tên triệu hồi Đe sắt rơi từ trên trời xuống đè bẹp kẻ thù tại điểm tiếp đất.",
+    "description": "Mũi tên công nghệ: Triệu hồi một chiếc Đe sắt nặng nề từ trên trời rơi thẳng xuống đè bẹp kẻ thù tại điểm mũi tên chạm đích.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:forge_shot\":1}}] 1"
   },
   {
@@ -3697,11 +3692,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "gallop",
     "name": "Gallop",
-    "name_vi": "Gallop",
+    "name_vi": "Phi Nước Đại (Gallop)",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 3,
-    "anvil_cost": 8,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -3710,8 +3705,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "mount"
     ],
-    "supported_display": "Yên cương & Thú cưỡi",
-    "description": "Thú cưỡi được gia tăng đáng kể tốc độ di chuyển khi có người cưỡi.",
+    "supported_display": "Yên ngựa",
+    "description": "Gia tăng mạnh mẽ tốc độ phi nước đại của thú cưỡi khi có người chơi ngồi trên yên, giúp vượt địa hình chớp nhoáng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:gallop\":3}}] 1"
   },
   {
@@ -3741,7 +3736,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "gluttony",
     "name": "Gluttony",
-    "name_vi": "Háu ăn",
+    "name_vi": "Háu Ăn Hút Vật Phẩm",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 5,
@@ -3754,8 +3749,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "tool"
     ],
-    "supported_display": "Công cụ",
-    "description": "Tự động hút toàn bộ vật phẩm rơi trên đất trong bán kính 2–10 khối về phía người chơi.",
+    "supported_display": "Cúp & Công cụ",
+    "description": "Tạo lực hút cực mạnh: Tự động gom và hút toàn bộ các khối tài nguyên rơi trên đất trong bán kính 2–10 khối về thẳng túi đồ của người chơi.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:gluttony\":5}}] 1"
   },
   {
@@ -3763,10 +3758,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "grass_walker",
     "name": "Grass Walker",
-    "name_vi": "Chân cỏ",
+    "name_vi": "Bước Chân Ươm Mầm",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 2,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -3777,8 +3772,8 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Tự động biến các khối đất thô thành khối cỏ xanh tươi khi bước chân qua.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:grass_walker\":2}}] 1"
+    "description": "Phục hồi thiên nhiên: Tự động biến các khối đất thô dưới chân thành khối cỏ xanh tươi tốt khi người chơi bước qua.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:grass_walker\":1}}] 1"
   },
   {
     "id": "nova_structures:gravity",
@@ -3807,29 +3802,30 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "growth",
     "name": "Growth",
-    "name_vi": "To lớn",
+    "name_vi": "Thể Tạng Khổng Lồ",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 5,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:valid_for_growth",
     "gear_categories": [
-      "other"
+      "armor",
+      "mount"
     ],
-    "supported_display": "Trang bị đặc biệt",
-    "description": "Tăng kích thước cơ thể và độ cao bước chân tự động vượt qua các khối cao.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:growth\":5}}] 1"
+    "supported_display": "Giáp thân, Giáp ngựa, Giáp sói, Elytra",
+    "description": "Tăng kích thước cơ thể của người chơi hoặc thú cưỡi lên to lớn hơn, gia tăng tầm với tương tác và khả năng bước qua khối cao.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:growth\":1}}] 1"
   },
   {
     "id": "enchantencore:guard",
     "namespace": "enchantencore",
     "raw_name": "guard",
     "name": "Guard",
-    "name_vi": "Guard",
+    "name_vi": "Đỡ Đòn Cận Chiến",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3840,10 +3836,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:can_block",
     "gear_categories": [
-      "armor"
+      "weapon"
     ],
-    "supported_display": "Khiên",
-    "description": "Cho phép dùng vũ khí/vật phẩm này để chặn các đòn đánh cận chiến như khiên.",
+    "supported_display": "Kiếm, Rìu, Chùy",
+    "description": "Cho phép sử dụng trực tiếp kiếm, rìu hoặc chùy để chặn đỡ các đòn đánh cận chiến của kẻ thù như một chiếc khiên chắn.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:guard\":1}}] 1"
   },
   {
@@ -3851,7 +3847,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "handyman",
     "name": "Handyman",
-    "name_vi": "Kẻ chăm chỉ",
+    "name_vi": "Thợ Thủ Công",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3865,7 +3861,7 @@ window.ALL_ENCHANTMENTS = [
       "universal"
     ],
     "supported_display": "Mọi trang bị có độ bền",
-    "description": "Giữ cho chi phí sửa chữa trên đe sắt luôn ở mức thấp, không bao giờ bị 'Quá đắt!'.",
+    "description": "Giữ cho chi phí sửa chữa và kết hợp trên Đe sắt luôn ở mức tối thiểu, ngăn chặn hoàn toàn tình trạng trang bị bị rơi vào trạng thái 'Quá đắt!' (Too Expensive!).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:handyman\":1}}] 1"
   },
   {
@@ -3895,10 +3891,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "hardened",
     "name": "Hardened",
-    "name_vi": "Cứng cáp",
+    "name_vi": "Khiên Cứng Cáp",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 5,
+    "max_level": 3,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -3908,20 +3904,20 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Khiên",
-    "description": "Gia tăng thêm các điểm giáp phòng ngự bảo hộ khi trang bị.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hardened\":5}}] 1"
+    "supported_display": "Khiên chắn",
+    "description": "Gia cố thêm +2 điểm giáp phòng ngự (+1 điểm/cấp độ) cho nhân vật mỗi khi cầm khiên chắn trên tay.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hardened\":3}}] 1"
   },
   {
     "id": "enchantencore:harpoon",
     "namespace": "enchantencore",
     "raw_name": "harpoon",
     "name": "Harpoon",
-    "name_vi": "Lao Móc",
+    "name_vi": "Lưỡi Lao Harpoon",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -3931,8 +3927,8 @@ window.ALL_ENCHANTMENTS = [
       "tool"
     ],
     "supported_display": "Cần câu",
-    "description": "Kéo giật mạnh quái vật bị dính lưỡi câu về thẳng vị trí của bạn.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:harpoon\":3}}] 1"
+    "description": "Móc câu biến thành mũi lao kéo giật: Kéo văng quái vật hoặc thực thể bị dính câu thẳng về vị trí của bạn với tốc độ cao.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:harpoon\":1}}] 1"
   },
   {
     "id": "enchantsplus:harvest",
@@ -3961,21 +3957,22 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "haste",
     "name": "Haste",
-    "name_vi": "Nhanh nhẹn",
+    "name_vi": "Đào Nhanh Cấp Tốc",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 3,
-    "anvil_cost": 1,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#minecraft:enchantable/mining",
     "gear_categories": [
-      "tool"
+      "tool",
+      "weapon"
     ],
-    "supported_display": "Cúp",
-    "description": "Cung cấp hiệu ứng Đào Nhanh (Haste) liên tục khi cầm trên tay chính.",
+    "supported_display": "Cúp & Vũ khí",
+    "description": "Ban hiệu ứng Đào Nhanh (Haste) liên tục khi cầm công cụ hoặc vũ khí trên tay chính, giúp gia tăng mạnh mẽ tốc độ khai khoáng và tốc độ xuất chiêu.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:haste\":3}}] 1"
   },
   {
@@ -3983,7 +3980,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "heavenly_aura",
     "name": "Heavenly Aura",
-    "name_vi": "Hào quang thiên đường",
+    "name_vi": "Hào Quang Thiên Đường",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -3997,7 +3994,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang thiên đường thánh thiện thẩm mỹ cho người mặc và thú cưng.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang thiên thần trắng vàng thánh thiện bao quanh người mặc và thú cưng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:heavenly_aura\":1}}] 1"
   },
   {
@@ -4041,7 +4038,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Đòn đánh làm hao mòn thanh thức ăn của đối thủ.",
+    "description": "Đòn tấn công cận chiến làm ăn mòn và rút cạn thanh thức ăn của đối thủ, gây hiệu ứng Đói Cồn Cào.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hunger_aspect\":2}}] 1"
   },
   {
@@ -4049,11 +4046,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "hurricane",
     "name": "Hurricane",
-    "name_vi": "Hurricane",
+    "name_vi": "Cuồng Phong Bão Tố",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -4063,19 +4060,19 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Tạo ra cơn cuồng phong lốc xoáy thổi bay mọi thực thể xung quanh điểm trúng tên.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hurricane\":3}}] 1"
+    "description": "Mũi tên tạo ra một cơn bão lốc xoáy cực mạnh tại điểm tiếp đất, thổi bay và hất tung toàn bộ kẻ địch lân cận lên trời.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hurricane\":1}}] 1"
   },
   {
     "id": "enchantencore:ice_alloy",
     "namespace": "enchantencore",
     "raw_name": "ice_alloy",
     "name": "Ice Alloy",
-    "name_vi": "Hợp băng",
+    "name_vi": "Hợp Kim Băng Giá",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -4085,8 +4082,8 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Áo giáp thân",
-    "description": "Đóng băng kẻ tấn công bạn khi bạn nhận phải sát thương.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ice_alloy\":3}}] 1"
+    "description": "Khi bạn bị tấn công cận chiến, kẻ tấn công sẽ ngay lập tức bị đóng băng giá lạnh và giảm mạnh tốc độ di chuyển.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ice_alloy\":1}}] 1"
   },
   {
     "id": "enchantsplus:ice_aspect",
@@ -4137,10 +4134,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "illumination",
     "name": "Illumination",
-    "name_vi": "Phát quang",
+    "name_vi": "Hào Quang Soi Sáng",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -4151,19 +4148,19 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tự động thắp sáng rực rỡ khu vực xung quanh khi đầu không bị che chắn.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:illumination\":3}}] 1"
+    "description": "Tự động phát ra ánh sáng rực rỡ soi tỏ các hang động và khu vực xung quanh người chơi khi đầu không bị khối che chắn.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:illumination\":1}}] 1"
   },
   {
     "id": "enchantencore:impale_rush",
     "namespace": "enchantencore",
     "raw_name": "impale_rush",
     "name": "Impale Rush",
-    "name_vi": "Xung Phong Xuyên Thấu",
+    "name_vi": "Đâm Ghim Giữ Chân",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -4173,16 +4170,16 @@ window.ALL_ENCHANTMENTS = [
       "ranged",
       "weapon"
     ],
-    "supported_display": "Đinh ba",
-    "description": "Đòn đâm thương/đinh ba kích lực ghim chặt và làm bất động mục tiêu tại chỗ.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:impale_rush\":3}}] 1"
+    "supported_display": "Đinh ba / Thương",
+    "description": "Đòn đâm kích lực từ Đinh ba hoặc Thương sẽ ghim chặt và làm bất động mục tiêu tại chỗ trong vài giây.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:impale_rush\":1}}] 1"
   },
   {
     "id": "enchantencore:implosion",
     "namespace": "enchantencore",
     "raw_name": "implosion",
     "name": "Implosion",
-    "name_vi": "Phát nổ",
+    "name_vi": "Hút Nổ Đảo Nghịch",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4193,10 +4190,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:all_bows",
     "gear_categories": [
-      "ranged"
+      "armor"
     ],
-    "supported_display": "Cung & Nỏ",
-    "description": "Kéo các quái vật thù địch trong bán kính 5 khối lại gần nhau.",
+    "supported_display": "Áo giáp thân",
+    "description": "Tạo lực hút chân không: Hút toàn bộ quái vật thù địch trong bán kính 5 khối lại gần nhau để tung đòn quét diện rộng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:implosion\":1}}] 1"
   },
   {
@@ -4218,7 +4215,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Đòn đánh triệu hồi Silverfish ký sinh tấn công mục tiêu.",
+    "description": "Đòn chém triệu hồi bầy Silverfish ký sinh chui ra cắn xé kẻ địch bị trúng đòn.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:infested_aspect\":2}}] 1"
   },
   {
@@ -4248,11 +4245,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "invisibility_cloak",
     "name": "Invisibility Cloak",
-    "name_vi": "Áo choàng tàng hình",
+    "name_vi": "Áo Choàng Tàng Hình",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -4261,8 +4258,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Giày",
-    "description": "Ngồi xổm (sneak) sẽ kích hoạt khả năng tàng hình hoàn toàn.",
+    "supported_display": "Áo giáp thân",
+    "description": "Khi ngồi xổm (sneak), kích hoạt khả năng tàng hình hoàn toàn, giúp người chơi biến mất khỏi tầm mắt của quái vật.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:invisibility_cloak\":1}}] 1"
   },
   {
@@ -4270,11 +4267,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "jousting",
     "name": "Jousting",
-    "name_vi": "Đấu Thương",
+    "name_vi": "Kỵ Sĩ Thương Thuật",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 3,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -4284,8 +4281,8 @@ window.ALL_ENCHANTMENTS = [
       "ranged",
       "weapon"
     ],
-    "supported_display": "Đinh ba",
-    "description": "Gây thêm lượng lớn sát thương khi đang cưỡi thú chiến đấu.",
+    "supported_display": "Đinh ba / Thương",
+    "description": "Gia tăng một lượng lớn sát thương cho các đòn đâm thương khi bạn đang cưỡi ngựa hoặc thú chiến đấu lao vào kẻ thù.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:jousting\":3}}] 1"
   },
   {
@@ -4359,7 +4356,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "leaf_jumper",
     "name": "Leaf Jumper",
-    "name_vi": "Leaf Jumper",
+    "name_vi": "Bước Nhảy Lá Cây",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4373,7 +4370,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Tạo ra các khối lá cây tạm thời dưới chân khi nhảy đúp trên không trung.",
+    "description": "Tạo ra các khối lá cây tạm thời nâng đỡ dưới chân khi nhảy đúp trên không trung, cho phép leo lên cao mà không cần bắc khối.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:leaf_jumper\":1}}] 1"
   },
   {
@@ -4381,7 +4378,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "leech",
     "name": "Leech",
-    "name_vi": "Hút máu",
+    "name_vi": "Hút Huyết Sinh Mệnh",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4394,8 +4391,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Vũ khí cận chiến",
-    "description": "Hồi phục một phần máu cho bản thân mỗi khi đánh trúng kẻ địch.",
+    "supported_display": "Kiếm, Rìu, Chùy, Đinh ba",
+    "description": "Hồi phục sinh lực cho bản thân: Nhận hiệu ứng Hồi Máu (Regeneration I-II) trong 3 giây mỗi khi tấn công trúng sinh vật.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:leech\":1}}] 1"
   },
   {
@@ -4417,7 +4414,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Đòn đánh khiến đối thủ bị lơ lửng bay lên không trung.",
+    "description": "Đòn chém cận chiến khiến đối thủ bị dính hiệu ứng Bay Lơ Lửng (Levitation), trôi dạt lên không trung mất kiểm soát.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:levitation_aspect\":2}}] 1"
   },
   {
@@ -4447,7 +4444,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "lingering",
     "name": "Lingering",
-    "name_vi": "Kéo dài",
+    "name_vi": "Tiễn Khói Kéo Dài",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4461,7 +4458,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Để lại một đám mây thuốc kéo dài mang hiệu ứng của mũi tên khi trúng khối.",
+    "description": "Mũi tên thuốc khi bắn trúng khối sẽ để lại một đám mây thuốc kéo dài (Lingering Cloud) mang đầy đủ hiệu ứng của mũi tên đó.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:lingering\":1}}] 1"
   },
   {
@@ -4491,7 +4488,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "lovely_aura",
     "name": "Lovely Aura",
-    "name_vi": "Hào quang tình yêu",
+    "name_vi": "Hào Quang Tình Yêu",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4505,7 +4502,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang tình yêu lãng mạn thẩm mỹ cho người mặc và thú cưng.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang trái tim hồng lãng mạn bao quanh người mặc, thú cưng và mũi tên.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:lovely_aura\":1}}] 1"
   },
   {
@@ -4513,7 +4510,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "lush_aura",
     "name": "Lush Aura",
-    "name_vi": "Hào quang tươi mới",
+    "name_vi": "Hào Quang Rừng Tươi",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4527,7 +4524,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang cây cỏ tươi tốt thẩm mỹ cho người mặc và thú cưng.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang hoa lá thiên nhiên tươi tốt bao quanh người mặc và thú cưng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:lush_aura\":1}}] 1"
   },
   {
@@ -4535,10 +4532,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "magma_walker",
     "name": "Magma Walker",
-    "name_vi": "Chân dung nham",
+    "name_vi": "Bước Đi Trên Magma",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 2,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -4549,15 +4546,15 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Biến dung nham dưới chân thành khối Magma tạm thời để bước qua.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:magma_walker\":2}}] 1"
+    "description": "Tự động biến mặt dung nham dưới chân thành các khối Magma tạm thời để người chơi đi bộ an toàn băng qua biển dung nham.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:magma_walker\":1}}] 1"
   },
   {
     "id": "enchantencore:meteor",
     "namespace": "enchantencore",
     "raw_name": "meteor",
     "name": "Meteor",
-    "name_vi": "Thiên Thạch",
+    "name_vi": "Sao Băng Rơi",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4570,8 +4567,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Vũ khí cận chiến",
-    "description": "Đòn đập Chùy sau khi rơi ít nhất 8 khối sẽ thiêu đốt cả khu vực xung quanh thành biển lửa.",
+    "supported_display": "Chùy (Mace)",
+    "description": "Đòn đập Chùy Smash Attack từ độ cao ít nhất 8 khối sẽ thiêu đốt cả khu vực xung quanh điểm va chạm thành một biển lửa rực cháy.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:meteor\":1}}] 1"
   },
   {
@@ -4626,7 +4623,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Dệt Ánh Trăng",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -4637,15 +4634,15 @@ window.ALL_ENCHANTMENTS = [
       "universal"
     ],
     "supported_display": "Mọi trang bị có độ bền",
-    "description": "Từ từ tự động sửa chữa độ bền trang bị dưới bầu trời đêm quang đãng.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:moonweave\":3}}] 1"
+    "description": "Hấp thu ánh trăng: Trang bị tự động sửa chữa và hồi phục độ bền dần dần khi người chơi ở dưới bầu trời ban đêm.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:moonweave\":1}}] 1"
   },
   {
     "id": "enchantencore:muddy_aura",
     "namespace": "enchantencore",
     "raw_name": "muddy_aura",
     "name": "Muddy Aura",
-    "name_vi": "Hào quang bùn",
+    "name_vi": "Hào Quang Bùn Lầy",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4659,7 +4656,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang bùn lầy thẩm mỹ cho người mặc và thú cưng.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang đất bùn đầm lầy độc đáo bao quanh người mặc và thú cưng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:muddy_aura\":1}}] 1"
   },
   {
@@ -4689,7 +4686,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "ominous_aura",
     "name": "Ominous Aura",
-    "name_vi": "Hào quang quan ngại",
+    "name_vi": "Hào Quang Điềm Gở",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4703,7 +4700,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang điềm gở hắc ám thẩm mỹ cho người mặc và thú cưng.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang hắc ám điềm gở sương mù xanh xám bao quanh người mặc và thú cưng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ominous_aura\":1}}] 1"
   },
   {
@@ -4711,7 +4708,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "ominous_healing",
     "name": "Ominous Healing",
-    "name_vi": "Điềm Gở Hồi Phục",
+    "name_vi": "Hồi Máu Nguy Cấp",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4724,8 +4721,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Khiên",
-    "description": "Có 60% cơ hội tạo đám mây thuốc hồi máu khi máu giảm xuống dưới 3.5 tim.",
+    "supported_display": "Áo giáp thân",
+    "description": "Có 60% cơ hội tự động tạo đám mây thuốc Hồi Máu kéo dài tại vị trí của bạn mỗi khi máu tụt xuống dưới 3.5 trái tim.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ominous_healing\":1}}] 1"
   },
   {
@@ -4733,7 +4730,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "ominous_rain",
     "name": "Ominous Rain",
-    "name_vi": "Mưa điềm gở",
+    "name_vi": "Mưa Tên Điềm Gở",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4744,11 +4741,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "#minecraft:enchantable/trident",
     "gear_categories": [
-      "ranged",
-      "weapon"
+      "ranged"
     ],
-    "supported_display": "Đinh ba",
-    "description": "Triệu hồi cơn mưa đạn ma quái giáng xuống điểm rơi của mũi tên.",
+    "supported_display": "Cung & Nỏ",
+    "description": "Triệu hồi một cơn mưa đạn ma quái giáng xuống khu vực điểm rơi của mũi tên, gây sát thương liên hoàn.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ominous_rain\":1}}] 1"
   },
   {
@@ -4770,7 +4766,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Đòn đánh khiến mục tiêu phát nổ ra Slime khi bị tiêu diệt.",
+    "description": "Đòn đánh khiến đối thủ bị nhiễm hiệu ứng Oozing: Khi mục tiêu bị tiêu diệt, phát nổ sinh ra bầy Slime.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:oozing_aspect\":2}}] 1"
   },
   {
@@ -4800,10 +4796,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "pacifier",
     "name": "Pacifier",
-    "name_vi": "Bình Định Diện",
+    "name_vi": "Bình Định Dịu Giọng",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -4814,15 +4810,15 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Làm dịu cơn thịnh nộ và làm mất trạng thái hung hãn của đối thủ.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pacifier\":3}}] 1"
+    "description": "Làm dịu cơn thịnh nộ: Đòn đánh tước đi trạng thái hung hãn và thù địch của quái vật, khiến chúng ngừng tấn công bạn.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pacifier\":1}}] 1"
   },
   {
     "id": "enchantencore:pale_aura",
     "namespace": "enchantencore",
     "raw_name": "pale_aura",
     "name": "Pale Aura",
-    "name_vi": "Hào quang mờ nhạt",
+    "name_vi": "Hào Quang Nhợt Nhạt",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4836,7 +4832,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang nhợt nhạt u ám thẩm mỹ cho người mặc và thú cưng.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang sương khói mờ ảo u sầu bao quanh người mặc và thú cưng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pale_aura\":1}}] 1"
   },
   {
@@ -4844,29 +4840,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "pickpocket",
     "name": "Pickpocket",
-    "name_vi": "Pickpocket",
-    "tier": "rare",
-    "tier_order": 3,
-    "max_level": 1,
-    "anvil_cost": 5,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Áo giáp thân",
-    "description": "Nhấp chuột phải vào dân làng để móc túi cướp lấy vật phẩm trong túi đồ của họ.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pickpocket\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:ping_tag",
-    "namespace": "enchantencore",
-    "raw_name": "ping_tag",
-    "name": "Ping Tag",
-    "name_vi": "Chỉ điểm",
+    "name_vi": "Móc Túi Dân Làng",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -4875,12 +4849,35 @@ window.ALL_ENCHANTMENTS = [
     "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:chest_armor",
+    "gear_categories": [
+      "tool",
+      "weapon"
+    ],
+    "supported_display": "Vũ khí & Dụng cụ",
+    "description": "Kỹ năng đạo tặc: Cho phép nhấp chuột phải vào dân làng để móc túi cướp lấy các vật phẩm quý giá trong kho đồ của họ.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pickpocket\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:ping_tag",
+    "namespace": "enchantencore",
+    "raw_name": "ping_tag",
+    "name": "Ping Tag",
+    "name_vi": "Báo Hiệu Trúng Đích",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:valid_for_ping_tag",
     "gear_categories": [
-      "other"
+      "ranged"
     ],
-    "supported_display": "Trang bị đặc biệt",
-    "description": "Phát ra âm thanh 'ping' rõ ràng thông báo mỗi khi có kẻ địch bị trúng đòn từ xa.",
+    "supported_display": "Cung & Nỏ",
+    "description": "Hỗ trợ xạ thủ: Phát ra âm thanh 'ping' rõ ràng báo hiệu ngay lập tức mỗi khi bắn trúng một kẻ địch từ khoảng cách cực xa.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ping_tag\":1}}] 1"
   },
   {
@@ -4902,7 +4899,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Đòn đánh gây trúng độc nặng (Poison) lên mục tiêu.",
+    "description": "Đòn đánh cận chiến tẩm độc tố kịch độc, gây hiệu ứng Trúng Độc (Poison) ăn mòn máu đối thủ liên tục.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:poison_aspect\":2}}] 1"
   },
   {
@@ -4910,7 +4907,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "poison_infused",
     "name": "Poison Infused",
-    "name_vi": "Poison Infused",
+    "name_vi": "Tiễn Kịch Độc",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 3,
@@ -4924,7 +4921,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Mũi tên tẩm độc gây trúng độc nặng lên kẻ địch trúng phải.",
+    "description": "Mũi tên tẩm độc tố cực mạnh, gây trúng độc nặng và làm suy giảm thể lực của mọi kẻ địch bị bắn trúng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:poison_infused\":3}}] 1"
   },
   {
@@ -4932,11 +4929,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "poppy_peace",
     "name": "Poppy Peace",
-    "name_vi": "Poppy Peace",
+    "name_vi": "Sứ Giả Hòa Bình",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -4946,7 +4943,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Lan tỏa thông điệp hòa bình, khiến quái vật trung lập không chủ động tấn công người chơi.",
+    "description": "Lan tỏa thông điệp hòa bình: Khiến toàn bộ các quái vật và sinh vật trung lập không bao giờ chủ động tấn công người chơi.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:poppy_peace\":1}}] 1"
   },
   {
@@ -4976,11 +4973,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "propeller",
     "name": "Propeller",
-    "name_vi": "Cánh quạt",
+    "name_vi": "Cánh Quạt Động Lực",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 5,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -4989,8 +4986,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "mount"
     ],
-    "supported_display": "Yên cương & Thú cưỡi",
-    "description": "Gia tăng tốc độ bay lượn trên không của Ghast Vui Vẻ.",
+    "supported_display": "Yên Ghast Vui Vẻ",
+    "description": "Gia tăng mạnh mẽ tốc độ bay lượn trên không trung của Ghast Vui Vẻ khi người chơi cưỡi.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:propeller\":5}}] 1"
   },
   {
@@ -5020,11 +5017,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "purify_water",
     "name": "Purify Water",
-    "name_vi": "Purify Water",
+    "name_vi": "Thanh Lọc Nước",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -5034,7 +5031,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Thanh lọc nước xung quanh và làm tan biến các hiệu ứng xấu dưới nước.",
+    "description": "Thanh lọc toàn bộ vùng nước xung quanh và làm tan biến sạch sẽ các hiệu ứng bất lợi khi bơi lội dưới nước.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:purify_water\":1}}] 1"
   },
   {
@@ -5064,10 +5061,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "rainweave",
     "name": "Rainweave",
-    "name_vi": "Dệt Mưa",
+    "name_vi": "Dệt Mưa Giông",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -5078,8 +5075,8 @@ window.ALL_ENCHANTMENTS = [
       "universal"
     ],
     "supported_display": "Mọi trang bị có độ bền",
-    "description": "Từ từ hồi phục độ bền cho trang bị khi có mưa rơi trên người bạn.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rainweave\":3}}] 1"
+    "description": "Trang bị tự động hấp thụ nước mưa để phục hồi độ bền liên tục mỗi khi có mưa rơi trên người chơi.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rainweave\":1}}] 1"
   },
   {
     "id": "enchantplus:sword/reach",
@@ -5130,7 +5127,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "rejuvenation",
     "name": "Rejuvenation",
-    "name_vi": "Rejuvenation",
+    "name_vi": "Cường Hóa Sinh Lực",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 4,
@@ -5143,8 +5140,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Khiên",
-    "description": "Gia tăng lượng máu tối đa của nhân vật.",
+    "supported_display": "Khiên chắn",
+    "description": "Tăng thêm lượng máu tối đa (+1 điểm, tức nửa tim máu đỏ mỗi cấp độ) cho nhân vật khi cầm khiên chắn trên tay.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rejuvenation\":4}}] 1"
   },
   {
@@ -5152,11 +5149,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "replenish",
     "name": "Replenish",
-    "name_vi": "Bổ sung",
+    "name_vi": "Bổ Sung Đạn Dược",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
-    "anvil_cost": 8,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -5166,7 +5163,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung & Nỏ",
-    "description": "Có 50% cơ hội không tiêu tốn đạn (mũi tên thường, mũi tên thuốc, tên quang phổ, pháo hoa) khi bắn.",
+    "description": "Có 50% cơ hội không tiêu tốn đạn khi bắn (áp dụng cho cả mũi tên thường, mũi tên thuốc, tên quang phổ và pháo hoa).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:replenish\":1}}] 1"
   },
   {
@@ -5219,30 +5216,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "sacrifice",
     "name": "Sacrifice",
-    "name_vi": "Sacrifice",
-    "tier": "rare",
-    "tier_order": 3,
-    "max_level": 5,
-    "anvil_cost": 1,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_enchantable_wolf_armor",
-    "gear_categories": [
-      "armor",
-      "mount"
-    ],
-    "supported_display": "Mũ, Giáp, Quần, Giày, Yên cương & Thú cưỡi",
-    "description": "Tự động sửa chữa độ bền cho công cụ/giáp khi người mặc bị quái vật đánh trúng.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sacrifice\":5}}] 1"
-  },
-  {
-    "id": "enchantencore:scent",
-    "namespace": "enchantencore",
-    "raw_name": "scent",
-    "name": "Scent",
-    "name_vi": "Scent",
+    "name_vi": "Hi Sinh Phục Hồi",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 3,
@@ -5251,14 +5225,35 @@ window.ALL_ENCHANTMENTS = [
     "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_enchantable_wolf_armor",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "Mọi trang bị có độ bền",
+    "description": "Tự động sửa chữa phục hồi độ bền cho công cụ và giáp trụ mỗi khi người mặc bị quái vật tấn công trúng.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sacrifice\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:scent",
+    "namespace": "enchantencore",
+    "raw_name": "scent",
+    "name": "Scent",
+    "name_vi": "Khứu Giác Săn Mồi",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": false,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
     "supported_items": "minecraft:wolf_armor",
     "gear_categories": [
-      "armor",
       "mount"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày, Yên cương & Thú cưỡi",
-    "description": "Chó sói cưng di chuyển sẽ làm các sinh vật xung quanh phát sáng lộ diện.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scent\":3}}] 1"
+    "supported_display": "Giáp Sói",
+    "description": "Chó sói cưng di chuyển sẽ tự động đánh hơi và làm toàn bộ sinh vật cũng như kẻ thù xung quanh phát sáng lộ diện.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scent\":1}}] 1"
   },
   {
     "id": "enchantsplus:scorch_walker",
@@ -5287,7 +5282,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "seeker",
     "name": "Seeker",
-    "name_vi": "Kẻ kiếm tìm",
+    "name_vi": "Mắt Soi Tìm Kiếm",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 3,
@@ -5301,7 +5296,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Làm nổi bật và phát sáng các vật phẩm rơi rải rác trên đất trong bán kính 4–12 khối.",
+    "description": "Tự động làm nổi bật và phát sáng các vật phẩm rơi rải rác trên mặt đất trong bán kính 4–12 khối xung quanh người đội mũ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:seeker\":3}}] 1"
   },
   {
@@ -5331,22 +5326,23 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "shrinkage",
     "name": "Shrinkage",
-    "name_vi": "Shrinkage",
+    "name_vi": "Thể Tạng Thu Nhỏ",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 5,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:valid_for_shrinkage",
     "gear_categories": [
-      "other"
+      "armor",
+      "mount"
     ],
-    "supported_display": "Trang bị đặc biệt",
-    "description": "Thu nhỏ kích thước cơ thể và giảm chiều cao bước chân.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shrinkage\":5}}] 1"
+    "supported_display": "Giáp thân, Giáp ngựa, Giáp sói, Elytra",
+    "description": "Thu nhỏ kích thước cơ thể của người chơi hoặc thú cưỡi, giúp luồn lách qua các khe hẹp dễ dàng.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shrinkage\":1}}] 1"
   },
   {
     "id": "minecraft:silk_touch",
@@ -5389,7 +5385,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Đòn đánh làm giảm tốc độ di chuyển của kẻ địch.",
+    "description": "Đòn tấn công cận chiến làm giảm mạnh tốc độ di chuyển của đối thủ trong vài giây (Slowness).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:slowness_aspect\":2}}] 1"
   },
   {
@@ -5397,7 +5393,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "sparking_aura",
     "name": "Sparking Aura",
-    "name_vi": "Hào quang pháo hoa",
+    "name_vi": "Hào Quang Pháo Hoa",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -5411,7 +5407,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang tia lửa thẩm mỹ cho người mặc và thú cưng.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang các tia pháo hoa rực sáng lung linh bao quanh người mặc và các phát đạn.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sparking_aura\":1}}] 1"
   },
   {
@@ -5463,7 +5459,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "sticky_aura",
     "name": "Sticky Aura",
-    "name_vi": "Hào quang bám dính",
+    "name_vi": "Hào Quang Bám Dính",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -5477,7 +5473,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang dính bết thẩm mỹ cho người mặc và thú cưng.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang giọt chất nhầy Slime xanh lá bao quanh người mặc và thú cưng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sticky_aura\":1}}] 1"
   },
   {
@@ -5485,11 +5481,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "sting",
     "name": "Sting",
-    "name_vi": "Sting",
+    "name_vi": "Bầy Ong Cuồng Nộ",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -5498,8 +5494,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Kiếm & Vũ khí cận chiến",
-    "description": "Khiến ong xung quanh phát điên và đồng loạt lao vào tấn công kẻ địch bị trúng đòn.",
+    "supported_display": "Kiếm & Vũ khí",
+    "description": "Khiến đàn ong xung quanh nổi giận và đồng loạt lao vào tấn công kẻ địch bị bạn chém trúng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sting\":1}}] 1"
   },
   {
@@ -5529,7 +5525,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "strafe",
     "name": "Strafe",
-    "name_vi": "Strafe",
+    "name_vi": "Lướt Nhanh Strafe",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -5543,7 +5539,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Chạy nước rút kết hợp phím Trái/Phải giúp lướt nhanh thần tốc sang hướng đó.",
+    "description": "Kỹ năng né đòn: Khi đang chạy nước rút, nhấn tổ hợp phím Trái hoặc Phải cho phép bạn lướt nhanh thần tốc sang hướng đó.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:strafe\":1}}] 1"
   },
   {
@@ -5573,10 +5569,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "summer_walker",
     "name": "Summer Walker",
-    "name_vi": "Summer Walker",
+    "name_vi": "Bước Đi Mùa Hè",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 2,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -5587,8 +5583,8 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Giày",
-    "description": "Tự động làm tan chảy các lớp tuyết dày dưới chân khi bước qua.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:summer_walker\":2}}] 1"
+    "description": "Ấm áp dưới chân: Tự động làm tan chảy các lớp tuyết dày dưới chân khi bước qua, ngăn không bị lún tuyết.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:summer_walker\":1}}] 1"
   },
   {
     "id": "enchantencore:sunweave",
@@ -5598,7 +5594,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Dệt Ánh Dương",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -5609,19 +5605,19 @@ window.ALL_ENCHANTMENTS = [
       "universal"
     ],
     "supported_display": "Mọi trang bị có độ bền",
-    "description": "Từ từ tự động hồi phục độ bền cho trang bị dưới bầu trời ban ngày thông thoáng.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sunweave\":3}}] 1"
+    "description": "Trang bị tự động hồi phục độ bền dần dần khi người chơi đứng dưới ánh sáng mặt trời tự nhiên ban ngày.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sunweave\":1}}] 1"
   },
   {
     "id": "enchantencore:surfer",
     "namespace": "enchantencore",
     "raw_name": "surfer",
     "name": "Surfer",
-    "name_vi": "Lướt Sóng",
+    "name_vi": "Lướt Sóng Hải Mã",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 3,
-    "anvil_cost": 8,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -5630,8 +5626,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "mount"
     ],
-    "supported_display": "Yên cương & Thú cưỡi",
-    "description": "Gia tăng đáng kể tốc độ bơi lội dưới nước cho sinh vật và thú cưỡi.",
+    "supported_display": "Yên ngựa",
+    "description": "Gia tăng đáng kể tốc độ bơi lội dưới nước cho thú cưỡi khi có người chơi ngồi trên lưng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:surfer\":3}}] 1"
   },
   {
@@ -5661,7 +5657,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "switch",
     "name": "Switch",
-    "name_vi": "Switch",
+    "name_vi": "Hoán Đổi Vị Trí",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -5672,11 +5668,11 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "#minecraft:enchantable/trident",
     "gear_categories": [
-      "ranged",
-      "weapon"
+      "weapon",
+      "ranged"
     ],
-    "supported_display": "Đinh ba",
-    "description": "Hoán đổi vị trí tức thời với kẻ địch bị bắn trúng.",
+    "supported_display": "Kiếm & Cung",
+    "description": "Hoán đổi vị trí tức thời giữa bạn và kẻ địch bị trúng đòn, tạo ra những pha xử lý bất ngờ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:switch\":1}}] 1"
   },
   {
@@ -5706,11 +5702,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "thorns_protection",
     "name": "Thorns Protection",
-    "name_vi": "Thorns Protection",
+    "name_vi": "Chống Gai Nhọn",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 4,
-    "anvil_cost": 4,
+    "anvil_cost": 2,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -5719,8 +5715,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày",
-    "description": "Bảo vệ giảm sát thương phản lại từ Gai nhọn, bụi dâu ngọt và cây xương rồng.",
+    "supported_display": "Mũ, Áo, Quần, Giày",
+    "description": "Bảo vệ giảm sát thương phản lại từ phù phép Gai Nhọn (Thorns), bụi dâu ngọt và cây xương rồng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:thorns_protection\":4}}] 1"
   },
   {
@@ -5731,7 +5727,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Dệt Thủy Triều",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "tradeable": false,
@@ -5742,8 +5738,8 @@ window.ALL_ENCHANTMENTS = [
       "universal"
     ],
     "supported_display": "Mọi trang bị có độ bền",
-    "description": "Từ từ tự động sửa chữa độ bền cho trang bị khi lặn ngập dưới nước.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:tideweave\":3}}] 1"
+    "description": "Trang bị tự động sửa chữa và hồi phục độ bền liên tục khi người chơi lặn ngập dưới nước.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:tideweave\":1}}] 1"
   },
   {
     "id": "enchantsplus:toxic",
@@ -5816,7 +5812,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "trial_aura",
     "name": "Trial Aura",
-    "name_vi": "Hào quang thử nghiệm",
+    "name_vi": "Hào Quang Thử Nghiệm",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 1,
@@ -5830,7 +5826,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Tạo hiệu ứng hào quang thử thách Trial Chamber cho người mặc và thú cưng.",
+    "description": "Hiệu ứng thẩm mỹ: Hào quang ngọn lửa đồng và gió xoáy Trial Chamber bao quanh người mặc và thú cưng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:trial_aura\":1}}] 1"
   },
   {
@@ -5852,7 +5848,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Cánh Elytra",
-    "description": "Lướt cánh qua dung nham, khối magma hoặc lửa sẽ tạo luồng khí nóng nâng bạn bay vút lên cao.",
+    "description": "Khí động học nhiệt: Lướt cánh Elytra qua dung nham, khối magma hoặc ngọn lửa sẽ tạo luồng khí nóng đẩy bạn vút lên không trung.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:updraft\":3}}] 1"
   },
   {
@@ -5940,7 +5936,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Đòn đánh gây hiệu ứng Yếu đuối (Weakness), làm giảm sát thương đối thủ.",
+    "description": "Đòn đánh làm suy giảm thể lực của kẻ thù, gây hiệu ứng Suy Yếu (Weakness) làm giảm sát thương gây ra của đối thủ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:weakness_aspect\":2}}] 1"
   },
   {
@@ -5962,7 +5958,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Đòn đánh bẫy kẻ thù trong mạng nhện tơ khi di chuyển.",
+    "description": "Đòn đánh bẫy kẻ thù trong mạng nhện tơ khi di chuyển, làm giảm tốc độ chạy của mục tiêu.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:weaving_aspect\":2}}] 1"
   },
   {
@@ -5970,7 +5966,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "web_infused",
     "name": "Web Infused",
-    "name_vi": "Web Infused",
+    "name_vi": "Tiễn Giăng Tơ Nhện",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 3,
@@ -5984,7 +5980,7 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Cung",
-    "description": "Tạo ra mạng nhện giữ chân kẻ thù ngay tại điểm mũi tên tiếp đất.",
+    "description": "Mũi tên tạo ra mạng nhện giữ chân kẻ thù ngay tại điểm mũi tên tiếp đất, làm chúng bất động.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:web_infused\":3}}] 1"
   },
   {
@@ -6028,7 +6024,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Đòn đánh tạo sóng gió đẩy văng mục tiêu ra xa.",
+    "description": "Đòn đánh tạo ra các đợt sóng gió bão hất văng mục tiêu ra xa, giải tỏa vòng vây kẻ địch.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wind_aspect\":2}}] 1"
   },
   {
@@ -6072,7 +6068,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Kiếm & Chùy",
-    "description": "Đòn đánh làm mục tiêu bị héo mòn máu liên tục bởi hiệu ứng Wither.",
+    "description": "Đòn đánh truyền chất độc Héo Mòn Wither, ăn mòn máu mục tiêu liên tục theo thời gian.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wither_aspect\":2}}] 1"
   },
   {
@@ -6102,7 +6098,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "wither_infused",
     "name": "Wither Infused",
-    "name_vi": "Wither Infused",
+    "name_vi": "Tẩm Độc Wither",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 3,
@@ -6113,11 +6109,11 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:all_bows",
     "gear_categories": [
-      "weapon",
-      "ranged"
+      "ranged",
+      "weapon"
     ],
-    "supported_display": "Kiếm & Cung",
-    "description": "Tẩm nguyền rủa Wither ăn mòn máu của mục tiêu liên tục theo thời gian.",
+    "supported_display": "Cung & Kiếm",
+    "description": "Tẩm nguyền rủa Wither ăn mòn máu của mục tiêu liên tục theo thời gian khi bị trúng đòn.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wither_infused\":3}}] 1"
   },
   {
@@ -6125,11 +6121,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "wither_protection",
     "name": "Wither Protection",
-    "name_vi": "Wither Protection",
+    "name_vi": "Kháng Hiệu Ứng Wither",
     "tier": "rare",
     "tier_order": 3,
     "max_level": 4,
-    "anvil_cost": 4,
+    "anvil_cost": 2,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -6138,8 +6134,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày",
-    "description": "Bảo vệ giảm mạnh sát thương từ hiệu ứng Héo Mòn Wither và đầu lâu quỷ Wither.",
+    "supported_display": "Mũ, Áo, Quần, Giày",
+    "description": "Giảm mạnh sát thương nhận vào từ hiệu ứng Héo Mòn Wither và các quả cầu đầu lâu của quỷ Wither.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wither_protection\":4}}] 1"
   },
   {
@@ -6169,11 +6165,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "yoink",
     "name": "Yoink",
-    "name_vi": "Chôm",
+    "name_vi": "Móc Câu Cướp Đoạt (Yoink)",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
-    "anvil_cost": 2,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -6183,8 +6179,8 @@ window.ALL_ENCHANTMENTS = [
       "tool"
     ],
     "supported_display": "Cần câu",
-    "description": "Giật dây câu trúng quái vật sẽ cướp lấy vật phẩm nó đang cầm trên tay.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:yoink\":3}}] 1"
+    "description": "Kỹ năng câu cướp: Giật lưỡi câu trúng quái vật sẽ cướp lấy trực tiếp vật phẩm hoặc vũ khí nó đang cầm trên tay đưa về túi đồ bạn.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:yoink\":1}}] 1"
   },
   {
     "id": "minecraft:aqua_affinity",
@@ -6235,11 +6231,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "bane_of_bosses",
     "name": "Bane of Bosses",
-    "name_vi": "Tai ương của trùm",
+    "name_vi": "Tai Ương Của Trùm",
     "tier": "common",
     "tier_order": 4,
     "max_level": 5,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": true,
     "tradeable": true,
     "loot": true,
@@ -6248,8 +6244,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Vũ khí cận chiến",
-    "description": "Gây thêm lượng lớn sát thương lên các sinh vật trùm (Ender Dragon, Wither, Warden, Elder Guardian...).",
+    "supported_display": "Kiếm, Rìu, Chùy, Đinh ba",
+    "description": "Tăng lượng lớn sát thương gây ra lên toàn bộ các sinh vật Boss trùm sừng sỏ (Ender Dragon, Wither, Warden, Elder Guardian...). Hiệu quả tăng mạnh theo từng cấp độ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_bosses\":5}}] 1"
   },
   {
@@ -6257,7 +6253,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "bane_of_endborn",
     "name": "Bane of Endborn",
-    "name_vi": "Tai ương của thế giới End",
+    "name_vi": "Tai Ương Thế Giới End",
     "tier": "common",
     "tier_order": 4,
     "max_level": 5,
@@ -6270,8 +6266,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Vũ khí cận chiến",
-    "description": "Tăng mạnh sát thương lên các loài sinh vật thế giới End (Enderman, Shulker, Endermite).",
+    "supported_display": "Kiếm, Rìu, Chùy, Đinh ba",
+    "description": "Gia tăng mạnh mẽ sát thương gây ra lên các sinh vật thuộc chiều không gian The End (Enderman, Shulker, Endermite), giúp tiêu diệt chúng nhanh chóng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_endborn\":5}}] 1"
   },
   {
@@ -6279,7 +6275,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "bane_of_netherborn",
     "name": "Bane of Netherborn",
-    "name_vi": "Tai ương của địa ngục",
+    "name_vi": "Tai Ương Địa Ngục",
     "tier": "common",
     "tier_order": 4,
     "max_level": 5,
@@ -6292,8 +6288,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Vũ khí cận chiến",
-    "description": "Tăng mạnh sát thương lên các sinh vật thế giới Địa Ngục Nether (Blaze, Ghast, Piglin, Wither Skeleton...).",
+    "supported_display": "Kiếm, Rìu, Chùy, Đinh ba",
+    "description": "Gia tăng mạnh mẽ sát thương gây ra lên các sinh vật thuộc Địa Ngục Nether (Quỷ Lửa Blaze, Ghast, Piglin, Wither Skeleton, Magma Cube...).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_netherborn\":5}}] 1"
   },
   {
@@ -6301,7 +6297,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "bane_of_raiders",
     "name": "Bane of Raiders",
-    "name_vi": "Tai ương của kẻ xâm lược",
+    "name_vi": "Tai Ương Kẻ Đột Kích",
     "tier": "common",
     "tier_order": 4,
     "max_level": 5,
@@ -6314,8 +6310,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Vũ khí cận chiến",
-    "description": "Tăng mạnh sát thương lên các quái vật trong sự kiện đột kích làng (Raid: Pillager, Ravager, Evoker...).",
+    "supported_display": "Kiếm, Rìu, Chùy, Đinh ba",
+    "description": "Tăng sát thương chí mạng lên các quái vật trong sự kiện Đột kích làng (Raid: Pillager, Vindicator, Ravager, Evoker, Witch).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_raiders\":5}}] 1"
   },
   {
@@ -6345,11 +6341,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "creeper_alloy",
     "name": "Creeper Alloy",
-    "name_vi": "Hợp kim nổ",
+    "name_vi": "Hợp Kim Creeper",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 3,
-    "anvil_cost": 1,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": true,
     "tradeable": true,
     "loot": true,
@@ -6359,19 +6355,19 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Áo giáp thân",
-    "description": "Kích nổ một vụ nổ lớn xung quanh khi bạn phải chịu sát thương.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_alloy\":3}}] 1"
+    "description": "Lớp giáp tích nổ: Kích hoạt một vụ nổ sóng xung kích lớn xung quanh người chơi mỗi khi bạn bị kẻ địch tấn công trúng, đẩy lùi mọi kẻ địch.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_alloy\":1}}] 1"
   },
   {
     "id": "enchantencore:cushion",
     "namespace": "enchantencore",
     "raw_name": "cushion",
     "name": "Cushion",
-    "name_vi": "Cushion",
+    "name_vi": "Đệm Giảm Chấn",
     "tier": "common",
     "tier_order": 4,
     "max_level": 4,
-    "anvil_cost": 1,
+    "anvil_cost": 4,
     "table": true,
     "tradeable": true,
     "loot": true,
@@ -6381,7 +6377,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Cánh Elytra",
-    "description": "Bảo vệ giảm sát thương khi lỡ va chạm vào tường ở tốc độ cao bằng Elytra.",
+    "description": "Lớp đệm hấp thụ động năng: Giảm tới 7.5 điểm (+7.5 mỗi cấp) sát thương va chạm khi bay với tốc độ cao đâm vào vách tường bằng Cánh Elytra.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:cushion\":4}}] 1"
   },
   {
@@ -6389,7 +6385,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "day_protection",
     "name": "Day Protection",
-    "name_vi": "Bảo vệ ban ngày",
+    "name_vi": "Bảo Vệ Ban Ngày",
     "tier": "common",
     "tier_order": 4,
     "max_level": 4,
@@ -6402,8 +6398,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày",
-    "description": "Bảo vệ giảm sát thương gấp đôi so với phù phép thường nhưng chỉ có tác dụng vào ban ngày.",
+    "supported_display": "Mũ, Áo, Quần, Giày",
+    "description": "Bảo vệ ánh dương: Cung cấp chỉ số giảm sát thương nhận vào cao gấp đôi so với phù phép Bảo Vệ (Protection) thường, nhưng chỉ kích hoạt vào ban ngày ở Overworld.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:day_protection\":4}}] 1"
   },
   {
@@ -6455,7 +6451,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "end_protection",
     "name": "End Protection",
-    "name_vi": "Bảo vệ End",
+    "name_vi": "Bảo Vệ Thế Giới End",
     "tier": "common",
     "tier_order": 4,
     "max_level": 4,
@@ -6468,8 +6464,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày",
-    "description": "Bảo vệ giảm sát thương gấp đôi so với phù phép thường nhưng chỉ kích hoạt khi ở The End.",
+    "supported_display": "Mũ, Áo, Quần, Giày",
+    "description": "Giảm sát thương nhận vào gấp đôi so với phù phép Bảo Vệ thường, nhưng chỉ kích hoạt khi người chơi ở trong chiều không gian The End.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:end_protection\":4}}] 1"
   },
   {
@@ -6477,11 +6473,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "fire_alloy",
     "name": "Fire Alloy",
-    "name_vi": "Hợp kim lửa",
+    "name_vi": "Hợp Kim Lửa",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 3,
-    "anvil_cost": 1,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": true,
     "tradeable": true,
     "loot": true,
@@ -6491,8 +6487,8 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Áo giáp thân",
-    "description": "Thiêu đốt kẻ tấn công khi bạn nhận sát thương.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:fire_alloy\":3}}] 1"
+    "description": "Áo giáp rực lửa: Thiêu đốt bất kỳ kẻ địch nào dám tung đòn tấn công cận chiến vào người mặc.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:fire_alloy\":1}}] 1"
   },
   {
     "id": "minecraft:fire_aspect",
@@ -6677,11 +6673,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "magic_protection",
     "name": "Magic Protection",
-    "name_vi": "Magic Protection",
+    "name_vi": "Bảo Vệ Ma Pháp",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 5,
-    "anvil_cost": 2,
+    "max_level": 4,
+    "anvil_cost": 4,
     "table": true,
     "tradeable": true,
     "loot": true,
@@ -6690,16 +6686,16 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Mũ, Áo giáp, Quần, Giày",
-    "description": "Giảm mạnh sát thương từ các nguồn phép thuật (Potion, Poison, Wither, Evoker Fangs).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:magic_protection\":5}}] 1"
+    "supported_display": "Mũ, Áo, Quần, Giày",
+    "description": "Giảm mạnh sát thương gánh chịu từ toàn bộ các nguồn phép thuật (Thuốc Độc, Ngộ Độc, Héo Mòn Wither, Răng Nanh Evoker Fangs, Ma Thuật Guardian).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:magic_protection\":4}}] 1"
   },
   {
     "id": "enchantencore:nether_protection",
     "namespace": "enchantencore",
     "raw_name": "nether_protection",
     "name": "Nether Protection",
-    "name_vi": "Bảo vệ khỏi địa ngục",
+    "name_vi": "Bảo Vệ Địa Ngục",
     "tier": "common",
     "tier_order": 4,
     "max_level": 4,
@@ -6712,8 +6708,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày",
-    "description": "Giảm sát thương gấp đôi so với phù phép thường nhưng chỉ có tác dụng trong Nether.",
+    "supported_display": "Mũ, Áo, Quần, Giày",
+    "description": "Giảm sát thương nhận vào gấp đôi so với phù phép Bảo Vệ thường, nhưng chỉ kích hoạt khi người chơi ở trong chiều không gian Nether.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:nether_protection\":4}}] 1"
   },
   {
@@ -6721,7 +6717,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "night_protection",
     "name": "Night Protection",
-    "name_vi": "Night Protection",
+    "name_vi": "Bảo Vệ Ban Đêm",
     "tier": "common",
     "tier_order": 4,
     "max_level": 4,
@@ -6734,8 +6730,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày",
-    "description": "Bảo vệ giảm sát thương gấp đôi so với phù phép thường nhưng chỉ có tác dụng vào ban đêm.",
+    "supported_display": "Mũ, Áo, Quần, Giày",
+    "description": "Cung cấp khả năng giảm sát thương nhận vào gấp đôi so với phù phép thường, nhưng chỉ kích hoạt vào ban đêm ở Overworld.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:night_protection\":4}}] 1"
   },
   {
@@ -6743,22 +6739,23 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "phantom_menace",
     "name": "Phantom Menace",
-    "name_vi": "Hiểm Họa Bóng Ma",
+    "name_vi": "Khắc Chế Bóng Ma",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 5,
-    "anvil_cost": 4,
+    "max_level": 3,
+    "anvil_cost": 2,
     "table": true,
     "tradeable": true,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:all_bows",
     "gear_categories": [
+      "weapon",
       "ranged"
     ],
-    "supported_display": "Cung & Nỏ",
-    "description": "Tăng lượng lớn sát thương gây ra lên bóng ma Phantom.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:phantom_menace\":5}}] 1"
+    "supported_display": "Vũ khí & Cung",
+    "description": "Gia tăng một lượng lớn sát thương chí mạng khi tấn công các bóng ma Phantom đang bay lượn trên bầu trời đêm.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:phantom_menace\":3}}] 1"
   },
   {
     "id": "minecraft:piercing",
@@ -6787,11 +6784,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "plow",
     "name": "Plow",
-    "name_vi": "Cày Cuốc",
+    "name_vi": "Cày Bừa Ruộng Đồng",
     "tier": "common",
     "tier_order": 4,
     "max_level": 3,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": true,
     "tradeable": true,
     "loot": true,
@@ -6801,7 +6798,7 @@ window.ALL_ENCHANTMENTS = [
       "tool"
     ],
     "supported_display": "Cuốc làm nông",
-    "description": "Cày xới đất trên một diện tích rộng lớn chỉ bằng một cú nhấp chuột trái.",
+    "description": "Cày xới đất trên diện tích cực rộng chỉ bằng một cú nhấp chuột trái, chuẩn bị đất canh tác nhanh gấp hàng chục lần.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:plow\":3}}] 1"
   },
   {
@@ -6875,7 +6872,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "pufferfish",
     "name": "Pufferfish",
-    "name_vi": "Pufferfish",
+    "name_vi": "Cá Nóc Độc Thủy",
     "tier": "common",
     "tier_order": 4,
     "max_level": 1,
@@ -6886,11 +6883,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "#minecraft:enchantable/trident",
     "gear_categories": [
-      "ranged",
       "weapon"
     ],
-    "supported_display": "Đinh ba",
-    "description": "Có cơ hội triệu hồi cá nóc độc khi mục tiêu bị tấn công đang ở dưới nước.",
+    "supported_display": "Kiếm & Vũ khí",
+    "description": "Có cơ hội triệu hồi một con cá nóc độc phát nổ gai độc khi mục tiêu bị tấn công đang ở dưới môi trường nước.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pufferfish\":1}}] 1"
   },
   {
@@ -6942,22 +6938,23 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "rabbit_foot",
     "name": "Rabbit Foot",
-    "name_vi": "Rabbit Foot",
+    "name_vi": "Chân Thỏ May Mắn",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 5,
-    "anvil_cost": 1,
+    "max_level": 3,
+    "anvil_cost": 4,
     "table": true,
     "tradeable": true,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#minecraft:foot_armor",
     "gear_categories": [
-      "armor"
+      "armor",
+      "tool"
     ],
-    "supported_display": "Giày",
-    "description": "Gia tăng chỉ số may mắn tổng thể của người chơi.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rabbit_foot\":5}}] 1"
+    "supported_display": "Giày & Cần câu",
+    "description": "Gia tăng chỉ số May Mắn (Luck) tổng thể của người chơi khi câu cá và mở rương kho báu trong hầm ngục.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rabbit_foot\":3}}] 1"
   },
   {
     "id": "minecraft:respiration",
@@ -7008,11 +7005,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "safe_landing",
     "name": "Safe Landing",
-    "name_vi": "Safe Landing",
+    "name_vi": "Tiếp Đất An Toàn",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 5,
-    "anvil_cost": 1,
+    "max_level": 3,
+    "anvil_cost": 4,
     "table": true,
     "tradeable": true,
     "loot": true,
@@ -7022,29 +7019,29 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Cánh Elytra",
-    "description": "Tăng độ cao tiếp đất an toàn, giảm thiểu tối đa sát thương khi rơi.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:safe_landing\":5}}] 1"
+    "description": "Gia tăng độ cao tiếp đất an toàn thêm +2 khối (+2.5 khối mỗi cấp), giảm thiểu tối đa sát thương khi rơi tiếp đất.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:safe_landing\":3}}] 1"
   },
   {
     "id": "enchantencore:scholar_of_blocks",
     "namespace": "enchantencore",
     "raw_name": "scholar_of_blocks",
     "name": "Scholar of Blocks",
-    "name_vi": "Scholar of Blocks",
+    "name_vi": "Học Giả Khai Khoáng",
     "tier": "common",
     "tier_order": 4,
     "max_level": 3,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": true,
     "tradeable": true,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:no_weapons",
     "gear_categories": [
-      "weapon"
+      "tool"
     ],
-    "supported_display": "Vũ khí cận chiến",
-    "description": "Thu được thêm nhiều điểm kinh nghiệm XP hơn khi đập phá các khối tài nguyên.",
+    "supported_display": "Cúp & Công cụ",
+    "description": "Gia tăng lượng điểm kinh nghiệm XP thu được mỗi khi đào phá các khối khoáng sản tài nguyên.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scholar_of_blocks\":3}}] 1"
   },
   {
@@ -7052,11 +7049,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "scholar_of_fishing",
     "name": "Scholar of Fishing",
-    "name_vi": "Scholar of Fishing",
+    "name_vi": "Học Giả Câu Cá",
     "tier": "common",
     "tier_order": 4,
     "max_level": 3,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": true,
     "tradeable": true,
     "loot": true,
@@ -7066,7 +7063,7 @@ window.ALL_ENCHANTMENTS = [
       "tool"
     ],
     "supported_display": "Cần câu",
-    "description": "Tăng lượng điểm kinh nghiệm XP thu được khi câu cá.",
+    "description": "Gia tăng đáng kể lượng điểm kinh nghiệm XP nhận được mỗi khi câu trúng cá hoặc kéo được kho báu từ dưới nước.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scholar_of_fishing\":3}}] 1"
   },
   {
@@ -7074,11 +7071,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "scholar_of_mobs",
     "name": "Scholar of Mobs",
-    "name_vi": "Scholar of Mobs",
+    "name_vi": "Học Giả Săn Quái",
     "tier": "common",
     "tier_order": 4,
     "max_level": 3,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
     "table": true,
     "tradeable": true,
     "loot": true,
@@ -7087,8 +7084,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Vũ khí cận chiến",
-    "description": "Gia tăng lượng điểm kinh nghiệm XP nhận được khi tiêu diệt quái vật và sinh vật.",
+    "supported_display": "Kiếm & Vũ khí",
+    "description": "Gia tăng mạnh mẽ lượng điểm kinh nghiệm XP rơi ra mỗi khi bạn tiêu diệt thành công một sinh vật hoặc quái vật.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scholar_of_mobs\":3}}] 1"
   },
   {
@@ -7118,10 +7115,10 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "sea_breeze",
     "name": "Sea Breeze",
-    "name_vi": "Gió biển",
+    "name_vi": "Gió Biển Đẩy Lùi",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": true,
     "tradeable": true,
@@ -7133,8 +7130,8 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Đinh ba",
-    "description": "Tạo luồng gió bão hất văng kẻ địch ra xa khi bị trúng đinh ba ném.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sea_breeze\":3}}] 1"
+    "description": "Đinh ba ném trúng mục tiêu sẽ tạo ra luồng gió bão Breeze hất văng kẻ địch ra xa một khoảng cách lớn.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sea_breeze\":1}}] 1"
   },
   {
     "id": "minecraft:sharpness",
@@ -7387,7 +7384,7 @@ window.ALL_ENCHANTMENTS = [
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7397,7 +7394,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Gây hiệu ứng Mù lòa (Blindness) làm tối đen tầm nhìn của người mặc.",
+    "description": "Lời nguyền bóng tối: Khi đội mũ vào người, liên tục áp đặt hiệu ứng Mù Lòa (Blindness), thu hẹp tầm nhìn của người chơi xuống chỉ còn vài bước chân.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:blindness_curse\":1}}] 1"
   },
   {
@@ -7449,11 +7446,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "breeze_curse",
     "name": "Curse of Breeze",
-    "name_vi": "Lời nguyền gió",
+    "name_vi": "Lời Nguyền Gió Lốc",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7463,7 +7460,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Vũ khí cận chiến",
-    "description": "Kích hoạt luồng gió bão hất tung đối thủ khi tấn công.",
+    "description": "Lời nguyền gió nghịch: Mỗi đòn tấn công sẽ kích hoạt luồng gió bão Breeze hất văng mục tiêu nhưng đồng thời đẩy bật cả người chơi ra xa, làm gián đoạn combo.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:breeze_curse\":1}}] 1"
   },
   {
@@ -7471,11 +7468,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "caravan_curse",
     "name": "Curse of Caravan",
-    "name_vi": "Lời nguyền của đoàn lữ hành",
+    "name_vi": "Lời Nguyền Đoàn Lữ Hành",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7484,8 +7481,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày",
-    "description": "Làm người chơi bị giảm tốc độ di chuyển khi đang dắt động vật bằng dây thừng.",
+    "supported_display": "Mũ, Áo, Quần, Giày",
+    "description": "Lời nguyền nặng nề: Khiến người chơi bị làm chậm tốc độ di chuyển nghiêm trọng mỗi khi dắt động vật hoặc sinh vật bằng dây thừng (Lead).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:caravan_curse\":1}}] 1"
   },
   {
@@ -7516,11 +7513,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "color_blindness_curse",
     "name": "Curse of Color Blindness",
-    "name_vi": "Curse of Color Blindness",
+    "name_vi": "Lời Nguyền Mù Màu",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7530,7 +7527,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Khiến tầm nhìn của người mặc chuyển sang đơn sắc mù màu.",
+    "description": "Lời nguyền quang học: Khiến tầm nhìn của người mặc chuyển sang chế độ đơn sắc trắng đen hoàn toàn khi trang bị mũ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:color_blindness_curse\":1}}] 1"
   },
   {
@@ -7588,7 +7585,7 @@ window.ALL_ENCHANTMENTS = [
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7598,7 +7595,7 @@ window.ALL_ENCHANTMENTS = [
       "universal"
     ],
     "supported_display": "Mọi trang bị có độ bền",
-    "description": "Từ từ làm hao mòn độ bền của vật phẩm khi ở dưới trời mưa hoặc lặn dưới nước.",
+    "description": "Làm rỉ sét và ăn mòn trang bị: Độ bền của vật phẩm bị giảm dần liên tục theo thời gian mỗi khi người chơi đứng dưới trời mưa hoặc bơi dưới nước.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:corrosion_curse\":1}}] 1"
   },
   {
@@ -7606,11 +7603,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "crank_curse",
     "name": "Curse of Crank",
-    "name_vi": "Lời nguyền kì lạ",
+    "name_vi": "Lời Nguyền Bất Động",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7619,8 +7616,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày",
-    "description": "Gây sát thương đau đớn lên người mặc nếu đứng yên một chỗ quá lâu không di chuyển.",
+    "supported_display": "Áo giáp thân",
+    "description": "Lời nguyền buộc phải di chuyển: Người mặc sẽ liên tục nhận sát thương đau đớn nếu đứng yên một chỗ quá lâu mà không bước đi.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crank_curse\":1}}] 1"
   },
   {
@@ -7628,11 +7625,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "creeper_vision_curse",
     "name": "Curse of Creeper Vision",
-    "name_vi": "Curse of Creeper Vision",
+    "name_vi": "Lời Nguyền Mắt Creeper",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7642,7 +7639,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Khiến tầm nhìn của người mặc chuyển sang góc nhìn màu xanh lá ma mị của Creeper.",
+    "description": "Khiến toàn bộ tầm nhìn của người mặc chuyển sang góc nhìn màu xanh lục ma quái đặc trưng của loài Creeper.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_vision_curse\":1}}] 1"
   },
   {
@@ -7672,11 +7669,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "death_curse",
     "name": "Curse of Death",
-    "name_vi": "Lời nguyền chết",
+    "name_vi": "Lời Nguyền Tử Thần",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7685,8 +7682,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "weapon"
     ],
-    "supported_display": "Vũ khí cận chiến",
-    "description": "Có tỉ lệ nhỏ bất ngờ tử nạn ngay lập tức khi tung đòn tấn công.",
+    "supported_display": "Kiếm & Vũ khí",
+    "description": "Lời nguyền cực độc: Mỗi đòn tấn công vung ra có một tỉ lệ nhỏ bất ngờ khiến người chơi tử vong ngay lập tức.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:death_curse\":1}}] 1"
   },
   {
@@ -7760,11 +7757,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "ender_vision_curse",
     "name": "Curse of Ender Vision",
-    "name_vi": "Curse of Ender Vision",
+    "name_vi": "Lời Nguyền Mắt Enderman",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7774,7 +7771,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Khiến tầm nhìn của người mặc đảo ngược màu sắc theo góc nhìn của Enderman.",
+    "description": "Khiến tầm nhìn của người mặc bị đảo ngược màu sắc âm bản theo góc nhìn kỳ dị của Enderman.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ender_vision_curse\":1}}] 1"
   },
   {
@@ -7782,7 +7779,7 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "fragility_curse",
     "name": "Curse of Fragility",
-    "name_vi": "Lời nguyền mỏng manh",
+    "name_vi": "Lời Nguyền Dễ Vỡ",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
@@ -7793,10 +7790,10 @@ window.ALL_ENCHANTMENTS = [
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:weapons",
     "gear_categories": [
-      "weapon"
+      "universal"
     ],
-    "supported_display": "Vũ khí cận chiến",
-    "description": "Làm hao mòn điểm độ bền nhanh hơn bình thường rất nhiều khi sử dụng.",
+    "supported_display": "Mọi trang bị có độ bền",
+    "description": "Làm suy yếu kết cấu trang bị, khiến điểm độ bền của vật phẩm bị tiêu hao nhanh gấp nhiều lần bình thường mỗi khi sử dụng.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:fragility_curse\":1}}] 1"
   },
   {
@@ -7804,11 +7801,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "hiding_curse",
     "name": "Curse of Hiding",
-    "name_vi": "Lời nguyền ẩn giấu",
+    "name_vi": "Lời Nguyền Ẩn Mình",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7818,7 +7815,7 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Vũ khí cận chiến",
-    "description": "Kẻ địch bị đánh trúng sẽ tàng hình biến mất trong chốc lát.",
+    "description": "Lời nguyền trớ trêu: Kẻ địch khi bị bạn đánh trúng sẽ lập tức tàng hình biến mất trong chốc lát, gây khó khăn cho việc truy đuổi.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hiding_curse\":1}}] 1"
   },
   {
@@ -7826,11 +7823,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "mirror_vision_curse",
     "name": "Curse of Mirror Vision",
-    "name_vi": "Curse of Mirror Vision",
+    "name_vi": "Lời Nguyền Mắt Gương",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7840,7 +7837,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Khiến toàn bộ tầm nhìn của người mặc bị đảo ngược trái phải như trong gương.",
+    "description": "Khiến toàn bộ góc nhìn và tầm nhìn của người mặc bị đảo ngược trái - phải như soi gương khi đội mũ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:mirror_vision_curse\":1}}] 1"
   },
   {
@@ -7848,11 +7845,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "ownership_curse",
     "name": "Curse of Ownership",
-    "name_vi": "Lời nguyền sở hữu",
+    "name_vi": "Lời Nguyền Đồng Cam Cộng Khổ",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7861,8 +7858,8 @@ window.ALL_ENCHANTMENTS = [
     "gear_categories": [
       "armor"
     ],
-    "supported_display": "Mũ, Giáp, Quần, Giày",
-    "description": "Người chơi nhận sát thương đồng thời mỗi khi thú cưng của mình chịu đòn.",
+    "supported_display": "Áo giáp",
+    "description": "Liên kết sát thương: Người chơi sẽ phải nhận sát thương đồng thời mỗi khi thú cưng của mình bị kẻ địch tấn công.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ownership_curse\":1}}] 1"
   },
   {
@@ -7870,21 +7867,21 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "randomness_curse",
     "name": "Curse of Randomness",
-    "name_vi": "Curse of Randomness",
+    "name_vi": "Lời Nguyền Ngẫu Nhiên",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 5,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:all_tools",
     "gear_categories": [
-      "tool"
+      "weapon"
     ],
-    "supported_display": "Công cụ",
-    "description": "Ngẫu nhiên thay đổi và tráo đổi các dòng phù phép của vũ khí sau mỗi đòn đánh.",
+    "supported_display": "Vũ khí cận chiến",
+    "description": "Lời nguyền hỗn loạn: Ngẫu nhiên thay đổi và tráo đổi toàn bộ các dòng phù phép của vũ khí sau mỗi đòn chém trúng đích.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:randomness_curse\":1}}] 1"
   },
   {
@@ -7892,21 +7889,22 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "reach_curse",
     "name": "Curse of Reach",
-    "name_vi": "Curse of Reach",
+    "name_vi": "Lời Nguyền Tay Ngắn",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:all_tools",
     "gear_categories": [
-      "tool"
+      "tool",
+      "weapon"
     ],
-    "supported_display": "Công cụ",
-    "description": "Làm giảm tầm với tương tác với các khối và thực thể xung quanh.",
+    "supported_display": "Vũ khí & Công cụ",
+    "description": "Làm thu hẹp đáng kể tầm với tương tác của người chơi, khiến bạn phải đứng cực sát mới có thể đánh trúng hoặc đập khối.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:reach_curse\":1}}] 1"
   },
   {
@@ -7914,11 +7912,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "shortsight_curse",
     "name": "Curse of Shortsight",
-    "name_vi": "Curse of Shortsight",
+    "name_vi": "Lời Nguyền Cận Thị",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7928,7 +7926,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Làm mờ mịt và nhòe nhoẹt tầm nhìn của người mặc trang bị.",
+    "description": "Làm nhòe nhoẹt và mờ mịt toàn bộ tầm nhìn của người mặc ở cự ly xa, buộc người chơi phải lại gần mới nhìn rõ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shortsight_curse\":1}}] 1"
   },
   {
@@ -7936,11 +7934,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "spider_vision_curse",
     "name": "Curse of Spider Vision",
-    "name_vi": "Curse of Spider Vision",
+    "name_vi": "Lời Nguyền Mắt Nhện",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7950,7 +7948,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Khiến tầm nhìn của người mặc chia thành nhiều góc nhìn ghép của loài Nhện.",
+    "description": "Khiến toàn bộ góc nhìn và tầm nhìn của người mặc chia thành nhiều góc nhìn ghép mắt đa hợp của loài Nhện.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:spider_vision_curse\":1}}] 1"
   },
   {
@@ -7958,11 +7956,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "undying_curse",
     "name": "Curse of Undying",
-    "name_vi": "Curse of Undying",
+    "name_vi": "Lời Nguyền Trường Sinh",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -7972,7 +7970,7 @@ window.ALL_ENCHANTMENTS = [
       "tool"
     ],
     "supported_display": "Công cụ",
-    "description": "Biến công cụ thành một Vật Tổ Trường Sinh (Totem of Undying) cứu mạng khi bạn cạn máu.",
+    "description": "Biến công cụ thành một Vật Tổ Trường Sinh (Totem of Undying), cứu mạng người chơi khi cạn máu nhưng phá hủy vĩnh viễn công cụ.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:undying_curse\":1}}] 1"
   },
   {
@@ -8002,11 +8000,11 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "void_vision_curse",
     "name": "Curse of Void Vision",
-    "name_vi": "Curse of Void Vision",
+    "name_vi": "Lời Nguyền Mắt Hư Không",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
@@ -8016,7 +8014,7 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Mũ",
-    "description": "Khiến tầm nhìn của người mặc chìm trong màn sương đen của Vực thẳm Hư Không.",
+    "description": "Khiến tầm nhìn của người mặc chìm trong màn sương đen u ám đặc trưng của Vực thẳm Hư Không.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:void_vision_curse\":1}}] 1"
   },
   {
@@ -8024,21 +8022,21 @@ window.ALL_ENCHANTMENTS = [
     "namespace": "enchantencore",
     "raw_name": "welfare_curse",
     "name": "Curse of Welfare",
-    "name_vi": "Curse of Welfare",
+    "name_vi": "Lời Nguyền Phung Phí",
     "tier": "curse",
     "tier_order": 5,
     "max_level": 1,
-    "anvil_cost": 4,
+    "anvil_cost": 8,
     "table": false,
     "tradeable": false,
     "loot": true,
     "source_pack": "enchantments_encore",
     "supported_items": "#enchantencore:all_tools",
     "gear_categories": [
-      "tool"
+      "universal"
     ],
-    "supported_display": "Công cụ",
-    "description": "Tự động phá hủy và làm biến mất các vật phẩm rơi trong bán kính 3 khối.",
+    "supported_display": "Mọi trang bị",
+    "description": "Tự động phá hủy và làm biến mất hoàn toàn các vật phẩm rơi rải rác trên đất trong bán kính 3 khối xung quanh người chơi.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:welfare_curse\":1}}] 1"
   },
   {
