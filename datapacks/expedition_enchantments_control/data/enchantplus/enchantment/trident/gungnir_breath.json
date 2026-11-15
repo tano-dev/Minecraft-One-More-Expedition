@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantplus.gungnir_breath",
     "fallback": "Gungnir Breath",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "supported_items": "#minecraft:enchantable/trident",

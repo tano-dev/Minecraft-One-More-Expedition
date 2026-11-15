@@ -1,7 +1,7 @@
 {
   "description": {
     "translate": "enchantment.stellarity.void_shot",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "supported_items": "#stellarity:enchantable/ranged",

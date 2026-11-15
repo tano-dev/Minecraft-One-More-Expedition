@@ -3,7 +3,7 @@
   "anvil_cost": 8,
   "description": {
     "text": "Infinity Durability",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "effects": {

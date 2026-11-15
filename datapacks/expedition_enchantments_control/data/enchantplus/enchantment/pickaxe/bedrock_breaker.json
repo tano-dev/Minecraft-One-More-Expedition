@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantplus.bedrock_breaker",
     "fallback": "Bedrock Breaker",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantplus_pickaxe_bedrock_breaker",

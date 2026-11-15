@@ -49,7 +49,7 @@ TIER_DEFAULTS = {
         "loot": True,
     },
     "ultimate": {
-        "color": "gold",
+        "color": "yellow",
         "table_weight": 1,
         "loot_weight": 1,
         "anvil_cost": 8,
@@ -894,8 +894,13 @@ def cmd_build():
     if os.path.exists(bound_src):
         with open(bound_src, "r", encoding="utf-8") as bf:
             bdata = json.load(bf)
+        b_tier = enchants.get("bound:bound", {}).get("tier", "epic")
+        b_color = TIER_DEFAULTS.get(b_tier, TIER_DEFAULTS["epic"])["color"]
+        b_desc = {"text": "Bound", "color": b_color}
+        if b_tier == "ultimate":
+            b_desc["bold"] = True
         bdata["exclusive_set"] = "#enchantencore:exclusive_set/boots"
-        bdata["description"] = {"text": "Bound", "color": "light_purple"}
+        bdata["description"] = b_desc
         bdata["weight"] = 1
         bdst = os.path.join(CONTROLLER_DIR, "data", "bound", "enchantment", "bound.json")
         os.makedirs(os.path.dirname(bdst), exist_ok=True)
@@ -996,7 +1001,7 @@ def _write_catalog(enchantments, prob_report):
         "",
         "| Tier | Màu sắc | Số lượng | Nguồn kiếm chính | Quy tắc đặc biệt |",
         "| :--- | :--- | :---: | :--- | :--- |",
-        f"| **Ultimate** | Gold (`gold`) | **{len(by_tier['ultimate'])}** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |",
+        f"| **Ultimate** | Yellow (`yellow`) | **{len(by_tier['ultimate'])}** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |",
         f"| **Epic** | Light Purple (`light_purple`) | **{len(by_tier['epic'])}** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |",
         f"| **Rare** | Aqua (`aqua`) | **{len(by_tier['rare'])}** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |",
         f"| **Common** | Gray (`gray`) | **{len(by_tier['common'])}** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |",

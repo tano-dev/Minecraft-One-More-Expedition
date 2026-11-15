@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Walking Fortress",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantplus_armor_lifeplus",

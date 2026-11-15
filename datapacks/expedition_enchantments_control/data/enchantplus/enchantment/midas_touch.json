@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantplus.midas_touch",
     "fallback": "Midas Touch",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "supported_items": "minecraft:stick",

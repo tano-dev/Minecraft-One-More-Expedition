@@ -1,7 +1,7 @@
 {
   "description": {
     "translate": "enchantment.stellarity.critical_strike",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "exclusive_set": "#expedition:exclusive/stellarity_critical_strike",

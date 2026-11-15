@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Warped Arrow",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_warped_arrow",

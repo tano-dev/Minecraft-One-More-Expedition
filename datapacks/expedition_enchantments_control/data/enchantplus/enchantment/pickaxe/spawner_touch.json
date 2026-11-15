@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantplus.spawner_touch",
     "fallback": "Spawner Touch",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantplus_pickaxe_spawner_touch",

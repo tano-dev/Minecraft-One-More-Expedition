@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Blaze Blessing",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_blaze_blessing",

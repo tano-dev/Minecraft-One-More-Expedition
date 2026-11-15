@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Bomber",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_bomber",

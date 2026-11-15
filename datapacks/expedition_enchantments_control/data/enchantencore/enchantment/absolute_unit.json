@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Absolute Unit",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "exclusive_set": "#expedition:exclusive/enchantencore_absolute_unit",

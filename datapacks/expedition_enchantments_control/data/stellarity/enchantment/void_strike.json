@@ -1,7 +1,7 @@
 {
   "description": {
     "translate": "enchantment.stellarity.void_strike",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "supported_items": "#minecraft:enchantable/sharp_weapon",

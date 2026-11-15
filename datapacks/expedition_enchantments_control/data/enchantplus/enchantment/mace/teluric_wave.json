@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantplus.teluric_wave",
     "fallback": "Teluric Wave",
-    "color": "gold",
+    "color": "yellow",
     "bold": true
   },
   "supported_items": "#minecraft:enchantable/mace",
