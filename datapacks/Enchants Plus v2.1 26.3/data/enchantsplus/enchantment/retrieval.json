@@ -1,0 +1,88 @@
+{
+  "description": {
+    "translate": "enchantment.enchantsplus.retrieval",
+    "fallback": "Retrieval"
+  },
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "weight": 6,
+    "max_level": 4,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 10
+    },
+    "max_cost": {
+      "base": 40,
+      "per_level_above_first": 10
+    },
+    "anvil_cost": 4,
+    "slots": [
+      "armor"
+    ],
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "enchanted": "victim",
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "enchantsplus:retrieval/spectral"
+          },
+          "requirements": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:enchantment_level",
+                  "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.2,
+                    "per_level_above_first": 0.2
+                  }
+                }
+              },
+              {
+                "type": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "entity_type": "minecraft:spectral_arrow"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "enchanted": "victim",
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "enchantsplus:retrieval/arrow"
+          },
+          "requirements": {
+            "type": "minecraft:all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:enchantment_level",
+                  "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.2,
+                    "per_level_above_first": 0.2
+                  }
+                }
+              },
+              {
+                "type": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "entity_type": "minecraft:arrow"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+  

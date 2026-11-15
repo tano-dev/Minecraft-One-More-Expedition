@@ -14,7 +14,7 @@
             ]
         }
     },
-    "terrain_adaptation": "beard_box",
+    "terrain_adaptation": "beard_thin",
     "start_pool": "hopo:underwater_city",
     "size": 5,
     "start_height": {

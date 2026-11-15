@@ -1,0 +1,13 @@
+{
+  "entity": "this",
+  "predicate": {
+    "entity_type": "minecraft:arrow",
+    "movement": {
+      "speed": {
+        "min": 0,
+        "max": 8
+      }
+    }
+  },
+  "type": "minecraft:entity_properties"
+}

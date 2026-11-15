@@ -1,0 +1,38 @@
+{
+  "description": {
+    "translate": "enchantment.enchantsplus.swift_strike",
+    "fallback": "Swift Strike"
+  },
+    "exclusive_set": "enchantsplus:outreach",
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "primary_items": "#minecraft:enchantable/sweeping",
+    "weight": 4,
+    "max_level": 5,
+    "min_cost": {
+      "base": 25,
+      "per_level_above_first": 5
+    },
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 5
+    },
+    "anvil_cost": 8,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "enchantsplus:enchantment.swift_strike",
+          "attribute": "minecraft:attack_speed",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.125,
+            "per_level_above_first": 0.125
+          },
+          "operation": "add_multiplied_total"
+        }
+      ]
+    }
+  }
+  

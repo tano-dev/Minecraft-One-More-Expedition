@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "enchantsplus:clumsiness_curse",
+    "enchantsplus:displacement_curse",
+    "enchantsplus:double_edge_curse",
+    "enchantsplus:breaking_curse",
+    "enchantsplus:compassion_curse"
+  ]
+}

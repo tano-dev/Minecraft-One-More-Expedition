@@ -1,0 +1,155 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.enchantencore.regrowth",
+    "fallback": "Regrowth",
+    "color": "light_purple"
+  },
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "requirements": {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "blocks": "minecraft:potatoes",
+              "state": {
+                "age": "7"
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:regrowth/potatoes"
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "blocks": "minecraft:carrots",
+              "state": {
+                "age": "7"
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:regrowth/carrots"
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "blocks": "minecraft:beetroots",
+              "state": {
+                "age": "3"
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:regrowth/beetroots"
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "blocks": "minecraft:wheat",
+              "state": {
+                "age": "7"
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:regrowth/wheat"
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:any_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:wheat",
+                  "state": {
+                    "age": "7"
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:beetroots",
+                  "state": {
+                    "age": "3"
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:carrots",
+                  "state": {
+                    "age": "7"
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:potatoes",
+                  "state": {
+                    "age": "7"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": {
+            "type": "minecraft:clamped",
+            "value": 10,
+            "min": 5,
+            "max": 15
+          }
+        }
+      }
+    ]
+  },
+  "exclusive_set": "#enchantencore:exclusive_set/regrowth",
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:hoes",
+  "weight": 2
+}

@@ -1,0 +1,193 @@
+{
+  "exclusive_set": "#enchantencore:exclusive_set/regrowth",
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.enchantencore.plow",
+    "fallback": "Plow",
+    "color": "gray"
+  },
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "requirements": {
+          "type": "minecraft:any_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:grass_block"
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:farmland"
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:dirt"
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:coarse_dirt"
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:dirt_path"
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:rooted_dirt"
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:replace_disk",
+              "block_state": {
+                "type": "minecraft:simple",
+                "state": "minecraft:farmland"
+              },
+              "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "#enchantencore:tillable"
+                  },
+                  {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          1,
+                          0
+                        ],
+                        "blocks": "#enchantencore:flora_replaceable"
+                      },
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          1,
+                          0
+                        ],
+                        "blocks": "#minecraft:air"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "trigger_game_event": "minecraft:entity_action",
+              "radius": {
+                "type": "minecraft:linear",
+                "base": 2,
+                "per_level_above_first": 1
+              },
+              "height": 1
+            },
+            {
+              "type": "minecraft:play_sound",
+              "sound": "minecraft:item.hoe.till",
+              "volume": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 0.5,
+                "max_exclusive": 0.75
+              },
+              "pitch": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 0.9,
+                "max_exclusive": 1.1
+              }
+            },
+            {
+              "type": "minecraft:change_item_damage",
+              "amount": {
+                "type": "minecraft:clamped",
+                "value": 15,
+                "min": 10,
+                "max": 20
+              }
+            },
+            {
+              "type": "minecraft:replace_disk",
+              "block_state": {
+                "type": "minecraft:simple",
+                "state": "minecraft:air"
+              },
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "#enchantencore:flora_replaceable"
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ],
+                    "blocks": "#enchantencore:tillable"
+                  }
+                ]
+              },
+              "trigger_game_event": "minecraft:entity_action",
+              "radius": {
+                "type": "minecraft:linear",
+                "base": 2,
+                "per_level_above_first": 1
+              },
+              "height": 1
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 55,
+    "per_level_above_first": 8
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:hoes",
+  "weight": 12
+}

@@ -1,0 +1,72 @@
+{
+  "description": {
+    "translate": "enchantment.enchantsplus.ice_aspect",
+    "fallback": "Ice Aspect",
+    "color": "aqua"
+  },
+  "exclusive_set": "#minecraft:sword_buffs",
+  "supported_items": "#minecraft:enchantable/fire_aspect",
+  "primary_items": "#minecraft:enchantable/sweeping",
+  "weight": 1,
+  "max_level": 2,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantsplus:ice_aspect/effect"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:effects": {
+                    "minecraft:slowness": {
+                      "amplifier": 9
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:enchantment_level",
+                "amount": {
+                  "type": "minecraft:linear",
+                  "base": 0.1,
+                  "per_level_above_first": 0.1
+                }
+              }
+            },
+            {
+              "type": "minecraft:damage_source_properties",
+              "predicate": {
+                "is_direct": true
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

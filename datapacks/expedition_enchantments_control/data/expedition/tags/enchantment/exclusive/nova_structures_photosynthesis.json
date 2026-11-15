@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "#expedition:exclusive_set/ultimate",
+      "required": false
+    },
+    {
+      "id": "#nova_structures:exclusive_set/longevity",
+      "required": false
+    }
+  ]
+}

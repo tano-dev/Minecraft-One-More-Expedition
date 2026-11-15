@@ -3,10 +3,6 @@
     "pack_format": 94,
     "description": "§f§lThe Wither Revamp!",
     "min_format": 94,
-    "max_format": 94,
-    "supported_formats": {
-      "min_inclusive": 15,
-      "max_inclusive": 94
-    }
+    "max_format": 94
   }
 }

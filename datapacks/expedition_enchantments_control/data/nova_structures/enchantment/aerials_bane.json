@@ -1,0 +1,191 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.dnt.aerials_bane",
+    "fallback": "Aerial's Bane",
+    "color": "light_purple"
+  },
+  "effects": {
+    "minecraft:damage": [
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": [
+                        "minecraft:bow",
+                        "minecraft:crossbow"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "flags": {
+                      "is_on_ground": false
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "entity_type": "#nova_structures:sensitive_to_aerials_bane"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "fluid": {
+                      "fluids": "#minecraft:water"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "vehicle": {}
+                }
+              }
+            },
+            {
+              "type": "minecraft:damage_source_properties",
+              "predicate": {
+                "is_direct": true
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 2
+          }
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": [
+                      "minecraft:bow",
+                      "minecraft:crossbow"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "entity_type": "#minecraft:arrows"
+              }
+            },
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "flags": {
+                      "is_on_ground": false
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "entity_type": "#nova_structures:sensitive_to_aerials_bane"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "fluid": {
+                      "fluids": "#minecraft:water"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "vehicle": {}
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ]
+  },
+  "exclusive_set": "#nova_structures:exclusive_set/powah",
+  "max_cost": {
+    "base": 15,
+    "per_level_above_first": 7
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 7
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#nova_structures:enchantable/combat_tools",
+  "weight": 2
+}

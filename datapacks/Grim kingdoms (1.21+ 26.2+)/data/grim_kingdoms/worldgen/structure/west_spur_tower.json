@@ -10,6 +10,6 @@
     },
     "start_pool": "grim_kingdoms:west_spur_tower",
     "step": "surface_structures",
-    "terrain_adaptation": "none",
+    "terrain_adaptation": "beard_thin",
     "use_expansion_hack": true
 }

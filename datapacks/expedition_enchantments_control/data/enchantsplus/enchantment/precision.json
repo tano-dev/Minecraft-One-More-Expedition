@@ -1,0 +1,37 @@
+{
+  "description": {
+    "translate": "enchantment.enchantsplus.precision",
+    "fallback": "Precision",
+    "color": "aqua"
+  },
+  "supported_items": [
+    "minecraft:crossbow",
+    "minecraft:bow"
+  ],
+  "primary_items": "#minecraft:enchantable/crossbow",
+  "weight": 1,
+  "max_level": 2,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 7,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:projectile_spawned": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantsplus:precision/tag"
+        }
+      }
+    ]
+  }
+}

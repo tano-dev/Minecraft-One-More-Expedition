@@ -1,0 +1,37 @@
+{
+  "description": {
+    "translate": "enchantment.enchantsplus.outreach",
+    "fallback": "Outreach"
+  },
+  "exclusive_set":"enchantsplus:swift_strike",
+  "supported_items": "#minecraft:enchantable/sweeping",
+  "weight": 1,
+  "max_level": 2,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 6,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "enchantsplus:enchantment.outreach",
+        "attribute": "minecraft:entity_interaction_range",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.5,
+          "per_level_above_first": 0.5
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

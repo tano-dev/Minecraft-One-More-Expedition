@@ -1,0 +1,36 @@
+{
+	"criteria": {
+		"requirements": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"player": {
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"equipment": {
+							"offhand": {
+								"predicates": {
+									"minecraft:enchantments": [
+										{
+											"enchantments": "enchantplus:hoe/harvest",
+											"levels": {
+												"min": 1
+											}
+										}
+									]
+								}
+							}
+						}
+					}
+				},
+				"location": {
+					"type": "minecraft:match_block",
+					"blocks": "#minecraft:crops"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "enchantplus:actions/harvest/on_place"
+	}
+}

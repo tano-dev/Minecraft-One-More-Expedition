@@ -1,0 +1,24 @@
+{
+  "replace": true,
+  "values": [
+    "enchantencore:voidweave",
+    "enchantplus:chestplate/builder_arm",
+    "enchantplus:helmet/voidless",
+    "enchantplus:mace/teluric_wave",
+    "enchantplus:pickaxe/bedrock_breaker",
+    "enchantplus:pickaxe/spawner_touch",
+    "enchantplus:tools/miningplus",
+    "enchantplus:trident/gungnir_breath",
+    "enchantsplus:crabs_touch",
+    "enchantsplus:graviole",
+    "incendium:poison_protection",
+    "minecraft:wind_burst",
+    "nova_structures:photosynthesis",
+    "nova_structures:wax_wings",
+    "stellarity:critical_strike",
+    "stellarity:dune_speed",
+    "veinminer-enchantment:veinminer",
+    "wither:soul_siphon",
+    "wither:witherbound"
+  ]
+}

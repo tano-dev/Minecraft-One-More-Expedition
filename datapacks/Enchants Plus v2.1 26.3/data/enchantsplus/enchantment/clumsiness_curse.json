@@ -1,0 +1,49 @@
+{
+  "description": {
+    "translate": "enchantment.enchantsplus.clumsiness_curse",
+    "fallback": "Curse of Clumsiness"
+  },
+  "supported_items": "#enchantsplus:toolsnsword",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "requirements": {
+          "type": "minecraft:random_chance",
+          "chance": 0.1
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantsplus:clumsiness/drop_punch"
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantsplus:clumsiness/drop_attack"
+        },
+        "requirements": {
+          "chance": 0.1,
+          "type": "minecraft:random_chance"
+        }
+      }
+    ]
+  }
+}

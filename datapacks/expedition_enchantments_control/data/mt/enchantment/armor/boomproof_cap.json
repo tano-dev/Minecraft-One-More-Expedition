@@ -1,0 +1,40 @@
+{
+  "description": {
+    "translate": "",
+    "fallback": "Boomproof",
+    "color": "red"
+  },
+  "supported_items": "#minecraft:foot_armor",
+  "weight": 10,
+  "max_level": 1,
+  "min_cost": {
+    "base": 999999,
+    "per_level_above_first": 999
+  },
+  "max_cost": {
+    "base": 999999,
+    "per_level_above_first": 9999
+  },
+  "anvil_cost": 9999,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:damage_immunity": [
+      {
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "#minecraft:is_explosion",
+                "expected": true
+              }
+            ]
+          }
+        },
+        "effect": {}
+      }
+    ]
+  }
+}

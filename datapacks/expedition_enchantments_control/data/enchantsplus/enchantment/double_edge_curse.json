@@ -1,0 +1,40 @@
+{
+  "description": {
+    "translate": "enchantment.enchantsplus.double_edge_curse",
+    "fallback": "Curse of Double Edge",
+    "color": "red"
+  },
+  "supported_items": "#enchantsplus:weapons",
+  "weight": 10,
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:damage_entity",
+          "damage_type": "minecraft:magic",
+          "min_damage": 2,
+          "max_damage": 4
+        },
+        "requirements": {
+          "chance": 0.4,
+          "type": "minecraft:random_chance"
+        }
+      }
+    ]
+  }
+}

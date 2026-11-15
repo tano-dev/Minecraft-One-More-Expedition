@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:set_damage",
+  "damage": {
+    "type": "minecraft:uniform",
+    "min": -0.5,
+    "max": -0.9
+  },
+  "add": true,
+  "condition": {
+    "type": "minecraft:random_chance",
+    "chance": 0.7
+  }
+}

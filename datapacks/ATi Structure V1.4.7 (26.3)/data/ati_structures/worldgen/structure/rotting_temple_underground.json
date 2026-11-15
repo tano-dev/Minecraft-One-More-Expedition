@@ -9,6 +9,6 @@
     },
     "start_pool": "ati_structures:rotting_temple_underground",
     "step": "underground_structures",
-    "terrain_adaptation": "beard_box",
+    "terrain_adaptation": "bury",
     "use_expansion_hack": true
 }

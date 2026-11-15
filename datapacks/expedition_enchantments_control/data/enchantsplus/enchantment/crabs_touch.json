@@ -1,0 +1,38 @@
+{
+  "description": {
+    "translate": "enchantment.enchantsplus.crabs_touch",
+    "fallback": "Crab's Touch",
+    "color": "gold"
+  },
+  "supported_items": "#enchantsplus:tools",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 70,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 6,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "enchantsplus:enchantment.crabstouch",
+        "attribute": "minecraft:block_interaction_range",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1,
+          "per_level_above_first": 1
+        },
+        "operation": "add_value"
+      }
+    ]
+  },
+  "exclusive_set": "#expedition:exclusive/enchantsplus_crabs_touch"
+}

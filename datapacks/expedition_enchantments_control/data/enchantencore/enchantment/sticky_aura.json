@@ -1,0 +1,174 @@
+{
+  "description": {
+    "translate": "enchantment.enchantencore.sticky_aura",
+    "fallback": "Sticky Aura",
+    "color": "aqua"
+  },
+  "exclusive_set": "#enchantencore:aura",
+  "supported_items": "#minecraft:head_armor",
+  "weight": 5,
+  "max_level": 1,
+  "min_cost": {
+    "base": 3,
+    "per_level_above_first": 3
+  },
+  "max_cost": {
+    "base": 5,
+    "per_level_above_first": 5
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "periodic_tick": 3
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:aura/sticky/pet/init"
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "periodic_tick": 3
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:aura/sticky/projectile/init"
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:random_chance",
+              "chance": 0.2
+            },
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "type": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "enchantencore.idle_time": {
+                          "min": 60
+                        }
+                      }
+                    },
+                    {
+                      "type": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "movement": {
+                          "speed": 0
+                        },
+                        "periodic_tick": 10
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:entity_type": "minecraft:armor_stand",
+                    "periodic_tick": 10
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:aura/sticky/idle"
+        }
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "type": "minecraft:any_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": true,
+                    "backward": false
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "backward": false,
+                    "left": true
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "backward": false,
+                    "right": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:aura/sticky/moving"
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enchantencore:aura/sticky/attacked"
+        },
+        "enchanted": "victim",
+        "affected": "victim"
+      }
+    ]
+  }
+}

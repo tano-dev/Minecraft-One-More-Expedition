@@ -9,6 +9,6 @@
     },
     "start_pool": "ati_structures:warden_monument",
     "step": "underground_structures",
-    "terrain_adaptation": "beard_box",
+    "terrain_adaptation": "beard_thin",
     "use_expansion_hack": true
 }

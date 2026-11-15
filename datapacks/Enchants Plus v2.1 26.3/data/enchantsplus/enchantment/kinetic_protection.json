@@ -1,0 +1,64 @@
+{
+  "description": {
+    "translate": "enchantment.enchantsplus.kinetic_protection",
+    "fallback": "Kinetic Protection"
+  },
+  "supported_items": "#minecraft:enchantable/head_armor",
+  "weight": 5,
+  "max_level": 4,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 11
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 4,
+            "per_level_above_first": 4
+          }
+        },
+        "requirements": {
+          "terms": [
+            {
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_flying": true
+                }
+              },
+              "type": "minecraft:entity_properties"
+            },
+            {
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "#enchantsplus:kinetic",
+                    "expected": true
+                  },
+                  {
+                    "id": "#minecraft:bypasses_invulnerability",
+                    "expected": false
+                  }
+                ]
+              },
+              "type": "minecraft:damage_source_properties"
+            }
+          ],
+          "type": "minecraft:all_of"
+        }
+      }
+    ]
+  }
+}

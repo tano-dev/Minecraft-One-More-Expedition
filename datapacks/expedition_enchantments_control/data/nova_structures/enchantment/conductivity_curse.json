@@ -1,0 +1,142 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.dnt.conductivity_curse",
+    "fallback": "Curse of Conductivity",
+    "color": "red"
+  },
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:summon_entity",
+          "entity": "minecraft:lightning_bolt"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:weather_check",
+              "thundering": true
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "can_see_sky": true
+                },
+                "periodic_tick": 20
+              }
+            },
+            {
+              "type": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:enchantment_level",
+                "amount": 0.1
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:summon_entity",
+          "entity": "minecraft:lightning_bolt"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:weather_check",
+              "thundering": true
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "can_see_sky": true
+                },
+                "periodic_tick": 20,
+                "slots": {
+                  "weapon.mainhand": {
+                    "items": "#nova_structures:extra_lightning"
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:enchantment_level",
+                "amount": 0.233333
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "scale": 1.2
+          },
+          "horizontal_velocity": {
+            "movement_scale": 0.1
+          },
+          "particle": {
+            "type": "electric_spark"
+          },
+          "speed": 1,
+          "vertical_position": {
+            "type": "in_bounding_box"
+          },
+          "vertical_velocity": {
+            "base": 0.1
+          }
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:weather_check",
+              "thundering": true
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "can_see_sky": true
+                }
+              }
+            },
+            {
+              "type": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:enchantment_level",
+                "amount": 0.5
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 10
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#nova_structures:enchantable/metal",
+  "weight": 10
+}

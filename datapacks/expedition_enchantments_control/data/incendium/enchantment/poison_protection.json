@@ -1,0 +1,194 @@
+{
+  "description": {
+    "translate": "incendium.enchantment.poison_protection",
+    "fallback": "Poison Protection",
+    "color": "gold"
+  },
+  "supported_items": "#enchantable/armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:damage_immunity": [
+      {
+        "effect": {},
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "#incendium:poison",
+                    "expected": true
+                  }
+                ]
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "effects": {
+                  "minecraft:poison": {}
+                }
+              }
+            },
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "head": {
+                        "predicates": {
+                          "enchantments": [
+                            {
+                              "enchantments": "incendium:poison_protection",
+                              "levels": 1
+                            }
+                          ]
+                        }
+                      },
+                      "chest": {
+                        "predicates": {
+                          "enchantments": [
+                            {
+                              "enchantments": "incendium:poison_protection",
+                              "levels": 1
+                            }
+                          ]
+                        }
+                      },
+                      "legs": {
+                        "predicates": {
+                          "enchantments": [
+                            {
+                              "enchantments": "incendium:poison_protection",
+                              "levels": 1
+                            }
+                          ]
+                        }
+                      },
+                      "feet": {
+                        "predicates": {
+                          "enchantments": [
+                            {
+                              "enchantments": "incendium:poison_protection",
+                              "levels": 1
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "type": "minecraft:any_of",
+                      "terms": [
+                        {
+                          "type": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "equipment": {
+                              "head": {
+                                "predicates": {
+                                  "enchantments": [
+                                    {
+                                      "enchantments": "incendium:poison_protection",
+                                      "levels": 1
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "equipment": {
+                              "chest": {
+                                "predicates": {
+                                  "enchantments": [
+                                    {
+                                      "enchantments": "incendium:poison_protection",
+                                      "levels": 1
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "equipment": {
+                              "legs": {
+                                "predicates": {
+                                  "enchantments": [
+                                    {
+                                      "enchantments": "incendium:poison_protection",
+                                      "levels": 1
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "equipment": {
+                              "feet": {
+                                "predicates": {
+                                  "enchantments": [
+                                    {
+                                      "enchantments": "incendium:poison_protection",
+                                      "levels": 1
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "minecraft:random_chance",
+                      "chance": 0.2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "exclusive_set": "#expedition:exclusive/incendium_poison_protection"
+}

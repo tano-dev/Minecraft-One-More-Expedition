@@ -1,0 +1,79 @@
+{
+  "description": {
+    "translate": "enchantment.enchantsplus.websnare",
+    "fallback": "Websnare"
+  },
+  "exclusive_set": "#minecraft:sword_buffs",
+  "supported_items": "#minecraft:enchantable/fire_aspect",
+  "primary_items": "#minecraft:enchantable/sweeping",
+  "weight": 3,
+  "max_level": 2,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:replace_block",
+          "block_state": {
+            "type": "minecraft:simple",
+            "state": {
+              "id": "minecraft:cobweb"
+            }
+          },
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "#minecraft:air"
+          }
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:entity_type": "minecraft:armor_stand"
+                }
+              }
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:entity_type": "minecraft:armadillo"
+                }
+              }
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:entity_type": "minecraft:allay"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

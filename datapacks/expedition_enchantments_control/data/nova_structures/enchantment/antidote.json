@@ -1,0 +1,165 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.dnt.antidote",
+    "fallback": "Antidote",
+    "color": "aqua"
+  },
+  "effects": {
+    "minecraft:damage_immunity": [
+      {
+        "effect": {},
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "#nova_structures:magic",
+                    "expected": true
+                  },
+                  {
+                    "id": "#minecraft:bypasses_invulnerability",
+                    "expected": false
+                  }
+                ]
+              }
+            },
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:effects": {
+                      "minecraft:poison": {}
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:effects": {
+                      "minecraft:wither": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": 1
+        },
+        "requirements": {
+          "type": "minecraft:any_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "effects": {
+                  "minecraft:poison": {
+                    "amplifier": 0
+                  }
+                },
+                "periodic_tick": 25
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "effects": {
+                  "minecraft:poison": {
+                    "amplifier": {
+                      "min": 1,
+                      "max": 3
+                    }
+                  }
+                },
+                "periodic_tick": 12
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "effects": {
+                  "minecraft:poison": {
+                    "amplifier": {
+                      "min": 4
+                    }
+                  }
+                },
+                "periodic_tick": 10
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "effects": {
+                  "minecraft:wither": {
+                    "amplifier": 0
+                  }
+                },
+                "periodic_tick": 40
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "effects": {
+                  "minecraft:wither": {
+                    "amplifier": 1
+                  }
+                },
+                "periodic_tick": 20
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "effects": {
+                  "minecraft:wither": {
+                    "amplifier": {
+                      "min": 2
+                    }
+                  }
+                },
+                "periodic_tick": 10
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "exclusive_set": "#minecraft:exclusive_set/armor",
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "weight": 5
+}

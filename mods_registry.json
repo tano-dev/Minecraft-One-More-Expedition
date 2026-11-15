@@ -7,8 +7,8 @@
   "generated_for": "Agentic Self-Healing & Diagnostics System",
   "statistics": {
     "active_mods_count": 60,
-    "active_datapacks_count": 49,
-    "total_managed_components": 109
+    "active_datapacks_count": 52,
+    "total_managed_components": 112
   },
   "categories": {
     "core_library": "Foundational libraries, configuration frameworks, and required APIs for dependent mods",
@@ -1180,6 +1180,12 @@
       "pack_format": 94
     },
     {
+      "id": "Enchants Plus v2.1 26.3",
+      "name": "Enchants Plus v2.1 26.3",
+      "description": "Adds 15+ vanilla styled enchantments and 4 new curses",
+      "pack_format": 94
+    },
+    {
       "id": "Epic Dungeons v1.2.7 (26.3)",
       "name": "Epic Dungeons v1.2.7 (26.3)",
       "description": "Adds more Witch Huts",
@@ -1207,6 +1213,12 @@
       "id": "Epic Witch Huts v1.3.2 (26.3)",
       "name": "Epic Witch Huts v1.3.2 (26.3)",
       "description": "Adds more Witch Huts",
+      "pack_format": 94
+    },
+    {
+      "id": "expedition_enchantments_control",
+      "name": "expedition_enchantments_control",
+      "description": "Expedition Central Enchantment Controller (4-Tier Rarity & Balance)",
       "pack_format": 94
     },
     {
@@ -1285,6 +1297,12 @@
       "id": "more_mobs-v1.5.11-mc1.14-26.3.9-datapack",
       "name": "more_mobs-v1.5.11-mc1.14-26.3.9-datapack",
       "description": "Tschipcraft's More Mobs \n└ v1.5.11 ● mc1.14-26.3.9",
+      "pack_format": 94
+    },
+    {
+      "id": "NeoEnchant-5.16.0",
+      "name": "NeoEnchant-5.16.0",
+      "description": "Add new enchants to minecraft - By Voxel Team",
       "pack_format": 94
     },
     {

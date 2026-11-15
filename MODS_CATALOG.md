@@ -6,7 +6,7 @@
 - **Fabric Loader:** `0.20.1`
 - **Java Runtime Environment:** OpenJDK 25 (G1GC enterprise-tuned)
 - **Active Mods Count:** `60` (plus `3` optional)
-- **Active Datapacks Count:** `49`
+- **Active Datapacks Count:** `52`
 - **Machine-Readable Metadata:** [`mods_registry.json`](mods_registry.json)
 
 ---
@@ -100,13 +100,16 @@
 
 ---
 
-## 3. Complete World Datapacks Matrix (49 datapacks)
+## 3. Complete World Datapacks Matrix (52 datapacks)
 
 All datapacks in this repository have been normalized and validated against Minecraft 26.3 schema standards (`pack_format: 94`, `min_format: 94`, `max_format: 94`).
 
 | Datapack ID | Version / Details | Pack Format | Architectural Role / Scope |
 | :--- | :--- | :---: | :--- |
 | `[26.3-26.4]witherswrath-1.17` | The Wither Revamp! Boss Overhaul | `94` | Worldgen & Content Overhaul |
+| `Enchants Plus v2.1 26.3` | Adds 15+ vanilla styled enchantments and 4 new curses | `94` | Enchantment Expansion |
+| `NeoEnchant-5.16.0` | Add new enchants to minecraft - By Voxel Team | `94` | Enchantment Expansion |
+| `expedition_enchantments_control` | Central 4-Tier Rarity & Balance Controller | `94` | Central Enchantment Manager |
 | `ATi Structure V1.4.7 (26.3)` | Adds more Witch Huts | `94` | Worldgen & Content Overhaul |
 | `ATi Structures Vanilla V1.4.7 (26.3)` | Adds more Witch Huts | `94` | Worldgen & Content Overhaul |
 | `Decubed Dungeons V1.13.1 [26.3]` | Decubed Dungeons V1.13.1 [26.3] | `94` | Worldgen & Content Overhaul |
