@@ -1132,7 +1132,11 @@
       if (item.tradeable) srcText.push("🧑‍🌾 Dân Làng Thủ Thư");
       specSource.innerText = srcText.join(" • ") || "Chỉ tìm thấy qua sự kiện đặc biệt";
 
-      specGear.innerText = `${item.supported_items}`;
+      if (item.supported_display) {
+        specGear.innerHTML = `<span style="color:#f8fafc; font-weight:700;">${item.supported_display}</span> <span style="color:#64748b; font-size:0.8rem; display:block; margin-top:2px;">[${item.supported_items}]</span>`;
+      } else {
+        specGear.innerText = `${item.supported_items}`;
+      }
       cmdText.innerText = item.give_command;
 
       modal.classList.add("active");

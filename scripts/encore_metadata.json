@@ -1,0 +1,1521 @@
+{
+  "enchantencore:absolute_unit": {
+    "name_en": "Absolute Unit",
+    "name_vi": "Absolute Unit",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 8,
+    "supported_items": "#minecraft:enchantable/leg_armor"
+  },
+  "enchantencore:adrenaline": {
+    "name_en": "Adrenaline",
+    "name_vi": "Adrenaline",
+    "lore_en": "",
+    "max_level": 4,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:anchor": {
+    "name_en": "Anchor",
+    "name_vi": "Râu neo",
+    "lore_en": "Compatible with: Saddles, Harnesses\n\nAnchors the entity in place when not ridden",
+    "max_level": 1,
+    "anvil_cost": 2,
+    "supported_items": "#enchantencore:valid_for_anchor"
+  },
+  "enchantencore:angry_aura": {
+    "name_en": "Angry Aura",
+    "name_vi": "Hào quang giận dữ",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic angry aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:aquatic_aura": {
+    "name_en": "Aquatic Aura",
+    "name_vi": "Hào quang biển cả",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic aquatic aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:archer_barrage": {
+    "name_en": "Archer Barrage",
+    "name_vi": "Archer Barrage",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:bow"
+  },
+  "enchantencore:armor_piercing": {
+    "name_en": "Armor Piercing",
+    "name_vi": "Armor Piercing",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 6,
+    "supported_items": "minecraft:crossbow"
+  },
+  "enchantencore:aurora": {
+    "name_en": "Aurora",
+    "name_vi": "Aurora",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:bane_of_bosses": {
+    "name_en": "Bane of Bosses",
+    "name_vi": "Tai ương của trùm",
+    "lore_en": "Compatible with: Axes, Swords, Spears, Maces, Tridents\n\nInflicts more damage to boss mobs",
+    "max_level": 5,
+    "anvil_cost": 2,
+    "supported_items": "#enchantencore:weapons"
+  },
+  "enchantencore:bane_of_endborn": {
+    "name_en": "Bane of Endborn",
+    "name_vi": "Tai ương của thế giới End",
+    "lore_en": "Compatible with: Axes, Swords, Spears, Maces, Tridents\n\nInflicts more damage to End mobs",
+    "max_level": 5,
+    "anvil_cost": 2,
+    "supported_items": "#enchantencore:weapons"
+  },
+  "enchantencore:bane_of_netherborn": {
+    "name_en": "Bane of Netherborn",
+    "name_vi": "Tai ương của địa ngục",
+    "lore_en": "Compatible with: Axes, Swords, Spears, Maces, Tridents\n\nInflicts more damage to Nether mobs",
+    "max_level": 5,
+    "anvil_cost": 2,
+    "supported_items": "#enchantencore:weapons"
+  },
+  "enchantencore:bane_of_raiders": {
+    "name_en": "Bane of Raiders",
+    "name_vi": "Tai ương của kẻ xâm lược",
+    "lore_en": "Compatible with: Axes, Swords, Spears, Maces, Tridents\n\nInflicts more damage to raid mobs",
+    "max_level": 5,
+    "anvil_cost": 2,
+    "supported_items": "#enchantencore:weapons"
+  },
+  "enchantencore:bear_spirit": {
+    "name_en": "Bear Spirit",
+    "name_vi": "Bear Spirit",
+    "lore_en": "Compatible with: Wolf Armor\n\nInfuses a Wolf with the powers of a Bear",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:wolf_armor"
+  },
+  "enchantencore:blaze_blessing": {
+    "name_en": "Blaze Blessing",
+    "name_vi": "Blaze Blessing",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 8,
+    "supported_items": "#minecraft:enchantable/leg_armor"
+  },
+  "enchantencore:blindness_curse": {
+    "name_en": "Curse of Blindness",
+    "name_vi": "Lời Nguyền Mù Lòa",
+    "lore_en": "Compatible with: Helmets\n\nApplies Blindness to the wearer.",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:boar_spirit": {
+    "name_en": "Boar Spirit",
+    "name_vi": "Boar Spirit",
+    "lore_en": "Compatible with: Wolf Armor\n\nInfuses a Wolf with the powers of a Boar",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:wolf_armor"
+  },
+  "enchantencore:boltbringer": {
+    "name_en": "Boltbringer",
+    "name_vi": "Kẻ phóng sét",
+    "lore_en": "Compatible with: Maces\n\nSummons lightning when entity was hit by a player which at least fell 8 blocks",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:mace"
+  },
+  "enchantencore:bomber": {
+    "name_en": "Bomber",
+    "name_vi": "Kẻ đặt bom",
+    "lore_en": "Compatible with: Corssbows, Bows\n\nArrows explode when an entity was hit",
+    "max_level": 3,
+    "anvil_cost": 6,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:bounce": {
+    "name_en": "Bounce",
+    "name_vi": "Nảy",
+    "lore_en": "Compatible with: Boots\n\nLets the wearer bounce all over the place",
+    "max_level": 3,
+    "anvil_cost": 8,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:breeze_curse": {
+    "name_en": "Curse of Breeze",
+    "name_vi": "Lời nguyền gió",
+    "lore_en": "Compatible with: Swords, Spears\n\nWind charges entity on attack",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/melee_weapon"
+  },
+  "enchantencore:bulletproof": {
+    "name_en": "Bulletproof",
+    "name_vi": "Chống đạn",
+    "lore_en": "Compatible with: Armor\n\n10% chance of protecting the wearer from shulker bullets",
+    "max_level": 1,
+    "anvil_cost": 5,
+    "supported_items": "#minecraft:chest_armor"
+  },
+  "enchantencore:bunny_hop": {
+    "name_en": "Bunny Hop",
+    "name_vi": "Nhảy cao",
+    "lore_en": "Compatible with: Leggings\n\nLet's you jump higher",
+    "max_level": 3,
+    "anvil_cost": 8,
+    "supported_items": "#minecraft:enchantable/leg_armor"
+  },
+  "enchantencore:caravan_curse": {
+    "name_en": "Curse of Caravan",
+    "name_vi": "Lời nguyền của đoàn lữ hành",
+    "lore_en": "Compatible with: Armor\n\nWearer gets slowed down when leashing entities",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:cleansing": {
+    "name_en": "Cleansing",
+    "name_vi": "Thanh tẩy",
+    "lore_en": "Compatible with: Shields\n\nClears all effects when raised, draining durability only if effects were removed",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:shield"
+  },
+  "enchantencore:color_blindness_curse": {
+    "name_en": "Curse of Color Blindness",
+    "name_vi": "Curse of Color Blindness",
+    "lore_en": "Compatible with: Helmets\n\nWearer becomes color blind when equipped",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:corrosion_curse": {
+    "name_en": "Curse of Corrosion",
+    "name_vi": "Lời Nguyền Ăn Mòn",
+    "lore_en": "Compatible with: Any Damageable\n\nSlowly drains durability in rain or underwater",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/durability"
+  },
+  "enchantencore:crab_claw": {
+    "name_en": "Crab Claw",
+    "name_vi": "Càng Cua",
+    "lore_en": "Compatible with: Tools & Swords\n\nIncreases block/entity interaction range",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:valid_for_crab_claw"
+  },
+  "enchantencore:crank_curse": {
+    "name_en": "Curse of Crank",
+    "name_vi": "Lời nguyền kì lạ",
+    "lore_en": "Compatible with: Armor\n\nHurts the wearer when not moving",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:creeper_alloy": {
+    "name_en": "Creeper Alloy",
+    "name_vi": "Hợp kim nổ",
+    "lore_en": "Compatible with: Chestplates\n\nCauses an explosion when you are hit",
+    "max_level": 3,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:chest_armor"
+  },
+  "enchantencore:creeper_blessing": {
+    "name_en": "Creeper Blessing",
+    "name_vi": "Creeper Blessing",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 8,
+    "supported_items": "#minecraft:enchantable/leg_armor"
+  },
+  "enchantencore:creeper_vision_curse": {
+    "name_en": "Curse of Creeper Vision",
+    "name_vi": "Curse of Creeper Vision",
+    "lore_en": "Compatible with: Helmets\n\nWearer sees the world with the eyes of a Creeper",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:crispbread": {
+    "name_en": "Crispbread",
+    "name_vi": "Bánh mì mỏng",
+    "lore_en": "Compatible with: Shields\n\nSaturation effect when equipped",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:shield"
+  },
+  "enchantencore:crop_dance": {
+    "name_en": "Crop Dance",
+    "name_vi": "Nhảy để trồng trọt",
+    "lore_en": "Compatible with: Boots\n\nSneak-Dance to let crops around you grow",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:crystalize_arrow": {
+    "name_en": "Crystalize Arrow",
+    "name_vi": "Crystalize Arrow",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 6,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:cushion": {
+    "name_en": "Cushion",
+    "name_vi": "Cushion",
+    "lore_en": "Compatible with: Elytra\n\nProtection against damage when flying into walls",
+    "max_level": 4,
+    "anvil_cost": 1,
+    "supported_items": "minecraft:elytra"
+  },
+  "enchantencore:dark_infused": {
+    "name_en": "Dark Infused",
+    "name_vi": "Dark Infused",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:darkness_alloy": {
+    "name_en": "Darkness Alloy",
+    "name_vi": "Hợp kim bóng tối",
+    "lore_en": "Compatible with: Chestplates\n\nGives attacking entities darkness effect",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:chest_armor"
+  },
+  "enchantencore:day_protection": {
+    "name_en": "Day Protection",
+    "name_vi": "Bảo vệ ban ngày",
+    "lore_en": "Compatible with: Armor\n\nTwice the damage protection than the vanilla enchant but works only at day time (overworld)",
+    "max_level": 4,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:death_curse": {
+    "name_en": "Curse of Death",
+    "name_vi": "Lời nguyền chết",
+    "lore_en": "Compatible with: Swords, Spears\n\nSmall chance of dying when attacking",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/melee_weapon"
+  },
+  "enchantencore:dismount": {
+    "name_en": "Dismount",
+    "name_vi": "Hất Ngựa",
+    "lore_en": "Compatible with: Spears\n\nCharged spear hits knock riders off their mounts",
+    "max_level": 1,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/lunge"
+  },
+  "enchantencore:dolphin_blessing": {
+    "name_en": "Dolphin Blessing",
+    "name_vi": "Dolphin Blessing",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:echoing_aura": {
+    "name_en": "Echoing Aura",
+    "name_vi": "Hào quang vang vọng",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic echoing aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:electric_walker": {
+    "name_en": "Electric Walker",
+    "name_vi": "Chân điện",
+    "lore_en": "Compatible with: Boots\n\nPowers Redstone for a brief moment when walking over it",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:emberweave": {
+    "name_en": "Emberweave",
+    "name_vi": "Dệt Than Hồng",
+    "lore_en": "Compatible with: Any Damageable\n\nSlowly repairs the item while in the Nether",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/durability"
+  },
+  "enchantencore:enchanted_aura": {
+    "name_en": "Enchanted Aura",
+    "name_vi": "Hào quang nâng cấp",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic enchanted aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:end_protection": {
+    "name_en": "End Protection",
+    "name_vi": "Bảo vệ End",
+    "lore_en": "Compatible with: Armor\n\nTwice the damage protection than the vanilla enchant but works only the end",
+    "max_level": 4,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:end_speed": {
+    "name_en": "End Speed",
+    "name_vi": "End Speed",
+    "lore_en": "Compatible with: Boots\n\nIncreases movement speed when in the end",
+    "max_level": 3,
+    "anvil_cost": 8,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:ender_aura": {
+    "name_en": "Ender Aura",
+    "name_vi": "Hào quang của Ender",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic ender aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:ender_shot": {
+    "name_en": "Ender Shot",
+    "name_vi": "Phát bắn dịch chuyển",
+    "lore_en": "Compatible with: Crossbows, Bows\n\nTeleports hit entities on the surface randomly",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:ender_vision_curse": {
+    "name_en": "Curse of Ender Vision",
+    "name_vi": "Curse of Ender Vision",
+    "lore_en": "Compatible with: Helmets\n\nWearer sees the world with the eyes of an Enderman",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:enderscape": {
+    "name_en": "Enderscape",
+    "name_vi": "Dịch chuyển tức thời",
+    "lore_en": "Compatible with: Leggings\n\nYou teleport randomly in a 5 block radius when hit on the surface",
+    "max_level": 1,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:leg_armor"
+  },
+  "enchantencore:evokers_wrath": {
+    "name_en": "Evokers Wrath",
+    "name_vi": "Sự phẫn nộ của kẻ triệu hồi",
+    "lore_en": "Compatible with: Crossbows\n\nArrows spawn Evoker Fangs when they land",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/crossbow"
+  },
+  "enchantencore:fetch": {
+    "name_en": "Fetch",
+    "name_vi": "Fetch",
+    "lore_en": "Compatible with: Wolf Armor\n\nSmall chance for a Wolf to fetch loot",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:wolf_armor"
+  },
+  "enchantencore:fire_alloy": {
+    "name_en": "Fire Alloy",
+    "name_vi": "Hợp kim lửa",
+    "lore_en": "Compatible with: Chestplates\n\nIgnites attacking entities",
+    "max_level": 3,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:chest_armor"
+  },
+  "enchantencore:flaming_aura": {
+    "name_en": "Flaming Aura",
+    "name_vi": "Hào quang lửa",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic flaming aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:flare": {
+    "name_en": "Flare",
+    "name_vi": "Lửa",
+    "lore_en": "Compatible with: Crossbows, Bows\n\nArrows explode like fireworks when they land or hit an entity",
+    "max_level": 5,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:forge_shot": {
+    "name_en": "Forge Shot",
+    "name_vi": "Cú bắn của thợ rèn",
+    "lore_en": "Compatible with: Crossbows, Bows\n\nArrows spawn falling Anvils when they land",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:fragility_curse": {
+    "name_en": "Curse of Fragility",
+    "name_vi": "Lời nguyền mỏng manh",
+    "lore_en": "Compatible with: Melee Weapons\n\nDrains durability points faster",
+    "max_level": 1,
+    "anvil_cost": 8,
+    "supported_items": "#enchantencore:weapons"
+  },
+  "enchantencore:frenzy": {
+    "name_en": "Frenzy",
+    "name_vi": "Frenzy",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 8,
+    "supported_items": "#minecraft:enchantable/leg_armor"
+  },
+  "enchantencore:gallop": {
+    "name_en": "Gallop",
+    "name_vi": "Gallop",
+    "lore_en": "Compatible with: Saddles\n\nThe equipped mob gets a speed boost when ridden",
+    "max_level": 3,
+    "anvil_cost": 8,
+    "supported_items": "minecraft:saddle"
+  },
+  "enchantencore:ghost_spirit": {
+    "name_en": "Ghost Spirit",
+    "name_vi": "Vong hồn",
+    "lore_en": "Compatible with: Wolf Armor\n\nMakes your Wolf almost invincible but it also has 0 attack damage",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:wolf_armor"
+  },
+  "enchantencore:gluttony": {
+    "name_en": "Gluttony",
+    "name_vi": "Háu ăn",
+    "lore_en": "Compatible with: Tools\n\nSucks up items in a 2-10 block radius depending on the level",
+    "max_level": 5,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_tools"
+  },
+  "enchantencore:grass_walker": {
+    "name_en": "Grass Walker",
+    "name_vi": "Chân cỏ",
+    "lore_en": "Compatible with: Boots\n\nTurns dirt into grass blocks when walking over it",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:growth": {
+    "name_en": "Growth",
+    "name_vi": "To lớn",
+    "lore_en": "Compatible with: Chestplate, Elytras, Wolf/Horse Armor\n\nIncreases player scale and step height",
+    "max_level": 5,
+    "anvil_cost": 2,
+    "supported_items": "#enchantencore:valid_for_growth"
+  },
+  "enchantencore:guard": {
+    "name_en": "Guard",
+    "name_vi": "Guard",
+    "lore_en": "Compatible with: Swords, Spears, Axes, Maces\n\nAllows for blocking melee attacks with the enchanted item",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:can_block"
+  },
+  "enchantencore:habanero": {
+    "name_en": "Habanero",
+    "name_vi": "Habanero",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:chest_armor"
+  },
+  "enchantencore:handyman": {
+    "name_en": "Handyman",
+    "name_vi": "Kẻ chăm chỉ",
+    "lore_en": "Compatible with: Any Enchantable\n\nKeeps repair cost low",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_enchantable"
+  },
+  "enchantencore:hardened": {
+    "name_en": "Hardened",
+    "name_vi": "Cứng cáp",
+    "lore_en": "Compatible with: Shields\n\nExtra armor when equipped",
+    "max_level": 5,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:shield"
+  },
+  "enchantencore:harpoon": {
+    "name_en": "Harpoon",
+    "name_vi": "Lao Móc",
+    "lore_en": "Compatible with: Fishing Rods\n\nReeled-in mobs get yanked towards you",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/fishing"
+  },
+  "enchantencore:haste": {
+    "name_en": "Haste",
+    "name_vi": "Nhanh nhẹn",
+    "lore_en": "Compatible with: Tools\n\nApplies Haste effect when in mainhand equipped",
+    "max_level": 3,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:enchantable/mining"
+  },
+  "enchantencore:heavenly_aura": {
+    "name_en": "Heavenly Aura",
+    "name_vi": "Hào quang thiên đường",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic heavenly aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:heroes_crown": {
+    "name_en": "Heroes Crown",
+    "name_vi": "Heroes Crown",
+    "lore_en": "§Compatible with: Helmets\n\nGives the wearer the Hero of the Village effect but drains durability",
+    "max_level": 5,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:hiding_curse": {
+    "name_en": "Curse of Hiding",
+    "name_vi": "Lời nguyền ẩn giấu",
+    "lore_en": "Compatible with: Swords, Spears\n\nHit entities turn invisible",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/melee_weapon"
+  },
+  "enchantencore:hunger_aspect": {
+    "name_en": "Hunger Aspect",
+    "name_vi": "Khía cạnh của đói",
+    "lore_en": "Compatible with: Swords, Spears, Maces\n\nApplies hunger effect to hit entities",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:hurricane": {
+    "name_en": "Hurricane",
+    "name_vi": "Hurricane",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": [
+      "minecraft:bow",
+      "minecraft:trident",
+      "minecraft:crossbow"
+    ]
+  },
+  "enchantencore:ice_alloy": {
+    "name_en": "Ice Alloy",
+    "name_vi": "Hợp băng",
+    "lore_en": "Compatible with: Chestplates\n\nFreezes attacking entities",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:chest_armor"
+  },
+  "enchantencore:illumination": {
+    "name_en": "Illumination",
+    "name_vi": "Phát quang",
+    "lore_en": "Compatible with: Helmets\n\nLightens up the area around you when headblock is not obstructed",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:impale_rush": {
+    "name_en": "Impale Rush",
+    "name_vi": "Xung Phong Xuyên Thấu",
+    "lore_en": "Compatible with: Spears\n\nCharged spear hits pin the target in place",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/lunge"
+  },
+  "enchantencore:implosion": {
+    "name_en": "Implosion",
+    "name_vi": "Phát nổ",
+    "lore_en": "Compatible with: Crossbows, Bows\n\nPulls in hostile entities within a 5 block radius",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:incognito": {
+    "name_en": "Incognito",
+    "name_vi": "Ẩn Danh",
+    "lore_en": "Compatible with: Helmets\n\nHides the wearers name tag",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:infested_aspect": {
+    "name_en": "Infested Aspect",
+    "name_vi": "Khía cạnh nhiễm khuẩn",
+    "lore_en": "Compatible with: Swords, Spears, Maces\n\nApplies infested effect to hit entities",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:infinity_durability": {
+    "name_en": "Infinity Durability",
+    "name_vi": "Infinity Durability",
+    "lore_en": "",
+    "max_level": 1,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/durability"
+  },
+  "enchantencore:invisibility_cloak": {
+    "name_en": "Invisibility Cloak",
+    "name_vi": "Áo choàng tàng hình",
+    "lore_en": "Compatible with: Boots\n\nCrouching turns you invisible",
+    "max_level": 1,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:jousting": {
+    "name_en": "Jousting",
+    "name_vi": "Đấu Thương",
+    "lore_en": "Compatible with: Spears\n\nDeals extra damage while riding a mount",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/lunge"
+  },
+  "enchantencore:last_stand": {
+    "name_en": "Last Stand",
+    "name_vi": "Last Stand",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:leaf_jumper": {
+    "name_en": "Leaf Jumper",
+    "name_vi": "Leaf Jumper",
+    "lore_en": "Compatible with: Boots\n\nSpawns Leaf Blocks when jumping in the air",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:leech": {
+    "name_en": "Leech",
+    "name_vi": "Hút máu",
+    "lore_en": "Compatible with: Swords, Spears, Axes, Tridents, Maces\n\nRegenerate health when hitting entities",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:weapons"
+  },
+  "enchantencore:levitation_aspect": {
+    "name_en": "Levitation Aspect",
+    "name_vi": "Khía cạnh lơ lửng",
+    "lore_en": "Compatible with: Swords, Spears, Maces\n\nApplies levitation effect to hit entities",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:lightning_bolt": {
+    "name_en": "Lightning Bolt",
+    "name_vi": "Tia sét",
+    "lore_en": "Compatible with: Crossbows, Bows\n\nHas a chance to summon lightning upon hit entities when they can see the sky",
+    "max_level": 1,
+    "anvil_cost": 2,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:lingering": {
+    "name_en": "Lingering",
+    "name_vi": "Kéo dài",
+    "lore_en": "Compatible with: Crossbows, Bows\n\nLeaves behind a lingering cloud with the effect of the shot tipped arrow when hitting a block",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:lovely_aura": {
+    "name_en": "Lovely Aura",
+    "name_vi": "Hào quang tình yêu",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic lovely aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:lush_aura": {
+    "name_en": "Lush Aura",
+    "name_vi": "Hào quang tươi mới",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic lush aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:machine_gun": {
+    "name_en": "Machine Gun",
+    "name_vi": "Machine Gun",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/crossbow"
+  },
+  "enchantencore:magic_protection": {
+    "name_en": "Magic Protection",
+    "name_vi": "Magic Protection",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:magma_walker": {
+    "name_en": "Magma Walker",
+    "name_vi": "Chân dung nham",
+    "lore_en": "Compatible with: Boots\n\nTurns Lava into magma blocks when walking over it",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:meteor": {
+    "name_en": "Meteor",
+    "name_vi": "Thiên Thạch",
+    "lore_en": "Compatible with: Maces\n\nSmash attacks after falling 8 blocks set the area on fire",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:mace"
+  },
+  "enchantencore:mirror_vision_curse": {
+    "name_en": "Curse of Mirror Vision",
+    "name_vi": "Curse of Mirror Vision",
+    "lore_en": "Compatible with: Helmets\n\nWearers vision is mirrored when equipped",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:moonwalk": {
+    "name_en": "Moonwalk",
+    "name_vi": "Vũ điệu mặt trăng",
+    "lore_en": "Compatible with: Elytra, Horse Armor\n\nReduces gravity when equipped",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": [
+      "minecraft:elytra",
+      "minecraft:diamond_horse_armor",
+      "minecraft:golden_horse_armor",
+      "minecraft:iron_horse_armor",
+      "minecraft:leather_horse_armor",
+      "minecraft:netherite_horse_armor"
+    ]
+  },
+  "enchantencore:moonweave": {
+    "name_en": "Moonweave",
+    "name_vi": "Dệt Ánh Trăng",
+    "lore_en": "Compatible with: Any Damageable\n\nSlowly repairs the item under the open night sky",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/durability"
+  },
+  "enchantencore:muddy_aura": {
+    "name_en": "Muddy Aura",
+    "name_vi": "Hào quang bùn",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic muddy aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:neptune": {
+    "name_en": "Neptune",
+    "name_vi": "Neptune",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 10,
+    "supported_items": "#minecraft:enchantable/trident"
+  },
+  "enchantencore:nether_protection": {
+    "name_en": "Nether Protection",
+    "name_vi": "Bảo vệ khỏi địa ngục",
+    "lore_en": "Compatible with: Armor\n\nTwice the damage protection than the vanilla enchant but works only in the nether",
+    "max_level": 4,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:night_protection": {
+    "name_en": "Night Protection",
+    "name_vi": "Night Protection",
+    "lore_en": "Compatible with: Armor\n\nTwice the damage protection than the vanilla enchant but works only at night time (overworld)",
+    "max_level": 4,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:night_vision": {
+    "name_en": "Night Vision",
+    "name_vi": "Nhìn đêm",
+    "lore_en": "Compatible with: Helmets\n\nTurns the helmet into Night Vision Goggles",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:nightmare": {
+    "name_en": "Nightmare",
+    "name_vi": "Nightmare",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:nuclear_arrow": {
+    "name_en": "Nuclear Arrow",
+    "name_vi": "Nuclear Arrow",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 6,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:ominous_aura": {
+    "name_en": "Ominous Aura",
+    "name_vi": "Hào quang quan ngại",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic ominous aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:ominous_healing": {
+    "name_en": "Ominous Healing",
+    "name_vi": "Điềm Gở Hồi Phục",
+    "lore_en": "Compatible with: Shields\n\nHas a 60% chance to spawn a healing lingering potion when hit while having 3.5 hearts or less",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:shield"
+  },
+  "enchantencore:ominous_rain": {
+    "name_en": "Ominous Rain",
+    "name_vi": "Mưa điềm gở",
+    "lore_en": "Compatible with: Tridents\n\nSummons ominous projectiles when projectile lands",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/trident"
+  },
+  "enchantencore:oozing_aspect": {
+    "name_en": "Oozing Aspect",
+    "name_vi": "Tẩm Chất Nhầy",
+    "lore_en": "Compatible with: Swords, Spears, Maces\n\nApplies oozing effect to hit entities",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:ownership_curse": {
+    "name_en": "Curse of Ownership",
+    "name_vi": "Lời nguyền sở hữu",
+    "lore_en": "Compatible with: Armor\n\nWearer takes damage when their pets do",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:pacifier": {
+    "name_en": "Pacifier",
+    "name_vi": "Xoa Dịu",
+    "lore_en": "Compatible with: Swords, Spears, Maces\n\nHas a chance to make hit entities harmless for a short period",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:pale_aura": {
+    "name_en": "Pale Aura",
+    "name_vi": "Hào quang mờ nhạt",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic pale aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:path_speed": {
+    "name_en": "Path Speed",
+    "name_vi": "Path Speed",
+    "lore_en": "Compatible with: Boots\n\nIncreases movement speed when on dirt path blocks",
+    "max_level": 3,
+    "anvil_cost": 8,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:pegasus": {
+    "name_en": "Pegasus",
+    "name_vi": "Mã thần",
+    "lore_en": "Compatible with: Horse Armor\n\nHorses fly up to 30 Blocks in the air when mounted. Dismounting gives slow falling to land safely",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_horse_armor"
+  },
+  "enchantencore:perfect_protection": {
+    "name_en": "Perfect Protection",
+    "name_vi": "Perfect Protection",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:phantom_menace": {
+    "name_en": "Phantom Menace",
+    "name_vi": "Hiểm Họa Bóng Ma",
+    "lore_en": "Compatible with: Crossbows, Bows\n\nIncreases Damage against Phantoms",
+    "max_level": 5,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:pickpocket": {
+    "name_en": "Pickpocket",
+    "name_vi": "Pickpocket",
+    "lore_en": "Compatible with: Chestplates\n\nRight Click to steal items from villager inventories",
+    "max_level": 1,
+    "anvil_cost": 5,
+    "supported_items": "#minecraft:chest_armor"
+  },
+  "enchantencore:ping_tag": {
+    "name_en": "Ping Tag",
+    "name_vi": "Chỉ điểm",
+    "lore_en": "Compatible with: Crossbows, Bows, Axes, Swords, Spears, Tridents, Maces\n\nIndicates that an entity has been hit by playing a ping sound",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:valid_for_ping_tag"
+  },
+  "enchantencore:plow": {
+    "name_en": "Plow",
+    "name_vi": "Cày Cuốc",
+    "lore_en": "Compatible with: Hoes\n\nTills a larger area with left-click",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:hoes"
+  },
+  "enchantencore:poison_aspect": {
+    "name_en": "Poison Aspect",
+    "name_vi": "Poison Aspect",
+    "lore_en": "Compatible with: Swords, Spears, Maces\n\nApplies poison effect to hit entities",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:poison_infused": {
+    "name_en": "Poison Infused",
+    "name_vi": "Poison Infused",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:poppy_peace": {
+    "name_en": "Poppy Peace",
+    "name_vi": "Poppy Peace",
+    "lore_en": "",
+    "max_level": 1,
+    "anvil_cost": 2,
+    "supported_items": "#enchantencore:weapons"
+  },
+  "enchantencore:poseidon": {
+    "name_en": "Poseidon",
+    "name_vi": "Poseidon",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 10,
+    "supported_items": "#minecraft:enchantable/trident"
+  },
+  "enchantencore:propeller": {
+    "name_en": "Propeller",
+    "name_vi": "Cánh quạt",
+    "lore_en": "Compatible with: Harnesses\n\nIncreases flying speed of Happy Ghasts",
+    "max_level": 5,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:harnesses"
+  },
+  "enchantencore:pufferfish": {
+    "name_en": "Pufferfish",
+    "name_vi": "Pufferfish",
+    "lore_en": "Compatible with: Tridents\n\nHas a chance to spawn a pufferfish when the hit entity is in water",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/trident"
+  },
+  "enchantencore:purify_water": {
+    "name_en": "Purify Water",
+    "name_vi": "Purify Water",
+    "lore_en": "",
+    "max_level": 1,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/trident"
+  },
+  "enchantencore:rabbit_foot": {
+    "name_en": "Rabbit Foot",
+    "name_vi": "Rabbit Foot",
+    "lore_en": "Compatible with: Boots\n\nIncreases luck attribute",
+    "max_level": 5,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:foot_armor"
+  },
+  "enchantencore:radiant_life": {
+    "name_en": "Radiant Life",
+    "name_vi": "Radiant Life",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:weapons"
+  },
+  "enchantencore:railgun": {
+    "name_en": "Railgun",
+    "name_vi": "Railgun",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 6,
+    "supported_items": "minecraft:crossbow"
+  },
+  "enchantencore:rainweave": {
+    "name_en": "Rainweave",
+    "name_vi": "Dệt Mưa",
+    "lore_en": "Compatible with: Any Damageable\n\nSlowly repairs the item while rain falls on you",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/durability"
+  },
+  "enchantencore:randomness_curse": {
+    "name_en": "Curse of Randomness",
+    "name_vi": "Curse of Randomness",
+    "lore_en": "Compatible with:All Tools\n\nRerolls weapon enchantments on each hit",
+    "max_level": 1,
+    "anvil_cost": 5,
+    "supported_items": "#enchantencore:all_tools"
+  },
+  "enchantencore:reach_curse": {
+    "name_en": "Curse of Reach",
+    "name_vi": "Curse of Reach",
+    "lore_en": "Compatible with: Tools\n\nReduces block/entity interaction range",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_tools"
+  },
+  "enchantencore:reflection": {
+    "name_en": "Reflection",
+    "name_vi": "Reflection",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:chest_armor"
+  },
+  "enchantencore:refuel": {
+    "name_en": "Refuel",
+    "name_vi": "Refuel",
+    "lore_en": "Compatible with: Elytra\n\nTakes an identical firework rocket from the inventory and adds it to the held stack each time one is used while gliding",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:elytra"
+  },
+  "enchantencore:regrowth": {
+    "name_en": "Regrowth",
+    "name_vi": "Tái sinh",
+    "lore_en": "Compatible with: Hoes\n\nReplants fully grown Crops when harvested",
+    "max_level": 1,
+    "anvil_cost": 8,
+    "supported_items": "#minecraft:hoes"
+  },
+  "enchantencore:rejuvenation": {
+    "name_en": "Rejuvenation",
+    "name_vi": "Rejuvenation",
+    "lore_en": "Compatible with: Shields\n\nIncreases max health",
+    "max_level": 4,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:shield"
+  },
+  "enchantencore:replenish": {
+    "name_en": "Replenish",
+    "name_vi": "Bổ sung",
+    "lore_en": "Compatible with: Crossbows, Bows\n\n50% Chance to not consume an arrow, tipped arrow, spectral arrow or firework when shot",
+    "max_level": 1,
+    "anvil_cost": 8,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:sacrifice": {
+    "name_en": "Sacrifice",
+    "name_vi": "Sacrifice",
+    "lore_en": "Compatible with: Any Enchantable\n\nRepairs Tools/Armor when wearer gets hit by entities",
+    "max_level": 5,
+    "anvil_cost": 1,
+    "supported_items": "#enchantencore:all_enchantable_wolf_armor"
+  },
+  "enchantencore:safe_landing": {
+    "name_en": "Safe Landing",
+    "name_vi": "Safe Landing",
+    "lore_en": "Compatible with: Elytra\n\nIncreases safe landing height",
+    "max_level": 5,
+    "anvil_cost": 1,
+    "supported_items": "minecraft:elytra"
+  },
+  "enchantencore:sand_speed": {
+    "name_en": "Sand Speed",
+    "name_vi": "Sand Speed",
+    "lore_en": "Compatible with: Boots\n\nIncreases movement speed when on sand",
+    "max_level": 3,
+    "anvil_cost": 8,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:scent": {
+    "name_en": "Scent",
+    "name_vi": "Scent",
+    "lore_en": "Compatible with: Wolf Armor\n\nWolves make nearby entities glow when they move",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:wolf_armor"
+  },
+  "enchantencore:scholar_of_blocks": {
+    "name_en": "Scholar of Blocks",
+    "name_vi": "Scholar of Blocks",
+    "lore_en": "Compatible with: Tools\n\nMore experience from mining blocks",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#enchantencore:no_weapons"
+  },
+  "enchantencore:scholar_of_fishing": {
+    "name_en": "Scholar of Fishing",
+    "name_vi": "Scholar of Fishing",
+    "lore_en": "Compatible with: Fishing Rods\n\nIncreases the experience you get from fishing",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/fishing"
+  },
+  "enchantencore:scholar_of_mobs": {
+    "name_en": "Scholar of Mobs",
+    "name_vi": "Scholar of Mobs",
+    "lore_en": "Compatible with: Melee Weapons\n\nMore experience from killing entities",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#enchantencore:weapons"
+  },
+  "enchantencore:scorpion_spirit": {
+    "name_en": "Scorpion Spirit",
+    "name_vi": "Scorpion Spirit",
+    "lore_en": "Compatible with: Wolf Armor\n\nInfuses a Wolf with the powers of a Scorpion",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:wolf_armor"
+  },
+  "enchantencore:sea_breeze": {
+    "name_en": "Sea Breeze",
+    "name_vi": "Gió biển",
+    "lore_en": "Compatible with: Tridents\n\nWind Charges hit entities away when hit by thrown trident",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/trident"
+  },
+  "enchantencore:seeker": {
+    "name_en": "Seeker",
+    "name_vi": "Kẻ kiếm tìm",
+    "lore_en": "Compatible with: Helmets\n\nHighlights Items in a 4-12 block radius depending on the level",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:shortsight_curse": {
+    "name_en": "Curse of Shortsight",
+    "name_vi": "Curse of Shortsight",
+    "lore_en": "Compatible with: Helmets\n\nBlurs the wearers vision when equipped",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:shrinkage": {
+    "name_en": "Shrinkage",
+    "name_vi": "Shrinkage",
+    "lore_en": "Compatible with: Chestplates, Elytras, Wolf/Horse Armor, Harnesses\n\nDecreases entity scale and step height",
+    "max_level": 5,
+    "anvil_cost": 2,
+    "supported_items": "#enchantencore:valid_for_shrinkage"
+  },
+  "enchantencore:shulker_shell": {
+    "name_en": "Shulker Shell",
+    "name_vi": "Vỏ Shulker",
+    "lore_en": "Compatible with: Chestplates\n\nFirework, Tridents, (Spectral) Arrows shot at the wearer fall to the ground when wearer stands still",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:chest_armor"
+  },
+  "enchantencore:slowness_aspect": {
+    "name_en": "Slowness Aspect",
+    "name_vi": "Slowness Aspect",
+    "lore_en": "Compatible with: Swords, Spears, Maces\n\nApplies slowness effect to hit entities",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:sniper": {
+    "name_en": "Sniper",
+    "name_vi": "Sniper",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:sonic": {
+    "name_en": "Sonic",
+    "name_vi": "Sonic",
+    "lore_en": "Compatible with: Boots\n\nBoosts walking speed but decreases sneaking speed",
+    "max_level": 3,
+    "anvil_cost": 8,
+    "supported_items": "#minecraft:foot_armor"
+  },
+  "enchantencore:sparking_aura": {
+    "name_en": "Sparking Aura",
+    "name_vi": "Hào quang pháo hoa",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic sparking aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:spectral_form": {
+    "name_en": "Spectral Form",
+    "name_vi": "Spectral Form",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:spider_vision_curse": {
+    "name_en": "Curse of Spider Vision",
+    "name_vi": "Curse of Spider Vision",
+    "lore_en": "Compatible with: Helmets\n\nWearer sees the world with the eyes of a Spider",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:sticky_aura": {
+    "name_en": "Sticky Aura",
+    "name_vi": "Hào quang bám dính",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic sticky aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:sting": {
+    "name_en": "Sting",
+    "name_vi": "Sting",
+    "lore_en": "",
+    "max_level": 1,
+    "anvil_cost": 2,
+    "supported_items": "minecraft:crossbow"
+  },
+  "enchantencore:strafe": {
+    "name_en": "Strafe",
+    "name_vi": "Strafe",
+    "lore_en": "Compatible with: Boots\n\nSprint + Left/Right lets you strafe fast in that direction",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:foot_armor"
+  },
+  "enchantencore:summer_walker": {
+    "name_en": "Summer Walker",
+    "name_vi": "Summer Walker",
+    "lore_en": "Compatible with: Boots\n\nMelts snow when walking over it",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:sunweave": {
+    "name_en": "Sunweave",
+    "name_vi": "Dệt Ánh Dương",
+    "lore_en": "Compatible with: Any Damageable\n\nSlowly repairs the item under the open daytime sky",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/durability"
+  },
+  "enchantencore:surfer": {
+    "name_en": "Surfer",
+    "name_vi": "Lướt Sóng",
+    "lore_en": "Compatible with: Saddles\n\nIncreases swimming speed of entities",
+    "max_level": 3,
+    "anvil_cost": 8,
+    "supported_items": "minecraft:saddle"
+  },
+  "enchantencore:swift_slash": {
+    "name_en": "Swift Slash",
+    "name_vi": "Swift Slash",
+    "lore_en": "Compatible with: Melee Weapons\n\nIncreases attack speed",
+    "max_level": 5,
+    "anvil_cost": 1,
+    "supported_items": "#enchantencore:weapons"
+  },
+  "enchantencore:switch": {
+    "name_en": "Switch",
+    "name_vi": "Switch",
+    "lore_en": "Compatible with: Tridents\n\nSwaps places with hit entity",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/trident"
+  },
+  "enchantencore:thorns_protection": {
+    "name_en": "Thorns Protection",
+    "name_vi": "Thorns Protection",
+    "lore_en": "Compatible with: Armor\n\nProtection against Thorns including Sweet Berry Bushes and Cactus",
+    "max_level": 4,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:tideweave": {
+    "name_en": "Tideweave",
+    "name_vi": "Dệt Thủy Triều",
+    "lore_en": "Compatible with: Any Damageable\n\nSlowly repairs the item while underwater",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/durability"
+  },
+  "enchantencore:trial_aura": {
+    "name_en": "Trial Aura",
+    "name_vi": "Hào quang thử nghiệm",
+    "lore_en": "Compatible with: Helmets\n\nApplies a cosmetic trial aura to the wearer, it's pets and most of the projectiles shot",
+    "max_level": 1,
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:head_armor"
+  },
+  "enchantencore:trial_runner": {
+    "name_en": "Trial Runner",
+    "name_vi": "Trial Runner",
+    "lore_en": "Compatible with: Boots\n\nGives the wearer the Trial Omen effect but drains durability",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:foot_armor"
+  },
+  "enchantencore:undying_curse": {
+    "name_en": "Curse of Undying",
+    "name_vi": "Curse of Undying",
+    "lore_en": "Compatible with: Tools\n\nTurns the tool into a Totem of Undying",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_tools"
+  },
+  "enchantencore:updraft": {
+    "name_en": "Updraft",
+    "name_vi": "Luồng Gió Nâng",
+    "lore_en": "Compatible with: Elytra\n\nGliding over lava, magma or fire lifts you up",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "minecraft:elytra"
+  },
+  "enchantencore:velocity": {
+    "name_en": "Velocity",
+    "name_vi": "Gia Tốc",
+    "lore_en": "Compatible with: Bows, Crossbows, Tridents\n\nDoubles the speed of shot projectiles",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": [
+      "minecraft:bow",
+      "minecraft:crossbow",
+      "minecraft:trident"
+    ]
+  },
+  "enchantencore:vitality": {
+    "name_en": "Vitality",
+    "name_vi": "Vitality",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 3,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:void_vision_curse": {
+    "name_en": "Curse of Void Vision",
+    "name_vi": "Curse of Void Vision",
+    "lore_en": "Compatible with: Helmets\n\nWearer sees the world with the eyes of the Void",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/head_armor"
+  },
+  "enchantencore:voidweave": {
+    "name_en": "Voidweave",
+    "name_vi": "Dệt Hư Không",
+    "lore_en": "Compatible with: Any Damageable\n\nSlowly repairs the item while in the End",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/durability"
+  },
+  "enchantencore:warden": {
+    "name_en": "Warden",
+    "name_vi": "Warden",
+    "lore_en": "",
+    "max_level": 5,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:warped_arrow": {
+    "name_en": "Warped Arrow",
+    "name_vi": "Warped Arrow",
+    "lore_en": "",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:warped_trident": {
+    "name_en": "Warped Trident",
+    "name_vi": "Warped Trident",
+    "lore_en": "",
+    "max_level": 1,
+    "anvil_cost": 10,
+    "supported_items": "#minecraft:enchantable/trident"
+  },
+  "enchantencore:weakness_aspect": {
+    "name_en": "Weakness Aspect",
+    "name_vi": "Weakness Aspect",
+    "lore_en": "Compatible with: Swords, Spears, Maces\n\nApplies weakness effect to hit entities",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:weaving_aspect": {
+    "name_en": "Weaving Aspect",
+    "name_vi": "Weaving Aspect",
+    "lore_en": "Compatible with: Swords, Spears, Maces\n\nApplies weaving effect to hit entities",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:web_infused": {
+    "name_en": "Web Infused",
+    "name_vi": "Web Infused",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:welfare_curse": {
+    "name_en": "Curse of Welfare",
+    "name_vi": "Curse of Welfare",
+    "lore_en": "Compatible with: Tools\n\nDestroys items in a 3 block radius",
+    "max_level": 1,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_tools"
+  },
+  "enchantencore:wind_aspect": {
+    "name_en": "Wind Aspect",
+    "name_vi": "Wind Aspect",
+    "lore_en": "Compatible with: Swords, Spears, Maces\n\nwind charges hit entities away",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:wind_spirit": {
+    "name_en": "Wind Spirit",
+    "name_vi": "Wind Spirit",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor"
+  },
+  "enchantencore:wither_aspect": {
+    "name_en": "Wither Aspect",
+    "name_vi": "Wither Aspect",
+    "lore_en": "Compatible with: Swords, Spears, Maces\n\nApplies wither effect to hit entities",
+    "max_level": 2,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/fire_aspect"
+  },
+  "enchantencore:wither_infused": {
+    "name_en": "Wither Infused",
+    "name_vi": "Wither Infused",
+    "lore_en": "",
+    "max_level": 3,
+    "anvil_cost": 4,
+    "supported_items": "#enchantencore:all_bows"
+  },
+  "enchantencore:wither_protection": {
+    "name_en": "Wither Protection",
+    "name_vi": "Wither Protection",
+    "lore_en": "Compatible with: Armor\n\nProtection against Wither Effect and Wither Skulls",
+    "max_level": 4,
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/armor"
+  },
+  "enchantencore:yoink": {
+    "name_en": "Yoink",
+    "name_vi": "Chôm",
+    "lore_en": "Compatible with: Fishing Rods\n\nReeling in a hooked mob steals its held item",
+    "max_level": 3,
+    "anvil_cost": 2,
+    "supported_items": "#minecraft:enchantable/fishing"
+  }
+}

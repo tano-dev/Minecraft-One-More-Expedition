@@ -1,0 +1,3778 @@
+{
+  "enchantencore:absolute_unit": {
+    "max_level": 5,
+    "anvil_cost": 8,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "description": {
+      "text": "Absolute Unit",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:adrenaline": {
+    "max_level": 4,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "text": "Adrenaline",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:anchor": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#enchantencore:valid_for_anchor",
+    "description": {
+      "translate": "enchantment.enchantencore.anchor",
+      "fallback": "Anchor"
+    }
+  },
+  "enchantencore:angry_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.angry_aura",
+      "fallback": "Angry Aura"
+    }
+  },
+  "enchantencore:aquatic_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.aquatic_aura",
+      "fallback": "Aquatic Aura"
+    }
+  },
+  "enchantencore:archer_barrage": {
+    "max_level": 5,
+    "anvil_cost": 4,
+    "weight": 3,
+    "supported_items": "minecraft:bow",
+    "description": {
+      "text": "Archer Barrage",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:armor_piercing": {
+    "max_level": 5,
+    "anvil_cost": 6,
+    "weight": 1,
+    "supported_items": "minecraft:crossbow",
+    "description": {
+      "text": "Armor Piercing",
+      "color": "aqua"
+    }
+  },
+  "enchantencore:aurora": {
+    "max_level": 5,
+    "anvil_cost": 4,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "text": "Aurora",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:bane_of_bosses": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#enchantencore:weapons",
+    "description": {
+      "translate": "enchantment.enchantencore.bane_of_bosses",
+      "fallback": "Bane of Bosses"
+    }
+  },
+  "enchantencore:bane_of_endborn": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#enchantencore:weapons",
+    "description": {
+      "translate": "enchantment.enchantencore.bane_of_endborn",
+      "fallback": "Bane of Endborn"
+    }
+  },
+  "enchantencore:bane_of_netherborn": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#enchantencore:weapons",
+    "description": {
+      "translate": "enchantment.enchantencore.bane_of_netherborn",
+      "fallback": "Bane of Netherborn"
+    }
+  },
+  "enchantencore:bane_of_raiders": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#enchantencore:weapons",
+    "description": {
+      "translate": "enchantment.enchantencore.bane_of_raiders",
+      "fallback": "Bane of Raiders"
+    }
+  },
+  "enchantencore:bear_spirit": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "minecraft:wolf_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.bear_spirit",
+      "fallback": "Bear Spirit"
+    }
+  },
+  "enchantencore:blaze_blessing": {
+    "max_level": 5,
+    "anvil_cost": 8,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "description": {
+      "text": "Blaze Blessing",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:blindness_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.blindness_curse",
+      "fallback": "Curse of Blindness"
+    }
+  },
+  "enchantencore:boar_spirit": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "minecraft:wolf_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.boar_spirit",
+      "fallback": "Boar Spirit"
+    }
+  },
+  "enchantencore:boltbringer": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "minecraft:mace",
+    "description": {
+      "translate": "enchantment.enchantencore.boltbringer",
+      "fallback": "Boltbringer"
+    }
+  },
+  "enchantencore:bomber": {
+    "max_level": 3,
+    "anvil_cost": 6,
+    "weight": 1,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "text": "Bomber",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:bounce": {
+    "max_level": 3,
+    "anvil_cost": 8,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.bounce",
+      "fallback": "Bounce"
+    }
+  },
+  "enchantencore:breeze_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "description": {
+      "translate": "enchantment.enchantencore.breeze_curse",
+      "fallback": "Curse of Breeze"
+    }
+  },
+  "enchantencore:bulletproof": {
+    "max_level": 1,
+    "anvil_cost": 5,
+    "weight": 2,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.bulletproof",
+      "fallback": "Bulletproof"
+    }
+  },
+  "enchantencore:bunny_hop": {
+    "max_level": 3,
+    "anvil_cost": 8,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.bunny_hop",
+      "fallback": "Bunny Hop"
+    }
+  },
+  "enchantencore:caravan_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantencore.caravan_curse",
+      "fallback": "Curse of Caravan"
+    }
+  },
+  "enchantencore:cleansing": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "minecraft:shield",
+    "description": {
+      "text": "Cleansing"
+    }
+  },
+  "enchantencore:color_blindness_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.color_blindness_curse",
+      "fallback": "Curse of Color Blindness"
+    }
+  },
+  "enchantencore:corrosion_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "translate": "enchantment.enchantencore.corrosion_curse",
+      "fallback": "Curse of Corrosion"
+    }
+  },
+  "enchantencore:crab_claw": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#enchantencore:valid_for_crab_claw",
+    "description": {
+      "translate": "enchantment.enchantencore.crab_claw",
+      "fallback": "Crab Claw"
+    }
+  },
+  "enchantencore:crank_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantencore.crank_curse",
+      "fallback": "Curse of Crank"
+    }
+  },
+  "enchantencore:creeper_alloy": {
+    "max_level": 3,
+    "anvil_cost": 1,
+    "weight": 5,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.creeper_alloy",
+      "fallback": "Creeper Alloy"
+    }
+  },
+  "enchantencore:creeper_blessing": {
+    "max_level": 5,
+    "anvil_cost": 8,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "description": {
+      "text": "Creeper Blessing",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:creeper_vision_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.creeper_vision_curse",
+      "fallback": "Curse of Creeper Vision"
+    }
+  },
+  "enchantencore:crispbread": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "minecraft:shield",
+    "description": {
+      "translate": "enchantment.enchantencore.crispbread",
+      "fallback": "Crispbread"
+    }
+  },
+  "enchantencore:crop_dance": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.crop_dance",
+      "fallback": "Crop Dance"
+    }
+  },
+  "enchantencore:crystalize_arrow": {
+    "max_level": 3,
+    "anvil_cost": 6,
+    "weight": 1,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "text": "Crystalize Arrow",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:cushion": {
+    "max_level": 4,
+    "anvil_cost": 1,
+    "weight": 10,
+    "supported_items": "minecraft:elytra",
+    "description": {
+      "translate": "enchantment.enchantencore.cushion",
+      "fallback": "Cushion"
+    }
+  },
+  "enchantencore:darkness_alloy": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.darkness_alloy",
+      "fallback": "Darkness Alloy"
+    }
+  },
+  "enchantencore:dark_infused": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 4,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "text": "Dark Infused",
+      "color": "aqua"
+    }
+  },
+  "enchantencore:day_protection": {
+    "max_level": 4,
+    "anvil_cost": 1,
+    "weight": 10,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantencore.day_protection",
+      "fallback": "Day Protection"
+    }
+  },
+  "enchantencore:death_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "description": {
+      "translate": "enchantment.enchantencore.death_curse",
+      "fallback": "Curse of Death"
+    }
+  },
+  "enchantencore:dismount": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/lunge",
+    "description": {
+      "translate": "enchantment.enchantencore.dismount",
+      "fallback": "Dismount"
+    }
+  },
+  "enchantencore:dolphin_blessing": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "text": "Dolphin Blessing",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:echoing_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.echoing_aura",
+      "fallback": "Echoing Aura"
+    }
+  },
+  "enchantencore:electric_walker": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.electric_walker",
+      "fallback": "Electric Walker"
+    }
+  },
+  "enchantencore:emberweave": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "translate": "enchantment.enchantencore.emberweave",
+      "fallback": "Emberweave"
+    }
+  },
+  "enchantencore:enchanted_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.enchanted_aura",
+      "fallback": "Enchanted Aura"
+    }
+  },
+  "enchantencore:enderscape": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:leg_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.enderscape",
+      "fallback": "Enderscape"
+    }
+  },
+  "enchantencore:ender_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.ender_aura",
+      "fallback": "Ender Aura"
+    }
+  },
+  "enchantencore:ender_shot": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 3,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "translate": "enchantment.enchantencore.ender_shot",
+      "fallback": "Ender Shot"
+    }
+  },
+  "enchantencore:ender_vision_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.ender_vision_curse",
+      "fallback": "Curse of Ender Vision"
+    }
+  },
+  "enchantencore:end_protection": {
+    "max_level": 4,
+    "anvil_cost": 1,
+    "weight": 10,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantencore.end_protection",
+      "fallback": "End Protection"
+    }
+  },
+  "enchantencore:end_speed": {
+    "max_level": 3,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.end_speed",
+      "fallback": "End Speed"
+    }
+  },
+  "enchantencore:evokers_wrath": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "description": {
+      "translate": "enchantment.enchantencore.evokers_wrath",
+      "fallback": "Evokers Wrath"
+    }
+  },
+  "enchantencore:fetch": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "minecraft:wolf_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.fetch",
+      "fallback": "Fetch"
+    }
+  },
+  "enchantencore:fire_alloy": {
+    "max_level": 3,
+    "anvil_cost": 1,
+    "weight": 5,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.fire_alloy",
+      "fallback": "Fire Alloy"
+    }
+  },
+  "enchantencore:flaming_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.flaming_aura",
+      "fallback": "Flaming Aura"
+    }
+  },
+  "enchantencore:flare": {
+    "max_level": 5,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "translate": "enchantment.enchantencore.flare",
+      "fallback": "Flare"
+    }
+  },
+  "enchantencore:forge_shot": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 4,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "text": "Forge Shot"
+    }
+  },
+  "enchantencore:fragility_curse": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#enchantencore:weapons",
+    "description": {
+      "translate": "enchantment.enchantencore.fragility_curse",
+      "fallback": "Curse of Fragility"
+    }
+  },
+  "enchantencore:frenzy": {
+    "max_level": 5,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "description": {
+      "text": "Frenzy",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:gallop": {
+    "max_level": 3,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "minecraft:saddle",
+    "description": {
+      "translate": "enchantment.enchantencore.gallop",
+      "fallback": "Gallop"
+    }
+  },
+  "enchantencore:ghost_spirit": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "minecraft:wolf_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.ghost_spirit",
+      "fallback": "Ghost Spirit"
+    }
+  },
+  "enchantencore:gluttony": {
+    "max_level": 5,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#enchantencore:all_tools",
+    "description": {
+      "translate": "enchantment.enchantencore.gluttony",
+      "fallback": "Gluttony"
+    }
+  },
+  "enchantencore:grass_walker": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.grass_walker",
+      "fallback": "Grass Walker"
+    }
+  },
+  "enchantencore:growth": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#enchantencore:valid_for_growth",
+    "description": {
+      "translate": "enchantment.enchantencore.growth",
+      "fallback": "Growth"
+    }
+  },
+  "enchantencore:guard": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#enchantencore:can_block",
+    "description": {
+      "translate": "enchantment.enchantencore.guard",
+      "fallback": "Guard"
+    }
+  },
+  "enchantencore:habanero": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "text": "Habanero Tactics",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:handyman": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#enchantencore:all_enchantable",
+    "description": {
+      "translate": "enchantment.enchantencore.handyman",
+      "fallback": "Handyman"
+    }
+  },
+  "enchantencore:hardened": {
+    "max_level": 5,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "minecraft:shield",
+    "description": {
+      "translate": "enchantment.enchantencore.hardened",
+      "fallback": "Hardened"
+    }
+  },
+  "enchantencore:harpoon": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/fishing",
+    "description": {
+      "translate": "enchantment.enchantencore.harpoon",
+      "fallback": "Harpoon"
+    }
+  },
+  "enchantencore:haste": {
+    "max_level": 3,
+    "anvil_cost": 1,
+    "weight": 4,
+    "supported_items": "#minecraft:enchantable/mining",
+    "description": {
+      "translate": "enchantment.enchantencore.haste",
+      "fallback": "Haste"
+    }
+  },
+  "enchantencore:heavenly_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.heavenly_aura",
+      "fallback": "Heavenly Aura"
+    }
+  },
+  "enchantencore:heroes_crown": {
+    "max_level": 5,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "text": "Heroes Crown",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:hiding_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "description": {
+      "translate": "enchantment.enchantencore.hiding_curse",
+      "fallback": "Curse of Hiding"
+    }
+  },
+  "enchantencore:hunger_aspect": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantencore.hunger_aspect",
+      "fallback": "Hunger Aspect"
+    }
+  },
+  "enchantencore:hurricane": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": [
+      "minecraft:bow",
+      "minecraft:trident",
+      "minecraft:crossbow"
+    ],
+    "description": {
+      "text": "Hurricane",
+      "color": "aqua"
+    }
+  },
+  "enchantencore:ice_alloy": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.ice_alloy",
+      "fallback": "Ice Alloy"
+    }
+  },
+  "enchantencore:illumination": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.illumination",
+      "fallback": "Illumination"
+    }
+  },
+  "enchantencore:impale_rush": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/lunge",
+    "description": {
+      "translate": "enchantment.enchantencore.impale_rush",
+      "fallback": "Impale Rush"
+    }
+  },
+  "enchantencore:implosion": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "translate": "enchantment.enchantencore.implosion",
+      "fallback": "Implosion"
+    }
+  },
+  "enchantencore:incognito": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.incognito",
+      "fallback": "Incognito"
+    }
+  },
+  "enchantencore:infested_aspect": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantencore.infested_aspect",
+      "fallback": "Infested Aspect"
+    }
+  },
+  "enchantencore:infinity_durability": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "text": "Infinity Durability",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:invisibility_cloak": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.invisibility_cloak",
+      "fallback": "Invisibility Cloak"
+    }
+  },
+  "enchantencore:jousting": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/lunge",
+    "description": {
+      "translate": "enchantment.enchantencore.jousting",
+      "fallback": "Jousting"
+    }
+  },
+  "enchantencore:last_stand": {
+    "max_level": 5,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "text": "Last Stand",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:leaf_jumper": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.leaf_jumper",
+      "fallback": "Leaf Jumper"
+    }
+  },
+  "enchantencore:leech": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#enchantencore:weapons",
+    "description": {
+      "translate": "enchantment.enchantencore.leech",
+      "fallback": "Leech"
+    }
+  },
+  "enchantencore:levitation_aspect": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantencore.levitation_aspect",
+      "fallback": "Levitation Aspect"
+    }
+  },
+  "enchantencore:lightning_bolt": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "translate": "enchantment.enchantencore.lightning_bolt",
+      "fallback": "Lightning Bolt"
+    }
+  },
+  "enchantencore:lingering": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 3,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "translate": "enchantment.enchantencore.lingering",
+      "fallback": "Lingering"
+    }
+  },
+  "enchantencore:lovely_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.lovely_aura",
+      "fallback": "Lovely Aura"
+    }
+  },
+  "enchantencore:lush_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.lush_aura",
+      "fallback": "Lush Aura"
+    }
+  },
+  "enchantencore:machine_gun": {
+    "max_level": 5,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "description": {
+      "text": "Machine Gun",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:magic_protection": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "text": "Magic Protection",
+      "color": "aqua"
+    }
+  },
+  "enchantencore:magma_walker": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.magma_walker",
+      "fallback": "Magma Walker"
+    }
+  },
+  "enchantencore:meteor": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "minecraft:mace",
+    "description": {
+      "translate": "enchantment.enchantencore.meteor",
+      "fallback": "Meteor"
+    }
+  },
+  "enchantencore:mirror_vision_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.mirror_vision_curse",
+      "fallback": "Curse of Mirror Vision"
+    }
+  },
+  "enchantencore:moonwalk": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:elytra",
+      "minecraft:diamond_horse_armor",
+      "minecraft:golden_horse_armor",
+      "minecraft:iron_horse_armor",
+      "minecraft:leather_horse_armor",
+      "minecraft:netherite_horse_armor"
+    ],
+    "description": {
+      "translate": "enchantment.enchantencore.moonwalk",
+      "fallback": "Moonwalk"
+    }
+  },
+  "enchantencore:moonweave": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "translate": "enchantment.enchantencore.moonweave",
+      "fallback": "Moonweave"
+    }
+  },
+  "enchantencore:muddy_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.muddy_aura",
+      "fallback": "Muddy Aura"
+    }
+  },
+  "enchantencore:neptune": {
+    "max_level": 5,
+    "anvil_cost": 10,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/trident",
+    "description": {
+      "text": "Neptune",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:nether_protection": {
+    "max_level": 4,
+    "anvil_cost": 1,
+    "weight": 10,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantencore.nether_protection",
+      "fallback": "Nether Protection"
+    }
+  },
+  "enchantencore:nightmare": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "text": "Nightmare",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:night_protection": {
+    "max_level": 4,
+    "anvil_cost": 1,
+    "weight": 10,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantencore.night_protection",
+      "fallback": "Night Protection"
+    }
+  },
+  "enchantencore:night_vision": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.night_vision",
+      "fallback": "Night Vision"
+    }
+  },
+  "enchantencore:nuclear_arrow": {
+    "max_level": 5,
+    "anvil_cost": 6,
+    "weight": 1,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "text": "Nuclear Arrow",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:ominous_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.ominous_aura",
+      "fallback": "Ominous Aura"
+    }
+  },
+  "enchantencore:ominous_healing": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "minecraft:shield",
+    "description": {
+      "translate": "enchantment.enchantencore.ominous_healing",
+      "fallback": "Ominous Healing"
+    }
+  },
+  "enchantencore:ominous_rain": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/trident",
+    "description": {
+      "translate": "enchantment.enchantencore.ominous_rain",
+      "fallback": "Ominous Rain"
+    }
+  },
+  "enchantencore:oozing_aspect": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantencore.oozing_aspect",
+      "fallback": "Oozing Aspect"
+    }
+  },
+  "enchantencore:ownership_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantencore.ownership_curse",
+      "fallback": "Curse of Ownership"
+    }
+  },
+  "enchantencore:pacifier": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantencore.pacifier",
+      "fallback": "Pacifier"
+    }
+  },
+  "enchantencore:pale_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.pale_aura",
+      "fallback": "Pale Aura"
+    }
+  },
+  "enchantencore:path_speed": {
+    "max_level": 3,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.path_speed",
+      "fallback": "Path Speed"
+    }
+  },
+  "enchantencore:pegasus": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#enchantencore:all_horse_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.pegasus",
+      "fallback": "Pegasus"
+    }
+  },
+  "enchantencore:perfect_protection": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "text": "Perfected Protection",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:phantom_menace": {
+    "max_level": 5,
+    "anvil_cost": 4,
+    "weight": 5,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "translate": "enchantment.enchantencore.phantom_menace",
+      "fallback": "Phantom Menace"
+    }
+  },
+  "enchantencore:pickpocket": {
+    "max_level": 1,
+    "anvil_cost": 5,
+    "weight": 4,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.pickpocket",
+      "fallback": "Pickpocket"
+    }
+  },
+  "enchantencore:ping_tag": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 3,
+    "supported_items": "#enchantencore:valid_for_ping_tag",
+    "description": {
+      "translate": "enchantment.enchantencore.ping_tag",
+      "fallback": "Ping Tag"
+    }
+  },
+  "enchantencore:plow": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#minecraft:hoes",
+    "description": {
+      "translate": "enchantment.enchantencore.plow",
+      "fallback": "Plow"
+    }
+  },
+  "enchantencore:poison_aspect": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantencore.poison_aspect",
+      "fallback": "Poison Aspect"
+    }
+  },
+  "enchantencore:poison_infused": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 4,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "text": "Poison Infused",
+      "color": "aqua"
+    }
+  },
+  "enchantencore:poppy_peace": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#enchantencore:weapons",
+    "description": {
+      "text": "Poppy Peace"
+    }
+  },
+  "enchantencore:poseidon": {
+    "max_level": 5,
+    "anvil_cost": 10,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/trident",
+    "description": {
+      "text": "Poseidon",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:propeller": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:harnesses",
+    "description": {
+      "translate": "enchantment.enchantencore.propeller",
+      "fallback": "Propeller"
+    }
+  },
+  "enchantencore:pufferfish": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 5,
+    "supported_items": "#minecraft:enchantable/trident",
+    "description": {
+      "translate": "enchantment.enchantencore.pufferfish",
+      "fallback": "Pufferfish"
+    }
+  },
+  "enchantencore:purify_water": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/trident",
+    "description": {
+      "text": "Purify Water",
+      "color": "aqua"
+    }
+  },
+  "enchantencore:rabbit_foot": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 10,
+    "supported_items": "#minecraft:foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.rabbit_foot",
+      "fallback": "Rabbit Foot"
+    }
+  },
+  "enchantencore:radiant_life": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#enchantencore:weapons",
+    "description": {
+      "text": "Radiant Life",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:railgun": {
+    "max_level": 3,
+    "anvil_cost": 6,
+    "weight": 1,
+    "supported_items": "minecraft:crossbow",
+    "description": {
+      "text": "Railgun",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:rainweave": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "translate": "enchantment.enchantencore.rainweave",
+      "fallback": "Rainweave"
+    }
+  },
+  "enchantencore:randomness_curse": {
+    "max_level": 1,
+    "anvil_cost": 5,
+    "weight": 2,
+    "supported_items": "#enchantencore:all_tools",
+    "description": {
+      "translate": "enchantment.enchantencore.randomness_curse",
+      "fallback": "Curse of Randomness"
+    }
+  },
+  "enchantencore:reach_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#enchantencore:all_tools",
+    "description": {
+      "translate": "enchantment.enchantencore.reach_curse",
+      "fallback": "Curse of Reach"
+    }
+  },
+  "enchantencore:reflection": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "text": "Reflection",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:refuel": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "minecraft:elytra",
+    "description": {
+      "translate": "enchantment.enchantencore.refuel",
+      "fallback": "Refuel"
+    }
+  },
+  "enchantencore:regrowth": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#minecraft:hoes",
+    "description": {
+      "translate": "enchantment.enchantencore.regrowth",
+      "fallback": "Regrowth"
+    }
+  },
+  "enchantencore:rejuvenation": {
+    "max_level": 4,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "minecraft:shield",
+    "description": {
+      "translate": "enchantment.enchantencore.rejuvenation",
+      "fallback": "Rejuvenation"
+    }
+  },
+  "enchantencore:replenish": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 2,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "translate": "enchantment.enchantencore.replenish",
+      "fallback": "Replenish"
+    }
+  },
+  "enchantencore:sacrifice": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 4,
+    "supported_items": "#enchantencore:all_enchantable_wolf_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.sacrifice",
+      "fallback": "Sacrifice"
+    }
+  },
+  "enchantencore:safe_landing": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 10,
+    "supported_items": "minecraft:elytra",
+    "description": {
+      "translate": "enchantment.enchantencore.safe_landing",
+      "fallback": "Safe Landing"
+    }
+  },
+  "enchantencore:sand_speed": {
+    "max_level": 3,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.sand_speed",
+      "fallback": "Sand Speed"
+    }
+  },
+  "enchantencore:scent": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "minecraft:wolf_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.scent",
+      "fallback": "Scent"
+    }
+  },
+  "enchantencore:scholar_of_blocks": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#enchantencore:no_weapons",
+    "description": {
+      "translate": "enchantment.enchantencore.scholar_of_blocks",
+      "fallback": "Scholar of Blocks"
+    }
+  },
+  "enchantencore:scholar_of_fishing": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#minecraft:enchantable/fishing",
+    "description": {
+      "translate": "enchantment.enchantencore.scholar_of_fishing",
+      "fallback": "Scholar of Fishing"
+    }
+  },
+  "enchantencore:scholar_of_mobs": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#enchantencore:weapons",
+    "description": {
+      "translate": "enchantment.enchantencore.scholar_of_mobs",
+      "fallback": "Scholar of Mobs"
+    }
+  },
+  "enchantencore:scorpion_spirit": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "minecraft:wolf_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.scorpion_spirit",
+      "fallback": "Scorpion Spirit"
+    }
+  },
+  "enchantencore:sea_breeze": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 5,
+    "supported_items": "#minecraft:enchantable/trident",
+    "description": {
+      "translate": "enchantment.enchantencore.sea_breeze",
+      "fallback": "Sea Breeze"
+    }
+  },
+  "enchantencore:seeker": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.seeker",
+      "fallback": "Seeker"
+    }
+  },
+  "enchantencore:shortsight_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.shortsight_curse",
+      "fallback": "Curse of Shortsight"
+    }
+  },
+  "enchantencore:shrinkage": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#enchantencore:valid_for_shrinkage",
+    "description": {
+      "translate": "enchantment.enchantencore.shrinkage",
+      "fallback": "Shrinkage"
+    }
+  },
+  "enchantencore:shulker_shell": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.shulker_shell",
+      "fallback": "Shulker Shell"
+    }
+  },
+  "enchantencore:slowness_aspect": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantencore.slowness_aspect",
+      "fallback": "Slowness Aspect"
+    }
+  },
+  "enchantencore:sniper": {
+    "max_level": 5,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "text": "Sniper",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:sonic": {
+    "max_level": 3,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#minecraft:foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.sonic",
+      "fallback": "Sonic"
+    }
+  },
+  "enchantencore:sparking_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.sparking_aura",
+      "fallback": "Sparking Aura"
+    }
+  },
+  "enchantencore:spectral_form": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "text": "Spectral Form",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:spider_vision_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.spider_vision_curse",
+      "fallback": "Curse of Spider Vision"
+    }
+  },
+  "enchantencore:sticky_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.sticky_aura",
+      "fallback": "Sticky Aura"
+    }
+  },
+  "enchantencore:sting": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 3,
+    "supported_items": "minecraft:crossbow",
+    "description": {
+      "text": "Sting"
+    }
+  },
+  "enchantencore:strafe": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 3,
+    "supported_items": "#minecraft:foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.strafe",
+      "fallback": "Strafe"
+    }
+  },
+  "enchantencore:summer_walker": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.summer_walker",
+      "fallback": "Summer Walker"
+    }
+  },
+  "enchantencore:sunweave": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "translate": "enchantment.enchantencore.sunweave",
+      "fallback": "Sunweave"
+    }
+  },
+  "enchantencore:surfer": {
+    "max_level": 3,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "minecraft:saddle",
+    "description": {
+      "translate": "enchantment.enchantencore.surfer",
+      "fallback": "Surfer"
+    }
+  },
+  "enchantencore:swift_slash": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#enchantencore:weapons",
+    "description": {
+      "translate": "enchantment.enchantencore.swift_slash",
+      "fallback": "Swift Slash"
+    }
+  },
+  "enchantencore:switch": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/trident",
+    "description": {
+      "translate": "enchantment.enchantencore.switch",
+      "fallback": "Switch"
+    }
+  },
+  "enchantencore:thorns_protection": {
+    "max_level": 4,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantencore.thorns_protection",
+      "fallback": "Thorns Protection"
+    }
+  },
+  "enchantencore:tideweave": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "translate": "enchantment.enchantencore.tideweave",
+      "fallback": "Tideweave"
+    }
+  },
+  "enchantencore:trial_aura": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.trial_aura",
+      "fallback": "Trial Aura"
+    }
+  },
+  "enchantencore:trial_runner": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:foot_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.trial_runner",
+      "fallback": "Trial Runner"
+    }
+  },
+  "enchantencore:undying_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#enchantencore:all_tools",
+    "description": {
+      "translate": "enchantment.enchantencore.undying_curse",
+      "fallback": "Curse of Undying"
+    }
+  },
+  "enchantencore:updraft": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "minecraft:elytra",
+    "description": {
+      "translate": "enchantment.enchantencore.updraft",
+      "fallback": "Updraft"
+    }
+  },
+  "enchantencore:velocity": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:bow",
+      "minecraft:crossbow",
+      "minecraft:trident"
+    ],
+    "description": {
+      "translate": "enchantment.enchantencore.velocity",
+      "fallback": "Velocity"
+    }
+  },
+  "enchantencore:vitality": {
+    "max_level": 5,
+    "anvil_cost": 3,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "text": "Vitality",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:voidweave": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "translate": "enchantment.enchantencore.voidweave",
+      "fallback": "Voidweave",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:void_vision_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantencore.void_vision_curse",
+      "fallback": "Curse of Void Vision"
+    }
+  },
+  "enchantencore:warden": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "text": "Warden",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:warped_arrow": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "text": "Warped Arrow",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:warped_trident": {
+    "max_level": 1,
+    "anvil_cost": 10,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/trident",
+    "description": {
+      "text": "Warped Trident",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:weakness_aspect": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantencore.weakness_aspect",
+      "fallback": "Weakness Aspect"
+    }
+  },
+  "enchantencore:weaving_aspect": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantencore.weaving_aspect",
+      "fallback": "Weaving Aspect"
+    }
+  },
+  "enchantencore:web_infused": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 4,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "text": "Web Infused",
+      "color": "aqua"
+    }
+  },
+  "enchantencore:welfare_curse": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#enchantencore:all_tools",
+    "description": {
+      "translate": "enchantment.enchantencore.welfare_curse",
+      "fallback": "Curse of Welfare"
+    }
+  },
+  "enchantencore:wind_aspect": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantencore.wind_aspect",
+      "fallback": "Wind Aspect"
+    }
+  },
+  "enchantencore:wind_spirit": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "text": "Wind Spirit",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantencore:wither_aspect": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantencore.wither_aspect",
+      "fallback": "Wither Aspect"
+    }
+  },
+  "enchantencore:wither_infused": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 4,
+    "supported_items": "#enchantencore:all_bows",
+    "description": {
+      "text": "Wither Infused",
+      "color": "aqua"
+    }
+  },
+  "enchantencore:wither_protection": {
+    "max_level": 4,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantencore.wither_protection",
+      "fallback": "Wither Protection"
+    }
+  },
+  "enchantencore:yoink": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/fishing",
+    "description": {
+      "translate": "enchantment.enchantencore.yoink",
+      "fallback": "Yoink"
+    }
+  },
+  "enchantplus:midas_touch": {
+    "max_level": 1,
+    "anvil_cost": 3,
+    "weight": 2,
+    "supported_items": "minecraft:stick",
+    "description": {
+      "translate": "enchantment.enchantplus.midas_touch",
+      "fallback": "Midas Touch"
+    }
+  },
+  "enchantplus:armor/fury": {
+    "max_level": 3,
+    "anvil_cost": 3,
+    "weight": 8,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantplus.fury",
+      "fallback": "Fury"
+    }
+  },
+  "enchantplus:armor/lifeplus": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 8,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantplus.lifeplus",
+      "fallback": "Life+"
+    }
+  },
+  "enchantplus:armor/venom_protection": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 6,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.enchantplus.venom_protection",
+      "fallback": "Venom Protection"
+    }
+  },
+  "enchantplus:axe/timber": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/axes",
+    "description": {
+      "translate": "enchantment.enchantplus.timber",
+      "fallback": "Timber"
+    }
+  },
+  "enchantplus:boots/agility": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 8,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantplus.agility",
+      "fallback": "Agility"
+    }
+  },
+  "enchantplus:boots/lava_walker": {
+    "max_level": 3,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantplus.lava_walker",
+      "fallback": "Lava Walker"
+    }
+  },
+  "enchantplus:boots/step_assist": {
+    "max_level": 3,
+    "anvil_cost": 3,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantplus.step_assist",
+      "fallback": "Step Assist"
+    }
+  },
+  "enchantplus:bow/accuracy_shot": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/range",
+    "description": {
+      "translate": "enchantment.enchantplus.accuracy_shot",
+      "fallback": "Accuracy Shot"
+    }
+  },
+  "enchantplus:bow/breezing_arrow": {
+    "max_level": 2,
+    "anvil_cost": 6,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/range",
+    "description": {
+      "translate": "enchantment.enchantplus.breezing_arrow",
+      "fallback": "Breezing Arrows"
+    }
+  },
+  "enchantplus:bow/echo_shot": {
+    "max_level": 2,
+    "anvil_cost": 6,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/range",
+    "description": {
+      "translate": "enchantment.enchantplus.echo_shot",
+      "fallback": "Echo Shot"
+    }
+  },
+  "enchantplus:bow/eternal_frost": {
+    "max_level": 1,
+    "anvil_cost": 6,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/range",
+    "description": {
+      "translate": "enchantment.enchantplus.eternal_frost",
+      "fallback": "Eternal Frost"
+    }
+  },
+  "enchantplus:bow/explosive_arrow": {
+    "max_level": 4,
+    "anvil_cost": 6,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/range",
+    "description": {
+      "translate": "enchantment.enchantplus.explosive_arrow",
+      "fallback": "Explosive Arrow"
+    }
+  },
+  "enchantplus:bow/rebound": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 4,
+    "supported_items": "#voxel:enchantable/range",
+    "description": {
+      "translate": "enchantment.enchantplus.rebound",
+      "fallback": "Rebound"
+    }
+  },
+  "enchantplus:bow/storm_arrow": {
+    "max_level": 1,
+    "anvil_cost": 6,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/range",
+    "description": {
+      "translate": "enchantment.enchantplus.storm_arrow",
+      "fallback": "Storm Arrows"
+    }
+  },
+  "enchantplus:chestplate/builder_arm": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "description": {
+      "translate": "enchantment.enchantplus.builder_arm",
+      "fallback": "Builder Arm",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantplus:durability/curse_of_breaking": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "translate": "enchantment.enchantplus.curse_of_breaking",
+      "fallback": "Curse of Breaking"
+    }
+  },
+  "enchantplus:durability/curse_of_enchant": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 4,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "translate": "enchantment.enchantplus.curse_of_enchant",
+      "fallback": "Curse of Enchant"
+    }
+  },
+  "enchantplus:elytra/armored": {
+    "max_level": 4,
+    "anvil_cost": 10,
+    "weight": 1,
+    "supported_items": "#voxel:enchantable/elytra",
+    "description": {
+      "translate": "enchantment.enchantplus.armored",
+      "fallback": "Armored"
+    }
+  },
+  "enchantplus:elytra/kinetic_protection": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 1,
+    "supported_items": "#voxel:enchantable/elytra",
+    "description": {
+      "translate": "enchantment.enchantplus.kinetic_protection",
+      "fallback": "Kinetic Protection"
+    }
+  },
+  "enchantplus:elytra/propulsion": {
+    "max_level": 3,
+    "anvil_cost": 1,
+    "weight": 1,
+    "supported_items": "#voxel:enchantable/elytra",
+    "description": {
+      "translate": "enchantment.enchantplus.propulsion",
+      "fallback": "Propulsion"
+    }
+  },
+  "enchantplus:helmet/auto_feed": {
+    "max_level": 1,
+    "anvil_cost": 6,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantplus.auto_feed",
+      "fallback": "Auto Feed"
+    }
+  },
+  "enchantplus:helmet/bright_vision": {
+    "max_level": 21,
+    "anvil_cost": 2,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantplus.bright_vision",
+      "fallback": "Bright Vision"
+    }
+  },
+  "enchantplus:helmet/voidless": {
+    "max_level": 1,
+    "anvil_cost": 3,
+    "weight": 8,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantplus.voidless",
+      "fallback": "Voidless",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantplus:hoe/harvest": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 7,
+    "supported_items": "#voxel:enchantable/hoes",
+    "description": {
+      "translate": "enchantment.enchantplus.harvest",
+      "fallback": "Harvest"
+    }
+  },
+  "enchantplus:hoe/scyther": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 6,
+    "supported_items": "#voxel:enchantable/hoes",
+    "description": {
+      "translate": "enchantment.enchantplus.scyther",
+      "fallback": "Scyther"
+    }
+  },
+  "enchantplus:hoe/seiors_oblivion": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/hoes",
+    "description": {
+      "translate": "enchantment.enchantplus.seiors_oblivion",
+      "fallback": "Seior's Oblivion"
+    }
+  },
+  "enchantplus:leggings/dwarfed": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 5,
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "description": {
+      "translate": "enchantment.enchantplus.dwarfed",
+      "fallback": "Dwarfed"
+    }
+  },
+  "enchantplus:leggings/fast_swim": {
+    "max_level": 1,
+    "anvil_cost": 3,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "description": {
+      "translate": "enchantment.enchantplus.fast_swim",
+      "fallback": "Fast Swim"
+    }
+  },
+  "enchantplus:leggings/leaping": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "description": {
+      "translate": "enchantment.enchantplus.leaping",
+      "fallback": "Leaping"
+    }
+  },
+  "enchantplus:leggings/oversize": {
+    "max_level": 4,
+    "anvil_cost": 1,
+    "weight": 5,
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "description": {
+      "translate": "enchantment.enchantplus.oversize",
+      "fallback": "Oversize"
+    }
+  },
+  "enchantplus:mace/striker": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/mace",
+    "description": {
+      "translate": "enchantment.enchantplus.striker",
+      "fallback": "Striker"
+    }
+  },
+  "enchantplus:mace/teluric_wave": {
+    "max_level": 1,
+    "anvil_cost": 6,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/mace",
+    "description": {
+      "translate": "enchantment.enchantplus.teluric_wave",
+      "fallback": "Teluric Wave",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantplus:mace/wind_propulsion": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/mace",
+    "description": {
+      "translate": "enchantment.enchantplus.wind_propulsion",
+      "fallback": "Wind Propulsion"
+    }
+  },
+  "enchantplus:mounted/cavalier_egis": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 4,
+    "supported_items": "#enchantplus:enchantable/mounted",
+    "description": {
+      "translate": "enchantment.enchantplus.cavalier_egis",
+      "fallback": "Rider Egis"
+    }
+  },
+  "enchantplus:mounted/ethereal_leap": {
+    "max_level": 7,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#enchantplus:enchantable/mounted",
+    "description": {
+      "translate": "enchantment.enchantplus.ethereal_leap",
+      "fallback": "Ethereal Leap"
+    }
+  },
+  "enchantplus:mounted/happy_boost": {
+    "max_level": 4,
+    "anvil_cost": 1,
+    "weight": 2,
+    "supported_items": "#minecraft:harnesses",
+    "description": {
+      "translate": "enchantment.enchantplus.happy_boost",
+      "fallback": "Happy Boost"
+    }
+  },
+  "enchantplus:mounted/steel_fang": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#enchantplus:enchantable/dog",
+    "description": {
+      "translate": "enchantment.enchantplus.steel_fang",
+      "fallback": "Steel Fang"
+    }
+  },
+  "enchantplus:mounted/velocity": {
+    "max_level": 4,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#enchantplus:enchantable/mounted",
+    "description": {
+      "translate": "enchantment.enchantplus.velocity",
+      "fallback": "Velocity"
+    }
+  },
+  "enchantplus:pickaxe/bedrock_breaker": {
+    "max_level": 1,
+    "anvil_cost": 5,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/pickaxes",
+    "description": {
+      "translate": "enchantment.enchantplus.bedrock_breaker",
+      "fallback": "Bedrock Breaker",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantplus:pickaxe/spawner_touch": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/pickaxes",
+    "description": {
+      "translate": "enchantment.enchantplus.spawner_touch",
+      "fallback": "Spawner Touch",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantplus:pickaxe/vein_miner": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/pickaxes",
+    "description": {
+      "translate": "enchantment.enchantplus.vein_miner",
+      "fallback": "Vein Miner"
+    }
+  },
+  "enchantplus:sword/attack_speed": {
+    "max_level": 2,
+    "anvil_cost": 2,
+    "weight": 4,
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.attack_speed",
+      "fallback": "Attack Speed"
+    }
+  },
+  "enchantplus:sword/critical": {
+    "max_level": 4,
+    "anvil_cost": 2,
+    "weight": 4,
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.critical_hit",
+      "fallback": "Critical Hit"
+    }
+  },
+  "enchantplus:sword/curse_of_clumsiness": {
+    "max_level": 3,
+    "anvil_cost": 1,
+    "weight": 10,
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.curse_of_clumsiness",
+      "fallback": "Curse of Clumsiness"
+    }
+  },
+  "enchantplus:sword/death_touch": {
+    "max_level": 1,
+    "anvil_cost": 6,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.death_touch",
+      "fallback": "Death Touch"
+    }
+  },
+  "enchantplus:sword/dimensional_hit": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 4,
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.dimensional_strike",
+      "fallback": "Dimensional Strike"
+    }
+  },
+  "enchantplus:sword/fear": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.fear",
+      "fallback": "Fear"
+    }
+  },
+  "enchantplus:sword/last_hope": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 4,
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.last_hope",
+      "fallback": "Last Hope"
+    }
+  },
+  "enchantplus:sword/life_steal": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 4,
+    "supported_items": "#minecraft:enchantable/weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.life_steal",
+      "fallback": "Life Steal"
+    }
+  },
+  "enchantplus:sword/poison_aspect": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.poison_aspect",
+      "fallback": "Poison Aspect"
+    }
+  },
+  "enchantplus:sword/pull": {
+    "max_level": 1,
+    "anvil_cost": 6,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.pull",
+      "fallback": "Pull"
+    }
+  },
+  "enchantplus:sword/reach": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.reach",
+      "fallback": "Reach"
+    }
+  },
+  "enchantplus:sword/runic_despair": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 4,
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.runic_despair",
+      "fallback": "Runic Despair"
+    }
+  },
+  "enchantplus:sword/tears_of_asflors": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 4,
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "description": {
+      "translate": "enchantment.enchantplus.tears_of_asflors",
+      "fallback": "Tears of Asflors",
+      "color": "#ffcbfc"
+    }
+  },
+  "enchantplus:sword/xp_boost": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#voxel:enchantable/mining_and_damage",
+    "description": {
+      "translate": "enchantment.enchantplus.xp_boost",
+      "fallback": "Xp Boost"
+    }
+  },
+  "enchantplus:tools/auto_smelt": {
+    "max_level": 1,
+    "anvil_cost": 6,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/mining_loot",
+    "description": {
+      "translate": "enchantment.enchantplus.auto_smelt",
+      "fallback": "Auto Smelt"
+    }
+  },
+  "enchantplus:tools/miningplus": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/mining_loot",
+    "description": {
+      "translate": "enchantment.enchantplus.miningplus",
+      "fallback": "Mining+",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantplus:trident/gungnir_breath": {
+    "max_level": 3,
+    "anvil_cost": 6,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/trident",
+    "description": {
+      "translate": "enchantment.enchantplus.gungnir_breath",
+      "fallback": "Gungnir Breath",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantsplus:breaking_curse": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "translate": "enchantment.enchantsplus.breaking_curse",
+      "fallback": "Curse of Breaking"
+    }
+  },
+  "enchantsplus:breeze_burst": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/bow",
+    "description": {
+      "translate": "enchantment.enchantsplus.breeze_burst",
+      "fallback": "Breeze Burst"
+    }
+  },
+  "enchantsplus:clumsiness_curse": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#enchantsplus:toolsnsword",
+    "description": {
+      "translate": "enchantment.enchantsplus.clumsiness_curse",
+      "fallback": "Curse of Clumsiness"
+    }
+  },
+  "enchantsplus:compassion_curse": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#enchantsplus:weapons",
+    "description": {
+      "translate": "enchantment.enchantsplus.compassion_curse",
+      "fallback": "Curse of Compassion"
+    }
+  },
+  "enchantsplus:crabs_touch": {
+    "max_level": 3,
+    "anvil_cost": 6,
+    "weight": 1,
+    "supported_items": "#enchantsplus:tools",
+    "description": {
+      "translate": "enchantment.enchantsplus.crabs_touch",
+      "fallback": "Crab's Touch",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantsplus:displacement_curse": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#enchantsplus:weapons",
+    "description": {
+      "translate": "enchantment.enchantsplus.displacement_curse",
+      "fallback": "Curse of Displacement"
+    }
+  },
+  "enchantsplus:double_edge_curse": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#enchantsplus:weapons",
+    "description": {
+      "translate": "enchantment.enchantsplus.double_edge_curse",
+      "fallback": "Curse of Double Edge"
+    }
+  },
+  "enchantsplus:gluttony": {
+    "max_level": 3,
+    "anvil_cost": 6,
+    "weight": 2,
+    "supported_items": "#enchantsplus:toolsnsword",
+    "description": {
+      "translate": "enchantment.enchantsplus.gluttony",
+      "fallback": "Gluttony"
+    }
+  },
+  "enchantsplus:graviole": {
+    "max_level": 3,
+    "anvil_cost": 5,
+    "weight": 1,
+    "supported_items": "minecraft:elytra",
+    "description": {
+      "translate": "enchantment.enchantsplus.graviole",
+      "fallback": "Graviole",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "enchantsplus:harvest": {
+    "max_level": 1,
+    "anvil_cost": 3,
+    "weight": 3,
+    "supported_items": "#minecraft:hoes",
+    "description": {
+      "translate": "enchantment.enchantsplus.harvest",
+      "fallback": "Harvest"
+    }
+  },
+  "enchantsplus:ice_aspect": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantsplus.ice_aspect",
+      "fallback": "Ice Aspect"
+    }
+  },
+  "enchantsplus:kickback": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 3,
+    "supported_items": "minecraft:shield",
+    "description": {
+      "translate": "enchantment.enchantsplus.kickback",
+      "fallback": "Kickback"
+    }
+  },
+  "enchantsplus:kinetic_protection": {
+    "max_level": 4,
+    "anvil_cost": 1,
+    "weight": 5,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "translate": "enchantment.enchantsplus.kinetic_protection",
+      "fallback": "Kinetic Protection"
+    }
+  },
+  "enchantsplus:outreach": {
+    "max_level": 2,
+    "anvil_cost": 6,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/sweeping",
+    "description": {
+      "translate": "enchantment.enchantsplus.outreach",
+      "fallback": "Outreach"
+    }
+  },
+  "enchantsplus:precision": {
+    "max_level": 2,
+    "anvil_cost": 7,
+    "weight": 6,
+    "supported_items": [
+      "minecraft:crossbow",
+      "minecraft:bow"
+    ],
+    "description": {
+      "translate": "enchantment.enchantsplus.precision",
+      "fallback": "Precision"
+    }
+  },
+  "enchantsplus:pyrolysis": {
+    "max_level": 1,
+    "anvil_cost": 12,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/mining_loot",
+    "description": {
+      "translate": "enchantment.enchantsplus.pyrolysis",
+      "fallback": "Pyrolysis"
+    }
+  },
+  "enchantsplus:retrieval": {
+    "max_level": 4,
+    "anvil_cost": 4,
+    "weight": 6,
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "description": {
+      "translate": "enchantment.enchantsplus.retrieval",
+      "fallback": "Retrieval"
+    }
+  },
+  "enchantsplus:scorch_walker": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.enchantsplus.scorch_walker",
+      "fallback": "Scorch Walker"
+    }
+  },
+  "enchantsplus:skyguard": {
+    "max_level": 4,
+    "anvil_cost": 1,
+    "weight": 10,
+    "supported_items": "minecraft:elytra",
+    "description": {
+      "translate": "enchantment.enchantsplus.skyguard",
+      "fallback": "Skyguard"
+    }
+  },
+  "enchantsplus:stride": {
+    "max_level": 3,
+    "anvil_cost": 5,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "description": {
+      "translate": "enchantment.enchantsplus.stride",
+      "fallback": "Stride"
+    }
+  },
+  "enchantsplus:swift_strike": {
+    "max_level": 5,
+    "anvil_cost": 8,
+    "weight": 4,
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "description": {
+      "translate": "enchantment.enchantsplus.swift_strike",
+      "fallback": "Swift Strike"
+    }
+  },
+  "enchantsplus:toxic": {
+    "max_level": 1,
+    "anvil_cost": 3,
+    "weight": 3,
+    "supported_items": "#enchantsplus:bows",
+    "description": {
+      "translate": "enchantment.enchantsplus.toxic",
+      "fallback": "Toxic"
+    }
+  },
+  "enchantsplus:vitality": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "description": {
+      "translate": "enchantment.enchantsplus.vitality",
+      "fallback": "Vitality"
+    }
+  },
+  "enchantsplus:websnare": {
+    "max_level": 2,
+    "anvil_cost": 4,
+    "weight": 3,
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "description": {
+      "translate": "enchantment.enchantsplus.websnare",
+      "fallback": "Websnare"
+    }
+  },
+  "nova_structures:aerials_bane": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": "#nova_structures:enchantable/combat_tools",
+    "description": {
+      "translate": "enchantment.dnt.aerials_bane",
+      "fallback": "Aerial's Bane"
+    }
+  },
+  "nova_structures:antidote": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 30,
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "description": {
+      "translate": "enchantment.dnt.antidote",
+      "fallback": "Antidote"
+    }
+  },
+  "nova_structures:conductivity_curse": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#nova_structures:enchantable/metal",
+    "description": {
+      "translate": "enchantment.dnt.conductivity_curse",
+      "fallback": "Curse of Conductivity"
+    }
+  },
+  "nova_structures:function_only": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 20,
+    "supported_items": [
+      "minecraft:stick",
+      "minecraft:flint"
+    ],
+    "description": {
+      "translate": "enchantment.dnt.function_only",
+      "fallback": "Bug Enchant"
+    }
+  },
+  "nova_structures:ghasted": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 50,
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "description": {
+      "translate": "enchantment.dnt.ghasted",
+      "fallback": "Ghasted"
+    }
+  },
+  "nova_structures:gravity": {
+    "max_level": 3,
+    "anvil_cost": 1,
+    "weight": 5,
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "description": {
+      "translate": "enchantment.dnt.gravity",
+      "fallback": "Gravity"
+    }
+  },
+  "nova_structures:hydro_veil": {
+    "max_level": 4,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": "#minecraft:harnesses",
+    "description": {
+      "translate": "enchantment.dnt.hydro_veil",
+      "fallback": "Hydro Veil"
+    }
+  },
+  "nova_structures:illagers_bane": {
+    "max_level": 5,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": "#nova_structures:enchantable/combat_weapons",
+    "description": {
+      "translate": "enchantment.dnt.illagers_bane",
+      "fallback": "Illagers Bane"
+    }
+  },
+  "nova_structures:multishot": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/bow",
+    "description": {
+      "translate": "enchantment.dnt.multishot",
+      "fallback": "Tri-Shot"
+    }
+  },
+  "nova_structures:outreach": {
+    "max_level": 4,
+    "anvil_cost": 3,
+    "weight": 10,
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "description": {
+      "translate": "enchantment.dnt.outreach",
+      "fallback": "Outreach"
+    }
+  },
+  "nova_structures:photosynthesis": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/durability",
+    "description": {
+      "translate": "enchantment.dnt.photosynthesis",
+      "fallback": "Photosynthesis",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "nova_structures:piercing": {
+    "max_level": 4,
+    "anvil_cost": 1,
+    "weight": 10,
+    "supported_items": "#minecraft:enchantable/bow",
+    "description": {
+      "translate": "enchantment.dnt.piercing",
+      "fallback": "Blowthrough"
+    }
+  },
+  "nova_structures:power": {
+    "max_level": 5,
+    "anvil_cost": 1,
+    "weight": 10,
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "description": {
+      "translate": "enchantment.dnt.power",
+      "fallback": "Might"
+    }
+  },
+  "nova_structures:spiteful": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 20,
+    "supported_items": "#nova_structures:enchantable/combat_weapons",
+    "description": {
+      "translate": "enchantment.dnt.spiteful",
+      "fallback": "Spiteful"
+    }
+  },
+  "nova_structures:swift_soar": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:harnesses",
+    "description": {
+      "translate": "enchantment.dnt.swift_soar",
+      "fallback": "Swift Soar"
+    }
+  },
+  "nova_structures:traveler": {
+    "max_level": 3,
+    "anvil_cost": 8,
+    "weight": 20,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.dnt.traveler",
+      "fallback": "Traveler"
+    }
+  },
+  "nova_structures:wax_wings": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "minecraft:elytra",
+    "description": {
+      "translate": "enchantment.dnt.wax_wings",
+      "fallback": "Wax Wings",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "nova_structures:wither_coated": {
+    "max_level": 3,
+    "anvil_cost": 5,
+    "weight": 2,
+    "supported_items": "#nova_structures:enchantable/wither_coated",
+    "description": {
+      "translate": "enchantment.dnt.wither_coated",
+      "fallback": "Wither Coated"
+    }
+  },
+  "stellarity:ambush": {
+    "max_level": 3,
+    "anvil_cost": 2,
+    "weight": 5,
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "description": {
+      "translate": "enchantment.stellarity.ambush"
+    }
+  },
+  "stellarity:critical_strike": {
+    "max_level": 3,
+    "anvil_cost": 4,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "description": {
+      "translate": "enchantment.stellarity.critical_strike",
+      "color": "#d600f4"
+    }
+  },
+  "stellarity:dune_speed": {
+    "max_level": 3,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.stellarity.dune_speed",
+      "color": "#ffd026"
+    }
+  },
+  "stellarity:levitation_shot": {
+    "max_level": 5,
+    "anvil_cost": 4,
+    "weight": 2,
+    "supported_items": "#minecraft:enchantable/bow",
+    "description": {
+      "translate": "enchantment.stellarity.levitation_shot"
+    }
+  },
+  "stellarity:plated": {
+    "max_level": 4,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#stellarity:enchantable/elytra",
+    "description": {
+      "translate": "enchantment.stellarity.plated"
+    }
+  },
+  "stellarity:soaring": {
+    "max_level": 4,
+    "anvil_cost": 2,
+    "weight": 2,
+    "supported_items": "#stellarity:enchantable/elytra",
+    "description": {
+      "translate": "enchantment.stellarity.soaring"
+    }
+  },
+  "stellarity:void_shot": {
+    "max_level": 1,
+    "anvil_cost": 10,
+    "weight": 1,
+    "supported_items": "#stellarity:enchantable/ranged",
+    "description": {
+      "translate": "enchantment.stellarity.void_shot",
+      "color": "#D600F4"
+    }
+  },
+  "stellarity:void_strike": {
+    "max_level": 1,
+    "anvil_cost": 10,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "description": {
+      "translate": "enchantment.stellarity.void_strike",
+      "color": "#D600F4"
+    }
+  },
+  "stellarity:_technical/daybroken": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:diamond_sword"
+    ],
+    "description": {
+      "translate": "enchantment.stellarity.daybroken",
+      "color": "#e88b20"
+    }
+  },
+  "stellarity:_technical/draconic": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:netherite_sword"
+    ],
+    "description": {
+      "translate": "enchantment.stellarity.draconic",
+      "color": "#d600f4"
+    }
+  },
+  "stellarity:_technical/infernal_infusion": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:netherite_sword",
+      "minecraft:crossbow"
+    ],
+    "description": {
+      "translate": "enchantment.stellarity.infernal_infusion",
+      "color": "#E27E13"
+    }
+  },
+  "stellarity:_technical/mighty_wind": {
+    "max_level": 1,
+    "anvil_cost": 8,
+    "weight": 5,
+    "supported_items": "#minecraft:enchantable/trident",
+    "description": {
+      "translate": "enchantment.stellarity.mighty_wind",
+      "color": "#ffd026"
+    }
+  },
+  "stellarity:_technical/prismatic_pearl_return": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": [],
+    "description": {
+      "translate": "enchantment.stellarity.prismatic_pearl_return"
+    }
+  },
+  "stellarity:_technical/soul_harvest": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:diamond_sword"
+    ],
+    "description": {
+      "translate": "enchantment.stellarity.soul_harvest",
+      "color": "#20c1e8"
+    }
+  },
+  "stellarity:_technical/void_pendant/amethyst": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:iron_nugget"
+    ],
+    "description": {
+      "translate": "item.stellarity.void_pendant.enchantment.amethyst",
+      "color": "dark_purple"
+    }
+  },
+  "stellarity:_technical/void_pendant/copper": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:iron_nugget"
+    ],
+    "description": {
+      "translate": "item.stellarity.void_pendant.enchantment.copper",
+      "color": "gold"
+    }
+  },
+  "stellarity:_technical/void_pendant/diamond": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:iron_nugget"
+    ],
+    "description": {
+      "translate": "item.stellarity.void_pendant.enchantment.diamond",
+      "color": "aqua"
+    }
+  },
+  "stellarity:_technical/void_pendant/emerald": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:iron_nugget"
+    ],
+    "description": {
+      "translate": "item.stellarity.void_pendant.enchantment.emerald",
+      "color": "green"
+    }
+  },
+  "stellarity:_technical/void_pendant/gold": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:iron_nugget"
+    ],
+    "description": {
+      "translate": "item.stellarity.void_pendant.enchantment.gold",
+      "color": "yellow"
+    }
+  },
+  "stellarity:_technical/void_pendant/iron": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:iron_nugget"
+    ],
+    "description": {
+      "translate": "item.stellarity.void_pendant.enchantment.iron",
+      "color": "white"
+    }
+  },
+  "stellarity:_technical/void_pendant/lapis": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:iron_nugget"
+    ],
+    "description": {
+      "translate": "item.stellarity.void_pendant.enchantment.lapis",
+      "color": "blue"
+    }
+  },
+  "stellarity:_technical/void_pendant/netherite": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:iron_nugget"
+    ],
+    "description": {
+      "translate": "item.stellarity.void_pendant.enchantment.netherite",
+      "color": "dark_red"
+    }
+  },
+  "stellarity:_technical/void_pendant/quartz": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": [
+      "minecraft:iron_nugget"
+    ],
+    "description": {
+      "translate": "item.stellarity.void_pendant.enchantment.quartz",
+      "color": "white"
+    }
+  },
+  "mt:armor/basalt_boots": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:foot_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Rock Hard"
+    }
+  },
+  "mt:armor/boomproof_cap": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:foot_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Boomproof"
+    }
+  },
+  "mt:armor/dark_forest_chestplate": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 3,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Axe Mastery"
+    }
+  },
+  "mt:armor/deep_dark_leggings": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:leg_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Stealth Prowess"
+    }
+  },
+  "mt:armor/desert_chestplate": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Last Stand"
+    }
+  },
+  "mt:armor/dripstone_helmet": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Fast Drip"
+    }
+  },
+  "mt:armor/experient_trousers": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:leg_armor",
+    "description": {
+      "translate": "",
+      "fallback": "A Walking Experience"
+    }
+  },
+  "mt:armor/flower_helmet": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 3,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Flower Gift"
+    }
+  },
+  "mt:armor/ice_shoes": {
+    "max_level": 1,
+    "anvil_cost": 4,
+    "weight": 3,
+    "supported_items": "#minecraft:foot_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Cold Aura"
+    }
+  },
+  "mt:armor/indestructia": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:elytra",
+    "description": {
+      "translate": "",
+      "fallback": "Kinetic Energy Immunity"
+    }
+  },
+  "mt:armor/lush_leggings": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:leg_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Deadly Thorns"
+    }
+  },
+  "mt:armor/mushroom_boots": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:foot_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Hard Outside, Soft Inside"
+    }
+  },
+  "mt:armor/nether_leggings": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#leg_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Anti-Resistance Resistance"
+    }
+  },
+  "mt:armor/ocean_chestplate": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Ocean Blessing"
+    }
+  },
+  "mt:armor/soul_valley_helmet": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:head_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Encap-souled"
+    }
+  },
+  "mt:armor/swamp_chestplate": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Lose Garbage"
+    }
+  },
+  "mt:armor/taiga_pants": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:leg_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Restore Hunger"
+    }
+  },
+  "mt:armor/warped_helmet": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:foot_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Warped Slowdown"
+    }
+  },
+  "mt:armor/wind_chestplate": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:chest_armor",
+    "description": {
+      "translate": "",
+      "fallback": "Wind Charged?"
+    }
+  },
+  "mt:technical/floor_is_spikes": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:acacia_button",
+    "description": {
+      "translate": ""
+    }
+  },
+  "mt:technical/giga_bore": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/mining",
+    "description": {
+      "translate": "3x3 Break"
+    }
+  },
+  "mt:technical/grenade": {
+    "max_level": 1,
+    "anvil_cost": 9999999,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "description": "2 SECOND WINDOW"
+  },
+  "mt:technical/healing_flower": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:acacia_button",
+    "description": {
+      "translate": ""
+    }
+  },
+  "mt:technical/kinetic_blast": {
+    "max_level": 255,
+    "anvil_cost": 99999,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "description": {
+      "text": "DO NOT USE"
+    }
+  },
+  "mt:technical/kinetic_bomb": {
+    "max_level": 1,
+    "anvil_cost": 9999999,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "description": "HIGHLY PRESSURIZED"
+  },
+  "mt:technical/necromancy": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:acacia_button",
+    "description": {
+      "translate": ""
+    }
+  },
+  "mt:technical/sense_of_urgency": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:acacia_button",
+    "description": {
+      "translate": ""
+    }
+  },
+  "mt:treasure/fast": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "text": "Technical, do not touch",
+      "color": "green"
+    }
+  },
+  "mt:treasure/hypersonic": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "text": "Technical, do not touch",
+      "color": "green"
+    }
+  },
+  "mt:treasure/sloth": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "text": "Technical, do not touch",
+      "color": "green"
+    }
+  },
+  "mt:treasure/slow": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "text": "Technical, do not touch",
+      "color": "green"
+    }
+  },
+  "mt:treasure/standard": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "text": "Technical, do not touch",
+      "color": "green"
+    }
+  },
+  "mt:weapons/assassin_blade": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:golden_sword",
+    "description": "Early Strikes"
+  },
+  "mt:weapons/barbaric_axe": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:golden_axe",
+    "description": "BARBARIC!"
+  },
+  "mt:weapons/drylands_piercer": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:crossbow",
+    "description": "Sheriff's Honour"
+  },
+  "mt:weapons/hurricane_sword": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:iron_sword",
+    "description": "Gusty Garden"
+  },
+  "mt:weapons/ice_sword": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:diamond_sword",
+    "description": "Icy Tip"
+  },
+  "mt:weapons/oceanic_spear": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:trident",
+    "description": "Oceanic Triumph"
+  },
+  "mt:weapons/rift_axe": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:netherite_axe",
+    "description": "Soul Tearer"
+  },
+  "mt:weapons/rumble_axe": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:golden_sword",
+    "description": "Rumble Tumble"
+  },
+  "mt:weapons/sharpened_sword": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:iron_sword",
+    "description": "Half Life 3"
+  },
+  "mt:weapons/soul_scythe": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:netherite_hoe",
+    "description": "Life Steal"
+  },
+  "mt:weapons/stray_bow": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:bow",
+    "description": "Gotta Go Slow"
+  },
+  "mt:weapons/warden_killer": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:echo_shard",
+    "description": "DEATH TO THE WARDEN!"
+  },
+  "mt:weapons/warped_bow": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:bow",
+    "description": "Warping..."
+  },
+  "mt:weapons/wither_sword": {
+    "max_level": 1,
+    "anvil_cost": 9999,
+    "weight": 1,
+    "supported_items": "minecraft:stone_sword",
+    "description": "Wither"
+  },
+  "kattersstructures:alchemy_curse": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "description": {
+      "translate": "enchantment.kattersstructures.alchemy_curse",
+      "fallback": "Curse of Alchemy",
+      "color": "red"
+    }
+  },
+  "kattersstructures:blunt": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "description": {
+      "translate": "enchantment.kattersstructures.blunt",
+      "fallback": "Blunt"
+    }
+  },
+  "kattersstructures:crystal_curse": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/weapon",
+    "description": {
+      "translate": "enchantment.kattersstructures.crystal_curse",
+      "fallback": "Curse of Crystal",
+      "color": "red"
+    }
+  },
+  "kattersstructures:enlightning": {
+    "max_level": 1,
+    "anvil_cost": 100,
+    "weight": 1,
+    "supported_items": "minecraft:blaze_rod",
+    "description": {
+      "translate": "enchantment.kattersstructures.enlightning",
+      "fallback": "Enlightning"
+    }
+  },
+  "kattersstructures:heavy": {
+    "max_level": 5,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/weapon",
+    "description": {
+      "translate": "enchantment.kattersstructures.heavy",
+      "fallback": "Heavy"
+    }
+  },
+  "kattersstructures:light": {
+    "max_level": 2,
+    "anvil_cost": 8,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "translate": "enchantment.kattersstructures.light",
+      "fallback": "Light"
+    }
+  },
+  "kattersstructures:ocean_heart": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "description": {
+      "translate": "enchantment.kattersstructures.ocean_heart",
+      "fallback": "Ocean Heart"
+    }
+  },
+  "kattersstructures:raj_ambient": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "description": "boss.raj_ambient"
+  },
+  "kattersstructures:raj_lightning": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": "minecraft:crossbow",
+    "description": "boss.raj_lightning"
+  },
+  "kattersstructures:raj_minion": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "description": "boss.raj_minion"
+  },
+  "kattersstructures:rusta_shot": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": "minecraft:crossbow",
+    "description": "boss.rusta_shot"
+  },
+  "kattersstructures:web_walker": {
+    "max_level": 1,
+    "anvil_cost": 2,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "description": {
+      "translate": "enchantment.kattersstructures.web_walker",
+      "fallback": "Web Walker"
+    }
+  },
+  "incendium:poison_protection": {
+    "max_level": 1,
+    "anvil_cost": 0,
+    "weight": 1,
+    "supported_items": "#enchantable/armor",
+    "description": {
+      "translate": "incendium.enchantment.poison_protection",
+      "fallback": "Poison Protection",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "veinminer-enchantment:veinminer": {
+    "max_level": 1,
+    "anvil_cost": 7,
+    "weight": 1,
+    "supported_items": "#minecraft:pickaxes",
+    "description": {
+      "translate": "enchantment.veinmine",
+      "fallback": "Veinmine",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "wither:soul_siphon": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/weapon",
+    "description": {
+      "text": "Soul Siphon",
+      "color": "gold",
+      "bold": true
+    }
+  },
+  "wither:witherbound": {
+    "max_level": 1,
+    "anvil_cost": 1,
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {
+      "text": "Witherbound",
+      "color": "gold",
+      "bold": true
+    }
+  }
+}
