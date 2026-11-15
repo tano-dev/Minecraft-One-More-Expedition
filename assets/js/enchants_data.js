@@ -232,6 +232,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Implosion"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -5456,6 +5460,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Implosion"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -6098,6 +6106,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Infinity"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -6320,6 +6332,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Infinity"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -6446,6 +6462,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:implosion",
         "name": "Implosion"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:lightning_bolt",
@@ -7121,6 +7141,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Infinity"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -7275,6 +7299,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:infinity",
         "name": "Infinity"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:lightning_bolt",
@@ -8904,6 +8932,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Infinity"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -9150,6 +9182,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:implosion",
         "name": "Implosion"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:lightning_bolt",
@@ -9651,8 +9687,51 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Bows",
-    "exclusive_groups": [],
-    "conflicts": [],
+    "exclusive_groups": [
+      "Bow Arrow Effects"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bomber",
+        "name": "Bomber"
+      },
+      {
+        "id": "enchantplus:bow/echo_shot",
+        "name": "Echo Shot"
+      },
+      {
+        "id": "enchantencore:ender_shot",
+        "name": "Ender Shot"
+      },
+      {
+        "id": "enchantencore:evokers_wrath",
+        "name": "Evoker's Wrath"
+      },
+      {
+        "id": "enchantplus:bow/explosive_arrow",
+        "name": "Explosive Arrow"
+      },
+      {
+        "id": "enchantencore:flare",
+        "name": "Flare"
+      },
+      {
+        "id": "enchantencore:forge_shot",
+        "name": "Forge Shot"
+      },
+      {
+        "id": "enchantencore:implosion",
+        "name": "Implosion"
+      },
+      {
+        "id": "minecraft:infinity",
+        "name": "Infinity"
+      },
+      {
+        "id": "enchantencore:lightning_bolt",
+        "name": "Lightning Bolt"
+      }
+    ],
     "description": "Arrows inflict Levitation I for 7s (+0.5s per level above I, up to 9s at Lv V).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:levitation_shot\":5}}] 1"
   },
@@ -9763,6 +9842,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:infinity",
         "name": "Infinity"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:nuclear_arrow",
