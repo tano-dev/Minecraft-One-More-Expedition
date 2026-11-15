@@ -9312,7 +9312,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "kinetic_protection",
     "name": "Kinetic Protection",
     "name_vi": "Kinetic Protection",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 4,
     "anvil_cost": 2,

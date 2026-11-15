@@ -8,8 +8,8 @@
 | :--- | :--- | :---: | :--- | :--- |
 | **Ultimate** | Yellow (`yellow`) | **42** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
 | **Epic** | Light Purple (`light_purple`) | **65** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
-| **Rare** | Aqua (`aqua`) | **104** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
-| **Common** | Gray (`gray`) | **137** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
+| **Rare** | Aqua (`aqua`) | **105** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
+| **Common** | Gray (`gray`) | **136** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
 | **Curses** | Red (`red`) | **31** | Rương kho báu / Curse | Lời nguyền |
 | **Filtered Duplicates** | — | **38** | Đã tắt | Lọc trùng giữa các pack |
 
@@ -23,7 +23,7 @@
 | **Bow** | 14 | 64 | 6 | **9.38%** |
 | **Crossbow** | 8 | 47 | 2 | **4.26%** |
 | **Trident** | 11 | 82 | 3 | **4.88%** |
-| **Helmet** | 24 | 175 | 3 | **4.57%** |
+| **Helmet** | 24 | 175 | 4 | **11.43%** |
 | **Chestplate** | 18 | 113 | 3 | **5.31%** |
 | **Leggings** | 19 | 127 | 4 | **7.09%** |
 | **Boots** | 35 | 186 | 8 | **7.53%** |
@@ -145,7 +145,7 @@
 | `stellarity:ambush` | 3 | `Stellarity-6.0.1` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
 | `stellarity:plated` | 4 | `Stellarity-6.0.1` | No | 2 | `#stellarity:enchantable/elytra` |
 
-## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (104)
+## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (105)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -219,6 +219,7 @@
 | `enchantplus:sword/runic_despair` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/melee_weapon` |
 | `enchantplus:sword/tears_of_asflors` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/melee_weapon` |
 | `enchantsplus:kickback` | 3 | `Enchants Plus v2.1 26.3` | Yes | 5 | `minecraft:shield` |
+| `enchantsplus:kinetic_protection` | 4 | `Enchants Plus v2.1 26.3` | Yes | 10 | `#minecraft:enchantable/head_armor` |
 | `enchantsplus:retrieval` | 4 | `Enchants Plus v2.1 26.3` | No | 5 | `#minecraft:enchantable/chest_armor` |
 | `enchantsplus:websnare` | 2 | `Enchants Plus v2.1 26.3` | Yes | 10 | `#minecraft:enchantable/fire_aspect` |
 | `incendium:poison_protection` | 1 | `Incendium_Legacy_v5.5.4+26.3` | Yes | 5 | `#enchantable/armor` |
@@ -254,7 +255,7 @@
 | `stellarity:levitation_shot` | 5 | `Stellarity-6.0.1` | No | 5 | `#minecraft:enchantable/bow` |
 | `veinminer-enchantment:veinminer` | 1 | `veinminer-enchantment-1.3.6` | Yes | 1 | `#minecraft:pickaxes` |
 
-## 6. Common Enchants (137)
+## 6. Common Enchants (136)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -330,7 +331,6 @@
 | `enchantplus:mounted/cavalier_egis` | 3 | `NeoEnchant-5.16.0` | Yes | 10 | `#enchantplus:enchantable/mounted` |
 | `enchantplus:mounted/steel_fang` | 5 | `NeoEnchant-5.16.0` | Yes | 10 | `#enchantplus:enchantable/dog` |
 | `enchantplus:mounted/velocity` | 3 | `NeoEnchant-5.16.0` | Yes | 5 | `#enchantplus:enchantable/mounted` |
-| `enchantsplus:kinetic_protection` | 4 | `Enchants Plus v2.1 26.3` | Yes | 10 | `#minecraft:enchantable/head_armor` |
 | `enchantsplus:precision` | 2 | `Enchants Plus v2.1 26.3` | Yes | 10 | `minecraft:crossbow, minecraft:bow` |
 | `enchantsplus:pyrolysis` | 1 | `Enchants Plus v2.1 26.3` | Yes | 2 | `#minecraft:enchantable/mining_loot` |
 | `enchantsplus:skyguard` | 4 | `Enchants Plus v2.1 26.3` | Yes | 10 | `minecraft:elytra` |

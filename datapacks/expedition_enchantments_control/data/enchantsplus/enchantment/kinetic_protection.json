@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantsplus.kinetic_protection",
     "fallback": "Kinetic Protection",
-    "color": "gray"
+    "color": "aqua"
   },
   "supported_items": "#minecraft:enchantable/head_armor",
   "weight": 12,
