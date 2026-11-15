@@ -1015,7 +1015,6 @@
     </a>
 
     <div class="header-actions">
-      <button type="button" id="simOpenBtn" class="nav-btn">📊 Tỉ lệ Bàn Phù Phép</button>
       <button type="button" id="editModeBtn" class="nav-btn">🛠️ Wiki Editor</button>
       <a href="index.html" class="nav-btn">
         <span>🏠</span> Quay lại Wiki Chính
@@ -1277,32 +1276,8 @@
     </div>
   </div>
 
-  <div class="modal-backdrop" id="simModal">
-    <div class="modal-card" style="max-width: 780px;">
-      <button class="modal-close" id="simCloseBtn" title="Close">✕</button>
-      <div class="modal-title" style="font-size:1.3rem;">📊 Mô phỏng Tỉ lệ Bàn Phù Phép (Enchanting Table)</div>
-      <div class="modal-id" id="simSubtitle">Tính theo công thức trọng số (weight / total_weight) thực tế của Minecraft — click vào 1 món để xem từng enchant</div>
-      <table class="sim-table">
-        <thead>
-          <tr>
-            <th>Trang bị</th>
-            <th>Tổng Enchant</th>
-            <th>Tổng Weight</th>
-            <th>Số Rare</th>
-            <th>Tỉ lệ ra Rare</th>
-          </tr>
-        </thead>
-        <tbody id="simTableBody"></tbody>
-      </table>
-      <div class="sim-breakdown" id="simBreakdown">
-        <div style="color:var(--text-dim); font-size:0.8rem;">👆 Chọn một loại trang bị ở bảng trên để xem xác suất roll ra từng enchantment cụ thể.</div>
-      </div>
-    </div>
-  </div>
-
   <div class="editor-save-bar" id="editorSaveBar">
     <span id="dirtyCountLabel" style="font-size:0.84rem; font-weight:700; color:#fde68a;">0 thay đổi</span>
-    <button type="button" class="save-btn-ghost" id="saveBarSimBtn">📊 Xem tỉ lệ %</button>
     <button type="button" class="save-btn-ghost" id="discardChangesBtn">↩️ Hủy</button>
     <button type="button" class="save-btn-primary" id="syncChangesBtn">💾 Save &amp; Sync Datapack</button>
   </div>
@@ -1853,10 +1828,6 @@
           btn.onclick = () => {
             const flag = btn.dataset.editFlag;
             const cur = getEffectiveItem(rawItem);
-            if (flag === "table" && cur.tier !== "common" && cur.tier !== "rare") {
-              showToast("Chỉ Common / Rare mới vào được Bàn Phù Phép!");
-              return;
-            }
             updatePendingChange(item.id, { [flag]: !cur[flag] });
           };
         });
@@ -2069,27 +2040,19 @@
     window.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         closeModal();
-        closeSimModal();
       }
     });
 
     // =========================================================
-    // LIVE EDITOR & ENCHANTING TABLE PROBABILITY SIMULATOR
+    // LIVE EDITOR
     // =========================================================
     const pendingChanges = {};
     let currentModalItem = null;
     let isLocalServer = false;
-    let selectedSimGear = "Sword";
 
     const editModeBtn = document.getElementById("editModeBtn");
-    const simOpenBtn = document.getElementById("simOpenBtn");
-    const simModal = document.getElementById("simModal");
-    const simCloseBtn = document.getElementById("simCloseBtn");
-    const simTableBody = document.getElementById("simTableBody");
-    const simBreakdown = document.getElementById("simBreakdown");
     const editorSaveBar = document.getElementById("editorSaveBar");
     const dirtyCountLabel = document.getElementById("dirtyCountLabel");
-    const saveBarSimBtn = document.getElementById("saveBarSimBtn");
     const discardChangesBtn = document.getElementById("discardChangesBtn");
     const syncChangesBtn = document.getElementById("syncChangesBtn");
 
@@ -2118,9 +2081,6 @@
       renderCards();
       if (currentModalItem && currentModalItem.id === eid) {
         populateModalEditor(getEffectiveItem(base));
-      }
-      if (simModal.classList.contains("active")) {
-        renderSimulatorModal();
       }
     }
 
@@ -2171,12 +2131,6 @@
     };
     edTableCheck.onchange = () => {
       if (!currentModalItem) return;
-      const cur = getEffectiveItem(currentModalItem);
-      if (edTableCheck.checked && cur.tier !== "common" && cur.tier !== "rare") {
-        edTableCheck.checked = false;
-        showToast("Chỉ Common / Rare mới vào được Bàn Phù Phép!");
-        return;
-      }
       updatePendingChange(currentModalItem.id, { table: edTableCheck.checked });
     };
     edTradeCheck.onchange = () => {
@@ -2224,79 +2178,6 @@
       }
       return false;
     }
-
-    function renderSimulatorModal() {
-      simTableBody.innerHTML = "";
-      let selectedEntries = [];
-      let selectedTotalW = 0;
-
-      Object.entries(SIM_PROFILES).forEach(([gearName, profileSet]) => {
-        const pool = [];
-        let totalW = 0;
-        let rareW = 0;
-        let rareCnt = 0;
-
-        allData.forEach(raw => {
-          const item = getEffectiveItem(raw);
-          if (item.enabled === false || !item.table || isCurseItem(item)) return;
-          if (matchesSimProfile(item.supported_items, profileSet)) {
-            const w = item.table_weight || 1;
-            totalW += w;
-            if (item.tier === "rare") {
-              rareW += w;
-              rareCnt++;
-            }
-            pool.push({ item, w });
-          }
-        });
-
-        const pct = totalW > 0 ? (rareW / totalW * 100) : 0;
-        const tr = document.createElement("tr");
-        tr.className = "sim-row" + (selectedSimGear === gearName ? " selected" : "");
-        const pctCls = (pct >= 3.0 && pct <= 7.0) ? "sim-pct-good" : "sim-pct-warn";
-        tr.innerHTML = `
-          <td><strong>${gearName}</strong></td>
-          <td>${pool.length}</td>
-          <td>${totalW}</td>
-          <td>${rareCnt} (${rareW}w)</td>
-          <td class="${pctCls}">${pct.toFixed(2)}%</td>
-        `;
-        tr.onclick = () => {
-          selectedSimGear = gearName;
-          renderSimulatorModal();
-        };
-        simTableBody.appendChild(tr);
-
-        if (selectedSimGear === gearName) {
-          selectedEntries = pool;
-          selectedTotalW = totalW;
-        }
-      });
-
-      selectedEntries.sort((a, b) => (a.item.tier === "rare" ? 0 : 1) - (b.item.tier === "rare" ? 0 : 1) || b.w - a.w || a.item.name.localeCompare(b.item.name));
-      simBreakdown.innerHTML = `<div style="font-size:0.82rem; font-weight:700; margin-bottom:8px; color:#38bdf8;">🎯 Pool của ${selectedSimGear} (${selectedEntries.length} enchants • Tổng weight ${selectedTotalW}):</div>` +
-        selectedEntries.map(({ item, w }) => {
-          const p = selectedTotalW > 0 ? (w / selectedTotalW * 100).toFixed(2) : "0.00";
-          const color = item.tier === "rare" ? "var(--rare)" : "#cbd5e1";
-          return `<div style="display:flex; justify-content:space-between; font-size:0.79rem; padding:3px 0; border-bottom:1px solid rgba(255,255,255,0.04);">
-            <span style="color:${color}; font-weight:${item.tier === "rare" ? 700 : 500};">${escapeHtml(item.name)} <span style="opacity:0.65;">(${item.tier})</span></span>
-            <span>w=${w} → <strong>${p}%</strong></span>
-          </div>`;
-        }).join("");
-    }
-
-    function openSimModal() {
-      renderSimulatorModal();
-      simModal.classList.add("active");
-    }
-    function closeSimModal() {
-      simModal.classList.remove("active");
-    }
-
-    simOpenBtn.onclick = openSimModal;
-    saveBarSimBtn.onclick = openSimModal;
-    simCloseBtn.onclick = closeSimModal;
-    simModal.onclick = (e) => { if (e.target === simModal) closeSimModal(); };
 
     editModeBtn.onclick = () => {
       document.body.classList.toggle("edit-mode");

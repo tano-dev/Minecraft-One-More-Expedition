@@ -31,7 +31,6 @@
     "enchantencore:evokers_wrath",
     "enchantencore:fire_alloy",
     "enchantencore:flare",
-    "enchantencore:forge_shot",
     "enchantencore:fragility_curse",
     "enchantencore:frenzy",
     "enchantencore:ghost_spirit",
@@ -42,7 +41,6 @@
     "enchantencore:hiding_curse",
     "enchantencore:hurricane",
     "enchantencore:ice_alloy",
-    "enchantencore:implosion",
     "enchantencore:infinity_durability",
     "enchantencore:invisibility_cloak",
     "enchantencore:last_stand",
@@ -102,7 +100,6 @@
     "enchantplus:bow/echo_shot",
     "enchantplus:bow/eternal_frost",
     "enchantplus:bow/explosive_arrow",
-    "enchantplus:bow/rebound",
     "enchantplus:durability/curse_of_enchant",
     "enchantplus:helmet/auto_feed",
     "enchantplus:helmet/voidless",
@@ -196,7 +193,6 @@
     "stellarity:plated",
     "stellarity:void_shot",
     "stellarity:void_strike",
-    "veinminer-enchantment:veinminer",
     "wither:soul_siphon",
     "wither:witherbound"
   ]

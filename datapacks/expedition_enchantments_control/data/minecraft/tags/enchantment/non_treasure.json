@@ -28,6 +28,7 @@
     "enchantencore:enderscape",
     "enchantencore:fetch",
     "enchantencore:flaming_aura",
+    "enchantencore:forge_shot",
     "enchantencore:gallop",
     "enchantencore:gluttony",
     "enchantencore:grass_walker",
@@ -39,6 +40,7 @@
     "enchantencore:hunger_aspect",
     "enchantencore:illumination",
     "enchantencore:impale_rush",
+    "enchantencore:implosion",
     "enchantencore:incognito",
     "enchantencore:infested_aspect",
     "enchantencore:jousting",
@@ -94,6 +96,7 @@
     "enchantencore:wind_aspect",
     "enchantencore:wither_protection",
     "enchantencore:yoink",
+    "enchantplus:bow/rebound",
     "enchantplus:elytra/armored",
     "enchantplus:elytra/propulsion",
     "enchantplus:hoe/seiors_oblivion",
@@ -181,6 +184,7 @@
     "stellarity:_technical/void_pendant/iron",
     "stellarity:_technical/void_pendant/lapis",
     "stellarity:_technical/void_pendant/netherite",
-    "stellarity:_technical/void_pendant/quartz"
+    "stellarity:_technical/void_pendant/quartz",
+    "veinminer-enchantment:veinminer"
   ]
 }
