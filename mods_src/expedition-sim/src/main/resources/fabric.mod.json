@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "expedition-sim",
+  "version": "${version}",
+  "name": "Expedition Simulator",
+  "description": "OP-only Monte Carlo simulator for Enchanting Table and Loot Tables, exporting CSV/JSON for balance analysis.",
+  "authors": ["Expedition"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.expedition.sim.ExpeditionSimMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
