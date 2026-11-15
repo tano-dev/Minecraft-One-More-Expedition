@@ -1113,11 +1113,30 @@
 
     // Populate exclusive conflict groups dynamically
     const groupCounts = {};
+    let standaloneCount = 0;
+    let hasConflictCount = 0;
     allData.forEach(x => {
-      (x.exclusive_groups || []).forEach(g => {
-        groupCounts[g] = (groupCounts[g] || 0) + 1;
-      });
+      const grps = x.exclusive_groups || [];
+      if (grps.length === 0) {
+        standaloneCount++;
+      } else {
+        hasConflictCount++;
+        grps.forEach(g => {
+          groupCounts[g] = (groupCounts[g] || 0) + 1;
+        });
+      }
     });
+
+    const optStandalone = document.createElement("option");
+    optStandalone.value = "__standalone__";
+    optStandalone.textContent = `🟢 Độc lập / Không xung khắc (${standaloneCount})`;
+    groupSelect.appendChild(optStandalone);
+
+    const optHasConf = document.createElement("option");
+    optHasConf.value = "__has_conflict__";
+    optHasConf.textContent = `⚔️ Có xung khắc (${hasConflictCount})`;
+    groupSelect.appendChild(optHasConf);
+
     Object.entries(groupCounts)
       .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
       .forEach(([grp, cnt]) => {
@@ -1220,7 +1239,13 @@
         }
 
         if (currentPack !== "all" && item.namespace !== currentPack) return false;
-        if (currentGroup !== "all" && !(item.exclusive_groups || []).includes(currentGroup)) return false;
+        if (currentGroup === "__standalone__") {
+          if ((item.exclusive_groups || []).length > 0) return false;
+        } else if (currentGroup === "__has_conflict__") {
+          if ((item.exclusive_groups || []).length === 0) return false;
+        } else if (currentGroup !== "all" && !(item.exclusive_groups || []).includes(currentGroup)) {
+          return false;
+        }
 
         if (currentObtain === "table" && !item.table) return false;
         if (currentObtain === "tradeable" && !item.tradeable) return false;
