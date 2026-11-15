@@ -508,6 +508,57 @@
     .badge-curse { background: var(--curse-soft); color: var(--curse); border: 1px solid var(--curse-border); }
     .badge-obtain { background: rgba(255, 255, 255, 0.04); color: var(--text-muted); border: 1px solid var(--border-subtle); }
     .badge-pack { background: rgba(168, 85, 247, 0.14); color: #d8b4fe; border: 1px solid rgba(168, 85, 247, 0.35); }
+    .badge-group { background: rgba(249, 115, 22, 0.14); color: #fdba74; border: 1px solid rgba(249, 115, 22, 0.35); }
+
+    .conflict-box {
+      background: rgba(249, 115, 22, 0.08);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    .conflict-groups-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .conflict-group-btn {
+      background: rgba(249, 115, 22, 0.18);
+      border: 1px solid rgba(249, 115, 22, 0.45);
+      color: #fed7aa;
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .conflict-group-btn:hover {
+      background: rgba(249, 115, 22, 0.32);
+      color: #fff;
+    }
+    .conflict-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+    .conflict-chip {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      border-radius: 8px;
+      padding: 4px 9px;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .conflict-chip:hover {
+      background: rgba(249, 115, 22, 0.18);
+      border-color: rgba(249, 115, 22, 0.45);
+      color: #fed7aa;
+    }
 
     .card-desc {
       font-size: 0.855rem;
@@ -860,6 +911,10 @@
           <option value="all">Pack: Tất cả</option>
         </select>
 
+        <select id="groupSelect" class="filter-select" title="Filter by exclusive conflict group">
+          <option value="all">Nhóm xung khắc: Tất cả</option>
+        </select>
+
         <select id="obtainSelect" class="filter-select" title="Filter by how to obtain">
           <option value="all">Nguồn: Tất cả</option>
           <option value="table">🔮 Bàn phù phép (Table)</option>
@@ -958,6 +1013,12 @@
         </div>
       </div>
 
+      <div class="conflict-box" id="modalConflictsBox" style="display: none;">
+        <div class="spec-label" style="margin-bottom: 8px; color: #fdba74;">⚔️ Nhóm xung khắc / Không thể gắn cùng (Click để lọc hoặc xem)</div>
+        <div class="conflict-groups-row" id="modalConflictGroups"></div>
+        <div class="conflict-chips" id="modalConflictChips"></div>
+      </div>
+
       <div>
         <div class="spec-label" style="margin-bottom: 6px;">In-Game Command (/give)</div>
         <div class="cmd-box">
@@ -977,6 +1038,7 @@
     let currentTier = "all";
     let currentGear = "all";
     let currentPack = "all";
+    let currentGroup = "all";
     let currentObtain = "all";
     let currentSearch = "";
     let currentSort = "tier";
@@ -1019,6 +1081,7 @@
     const searchInput = document.getElementById("searchInput");
     const clearSearchBtn = document.getElementById("clearSearchBtn");
     const packSelect = document.getElementById("packSelect");
+    const groupSelect = document.getElementById("groupSelect");
     const obtainSelect = document.getElementById("obtainSelect");
 
     // Populate all packs dynamically
@@ -1047,6 +1110,22 @@
         opt.textContent = `${packLabels[ns] || ns} (${cnt})`;
         packSelect.appendChild(opt);
       });
+
+    // Populate exclusive conflict groups dynamically
+    const groupCounts = {};
+    allData.forEach(x => {
+      (x.exclusive_groups || []).forEach(g => {
+        groupCounts[g] = (groupCounts[g] || 0) + 1;
+      });
+    });
+    Object.entries(groupCounts)
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .forEach(([grp, cnt]) => {
+        const opt = document.createElement("option");
+        opt.value = grp;
+        opt.textContent = `${grp} (${cnt})`;
+        groupSelect.appendChild(opt);
+      });
     const sortSelect = document.getElementById("sortSelect");
     const prevPageBtn = document.getElementById("prevPageBtn");
     const nextPageBtn = document.getElementById("nextPageBtn");
@@ -1063,6 +1142,9 @@
     const specAnvil = document.getElementById("specAnvil");
     const specSource = document.getElementById("specSource");
     const specGear = document.getElementById("specGear");
+    const modalConflictsBox = document.getElementById("modalConflictsBox");
+    const modalConflictGroups = document.getElementById("modalConflictGroups");
+    const modalConflictChips = document.getElementById("modalConflictChips");
     const cmdText = document.getElementById("cmdText");
     const copyCmdBtn = document.getElementById("copyCmdBtn");
     const toast = document.getElementById("toastMsg");
@@ -1114,6 +1196,14 @@
       return "";
     }
 
+    function getGroupBadgeHtml(item) {
+      const groups = (item.exclusive_groups || []).filter(g => g !== "Ultimate (Max 1/item)");
+      if (groups.length === 0) return "";
+      const label = groups[0];
+      const extra = groups.length > 1 ? ` +${groups.length - 1}` : "";
+      return `<span class="badge badge-group" title="Nhóm xung khắc: ${escapeHtml(groups.join(', '))}">⚔️ ${escapeHtml(label)}${extra}</span>`;
+    }
+
     function filterAndSortData() {
       const filtered = allData.filter(item => {
         if (currentTier === "curse") {
@@ -1130,6 +1220,7 @@
         }
 
         if (currentPack !== "all" && item.namespace !== currentPack) return false;
+        if (currentGroup !== "all" && !(item.exclusive_groups || []).includes(currentGroup)) return false;
 
         if (currentObtain === "table" && !item.table) return false;
         if (currentObtain === "tradeable" && !item.tradeable) return false;
@@ -1141,7 +1232,8 @@
             item.name.toLowerCase().includes(q) ||
             item.id.toLowerCase().includes(q) ||
             item.description.toLowerCase().includes(q) ||
-            (item.supported_display || "").toLowerCase().includes(q);
+            (item.supported_display || "").toLowerCase().includes(q) ||
+            (item.exclusive_groups || []).some(g => g.toLowerCase().includes(q));
           if (!match) return false;
         }
 
@@ -1164,12 +1256,14 @@
       currentTier = "all";
       currentGear = "all";
       currentPack = "all";
+      currentGroup = "all";
       currentObtain = "all";
       currentSearch = "";
       currentPage = 1;
       searchInput.value = "";
       clearSearchBtn.classList.remove("visible");
       packSelect.value = "all";
+      groupSelect.value = "all";
       obtainSelect.value = "all";
       document.querySelectorAll("#tierTabs .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.tier === "all"));
       document.querySelectorAll("#gearChips .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.gear === "all"));
@@ -1221,6 +1315,7 @@
             ${getTierBadgeHtml(item)}
             ${getObtainBadgeHtml(item)}
             ${getPackBadgeHtml(item)}
+            ${getGroupBadgeHtml(item)}
           </div>
 
           <p class="card-desc">${highlightNumbers(item.description)}</p>
@@ -1284,6 +1379,50 @@
       specGear.innerHTML = `<span>${escapeHtml(item.supported_display || "Compatible Gear")}</span> <span style="color:var(--text-dim); font-size:0.78rem; font-weight:500; display:block; margin-top:2px;">${escapeHtml(item.supported_items)}</span>`;
       cmdText.innerText = item.give_command;
 
+      const excGroups = item.exclusive_groups || [];
+      const confs = item.conflicts || [];
+      if (excGroups.length > 0 || confs.length > 0) {
+        modalConflictsBox.style.display = "block";
+        modalConflictGroups.innerHTML = "";
+        excGroups.forEach(g => {
+          const btn = document.createElement("button");
+          btn.className = "conflict-group-btn";
+          btn.type = "button";
+          btn.textContent = `🔍 Nhóm: ${g}`;
+          btn.onclick = () => {
+            currentGroup = g;
+            groupSelect.value = g;
+            currentPage = 1;
+            closeModal();
+            renderCards();
+          };
+          modalConflictGroups.appendChild(btn);
+        });
+
+        modalConflictChips.innerHTML = "";
+        if (confs.length > 0) {
+          confs.forEach(c => {
+            const chip = document.createElement("button");
+            chip.className = "conflict-chip";
+            chip.type = "button";
+            chip.textContent = c.name;
+            chip.title = c.id;
+            chip.onclick = () => {
+              const target = allData.find(x => x.id === c.id);
+              if (target) openModal(target);
+            };
+            modalConflictChips.appendChild(chip);
+          });
+        } else {
+          const note = document.createElement("span");
+          note.style.cssText = "color: var(--text-dim); font-size: 0.78rem;";
+          note.textContent = "Chỉ gắn được 1 Ultimate trên mỗi món đồ (click nút Nhóm ở trên để xem toàn bộ Ultimate).";
+          modalConflictChips.appendChild(note);
+        }
+      } else {
+        modalConflictsBox.style.display = "none";
+      }
+
       modal.classList.add("active");
     }
 
@@ -1327,6 +1466,12 @@
 
     packSelect.addEventListener("change", (e) => {
       currentPack = e.target.value;
+      currentPage = 1;
+      renderCards();
+    });
+
+    groupSelect.addEventListener("change", (e) => {
+      currentGroup = e.target.value;
       currentPage = 1;
       renderCards();
     });

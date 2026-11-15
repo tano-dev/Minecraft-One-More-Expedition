@@ -463,6 +463,230 @@ ALL_DICTS = [
     ENCORE_EN,
 ]
 
+def compute_exclusive_metadata(base_dir, enabled_ids, names_by_id):
+    """Resolve exclusive_set tags and direct conflicts for all enabled enchantments."""
+    import glob
+    from collections import defaultdict
+
+    tag_defs = defaultdict(set)
+    dps = sorted(glob.glob(os.path.join(base_dir, "datapacks", "*", "data")))
+    dps = [d for d in dps if "expedition_enchantments_control" not in d] + [
+        d for d in dps if "expedition_enchantments_control" in d
+    ]
+
+    for dp in dps:
+        for p in glob.glob(os.path.join(dp, "*", "tags", "enchantment", "**", "*.json"), recursive=True):
+            rel = os.path.relpath(p, dp).replace(os.sep, "/")
+            parts = rel.split("/")
+            ns, tag_path = parts[0], "/".join(parts[3:])[:-5]
+            tag_id = f"#{ns}:{tag_path}"
+            try:
+                with open(p, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                if data.get("replace"):
+                    tag_defs[tag_id] = set()
+                for v in data.get("values", []):
+                    tag_defs[tag_id].add(v["id"] if isinstance(v, dict) else v)
+            except Exception:
+                pass
+
+    vanilla_tags = {
+        "#minecraft:exclusive_set/armor": {
+            "minecraft:protection", "minecraft:fire_protection",
+            "minecraft:blast_protection", "minecraft:projectile_protection",
+        },
+        "#minecraft:exclusive_set/damage": {
+            "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods",
+            "minecraft:impaling", "minecraft:density", "minecraft:breach",
+        },
+        "#minecraft:exclusive_set/mining": {"minecraft:fortune", "minecraft:silk_touch"},
+        "#minecraft:exclusive_set/boots": {"minecraft:frost_walker", "minecraft:depth_strider"},
+        "#minecraft:exclusive_set/bow": {"minecraft:infinity", "minecraft:mending"},
+        "#minecraft:exclusive_set/crossbow": {"minecraft:multishot", "minecraft:piercing"},
+        "#minecraft:exclusive_set/riptide": {"minecraft:riptide", "minecraft:loyalty", "minecraft:channeling"},
+    }
+    for t, vals in vanilla_tags.items():
+        tag_defs[t].update(vals)
+
+    SKIP_IN_RECURSION = {"#expedition:exclusive_set/ultimate", "#enchantencore:ultimate"}
+
+    def resolve_tag(tag_id, seen=None, skip_ult=True):
+        if seen is None:
+            seen = set()
+        if tag_id in seen:
+            return set()
+        if skip_ult and tag_id in SKIP_IN_RECURSION:
+            return set()
+        seen.add(tag_id)
+        out = set()
+        for v in tag_defs.get(tag_id, ()):
+            if v.startswith("#"):
+                out.update(resolve_tag(v, seen, skip_ult=skip_ult))
+            else:
+                out.add(v)
+        return out
+
+    TAG_LABELS = {
+        "#expedition:exclusive_set/ultimate": "Ultimate (Max 1/item)",
+        "#enchantencore:exclusive_set/aspect": "Aspect (Melee Status)",
+        "#minecraft:sword_buffs": "Sword Buffs (Fire / Ice / Web)",
+        "#minecraft:exclusive_set/damage": "Damage (Sharpness / Bane)",
+        "#kattersstructures:exclusive_set/blunt": "Damage (Sharpness / Bane)",
+        "#minecraft:exclusive_set/armor": "Armor Protection",
+        "#enchantplus:exclusive_set/armor": "Armor (Lifeplus / Fury / Prot)",
+        "#enchantencore:exclusive_set/alloy": "Chestplate Alloy",
+        "#enchantencore:exclusive_set/shot_arrow": "Bow Arrow Effects",
+        "#enchantencore:exclusive_set/infused_arrow": "Bow Infused Arrows",
+        "#enchantplus:exclusive_set/bow": "Bow Special (Enchant+)",
+        "#nova_structures:exclusive_set/structure_bow": "Bow (Structure Multishot/Piercing)",
+        "#minecraft:exclusive_set/bow": "Bow (Infinity / Mending)",
+        "#enchantencore:exclusive_set/crossbow": "Crossbow Shots",
+        "#minecraft:exclusive_set/crossbow": "Crossbow (Multishot / Piercing)",
+        "#enchantencore:exclusive_set/boots": "Boots Movement",
+        "#minecraft:exclusive_set/boots": "Boots Walker",
+        "#nova_structures:exclusive_set/boots": "Boots (Soul Speed / Traveler)",
+        "#enchantencore:exclusive_set/leggings": "Leggings Movement",
+        "#enchantencore:exclusive_set/height": "Size / Height",
+        "#enchantplus:exclusive_set/size": "Size / Height",
+        "#enchantencore:exclusive_set/repair": "Auto-Repair / Durability",
+        "#minecraft:exclusive_set/repair": "Auto-Repair / Durability",
+        "#enchantplus:exclusive_set/durability": "Auto-Repair / Durability",
+        "#nova_structures:exclusive_set/elytra": "Elytra",
+        "#enchantencore:exclusive_set/elytra": "Elytra",
+        "#enchantencore:exclusive_set/shield": "Shield",
+        "#enchantencore:exclusive_set/pufferfish": "Trident / Water Aura",
+        "#minecraft:exclusive_set/riptide": "Trident (Riptide / Loyalty)",
+        "#enchantplus:exclusive_set/trident": "Trident (Channeling / Gungnir)",
+        "#enchantencore:aura": "Cosmetic Aura",
+        "#enchantencore:exclusive_set/spirit_wolf": "Spirit Wolf",
+        "#enchantencore:exclusive_set/vision_based": "Vision Curses",
+        "#enchantplus:exclusive_set/sword_attribute": "Sword Attributes (Enchant+)",
+        "#enchantplus:exclusive_set/sword_effect": "Sword Effects (Enchant+)",
+        "#minecraft:exclusive_set/mining": "Mining (Fortune / Silk Touch)",
+        "#enchantencore:exclusive_set/haste": "Mining / Haste",
+        "#enchantplus:exclusive_set/mining": "Mining / Haste",
+        "#enchantencore:exclusive_set/exp": "XP Boost / Scholar",
+        "#enchantplus:exclusive_set/experience": "XP Boost / Scholar",
+        "#enchantencore:exclusive_set/helmet": "Helmet Utility",
+        "#enchantencore:exclusive_set/horse_armor": "Horse Armor",
+        "#enchantencore:exclusive_set/saddle": "Saddle / Mount",
+        "#enchantencore:exclusive_set/wolf_armor": "Wolf Armor",
+        "#enchantencore:exclusive_set/mace_strike": "Mace Strike",
+        "#enchantplus:exclusive_set/mace": "Mace Strike",
+        "#enchantencore:exclusive_set/poppy": "Pacifier / Poppy",
+        "#enchantencore:exclusive_set/pickpocket": "Pacifier / Poppy",
+        "#enchantencore:exclusive_set/reach": "Reach",
+        "#enchantencore:exclusive_set/all_tools": "Tool Utility (Crab Claw / Gluttony)",
+        "#enchantencore:exclusive_set/replenish": "Bow (Infinity / Replenish)",
+    }
+
+    vanilla_exc = {
+        "minecraft:protection": ["#minecraft:exclusive_set/armor"],
+        "minecraft:fire_protection": ["#minecraft:exclusive_set/armor"],
+        "minecraft:blast_protection": ["#minecraft:exclusive_set/armor"],
+        "minecraft:projectile_protection": ["#minecraft:exclusive_set/armor"],
+        "minecraft:sharpness": ["#minecraft:exclusive_set/damage"],
+        "minecraft:smite": ["#minecraft:exclusive_set/damage"],
+        "minecraft:bane_of_arthropods": ["#minecraft:exclusive_set/damage"],
+        "minecraft:impaling": ["#minecraft:exclusive_set/damage"],
+        "minecraft:density": ["#minecraft:exclusive_set/damage"],
+        "minecraft:breach": ["#minecraft:exclusive_set/damage"],
+        "minecraft:fortune": ["#minecraft:exclusive_set/mining"],
+        "minecraft:silk_touch": ["#minecraft:exclusive_set/mining"],
+        "minecraft:frost_walker": ["#minecraft:exclusive_set/boots"],
+        "minecraft:depth_strider": ["#minecraft:exclusive_set/boots"],
+        "minecraft:infinity": ["#minecraft:exclusive_set/bow"],
+        "minecraft:mending": ["#minecraft:exclusive_set/bow"],
+        "minecraft:multishot": ["#minecraft:exclusive_set/crossbow"],
+        "minecraft:piercing": ["#minecraft:exclusive_set/crossbow"],
+        "minecraft:riptide": ["#minecraft:exclusive_set/riptide"],
+        "minecraft:loyalty": ["#minecraft:exclusive_set/riptide"],
+        "minecraft:channeling": ["#minecraft:exclusive_set/riptide"],
+    }
+
+    ctrl_dir = os.path.join(base_dir, "datapacks", "expedition_enchantments_control", "data")
+    groups_by_eid = defaultdict(set)
+    conflicts_by_eid = defaultdict(set)
+
+    # First assign tagged groups from TAG_LABELS
+    for tag_id, label in TAG_LABELS.items():
+        members = resolve_tag(tag_id, skip_ult=(tag_id not in SKIP_IN_RECURSION)) & enabled_ids
+        if len(members) >= 2:
+            for m in members:
+                groups_by_eid[m].add(label)
+
+    # Compute symmetric non-ultimate conflicts from each enchant's exclusive_set
+    for eid in enabled_ids:
+        ns, name = eid.split(":", 1)
+        p = os.path.join(ctrl_dir, ns, "enchantment", name + ".json")
+        excs = []
+        if os.path.exists(p):
+            try:
+                with open(p, "r", encoding="utf-8") as f:
+                    exc = json.load(f).get("exclusive_set")
+                if exc:
+                    excs = exc if isinstance(exc, list) else [exc]
+            except Exception:
+                pass
+        elif eid in vanilla_exc:
+            excs = vanilla_exc[eid]
+
+        # Unwrap #expedition:exclusive/... wrapper tags
+        flat_excs = []
+        for x in excs:
+            if x.startswith("#expedition:exclusive/"):
+                flat_excs.extend(tag_defs.get(x, ()))
+            else:
+                flat_excs.append(x)
+
+        for x in flat_excs:
+            if x in SKIP_IN_RECURSION:
+                groups_by_eid[eid].add("Ultimate (Max 1/item)")
+                continue
+            if x in TAG_LABELS:
+                groups_by_eid[eid].add(TAG_LABELS[x])
+            targets = resolve_tag(x, skip_ult=True) if x.startswith("#") else {x}
+            for t in (targets & enabled_ids):
+                if t != eid:
+                    conflicts_by_eid[eid].add(t)
+                    conflicts_by_eid[t].add(eid)
+                    if x in TAG_LABELS:
+                        groups_by_eid[t].add(TAG_LABELS[x])
+
+    # Add vanilla symmetric conflicts too
+    for tag_id in vanilla_tags:
+        ms = resolve_tag(tag_id, skip_ult=True) & enabled_ids
+        for a in ms:
+            for b in ms:
+                if a != b:
+                    conflicts_by_eid[a].add(b)
+
+    # Named direct-pair groups
+    DIRECT_GROUP_PAIRS = [
+        ({"nova_structures:wither_coated", "enchantencore:wither_aspect"}, "Wither (Coated / Aspect)"),
+        ({"nova_structures:illagers_bane", "enchantencore:bane_of_raiders"}, "Illager / Raider Bane"),
+        ({"kattersstructures:light", "minecraft:blast_protection"}, "Light / Blast Protection"),
+        ({"kattersstructures:ocean_heart", "enchantencore:fire_alloy", "enchantencore:ice_alloy"}, "Chestplate Alloy"),
+    ]
+    for pair_set, label in DIRECT_GROUP_PAIRS:
+        if len(pair_set & enabled_ids) >= 2:
+            for m in (pair_set & enabled_ids):
+                groups_by_eid[m].add(label)
+
+    # Format final outputs
+    out_groups = {}
+    out_conflicts = {}
+    for eid in enabled_ids:
+        out_groups[eid] = sorted(groups_by_eid.get(eid, ()))
+        confs = sorted(
+            [{"id": cid, "name": names_by_id.get(cid, cid)} for cid in conflicts_by_eid.get(eid, ())],
+            key=lambda x: x["name"],
+        )
+        out_conflicts[eid] = confs
+
+    return out_groups, out_conflicts
+
+
 def build_all():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     config_path = os.path.join(base_dir, "enchantments_config.json")
@@ -474,6 +698,16 @@ def build_all():
     master = {}
     for d in ALL_DICTS:
         master.update(d)
+
+    enabled_ids = {eid for eid, entry in cfg["enchantments"].items() if entry.get("enabled", True)}
+    names_by_id = {}
+    for eid in enabled_ids:
+        if eid in master:
+            names_by_id[eid] = master[eid][4]
+        else:
+            names_by_id[eid] = eid.split(":", 1)[1].replace("_", " ").title()
+
+    exc_groups_map, exc_conflicts_map = compute_exclusive_metadata(base_dir, enabled_ids, names_by_id)
 
     tier_order = {"ultimate": 1, "high": 2, "normal": 3, "low": 4, "curse": 5}
     final_list = []
@@ -530,6 +764,8 @@ def build_all():
             "supported_items": str(supported_items),
             "gear_categories": gear_cats,
             "supported_display": gear_display,
+            "exclusive_groups": exc_groups_map.get(eid, []),
+            "conflicts": exc_conflicts_map.get(eid, []),
             "description": desc,
             "give_command": give_cmd,
         })
