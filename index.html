@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KHTN Wiki — Minecraft Server Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --card-bg: rgba(22, 27, 38, 0.88);
+      --card-inner: #1a212e;
+      --card-inner-hover: #242d3e;
+      --border-card: #2f3a4d;
+      --border-gold: #c99c3e;
+      --gold-primary: #f5c451;
+      --gold-dark: #b8861e;
+      --text-white: #ffffff;
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --blue-tab: #3b82f6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.45;
+      background-color: #1e2d40;
+      position: relative;
+    }
+
+    /* ==============================================================
+       FIXED MINECRAFT SUNSET / SHADERS BACKGROUND LAYER
+       ============================================================== */
+    .minecraft-bg-fixed {
+      position: fixed;
+      inset: 0;
+      z-index: -10;
+      pointer-events: none;
+      overflow: hidden;
+      background: #1e1b2e url('assets/bg.jpg') no-repeat center center / cover;
+    }
+
+    .minecraft-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 30%, rgba(20, 15, 30, 0.15) 0%, rgba(10, 8, 20, 0.5) 100%);
+    }
+
+    /* TOP HEADER BAR */
+    .header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 24px;
+      background: rgba(14, 18, 26, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .brand-cube-icon {
+      width: 38px;
+      height: 38px;
+      filter: drop-shadow(0 3px 6px rgba(0,0,0,0.6));
+      object-fit: contain;
+    }
+
+    .brand-text-stack {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .brand-khtn {
+      font-size: 1.35rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      color: #f5c451;
+      text-shadow: 2px 2px 0px #704b12, 3px 3px 6px rgba(0,0,0,0.8);
+    }
+
+    .brand-wiki {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 1px;
+    }
+
+    /* NAV TABS */
+    .nav-tabs-pill {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(10, 13, 19, 0.7);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 3px;
+    }
+
+    .nav-tab-btn {
+      padding: 6px 18px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+
+    .nav-tab-btn:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-tab-btn.active {
+      color: #ffffff;
+      background: rgba(37, 99, 235, 0.35);
+      border-color: #3b82f6;
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.35);
+    }
+
+    /* RIGHT TOOLS */
+    .header-right-tools {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .search-container {
+      display: flex;
+      align-items: center;
+      background: #0d1118;
+      border: 1px solid #2d3648;
+      border-radius: 6px;
+      overflow: hidden;
+      width: 240px;
+      transition: width 0.2s, border-color 0.2s;
+    }
+    .search-container:focus-within {
+      width: 270px;
+      border-color: #3b82f6;
+    }
+
+    .search-container input {
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 7px 12px;
+      color: #ffffff;
+      font-size: 0.84rem;
+      flex: 1;
+    }
+    .search-container input::placeholder {
+      color: #64748b;
+    }
+
+    .search-btn {
+      background: #171d28;
+      border: none;
+      border-left: 1px solid #2d3648;
+      color: #94a3b8;
+      padding: 7px 11px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .search-btn:hover {
+      background: #2563eb;
+      color: #ffffff;
+    }
+
+    .user-auth-links {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .user-auth-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .user-auth-links a:hover {
+      color: #ffffff;
+    }
+
+    /* ==============================================================
+       MAIN 3-COLUMN LAYOUT
+       ============================================================== */
+    .main-layout {
+      max-width: 1540px;
+      margin: 16px auto 40px;
+      padding: 0 18px;
+      display: grid;
+      grid-template-columns: 215px 1fr 265px;
+      gap: 16px;
+      align-items: start;
+    }
+
+    /* ==============================================================
+       LEFT SIDEBAR (ACCORDION)
+       ============================================================== */
+    .left-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar-brand-box {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 16px 12px 14px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    }
+
+    .sidebar-cube-img {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 6px;
+      filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.65));
+      display: block;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+      object-fit: contain;
+    }
+    .sidebar-cube-img:hover {
+      transform: scale(1.06);
+    }
+
+    .sidebar-khtn-title {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: #f5c451;
+      letter-spacing: 0.05em;
+      text-shadow: 1px 1px 0px #704b12;
+      line-height: 1.1;
+    }
+
+    .sidebar-wiki-title {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .accordion-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    }
+
+    .accordion-group {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .accordion-group:last-child {
+      border-bottom: none;
+    }
+
+    .accordion-title {
+      padding: 8px 14px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+    }
+    .accordion-title:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .accordion-title .chevron {
+      font-size: 0.72rem;
+      color: #e5a93b;
+      transition: transform 0.2s;
+    }
+    .accordion-group.collapsed .chevron {
+      transform: rotate(-90deg);
+    }
+
+    .accordion-list {
+      list-style: none;
+      padding: 2px 0 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .accordion-group.collapsed .accordion-list {
+      display: none;
+    }
+
+    .accordion-list li a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 5px 16px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      transition: all 0.15s ease;
+    }
+    .accordion-list li a:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.05);
+      padding-left: 20px;
+    }
+
+    .accordion-icon-box {
+      font-size: 0.95rem;
+      width: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ==============================================================
+       CENTER COLUMN (WIKI SHEET)
+       ============================================================== */
+    .center-column {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* TOP ANNOUNCEMENT BANNER */
+    .announcement-box {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    }
+
+    .announcement-main {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .horn-icon {
+      font-size: 1.5rem;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+    }
+
+    .announcement-headline {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    .announcement-caption {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      font-style: italic;
+      margin-top: 2px;
+    }
+    .announcement-caption a {
+      color: #f5c451;
+      text-decoration: none;
+    }
+    .announcement-caption a:hover {
+      text-decoration: underline;
+    }
+
+    .banner-dismiss-x {
+      background: none;
+      border: none;
+      color: var(--text-dim);
+      font-size: 1.1rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .banner-dismiss-x:hover {
+      color: #ffffff;
+    }
+
+    /* MAIN WIKI CARD */
+    .main-wiki-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      overflow: hidden;
+    }
+
+    /* DISTINCTIVE SHAPED TAB FOR KHTN WIKI WITH GOLD UNDERLINE */
+    .wiki-card-header-container {
+      background: linear-gradient(90deg, #1d2533 0%, #171d27 100%);
+      padding: 0;
+      border-bottom: 1.5px solid var(--border-gold);
+      position: relative;
+    }
+
+    .wiki-tab-badge {
+      display: inline-block;
+      padding: 12px 28px 10px 20px;
+      background: #1f2736;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 20px;
+      border-right: 2px solid var(--border-card);
+      position: relative;
+    }
+
+    .wiki-tab-badge h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+
+    .wiki-intro-text {
+      padding: 14px 20px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      line-height: 1.6;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .wiki-intro-text strong {
+      color: #f5c451;
+      font-weight: 700;
+    }
+
+    /* SECTION HEADER (Browse Game Content) */
+    .browse-section-header {
+      background: #171d28;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .browse-section-header img {
+      width: 22px;
+      height: 22px;
+      image-rendering: pixelated;
+    }
+
+    /* 21 MINECRAFT GAME TILES GRID (3 ROWS x 7 COLUMNS) */
+    .tiles-grid-7x3 {
+      padding: 16px 18px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+
+    .content-tile {
+      background: var(--card-inner);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 10px 4px 8px;
+      text-align: center;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.16s ease-out;
+    }
+
+    .content-tile:hover {
+      background: var(--card-inner-hover);
+      border-color: #4a5c7d;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.55);
+    }
+
+    .tile-icon-wrapper {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      image-rendering: pixelated;
+    }
+
+    .tile-icon-wrapper img, .tile-icon-wrapper svg {
+      width: 38px;
+      height: 38px;
+      image-rendering: pixelated;
+      shape-rendering: crispEdges;
+      filter: drop-shadow(0 3px 5px rgba(0,0,0,0.65));
+      transition: transform 0.16s ease;
+      object-fit: contain;
+    }
+
+    .content-tile:hover .tile-icon-wrapper img,
+    .content-tile:hover .tile-icon-wrapper svg {
+      transform: scale(1.15);
+    }
+
+    .tile-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #cbd5e1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 95%;
+    }
+
+    /* ABOUT KHTN SECTION */
+    .about-khtn-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      overflow: hidden;
+    }
+
+    .about-title-ribbon {
+      background: #171d28;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .info-badge {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #f59e0b;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.85rem;
+    }
+
+    .about-title-ribbon h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .about-grid-content {
+      padding: 16px 20px;
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .about-prose {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+    .about-prose a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    .about-prose a:hover {
+      text-decoration: underline;
+    }
+
+    .about-scenic-frame {
+      border: 1px solid var(--border-card);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .about-scenic-frame svg {
+      width: 100%;
+      height: 110px;
+      display: block;
+    }
+
+    /* ==============================================================
+       RIGHT WIDGETS SIDEBAR
+       ============================================================== */
+    .right-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .widget-panel {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+    }
+
+    .widget-top-header {
+      background: #171d28;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .widget-top-header .icon {
+      font-size: 1.05rem;
+    }
+
+    /* EVENT */
+    .event-body {
+      padding: 12px 14px;
+      text-align: center;
+    }
+
+    .event-name-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 1.02rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+    .event-name-row svg {
+      width: 22px;
+      height: 22px;
+      image-rendering: pixelated;
+    }
+
+    .event-sub-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .event-riddles-stat {
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    .event-riddles-stat span {
+      color: #10b981;
+      font-weight: 800;
+    }
+
+    .event-time-ago {
+      font-size: 0.74rem;
+      color: var(--text-dim);
+      margin-top: 6px;
+    }
+
+    /* CLOCK */
+    .clock-body {
+      padding: 14px;
+      text-align: center;
+      background: #141824;
+    }
+
+    .clock-big-digits {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .clock-season-label {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .clock-phase-dot {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: #f5c451;
+      font-weight: 600;
+    }
+
+    /* MAYOR */
+    .mayor-body {
+      padding: 14px;
+      text-align: center;
+    }
+
+    .mayor-title-name {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .perks-box-row {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .perk-cube {
+      width: 26px;
+      height: 26px;
+      border: 1px solid #784712;
+      background: #3b2308;
+      color: #f5c451;
+      font-size: 0.8rem;
+      font-weight: 800;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .perk-cube:hover {
+      background: #f5c451;
+      color: #000;
+    }
+
+    .mayor-avatar-box {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 10px;
+      border-radius: 8px;
+      background: #1a212e;
+      border: 2px solid #58310c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .mayor-avatar-box svg {
+      width: 52px;
+      height: 52px;
+      image-rendering: pixelated;
+    }
+
+    .mayor-term-footnote {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+    }
+    .mayor-term-footnote strong {
+      color: #ffffff;
+    }
+
+    /* SERVER STATUS */
+    .status-body {
+      padding: 14px;
+      text-align: center;
+    }
+
+    .status-domain {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .status-green-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 8px #10b981;
+    }
+
+    .status-count {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .status-count strong {
+      color: #10b981;
+      font-weight: 800;
+    }
+
+    .status-online-caption {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+
+    /* MINECRAFT TOOLTIP MODAL & 2-TIER DETAIL VIEW */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.78);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      padding: 16px;
+    }
+    .modal-backdrop.active { display: flex; }
+
+    .mc-modal-box {
+      background: #121622;
+      border: 2px solid #2e3748;
+      border-radius: 12px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+      width: 100%;
+      max-width: 760px;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      color: #ffffff;
+      padding: 20px 24px;
+      position: relative;
+      animation: popIn 0.22s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+      overflow: hidden;
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.94); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .modal-close-x {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      font-size: 1.4rem;
+      color: var(--text-dim);
+      cursor: pointer;
+      line-height: 1;
+      z-index: 10;
+      transition: color 0.15s;
+    }
+    .modal-close-x:hover { color: #fff; }
+
+    /* Modal Navigation Bar */
+    .modal-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-right: 30px;
+    }
+
+    .modal-back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #1e2638;
+      border: 1px solid #334155;
+      color: #38bdf8;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.82rem;
+      font-weight: 700;
+      transition: all 0.15s ease;
+    }
+    .modal-back-btn:hover {
+      background: #2563eb;
+      color: #fff;
+      border-color: #3b82f6;
+    }
+
+    .modal-search-box {
+      position: relative;
+      flex: 1;
+      max-width: 260px;
+    }
+    .modal-search-box input {
+      width: 100%;
+      background: #0d111a;
+      border: 1px solid #2a3447;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 0.82rem;
+      padding: 6px 12px 6px 28px;
+      outline: none;
+    }
+    .modal-search-box input:focus {
+      border-color: #38bdf8;
+    }
+    .modal-search-box .search-icon {
+      position: absolute;
+      left: 9px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+
+    /* Modal Scrollable Body */
+    .modal-scroll-area {
+      overflow-y: auto;
+      padding-right: 6px;
+      flex: 1;
+    }
+    .modal-scroll-area::-webkit-scrollbar {
+      width: 6px;
+    }
+    .modal-scroll-area::-webkit-scrollbar-thumb {
+      background: #2a3447;
+      border-radius: 4px;
+    }
+
+    /* Item Sub-Grid */
+    .item-subgrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .sub-item-card {
+      background: #182030;
+      border: 1px solid #28354b;
+      border-radius: 8px;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .sub-item-card:hover {
+      background: #202b40;
+      border-color: #4f6485;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    }
+
+    .sub-item-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sub-item-icon {
+      font-size: 1.15rem;
+      width: 24px;
+      text-align: center;
+    }
+    .sub-item-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .sub-item-badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 4px;
+      display: inline-block;
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .sub-item-snippet {
+      font-size: 0.77rem;
+      color: var(--text-muted);
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Detail View Styling */
+    .detail-view-container {
+      animation: fadeIn 0.2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .mc-item-tooltip {
+      background-color: rgba(16, 2, 24, 0.96);
+      border: 3px solid #4a1575;
+      border-radius: 8px;
+      padding: 16px 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.9);
+      margin-top: 12px;
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    .detail-features-list {
+      margin-top: 14px;
+      background: #161c2a;
+      border: 1px solid #28354b;
+      border-radius: 8px;
+      padding: 12px 16px;
+    }
+    .detail-features-list h4 {
+      font-size: 0.85rem;
+      color: #f5c451;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .detail-features-list ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #cbd5e1;
+      font-size: 0.84rem;
+      line-height: 1.5;
+    }
+
+    .mc-item-name {
+      font-weight: 800;
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+    }
+
+    .color-legendary { color: #ffaa00; text-shadow: 1px 1px 0 #3f2a00; }
+    .color-mythic { color: #ff55ff; text-shadow: 1px 1px 0 #3f153f; }
+    .color-special { color: #ff5555; text-shadow: 1px 1px 0 #3f1515; }
+    .color-rare { color: #5555ff; text-shadow: 1px 1px 0 #15153f; }
+    .color-green { color: #55ff55; text-shadow: 1px 1px 0 #153f15; }
+    .color-gray { color: #aaaaaa; }
+    .color-gold { color: #ffaa00; }
+    .color-aqua { color: #55ffff; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1200px) {
+      .tiles-grid-7x3 { grid-template-columns: repeat(4, 1fr); }
+      .main-layout { grid-template-columns: 200px 1fr 240px; }
+    }
+    @media (max-width: 992px) {
+      .main-layout { grid-template-columns: 1fr; }
+      .left-sidebar, .right-sidebar { width: 100%; }
+      .tiles-grid-7x3 { grid-template-columns: repeat(4, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .tiles-grid-7x3 { grid-template-columns: repeat(3, 1fr); }
+      .about-grid-content { grid-template-columns: 1fr; }
+      .nav-tabs-pill { display: none; }
+      .search-container { width: 160px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FIXED MINECRAFT SUNSET BACKGROUND (FROM USER UPLOAD) -->
+  <div class="minecraft-bg-fixed">
+    <div class="minecraft-bg-overlay"></div>
+  </div>
+
+  <!-- TOP HEADER -->
+  <header class="header-bar">
+    
+    <!-- BRAND LOGO -->
+    <a href="#" class="brand-group">
+      <img class="brand-cube-icon" src="assets/icons/grass_block_3d.png?v=2" alt="KHTN Logo" />
+      <div class="brand-text-stack">
+        <span class="brand-khtn">KHTN</span>
+        <span class="brand-wiki">Wiki</span>
+      </div>
+    </a>
+
+    <!-- NAV TABS -->
+    <nav class="nav-tabs-pill">
+      <a href="#" class="nav-tab-btn active">Main Page</a>
+      <a href="enchants.html" class="nav-tab-btn" style="color: #f5c451; font-weight: 800; border-color: rgba(245, 196, 81, 0.4);">✨ Bách Khoa Phù Phép (400)</a>
+      <a href="#" class="nav-tab-btn">Discussion</a>
+      <a href="#" class="nav-tab-btn">View source</a>
+      <a href="#" class="nav-tab-btn">History</a>
+    </nav>
+
+    <!-- RIGHT TOOLS -->
+    <div class="header-right-tools">
+      <div class="search-container">
+        <input type="text" id="wikiSearchInput" placeholder="Search KHTN Wiki..." autocomplete="off"/>
+        <button class="search-btn" title="Search">🔍</button>
+      </div>
+      <div class="user-auth-links">
+        <a href="#" onclick="showNotice('Đăng nhập')">Log in</a>
+        <span>|</span>
+        <a href="#" onclick="showNotice('Tạo tài khoản')">Create account</a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- 3-COLUMN MAIN LAYOUT -->
+  <main class="main-layout">
+    
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar">
+      
+      <!-- BRAND CARD -->
+      <div class="sidebar-brand-box">
+        <img class="sidebar-cube-img" src="assets/icons/grass_block_3d.png?v=2" alt="KHTN Block" />
+        <div class="sidebar-khtn-title">KHTN</div>
+        <div class="sidebar-wiki-title">Wiki</div>
+      </div>
+
+      <!-- ACCORDION -->
+      <div class="accordion-card">
+        
+        <!-- SECTION 1: NAVIGATION -->
+        <div class="accordion-group">
+          <div class="accordion-title" onclick="toggleAccordion(this)">
+            <span>Navigation</span>
+            <span class="chevron">⌵</span>
+          </div>
+          <ul class="accordion-list">
+            <li><a href="#"><span class="accordion-icon-box" style="color:#60a5fa;">🏠</span> Main page</a></li>
+            <li><a href="#"><span class="accordion-icon-box" style="color:#c084fc;">🕒</span> Recent changes</a></li>
+            <li><a href="#"><span class="accordion-icon-box" style="color:#93c5fd;">🎲</span> Random page</a></li>
+          </ul>
+        </div>
+
+        <!-- SECTION 2: SERVER -->
+        <div class="accordion-group">
+          <div class="accordion-title" onclick="toggleAccordion(this)">
+            <span>Server</span>
+            <span class="chevron">⌵</span>
+          </div>
+          <ul class="accordion-list">
+            <li><a href="#"><span class="accordion-icon-box" style="color:#60a5fa;">ℹ️</span> Server information</a></li>
+            <li><a href="#"><span class="accordion-icon-box" style="color:#facc15;">👑</span> Ranks</a></li>
+            <li><a href="#"><span class="accordion-icon-box" style="color:#e2e8f0;">👕</span> Cosmetics</a></li>
+            <li><a href="#"><span class="accordion-icon-box" style="color:#fbbf24;">⭐</span> Minigames</a></li>
+          </ul>
+        </div>
+
+        <!-- SECTION 3: COMMUNITY -->
+        <div class="accordion-group">
+          <div class="accordion-title" onclick="toggleAccordion(this)">
+            <span>Community</span>
+            <span class="chevron">⌵</span>
+          </div>
+          <ul class="accordion-list">
+            <li><a href="https://discord.gg" target="_blank"><span class="accordion-icon-box" style="color:#818cf8;">💬</span> Discord</a></li>
+            <li><a href="#"><span class="accordion-icon-box" style="color:#f87171;">▶️</span> YouTube</a></li>
+          </ul>
+        </div>
+
+        <!-- SECTION 4: TOOLS -->
+        <div class="accordion-group">
+          <div class="accordion-title" onclick="toggleAccordion(this)">
+            <span>Tools</span>
+            <span class="chevron">⌵</span>
+          </div>
+          <ul class="accordion-list">
+            <li><a href="#"><span class="accordion-icon-box">🔧</span> What links here</a></li>
+            <li><a href="#"><span class="accordion-icon-box">📄</span> Special pages</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </aside>
+
+    <!-- CENTER COLUMN -->
+    <section class="center-column">
+      
+      <!-- TOP BANNER -->
+      <div class="announcement-box" id="welcomeBanner">
+        <div class="announcement-main">
+          <div class="horn-icon">📣</div>
+          <div>
+            <div class="announcement-headline">Welcome to the KHTN Wiki!</div>
+            <div class="announcement-caption">
+              Migrate your account • <a href="https://discord.gg" target="_blank">Wiki Discord</a>
+            </div>
+          </div>
+        </div>
+        <button class="banner-dismiss-x" onclick="document.getElementById('welcomeBanner').style.display='none'">✕</button>
+      </div>
+
+      <!-- MAIN ARTICLE -->
+      <article class="main-wiki-card">
+        
+        <!-- CARD TITLE TAB WITH GOLD UNDERLINE -->
+        <div class="wiki-card-header-container">
+          <div class="wiki-tab-badge">
+            <h1>KHTN Wiki</h1>
+          </div>
+        </div>
+
+        <!-- INTRO -->
+        <p class="wiki-intro-text">
+          The <strong>KHTN Wiki</strong> is a comprehensive resource for the popular <strong>KHTN KHTN</strong> gamemode. Here you can find guides, information, and more!
+        </p>
+
+        <!-- BROWSE GAME CONTENT HEADER -->
+        <div class="browse-section-header">
+          <img src="assets/icons/diamond_pickaxe.png" onerror="this.src='https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/diamond_pickaxe.png'" alt="Pickaxe"/>
+          <span>Browse Game Content</span>
+        </div>
+
+        <!-- 21 TILES (3x7 GRID) -->
+        <div class="tiles-grid-7x3" id="contentGrid">
+          <!-- Populated dynamically with real Minecraft PNG images -->
+        </div>
+
+      </article>
+
+      <!-- ABOUT KHTN -->
+      <section class="about-khtn-card">
+        <div class="about-title-ribbon">
+          <div class="info-badge">i</div>
+          <h2>About KHTN</h2>
+        </div>
+        <div class="about-grid-content">
+          <p class="about-prose">
+            <strong>KHTN</strong> is one of the most popular game modes on the <a href="#">KHTN Network</a>, offering a unique RPG experience combining classic survival, deep dungeon progression, thousands of custom items, boss fights, and a player-driven bazaar economy.
+          </p>
+          <div class="about-scenic-frame">
+            <img src="assets/about_khtn.jpg" alt="About KHTN" style="width: 100%; height: 110px; object-fit: cover; display: block;" />
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="right-sidebar">
+      
+      <!-- COMMUNITY EVENT -->
+      <div class="widget-panel">
+        <div class="widget-top-header">
+          <span class="icon" style="color:#facc15;">⭐</span>
+          <span>Community Event</span>
+        </div>
+        <div class="event-body">
+          <div class="event-name-row">
+            <svg viewBox="0 0 16 16">
+              <path d="M4 2h8l2 4-6 8-6-8z" fill="#991b1b"/>
+              <polygon points="8,4 10,7 6,7" fill="#fca5a5"/>
+              <circle cx="8" cy="9" r="1.5" fill="#ffffff"/>
+            </svg>
+            <span>Dead Man's Hunt</span>
+          </div>
+          <div class="event-sub-label">Currently ongoing community event!</div>
+          <div class="event-riddles-stat">Riddles found: <span>5/14</span></div>
+          <div class="event-time-ago">Last riddle solved 36 days ago!</div>
+        </div>
+      </div>
+
+      <!-- SKYBLOCK CLOCK -->
+      <div class="widget-panel">
+        <div class="widget-top-header">
+          <img src="assets/icons/clock.png" onerror="this.src='https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/clock_00.png'" style="width:18px; height:18px; image-rendering:pixelated;" alt="Clock"/>
+          <span>SkyBlock Clock</span>
+        </div>
+        <div class="clock-body">
+          <div class="clock-big-digits" id="skyblockClock">11:36am</div>
+          <div class="clock-season-label">21st of Winter, Year 525</div>
+          <div class="clock-phase-dot">
+            <span style="color:#f5c451;">●</span> Daylight Phase
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVER STATUS -->
+      <div class="widget-panel">
+        <div class="widget-top-header">
+          <span class="icon" style="color:#10b981;">🟢</span>
+          <span>Server Status</span>
+        </div>
+        <div class="status-body">
+          <div class="status-domain">
+            <span class="status-green-dot"></span>
+            <span>mc.KHTN.net</span>
+          </div>
+          <div class="status-count">
+            Online: <strong>34,892</strong> / 70,000
+          </div>
+          <div class="status-online-caption">
+            Players are currently online!
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- 2-TIER MODAL (LIST ↔ DETAIL) -->
+  <div class="modal-backdrop" id="wikiModal">
+    <div class="mc-modal-box">
+      <span class="modal-close-x" onclick="closeModal()">✕</span>
+      
+      <!-- NAVIGATION & HEADER BAR -->
+      <div class="modal-nav-bar">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button class="modal-back-btn" id="modalBackBtn" onclick="goBackToList()" style="display: none;">
+            ← Quay lại
+          </button>
+          <div>
+            <h2 id="modalTitle" style="font-size: 1.25rem; margin: 0; display: flex; align-items: center; gap: 8px;">
+              <span id="modalIcon">🗡️</span> <span id="modalHeaderName">Hyperion</span>
+            </h2>
+            <p id="modalCategoryTag" style="font-size: 0.78rem; color: var(--text-dim); margin: 2px 0 0 0;">Category: Weapons & Gear</p>
+          </div>
+        </div>
+        
+        <div class="modal-search-box" id="modalSearchWrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="modalSubSearch" placeholder="Lọc trong mục này..." />
+        </div>
+      </div>
+
+      <!-- SCROLLABLE BODY CONTENT (SWITCHES BETWEEN LIST & DETAIL) -->
+      <div class="modal-scroll-area" id="modalScrollArea">
+        <!-- List View -->
+        <div id="modalListView">
+          <div class="item-subgrid" id="modalSubGrid"></div>
+        </div>
+
+        <!-- Detail View -->
+        <div id="modalDetailView" class="detail-view-container" style="display: none;">
+          <div class="mc-item-tooltip" id="modalTooltip"></div>
+          <div class="detail-features-list" id="modalExtraDetails" style="display: none;"></div>
+        </div>
+      </div>
+
+      <!-- FOOTER ACTIONS -->
+      <div style="margin-top: 14px; display: flex; justify-content: space-between; align-items: center; padding-top: 8px; border-top: 1px solid #1e2638;">
+        <span id="modalItemsCount" style="font-size: 0.76rem; color: var(--text-dim);">5 vật phẩm / pack</span>
+        <button onclick="closeModal()" style="background: #2563eb; border: none; color: #fff; padding: 6px 20px; border-radius: 6px; cursor: pointer; font-weight: 700; font-size: 0.82rem;">
+          Đóng
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 21 VẬT PHẨM VỚI ẢNH THẬT PNG MINECRAFT
+    const wikiItems = [
+      // HÀNG 1:
+      {
+        id: "stats",
+        name: "Stats",
+        img: "assets/icons/heart.png",
+        cdn: "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.1/assets/minecraft/textures/gui/sprites/hud/heart/full.png",
+        tooltip: {
+          name: "Chỉ số Người Chơi (Player Stats)",
+          rarity: "color-gold",
+          rarityText: "CORE MECHANICS",
+          desc: "Bao gồm Health (Máu), Defense (Giáp), Strength, Speed, Crit Chance, Crit Damage, Intelligence và Magic Find."
+        },
+        subItems: [
+          { name: "Health (Máu)", badge: "Survival Stat", rarity: "color-special", icon: "❤️", desc: "Lượng máu tối đa của nhân vật, quyết định khả năng sống sót trước sát thương từ quái vật và môi trường.", features: ["Tăng qua cấp bậc Farming, Fishing", "Tăng thêm từ bộ giáp và phụ kiện", "Hồi phục tự nhiên hoặc qua thuốc hồi máu"] },
+          { name: "Defense (Giáp)", badge: "Survival Stat", rarity: "color-green", icon: "🛡️", desc: "Giảm tỉ lệ phần trăm sát thương vật lý gánh chịu dựa trên công thức tính Effective Health (EHP).", features: ["Tăng qua cấp Mining", "Mỗi 100 Defense tăng gấp đôi lượng máu hiệu dụng"] },
+          { name: "Strength (Sức mạnh)", badge: "Damage Stat", rarity: "color-special", icon: "💪", desc: "Tăng trực tiếp sát thương đòn đánh cận chiến và sát thương cơ bản của mọi vũ khí.", features: ["Tăng qua cấp Foraging", "Cộng hưởng mạnh mẽ cùng Crit Damage"] },
+          { name: "Speed (Tốc độ)", badge: "Mobility Stat", rarity: "color-aqua", icon: "👟", desc: "Tốc độ di chuyển, giới hạn mặc định 100% đến 400%, tối đa lên đến 500% khi có trang bị đặc biệt.", features: ["Tăng độ linh hoạt khi khám phá dungeon và cày cuốc"] },
+          { name: "Crit Chance & Damage", badge: "Damage Stat", rarity: "color-mythic", icon: "⚡", desc: "Tỉ lệ phần trăm đòn chí mạng và lượng sát thương bùng nổ nhân thêm khi chí mạng.", features: ["Tối ưu đạt 100% Crit Chance trước khi đầu tư sâu vào Crit Damage"] },
+          { name: "Intelligence (Mana)", badge: "Magic Stat", rarity: "color-aqua", icon: "🔮", desc: "Lượng mana để thi triển các kỹ năng đặc biệt của vũ khí phép thuật và teleport.", features: ["Tăng qua cấp Enchanting và Alchemy", "Mỗi 100 Intelligence tăng tốc độ hồi mana"] },
+          { name: "Magic Find", badge: "Loot Stat", rarity: "color-legendary", icon: "🍀", desc: "Tăng tỉ lệ rơi các vật phẩm quý hiếm (Rare Drop, RNG Drop) từ quái vật và boss.", features: ["Chỉ số cực kỳ giá trị khi săn Slayer và chạy Dungeon"] }
+        ]
+      },
+      {
+        id: "skills",
+        name: "Skills",
+        img: "assets/icons/diamond_pickaxe.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/diamond_pickaxe.png",
+        tooltip: {
+          name: "Hệ thống Kỹ năng (Skills)",
+          rarity: "color-green",
+          rarityText: "PROGRESSION SYSTEM",
+          desc: "9 kỹ năng chính: Farming, Mining, Combat, Foraging, Fishing, Enchanting, Alchemy, Taming và Catacombs."
+        },
+        subItems: [
+          { name: "Combat Skill", badge: "Skill Progression", rarity: "color-special", icon: "⚔️", desc: "Tăng thêm % sát thương lên mọi mob và tăng tỉ lệ Crit Chance cho nhân vật.", features: ["Mở khóa Slayer và khu vực chiến đấu mới", "Cày bằng cách tiêu diệt mob và chạy dungeon"] },
+          { name: "Mining Skill", badge: "Skill Progression", rarity: "color-green", icon: "⛏️", desc: "Tăng lượng Defense và cơ hội nhận gấp đôi khoáng sản khi đào bới.", features: ["Khai phá tài nguyên trong hang động và Crystal Hollows"] },
+          { name: "Farming Skill", badge: "Skill Progression", rarity: "color-gold", icon: "🌾", desc: "Tăng lượng Health dồi dào và tăng sản lượng nông sản khi thu hoạch.", features: ["Nguồn sinh tồn và kinh tế ổn định cho người chơi mới"] },
+          { name: "Fishing Skill", badge: "Skill Progression", rarity: "color-aqua", icon: "🎣", desc: "Mở khóa các sinh vật biển nguy hiểm (Sea Creatures) và tăng lượng Health.", features: ["Tương thích với datapack Fishing Expansion"] },
+          { name: "Enchanting Skill", badge: "Skill Progression", rarity: "color-mythic", icon: "✨", desc: "Tăng lượng Intelligence và tăng lượng điểm kinh nghiệm nhận được từ mọi nguồn.", features: ["Mở khóa minigame thử nghiệm phù phép cao cấp"] },
+          { name: "Catacombs (Dungeoneering)", badge: "Skill Progression", rarity: "color-legendary", icon: "🗝️", desc: "Tăng chỉ số tổng thể của mọi vật phẩm dungeon lên nhiều lần khi ở trong dungeon.", features: ["Kỹ năng cốt lõi để chinh phục các tầng F1 đến F7"] }
+        ]
+      },
+      {
+        id: "collections",
+        name: "Collections",
+        img: "assets/icons/book.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/book.png",
+        tooltip: {
+          name: "Bộ sưu tập (Collections)",
+          rarity: "color-aqua",
+          rarityText: "CRAFTING UNLOCKS",
+          desc: "Thu thập tài nguyên nông sản, khoáng sản, mob drop để mở khóa công thức chế tạo vũ khí và vật phẩm hiếm."
+        }
+      },
+      {
+        id: "weapons",
+        name: "Weapons",
+        img: "assets/icons/diamond_sword.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/diamond_sword.png",
+        tooltip: {
+          name: "Vũ khí (Weapons & Swords)",
+          rarity: "color-mythic",
+          rarityText: "MYTHIC WEAPONS",
+          desc: "Kho vũ khí đa dạng: Hyperion, Terminator, Dark Claymore, Shadow Fury và Livid Dagger."
+        },
+        subItems: [
+          { name: "Hyperion", badge: "Mythic Necron Blade", rarity: "color-mythic", icon: "🗡️", desc: "Thanh kiếm tối thượng hệ phép thuật với kỹ năng Wither Impact: dịch chuyển tức thời 10 khối và phát nổ gây 10,000 sát thương lan kèm khiên hấp thụ sát thương.", features: ["Mana Cost: 250", "Damage: +260 | Strength: +150 | Intelligence: +350", "Tạo ra vụ nổ quét sạch mọi mob xung quanh"] },
+          { name: "Terminator", badge: "Shortbow Tier V", rarity: "color-special", icon: "🏹", desc: "Cung thần thoại bắn ra 3 mũi tên cùng lúc với tốc độ bắn cực nhanh, có khả năng xuyên giáp và gây sát thương diện rộng.", features: ["Yêu cầu Eman Slayer Tier 7", "Chia đôi Crit Chance để nhân ba mũi tên"] },
+          { name: "Dark Claymore", badge: "Master Mode Weapon", rarity: "color-legendary", icon: "⚔️", desc: "Đại kiếm cận chiến có tầm đánh xa thêm +2 blocks và sát thương cơ bản cao nhất trong toàn bộ game.", features: ["Rớt từ hòm Master Mode Floor 7", "Sát thương cận chiến khủng khiếp"] },
+          { name: "Shadow Fury", badge: "Assassin Blade", rarity: "color-legendary", icon: "🗡️", desc: "Thanh kiếm bóng đêm với kỹ năng Shadow Assault tự động ám sát dịch chuyển liên tục qua 5 mục tiêu gần nhất.", features: ["Sát thương bộc phát cực cao", "Rất thích hợp để farm quái rải rác"] }
+        ]
+      },
+      {
+        id: "armor",
+        name: "Armor",
+        img: "assets/icons/netherite_helmet.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/netherite_helmet.png",
+        tooltip: {
+          name: "Bộ Giáp (Armor Sets)",
+          rarity: "color-legendary",
+          rarityText: "LEGENDARY SETS",
+          desc: "Necron's Armor, Storm's Armor, Maxor và Goldor. Cung cấp chỉ số sinh tồn và sát thương tối thượng."
+        },
+        subItems: [
+          { name: "Necron's Armor Set", badge: "Berserker / Archer", rarity: "color-legendary", icon: "🛡️", desc: "Bộ giáp đỏ rực rỡ từ chúa tể Necron, cung cấp lượng Strength và Crit Damage áp đảo cho chiến binh vật lý.", features: ["4 mảnh: Helmet, Chestplate, Leggings, Boots", "Lựa chọn hàng đầu cho các xạ thủ và đấu sĩ"] },
+          { name: "Storm's Armor Set", badge: "Mage Armor", rarity: "color-aqua", icon: "🧙‍♂️", desc: "Bộ giáp bão tố ma thuật cung cấp lượng Intelligence khổng lồ để spam kỹ năng phép thuật liên tục.", features: ["Cặp đôi hoàn hảo cùng thanh kiếm Hyperion", "Tối ưu hóa sát thương phép"] },
+          { name: "Goldor's Armor Set", badge: "Tank Armor", rarity: "color-green", icon: "🏰", desc: "Bộ giáp thành lũy biến người chơi thành bức tường bất khả xâm phạm với lượng Health và Defense cực đại.", features: ["Không thể bị one-shot trong Master Mode", "Bảo vệ đồng đội trong các trận đánh boss khó"] }
+        ]
+      },
+      {
+        id: "equipment",
+        name: "Equipment",
+        img: "assets/icons/netherite_chestplate.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/netherite_chestplate.png",
+        tooltip: {
+          name: "Trang bị Phụ (Equipment)",
+          rarity: "color-special",
+          rarityText: "4 EQUIPMENT SLOTS",
+          desc: "Necklace, Cloak, Belt và Gloves. Tăng cường đáng kể chỉ số và mang lại hiệu ứng độc nhất."
+        }
+      },
+
+      // HÀNG 2:
+      {
+        id: "accessories",
+        name: "Accessories",
+        img: "assets/icons/gold_ingot.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/gold_ingot.png",
+        tooltip: {
+          name: "Phụ kiện & Bùa chú (Talismans & Bag)",
+          rarity: "color-mythic",
+          rarityText: "MAGICAL POWER",
+          desc: "Tích lũy Magical Power từ hàng trăm bùa chú để kích hoạt sức mạnh tối thượng qua Maxwell Power Stones."
+        }
+      },
+      {
+        id: "locations",
+        name: "Locations",
+        img: "assets/icons/compass.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/compass_16.png",
+        tooltip: {
+          name: "Khu vực & Địa Điểm (Locations & Structures)",
+          rarity: "color-aqua",
+          rarityText: "WORLD MAP",
+          desc: "Khám phá thế giới với hàng chục cấu trúc độc đáo: Dungeons and Taverns (phong cách vanilla), Structory, Lukis Grand Capitals, Explorify, Wabi-Sabi Structures. Cải tạo cấu trúc gốc: Desert Temple, Jungle Temple, Nether Fortress, Ocean Monument, Stronghold, Pillager Outpost, Swamp Hut, Woodland Mansion (DnT Overhaul). Thêm biomes mới: Stellarity (The End), Nullscape, Incendium (Nether), Yggdrasil (hầm ngục khổng lồ), Tidal (làng đại dương), u_desert (sa mạc & badlands), Scorched. Và nhiều hơn: Trek, ATi Structures, EarthBlade, Towerinator (+55 tòa tháp), Water Wells (+150 giếng), Cherry Monastery, Desert Mansion, Sunken Spires, Hopo Better Mineshaft/Ruined Portals/Underwater Ruins."
+        }
+      },
+      {
+        id: "npcs",
+        name: "NPCs",
+        img: "assets/icons/steve_head.png",
+        cdn: "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.1/assets/minecraft/textures/entity/player/wide/steve.png",
+        tooltip: {
+          name: "Dân làng & Thương nhân (NPCs)",
+          rarity: "color-gold",
+          rarityText: "MERCHANTS & QUESTS",
+          desc: "Giao dịch với Lumberjack, Banker, Bazaar, Auction Agent, Sirius Dark Auction và các Master Blacksmiths."
+        }
+      },
+      {
+        id: "mobs",
+        name: "Mobs",
+        img: "assets/icons/creeper_head.png",
+        cdn: "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.1/assets/minecraft/textures/item/creeper_head.png",
+        tooltip: {
+          name: "Quái vật & Boss (Mobs & Bestiary)",
+          rarity: "color-special",
+          rarityText: "BESTIARY SYSTEM",
+          desc: "Mob được tăng cường và mở rộng qua nhiều datapack: More Mobs v1.5.8 (thêm mob mới cho 1.14–1.21), Horde Nights v1.3.14 (các đêm mob tấn công hàng loạt), Witherswrath (boss Wither nâng cấp), True Ending / Ender Dragon Overhaul (rồng Ender mạnh hơn với nhiều giai đoạn), ddd (Nightmare Fuel – mob kinh dị từ hầm tối). Ngoài ra Dungeons and Taverns & Yggdrasil mang đến spawner và boss trong các dungeon khổng lồ."
+        }
+      },
+      {
+        id: "enchantments",
+        name: "Enchantments",
+        img: "assets/icons/enchanted_book.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/enchanted_book.png",
+        tooltip: {
+          name: "Phù phép (Enchantments & Books)",
+          rarity: "color-gold",
+          rarityText: "400 MASTER ENCHANTS",
+          desc: "Hệ thống phù phép mở rộng đồ sộ với 400 loại phù phép độc quyền phân chia theo 4 cấp bậc (Ultimate, Epic, Rare, Common, Curses). Nhấp vào đây để xem phân loại hoặc mở Bách Khoa Toàn Thư Phù Phép với đầy đủ bộ lọc, chi tiết hiệu ứng và lệnh lấy sách!"
+        },
+        subItems: [
+          {
+            name: "🔥 MỞ BÁCH KHOA PHÙ PHÉP (400 ENCHANTS)",
+            badge: "FULL DATABASE",
+            rarity: "color-gold",
+            icon: "📖",
+            desc: "Trang tra cứu độc lập đầy đủ 400 loại phù phép với bộ lọc độ hiếm, lọc loại trang bị (kiếm, cung, giáp, công cụ), tìm kiếm nhanh thời gian thực và nút 1-click copy lệnh /give trong game.",
+            features: [
+              "Tra cứu 49 phù phép Ultimate vàng kim",
+              "Lọc chính xác theo từng loại trang bị",
+              "Copy lệnh /give sẵn sàng cho Admin & Người chơi",
+              "<a href='enchants.html' style='color:#f5c451;font-weight:800;text-decoration:underline;'>Nhấp vào đây để mở Bách Khoa Phù Phép ngay →</a>"
+            ]
+          },
+          {
+            name: "👑 49 Ultimate Enchantments (Max 1/món)",
+            badge: "ULTIMATE TIER",
+            rarity: "color-gold",
+            icon: "👑",
+            desc: "Cấp bậc phù phép mạnh nhất trên server. Hiển thị chữ màu vàng kim in đậm (§6§l) và tuân thủ quy tắc nghiêm ngặt: Mỗi trang bị chỉ được ép duy nhất 1 Ultimate.",
+            features: [
+              "Không thể xuất hiện ở Bàn phù phép hay Dân làng",
+              "Chỉ có thể tìm thấy trong Rương kho báu / Hầm ngục cấp cao",
+              "Bao gồm: Absolute Unit, Adrenaline, Archer Barrage, Aurora, Warden, Railgun, Neptune, v.v."
+            ]
+          },
+          {
+            name: "🟣 70 Epic Enchantments",
+            badge: "EPIC TIER",
+            rarity: "color-mythic",
+            icon: "🟣",
+            desc: "Phù phép kho báu cao cấp mang lại các chỉ số đột phá trong chiến đấu và sinh tồn.",
+            features: [
+              "Chỉ rơi trong hầm ngục và rương cấu trúc hiếm",
+              "Chi phí đe: 6 Level EXP"
+            ]
+          },
+          {
+            name: "💎 161 Rare Enchantments (2–5% Bàn Phù Phép)",
+            badge: "RARE TIER",
+            rarity: "color-aqua",
+            icon: "💎",
+            desc: "Phù phép đặc sắc được cân bằng chính xác với tỉ lệ 2% đến 5% khi enchant tại Bàn phù phép, cùng cơ hội tìm thấy trong các hầm ngục.",
+            features: [
+              "Kiếm: ~4.2% tỉ lệ ra Rare",
+              "Cúp: ~4.88% tỉ lệ ra Rare",
+              "Cung: ~5.13% tỉ lệ ra Rare",
+              "Không được bán bởi dân làng thủ thư để bảo vệ giá trị hầm ngục"
+            ]
+          },
+          {
+            name: "☠️ 71 Lời Nguyền (Curses)",
+            badge: "CURSE TIER",
+            rarity: "color-special",
+            icon: "💀",
+            desc: "Các lời nguyền thử thách mang lại các bất lợi hoặc cơ chế đánh đổi nguy hiểm.",
+            features: [
+              "Không thể xóa bằng đá mài (Grindstone)",
+              "Tạo chiều sâu và thử thách cho hành trình thám hiểm"
+            ]
+          }
+        ]
+      },
+
+      // HÀNG 3:
+      {
+        id: "potions",
+        name: "Potions",
+        img: "assets/icons/potion.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/potion.png",
+        tooltip: {
+          name: "Thuốc Phép (Potions & God Pot)",
+          rarity: "color-aqua",
+          rarityText: "GOD POTION EFFECT",
+          desc: "God Potion mang lại toàn bộ buff potion tích hợp trong 24 giờ chiến đấu! Hỗ trợ Cookie Buff."
+        }
+      },
+      {
+        id: "slayer",
+        name: "Slayer",
+        img: "assets/icons/ender_pearl.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/ender_pearl.png",
+        tooltip: {
+          name: "Hầm Ngục & Boss Hunt (Slayer Quests)",
+          rarity: "color-special",
+          rarityText: "SLAYER TIER V",
+          desc: "Thách thức trong các dungeon khổng lồ: Yggdrasil (hầm ngục khổng lồ do Voxel Team tạo), Dungeons+ v1.11.1 (mở rộng dungeon vanilla), Adventure Dungeons v1.3.1 (thêm cấu trúc dungeon mới), ddd (hầm tối kinh dị – Nightmare Fuel). Boss cổ điển: Revenant Horror, Tarantula Broodfather, Sven Packmaster, Voidgloom Seraph, Inferno Demonlord. Kết hợp Horde Nights để tăng độ thử thách đêm kinh hoàng."
+        }
+      },
+      {
+        id: "achievements",
+        name: "Achievements",
+        img: "assets/icons/emerald.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/emerald.png",
+        tooltip: {
+          name: "Thành Tựu & Danh Hiệu (Achievements)",
+          rarity: "color-green",
+          rarityText: "TIER ACHIEVEMENTS",
+          desc: "Hàng trăm danh hiệu, thành tựu sinh tồn, mở khóa phần thưởng EXP và vật phẩm độc quyền."
+        }
+      },
+    ];
+
+    // RENDER LƯỚI 21 Ô TILES
+    const contentGrid = document.getElementById("contentGrid");
+    
+    function renderGrid(items) {
+      contentGrid.innerHTML = "";
+      items.forEach(item => {
+        const tile = document.createElement("div");
+        tile.className = "content-tile";
+        tile.onclick = () => openModal(item);
+
+        let iconHtml = "";
+        if (item.img) {
+          iconHtml = `<img src="${item.img}" onerror="this.onerror=null; this.src='${item.cdn}'" alt="${item.name}"/>`;
+        } else if (item.render) {
+          iconHtml = item.render;
+        }
+
+        tile.innerHTML = `
+          <div class="tile-icon-wrapper">${iconHtml}</div>
+          <div class="tile-label">${item.name}</div>
+        `;
+        contentGrid.appendChild(tile);
+      });
+    }
+
+    renderGrid(wikiItems);
+
+    // TÌM KIẾM
+    const searchInput = document.getElementById("wikiSearchInput");
+    searchInput.addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      if (!q) {
+        renderGrid(wikiItems);
+        return;
+      }
+      const filtered = wikiItems.filter(item => 
+        item.name.toLowerCase().includes(q) ||
+        item.tooltip.name.toLowerCase().includes(q) ||
+        item.tooltip.desc.toLowerCase().includes(q)
+      );
+      renderGrid(filtered);
+    });
+
+    // MODAL 2-TIER LOGIC
+    const modal = document.getElementById("wikiModal");
+    const modalHeaderName = document.getElementById("modalHeaderName");
+    const modalIcon = document.getElementById("modalIcon");
+    const modalCategoryTag = document.getElementById("modalCategoryTag");
+    const modalListView = document.getElementById("modalListView");
+    const modalDetailView = document.getElementById("modalDetailView");
+    const modalSubGrid = document.getElementById("modalSubGrid");
+    const modalTooltip = document.getElementById("modalTooltip");
+    const modalExtraDetails = document.getElementById("modalExtraDetails");
+    const modalBackBtn = document.getElementById("modalBackBtn");
+    const modalSearchWrapper = document.getElementById("modalSearchWrapper");
+    const modalSubSearch = document.getElementById("modalSubSearch");
+    const modalItemsCount = document.getElementById("modalItemsCount");
+
+    let currentTileItem = null;
+    let currentSubItems = [];
+
+    // Mở modal khi bấm vào 1 ô Tile ở trang chính
+    function openModal(item) {
+      currentTileItem = item;
+      modalHeaderName.innerText = item.name;
+      modalCategoryTag.innerText = `Danh mục: Game Mechanics • ${item.name}`;
+      
+      // Icon
+      if (item.img) {
+        modalIcon.innerHTML = `<img src="${item.img}" onerror="this.src='${item.cdn}'" style="width:20px;height:20px;vertical-align:middle;image-rendering:pixelated;"/>`;
+      } else {
+        modalIcon.innerText = "📦";
+      }
+
+      currentSubItems = item.subItems || [];
+
+      // Hiển thị danh sách nếu có subItems, hoặc vào thẳng detail nếu không có
+      if (currentSubItems.length > 0) {
+        showListView();
+      } else {
+        // Fallback: Xem chi tiết của chính tile
+        showDetailView({
+          name: item.tooltip.name,
+          badge: item.tooltip.rarityText,
+          rarity: item.tooltip.rarity,
+          icon: "⭐",
+          desc: item.tooltip.desc
+        }, false);
+      }
+
+      modal.classList.add("active");
+    }
+
+    // Hiển thị màn hình danh sách subItems
+    function showListView() {
+      modalListView.style.display = "block";
+      modalDetailView.style.display = "none";
+      modalBackBtn.style.display = "none";
+      modalSearchWrapper.style.display = "block";
+      modalSubSearch.value = "";
+      renderSubGrid(currentSubItems);
+    }
+
+    // Render danh sách subItems
+    function renderSubGrid(items) {
+      modalSubGrid.innerHTML = "";
+      modalItemsCount.innerText = `${items.length} mục có sẵn`;
+
+      if (items.length === 0) {
+        modalSubGrid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-dim); padding: 30px;">Không tìm thấy mục nào khớp với tìm kiếm.</div>`;
+        return;
+      }
+
+      items.forEach(sub => {
+        const card = document.createElement("div");
+        card.className = "sub-item-card";
+        card.onclick = () => showDetailView(sub, true);
+
+        const badgeClass = sub.rarity || "color-green";
+
+        card.innerHTML = `
+          <div class="sub-item-top">
+            <span class="sub-item-icon">${sub.icon || "💠"}</span>
+            <span class="sub-item-title">${sub.name}</span>
+          </div>
+          <div>
+            <span class="sub-item-badge ${badgeClass}">${sub.badge || "DATAPACK"}</span>
+          </div>
+          <div class="sub-item-snippet">${sub.desc}</div>
+        `;
+        modalSubGrid.appendChild(card);
+      });
+    }
+
+    // Lọc tìm kiếm trong subItems
+    modalSubSearch.addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      if (!q) {
+        renderSubGrid(currentSubItems);
+        return;
+      }
+      const filtered = currentSubItems.filter(s => 
+        s.name.toLowerCase().includes(q) ||
+        (s.desc && s.desc.toLowerCase().includes(q)) ||
+        (s.badge && s.badge.toLowerCase().includes(q))
+      );
+      renderSubGrid(filtered);
+    });
+
+    // Hiển thị màn hình thông tin chi tiết (Detail View)
+    function showDetailView(sub, showBack) {
+      modalListView.style.display = "none";
+      modalDetailView.style.display = "block";
+      modalBackBtn.style.display = showBack ? "inline-flex" : "none";
+      modalSearchWrapper.style.display = "none";
+      modalItemsCount.innerText = `Chi tiết: ${sub.name}`;
+
+      const rarityClass = sub.rarity || "color-gold";
+
+      let featuresHtml = "";
+      if (sub.features && sub.features.length > 0) {
+        const listItems = sub.features.map(f => `<li>${f}</li>`).join("");
+        featuresHtml = `
+          <div class="detail-features-list">
+            <h4>✨ Đặc điểm nổi bật</h4>
+            <ul>${listItems}</ul>
+          </div>
+        `;
+      }
+
+      let extraMeta = "";
+      if (sub.author) extraMeta += `<div class="color-gray">Tác giả / Nguồn: <span class="color-aqua">${sub.author}</span></div>`;
+      if (sub.version) extraMeta += `<div class="color-gray">Phiên bản / Định dạng: <span class="color-green">${sub.version}</span></div>`;
+
+      modalTooltip.innerHTML = `
+        <div class="mc-item-name ${rarityClass}">${sub.icon || "💠"} ${sub.name}</div>
+        ${extraMeta}
+        <div class="color-gray" style="margin-bottom: 8px;">Trạng thái: <span class="color-green">Đã tích hợp trong Wiki & Server</span></div>
+        <div style="color: #e2e8f0; line-height: 1.6; font-size: 0.93rem; margin-top: 6px;">${sub.desc}</div>
+        <br>
+        <div class="${rarityClass}" style="font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">${sub.badge || "VERIFIED RESOURCE"}</div>
+      `;
+
+      if (featuresHtml) {
+        modalExtraDetails.innerHTML = featuresHtml;
+        modalExtraDetails.style.display = "block";
+      } else {
+        modalExtraDetails.style.display = "none";
+      }
+    }
+
+    // Nút quay lại danh sách
+    function goBackToList() {
+      showListView();
+    }
+
+    function closeModal() {
+      modal.classList.remove("active");
+    }
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    // ACCORDION
+    function toggleAccordion(header) {
+      const group = header.parentElement;
+      group.classList.toggle("collapsed");
+    }
+
+    // CLOCK
+    function updateClock() {
+      const now = new Date();
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      const ampm = hours >= 12 ? 'pm' : 'am';
+      hours = hours % 12;
+      hours = hours ? hours : 12;
+      const strMinutes = minutes < 10 ? '0' + minutes : minutes;
+      const strHours = hours < 10 ? '0' + hours : hours;
+
+      const clockEl = document.getElementById("skyblockClock");
+      if (clockEl) {
+        clockEl.innerText = `${strHours}:${strMinutes}${ampm}`;
+      }
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    function showNotice(msg) {
+      alert(`${msg} đang sẵn sàng và được liên kết với hệ thống Wiki KHTN!`);
+    }
+  </script>
+</body>
+</html>
