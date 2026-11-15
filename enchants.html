@@ -1115,17 +1115,50 @@
         </div>
       </div>
 
-      <div class="filter-row" id="excludeRow" style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.08); flex-wrap: wrap; gap: 8px; align-items: center;">
-        <span style="font-size: 0.8rem; color: #f87171; font-weight: 600;">🚫 Loại trừ (Ẩn):</span>
-        <div class="pill-group" id="excludePackChips"></div>
-        <div class="pill-group" id="excludePropChips">
-          <button class="filter-btn" data-ex-prop="table">🚫 Table</button>
-          <button class="filter-btn" data-ex-prop="tradeable">🚫 Tradeable</button>
-          <button class="filter-btn" data-ex-prop="loot">🚫 Loot</button>
-          <button class="filter-btn" data-ex-prop="conflict">🚫 Có xung khắc</button>
-          <button class="filter-btn" data-ex-prop="curse">🚫 Curse</button>
+      <details id="excludeDetails" style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.08);">
+        <summary style="cursor: pointer; font-size: 0.85rem; color: #f87171; font-weight: 600; user-select: none;">
+          🚫 Bộ lọc Loại trừ (Tích để ẩn) <span id="excludeCountBadge" style="color: #9ca3af; font-weight: 400;"></span>
+        </summary>
+        <div id="excludeRow" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 10px; padding: 12px; background: rgba(15, 23, 42, 0.55); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px;">
+          <div>
+            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Packs</div>
+            <div id="excludePackChecks" style="display: flex; flex-direction: column; gap: 4px; max-height: 150px; overflow-y: auto;"></div>
+          </div>
+          <div>
+            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Rarity</div>
+            <div id="excludeTierChecks" style="display: flex; flex-direction: column; gap: 4px;">
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="ultimate"> 👑 Ultimate</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="epic"> 🟣 Epic</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="rare"> 💎 Rare</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="common"> ⚪ Common</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="curse"> ☠️ Curse</label>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Loại vật phẩm</div>
+            <div id="excludeGearChecks" style="display: flex; flex-direction: column; gap: 4px;">
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="weapon"> ⚔️ Melee</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="ranged"> 🏹 Ranged</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="armor"> 🛡️ Armor & Elytra</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="tool"> ⛏️ Tools</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="mount"> 🐺 Mounts & Pets</label>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Thuộc tính</div>
+            <div id="excludePropChecks" style="display: flex; flex-direction: column; gap: 4px;">
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="table"> 🔮 Bàn phù phép (Table)</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="tradeable"> 🧑‍🌾 Dân làng (Tradeable)</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="loot"> 🎁 Loot / Rương</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="conflict"> ⚔️ Có nhóm xung khắc</label>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Nhóm xung khắc</div>
+            <div id="excludeGroupChecks" style="display: flex; flex-direction: column; gap: 4px; max-height: 150px; overflow-y: auto;"></div>
+          </div>
         </div>
-      </div>
+      </details>
     </section>
 
     <!-- Results Bar -->
@@ -1470,35 +1503,81 @@
     }
 
     let excludedPacks = new Set();
+    let excludedTiers = new Set();
+    let excludedGears = new Set();
     let excludedProps = new Set();
+    let excludedGroups = new Set();
 
-    const excludePackChips = document.getElementById("excludePackChips");
-    const uniqueNamespaces = [...new Set(allData.map(i => i.namespace).filter(Boolean))].sort();
-    uniqueNamespaces.forEach(ns => {
-      const btn = document.createElement("button");
-      btn.className = "filter-btn";
-      btn.dataset.exPack = ns;
-      btn.textContent = "🚫 " + ns;
-      btn.onclick = () => {
-        if (excludedPacks.has(ns)) excludedPacks.delete(ns);
-        else excludedPacks.add(ns);
-        btn.classList.toggle("active", excludedPacks.has(ns));
-        btn.style.borderColor = excludedPacks.has(ns) ? "#ef4444" : "";
-        btn.style.color = excludedPacks.has(ns) ? "#fca5a5" : "";
+    function updateExcludeBadge() {
+      const total = excludedPacks.size + excludedTiers.size + excludedGears.size + excludedProps.size + excludedGroups.size;
+      const badge = document.getElementById("excludeCountBadge");
+      if (badge) badge.textContent = total > 0 ? `(Đang ẩn ${total} mục)` : "";
+    }
+
+    const excludePackChecks = document.getElementById("excludePackChecks");
+    [...new Set(allData.map(i => i.namespace).filter(Boolean))].sort().forEach(ns => {
+      const lbl = document.createElement("label");
+      lbl.style.cssText = "display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;";
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.onchange = () => {
+        if (cb.checked) excludedPacks.add(ns);
+        else excludedPacks.delete(ns);
+        updateExcludeBadge();
         currentPage = 1;
         renderCards();
       };
-      excludePackChips.appendChild(btn);
+      lbl.appendChild(cb);
+      lbl.append(" " + ns);
+      excludePackChecks.appendChild(lbl);
     });
 
-    document.querySelectorAll("#excludePropChips [data-ex-prop]").forEach(btn => {
-      btn.onclick = () => {
-        const p = btn.dataset.exProp;
-        if (excludedProps.has(p)) excludedProps.delete(p);
-        else excludedProps.add(p);
-        btn.classList.toggle("active", excludedProps.has(p));
-        btn.style.borderColor = excludedProps.has(p) ? "#ef4444" : "";
-        btn.style.color = excludedProps.has(p) ? "#fca5a5" : "";
+    const excludeGroupChecks = document.getElementById("excludeGroupChecks");
+    [...new Set(allData.flatMap(i => i.exclusive_groups || []))].sort().forEach(g => {
+      const lbl = document.createElement("label");
+      lbl.style.cssText = "display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;";
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.onchange = () => {
+        if (cb.checked) excludedGroups.add(g);
+        else excludedGroups.delete(g);
+        updateExcludeBadge();
+        currentPage = 1;
+        renderCards();
+      };
+      lbl.appendChild(cb);
+      lbl.append(" " + g);
+      excludeGroupChecks.appendChild(lbl);
+    });
+
+    document.querySelectorAll("#excludeTierChecks [data-ex-tier]").forEach(cb => {
+      cb.onchange = () => {
+        const t = cb.dataset.exTier;
+        if (cb.checked) excludedTiers.add(t);
+        else excludedTiers.delete(t);
+        updateExcludeBadge();
+        currentPage = 1;
+        renderCards();
+      };
+    });
+
+    document.querySelectorAll("#excludeGearChecks [data-ex-gear]").forEach(cb => {
+      cb.onchange = () => {
+        const g = cb.dataset.exGear;
+        if (cb.checked) excludedGears.add(g);
+        else excludedGears.delete(g);
+        updateExcludeBadge();
+        currentPage = 1;
+        renderCards();
+      };
+    });
+
+    document.querySelectorAll("#excludePropChecks [data-ex-prop]").forEach(cb => {
+      cb.onchange = () => {
+        const p = cb.dataset.exProp;
+        if (cb.checked) excludedProps.add(p);
+        else excludedProps.delete(p);
+        updateExcludeBadge();
         currentPage = 1;
         renderCards();
       };
@@ -1534,11 +1613,13 @@
         if (currentObtain === "loot_only" && (item.table || item.tradeable)) return false;
 
         if (excludedPacks.has(item.namespace)) return false;
+        if (excludedTiers.has(isCurseItem(item) ? "curse" : item.tier)) return false;
+        if (excludedGears.size > 0 && (item.gear_categories || []).some(g => excludedGears.has(g))) return false;
+        if (excludedGroups.size > 0 && (item.exclusive_groups || []).some(g => excludedGroups.has(g))) return false;
         if (excludedProps.has("table") && item.table) return false;
         if (excludedProps.has("tradeable") && item.tradeable) return false;
         if (excludedProps.has("loot") && item.loot) return false;
         if (excludedProps.has("conflict") && (item.exclusive_groups || []).length > 0) return false;
-        if (excludedProps.has("curse") && isCurseItem(item)) return false;
 
         if (currentSearch) {
           const q = currentSearch.toLowerCase();
@@ -1582,12 +1663,12 @@
       document.querySelectorAll("#tierTabs .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.tier === "all"));
       document.querySelectorAll("#gearChips .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.gear === "all"));
       excludedPacks.clear();
+      excludedTiers.clear();
+      excludedGears.clear();
       excludedProps.clear();
-      document.querySelectorAll("#excludeRow .filter-btn").forEach(b => {
-        b.classList.remove("active");
-        b.style.borderColor = "";
-        b.style.color = "";
-      });
+      excludedGroups.clear();
+      document.querySelectorAll("#excludeRow input[type='checkbox']").forEach(cb => { cb.checked = false; });
+      updateExcludeBadge();
       renderCards();
     }
 
