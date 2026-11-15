@@ -1,8 +1,8 @@
 {
   "description": {
-    "translate": "enchantment.enchantsplus.ice_aspect",
-    "fallback": "Ice Aspect",
-    "color": "aqua"
+    "text": "Icicle Impale",
+    "color": "light_purple",
+    "bold": false
   },
   "exclusive_set": "#minecraft:sword_buffs",
   "supported_items": "#minecraft:enchantable/fire_aspect",

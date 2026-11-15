@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantsplus.websnare",
     "fallback": "Websnare",
-    "color": "gray"
+    "color": "aqua"
   },
   "exclusive_set": "#minecraft:sword_buffs",
   "supported_items": "#minecraft:enchantable/fire_aspect",

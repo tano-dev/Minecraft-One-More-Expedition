@@ -4,7 +4,6 @@
     "fallback": "Blunt",
     "color": "aqua"
   },
-  "exclusive_set": "#kattersstructures:exclusive_set/blunt",
   "supported_items": "#minecraft:enchantable/sharp_weapon",
   "weight": 5,
   "max_level": 1,

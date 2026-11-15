@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.sea_breeze",
     "fallback": "Sea Breeze",
-    "color": "gray"
+    "color": "aqua"
   },
   "exclusive_set": "#enchantencore:exclusive_set/pufferfish",
   "supported_items": "#minecraft:enchantable/trident",

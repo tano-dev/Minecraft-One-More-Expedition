@@ -562,6 +562,62 @@ def _apply_custom_overrides(eid, raw, color, bold):
         raw["exclusive_set"] = ["enchantencore:bane_of_raiders"]
     elif eid == "enchantencore:bane_of_raiders":
         raw["exclusive_set"] = ["nova_structures:illagers_bane"]
+    elif eid == "stellarity:levitation_shot":
+        raw["exclusive_set"] = "#enchantencore:exclusive_set/shot_arrow"
+    elif eid == "bound:bound":
+        raw["exclusive_set"] = "#enchantencore:exclusive_set/boots"
+    elif eid == "enchantencore:crab_claw":
+        raw["supported_items"] = "#minecraft:enchantable/mining"
+    elif eid == "enchantplus:sword/reach":
+        raw["exclusive_set"] = "#enchantencore:exclusive_set/reach"
+    elif eid in (
+        "enchantplus:sword/fear",
+        "kattersstructures:blunt",
+        "enchantencore:thorns_protection",
+        "enchantsplus:pyrolysis",
+    ):
+        raw.pop("exclusive_set", None)
+    elif eid == "enchantencore:haste":
+        raw.pop("exclusive_set", None)
+        raw["supported_items"] = "#minecraft:enchantable/mining"
+    elif eid == "enchantsplus:ice_aspect":
+        raw["description"] = {"text": "Icicle Impale", "color": color, "bold": bold}
+    elif eid in ("enchantencore:day_protection", "enchantencore:night_protection"):
+        raw["max_level"] = 5
+    elif eid == "enchantencore:growth":
+        raw["max_level"] = 5
+        raw.setdefault("effects", {})["minecraft:damage_protection"] = [{
+            "effect": {
+                "type": "minecraft:add",
+                "value": {"type": "minecraft:linear", "base": 0.4, "per_level_above_first": 0.4},
+            },
+            "requirements": {
+                "type": "minecraft:damage_source_properties",
+                "predicate": {"tags": [{"id": "#minecraft:bypasses_invulnerability", "expected": False}]},
+            },
+        }]
+    elif eid == "enchantencore:shrinkage":
+        raw["max_level"] = 1
+        attrs = raw.setdefault("effects", {}).setdefault("minecraft:attributes", [])
+        if not any(a.get("id") == "enchantencore:shrinkage_fragile" for a in attrs):
+            attrs.append({
+                "id": "enchantencore:shrinkage_fragile",
+                "attribute": "minecraft:max_health",
+                "amount": -0.23,
+                "operation": "add_multiplied_base",
+            })
+
+    if eid in (
+        "enchantencore:bane_of_bosses",
+        "enchantencore:bane_of_endborn",
+        "enchantencore:bane_of_netherborn",
+        "enchantencore:bane_of_raiders",
+    ):
+        for eff in raw.get("effects", {}).get("minecraft:damage", []):
+            val = eff.get("effect", {}).get("value")
+            if isinstance(val, dict) and val.get("base") == 2.5 and val.get("per_level_above_first") == 2.5:
+                val["base"] = 2
+                val["per_level_above_first"] = 2
 
 
 def cmd_build():
@@ -699,6 +755,114 @@ def cmd_build():
     for fname, vals in tag_map.items():
         with open(os.path.join(mc_tag_dir, fname), "w", encoding="utf-8") as tf:
             json.dump({"replace": True, "values": vals}, tf, indent=2)
+
+    # 4b. Custom exclusive_set tag overrides
+    custom_tag_overrides = {
+        ("minecraft", "exclusive_set/damage.json"): [
+            "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods",
+            "minecraft:impaling", "minecraft:density", "minecraft:breach",
+            "enchantencore:bane_of_bosses", "enchantencore:bane_of_endborn",
+            "enchantencore:bane_of_netherborn", "enchantencore:bane_of_raiders",
+        ],
+        ("enchantplus", "exclusive_set/sword_attribute.json"): [
+            "enchantplus:sword/critical", "enchantplus:sword/dimensional_hit",
+            "enchantplus:sword/runic_despair",
+        ],
+        ("enchantplus", "exclusive_set/sword_effect.json"): [
+            "enchantplus:sword/death_touch", "enchantplus:sword/tears_of_asflors",
+        ],
+        ("enchantencore", "exclusive_set/haste.json"): [],
+        ("enchantplus", "exclusive_set/durability.json"): [
+            "enchantplus:durability/curse_of_enchant", "minecraft:mending",
+        ],
+        ("nova_structures", "exclusive_set/elytra.json"): [],
+        ("minecraft", "exclusive_set/armor.json"): [
+            "minecraft:protection", "minecraft:fire_protection",
+            "minecraft:blast_protection", "minecraft:projectile_protection",
+            "enchantencore:day_protection", "enchantencore:end_protection",
+            "enchantencore:nether_protection", "enchantencore:night_protection",
+            "enchantencore:wither_protection", "nova_structures:antidote",
+            "enchantplus:armor/fury", "enchantplus:armor/lifeplus",
+        ],
+    }
+    for (ns, rel_tag), vals in custom_tag_overrides.items():
+        tp = os.path.join(CONTROLLER_DIR, "data", ns, "tags", "enchantment", rel_tag)
+        os.makedirs(os.path.dirname(tp), exist_ok=True)
+        with open(tp, "w", encoding="utf-8") as tf:
+            json.dump({"replace": True, "values": vals}, tf, indent=2)
+
+    # 4c. Custom standalone / vanilla overrides (Bound + 3 vanilla Banes at +2/lv)
+    bound_src = os.path.join(REPO_ROOT, "datapacks", "Bound-v3.0.3", "data", "bound", "enchantment", "bound.json")
+    if os.path.exists(bound_src):
+        with open(bound_src, "r", encoding="utf-8") as bf:
+            bdata = json.load(bf)
+        bdata["exclusive_set"] = "#enchantencore:exclusive_set/boots"
+        bdata["description"] = {"text": "Bound", "color": "light_purple"}
+        bdata["weight"] = 1
+        bdst = os.path.join(CONTROLLER_DIR, "data", "bound", "enchantment", "bound.json")
+        os.makedirs(os.path.dirname(bdst), exist_ok=True)
+        with open(bdst, "w", encoding="utf-8") as bf:
+            json.dump(bdata, bf, indent=2)
+
+    mc_ench_dir = os.path.join(CONTROLLER_DIR, "data", "minecraft", "enchantment")
+    os.makedirs(mc_ench_dir, exist_ok=True)
+    vanilla_banes = {
+        "smite.json": {
+            "description": {"translate": "enchantment.minecraft.smite"},
+            "supported_items": "#minecraft:enchantable/weapon",
+            "primary_items": "#minecraft:enchantable/sword",
+            "exclusive_set": "#minecraft:exclusive_set/damage",
+            "weight": 5, "max_level": 5,
+            "min_cost": {"base": 5, "per_level_above_first": 8},
+            "max_cost": {"base": 25, "per_level_above_first": 8},
+            "anvil_cost": 2, "slots": ["mainhand"],
+            "effects": {"minecraft:damage": [{
+                "effect": {"type": "minecraft:add", "value": {"type": "minecraft:linear", "base": 2, "per_level_above_first": 2}},
+                "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"type": "#minecraft:sensitive_to_smite"}},
+            }]},
+        },
+        "bane_of_arthropods.json": {
+            "description": {"translate": "enchantment.minecraft.bane_of_arthropods"},
+            "supported_items": "#minecraft:enchantable/weapon",
+            "primary_items": "#minecraft:enchantable/sword",
+            "exclusive_set": "#minecraft:exclusive_set/damage",
+            "weight": 5, "max_level": 5,
+            "min_cost": {"base": 5, "per_level_above_first": 8},
+            "max_cost": {"base": 25, "per_level_above_first": 8},
+            "anvil_cost": 2, "slots": ["mainhand"],
+            "effects": {
+                "minecraft:damage": [{
+                    "effect": {"type": "minecraft:add", "value": {"type": "minecraft:linear", "base": 2, "per_level_above_first": 2}},
+                    "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"type": "#minecraft:sensitive_to_bane_of_arthropods"}},
+                }],
+                "minecraft:post_attack": [{
+                    "enchanted": "attacker", "affected": "victim",
+                    "effect": {
+                        "type": "minecraft:apply_mob_effect", "to_apply": "minecraft:slowness",
+                        "min_duration": 1.5, "max_duration": {"type": "minecraft:linear", "base": 1.5, "per_level_above_first": 0.5},
+                        "min_amplifier": 3, "max_amplifier": 3,
+                    },
+                    "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"type": "#minecraft:sensitive_to_bane_of_arthropods"}},
+                }],
+            },
+        },
+        "impaling.json": {
+            "description": {"translate": "enchantment.minecraft.impaling"},
+            "supported_items": "#minecraft:enchantable/trident",
+            "exclusive_set": "#minecraft:exclusive_set/damage",
+            "weight": 2, "max_level": 5,
+            "min_cost": {"base": 1, "per_level_above_first": 8},
+            "max_cost": {"base": 21, "per_level_above_first": 8},
+            "anvil_cost": 4, "slots": ["mainhand"],
+            "effects": {"minecraft:damage": [{
+                "effect": {"type": "minecraft:add", "value": {"type": "minecraft:linear", "base": 2, "per_level_above_first": 2}},
+                "requirements": {"type": "minecraft:entity_properties", "entity": "this", "predicate": {"type": "#minecraft:sensitive_to_impaling"}},
+            }]},
+        },
+    }
+    for fn, obj in vanilla_banes.items():
+        with open(os.path.join(mc_ench_dir, fn), "w", encoding="utf-8") as vf:
+            json.dump(obj, vf, indent=2)
 
     # 5. Catalog
     prob_report = _compute_table_probabilities(enchantments)

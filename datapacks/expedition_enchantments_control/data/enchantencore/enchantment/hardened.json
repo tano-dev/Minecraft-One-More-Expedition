@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.hardened",
     "fallback": "Hardened",
-    "color": "gray"
+    "color": "light_purple"
   },
   "exclusive_set": "#enchantencore:exclusive_set/shield",
   "supported_items": "minecraft:shield",

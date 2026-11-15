@@ -232,6 +232,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Implosion"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -334,16 +338,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -575,10 +571,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:pickaxe/bedrock_breaker",
         "name": "Bedrock Breaker"
-      },
-      {
-        "id": "enchantencore:haste",
-        "name": "Haste"
       },
       {
         "id": "enchantplus:pickaxe/spawner_touch",
@@ -1009,10 +1001,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bedrock Breaker"
       },
       {
-        "id": "enchantencore:haste",
-        "name": "Haste"
-      },
-      {
         "id": "enchantplus:tools/miningplus",
         "name": "Mining+"
       }
@@ -1220,10 +1208,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:protection",
         "name": "Protection"
-      },
-      {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
       },
       {
         "id": "enchantencore:wither_protection",
@@ -1511,10 +1495,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "nova_structures:ghasted",
         "name": "Ghasted"
       },
@@ -1529,10 +1509,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:power",
         "name": "Power"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -1759,10 +1735,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:protection",
         "name": "Protection"
-      },
-      {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
       },
       {
         "id": "enchantplus:armor/lifeplus",
@@ -2066,10 +2038,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
-      },
-      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2086,10 +2054,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2100,10 +2064,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2165,10 +2125,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
-      },
-      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2185,10 +2141,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2199,10 +2151,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2276,10 +2224,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2290,10 +2234,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2351,10 +2291,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
-      },
-      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2371,10 +2307,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2385,10 +2317,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2447,10 +2375,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Netherborn"
       },
       {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
-      },
-      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -2467,10 +2391,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2485,10 +2405,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2658,10 +2574,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Protection"
       },
       {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
-      },
-      {
         "id": "enchantplus:armor/lifeplus",
         "name": "Walking Fortress"
       },
@@ -2731,35 +2643,8 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
+    "exclusive_groups": [],
+    "conflicts": [],
     "description": "Increases damage dealt against armored targets.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:blunt\":1}}] 1"
   },
@@ -2881,6 +2766,10 @@ window.ALL_ENCHANTMENTS = [
     ],
     "conflicts": [
       {
+        "id": "bound:bound",
+        "name": "Bound"
+      },
+      {
         "id": "enchantencore:end_speed",
         "name": "End Speed"
       },
@@ -2935,8 +2824,47 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Boots",
-    "exclusive_groups": [],
-    "conflicts": [],
+    "exclusive_groups": [
+      "Boots Movement"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bounce",
+        "name": "Bounce"
+      },
+      {
+        "id": "enchantencore:end_speed",
+        "name": "End Speed"
+      },
+      {
+        "id": "enchantencore:invisibility_cloak",
+        "name": "Invisibility Cloak"
+      },
+      {
+        "id": "enchantencore:leaf_jumper",
+        "name": "Leaf Jumper"
+      },
+      {
+        "id": "enchantencore:path_speed",
+        "name": "Path Speed"
+      },
+      {
+        "id": "enchantencore:sand_speed",
+        "name": "Sand Speed"
+      },
+      {
+        "id": "enchantencore:sonic",
+        "name": "Sonic"
+      },
+      {
+        "id": "minecraft:soul_speed",
+        "name": "Soul Speed"
+      },
+      {
+        "id": "enchantencore:strafe",
+        "name": "Strafe"
+      }
+    ],
     "description": "Allows mid-air double jumping while wearing Boots; extra jumps scale across Lv I–III.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"bound:bound\":3}}] 1"
   },
@@ -3000,10 +2928,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -3014,10 +2938,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -3081,16 +3001,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -3157,7 +3069,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "bunny_hop",
     "name": "Bunny Hop",
     "name_vi": "Bunny Hop",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 3,
     "anvil_cost": 2,
@@ -3472,10 +3384,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/dimensional_hit",
         "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "enchantplus:sword/runic_despair",
@@ -4015,10 +3923,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:mending",
         "name": "Mending"
-      },
-      {
-        "id": "minecraft:unbreaking",
-        "name": "Unbreaking"
       }
     ],
     "description": "Prevents the item from being further enchanted or modified.",
@@ -4644,7 +4548,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "dark_infused",
     "name": "Dark Infused",
     "name_vi": "Dark Infused",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 3,
     "anvil_cost": 2,
@@ -4817,10 +4721,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Protection"
       },
       {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
-      },
-      {
         "id": "enchantplus:armor/lifeplus",
         "name": "Walking Fortress"
       },
@@ -4888,14 +4788,6 @@ window.ALL_ENCHANTMENTS = [
       "Sword Effects (Enchant+)"
     ],
     "conflicts": [
-      {
-        "id": "enchantplus:sword/dimensional_hit",
-        "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
       {
         "id": "enchantplus:sword/tears_of_asflors",
         "name": "Tears of Asflors"
@@ -4988,10 +4880,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Critical Strike"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -5002,10 +4890,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -5118,8 +5002,7 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Swords & Melee Weapons",
     "exclusive_groups": [
-      "Sword Attributes (Enchant+)",
-      "Sword Effects (Enchant+)"
+      "Sword Attributes (Enchant+)"
     ],
     "conflicts": [
       {
@@ -5127,24 +5010,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Critical"
       },
       {
-        "id": "enchantplus:sword/death_touch",
-        "name": "Death Touch"
-      },
-      {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
-      },
-      {
         "id": "enchantplus:sword/runic_despair",
         "name": "Runic Despair"
-      },
-      {
-        "id": "enchantplus:sword/tears_of_asflors",
-        "name": "Tears of Asflors"
       }
     ],
     "description": "Deals +2 bonus damage (+1 per level above I, up to +4 at Lv III) in Nether or End dimensions.",
@@ -5273,45 +5140,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/drylands_piercer\":1}}] 1"
   },
   {
-    "id": "enchantplus:leggings/dwarfed",
-    "namespace": "enchantplus",
-    "raw_name": "leggings/dwarfed",
-    "name": "Dwarfed",
-    "name_vi": "Dwarfed",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 8,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/leg_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Leggings",
-    "exclusive_groups": [
-      "Size / Height"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:growth",
-        "name": "Growth"
-      },
-      {
-        "id": "enchantplus:leggings/oversize",
-        "name": "Oversize"
-      },
-      {
-        "id": "enchantencore:shrinkage",
-        "name": "Shrinkage"
-      }
-    ],
-    "description": "Shrinks player size (-15% / -25% / -35% / -50%), reduces attack damage (-1 -0.5/lvl above I) & reach (-15% -10%/lvl).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:leggings/dwarfed\":5}}] 1"
-  },
-  {
     "id": "enchantplus:bow/echo_shot",
     "namespace": "enchantplus",
     "raw_name": "bow/echo_shot",
@@ -5374,6 +5202,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:implosion",
         "name": "Implosion"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:lightning_bolt",
@@ -5784,10 +5616,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Protection"
       },
       {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
-      },
-      {
         "id": "enchantplus:armor/lifeplus",
         "name": "Walking Fortress"
       },
@@ -5825,6 +5653,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:bounce",
         "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
       },
       {
         "id": "enchantencore:invisibility_cloak",
@@ -6016,6 +5848,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:infinity",
         "name": "Infinity"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:lightning_bolt",
@@ -6240,6 +6076,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Infinity"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -6368,6 +6208,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Implosion"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -6474,88 +6318,8 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Swords & Melee Weapons",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)",
-      "Sword Effects (Enchant+)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
-        "id": "enchantplus:sword/death_touch",
-        "name": "Death Touch"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "enchantplus:sword/dimensional_hit",
-        "name": "Dimensional Hit"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      },
-      {
-        "id": "enchantplus:sword/tears_of_asflors",
-        "name": "Tears of Asflors"
-      }
-    ],
+    "exclusive_groups": [],
+    "conflicts": [],
     "description": "Delays Creeper fuse explosions on hit; delay scales across Lv I–III.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/fear\":3}}] 1"
   },
@@ -6703,7 +6467,7 @@ window.ALL_ENCHANTMENTS = [
       },
       {
         "id": "enchantsplus:ice_aspect",
-        "name": "Ice Aspect"
+        "name": "Icicle Impale"
       },
       {
         "id": "stellarity:_technical/infernal_infusion",
@@ -6823,10 +6587,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:protection",
         "name": "Protection"
-      },
-      {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
       },
       {
         "id": "enchantplus:armor/lifeplus",
@@ -7033,6 +6793,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Infinity"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -7189,6 +6953,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Infinity"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -7244,18 +7012,9 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Pickaxes, Shovels, Axes & Hoes",
     "exclusive_groups": [
-      "Mining (Fortune / Silk Touch)",
-      "Mining / Haste"
+      "Mining (Fortune / Silk Touch)"
     ],
     "conflicts": [
-      {
-        "id": "enchantencore:haste",
-        "name": "Haste"
-      },
-      {
-        "id": "enchantsplus:pyrolysis",
-        "name": "Pyrolysis"
-      },
       {
         "id": "minecraft:silk_touch",
         "name": "Silk Touch"
@@ -7400,10 +7159,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:protection",
         "name": "Protection"
-      },
-      {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
       },
       {
         "id": "enchantplus:armor/lifeplus",
@@ -7739,16 +7494,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -7770,7 +7517,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Growth",
     "tier": "common",
     "tier_order": 99,
-    "max_level": 1,
+    "max_level": 5,
     "anvil_cost": 2,
     "table": false,
     "tradeable": false,
@@ -7786,20 +7533,12 @@ window.ALL_ENCHANTMENTS = [
     ],
     "conflicts": [
       {
-        "id": "enchantplus:leggings/dwarfed",
-        "name": "Dwarfed"
-      },
-      {
-        "id": "enchantplus:leggings/oversize",
-        "name": "Oversize"
-      },
-      {
         "id": "enchantencore:shrinkage",
         "name": "Shrinkage"
       }
     ],
-    "description": "Increases the wearer's entity scale by +10% (+0.1).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:growth\":1}}] 1"
+    "description": "Increases body scale and step height by +10% per level (up to +50% at Lv V) and grants +0.4 protection EPF per level (2 EPF = Protection II at Lv V).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:growth\":5}}] 1"
   },
   {
     "id": "enchantencore:guard",
@@ -7972,7 +7711,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "hardened",
     "name": "Hardened",
     "name_vi": "Hardened",
-    "tier": "common",
+    "tier": "epic",
     "tier_order": 99,
     "max_level": 3,
     "anvil_cost": 2,
@@ -8052,23 +7791,8 @@ window.ALL_ENCHANTMENTS = [
       "tool"
     ],
     "supported_display": "Mining Tools",
-    "exclusive_groups": [
-      "Mining / Haste"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fortune",
-        "name": "Fortune"
-      },
-      {
-        "id": "enchantplus:tools/miningplus",
-        "name": "Mining+"
-      },
-      {
-        "id": "enchantplus:pickaxe/spawner_touch",
-        "name": "Spawner Touch"
-      }
-    ],
+    "exclusive_groups": [],
+    "conflicts": [],
     "description": "Grants Haste I / II / III (matching enchantment level) while held in the main hand.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:haste\":3}}] 1"
   },
@@ -8479,41 +8203,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ice_alloy\":1}}] 1"
   },
   {
-    "id": "enchantsplus:ice_aspect",
-    "namespace": "enchantsplus",
-    "raw_name": "ice_aspect",
-    "name": "Ice Aspect",
-    "name_vi": "Ice Aspect",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 4,
-    "table": true,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#minecraft:enchantable/fire_aspect",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords & Maces",
-    "exclusive_groups": [
-      "Sword Buffs (Fire / Ice / Web)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "enchantsplus:websnare",
-        "name": "Websnare"
-      }
-    ],
-    "description": "Slows and freezes targets on hit; freeze duration and slowness scale across Lv I–II.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:ice_aspect\":2}}] 1"
-  },
-  {
     "id": "mt:armor/ice_shoes",
     "namespace": "mt",
     "raw_name": "armor/ice_shoes",
@@ -8560,6 +8249,41 @@ window.ALL_ENCHANTMENTS = [
     "conflicts": [],
     "description": "Freezes struck targets, reducing their movement and attack speed.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/ice_sword\":1}}] 1"
+  },
+  {
+    "id": "enchantsplus:ice_aspect",
+    "namespace": "enchantsplus",
+    "raw_name": "ice_aspect",
+    "name": "Icicle Impale",
+    "name_vi": "Icicle Impale",
+    "tier": "epic",
+    "tier_order": 99,
+    "max_level": 2,
+    "anvil_cost": 4,
+    "table": true,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Enchants Plus v2.1 26.3",
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Swords & Maces",
+    "exclusive_groups": [
+      "Sword Buffs (Fire / Ice / Web)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "enchantsplus:websnare",
+        "name": "Websnare"
+      }
+    ],
+    "description": "Slows and freezes targets on hit; freeze duration and slowness scale across Lv I–II.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:ice_aspect\":2}}] 1"
   },
   {
     "id": "nova_structures:illagers_bane",
@@ -8716,20 +8440,12 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -8806,6 +8522,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:infinity",
         "name": "Infinity"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:lightning_bolt",
@@ -9056,6 +8776,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Implosion"
       },
       {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
         "id": "enchantencore:lightning_bolt",
         "name": "Lightning Bolt"
       },
@@ -9133,6 +8857,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:bounce",
         "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
       },
       {
         "id": "enchantencore:end_speed",
@@ -9290,16 +9018,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -9387,6 +9107,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:bounce",
         "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
       },
       {
         "id": "enchantencore:end_speed",
@@ -9551,8 +9275,51 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Bows",
-    "exclusive_groups": [],
-    "conflicts": [],
+    "exclusive_groups": [
+      "Bow Arrow Effects"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bomber",
+        "name": "Bomber"
+      },
+      {
+        "id": "enchantplus:bow/echo_shot",
+        "name": "Echo Shot"
+      },
+      {
+        "id": "enchantencore:ender_shot",
+        "name": "Ender Shot"
+      },
+      {
+        "id": "enchantencore:evokers_wrath",
+        "name": "Evoker's Wrath"
+      },
+      {
+        "id": "enchantplus:bow/explosive_arrow",
+        "name": "Explosive Arrow"
+      },
+      {
+        "id": "enchantencore:flare",
+        "name": "Flare"
+      },
+      {
+        "id": "enchantencore:forge_shot",
+        "name": "Forge Shot"
+      },
+      {
+        "id": "enchantencore:implosion",
+        "name": "Implosion"
+      },
+      {
+        "id": "minecraft:infinity",
+        "name": "Infinity"
+      },
+      {
+        "id": "enchantencore:lightning_bolt",
+        "name": "Lightning Bolt"
+      }
+    ],
     "description": "Arrows inflict Levitation I for 7s (+0.5s per level above I, up to 9s at Lv V).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:levitation_shot\":5}}] 1"
   },
@@ -9663,6 +9430,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:infinity",
         "name": "Infinity"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
       },
       {
         "id": "enchantencore:nuclear_arrow",
@@ -10688,10 +10459,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Protection"
       },
       {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
-      },
-      {
         "id": "enchantplus:armor/lifeplus",
         "name": "Walking Fortress"
       },
@@ -10765,10 +10532,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:protection",
         "name": "Protection"
-      },
-      {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
       },
       {
         "id": "enchantplus:armor/lifeplus",
@@ -11019,7 +10782,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "ominous_healing",
     "name": "Ominous Healing",
     "name_vi": "Ominous Healing",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 1,
     "anvil_cost": 2,
@@ -11062,7 +10825,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "ominous_rain",
     "name": "Ominous Rain",
     "name_vi": "Ominous Rain",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 1,
     "anvil_cost": 2,
@@ -11202,45 +10965,6 @@ window.ALL_ENCHANTMENTS = [
     "conflicts": [],
     "description": "Increases block interaction reach by +0.5 blocks per level (up to +2.0 blocks at Lv IV).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:outreach\":4}}] 1"
-  },
-  {
-    "id": "enchantplus:leggings/oversize",
-    "namespace": "enchantplus",
-    "raw_name": "leggings/oversize",
-    "name": "Oversize",
-    "name_vi": "Oversize",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 8,
-    "table": false,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/leg_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Leggings",
-    "exclusive_groups": [
-      "Size / Height"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantplus:leggings/dwarfed",
-        "name": "Dwarfed"
-      },
-      {
-        "id": "enchantencore:growth",
-        "name": "Growth"
-      },
-      {
-        "id": "enchantencore:shrinkage",
-        "name": "Shrinkage"
-      }
-    ],
-    "description": "Increases player scale (+25% / +35% / +65%) and step height (+0.5 +0.5/lvl above I, up to +1.5 blocks at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:leggings/oversize\":3}}] 1"
   },
   {
     "id": "enchantencore:pacifier",
@@ -11435,6 +11159,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:bounce",
         "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
       },
       {
         "id": "enchantencore:end_speed",
@@ -12082,10 +11810,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Protection"
       },
       {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
-      },
-      {
         "id": "enchantplus:armor/lifeplus",
         "name": "Walking Fortress"
       },
@@ -12208,10 +11932,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:projectile_protection",
         "name": "Projectile Protection"
-      },
-      {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
       },
       {
         "id": "enchantplus:armor/lifeplus",
@@ -12341,19 +12061,8 @@ window.ALL_ENCHANTMENTS = [
       "tool"
     ],
     "supported_display": "Pickaxes",
-    "exclusive_groups": [
-      "Mining (Fortune / Silk Touch)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fortune",
-        "name": "Fortune"
-      },
-      {
-        "id": "minecraft:silk_touch",
-        "name": "Silk Touch"
-      }
-    ],
+    "exclusive_groups": [],
+    "conflicts": [],
     "description": "Automatically smelts mined ores directly into ingots upon breaking.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:pyrolysis\":1}}] 1"
   },
@@ -12584,94 +12293,16 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Swords & Melee Weapons",
     "exclusive_groups": [
-      "Damage (Sharpness / Bane)",
-      "Reach",
-      "Sword Attributes (Enchant+)"
+      "Reach"
     ],
     "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
       {
         "id": "enchantencore:crab_claw",
         "name": "Crab Claw"
       },
       {
-        "id": "enchantplus:sword/critical",
-        "name": "Critical"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
         "id": "enchantencore:reach_curse",
         "name": "Curse of Reach"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "enchantplus:sword/dimensional_hit",
-        "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/runic_despair",
-        "name": "Runic Despair"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
       }
     ],
     "description": "Extends melee entity attack range by +1 block (+0.5 per level above I, up to +2.0 blocks at Lv III).",
@@ -13053,10 +12684,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/dimensional_hit",
         "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       }
     ],
     "description": "Multiplies melee damage dealt inside the Runic Dimension across Lv I–III.",
@@ -13210,6 +12837,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:bounce",
         "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
       },
       {
         "id": "enchantencore:end_speed",
@@ -13409,7 +13040,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "sea_breeze",
     "name": "Sea Breeze",
     "name_vi": "Sea Breeze",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 1,
     "anvil_cost": 2,
@@ -13595,10 +13226,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
-      },
-      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -13615,10 +13242,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -13629,10 +13252,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:smite",
@@ -13670,19 +13289,11 @@ window.ALL_ENCHANTMENTS = [
     ],
     "conflicts": [
       {
-        "id": "enchantplus:leggings/dwarfed",
-        "name": "Dwarfed"
-      },
-      {
         "id": "enchantencore:growth",
         "name": "Growth"
-      },
-      {
-        "id": "enchantplus:leggings/oversize",
-        "name": "Oversize"
       }
     ],
-    "description": "Reduces the wearer's entity scale and step height by -10% (-0.1).",
+    "description": "Shrinks body scale and step height by -10%, but reduces Max Health by -23% (~+30% effective incoming damage from all sources).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shrinkage\":1}}] 1"
   },
   {
@@ -13762,10 +13373,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:plow",
         "name": "Plow"
-      },
-      {
-        "id": "enchantsplus:pyrolysis",
-        "name": "Pyrolysis"
       },
       {
         "id": "enchantencore:regrowth",
@@ -13970,10 +13577,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bane of Raiders"
       },
       {
-        "id": "kattersstructures:blunt",
-        "name": "Blunt"
-      },
-      {
         "id": "minecraft:breach",
         "name": "Breach"
       },
@@ -13990,10 +13593,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -14004,10 +13603,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -14047,6 +13642,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:bounce",
         "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
       },
       {
         "id": "enchantencore:end_speed",
@@ -14185,6 +13784,10 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantencore:bounce",
         "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
       },
       {
         "id": "enchantencore:end_speed",
@@ -14625,6 +14228,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Bounce"
       },
       {
+        "id": "bound:bound",
+        "name": "Bound"
+      },
+      {
         "id": "enchantencore:end_speed",
         "name": "End Speed"
       },
@@ -14947,7 +14554,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "switch",
     "name": "Switch",
     "name_vi": "Switch",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 1,
     "anvil_cost": 2,
@@ -15039,14 +14646,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/death_touch",
         "name": "Death Touch"
-      },
-      {
-        "id": "enchantplus:sword/dimensional_hit",
-        "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
       }
     ],
     "description": "Converts XP into +3 bonus damage (+1 per level above I, up to +5 at Lv III) on hit.",
@@ -15095,59 +14694,8 @@ window.ALL_ENCHANTMENTS = [
       "armor"
     ],
     "supported_display": "Armor",
-    "exclusive_groups": [
-      "Armor Protection"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:antidote",
-        "name": "Antidote"
-      },
-      {
-        "id": "minecraft:blast_protection",
-        "name": "Blast Protection"
-      },
-      {
-        "id": "enchantencore:day_protection",
-        "name": "Day Protection"
-      },
-      {
-        "id": "enchantencore:end_protection",
-        "name": "End Protection"
-      },
-      {
-        "id": "minecraft:fire_protection",
-        "name": "Fire Protection"
-      },
-      {
-        "id": "enchantplus:armor/fury",
-        "name": "Fury"
-      },
-      {
-        "id": "enchantencore:nether_protection",
-        "name": "Nether Protection"
-      },
-      {
-        "id": "enchantencore:night_protection",
-        "name": "Night Protection"
-      },
-      {
-        "id": "minecraft:projectile_protection",
-        "name": "Projectile Protection"
-      },
-      {
-        "id": "minecraft:protection",
-        "name": "Protection"
-      },
-      {
-        "id": "enchantplus:armor/lifeplus",
-        "name": "Walking Fortress"
-      },
-      {
-        "id": "enchantencore:wither_protection",
-        "name": "Wither Protection"
-      }
-    ],
+    "exclusive_groups": [],
+    "conflicts": [],
     "description": "Adds +3.5 protection EPF (+3 per level above I, up to +12.5 EPF at Lv IV) against Thorns, cactus, and sweet berry damage.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:thorns_protection\":4}}] 1"
   },
@@ -15216,7 +14764,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "traveler",
     "name": "Traveler",
     "name_vi": "Traveler",
-    "tier": "common",
+    "tier": "epic",
     "tier_order": 99,
     "max_level": 3,
     "anvil_cost": 2,
@@ -15406,22 +14954,11 @@ window.ALL_ENCHANTMENTS = [
       "universal"
     ],
     "supported_display": "All Durable Gear",
-    "exclusive_groups": [
-      "Auto-Repair / Durability",
-      "Elytra"
-    ],
+    "exclusive_groups": [],
     "conflicts": [
       {
         "id": "kattersstructures:crystal_curse",
         "name": "Curse of Crystal"
-      },
-      {
-        "id": "enchantplus:durability/curse_of_enchant",
-        "name": "Curse of Enchant"
-      },
-      {
-        "id": "nova_structures:wax_wings",
-        "name": "Wax Wings"
       }
     ],
     "description": "Grants a chance to ignore durability loss on use: +50% / +67% / +75% effective durability on tools, or +20% / +27% / +30% on armor per level.",
@@ -15894,12 +15431,7 @@ window.ALL_ENCHANTMENTS = [
     "exclusive_groups": [
       "Elytra"
     ],
-    "conflicts": [
-      {
-        "id": "minecraft:unbreaking",
-        "name": "Unbreaking"
-      }
-    ],
+    "conflicts": [],
     "description": "Prevents Elytra durability loss when gliding slowly.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:wax_wings\":1}}] 1"
   },
@@ -16172,7 +15704,7 @@ window.ALL_ENCHANTMENTS = [
     "raw_name": "websnare",
     "name": "Websnare",
     "name_vi": "Websnare",
-    "tier": "common",
+    "tier": "rare",
     "tier_order": 99,
     "max_level": 2,
     "anvil_cost": 2,
@@ -16195,7 +15727,7 @@ window.ALL_ENCHANTMENTS = [
       },
       {
         "id": "enchantsplus:ice_aspect",
-        "name": "Ice Aspect"
+        "name": "Icicle Impale"
       }
     ],
     "description": "Traps hit targets in cobwebs; duration/effect scales across Lv I–II.",
@@ -16596,10 +16128,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:protection",
         "name": "Protection"
-      },
-      {
-        "id": "enchantencore:thorns_protection",
-        "name": "Thorns Protection"
       },
       {
         "id": "enchantplus:armor/lifeplus",

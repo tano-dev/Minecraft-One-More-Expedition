@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.switch",
     "fallback": "Switch",
-    "color": "gray"
+    "color": "aqua"
   },
   "exclusive_set": "#enchantencore:exclusive_set/pufferfish",
   "supported_items": "#minecraft:enchantable/trident",

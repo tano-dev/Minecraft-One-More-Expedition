@@ -1,0 +1,15 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:sharpness",
+    "minecraft:smite",
+    "minecraft:bane_of_arthropods",
+    "minecraft:impaling",
+    "minecraft:density",
+    "minecraft:breach",
+    "enchantencore:bane_of_bosses",
+    "enchantencore:bane_of_endborn",
+    "enchantencore:bane_of_netherborn",
+    "enchantencore:bane_of_raiders"
+  ]
+}

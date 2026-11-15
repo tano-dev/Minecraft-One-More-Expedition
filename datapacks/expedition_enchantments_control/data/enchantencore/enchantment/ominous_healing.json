@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.ominous_healing",
     "fallback": "Ominous Healing",
-    "color": "gray"
+    "color": "aqua"
   },
   "exclusive_set": "#enchantencore:exclusive_set/shield",
   "supported_items": "minecraft:shield",

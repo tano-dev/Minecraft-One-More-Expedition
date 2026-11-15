@@ -4,7 +4,6 @@
     "fallback": "Haste",
     "color": "light_purple"
   },
-  "exclusive_set": "#enchantencore:exclusive_set/haste",
   "supported_items": "#minecraft:enchantable/mining",
   "weight": 2,
   "max_level": 3,

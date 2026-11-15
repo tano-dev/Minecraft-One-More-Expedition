@@ -7,7 +7,7 @@
   "exclusive_set": "#enchantencore:exclusive_set/height",
   "supported_items": "#enchantencore:valid_for_growth",
   "weight": 10,
-  "max_level": 1,
+  "max_level": 5,
   "min_cost": {
     "base": 12,
     "per_level_above_first": 21
@@ -42,6 +42,29 @@
           "per_level_above_first": 0.1
         },
         "operation": "add_multiplied_base"
+      }
+    ],
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 0.4,
+            "per_level_above_first": 0.4
+          }
+        },
+        "requirements": {
+          "type": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "#minecraft:bypasses_invulnerability",
+                "expected": false
+              }
+            ]
+          }
+        }
       }
     ]
   }

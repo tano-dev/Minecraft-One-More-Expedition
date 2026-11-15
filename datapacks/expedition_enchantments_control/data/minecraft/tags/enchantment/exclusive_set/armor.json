@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:protection",
+    "minecraft:fire_protection",
+    "minecraft:blast_protection",
+    "minecraft:projectile_protection",
+    "enchantencore:day_protection",
+    "enchantencore:end_protection",
+    "enchantencore:nether_protection",
+    "enchantencore:night_protection",
+    "enchantencore:wither_protection",
+    "nova_structures:antidote",
+    "enchantplus:armor/fury",
+    "enchantplus:armor/lifeplus"
+  ]
+}

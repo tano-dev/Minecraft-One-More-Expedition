@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "enchantplus:sword/critical",
+    "enchantplus:sword/dimensional_hit",
+    "enchantplus:sword/runic_despair"
+  ]
+}
