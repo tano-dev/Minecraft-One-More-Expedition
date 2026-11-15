@@ -2,7 +2,8 @@
   "description": {
     "translate": "enchantment.enchantplus.midas_touch",
     "fallback": "Midas Touch",
-    "color": "aqua"
+    "color": "gold",
+    "bold": true
   },
   "supported_items": "minecraft:stick",
   "weight": 5,
@@ -57,5 +58,6 @@
         }
       }
     ]
-  }
+  },
+  "exclusive_set": "#expedition:exclusive/enchantplus_midas_touch"
 }

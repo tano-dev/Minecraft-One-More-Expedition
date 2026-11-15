@@ -6,7 +6,7 @@
   },
   "exclusive_set": "#enchantencore:exclusive_set/repair",
   "supported_items": "#enchantencore:all_enchantable",
-  "weight": 10,
+  "weight": 1,
   "max_level": 1,
   "min_cost": {
     "base": 10,

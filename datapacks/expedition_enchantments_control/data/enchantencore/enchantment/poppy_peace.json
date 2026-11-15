@@ -5,7 +5,7 @@
   },
   "supported_items": "#enchantencore:weapons",
   "exclusive_set": "#enchantencore:exclusive_set/poppy",
-  "weight": 10,
+  "weight": 1,
   "max_level": 1,
   "min_cost": {
     "base": 25,

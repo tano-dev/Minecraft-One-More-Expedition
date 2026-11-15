@@ -1,0 +1,18 @@
+{
+  "replace": true,
+  "values": [
+    "enchantencore:bomber",
+    "enchantencore:ender_shot",
+    "enchantencore:evokers_wrath",
+    "enchantencore:flare",
+    "enchantencore:forge_shot",
+    "enchantencore:lightning_bolt",
+    "enchantplus:bow/breezing_arrow",
+    "enchantplus:bow/echo_shot",
+    "enchantplus:bow/explosive_arrow",
+    "enchantplus:bow/storm_arrow",
+    "minecraft:infinity",
+    "enchantencore:implosion",
+    "stellarity:levitation_shot"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": true,
+  "values": [
+    "enchantencore:bounce",
+    "enchantencore:end_speed",
+    "enchantencore:invisibility_cloak",
+    "enchantencore:leaf_jumper",
+    "enchantencore:path_speed",
+    "enchantencore:sand_speed",
+    "enchantencore:sonic",
+    "enchantencore:strafe",
+    "minecraft:soul_speed",
+    "bound:bound"
+  ]
+}

@@ -5,7 +5,7 @@
     "color": "aqua"
   },
   "supported_items": "minecraft:mace",
-  "weight": 1,
+  "weight": 5,
   "max_level": 1,
   "min_cost": {
     "base": 51,

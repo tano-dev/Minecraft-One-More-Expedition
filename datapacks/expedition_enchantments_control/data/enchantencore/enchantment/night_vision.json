@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.night_vision",
     "fallback": "Night Vision",
-    "color": "aqua"
+    "color": "gray"
   },
   "exclusive_set": "#enchantencore:exclusive_set/helmet",
   "supported_items": "#minecraft:enchantable/head_armor",

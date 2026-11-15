@@ -6,7 +6,7 @@
   },
   "exclusive_set": "#enchantencore:exclusive_set/all_tools",
   "supported_items": "#enchantencore:all_tools",
-  "weight": 1,
+  "weight": 3,
   "max_level": 5,
   "min_cost": {
     "base": 18,

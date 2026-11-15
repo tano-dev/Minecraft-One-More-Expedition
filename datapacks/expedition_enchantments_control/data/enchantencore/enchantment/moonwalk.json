@@ -12,7 +12,7 @@
     "minecraft:leather_horse_armor",
     "minecraft:netherite_horse_armor"
   ],
-  "weight": 5,
+  "weight": 1,
   "max_level": 3,
   "min_cost": {
     "base": 15,

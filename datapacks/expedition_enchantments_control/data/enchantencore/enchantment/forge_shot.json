@@ -1,7 +1,7 @@
 {
   "description": {
     "text": "Forge Shot",
-    "color": "gray"
+    "color": "aqua"
   },
   "exclusive_set": "#enchantencore:exclusive_set/shot_arrow",
   "supported_items": "#enchantencore:all_bows",
