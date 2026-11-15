@@ -3,30 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bách Khoa Phù Phép — One More Expedition Wiki</title>
+  <title>Enchantments Wiki — One More Expedition</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-dark: #0f131a;
-      --card-bg: rgba(22, 27, 38, 0.92);
-      --card-inner: #161c28;
-      --card-hover: #1f2737;
-      --border-card: #2a3447;
-      --gold-primary: #ffaa00;
-      --gold-glow: rgba(255, 170, 0, 0.35);
-      --epic-color: #ff55ff;
-      --epic-glow: rgba(255, 85, 255, 0.3);
-      --rare-color: #55ffff;
-      --rare-glow: rgba(85, 255, 255, 0.25);
-      --common-color: #aaaaaa;
-      --curse-color: #ff5555;
-      --curse-glow: rgba(255, 85, 85, 0.35);
+      --bg-base: #0b0f17;
+      --surface: rgba(18, 24, 36, 0.86);
+      --surface-solid: #131926;
+      --surface-elevated: #1a2233;
+      --surface-hover: #212b40;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.16);
+
+      --gold: #ffaa00;
+      --gold-soft: rgba(255, 170, 0, 0.14);
+      --gold-border: rgba(255, 170, 0, 0.42);
+
+      --epic: #e879f9;
+      --epic-soft: rgba(232, 121, 249, 0.13);
+      --epic-border: rgba(232, 121, 249, 0.38);
+
+      --rare: #38bdf8;
+      --rare-soft: rgba(56, 189, 248, 0.13);
+      --rare-border: rgba(56, 189, 248, 0.38);
+
+      --common: #cbd5e1;
+      --common-soft: rgba(148, 163, 184, 0.12);
+      --common-border: rgba(148, 163, 184, 0.28);
+
+      --curse: #f87171;
+      --curse-soft: rgba(248, 113, 113, 0.14);
+      --curse-border: rgba(248, 113, 113, 0.42);
+
       --text-main: #f1f5f9;
       --text-muted: #94a3b8;
       --text-dim: #64748b;
-      --blue-accent: #3b82f6;
+      --accent: #3b82f6;
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -34,35 +51,44 @@
     body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: var(--text-main);
-      background-color: var(--bg-dark);
+      background-color: var(--bg-base);
       min-height: 100vh;
-      line-height: 1.5;
-      position: relative;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* Fixed Background */
+    /* Fixed Backdrop matching index.html */
     .bg-fixed {
       position: fixed;
       inset: 0;
       z-index: -10;
-      background: #111622 radial-gradient(circle at 50% 20%, rgba(30, 42, 65, 0.6) 0%, rgba(10, 14, 22, 0.95) 100%);
       pointer-events: none;
+      background: #0b0f17 url('assets/bg.jpg') no-repeat center center / cover;
+    }
+    .bg-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: -9;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(255, 170, 0, 0.08), transparent 45%),
+        radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.08), transparent 45%),
+        linear-gradient(180deg, rgba(10, 14, 22, 0.82) 0%, rgba(10, 14, 22, 0.94) 55%, rgba(9, 12, 19, 0.98) 100%);
     }
 
-    /* Header Bar */
+    /* Sticky Top Navbar */
     .header-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 12px 28px;
-      background: rgba(14, 18, 26, 0.94);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      background: rgba(11, 15, 23, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
     }
 
     .brand-link {
@@ -77,657 +103,452 @@
       width: 36px;
       height: 36px;
       object-fit: contain;
-      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
+      filter: drop-shadow(0 2px 8px rgba(255, 170, 0, 0.35));
     }
 
     .brand-text h1 {
-      font-size: 1.25rem;
-      font-weight: 900;
+      font-size: 1.15rem;
+      font-weight: 800;
       color: #f5c451;
-      line-height: 1.1;
-      text-shadow: 2px 2px 0px #704b12;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
     }
 
     .brand-text span {
       font-size: 0.72rem;
+      font-weight: 600;
       color: var(--text-muted);
       letter-spacing: 0.06em;
       text-transform: uppercase;
     }
 
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
     .nav-btn {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: #1e2638;
-      border: 1px solid var(--border-card);
+      gap: 8px;
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
       color: var(--text-main);
-      padding: 7px 16px;
-      border-radius: 8px;
+      padding: 8px 16px;
+      border-radius: 10px;
       text-decoration: none;
       font-size: 0.84rem;
       font-weight: 700;
-      transition: all 0.15s ease;
+      transition: all 0.18s ease;
     }
-
     .nav-btn:hover {
-      background: #2a354c;
-      border-color: #3b82f6;
-      color: #fff;
+      background: var(--surface-hover);
+      border-color: var(--border-strong);
+      transform: translateY(-1px);
     }
 
-    /* Main Container */
+    /* Main Layout */
     .container {
-      max-width: 1360px;
+      max-width: 1380px;
       margin: 0 auto;
-      padding: 24px 20px 80px 20px;
+      padding: 28px 24px 64px;
     }
 
     /* Hero Banner */
     .hero-banner {
-      background: linear-gradient(135deg, rgba(26, 34, 52, 0.85) 0%, rgba(18, 22, 33, 0.95) 100%);
-      border: 1px solid var(--border-card);
-      border-radius: 16px;
-      padding: 28px 32px;
-      margin-bottom: 24px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
       position: relative;
       overflow: hidden;
+      background: linear-gradient(135deg, rgba(22, 29, 44, 0.92), rgba(15, 20, 31, 0.92));
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      margin-bottom: 22px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    }
+    .hero-banner::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), var(--epic), var(--rare), transparent);
+      opacity: 0.8;
     }
 
-    .hero-banner::after {
-      content: "✨";
-      position: absolute;
-      right: 24px;
-      bottom: -10px;
-      font-size: 7rem;
-      opacity: 0.08;
-      pointer-events: none;
+    .hero-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
     }
 
     .hero-title {
-      font-size: 1.85rem;
+      font-size: 1.75rem;
       font-weight: 900;
-      color: #fff;
+      letter-spacing: -0.02em;
       display: flex;
       align-items: center;
       gap: 12px;
-      margin-bottom: 8px;
+      flex-wrap: wrap;
     }
 
-    .hero-title .badge-gold {
-      background: linear-gradient(135deg, #f59e0b, #d97706);
-      color: #000;
-      font-size: 0.75rem;
+    .hero-pill {
+      font-size: 0.72rem;
       font-weight: 800;
-      padding: 4px 10px;
-      border-radius: 6px;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: var(--gold);
+      border: 1px solid var(--gold-border);
     }
 
     .hero-subtitle {
       color: var(--text-muted);
-      font-size: 0.95rem;
-      max-width: 860px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    /* Stats Ribbon */
-    .stats-ribbon {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .stat-pill {
-      background: rgba(15, 20, 30, 0.7);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 6px 14px;
-      border-radius: 8px;
-      font-size: 0.82rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .stat-pill strong {
-      font-weight: 800;
-    }
-
-    .pill-ult { border-color: rgba(255, 170, 0, 0.4); color: var(--gold-primary); }
-    .pill-epic { border-color: rgba(255, 85, 255, 0.4); color: var(--epic-color); }
-    .pill-rare { border-color: rgba(85, 255, 255, 0.4); color: var(--rare-color); }
-    .pill-common { border-color: rgba(170, 170, 170, 0.3); color: var(--common-color); }
-    .pill-curse { border-color: rgba(255, 85, 85, 0.4); color: var(--curse-color); }
-
-    /* Controls Panel */
-    .controls-panel {
-      background: var(--card-bg);
-      border: 1px solid var(--border-card);
-      border-radius: 14px;
-      padding: 18px 20px;
-      margin-bottom: 22px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      position: sticky;
-      top: 68px;
-      z-index: 90;
-      backdrop-filter: blur(12px);
-    }
-
-    .search-sort-row {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 14px;
-    }
-
-    .search-input-wrapper {
-      position: relative;
-      flex: 1;
-    }
-
-    .search-input-wrapper input {
-      width: 100%;
-      background: #121722;
-      border: 1px solid var(--border-card);
-      color: #fff;
-      padding: 10px 14px 10px 38px;
-      border-radius: 8px;
       font-size: 0.92rem;
-      outline: none;
-      transition: border 0.15s ease;
+      max-width: 820px;
+      margin-bottom: 18px;
     }
 
-    .search-input-wrapper input:focus {
-      border-color: #3b82f6;
-      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
+    .hero-subtitle strong {
+      color: #fde68a;
+      font-weight: 700;
     }
 
-    .search-icon-left {
-      position: absolute;
-      left: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--text-dim);
-      font-size: 0.95rem;
-    }
-
-    .sort-select {
-      background: #121722;
-      border: 1px solid var(--border-card);
-      color: #fff;
-      padding: 10px 16px;
-      border-radius: 8px;
-      font-size: 0.88rem;
-      outline: none;
-      cursor: pointer;
-    }
-
-    /* Filter Tabs */
-    .filter-tabs-group {
-      display: flex;
-      flex-direction: column;
+    /* Quick Tier Stat Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
       gap: 10px;
     }
 
-    .tier-tabs {
+    .stat-card {
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .tier-tab-btn {
-      background: #161c28;
-      border: 1px solid var(--border-card);
-      color: var(--text-muted);
-      padding: 7px 15px;
-      border-radius: 7px;
-      font-size: 0.83rem;
-      font-weight: 700;
-      cursor: pointer;
-      display: inline-flex;
       align-items: center;
-      gap: 6px;
-      transition: all 0.15s ease;
+      justify-content: space-between;
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+      transition: all 0.16s ease;
     }
-
-    .tier-tab-btn:hover {
-      background: #202838;
-      color: #fff;
+    .stat-card:hover {
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateY(-1px);
     }
-
-    .tier-tab-btn.active {
-      background: #2563eb;
-      border-color: #3b82f6;
-      color: #fff;
-      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
-    }
-
-    .tier-tab-btn.active.tab-ult {
-      background: linear-gradient(135deg, #b45309, #d97706);
-      border-color: #fbbf24;
-      color: #fff;
-      box-shadow: 0 2px 10px rgba(245, 158, 11, 0.4);
-    }
-
-    .gear-chips {
+    .stat-card-left {
       display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      padding-top: 6px;
-      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .stat-card-count {
+      font-size: 0.95rem;
+      font-weight: 800;
     }
 
-    .gear-chip {
-      background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Controls Panel */
+    .controls-panel {
+      background: var(--surface);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 18px 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .search-sort-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
       color: var(--text-dim);
-      padding: 4px 11px;
-      border-radius: 6px;
-      font-size: 0.77rem;
+      font-size: 0.95rem;
+      pointer-events: none;
+    }
+
+    #searchInput {
+      width: 100%;
+      background: var(--surface-solid);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 11px 38px 11px 40px;
+      border-radius: var(--radius-md);
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 500;
+      outline: none;
+      transition: border-color 0.16s ease, box-shadow 0.16s ease;
+    }
+    #searchInput::placeholder { color: var(--text-dim); }
+    #searchInput:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.18);
+    }
+
+    .clear-search-btn {
+      position: absolute;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      border: none;
+      color: var(--text-muted);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      font-size: 0.75rem;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .clear-search-btn.visible { display: inline-flex; }
+    .clear-search-btn:hover { background: rgba(255, 255, 255, 0.16); color: #fff; }
+
+    .filter-select {
+      background: var(--surface-solid);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 11px 14px;
+      border-radius: var(--radius-md);
+      font-family: inherit;
+      font-size: 0.85rem;
       font-weight: 600;
       cursor: pointer;
+      outline: none;
+    }
+    .filter-select:focus { border-color: var(--accent); }
+
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
       transition: all 0.15s ease;
     }
-
-    .gear-chip:hover {
-      background: rgba(255, 255, 255, 0.06);
+    .filter-btn:hover {
+      background: rgba(255, 255, 255, 0.09);
       color: var(--text-main);
     }
-
-    .gear-chip.active {
-      background: rgba(59, 130, 246, 0.2);
-      border-color: #3b82f6;
-      color: #93c5fd;
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: 0 2px 10px rgba(59, 130, 246, 0.35);
     }
 
-    /* Result Info Bar */
-    .results-info-bar {
+    .filter-btn[data-tier="ultimate"].active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #111827;
+      box-shadow: 0 2px 12px rgba(255, 170, 0, 0.4);
+    }
+    .filter-btn[data-tier="epic"].active {
+      background: var(--epic);
+      border-color: var(--epic);
+      color: #111827;
+      box-shadow: 0 2px 12px rgba(232, 121, 249, 0.35);
+    }
+    .filter-btn[data-tier="rare"].active {
+      background: var(--rare);
+      border-color: var(--rare);
+      color: #0b1120;
+      box-shadow: 0 2px 12px rgba(56, 189, 248, 0.35);
+    }
+    .filter-btn[data-tier="curse"].active {
+      background: var(--curse);
+      border-color: var(--curse);
+      color: #111827;
+      box-shadow: 0 2px 12px rgba(248, 113, 113, 0.35);
+    }
+
+    /* Results Info Bar */
+    .results-bar {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
       align-items: center;
+      justify-content: space-between;
+      gap: 10px;
       margin-bottom: 16px;
       padding: 0 4px;
       font-size: 0.84rem;
-      color: var(--text-dim);
+      color: var(--text-muted);
     }
+    .results-bar strong { color: var(--text-main); }
 
-    /* Enchant Cards Grid */
+    /* Cards Grid */
     .enchants-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
       gap: 16px;
     }
 
-    /* Card Item */
     .enchant-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-card);
-      border-radius: 12px;
-      padding: 16px;
-      cursor: pointer;
-      transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+      position: relative;
       display: flex;
       flex-direction: column;
-      position: relative;
-      overflow: hidden;
+      gap: 10px;
+      background: var(--surface);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      cursor: pointer;
+      transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
     }
-
     .enchant-card:hover {
       transform: translateY(-3px);
-      background: var(--card-hover);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      background: var(--surface-elevated);
+      border-color: var(--border-strong);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
     }
 
-    /* Tier Styling on Cards */
+    /* Subtle left/top accent by tier */
     .enchant-card.tier-ultimate {
-      border-color: rgba(255, 170, 0, 0.45);
+      border-color: rgba(255, 170, 0, 0.32);
+      background: linear-gradient(160deg, rgba(255, 170, 0, 0.07), rgba(18, 24, 36, 0.9) 45%);
     }
     .enchant-card.tier-ultimate:hover {
-      border-color: #ffaa00;
-      box-shadow: 0 8px 26px var(--gold-glow);
+      border-color: var(--gold);
+      box-shadow: 0 10px 28px rgba(255, 170, 0, 0.16);
     }
-    .enchant-card.tier-ultimate::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, #ffaa00, #ffd700);
-    }
+    .enchant-card.tier-epic { border-color: rgba(232, 121, 249, 0.25); }
+    .enchant-card.tier-epic:hover { border-color: var(--epic); }
+    .enchant-card.tier-rare { border-color: rgba(56, 189, 248, 0.22); }
+    .enchant-card.tier-rare:hover { border-color: var(--rare); }
+    .enchant-card.is-curse { border-color: rgba(248, 113, 113, 0.28); }
+    .enchant-card.is-curse:hover { border-color: var(--curse); }
 
-    .enchant-card.tier-epic {
-      border-color: rgba(255, 85, 255, 0.35);
-    }
-    .enchant-card.tier-epic:hover {
-      border-color: #ff55ff;
-      box-shadow: 0 8px 26px var(--epic-glow);
-    }
-    .enchant-card.tier-epic::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, #c084fc, #ff55ff);
-    }
-
-    .enchant-card.tier-rare {
-      border-color: rgba(85, 255, 255, 0.28);
-    }
-    .enchant-card.tier-rare:hover {
-      border-color: #55ffff;
-      box-shadow: 0 8px 26px var(--rare-glow);
-    }
-
-    .enchant-card.tier-curse {
-      border-color: rgba(255, 85, 85, 0.4);
-    }
-    .enchant-card.tier-curse:hover {
-      border-color: #ff5555;
-      box-shadow: 0 8px 26px var(--curse-glow);
-    }
-    .enchant-card.tier-curse::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: #ff5555;
-    }
-
-    /* Card Contents */
-    .card-top {
+    .card-header {
       display: flex;
-      justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 8px;
-    }
-
-    .card-title-group {
-      display: flex;
-      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
     }
 
     .card-title {
       font-size: 1.05rem;
       font-weight: 800;
+      letter-spacing: -0.01em;
       line-height: 1.25;
     }
+    .tier-ultimate .card-title { color: var(--gold); }
+    .tier-epic .card-title { color: var(--epic); }
+    .tier-rare .card-title { color: var(--rare); }
+    .tier-common .card-title { color: #f8fafc; }
+    .is-curse .card-title { color: var(--curse); }
 
-    .tier-ultimate .card-title {
-      color: var(--gold-primary);
-      font-weight: 900;
-      letter-spacing: 0.02em;
-    }
-    .tier-epic .card-title { color: var(--epic-color); }
-    .tier-rare .card-title { color: var(--rare-color); }
-    .tier-common .card-title { color: #fff; }
-    .tier-curse .card-title { color: var(--curse-color); }
-
-    .card-vi-name {
-      font-size: 0.77rem;
-      color: var(--text-dim);
-      margin-top: 2px;
-    }
-
-    .card-level-badge {
-      background: rgba(0, 0, 0, 0.4);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      padding: 2px 7px;
-      border-radius: 5px;
+    .lv-badge {
+      flex-shrink: 0;
       font-size: 0.72rem;
       font-weight: 800;
-      color: #e2e8f0;
-      white-space: nowrap;
+      padding: 3px 9px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      letter-spacing: 0.03em;
     }
 
-    .card-badges-row {
+    .card-badges {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       gap: 6px;
-      margin-bottom: 10px;
     }
 
-    .badge-pill {
-      font-size: 0.68rem;
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.7rem;
       font-weight: 700;
-      padding: 2px 7px;
-      border-radius: 4px;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
+      padding: 2px 8px;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
     }
+    .badge-ult { background: var(--gold-soft); color: var(--gold); border: 1px solid var(--gold-border); }
+    .badge-epic { background: var(--epic-soft); color: var(--epic); border: 1px solid var(--epic-border); }
+    .badge-rare { background: var(--rare-soft); color: var(--rare); border: 1px solid var(--rare-border); }
+    .badge-common { background: var(--common-soft); color: var(--common); border: 1px solid var(--common-border); }
+    .badge-curse { background: var(--curse-soft); color: var(--curse); border: 1px solid var(--curse-border); }
+    .badge-obtain { background: rgba(255, 255, 255, 0.04); color: var(--text-muted); border: 1px solid var(--border-subtle); }
 
-    .badge-ult-exclusive {
-      background: rgba(255, 170, 0, 0.15);
-      border: 1px solid rgba(255, 170, 0, 0.4);
-      color: #ffaa00;
-      font-weight: 800;
-    }
-
-    .badge-source {
-      background: #1a2233;
-      border: 1px solid #28344c;
-      color: #94a3b8;
-    }
-
-    .card-desc-snippet {
-      font-size: 0.84rem;
+    .card-desc {
+      font-size: 0.855rem;
       color: #cbd5e1;
-      line-height: 1.45;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      margin-bottom: 14px;
+      line-height: 1.55;
       flex: 1;
+    }
+
+    .hl-num {
+      color: #fde68a;
+      font-weight: 700;
     }
 
     .card-footer {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      gap: 8px;
       padding-top: 10px;
       border-top: 1px solid rgba(255, 255, 255, 0.06);
-      font-size: 0.76rem;
-      color: var(--text-dim);
-    }
-
-    .gear-icons {
-      display: flex;
-      gap: 4px;
-      font-size: 0.95rem;
-    }
-
-    /* Modal Backdrop */
-    .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(6, 9, 14, 0.85);
-      backdrop-filter: blur(8px);
-      z-index: 200;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .modal-backdrop.active {
-      display: flex;
-    }
-
-    /* Minecraft Tooltip Modal Box */
-    .mc-modal-box {
-      background: #100c1c;
-      border: 2px solid #241642;
-      border-radius: 10px;
-      width: 100%;
-      max-width: 620px;
-      padding: 24px 28px;
-      box-shadow: 0 0 40px rgba(0, 0, 0, 0.9), 0 0 16px rgba(110, 40, 220, 0.35);
-      position: relative;
-      animation: modalFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    @keyframes modalFadeIn {
-      from { transform: scale(0.95); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-
-    .modal-close-btn {
-      position: absolute;
-      top: 16px;
-      right: 18px;
-      background: transparent;
-      border: none;
-      color: var(--text-dim);
-      font-size: 1.4rem;
-      cursor: pointer;
-    }
-    .modal-close-btn:hover { color: #fff; }
-
-    /* Modal Contents */
-    .modal-ench-header {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 16px;
-      padding-bottom: 14px;
-      border-bottom: 1px solid #281a4b;
-    }
-
-    .modal-book-icon {
-      width: 48px;
-      height: 48px;
-      object-fit: contain;
-      filter: drop-shadow(0 0 10px rgba(255, 170, 0, 0.4));
-    }
-
-    .modal-ench-name {
-      font-size: 1.45rem;
-      font-weight: 900;
-      line-height: 1.2;
-    }
-
-    .modal-ench-sub {
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       color: var(--text-muted);
-      margin-top: 3px;
     }
 
-    /* Warning Callout */
-    .modal-alert-box {
-      background: rgba(245, 158, 11, 0.12);
-      border-left: 4px solid #f59e0b;
-      padding: 10px 14px;
-      border-radius: 4px;
-      margin-bottom: 16px;
-      font-size: 0.84rem;
-      color: #fde68a;
-      line-height: 1.5;
-    }
-
-    .modal-desc-box {
-      background: rgba(0, 0, 0, 0.35);
-      border: 1px solid #251b40;
-      padding: 14px 16px;
-      border-radius: 8px;
-      font-size: 0.94rem;
-      line-height: 1.6;
+    .gear-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
       color: #e2e8f0;
-      margin-bottom: 18px;
     }
 
-    /* Specs Table */
-    .specs-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .spec-item {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      padding: 8px 12px;
-      border-radius: 6px;
-      font-size: 0.8rem;
-    }
-
-    .spec-label {
+    .card-cta {
       color: var(--text-dim);
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 2px;
+      font-weight: 600;
+      transition: color 0.15s ease;
     }
+    .enchant-card:hover .card-cta { color: var(--text-main); }
 
-    .spec-val {
-      font-weight: 700;
-      color: #f8fafc;
-    }
-
-    /* Command Copy Box */
-    .cmd-box {
-      display: flex;
-      background: #090611;
-      border: 1px solid #32215a;
-      border-radius: 6px;
-      overflow: hidden;
-    }
-
-    .cmd-text {
-      flex: 1;
-      font-family: Consolas, monospace;
-      font-size: 0.78rem;
-      padding: 8px 12px;
-      color: #a78bfa;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
-
-    .cmd-copy-btn {
-      background: #4f46e5;
-      border: none;
-      color: #fff;
-      font-weight: 700;
-      font-size: 0.78rem;
-      padding: 0 16px;
-      cursor: pointer;
-      transition: background 0.15s ease;
-    }
-    .cmd-copy-btn:hover { background: #4338ca; }
-
-    /* Toast Notification */
-    .toast-msg {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: #10b981;
-      color: #fff;
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 0.85rem;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-      z-index: 300;
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(10px);
-      transition: all 0.25s ease;
-    }
-    .toast-msg.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Pagination / Load More */
+    /* Pagination */
     .pagination-bar {
-      margin-top: 32px;
+      margin-top: 28px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -735,29 +556,233 @@
     }
 
     .page-btn {
-      background: #1e2638;
-      border: 1px solid var(--border-card);
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
       color: var(--text-main);
-      padding: 8px 18px;
+      padding: 9px 18px;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .page-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+    .page-btn:not(:disabled):hover {
+      background: var(--surface-hover);
+      border-color: var(--accent);
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--surface);
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-lg);
+      color: var(--text-muted);
+    }
+    .empty-state button {
+      margin-top: 14px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 9px 18px;
       border-radius: 8px;
       font-weight: 700;
-      font-size: 0.85rem;
       cursor: pointer;
     }
-    .page-btn:disabled {
-      opacity: 0.35;
-      cursor: not-allowed;
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 8, 15, 0.78);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 200;
     }
-    .page-btn:not(:disabled):hover {
-      background: #2b364d;
-      border-color: #3b82f6;
+    .modal-backdrop.active { display: flex; }
+
+    .modal-box {
+      width: 100%;
+      max-width: 600px;
+      background: #121824;
+      border: 1px solid var(--border-strong);
+      border-radius: 18px;
+      padding: 24px 26px;
+      position: relative;
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.65);
+      animation: modalPop 0.18s ease-out;
     }
+    @keyframes modalPop {
+      from { opacity: 0; transform: scale(0.96) translateY(8px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-close-btn:hover { background: rgba(255, 255, 255, 0.12); color: #fff; }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+      padding-right: 36px;
+    }
+
+    .modal-book-icon {
+      width: 46px;
+      height: 46px;
+      image-rendering: pixelated;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+    }
+
+    .modal-title {
+      font-size: 1.35rem;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .modal-id {
+      font-family: Consolas, monospace;
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      margin-top: 3px;
+    }
+
+    .modal-alert {
+      display: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 0.83rem;
+      margin-bottom: 14px;
+      border: 1px solid transparent;
+    }
+
+    .modal-desc {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: #e2e8f0;
+      margin-bottom: 16px;
+    }
+    .modal-desc-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+    }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .spec-item {
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid var(--border-subtle);
+      padding: 10px 12px;
+      border-radius: 10px;
+    }
+
+    .spec-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      margin-bottom: 3px;
+    }
+
+    .spec-val {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .cmd-box {
+      display: flex;
+      align-items: center;
+      background: #090d16;
+      border: 1px solid rgba(99, 102, 241, 0.35);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .cmd-text {
+      flex: 1;
+      font-family: Consolas, monospace;
+      font-size: 0.78rem;
+      padding: 10px 12px;
+      color: #a5b4fc;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .cmd-copy-btn {
+      background: #4f46e5;
+      border: none;
+      color: #fff;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 10px 16px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    .cmd-copy-btn:hover { background: #4338ca; }
+
+    /* Toast */
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #10b981;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      z-index: 300;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: all 0.22s ease;
+    }
+    .toast-msg.show { opacity: 1; transform: translateY(0); }
 
     @media (max-width: 768px) {
       .header-bar { padding: 10px 16px; }
-      .search-sort-row { flex-direction: column; }
+      .container { padding: 18px 14px 48px; }
       .hero-banner { padding: 20px; }
-      .hero-title { font-size: 1.45rem; }
+      .hero-title { font-size: 1.38rem; }
+      .search-sort-row { grid-template-columns: 1fr; }
+      .enchants-grid { grid-template-columns: 1fr; }
       .specs-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -765,188 +790,238 @@
 <body>
 
   <div class="bg-fixed"></div>
+  <div class="bg-overlay"></div>
 
-  <!-- Header -->
+  <!-- Navbar -->
   <header class="header-bar">
     <a href="index.html" class="brand-link">
       <img src="https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/enchanted_book.png" alt="Enchanted Book" class="brand-icon" />
       <div class="brand-text">
         <h1>One More Expedition</h1>
-        <span>Enchantments Codex • 400 Enchants</span>
+        <span id="headerSubtitle">Enchantments Codex</span>
       </div>
     </a>
 
-    <div class="nav-actions">
-      <a href="index.html" class="nav-btn">
-        <span>🏠</span> Quay lại Wiki Chính
-      </a>
-    </div>
+    <a href="index.html" class="nav-btn">
+      <span>🏠</span> Quay lại Wiki Chính
+    </a>
   </header>
 
-  <!-- Main Container -->
   <main class="container">
 
-    <!-- Hero Banner -->
+    <!-- Hero -->
     <section class="hero-banner">
-      <h2 class="hero-title">
-        <span>Bách Khoa Toàn Thư Phù Phép</span>
-        <span class="badge-gold">4-Tier System</span>
-      </h2>
+      <div class="hero-top">
+        <h2 class="hero-title">
+          <span>Bách Khoa Phù Phép</span>
+          <span class="hero-pill">4-Tier Balanced System</span>
+        </h2>
+      </div>
       <p class="hero-subtitle">
-        Hệ thống phù phép chuyên sâu với 400 loại phù phép độc đáo, phân chia thành 4 cấp bậc độ hiếm rõ rệt. Độc quyền quy tắc <strong>Tối đa 1 Ultimate trên mỗi món trang bị</strong> cùng cơ chế cân bằng 2%–5% tại Bàn phù phép.
+        Tra cứu toàn bộ <strong id="totalHeroCount">400</strong> phù phép đang hoạt động trên server với thông số cộng dồn chi tiết theo từng cấp.
+        Quy tắc độc quyền: <strong>Tối đa 1 Ultimate / món trang bị</strong>; các phù phép Rare xuất hiện ở Bàn phù phép với tỉ lệ 2%–5%.
       </p>
 
-      <!-- Stats Ribbon -->
-      <div class="stats-ribbon">
-        <div class="stat-pill pill-ult">👑 Ultimate: <strong>49</strong> (Max 1/Món)</div>
-        <div class="stat-pill pill-epic">🟣 Epic: <strong>70</strong> (Dungeon Loot)</div>
-        <div class="stat-pill pill-rare">💎 Rare: <strong>161</strong> (Table + Dungeon)</div>
-        <div class="stat-pill pill-common">⚪ Common: <strong>49</strong> (Thông dụng)</div>
-        <div class="stat-pill pill-curse">☠️ Curses: <strong>71</strong> (Lời nguyền)</div>
+      <div class="stats-grid">
+        <div class="stat-card" data-quick-tier="ultimate" style="border-color: var(--gold-border);">
+          <div class="stat-card-left" style="color: var(--gold);"><span>👑</span> Ultimate</div>
+          <div class="stat-card-count" style="color: var(--gold);" id="statUlt">0</div>
+        </div>
+        <div class="stat-card" data-quick-tier="epic" style="border-color: var(--epic-border);">
+          <div class="stat-card-left" style="color: var(--epic);"><span>🟣</span> Epic</div>
+          <div class="stat-card-count" style="color: var(--epic);" id="statEpic">0</div>
+        </div>
+        <div class="stat-card" data-quick-tier="rare" style="border-color: var(--rare-border);">
+          <div class="stat-card-left" style="color: var(--rare);"><span>💎</span> Rare</div>
+          <div class="stat-card-count" style="color: var(--rare);" id="statRare">0</div>
+        </div>
+        <div class="stat-card" data-quick-tier="common" style="border-color: var(--common-border);">
+          <div class="stat-card-left" style="color: var(--common);"><span>⚪</span> Common</div>
+          <div class="stat-card-count" style="color: var(--common);" id="statCommon">0</div>
+        </div>
+        <div class="stat-card" data-quick-tier="curse" style="border-color: var(--curse-border);">
+          <div class="stat-card-left" style="color: var(--curse);"><span>☠️</span> Curses</div>
+          <div class="stat-card-count" style="color: var(--curse);" id="statCurse">0</div>
+        </div>
       </div>
     </section>
 
-    <!-- Controls Panel -->
+    <!-- Filters -->
     <section class="controls-panel">
-      <!-- Search & Sort Row -->
       <div class="search-sort-row">
-        <div class="search-input-wrapper">
-          <span class="search-icon-left">🔍</span>
-          <input type="text" id="searchInput" placeholder="Tìm kiếm theo tên phù phép, tiếng Việt, tác dụng (vd: void, hồi máu, sét, nổ, critical)..." autocomplete="off" />
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search enchantments by name, effect, or ID (e.g. protection, +2.5, lightning, bow)..." autocomplete="off" />
+          <button class="clear-search-btn" id="clearSearchBtn" title="Clear search">✕</button>
         </div>
-        <select id="sortSelect" class="sort-select">
-          <option value="tier">Độ hiếm: Cao → Thấp</option>
-          <option value="level">Cấp độ tối đa: Cao → Thấp</option>
+
+        <select id="obtainSelect" class="filter-select" title="Filter by how to obtain">
+          <option value="all">Nguồn: Tất cả</option>
+          <option value="table">🔮 Bàn phù phép (Table)</option>
+          <option value="tradeable">🧑‍🌾 Dân làng Thủ thư</option>
+          <option value="loot_only">🎁 Chỉ rơi từ Loot / Rương</option>
+        </select>
+
+        <select id="sortSelect" class="filter-select" title="Sort enchantments">
+          <option value="tier">Sắp xếp: Độ hiếm</option>
+          <option value="level">Cấp tối đa: Cao → Thấp</option>
           <option value="name_asc">Tên: A → Z</option>
           <option value="name_desc">Tên: Z → A</option>
           <option value="anvil">Chi phí đe: Cao → Thấp</option>
         </select>
       </div>
 
-      <!-- Filter Tabs Group -->
-      <div class="filter-tabs-group">
-        <!-- Tier Filter Tabs -->
-        <div class="tier-tabs">
-          <button class="tier-tab-btn active" data-tier="all">🌟 Tất cả (400)</button>
-          <button class="tier-tab-btn tab-ult" data-tier="ultimate">👑 Ultimate (49)</button>
-          <button class="tier-tab-btn" data-tier="epic">🟣 Epic (70)</button>
-          <button class="tier-tab-btn" data-tier="rare">💎 Rare (161)</button>
-          <button class="tier-tab-btn" data-tier="common">⚪ Common (49)</button>
-          <button class="tier-tab-btn" data-tier="curse">☠️ Curses (71)</button>
+      <div class="filter-row">
+        <div class="pill-group" id="tierTabs">
+          <button class="filter-btn active" data-tier="all" id="tabAll">All</button>
+          <button class="filter-btn" data-tier="ultimate" id="tabUlt">👑 Ultimate</button>
+          <button class="filter-btn" data-tier="epic" id="tabEpic">🟣 Epic</button>
+          <button class="filter-btn" data-tier="rare" id="tabRare">💎 Rare</button>
+          <button class="filter-btn" data-tier="common" id="tabCommon">⚪ Common</button>
+          <button class="filter-btn" data-tier="curse" id="tabCurse">☠️ Curses</button>
         </div>
 
-        <!-- Gear Chips -->
-        <div class="gear-chips">
-          <button class="gear-chip active" data-gear="all">Mọi trang bị</button>
-          <button class="gear-chip" data-gear="weapon">⚔️ Vũ khí cận chiến</button>
-          <button class="gear-chip" data-gear="ranged">🏹 Cung, Nỏ & Đinh ba</button>
-          <button class="gear-chip" data-gear="armor">🛡️ Áo giáp & Cánh</button>
-          <button class="gear-chip" data-gear="tool">⛏️ Dụng cụ & Cuốc</button>
-          <button class="gear-chip" data-gear="mount">🐺 Thú cưỡi & Thú cưng</button>
+        <div class="pill-group" id="gearChips">
+          <button class="filter-btn active" data-gear="all">All Gear</button>
+          <button class="filter-btn" data-gear="weapon">⚔️ Melee</button>
+          <button class="filter-btn" data-gear="ranged">🏹 Ranged</button>
+          <button class="filter-btn" data-gear="armor">🛡️ Armor & Elytra</button>
+          <button class="filter-btn" data-gear="tool">⛏️ Tools</button>
+          <button class="filter-btn" data-gear="mount">🐺 Mounts & Pets</button>
         </div>
       </div>
     </section>
 
-    <!-- Results Info Bar -->
-    <div class="results-info-bar">
-      <span id="resultsCount">Đang hiển thị 400 / 400 phù phép</span>
-      <span style="color: var(--text-muted); font-size: 0.78rem;">Nhấp vào thẻ bất kỳ để xem chi tiết & lấy lệnh /give</span>
+    <!-- Results Bar -->
+    <div class="results-bar">
+      <span id="resultsCount">Showing 400 / 400 enchantments</span>
+      <span>Nhấp vào thẻ bất kỳ để xem thông số chi tiết &amp; lệnh /give</span>
     </div>
 
-    <!-- Cards Grid -->
+    <!-- Grid -->
     <div class="enchants-grid" id="enchantsGrid"></div>
 
     <!-- Pagination -->
     <div class="pagination-bar" id="paginationBar">
       <button class="page-btn" id="prevPageBtn">← Trang trước</button>
-      <span id="pageIndicator" style="font-size: 0.86rem; font-weight: 700; color: var(--text-main);">Trang 1 / 10</span>
+      <span id="pageIndicator" style="font-size: 0.86rem; font-weight: 700;">Trang 1 / 1</span>
       <button class="page-btn" id="nextPageBtn">Trang sau →</button>
     </div>
 
   </main>
 
-  <!-- Minecraft Tooltip Modal -->
+  <!-- Detail Modal -->
   <div class="modal-backdrop" id="enchModal">
-    <div class="mc-modal-box">
+    <div class="modal-box">
       <button class="modal-close-btn" id="modalCloseBtn">✕</button>
 
-      <div class="modal-ench-header">
+      <div class="modal-header">
         <img src="https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/enchanted_book.png" alt="Enchanted Book" class="modal-book-icon" />
         <div>
-          <h3 class="modal-ench-name" id="modalTitle">Absolute Unit</h3>
-          <p class="modal-ench-sub" id="modalSub">Tên tiếng Việt: Đơn vị tuyệt đối • Cấp tối đa: V</p>
+          <h3 class="modal-title" id="modalTitle">Enchantment</h3>
+          <div class="modal-id" id="modalId">minecraft:protection</div>
         </div>
       </div>
 
-      <div class="modal-alert-box" id="modalAlert" style="display: none;"></div>
+      <div class="modal-alert" id="modalAlert"></div>
 
-      <div class="modal-desc-box" id="modalDesc">
-        Mô tả tác dụng của phù phép sẽ xuất hiện ở đây.
+      <div class="modal-desc">
+        <div class="modal-desc-label">Effect &amp; Per-Level Scaling</div>
+        <div id="modalDesc"></div>
       </div>
 
       <div class="specs-grid">
         <div class="spec-item">
-          <div class="spec-label">Cấp bậc / Độ hiếm</div>
+          <div class="spec-label">Rarity Tier</div>
           <div class="spec-val" id="specTier">Ultimate</div>
         </div>
         <div class="spec-item">
-          <div class="spec-label">Cấp độ tối đa</div>
-          <div class="spec-val" id="specMaxLv">Cấp V (5)</div>
+          <div class="spec-label">Max Level</div>
+          <div class="spec-val" id="specMaxLv">V (5)</div>
         </div>
         <div class="spec-item">
-          <div class="spec-label">Chi phí đe cơ bản</div>
-          <div class="spec-val" id="specAnvil">8 Level</div>
+          <div class="spec-label">Base Anvil Cost</div>
+          <div class="spec-val" id="specAnvil">4 Levels</div>
         </div>
         <div class="spec-item">
-          <div class="spec-label">Nguồn thu thập</div>
-          <div class="spec-val" id="specSource">Rương hầm ngục (Dungeon Loot)</div>
+          <div class="spec-label">How to Obtain</div>
+          <div class="spec-val" id="specSource">Loot Chests</div>
         </div>
         <div class="spec-item" style="grid-column: 1 / -1;">
-          <div class="spec-label">Trang bị tương thích</div>
-          <div class="spec-val" id="specGear">#minecraft:enchantable/leg_armor (Quần)</div>
+          <div class="spec-label">Compatible Equipment</div>
+          <div class="spec-val" id="specGear">Armor</div>
         </div>
       </div>
 
       <div>
-        <div class="spec-label" style="margin-bottom: 6px;">Lệnh lấy sách phù phép trong game (/give)</div>
+        <div class="spec-label" style="margin-bottom: 6px;">In-Game Command (/give)</div>
         <div class="cmd-box">
-          <div class="cmd-text" id="cmdText">/give @p enchanted_book...</div>
+          <div class="cmd-text" id="cmdText">/give @p ...</div>
           <button class="cmd-copy-btn" id="copyCmdBtn">📋 Copy</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Toast -->
-  <div class="toast-msg" id="toastMsg">Đã copy lệnh vào Clipboard!</div>
+  <div class="toast-msg" id="toastMsg">Copied /give command!</div>
 
-  <!-- Enchants Data Script -->
   <script src="assets/js/enchants_data.js"></script>
-
-  <!-- Controller Logic -->
   <script>
     const PAGE_SIZE = 36;
     let currentPage = 1;
     let currentTier = "all";
     let currentGear = "all";
+    let currentObtain = "all";
     let currentSearch = "";
     let currentSort = "tier";
 
     const allData = window.ALL_ENCHANTMENTS || [];
 
+    const isCurseItem = (item) =>
+      item.tier === "curse" ||
+      item.id.toLowerCase().includes("curse") ||
+      item.name.toLowerCase().includes("curse");
+
+    // Populate dynamic counts
+    const counts = {
+      all: allData.length,
+      ultimate: allData.filter(x => x.tier === "ultimate").length,
+      epic: allData.filter(x => x.tier === "epic").length,
+      rare: allData.filter(x => x.tier === "rare").length,
+      common: allData.filter(x => x.tier === "common").length,
+      curse: allData.filter(isCurseItem).length
+    };
+
+    document.getElementById("headerSubtitle").innerText = `Enchantments Codex • ${counts.all} Enchants`;
+    document.getElementById("totalHeroCount").innerText = counts.all;
+    document.getElementById("statUlt").innerText = counts.ultimate;
+    document.getElementById("statEpic").innerText = counts.epic;
+    document.getElementById("statRare").innerText = counts.rare;
+    document.getElementById("statCommon").innerText = counts.common;
+    document.getElementById("statCurse").innerText = counts.curse;
+
+    document.getElementById("tabAll").innerText = `All (${counts.all})`;
+    document.getElementById("tabUlt").innerText = `👑 Ultimate (${counts.ultimate})`;
+    document.getElementById("tabEpic").innerText = `🟣 Epic (${counts.epic})`;
+    document.getElementById("tabRare").innerText = `💎 Rare (${counts.rare})`;
+    document.getElementById("tabCommon").innerText = `⚪ Common (${counts.common})`;
+    document.getElementById("tabCurse").innerText = `☠️ Curses (${counts.curse})`;
+
+    // DOM refs
     const grid = document.getElementById("enchantsGrid");
     const resultsCount = document.getElementById("resultsCount");
     const searchInput = document.getElementById("searchInput");
+    const clearSearchBtn = document.getElementById("clearSearchBtn");
+    const obtainSelect = document.getElementById("obtainSelect");
     const sortSelect = document.getElementById("sortSelect");
     const prevPageBtn = document.getElementById("prevPageBtn");
     const nextPageBtn = document.getElementById("nextPageBtn");
     const pageIndicator = document.getElementById("pageIndicator");
 
-    // Modal elements
     const modal = document.getElementById("enchModal");
     const modalCloseBtn = document.getElementById("modalCloseBtn");
     const modalTitle = document.getElementById("modalTitle");
-    const modalSub = document.getElementById("modalSub");
+    const modalId = document.getElementById("modalId");
     const modalAlert = document.getElementById("modalAlert");
     const modalDesc = document.getElementById("modalDesc");
     const specTier = document.getElementById("specTier");
@@ -960,80 +1035,107 @@
 
     function getRomanNumeral(n) {
       const romans = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
-      return romans[n] || n;
+      return romans[n] || String(n);
     }
 
-    function getGearIconList(cats) {
-      const map = {
-        weapon: "⚔️",
-        ranged: "🏹",
-        armor: "🛡️",
-        tool: "⛏️",
-        mount: "🐺",
-        universal: "✨",
-        other: "📦"
-      };
-      return cats.map(c => map[c] || "📦").join(" ");
+    function getGearIcon(cats) {
+      const map = { weapon: "⚔️", ranged: "🏹", armor: "🛡️", tool: "⛏️", mount: "🐺", universal: "✨" };
+      return (cats || []).map(c => map[c] || "📦").slice(0, 2).join(" ");
     }
 
-    function getTierBadgeHtml(tier) {
-      switch(tier) {
-        case "ultimate": return '<span class="badge-pill badge-ult-exclusive">👑 ULTIMATE (MAX 1)</span>';
-        case "epic": return '<span class="badge-pill" style="background:rgba(255,85,255,0.15);color:#ff55ff;border:1px solid rgba(255,85,255,0.4);">🟣 EPIC</span>';
-        case "rare": return '<span class="badge-pill" style="background:rgba(85,255,255,0.15);color:#55ffff;border:1px solid rgba(85,255,255,0.4);">💎 RARE (2-5%)</span>';
-        case "curse": return '<span class="badge-pill" style="background:rgba(255,85,85,0.15);color:#ff5555;border:1px solid rgba(255,85,85,0.4);">☠️ CURSE</span>';
-        default: return '<span class="badge-pill badge-source">⚪ COMMON</span>';
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function highlightNumbers(desc) {
+      const safe = escapeHtml(desc);
+      return safe.replace(/([+-]?\d+(?:\.\d+)?(?:%|s|x)?(?:\s*[-–]\s*\d+(?:\.\d+)?(?:%|s|x)?)?)/g, '<span class="hl-num">$1</span>');
+    }
+
+    function getTierBadgeHtml(item) {
+      const badges = [];
+      if (item.tier === "ultimate") badges.push('<span class="badge badge-ult">👑 Ultimate</span>');
+      else if (item.tier === "epic") badges.push('<span class="badge badge-epic">🟣 Epic</span>');
+      else if (item.tier === "rare") badges.push('<span class="badge badge-rare">💎 Rare</span>');
+      else badges.push('<span class="badge badge-common">⚪ Common</span>');
+
+      if (isCurseItem(item)) {
+        badges.push('<span class="badge badge-curse">☠️ Curse</span>');
       }
+      return badges.join("");
+    }
+
+    function getObtainBadgeHtml(item) {
+      if (item.table && item.tradeable) return '<span class="badge badge-obtain">🔮 Table • 🧑‍🌾 Villager</span>';
+      if (item.table) return '<span class="badge badge-obtain">🔮 Enchant Table</span>';
+      if (item.tradeable) return '<span class="badge badge-obtain">🧑‍🌾 Librarian</span>';
+      return '<span class="badge badge-obtain">🎁 Loot Only</span>';
     }
 
     function filterAndSortData() {
-      let filtered = allData.filter(item => {
-        // Tier filter
-        if (currentTier !== "all" && item.tier !== currentTier) return false;
-
-        // Gear filter
-        if (currentGear !== "all") {
-          if (!item.gear_categories.includes(currentGear) && !item.gear_categories.includes("universal")) {
-            return false;
-          }
+      const filtered = allData.filter(item => {
+        if (currentTier === "curse") {
+          if (!isCurseItem(item)) return false;
+        } else if (currentTier !== "all" && item.tier !== currentTier) {
+          return false;
         }
 
-        // Search query
+        if (currentGear !== "all") {
+          const cats = item.gear_categories || [];
+          if (!cats.includes(currentGear) && !cats.includes("universal")) return false;
+        }
+
+        if (currentObtain === "table" && !item.table) return false;
+        if (currentObtain === "tradeable" && !item.tradeable) return false;
+        if (currentObtain === "loot_only" && (item.table || item.tradeable)) return false;
+
         if (currentSearch) {
           const q = currentSearch.toLowerCase();
-          const matchName = item.name.toLowerCase().includes(q);
-          const matchVi = item.name_vi.toLowerCase().includes(q);
-          const matchId = item.id.toLowerCase().includes(q);
-          const matchDesc = item.description.toLowerCase().includes(q);
-          if (!matchName && !matchVi && !matchId && !matchDesc) return false;
+          const match =
+            item.name.toLowerCase().includes(q) ||
+            item.id.toLowerCase().includes(q) ||
+            item.description.toLowerCase().includes(q) ||
+            (item.supported_display || "").toLowerCase().includes(q);
+          if (!match) return false;
         }
 
         return true;
       });
 
-      // Sort
       filtered.sort((a, b) => {
-        if (currentSort === "tier") {
-          return a.tier_order - b.tier_order || a.name.localeCompare(b.name);
-        } else if (currentSort === "level") {
-          return b.max_level - a.max_level || a.name.localeCompare(b.name);
-        } else if (currentSort === "name_asc") {
-          return a.name.localeCompare(b.name);
-        } else if (currentSort === "name_desc") {
-          return b.name.localeCompare(a.name);
-        } else if (currentSort === "anvil") {
-          return b.anvil_cost - a.anvil_cost;
-        }
+        if (currentSort === "tier") return a.tier_order - b.tier_order || a.name.localeCompare(b.name);
+        if (currentSort === "level") return b.max_level - a.max_level || a.name.localeCompare(b.name);
+        if (currentSort === "name_asc") return a.name.localeCompare(b.name);
+        if (currentSort === "name_desc") return b.name.localeCompare(a.name);
+        if (currentSort === "anvil") return b.anvil_cost - a.anvil_cost || a.name.localeCompare(b.name);
         return 0;
       });
 
       return filtered;
     }
 
+    function resetAllFilters() {
+      currentTier = "all";
+      currentGear = "all";
+      currentObtain = "all";
+      currentSearch = "";
+      currentPage = 1;
+      searchInput.value = "";
+      clearSearchBtn.classList.remove("visible");
+      obtainSelect.value = "all";
+      document.querySelectorAll("#tierTabs .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.tier === "all"));
+      document.querySelectorAll("#gearChips .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.gear === "all"));
+      renderCards();
+    }
+
     function renderCards() {
       const filtered = filterAndSortData();
       const total = filtered.length;
-      resultsCount.innerText = `Đang hiển thị ${total} / ${allData.length} phù phép`;
+      resultsCount.innerHTML = `Showing <strong>${total}</strong> / <strong>${allData.length}</strong> enchantments`;
 
       const totalPages = Math.ceil(total / PAGE_SIZE) || 1;
       if (currentPage > totalPages) currentPage = totalPages;
@@ -1044,9 +1146,12 @@
       grid.innerHTML = "";
 
       if (paginated.length === 0) {
-        grid.innerHTML = `<div style="grid-column: 1 / -1; text-align: center; color: var(--text-dim); padding: 50px 20px; font-size: 1.05rem;">
-          Không tìm thấy phù phép nào phù hợp với bộ lọc hiện tại.
-        </div>`;
+        grid.innerHTML = `
+          <div class="empty-state">
+            <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-main);">Không tìm thấy phù phép nào phù hợp</div>
+            <div style="font-size: 0.85rem; margin-top: 4px;">Thử đổi từ khóa hoặc xóa bớt bộ lọc hiện tại.</div>
+            <button onclick="resetAllFilters()">Đặt lại bộ lọc</button>
+          </div>`;
         prevPageBtn.disabled = true;
         nextPageBtn.disabled = true;
         pageIndicator.innerText = "Trang 0 / 0";
@@ -1055,88 +1160,83 @@
 
       paginated.forEach(item => {
         const card = document.createElement("div");
-        card.className = `enchant-card tier-${item.tier}`;
+        const curseClass = isCurseItem(item) ? " is-curse" : "";
+        card.className = `enchant-card tier-${item.tier}${curseClass}`;
         card.onclick = () => openModal(item);
 
         const romanMax = getRomanNumeral(item.max_level);
-        const tierBadge = getTierBadgeHtml(item.tier);
-        const gearIcons = getGearIconList(item.gear_categories);
+        const gearText = escapeHtml(item.supported_display || "Compatible Gear");
 
         card.innerHTML = `
-          <div class="card-top">
-            <div class="card-title-group">
-              <span class="card-title">${item.name}</span>
-              <span class="card-vi-name">${item.name_vi !== item.name ? item.name_vi : item.id}</span>
-            </div>
-            <span class="card-level-badge">Cấp ${romanMax}</span>
+          <div class="card-header">
+            <div class="card-title">${escapeHtml(item.name)}</div>
+            <span class="lv-badge">Lv. ${romanMax}</span>
           </div>
 
-          <div class="card-badges-row">
-            ${tierBadge}
-            <span class="badge-pill badge-source">${item.source_pack.replace('_', ' ')}</span>
+          <div class="card-badges">
+            ${getTierBadgeHtml(item)}
+            ${getObtainBadgeHtml(item)}
           </div>
 
-          <p class="card-desc-snippet">${item.description}</p>
+          <p class="card-desc">${highlightNumbers(item.description)}</p>
 
           <div class="card-footer">
-            <span class="gear-icons" title="Trang bị tương thích">${gearIcons}</span>
-            <span style="color: var(--text-dim);">Chi tiết ↗</span>
+            <span class="gear-label">${getGearIcon(item.gear_categories)} ${gearText}</span>
+            <span class="card-cta">Details ↗</span>
           </div>
         `;
 
         grid.appendChild(card);
       });
 
-      // Pagination controls
       pageIndicator.innerText = `Trang ${currentPage} / ${totalPages}`;
       prevPageBtn.disabled = currentPage <= 1;
       nextPageBtn.disabled = currentPage >= totalPages;
     }
 
     function openModal(item) {
+      const colorMap = {
+        ultimate: "var(--gold)",
+        epic: "var(--epic)",
+        rare: "var(--rare)",
+        common: "#f8fafc"
+      };
+      const titleColor = isCurseItem(item) ? "var(--curse)" : (colorMap[item.tier] || "#f8fafc");
+
       modalTitle.innerText = item.name;
-      modalTitle.style.color = item.tier === "ultimate" ? "var(--gold-primary)" : 
-                               item.tier === "epic" ? "var(--epic-color)" : 
-                               item.tier === "rare" ? "var(--rare-color)" : 
-                               item.tier === "curse" ? "var(--curse-color)" : "#fff";
+      modalTitle.style.color = titleColor;
+      modalId.innerText = item.id;
 
-      modalSub.innerText = `${item.name_vi !== item.name ? 'Tên tiếng Việt: ' + item.name_vi + ' • ' : ''}ID: ${item.id}`;
-
-      // Alert for Ultimate or Curse
       if (item.tier === "ultimate") {
         modalAlert.style.display = "block";
-        modalAlert.style.background = "rgba(245, 158, 11, 0.15)";
-        modalAlert.style.borderColor = "#f59e0b";
+        modalAlert.style.background = "var(--gold-soft)";
+        modalAlert.style.borderColor = "var(--gold-border)";
         modalAlert.style.color = "#fde68a";
-        modalAlert.innerHTML = `<strong>👑 QUY TẮC ĐỘC QUYỀN ULTIMATE:</strong> Mỗi món trang bị chỉ được phép chứa tối đa <strong>1 phù phép Ultimate</strong>! Khi đã có phù phép Ultimate khác, không thể kết hợp thêm qua Đe.`;
-      } else if (item.tier === "curse") {
+        modalAlert.innerHTML = `<strong>👑 ULTIMATE RULE:</strong> Each item can hold at most <strong>1 Ultimate enchantment</strong>.`;
+      } else if (isCurseItem(item)) {
         modalAlert.style.display = "block";
-        modalAlert.style.background = "rgba(239, 68, 68, 0.15)";
-        modalAlert.style.borderColor = "#ef4444";
-        modalAlert.style.color = "#fca5a5";
-        modalAlert.innerHTML = `<strong>☠️ LỜI NGUYÊN (CURSE):</strong> Phù phép này mang lại rủi ro, hình phạt hoặc điều kiện bất lợi khi mặc hoặc sử dụng trang bị.`;
+        modalAlert.style.background = "var(--curse-soft)";
+        modalAlert.style.borderColor = "var(--curse-border)";
+        modalAlert.style.color = "#fecaca";
+        modalAlert.innerHTML = `<strong>☠️ CURSE:</strong> Applies a drawback, hazard, or penalty while equipped or used.`;
       } else {
         modalAlert.style.display = "none";
       }
 
-      modalDesc.innerHTML = `<strong>✨ Cơ chế & Tác dụng:</strong><br>${item.description}`;
+      modalDesc.innerHTML = highlightNumbers(item.description);
 
-      specTier.innerText = item.tier.toUpperCase();
-      specTier.style.color = modalTitle.style.color;
-      specMaxLv.innerText = `Cấp ${getRomanNumeral(item.max_level)} (Tối đa ${item.max_level})`;
-      specAnvil.innerText = `${item.anvil_cost} Level EXP`;
+      specTier.innerText = item.tier.toUpperCase() + (isCurseItem(item) ? " (CURSE)" : "");
+      specTier.style.color = titleColor;
+      specMaxLv.innerText = `Level ${getRomanNumeral(item.max_level)} (Max ${item.max_level})`;
+      specAnvil.innerText = `${item.anvil_cost} Levels`;
 
-      let srcText = [];
-      if (item.loot) srcText.push("🎁 Rương Kho Báu / Hầm Ngục");
-      if (item.table) srcText.push("🔮 Bàn Phù Phép (2-5%)");
-      if (item.tradeable) srcText.push("🧑‍🌾 Dân Làng Thủ Thư");
-      specSource.innerText = srcText.join(" • ") || "Chỉ tìm thấy qua sự kiện đặc biệt";
+      const sources = [];
+      if (item.loot) sources.push("Loot Chests");
+      if (item.table) sources.push("Enchanting Table");
+      if (item.tradeable) sources.push("Librarian Villager");
+      specSource.innerText = sources.join(" • ") || "Special Event";
 
-      if (item.supported_display) {
-        specGear.innerHTML = `<span style="color:#f8fafc; font-weight:700;">${item.supported_display}</span> <span style="color:#64748b; font-size:0.8rem; display:block; margin-top:2px;">[${item.supported_items}]</span>`;
-      } else {
-        specGear.innerText = `${item.supported_items}`;
-      }
+      specGear.innerHTML = `<span>${escapeHtml(item.supported_display || "Compatible Gear")}</span> <span style="color:var(--text-dim); font-size:0.78rem; font-weight:500; display:block; margin-top:2px;">${escapeHtml(item.supported_items)}</span>`;
       cmdText.innerText = item.give_command;
 
       modal.classList.add("active");
@@ -1149,24 +1249,39 @@
     function showToast(msg) {
       toast.innerText = msg;
       toast.classList.add("show");
-      setTimeout(() => toast.classList.remove("show"), 2500);
+      setTimeout(() => toast.classList.remove("show"), 2400);
     }
 
-    // Event Listeners
+    // Event bindings
     modalCloseBtn.onclick = closeModal;
     modal.onclick = (e) => { if (e.target === modal) closeModal(); };
 
     copyCmdBtn.onclick = () => {
       navigator.clipboard.writeText(cmdText.innerText).then(() => {
-        showToast("Đã copy lệnh /give vào Clipboard!");
+        showToast("Copied /give command to clipboard!");
       }).catch(() => {
-        showToast("Lỗi khi copy. Hãy bôi đen văn bản để copy thủ công.");
+        showToast("Copy failed — please copy manually.");
       });
     };
 
-    // Search & Sort listeners
     searchInput.addEventListener("input", (e) => {
       currentSearch = e.target.value.trim();
+      clearSearchBtn.classList.toggle("visible", currentSearch.length > 0);
+      currentPage = 1;
+      renderCards();
+    });
+
+    clearSearchBtn.onclick = () => {
+      searchInput.value = "";
+      currentSearch = "";
+      clearSearchBtn.classList.remove("visible");
+      currentPage = 1;
+      renderCards();
+      searchInput.focus();
+    };
+
+    obtainSelect.addEventListener("change", (e) => {
+      currentObtain = e.target.value;
       currentPage = 1;
       renderCards();
     });
@@ -1177,49 +1292,51 @@
       renderCards();
     });
 
-    // Tier Tabs
-    document.querySelectorAll(".tier-tab-btn").forEach(btn => {
+    function setTierFilter(tier) {
+      currentTier = tier;
+      currentPage = 1;
+      document.querySelectorAll("#tierTabs .filter-btn").forEach(b => {
+        b.classList.toggle("active", b.dataset.tier === tier);
+      });
+      renderCards();
+    }
+
+    document.querySelectorAll("#tierTabs .filter-btn").forEach(btn => {
+      btn.onclick = () => setTierFilter(btn.dataset.tier);
+    });
+
+    document.querySelectorAll(".stat-card[data-quick-tier]").forEach(card => {
+      card.onclick = () => setTierFilter(card.dataset.quickTier);
+    });
+
+    document.querySelectorAll("#gearChips .filter-btn").forEach(btn => {
       btn.onclick = () => {
-        document.querySelectorAll(".tier-tab-btn").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll("#gearChips .filter-btn").forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
-        currentTier = btn.dataset.tier;
+        currentGear = btn.dataset.gear;
         currentPage = 1;
         renderCards();
       };
     });
 
-    // Gear Chips
-    document.querySelectorAll(".gear-chip").forEach(chip => {
-      chip.onclick = () => {
-        document.querySelectorAll(".gear-chip").forEach(c => c.classList.remove("active"));
-        chip.classList.add("active");
-        currentGear = chip.dataset.gear;
-        currentPage = 1;
-        renderCards();
-      };
-    });
-
-    // Pagination
     prevPageBtn.onclick = () => {
       if (currentPage > 1) {
         currentPage--;
         renderCards();
-        window.scrollTo({ top: 380, behavior: "smooth" });
+        window.scrollTo({ top: 320, behavior: "smooth" });
       }
     };
 
     nextPageBtn.onclick = () => {
       currentPage++;
       renderCards();
-      window.scrollTo({ top: 380, behavior: "smooth" });
+      window.scrollTo({ top: 320, behavior: "smooth" });
     };
 
-    // Keyboard escape to close modal
     window.addEventListener("keydown", (e) => {
       if (e.key === "Escape") closeModal();
     });
 
-    // Initial render
     renderCards();
   </script>
 </body>
