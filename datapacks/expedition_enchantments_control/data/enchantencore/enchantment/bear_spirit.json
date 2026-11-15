@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantencore.bear_spirit",
     "fallback": "Bear Spirit",
-    "color": "light_purple"
+    "color": "aqua"
   },
   "exclusive_set": "#enchantencore:exclusive_set/spirit_wolf",
   "supported_items": "minecraft:wolf_armor",

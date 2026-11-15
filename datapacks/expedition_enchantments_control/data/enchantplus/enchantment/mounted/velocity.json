@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.enchantplus.velocity",
     "fallback": "Velocity",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#enchantplus:enchantable/mounted",
   "weight": 1,

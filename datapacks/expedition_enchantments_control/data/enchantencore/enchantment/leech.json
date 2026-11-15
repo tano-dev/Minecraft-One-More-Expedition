@@ -6,7 +6,7 @@
   },
   "supported_items": "#enchantencore:weapons",
   "primary_items": "#minecraft:enchantable/melee_weapon",
-  "weight": 2,
+  "weight": 1,
   "max_level": 1,
   "min_cost": {
     "base": 30,

@@ -7,9 +7,9 @@
 | Tier | Màu sắc | Số lượng | Nguồn kiếm chính | Quy tắc đặc biệt |
 | :--- | :--- | :---: | :--- | :--- |
 | **Ultimate** | Yellow (`yellow`) | **42** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
-| **Epic** | Light Purple (`light_purple`) | **69** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
+| **Epic** | Light Purple (`light_purple`) | **65** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
 | **Rare** | Aqua (`aqua`) | **104** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
-| **Common** | Gray (`gray`) | **133** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
+| **Common** | Gray (`gray`) | **137** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
 | **Curses** | Red (`red`) | **31** | Rương kho báu / Curse | Lời nguyền |
 | **Filtered Duplicates** | — | **38** | Đã tắt | Lọc trùng giữa các pack |
 
@@ -17,16 +17,16 @@
 
 | Loại trang bị | Tổng Enchant | Tổng Weight | Số Rare Enchantable | Tỉ lệ Rare (%) |
 | :--- | :---: | :---: | :---: | :---: |
-| **Sword** | 26 | 193 | 7 | **8.29%** |
-| **Pickaxe** | 5 | 55 | 1 | **5.45%** |
-| **Axe** | 14 | 137 | 1 | **2.19%** |
-| **Bow** | 11 | 61 | 6 | **9.84%** |
-| **Crossbow** | 6 | 45 | 2 | **4.44%** |
-| **Trident** | 9 | 80 | 3 | **5.0%** |
-| **Helmet** | 21 | 172 | 3 | **4.65%** |
-| **Chestplate** | 16 | 111 | 3 | **5.41%** |
-| **Leggings** | 17 | 125 | 4 | **7.2%** |
-| **Boots** | 30 | 181 | 8 | **7.73%** |
+| **Sword** | 29 | 196 | 7 | **8.16%** |
+| **Pickaxe** | 8 | 58 | 1 | **5.17%** |
+| **Axe** | 18 | 141 | 1 | **2.13%** |
+| **Bow** | 14 | 64 | 6 | **9.38%** |
+| **Crossbow** | 8 | 47 | 2 | **4.26%** |
+| **Trident** | 11 | 82 | 3 | **4.88%** |
+| **Helmet** | 24 | 175 | 3 | **4.57%** |
+| **Chestplate** | 18 | 113 | 3 | **5.31%** |
+| **Leggings** | 19 | 127 | 4 | **7.09%** |
+| **Boots** | 35 | 186 | 8 | **7.53%** |
 
 ## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (42)
 
@@ -75,37 +75,33 @@
 | `wither:soul_siphon` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/weapon` |
 | `wither:witherbound` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/armor` |
 
-## 4. Epic Enchants (Chỉ kiếm từ Kho báu / Hầm ngục) (69)
+## 4. Epic Enchants (Chỉ kiếm từ Kho báu / Hầm ngục) (65)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
-| `bound:bound` | 3 | `Bound-v3.0.3` | No | None | `#minecraft:enchantable/foot_armor` |
-| `enchantencore:bear_spirit` | 1 | `enchantments_encore` | No | 2 | `minecraft:wolf_armor` |
+| `bound:bound` | 3 | `Bound-v3.0.3` | Yes | None | `#minecraft:enchantable/foot_armor` |
 | `enchantencore:crab_claw` | 3 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/mining` |
 | `enchantencore:creeper_alloy` | 1 | `enchantments_encore` | No | 10 | `#minecraft:chest_armor` |
 | `enchantencore:emberweave` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/durability` |
-| `enchantencore:flare` | 1 | `enchantments_encore` | No | 5 | `#enchantencore:all_bows` |
-| `enchantencore:ghost_spirit` | 1 | `enchantments_encore` | No | 2 | `minecraft:wolf_armor` |
-| `enchantencore:hardened` | 3 | `enchantments_encore` | No | 10 | `minecraft:shield` |
+| `enchantencore:flare` | 1 | `enchantments_encore` | Yes | 5 | `#enchantencore:all_bows` |
+| `enchantencore:hardened` | 3 | `enchantments_encore` | Yes | 10 | `minecraft:shield` |
 | `enchantencore:haste` | 3 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/mining` |
-| `enchantencore:invisibility_cloak` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/foot_armor` |
-| `enchantencore:leech` | 1 | `enchantments_encore` | No | 2 | `#enchantencore:weapons` |
+| `enchantencore:invisibility_cloak` | 1 | `enchantments_encore` | Yes | 2 | `#minecraft:enchantable/foot_armor` |
+| `enchantencore:leech` | 1 | `enchantments_encore` | Yes | 2 | `#enchantencore:weapons` |
 | `enchantencore:lightning_bolt` | 1 | `enchantments_encore` | No | 2 | `#enchantencore:all_bows` |
-| `enchantencore:magma_walker` | 1 | `enchantments_encore` | No | 10 | `#minecraft:enchantable/foot_armor` |
-| `enchantencore:moonweave` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/durability` |
-| `enchantencore:pegasus` | 1 | `enchantments_encore` | No | 2 | `#enchantencore:all_horse_armor` |
+| `enchantencore:magma_walker` | 1 | `enchantments_encore` | Yes | 10 | `#minecraft:enchantable/foot_armor` |
+| `enchantencore:moonweave` | 1 | `enchantments_encore` | Yes | 2 | `#minecraft:enchantable/durability` |
 | `enchantencore:refuel` | 1 | `enchantments_encore` | No | 2 | `minecraft:elytra` |
 | `enchantencore:tideweave` | 1 | `enchantments_encore` | No | 10 | `#minecraft:enchantable/durability` |
 | `enchantencore:trial_runner` | 1 | `enchantments_encore` | No | 5 | `#minecraft:foot_armor` |
 | `enchantencore:voidweave` | 1 | `enchantments_encore` | No | 2 | `#minecraft:enchantable/durability` |
 | `enchantplus:boots/agility` | 5 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/foot_armor` |
-| `enchantplus:helmet/auto_feed` | 1 | `NeoEnchant-5.16.0` | No | 10 | `#minecraft:enchantable/head_armor` |
+| `enchantplus:helmet/auto_feed` | 1 | `NeoEnchant-5.16.0` | Yes | 10 | `#minecraft:enchantable/head_armor` |
 | `enchantplus:mace/striker` | 1 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/mace` |
 | `enchantplus:mace/wind_propulsion` | 3 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/mace` |
 | `enchantplus:sword/critical` | 3 | `NeoEnchant-5.16.0` | No | 2 | `#minecraft:enchantable/melee_weapon` |
 | `enchantplus:sword/reach` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/melee_weapon` |
 | `enchantsplus:ice_aspect` | 2 | `Enchants Plus v2.1 26.3` | No | 5 | `#minecraft:enchantable/fire_aspect` |
-| `enchantsplus:pyrolysis` | 1 | `Enchants Plus v2.1 26.3` | No | 2 | `#minecraft:enchantable/mining_loot` |
 | `enchantsplus:swift_strike` | 5 | `Enchants Plus v2.1 26.3` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
 | `mt:armor/basalt_boots` | 1 | `mine-treasure-1.6.5` | No | 2 | `#minecraft:foot_armor` |
 | `mt:armor/boomproof_cap` | 1 | `mine-treasure-1.6.5` | No | 2 | `#minecraft:foot_armor` |
@@ -143,7 +139,7 @@
 | `nova_structures:antidote` | 1 | `Dungeons and Taverns v6.1.0` | No | 10 | `#minecraft:enchantable/chest_armor` |
 | `nova_structures:ghasted` | 3 | `Dungeons and Taverns v6.1.0` | No | 2 | `#minecraft:enchantable/crossbow` |
 | `nova_structures:multishot` | 1 | `Dungeons and Taverns v6.1.0` | No | 2 | `#minecraft:enchantable/bow` |
-| `nova_structures:photosynthesis` | 1 | `Dungeons and Taverns v6.1.0` | No | 2 | `#minecraft:enchantable/durability` |
+| `nova_structures:photosynthesis` | 1 | `Dungeons and Taverns v6.1.0` | Yes | 2 | `#minecraft:enchantable/durability` |
 | `nova_structures:traveler` | 3 | `Dungeons and Taverns v6.1.0` | No | 10 | `#minecraft:enchantable/foot_armor` |
 | `nova_structures:wither_coated` | 3 | `Dungeons and Taverns v6.1.0` | No | 2 | `#nova_structures:enchantable/wither_coated` |
 | `stellarity:ambush` | 3 | `Stellarity-6.0.1` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
@@ -154,6 +150,7 @@
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
 | `enchantencore:armor_piercing` | 3 | `enchantments_encore` | Yes | 5 | `minecraft:crossbow` |
+| `enchantencore:bear_spirit` | 1 | `enchantments_encore` | No | 2 | `minecraft:wolf_armor` |
 | `enchantencore:boar_spirit` | 1 | `enchantments_encore` | Yes | 5 | `minecraft:wolf_armor` |
 | `enchantencore:boltbringer` | 1 | `enchantments_encore` | No | 5 | `minecraft:mace` |
 | `enchantencore:bulletproof` | 1 | `enchantments_encore` | No | 5 | `#minecraft:chest_armor` |
@@ -166,6 +163,7 @@
 | `enchantencore:evokers_wrath` | 1 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/crossbow` |
 | `enchantencore:fire_alloy` | 1 | `enchantments_encore` | No | 10 | `#minecraft:chest_armor` |
 | `enchantencore:forge_shot` | 1 | `enchantments_encore` | Yes | 10 | `#enchantencore:all_bows` |
+| `enchantencore:ghost_spirit` | 1 | `enchantments_encore` | No | 2 | `minecraft:wolf_armor` |
 | `enchantencore:gluttony` | 5 | `enchantments_encore` | Yes | 10 | `#enchantencore:all_tools` |
 | `enchantencore:growth` | 5 | `enchantments_encore` | Yes | 10 | `#enchantencore:valid_for_growth` |
 | `enchantencore:heroes_crown` | 1 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/head_armor` |
@@ -215,7 +213,6 @@
 | `enchantplus:elytra/propulsion` | 3 | `NeoEnchant-5.16.0` | Yes | 5 | `#voxel:enchantable/elytra` |
 | `enchantplus:leggings/fast_swim` | 1 | `NeoEnchant-5.16.0` | Yes | 5 | `#minecraft:enchantable/leg_armor` |
 | `enchantplus:mounted/ethereal_leap` | 3 | `NeoEnchant-5.16.0` | Yes | 5 | `#enchantplus:enchantable/mounted` |
-| `enchantplus:mounted/velocity` | 3 | `NeoEnchant-5.16.0` | Yes | 5 | `#enchantplus:enchantable/mounted` |
 | `enchantplus:sword/death_touch` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/weapon` |
 | `enchantplus:sword/dimensional_hit` | 3 | `NeoEnchant-5.16.0` | Yes | 5 | `#minecraft:enchantable/melee_weapon` |
 | `enchantplus:sword/fear` | 3 | `NeoEnchant-5.16.0` | No | 10 | `#minecraft:enchantable/melee_weapon` |
@@ -247,7 +244,6 @@
 | `minecraft:wind_burst` | 3 | `enchantments_encore` | No | 5 | `#minecraft:enchantable/mace` |
 | `nova_structures:aerials_bane` | 5 | `Dungeons and Taverns v6.1.0` | Yes | 5 | `#nova_structures:enchantable/combat_tools` |
 | `nova_structures:gravity` | 3 | `Dungeons and Taverns v6.1.0` | No | 5 | `#minecraft:enchantable/crossbow` |
-| `nova_structures:hydro_veil` | 4 | `Dungeons and Taverns v6.1.0` | Yes | 5 | `#minecraft:harnesses` |
 | `nova_structures:illagers_bane` | 5 | `Dungeons and Taverns v6.1.0` | Yes | 5 | `#nova_structures:enchantable/combat_weapons` |
 | `nova_structures:outreach` | 4 | `Dungeons and Taverns v6.1.0` | No | 5 | `#minecraft:enchantable/chest_armor` |
 | `nova_structures:piercing` | 4 | `Dungeons and Taverns v6.1.0` | Yes | 5 | `#minecraft:enchantable/bow` |
@@ -258,7 +254,7 @@
 | `stellarity:levitation_shot` | 5 | `Stellarity-6.0.1` | No | 5 | `#minecraft:enchantable/bow` |
 | `veinminer-enchantment:veinminer` | 1 | `veinminer-enchantment-1.3.6` | Yes | 1 | `#minecraft:pickaxes` |
 
-## 6. Common Enchants (133)
+## 6. Common Enchants (137)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -303,6 +299,7 @@
 | `enchantencore:ominous_aura` | 1 | `enchantments_encore` | No | 10 | `#minecraft:head_armor` |
 | `enchantencore:oozing_aspect` | 2 | `enchantments_encore` | Yes | 10 | `#minecraft:enchantable/fire_aspect` |
 | `enchantencore:pale_aura` | 1 | `enchantments_encore` | No | 10 | `#minecraft:head_armor` |
+| `enchantencore:pegasus` | 1 | `enchantments_encore` | Yes | 2 | `#enchantencore:all_horse_armor` |
 | `enchantencore:phantom_menace` | 3 | `enchantments_encore` | Yes | 10 | `#enchantencore:all_bows` |
 | `enchantencore:pickpocket` | 1 | `enchantments_encore` | Yes | 10 | `#minecraft:chest_armor` |
 | `enchantencore:ping_tag` | 1 | `enchantments_encore` | Yes | 10 | `#enchantencore:valid_for_ping_tag` |
@@ -313,9 +310,9 @@
 | `enchantencore:purify_water` | 1 | `enchantments_encore` | Yes | 10 | `#minecraft:enchantable/trident` |
 | `enchantencore:rabbit_foot` | 3 | `enchantments_encore` | Yes | 10 | `#minecraft:foot_armor` |
 | `enchantencore:rainweave` | 1 | `enchantments_encore` | Yes | 10 | `#minecraft:enchantable/durability` |
-| `enchantencore:sacrifice` | 3 | `enchantments_encore` | No | 10 | `#enchantencore:all_enchantable_wolf_armor` |
+| `enchantencore:sacrifice` | 3 | `enchantments_encore` | Yes | 10 | `#enchantencore:all_enchantable_wolf_armor` |
 | `enchantencore:safe_landing` | 3 | `enchantments_encore` | Yes | 10 | `minecraft:elytra` |
-| `enchantencore:scent` | 1 | `enchantments_encore` | No | 10 | `minecraft:wolf_armor` |
+| `enchantencore:scent` | 1 | `enchantments_encore` | Yes | 10 | `minecraft:wolf_armor` |
 | `enchantencore:seeker` | 3 | `enchantments_encore` | Yes | 10 | `#minecraft:enchantable/head_armor` |
 | `enchantencore:sparking_aura` | 1 | `enchantments_encore` | No | 10 | `#minecraft:head_armor` |
 | `enchantencore:sticky_aura` | 1 | `enchantments_encore` | No | 10 | `#minecraft:head_armor` |
@@ -332,8 +329,10 @@
 | `enchantplus:hoe/seiors_oblivion` | 1 | `NeoEnchant-5.16.0` | No | 10 | `#voxel:enchantable/hoes` |
 | `enchantplus:mounted/cavalier_egis` | 3 | `NeoEnchant-5.16.0` | Yes | 10 | `#enchantplus:enchantable/mounted` |
 | `enchantplus:mounted/steel_fang` | 5 | `NeoEnchant-5.16.0` | Yes | 10 | `#enchantplus:enchantable/dog` |
+| `enchantplus:mounted/velocity` | 3 | `NeoEnchant-5.16.0` | Yes | 5 | `#enchantplus:enchantable/mounted` |
 | `enchantsplus:kinetic_protection` | 4 | `Enchants Plus v2.1 26.3` | Yes | 10 | `#minecraft:enchantable/head_armor` |
 | `enchantsplus:precision` | 2 | `Enchants Plus v2.1 26.3` | Yes | 10 | `minecraft:crossbow, minecraft:bow` |
+| `enchantsplus:pyrolysis` | 1 | `Enchants Plus v2.1 26.3` | Yes | 2 | `#minecraft:enchantable/mining_loot` |
 | `enchantsplus:skyguard` | 4 | `Enchants Plus v2.1 26.3` | Yes | 10 | `minecraft:elytra` |
 | `enchantsplus:stride` | 3 | `Enchants Plus v2.1 26.3` | Yes | 10 | `#minecraft:enchantable/leg_armor` |
 | `kattersstructures:heavy` | 5 | `Katters Structures v2.9` | Yes | 10 | `#minecraft:enchantable/weapon` |
@@ -380,6 +379,7 @@
 | `mt:treasure/slow` | 1 | `mine-treasure-1.6.5` | No | 10 | `#minecraft:enchantable/armor` |
 | `mt:treasure/standard` | 1 | `mine-treasure-1.6.5` | No | 10 | `#minecraft:enchantable/armor` |
 | `nova_structures:function_only` | 5 | `Dungeons and Taverns v6.1.0` | No | 10 | `minecraft:stick, minecraft:flint` |
+| `nova_structures:hydro_veil` | 4 | `Dungeons and Taverns v6.1.0` | Yes | 5 | `#minecraft:harnesses` |
 | `stellarity:_technical/daybroken` | 1 | `Stellarity-6.0.1` | No | 10 | `minecraft:diamond_sword` |
 | `stellarity:_technical/draconic` | 1 | `Stellarity-6.0.1` | No | 10 | `minecraft:netherite_sword` |
 | `stellarity:_technical/infernal_infusion` | 1 | `Stellarity-6.0.1` | No | 10 | `minecraft:netherite_sword, minecraft:crossbow` |

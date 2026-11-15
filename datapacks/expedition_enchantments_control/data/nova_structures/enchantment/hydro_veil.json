@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.dnt.hydro_veil",
     "fallback": "Hydro Veil",
-    "color": "aqua"
+    "color": "gray"
   },
   "supported_items": "#minecraft:harnesses",
   "weight": 1,

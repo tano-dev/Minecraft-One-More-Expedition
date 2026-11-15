@@ -2,10 +2,10 @@
   "description": {
     "translate": "enchantment.enchantsplus.pyrolysis",
     "fallback": "Pyrolysis",
-    "color": "light_purple"
+    "color": "gray"
   },
   "supported_items": "#minecraft:enchantable/mining_loot",
-  "weight": 2,
+  "weight": 1,
   "max_level": 1,
   "min_cost": {
     "base": 25,
