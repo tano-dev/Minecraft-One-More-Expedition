@@ -334,16 +334,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -1511,10 +1503,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "nova_structures:ghasted",
         "name": "Ghasted"
       },
@@ -1529,10 +1517,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "minecraft:power",
         "name": "Power"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2086,10 +2070,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2100,10 +2080,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2185,10 +2161,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2199,10 +2171,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2276,10 +2244,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2290,10 +2254,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2371,10 +2331,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2385,10 +2341,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2467,10 +2419,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2485,10 +2433,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -2976,10 +2920,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -2990,10 +2930,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -3057,16 +2993,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -3448,10 +3376,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/dimensional_hit",
         "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "enchantplus:sword/runic_despair",
@@ -4869,10 +4793,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Dimensional Hit"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "enchantplus:sword/tears_of_asflors",
         "name": "Tears of Asflors"
       }
@@ -4964,10 +4884,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Critical Strike"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -4978,10 +4894,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -5105,14 +5017,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/death_touch",
         "name": "Death Touch"
-      },
-      {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "enchantplus:sword/runic_despair",
@@ -6450,88 +6354,8 @@ window.ALL_ENCHANTMENTS = [
       "weapon"
     ],
     "supported_display": "Swords & Melee Weapons",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)",
-      "Sword Effects (Enchant+)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
-        "id": "enchantplus:sword/death_touch",
-        "name": "Death Touch"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "enchantplus:sword/dimensional_hit",
-        "name": "Dimensional Hit"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      },
-      {
-        "id": "enchantplus:sword/tears_of_asflors",
-        "name": "Tears of Asflors"
-      }
-    ],
+    "exclusive_groups": [],
+    "conflicts": [],
     "description": "Delays Creeper fuse explosions on hit; delay scales across Lv I–III.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/fear\":3}}] 1"
   },
@@ -7715,16 +7539,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -8692,20 +8508,12 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -9266,16 +9074,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "minecraft:impaling",
         "name": "Impaling"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -12560,94 +12360,16 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Swords & Melee Weapons",
     "exclusive_groups": [
-      "Damage (Sharpness / Bane)",
-      "Reach",
-      "Sword Attributes (Enchant+)"
+      "Reach"
     ],
     "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
       {
         "id": "enchantencore:crab_claw",
         "name": "Crab Claw"
       },
       {
-        "id": "enchantplus:sword/critical",
-        "name": "Critical"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
         "id": "enchantencore:reach_curse",
         "name": "Curse of Reach"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "enchantplus:sword/dimensional_hit",
-        "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/runic_despair",
-        "name": "Runic Despair"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
       }
     ],
     "description": "Extends melee entity attack range by +1 block (+0.5 per level above I, up to +2.0 blocks at Lv III).",
@@ -13029,10 +12751,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/dimensional_hit",
         "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       }
     ],
     "description": "Multiplies melee damage dealt inside the Runic Dimension across Lv I–III.",
@@ -13591,10 +13309,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -13605,10 +13319,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:smite",
@@ -13966,10 +13676,6 @@ window.ALL_ENCHANTMENTS = [
         "name": "Density"
       },
       {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
-      },
-      {
         "id": "mt:technical/grenade",
         "name": "Grenade Window"
       },
@@ -13980,10 +13686,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "mt:technical/kinetic_bomb",
         "name": "Kinetic Bomb"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
       },
       {
         "id": "minecraft:sharpness",
@@ -15019,10 +14721,6 @@ window.ALL_ENCHANTMENTS = [
       {
         "id": "enchantplus:sword/dimensional_hit",
         "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/fear",
-        "name": "Fear"
       }
     ],
     "description": "Converts XP into +3 bonus damage (+1 per level above I, up to +5 at Lv III) on hit.",
