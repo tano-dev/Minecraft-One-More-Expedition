@@ -23,3 +23,13 @@ config/**/data/
 config/**/tmp/
 config/skinrestorer/mojang_profile_cache.json
 
+
+# Modpack runtime & player data
+config/expedition-quests/grid_cache/
+config/expedition-quests/players/
+config/expedition-quests/explored_locations.json
+config/expedition-quests/precomputed_targets.json
+config/expedition-fishing/playerdata/
+config/Veinminer/update/
+a.md
+a.pdf

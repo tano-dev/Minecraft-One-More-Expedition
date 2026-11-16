@@ -1,0 +1,48 @@
+{
+    "tierChances":  {
+                        "rare":  0.05,
+                        "ultimate":  0,
+                        "epic":  0.005
+                    },
+    "levelCurves":  {
+                        "2":  {
+                                  "2":  30,
+                                  "1":  70
+                              },
+                        "4":  {
+                                  "2":  50,
+                                  "4":  15,
+                                  "3":  35
+                              },
+                        "5":  {
+                                  "2":  35,
+                                  "5":  10,
+                                  "4":  20,
+                                  "3":  35
+                              },
+                        "1":  {
+                                  "1":  100
+                              },
+                        "3":  {
+                                  "2":  35,
+                                  "1":  50,
+                                  "3":  15
+                              }
+                    },
+    "enabled":  true,
+    "enableRevealUi":  true,
+    "godrollEpicChance":  0.15,
+    "godrollMinEnchants":  6,
+    "godrollRareChance":  0.35,
+    "tierOverrides":  {
+
+                      },
+    "enchantCountWeights":  {
+                                "2":  20,
+                                "5":  8,
+                                "4":  22,
+                                "3":  50
+                            },
+    "godrollChance":  0.008,
+    "godrollMaxEnchants":  6
+}

@@ -107,9 +107,9 @@ public class ExpeditionQuestsApi {
         }
 
         String tag = switch (tracked.difficulty) {
-            case "EASY" -> "[E]";
-            case "MEDIUM" -> "[M]";
-            default -> "[H]";
+            case "EASY" -> "\u00a7a[E]\u00a7r";
+            case "MEDIUM" -> "\u00a7e[M]\u00a7r";
+            default -> "\u00a7c[H]\u00a7r";
         };
 
         String line;
@@ -123,17 +123,19 @@ public class ExpeditionQuestsApi {
                         .replace("Explore Structure: ", "")
                         .replace("Explore Dungeon: ", "");
                 if (shortName.length() > 14) shortName = shortName.substring(0, 13) + "..";
-                line = tag + " " + arrow + " " + shortName + " " + dist + "m (" + tracked.targetX + "," + tracked.targetZ + ")";
+                line = tag + " \u00a7b" + arrow + " \u00a7f" + shortName + " \u00a7e" + dist + "m \u00a77(\u00a7f" + tracked.targetX + "\u00a77,\u00a7f" + tracked.targetZ + "\u00a77)";
             } else if (!sameDim) {
                 String dimTag = tracked.dimension.contains("nether") ? "Nether" : (tracked.dimension.contains("end") ? "The End" : "Overworld");
-                line = tag + " [" + dimTag + "] " + tracked.displayName;
+                line = tag + " \u00a7d[" + dimTag + "] \u00a7f" + tracked.displayName;
             } else {
-                line = tag + " " + tracked.displayName + ": 0/1";
+                line = tag + " \u00a7f" + tracked.displayName + "\u00a77: \u00a7e0/1";
             }
         } else {
             String shortName = tracked.displayName;
-            if (shortName.length() > 20) shortName = shortName.substring(0, 19) + "..";
-            line = tag + " " + shortName + ": " + tracked.currentProgress + "/" + tracked.requiredProgress;
+            if (shortName.length() > 18) shortName = shortName.substring(0, 17) + "..";
+            boolean ready = tracked.currentProgress >= tracked.requiredProgress;
+            String progColor = ready ? "\u00a7a" : "\u00a7e";
+            line = tag + " \u00a7f" + shortName + "\u00a77: " + progColor + tracked.currentProgress + "\u00a77/\u00a7e" + tracked.requiredProgress;
         }
 
         return List.of(line);

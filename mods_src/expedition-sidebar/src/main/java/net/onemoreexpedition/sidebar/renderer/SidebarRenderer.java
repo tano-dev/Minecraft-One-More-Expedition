@@ -282,10 +282,12 @@ public class SidebarRenderer {
             List<String> qLines = QuestIntegration.getActiveQuestLines(player, 1);
             if (!qLines.isEmpty()) {
                 int done = QuestIntegration.getCompletedToday(player.getUUID());
-                list.add(Component.literal(" \u2316 Quest (" + done + "/10):")
-                        .withStyle(ChatFormatting.GOLD));
+                list.add(Component.literal(" \u2316 Quest (")
+                        .withStyle(ChatFormatting.GOLD)
+                        .append(Component.literal(String.valueOf(done)).withStyle(ChatFormatting.GREEN))
+                        .append(Component.literal("/10):").withStyle(ChatFormatting.GOLD)));
                 for (String ql : qLines) {
-                    list.add(Component.literal("  • " + ql).withStyle(ChatFormatting.WHITE));
+                    list.add(Component.literal("  " + ql));
                 }
             }
         }

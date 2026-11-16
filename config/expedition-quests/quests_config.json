@@ -1,0 +1,103 @@
+{
+  "progression": {
+    "max_level": 50,
+    "nether_unlock_level": 15,
+    "end_unlock_level": 30,
+    "require_end_unlock_for_elytra_quests": true,
+    "coin_bonus_per_level": 0.01,
+    "nether_quest_reward_multiplier": 1.20,
+    "end_quest_reward_multiplier": 1.40
+  },
+  "daily_slots": {
+    "easy_slots": 5,
+    "medium_slots": 3,
+    "hard_slots": 2,
+    "draft_choices_per_slot": 4,
+    "base_free_rerolls_per_day": 1
+  },
+  "exploration_distances": {
+    "origin_mode": "PLAYER_POS",
+    "visited_grid_cell_size_blocks": 64,
+    "min_isolation_between_claimed_targets_blocks": 256,
+    "auto_expand_if_explored_step_blocks": 600,
+    "max_auto_expand_attempts": 5,
+    "distance_reward_bonus_per_1000_blocks": 0.10,
+    "dimension_distance_multipliers": {
+      "minecraft:overworld": 1.0,
+      "minecraft:the_nether": 0.65,
+      "minecraft:the_end": 1.15
+    },
+    "biome": {
+      "reward_multiplier": 1.35,
+      "capture_radius_blocks": 64,
+      "easy_min_blocks": 500,
+      "easy_max_blocks": 1200,
+      "medium_min_blocks": 1500,
+      "medium_max_blocks": 2800,
+      "hard_min_blocks": 3500,
+      "hard_max_blocks": 6000
+    },
+    "structure": {
+      "reward_multiplier": 1.50,
+      "capture_radius_blocks": 48,
+      "easy_min_blocks": 600,
+      "easy_max_blocks": 1300,
+      "medium_min_blocks": 1600,
+      "medium_max_blocks": 3200,
+      "hard_min_blocks": 3800,
+      "hard_max_blocks": 6500
+    },
+    "dungeon": {
+      "reward_multiplier": 1.75,
+      "capture_radius_blocks": 40,
+      "easy_min_blocks": 700,
+      "easy_max_blocks": 1500,
+      "medium_min_blocks": 1800,
+      "medium_max_blocks": 3500,
+      "hard_min_blocks": 4200,
+      "hard_max_blocks": 7500
+    }
+  },
+  "travel_action_distances": {
+    "waypoint_checkpoint_interval_blocks": 12,
+    "boat": {
+      "easy_blocks": 500,
+      "medium_blocks": 1200,
+      "hard_blocks": 2500
+    },
+    "land_mount": {
+      "easy_blocks": 600,
+      "medium_blocks": 1500,
+      "hard_blocks": 3000
+    },
+    "lava_strider": {
+      "easy_blocks": 300,
+      "medium_blocks": 700,
+      "hard_blocks": 1500
+    },
+    "elytra_flight": {
+      "easy_blocks": 1000,
+      "medium_blocks": 2500,
+      "hard_blocks": 5000
+    }
+  },
+  "rewards_daily_multiplier": {
+    "scale_with_economycraft_daily": true,
+    "easy_daily_mult": 0.15,
+    "medium_daily_mult": 0.35,
+    "hard_daily_mult": 0.75,
+    "all_10_completed_bonus_daily_mult": 1.20,
+    "easy_adventure_xp": 50,
+    "medium_adventure_xp": 130,
+    "hard_adventure_xp": 320,
+    "all_10_completed_bonus_xp": 300
+  },
+  "enchantments": {
+    "adventurer_xp_bonus_per_level": 0.05,
+    "bounty_hunter_coin_bonus_per_level": 0.04,
+    "pathfinder_speed_per_level": 0.08,
+    "pathfinder_capture_radius_bonus_per_level": 16,
+    "contract_master_extra_choices": 1,
+    "contract_master_extra_rerolls": 1
+  }
+}
