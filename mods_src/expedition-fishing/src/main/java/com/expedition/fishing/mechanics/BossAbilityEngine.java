@@ -42,9 +42,11 @@ public class BossAbilityEngine {
         public final String rarity;
         public final JsonObject spawnCfg;
         public final ServerBossEvent bossBar;
+        public final double expectedMaxHp;
         public final Map<String, Integer> abilityCooldowns = new HashMap<>();
         public int aggroHitCooldown = 0;
         public int pullTicksRemaining = 50;
+        public int rapidFireballCooldown = 20;
 
         public ActiveCreatureController(
                 UUID entityUuid,
@@ -54,7 +56,8 @@ public class BossAbilityEngine {
                 String displayName,
                 String rarity,
                 JsonObject spawnCfg,
-                ServerBossEvent bossBar
+                ServerBossEvent bossBar,
+                double expectedMaxHp
         ) {
             this.entityUuid = entityUuid;
             this.ownerUuid = ownerUuid;
@@ -64,6 +67,7 @@ public class BossAbilityEngine {
             this.rarity = rarity;
             this.spawnCfg = spawnCfg;
             this.bossBar = bossBar;
+            this.expectedMaxHp = expectedMaxHp;
 
             if (spawnCfg != null && spawnCfg.has("abilities") && spawnCfg.get("abilities").isJsonArray()) {
                 for (JsonElement el : spawnCfg.getAsJsonArray("abilities")) {
@@ -111,7 +115,7 @@ public class BossAbilityEngine {
         }
 
         CONTROLLERS.put(entity.getUUID(), new ActiveCreatureController(
-                entity.getUUID(), owner.getUUID(), level.dimension(), mobId, displayName, rarity, spawnCfg, bar
+                entity.getUUID(), owner.getUUID(), level.dimension(), mobId, displayName, rarity, spawnCfg, bar, entity.getMaxHealth()
         ));
     }
 
@@ -141,6 +145,15 @@ public class BossAbilityEngine {
                 if (ctrl.bossBar != null) ctrl.bossBar.removeAllPlayers();
                 it.remove();
                 continue;
+            }
+
+            // Guard against external datapacks (e.g. Stellarity) resetting MAX_HEALTH after spawn!
+            if (ctrl.expectedMaxHp > 10.0 && Math.abs(boss.getMaxHealth() - ctrl.expectedMaxHp) > 1.0) {
+                var hpAttr = boss.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH);
+                if (hpAttr != null) {
+                    hpAttr.setBaseValue(ctrl.expectedMaxHp);
+                    boss.setHealth((float) ctrl.expectedMaxHp);
+                }
             }
 
             // 1. Update BossBar every 4 ticks
@@ -246,6 +259,27 @@ public class BossAbilityEngine {
             // 4. Custom Aggro AI (for Dolphins, Squids, Fish, Striders, Mounts, or mobs with 'aggro' block)
             if (ctrl.spawnCfg != null && ctrl.spawnCfg.has("aggro") && ctrl.spawnCfg.get("aggro").isJsonObject()) {
                 tickCustomAggro(level, boss, target, ctrl, ctrl.spawnCfg.getAsJsonObject("aggro"));
+            }
+
+            // 4b. Rapid-Fire Fireball Barrage for Ghast Broodmother & Wailing Ghast Duo
+            if ("ghast_broodmother".equals(ctrl.mobId) || "wailing_ghast_duo".equals(ctrl.mobId)) {
+                if (ctrl.rapidFireballCooldown > 0) {
+                    ctrl.rapidFireballCooldown--;
+                } else if (boss.distanceToSqr(target) <= 42.0 * 42.0) {
+                    ctrl.rapidFireballCooldown = "ghast_broodmother".equals(ctrl.mobId) ? 24 : 34; // Every 1.2s for Broodmother!
+                    Vec3 eye = boss.position().add(0, boss.getBbHeight() * 0.5, 0);
+                    Vec3 aim = target.position().add(0, 0.8, 0).subtract(eye).normalize();
+                    Vec3 spawnAt = eye.add(aim.scale(2.2));
+                    EntityType<?> fbType = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace("small_fireball"));
+                    Entity fb = fbType != null ? fbType.create(level, EntitySpawnReason.EVENT) : null;
+                    if (fb != null) {
+                        fb.setPos(spawnAt.x, spawnAt.y, spawnAt.z);
+                        fb.setDeltaMovement(aim.scale(1.65));
+                        level.addFreshEntity(fb);
+                    }
+                    level.sendParticles(ParticleTypes.FLAME, spawnAt.x, spawnAt.y, spawnAt.z, 10, 0.25, 0.25, 0.25, 0.05);
+                    level.playSound(null, boss.blockPosition(), SoundEvents.GHAST_SHOOT, SoundSource.HOSTILE, 1.0f, 1.15f);
+                }
             }
 
             // 5. Boss Abilities Execution

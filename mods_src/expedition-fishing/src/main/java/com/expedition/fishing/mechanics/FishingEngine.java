@@ -859,6 +859,11 @@ public class FishingEngine {
         entity.setPos(spawnPos.x, spawnPos.y, spawnPos.z);
         entity.setCustomName(Component.literal(FishingItemFactory.getRarityColor(rarity) + displayName));
         entity.setCustomNameVisible(true);
+        // Prevent external datapacks (Stellarity phantom enlarge, More Mobs, etc.) from overwriting our custom HP/stats!
+        entity.addTag("stellarity.phantom.aware");
+        entity.addTag("stellarity.aware");
+        entity.addTag("mob_manager.settings.exclude");
+        entity.addTag("expedition_fishing.mob");
         if (vel != null) {
             entity.setDeltaMovement(vel);
         }
