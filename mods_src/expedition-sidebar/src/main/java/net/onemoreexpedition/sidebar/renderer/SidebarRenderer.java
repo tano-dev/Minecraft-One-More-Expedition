@@ -274,7 +274,7 @@ public class SidebarRenderer {
             long curXp = QuestIntegration.getCurrentXp(player.getUUID());
             long reqXp = QuestIntegration.getRequiredXp(player.getUUID());
             String aDetail = aLv >= 50 ? " MAX" : String.format(Locale.US, " %.0f%% (%d/%d)", aPct, curXp, reqXp);
-            list.add(Component.literal(" 🧭 Adventure: ")
+            list.add(Component.literal(" ✦ Adventure: ")
                     .withStyle(ChatFormatting.GRAY)
                     .append(Component.literal("Lv." + aLv).withStyle(ChatFormatting.GREEN))
                     .append(Component.literal(aDetail).withStyle(ChatFormatting.YELLOW)));
@@ -282,7 +282,7 @@ public class SidebarRenderer {
             List<String> qLines = QuestIntegration.getActiveQuestLines(player, 3);
             if (!qLines.isEmpty()) {
                 int done = QuestIntegration.getCompletedToday(player.getUUID());
-                list.add(Component.literal(" 📜 Quests (" + done + "/10):")
+                list.add(Component.literal(" ⌖ Quests (" + done + "/10):")
                         .withStyle(ChatFormatting.GOLD));
                 for (String ql : qLines) {
                     list.add(Component.literal("  • " + ql).withStyle(ChatFormatting.WHITE));

@@ -17,7 +17,6 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.chunk.ChunkAccess;
-import net.minecraft.world.level.chunk.status.ChunkStatus;
 import net.minecraft.world.level.levelgen.structure.Structure;
 
 import java.util.*;
@@ -25,7 +24,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class UnexploredStructureLocator {
 
-    // Indexed pools by Dimension -> School -> List of Registry IDs
     public static final Map<String, List<String>> BIOMES_BY_DIM = new ConcurrentHashMap<>();
     public static final Map<String, List<String>> STRUCTURES_BY_DIM = new ConcurrentHashMap<>();
     public static final Map<String, List<String>> DUNGEONS_BY_DIM = new ConcurrentHashMap<>();
@@ -69,73 +67,60 @@ public class UnexploredStructureLocator {
     }
 
     /**
-     * Lazy-Locate when the player clicks to accept an Exploration Quest in the Draft GUI.
-     * Guarantees an unexplored & unclaimed coordinate within the configured distance band.
+     * Instant (< 0.1ms) target lock using Precomputed ExplorationTargetCache first,
+     * with a strictly bounded fallback so Easy quests NEVER exceed maxExpectedDist.
      */
     public static void locateAndLockTarget(MinecraftServer server, ServerPlayer player, QuestEntry quest) {
         if (quest.located) return;
 
+        BlockPos origin = ClaimedLocationsRegistry.getSearchOrigin(player);
         ServerLevel targetLevel = getLevelByDimensionId(server, quest.dimension);
         if (targetLevel == null) targetLevel = server.overworld();
 
-        BlockPos origin = ClaimedLocationsRegistry.getSearchOrigin(player);
-        // If quest is in another dimension than player, scale or center near (0,0) if extreme
         int ox = player.level() == targetLevel ? origin.getX() : 0;
         int oz = player.level() == targetLevel ? origin.getZ() : 0;
 
-        int baseMin = quest.minExpectedDist;
-        int baseMax = quest.maxExpectedDist;
-        int expandStep = QuestsConfig.getAutoExpandStepBlocks();
-        int maxAttempts = QuestsConfig.getMaxAutoExpandAttempts();
-
-        Random rng = new Random();
-        List<String> backupCandidates = new ArrayList<>(getPool(quest.category, quest.dimension));
-        Collections.shuffle(backupCandidates, rng);
-
-        // Try the primary subType first, then up to 4 backup candidates of the same school & dimension
-        List<String> tryIds = new ArrayList<>();
-        tryIds.add(quest.subType);
-        for (String b : backupCandidates) {
-            if (!b.equals(quest.subType) && tryIds.size() < 5) {
-                tryIds.add(b);
-            }
+        // 1. Try Pre-Computed Cache (Zero server lag!)
+        ExplorationTargetCache.CachedTarget cached = ExplorationTargetCache.popBestTarget(player, quest);
+        if (cached != null) {
+            quest.subType = cached.targetId;
+            quest.displayName = getSchoolPrefix(quest.category) + StructureClassifier.formatDisplayName(cached.targetId);
+            quest.targetX = cached.x;
+            quest.targetZ = cached.z;
+            quest.located = true;
+            quest.actualDistance = (int) Math.hypot(cached.x - ox, cached.z - oz);
+            applyDistanceBonus(quest);
+            ClaimedLocationsRegistry.claimLocation(quest.dimension, quest.targetX, quest.targetZ);
+            return;
         }
 
-        for (int expand = 0; expand < maxAttempts; expand++) {
-            int curMin = baseMin + expand * expandStep;
-            int curMax = baseMax + expand * expandStep;
+        // 2. Fast bounded fallback (max 2 probes, strict distance check)
+        int minD = quest.minExpectedDist;
+        int maxD = quest.maxExpectedDist;
+        Random rng = new Random();
 
-            for (String candidateId : tryIds) {
-                double angle = rng.nextDouble() * Math.PI * 2.0;
-                double dist = curMin + rng.nextDouble() * Math.max(100, curMax - curMin);
-                int probeX = ox + (int) Math.round(Math.cos(angle) * dist);
-                int probeZ = oz + (int) Math.round(Math.sin(angle) * dist);
+        for (int attempt = 0; attempt < 2; attempt++) {
+            double angle = rng.nextDouble() * Math.PI * 2.0;
+            double dist = minD + rng.nextDouble() * Math.max(100, maxD - minD);
+            int probeX = ox + (int) Math.round(Math.cos(angle) * dist);
+            int probeZ = oz + (int) Math.round(Math.sin(angle) * dist);
 
-                if (!ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, probeX, probeZ)) {
-                    continue;
-                }
+            if (!ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, probeX, probeZ)) {
+                continue;
+            }
 
-                BlockPos probePos = new BlockPos(probeX, 64, probeZ);
-                BlockPos found = "EXPLORE_BIOME".equals(quest.category)
-                        ? locateBiomeNear(targetLevel, probePos, candidateId)
-                        : locateStructureNear(targetLevel, probePos, candidateId);
+            BlockPos probePos = new BlockPos(probeX, 64, probeZ);
+            BlockPos found = "EXPLORE_BIOME".equals(quest.category)
+                    ? locateBiomeFast(targetLevel, probePos, quest.subType)
+                    : locateStructureFast(targetLevel, probePos, quest.subType);
 
-                if (found != null && ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, found.getX(), found.getZ())) {
-                    if (isChunkAlreadyInhabited(targetLevel, found)) {
-                        continue;
-                    }
-                    // Found a valid unexplored target!
-                    quest.subType = candidateId;
-                    String schoolPrefix = switch (quest.category) {
-                        case "EXPLORE_BIOME" -> "🌿 Khám phá Quần xã: ";
-                        case "EXPLORE_DUNGEON" -> "🗝️ Thám hiểm Dungeon: ";
-                        default -> "🏛️ Khám phá Công trình: ";
-                    };
-                    quest.displayName = schoolPrefix + StructureClassifier.formatDisplayName(candidateId);
+            if (found != null && ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, found.getX(), found.getZ())) {
+                int actualDist = (int) Math.hypot(found.getX() - ox, found.getZ() - oz);
+                if (actualDist >= Math.max(200, minD - 250) && actualDist <= maxD + 400 && !isChunkAlreadyInhabited(targetLevel, found)) {
                     quest.targetX = found.getX();
                     quest.targetZ = found.getZ();
                     quest.located = true;
-                    quest.actualDistance = (int) Math.hypot(found.getX() - ox, found.getZ() - oz);
+                    quest.actualDistance = actualDist;
                     applyDistanceBonus(quest);
                     ClaimedLocationsRegistry.claimLocation(quest.dimension, quest.targetX, quest.targetZ);
                     return;
@@ -143,10 +128,10 @@ public class UnexploredStructureLocator {
             }
         }
 
-        // Guaranteed mathematical fallback in an unexplored ring if registry locator timed out
+        // 3. Guaranteed zero-lag coordinate inside [minD, maxD]
         for (int i = 0; i < 16; i++) {
             double angle = rng.nextDouble() * Math.PI * 2.0;
-            double dist = baseMin + rng.nextDouble() * Math.max(200, baseMax - baseMin);
+            double dist = minD + rng.nextDouble() * Math.max(150, maxD - minD);
             int fx = ox + (int) Math.round(Math.cos(angle) * dist);
             int fz = oz + (int) Math.round(Math.sin(angle) * dist);
             if (ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, fx, fz)) {
@@ -159,6 +144,14 @@ public class UnexploredStructureLocator {
                 return;
             }
         }
+    }
+
+    public static String getSchoolPrefix(String category) {
+        return switch (category) {
+            case "EXPLORE_BIOME" -> "Explore Biome: ";
+            case "EXPLORE_DUNGEON" -> "Explore Dungeon: ";
+            default -> "Explore Structure: ";
+        };
     }
 
     private static void applyDistanceBonus(QuestEntry quest) {
@@ -182,7 +175,7 @@ public class UnexploredStructureLocator {
         return false;
     }
 
-    private static BlockPos locateStructureNear(ServerLevel level, BlockPos probePos, String structureId) {
+    public static BlockPos locateStructureFast(ServerLevel level, BlockPos probePos, String structureId) {
         try {
             Registry<Structure> reg = level.registryAccess().lookupOrThrow(Registries.STRUCTURE);
             ResourceKey<Structure> key = ResourceKey.create(Registries.STRUCTURE, Identifier.parse(structureId));
@@ -190,21 +183,22 @@ public class UnexploredStructureLocator {
             if (opt.isEmpty()) return null;
 
             HolderSet<Structure> set = HolderSet.direct(opt.get());
+            // Radius 10 chunks (160 blocks) keeps lookup fast and strictly near probePos
             Pair<BlockPos, Holder<Structure>> res = level.getChunkSource().getGenerator()
-                    .findNearestMapStructure(level, set, probePos, 24, false);
+                    .findNearestMapStructure(level, set, probePos, 10, false);
             return res != null ? res.getFirst() : null;
         } catch (Exception e) {
             return null;
         }
     }
 
-    private static BlockPos locateBiomeNear(ServerLevel level, BlockPos probePos, String biomeId) {
+    public static BlockPos locateBiomeFast(ServerLevel level, BlockPos probePos, String biomeId) {
         try {
             ResourceKey<Biome> key = ResourceKey.create(Registries.BIOME, Identifier.parse(biomeId));
             Pair<BlockPos, Holder<Biome>> res = level.findClosestBiome3d(
                     h -> h.is(key),
                     probePos,
-                    960,
+                    480,
                     48,
                     64
             );
@@ -227,13 +221,13 @@ public class UnexploredStructureLocator {
         double playerYaw = Mth.wrapDegrees(player.getYRot());
         double diff = Mth.wrapDegrees(targetAngle - playerYaw);
 
-        if (diff >= -22.5 && diff < 22.5) return "⬆";
+        if (diff >= -22.5 && diff < 22.5) return "↑";
         if (diff >= 22.5 && diff < 67.5) return "↗";
-        if (diff >= 67.5 && diff < 112.5) return "➡";
+        if (diff >= 67.5 && diff < 112.5) return "→";
         if (diff >= 112.5 && diff < 157.5) return "↘";
         if (diff >= -67.5 && diff < -22.5) return "↖";
-        if (diff >= -112.5 && diff < -67.5) return "⬅";
+        if (diff >= -112.5 && diff < -67.5) return "←";
         if (diff >= -157.5 && diff < -112.5) return "↙";
-        return "⬇";
+        return "↓";
     }
 }

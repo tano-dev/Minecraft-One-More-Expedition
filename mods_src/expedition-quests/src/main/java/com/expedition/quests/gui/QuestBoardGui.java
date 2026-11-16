@@ -14,7 +14,6 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -41,7 +40,7 @@ public class QuestBoardGui {
 
     public static void openBoard(ServerPlayer player) {
         QuestPlayerData data = QuestDataStorage.get(player.getUUID());
-        String title = "§b§l✦ NHIỆM VỤ NGÀY (" + data.getCompletedTodayCount() + "/10) ✦";
+        String title = "§b§l✦ DAILY QUESTS (" + data.getCompletedTodayCount() + "/10) ✦";
         player.openMenu(new SimpleMenuProvider(
                 (syncId, inv, p) -> new QuestMenu(syncId, inv, player, ViewMode.BOARD_10_SLOTS, -1),
                 Component.literal(title)
@@ -59,7 +58,7 @@ public class QuestBoardGui {
         String diffName = QuestPlayerData.getSlotDifficulty(slotIndex);
         player.openMenu(new SimpleMenuProvider(
                 (syncId, inv, p) -> new QuestMenu(syncId, inv, player, ViewMode.DRAFT_PICKER, slotIndex),
-                Component.literal("§e§lCHỌN NHIỆM VỤ [" + diffName + "]")
+                Component.literal("§e§lSELECT QUEST [" + diffName + "]")
         ));
     }
 
@@ -101,63 +100,52 @@ public class QuestBoardGui {
 
             QuestPlayerData data = QuestDataStorage.get(player.getUUID());
 
-            // Top Header: Adventure Profile
             double pct = data.getXpProgressPercent();
             long req = ExpeditionQuestsApi.getRequiredXp(player.getUUID());
             List<String> profLore = List.of(
-                    "§7Cấp độ: §bLv." + data.level + " §8/ " + QuestsConfig.getMaxLevel(),
-                    "§7Kinh nghiệm: §e" + Math.round(data.xp) + " / " + req + " XP §7(" + String.format("%.0f%%", pct) + ")",
-                    "§7Quyền lợi: §6+" + data.level + "% Tiền thưởng Nhiệm vụ",
-                    "§7Mở khóa Nether: " + (data.level >= QuestsConfig.getNetherUnlockLevel() ? "§a✔ Đã mở" : "§c✖ Cần Lv." + QuestsConfig.getNetherUnlockLevel()),
-                    "§7Mở khóa The End & Elytra: " + (data.level >= QuestsConfig.getEndUnlockLevel() ? "§a✔ Đã mở" : "§c✖ Cần Lv." + QuestsConfig.getEndUnlockLevel())
+                    "§7Adventure Level: §bLv." + data.level + " §8/ " + QuestsConfig.getMaxLevel(),
+                    "§7Progress: §e" + Math.round(data.xp) + " / " + req + " XP §7(" + String.format("%.0f%%", pct) + ")",
+                    "§7Perk: §6+" + data.level + "% Quest Coins Bonus",
+                    "§7Nether Tier: " + (data.level >= QuestsConfig.getNetherUnlockLevel() ? "§a✔ Unlocked" : "§c✖ Requires Lv." + QuestsConfig.getNetherUnlockLevel()),
+                    "§7The End & Elytra: " + (data.level >= QuestsConfig.getEndUnlockLevel() ? "§a✔ Unlocked" : "§c✖ Requires Lv." + QuestsConfig.getEndUnlockLevel())
             );
-            container.setItem(4, named(Items.NETHER_STAR, "§b§lHỒ SƠ THÁM HIỂM (ADVENTURE)", profLore));
+            container.setItem(4, named(Items.NETHER_STAR, "§b§lADVENTURE PROFILE", profLore));
 
             if (mode == ViewMode.BOARD_10_SLOTS) {
-                // 5 Easy Slots (Row 2: slots 11..15)
-                for (int i = 0; i < 5; i++) {
-                    renderBoardSlot(data, i, 11 + i);
-                }
-                // 3 Medium Slots (Row 3: slots 21..23)
-                for (int i = 5; i < 8; i++) {
-                    renderBoardSlot(data, i, 21 + (i - 5));
-                }
-                // 2 Hard Slots (Row 4: slots 30, 32)
+                for (int i = 0; i < 5; i++) renderBoardSlot(data, i, 11 + i);
+                for (int i = 5; i < 8; i++) renderBoardSlot(data, i, 21 + (i - 5));
                 renderBoardSlot(data, 8, 30);
                 renderBoardSlot(data, 9, 32);
 
-                // Close button
-                container.setItem(49, named(Items.BARRIER, "§cĐóng", List.of("§7Nhấn để đóng bảng nhiệm vụ")));
+                container.setItem(49, named(Items.BARRIER, "§cClose", List.of("§7Click to close Quest Board")));
             } else {
-                // DRAFT_PICKER
                 List<QuestEntry> offers = data.draftOffers.getOrDefault(draftSlotIndex, List.of());
                 int[] positions = offers.size() >= 5 ? new int[]{20, 21, 22, 23, 24} : new int[]{19, 21, 23, 25};
                 for (int i = 0; i < Math.min(positions.length, offers.size()); i++) {
                     QuestEntry q = offers.get(i);
                     Item icon = resolveItem(q.iconItem);
                     List<String> lore = new ArrayList<>();
-                    lore.add("§7Độ khó: " + q.getDifficultyTitle());
-                    lore.add("§7Chiều không gian: §b" + q.dimension.replace("minecraft:", ""));
-                    lore.add("§7Mô tả: §f" + q.description);
+                    lore.add("§7Difficulty: " + q.getDifficultyTitle());
+                    lore.add("§7Dimension: §b" + q.dimension.replace("minecraft:", ""));
+                    lore.add("§7Goal: §f" + q.description);
                     lore.add("§8");
-                    lore.add("§7Phần thưởng dự kiến:");
+                    lore.add("§7Rewards:");
                     lore.add("  §6• +" + q.rewardCoins + " Coins");
                     lore.add("  §b• +" + q.rewardXp + " Adventure XP");
                     lore.add("§8");
-                    lore.add("§a▶ Nhấp để NHẬN nhiệm vụ này!");
+                    lore.add("§a▶ Click to ACCEPT this quest!");
                     container.setItem(positions[i], named(icon, "§e§l" + q.displayName, lore));
                 }
 
-                // Reroll button
                 int contractLv = ExpeditionQuestsApi.getItemEnchantLevel(player.getItemBySlot(EquipmentSlot.HEAD), "expedition_quests:contract_master");
                 int maxFreeRerolls = QuestsConfig.getBaseFreeRerolls() + (contractLv > 0 ? (int) QuestsConfig.getEnchantVal("contract_master_extra_rerolls", 1) : 0);
                 int left = Math.max(0, maxFreeRerolls - data.rerollsUsedToday);
-                container.setItem(40, named(Items.ENDER_EYE, "§d§lĐổi Mới Đề Xuất (Reroll)", List.of(
-                        "§7Lượt miễn phí còn lại hôm nay: §e" + left,
-                        left > 0 ? "§a▶ Nhấp để roll lại các lựa chọn!" : "§c✖ Bạn đã hết lượt Reroll hôm nay!"
+                container.setItem(40, named(Items.ENDER_EYE, "§d§lReroll Offers", List.of(
+                        "§7Free rerolls left today: §e" + left,
+                        left > 0 ? "§a▶ Click to refresh quest choices!" : "§c✖ No free rerolls left today!"
                 )));
 
-                container.setItem(49, named(Items.ARROW, "§e← Quay lại Bảng 10 Nhiệm Vụ", List.of()));
+                container.setItem(49, named(Items.ARROW, "§e<- Back to 10-Quest Board", List.of()));
             }
         }
 
@@ -167,34 +155,34 @@ public class QuestBoardGui {
             if (q == null) {
                 Item pane = "EASY".equals(diff) ? resolveItem("minecraft:lime_stained_glass_pane")
                         : ("MEDIUM".equals(diff) ? resolveItem("minecraft:yellow_stained_glass_pane") : resolveItem("minecraft:red_stained_glass_pane"));
-                container.setItem(invSlot, named(pane, "§fÔ #" + (questSlotIdx + 1) + " [" + diff + "] — §aTrống", List.of(
-                        "§7Nhấp để xem §e4 đề xuất nhiệm vụ§7!",
-                        "§7Hoàn thành để nhận §6Coins §7& §bAdventure XP§7."
+                container.setItem(invSlot, named(pane, "§fSlot #" + (questSlotIdx + 1) + " [" + diff + "] - §aEmpty", List.of(
+                        "§7Click to view §e4 quest offers§7!",
+                        "§7Complete to earn §6Coins §7& §bAdventure XP§7."
                 )));
                 return;
             }
 
             if (q.completed) {
                 container.setItem(invSlot, named(Items.EMERALD_BLOCK, "§a§l✔ " + q.displayName, List.of(
-                        "§aĐã hoàn thành! (Đã ẩn khỏi Sidebar)",
-                        "§7Phần thưởng đã được cộng vào Purse."
+                        "§aCompleted! (Hidden from Sidebar)",
+                        "§7Rewards have been added to your Purse."
                 )));
                 return;
             }
 
             Item icon = resolveItem(q.iconItem);
             List<String> lore = new ArrayList<>();
-            lore.add("§7Tiến độ: §e" + q.currentProgress + " / " + q.requiredProgress);
+            lore.add("§7Progress: §e" + q.currentProgress + " / " + q.requiredProgress);
             if (q.isExploration() && q.located) {
                 int dist = (int) Math.hypot(q.targetX - player.getX(), q.targetZ - player.getZ());
-                lore.add("§b📍 Tọa độ: §fX=" + q.targetX + ", Z=" + q.targetZ + " §7(Cách " + dist + "m)");
+                lore.add("§bTarget: §fX=" + q.targetX + ", Z=" + q.targetZ + " §7(" + dist + "m away)");
             }
-            lore.add("§7Thưởng: §6+" + q.rewardCoins + " Coins §7| §b+" + q.rewardXp + " XP");
+            lore.add("§7Rewards: §6+" + q.rewardCoins + " Coins §7| §b+" + q.rewardXp + " XP");
             lore.add("§8");
             if ("GATHER_SUBMIT".equals(q.category)) {
-                lore.add("§a▶ Nhấp để NỘP VẬT PHẨM từ túi đồ!");
+                lore.add("§a▶ Click to SUBMIT ITEMS from inventory!");
             } else {
-                lore.add("§e▶ Nhấp để CHIA SẺ lên Chat cho bạn bè (/quest share " + (questSlotIdx + 1) + ")!");
+                lore.add("§e▶ Click to SHARE in chat (/quest share " + (questSlotIdx + 1) + ")!");
             }
             container.setItem(invSlot, named(icon, q.getDifficultyTag() + " §f" + q.displayName, lore));
         }
@@ -239,7 +227,7 @@ public class QuestBoardGui {
                         sp.level().playSound(null, sp.blockPosition(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, 0.8f, 1.2f);
                         openDraft(sp, draftSlotIndex);
                     } else {
-                        sp.sendSystemMessage(Component.literal("§c✖ Bạn đã hết lượt Reroll miễn phí hôm nay!"));
+                        sp.sendSystemMessage(Component.literal("§c✖ You have no free rerolls left today!"));
                     }
                     return;
                 }
@@ -251,12 +239,12 @@ public class QuestBoardGui {
                         if (chosen.isExploration()) {
                             UnexploredStructureLocator.locateAndLockTarget(sp.level().getServer(), sp, chosen);
                             sp.sendSystemMessage(Component.literal(
-                                    "§b§l🧭 ĐÃ NHẬN QUEST KHÁM PHÁ! §f" + chosen.displayName +
-                                    " §7— Tọa độ: §eX=" + chosen.targetX + ", Z=" + chosen.targetZ +
-                                    " §7(Cách ~" + chosen.actualDistance + "m)"
+                                    "§b§l✦ EXPLORATION QUEST ACCEPTED! §f" + chosen.displayName +
+                                    " §7- Target: §eX=" + chosen.targetX + ", Z=" + chosen.targetZ +
+                                    " §7(~" + chosen.actualDistance + "m away)"
                             ));
                         } else {
-                            sp.sendSystemMessage(Component.literal("§a✔ Đã nhận nhiệm vụ: §f" + chosen.displayName));
+                            sp.sendSystemMessage(Component.literal("§a✔ Quest accepted: §f" + chosen.displayName));
                         }
                         data.activeSlots.put(draftSlotIndex, chosen);
                         data.draftOffers.remove(draftSlotIndex);
@@ -291,17 +279,17 @@ public class QuestBoardGui {
                 if (q.currentProgress >= q.requiredProgress) {
                     ExpeditionQuestsApi.completeQuest(sp, data, q);
                 } else {
-                    sp.sendSystemMessage(Component.literal("§a✔ Đã nộp §e" + taken + " §fvật phẩm! Tiến độ: §e" + q.currentProgress + "/" + q.requiredProgress));
+                    sp.sendSystemMessage(Component.literal("§a✔ Submitted §e" + taken + " §fitems! Progress: §e" + q.currentProgress + "/" + q.requiredProgress));
                 }
                 QuestDataStorage.saveAsync(sp.getUUID());
             } else {
-                sp.sendSystemMessage(Component.literal("§c✖ Bạn không có đủ §f" + q.subType + " §ctrong túi đồ!"));
+                sp.sendSystemMessage(Component.literal("§c✖ You do not have enough §f" + q.subType + " §cin your inventory!"));
             }
         }
 
         private int mapBoardSlotToQuestIndex(int invSlot) {
-            if (invSlot >= 11 && invSlot <= 15) return invSlot - 11; // 0..4
-            if (invSlot >= 21 && invSlot <= 23) return 5 + (invSlot - 21); // 5..7
+            if (invSlot >= 11 && invSlot <= 15) return invSlot - 11;
+            if (invSlot >= 21 && invSlot <= 23) return 5 + (invSlot - 21);
             if (invSlot == 30) return 8;
             if (invSlot == 32) return 9;
             return -1;

@@ -82,14 +82,14 @@ public class ExpeditionQuestsApi {
                 int dist = (int) Math.hypot(q.targetX - player.getX(), q.targetZ - player.getZ());
                 String arrow = UnexploredStructureLocator.getCompassArrow(player, q.targetX, q.targetZ);
                 String shortName = q.displayName
-                        .replace("🌿 Khám phá Quần xã: ", "")
-                        .replace("🏛️ Khám phá Công trình: ", "")
-                        .replace("🗝️ Thám hiểm Dungeon: ", "");
-                if (shortName.length() > 14) shortName = shortName.substring(0, 13) + "…";
+                        .replace("Explore Biome: ", "")
+                        .replace("Explore Structure: ", "")
+                        .replace("Explore Dungeon: ", "");
+                if (shortName.length() > 14) shortName = shortName.substring(0, 13) + "...";
                 lines.add(tag + " " + arrow + " " + shortName + " " + dist + "m (" + q.targetX + "," + q.targetZ + ")");
             } else {
                 String shortName = q.displayName;
-                if (shortName.length() > 20) shortName = shortName.substring(0, 19) + "…";
+                if (shortName.length() > 20) shortName = shortName.substring(0, 19) + "...";
                 lines.add(tag + " " + shortName + ": " + q.currentProgress + "/" + q.requiredProgress);
             }
         }
@@ -183,7 +183,7 @@ public class ExpeditionQuestsApi {
         int lvGained = data.addXp(finalXp);
 
         player.sendSystemMessage(Component.literal(
-                "§a§l✔ HOÀN THÀNH NHIỆM VỤ! §f" + q.displayName +
+                "§a§l✔ QUEST COMPLETED! §f" + q.displayName +
                 " §7(§6+" + finalCoins + " Coins§7, §b+" + finalXp + " Adventure XP§7)"
         ));
         player.level().playSound(null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.8f, 1.3f);
@@ -201,7 +201,7 @@ public class ExpeditionQuestsApi {
             int o2 = data.level;
             int g2 = data.addXp(bonusXp);
             player.sendSystemMessage(Component.literal(
-                    "§6§l★ HOÀN TẤT 10/10 NHIỆM VỤ NGÀY! §eThưởng lớn: §6+" + bonusCoins + " Coins §e& §b+" + bonusXp + " Adventure XP§e!"
+                    "§6§l★ ALL 10 DAILY QUESTS COMPLETED! §eBonus: §6+" + bonusCoins + " Coins §e& §b+" + bonusXp + " Adventure XP§e!"
             ));
             player.level().playSound(null, player.blockPosition(), SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, SoundSource.PLAYERS, 1.0f, 1.1f);
             if (g2 > 0) {
@@ -213,16 +213,16 @@ public class ExpeditionQuestsApi {
 
     private static void onAdventureLevelUp(ServerPlayer player, int oldLv, int newLv) {
         player.sendSystemMessage(Component.literal(
-                "§b§l▲ ADVENTURE LEVEL UP! §eLv." + oldLv + " §7→ §bLv." + newLv +
-                " §7(§6+" + newLv + "% Tiền thưởng Nhiệm vụ§7)"
+                "§b§l▲ ADVENTURE LEVEL UP! §eLv." + oldLv + " §7-> §bLv." + newLv +
+                " §7(§6+" + newLv + "% Quest Coins Bonus§7)"
         ));
         int netherUnlock = QuestsConfig.getNetherUnlockLevel();
         int endUnlock = QuestsConfig.getEndUnlockLevel();
         if (oldLv < netherUnlock && newLv >= netherUnlock) {
-            player.sendSystemMessage(Component.literal("§c§l🔥 MỞ KHÓA TẦNG NETHER! §7Nhiệm vụ tại The Nether (+20% Thưởng) đã mở trong /quest!"));
+            player.sendSystemMessage(Component.literal("§c§l✦ NETHER TIER UNLOCKED! §7Nether Quests (+20% Rewards) are now available in /quest!"));
         }
         if (oldLv < endUnlock && newLv >= endUnlock) {
-            player.sendSystemMessage(Component.literal("§d§l🌌 MỞ KHÓA TẦNG THE END & ELYTRA! §7Nhiệm vụ End & Elytra (+40% Thưởng) đã mở trong /quest!"));
+            player.sendSystemMessage(Component.literal("§d§l✦ THE END TIER UNLOCKED! §7End & Elytra Quests (+40% Rewards) are now available in /quest!"));
         }
     }
 

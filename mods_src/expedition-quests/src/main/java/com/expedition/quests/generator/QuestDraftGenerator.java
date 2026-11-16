@@ -45,7 +45,6 @@ public class QuestDraftGenerator {
             }
         }
 
-        // Fill up if any branch returned null
         int guard = 0;
         while (offers.size() < count && guard++ < 20) {
             String branch = ALL_BRANCHES.get(rng.nextInt(ALL_BRANCHES.size()));
@@ -98,16 +97,11 @@ public class QuestDraftGenerator {
                 q.rewardCoins = Math.max(1L, Math.round(baseCoins * dimMult * schoolMult));
                 q.rewardXp = (int) Math.max(10, Math.round(baseXp * dimMult * schoolMult));
 
-                String prefix = switch (branch) {
-                    case "EXPLORE_BIOME" -> "🌿 Khám phá Quần xã: ";
-                    case "EXPLORE_DUNGEON" -> "🗝️ Thám hiểm Dungeon: ";
-                    default -> "🏛️ Khám phá Công trình: ";
-                };
-                q.displayName = prefix + StructureClassifier.formatDisplayName(targetId);
-                q.description = "Đi tới vùng chưa ai khám phá (" + q.minExpectedDist + "m – " + q.maxExpectedDist + "m). Tọa độ sẽ lộ sau khi nhận!";
+                q.displayName = UnexploredStructureLocator.getSchoolPrefix(branch) + StructureClassifier.formatDisplayName(targetId);
+                q.description = "Venture to an unexplored region (" + q.minExpectedDist + "m - " + q.maxExpectedDist + "m). Coordinates unlock on accept.";
                 q.iconItem = switch (branch) {
                     case "EXPLORE_BIOME" -> "minecraft:grass_block";
-                    case "EXPLORE_DUNGEON" -> "minecraft:spawner";
+                    case "EXPLORE_DUNGEON" -> "minecraft:compass";
                     default -> "minecraft:filled_map";
                 };
                 return q;
@@ -120,33 +114,33 @@ public class QuestDraftGenerator {
                     if ("HARD".equals(difficulty)) {
                         q.subType = "minecraft:ancient_debris";
                         q.requiredProgress = 2 + rng.nextInt(3);
-                        q.displayName = "⛏️ Đào " + q.requiredProgress + " Ancient Debris";
+                        q.displayName = "Mine " + q.requiredProgress + " Ancient Debris";
                         q.iconItem = "minecraft:netherite_scrap";
                     } else {
                         q.subType = "minecraft:nether_quartz_ore";
                         q.requiredProgress = "EASY".equals(difficulty) ? 24 : 40;
-                        q.displayName = "⛏️ Đào " + q.requiredProgress + " Quặng Thạch Anh (Quartz)";
+                        q.displayName = "Mine " + q.requiredProgress + " Nether Quartz Ore";
                     }
                 } else {
                     if ("EASY".equals(difficulty)) {
                         String[] ores = {"minecraft:coal_ore", "minecraft:iron_ore", "minecraft:copper_ore"};
                         q.subType = ores[rng.nextInt(ores.length)];
                         q.requiredProgress = 24 + rng.nextInt(13);
-                        q.displayName = "⛏️ Đào " + q.requiredProgress + " " + prettyItem(q.subType);
+                        q.displayName = "Mine " + q.requiredProgress + " " + prettyItem(q.subType);
                     } else if ("MEDIUM".equals(difficulty)) {
                         String[] ores = {"minecraft:gold_ore", "minecraft:redstone_ore", "minecraft:lapis_ore"};
                         q.subType = ores[rng.nextInt(ores.length)];
                         q.requiredProgress = 16 + rng.nextInt(13);
-                        q.displayName = "⛏️ Đào " + q.requiredProgress + " " + prettyItem(q.subType);
+                        q.displayName = "Mine " + q.requiredProgress + " " + prettyItem(q.subType);
                     } else {
                         String[] ores = {"minecraft:diamond_ore", "minecraft:emerald_ore"};
                         q.subType = ores[rng.nextInt(ores.length)];
                         q.requiredProgress = 6 + rng.nextInt(6);
-                        q.displayName = "⛏️ Đào " + q.requiredProgress + " " + prettyItem(q.subType);
+                        q.displayName = "Mine " + q.requiredProgress + " " + prettyItem(q.subType);
                         q.iconItem = "minecraft:diamond_pickaxe";
                     }
                 }
-                q.description = "Khai thác quặng tự nhiên (chặn đặt block ra đập lại).";
+                q.description = "Mine natural ores underground.";
                 return q;
             }
             case "LOGGING" -> {
@@ -156,14 +150,14 @@ public class QuestDraftGenerator {
                 if ("minecraft:the_nether".equals(dim)) {
                     q.subType = rng.nextBoolean() ? "minecraft:crimson_stem" : "minecraft:warped_stem";
                     q.requiredProgress = "EASY".equals(difficulty) ? 24 : ("MEDIUM".equals(difficulty) ? 48 : 72);
-                    q.displayName = "🪓 Đốn " + q.requiredProgress + " " + prettyItem(q.subType);
+                    q.displayName = "Chop " + q.requiredProgress + " " + prettyItem(q.subType);
                 } else {
                     String[] logs = {"minecraft:oak_log", "minecraft:birch_log", "minecraft:spruce_log", "minecraft:dark_oak_log", "minecraft:cherry_log"};
                     q.subType = logs[rng.nextInt(logs.length)];
                     q.requiredProgress = "EASY".equals(difficulty) ? 32 : ("MEDIUM".equals(difficulty) ? 64 : 96);
-                    q.displayName = "🪓 Đốn " + q.requiredProgress + " " + prettyItem(q.subType);
+                    q.displayName = "Chop " + q.requiredProgress + " " + prettyItem(q.subType);
                 }
-                q.description = "Chặt gỗ tự nhiên (hỗ trợ Veinminer, không tính gỗ tự đặt).";
+                q.description = "Harvest natural timber from forests.";
                 return q;
             }
             case "GATHER_SUBMIT" -> {
@@ -181,8 +175,8 @@ public class QuestDraftGenerator {
                     q.subType = mats[rng.nextInt(mats.length)];
                     q.requiredProgress = "EASY".equals(difficulty) ? 32 : ("MEDIUM".equals(difficulty) ? 48 : 64);
                 }
-                q.displayName = "📦 Nộp " + q.requiredProgress + " " + prettyItem(q.subType);
-                q.description = "Thu thập đủ số lượng và bấm Nộp trong /quest (hoặc /quest submit).";
+                q.displayName = "Deliver " + q.requiredProgress + " " + prettyItem(q.subType);
+                q.description = "Gather the blocks and click to submit in /quest.";
                 return q;
             }
             case "FISHING" -> {
@@ -192,28 +186,28 @@ public class QuestDraftGenerator {
                 if ("minecraft:the_end".equals(dim) && fishLv >= 35) {
                     q.subType = "VOID_CATCH";
                     q.requiredProgress = "EASY".equals(difficulty) ? 5 : ("MEDIUM".equals(difficulty) ? 10 : 15);
-                    q.displayName = "🌌 Câu " + q.requiredProgress + " lần tại The End Void";
+                    q.displayName = "Catch " + q.requiredProgress + " times in The End Void";
                 } else if ("minecraft:the_nether".equals(dim) && fishLv >= 27) {
                     q.subType = "LAVA_CATCH";
                     q.requiredProgress = "EASY".equals(difficulty) ? 6 : ("MEDIUM".equals(difficulty) ? 12 : 18);
-                    q.displayName = "🔥 Câu " + q.requiredProgress + " lần trong Lava Nether";
+                    q.displayName = "Catch " + q.requiredProgress + " times in Nether Lava";
                 } else {
                     q.dimension = "minecraft:overworld";
                     if ("EASY".equals(difficulty)) {
                         q.subType = "ANY_CATCH";
                         q.requiredProgress = 12;
-                        q.displayName = "🎣 Câu thành công 12 lần";
+                        q.displayName = "Reel in 12 catches";
                     } else if ("MEDIUM".equals(difficulty)) {
                         q.subType = "SEA_CREATURE_KILL";
                         q.requiredProgress = 4;
-                        q.displayName = "🐙 Hạ gục 4 Thủy Quái câu được";
+                        q.displayName = "Slay 4 Sea Creatures";
                     } else {
                         q.subType = "RARE_OR_TREASURE";
                         q.requiredProgress = 2;
-                        q.displayName = "👑 Câu 2 Rương Kho Báu hoặc Thủy Quái Hiếm";
+                        q.displayName = "Fish up 2 Treasures or Rare Creatures";
                     }
                 }
-                q.description = "Tích hợp trực tiếp với hệ thống Expedition Fishing.";
+                q.description = "Cast your rod and reel in rewards.";
                 return q;
             }
             case "SLAYER" -> {
@@ -223,12 +217,12 @@ public class QuestDraftGenerator {
                 if ("minecraft:the_end".equals(dim)) {
                     q.subType = "minecraft:enderman";
                     q.requiredProgress = "EASY".equals(difficulty) ? 12 : ("MEDIUM".equals(difficulty) ? 20 : 30);
-                    q.displayName = "⚔️ Tiêu diệt " + q.requiredProgress + " Enderman";
+                    q.displayName = "Slay " + q.requiredProgress + " Endermen";
                 } else if ("minecraft:the_nether".equals(dim)) {
                     String[] mobs = {"minecraft:blaze", "minecraft:wither_skeleton", "minecraft:ghast"};
                     q.subType = mobs[rng.nextInt(mobs.length)];
                     q.requiredProgress = "EASY".equals(difficulty) ? 8 : ("MEDIUM".equals(difficulty) ? 14 : 22);
-                    q.displayName = "⚔️ Tiêu diệt " + q.requiredProgress + " " + prettyItem(q.subType);
+                    q.displayName = "Slay " + q.requiredProgress + " " + prettyItem(q.subType);
                 } else {
                     if ("EASY".equals(difficulty)) {
                         String[] mobs = {"minecraft:zombie", "minecraft:skeleton", "minecraft:spider", "minecraft:creeper"};
@@ -242,9 +236,9 @@ public class QuestDraftGenerator {
                         q.subType = "minecraft:ravager";
                         q.requiredProgress = 2;
                     }
-                    q.displayName = "⚔️ Tiêu diệt " + q.requiredProgress + " " + prettyItem(q.subType);
+                    q.displayName = "Slay " + q.requiredProgress + " " + prettyItem(q.subType);
                 }
-                q.description = "Trực tiếp chiến đấu tiêu diệt quái vật (chống đứng yên farm spawner).";
+                q.description = "Hunt down hostile creatures in combat.";
                 return q;
             }
             case "ACTION" -> {
@@ -255,18 +249,18 @@ public class QuestDraftGenerator {
                 if ("minecraft:the_end".equals(dim) && allowElytra) {
                     q.subType = "ELYTRA";
                     q.requiredProgress = QuestsConfig.getTravelDistance("ELYTRA", difficulty);
-                    q.displayName = "🪽 Bay Elytra " + q.requiredProgress + " blocks";
+                    q.displayName = "Glide " + q.requiredProgress + "m with Elytra";
                     q.iconItem = "minecraft:elytra";
                 } else if ("minecraft:the_nether".equals(dim)) {
                     if (rng.nextBoolean()) {
                         q.subType = "LAVA_STRIDER";
                         q.requiredProgress = QuestsConfig.getTravelDistance("LAVA_STRIDER", difficulty);
-                        q.displayName = "🦎 Cưỡi Strider trên Lava " + q.requiredProgress + "m";
+                        q.displayName = "Ride a Strider " + q.requiredProgress + "m";
                         q.iconItem = "minecraft:warped_fungus_on_a_stick";
                     } else {
                         q.subType = "BREW_POTION";
                         q.requiredProgress = "EASY".equals(difficulty) ? 3 : ("MEDIUM".equals(difficulty) ? 6 : 9);
-                        q.displayName = "🧪 Pha chế " + q.requiredProgress + " bình Thuốc";
+                        q.displayName = "Brew " + q.requiredProgress + " Potions";
                         q.iconItem = "minecraft:brewing_stand";
                     }
                 } else {
@@ -274,21 +268,21 @@ public class QuestDraftGenerator {
                     if (roll == 0) {
                         q.subType = "BOAT";
                         q.requiredProgress = QuestsConfig.getTravelDistance("BOAT", difficulty);
-                        q.displayName = "🚣 Chèo thuyền " + q.requiredProgress + " blocks";
+                        q.displayName = "Sail " + q.requiredProgress + "m by Boat";
                         q.iconItem = "minecraft:oak_boat";
                     } else if (roll == 1) {
                         q.subType = "LAND_MOUNT";
                         q.requiredProgress = QuestsConfig.getTravelDistance("LAND_MOUNT", difficulty);
-                        q.displayName = "🐎 Cưỡi Ngựa/Lạc đà " + q.requiredProgress + " blocks";
+                        q.displayName = "Ride a Mount " + q.requiredProgress + "m";
                         q.iconItem = "minecraft:saddle";
                     } else {
                         q.subType = "ENCHANT_ITEM";
                         q.requiredProgress = "EASY".equals(difficulty) ? 2 : ("MEDIUM".equals(difficulty) ? 4 : 6);
-                        q.displayName = "✨ Phù phép " + q.requiredProgress + " vật phẩm tại Bàn Enchant";
+                        q.displayName = "Enchant " + q.requiredProgress + " Items";
                         q.iconItem = "minecraft:enchanting_table";
                     }
                 }
-                q.description = "Thực hiện hành động tương tác hoặc di chuyển thực tế.";
+                q.description = "Travel across the world or craft at stations.";
                 return q;
             }
         }

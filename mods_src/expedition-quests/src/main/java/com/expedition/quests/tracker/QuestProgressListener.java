@@ -91,7 +91,7 @@ public class QuestProgressListener {
                 SAME_CELL_KILL_STREAK.put(uuid, streak);
                 if (streak > 8) {
                     if (streak == 9) {
-                        sp.sendSystemMessage(Component.literal("§e⚠ [Anti-Farm] Hãy di chuyển khỏi khu vực farm cố định để tiếp tục tính tiến độ Quest!"));
+                        sp.sendSystemMessage(Component.literal("§e⚠ Please move away from stationary mob grinders to continue Slayer Quest progress."));
                     }
                     return;
                 }

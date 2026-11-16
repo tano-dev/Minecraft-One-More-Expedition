@@ -31,7 +31,7 @@ public class QuestCommand {
                 .executes(ctx -> {
                     ServerPlayer sp = ctx.getSource().getPlayerOrException();
                     if (!ExpeditionQuestsApi.isEnabledForPlayer(sp)) {
-                        sp.sendSystemMessage(Component.literal("§cNhiệm vụ Thám hiểm chỉ hoạt động ở thế giới Sinh tồn!"));
+                        sp.sendSystemMessage(Component.literal("§cAdventure Quests are only available in Survival worlds!"));
                         return 0;
                     }
                     QuestBoardGui.openBoard(sp);
@@ -42,7 +42,7 @@ public class QuestCommand {
                     QuestPlayerData d = QuestDataStorage.get(sp.getUUID());
                     sp.sendSystemMessage(Component.literal(
                             "§b§l[Adventure Stats] §fLv." + d.level + " §7(" + Math.round(d.xp) + "/" +
-                            ExpeditionQuestsApi.getRequiredXp(sp.getUUID()) + " XP) | §6+" + d.level + "% Tiền thưởng Quest §7| Hôm nay: §a" +
+                            ExpeditionQuestsApi.getRequiredXp(sp.getUUID()) + " XP) | §6+" + d.level + "% Quest Coins §7| Today: §a" +
                             d.getCompletedTodayCount() + "/10"
                     ));
                     return 1;
@@ -71,7 +71,7 @@ public class QuestCommand {
                                     QuestPlayerData data = QuestDataStorage.get(sp.getUUID());
                                     QuestEntry q = data.activeSlots.get(slot);
                                     if (q == null || q.completed || !"GATHER_SUBMIT".equals(q.category)) {
-                                        sp.sendSystemMessage(Component.literal("§cÔ #" + (slot + 1) + " không phải nhiệm vụ nộp vật phẩm đang mở!"));
+                                        sp.sendSystemMessage(Component.literal("§cSlot #" + (slot + 1) + " is not an active delivery quest!"));
                                         return 0;
                                     }
                                     QuestBoardGui.QuestMenu.submitItemsForQuest(sp, data, q);
@@ -82,7 +82,7 @@ public class QuestCommand {
                         .executes(ctx -> {
                             QuestsConfig.load();
                             UnexploredStructureLocator.scanRegistries(ctx.getSource().getServer());
-                            ctx.getSource().sendSuccess(() -> Component.literal("§a[Expedition Quests] Đã tải lại quests_config.json & quét lại Registry!"), true);
+                            ctx.getSource().sendSuccess(() -> Component.literal("§a[Expedition Quests] Reloaded quests_config.json & structure registries!"), true);
                             return 1;
                         }));
 
@@ -94,18 +94,18 @@ public class QuestCommand {
         QuestPlayerData data = QuestDataStorage.get(sp.getUUID());
         QuestEntry q = data.activeSlots.get(slotIndex);
         if (q == null || q.completed) {
-            sp.sendSystemMessage(Component.literal("§cÔ nhiệm vụ này đang trống hoặc đã hoàn thành!"));
+            sp.sendSystemMessage(Component.literal("§cThis quest slot is empty or already completed!"));
             return;
         }
         String code = q.questId;
         SHARED_QUESTS.put(code, q);
 
-        Component acceptBtn = Component.literal(" §a§l[NHẬN CHUNG]")
+        Component acceptBtn = Component.literal(" §a§l[ACCEPT CO-OP]")
                 .setStyle(Style.EMPTY
                         .withClickEvent(new ClickEvent.RunCommand("/quest accept " + code))
-                        .withHoverEvent(new HoverEvent.ShowText(Component.literal("§eNhấp để nhận nhiệm vụ " + q.displayName + " (" + q.difficulty + ")"))));
+                        .withHoverEvent(new HoverEvent.ShowText(Component.literal("§eClick to accept " + q.displayName + " (" + q.difficulty + ")"))));
 
-        Component msg = Component.literal("§b§l[Co-op Quest] §e" + sp.getName().getString() + " §7chia sẻ nhiệm vụ " +
+        Component msg = Component.literal("§b§l[Co-op Quest] §e" + sp.getName().getString() + " §7shared " +
                 q.getDifficultyTag() + " §f" + q.displayName +
                 (q.isExploration() && q.located ? " §7(§b" + q.targetX + ", " + q.targetZ + "§7)" : ""))
                 .append(acceptBtn);
@@ -116,20 +116,19 @@ public class QuestCommand {
     public static void acceptSharedQuest(ServerPlayer sp, String code) {
         QuestEntry shared = SHARED_QUESTS.get(code);
         if (shared == null) {
-            sp.sendSystemMessage(Component.literal("§cLời mời nhiệm vụ này đã hết hạn!"));
+            sp.sendSystemMessage(Component.literal("§cThis shared quest invite has expired!"));
             return;
         }
         QuestPlayerData data = QuestDataStorage.get(sp.getUUID());
         if ("minecraft:the_nether".equals(shared.dimension) && data.level < QuestsConfig.getNetherUnlockLevel()) {
-            sp.sendSystemMessage(Component.literal("§cBạn cần Adventure Lv." + QuestsConfig.getNetherUnlockLevel() + " để nhận nhiệm vụ Nether!"));
+            sp.sendSystemMessage(Component.literal("§cRequires Adventure Lv." + QuestsConfig.getNetherUnlockLevel() + " to accept Nether quests!"));
             return;
         }
         if ("minecraft:the_end".equals(shared.dimension) && data.level < QuestsConfig.getEndUnlockLevel()) {
-            sp.sendSystemMessage(Component.literal("§cBạn cần Adventure Lv." + QuestsConfig.getEndUnlockLevel() + " để nhận nhiệm vụ The End!"));
+            sp.sendSystemMessage(Component.literal("§cRequires Adventure Lv." + QuestsConfig.getEndUnlockLevel() + " to accept End quests!"));
             return;
         }
 
-        // Find an empty slot matching the difficulty
         int start = "EASY".equals(shared.difficulty) ? 0 : ("MEDIUM".equals(shared.difficulty) ? 5 : 8);
         int end = "EASY".equals(shared.difficulty) ? 5 : ("MEDIUM".equals(shared.difficulty) ? 8 : 10);
         int freeSlot = -1;
@@ -140,7 +139,7 @@ public class QuestCommand {
             }
         }
         if (freeSlot == -1) {
-            sp.sendSystemMessage(Component.literal("§cBạn không còn ô trống nào ở bậc " + shared.difficulty + "!"));
+            sp.sendSystemMessage(Component.literal("§cYou have no empty " + shared.difficulty + " quest slots left today!"));
             return;
         }
 
@@ -149,6 +148,6 @@ public class QuestCommand {
         data.draftOffers.remove(freeSlot);
         data.dirty = true;
         QuestDataStorage.saveAsync(sp.getUUID());
-        sp.sendSystemMessage(Component.literal("§a✔ Đã nhận nhiệm vụ chung: §f" + copy.displayName));
+        sp.sendSystemMessage(Component.literal("§a✔ Accepted co-op quest: §f" + copy.displayName));
     }
 }

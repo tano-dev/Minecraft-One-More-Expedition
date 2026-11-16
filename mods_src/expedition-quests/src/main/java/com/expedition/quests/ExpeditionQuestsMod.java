@@ -4,6 +4,7 @@ import com.expedition.quests.command.QuestCommand;
 import com.expedition.quests.config.QuestsConfig;
 import com.expedition.quests.data.QuestDataStorage;
 import com.expedition.quests.exploration.ClaimedLocationsRegistry;
+import com.expedition.quests.exploration.ExplorationTargetCache;
 import com.expedition.quests.exploration.UnexploredStructureLocator;
 import com.expedition.quests.tracker.QuestProgressListener;
 import net.fabricmc.api.ModInitializer;
@@ -23,6 +24,7 @@ public class ExpeditionQuestsMod implements ModInitializer {
     public void onInitialize() {
         QuestsConfig.load();
         ClaimedLocationsRegistry.load();
+        ExplorationTargetCache.load();
         QuestProgressListener.registerEvents();
 
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
@@ -40,11 +42,13 @@ public class ExpeditionQuestsMod implements ModInitializer {
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             tickCounter++;
             QuestProgressListener.tickServer(server, tickCounter);
+            ExplorationTargetCache.tickBackgroundWarmup(server, tickCounter);
         });
 
         ServerLifecycleEvents.SERVER_STOPPING.register(server -> {
             QuestDataStorage.saveAllSync();
             ClaimedLocationsRegistry.saveIfDirty();
+            ExplorationTargetCache.saveIfDirty();
         });
     }
 }

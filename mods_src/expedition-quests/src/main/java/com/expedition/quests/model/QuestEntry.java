@@ -72,9 +72,9 @@ public class QuestEntry {
 
     public String getDifficultyTitle() {
         return switch (difficulty) {
-            case "EASY" -> "§a§lDỄ (EASY)";
-            case "MEDIUM" -> "§e§lTRUNG BÌNH (MEDIUM)";
-            default -> "§c§lKHÓ (HARD)";
+            case "EASY" -> "§a§lEASY";
+            case "MEDIUM" -> "§e§lMEDIUM";
+            default -> "§c§lHARD";
         };
     }
 }
