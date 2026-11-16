@@ -11955,31 +11955,6 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:poison_infused\":3}}] 1"
   },
   {
-    "id": "incendium:poison_protection",
-    "namespace": "incendium",
-    "raw_name": "poison_protection",
-    "name": "Poison Protection",
-    "name_vi": "Poison Protection",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 2,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Incendium_Legacy_v5.5.4+26.3",
-    "supported_items": "#enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Grants complete immunity to Poison damage in Incendium Nether fortresses.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"incendium:poison_protection\":1}}] 1"
-  },
-  {
     "id": "enchantencore:poppy_peace",
     "namespace": "enchantencore",
     "raw_name": "poppy_peace",

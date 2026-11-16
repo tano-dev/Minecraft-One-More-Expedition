@@ -8,10 +8,10 @@
 | :--- | :--- | :---: | :--- | :--- |
 | **Ultimate** | Yellow (`yellow`) | **42** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
 | **Epic** | Light Purple (`light_purple`) | **65** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
-| **Rare** | Aqua (`aqua`) | **105** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
+| **Rare** | Aqua (`aqua`) | **104** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
 | **Common** | Gray (`gray`) | **136** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
 | **Curses** | Red (`red`) | **31** | Rương kho báu / Curse | Lời nguyền |
-| **Filtered Duplicates** | — | **38** | Đã tắt | Lọc trùng giữa các pack |
+| **Filtered Duplicates** | — | **39** | Đã tắt | Lọc trùng giữa các pack |
 
 ## 2. Xác Suất Rare Khi Enchant Theo Loại Trang Bị (Mục tiêu 2% – 5%)
 
@@ -145,7 +145,7 @@
 | `stellarity:ambush` | 3 | `Stellarity-6.0.1` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
 | `stellarity:plated` | 4 | `Stellarity-6.0.1` | No | 2 | `#stellarity:enchantable/elytra` |
 
-## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (105)
+## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (104)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -222,7 +222,6 @@
 | `enchantsplus:kinetic_protection` | 4 | `Enchants Plus v2.1 26.3` | Yes | 10 | `#minecraft:enchantable/head_armor` |
 | `enchantsplus:retrieval` | 4 | `Enchants Plus v2.1 26.3` | No | 5 | `#minecraft:enchantable/chest_armor` |
 | `enchantsplus:websnare` | 2 | `Enchants Plus v2.1 26.3` | Yes | 10 | `#minecraft:enchantable/fire_aspect` |
-| `incendium:poison_protection` | 1 | `Incendium_Legacy_v5.5.4+26.3` | Yes | 5 | `#enchantable/armor` |
 | `kattersstructures:blunt` | 1 | `Katters Structures v2.9` | No | 5 | `#minecraft:enchantable/sharp_weapon` |
 | `kattersstructures:enlightning` | 1 | `Katters Structures v2.9` | No | 5 | `minecraft:blaze_rod` |
 | `kattersstructures:light` | 3 | `Katters Structures v2.9` | No | 5 | `#minecraft:enchantable/armor` |
@@ -396,7 +395,7 @@
 | `stellarity:_technical/void_pendant/netherite` | 1 | `Stellarity-6.0.1` | No | 10 | `minecraft:iron_nugget` |
 | `stellarity:_technical/void_pendant/quartz` | 1 | `Stellarity-6.0.1` | No | 10 | `minecraft:iron_nugget` |
 
-## 7. Enchants Bị Lọc Do Trùng Lặp (38)
+## 7. Enchants Bị Lọc Do Trùng Lặp (39)
 
 | Enchantment ID (Đã tắt) | Nguồn Pack | Thay thế bởi (`duplicate_of`) |
 | :--- | :--- | :--- |
@@ -436,5 +435,6 @@
 | `enchantsplus:scorch_walker` | `Enchants Plus v2.1 26.3` | `manual` |
 | `enchantsplus:toxic` | `Enchants Plus v2.1 26.3` | `manual` |
 | `enchantsplus:vitality` | `Enchants Plus v2.1 26.3` | `manual` |
+| `incendium:poison_protection` | `Incendium_Legacy_v5.5.4+26.3` | `manual` |
 | `stellarity:dune_speed` | `Stellarity-6.0.1` | `manual` |
 | `stellarity:soaring` | `Stellarity-6.0.1` | `manual` |
