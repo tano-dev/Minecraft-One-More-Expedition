@@ -48,8 +48,10 @@ public class ExpeditionFishingMod implements ModInitializer {
             }
         });
 
-        // Heat natural cooling, Overheat penalty & Sea Creature Auto-Despawn (every 2 seconds = 40 ticks)
+        // Heat natural cooling, Overheat penalty & Sea Creature Auto-Despawn / Boss Abilities
         ServerTickEvents.END_SERVER_TICK.register(server -> {
+            com.expedition.fishing.mechanics.BossAbilityEngine.tickAll(server);
+
             tickCounter++;
             if (tickCounter % 40 != 0) return;
 

@@ -60,6 +60,7 @@ public class FishingEngine {
 
     public static void onSeaCreatureKilled(ServerLevel level, Entity killedEntity, ServerPlayer killer) {
         UUID entId = killedEntity.getUUID();
+        BossAbilityEngine.removeController(entId);
         TrackedCreature matched = null;
         for (TrackedCreature tc : TRACKED_CREATURES) {
             if (tc.entityUuid().equals(entId)) {
@@ -629,87 +630,198 @@ public class FishingEngine {
     }
 
     private static void spawnAndLaunchCreature(ServerPlayer player, FishingHook hook, String mobId, JsonObject mobCfg, String displayName, String rarity, double weightKg, double pendingXp, PlayerFishingStats stats) {
-        ServerLevel level = player.level();
-        String entityTypeStr = FishingDataRegistry.getStr(mobCfg, "entity_type", "COD").toLowerCase(Locale.ROOT);
-        EntityType<?> type = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace(entityTypeStr));
+        Vec3 spawnPos = hook.position().add(0, 0.4, 0);
+        Vec3 dir = player.position().add(0, 1.0, 0).subtract(spawnPos);
+        Vec3 vel = new Vec3(dir.x * 0.14, Math.min(0.65, Math.max(0.28, dir.y * 0.15 + 0.32)), dir.z * 0.14);
+        spawnComplexCreature(player, player.level(), spawnPos, vel, mobId, mobCfg, displayName, rarity, weightKg, pendingXp, stats);
+    }
+
+    private static void spawnComplexCreature(
+            ServerPlayer player,
+            ServerLevel level,
+            Vec3 spawnPos,
+            Vec3 vel,
+            String mobId,
+            JsonObject mobCfg,
+            String displayName,
+            String rarity,
+            double weightKg,
+            double pendingXp,
+            PlayerFishingStats stats
+    ) {
+        JsonObject spCfg = mobCfg.has("spawn") && mobCfg.get("spawn").isJsonObject()
+                ? mobCfg.getAsJsonObject("spawn")
+                : new JsonObject();
+        String spType = FishingDataRegistry.getStr(spCfg, "type", "SINGLE").toUpperCase(Locale.ROOT);
+        boolean isBoss = "EPIC".equalsIgnoreCase(rarity) || "LEGENDARY".equalsIgnoreCase(rarity);
+        double scav = stats != null ? stats.scavBonus : 0.0;
+        boolean smelt = stats != null && stats.autoSmeltFish;
+
+        // 1. Handle GROUP spawns (e.g. Pillager Trio/Quartet/Quintet, Wailing Ghast Duo, Piglin Squad)
+        if ("GROUP".equals(spType) && spCfg.has("members") && spCfg.get("members").isJsonArray()) {
+            double spread = FishingDataRegistry.getDouble(spCfg, "spread", 2.0);
+            boolean firstMember = true;
+            for (JsonElement el : spCfg.getAsJsonArray("members")) {
+                if (!el.isJsonObject()) continue;
+                JsonObject mem = el.getAsJsonObject();
+                String memTypeStr = FishingDataRegistry.getStr(mem, "entity_type", "PILLAGER");
+                int count = Math.max(1, FishingDataRegistry.getInt(mem, "count", 1));
+                for (int i = 0; i < count; i++) {
+                    double ox = (level.getRandom().nextDouble() - 0.5) * spread;
+                    double oz = (level.getRandom().nextDouble() - 0.5) * spread;
+                    Vec3 mPos = spawnPos.add(ox, 0, oz);
+                    Entity memberEnt = createConfiguredEntity(level, mPos, vel, memTypeStr, displayName, rarity, mem, stats);
+                    if (memberEnt != null) {
+                        level.addFreshEntity(memberEnt);
+                        double xpForThis = firstMember ? pendingXp : 0.0;
+                        registerSpawnedCreature(player, level, memberEnt, isBoss, mobId, displayName, rarity, weightKg, xpForThis, scav, smelt);
+                        if (memberEnt instanceof LivingEntity mLiv) {
+                            BossAbilityEngine.registerController(player, level, mLiv, mobId, displayName, rarity, spCfg, firstMember);
+                        }
+                        if (mem.has("rider") && mem.get("rider").isJsonObject()) {
+                            JsonObject riderCfg = mem.getAsJsonObject("rider");
+                            String rType = FishingDataRegistry.getStr(riderCfg, "entity_type", "PILLAGER");
+                            Entity riderEnt = createConfiguredEntity(level, mPos, vel, rType, displayName, rarity, riderCfg, stats);
+                            if (riderEnt != null) {
+                                level.addFreshEntity(riderEnt);
+                                registerSpawnedCreature(player, level, riderEnt, isBoss, mobId, displayName, rarity, weightKg, 0.0, 0.0, false);
+                                riderEnt.startRiding(memberEnt, true, true);
+                            }
+                        }
+                        firstMember = false;
+                    }
+                }
+            }
+            return;
+        }
+
+        // 2. Handle SINGLE, SCALED, or MOUNTED spawns
+        String mainTypeStr = spCfg.has("rider_entity_type")
+                ? FishingDataRegistry.getStr(spCfg, "rider_entity_type", "ZOMBIFIED_PIGLIN")
+                : FishingDataRegistry.getStr(mobCfg, "entity_type", "COD");
+
+        Entity entity = createConfiguredEntity(level, spawnPos, vel, mainTypeStr, displayName, rarity, spCfg, stats);
+        if (entity == null) return;
+
+        level.addFreshEntity(entity);
+        registerSpawnedCreature(player, level, entity, isBoss, mobId, displayName, rarity, weightKg, pendingXp, scav, smelt);
+        if (entity instanceof LivingEntity living) {
+            BossAbilityEngine.registerController(player, level, living, mobId, displayName, rarity, spCfg, true);
+        }
+
+        if (spCfg.has("mount") && spCfg.get("mount").isJsonObject()) {
+            JsonObject mountCfg = spCfg.getAsJsonObject("mount");
+            String mTypeStr = FishingDataRegistry.getStr(mountCfg, "entity_type", "DOLPHIN");
+            String mName = FishingDataRegistry.getStr(mountCfg, "display_name", displayName + "'s Steed");
+            Entity mount = createConfiguredEntity(level, spawnPos, vel, mTypeStr, mName, rarity, mountCfg, stats);
+            if (mount != null) {
+                if (!FishingDataRegistry.getBool(mountCfg, "show_name", false)) {
+                    mount.setCustomNameVisible(false);
+                }
+                level.addFreshEntity(mount);
+                registerSpawnedCreature(player, level, mount, isBoss, mobId, mName, rarity, weightKg, 0.0, 0.0, false);
+                if (mount instanceof LivingEntity mLiving) {
+                    BossAbilityEngine.registerController(player, level, mLiving, mobId, mName, rarity, mountCfg, false);
+                }
+                entity.startRiding(mount, true, true);
+            }
+        }
+    }
+
+    private static Entity createConfiguredEntity(
+            ServerLevel level,
+            Vec3 spawnPos,
+            Vec3 vel,
+            String entityTypeStr,
+            String displayName,
+            String rarity,
+            JsonObject spCfg,
+            PlayerFishingStats stats
+    ) {
+        String cleanType = entityTypeStr.toLowerCase(Locale.ROOT);
+        if ("parched".equals(cleanType)) cleanType = "husk";
+        if ("camel_husk".equals(cleanType)) cleanType = "camel";
+        EntityType<?> type = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace(cleanType));
         if (type == null) type = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace("cod"));
 
         Entity entity = type.create(level, EntitySpawnReason.EVENT);
-        if (entity == null) return;
+        if (entity == null) return null;
 
-        Vec3 spawnPos = hook.position().add(0, 0.4, 0);
         entity.setPos(spawnPos.x, spawnPos.y, spawnPos.z);
         entity.setCustomName(Component.literal(FishingItemFactory.getRarityColor(rarity) + displayName));
         entity.setCustomNameVisible(true);
-
-        Vec3 dir = player.position().add(0, 1.0, 0).subtract(spawnPos);
-        Vec3 vel = new Vec3(dir.x * 0.14, Math.min(0.65, Math.max(0.28, dir.y * 0.15 + 0.32)), dir.z * 0.14);
-        entity.setDeltaMovement(vel);
-
-        if (entity instanceof LivingEntity living) {
-            if (mobCfg.has("spawn") && mobCfg.get("spawn").isJsonObject()) {
-                JsonObject spCfg = mobCfg.getAsJsonObject("spawn");
-                double scale = FishingDataRegistry.getDouble(spCfg, "scale", 1.0);
-                if (scale != 1.0 && scale > 0.1) {
-                    AttributeInstance scaleAttr = living.getAttribute(Attributes.SCALE);
-                    if (scaleAttr != null) scaleAttr.setBaseValue(scale);
-                }
-                double hp = FishingDataRegistry.getDouble(spCfg, "health", 0.0);
-                if (hp > 0.0) {
-                    AttributeInstance hpAttr = living.getAttribute(Attributes.MAX_HEALTH);
-                    if (hpAttr != null) {
-                        hpAttr.setBaseValue(hp);
-                        living.setHealth((float) hp);
-                    }
-                }
-                if (spCfg.has("equipment") && spCfg.get("equipment").isJsonObject()) {
-                    JsonObject eq = spCfg.getAsJsonObject("equipment");
-                    equipSlot(living, EquipmentSlot.HEAD, FishingDataRegistry.getStr(eq, "helmet", ""));
-                    equipSlot(living, EquipmentSlot.CHEST, FishingDataRegistry.getStr(eq, "chestplate", ""));
-                    equipSlot(living, EquipmentSlot.LEGS, FishingDataRegistry.getStr(eq, "leggings", ""));
-                    equipSlot(living, EquipmentSlot.FEET, FishingDataRegistry.getStr(eq, "boots", ""));
-                    equipSlot(living, EquipmentSlot.MAINHAND, FishingDataRegistry.getStr(eq, "mainhand", ""));
-                }
-            }
-            if (stats.frostbiteLevel > 0) {
-                living.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, stats.frostbiteLevel * 80, 1));
-            }
-            if (stats.stunningYankLevel > 0) {
-                living.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, stats.stunningYankLevel * 60, 0));
-                living.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, stats.stunningYankLevel * 60, 1));
-            }
+        if (vel != null) {
+            entity.setDeltaMovement(vel);
         }
 
-        boolean isBoss = "EPIC".equalsIgnoreCase(rarity) || "LEGENDARY".equalsIgnoreCase(rarity);
-        level.addFreshEntity(entity);
-        registerSpawnedCreature(player, level, entity, isBoss, mobId, displayName, rarity, weightKg, pendingXp, stats.scavBonus, stats.autoSmeltFish);
+        if (entity instanceof LivingEntity living && spCfg != null) {
+            double scale = FishingDataRegistry.getDouble(spCfg, "scale", 1.0);
+            if (spCfg.has("slime_size")) {
+                scale = Math.max(scale, FishingDataRegistry.getInt(spCfg, "slime_size", 4) * 0.55);
+            }
+            if (scale != 1.0 && scale > 0.1) {
+                AttributeInstance scaleAttr = living.getAttribute(Attributes.SCALE);
+                if (scaleAttr != null) scaleAttr.setBaseValue(scale);
+            }
 
-        // Handle MOUNTED bosses (e.g. Poseidon on 6x Dolphin Steed, Dead Rider on Elder Guardian)
-        if (mobCfg.has("spawn") && mobCfg.get("spawn").isJsonObject()) {
-            JsonObject spCfg = mobCfg.getAsJsonObject("spawn");
-            if (spCfg.has("mount") && spCfg.get("mount").isJsonObject()) {
-                JsonObject mountCfg = spCfg.getAsJsonObject("mount");
-                String mTypeStr = FishingDataRegistry.getStr(mountCfg, "entity_type", "DOLPHIN").toLowerCase(Locale.ROOT);
-                EntityType<?> mType = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace(mTypeStr));
-                if (mType != null) {
-                    Entity mount = mType.create(level, EntitySpawnReason.EVENT);
-                    if (mount != null) {
-                        mount.setPos(spawnPos.x, spawnPos.y, spawnPos.z);
-                        mount.setDeltaMovement(vel);
-                        if (mount instanceof LivingEntity mLiving) {
-                            double mScale = FishingDataRegistry.getDouble(mountCfg, "scale", 1.0);
-                            if (mScale != 1.0 && mScale > 0.1) {
-                                AttributeInstance sa = mLiving.getAttribute(Attributes.SCALE);
-                                if (sa != null) sa.setBaseValue(mScale);
-                            }
-                        }
-                        level.addFreshEntity(mount);
-                        registerSpawnedCreature(player, level, mount, isBoss, mobId, displayName, rarity, weightKg, 0.0, 0.0, false);
-                        entity.startRiding(mount, true, true);
+            double hpScale = FishingDataRegistry.getMobBalance("global_hp_scale", 1.0);
+            double maxBossHp = FishingDataRegistry.getMobBalance("max_boss_hp", 2000.0);
+            double explicitHp = FishingDataRegistry.getDouble(spCfg, "health", 0.0);
+            double hpMult = FishingDataRegistry.getDouble(spCfg, "health_multiplier", 1.0);
+            AttributeInstance hpAttr = living.getAttribute(Attributes.MAX_HEALTH);
+            if (hpAttr != null) {
+                double baseHp = explicitHp > 0.0 ? explicitHp : (hpAttr.getBaseValue() * hpMult);
+                double finalHp = Math.min(maxBossHp, Math.max(4.0, baseHp * hpScale));
+                hpAttr.setBaseValue(finalHp);
+                living.setHealth((float) finalHp);
+            }
+
+            double dmgScale = FishingDataRegistry.getMobBalance("global_damage_scale", 1.0);
+            double maxBossDmg = FishingDataRegistry.getMobBalance("max_boss_damage", 50.0);
+            double explicitDmg = FishingDataRegistry.getDouble(spCfg, "damage", 0.0);
+            double dmgMult = FishingDataRegistry.getDouble(spCfg, "damage_multiplier", 1.0);
+            AttributeInstance dmgAttr = living.getAttribute(Attributes.ATTACK_DAMAGE);
+            if (dmgAttr != null && (explicitDmg > 0.0 || dmgMult != 1.0)) {
+                double baseDmg = explicitDmg > 0.0 ? explicitDmg : (dmgAttr.getBaseValue() * dmgMult);
+                dmgAttr.setBaseValue(Math.min(maxBossDmg, Math.max(1.0, baseDmg * dmgScale)));
+            }
+
+            if (spCfg.has("equipment") && spCfg.get("equipment").isJsonObject()) {
+                JsonObject eq = spCfg.getAsJsonObject("equipment");
+                equipSlot(living, EquipmentSlot.HEAD, FishingDataRegistry.getStr(eq, "helmet", ""));
+                equipSlot(living, EquipmentSlot.CHEST, FishingDataRegistry.getStr(eq, "chestplate", ""));
+                equipSlot(living, EquipmentSlot.LEGS, FishingDataRegistry.getStr(eq, "leggings", ""));
+                equipSlot(living, EquipmentSlot.FEET, FishingDataRegistry.getStr(eq, "boots", ""));
+                equipSlot(living, EquipmentSlot.MAINHAND, FishingDataRegistry.getStr(eq, "mainhand", ""));
+            }
+
+            if (spCfg.has("potion_effects") && spCfg.get("potion_effects").isJsonArray()) {
+                for (JsonElement pe : spCfg.getAsJsonArray("potion_effects")) {
+                    if (!pe.isJsonObject()) continue;
+                    JsonObject pObj = pe.getAsJsonObject();
+                    String effType = FishingDataRegistry.getStr(pObj, "type", "").toUpperCase(Locale.ROOT);
+                    int amp = FishingDataRegistry.getInt(pObj, "amplifier", 0);
+                    switch (effType) {
+                        case "GLOWING" -> entity.setGlowingTag(true);
+                        case "RESISTANCE" -> living.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 24000, amp, true, false));
+                        case "SPEED" -> living.addEffect(new MobEffectInstance(MobEffects.SPEED, 24000, amp, true, false));
+                        case "SLOWNESS" -> living.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 24000, amp, true, false));
+                        case "FIRE_RESISTANCE" -> living.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 24000, amp, true, false));
                     }
                 }
             }
+
+            if (stats != null) {
+                if (stats.frostbiteLevel > 0) {
+                    living.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, stats.frostbiteLevel * 80, 1));
+                }
+                if (stats.stunningYankLevel > 0) {
+                    living.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, stats.stunningYankLevel * 60, 0));
+                    living.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, stats.stunningYankLevel * 60, 1));
+                }
+            }
         }
+        return entity;
     }
 
     private static void equipSlot(LivingEntity entity, EquipmentSlot slot, String spec) {
@@ -719,20 +831,36 @@ public class FishingEngine {
             entity.setItemSlot(slot, custom);
             return;
         }
-        String clean = spec;
-        if (clean.startsWith("dyed:") || clean.startsWith("enchanted:")) {
-            String[] parts = clean.split(":");
-            if (parts.length >= 2) clean = parts[1];
-        }
-        if (clean.startsWith("skull:")) {
+        if (spec.startsWith("skull:")) {
             ItemStack head = new ItemStack(Items.PLAYER_HEAD);
-            FishingItemFactory.applyHeadTexture(head, clean.substring("skull:".length()));
+            FishingItemFactory.applyHeadTexture(head, spec.substring("skull:".length()));
             entity.setItemSlot(slot, head);
             return;
         }
+        String clean = spec;
+        Integer dyeRgb = null;
+        if (clean.startsWith("dyed:") || clean.startsWith("dyed_trimmed:")) {
+            String[] parts = clean.split(":");
+            if (parts.length >= 2) clean = parts[1];
+            if (parts.length >= 3 && parts[2].startsWith("#")) {
+                try {
+                    dyeRgb = Integer.parseInt(parts[2].substring(1), 16);
+                } catch (Exception ignored) {}
+            }
+        } else if (clean.startsWith("enchanted:")) {
+            String[] parts = clean.split(":");
+            if (parts.length >= 2) clean = parts[1];
+        }
         Item van = BuiltInRegistries.ITEM.getValue(Identifier.withDefaultNamespace(clean.toLowerCase(Locale.ROOT)));
         if (van != null && van != Items.AIR) {
-            entity.setItemSlot(slot, new ItemStack(van));
+            ItemStack st = new ItemStack(van);
+            if (dyeRgb != null) {
+                st.set(DataComponents.DYED_COLOR, new net.minecraft.world.item.component.DyedItemColor(dyeRgb));
+            }
+            if (spec.startsWith("enchanted:")) {
+                st.set(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true);
+            }
+            entity.setItemSlot(slot, st);
         }
     }
 
@@ -896,79 +1024,16 @@ public class FishingEngine {
     public static boolean spawnMobAtPlayer(ServerPlayer player, String mobId) {
         JsonObject mobCfg = FishingDataRegistry.MOBS.get(mobId);
         if (mobCfg == null) return false;
-        ServerLevel level = player.level();
         String displayName = FishingDataRegistry.getStr(mobCfg, "display_name", FishingItemFactory.formatId(mobId));
         String rarity = FishingDataRegistry.getStr(mobCfg, "rarity", "COMMON").toUpperCase(Locale.ROOT);
         String category = FishingDataRegistry.getStr(mobCfg, "category", "HOSTILE").toUpperCase(Locale.ROOT);
         double baseXp = FishingDataRegistry.getDouble(mobCfg, "xp", 25.0);
         double baseWeight = Math.max(0.5, FishingDataRegistry.getDouble(mobCfg, "base_weight", 5.0));
 
-        String entityTypeStr = FishingDataRegistry.getStr(mobCfg, "entity_type", "COD").toLowerCase(Locale.ROOT);
-        EntityType<?> type = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace(entityTypeStr));
-        if (type == null) type = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace("cod"));
-        Entity entity = type.create(level, EntitySpawnReason.COMMAND);
-        if (entity == null) return false;
-
         Vec3 look = player.getLookAngle();
-        Vec3 pos = player.position().add(look.x * 2.5, 0.5, look.z * 2.5);
-        entity.setPos(pos.x, pos.y, pos.z);
-        entity.setCustomName(Component.literal(FishingItemFactory.getRarityColor(rarity) + displayName));
-        entity.setCustomNameVisible(true);
-
-        if (entity instanceof LivingEntity living && mobCfg.has("spawn") && mobCfg.get("spawn").isJsonObject()) {
-            JsonObject spCfg = mobCfg.getAsJsonObject("spawn");
-            double scale = FishingDataRegistry.getDouble(spCfg, "scale", 1.0);
-            if (scale != 1.0 && scale > 0.1) {
-                AttributeInstance scaleAttr = living.getAttribute(Attributes.SCALE);
-                if (scaleAttr != null) scaleAttr.setBaseValue(scale);
-            }
-            double hp = FishingDataRegistry.getDouble(spCfg, "health", 0.0);
-            if (hp > 0.0) {
-                AttributeInstance hpAttr = living.getAttribute(Attributes.MAX_HEALTH);
-                if (hpAttr != null) {
-                    hpAttr.setBaseValue(hp);
-                    living.setHealth((float) hp);
-                }
-            }
-            if (spCfg.has("equipment") && spCfg.get("equipment").isJsonObject()) {
-                JsonObject eq = spCfg.getAsJsonObject("equipment");
-                equipSlot(living, EquipmentSlot.HEAD, FishingDataRegistry.getStr(eq, "helmet", ""));
-                equipSlot(living, EquipmentSlot.CHEST, FishingDataRegistry.getStr(eq, "chestplate", ""));
-                equipSlot(living, EquipmentSlot.LEGS, FishingDataRegistry.getStr(eq, "leggings", ""));
-                equipSlot(living, EquipmentSlot.FEET, FishingDataRegistry.getStr(eq, "boots", ""));
-                equipSlot(living, EquipmentSlot.MAINHAND, FishingDataRegistry.getStr(eq, "mainhand", ""));
-            }
-        }
-
-        boolean isBoss = "EPIC".equalsIgnoreCase(rarity) || "LEGENDARY".equalsIgnoreCase(rarity);
+        Vec3 pos = player.position().add(look.x * 2.8, 0.5, look.z * 2.8);
         double pendingXp = "HOSTILE".equalsIgnoreCase(category) ? baseXp : 0.0;
-        level.addFreshEntity(entity);
-        registerSpawnedCreature(player, level, entity, isBoss, mobId, displayName, rarity, baseWeight, pendingXp, 0.0, false);
-
-        if (mobCfg.has("spawn") && mobCfg.get("spawn").isJsonObject()) {
-            JsonObject spCfg = mobCfg.getAsJsonObject("spawn");
-            if (spCfg.has("mount") && spCfg.get("mount").isJsonObject()) {
-                JsonObject mountCfg = spCfg.getAsJsonObject("mount");
-                String mTypeStr = FishingDataRegistry.getStr(mountCfg, "entity_type", "DOLPHIN").toLowerCase(Locale.ROOT);
-                EntityType<?> mType = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace(mTypeStr));
-                if (mType != null) {
-                    Entity mount = mType.create(level, EntitySpawnReason.COMMAND);
-                    if (mount != null) {
-                        mount.setPos(pos.x, pos.y, pos.z);
-                        if (mount instanceof LivingEntity mLiving) {
-                            double mScale = FishingDataRegistry.getDouble(mountCfg, "scale", 1.0);
-                            if (mScale != 1.0 && mScale > 0.1) {
-                                AttributeInstance sa = mLiving.getAttribute(Attributes.SCALE);
-                                if (sa != null) sa.setBaseValue(mScale);
-                            }
-                        }
-                        level.addFreshEntity(mount);
-                        registerSpawnedCreature(player, level, mount, isBoss, mobId, displayName, rarity, baseWeight, 0.0, 0.0, false);
-                        entity.startRiding(mount, true, true);
-                    }
-                }
-            }
-        }
+        spawnComplexCreature(player, player.level(), pos, Vec3.ZERO, mobId, mobCfg, displayName, rarity, baseWeight, pendingXp, null);
         return true;
     }
 

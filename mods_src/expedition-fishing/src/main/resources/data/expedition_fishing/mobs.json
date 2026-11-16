@@ -3003,7 +3003,13 @@
         "min": 1,
         "max": 2
       }
-    ]
+    ],
+    "spawn": {
+      "scale": 1.5,
+      "health": 80.0,
+      "damage": 9.0,
+      "particle": "portal"
+    }
   },
   "rift_phantom": {
     "entity_type": "PHANTOM",
@@ -3028,7 +3034,26 @@
         "min": 1,
         "max": 3
       }
-    ]
+    ],
+    "spawn": {
+      "scale": 1.8,
+      "health": 120.0,
+      "damage": 12.0,
+      "aggro": {
+        "speed": 1.1,
+        "damage": 12.0,
+        "range": 4.0,
+        "hit_interval": 30
+      },
+      "abilities": [
+        {
+          "id": "VULTURE_MISSILE",
+          "cooldown_ticks": 180,
+          "weight": 1,
+          "chance": 1.0
+        }
+      ]
+    }
   },
   "prismatic_guardian": {
     "entity_type": "GUARDIAN",
@@ -3053,7 +3078,32 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "spawn": {
+      "scale": 1.8,
+      "health": 240.0,
+      "damage": 15.0,
+      "aggro": {
+        "speed": 0.9,
+        "damage": 15.0,
+        "range": 6.0,
+        "hit_interval": 35
+      },
+      "abilities": [
+        {
+          "id": "DUNE_BEAM",
+          "cooldown_ticks": 120,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "TIDAL_PULL",
+          "cooldown_ticks": 140,
+          "weight": 1,
+          "chance": 1.0
+        }
+      ]
+    }
   },
   "crystal_shulker": {
     "entity_type": "SHULKER",
@@ -3078,7 +3128,26 @@
         "min": 1,
         "max": 3
       }
-    ]
+    ],
+    "spawn": {
+      "scale": 1.6,
+      "health": 260.0,
+      "damage": 14.0,
+      "abilities": [
+        {
+          "id": "MINI_BLAST",
+          "cooldown_ticks": 110,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "RIFTBOUND_SNARE",
+          "cooldown_ticks": 150,
+          "weight": 1,
+          "chance": 1.0
+        }
+      ]
+    }
   },
   "sculk_lurker": {
     "entity_type": "ENDERMAN",
@@ -3103,7 +3172,33 @@
         "min": 1,
         "max": 2
       }
-    ]
+    ],
+    "spawn": {
+      "scale": 1.7,
+      "health": 350.0,
+      "damage": 18.0,
+      "potion_effects": [
+        {
+          "type": "GLOWING",
+          "duration": -1,
+          "amplifier": 0
+        }
+      ],
+      "abilities": [
+        {
+          "id": "SOUL_RUPTURE",
+          "cooldown_ticks": 120,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "INK_CLOUD",
+          "cooldown_ticks": 150,
+          "weight": 1,
+          "chance": 1.0
+        }
+      ]
+    }
   },
   "shadow_stalker": {
     "entity_type": "ENDERMAN",
@@ -3128,7 +3223,33 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "spawn": {
+      "scale": 2.1,
+      "health": 580.0,
+      "damage": 21.0,
+      "particle": "reverse_portal",
+      "abilities": [
+        {
+          "id": "RIFTBOUND_GAZE",
+          "cooldown_ticks": 130,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "RIFTBOUND_SNARE",
+          "cooldown_ticks": 160,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "DARK_RITUAL",
+          "cooldown_ticks": 180,
+          "weight": 1,
+          "chance": 1.0
+        }
+      ]
+    }
   },
   "abyssal_leviathan": {
     "entity_type": "ELDER_GUARDIAN",
@@ -3153,7 +3274,32 @@
         "min": 1,
         "max": 2
       }
-    ]
+    ],
+    "spawn": {
+      "scale": 2.6,
+      "health": 720.0,
+      "damage": 24.0,
+      "aggro": {
+        "speed": 1.0,
+        "damage": 24.0,
+        "range": 6.0,
+        "hit_interval": 30
+      },
+      "abilities": [
+        {
+          "id": "ABYSSAL_NOVA",
+          "cooldown_ticks": 140,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "TIDAL_PULL",
+          "cooldown_ticks": 110,
+          "weight": 2,
+          "chance": 1.0
+        }
+      ]
+    }
   },
   "void_kraken": {
     "entity_type": "ELDER_GUARDIAN",
@@ -3178,7 +3324,44 @@
         "min": 2,
         "max": 4
       }
-    ]
+    ],
+    "spawn": {
+      "scale": 3.5,
+      "health": 980.0,
+      "damage": 28.0,
+      "aggro": {
+        "speed": 1.15,
+        "damage": 28.0,
+        "range": 7.5,
+        "hit_interval": 30
+      },
+      "abilities": [
+        {
+          "id": "TORSO_TENTACLES",
+          "cooldown_ticks": 90,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
+          "id": "ABYSSAL_NOVA",
+          "cooldown_ticks": 150,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "TIDAL_PULL",
+          "cooldown_ticks": 100,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "INK_CLOUD",
+          "cooldown_ticks": 140,
+          "weight": 1,
+          "chance": 1.0
+        }
+      ]
+    }
   },
   "ender_hydra": {
     "entity_type": "RAVAGER",
@@ -3203,7 +3386,52 @@
         "min": 3,
         "max": 6
       }
-    ]
+    ],
+    "spawn": {
+      "type": "MOUNTED",
+      "mount": {
+        "entity_type": "RAVAGER",
+        "display_name": "Void Behemoth",
+        "scale": 2.0,
+        "aggro": {
+          "speed": 1.2,
+          "damage": 22.0,
+          "range": 5.0,
+          "hit_interval": 30
+        }
+      },
+      "rider_entity_type": "WITHER_SKELETON",
+      "scale": 1.8,
+      "health": 1100.0,
+      "damage": 26.0,
+      "equipment": {
+        "helmet": "voidweaver_helmet",
+        "chestplate": "voidweaver_chestplate",
+        "leggings": "voidweaver_leggings",
+        "boots": "voidweaver_boots",
+        "mainhand": "poseidons_trident"
+      },
+      "abilities": [
+        {
+          "id": "GROUND_SLAM",
+          "cooldown_ticks": 110,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
+          "id": "SOUL_GEYSERS",
+          "cooldown_ticks": 130,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "ABYSSAL_NOVA",
+          "cooldown_ticks": 160,
+          "weight": 2,
+          "chance": 1.0
+        }
+      ]
+    }
   },
   "starlight_wyrm": {
     "entity_type": "PHANTOM",
@@ -3228,6 +3456,43 @@
         "min": 1,
         "max": 2
       }
-    ]
+    ],
+    "spawn": {
+      "scale": 4.2,
+      "health": 1350.0,
+      "damage": 32.0,
+      "aggro": {
+        "speed": 1.35,
+        "damage": 32.0,
+        "range": 8.0,
+        "hit_interval": 25
+      },
+      "abilities": [
+        {
+          "id": "POSEIDON_STORM_WAVE",
+          "cooldown_ticks": 90,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
+          "id": "ABYSSAL_NOVA",
+          "cooldown_ticks": 130,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
+          "id": "WAILING_TWIN_LASER",
+          "cooldown_ticks": 80,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "VALLEY_DIRGE",
+          "cooldown_ticks": 150,
+          "weight": 2,
+          "chance": 1.0
+        }
+      ]
+    }
   }
 }

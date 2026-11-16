@@ -4,6 +4,13 @@
     "boss_despawn_seconds": 600,
     "max_active_creatures_per_player": 12
   },
+  "mob_balance": {
+    "global_hp_scale": 1.0,
+    "global_damage_scale": 1.0,
+    "ability_damage_scale": 1.0,
+    "max_boss_hp": 2000.0,
+    "max_boss_damage": 50.0
+  },
   "treasure_purse_coins": {
     "common_min": 50,
     "common_max": 150,

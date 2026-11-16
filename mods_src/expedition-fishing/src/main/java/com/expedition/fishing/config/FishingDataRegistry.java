@@ -50,6 +50,11 @@ public class FishingDataRegistry {
         return getInt(lagObj, key, def);
     }
 
+    public static double getMobBalance(String key, double def) {
+        JsonObject mbObj = BALANCE.get("mob_balance");
+        return getDouble(mbObj, key, def);
+    }
+
     private static void loadFile(String fileName, Map<String, JsonObject> target) {
         target.clear();
         Path externalPath = CONFIG_DIR.resolve(fileName);
