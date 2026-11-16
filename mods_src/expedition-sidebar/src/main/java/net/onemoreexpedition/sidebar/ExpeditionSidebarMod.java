@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.onemoreexpedition.sidebar.command.SidebarCommands;
 import net.onemoreexpedition.sidebar.config.SidebarConfig;
 import net.onemoreexpedition.sidebar.integration.EconomyIntegration;
+import net.onemoreexpedition.sidebar.integration.FishingIntegration;
 import net.onemoreexpedition.sidebar.integration.SkyblockIntegration;
 import net.onemoreexpedition.sidebar.renderer.SidebarRenderer;
 import org.slf4j.Logger;
@@ -26,6 +27,7 @@ public class ExpeditionSidebarMod implements ModInitializer {
         SidebarConfig.load();
         EconomyIntegration.init();
         SkyblockIntegration.init();
+        FishingIntegration.init();
 
         CommandRegistrationCallback.EVENT.register(SidebarCommands::register);
 

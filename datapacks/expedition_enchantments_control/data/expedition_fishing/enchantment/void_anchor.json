@@ -1,0 +1,23 @@
+{
+  "description": {
+    "text": "Void Anchor",
+    "color": "light_purple"
+  },
+  "supported_items": "#minecraft:enchantable/fishing",
+  "weight": 3,
+  "max_level": 2,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 8
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {}
+}

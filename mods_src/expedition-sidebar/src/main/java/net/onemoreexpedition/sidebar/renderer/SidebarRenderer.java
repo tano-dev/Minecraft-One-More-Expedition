@@ -21,6 +21,7 @@ import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.criteria.ObjectiveCriteria;
 import net.onemoreexpedition.sidebar.config.SidebarConfig;
 import net.onemoreexpedition.sidebar.integration.EconomyIntegration;
+import net.onemoreexpedition.sidebar.integration.FishingIntegration;
 import net.onemoreexpedition.sidebar.integration.SkyblockIntegration;
 
 import java.text.NumberFormat;
@@ -239,6 +240,26 @@ public class SidebarRenderer {
                 .withStyle(ChatFormatting.GRAY)
                 .append(combatStatus);
         list.add(combatLine);
+
+        // 9b. Fishing Level & Heat (hidden in Skyblock world)
+        if (FishingIntegration.isAvailableFor(player)) {
+            int fLv = FishingIntegration.getLevel(player.getUUID());
+            double fPct = FishingIntegration.getXpProgressPercent(player.getUUID());
+            Component fishLine = Component.literal(" 🎣 Fishing: ")
+                    .withStyle(ChatFormatting.GRAY)
+                    .append(Component.literal("Lv." + fLv).withStyle(ChatFormatting.AQUA))
+                    .append(Component.literal(String.format(Locale.US, " (%.0f%%)", fPct)).withStyle(ChatFormatting.DARK_GRAY));
+            list.add(fishLine);
+
+            if (FishingIntegration.shouldDisplayHeat(player)) {
+                int heat = FishingIntegration.getHeat(player.getUUID());
+                ChatFormatting heatColor = heat >= 90 ? ChatFormatting.RED : (heat >= 50 ? ChatFormatting.GOLD : ChatFormatting.YELLOW);
+                Component heatLine = Component.literal(" 🔥 Heat: ")
+                        .withStyle(ChatFormatting.GRAY)
+                        .append(Component.literal(heat + "/100").withStyle(heatColor));
+                list.add(heatLine);
+            }
+        }
 
         // 10. Empty spacer
         list.add(Component.empty());

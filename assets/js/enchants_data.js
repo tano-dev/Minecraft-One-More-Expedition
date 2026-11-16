@@ -484,6 +484,33 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:dolphin_blessing\":1}}] 1"
   },
   {
+    "id": "expedition_fishing:eternal_angler",
+    "namespace": "expedition_fishing",
+    "raw_name": "eternal_angler",
+    "name": "Eternal Angler",
+    "name_vi": "Eternal Angler",
+    "tier": "ultimate",
+    "tier_order": 1,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [
+      "Ultimate (Max 1/item)"
+    ],
+    "conflicts": [],
+    "description": "Grants +25% Fishing XP, 25% Bait preservation, +10% Treasure/Artifact chance, and vents 5 Heat per catch. [ULTIMATE]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:eternal_angler\":1}}] 1"
+  },
+  {
     "id": "enchantencore:frenzy",
     "namespace": "enchantencore",
     "raw_name": "frenzy",
@@ -953,6 +980,33 @@ window.ALL_ENCHANTMENTS = [
     ],
     "description": "Adds +2 trident damage, +1 return acceleration, and summons lightning on every thrown hit. [ULTIMATE]",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:poseidon\":1}}] 1"
+  },
+  {
+    "id": "expedition_fishing:poseidons_wrath",
+    "namespace": "expedition_fishing",
+    "raw_name": "poseidons_wrath",
+    "name": "Poseidon's Wrath",
+    "name_vi": "Poseidon's Wrath",
+    "tier": "ultimate",
+    "tier_order": 1,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [
+      "Ultimate (Max 1/item)"
+    ],
+    "conflicts": [],
+    "description": "Grants +10% Sea Creature Chance, +15% Fishing Speed, +10% Double Catch, and triggers an aquatic shockwave when reeling in. [ULTIMATE]",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:poseidons_wrath\":1}}] 1"
   },
   {
     "id": "enchantencore:radiant_life",
@@ -1593,13 +1647,2522 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"wither:witherbound\":1}}] 1"
   },
   {
+    "id": "expedition_fishing:abyssal_blessing",
+    "namespace": "expedition_fishing",
+    "raw_name": "abyssal_blessing",
+    "name": "Abyssal Blessing",
+    "name_vi": "Abyssal Blessing",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases Artifact drop chance from Treasure Chests by +5% and grants +25% Fishing XP from Legendary bosses.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:abyssal_blessing\":1}}] 1"
+  },
+  {
+    "id": "enchantplus:boots/agility",
+    "namespace": "enchantplus",
+    "raw_name": "boots/agility",
+    "name": "Agility",
+    "name_vi": "Agility",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 5,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases movement speed by +20% per level (up to +100% speed at Lv V).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:boots/agility\":5}}] 1"
+  },
+  {
+    "id": "stellarity:ambush",
+    "namespace": "stellarity",
+    "raw_name": "ambush",
+    "name": "Ambush",
+    "name_vi": "Ambush",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 3,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Stellarity-6.0.1",
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Multiplies damage dealt when attacking unaware targets from behind; multiplier scales across Lv I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:ambush\":3}}] 1"
+  },
+  {
+    "id": "nova_structures:antidote",
+    "namespace": "nova_structures",
+    "raw_name": "antidote",
+    "name": "Antidote",
+    "name_vi": "Antidote",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [
+      "Armor Protection"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:blast_protection",
+        "name": "Blast Protection"
+      },
+      {
+        "id": "enchantencore:day_protection",
+        "name": "Day Protection"
+      },
+      {
+        "id": "enchantencore:end_protection",
+        "name": "End Protection"
+      },
+      {
+        "id": "minecraft:fire_protection",
+        "name": "Fire Protection"
+      },
+      {
+        "id": "enchantplus:armor/fury",
+        "name": "Fury"
+      },
+      {
+        "id": "enchantencore:nether_protection",
+        "name": "Nether Protection"
+      },
+      {
+        "id": "enchantencore:night_protection",
+        "name": "Night Protection"
+      },
+      {
+        "id": "minecraft:projectile_protection",
+        "name": "Projectile Protection"
+      },
+      {
+        "id": "minecraft:protection",
+        "name": "Protection"
+      },
+      {
+        "id": "enchantplus:armor/lifeplus",
+        "name": "Walking Fortress"
+      },
+      {
+        "id": "enchantencore:wither_protection",
+        "name": "Wither Protection"
+      }
+    ],
+    "description": "Chestplate absorbs Poison damage instead of the player's health.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:antidote\":1}}] 1"
+  },
+  {
+    "id": "expedition_fishing:boss_lure",
+    "namespace": "expedition_fishing",
+    "raw_name": "boss_lure",
+    "name": "Apex Predator",
+    "name_vi": "Apex Predator",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 2,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases encounter weight of EPIC and LEGENDARY Sea Creature bosses by +15% / +30%.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:boss_lure\":2}}] 1"
+  },
+  {
+    "id": "mt:weapons/assassin_blade",
+    "namespace": "mt",
+    "raw_name": "weapons/assassin_blade",
+    "name": "Assassin Blade (Early Strikes)",
+    "name_vi": "Assassin Blade (Early Strikes)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:golden_sword",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Golden Swords",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "First strike from stealth deals massive bonus critical damage.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/assassin_blade\":1}}] 1"
+  },
+  {
+    "id": "enchantplus:helmet/auto_feed",
+    "namespace": "enchantplus",
+    "raw_name": "helmet/auto_feed",
+    "name": "Auto Feed",
+    "name_vi": "Auto Feed",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Automatically restores hunger every 3 minutes.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:helmet/auto_feed\":1}}] 1"
+  },
+  {
+    "id": "mt:weapons/barbaric_axe",
+    "namespace": "mt",
+    "raw_name": "weapons/barbaric_axe",
+    "name": "Barbaric Axe",
+    "name_vi": "Barbaric Axe",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:golden_axe",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Golden Axes",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Deals escalating damage with consecutive axe swings.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/barbaric_axe\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/basalt_boots",
+    "namespace": "mt",
+    "raw_name": "armor/basalt_boots",
+    "name": "Basalt Boots (Rock Hard)",
+    "name_vi": "Basalt Boots (Rock Hard)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Greatly reduces incoming knockback, keeping you firmly planted.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/basalt_boots\":1}}] 1"
+  },
+  {
+    "id": "expedition_fishing:blood_in_the_water",
+    "namespace": "expedition_fishing",
+    "raw_name": "blood_in_the_water",
+    "name": "Blood in the Water",
+    "name_vi": "Blood in the Water",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 2,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Slaying a Sea Creature grants +6% / +12% Fishing Speed and +4% / +8% Sea Creature Chance for 15 seconds.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:blood_in_the_water\":2}}] 1"
+  },
+  {
+    "id": "mt:armor/boomproof_cap",
+    "namespace": "mt",
+    "raw_name": "armor/boomproof_cap",
+    "name": "Boomproof Cap",
+    "name_vi": "Boomproof Cap",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Significantly reduces damage taken from explosions.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/boomproof_cap\":1}}] 1"
+  },
+  {
+    "id": "bound:bound",
+    "namespace": "bound",
+    "raw_name": "bound",
+    "name": "Bound",
+    "name_vi": "Bound",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Bound-v3.0.3",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Movement"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bounce",
+        "name": "Bounce"
+      },
+      {
+        "id": "enchantencore:end_speed",
+        "name": "End Speed"
+      },
+      {
+        "id": "enchantencore:invisibility_cloak",
+        "name": "Invisibility Cloak"
+      },
+      {
+        "id": "enchantencore:leaf_jumper",
+        "name": "Leaf Jumper"
+      },
+      {
+        "id": "enchantencore:path_speed",
+        "name": "Path Speed"
+      },
+      {
+        "id": "enchantencore:sand_speed",
+        "name": "Sand Speed"
+      },
+      {
+        "id": "enchantencore:sonic",
+        "name": "Sonic"
+      },
+      {
+        "id": "minecraft:soul_speed",
+        "name": "Soul Speed"
+      },
+      {
+        "id": "enchantencore:strafe",
+        "name": "Strafe"
+      }
+    ],
+    "description": "Allows mid-air double jumping while wearing Boots; extra jumps scale across Lv I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"bound:bound\":3}}] 1"
+  },
+  {
+    "id": "expedition_fishing:chronos_line",
+    "namespace": "expedition_fishing",
+    "raw_name": "chronos_line",
+    "name": "Chronos Line",
+    "name_vi": "Chronos Line",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 2,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants a 35% / 70% chance to bypass day/night time restrictions on nocturnal or diurnal Sea Creatures.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:chronos_line\":2}}] 1"
+  },
+  {
+    "id": "enchantencore:crab_claw",
+    "namespace": "enchantencore",
+    "raw_name": "crab_claw",
+    "name": "Crab Claw",
+    "name_vi": "Crab Claw",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/mining",
+    "gear_categories": [
+      "armor",
+      "tool"
+    ],
+    "supported_display": "Chestplates & Tools",
+    "exclusive_groups": [
+      "Reach",
+      "Tool Utility (Crab Claw / Gluttony)"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:reach_curse",
+        "name": "Curse of Reach"
+      },
+      {
+        "id": "enchantencore:gluttony",
+        "name": "Gluttony"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
+      }
+    ],
+    "description": "Increases both block and entity interaction reach by +1 block per level (up to +3 blocks at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crab_claw\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:creeper_alloy",
+    "namespace": "enchantencore",
+    "raw_name": "creeper_alloy",
+    "name": "Creeper Alloy",
+    "name_vi": "Creeper Alloy",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [
+      "Chestplate Alloy"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bulletproof",
+        "name": "Bulletproof"
+      },
+      {
+        "id": "enchantencore:darkness_alloy",
+        "name": "Darkness Alloy"
+      },
+      {
+        "id": "enchantencore:fire_alloy",
+        "name": "Fire Alloy"
+      },
+      {
+        "id": "enchantencore:ice_alloy",
+        "name": "Ice Alloy"
+      },
+      {
+        "id": "enchantencore:shulker_shell",
+        "name": "Shulker Shell"
+      }
+    ],
+    "description": "Triggers a non-destructive blast (0.5 radius, 0.5x knockback) against attackers when the wearer is hit.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_alloy\":1}}] 1"
+  },
+  {
+    "id": "enchantplus:sword/critical",
+    "namespace": "enchantplus",
+    "raw_name": "sword/critical",
+    "name": "Critical",
+    "name_vi": "Critical",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 3,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Swords & Melee Weapons",
+    "exclusive_groups": [
+      "Sword Attributes (Enchant+)"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantplus:sword/dimensional_hit",
+        "name": "Dimensional Hit"
+      },
+      {
+        "id": "enchantplus:sword/runic_despair",
+        "name": "Runic Despair"
+      }
+    ],
+    "description": "Increases chance to bypass armor and deal true critical damage across Lv I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/critical\":3}}] 1"
+  },
+  {
+    "id": "mt:armor/dark_forest_chestplate",
+    "namespace": "mt",
+    "raw_name": "armor/dark_forest_chestplate",
+    "name": "Dark Forest Chestplate (Axe Mastery)",
+    "name_vi": "Dark Forest Chestplate (Axe Mastery)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Enhances combat proficiency and damage output with Axes.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/dark_forest_chestplate\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/deep_dark_leggings",
+    "namespace": "mt",
+    "raw_name": "armor/deep_dark_leggings",
+    "name": "Deep Dark Leggings (Stealth Prowess)",
+    "name_vi": "Deep Dark Leggings (Stealth Prowess)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:leg_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Leggings",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Muffles footsteps and improves stealth around Wardens.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/deep_dark_leggings\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/desert_chestplate",
+    "namespace": "mt",
+    "raw_name": "armor/desert_chestplate",
+    "name": "Desert Chestplate (Last Stand)",
+    "name_vi": "Desert Chestplate (Last Stand)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Boosts defensive resilience dramatically when health drops low.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/desert_chestplate\":1}}] 1"
+  },
+  {
+    "id": "expedition_fishing:dimensional_drift",
+    "namespace": "expedition_fishing",
+    "raw_name": "dimensional_drift",
+    "name": "Dimensional Drift",
+    "name_vi": "Dimensional Drift",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "When fishing in the Nether or The End, grants a 10% chance to pull an extra catch from adjacent dimensional pools.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:dimensional_drift\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/dripstone_helmet",
+    "namespace": "mt",
+    "raw_name": "armor/dripstone_helmet",
+    "name": "Dripstone Helmet (Fast Drip)",
+    "name_vi": "Dripstone Helmet (Fast Drip)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases falling speed and reflects sharp dripstone damage.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/dripstone_helmet\":1}}] 1"
+  },
+  {
+    "id": "mt:weapons/drylands_piercer",
+    "namespace": "mt",
+    "raw_name": "weapons/drylands_piercer",
+    "name": "Drylands Piercer (Sheriff's Honour)",
+    "name_vi": "Drylands Piercer (Sheriff's Honour)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:crossbow",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Crossbows",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Fires armor-piercing bolts with heavy knockback.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/drylands_piercer\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:emberweave",
+    "namespace": "enchantencore",
+    "raw_name": "emberweave",
+    "name": "Emberweave",
+    "name_vi": "Emberweave",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/durability",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Durable Gear",
+    "exclusive_groups": [
+      "Auto-Repair / Durability"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:corrosion_curse",
+        "name": "Curse of Corrosion"
+      },
+      {
+        "id": "enchantencore:handyman",
+        "name": "Handyman"
+      },
+      {
+        "id": "minecraft:mending",
+        "name": "Mending"
+      },
+      {
+        "id": "enchantencore:moonweave",
+        "name": "Moonweave"
+      },
+      {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
+        "id": "enchantencore:rainweave",
+        "name": "Rainweave"
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "name": "Sacrifice"
+      },
+      {
+        "id": "enchantencore:tideweave",
+        "name": "Tideweave"
+      },
+      {
+        "id": "enchantencore:voidweave",
+        "name": "Voidweave"
+      }
+    ],
+    "description": "Passively repairs durability over time while in the Nether dimension.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:emberweave\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/experient_trousers",
+    "namespace": "mt",
+    "raw_name": "armor/experient_trousers",
+    "name": "Experient Trousers",
+    "name_vi": "Experient Trousers",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:leg_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Leggings",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Periodically generates XP orbs while walking.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/experient_trousers\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:flare",
+    "namespace": "enchantencore",
+    "raw_name": "flare",
+    "name": "Flare",
+    "name_vi": "Flare",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_bows",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows & Crossbows",
+    "exclusive_groups": [
+      "Bow Arrow Effects",
+      "Crossbow Shots"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:archer_barrage",
+        "name": "Archer Barrage"
+      },
+      {
+        "id": "enchantencore:armor_piercing",
+        "name": "Armor Piercing"
+      },
+      {
+        "id": "enchantencore:bomber",
+        "name": "Bomber"
+      },
+      {
+        "id": "enchantencore:crystalize_arrow",
+        "name": "Crystalize Arrow"
+      },
+      {
+        "id": "enchantencore:dark_infused",
+        "name": "Dark Infused"
+      },
+      {
+        "id": "enchantplus:bow/echo_shot",
+        "name": "Echo Shot"
+      },
+      {
+        "id": "enchantencore:ender_shot",
+        "name": "Ender Shot"
+      },
+      {
+        "id": "enchantencore:evokers_wrath",
+        "name": "Evoker's Wrath"
+      },
+      {
+        "id": "enchantplus:bow/explosive_arrow",
+        "name": "Explosive Arrow"
+      },
+      {
+        "id": "enchantencore:forge_shot",
+        "name": "Forge Shot"
+      },
+      {
+        "id": "enchantencore:implosion",
+        "name": "Implosion"
+      },
+      {
+        "id": "minecraft:infinity",
+        "name": "Infinity"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
+        "id": "enchantencore:lightning_bolt",
+        "name": "Lightning Bolt"
+      },
+      {
+        "id": "enchantencore:nuclear_arrow",
+        "name": "Nuclear Arrow"
+      },
+      {
+        "id": "enchantencore:poison_infused",
+        "name": "Poison Infused"
+      },
+      {
+        "id": "enchantencore:railgun",
+        "name": "Railgun"
+      },
+      {
+        "id": "enchantencore:sting",
+        "name": "Sting"
+      },
+      {
+        "id": "enchantencore:warped_arrow",
+        "name": "Warped Arrow"
+      },
+      {
+        "id": "enchantencore:web_infused",
+        "name": "Web Infused"
+      },
+      {
+        "id": "enchantencore:wither_infused",
+        "name": "Wither Infused"
+      }
+    ],
+    "description": "Arrows emit bright flare light and ignite targets on impact.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:flare\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/flower_helmet",
+    "namespace": "mt",
+    "raw_name": "armor/flower_helmet",
+    "name": "Flower Helmet (Flower Gift)",
+    "name_vi": "Flower Helmet (Flower Gift)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Radiates natural vitality, restoring health and hunger.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/flower_helmet\":1}}] 1"
+  },
+  {
+    "id": "expedition_fishing:frenzy_reel",
+    "namespace": "expedition_fishing",
+    "raw_name": "frenzy_reel",
+    "name": "Frenzy Reel",
+    "name_vi": "Frenzy Reel",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Each consecutive catch builds a Frenzy stack (+3% Fishing Speed & +1.5% SCC per stack, up to 5 stacks).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:frenzy_reel\":1}}] 1"
+  },
+  {
+    "id": "nova_structures:ghasted",
+    "namespace": "nova_structures",
+    "raw_name": "ghasted",
+    "name": "Ghasted",
+    "name_vi": "Ghasted",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 3,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Crossbows",
+    "exclusive_groups": [
+      "Crossbow (Multishot / Piercing)"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "nova_structures:gravity",
+        "name": "Gravity"
+      },
+      {
+        "id": "nova_structures:power",
+        "name": "Might"
+      },
+      {
+        "id": "minecraft:multishot",
+        "name": "Multishot"
+      },
+      {
+        "id": "minecraft:piercing",
+        "name": "Piercing"
+      }
+    ],
+    "description": "Transforms fired arrows into explosive Ghast fireballs; explosion power scales from Lv I to Lv III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:ghasted\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:hardened",
+    "namespace": "enchantencore",
+    "raw_name": "hardened",
+    "name": "Hardened",
+    "name_vi": "Hardened",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 3,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "minecraft:shield",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Shields",
+    "exclusive_groups": [
+      "Shield"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:cleansing",
+        "name": "Cleansing"
+      },
+      {
+        "id": "enchantencore:crispbread",
+        "name": "Crispbread"
+      },
+      {
+        "id": "enchantencore:ominous_healing",
+        "name": "Ominous Healing"
+      },
+      {
+        "id": "enchantencore:rejuvenation",
+        "name": "Rejuvenation"
+      }
+    ],
+    "description": "Grants +2 Armor (+1 per level above I, up to +4 Armor at Lv III) while equipped.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hardened\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:haste",
+    "namespace": "enchantencore",
+    "raw_name": "haste",
+    "name": "Haste",
+    "name_vi": "Haste",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 3,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/mining",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Mining Tools",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants Haste I / II / III (matching enchantment level) while held in the main hand.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:haste\":3}}] 1"
+  },
+  {
+    "id": "mt:weapons/hurricane_sword",
+    "namespace": "mt",
+    "raw_name": "weapons/hurricane_sword",
+    "name": "Hurricane Sword (Gusty Garden)",
+    "name_vi": "Hurricane Sword (Gusty Garden)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:iron_sword",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Iron Swords",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Slashes unleash swirling gusts that launch enemies skyward.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/hurricane_sword\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/ice_shoes",
+    "namespace": "mt",
+    "raw_name": "armor/ice_shoes",
+    "name": "Ice Shoes (Cold Aura)",
+    "name_vi": "Ice Shoes (Cold Aura)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Emits a freezing aura that slows nearby enemies.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/ice_shoes\":1}}] 1"
+  },
+  {
+    "id": "mt:weapons/ice_sword",
+    "namespace": "mt",
+    "raw_name": "weapons/ice_sword",
+    "name": "Ice Sword (Icy Tip)",
+    "name_vi": "Ice Sword (Icy Tip)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:diamond_sword",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Diamond Swords",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Freezes struck targets, reducing their movement and attack speed.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/ice_sword\":1}}] 1"
+  },
+  {
+    "id": "enchantsplus:ice_aspect",
+    "namespace": "enchantsplus",
+    "raw_name": "ice_aspect",
+    "name": "Icicle Impale",
+    "name_vi": "Icicle Impale",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 2,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Enchants Plus v2.1 26.3",
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Swords & Maces",
+    "exclusive_groups": [
+      "Sword Buffs (Fire / Ice / Web)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "enchantsplus:websnare",
+        "name": "Websnare"
+      }
+    ],
+    "description": "Slows and freezes targets on hit; freeze duration and slowness scale across Lv I–II.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:ice_aspect\":2}}] 1"
+  },
+  {
+    "id": "mt:armor/indestructia",
+    "namespace": "mt",
+    "raw_name": "armor/indestructia",
+    "name": "Indestructia",
+    "name_vi": "Indestructia",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:elytra",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Elytra",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants complete immunity to Elytra wall-collision kinetic damage.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/indestructia\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:invisibility_cloak",
+    "namespace": "enchantencore",
+    "raw_name": "invisibility_cloak",
+    "name": "Invisibility Cloak",
+    "name_vi": "Invisibility Cloak",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Movement"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bounce",
+        "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
+      },
+      {
+        "id": "enchantencore:end_speed",
+        "name": "End Speed"
+      },
+      {
+        "id": "enchantencore:leaf_jumper",
+        "name": "Leaf Jumper"
+      },
+      {
+        "id": "enchantencore:path_speed",
+        "name": "Path Speed"
+      },
+      {
+        "id": "enchantencore:sand_speed",
+        "name": "Sand Speed"
+      },
+      {
+        "id": "enchantencore:sonic",
+        "name": "Sonic"
+      },
+      {
+        "id": "minecraft:soul_speed",
+        "name": "Soul Speed"
+      },
+      {
+        "id": "enchantencore:strafe",
+        "name": "Strafe"
+      }
+    ],
+    "description": "Grants Invisibility while sneaking or wearing the enchanted boots.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:invisibility_cloak\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:leech",
+    "namespace": "enchantencore",
+    "raw_name": "leech",
+    "name": "Leech",
+    "name_vi": "Leech",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:weapons",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "kattersstructures:heavy",
+        "name": "Heavy"
+      },
+      {
+        "id": "enchantencore:radiant_life",
+        "name": "Radiant Life"
+      }
+    ],
+    "description": "Melee and ranged hits grant Regeneration I–II for up to 3s.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:leech\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:lightning_bolt",
+    "namespace": "enchantencore",
+    "raw_name": "lightning_bolt",
+    "name": "Lightning Bolt",
+    "name_vi": "Lightning Bolt",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_bows",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows & Crossbows",
+    "exclusive_groups": [
+      "Bow Arrow Effects",
+      "Bow Infused Arrows",
+      "Crossbow Shots"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:archer_barrage",
+        "name": "Archer Barrage"
+      },
+      {
+        "id": "enchantencore:armor_piercing",
+        "name": "Armor Piercing"
+      },
+      {
+        "id": "enchantencore:bomber",
+        "name": "Bomber"
+      },
+      {
+        "id": "enchantencore:crystalize_arrow",
+        "name": "Crystalize Arrow"
+      },
+      {
+        "id": "enchantencore:dark_infused",
+        "name": "Dark Infused"
+      },
+      {
+        "id": "enchantplus:bow/echo_shot",
+        "name": "Echo Shot"
+      },
+      {
+        "id": "enchantencore:ender_shot",
+        "name": "Ender Shot"
+      },
+      {
+        "id": "enchantencore:evokers_wrath",
+        "name": "Evoker's Wrath"
+      },
+      {
+        "id": "enchantplus:bow/explosive_arrow",
+        "name": "Explosive Arrow"
+      },
+      {
+        "id": "enchantencore:flare",
+        "name": "Flare"
+      },
+      {
+        "id": "enchantencore:forge_shot",
+        "name": "Forge Shot"
+      },
+      {
+        "id": "enchantencore:implosion",
+        "name": "Implosion"
+      },
+      {
+        "id": "minecraft:infinity",
+        "name": "Infinity"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
+        "id": "enchantencore:nuclear_arrow",
+        "name": "Nuclear Arrow"
+      },
+      {
+        "id": "enchantencore:poison_infused",
+        "name": "Poison Infused"
+      },
+      {
+        "id": "enchantencore:railgun",
+        "name": "Railgun"
+      },
+      {
+        "id": "enchantencore:sting",
+        "name": "Sting"
+      },
+      {
+        "id": "enchantencore:warped_arrow",
+        "name": "Warped Arrow"
+      },
+      {
+        "id": "enchantencore:web_infused",
+        "name": "Web Infused"
+      },
+      {
+        "id": "enchantencore:wither_infused",
+        "name": "Wither Infused"
+      }
+    ],
+    "description": "Arrows have a chance to summon a lightning bolt on targets under open sky.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:lightning_bolt\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/lush_leggings",
+    "namespace": "mt",
+    "raw_name": "armor/lush_leggings",
+    "name": "Lush Leggings (Deadly Thorns)",
+    "name_vi": "Lush Leggings (Deadly Thorns)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:leg_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Leggings",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Reflects lethal thorny damage back at melee attackers.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/lush_leggings\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:magma_walker",
+    "namespace": "enchantencore",
+    "raw_name": "magma_walker",
+    "name": "Magma Walker",
+    "name_vi": "Magma Walker",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Walker"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:crop_dance",
+        "name": "Crop Dance"
+      },
+      {
+        "id": "minecraft:depth_strider",
+        "name": "Depth Strider"
+      },
+      {
+        "id": "enchantencore:electric_walker",
+        "name": "Electric Walker"
+      },
+      {
+        "id": "minecraft:frost_walker",
+        "name": "Frost Walker"
+      },
+      {
+        "id": "enchantencore:grass_walker",
+        "name": "Grass Walker"
+      },
+      {
+        "id": "enchantencore:summer_walker",
+        "name": "Summer Walker"
+      }
+    ],
+    "description": "Freezes lava beneath the wearer's feet into temporary magma blocks and grants immunity to magma block damage.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:magma_walker\":1}}] 1"
+  },
+  {
+    "id": "expedition_fishing:mirror_cast",
+    "namespace": "expedition_fishing",
+    "raw_name": "mirror_cast",
+    "name": "Mirror Cast",
+    "name_vi": "Mirror Cast",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants a 12% chance to duplicate non-boss Treasure Chest or Artifact rewards upon reeling in.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:mirror_cast\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:moonweave",
+    "namespace": "enchantencore",
+    "raw_name": "moonweave",
+    "name": "Moonweave",
+    "name_vi": "Moonweave",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/durability",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Durable Gear",
+    "exclusive_groups": [
+      "Auto-Repair / Durability"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:corrosion_curse",
+        "name": "Curse of Corrosion"
+      },
+      {
+        "id": "enchantencore:emberweave",
+        "name": "Emberweave"
+      },
+      {
+        "id": "enchantencore:handyman",
+        "name": "Handyman"
+      },
+      {
+        "id": "minecraft:mending",
+        "name": "Mending"
+      },
+      {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
+        "id": "enchantencore:rainweave",
+        "name": "Rainweave"
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "name": "Sacrifice"
+      },
+      {
+        "id": "enchantencore:tideweave",
+        "name": "Tideweave"
+      },
+      {
+        "id": "enchantencore:voidweave",
+        "name": "Voidweave"
+      }
+    ],
+    "description": "Passively repairs item durability over time under open night sky.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:moonweave\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/mushroom_boots",
+    "namespace": "mt",
+    "raw_name": "armor/mushroom_boots",
+    "name": "Mushroom Boots",
+    "name_vi": "Mushroom Boots",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Reduces fall damage and adds a bouncy landing.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/mushroom_boots\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/nether_leggings",
+    "namespace": "mt",
+    "raw_name": "armor/nether_leggings",
+    "name": "Nether Leggings",
+    "name_vi": "Nether Leggings",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#leg_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Leggings",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Provides comprehensive fire and lava resistance in the Nether.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/nether_leggings\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/ocean_chestplate",
+    "namespace": "mt",
+    "raw_name": "armor/ocean_chestplate",
+    "name": "Ocean Chestplate (Ocean Blessing)",
+    "name_vi": "Ocean Chestplate (Ocean Blessing)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants underwater breathing and faster swimming speed.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/ocean_chestplate\":1}}] 1"
+  },
+  {
+    "id": "mt:weapons/oceanic_spear",
+    "namespace": "mt",
+    "raw_name": "weapons/oceanic_spear",
+    "name": "Oceanic Spear",
+    "name_vi": "Oceanic Spear",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:trident",
+    "gear_categories": [
+      "ranged",
+      "weapon"
+    ],
+    "supported_display": "Tridents",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Deals overwhelming bonus damage while fighting in water.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/oceanic_spear\":1}}] 1"
+  },
+  {
+    "id": "nova_structures:photosynthesis",
+    "namespace": "nova_structures",
+    "raw_name": "photosynthesis",
+    "name": "Photosynthesis",
+    "name_vi": "Photosynthesis",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#minecraft:enchantable/durability",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Durable Gear",
+    "exclusive_groups": [
+      "Auto-Repair / Durability"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:corrosion_curse",
+        "name": "Curse of Corrosion"
+      },
+      {
+        "id": "enchantencore:emberweave",
+        "name": "Emberweave"
+      },
+      {
+        "id": "enchantencore:handyman",
+        "name": "Handyman"
+      },
+      {
+        "id": "minecraft:mending",
+        "name": "Mending"
+      },
+      {
+        "id": "enchantencore:moonweave",
+        "name": "Moonweave"
+      },
+      {
+        "id": "enchantencore:rainweave",
+        "name": "Rainweave"
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "name": "Sacrifice"
+      },
+      {
+        "id": "enchantencore:tideweave",
+        "name": "Tideweave"
+      },
+      {
+        "id": "enchantencore:voidweave",
+        "name": "Voidweave"
+      }
+    ],
+    "description": "Gradually repairs item durability when exposed to direct daylight.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:photosynthesis\":1}}] 1"
+  },
+  {
+    "id": "stellarity:plated",
+    "namespace": "stellarity",
+    "raw_name": "plated",
+    "name": "Plated",
+    "name_vi": "Plated",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 4,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Stellarity-6.0.1",
+    "supported_items": "#stellarity:enchantable/elytra",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Elytra",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants +2 Armor (+1 per level above I, up to +5 at Lv IV), +1 Toughness at Lv III–IV, and +4% (+3%/lvl) gravity.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:plated\":4}}] 1"
+  },
+  {
+    "id": "enchantplus:sword/reach",
+    "namespace": "enchantplus",
+    "raw_name": "sword/reach",
+    "name": "Reach",
+    "name_vi": "Reach",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Swords & Melee Weapons",
+    "exclusive_groups": [
+      "Reach"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:crab_claw",
+        "name": "Crab Claw"
+      },
+      {
+        "id": "enchantencore:reach_curse",
+        "name": "Curse of Reach"
+      }
+    ],
+    "description": "Extends melee entity attack range by +1 block (+0.5 per level above I, up to +2.0 blocks at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/reach\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:refuel",
+    "namespace": "enchantencore",
+    "raw_name": "refuel",
+    "name": "Refuel",
+    "name_vi": "Refuel",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "minecraft:elytra",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Elytra",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "enchantencore:moonwalk",
+        "name": "Moonwalk"
+      }
+    ],
+    "description": "Automatically consumes firework fuel from inventory to sustain Elytra flight.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:refuel\":1}}] 1"
+  },
+  {
+    "id": "mt:weapons/rift_axe",
+    "namespace": "mt",
+    "raw_name": "weapons/rift_axe",
+    "name": "Rift Axe (Soul Tearer)",
+    "name_vi": "Rift Axe (Soul Tearer)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:netherite_axe",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Netherite Axes",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Tears enemy souls, dealing armor-ignoring true damage.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/rift_axe\":1}}] 1"
+  },
+  {
+    "id": "mt:weapons/rumble_axe",
+    "namespace": "mt",
+    "raw_name": "weapons/rumble_axe",
+    "name": "Rumble Axe (Rumble Tumble)",
+    "name_vi": "Rumble Axe (Rumble Tumble)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:golden_sword",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Golden Swords",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Creates ground tremors on hit that stun nearby enemies.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/rumble_axe\":1}}] 1"
+  },
+  {
+    "id": "mt:weapons/sharpened_sword",
+    "namespace": "mt",
+    "raw_name": "weapons/sharpened_sword",
+    "name": "Sharpened Sword",
+    "name_vi": "Sharpened Sword",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:iron_sword",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Iron Swords",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Honed blade edge granting high flat bonus melee damage.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/sharpened_sword\":1}}] 1"
+  },
+  {
+    "id": "mt:weapons/soul_scythe",
+    "namespace": "mt",
+    "raw_name": "weapons/soul_scythe",
+    "name": "Soul Scythe (Life Steal)",
+    "name_vi": "Soul Scythe (Life Steal)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:netherite_hoe",
+    "gear_categories": [
+      "weapon",
+      "tool"
+    ],
+    "supported_display": "Netherite Hoes",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Drains health from struck targets to heal the wielder.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/soul_scythe\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/soul_valley_helmet",
+    "namespace": "mt",
+    "raw_name": "armor/soul_valley_helmet",
+    "name": "Soul Valley Helmet",
+    "name_vi": "Soul Valley Helmet",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases movement speed across Soul Sand and Soul Soil.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/soul_valley_helmet\":1}}] 1"
+  },
+  {
+    "id": "mt:weapons/stray_bow",
+    "namespace": "mt",
+    "raw_name": "weapons/stray_bow",
+    "name": "Stray Bow (Gotta Go Slow)",
+    "name_vi": "Stray Bow (Gotta Go Slow)",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:bow",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Fires frostbitten arrows that inflict heavy Slowness.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/stray_bow\":1}}] 1"
+  },
+  {
+    "id": "enchantplus:mace/striker",
+    "namespace": "enchantplus",
+    "raw_name": "mace/striker",
+    "name": "Striker",
+    "name_vi": "Striker",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#minecraft:enchantable/mace",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Maces",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Summons lightning on Mace strikes during storms and grants lightning immunity.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mace/striker\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/swamp_chestplate",
+    "namespace": "mt",
+    "raw_name": "armor/swamp_chestplate",
+    "name": "Swamp Chestplate",
+    "name_vi": "Swamp Chestplate",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants poison resistance and clears negative status effects.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/swamp_chestplate\":1}}] 1"
+  },
+  {
+    "id": "enchantsplus:swift_strike",
+    "namespace": "enchantsplus",
+    "raw_name": "swift_strike",
+    "name": "Swift Strike",
+    "name_vi": "Swift Strike",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 5,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Enchants Plus v2.1 26.3",
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases melee attack speed by +12.5% per level (up to +62.5% at Lv V).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:swift_strike\":5}}] 1"
+  },
+  {
+    "id": "mt:armor/taiga_pants",
+    "namespace": "mt",
+    "raw_name": "armor/taiga_pants",
+    "name": "Taiga Pants",
+    "name_vi": "Taiga Pants",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:leg_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Leggings",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Reduces hunger depletion while sprinting in cold biomes.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/taiga_pants\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:tideweave",
+    "namespace": "enchantencore",
+    "raw_name": "tideweave",
+    "name": "Tideweave",
+    "name_vi": "Tideweave",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/durability",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Durable Gear",
+    "exclusive_groups": [
+      "Auto-Repair / Durability"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:corrosion_curse",
+        "name": "Curse of Corrosion"
+      },
+      {
+        "id": "enchantencore:emberweave",
+        "name": "Emberweave"
+      },
+      {
+        "id": "enchantencore:handyman",
+        "name": "Handyman"
+      },
+      {
+        "id": "minecraft:mending",
+        "name": "Mending"
+      },
+      {
+        "id": "enchantencore:moonweave",
+        "name": "Moonweave"
+      },
+      {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
+        "id": "enchantencore:rainweave",
+        "name": "Rainweave"
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "name": "Sacrifice"
+      },
+      {
+        "id": "enchantencore:voidweave",
+        "name": "Voidweave"
+      }
+    ],
+    "description": "Passively repairs item durability over time while submerged in water.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:tideweave\":1}}] 1"
+  },
+  {
+    "id": "nova_structures:traveler",
+    "namespace": "nova_structures",
+    "raw_name": "traveler",
+    "name": "Traveler",
+    "name_vi": "Traveler",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 3,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots (Soul Speed / Traveler)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:soul_speed",
+        "name": "Soul Speed"
+      }
+    ],
+    "description": "Increases step height by +0.5 (+0.1 per level above I) and movement speed by +0.01 (+0.005 per level above I).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:traveler\":3}}] 1"
+  },
+  {
+    "id": "nova_structures:multishot",
+    "namespace": "nova_structures",
+    "raw_name": "multishot",
+    "name": "Tri-Shot",
+    "name_vi": "Tri-Shot",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#minecraft:enchantable/bow",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows",
+    "exclusive_groups": [
+      "Bow (Structure Multishot/Piercing)"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:piercing",
+        "name": "Blowthrough"
+      },
+      {
+        "id": "minecraft:infinity",
+        "name": "Infinity"
+      },
+      {
+        "id": "minecraft:power",
+        "name": "Power"
+      }
+    ],
+    "description": "Fires 3 arrows simultaneously from a Bow while consuming only 1 arrow.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:multishot\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:trial_runner",
+    "namespace": "enchantencore",
+    "raw_name": "trial_runner",
+    "name": "Trial Runner",
+    "name_vi": "Trial Runner",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants Trial Omen I (15s refreshed) while worn.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:trial_runner\":1}}] 1"
+  },
+  {
+    "id": "expedition_fishing:void_anchor",
+    "namespace": "expedition_fishing",
+    "raw_name": "void_anchor",
+    "name": "Void Anchor",
+    "name_vi": "Void Anchor",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 2,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases End/Void Rare Creature Chance by +6% / +12% in Stellarity & Nullscape biomes and halves Levitation duration.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:void_anchor\":2}}] 1"
+  },
+  {
+    "id": "enchantencore:voidweave",
+    "namespace": "enchantencore",
+    "raw_name": "voidweave",
+    "name": "Voidweave",
+    "name_vi": "Voidweave",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/durability",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Durable Gear",
+    "exclusive_groups": [
+      "Auto-Repair / Durability"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:corrosion_curse",
+        "name": "Curse of Corrosion"
+      },
+      {
+        "id": "enchantencore:emberweave",
+        "name": "Emberweave"
+      },
+      {
+        "id": "enchantencore:handyman",
+        "name": "Handyman"
+      },
+      {
+        "id": "minecraft:mending",
+        "name": "Mending"
+      },
+      {
+        "id": "enchantencore:moonweave",
+        "name": "Moonweave"
+      },
+      {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
+        "id": "enchantencore:rainweave",
+        "name": "Rainweave"
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "name": "Sacrifice"
+      },
+      {
+        "id": "enchantencore:tideweave",
+        "name": "Tideweave"
+      }
+    ],
+    "description": "Passively repairs item durability over time while in The End dimension.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:voidweave\":1}}] 1"
+  },
+  {
+    "id": "mt:weapons/warden_killer",
+    "namespace": "mt",
+    "raw_name": "weapons/warden_killer",
+    "name": "Warden Killer",
+    "name_vi": "Warden Killer",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:echo_shard",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Echo Shards",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Ancient relic forged specifically to counter and slay the Warden.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/warden_killer\":1}}] 1"
+  },
+  {
+    "id": "mt:weapons/warped_bow",
+    "namespace": "mt",
+    "raw_name": "weapons/warped_bow",
+    "name": "Warped Bow",
+    "name_vi": "Warped Bow",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:bow",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Teleports the shooter or target upon arrow impact.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/warped_bow\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/warped_helmet",
+    "namespace": "mt",
+    "raw_name": "armor/warped_helmet",
+    "name": "Warped Helmet",
+    "name_vi": "Warped Helmet",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Slows down nearby enemies approaching the wearer.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/warped_helmet\":1}}] 1"
+  },
+  {
+    "id": "mt:armor/wind_chestplate",
+    "namespace": "mt",
+    "raw_name": "armor/wind_chestplate",
+    "name": "Wind Chestplate",
+    "name_vi": "Wind Chestplate",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Stores wind energy while falling and releases an upward burst on landing.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/wind_chestplate\":1}}] 1"
+  },
+  {
+    "id": "enchantplus:mace/wind_propulsion",
+    "namespace": "enchantplus",
+    "raw_name": "mace/wind_propulsion",
+    "name": "Wind Propulsion",
+    "name_vi": "Wind Propulsion",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 3,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#minecraft:enchantable/mace",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Maces",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Creates a wind blast on ground impact, launching you upward; blast strength scales across Lv I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mace/wind_propulsion\":3}}] 1"
+  },
+  {
+    "id": "nova_structures:wither_coated",
+    "namespace": "nova_structures",
+    "raw_name": "wither_coated",
+    "name": "Wither Coated",
+    "name_vi": "Wither Coated",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 3,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#nova_structures:enchantable/wither_coated",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Wither (Coated / Aspect)"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:wither_aspect",
+        "name": "Wither Aspect"
+      }
+    ],
+    "description": "Inflicts Wither I / II / III (12s / 6s / 3s across Lv I–III) on hit at the cost of +1 extra durability.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:wither_coated\":3}}] 1"
+  },
+  {
+    "id": "mt:weapons/wither_sword",
+    "namespace": "mt",
+    "raw_name": "weapons/wither_sword",
+    "name": "Wither Sword",
+    "name_vi": "Wither Sword",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:stone_sword",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Stone Swords",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Inflicts continuous Wither decay damage on hit.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/wither_sword\":1}}] 1"
+  },
+  {
     "id": "enchantplus:bow/accuracy_shot",
     "namespace": "enchantplus",
     "raw_name": "bow/accuracy_shot",
     "name": "Accuracy Shot",
     "name_vi": "Accuracy Shot",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": false,
@@ -1624,7 +4187,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Aerial's Bane",
     "name_vi": "Aerial's Bane",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 5,
     "anvil_cost": 4,
     "table": true,
@@ -1697,353 +4260,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:aerials_bane\":5}}] 1"
   },
   {
-    "id": "enchantplus:boots/agility",
-    "namespace": "enchantplus",
-    "raw_name": "boots/agility",
-    "name": "Agility",
-    "name_vi": "Agility",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Increases movement speed by +20% per level (up to +100% speed at Lv V).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:boots/agility\":5}}] 1"
-  },
-  {
-    "id": "stellarity:ambush",
-    "namespace": "stellarity",
-    "raw_name": "ambush",
-    "name": "Ambush",
-    "name_vi": "Ambush",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Stellarity-6.0.1",
-    "supported_items": "#minecraft:enchantable/sharp_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Multiplies damage dealt when attacking unaware targets from behind; multiplier scales across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:ambush\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:anchor",
-    "namespace": "enchantencore",
-    "raw_name": "anchor",
-    "name": "Anchor",
-    "name_vi": "Anchor",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:valid_for_anchor",
-    "gear_categories": [
-      "mount"
-    ],
-    "supported_display": "Saddles & Harnesses",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Prevents unmounted mounts from drifting or wandering away.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:anchor\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:angry_aura",
-    "namespace": "enchantencore",
-    "raw_name": "angry_aura",
-    "name": "Angry Aura",
-    "name_vi": "Angry Aura",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Cosmetic Aura"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:aquatic_aura",
-        "name": "Aquatic Aura"
-      },
-      {
-        "id": "enchantencore:echoing_aura",
-        "name": "Echoing Aura"
-      },
-      {
-        "id": "enchantencore:enchanted_aura",
-        "name": "Enchanted Aura"
-      },
-      {
-        "id": "enchantencore:ender_aura",
-        "name": "Ender Aura"
-      },
-      {
-        "id": "enchantencore:flaming_aura",
-        "name": "Flaming Aura"
-      },
-      {
-        "id": "enchantencore:heavenly_aura",
-        "name": "Heavenly Aura"
-      },
-      {
-        "id": "enchantencore:lovely_aura",
-        "name": "Lovely Aura"
-      },
-      {
-        "id": "enchantencore:lush_aura",
-        "name": "Lush Aura"
-      },
-      {
-        "id": "enchantencore:muddy_aura",
-        "name": "Muddy Aura"
-      },
-      {
-        "id": "enchantencore:ominous_aura",
-        "name": "Ominous Aura"
-      },
-      {
-        "id": "enchantencore:pale_aura",
-        "name": "Pale Aura"
-      },
-      {
-        "id": "enchantencore:sparking_aura",
-        "name": "Sparking Aura"
-      },
-      {
-        "id": "enchantencore:sticky_aura",
-        "name": "Sticky Aura"
-      },
-      {
-        "id": "enchantencore:trial_aura",
-        "name": "Trial Aura"
-      }
-    ],
-    "description": "Cosmetic aura: emits angry storm cloud particles while idle, moving, or taking hits.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:angry_aura\":1}}] 1"
-  },
-  {
-    "id": "nova_structures:antidote",
-    "namespace": "nova_structures",
-    "raw_name": "antidote",
-    "name": "Antidote",
-    "name_vi": "Antidote",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#minecraft:enchantable/chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "exclusive_groups": [
-      "Armor Protection"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:blast_protection",
-        "name": "Blast Protection"
-      },
-      {
-        "id": "enchantencore:day_protection",
-        "name": "Day Protection"
-      },
-      {
-        "id": "enchantencore:end_protection",
-        "name": "End Protection"
-      },
-      {
-        "id": "minecraft:fire_protection",
-        "name": "Fire Protection"
-      },
-      {
-        "id": "enchantplus:armor/fury",
-        "name": "Fury"
-      },
-      {
-        "id": "enchantencore:nether_protection",
-        "name": "Nether Protection"
-      },
-      {
-        "id": "enchantencore:night_protection",
-        "name": "Night Protection"
-      },
-      {
-        "id": "minecraft:projectile_protection",
-        "name": "Projectile Protection"
-      },
-      {
-        "id": "minecraft:protection",
-        "name": "Protection"
-      },
-      {
-        "id": "enchantplus:armor/lifeplus",
-        "name": "Walking Fortress"
-      },
-      {
-        "id": "enchantencore:wither_protection",
-        "name": "Wither Protection"
-      }
-    ],
-    "description": "Chestplate absorbs Poison damage instead of the player's health.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:antidote\":1}}] 1"
-  },
-  {
-    "id": "minecraft:aqua_affinity",
-    "namespace": "minecraft",
-    "raw_name": "aqua_affinity",
-    "name": "Aqua Affinity",
-    "name_vi": "Aqua Affinity",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 10,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Removes the 5x underwater mining speed penalty, allowing normal mining speed underwater.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:aqua_affinity\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:aquatic_aura",
-    "namespace": "enchantencore",
-    "raw_name": "aquatic_aura",
-    "name": "Aquatic Aura",
-    "name_vi": "Aquatic Aura",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Cosmetic Aura"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:angry_aura",
-        "name": "Angry Aura"
-      },
-      {
-        "id": "enchantencore:echoing_aura",
-        "name": "Echoing Aura"
-      },
-      {
-        "id": "enchantencore:enchanted_aura",
-        "name": "Enchanted Aura"
-      },
-      {
-        "id": "enchantencore:ender_aura",
-        "name": "Ender Aura"
-      },
-      {
-        "id": "enchantencore:flaming_aura",
-        "name": "Flaming Aura"
-      },
-      {
-        "id": "enchantencore:heavenly_aura",
-        "name": "Heavenly Aura"
-      },
-      {
-        "id": "enchantencore:lovely_aura",
-        "name": "Lovely Aura"
-      },
-      {
-        "id": "enchantencore:lush_aura",
-        "name": "Lush Aura"
-      },
-      {
-        "id": "enchantencore:muddy_aura",
-        "name": "Muddy Aura"
-      },
-      {
-        "id": "enchantencore:ominous_aura",
-        "name": "Ominous Aura"
-      },
-      {
-        "id": "enchantencore:pale_aura",
-        "name": "Pale Aura"
-      },
-      {
-        "id": "enchantencore:sparking_aura",
-        "name": "Sparking Aura"
-      },
-      {
-        "id": "enchantencore:sticky_aura",
-        "name": "Sticky Aura"
-      },
-      {
-        "id": "enchantencore:trial_aura",
-        "name": "Trial Aura"
-      }
-    ],
-    "description": "Cosmetic aura: emits water bubble and splash particles while idle, moving, or taking hits.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:aquatic_aura\":1}}] 1"
-  },
-  {
     "id": "enchantencore:armor_piercing",
     "namespace": "enchantencore",
     "raw_name": "armor_piercing",
     "name": "Armor Piercing",
     "name_vi": "Armor Piercing",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": true,
@@ -2115,7 +4338,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Armored",
     "name_vi": "Armored",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 4,
     "anvil_cost": 4,
     "table": true,
@@ -2134,542 +4357,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:elytra/armored\":4}}] 1"
   },
   {
-    "id": "mt:weapons/assassin_blade",
-    "namespace": "mt",
-    "raw_name": "weapons/assassin_blade",
-    "name": "Assassin Blade (Early Strikes)",
-    "name_vi": "Assassin Blade (Early Strikes)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:golden_sword",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Golden Swords",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "First strike from stealth deals massive bonus critical damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/assassin_blade\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:helmet/auto_feed",
-    "namespace": "enchantplus",
-    "raw_name": "helmet/auto_feed",
-    "name": "Auto Feed",
-    "name_vi": "Auto Feed",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Automatically restores hunger every 3 minutes.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:helmet/auto_feed\":1}}] 1"
-  },
-  {
-    "id": "minecraft:bane_of_arthropods",
-    "namespace": "minecraft",
-    "raw_name": "bane_of_arthropods",
-    "name": "Bane of Arthropods",
-    "name_vi": "Bane of Arthropods",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 10,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords, Axes & Maces",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      },
-      {
-        "id": "stellarity:_technical/soul_harvest",
-        "name": "Soul Harvest"
-      }
-    ],
-    "description": "Increases damage against Arthropods (Spiders, Bees, Silverfish) by +2 per level (up to +10 at Lv V) and inflicts Slowness IV (1s + 0.5s per level).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:bane_of_arthropods\":5}}] 1"
-  },
-  {
-    "id": "enchantencore:bane_of_bosses",
-    "namespace": "enchantencore",
-    "raw_name": "bane_of_bosses",
-    "name": "Bane of Bosses",
-    "name_vi": "Bane of Bosses",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:weapons",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
-    "description": "Deals +2 damage per level (up to +10 at Lv V) against boss mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_bosses\":5}}] 1"
-  },
-  {
-    "id": "enchantencore:bane_of_endborn",
-    "namespace": "enchantencore",
-    "raw_name": "bane_of_endborn",
-    "name": "Bane of Endborn",
-    "name_vi": "Bane of Endborn",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:weapons",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
-    "description": "Deals +2 damage per level (up to +10 at Lv V) against End mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_endborn\":5}}] 1"
-  },
-  {
-    "id": "enchantencore:bane_of_netherborn",
-    "namespace": "enchantencore",
-    "raw_name": "bane_of_netherborn",
-    "name": "Bane of Netherborn",
-    "name_vi": "Bane of Netherborn",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:weapons",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
-    "description": "Deals +2 damage per level (up to +10 at Lv V) against Nether mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_netherborn\":5}}] 1"
-  },
-  {
-    "id": "enchantencore:bane_of_raiders",
-    "namespace": "enchantencore",
-    "raw_name": "bane_of_raiders",
-    "name": "Bane of Raiders",
-    "name_vi": "Bane of Raiders",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:weapons",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)",
-      "Illager / Raider Bane"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "nova_structures:illagers_bane",
-        "name": "Illagers Bane"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
-    "description": "Deals +2 damage per level (up to +10 at Lv V) against Illagers and raiders, inflicting Slowness IV (1.5s, +0.5s max duration per level above I).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_raiders\":5}}] 1"
-  },
-  {
-    "id": "mt:weapons/barbaric_axe",
-    "namespace": "mt",
-    "raw_name": "weapons/barbaric_axe",
-    "name": "Barbaric Axe",
-    "name_vi": "Barbaric Axe",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:golden_axe",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Golden Axes",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Deals escalating damage with consecutive axe swings.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/barbaric_axe\":1}}] 1"
-  },
-  {
-    "id": "mt:armor/basalt_boots",
-    "namespace": "mt",
-    "raw_name": "armor/basalt_boots",
-    "name": "Basalt Boots (Rock Hard)",
-    "name_vi": "Basalt Boots (Rock Hard)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Greatly reduces incoming knockback, keeping you firmly planted.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/basalt_boots\":1}}] 1"
-  },
-  {
     "id": "enchantencore:bear_spirit",
     "namespace": "enchantencore",
     "raw_name": "bear_spirit",
     "name": "Bear Spirit",
     "name_vi": "Bear Spirit",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 6,
     "table": false,
@@ -2703,85 +4397,54 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bear_spirit\":1}}] 1"
   },
   {
-    "id": "minecraft:blast_protection",
-    "namespace": "minecraft",
-    "raw_name": "blast_protection",
-    "name": "Blast Protection",
-    "name_vi": "Blast Protection",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 10,
-    "tradeable": true,
+    "id": "expedition_fishing:biome_attunement",
+    "namespace": "expedition_fishing",
+    "raw_name": "biome_attunement",
+    "name": "Biome Attunement",
+    "name_vi": "Biome Attunement",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
     "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/armor",
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
     "gear_categories": [
-      "armor"
+      "tool"
     ],
-    "supported_display": "Armor",
-    "exclusive_groups": [
-      "Armor Protection",
-      "Light / Blast Protection"
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases spawn weight of biome-exclusive creatures (Terralith, Incendium, Stellarity) by +5% / +10%.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:biome_attunement\":2}}] 1"
+  },
+  {
+    "id": "expedition_fishing:blazing_line",
+    "namespace": "expedition_fishing",
+    "raw_name": "blazing_line",
+    "name": "Blazing Line",
+    "name_vi": "Blazing Line",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
     ],
-    "conflicts": [
-      {
-        "id": "nova_structures:antidote",
-        "name": "Antidote"
-      },
-      {
-        "id": "enchantencore:day_protection",
-        "name": "Day Protection"
-      },
-      {
-        "id": "enchantencore:end_protection",
-        "name": "End Protection"
-      },
-      {
-        "id": "minecraft:fire_protection",
-        "name": "Fire Protection"
-      },
-      {
-        "id": "enchantplus:armor/fury",
-        "name": "Fury"
-      },
-      {
-        "id": "kattersstructures:light",
-        "name": "Light"
-      },
-      {
-        "id": "enchantencore:nether_protection",
-        "name": "Nether Protection"
-      },
-      {
-        "id": "enchantencore:night_protection",
-        "name": "Night Protection"
-      },
-      {
-        "id": "enchantencore:perfect_protection",
-        "name": "Perfect Protection"
-      },
-      {
-        "id": "minecraft:projectile_protection",
-        "name": "Projectile Protection"
-      },
-      {
-        "id": "minecraft:protection",
-        "name": "Protection"
-      },
-      {
-        "id": "enchantplus:armor/lifeplus",
-        "name": "Walking Fortress"
-      },
-      {
-        "id": "enchantencore:wither_protection",
-        "name": "Wither Protection"
-      }
-    ],
-    "description": "Reduces explosion damage by +8% per level and explosion knockback by +15% per level.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:blast_protection\":4}}] 1"
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Automatically smelts common raw fish catches and grants +5% Sea Creature Chance in hot/volcanic biomes.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:blazing_line\":1}}] 1"
   },
   {
     "id": "nova_structures:piercing",
@@ -2790,7 +4453,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Blowthrough",
     "name_vi": "Blowthrough",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 4,
     "anvil_cost": 4,
     "table": true,
@@ -2830,7 +4493,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Blunt",
     "name_vi": "Blunt",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": false,
@@ -2855,7 +4518,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Boar Spirit",
     "name_vi": "Boar Spirit",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": true,
@@ -2895,7 +4558,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Boltbringer",
     "name_vi": "Boltbringer",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": false,
@@ -2921,316 +4584,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:boltbringer\":1}}] 1"
   },
   {
-    "id": "mt:armor/boomproof_cap",
-    "namespace": "mt",
-    "raw_name": "armor/boomproof_cap",
-    "name": "Boomproof Cap",
-    "name_vi": "Boomproof Cap",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Significantly reduces damage taken from explosions.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/boomproof_cap\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:bounce",
-    "namespace": "enchantencore",
-    "raw_name": "bounce",
-    "name": "Bounce",
-    "name_vi": "Bounce",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Movement"
-    ],
-    "conflicts": [
-      {
-        "id": "bound:bound",
-        "name": "Bound"
-      },
-      {
-        "id": "enchantencore:end_speed",
-        "name": "End Speed"
-      },
-      {
-        "id": "enchantencore:invisibility_cloak",
-        "name": "Invisibility Cloak"
-      },
-      {
-        "id": "enchantencore:leaf_jumper",
-        "name": "Leaf Jumper"
-      },
-      {
-        "id": "enchantencore:path_speed",
-        "name": "Path Speed"
-      },
-      {
-        "id": "enchantencore:sand_speed",
-        "name": "Sand Speed"
-      },
-      {
-        "id": "enchantencore:sonic",
-        "name": "Sonic"
-      },
-      {
-        "id": "minecraft:soul_speed",
-        "name": "Soul Speed"
-      },
-      {
-        "id": "enchantencore:strafe",
-        "name": "Strafe"
-      }
-    ],
-    "description": "Grants +2 bounciness, +2.5 safe fall distance, and -0.2 air drag and friction modifiers.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bounce\":1}}] 1"
-  },
-  {
-    "id": "bound:bound",
-    "namespace": "bound",
-    "raw_name": "bound",
-    "name": "Bound",
-    "name_vi": "Bound",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Bound-v3.0.3",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Movement"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bounce",
-        "name": "Bounce"
-      },
-      {
-        "id": "enchantencore:end_speed",
-        "name": "End Speed"
-      },
-      {
-        "id": "enchantencore:invisibility_cloak",
-        "name": "Invisibility Cloak"
-      },
-      {
-        "id": "enchantencore:leaf_jumper",
-        "name": "Leaf Jumper"
-      },
-      {
-        "id": "enchantencore:path_speed",
-        "name": "Path Speed"
-      },
-      {
-        "id": "enchantencore:sand_speed",
-        "name": "Sand Speed"
-      },
-      {
-        "id": "enchantencore:sonic",
-        "name": "Sonic"
-      },
-      {
-        "id": "minecraft:soul_speed",
-        "name": "Soul Speed"
-      },
-      {
-        "id": "enchantencore:strafe",
-        "name": "Strafe"
-      }
-    ],
-    "description": "Allows mid-air double jumping while wearing Boots; extra jumps scale across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"bound:bound\":3}}] 1"
-  },
-  {
-    "id": "minecraft:breach",
-    "namespace": "minecraft",
-    "raw_name": "breach",
-    "name": "Breach",
-    "name_vi": "Breach",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 6,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/mace",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Maces",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
-    "description": "Reduces target's armor effectiveness by -15% per level on Mace hits (up to -60% armor penetration at Lv IV).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:breach\":4}}] 1"
-  },
-  {
-    "id": "nova_structures:function_only",
-    "namespace": "nova_structures",
-    "raw_name": "function_only",
-    "name": "Bug Enchant",
-    "name_vi": "Bug Enchant",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "['minecraft:stick', 'minecraft:flint']",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Sticks & Flint",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
-    "description": "Internal technical enchantment; converts into Bane of Arthropods inside player inventory.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:function_only\":5}}] 1"
-  },
-  {
     "id": "enchantencore:bulletproof",
     "namespace": "enchantencore",
     "raw_name": "bulletproof",
     "name": "Bulletproof",
     "name_vi": "Bulletproof",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": false,
@@ -3278,7 +4638,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Bunny Hop",
     "name_vi": "Bunny Hop",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -3308,38 +4668,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bunny_hop\":3}}] 1"
   },
   {
-    "id": "enchantplus:mounted/cavalier_egis",
-    "namespace": "enchantplus",
-    "raw_name": "mounted/cavalier_egis",
-    "name": "Cavalier Egis",
-    "name_vi": "Cavalier Egis",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#enchantplus:enchantable/mounted",
-    "gear_categories": [
-      "mount"
-    ],
-    "supported_display": "Saddles & Mounts",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Grants +0.75 damage protection EPF per level (up to +2.25 EPF at Lv III) while riding a mount.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/cavalier_egis\":3}}] 1"
-  },
-  {
     "id": "minecraft:channeling",
     "namespace": "minecraft",
     "raw_name": "channeling",
     "name": "Channeling",
     "name_vi": "Channeling",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": true,
@@ -3396,1405 +4731,54 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:channeling\":1}}] 1"
   },
   {
-    "id": "enchantencore:cleansing",
-    "namespace": "enchantencore",
-    "raw_name": "cleansing",
-    "name": "Cleansing",
-    "name_vi": "Cleansing",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "minecraft:shield",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Shields",
-    "exclusive_groups": [
-      "Shield"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:crispbread",
-        "name": "Crispbread"
-      },
-      {
-        "id": "enchantencore:hardened",
-        "name": "Hardened"
-      },
-      {
-        "id": "enchantencore:ominous_healing",
-        "name": "Ominous Healing"
-      },
-      {
-        "id": "enchantencore:rejuvenation",
-        "name": "Rejuvenation"
-      }
-    ],
-    "description": "Clears negative status effects when moving with the shield equipped at a small durability cost (1.5).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:cleansing\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:crab_claw",
-    "namespace": "enchantencore",
-    "raw_name": "crab_claw",
-    "name": "Crab Claw",
-    "name_vi": "Crab Claw",
-    "tier": "epic",
-    "tier_order": 99,
+    "id": "expedition_fishing:lucky_clover",
+    "namespace": "expedition_fishing",
+    "raw_name": "lucky_clover",
+    "name": "Clover Charm",
+    "name_vi": "Clover Charm",
+    "tier": "rare",
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": false,
     "table_weight": 1,
     "tradeable": false,
     "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/mining",
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
     "gear_categories": [
-      "armor",
       "tool"
     ],
-    "supported_display": "Chestplates & Tools",
-    "exclusive_groups": [
-      "Reach",
-      "Tool Utility (Crab Claw / Gluttony)"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:reach_curse",
-        "name": "Curse of Reach"
-      },
-      {
-        "id": "enchantencore:gluttony",
-        "name": "Gluttony"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
-      }
-    ],
-    "description": "Increases both block and entity interaction reach by +1 block per level (up to +3 blocks at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crab_claw\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:creeper_alloy",
-    "namespace": "enchantencore",
-    "raw_name": "creeper_alloy",
-    "name": "Creeper Alloy",
-    "name_vi": "Creeper Alloy",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "exclusive_groups": [
-      "Chestplate Alloy"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bulletproof",
-        "name": "Bulletproof"
-      },
-      {
-        "id": "enchantencore:darkness_alloy",
-        "name": "Darkness Alloy"
-      },
-      {
-        "id": "enchantencore:fire_alloy",
-        "name": "Fire Alloy"
-      },
-      {
-        "id": "enchantencore:ice_alloy",
-        "name": "Ice Alloy"
-      },
-      {
-        "id": "enchantencore:shulker_shell",
-        "name": "Shulker Shell"
-      }
-    ],
-    "description": "Triggers a non-destructive blast (0.5 radius, 0.5x knockback) against attackers when the wearer is hit.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_alloy\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:crispbread",
-    "namespace": "enchantencore",
-    "raw_name": "crispbread",
-    "name": "Crispbread",
-    "name_vi": "Crispbread",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "minecraft:shield",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Shields",
-    "exclusive_groups": [
-      "Shield"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:cleansing",
-        "name": "Cleansing"
-      },
-      {
-        "id": "enchantencore:hardened",
-        "name": "Hardened"
-      },
-      {
-        "id": "enchantencore:ominous_healing",
-        "name": "Ominous Healing"
-      },
-      {
-        "id": "enchantencore:rejuvenation",
-        "name": "Rejuvenation"
-      }
-    ],
-    "description": "Grants Saturation I for 2s while moving with the shield equipped.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crispbread\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:sword/critical",
-    "namespace": "enchantplus",
-    "raw_name": "sword/critical",
-    "name": "Critical",
-    "name_vi": "Critical",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/melee_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords & Melee Weapons",
-    "exclusive_groups": [
-      "Sword Attributes (Enchant+)"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantplus:sword/dimensional_hit",
-        "name": "Dimensional Hit"
-      },
-      {
-        "id": "enchantplus:sword/runic_despair",
-        "name": "Runic Despair"
-      }
-    ],
-    "description": "Increases chance to bypass armor and deal true critical damage across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/critical\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:crop_dance",
-    "namespace": "enchantencore",
-    "raw_name": "crop_dance",
-    "name": "Crop Dance",
-    "name_vi": "Crop Dance",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Walker"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:depth_strider",
-        "name": "Depth Strider"
-      },
-      {
-        "id": "enchantencore:electric_walker",
-        "name": "Electric Walker"
-      },
-      {
-        "id": "minecraft:frost_walker",
-        "name": "Frost Walker"
-      },
-      {
-        "id": "enchantencore:grass_walker",
-        "name": "Grass Walker"
-      },
-      {
-        "id": "enchantencore:magma_walker",
-        "name": "Magma Walker"
-      },
-      {
-        "id": "enchantencore:summer_walker",
-        "name": "Summer Walker"
-      }
-    ],
-    "description": "Crouching on farmland emits particles and rapidly accelerates nearby crop growth at a minor durability cost.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crop_dance\":1}}] 1"
-  },
-  {
-    "id": "kattersstructures:alchemy_curse",
-    "namespace": "kattersstructures",
-    "raw_name": "alchemy_curse",
-    "name": "Curse of Alchemy",
-    "name_vi": "Curse of Alchemy",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Katters Structures v2.9",
-    "supported_items": "#minecraft:enchantable/chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
+    "supported_display": "Fishing Rods",
     "exclusive_groups": [],
     "conflicts": [],
-    "description": "Grants random potion effects (often harmful) when taking damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:alchemy_curse\":1}}] 1"
+    "description": "Grants a +2% / +4% / +6% chance to double material rewards from fished Treasure Chests.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:lucky_clover\":3}}] 1"
   },
   {
-    "id": "minecraft:binding_curse",
-    "namespace": "minecraft",
-    "raw_name": "binding_curse",
-    "name": "Curse of Binding",
-    "name_vi": "Curse of Binding",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
+    "id": "expedition_fishing:culling_line",
+    "namespace": "expedition_fishing",
+    "raw_name": "culling_line",
+    "name": "Culling Line",
+    "name_vi": "Culling Line",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 4,
     "table": false,
     "table_weight": 1,
     "tradeable": false,
     "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/equippable",
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
     "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor & Elytra",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Prevents the equipped item from being removed until it breaks or the wearer dies.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:binding_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:blindness_curse",
-    "namespace": "enchantencore",
-    "raw_name": "blindness_curse",
-    "name": "Curse of Blindness",
-    "name_vi": "Curse of Blindness",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Periodically inflicts Blindness on the wearer.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:blindness_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantsplus:breaking_curse",
-    "namespace": "enchantsplus",
-    "raw_name": "breaking_curse",
-    "name": "Curse of Breaking",
-    "name_vi": "Curse of Breaking",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Durable Gear",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Doubles durability consumption rate when using the enchanted item.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:breaking_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantsplus:clumsiness_curse",
-    "namespace": "enchantsplus",
-    "raw_name": "clumsiness_curse",
-    "name": "Curse of Clumsiness",
-    "name_vi": "Curse of Clumsiness",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#enchantsplus:toolsnsword",
-    "gear_categories": [
-      "weapon",
       "tool"
     ],
-    "supported_display": "Weapons & Tools",
+    "supported_display": "Fishing Rods",
     "exclusive_groups": [],
     "conflicts": [],
-    "description": "Attacks and mining have a chance to miss or drop the held item.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:clumsiness_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:color_blindness_curse",
-    "namespace": "enchantencore",
-    "raw_name": "color_blindness_curse",
-    "name": "Curse of Color Blindness",
-    "name_vi": "Curse of Color Blindness",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Vision Curses"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:creeper_vision_curse",
-        "name": "Curse of Creeper Vision"
-      },
-      {
-        "id": "enchantencore:ender_vision_curse",
-        "name": "Curse of Ender Vision"
-      },
-      {
-        "id": "enchantencore:mirror_vision_curse",
-        "name": "Curse of Mirror Vision"
-      },
-      {
-        "id": "enchantencore:shortsight_curse",
-        "name": "Curse of Shortsight"
-      },
-      {
-        "id": "enchantencore:spider_vision_curse",
-        "name": "Curse of Spider Vision"
-      },
-      {
-        "id": "enchantencore:void_vision_curse",
-        "name": "Curse of Void Vision"
-      },
-      {
-        "id": "enchantencore:night_vision",
-        "name": "Night Vision"
-      }
-    ],
-    "description": "Applies a desaturated grayscale shader to the wearer's vision.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:color_blindness_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantsplus:compassion_curse",
-    "namespace": "enchantsplus",
-    "raw_name": "compassion_curse",
-    "name": "Curse of Compassion",
-    "name_vi": "Curse of Compassion",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#enchantsplus:weapons",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Melee hits have a chance to heal the target instead of dealing damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:compassion_curse\":1}}] 1"
-  },
-  {
-    "id": "nova_structures:conductivity_curse",
-    "namespace": "nova_structures",
-    "raw_name": "conductivity_curse",
-    "name": "Curse of Conductivity",
-    "name_vi": "Curse of Conductivity",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#nova_structures:enchantable/metal",
-    "gear_categories": [
-      "armor",
-      "weapon",
-      "tool"
-    ],
-    "supported_display": "Metal Gear",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Metal gear attracts lightning strikes to the wearer during thunderstorms.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:conductivity_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:corrosion_curse",
-    "namespace": "enchantencore",
-    "raw_name": "corrosion_curse",
-    "name": "Curse of Corrosion",
-    "name_vi": "Curse of Corrosion",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Durable Gear",
-    "exclusive_groups": [
-      "Auto-Repair / Durability"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:emberweave",
-        "name": "Emberweave"
-      },
-      {
-        "id": "enchantencore:handyman",
-        "name": "Handyman"
-      },
-      {
-        "id": "minecraft:mending",
-        "name": "Mending"
-      },
-      {
-        "id": "enchantencore:moonweave",
-        "name": "Moonweave"
-      },
-      {
-        "id": "nova_structures:photosynthesis",
-        "name": "Photosynthesis"
-      },
-      {
-        "id": "enchantencore:rainweave",
-        "name": "Rainweave"
-      },
-      {
-        "id": "enchantencore:sacrifice",
-        "name": "Sacrifice"
-      },
-      {
-        "id": "enchantencore:tideweave",
-        "name": "Tideweave"
-      },
-      {
-        "id": "enchantencore:voidweave",
-        "name": "Voidweave"
-      }
-    ],
-    "description": "Gradually corrodes item durability (0.5% chance per tick) when exposed to rain or submerged underwater.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:corrosion_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:creeper_vision_curse",
-    "namespace": "enchantencore",
-    "raw_name": "creeper_vision_curse",
-    "name": "Curse of Creeper Vision",
-    "name_vi": "Curse of Creeper Vision",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Vision Curses"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:color_blindness_curse",
-        "name": "Curse of Color Blindness"
-      },
-      {
-        "id": "enchantencore:ender_vision_curse",
-        "name": "Curse of Ender Vision"
-      },
-      {
-        "id": "enchantencore:mirror_vision_curse",
-        "name": "Curse of Mirror Vision"
-      },
-      {
-        "id": "enchantencore:shortsight_curse",
-        "name": "Curse of Shortsight"
-      },
-      {
-        "id": "enchantencore:spider_vision_curse",
-        "name": "Curse of Spider Vision"
-      },
-      {
-        "id": "enchantencore:void_vision_curse",
-        "name": "Curse of Void Vision"
-      },
-      {
-        "id": "enchantencore:night_vision",
-        "name": "Night Vision"
-      }
-    ],
-    "description": "Applies a green pixelated Creeper-vision shader while worn.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_vision_curse\":1}}] 1"
-  },
-  {
-    "id": "kattersstructures:crystal_curse",
-    "namespace": "kattersstructures",
-    "raw_name": "crystal_curse",
-    "name": "Curse of Crystal",
-    "name_vi": "Curse of Crystal",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Katters Structures v2.9",
-    "supported_items": "#minecraft:enchantable/weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "enchantencore:handyman",
-        "name": "Handyman"
-      },
-      {
-        "id": "minecraft:mending",
-        "name": "Mending"
-      },
-      {
-        "id": "enchantencore:sacrifice",
-        "name": "Sacrifice"
-      },
-      {
-        "id": "minecraft:unbreaking",
-        "name": "Unbreaking"
-      }
-    ],
-    "description": "Greatly boosts weapon damage at the cost of rapid durability loss.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:crystal_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:death_curse",
-    "namespace": "enchantencore",
-    "raw_name": "death_curse",
-    "name": "Curse of Death",
-    "name_vi": "Curse of Death",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/melee_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Inflicts lethal self-damage or fatal backlash on the attacker upon striking.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:death_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantsplus:displacement_curse",
-    "namespace": "enchantsplus",
-    "raw_name": "displacement_curse",
-    "name": "Curse of Displacement",
-    "name_vi": "Curse of Displacement",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#enchantsplus:weapons",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Attacks have a chance to randomly teleport the attacker or victim.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:displacement_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantsplus:double_edge_curse",
-    "namespace": "enchantsplus",
-    "raw_name": "double_edge_curse",
-    "name": "Curse of Double Edge",
-    "name_vi": "Curse of Double Edge",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#enchantsplus:weapons",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Deals heavy bonus damage to targets while reflecting a portion back onto the attacker.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:double_edge_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:durability/curse_of_enchant",
-    "namespace": "enchantplus",
-    "raw_name": "durability/curse_of_enchant",
-    "name": "Curse of Enchant",
-    "name_vi": "Curse of Enchant",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Gear",
-    "exclusive_groups": [
-      "Auto-Repair / Durability"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:mending",
-        "name": "Mending"
-      }
-    ],
-    "description": "Prevents the item from being further enchanted or modified.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:durability/curse_of_enchant\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:ender_vision_curse",
-    "namespace": "enchantencore",
-    "raw_name": "ender_vision_curse",
-    "name": "Curse of Ender Vision",
-    "name_vi": "Curse of Ender Vision",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Vision Curses"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:color_blindness_curse",
-        "name": "Curse of Color Blindness"
-      },
-      {
-        "id": "enchantencore:creeper_vision_curse",
-        "name": "Curse of Creeper Vision"
-      },
-      {
-        "id": "enchantencore:mirror_vision_curse",
-        "name": "Curse of Mirror Vision"
-      },
-      {
-        "id": "enchantencore:shortsight_curse",
-        "name": "Curse of Shortsight"
-      },
-      {
-        "id": "enchantencore:spider_vision_curse",
-        "name": "Curse of Spider Vision"
-      },
-      {
-        "id": "enchantencore:void_vision_curse",
-        "name": "Curse of Void Vision"
-      },
-      {
-        "id": "enchantencore:night_vision",
-        "name": "Night Vision"
-      }
-    ],
-    "description": "Applies an inverted Enderman-vision shader while worn.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ender_vision_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:fragility_curse",
-    "namespace": "enchantencore",
-    "raw_name": "fragility_curse",
-    "name": "Curse of Fragility",
-    "name_vi": "Curse of Fragility",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:weapons",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Significantly accelerates weapon durability loss on every attack.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:fragility_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:hiding_curse",
-    "namespace": "enchantencore",
-    "raw_name": "hiding_curse",
-    "name": "Curse of Hiding",
-    "name_vi": "Curse of Hiding",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/melee_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Turns struck enemies invisible, making them harder to track in combat.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hiding_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:mirror_vision_curse",
-    "namespace": "enchantencore",
-    "raw_name": "mirror_vision_curse",
-    "name": "Curse of Mirror Vision",
-    "name_vi": "Curse of Mirror Vision",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Vision Curses"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:color_blindness_curse",
-        "name": "Curse of Color Blindness"
-      },
-      {
-        "id": "enchantencore:creeper_vision_curse",
-        "name": "Curse of Creeper Vision"
-      },
-      {
-        "id": "enchantencore:ender_vision_curse",
-        "name": "Curse of Ender Vision"
-      },
-      {
-        "id": "enchantencore:shortsight_curse",
-        "name": "Curse of Shortsight"
-      },
-      {
-        "id": "enchantencore:spider_vision_curse",
-        "name": "Curse of Spider Vision"
-      },
-      {
-        "id": "enchantencore:void_vision_curse",
-        "name": "Curse of Void Vision"
-      },
-      {
-        "id": "enchantencore:night_vision",
-        "name": "Night Vision"
-      }
-    ],
-    "description": "Applies a horizontally mirrored shader to the wearer's vision.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:mirror_vision_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:ownership_curse",
-    "namespace": "enchantencore",
-    "raw_name": "ownership_curse",
-    "name": "Curse of Ownership",
-    "name_vi": "Curse of Ownership",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Binds the armor to its current owner, penalizing anyone else who attempts to wear it.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ownership_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:randomness_curse",
-    "namespace": "enchantencore",
-    "raw_name": "randomness_curse",
-    "name": "Curse of Randomness",
-    "name_vi": "Curse of Randomness",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_tools",
-    "gear_categories": [
-      "tool",
-      "weapon"
-    ],
-    "supported_display": "Tools & Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Randomizes actions, drops, or tool effects unpredictably on hit or block strike.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:randomness_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:reach_curse",
-    "namespace": "enchantencore",
-    "raw_name": "reach_curse",
-    "name": "Curse of Reach",
-    "name_vi": "Curse of Reach",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_tools",
-    "gear_categories": [
-      "tool",
-      "weapon"
-    ],
-    "supported_display": "Tools & Weapons",
-    "exclusive_groups": [
-      "Reach"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:crab_claw",
-        "name": "Crab Claw"
-      },
-      {
-        "id": "enchantplus:sword/reach",
-        "name": "Reach"
-      }
-    ],
-    "description": "Reduces both block and entity interaction reach by -2 blocks.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:reach_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:shortsight_curse",
-    "namespace": "enchantencore",
-    "raw_name": "shortsight_curse",
-    "name": "Curse of Shortsight",
-    "name_vi": "Curse of Shortsight",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Vision Curses"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:color_blindness_curse",
-        "name": "Curse of Color Blindness"
-      },
-      {
-        "id": "enchantencore:creeper_vision_curse",
-        "name": "Curse of Creeper Vision"
-      },
-      {
-        "id": "enchantencore:ender_vision_curse",
-        "name": "Curse of Ender Vision"
-      },
-      {
-        "id": "enchantencore:mirror_vision_curse",
-        "name": "Curse of Mirror Vision"
-      },
-      {
-        "id": "enchantencore:spider_vision_curse",
-        "name": "Curse of Spider Vision"
-      },
-      {
-        "id": "enchantencore:void_vision_curse",
-        "name": "Curse of Void Vision"
-      },
-      {
-        "id": "enchantencore:night_vision",
-        "name": "Night Vision"
-      }
-    ],
-    "description": "Applies a heavy near-sighted blur shader to the wearer's vision.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shortsight_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:spider_vision_curse",
-    "namespace": "enchantencore",
-    "raw_name": "spider_vision_curse",
-    "name": "Curse of Spider Vision",
-    "name_vi": "Curse of Spider Vision",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Vision Curses"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:color_blindness_curse",
-        "name": "Curse of Color Blindness"
-      },
-      {
-        "id": "enchantencore:creeper_vision_curse",
-        "name": "Curse of Creeper Vision"
-      },
-      {
-        "id": "enchantencore:ender_vision_curse",
-        "name": "Curse of Ender Vision"
-      },
-      {
-        "id": "enchantencore:mirror_vision_curse",
-        "name": "Curse of Mirror Vision"
-      },
-      {
-        "id": "enchantencore:shortsight_curse",
-        "name": "Curse of Shortsight"
-      },
-      {
-        "id": "enchantencore:void_vision_curse",
-        "name": "Curse of Void Vision"
-      },
-      {
-        "id": "enchantencore:night_vision",
-        "name": "Night Vision"
-      }
-    ],
-    "description": "Applies a multi-eyed Spider-vision shader while worn.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:spider_vision_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:undying_curse",
-    "namespace": "enchantencore",
-    "raw_name": "undying_curse",
-    "name": "Curse of Undying",
-    "name_vi": "Curse of Undying",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_tools",
-    "gear_categories": [
-      "tool",
-      "weapon"
-    ],
-    "supported_display": "Tools & Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Prevents normal death or alters item behavior unpredictably on fatal triggers.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:undying_curse\":1}}] 1"
-  },
-  {
-    "id": "minecraft:vanishing_curse",
-    "namespace": "minecraft",
-    "raw_name": "vanishing_curse",
-    "name": "Curse of Vanishing",
-    "name_vi": "Curse of Vanishing",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/vanishing",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Gear",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Causes the enchanted item to vanish permanently upon player death instead of dropping.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:vanishing_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:void_vision_curse",
-    "namespace": "enchantencore",
-    "raw_name": "void_vision_curse",
-    "name": "Curse of Void Vision",
-    "name_vi": "Curse of Void Vision",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Vision Curses"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:color_blindness_curse",
-        "name": "Curse of Color Blindness"
-      },
-      {
-        "id": "enchantencore:creeper_vision_curse",
-        "name": "Curse of Creeper Vision"
-      },
-      {
-        "id": "enchantencore:ender_vision_curse",
-        "name": "Curse of Ender Vision"
-      },
-      {
-        "id": "enchantencore:mirror_vision_curse",
-        "name": "Curse of Mirror Vision"
-      },
-      {
-        "id": "enchantencore:shortsight_curse",
-        "name": "Curse of Shortsight"
-      },
-      {
-        "id": "enchantencore:spider_vision_curse",
-        "name": "Curse of Spider Vision"
-      },
-      {
-        "id": "enchantencore:night_vision",
-        "name": "Night Vision"
-      }
-    ],
-    "description": "Applies a pitch-dark Void-vision shader while worn.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:void_vision_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:welfare_curse",
-    "namespace": "enchantencore",
-    "raw_name": "welfare_curse",
-    "name": "Curse of Welfare",
-    "name_vi": "Curse of Welfare",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_tools",
-    "gear_categories": [
-      "tool",
-      "weapon"
-    ],
-    "supported_display": "Tools & Weapons",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "enchantencore:gluttony",
-        "name": "Gluttony"
-      }
-    ],
-    "description": "Shares or drains durability and resources when moving with the cursed item.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:welfare_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:breeze_curse",
-    "namespace": "enchantencore",
-    "raw_name": "breeze_curse",
-    "name": "Curse of the Breeze",
-    "name_vi": "Curse of the Breeze",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/melee_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Knocks the attacker backward with a wind gust on every melee strike.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:breeze_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:caravan_curse",
-    "namespace": "enchantencore",
-    "raw_name": "caravan_curse",
-    "name": "Curse of the Caravan",
-    "name_vi": "Curse of the Caravan",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Periodically summons wandering llamas or pulls nearby mobs into a noisy caravan around the wearer.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:caravan_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:crank_curse",
-    "namespace": "enchantencore",
-    "raw_name": "crank_curse",
-    "name": "Curse of the Crank",
-    "name_vi": "Curse of the Crank",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Forces the wearer to keep moving or suffer cranky slowdown penalties when standing still.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crank_curse\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:cushion",
-    "namespace": "enchantencore",
-    "raw_name": "cushion",
-    "name": "Cushion",
-    "name_vi": "Cushion",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "minecraft:elytra",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Elytra",
-    "exclusive_groups": [
-      "Elytra"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:safe_landing",
-        "name": "Safe Landing"
-      }
-    ],
-    "description": "Adds +5 Elytra wall-collision protection EPF per level (up to +20 EPF at Lv IV).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:cushion\":4}}] 1"
-  },
-  {
-    "id": "mt:armor/dark_forest_chestplate",
-    "namespace": "mt",
-    "raw_name": "armor/dark_forest_chestplate",
-    "name": "Dark Forest Chestplate (Axe Mastery)",
-    "name_vi": "Dark Forest Chestplate (Axe Mastery)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Enhances combat proficiency and damage output with Axes.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/dark_forest_chestplate\":1}}] 1"
+    "description": "Increases Fishing XP gained from Common and Uncommon catches by +15% / +30%.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:culling_line\":2}}] 1"
   },
   {
     "id": "enchantencore:dark_infused",
@@ -4803,7 +4787,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Dark Infused",
     "name_vi": "Dark Infused",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 2,
     "table": false,
@@ -4876,7 +4860,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Darkness Alloy",
     "name_vi": "Darkness Alloy",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -4918,123 +4902,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:darkness_alloy\":1}}] 1"
   },
   {
-    "id": "enchantencore:day_protection",
-    "namespace": "enchantencore",
-    "raw_name": "day_protection",
-    "name": "Day Protection",
-    "name_vi": "Day Protection",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "exclusive_groups": [
-      "Armor Protection"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:antidote",
-        "name": "Antidote"
-      },
-      {
-        "id": "minecraft:blast_protection",
-        "name": "Blast Protection"
-      },
-      {
-        "id": "enchantencore:end_protection",
-        "name": "End Protection"
-      },
-      {
-        "id": "minecraft:fire_protection",
-        "name": "Fire Protection"
-      },
-      {
-        "id": "enchantplus:armor/fury",
-        "name": "Fury"
-      },
-      {
-        "id": "enchantencore:nether_protection",
-        "name": "Nether Protection"
-      },
-      {
-        "id": "enchantencore:night_protection",
-        "name": "Night Protection"
-      },
-      {
-        "id": "enchantencore:perfect_protection",
-        "name": "Perfect Protection"
-      },
-      {
-        "id": "minecraft:projectile_protection",
-        "name": "Projectile Protection"
-      },
-      {
-        "id": "minecraft:protection",
-        "name": "Protection"
-      },
-      {
-        "id": "enchantplus:armor/lifeplus",
-        "name": "Walking Fortress"
-      },
-      {
-        "id": "enchantencore:wither_protection",
-        "name": "Wither Protection"
-      }
-    ],
-    "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) during Overworld daytime.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:day_protection\":5}}] 1"
-  },
-  {
-    "id": "stellarity:_technical/daybroken",
-    "namespace": "stellarity",
-    "raw_name": "_technical/daybroken",
-    "name": "Daybroken",
-    "name_vi": "Daybroken",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Stellarity-6.0.1",
-    "supported_items": "['minecraft:diamond_sword']",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Diamond Swords",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "minecraft:flame",
-        "name": "Flame"
-      }
-    ],
-    "description": "Technical signature enchant for Daybroken blade: inflicts scorching solar burn.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:_technical/daybroken\":1}}] 1"
-  },
-  {
     "id": "enchantplus:sword/death_touch",
     "namespace": "enchantplus",
     "raw_name": "sword/death_touch",
     "name": "Death Touch",
     "name_vi": "Death Touch",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": false,
@@ -5060,203 +4934,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/death_touch\":3}}] 1"
   },
   {
-    "id": "mt:armor/deep_dark_leggings",
-    "namespace": "mt",
-    "raw_name": "armor/deep_dark_leggings",
-    "name": "Deep Dark Leggings (Stealth Prowess)",
-    "name_vi": "Deep Dark Leggings (Stealth Prowess)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:leg_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Leggings",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Muffles footsteps and improves stealth around Wardens.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/deep_dark_leggings\":1}}] 1"
-  },
-  {
-    "id": "minecraft:density",
-    "namespace": "minecraft",
-    "raw_name": "density",
-    "name": "Density",
-    "name_vi": "Density",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 6,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/mace",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Maces",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
-    "description": "Increases Mace smash damage by +0.5 per block fallen per level (up to +2.5 per block at Lv V).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:density\":5}}] 1"
-  },
-  {
-    "id": "minecraft:depth_strider",
-    "namespace": "minecraft",
-    "raw_name": "depth_strider",
-    "name": "Depth Strider",
-    "name_vi": "Depth Strider",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 10,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Walker"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:crop_dance",
-        "name": "Crop Dance"
-      },
-      {
-        "id": "enchantencore:electric_walker",
-        "name": "Electric Walker"
-      },
-      {
-        "id": "minecraft:frost_walker",
-        "name": "Frost Walker"
-      },
-      {
-        "id": "enchantencore:grass_walker",
-        "name": "Grass Walker"
-      },
-      {
-        "id": "enchantencore:magma_walker",
-        "name": "Magma Walker"
-      },
-      {
-        "id": "enchantencore:summer_walker",
-        "name": "Summer Walker"
-      },
-      {
-        "id": "kattersstructures:web_walker",
-        "name": "Web Walker"
-      }
-    ],
-    "description": "Reduces underwater movement slowdown by +33% per level (100% full land speed underwater at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:depth_strider\":3}}] 1"
-  },
-  {
-    "id": "mt:armor/desert_chestplate",
-    "namespace": "mt",
-    "raw_name": "armor/desert_chestplate",
-    "name": "Desert Chestplate (Last Stand)",
-    "name_vi": "Desert Chestplate (Last Stand)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Boosts defensive resilience dramatically when health drops low.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/desert_chestplate\":1}}] 1"
-  },
-  {
     "id": "enchantplus:sword/dimensional_hit",
     "namespace": "enchantplus",
     "raw_name": "sword/dimensional_hit",
     "name": "Dimensional Hit",
     "name_vi": "Dimensional Hit",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": true,
@@ -5286,113 +4970,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/dimensional_hit\":3}}] 1"
   },
   {
-    "id": "enchantencore:dismount",
-    "namespace": "enchantencore",
-    "raw_name": "dismount",
-    "name": "Dismount",
-    "name_vi": "Dismount",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/lunge",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Spears",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Spear charge hits knock targets off their mounts or vehicles.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:dismount\":1}}] 1"
-  },
-  {
-    "id": "stellarity:_technical/draconic",
-    "namespace": "stellarity",
-    "raw_name": "_technical/draconic",
-    "name": "Draconic",
-    "name_vi": "Draconic",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Stellarity-6.0.1",
-    "supported_items": "['minecraft:netherite_sword']",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Netherite Swords",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Technical signature enchant for Draconic blade: unleashes Ender Dragon breath.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:_technical/draconic\":1}}] 1"
-  },
-  {
-    "id": "mt:armor/dripstone_helmet",
-    "namespace": "mt",
-    "raw_name": "armor/dripstone_helmet",
-    "name": "Dripstone Helmet (Fast Drip)",
-    "name_vi": "Dripstone Helmet (Fast Drip)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Increases falling speed and reflects sharp dripstone damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/dripstone_helmet\":1}}] 1"
-  },
-  {
-    "id": "mt:weapons/drylands_piercer",
-    "namespace": "mt",
-    "raw_name": "weapons/drylands_piercer",
-    "name": "Drylands Piercer (Sheriff's Honour)",
-    "name_vi": "Drylands Piercer (Sheriff's Honour)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:crossbow",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Crossbows",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Fires armor-piercing bolts with heavy knockback.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/drylands_piercer\":1}}] 1"
-  },
-  {
     "id": "enchantplus:bow/echo_shot",
     "namespace": "enchantplus",
     "raw_name": "bow/echo_shot",
     "name": "Echo Shot",
     "name_vi": "Echo Shot",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 2,
     "anvil_cost": 4,
     "table": false,
@@ -5491,398 +5075,29 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:bow/echo_shot\":2}}] 1"
   },
   {
-    "id": "enchantencore:echoing_aura",
-    "namespace": "enchantencore",
-    "raw_name": "echoing_aura",
-    "name": "Echoing Aura",
-    "name_vi": "Echoing Aura",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
+    "id": "expedition_fishing:chain_catch",
+    "namespace": "expedition_fishing",
+    "raw_name": "chain_catch",
+    "name": "Echoing Hook",
+    "name_vi": "Echoing Hook",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 4,
     "table": false,
     "table_weight": 1,
     "tradeable": false,
     "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Cosmetic Aura"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:angry_aura",
-        "name": "Angry Aura"
-      },
-      {
-        "id": "enchantencore:aquatic_aura",
-        "name": "Aquatic Aura"
-      },
-      {
-        "id": "enchantencore:enchanted_aura",
-        "name": "Enchanted Aura"
-      },
-      {
-        "id": "enchantencore:ender_aura",
-        "name": "Ender Aura"
-      },
-      {
-        "id": "enchantencore:flaming_aura",
-        "name": "Flaming Aura"
-      },
-      {
-        "id": "enchantencore:heavenly_aura",
-        "name": "Heavenly Aura"
-      },
-      {
-        "id": "enchantencore:lovely_aura",
-        "name": "Lovely Aura"
-      },
-      {
-        "id": "enchantencore:lush_aura",
-        "name": "Lush Aura"
-      },
-      {
-        "id": "enchantencore:muddy_aura",
-        "name": "Muddy Aura"
-      },
-      {
-        "id": "enchantencore:ominous_aura",
-        "name": "Ominous Aura"
-      },
-      {
-        "id": "enchantencore:pale_aura",
-        "name": "Pale Aura"
-      },
-      {
-        "id": "enchantencore:sparking_aura",
-        "name": "Sparking Aura"
-      },
-      {
-        "id": "enchantencore:sticky_aura",
-        "name": "Sticky Aura"
-      },
-      {
-        "id": "enchantencore:trial_aura",
-        "name": "Trial Aura"
-      }
-    ],
-    "description": "Cosmetic aura: emits deep dark sculk and sonic echo particles while idle, moving, or taking hits.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:echoing_aura\":1}}] 1"
-  },
-  {
-    "id": "minecraft:efficiency",
-    "namespace": "minecraft",
-    "raw_name": "efficiency",
-    "name": "Efficiency",
-    "name_vi": "Efficiency",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 24,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/mining",
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
     "gear_categories": [
       "tool"
     ],
-    "supported_display": "Pickaxes, Shovels, Axes, Hoes & Shears",
+    "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "enchantencore:plow",
-        "name": "Plow"
-      },
-      {
-        "id": "enchantencore:regrowth",
-        "name": "Regrowth"
-      }
-    ],
-    "description": "Increases mining speed by +(level^2 + 1) when using the proper tool (up to +26 speed at Lv V).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:efficiency\":5}}] 1"
-  },
-  {
-    "id": "enchantencore:electric_walker",
-    "namespace": "enchantencore",
-    "raw_name": "electric_walker",
-    "name": "Electric Walker",
-    "name_vi": "Electric Walker",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Walker"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:crop_dance",
-        "name": "Crop Dance"
-      },
-      {
-        "id": "minecraft:depth_strider",
-        "name": "Depth Strider"
-      },
-      {
-        "id": "minecraft:frost_walker",
-        "name": "Frost Walker"
-      },
-      {
-        "id": "enchantencore:grass_walker",
-        "name": "Grass Walker"
-      },
-      {
-        "id": "enchantencore:magma_walker",
-        "name": "Magma Walker"
-      },
-      {
-        "id": "enchantencore:summer_walker",
-        "name": "Summer Walker"
-      }
-    ],
-    "description": "Emits redstone dust particles and powers redstone blocks beneath the wearer's feet while moving.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:electric_walker\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:emberweave",
-    "namespace": "enchantencore",
-    "raw_name": "emberweave",
-    "name": "Emberweave",
-    "name_vi": "Emberweave",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Durable Gear",
-    "exclusive_groups": [
-      "Auto-Repair / Durability"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:corrosion_curse",
-        "name": "Curse of Corrosion"
-      },
-      {
-        "id": "enchantencore:handyman",
-        "name": "Handyman"
-      },
-      {
-        "id": "minecraft:mending",
-        "name": "Mending"
-      },
-      {
-        "id": "enchantencore:moonweave",
-        "name": "Moonweave"
-      },
-      {
-        "id": "nova_structures:photosynthesis",
-        "name": "Photosynthesis"
-      },
-      {
-        "id": "enchantencore:rainweave",
-        "name": "Rainweave"
-      },
-      {
-        "id": "enchantencore:sacrifice",
-        "name": "Sacrifice"
-      },
-      {
-        "id": "enchantencore:tideweave",
-        "name": "Tideweave"
-      },
-      {
-        "id": "enchantencore:voidweave",
-        "name": "Voidweave"
-      }
-    ],
-    "description": "Passively repairs durability over time while in the Nether dimension.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:emberweave\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:enchanted_aura",
-    "namespace": "enchantencore",
-    "raw_name": "enchanted_aura",
-    "name": "Enchanted Aura",
-    "name_vi": "Enchanted Aura",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Cosmetic Aura"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:angry_aura",
-        "name": "Angry Aura"
-      },
-      {
-        "id": "enchantencore:aquatic_aura",
-        "name": "Aquatic Aura"
-      },
-      {
-        "id": "enchantencore:echoing_aura",
-        "name": "Echoing Aura"
-      },
-      {
-        "id": "enchantencore:ender_aura",
-        "name": "Ender Aura"
-      },
-      {
-        "id": "enchantencore:flaming_aura",
-        "name": "Flaming Aura"
-      },
-      {
-        "id": "enchantencore:heavenly_aura",
-        "name": "Heavenly Aura"
-      },
-      {
-        "id": "enchantencore:lovely_aura",
-        "name": "Lovely Aura"
-      },
-      {
-        "id": "enchantencore:lush_aura",
-        "name": "Lush Aura"
-      },
-      {
-        "id": "enchantencore:muddy_aura",
-        "name": "Muddy Aura"
-      },
-      {
-        "id": "enchantencore:ominous_aura",
-        "name": "Ominous Aura"
-      },
-      {
-        "id": "enchantencore:pale_aura",
-        "name": "Pale Aura"
-      },
-      {
-        "id": "enchantencore:sparking_aura",
-        "name": "Sparking Aura"
-      },
-      {
-        "id": "enchantencore:sticky_aura",
-        "name": "Sticky Aura"
-      },
-      {
-        "id": "enchantencore:trial_aura",
-        "name": "Trial Aura"
-      }
-    ],
-    "description": "Cosmetic aura: emits mystical enchantment table runes while idle, moving, or taking hits.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:enchanted_aura\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:end_protection",
-    "namespace": "enchantencore",
-    "raw_name": "end_protection",
-    "name": "End Protection",
-    "name_vi": "End Protection",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "exclusive_groups": [
-      "Armor Protection"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:antidote",
-        "name": "Antidote"
-      },
-      {
-        "id": "minecraft:blast_protection",
-        "name": "Blast Protection"
-      },
-      {
-        "id": "enchantencore:day_protection",
-        "name": "Day Protection"
-      },
-      {
-        "id": "minecraft:fire_protection",
-        "name": "Fire Protection"
-      },
-      {
-        "id": "enchantplus:armor/fury",
-        "name": "Fury"
-      },
-      {
-        "id": "enchantencore:nether_protection",
-        "name": "Nether Protection"
-      },
-      {
-        "id": "enchantencore:night_protection",
-        "name": "Night Protection"
-      },
-      {
-        "id": "enchantencore:perfect_protection",
-        "name": "Perfect Protection"
-      },
-      {
-        "id": "minecraft:projectile_protection",
-        "name": "Projectile Protection"
-      },
-      {
-        "id": "minecraft:protection",
-        "name": "Protection"
-      },
-      {
-        "id": "enchantplus:armor/lifeplus",
-        "name": "Walking Fortress"
-      },
-      {
-        "id": "enchantencore:wither_protection",
-        "name": "Wither Protection"
-      }
-    ],
-    "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) while in The End.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:end_protection\":4}}] 1"
+    "conflicts": [],
+    "description": "Grants an 8% / 16% chance after a successful catch to cut the next cast's wait time by 50%.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:chain_catch\":2}}] 1"
   },
   {
     "id": "enchantencore:end_speed",
@@ -5891,7 +5106,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "End Speed",
     "name_vi": "End Speed",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": true,
@@ -5953,97 +5168,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:end_speed\":3}}] 1"
   },
   {
-    "id": "enchantencore:ender_aura",
-    "namespace": "enchantencore",
-    "raw_name": "ender_aura",
-    "name": "Ender Aura",
-    "name_vi": "Ender Aura",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Cosmetic Aura"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:angry_aura",
-        "name": "Angry Aura"
-      },
-      {
-        "id": "enchantencore:aquatic_aura",
-        "name": "Aquatic Aura"
-      },
-      {
-        "id": "enchantencore:echoing_aura",
-        "name": "Echoing Aura"
-      },
-      {
-        "id": "enchantencore:enchanted_aura",
-        "name": "Enchanted Aura"
-      },
-      {
-        "id": "enchantencore:flaming_aura",
-        "name": "Flaming Aura"
-      },
-      {
-        "id": "enchantencore:heavenly_aura",
-        "name": "Heavenly Aura"
-      },
-      {
-        "id": "enchantencore:lovely_aura",
-        "name": "Lovely Aura"
-      },
-      {
-        "id": "enchantencore:lush_aura",
-        "name": "Lush Aura"
-      },
-      {
-        "id": "enchantencore:muddy_aura",
-        "name": "Muddy Aura"
-      },
-      {
-        "id": "enchantencore:ominous_aura",
-        "name": "Ominous Aura"
-      },
-      {
-        "id": "enchantencore:pale_aura",
-        "name": "Pale Aura"
-      },
-      {
-        "id": "enchantencore:sparking_aura",
-        "name": "Sparking Aura"
-      },
-      {
-        "id": "enchantencore:sticky_aura",
-        "name": "Sticky Aura"
-      },
-      {
-        "id": "enchantencore:trial_aura",
-        "name": "Trial Aura"
-      }
-    ],
-    "description": "Cosmetic aura: emits purple Ender portal particles while idle, moving, or taking hits.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ender_aura\":1}}] 1"
-  },
-  {
     "id": "enchantencore:ender_shot",
     "namespace": "enchantencore",
     "raw_name": "ender_shot",
     "name": "Ender Shot",
     "name_vi": "Ender Shot",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": false,
@@ -6156,7 +5287,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Enderscape",
     "name_vi": "Enderscape",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": true,
@@ -6192,7 +5323,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Enlightning",
     "name_vi": "Enlightning",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": false,
@@ -6217,7 +5348,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Eternal Frost",
     "name_vi": "Eternal Frost",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": false,
@@ -6257,7 +5388,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Ethereal Leap",
     "name_vi": "Ethereal Leap",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": true,
@@ -6282,7 +5413,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Evoker's Wrath",
     "name_vi": "Evoker's Wrath",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": false,
@@ -6385,38 +5516,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:evokers_wrath\":1}}] 1"
   },
   {
-    "id": "mt:armor/experient_trousers",
-    "namespace": "mt",
-    "raw_name": "armor/experient_trousers",
-    "name": "Experient Trousers",
-    "name_vi": "Experient Trousers",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:leg_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Leggings",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Periodically generates XP orbs while walking.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/experient_trousers\":1}}] 1"
-  },
-  {
     "id": "enchantplus:bow/explosive_arrow",
     "namespace": "enchantplus",
     "raw_name": "bow/explosive_arrow",
     "name": "Explosive Arrow",
     "name_vi": "Explosive Arrow",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 4,
     "anvil_cost": 4,
     "table": false,
@@ -6519,38 +5625,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:bow/explosive_arrow\":4}}] 1"
   },
   {
-    "id": "mt:treasure/fast",
-    "namespace": "mt",
-    "raw_name": "treasure/fast",
-    "name": "Fast Relic",
-    "name_vi": "Fast Relic",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Relic Armor",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Technical Mine Treasure relic modifier: boosted movement speed.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:treasure/fast\":1}}] 1"
-  },
-  {
     "id": "enchantplus:leggings/fast_swim",
     "namespace": "enchantplus",
     "raw_name": "leggings/fast_swim",
     "name": "Fast Swim",
     "name_vi": "Fast Swim",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": true,
@@ -6575,7 +5656,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Fear",
     "name_vi": "Fear",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 2,
     "table": false,
@@ -6594,70 +5675,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/fear\":3}}] 1"
   },
   {
-    "id": "minecraft:feather_falling",
-    "namespace": "minecraft",
-    "raw_name": "feather_falling",
-    "name": "Feather Falling",
-    "name_vi": "Feather Falling",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Reduces fall and Ender Pearl damage by +12% per level (up to +48% at Lv IV).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:feather_falling\":4}}] 1"
-  },
-  {
-    "id": "enchantencore:fetch",
-    "namespace": "enchantencore",
-    "raw_name": "fetch",
-    "name": "Fetch",
-    "name_vi": "Fetch",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "minecraft:wolf_armor",
-    "gear_categories": [
-      "mount"
-    ],
-    "supported_display": "Wolf Armor",
-    "exclusive_groups": [
-      "Wolf Armor"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:scent",
-        "name": "Scent"
-      }
-    ],
-    "description": "Armored wolves periodically retrieve nearby dropped items and bring them to their owner.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:fetch\":1}}] 1"
-  },
-  {
     "id": "enchantencore:fire_alloy",
     "namespace": "enchantencore",
     "raw_name": "fire_alloy",
     "name": "Fire Alloy",
     "name_vi": "Fire Alloy",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -6703,471 +5727,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:fire_alloy\":1}}] 1"
   },
   {
-    "id": "minecraft:fire_aspect",
-    "namespace": "minecraft",
-    "raw_name": "fire_aspect",
-    "name": "Fire Aspect",
-    "name_vi": "Fire Aspect",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/fire_aspect",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords & Maces",
-    "exclusive_groups": [
-      "Aspect (Melee Status)",
-      "Sword Buffs (Fire / Ice / Web)"
-    ],
-    "conflicts": [
-      {
-        "id": "stellarity:_technical/daybroken",
-        "name": "Daybroken"
-      },
-      {
-        "id": "enchantencore:guard",
-        "name": "Guard"
-      },
-      {
-        "id": "enchantencore:hunger_aspect",
-        "name": "Hunger Aspect"
-      },
-      {
-        "id": "enchantsplus:ice_aspect",
-        "name": "Icicle Impale"
-      },
-      {
-        "id": "stellarity:_technical/infernal_infusion",
-        "name": "Infernal Infusion"
-      },
-      {
-        "id": "enchantencore:infested_aspect",
-        "name": "Infested Aspect"
-      },
-      {
-        "id": "enchantencore:levitation_aspect",
-        "name": "Levitation Aspect"
-      },
-      {
-        "id": "enchantencore:oozing_aspect",
-        "name": "Oozing Aspect"
-      },
-      {
-        "id": "enchantencore:pacifier",
-        "name": "Pacifier"
-      },
-      {
-        "id": "enchantencore:poison_aspect",
-        "name": "Poison Aspect"
-      },
-      {
-        "id": "enchantencore:slowness_aspect",
-        "name": "Slowness Aspect"
-      },
-      {
-        "id": "stellarity:_technical/soul_harvest",
-        "name": "Soul Harvest"
-      },
-      {
-        "id": "enchantencore:weakness_aspect",
-        "name": "Weakness Aspect"
-      },
-      {
-        "id": "enchantencore:weaving_aspect",
-        "name": "Weaving Aspect"
-      },
-      {
-        "id": "enchantsplus:websnare",
-        "name": "Websnare"
-      },
-      {
-        "id": "enchantencore:wind_aspect",
-        "name": "Wind Aspect"
-      },
-      {
-        "id": "enchantencore:wither_aspect",
-        "name": "Wither Aspect"
-      }
-    ],
-    "description": "Ignites targets on melee hit for +4 seconds per level (up to 8s at Lv II).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:fire_aspect\":2}}] 1"
-  },
-  {
-    "id": "minecraft:fire_protection",
-    "namespace": "minecraft",
-    "raw_name": "fire_protection",
-    "name": "Fire Protection",
-    "name_vi": "Fire Protection",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 10,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "exclusive_groups": [
-      "Armor Protection"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:antidote",
-        "name": "Antidote"
-      },
-      {
-        "id": "minecraft:blast_protection",
-        "name": "Blast Protection"
-      },
-      {
-        "id": "enchantencore:day_protection",
-        "name": "Day Protection"
-      },
-      {
-        "id": "enchantencore:end_protection",
-        "name": "End Protection"
-      },
-      {
-        "id": "enchantplus:armor/fury",
-        "name": "Fury"
-      },
-      {
-        "id": "enchantencore:nether_protection",
-        "name": "Nether Protection"
-      },
-      {
-        "id": "enchantencore:night_protection",
-        "name": "Night Protection"
-      },
-      {
-        "id": "enchantencore:perfect_protection",
-        "name": "Perfect Protection"
-      },
-      {
-        "id": "minecraft:projectile_protection",
-        "name": "Projectile Protection"
-      },
-      {
-        "id": "minecraft:protection",
-        "name": "Protection"
-      },
-      {
-        "id": "enchantplus:armor/lifeplus",
-        "name": "Walking Fortress"
-      },
-      {
-        "id": "enchantencore:wither_protection",
-        "name": "Wither Protection"
-      }
-    ],
-    "description": "Reduces fire damage by +8% per level (up to +32% at Lv IV per piece) and cuts burn duration by -15% per level.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:fire_protection\":4}}] 1"
-  },
-  {
-    "id": "minecraft:flame",
-    "namespace": "minecraft",
-    "raw_name": "flame",
-    "name": "Flame",
-    "name_vi": "Flame",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/bow",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "stellarity:_technical/daybroken",
-        "name": "Daybroken"
-      },
-      {
-        "id": "stellarity:_technical/infernal_infusion",
-        "name": "Infernal Infusion"
-      },
-      {
-        "id": "stellarity:_technical/soul_harvest",
-        "name": "Soul Harvest"
-      }
-    ],
-    "description": "Arrows become flaming projectiles, igniting targets for 5 seconds and lighting TNT/campfires.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:flame\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:flaming_aura",
-    "namespace": "enchantencore",
-    "raw_name": "flaming_aura",
-    "name": "Flaming Aura",
-    "name_vi": "Flaming Aura",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Cosmetic Aura"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:angry_aura",
-        "name": "Angry Aura"
-      },
-      {
-        "id": "enchantencore:aquatic_aura",
-        "name": "Aquatic Aura"
-      },
-      {
-        "id": "enchantencore:echoing_aura",
-        "name": "Echoing Aura"
-      },
-      {
-        "id": "enchantencore:enchanted_aura",
-        "name": "Enchanted Aura"
-      },
-      {
-        "id": "enchantencore:ender_aura",
-        "name": "Ender Aura"
-      },
-      {
-        "id": "enchantencore:heavenly_aura",
-        "name": "Heavenly Aura"
-      },
-      {
-        "id": "enchantencore:lovely_aura",
-        "name": "Lovely Aura"
-      },
-      {
-        "id": "enchantencore:lush_aura",
-        "name": "Lush Aura"
-      },
-      {
-        "id": "enchantencore:muddy_aura",
-        "name": "Muddy Aura"
-      },
-      {
-        "id": "enchantencore:ominous_aura",
-        "name": "Ominous Aura"
-      },
-      {
-        "id": "enchantencore:pale_aura",
-        "name": "Pale Aura"
-      },
-      {
-        "id": "enchantencore:sparking_aura",
-        "name": "Sparking Aura"
-      },
-      {
-        "id": "enchantencore:sticky_aura",
-        "name": "Sticky Aura"
-      },
-      {
-        "id": "enchantencore:trial_aura",
-        "name": "Trial Aura"
-      }
-    ],
-    "description": "Cosmetic aura: emits flame and ember particles while idle, moving, or taking hits.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:flaming_aura\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:flare",
-    "namespace": "enchantencore",
-    "raw_name": "flare",
-    "name": "Flare",
-    "name_vi": "Flare",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_bows",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows & Crossbows",
-    "exclusive_groups": [
-      "Bow Arrow Effects",
-      "Crossbow Shots"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:archer_barrage",
-        "name": "Archer Barrage"
-      },
-      {
-        "id": "enchantencore:armor_piercing",
-        "name": "Armor Piercing"
-      },
-      {
-        "id": "enchantencore:bomber",
-        "name": "Bomber"
-      },
-      {
-        "id": "enchantencore:crystalize_arrow",
-        "name": "Crystalize Arrow"
-      },
-      {
-        "id": "enchantencore:dark_infused",
-        "name": "Dark Infused"
-      },
-      {
-        "id": "enchantplus:bow/echo_shot",
-        "name": "Echo Shot"
-      },
-      {
-        "id": "enchantencore:ender_shot",
-        "name": "Ender Shot"
-      },
-      {
-        "id": "enchantencore:evokers_wrath",
-        "name": "Evoker's Wrath"
-      },
-      {
-        "id": "enchantplus:bow/explosive_arrow",
-        "name": "Explosive Arrow"
-      },
-      {
-        "id": "enchantencore:forge_shot",
-        "name": "Forge Shot"
-      },
-      {
-        "id": "enchantencore:implosion",
-        "name": "Implosion"
-      },
-      {
-        "id": "minecraft:infinity",
-        "name": "Infinity"
-      },
-      {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
-      },
-      {
-        "id": "enchantencore:lightning_bolt",
-        "name": "Lightning Bolt"
-      },
-      {
-        "id": "enchantencore:nuclear_arrow",
-        "name": "Nuclear Arrow"
-      },
-      {
-        "id": "enchantencore:poison_infused",
-        "name": "Poison Infused"
-      },
-      {
-        "id": "enchantencore:railgun",
-        "name": "Railgun"
-      },
-      {
-        "id": "enchantencore:sting",
-        "name": "Sting"
-      },
-      {
-        "id": "enchantencore:warped_arrow",
-        "name": "Warped Arrow"
-      },
-      {
-        "id": "enchantencore:web_infused",
-        "name": "Web Infused"
-      },
-      {
-        "id": "enchantencore:wither_infused",
-        "name": "Wither Infused"
-      }
-    ],
-    "description": "Arrows emit bright flare light and ignite targets on impact.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:flare\":1}}] 1"
-  },
-  {
-    "id": "mt:technical/floor_is_spikes",
-    "namespace": "mt",
-    "raw_name": "technical/floor_is_spikes",
-    "name": "Floor Is Spikes",
-    "name_vi": "Floor Is Spikes",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:acacia_button",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Dungeon Trigger",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Technical dungeon spike-trap trigger.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/floor_is_spikes\":1}}] 1"
-  },
-  {
-    "id": "mt:armor/flower_helmet",
-    "namespace": "mt",
-    "raw_name": "armor/flower_helmet",
-    "name": "Flower Helmet (Flower Gift)",
-    "name_vi": "Flower Helmet (Flower Gift)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Radiates natural vitality, restoring health and hunger.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/flower_helmet\":1}}] 1"
-  },
-  {
     "id": "enchantencore:forge_shot",
     "namespace": "enchantencore",
     "raw_name": "forge_shot",
     "name": "Forge Shot",
     "name_vi": "Forge Shot",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -7280,7 +5846,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Fortune",
     "name_vi": "Fortune",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": false,
@@ -7312,7 +5878,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Frost Walker",
     "name_vi": "Frost Walker",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 2,
     "anvil_cost": 6,
     "table": true,
@@ -7358,13 +5924,38 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:frost_walker\":2}}] 1"
   },
   {
+    "id": "expedition_fishing:frostbite_hook",
+    "namespace": "expedition_fishing",
+    "raw_name": "frostbite_hook",
+    "name": "Frostbite Hook",
+    "name_vi": "Frostbite Hook",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Reeling in a Sea Creature inflicts Slowness II for 4s / 7s (doubled duration in Frozen/Cold biomes).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:frostbite_hook\":2}}] 1"
+  },
+  {
     "id": "enchantplus:armor/fury",
     "namespace": "enchantplus",
     "raw_name": "armor/fury",
     "name": "Fury",
     "name_vi": "Fury",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": false,
@@ -7431,93 +6022,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:armor/fury\":3}}] 1"
   },
   {
-    "id": "enchantencore:gallop",
-    "namespace": "enchantencore",
-    "raw_name": "gallop",
-    "name": "Gallop",
-    "name_vi": "Gallop",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "minecraft:saddle",
-    "gear_categories": [
-      "mount"
-    ],
-    "supported_display": "Saddles",
-    "exclusive_groups": [
-      "Saddle / Mount"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:surfer",
-        "name": "Surfer"
-      }
-    ],
-    "description": "Increases mount movement speed by +0.075 (+0.05 per level above I, up to +0.175 at Lv III) while ridden.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:gallop\":3}}] 1"
-  },
-  {
-    "id": "nova_structures:ghasted",
-    "namespace": "nova_structures",
-    "raw_name": "ghasted",
-    "name": "Ghasted",
-    "name_vi": "Ghasted",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#minecraft:enchantable/crossbow",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Crossbows",
-    "exclusive_groups": [
-      "Crossbow (Multishot / Piercing)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "nova_structures:gravity",
-        "name": "Gravity"
-      },
-      {
-        "id": "nova_structures:power",
-        "name": "Might"
-      },
-      {
-        "id": "minecraft:multishot",
-        "name": "Multishot"
-      },
-      {
-        "id": "minecraft:piercing",
-        "name": "Piercing"
-      }
-    ],
-    "description": "Transforms fired arrows into explosive Ghast fireballs; explosion power scales from Lv I to Lv III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:ghasted\":3}}] 1"
-  },
-  {
     "id": "enchantencore:ghost_spirit",
     "namespace": "enchantencore",
     "raw_name": "ghost_spirit",
     "name": "Ghost Spirit",
     "name_vi": "Ghost Spirit",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 6,
     "table": false,
@@ -7551,38 +6062,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ghost_spirit\":1}}] 1"
   },
   {
-    "id": "mt:technical/giga_bore",
-    "namespace": "mt",
-    "raw_name": "technical/giga_bore",
-    "name": "Giga Bore",
-    "name_vi": "Giga Bore",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:enchantable/mining",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Mine Treasure Pickaxes",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Technical Mine Treasure 3x3 mining trigger.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/giga_bore\":1}}] 1"
-  },
-  {
     "id": "enchantencore:gluttony",
     "namespace": "enchantencore",
     "raw_name": "gluttony",
     "name": "Gluttony",
     "name_vi": "Gluttony",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 5,
     "anvil_cost": 2,
     "table": true,
@@ -7612,65 +6098,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:gluttony\":5}}] 1"
   },
   {
-    "id": "enchantencore:grass_walker",
-    "namespace": "enchantencore",
-    "raw_name": "grass_walker",
-    "name": "Grass Walker",
-    "name_vi": "Grass Walker",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Walker"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:crop_dance",
-        "name": "Crop Dance"
-      },
-      {
-        "id": "minecraft:depth_strider",
-        "name": "Depth Strider"
-      },
-      {
-        "id": "enchantencore:electric_walker",
-        "name": "Electric Walker"
-      },
-      {
-        "id": "minecraft:frost_walker",
-        "name": "Frost Walker"
-      },
-      {
-        "id": "enchantencore:magma_walker",
-        "name": "Magma Walker"
-      },
-      {
-        "id": "enchantencore:summer_walker",
-        "name": "Summer Walker"
-      }
-    ],
-    "description": "Converts nearby dirt beneath the wearer into grass blocks while walking and grants immunity to sweet berry bush damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:grass_walker\":1}}] 1"
-  },
-  {
     "id": "nova_structures:gravity",
     "namespace": "nova_structures",
     "raw_name": "gravity",
     "name": "Gravity",
     "name_vi": "Gravity",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": false,
@@ -7708,81 +6142,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:gravity\":3}}] 1"
   },
   {
-    "id": "mt:technical/grenade",
-    "namespace": "mt",
-    "raw_name": "technical/grenade",
-    "name": "Grenade Window",
-    "name_vi": "Grenade Window",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:enchantable/sharp_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
-    "description": "Technical 2-second delayed explosive charge on hit.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/grenade\":1}}] 1"
-  },
-  {
     "id": "enchantencore:growth",
     "namespace": "enchantencore",
     "raw_name": "growth",
     "name": "Growth",
     "name_vi": "Growth",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 5,
     "anvil_cost": 2,
     "table": true,
@@ -7808,394 +6174,34 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:growth\":5}}] 1"
   },
   {
-    "id": "enchantencore:guard",
-    "namespace": "enchantencore",
-    "raw_name": "guard",
-    "name": "Guard",
-    "name_vi": "Guard",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:can_block",
-    "gear_categories": [
-      "weapon",
-      "armor"
-    ],
-    "supported_display": "Swords & Shields",
-    "exclusive_groups": [
-      "Aspect (Melee Status)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "enchantencore:hunger_aspect",
-        "name": "Hunger Aspect"
-      },
-      {
-        "id": "enchantencore:infested_aspect",
-        "name": "Infested Aspect"
-      },
-      {
-        "id": "enchantencore:levitation_aspect",
-        "name": "Levitation Aspect"
-      },
-      {
-        "id": "enchantencore:oozing_aspect",
-        "name": "Oozing Aspect"
-      },
-      {
-        "id": "enchantencore:pacifier",
-        "name": "Pacifier"
-      },
-      {
-        "id": "enchantencore:poison_aspect",
-        "name": "Poison Aspect"
-      },
-      {
-        "id": "enchantencore:slowness_aspect",
-        "name": "Slowness Aspect"
-      },
-      {
-        "id": "enchantencore:weakness_aspect",
-        "name": "Weakness Aspect"
-      },
-      {
-        "id": "enchantencore:weaving_aspect",
-        "name": "Weaving Aspect"
-      },
-      {
-        "id": "enchantencore:wind_aspect",
-        "name": "Wind Aspect"
-      }
-    ],
-    "description": "Improves blocking posture and defensive mitigation while holding or raising the item.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:guard\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:handyman",
-    "namespace": "enchantencore",
-    "raw_name": "handyman",
-    "name": "Handyman",
-    "name_vi": "Handyman",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_enchantable",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Enchantable Gear",
-    "exclusive_groups": [
-      "Auto-Repair / Durability"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:corrosion_curse",
-        "name": "Curse of Corrosion"
-      },
-      {
-        "id": "kattersstructures:crystal_curse",
-        "name": "Curse of Crystal"
-      },
-      {
-        "id": "enchantencore:emberweave",
-        "name": "Emberweave"
-      },
-      {
-        "id": "enchantencore:infinity_durability",
-        "name": "Infinite Durability"
-      },
-      {
-        "id": "minecraft:mending",
-        "name": "Mending"
-      },
-      {
-        "id": "enchantencore:moonweave",
-        "name": "Moonweave"
-      },
-      {
-        "id": "nova_structures:photosynthesis",
-        "name": "Photosynthesis"
-      },
-      {
-        "id": "enchantencore:rainweave",
-        "name": "Rainweave"
-      },
-      {
-        "id": "enchantencore:sacrifice",
-        "name": "Sacrifice"
-      },
-      {
-        "id": "enchantencore:tideweave",
-        "name": "Tideweave"
-      },
-      {
-        "id": "enchantencore:voidweave",
-        "name": "Voidweave"
-      }
-    ],
-    "description": "Gradually repairs the equipped item's durability while moving.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:handyman\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:hardened",
-    "namespace": "enchantencore",
-    "raw_name": "hardened",
-    "name": "Hardened",
-    "name_vi": "Hardened",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 2,
-    "table": true,
+    "id": "expedition_fishing:heat_channeling",
+    "namespace": "expedition_fishing",
+    "raw_name": "heat_channeling",
+    "name": "Heat Channeling",
+    "name_vi": "Heat Channeling",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 4,
+    "table": false,
     "table_weight": 1,
     "tradeable": false,
     "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "minecraft:shield",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Shields",
-    "exclusive_groups": [
-      "Shield"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:cleansing",
-        "name": "Cleansing"
-      },
-      {
-        "id": "enchantencore:crispbread",
-        "name": "Crispbread"
-      },
-      {
-        "id": "enchantencore:ominous_healing",
-        "name": "Ominous Healing"
-      },
-      {
-        "id": "enchantencore:rejuvenation",
-        "name": "Rejuvenation"
-      }
-    ],
-    "description": "Grants +2 Armor (+1 per level above I, up to +4 Armor at Lv III) while equipped.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hardened\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:harpoon",
-    "namespace": "enchantencore",
-    "raw_name": "harpoon",
-    "name": "Harpoon",
-    "name_vi": "Harpoon",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
+    "source_pack": "expedition_fishing",
     "supported_items": "#minecraft:enchantable/fishing",
     "gear_categories": [
       "tool"
     ],
     "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Reeling in hooked entities pulls them forcefully toward the angler with extra force.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:harpoon\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:haste",
-    "namespace": "enchantencore",
-    "raw_name": "haste",
-    "name": "Haste",
-    "name_vi": "Haste",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/mining",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Mining Tools",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Grants Haste I / II / III (matching enchantment level) while held in the main hand.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:haste\":3}}] 1"
-  },
-  {
-    "id": "mt:technical/healing_flower",
-    "namespace": "mt",
-    "raw_name": "technical/healing_flower",
-    "name": "Healing Flower",
-    "name_vi": "Healing Flower",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:acacia_button",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Dungeon Trigger",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Technical dungeon healing-flower aura trigger.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/healing_flower\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:heavenly_aura",
-    "namespace": "enchantencore",
-    "raw_name": "heavenly_aura",
-    "name": "Heavenly Aura",
-    "name_vi": "Heavenly Aura",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Cosmetic Aura"
-    ],
     "conflicts": [
       {
-        "id": "enchantencore:angry_aura",
-        "name": "Angry Aura"
-      },
-      {
-        "id": "enchantencore:aquatic_aura",
-        "name": "Aquatic Aura"
-      },
-      {
-        "id": "enchantencore:echoing_aura",
-        "name": "Echoing Aura"
-      },
-      {
-        "id": "enchantencore:enchanted_aura",
-        "name": "Enchanted Aura"
-      },
-      {
-        "id": "enchantencore:ender_aura",
-        "name": "Ender Aura"
-      },
-      {
-        "id": "enchantencore:flaming_aura",
-        "name": "Flaming Aura"
-      },
-      {
-        "id": "enchantencore:lovely_aura",
-        "name": "Lovely Aura"
-      },
-      {
-        "id": "enchantencore:lush_aura",
-        "name": "Lush Aura"
-      },
-      {
-        "id": "enchantencore:muddy_aura",
-        "name": "Muddy Aura"
-      },
-      {
-        "id": "enchantencore:ominous_aura",
-        "name": "Ominous Aura"
-      },
-      {
-        "id": "enchantencore:pale_aura",
-        "name": "Pale Aura"
-      },
-      {
-        "id": "enchantencore:sparking_aura",
-        "name": "Sparking Aura"
-      },
-      {
-        "id": "enchantencore:sticky_aura",
-        "name": "Sticky Aura"
-      },
-      {
-        "id": "enchantencore:trial_aura",
-        "name": "Trial Aura"
+        "id": "expedition_fishing:thermal_cooling",
+        "name": "Thermal Cooling"
       }
     ],
-    "description": "Cosmetic aura: emits golden halo and glowing particles while idle, moving, or taking hits.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:heavenly_aura\":1}}] 1"
-  },
-  {
-    "id": "kattersstructures:heavy",
-    "namespace": "kattersstructures",
-    "raw_name": "heavy",
-    "name": "Heavy",
-    "name_vi": "Heavy",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Katters Structures v2.9",
-    "supported_items": "#minecraft:enchantable/weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "enchantencore:leech",
-        "name": "Leech"
-      },
-      {
-        "id": "enchantencore:levitation_aspect",
-        "name": "Levitation Aspect"
-      },
-      {
-        "id": "enchantencore:poppy_peace",
-        "name": "Poppy Peace"
-      },
-      {
-        "id": "enchantencore:wind_aspect",
-        "name": "Wind Aspect"
-      }
-    ],
-    "description": "Adds +2 damage (+0.75/lvl above I) and +0.5 knockback (+0.25/lvl above I), but adds +20% gravity and -50% attack speed.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:heavy\":5}}] 1"
+    "description": "Harnesses ambient Heat while Lava Fishing, granting +3% / +6% Sea Creature Chance per 20 Heat.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:heat_channeling\":2}}] 1"
   },
   {
     "id": "enchantencore:heroes_crown",
@@ -8204,7 +6210,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Hero's Crown",
     "name_vi": "Hero's Crown",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": false,
@@ -8234,89 +6240,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:heroes_crown\":1}}] 1"
   },
   {
-    "id": "enchantencore:hunger_aspect",
-    "namespace": "enchantencore",
-    "raw_name": "hunger_aspect",
-    "name": "Hunger Aspect",
-    "name_vi": "Hunger Aspect",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/fire_aspect",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Aspect (Melee Status)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "enchantencore:guard",
-        "name": "Guard"
-      },
-      {
-        "id": "enchantencore:infested_aspect",
-        "name": "Infested Aspect"
-      },
-      {
-        "id": "enchantencore:levitation_aspect",
-        "name": "Levitation Aspect"
-      },
-      {
-        "id": "enchantencore:oozing_aspect",
-        "name": "Oozing Aspect"
-      },
-      {
-        "id": "enchantencore:pacifier",
-        "name": "Pacifier"
-      },
-      {
-        "id": "enchantencore:poison_aspect",
-        "name": "Poison Aspect"
-      },
-      {
-        "id": "enchantencore:slowness_aspect",
-        "name": "Slowness Aspect"
-      },
-      {
-        "id": "enchantencore:weakness_aspect",
-        "name": "Weakness Aspect"
-      },
-      {
-        "id": "enchantencore:weaving_aspect",
-        "name": "Weaving Aspect"
-      },
-      {
-        "id": "enchantencore:wind_aspect",
-        "name": "Wind Aspect"
-      },
-      {
-        "id": "enchantencore:wither_aspect",
-        "name": "Wither Aspect"
-      }
-    ],
-    "description": "Melee hits inflict Hunger for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hunger_aspect\":2}}] 1"
-  },
-  {
     "id": "enchantencore:hurricane",
     "namespace": "enchantencore",
     "raw_name": "hurricane",
     "name": "Hurricane",
     "name_vi": "Hurricane",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": false,
@@ -8335,88 +6265,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hurricane\":1}}] 1"
   },
   {
-    "id": "mt:weapons/hurricane_sword",
-    "namespace": "mt",
-    "raw_name": "weapons/hurricane_sword",
-    "name": "Hurricane Sword (Gusty Garden)",
-    "name_vi": "Hurricane Sword (Gusty Garden)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:iron_sword",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Iron Swords",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Slashes unleash swirling gusts that launch enemies skyward.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/hurricane_sword\":1}}] 1"
-  },
-  {
-    "id": "nova_structures:hydro_veil",
-    "namespace": "nova_structures",
-    "raw_name": "hydro_veil",
-    "name": "Hydro Veil",
-    "name_vi": "Hydro Veil",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#minecraft:harnesses",
-    "gear_categories": [
-      "mount"
-    ],
-    "supported_display": "Happy Ghast Harnesses",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Grants Happy Ghast -25% burn time per level, +25% explosion knockback resistance per level, and +3.75 fire/blast protection EPF per level (up to +15 at Lv IV).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:hydro_veil\":4}}] 1"
-  },
-  {
-    "id": "mt:treasure/hypersonic",
-    "namespace": "mt",
-    "raw_name": "treasure/hypersonic",
-    "name": "Hypersonic Relic",
-    "name_vi": "Hypersonic Relic",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Relic Armor",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Technical Mine Treasure relic modifier: extreme movement speed.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:treasure/hypersonic\":1}}] 1"
-  },
-  {
     "id": "enchantencore:ice_alloy",
     "namespace": "enchantencore",
     "raw_name": "ice_alloy",
     "name": "Ice Alloy",
     "name_vi": "Ice Alloy",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -8462,99 +6317,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ice_alloy\":1}}] 1"
   },
   {
-    "id": "mt:armor/ice_shoes",
-    "namespace": "mt",
-    "raw_name": "armor/ice_shoes",
-    "name": "Ice Shoes (Cold Aura)",
-    "name_vi": "Ice Shoes (Cold Aura)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Emits a freezing aura that slows nearby enemies.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/ice_shoes\":1}}] 1"
-  },
-  {
-    "id": "mt:weapons/ice_sword",
-    "namespace": "mt",
-    "raw_name": "weapons/ice_sword",
-    "name": "Ice Sword (Icy Tip)",
-    "name_vi": "Ice Sword (Icy Tip)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:diamond_sword",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Diamond Swords",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Freezes struck targets, reducing their movement and attack speed.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/ice_sword\":1}}] 1"
-  },
-  {
-    "id": "enchantsplus:ice_aspect",
-    "namespace": "enchantsplus",
-    "raw_name": "ice_aspect",
-    "name": "Icicle Impale",
-    "name_vi": "Icicle Impale",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#minecraft:enchantable/fire_aspect",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords & Maces",
-    "exclusive_groups": [
-      "Sword Buffs (Fire / Ice / Web)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "enchantsplus:websnare",
-        "name": "Websnare"
-      }
-    ],
-    "description": "Slows and freezes targets on hit; freeze duration and slowness scale across Lv I–II.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:ice_aspect\":2}}] 1"
-  },
-  {
     "id": "nova_structures:illagers_bane",
     "namespace": "nova_structures",
     "raw_name": "illagers_bane",
     "name": "Illagers Bane",
     "name_vi": "Illagers Bane",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 5,
     "anvil_cost": 4,
     "table": true,
@@ -8580,159 +6349,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:illagers_bane\":5}}] 1"
   },
   {
-    "id": "enchantencore:illumination",
-    "namespace": "enchantencore",
-    "raw_name": "illumination",
-    "name": "Illumination",
-    "name_vi": "Illumination",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [
-      "Helmet Utility"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:heroes_crown",
-        "name": "Hero's Crown"
-      },
-      {
-        "id": "enchantencore:night_vision",
-        "name": "Night Vision"
-      }
-    ],
-    "description": "Emits a dynamic light source around the wearer's head in dark areas.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:illumination\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:impale_rush",
-    "namespace": "enchantencore",
-    "raw_name": "impale_rush",
-    "name": "Impale Rush",
-    "name_vi": "Impale Rush",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/lunge",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Spears",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Spear charge attacks pierce targets with extra momentum and impact force.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:impale_rush\":1}}] 1"
-  },
-  {
-    "id": "minecraft:impaling",
-    "namespace": "minecraft",
-    "raw_name": "impaling",
-    "name": "Impaling",
-    "name_vi": "Impaling",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 12,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/trident",
-    "gear_categories": [
-      "ranged",
-      "weapon"
-    ],
-    "supported_display": "Tridents",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "nova_structures:function_only",
-        "name": "Bug Enchant"
-      },
-      {
-        "id": "stellarity:critical_strike",
-        "name": "Critical Strike"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "mt:technical/grenade",
-        "name": "Grenade Window"
-      },
-      {
-        "id": "mt:technical/kinetic_bomb",
-        "name": "Kinetic Bomb"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
-    "description": "Increases trident damage against aquatic mobs by +2 per level (up to +10 at Lv V).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:impaling\":5}}] 1"
-  },
-  {
     "id": "enchantencore:implosion",
     "namespace": "enchantencore",
     "raw_name": "implosion",
     "name": "Implosion",
     "name_vi": "Implosion",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": true,
@@ -8825,7 +6448,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Incognito",
     "name_vi": "Incognito",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": true,
@@ -8844,149 +6467,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:incognito\":1}}] 1"
   },
   {
-    "id": "mt:armor/indestructia",
-    "namespace": "mt",
-    "raw_name": "armor/indestructia",
-    "name": "Indestructia",
-    "name_vi": "Indestructia",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:elytra",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Elytra",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Grants complete immunity to Elytra wall-collision kinetic damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/indestructia\":1}}] 1"
-  },
-  {
-    "id": "stellarity:_technical/infernal_infusion",
-    "namespace": "stellarity",
-    "raw_name": "_technical/infernal_infusion",
-    "name": "Infernal Infusion",
-    "name_vi": "Infernal Infusion",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Stellarity-6.0.1",
-    "supported_items": "['minecraft:netherite_sword', 'minecraft:crossbow']",
-    "gear_categories": [
-      "weapon",
-      "ranged"
-    ],
-    "supported_display": "Netherite Swords & Crossbows",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "minecraft:flame",
-        "name": "Flame"
-      }
-    ],
-    "description": "Technical signature enchant: launches blazing infernal fireballs.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:_technical/infernal_infusion\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:infested_aspect",
-    "namespace": "enchantencore",
-    "raw_name": "infested_aspect",
-    "name": "Infested Aspect",
-    "name_vi": "Infested Aspect",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/fire_aspect",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Aspect (Melee Status)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "enchantencore:guard",
-        "name": "Guard"
-      },
-      {
-        "id": "enchantencore:hunger_aspect",
-        "name": "Hunger Aspect"
-      },
-      {
-        "id": "enchantencore:levitation_aspect",
-        "name": "Levitation Aspect"
-      },
-      {
-        "id": "enchantencore:oozing_aspect",
-        "name": "Oozing Aspect"
-      },
-      {
-        "id": "enchantencore:pacifier",
-        "name": "Pacifier"
-      },
-      {
-        "id": "enchantencore:poison_aspect",
-        "name": "Poison Aspect"
-      },
-      {
-        "id": "enchantencore:slowness_aspect",
-        "name": "Slowness Aspect"
-      },
-      {
-        "id": "enchantencore:weakness_aspect",
-        "name": "Weakness Aspect"
-      },
-      {
-        "id": "enchantencore:weaving_aspect",
-        "name": "Weaving Aspect"
-      },
-      {
-        "id": "enchantencore:wind_aspect",
-        "name": "Wind Aspect"
-      },
-      {
-        "id": "enchantencore:wither_aspect",
-        "name": "Wither Aspect"
-      }
-    ],
-    "description": "Melee hits inflict Infested for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:infested_aspect\":2}}] 1"
-  },
-  {
     "id": "minecraft:infinity",
     "namespace": "minecraft",
     "raw_name": "infinity",
     "name": "Infinity",
     "name_vi": "Infinity",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 4,
     "table": true,
@@ -9100,77 +6587,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:infinity\":1}}] 1"
   },
   {
-    "id": "enchantencore:invisibility_cloak",
-    "namespace": "enchantencore",
-    "raw_name": "invisibility_cloak",
-    "name": "Invisibility Cloak",
-    "name_vi": "Invisibility Cloak",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Movement"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bounce",
-        "name": "Bounce"
-      },
-      {
-        "id": "bound:bound",
-        "name": "Bound"
-      },
-      {
-        "id": "enchantencore:end_speed",
-        "name": "End Speed"
-      },
-      {
-        "id": "enchantencore:leaf_jumper",
-        "name": "Leaf Jumper"
-      },
-      {
-        "id": "enchantencore:path_speed",
-        "name": "Path Speed"
-      },
-      {
-        "id": "enchantencore:sand_speed",
-        "name": "Sand Speed"
-      },
-      {
-        "id": "enchantencore:sonic",
-        "name": "Sonic"
-      },
-      {
-        "id": "minecraft:soul_speed",
-        "name": "Soul Speed"
-      },
-      {
-        "id": "enchantencore:strafe",
-        "name": "Strafe"
-      }
-    ],
-    "description": "Grants Invisibility while sneaking or wearing the enchanted boots.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:invisibility_cloak\":1}}] 1"
-  },
-  {
     "id": "enchantencore:jousting",
     "namespace": "enchantencore",
     "raw_name": "jousting",
     "name": "Jousting",
     "name_vi": "Jousting",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": true,
@@ -9195,7 +6618,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Kickback",
     "name_vi": "Kickback",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": true,
@@ -9214,106 +6637,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:kickback\":3}}] 1"
   },
   {
-    "id": "mt:technical/kinetic_blast",
-    "namespace": "mt",
-    "raw_name": "technical/kinetic_blast",
-    "name": "Kinetic Blast",
-    "name_vi": "Kinetic Blast",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 255,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:enchantable/head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Technical Mine Treasure kinetic blast effect.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/kinetic_blast\":255}}] 1"
-  },
-  {
-    "id": "mt:technical/kinetic_bomb",
-    "namespace": "mt",
-    "raw_name": "technical/kinetic_bomb",
-    "name": "Kinetic Bomb",
-    "name_vi": "Kinetic Bomb",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:enchantable/sharp_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Damage (Sharpness / Bane)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:bane_of_arthropods",
-        "name": "Bane of Arthropods"
-      },
-      {
-        "id": "enchantencore:bane_of_bosses",
-        "name": "Bane of Bosses"
-      },
-      {
-        "id": "enchantencore:bane_of_endborn",
-        "name": "Bane of Endborn"
-      },
-      {
-        "id": "enchantencore:bane_of_netherborn",
-        "name": "Bane of Netherborn"
-      },
-      {
-        "id": "enchantencore:bane_of_raiders",
-        "name": "Bane of Raiders"
-      },
-      {
-        "id": "minecraft:breach",
-        "name": "Breach"
-      },
-      {
-        "id": "minecraft:density",
-        "name": "Density"
-      },
-      {
-        "id": "minecraft:impaling",
-        "name": "Impaling"
-      },
-      {
-        "id": "minecraft:sharpness",
-        "name": "Sharpness"
-      },
-      {
-        "id": "minecraft:smite",
-        "name": "Smite"
-      }
-    ],
-    "description": "Technical pressurized kinetic blast wave on strike.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/kinetic_bomb\":1}}] 1"
-  },
-  {
     "id": "enchantsplus:kinetic_protection",
     "namespace": "enchantsplus",
     "raw_name": "kinetic_protection",
     "name": "Kinetic Protection",
     "name_vi": "Kinetic Protection",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 4,
     "anvil_cost": 2,
     "table": true,
@@ -9332,127 +6662,29 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:kinetic_protection\":4}}] 1"
   },
   {
-    "id": "minecraft:knockback",
-    "namespace": "minecraft",
-    "raw_name": "knockback",
-    "name": "Knockback",
-    "name_vi": "Knockback",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 2,
+    "id": "expedition_fishing:slayer_hook",
+    "namespace": "expedition_fishing",
+    "raw_name": "slayer_hook",
+    "name": "Leviathan Bane",
+    "name_vi": "Leviathan Bane",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
     "table": true,
-    "table_weight": 10,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/sword",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Increases melee knockback distance by +3 blocks per level (up to +6 blocks at Lv II).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:knockback\":2}}] 1"
-  },
-  {
-    "id": "enchantencore:leaf_jumper",
-    "namespace": "enchantencore",
-    "raw_name": "leaf_jumper",
-    "name": "Leaf Jumper",
-    "name_vi": "Leaf Jumper",
-    "tier": "common",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": true,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Movement"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bounce",
-        "name": "Bounce"
-      },
-      {
-        "id": "bound:bound",
-        "name": "Bound"
-      },
-      {
-        "id": "enchantencore:end_speed",
-        "name": "End Speed"
-      },
-      {
-        "id": "enchantencore:invisibility_cloak",
-        "name": "Invisibility Cloak"
-      },
-      {
-        "id": "enchantencore:path_speed",
-        "name": "Path Speed"
-      },
-      {
-        "id": "enchantencore:sand_speed",
-        "name": "Sand Speed"
-      },
-      {
-        "id": "enchantencore:sonic",
-        "name": "Sonic"
-      },
-      {
-        "id": "minecraft:soul_speed",
-        "name": "Soul Speed"
-      },
-      {
-        "id": "enchantencore:strafe",
-        "name": "Strafe"
-      }
-    ],
-    "description": "Generates temporary leaf platforms beneath your feet when jumping mid-air.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:leaf_jumper\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:leech",
-    "namespace": "enchantencore",
-    "raw_name": "leech",
-    "name": "Leech",
-    "name_vi": "Leech",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": true,
-    "table_weight": 1,
+    "table_weight": 2,
     "tradeable": false,
     "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:weapons",
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
     "gear_categories": [
-      "weapon"
+      "tool"
     ],
-    "supported_display": "Melee Weapons",
+    "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "kattersstructures:heavy",
-        "name": "Heavy"
-      },
-      {
-        "id": "enchantencore:radiant_life",
-        "name": "Radiant Life"
-      }
-    ],
-    "description": "Melee and ranged hits grant Regeneration I–II for up to 3s.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:leech\":1}}] 1"
+    "conflicts": [],
+    "description": "Increases damage dealt to Sea Creatures by +15% per level (up to +45% at Lv III) for 5 seconds after reeling.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:slayer_hook\":3}}] 1"
   },
   {
     "id": "enchantencore:levitation_aspect",
@@ -9461,7 +6693,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Levitation Aspect",
     "name_vi": "Levitation Aspect",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 2,
     "anvil_cost": 4,
     "table": false,
@@ -9541,7 +6773,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Levitation Shot",
     "name_vi": "Levitation Shot",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 5,
     "anvil_cost": 4,
     "table": false,
@@ -9629,7 +6861,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Light",
     "name_vi": "Light",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": false,
@@ -9655,15 +6887,738 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:light\":3}}] 1"
   },
   {
-    "id": "enchantencore:lightning_bolt",
+    "id": "enchantencore:lingering",
     "namespace": "enchantencore",
-    "raw_name": "lightning_bolt",
-    "name": "Lightning Bolt",
-    "name_vi": "Lightning Bolt",
-    "tier": "epic",
-    "tier_order": 99,
+    "raw_name": "lingering",
+    "name": "Lingering",
+    "name_vi": "Lingering",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_bows",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows & Crossbows",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Tipped arrows leave behind a lingering potion cloud upon hitting a block.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:lingering\":1}}] 1"
+  },
+  {
+    "id": "minecraft:looting",
+    "namespace": "minecraft",
+    "raw_name": "looting",
+    "name": "Looting",
+    "name_vi": "Looting",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/sword",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Swords",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases mob loot drops by +1 max common drop and +1% rare drop chance per level (up to +3 at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:looting\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:magic_protection",
+    "namespace": "enchantencore",
+    "raw_name": "magic_protection",
+    "name": "Magic Protection",
+    "name_vi": "Magic Protection",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 4,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Adds +0.4 magic damage protection EPF per level (up to +1.6 EPF per piece at Lv IV).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:magic_protection\":4}}] 1"
+  },
+  {
+    "id": "expedition_fishing:magma_tether",
+    "namespace": "expedition_fishing",
+    "raw_name": "magma_tether",
+    "name": "Magma Tether",
+    "name_vi": "Magma Tether",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Reinforces the bobber in lava and increases Rare Lava Creature spawn weights by +4% / +8%.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:magma_tether\":2}}] 1"
+  },
+  {
+    "id": "minecraft:mending",
+    "namespace": "minecraft",
+    "raw_name": "mending",
+    "name": "Mending",
+    "name_vi": "Mending",
+    "tier": "rare",
+    "tier_order": 3,
     "max_level": 1,
     "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/durability",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Durable Gear",
+    "exclusive_groups": [
+      "Auto-Repair / Durability",
+      "Bow (Infinity / Mending)"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:corrosion_curse",
+        "name": "Curse of Corrosion"
+      },
+      {
+        "id": "kattersstructures:crystal_curse",
+        "name": "Curse of Crystal"
+      },
+      {
+        "id": "enchantplus:durability/curse_of_enchant",
+        "name": "Curse of Enchant"
+      },
+      {
+        "id": "enchantencore:emberweave",
+        "name": "Emberweave"
+      },
+      {
+        "id": "enchantencore:handyman",
+        "name": "Handyman"
+      },
+      {
+        "id": "enchantencore:infinity_durability",
+        "name": "Infinite Durability"
+      },
+      {
+        "id": "minecraft:infinity",
+        "name": "Infinity"
+      },
+      {
+        "id": "enchantencore:moonweave",
+        "name": "Moonweave"
+      },
+      {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
+        "id": "enchantencore:rainweave",
+        "name": "Rainweave"
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "name": "Sacrifice"
+      },
+      {
+        "id": "enchantencore:tideweave",
+        "name": "Tideweave"
+      },
+      {
+        "id": "enchantencore:voidweave",
+        "name": "Voidweave"
+      }
+    ],
+    "description": "Repairs item durability using collected XP orbs (+2 durability per 1 XP point).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:mending\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:meteor",
+    "namespace": "enchantencore",
+    "raw_name": "meteor",
+    "name": "Meteor",
+    "name_vi": "Meteor",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "minecraft:mace",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Maces",
+    "exclusive_groups": [
+      "Mace Strike"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:boltbringer",
+        "name": "Boltbringer"
+      }
+    ],
+    "description": "Mace smash attacks from at least 8 blocks high ignite the surrounding area in fire.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:meteor\":1}}] 1"
+  },
+  {
+    "id": "nova_structures:power",
+    "namespace": "nova_structures",
+    "raw_name": "power",
+    "name": "Might",
+    "name_vi": "Might",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 5,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Crossbows",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "nova_structures:ghasted",
+        "name": "Ghasted"
+      },
+      {
+        "id": "nova_structures:gravity",
+        "name": "Gravity"
+      },
+      {
+        "id": "minecraft:multishot",
+        "name": "Multishot"
+      },
+      {
+        "id": "minecraft:piercing",
+        "name": "Piercing"
+      }
+    ],
+    "description": "Increases Crossbow arrow damage by +1 base +0.5 per level above I (up to +3 bonus damage at Lv V).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:power\":5}}] 1"
+  },
+  {
+    "id": "enchantencore:moonwalk",
+    "namespace": "enchantencore",
+    "raw_name": "moonwalk",
+    "name": "Moonwalk",
+    "name_vi": "Moonwalk",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "['minecraft:elytra', 'minecraft:diamond_horse_armor', 'minecraft:golden_horse_armor', 'minecraft:iron_horse_armor', 'minecraft:leather_horse_armor', 'minecraft:netherite_horse_armor']",
+    "gear_categories": [
+      "armor",
+      "mount"
+    ],
+    "supported_display": "Elytra & Horse Armor",
+    "exclusive_groups": [
+      "Horse Armor"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:pegasus",
+        "name": "Pegasus"
+      },
+      {
+        "id": "enchantencore:refuel",
+        "name": "Refuel"
+      }
+    ],
+    "description": "Reduces gravity by -0.03 (-0.015 per level above I, up to -0.06 at Lv III) for higher jumps and slower falls.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:moonwalk\":3}}] 1"
+  },
+  {
+    "id": "minecraft:multishot",
+    "namespace": "minecraft",
+    "raw_name": "multishot",
+    "name": "Multishot",
+    "name_vi": "Multishot",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Crossbows",
+    "exclusive_groups": [
+      "Crossbow (Multishot / Piercing)"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:ghasted",
+        "name": "Ghasted"
+      },
+      {
+        "id": "nova_structures:gravity",
+        "name": "Gravity"
+      },
+      {
+        "id": "nova_structures:power",
+        "name": "Might"
+      },
+      {
+        "id": "minecraft:piercing",
+        "name": "Piercing"
+      },
+      {
+        "id": "enchantplus:bow/rebound",
+        "name": "Rebound"
+      }
+    ],
+    "description": "Fires 3 arrows or firework rockets in a spread while consuming only 1 ammo.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:multishot\":1}}] 1"
+  },
+  {
+    "id": "kattersstructures:ocean_heart",
+    "namespace": "kattersstructures",
+    "raw_name": "ocean_heart",
+    "name": "Ocean Heart",
+    "name_vi": "Ocean Heart",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Katters Structures v2.9",
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [
+      "Chestplate Alloy"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:fire_alloy",
+        "name": "Fire Alloy"
+      },
+      {
+        "id": "enchantencore:ice_alloy",
+        "name": "Ice Alloy"
+      }
+    ],
+    "description": "Grants Conduit Power effect continuously while underwater.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:ocean_heart\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:ominous_healing",
+    "namespace": "enchantencore",
+    "raw_name": "ominous_healing",
+    "name": "Ominous Healing",
+    "name_vi": "Ominous Healing",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "minecraft:shield",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Shields",
+    "exclusive_groups": [
+      "Shield"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:cleansing",
+        "name": "Cleansing"
+      },
+      {
+        "id": "enchantencore:crispbread",
+        "name": "Crispbread"
+      },
+      {
+        "id": "enchantencore:hardened",
+        "name": "Hardened"
+      },
+      {
+        "id": "enchantencore:rejuvenation",
+        "name": "Rejuvenation"
+      }
+    ],
+    "description": "Triggers healing effects when blocking or taking damage under ominous conditions.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ominous_healing\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:ominous_rain",
+    "namespace": "enchantencore",
+    "raw_name": "ominous_rain",
+    "name": "Ominous Rain",
+    "name_vi": "Ominous Rain",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/trident",
+    "gear_categories": [
+      "weapon",
+      "ranged"
+    ],
+    "supported_display": "Tridents",
+    "exclusive_groups": [
+      "Trident / Water Aura"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:channeling",
+        "name": "Channeling"
+      },
+      {
+        "id": "enchantencore:pufferfish",
+        "name": "Pufferfish"
+      },
+      {
+        "id": "minecraft:riptide",
+        "name": "Riptide"
+      },
+      {
+        "id": "enchantencore:sea_breeze",
+        "name": "Sea Breeze"
+      },
+      {
+        "id": "enchantencore:switch",
+        "name": "Switch"
+      }
+    ],
+    "description": "Thrown tridents summon ominous storm effects at the impact location.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ominous_rain\":1}}] 1"
+  },
+  {
+    "id": "nova_structures:outreach",
+    "namespace": "nova_structures",
+    "raw_name": "outreach",
+    "name": "Outreach",
+    "name_vi": "Outreach",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 4,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases block interaction reach by +0.5 blocks per level (up to +2.0 blocks at Lv IV).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:outreach\":4}}] 1"
+  },
+  {
+    "id": "enchantencore:pacifier",
+    "namespace": "enchantencore",
+    "raw_name": "pacifier",
+    "name": "Pacifier",
+    "name_vi": "Pacifier",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Aspect (Melee Status)",
+      "Pacifier / Poppy"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "enchantencore:guard",
+        "name": "Guard"
+      },
+      {
+        "id": "enchantencore:hunger_aspect",
+        "name": "Hunger Aspect"
+      },
+      {
+        "id": "enchantencore:infested_aspect",
+        "name": "Infested Aspect"
+      },
+      {
+        "id": "enchantencore:levitation_aspect",
+        "name": "Levitation Aspect"
+      },
+      {
+        "id": "enchantencore:oozing_aspect",
+        "name": "Oozing Aspect"
+      },
+      {
+        "id": "enchantencore:pickpocket",
+        "name": "Pickpocket"
+      },
+      {
+        "id": "enchantencore:poison_aspect",
+        "name": "Poison Aspect"
+      },
+      {
+        "id": "enchantencore:poppy_peace",
+        "name": "Poppy Peace"
+      },
+      {
+        "id": "enchantencore:slowness_aspect",
+        "name": "Slowness Aspect"
+      },
+      {
+        "id": "enchantencore:weakness_aspect",
+        "name": "Weakness Aspect"
+      },
+      {
+        "id": "enchantencore:weaving_aspect",
+        "name": "Weaving Aspect"
+      },
+      {
+        "id": "enchantencore:wind_aspect",
+        "name": "Wind Aspect"
+      },
+      {
+        "id": "enchantencore:wither_aspect",
+        "name": "Wither Aspect"
+      }
+    ],
+    "description": "30% chance on melee hit to inflict Weakness CCLV (1–3s), completely neutralizing target melee damage.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pacifier\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:path_speed",
+    "namespace": "enchantencore",
+    "raw_name": "path_speed",
+    "name": "Path Speed",
+    "name_vi": "Path Speed",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Movement"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bounce",
+        "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
+      },
+      {
+        "id": "enchantencore:end_speed",
+        "name": "End Speed"
+      },
+      {
+        "id": "enchantencore:invisibility_cloak",
+        "name": "Invisibility Cloak"
+      },
+      {
+        "id": "enchantencore:leaf_jumper",
+        "name": "Leaf Jumper"
+      },
+      {
+        "id": "enchantencore:sand_speed",
+        "name": "Sand Speed"
+      },
+      {
+        "id": "enchantencore:sonic",
+        "name": "Sonic"
+      },
+      {
+        "id": "minecraft:soul_speed",
+        "name": "Soul Speed"
+      },
+      {
+        "id": "enchantencore:strafe",
+        "name": "Strafe"
+      }
+    ],
+    "description": "Increases movement speed on Dirt Paths by +4.05% (+1.05% per level above I, up to +6.15% at Lv III) with a 4% wear chance.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:path_speed\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:poison_aspect",
+    "namespace": "enchantencore",
+    "raw_name": "poison_aspect",
+    "name": "Poison Aspect",
+    "name_vi": "Poison Aspect",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Aspect (Melee Status)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "enchantencore:guard",
+        "name": "Guard"
+      },
+      {
+        "id": "enchantencore:hunger_aspect",
+        "name": "Hunger Aspect"
+      },
+      {
+        "id": "enchantencore:infested_aspect",
+        "name": "Infested Aspect"
+      },
+      {
+        "id": "enchantencore:levitation_aspect",
+        "name": "Levitation Aspect"
+      },
+      {
+        "id": "enchantencore:oozing_aspect",
+        "name": "Oozing Aspect"
+      },
+      {
+        "id": "enchantencore:pacifier",
+        "name": "Pacifier"
+      },
+      {
+        "id": "enchantencore:slowness_aspect",
+        "name": "Slowness Aspect"
+      },
+      {
+        "id": "enchantencore:weakness_aspect",
+        "name": "Weakness Aspect"
+      },
+      {
+        "id": "enchantencore:weaving_aspect",
+        "name": "Weaving Aspect"
+      },
+      {
+        "id": "enchantencore:wind_aspect",
+        "name": "Wind Aspect"
+      },
+      {
+        "id": "enchantencore:wither_aspect",
+        "name": "Wither Aspect"
+      }
+    ],
+    "description": "Melee hits inflict Poison for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:poison_aspect\":2}}] 1"
+  },
+  {
+    "id": "enchantencore:poison_infused",
+    "namespace": "enchantencore",
+    "raw_name": "poison_infused",
+    "name": "Poison Infused",
+    "name_vi": "Poison Infused",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
     "table": false,
     "table_weight": 1,
     "tradeable": false,
@@ -9676,29 +7631,12 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Bows & Crossbows",
     "exclusive_groups": [
       "Bow Arrow Effects",
-      "Bow Infused Arrows",
-      "Crossbow Shots"
+      "Bow Infused Arrows"
     ],
     "conflicts": [
       {
-        "id": "enchantencore:archer_barrage",
-        "name": "Archer Barrage"
-      },
-      {
-        "id": "enchantencore:armor_piercing",
-        "name": "Armor Piercing"
-      },
-      {
         "id": "enchantencore:bomber",
         "name": "Bomber"
-      },
-      {
-        "id": "enchantencore:crystalize_arrow",
-        "name": "Crystalize Arrow"
-      },
-      {
-        "id": "enchantencore:dark_infused",
-        "name": "Dark Infused"
       },
       {
         "id": "enchantplus:bow/echo_shot",
@@ -9737,47 +7675,247 @@ window.ALL_ENCHANTMENTS = [
         "name": "Levitation Shot"
       },
       {
-        "id": "enchantencore:nuclear_arrow",
-        "name": "Nuclear Arrow"
-      },
-      {
-        "id": "enchantencore:poison_infused",
-        "name": "Poison Infused"
-      },
-      {
-        "id": "enchantencore:railgun",
-        "name": "Railgun"
-      },
-      {
-        "id": "enchantencore:sting",
-        "name": "Sting"
-      },
-      {
-        "id": "enchantencore:warped_arrow",
-        "name": "Warped Arrow"
-      },
-      {
-        "id": "enchantencore:web_infused",
-        "name": "Web Infused"
-      },
-      {
-        "id": "enchantencore:wither_infused",
-        "name": "Wither Infused"
+        "id": "enchantencore:lightning_bolt",
+        "name": "Lightning Bolt"
       }
     ],
-    "description": "Arrows have a chance to summon a lightning bolt on targets under open sky.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:lightning_bolt\":1}}] 1"
+    "description": "Arrows inflict Poison I (4s) at Lv I, Poison II (3s) at Lv II, and Poison II (4s) at Lv III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:poison_infused\":3}}] 1"
   },
   {
-    "id": "enchantencore:lingering",
-    "namespace": "enchantencore",
-    "raw_name": "lingering",
-    "name": "Lingering",
-    "name_vi": "Lingering",
+    "id": "enchantplus:elytra/propulsion",
+    "namespace": "enchantplus",
+    "raw_name": "elytra/propulsion",
+    "name": "Propulsion",
+    "name_vi": "Propulsion",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#voxel:enchantable/elytra",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Elytra",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Boosts forward flight thrust while gliding; thrust scales across Lv I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:elytra/propulsion\":3}}] 1"
+  },
+  {
+    "id": "kattersstructures:raj_ambient",
+    "namespace": "kattersstructures",
+    "raw_name": "raj_ambient",
+    "name": "Raj Ambient",
+    "name_vi": "Raj Ambient",
+    "tier": "rare",
+    "tier_order": 3,
     "max_level": 1,
-    "anvil_cost": 2,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Katters Structures v2.9",
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boss Raj Gear",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Boss Raj ambient lightning aura mechanic in Ancient Temples.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:raj_ambient\":1}}] 1"
+  },
+  {
+    "id": "kattersstructures:raj_lightning",
+    "namespace": "kattersstructures",
+    "raw_name": "raj_lightning",
+    "name": "Raj Lightning",
+    "name_vi": "Raj Lightning",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Katters Structures v2.9",
+    "supported_items": "minecraft:crossbow",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Boss Raj Crossbow",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Boss Raj lightning barrage crossbow mechanic.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:raj_lightning\":1}}] 1"
+  },
+  {
+    "id": "kattersstructures:raj_minion",
+    "namespace": "kattersstructures",
+    "raw_name": "raj_minion",
+    "name": "Raj Minion",
+    "name_vi": "Raj Minion",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Katters Structures v2.9",
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boss Raj Gear",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Boss Raj minion summoning mechanic.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:raj_minion\":1}}] 1"
+  },
+  {
+    "id": "enchantplus:bow/rebound",
+    "namespace": "enchantplus",
+    "raw_name": "bow/rebound",
+    "name": "Rebound",
+    "name_vi": "Rebound",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#voxel:enchantable/range",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows & Crossbows",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "enchantplus:bow/explosive_arrow",
+        "name": "Explosive Arrow"
+      },
+      {
+        "id": "minecraft:multishot",
+        "name": "Multishot"
+      },
+      {
+        "id": "minecraft:piercing",
+        "name": "Piercing"
+      },
+      {
+        "id": "minecraft:quick_charge",
+        "name": "Quick Charge"
+      }
+    ],
+    "description": "Arrows bounce off solid walls and surfaces; max bounces scale across Lv I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:bow/rebound\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:regrowth",
+    "namespace": "enchantencore",
+    "raw_name": "regrowth",
+    "name": "Regrowth",
+    "name_vi": "Regrowth",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:hoes",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Hoes",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "minecraft:efficiency",
+        "name": "Efficiency"
+      },
+      {
+        "id": "enchantencore:plow",
+        "name": "Plow"
+      },
+      {
+        "id": "minecraft:silk_touch",
+        "name": "Silk Touch"
+      }
+    ],
+    "description": "Left-clicking mature wheat, carrots, potatoes, or beetroots harvests and replants them automatically (10 durability cost).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:regrowth\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:rejuvenation",
+    "namespace": "enchantencore",
+    "raw_name": "rejuvenation",
+    "name": "Rejuvenation",
+    "name_vi": "Rejuvenation",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 4,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "minecraft:shield",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Shields",
+    "exclusive_groups": [
+      "Shield"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:cleansing",
+        "name": "Cleansing"
+      },
+      {
+        "id": "enchantencore:crispbread",
+        "name": "Crispbread"
+      },
+      {
+        "id": "enchantencore:hardened",
+        "name": "Hardened"
+      },
+      {
+        "id": "enchantencore:ominous_healing",
+        "name": "Ominous Healing"
+      }
+    ],
+    "description": "Increases Max Health by +1 HP (+0.5 hearts) per level (up to +4 HP / +2 hearts at Lv IV) while equipped.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rejuvenation\":4}}] 1"
+  },
+  {
+    "id": "enchantencore:replenish",
+    "namespace": "enchantencore",
+    "raw_name": "replenish",
+    "name": "Replenish",
+    "name_vi": "Replenish",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
     "table": true,
     "table_weight": 1,
     "tradeable": false,
@@ -9788,24 +7926,6029 @@ window.ALL_ENCHANTMENTS = [
       "ranged"
     ],
     "supported_display": "Bows & Crossbows",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Tipped arrows leave behind a lingering potion cloud upon hitting a block.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:lingering\":1}}] 1"
+    "exclusive_groups": [
+      "Bow (Infinity / Replenish)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:infinity",
+        "name": "Infinity"
+      }
+    ],
+    "description": "Grants a 50% chance not to consume arrows, spectral arrows, or firework rockets when firing.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:replenish\":1}}] 1"
   },
   {
-    "id": "minecraft:looting",
-    "namespace": "minecraft",
-    "raw_name": "looting",
-    "name": "Looting",
-    "name_vi": "Looting",
+    "id": "enchantsplus:retrieval",
+    "namespace": "enchantsplus",
+    "raw_name": "retrieval",
+    "name": "Retrieval",
+    "name_vi": "Retrieval",
     "tier": "rare",
-    "tier_order": 99,
+    "tier_order": 3,
+    "max_level": 4,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Enchants Plus v2.1 26.3",
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Restores health upon defeating enemies; healing amount scales across Lv I–IV.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:retrieval\":4}}] 1"
+  },
+  {
+    "id": "minecraft:riptide",
+    "namespace": "minecraft",
+    "raw_name": "riptide",
+    "name": "Riptide",
+    "name_vi": "Riptide",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/trident",
+    "gear_categories": [
+      "ranged",
+      "weapon"
+    ],
+    "supported_display": "Tridents",
+    "exclusive_groups": [
+      "Trident (Riptide / Loyalty)",
+      "Trident / Water Aura"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:channeling",
+        "name": "Channeling"
+      },
+      {
+        "id": "minecraft:loyalty",
+        "name": "Loyalty"
+      },
+      {
+        "id": "stellarity:_technical/mighty_wind",
+        "name": "Mighty Wind"
+      },
+      {
+        "id": "enchantencore:neptune",
+        "name": "Neptune"
+      },
+      {
+        "id": "enchantencore:ominous_rain",
+        "name": "Ominous Rain"
+      },
+      {
+        "id": "enchantencore:poseidon",
+        "name": "Poseidon"
+      },
+      {
+        "id": "enchantencore:pufferfish",
+        "name": "Pufferfish"
+      },
+      {
+        "id": "enchantencore:sea_breeze",
+        "name": "Sea Breeze"
+      },
+      {
+        "id": "enchantencore:switch",
+        "name": "Switch"
+      },
+      {
+        "id": "enchantencore:warped_trident",
+        "name": "Warped Trident"
+      }
+    ],
+    "description": "Launches the player forward when thrown in water or rain; launch velocity scales with level (I–III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:riptide\":3}}] 1"
+  },
+  {
+    "id": "enchantplus:sword/runic_despair",
+    "namespace": "enchantplus",
+    "raw_name": "sword/runic_despair",
+    "name": "Runic Despair",
+    "name_vi": "Runic Despair",
+    "tier": "rare",
+    "tier_order": 3,
     "max_level": 3,
     "anvil_cost": 4,
     "table": false,
     "table_weight": 1,
     "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Swords & Melee Weapons",
+    "exclusive_groups": [
+      "Sword Attributes (Enchant+)"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantplus:sword/critical",
+        "name": "Critical"
+      },
+      {
+        "id": "enchantplus:sword/dimensional_hit",
+        "name": "Dimensional Hit"
+      }
+    ],
+    "description": "Multiplies melee damage dealt inside the Runic Dimension across Lv I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/runic_despair\":3}}] 1"
+  },
+  {
+    "id": "kattersstructures:rusta_shot",
+    "namespace": "kattersstructures",
+    "raw_name": "rusta_shot",
+    "name": "Rusta Shot",
+    "name_vi": "Rusta Shot",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Katters Structures v2.9",
+    "supported_items": "minecraft:crossbow",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows & Crossbows",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Fires arcane Rusta projectiles; impact damage/effects scale across Lv I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:rusta_shot\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:sand_speed",
+    "namespace": "enchantencore",
+    "raw_name": "sand_speed",
+    "name": "Sand Speed",
+    "name_vi": "Sand Speed",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Movement"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bounce",
+        "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
+      },
+      {
+        "id": "enchantencore:end_speed",
+        "name": "End Speed"
+      },
+      {
+        "id": "enchantencore:invisibility_cloak",
+        "name": "Invisibility Cloak"
+      },
+      {
+        "id": "enchantencore:leaf_jumper",
+        "name": "Leaf Jumper"
+      },
+      {
+        "id": "enchantencore:path_speed",
+        "name": "Path Speed"
+      },
+      {
+        "id": "enchantencore:sonic",
+        "name": "Sonic"
+      },
+      {
+        "id": "minecraft:soul_speed",
+        "name": "Soul Speed"
+      },
+      {
+        "id": "enchantencore:strafe",
+        "name": "Strafe"
+      },
+      {
+        "id": "kattersstructures:web_walker",
+        "name": "Web Walker"
+      }
+    ],
+    "description": "Increases movement speed on Sand by +4.05% (+1.05% per level above I, up to +6.15% at Lv III) with a 4% wear chance.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sand_speed\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:scholar_of_blocks",
+    "namespace": "enchantencore",
+    "raw_name": "scholar_of_blocks",
+    "name": "Scholar of Blocks",
+    "name_vi": "Scholar of Blocks",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:no_weapons",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Mining & Harvesting Tools",
+    "exclusive_groups": [
+      "XP Boost / Scholar"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:scholar_of_mobs",
+        "name": "Scholar of Mobs"
+      }
+    ],
+    "description": "Multiplies XP dropped from mining blocks by 1.5x (+1.0x per level above I, up to 3.5x at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scholar_of_blocks\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:scholar_of_fishing",
+    "namespace": "enchantencore",
+    "raw_name": "scholar_of_fishing",
+    "name": "Scholar of Fishing",
+    "name_vi": "Scholar of Fishing",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases XP gained from fishing across levels I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scholar_of_fishing\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:scholar_of_mobs",
+    "namespace": "enchantencore",
+    "raw_name": "scholar_of_mobs",
+    "name": "Scholar of Mobs",
+    "name_vi": "Scholar of Mobs",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:weapons",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "XP Boost / Scholar"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:scholar_of_blocks",
+        "name": "Scholar of Blocks"
+      }
+    ],
+    "description": "Multiplies XP dropped by slain mobs by 1.5x (+1.0x per level above I, up to 3.5x at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scholar_of_mobs\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:scorpion_spirit",
+    "namespace": "enchantencore",
+    "raw_name": "scorpion_spirit",
+    "name": "Scorpion Spirit",
+    "name_vi": "Scorpion Spirit",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "minecraft:wolf_armor",
+    "gear_categories": [
+      "mount"
+    ],
+    "supported_display": "Wolf Armor",
+    "exclusive_groups": [
+      "Spirit Wolf"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bear_spirit",
+        "name": "Bear Spirit"
+      },
+      {
+        "id": "enchantencore:boar_spirit",
+        "name": "Boar Spirit"
+      },
+      {
+        "id": "enchantencore:ghost_spirit",
+        "name": "Ghost Spirit"
+      }
+    ],
+    "description": "Shrinks wolf by -50%, -5 Armor, +5 Attack Speed, -100 base damage, and 50% chance on hit to inflict Poison and Wither.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scorpion_spirit\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:sea_breeze",
+    "namespace": "enchantencore",
+    "raw_name": "sea_breeze",
+    "name": "Sea Breeze",
+    "name_vi": "Sea Breeze",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/trident",
+    "gear_categories": [
+      "weapon",
+      "ranged"
+    ],
+    "supported_display": "Tridents",
+    "exclusive_groups": [
+      "Trident / Water Aura"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:channeling",
+        "name": "Channeling"
+      },
+      {
+        "id": "enchantencore:ominous_rain",
+        "name": "Ominous Rain"
+      },
+      {
+        "id": "enchantencore:pufferfish",
+        "name": "Pufferfish"
+      },
+      {
+        "id": "minecraft:riptide",
+        "name": "Riptide"
+      },
+      {
+        "id": "enchantencore:switch",
+        "name": "Switch"
+      }
+    ],
+    "description": "Thrown tridents trigger a 3-block wind burst on impact, knocking back targets and triggering redstone.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sea_breeze\":1}}] 1"
+  },
+  {
+    "id": "expedition_fishing:sea_creature_chance",
+    "namespace": "expedition_fishing",
+    "raw_name": "sea_creature_chance",
+    "name": "Sea Creature Call",
+    "name_vi": "Sea Creature Call",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases Rare Sea Creature Chance by +4% per level (up to +12% at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:sea_creature_chance\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:shrinkage",
+    "namespace": "enchantencore",
+    "raw_name": "shrinkage",
+    "name": "Shrinkage",
+    "name_vi": "Shrinkage",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:valid_for_shrinkage",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates & Leggings",
+    "exclusive_groups": [
+      "Size / Height"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:growth",
+        "name": "Growth"
+      }
+    ],
+    "description": "Shrinks body scale and step height by -10%, but reduces Max Health by -23% (~+30% effective incoming damage from all sources).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shrinkage\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:shulker_shell",
+    "namespace": "enchantencore",
+    "raw_name": "shulker_shell",
+    "name": "Shulker Shell",
+    "name_vi": "Shulker Shell",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [
+      "Chestplate Alloy"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bulletproof",
+        "name": "Bulletproof"
+      },
+      {
+        "id": "enchantencore:creeper_alloy",
+        "name": "Creeper Alloy"
+      },
+      {
+        "id": "enchantencore:darkness_alloy",
+        "name": "Darkness Alloy"
+      },
+      {
+        "id": "enchantencore:fire_alloy",
+        "name": "Fire Alloy"
+      },
+      {
+        "id": "enchantencore:ice_alloy",
+        "name": "Ice Alloy"
+      }
+    ],
+    "description": "Grants defensive shell protection while standing completely still.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shulker_shell\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:slowness_aspect",
+    "namespace": "enchantencore",
+    "raw_name": "slowness_aspect",
+    "name": "Slowness Aspect",
+    "name_vi": "Slowness Aspect",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Aspect (Melee Status)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "enchantencore:guard",
+        "name": "Guard"
+      },
+      {
+        "id": "enchantencore:hunger_aspect",
+        "name": "Hunger Aspect"
+      },
+      {
+        "id": "enchantencore:infested_aspect",
+        "name": "Infested Aspect"
+      },
+      {
+        "id": "enchantencore:levitation_aspect",
+        "name": "Levitation Aspect"
+      },
+      {
+        "id": "enchantencore:oozing_aspect",
+        "name": "Oozing Aspect"
+      },
+      {
+        "id": "enchantencore:pacifier",
+        "name": "Pacifier"
+      },
+      {
+        "id": "enchantencore:poison_aspect",
+        "name": "Poison Aspect"
+      },
+      {
+        "id": "enchantencore:weakness_aspect",
+        "name": "Weakness Aspect"
+      },
+      {
+        "id": "enchantencore:weaving_aspect",
+        "name": "Weaving Aspect"
+      },
+      {
+        "id": "enchantencore:wind_aspect",
+        "name": "Wind Aspect"
+      },
+      {
+        "id": "enchantencore:wither_aspect",
+        "name": "Wither Aspect"
+      }
+    ],
+    "description": "Melee hits inflict Slowness for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:slowness_aspect\":2}}] 1"
+  },
+  {
+    "id": "enchantencore:sonic",
+    "namespace": "enchantencore",
+    "raw_name": "sonic",
+    "name": "Sonic",
+    "name_vi": "Sonic",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Movement"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bounce",
+        "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
+      },
+      {
+        "id": "enchantencore:end_speed",
+        "name": "End Speed"
+      },
+      {
+        "id": "enchantencore:invisibility_cloak",
+        "name": "Invisibility Cloak"
+      },
+      {
+        "id": "enchantencore:leaf_jumper",
+        "name": "Leaf Jumper"
+      },
+      {
+        "id": "enchantencore:path_speed",
+        "name": "Path Speed"
+      },
+      {
+        "id": "enchantencore:sand_speed",
+        "name": "Sand Speed"
+      },
+      {
+        "id": "minecraft:soul_speed",
+        "name": "Soul Speed"
+      },
+      {
+        "id": "enchantencore:strafe",
+        "name": "Strafe"
+      },
+      {
+        "id": "kattersstructures:web_walker",
+        "name": "Web Walker"
+      }
+    ],
+    "description": "Increases movement speed by +0.015 (+0.01 per level above I, up to +0.035 at Lv III), while reducing sneaking speed by -0.15.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sonic\":3}}] 1"
+  },
+  {
+    "id": "minecraft:soul_speed",
+    "namespace": "minecraft",
+    "raw_name": "soul_speed",
+    "name": "Soul Speed",
+    "name_vi": "Soul Speed",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots (Soul Speed / Traveler)",
+      "Boots Movement"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bounce",
+        "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
+      },
+      {
+        "id": "enchantencore:end_speed",
+        "name": "End Speed"
+      },
+      {
+        "id": "enchantencore:invisibility_cloak",
+        "name": "Invisibility Cloak"
+      },
+      {
+        "id": "enchantencore:leaf_jumper",
+        "name": "Leaf Jumper"
+      },
+      {
+        "id": "enchantencore:path_speed",
+        "name": "Path Speed"
+      },
+      {
+        "id": "enchantencore:sand_speed",
+        "name": "Sand Speed"
+      },
+      {
+        "id": "enchantencore:sonic",
+        "name": "Sonic"
+      },
+      {
+        "id": "enchantencore:strafe",
+        "name": "Strafe"
+      },
+      {
+        "id": "nova_structures:traveler",
+        "name": "Traveler"
+      },
+      {
+        "id": "kattersstructures:web_walker",
+        "name": "Web Walker"
+      }
+    ],
+    "description": "Increases movement speed on Soul Sand/Soil by +4.05% (+1.05% per level above I, up to +6.15% at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:soul_speed\":3}}] 1"
+  },
+  {
+    "id": "nova_structures:spiteful",
+    "namespace": "nova_structures",
+    "raw_name": "spiteful",
+    "name": "Spiteful",
+    "name_vi": "Spiteful",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#nova_structures:enchantable/combat_weapons",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Deals +2 bonus damage per level (up to +6 at Lv III) at low health, with a chance to grant Strength I (3s).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:spiteful\":3}}] 1"
+  },
+  {
+    "id": "expedition_fishing:stunning_yank",
+    "namespace": "expedition_fishing",
+    "raw_name": "stunning_yank",
+    "name": "Stunning Yank",
+    "name_vi": "Stunning Yank",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Forcefully yanks hooked Sea Creatures and inflicts Weakness + Slowness for 3s / 5s.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:stunning_yank\":2}}] 1"
+  },
+  {
+    "id": "expedition_fishing:treasure_hunter",
+    "namespace": "expedition_fishing",
+    "raw_name": "treasure_hunter",
+    "name": "Sunken Fortune",
+    "name_vi": "Sunken Fortune",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases Treasure Chest tier upgrade chance and Artifact discovery rate by +3% per level (up to +9% at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:treasure_hunter\":3}}] 1"
+  },
+  {
+    "id": "minecraft:swift_sneak",
+    "namespace": "minecraft",
+    "raw_name": "swift_sneak",
+    "name": "Swift Sneak",
+    "name_vi": "Swift Sneak",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Leggings",
+    "exclusive_groups": [
+      "Leggings Movement"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bunny_hop",
+        "name": "Bunny Hop"
+      },
+      {
+        "id": "enchantencore:enderscape",
+        "name": "Enderscape"
+      }
+    ],
+    "description": "Increases sneaking movement speed by +15% per level (up to +45% / 75% of walking speed at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:swift_sneak\":3}}] 1"
+  },
+  {
+    "id": "nova_structures:swift_soar",
+    "namespace": "nova_structures",
+    "raw_name": "swift_soar",
+    "name": "Swift Soar",
+    "name_vi": "Swift Soar",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#minecraft:harnesses",
+    "gear_categories": [
+      "mount"
+    ],
+    "supported_display": "Happy Ghast Harnesses",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases Happy Ghast flying speed by +10% (+5% per level above I, up to +20% at Lv III) while sprinting.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:swift_soar\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:switch",
+    "namespace": "enchantencore",
+    "raw_name": "switch",
+    "name": "Switch",
+    "name_vi": "Switch",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/trident",
+    "gear_categories": [
+      "weapon",
+      "ranged"
+    ],
+    "supported_display": "Tridents",
+    "exclusive_groups": [
+      "Trident / Water Aura"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:channeling",
+        "name": "Channeling"
+      },
+      {
+        "id": "enchantencore:ominous_rain",
+        "name": "Ominous Rain"
+      },
+      {
+        "id": "enchantencore:pufferfish",
+        "name": "Pufferfish"
+      },
+      {
+        "id": "minecraft:riptide",
+        "name": "Riptide"
+      },
+      {
+        "id": "enchantencore:sea_breeze",
+        "name": "Sea Breeze"
+      }
+    ],
+    "description": "Thrown tridents swap positions between the thrower and the struck target.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:switch\":1}}] 1"
+  },
+  {
+    "id": "enchantplus:sword/tears_of_asflors",
+    "namespace": "enchantplus",
+    "raw_name": "sword/tears_of_asflors",
+    "name": "Tears of Asflors",
+    "name_vi": "Tears of Asflors",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Swords & Melee Weapons",
+    "exclusive_groups": [
+      "Sword Effects (Enchant+)"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantplus:sword/death_touch",
+        "name": "Death Touch"
+      }
+    ],
+    "description": "Converts XP into +3 bonus damage (+1 per level above I, up to +5 at Lv III) on hit.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/tears_of_asflors\":3}}] 1"
+  },
+  {
+    "id": "expedition_fishing:thermal_cooling",
+    "namespace": "expedition_fishing",
+    "raw_name": "thermal_cooling",
+    "name": "Thermal Cooling",
+    "name_vi": "Thermal Cooling",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:heat_channeling",
+        "name": "Heat Channeling"
+      }
+    ],
+    "description": "Reduces Heat accumulation rate while Lava Fishing in the Nether/Incendium by -20% per level (up to -60% at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:thermal_cooling\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:thorns_protection",
+    "namespace": "enchantencore",
+    "raw_name": "thorns_protection",
+    "name": "Thorns Protection",
+    "name_vi": "Thorns Protection",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 4,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 3,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Adds +3.5 protection EPF (+3 per level above I, up to +12.5 EPF at Lv IV) against Thorns, cactus, and sweet berry damage.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:thorns_protection\":4}}] 1"
+  },
+  {
+    "id": "expedition_fishing:trophy_hunter",
+    "namespace": "expedition_fishing",
+    "raw_name": "trophy_hunter",
+    "name": "Trophy Hunter",
+    "name_vi": "Trophy Hunter",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases the chance of hooking Heavyweight trophy catches (>=1.5x base weight) by +8% per level and grants +10% bonus XP.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:trophy_hunter\":3}}] 1"
+  },
+  {
+    "id": "expedition_fishing:double_hook",
+    "namespace": "expedition_fishing",
+    "raw_name": "double_hook",
+    "name": "Twin Hook",
+    "name_vi": "Twin Hook",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases Double Catch Chance by +4% per level (up to +12% chance to hook two catches at once at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:double_hook\":3}}] 1"
+  },
+  {
+    "id": "veinminer-enchantment:veinminer",
+    "namespace": "veinminer-enchantment",
+    "raw_name": "veinminer",
+    "name": "Veinmine",
+    "name_vi": "Veinmine",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": true,
+    "table_weight": 3,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "veinminer-enchantment-1.3.6",
+    "supported_items": "#minecraft:pickaxes",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Pickaxes",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Automatically mines all connected ore blocks of the same type in a single break.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"veinminer-enchantment:veinminer\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:velocity",
+    "namespace": "enchantencore",
+    "raw_name": "velocity",
+    "name": "Velocity",
+    "name_vi": "Velocity",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "['minecraft:bow', 'minecraft:crossbow', 'minecraft:trident']",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows, Crossbows & Tridents",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Significantly boosts projectile launch speed and travel range.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:velocity\":1}}] 1"
+  },
+  {
+    "id": "nova_structures:wax_wings",
+    "namespace": "nova_structures",
+    "raw_name": "wax_wings",
+    "name": "Wax Wings",
+    "name_vi": "Wax Wings",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "minecraft:elytra",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Elytra",
+    "exclusive_groups": [
+      "Elytra"
+    ],
+    "conflicts": [],
+    "description": "Prevents Elytra durability loss when gliding slowly.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:wax_wings\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:weakness_aspect",
+    "namespace": "enchantencore",
+    "raw_name": "weakness_aspect",
+    "name": "Weakness Aspect",
+    "name_vi": "Weakness Aspect",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Aspect (Melee Status)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "enchantencore:guard",
+        "name": "Guard"
+      },
+      {
+        "id": "enchantencore:hunger_aspect",
+        "name": "Hunger Aspect"
+      },
+      {
+        "id": "enchantencore:infested_aspect",
+        "name": "Infested Aspect"
+      },
+      {
+        "id": "enchantencore:levitation_aspect",
+        "name": "Levitation Aspect"
+      },
+      {
+        "id": "enchantencore:oozing_aspect",
+        "name": "Oozing Aspect"
+      },
+      {
+        "id": "enchantencore:pacifier",
+        "name": "Pacifier"
+      },
+      {
+        "id": "enchantencore:poison_aspect",
+        "name": "Poison Aspect"
+      },
+      {
+        "id": "enchantencore:slowness_aspect",
+        "name": "Slowness Aspect"
+      },
+      {
+        "id": "enchantencore:weaving_aspect",
+        "name": "Weaving Aspect"
+      },
+      {
+        "id": "enchantencore:wind_aspect",
+        "name": "Wind Aspect"
+      },
+      {
+        "id": "enchantencore:wither_aspect",
+        "name": "Wither Aspect"
+      }
+    ],
+    "description": "Melee hits inflict Weakness for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:weakness_aspect\":2}}] 1"
+  },
+  {
+    "id": "enchantencore:web_infused",
+    "namespace": "enchantencore",
+    "raw_name": "web_infused",
+    "name": "Web Infused",
+    "name_vi": "Web Infused",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_bows",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows & Crossbows",
+    "exclusive_groups": [
+      "Bow Arrow Effects",
+      "Bow Infused Arrows"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bomber",
+        "name": "Bomber"
+      },
+      {
+        "id": "enchantplus:bow/echo_shot",
+        "name": "Echo Shot"
+      },
+      {
+        "id": "enchantencore:ender_shot",
+        "name": "Ender Shot"
+      },
+      {
+        "id": "enchantencore:evokers_wrath",
+        "name": "Evoker's Wrath"
+      },
+      {
+        "id": "enchantplus:bow/explosive_arrow",
+        "name": "Explosive Arrow"
+      },
+      {
+        "id": "enchantencore:flare",
+        "name": "Flare"
+      },
+      {
+        "id": "enchantencore:forge_shot",
+        "name": "Forge Shot"
+      },
+      {
+        "id": "enchantencore:implosion",
+        "name": "Implosion"
+      },
+      {
+        "id": "minecraft:infinity",
+        "name": "Infinity"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
+        "id": "enchantencore:lightning_bolt",
+        "name": "Lightning Bolt"
+      }
+    ],
+    "description": "Arrows trap targets in cobwebs and inflict Slowness II (5s) / III (4s) / IV (3s) across levels I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:web_infused\":3}}] 1"
+  },
+  {
+    "id": "kattersstructures:web_walker",
+    "namespace": "kattersstructures",
+    "raw_name": "web_walker",
+    "name": "Web Walker",
+    "name_vi": "Web Walker",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Katters Structures v2.9",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "minecraft:depth_strider",
+        "name": "Depth Strider"
+      },
+      {
+        "id": "enchantencore:end_speed",
+        "name": "End Speed"
+      },
+      {
+        "id": "enchantencore:sand_speed",
+        "name": "Sand Speed"
+      },
+      {
+        "id": "enchantencore:sonic",
+        "name": "Sonic"
+      },
+      {
+        "id": "minecraft:soul_speed",
+        "name": "Soul Speed"
+      }
+    ],
+    "description": "Grants Speed VI (2s) and Weaving (15s) to walk rapidly through cobwebs; effect scales across Lv I–III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:web_walker\":3}}] 1"
+  },
+  {
+    "id": "enchantsplus:websnare",
+    "namespace": "enchantsplus",
+    "raw_name": "websnare",
+    "name": "Websnare",
+    "name_vi": "Websnare",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Enchants Plus v2.1 26.3",
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Swords & Maces",
+    "exclusive_groups": [
+      "Sword Buffs (Fire / Ice / Web)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "enchantsplus:ice_aspect",
+        "name": "Icicle Impale"
+      }
+    ],
+    "description": "Traps hit targets in cobwebs; duration/effect scales across Lv I–II.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:websnare\":2}}] 1"
+  },
+  {
+    "id": "minecraft:wind_burst",
+    "namespace": "minecraft",
+    "raw_name": "wind_burst",
+    "name": "Wind Burst",
+    "name_vi": "Wind Burst",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/mace",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Maces",
+    "exclusive_groups": [
+      "Mace Strike"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantplus:mace/teluric_wave",
+        "name": "Teluric Wave"
+      }
+    ],
+    "description": "Triggers a wind explosion on Mace smash hits, launching the attacker upward (scales strongly across Levels I–III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:wind_burst\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:wither_aspect",
+    "namespace": "enchantencore",
+    "raw_name": "wither_aspect",
+    "name": "Wither Aspect",
+    "name_vi": "Wither Aspect",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 2,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Aspect (Melee Status)",
+      "Wither (Coated / Aspect)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "enchantencore:hunger_aspect",
+        "name": "Hunger Aspect"
+      },
+      {
+        "id": "enchantencore:infested_aspect",
+        "name": "Infested Aspect"
+      },
+      {
+        "id": "enchantencore:levitation_aspect",
+        "name": "Levitation Aspect"
+      },
+      {
+        "id": "enchantencore:oozing_aspect",
+        "name": "Oozing Aspect"
+      },
+      {
+        "id": "enchantencore:pacifier",
+        "name": "Pacifier"
+      },
+      {
+        "id": "enchantencore:poison_aspect",
+        "name": "Poison Aspect"
+      },
+      {
+        "id": "enchantencore:slowness_aspect",
+        "name": "Slowness Aspect"
+      },
+      {
+        "id": "enchantencore:weakness_aspect",
+        "name": "Weakness Aspect"
+      },
+      {
+        "id": "enchantencore:weaving_aspect",
+        "name": "Weaving Aspect"
+      },
+      {
+        "id": "enchantencore:wind_aspect",
+        "name": "Wind Aspect"
+      },
+      {
+        "id": "nova_structures:wither_coated",
+        "name": "Wither Coated"
+      }
+    ],
+    "description": "Melee hits inflict Wither for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wither_aspect\":2}}] 1"
+  },
+  {
+    "id": "enchantencore:wither_infused",
+    "namespace": "enchantencore",
+    "raw_name": "wither_infused",
+    "name": "Wither Infused",
+    "name_vi": "Wither Infused",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_bows",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows & Crossbows",
+    "exclusive_groups": [
+      "Bow Arrow Effects",
+      "Bow Infused Arrows"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bomber",
+        "name": "Bomber"
+      },
+      {
+        "id": "enchantplus:bow/echo_shot",
+        "name": "Echo Shot"
+      },
+      {
+        "id": "enchantencore:ender_shot",
+        "name": "Ender Shot"
+      },
+      {
+        "id": "enchantencore:evokers_wrath",
+        "name": "Evoker's Wrath"
+      },
+      {
+        "id": "enchantplus:bow/explosive_arrow",
+        "name": "Explosive Arrow"
+      },
+      {
+        "id": "enchantencore:flare",
+        "name": "Flare"
+      },
+      {
+        "id": "enchantencore:forge_shot",
+        "name": "Forge Shot"
+      },
+      {
+        "id": "enchantencore:implosion",
+        "name": "Implosion"
+      },
+      {
+        "id": "minecraft:infinity",
+        "name": "Infinity"
+      },
+      {
+        "id": "stellarity:levitation_shot",
+        "name": "Levitation Shot"
+      },
+      {
+        "id": "enchantencore:lightning_bolt",
+        "name": "Lightning Bolt"
+      }
+    ],
+    "description": "Arrows inflict Wither I (3s) at Lv I, Wither II (4s) at Lv II, and Wither II (5s) at Lv III.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wither_infused\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:anchor",
+    "namespace": "enchantencore",
+    "raw_name": "anchor",
+    "name": "Anchor",
+    "name_vi": "Anchor",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:valid_for_anchor",
+    "gear_categories": [
+      "mount"
+    ],
+    "supported_display": "Saddles & Harnesses",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Prevents unmounted mounts from drifting or wandering away.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:anchor\":1}}] 1"
+  },
+  {
+    "id": "expedition_fishing:fishermans_feast",
+    "namespace": "expedition_fishing",
+    "raw_name": "fishermans_feast",
+    "name": "Angler's Feast",
+    "name_vi": "Angler's Feast",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 15,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants a 20% / 40% chance to restore 1-2 Hunger points upon a successful catch.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:fishermans_feast\":2}}] 1"
+  },
+  {
+    "id": "expedition_fishing:angler_instinct",
+    "namespace": "expedition_fishing",
+    "raw_name": "angler_instinct",
+    "name": "Angler's Instinct",
+    "name_vi": "Angler's Instinct",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 18,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases base Sea Creature Chance by +3% per level (+6% at Lv II).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:angler_instinct\":2}}] 1"
+  },
+  {
+    "id": "enchantencore:angry_aura",
+    "namespace": "enchantencore",
+    "raw_name": "angry_aura",
+    "name": "Angry Aura",
+    "name_vi": "Angry Aura",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Cosmetic Aura"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:aquatic_aura",
+        "name": "Aquatic Aura"
+      },
+      {
+        "id": "enchantencore:echoing_aura",
+        "name": "Echoing Aura"
+      },
+      {
+        "id": "enchantencore:enchanted_aura",
+        "name": "Enchanted Aura"
+      },
+      {
+        "id": "enchantencore:ender_aura",
+        "name": "Ender Aura"
+      },
+      {
+        "id": "enchantencore:flaming_aura",
+        "name": "Flaming Aura"
+      },
+      {
+        "id": "enchantencore:heavenly_aura",
+        "name": "Heavenly Aura"
+      },
+      {
+        "id": "enchantencore:lovely_aura",
+        "name": "Lovely Aura"
+      },
+      {
+        "id": "enchantencore:lush_aura",
+        "name": "Lush Aura"
+      },
+      {
+        "id": "enchantencore:muddy_aura",
+        "name": "Muddy Aura"
+      },
+      {
+        "id": "enchantencore:ominous_aura",
+        "name": "Ominous Aura"
+      },
+      {
+        "id": "enchantencore:pale_aura",
+        "name": "Pale Aura"
+      },
+      {
+        "id": "enchantencore:sparking_aura",
+        "name": "Sparking Aura"
+      },
+      {
+        "id": "enchantencore:sticky_aura",
+        "name": "Sticky Aura"
+      },
+      {
+        "id": "enchantencore:trial_aura",
+        "name": "Trial Aura"
+      }
+    ],
+    "description": "Cosmetic aura: emits angry storm cloud particles while idle, moving, or taking hits.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:angry_aura\":1}}] 1"
+  },
+  {
+    "id": "minecraft:aqua_affinity",
+    "namespace": "minecraft",
+    "raw_name": "aqua_affinity",
+    "name": "Aqua Affinity",
+    "name_vi": "Aqua Affinity",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 10,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Removes the 5x underwater mining speed penalty, allowing normal mining speed underwater.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:aqua_affinity\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:aquatic_aura",
+    "namespace": "enchantencore",
+    "raw_name": "aquatic_aura",
+    "name": "Aquatic Aura",
+    "name_vi": "Aquatic Aura",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Cosmetic Aura"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:angry_aura",
+        "name": "Angry Aura"
+      },
+      {
+        "id": "enchantencore:echoing_aura",
+        "name": "Echoing Aura"
+      },
+      {
+        "id": "enchantencore:enchanted_aura",
+        "name": "Enchanted Aura"
+      },
+      {
+        "id": "enchantencore:ender_aura",
+        "name": "Ender Aura"
+      },
+      {
+        "id": "enchantencore:flaming_aura",
+        "name": "Flaming Aura"
+      },
+      {
+        "id": "enchantencore:heavenly_aura",
+        "name": "Heavenly Aura"
+      },
+      {
+        "id": "enchantencore:lovely_aura",
+        "name": "Lovely Aura"
+      },
+      {
+        "id": "enchantencore:lush_aura",
+        "name": "Lush Aura"
+      },
+      {
+        "id": "enchantencore:muddy_aura",
+        "name": "Muddy Aura"
+      },
+      {
+        "id": "enchantencore:ominous_aura",
+        "name": "Ominous Aura"
+      },
+      {
+        "id": "enchantencore:pale_aura",
+        "name": "Pale Aura"
+      },
+      {
+        "id": "enchantencore:sparking_aura",
+        "name": "Sparking Aura"
+      },
+      {
+        "id": "enchantencore:sticky_aura",
+        "name": "Sticky Aura"
+      },
+      {
+        "id": "enchantencore:trial_aura",
+        "name": "Trial Aura"
+      }
+    ],
+    "description": "Cosmetic aura: emits water bubble and splash particles while idle, moving, or taking hits.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:aquatic_aura\":1}}] 1"
+  },
+  {
+    "id": "expedition_fishing:bait_saver",
+    "namespace": "expedition_fishing",
+    "raw_name": "bait_saver",
+    "name": "Bait Saver",
+    "name_vi": "Bait Saver",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 3,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 16,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants a 15% / 30% / 45% chance not to consume off-hand Bait when reeling in a catch.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:bait_saver\":3}}] 1"
+  },
+  {
+    "id": "minecraft:bane_of_arthropods",
+    "namespace": "minecraft",
+    "raw_name": "bane_of_arthropods",
+    "name": "Bane of Arthropods",
+    "name_vi": "Bane of Arthropods",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 5,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 10,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Swords, Axes & Maces",
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "nova_structures:function_only",
+        "name": "Bug Enchant"
+      },
+      {
+        "id": "stellarity:critical_strike",
+        "name": "Critical Strike"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "mt:technical/grenade",
+        "name": "Grenade Window"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "mt:technical/kinetic_bomb",
+        "name": "Kinetic Bomb"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      },
+      {
+        "id": "stellarity:_technical/soul_harvest",
+        "name": "Soul Harvest"
+      }
+    ],
+    "description": "Increases damage against Arthropods (Spiders, Bees, Silverfish) by +2 per level (up to +10 at Lv V) and inflicts Slowness IV (1s + 0.5s per level).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:bane_of_arthropods\":5}}] 1"
+  },
+  {
+    "id": "enchantencore:bane_of_bosses",
+    "namespace": "enchantencore",
+    "raw_name": "bane_of_bosses",
+    "name": "Bane of Bosses",
+    "name_vi": "Bane of Bosses",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 5,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:weapons",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "nova_structures:function_only",
+        "name": "Bug Enchant"
+      },
+      {
+        "id": "stellarity:critical_strike",
+        "name": "Critical Strike"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "mt:technical/grenade",
+        "name": "Grenade Window"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "mt:technical/kinetic_bomb",
+        "name": "Kinetic Bomb"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      }
+    ],
+    "description": "Deals +2 damage per level (up to +10 at Lv V) against boss mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_bosses\":5}}] 1"
+  },
+  {
+    "id": "enchantencore:bane_of_endborn",
+    "namespace": "enchantencore",
+    "raw_name": "bane_of_endborn",
+    "name": "Bane of Endborn",
+    "name_vi": "Bane of Endborn",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 5,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:weapons",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "nova_structures:function_only",
+        "name": "Bug Enchant"
+      },
+      {
+        "id": "stellarity:critical_strike",
+        "name": "Critical Strike"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "mt:technical/grenade",
+        "name": "Grenade Window"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "mt:technical/kinetic_bomb",
+        "name": "Kinetic Bomb"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      }
+    ],
+    "description": "Deals +2 damage per level (up to +10 at Lv V) against End mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_endborn\":5}}] 1"
+  },
+  {
+    "id": "enchantencore:bane_of_netherborn",
+    "namespace": "enchantencore",
+    "raw_name": "bane_of_netherborn",
+    "name": "Bane of Netherborn",
+    "name_vi": "Bane of Netherborn",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 5,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:weapons",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "nova_structures:function_only",
+        "name": "Bug Enchant"
+      },
+      {
+        "id": "stellarity:critical_strike",
+        "name": "Critical Strike"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "mt:technical/grenade",
+        "name": "Grenade Window"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "mt:technical/kinetic_bomb",
+        "name": "Kinetic Bomb"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      }
+    ],
+    "description": "Deals +2 damage per level (up to +10 at Lv V) against Nether mobs and inflicts Slowness IV (1.5s, +0.5s max duration per level above I).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_netherborn\":5}}] 1"
+  },
+  {
+    "id": "enchantencore:bane_of_raiders",
+    "namespace": "enchantencore",
+    "raw_name": "bane_of_raiders",
+    "name": "Bane of Raiders",
+    "name_vi": "Bane of Raiders",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 5,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:weapons",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)",
+      "Illager / Raider Bane"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "nova_structures:function_only",
+        "name": "Bug Enchant"
+      },
+      {
+        "id": "stellarity:critical_strike",
+        "name": "Critical Strike"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "mt:technical/grenade",
+        "name": "Grenade Window"
+      },
+      {
+        "id": "nova_structures:illagers_bane",
+        "name": "Illagers Bane"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "mt:technical/kinetic_bomb",
+        "name": "Kinetic Bomb"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      }
+    ],
+    "description": "Deals +2 damage per level (up to +10 at Lv V) against Illagers and raiders, inflicting Slowness IV (1.5s, +0.5s max duration per level above I).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bane_of_raiders\":5}}] 1"
+  },
+  {
+    "id": "minecraft:blast_protection",
+    "namespace": "minecraft",
+    "raw_name": "blast_protection",
+    "name": "Blast Protection",
+    "name_vi": "Blast Protection",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 4,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 10,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [
+      "Armor Protection",
+      "Light / Blast Protection"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:antidote",
+        "name": "Antidote"
+      },
+      {
+        "id": "enchantencore:day_protection",
+        "name": "Day Protection"
+      },
+      {
+        "id": "enchantencore:end_protection",
+        "name": "End Protection"
+      },
+      {
+        "id": "minecraft:fire_protection",
+        "name": "Fire Protection"
+      },
+      {
+        "id": "enchantplus:armor/fury",
+        "name": "Fury"
+      },
+      {
+        "id": "kattersstructures:light",
+        "name": "Light"
+      },
+      {
+        "id": "enchantencore:nether_protection",
+        "name": "Nether Protection"
+      },
+      {
+        "id": "enchantencore:night_protection",
+        "name": "Night Protection"
+      },
+      {
+        "id": "enchantencore:perfect_protection",
+        "name": "Perfect Protection"
+      },
+      {
+        "id": "minecraft:projectile_protection",
+        "name": "Projectile Protection"
+      },
+      {
+        "id": "minecraft:protection",
+        "name": "Protection"
+      },
+      {
+        "id": "enchantplus:armor/lifeplus",
+        "name": "Walking Fortress"
+      },
+      {
+        "id": "enchantencore:wither_protection",
+        "name": "Wither Protection"
+      }
+    ],
+    "description": "Reduces explosion damage by +8% per level and explosion knockback by +15% per level.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:blast_protection\":4}}] 1"
+  },
+  {
+    "id": "enchantencore:bounce",
+    "namespace": "enchantencore",
+    "raw_name": "bounce",
+    "name": "Bounce",
+    "name_vi": "Bounce",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Movement"
+    ],
+    "conflicts": [
+      {
+        "id": "bound:bound",
+        "name": "Bound"
+      },
+      {
+        "id": "enchantencore:end_speed",
+        "name": "End Speed"
+      },
+      {
+        "id": "enchantencore:invisibility_cloak",
+        "name": "Invisibility Cloak"
+      },
+      {
+        "id": "enchantencore:leaf_jumper",
+        "name": "Leaf Jumper"
+      },
+      {
+        "id": "enchantencore:path_speed",
+        "name": "Path Speed"
+      },
+      {
+        "id": "enchantencore:sand_speed",
+        "name": "Sand Speed"
+      },
+      {
+        "id": "enchantencore:sonic",
+        "name": "Sonic"
+      },
+      {
+        "id": "minecraft:soul_speed",
+        "name": "Soul Speed"
+      },
+      {
+        "id": "enchantencore:strafe",
+        "name": "Strafe"
+      }
+    ],
+    "description": "Grants +2 bounciness, +2.5 safe fall distance, and -0.2 air drag and friction modifiers.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bounce\":1}}] 1"
+  },
+  {
+    "id": "minecraft:breach",
+    "namespace": "minecraft",
+    "raw_name": "breach",
+    "name": "Breach",
+    "name_vi": "Breach",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 4,
+    "anvil_cost": 6,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/mace",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Maces",
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "nova_structures:function_only",
+        "name": "Bug Enchant"
+      },
+      {
+        "id": "stellarity:critical_strike",
+        "name": "Critical Strike"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "mt:technical/grenade",
+        "name": "Grenade Window"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "mt:technical/kinetic_bomb",
+        "name": "Kinetic Bomb"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      }
+    ],
+    "description": "Reduces target's armor effectiveness by -15% per level on Mace hits (up to -60% armor penetration at Lv IV).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:breach\":4}}] 1"
+  },
+  {
+    "id": "nova_structures:function_only",
+    "namespace": "nova_structures",
+    "raw_name": "function_only",
+    "name": "Bug Enchant",
+    "name_vi": "Bug Enchant",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 5,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "['minecraft:stick', 'minecraft:flint']",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Sticks & Flint",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      }
+    ],
+    "description": "Internal technical enchantment; converts into Bane of Arthropods inside player inventory.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:function_only\":5}}] 1"
+  },
+  {
+    "id": "enchantplus:mounted/cavalier_egis",
+    "namespace": "enchantplus",
+    "raw_name": "mounted/cavalier_egis",
+    "name": "Cavalier Egis",
+    "name_vi": "Cavalier Egis",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 3,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#enchantplus:enchantable/mounted",
+    "gear_categories": [
+      "mount"
+    ],
+    "supported_display": "Saddles & Mounts",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants +0.75 damage protection EPF per level (up to +2.25 EPF at Lv III) while riding a mount.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/cavalier_egis\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:cleansing",
+    "namespace": "enchantencore",
+    "raw_name": "cleansing",
+    "name": "Cleansing",
+    "name_vi": "Cleansing",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "minecraft:shield",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Shields",
+    "exclusive_groups": [
+      "Shield"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:crispbread",
+        "name": "Crispbread"
+      },
+      {
+        "id": "enchantencore:hardened",
+        "name": "Hardened"
+      },
+      {
+        "id": "enchantencore:ominous_healing",
+        "name": "Ominous Healing"
+      },
+      {
+        "id": "enchantencore:rejuvenation",
+        "name": "Rejuvenation"
+      }
+    ],
+    "description": "Clears negative status effects when moving with the shield equipped at a small durability cost (1.5).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:cleansing\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:crispbread",
+    "namespace": "enchantencore",
+    "raw_name": "crispbread",
+    "name": "Crispbread",
+    "name_vi": "Crispbread",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "minecraft:shield",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Shields",
+    "exclusive_groups": [
+      "Shield"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:cleansing",
+        "name": "Cleansing"
+      },
+      {
+        "id": "enchantencore:hardened",
+        "name": "Hardened"
+      },
+      {
+        "id": "enchantencore:ominous_healing",
+        "name": "Ominous Healing"
+      },
+      {
+        "id": "enchantencore:rejuvenation",
+        "name": "Rejuvenation"
+      }
+    ],
+    "description": "Grants Saturation I for 2s while moving with the shield equipped.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crispbread\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:crop_dance",
+    "namespace": "enchantencore",
+    "raw_name": "crop_dance",
+    "name": "Crop Dance",
+    "name_vi": "Crop Dance",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Walker"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:depth_strider",
+        "name": "Depth Strider"
+      },
+      {
+        "id": "enchantencore:electric_walker",
+        "name": "Electric Walker"
+      },
+      {
+        "id": "minecraft:frost_walker",
+        "name": "Frost Walker"
+      },
+      {
+        "id": "enchantencore:grass_walker",
+        "name": "Grass Walker"
+      },
+      {
+        "id": "enchantencore:magma_walker",
+        "name": "Magma Walker"
+      },
+      {
+        "id": "enchantencore:summer_walker",
+        "name": "Summer Walker"
+      }
+    ],
+    "description": "Crouching on farmland emits particles and rapidly accelerates nearby crop growth at a minor durability cost.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crop_dance\":1}}] 1"
+  },
+  {
+    "id": "kattersstructures:alchemy_curse",
+    "namespace": "kattersstructures",
+    "raw_name": "alchemy_curse",
+    "name": "Curse of Alchemy",
+    "name_vi": "Curse of Alchemy",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Katters Structures v2.9",
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants random potion effects (often harmful) when taking damage.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:alchemy_curse\":1}}] 1"
+  },
+  {
+    "id": "minecraft:binding_curse",
+    "namespace": "minecraft",
+    "raw_name": "binding_curse",
+    "name": "Curse of Binding",
+    "name_vi": "Curse of Binding",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/equippable",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor & Elytra",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Prevents the equipped item from being removed until it breaks or the wearer dies.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:binding_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:blindness_curse",
+    "namespace": "enchantencore",
+    "raw_name": "blindness_curse",
+    "name": "Curse of Blindness",
+    "name_vi": "Curse of Blindness",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Periodically inflicts Blindness on the wearer.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:blindness_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantsplus:breaking_curse",
+    "namespace": "enchantsplus",
+    "raw_name": "breaking_curse",
+    "name": "Curse of Breaking",
+    "name_vi": "Curse of Breaking",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Enchants Plus v2.1 26.3",
+    "supported_items": "#minecraft:enchantable/durability",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Durable Gear",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Doubles durability consumption rate when using the enchanted item.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:breaking_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantsplus:clumsiness_curse",
+    "namespace": "enchantsplus",
+    "raw_name": "clumsiness_curse",
+    "name": "Curse of Clumsiness",
+    "name_vi": "Curse of Clumsiness",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Enchants Plus v2.1 26.3",
+    "supported_items": "#enchantsplus:toolsnsword",
+    "gear_categories": [
+      "weapon",
+      "tool"
+    ],
+    "supported_display": "Weapons & Tools",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Attacks and mining have a chance to miss or drop the held item.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:clumsiness_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:color_blindness_curse",
+    "namespace": "enchantencore",
+    "raw_name": "color_blindness_curse",
+    "name": "Curse of Color Blindness",
+    "name_vi": "Curse of Color Blindness",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Vision Curses"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:creeper_vision_curse",
+        "name": "Curse of Creeper Vision"
+      },
+      {
+        "id": "enchantencore:ender_vision_curse",
+        "name": "Curse of Ender Vision"
+      },
+      {
+        "id": "enchantencore:mirror_vision_curse",
+        "name": "Curse of Mirror Vision"
+      },
+      {
+        "id": "enchantencore:shortsight_curse",
+        "name": "Curse of Shortsight"
+      },
+      {
+        "id": "enchantencore:spider_vision_curse",
+        "name": "Curse of Spider Vision"
+      },
+      {
+        "id": "enchantencore:void_vision_curse",
+        "name": "Curse of Void Vision"
+      },
+      {
+        "id": "enchantencore:night_vision",
+        "name": "Night Vision"
+      }
+    ],
+    "description": "Applies a desaturated grayscale shader to the wearer's vision.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:color_blindness_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantsplus:compassion_curse",
+    "namespace": "enchantsplus",
+    "raw_name": "compassion_curse",
+    "name": "Curse of Compassion",
+    "name_vi": "Curse of Compassion",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Enchants Plus v2.1 26.3",
+    "supported_items": "#enchantsplus:weapons",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Melee hits have a chance to heal the target instead of dealing damage.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:compassion_curse\":1}}] 1"
+  },
+  {
+    "id": "nova_structures:conductivity_curse",
+    "namespace": "nova_structures",
+    "raw_name": "conductivity_curse",
+    "name": "Curse of Conductivity",
+    "name_vi": "Curse of Conductivity",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#nova_structures:enchantable/metal",
+    "gear_categories": [
+      "armor",
+      "weapon",
+      "tool"
+    ],
+    "supported_display": "Metal Gear",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Metal gear attracts lightning strikes to the wearer during thunderstorms.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:conductivity_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:corrosion_curse",
+    "namespace": "enchantencore",
+    "raw_name": "corrosion_curse",
+    "name": "Curse of Corrosion",
+    "name_vi": "Curse of Corrosion",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/durability",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Durable Gear",
+    "exclusive_groups": [
+      "Auto-Repair / Durability"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:emberweave",
+        "name": "Emberweave"
+      },
+      {
+        "id": "enchantencore:handyman",
+        "name": "Handyman"
+      },
+      {
+        "id": "minecraft:mending",
+        "name": "Mending"
+      },
+      {
+        "id": "enchantencore:moonweave",
+        "name": "Moonweave"
+      },
+      {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
+        "id": "enchantencore:rainweave",
+        "name": "Rainweave"
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "name": "Sacrifice"
+      },
+      {
+        "id": "enchantencore:tideweave",
+        "name": "Tideweave"
+      },
+      {
+        "id": "enchantencore:voidweave",
+        "name": "Voidweave"
+      }
+    ],
+    "description": "Gradually corrodes item durability (0.5% chance per tick) when exposed to rain or submerged underwater.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:corrosion_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:creeper_vision_curse",
+    "namespace": "enchantencore",
+    "raw_name": "creeper_vision_curse",
+    "name": "Curse of Creeper Vision",
+    "name_vi": "Curse of Creeper Vision",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Vision Curses"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:color_blindness_curse",
+        "name": "Curse of Color Blindness"
+      },
+      {
+        "id": "enchantencore:ender_vision_curse",
+        "name": "Curse of Ender Vision"
+      },
+      {
+        "id": "enchantencore:mirror_vision_curse",
+        "name": "Curse of Mirror Vision"
+      },
+      {
+        "id": "enchantencore:shortsight_curse",
+        "name": "Curse of Shortsight"
+      },
+      {
+        "id": "enchantencore:spider_vision_curse",
+        "name": "Curse of Spider Vision"
+      },
+      {
+        "id": "enchantencore:void_vision_curse",
+        "name": "Curse of Void Vision"
+      },
+      {
+        "id": "enchantencore:night_vision",
+        "name": "Night Vision"
+      }
+    ],
+    "description": "Applies a green pixelated Creeper-vision shader while worn.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_vision_curse\":1}}] 1"
+  },
+  {
+    "id": "kattersstructures:crystal_curse",
+    "namespace": "kattersstructures",
+    "raw_name": "crystal_curse",
+    "name": "Curse of Crystal",
+    "name_vi": "Curse of Crystal",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Katters Structures v2.9",
+    "supported_items": "#minecraft:enchantable/weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "enchantencore:handyman",
+        "name": "Handyman"
+      },
+      {
+        "id": "minecraft:mending",
+        "name": "Mending"
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "name": "Sacrifice"
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "name": "Unbreaking"
+      }
+    ],
+    "description": "Greatly boosts weapon damage at the cost of rapid durability loss.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:crystal_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:death_curse",
+    "namespace": "enchantencore",
+    "raw_name": "death_curse",
+    "name": "Curse of Death",
+    "name_vi": "Curse of Death",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Inflicts lethal self-damage or fatal backlash on the attacker upon striking.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:death_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantsplus:displacement_curse",
+    "namespace": "enchantsplus",
+    "raw_name": "displacement_curse",
+    "name": "Curse of Displacement",
+    "name_vi": "Curse of Displacement",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Enchants Plus v2.1 26.3",
+    "supported_items": "#enchantsplus:weapons",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Attacks have a chance to randomly teleport the attacker or victim.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:displacement_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantsplus:double_edge_curse",
+    "namespace": "enchantsplus",
+    "raw_name": "double_edge_curse",
+    "name": "Curse of Double Edge",
+    "name_vi": "Curse of Double Edge",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Enchants Plus v2.1 26.3",
+    "supported_items": "#enchantsplus:weapons",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Deals heavy bonus damage to targets while reflecting a portion back onto the attacker.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:double_edge_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantplus:durability/curse_of_enchant",
+    "namespace": "enchantplus",
+    "raw_name": "durability/curse_of_enchant",
+    "name": "Curse of Enchant",
+    "name_vi": "Curse of Enchant",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "NeoEnchant-5.16.0",
+    "supported_items": "#minecraft:enchantable/durability",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Gear",
+    "exclusive_groups": [
+      "Auto-Repair / Durability"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:mending",
+        "name": "Mending"
+      }
+    ],
+    "description": "Prevents the item from being further enchanted or modified.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:durability/curse_of_enchant\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:ender_vision_curse",
+    "namespace": "enchantencore",
+    "raw_name": "ender_vision_curse",
+    "name": "Curse of Ender Vision",
+    "name_vi": "Curse of Ender Vision",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Vision Curses"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:color_blindness_curse",
+        "name": "Curse of Color Blindness"
+      },
+      {
+        "id": "enchantencore:creeper_vision_curse",
+        "name": "Curse of Creeper Vision"
+      },
+      {
+        "id": "enchantencore:mirror_vision_curse",
+        "name": "Curse of Mirror Vision"
+      },
+      {
+        "id": "enchantencore:shortsight_curse",
+        "name": "Curse of Shortsight"
+      },
+      {
+        "id": "enchantencore:spider_vision_curse",
+        "name": "Curse of Spider Vision"
+      },
+      {
+        "id": "enchantencore:void_vision_curse",
+        "name": "Curse of Void Vision"
+      },
+      {
+        "id": "enchantencore:night_vision",
+        "name": "Night Vision"
+      }
+    ],
+    "description": "Applies an inverted Enderman-vision shader while worn.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ender_vision_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:fragility_curse",
+    "namespace": "enchantencore",
+    "raw_name": "fragility_curse",
+    "name": "Curse of Fragility",
+    "name_vi": "Curse of Fragility",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:weapons",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Significantly accelerates weapon durability loss on every attack.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:fragility_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:hiding_curse",
+    "namespace": "enchantencore",
+    "raw_name": "hiding_curse",
+    "name": "Curse of Hiding",
+    "name_vi": "Curse of Hiding",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Turns struck enemies invisible, making them harder to track in combat.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hiding_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:mirror_vision_curse",
+    "namespace": "enchantencore",
+    "raw_name": "mirror_vision_curse",
+    "name": "Curse of Mirror Vision",
+    "name_vi": "Curse of Mirror Vision",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Vision Curses"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:color_blindness_curse",
+        "name": "Curse of Color Blindness"
+      },
+      {
+        "id": "enchantencore:creeper_vision_curse",
+        "name": "Curse of Creeper Vision"
+      },
+      {
+        "id": "enchantencore:ender_vision_curse",
+        "name": "Curse of Ender Vision"
+      },
+      {
+        "id": "enchantencore:shortsight_curse",
+        "name": "Curse of Shortsight"
+      },
+      {
+        "id": "enchantencore:spider_vision_curse",
+        "name": "Curse of Spider Vision"
+      },
+      {
+        "id": "enchantencore:void_vision_curse",
+        "name": "Curse of Void Vision"
+      },
+      {
+        "id": "enchantencore:night_vision",
+        "name": "Night Vision"
+      }
+    ],
+    "description": "Applies a horizontally mirrored shader to the wearer's vision.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:mirror_vision_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:ownership_curse",
+    "namespace": "enchantencore",
+    "raw_name": "ownership_curse",
+    "name": "Curse of Ownership",
+    "name_vi": "Curse of Ownership",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Binds the armor to its current owner, penalizing anyone else who attempts to wear it.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ownership_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:randomness_curse",
+    "namespace": "enchantencore",
+    "raw_name": "randomness_curse",
+    "name": "Curse of Randomness",
+    "name_vi": "Curse of Randomness",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_tools",
+    "gear_categories": [
+      "tool",
+      "weapon"
+    ],
+    "supported_display": "Tools & Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Randomizes actions, drops, or tool effects unpredictably on hit or block strike.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:randomness_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:reach_curse",
+    "namespace": "enchantencore",
+    "raw_name": "reach_curse",
+    "name": "Curse of Reach",
+    "name_vi": "Curse of Reach",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_tools",
+    "gear_categories": [
+      "tool",
+      "weapon"
+    ],
+    "supported_display": "Tools & Weapons",
+    "exclusive_groups": [
+      "Reach"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:crab_claw",
+        "name": "Crab Claw"
+      },
+      {
+        "id": "enchantplus:sword/reach",
+        "name": "Reach"
+      }
+    ],
+    "description": "Reduces both block and entity interaction reach by -2 blocks.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:reach_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:shortsight_curse",
+    "namespace": "enchantencore",
+    "raw_name": "shortsight_curse",
+    "name": "Curse of Shortsight",
+    "name_vi": "Curse of Shortsight",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Vision Curses"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:color_blindness_curse",
+        "name": "Curse of Color Blindness"
+      },
+      {
+        "id": "enchantencore:creeper_vision_curse",
+        "name": "Curse of Creeper Vision"
+      },
+      {
+        "id": "enchantencore:ender_vision_curse",
+        "name": "Curse of Ender Vision"
+      },
+      {
+        "id": "enchantencore:mirror_vision_curse",
+        "name": "Curse of Mirror Vision"
+      },
+      {
+        "id": "enchantencore:spider_vision_curse",
+        "name": "Curse of Spider Vision"
+      },
+      {
+        "id": "enchantencore:void_vision_curse",
+        "name": "Curse of Void Vision"
+      },
+      {
+        "id": "enchantencore:night_vision",
+        "name": "Night Vision"
+      }
+    ],
+    "description": "Applies a heavy near-sighted blur shader to the wearer's vision.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shortsight_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:spider_vision_curse",
+    "namespace": "enchantencore",
+    "raw_name": "spider_vision_curse",
+    "name": "Curse of Spider Vision",
+    "name_vi": "Curse of Spider Vision",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Vision Curses"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:color_blindness_curse",
+        "name": "Curse of Color Blindness"
+      },
+      {
+        "id": "enchantencore:creeper_vision_curse",
+        "name": "Curse of Creeper Vision"
+      },
+      {
+        "id": "enchantencore:ender_vision_curse",
+        "name": "Curse of Ender Vision"
+      },
+      {
+        "id": "enchantencore:mirror_vision_curse",
+        "name": "Curse of Mirror Vision"
+      },
+      {
+        "id": "enchantencore:shortsight_curse",
+        "name": "Curse of Shortsight"
+      },
+      {
+        "id": "enchantencore:void_vision_curse",
+        "name": "Curse of Void Vision"
+      },
+      {
+        "id": "enchantencore:night_vision",
+        "name": "Night Vision"
+      }
+    ],
+    "description": "Applies a multi-eyed Spider-vision shader while worn.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:spider_vision_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:undying_curse",
+    "namespace": "enchantencore",
+    "raw_name": "undying_curse",
+    "name": "Curse of Undying",
+    "name_vi": "Curse of Undying",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_tools",
+    "gear_categories": [
+      "tool",
+      "weapon"
+    ],
+    "supported_display": "Tools & Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Prevents normal death or alters item behavior unpredictably on fatal triggers.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:undying_curse\":1}}] 1"
+  },
+  {
+    "id": "minecraft:vanishing_curse",
+    "namespace": "minecraft",
+    "raw_name": "vanishing_curse",
+    "name": "Curse of Vanishing",
+    "name_vi": "Curse of Vanishing",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/vanishing",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Gear",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Causes the enchanted item to vanish permanently upon player death instead of dropping.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:vanishing_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:void_vision_curse",
+    "namespace": "enchantencore",
+    "raw_name": "void_vision_curse",
+    "name": "Curse of Void Vision",
+    "name_vi": "Curse of Void Vision",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Vision Curses"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:color_blindness_curse",
+        "name": "Curse of Color Blindness"
+      },
+      {
+        "id": "enchantencore:creeper_vision_curse",
+        "name": "Curse of Creeper Vision"
+      },
+      {
+        "id": "enchantencore:ender_vision_curse",
+        "name": "Curse of Ender Vision"
+      },
+      {
+        "id": "enchantencore:mirror_vision_curse",
+        "name": "Curse of Mirror Vision"
+      },
+      {
+        "id": "enchantencore:shortsight_curse",
+        "name": "Curse of Shortsight"
+      },
+      {
+        "id": "enchantencore:spider_vision_curse",
+        "name": "Curse of Spider Vision"
+      },
+      {
+        "id": "enchantencore:night_vision",
+        "name": "Night Vision"
+      }
+    ],
+    "description": "Applies a pitch-dark Void-vision shader while worn.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:void_vision_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:welfare_curse",
+    "namespace": "enchantencore",
+    "raw_name": "welfare_curse",
+    "name": "Curse of Welfare",
+    "name_vi": "Curse of Welfare",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_tools",
+    "gear_categories": [
+      "tool",
+      "weapon"
+    ],
+    "supported_display": "Tools & Weapons",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "enchantencore:gluttony",
+        "name": "Gluttony"
+      }
+    ],
+    "description": "Shares or drains durability and resources when moving with the cursed item.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:welfare_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:breeze_curse",
+    "namespace": "enchantencore",
+    "raw_name": "breeze_curse",
+    "name": "Curse of the Breeze",
+    "name_vi": "Curse of the Breeze",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/melee_weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Knocks the attacker backward with a wind gust on every melee strike.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:breeze_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:caravan_curse",
+    "namespace": "enchantencore",
+    "raw_name": "caravan_curse",
+    "name": "Curse of the Caravan",
+    "name_vi": "Curse of the Caravan",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Periodically summons wandering llamas or pulls nearby mobs into a noisy caravan around the wearer.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:caravan_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:crank_curse",
+    "namespace": "enchantencore",
+    "raw_name": "crank_curse",
+    "name": "Curse of the Crank",
+    "name_vi": "Curse of the Crank",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 8,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Forces the wearer to keep moving or suffer cranky slowdown penalties when standing still.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crank_curse\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:cushion",
+    "namespace": "enchantencore",
+    "raw_name": "cushion",
+    "name": "Cushion",
+    "name_vi": "Cushion",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 4,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "minecraft:elytra",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Elytra",
+    "exclusive_groups": [
+      "Elytra"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:safe_landing",
+        "name": "Safe Landing"
+      }
+    ],
+    "description": "Adds +5 Elytra wall-collision protection EPF per level (up to +20 EPF at Lv IV).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:cushion\":4}}] 1"
+  },
+  {
+    "id": "enchantencore:day_protection",
+    "namespace": "enchantencore",
+    "raw_name": "day_protection",
+    "name": "Day Protection",
+    "name_vi": "Day Protection",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 5,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [
+      "Armor Protection"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:antidote",
+        "name": "Antidote"
+      },
+      {
+        "id": "minecraft:blast_protection",
+        "name": "Blast Protection"
+      },
+      {
+        "id": "enchantencore:end_protection",
+        "name": "End Protection"
+      },
+      {
+        "id": "minecraft:fire_protection",
+        "name": "Fire Protection"
+      },
+      {
+        "id": "enchantplus:armor/fury",
+        "name": "Fury"
+      },
+      {
+        "id": "enchantencore:nether_protection",
+        "name": "Nether Protection"
+      },
+      {
+        "id": "enchantencore:night_protection",
+        "name": "Night Protection"
+      },
+      {
+        "id": "enchantencore:perfect_protection",
+        "name": "Perfect Protection"
+      },
+      {
+        "id": "minecraft:projectile_protection",
+        "name": "Projectile Protection"
+      },
+      {
+        "id": "minecraft:protection",
+        "name": "Protection"
+      },
+      {
+        "id": "enchantplus:armor/lifeplus",
+        "name": "Walking Fortress"
+      },
+      {
+        "id": "enchantencore:wither_protection",
+        "name": "Wither Protection"
+      }
+    ],
+    "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) during Overworld daytime.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:day_protection\":5}}] 1"
+  },
+  {
+    "id": "stellarity:_technical/daybroken",
+    "namespace": "stellarity",
+    "raw_name": "_technical/daybroken",
+    "name": "Daybroken",
+    "name_vi": "Daybroken",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Stellarity-6.0.1",
+    "supported_items": "['minecraft:diamond_sword']",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Diamond Swords",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "minecraft:flame",
+        "name": "Flame"
+      }
+    ],
+    "description": "Technical signature enchant for Daybroken blade: inflicts scorching solar burn.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:_technical/daybroken\":1}}] 1"
+  },
+  {
+    "id": "expedition_fishing:deep_water",
+    "namespace": "expedition_fishing",
+    "raw_name": "deep_water",
+    "name": "Deep Diver",
+    "name_vi": "Deep Diver",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 14,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:surface_cast",
+        "name": "Surface Skimmer"
+      }
+    ],
+    "description": "Grants +5% / +10% Fishing Speed and +3% / +6% Rare Creature Chance when fishing in deep waters or caves (Y < 40).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:deep_water\":2}}] 1"
+  },
+  {
+    "id": "minecraft:density",
+    "namespace": "minecraft",
+    "raw_name": "density",
+    "name": "Density",
+    "name_vi": "Density",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 5,
+    "anvil_cost": 6,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/mace",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Maces",
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "nova_structures:function_only",
+        "name": "Bug Enchant"
+      },
+      {
+        "id": "stellarity:critical_strike",
+        "name": "Critical Strike"
+      },
+      {
+        "id": "mt:technical/grenade",
+        "name": "Grenade Window"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "mt:technical/kinetic_bomb",
+        "name": "Kinetic Bomb"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      }
+    ],
+    "description": "Increases Mace smash damage by +0.5 per block fallen per level (up to +2.5 per block at Lv V).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:density\":5}}] 1"
+  },
+  {
+    "id": "minecraft:depth_strider",
+    "namespace": "minecraft",
+    "raw_name": "depth_strider",
+    "name": "Depth Strider",
+    "name_vi": "Depth Strider",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 3,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 10,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Walker"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:crop_dance",
+        "name": "Crop Dance"
+      },
+      {
+        "id": "enchantencore:electric_walker",
+        "name": "Electric Walker"
+      },
+      {
+        "id": "minecraft:frost_walker",
+        "name": "Frost Walker"
+      },
+      {
+        "id": "enchantencore:grass_walker",
+        "name": "Grass Walker"
+      },
+      {
+        "id": "enchantencore:magma_walker",
+        "name": "Magma Walker"
+      },
+      {
+        "id": "enchantencore:summer_walker",
+        "name": "Summer Walker"
+      },
+      {
+        "id": "kattersstructures:web_walker",
+        "name": "Web Walker"
+      }
+    ],
+    "description": "Reduces underwater movement slowdown by +33% per level (100% full land speed underwater at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:depth_strider\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:dismount",
+    "namespace": "enchantencore",
+    "raw_name": "dismount",
+    "name": "Dismount",
+    "name_vi": "Dismount",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/lunge",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Spears",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Spear charge hits knock targets off their mounts or vehicles.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:dismount\":1}}] 1"
+  },
+  {
+    "id": "stellarity:_technical/draconic",
+    "namespace": "stellarity",
+    "raw_name": "_technical/draconic",
+    "name": "Draconic",
+    "name_vi": "Draconic",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Stellarity-6.0.1",
+    "supported_items": "['minecraft:netherite_sword']",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Netherite Swords",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Technical signature enchant for Draconic blade: unleashes Ender Dragon breath.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:_technical/draconic\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:echoing_aura",
+    "namespace": "enchantencore",
+    "raw_name": "echoing_aura",
+    "name": "Echoing Aura",
+    "name_vi": "Echoing Aura",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Cosmetic Aura"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:angry_aura",
+        "name": "Angry Aura"
+      },
+      {
+        "id": "enchantencore:aquatic_aura",
+        "name": "Aquatic Aura"
+      },
+      {
+        "id": "enchantencore:enchanted_aura",
+        "name": "Enchanted Aura"
+      },
+      {
+        "id": "enchantencore:ender_aura",
+        "name": "Ender Aura"
+      },
+      {
+        "id": "enchantencore:flaming_aura",
+        "name": "Flaming Aura"
+      },
+      {
+        "id": "enchantencore:heavenly_aura",
+        "name": "Heavenly Aura"
+      },
+      {
+        "id": "enchantencore:lovely_aura",
+        "name": "Lovely Aura"
+      },
+      {
+        "id": "enchantencore:lush_aura",
+        "name": "Lush Aura"
+      },
+      {
+        "id": "enchantencore:muddy_aura",
+        "name": "Muddy Aura"
+      },
+      {
+        "id": "enchantencore:ominous_aura",
+        "name": "Ominous Aura"
+      },
+      {
+        "id": "enchantencore:pale_aura",
+        "name": "Pale Aura"
+      },
+      {
+        "id": "enchantencore:sparking_aura",
+        "name": "Sparking Aura"
+      },
+      {
+        "id": "enchantencore:sticky_aura",
+        "name": "Sticky Aura"
+      },
+      {
+        "id": "enchantencore:trial_aura",
+        "name": "Trial Aura"
+      }
+    ],
+    "description": "Cosmetic aura: emits deep dark sculk and sonic echo particles while idle, moving, or taking hits.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:echoing_aura\":1}}] 1"
+  },
+  {
+    "id": "minecraft:efficiency",
+    "namespace": "minecraft",
+    "raw_name": "efficiency",
+    "name": "Efficiency",
+    "name_vi": "Efficiency",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 5,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 24,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/mining",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Pickaxes, Shovels, Axes, Hoes & Shears",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "enchantencore:plow",
+        "name": "Plow"
+      },
+      {
+        "id": "enchantencore:regrowth",
+        "name": "Regrowth"
+      }
+    ],
+    "description": "Increases mining speed by +(level^2 + 1) when using the proper tool (up to +26 speed at Lv V).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:efficiency\":5}}] 1"
+  },
+  {
+    "id": "enchantencore:electric_walker",
+    "namespace": "enchantencore",
+    "raw_name": "electric_walker",
+    "name": "Electric Walker",
+    "name_vi": "Electric Walker",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Walker"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:crop_dance",
+        "name": "Crop Dance"
+      },
+      {
+        "id": "minecraft:depth_strider",
+        "name": "Depth Strider"
+      },
+      {
+        "id": "minecraft:frost_walker",
+        "name": "Frost Walker"
+      },
+      {
+        "id": "enchantencore:grass_walker",
+        "name": "Grass Walker"
+      },
+      {
+        "id": "enchantencore:magma_walker",
+        "name": "Magma Walker"
+      },
+      {
+        "id": "enchantencore:summer_walker",
+        "name": "Summer Walker"
+      }
+    ],
+    "description": "Emits redstone dust particles and powers redstone blocks beneath the wearer's feet while moving.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:electric_walker\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:enchanted_aura",
+    "namespace": "enchantencore",
+    "raw_name": "enchanted_aura",
+    "name": "Enchanted Aura",
+    "name_vi": "Enchanted Aura",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Cosmetic Aura"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:angry_aura",
+        "name": "Angry Aura"
+      },
+      {
+        "id": "enchantencore:aquatic_aura",
+        "name": "Aquatic Aura"
+      },
+      {
+        "id": "enchantencore:echoing_aura",
+        "name": "Echoing Aura"
+      },
+      {
+        "id": "enchantencore:ender_aura",
+        "name": "Ender Aura"
+      },
+      {
+        "id": "enchantencore:flaming_aura",
+        "name": "Flaming Aura"
+      },
+      {
+        "id": "enchantencore:heavenly_aura",
+        "name": "Heavenly Aura"
+      },
+      {
+        "id": "enchantencore:lovely_aura",
+        "name": "Lovely Aura"
+      },
+      {
+        "id": "enchantencore:lush_aura",
+        "name": "Lush Aura"
+      },
+      {
+        "id": "enchantencore:muddy_aura",
+        "name": "Muddy Aura"
+      },
+      {
+        "id": "enchantencore:ominous_aura",
+        "name": "Ominous Aura"
+      },
+      {
+        "id": "enchantencore:pale_aura",
+        "name": "Pale Aura"
+      },
+      {
+        "id": "enchantencore:sparking_aura",
+        "name": "Sparking Aura"
+      },
+      {
+        "id": "enchantencore:sticky_aura",
+        "name": "Sticky Aura"
+      },
+      {
+        "id": "enchantencore:trial_aura",
+        "name": "Trial Aura"
+      }
+    ],
+    "description": "Cosmetic aura: emits mystical enchantment table runes while idle, moving, or taking hits.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:enchanted_aura\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:end_protection",
+    "namespace": "enchantencore",
+    "raw_name": "end_protection",
+    "name": "End Protection",
+    "name_vi": "End Protection",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 4,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [
+      "Armor Protection"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:antidote",
+        "name": "Antidote"
+      },
+      {
+        "id": "minecraft:blast_protection",
+        "name": "Blast Protection"
+      },
+      {
+        "id": "enchantencore:day_protection",
+        "name": "Day Protection"
+      },
+      {
+        "id": "minecraft:fire_protection",
+        "name": "Fire Protection"
+      },
+      {
+        "id": "enchantplus:armor/fury",
+        "name": "Fury"
+      },
+      {
+        "id": "enchantencore:nether_protection",
+        "name": "Nether Protection"
+      },
+      {
+        "id": "enchantencore:night_protection",
+        "name": "Night Protection"
+      },
+      {
+        "id": "enchantencore:perfect_protection",
+        "name": "Perfect Protection"
+      },
+      {
+        "id": "minecraft:projectile_protection",
+        "name": "Projectile Protection"
+      },
+      {
+        "id": "minecraft:protection",
+        "name": "Protection"
+      },
+      {
+        "id": "enchantplus:armor/lifeplus",
+        "name": "Walking Fortress"
+      },
+      {
+        "id": "enchantencore:wither_protection",
+        "name": "Wither Protection"
+      }
+    ],
+    "description": "Adds +1.5 protection EPF per level (up to +6 EPF at Lv IV) while in The End.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:end_protection\":4}}] 1"
+  },
+  {
+    "id": "enchantencore:ender_aura",
+    "namespace": "enchantencore",
+    "raw_name": "ender_aura",
+    "name": "Ender Aura",
+    "name_vi": "Ender Aura",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Cosmetic Aura"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:angry_aura",
+        "name": "Angry Aura"
+      },
+      {
+        "id": "enchantencore:aquatic_aura",
+        "name": "Aquatic Aura"
+      },
+      {
+        "id": "enchantencore:echoing_aura",
+        "name": "Echoing Aura"
+      },
+      {
+        "id": "enchantencore:enchanted_aura",
+        "name": "Enchanted Aura"
+      },
+      {
+        "id": "enchantencore:flaming_aura",
+        "name": "Flaming Aura"
+      },
+      {
+        "id": "enchantencore:heavenly_aura",
+        "name": "Heavenly Aura"
+      },
+      {
+        "id": "enchantencore:lovely_aura",
+        "name": "Lovely Aura"
+      },
+      {
+        "id": "enchantencore:lush_aura",
+        "name": "Lush Aura"
+      },
+      {
+        "id": "enchantencore:muddy_aura",
+        "name": "Muddy Aura"
+      },
+      {
+        "id": "enchantencore:ominous_aura",
+        "name": "Ominous Aura"
+      },
+      {
+        "id": "enchantencore:pale_aura",
+        "name": "Pale Aura"
+      },
+      {
+        "id": "enchantencore:sparking_aura",
+        "name": "Sparking Aura"
+      },
+      {
+        "id": "enchantencore:sticky_aura",
+        "name": "Sticky Aura"
+      },
+      {
+        "id": "enchantencore:trial_aura",
+        "name": "Trial Aura"
+      }
+    ],
+    "description": "Cosmetic aura: emits purple Ender portal particles while idle, moving, or taking hits.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ender_aura\":1}}] 1"
+  },
+  {
+    "id": "mt:treasure/fast",
+    "namespace": "mt",
+    "raw_name": "treasure/fast",
+    "name": "Fast Relic",
+    "name_vi": "Fast Relic",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Relic Armor",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Technical Mine Treasure relic modifier: boosted movement speed.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:treasure/fast\":1}}] 1"
+  },
+  {
+    "id": "minecraft:feather_falling",
+    "namespace": "minecraft",
+    "raw_name": "feather_falling",
+    "name": "Feather Falling",
+    "name_vi": "Feather Falling",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 4,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Reduces fall and Ender Pearl damage by +12% per level (up to +48% at Lv IV).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:feather_falling\":4}}] 1"
+  },
+  {
+    "id": "enchantencore:fetch",
+    "namespace": "enchantencore",
+    "raw_name": "fetch",
+    "name": "Fetch",
+    "name_vi": "Fetch",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "minecraft:wolf_armor",
+    "gear_categories": [
+      "mount"
+    ],
+    "supported_display": "Wolf Armor",
+    "exclusive_groups": [
+      "Wolf Armor"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:scent",
+        "name": "Scent"
+      }
+    ],
+    "description": "Armored wolves periodically retrieve nearby dropped items and bring them to their owner.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:fetch\":1}}] 1"
+  },
+  {
+    "id": "minecraft:fire_aspect",
+    "namespace": "minecraft",
+    "raw_name": "fire_aspect",
+    "name": "Fire Aspect",
+    "name_vi": "Fire Aspect",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Swords & Maces",
+    "exclusive_groups": [
+      "Aspect (Melee Status)",
+      "Sword Buffs (Fire / Ice / Web)"
+    ],
+    "conflicts": [
+      {
+        "id": "stellarity:_technical/daybroken",
+        "name": "Daybroken"
+      },
+      {
+        "id": "enchantencore:guard",
+        "name": "Guard"
+      },
+      {
+        "id": "enchantencore:hunger_aspect",
+        "name": "Hunger Aspect"
+      },
+      {
+        "id": "enchantsplus:ice_aspect",
+        "name": "Icicle Impale"
+      },
+      {
+        "id": "stellarity:_technical/infernal_infusion",
+        "name": "Infernal Infusion"
+      },
+      {
+        "id": "enchantencore:infested_aspect",
+        "name": "Infested Aspect"
+      },
+      {
+        "id": "enchantencore:levitation_aspect",
+        "name": "Levitation Aspect"
+      },
+      {
+        "id": "enchantencore:oozing_aspect",
+        "name": "Oozing Aspect"
+      },
+      {
+        "id": "enchantencore:pacifier",
+        "name": "Pacifier"
+      },
+      {
+        "id": "enchantencore:poison_aspect",
+        "name": "Poison Aspect"
+      },
+      {
+        "id": "enchantencore:slowness_aspect",
+        "name": "Slowness Aspect"
+      },
+      {
+        "id": "stellarity:_technical/soul_harvest",
+        "name": "Soul Harvest"
+      },
+      {
+        "id": "enchantencore:weakness_aspect",
+        "name": "Weakness Aspect"
+      },
+      {
+        "id": "enchantencore:weaving_aspect",
+        "name": "Weaving Aspect"
+      },
+      {
+        "id": "enchantsplus:websnare",
+        "name": "Websnare"
+      },
+      {
+        "id": "enchantencore:wind_aspect",
+        "name": "Wind Aspect"
+      },
+      {
+        "id": "enchantencore:wither_aspect",
+        "name": "Wither Aspect"
+      }
+    ],
+    "description": "Ignites targets on melee hit for +4 seconds per level (up to 8s at Lv II).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:fire_aspect\":2}}] 1"
+  },
+  {
+    "id": "minecraft:fire_protection",
+    "namespace": "minecraft",
+    "raw_name": "fire_protection",
+    "name": "Fire Protection",
+    "name_vi": "Fire Protection",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 4,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 10,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [
+      "Armor Protection"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:antidote",
+        "name": "Antidote"
+      },
+      {
+        "id": "minecraft:blast_protection",
+        "name": "Blast Protection"
+      },
+      {
+        "id": "enchantencore:day_protection",
+        "name": "Day Protection"
+      },
+      {
+        "id": "enchantencore:end_protection",
+        "name": "End Protection"
+      },
+      {
+        "id": "enchantplus:armor/fury",
+        "name": "Fury"
+      },
+      {
+        "id": "enchantencore:nether_protection",
+        "name": "Nether Protection"
+      },
+      {
+        "id": "enchantencore:night_protection",
+        "name": "Night Protection"
+      },
+      {
+        "id": "enchantencore:perfect_protection",
+        "name": "Perfect Protection"
+      },
+      {
+        "id": "minecraft:projectile_protection",
+        "name": "Projectile Protection"
+      },
+      {
+        "id": "minecraft:protection",
+        "name": "Protection"
+      },
+      {
+        "id": "enchantplus:armor/lifeplus",
+        "name": "Walking Fortress"
+      },
+      {
+        "id": "enchantencore:wither_protection",
+        "name": "Wither Protection"
+      }
+    ],
+    "description": "Reduces fire damage by +8% per level (up to +32% at Lv IV per piece) and cuts burn duration by -15% per level.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:fire_protection\":4}}] 1"
+  },
+  {
+    "id": "minecraft:flame",
+    "namespace": "minecraft",
+    "raw_name": "flame",
+    "name": "Flame",
+    "name_vi": "Flame",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/bow",
+    "gear_categories": [
+      "ranged"
+    ],
+    "supported_display": "Bows",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "stellarity:_technical/daybroken",
+        "name": "Daybroken"
+      },
+      {
+        "id": "stellarity:_technical/infernal_infusion",
+        "name": "Infernal Infusion"
+      },
+      {
+        "id": "stellarity:_technical/soul_harvest",
+        "name": "Soul Harvest"
+      }
+    ],
+    "description": "Arrows become flaming projectiles, igniting targets for 5 seconds and lighting TNT/campfires.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:flame\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:flaming_aura",
+    "namespace": "enchantencore",
+    "raw_name": "flaming_aura",
+    "name": "Flaming Aura",
+    "name_vi": "Flaming Aura",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Cosmetic Aura"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:angry_aura",
+        "name": "Angry Aura"
+      },
+      {
+        "id": "enchantencore:aquatic_aura",
+        "name": "Aquatic Aura"
+      },
+      {
+        "id": "enchantencore:echoing_aura",
+        "name": "Echoing Aura"
+      },
+      {
+        "id": "enchantencore:enchanted_aura",
+        "name": "Enchanted Aura"
+      },
+      {
+        "id": "enchantencore:ender_aura",
+        "name": "Ender Aura"
+      },
+      {
+        "id": "enchantencore:heavenly_aura",
+        "name": "Heavenly Aura"
+      },
+      {
+        "id": "enchantencore:lovely_aura",
+        "name": "Lovely Aura"
+      },
+      {
+        "id": "enchantencore:lush_aura",
+        "name": "Lush Aura"
+      },
+      {
+        "id": "enchantencore:muddy_aura",
+        "name": "Muddy Aura"
+      },
+      {
+        "id": "enchantencore:ominous_aura",
+        "name": "Ominous Aura"
+      },
+      {
+        "id": "enchantencore:pale_aura",
+        "name": "Pale Aura"
+      },
+      {
+        "id": "enchantencore:sparking_aura",
+        "name": "Sparking Aura"
+      },
+      {
+        "id": "enchantencore:sticky_aura",
+        "name": "Sticky Aura"
+      },
+      {
+        "id": "enchantencore:trial_aura",
+        "name": "Trial Aura"
+      }
+    ],
+    "description": "Cosmetic aura: emits flame and ember particles while idle, moving, or taking hits.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:flaming_aura\":1}}] 1"
+  },
+  {
+    "id": "mt:technical/floor_is_spikes",
+    "namespace": "mt",
+    "raw_name": "technical/floor_is_spikes",
+    "name": "Floor Is Spikes",
+    "name_vi": "Floor Is Spikes",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:acacia_button",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Dungeon Trigger",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Technical dungeon spike-trap trigger.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/floor_is_spikes\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:gallop",
+    "namespace": "enchantencore",
+    "raw_name": "gallop",
+    "name": "Gallop",
+    "name_vi": "Gallop",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 3,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "minecraft:saddle",
+    "gear_categories": [
+      "mount"
+    ],
+    "supported_display": "Saddles",
+    "exclusive_groups": [
+      "Saddle / Mount"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:surfer",
+        "name": "Surfer"
+      }
+    ],
+    "description": "Increases mount movement speed by +0.075 (+0.05 per level above I, up to +0.175 at Lv III) while ridden.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:gallop\":3}}] 1"
+  },
+  {
+    "id": "expedition_fishing:gentle_reel",
+    "namespace": "expedition_fishing",
+    "raw_name": "gentle_reel",
+    "name": "Gentle Reel",
+    "name_vi": "Gentle Reel",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 16,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Reduces thorny/retaliation damage from aquatic mobs by 25% / 50% and prevents durability loss on empty reels.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:gentle_reel\":2}}] 1"
+  },
+  {
+    "id": "mt:technical/giga_bore",
+    "namespace": "mt",
+    "raw_name": "technical/giga_bore",
+    "name": "Giga Bore",
+    "name_vi": "Giga Bore",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:enchantable/mining",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Mine Treasure Pickaxes",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Technical Mine Treasure 3x3 mining trigger.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/giga_bore\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:grass_walker",
+    "namespace": "enchantencore",
+    "raw_name": "grass_walker",
+    "name": "Grass Walker",
+    "name_vi": "Grass Walker",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Walker"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:crop_dance",
+        "name": "Crop Dance"
+      },
+      {
+        "id": "minecraft:depth_strider",
+        "name": "Depth Strider"
+      },
+      {
+        "id": "enchantencore:electric_walker",
+        "name": "Electric Walker"
+      },
+      {
+        "id": "minecraft:frost_walker",
+        "name": "Frost Walker"
+      },
+      {
+        "id": "enchantencore:magma_walker",
+        "name": "Magma Walker"
+      },
+      {
+        "id": "enchantencore:summer_walker",
+        "name": "Summer Walker"
+      }
+    ],
+    "description": "Converts nearby dirt beneath the wearer into grass blocks while walking and grants immunity to sweet berry bush damage.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:grass_walker\":1}}] 1"
+  },
+  {
+    "id": "mt:technical/grenade",
+    "namespace": "mt",
+    "raw_name": "technical/grenade",
+    "name": "Grenade Window",
+    "name_vi": "Grenade Window",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      }
+    ],
+    "description": "Technical 2-second delayed explosive charge on hit.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/grenade\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:guard",
+    "namespace": "enchantencore",
+    "raw_name": "guard",
+    "name": "Guard",
+    "name_vi": "Guard",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:can_block",
+    "gear_categories": [
+      "weapon",
+      "armor"
+    ],
+    "supported_display": "Swords & Shields",
+    "exclusive_groups": [
+      "Aspect (Melee Status)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "enchantencore:hunger_aspect",
+        "name": "Hunger Aspect"
+      },
+      {
+        "id": "enchantencore:infested_aspect",
+        "name": "Infested Aspect"
+      },
+      {
+        "id": "enchantencore:levitation_aspect",
+        "name": "Levitation Aspect"
+      },
+      {
+        "id": "enchantencore:oozing_aspect",
+        "name": "Oozing Aspect"
+      },
+      {
+        "id": "enchantencore:pacifier",
+        "name": "Pacifier"
+      },
+      {
+        "id": "enchantencore:poison_aspect",
+        "name": "Poison Aspect"
+      },
+      {
+        "id": "enchantencore:slowness_aspect",
+        "name": "Slowness Aspect"
+      },
+      {
+        "id": "enchantencore:weakness_aspect",
+        "name": "Weakness Aspect"
+      },
+      {
+        "id": "enchantencore:weaving_aspect",
+        "name": "Weaving Aspect"
+      },
+      {
+        "id": "enchantencore:wind_aspect",
+        "name": "Wind Aspect"
+      }
+    ],
+    "description": "Improves blocking posture and defensive mitigation while holding or raising the item.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:guard\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:handyman",
+    "namespace": "enchantencore",
+    "raw_name": "handyman",
+    "name": "Handyman",
+    "name_vi": "Handyman",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#enchantencore:all_enchantable",
+    "gear_categories": [
+      "universal"
+    ],
+    "supported_display": "All Enchantable Gear",
+    "exclusive_groups": [
+      "Auto-Repair / Durability"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:corrosion_curse",
+        "name": "Curse of Corrosion"
+      },
+      {
+        "id": "kattersstructures:crystal_curse",
+        "name": "Curse of Crystal"
+      },
+      {
+        "id": "enchantencore:emberweave",
+        "name": "Emberweave"
+      },
+      {
+        "id": "enchantencore:infinity_durability",
+        "name": "Infinite Durability"
+      },
+      {
+        "id": "minecraft:mending",
+        "name": "Mending"
+      },
+      {
+        "id": "enchantencore:moonweave",
+        "name": "Moonweave"
+      },
+      {
+        "id": "nova_structures:photosynthesis",
+        "name": "Photosynthesis"
+      },
+      {
+        "id": "enchantencore:rainweave",
+        "name": "Rainweave"
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "name": "Sacrifice"
+      },
+      {
+        "id": "enchantencore:tideweave",
+        "name": "Tideweave"
+      },
+      {
+        "id": "enchantencore:voidweave",
+        "name": "Voidweave"
+      }
+    ],
+    "description": "Gradually repairs the equipped item's durability while moving.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:handyman\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:harpoon",
+    "namespace": "enchantencore",
+    "raw_name": "harpoon",
+    "name": "Harpoon",
+    "name_vi": "Harpoon",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Reeling in hooked entities pulls them forcefully toward the angler with extra force.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:harpoon\":1}}] 1"
+  },
+  {
+    "id": "mt:technical/healing_flower",
+    "namespace": "mt",
+    "raw_name": "technical/healing_flower",
+    "name": "Healing Flower",
+    "name_vi": "Healing Flower",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "minecraft:acacia_button",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Dungeon Trigger",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Technical dungeon healing-flower aura trigger.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/healing_flower\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:heavenly_aura",
+    "namespace": "enchantencore",
+    "raw_name": "heavenly_aura",
+    "name": "Heavenly Aura",
+    "name_vi": "Heavenly Aura",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Cosmetic Aura"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:angry_aura",
+        "name": "Angry Aura"
+      },
+      {
+        "id": "enchantencore:aquatic_aura",
+        "name": "Aquatic Aura"
+      },
+      {
+        "id": "enchantencore:echoing_aura",
+        "name": "Echoing Aura"
+      },
+      {
+        "id": "enchantencore:enchanted_aura",
+        "name": "Enchanted Aura"
+      },
+      {
+        "id": "enchantencore:ender_aura",
+        "name": "Ender Aura"
+      },
+      {
+        "id": "enchantencore:flaming_aura",
+        "name": "Flaming Aura"
+      },
+      {
+        "id": "enchantencore:lovely_aura",
+        "name": "Lovely Aura"
+      },
+      {
+        "id": "enchantencore:lush_aura",
+        "name": "Lush Aura"
+      },
+      {
+        "id": "enchantencore:muddy_aura",
+        "name": "Muddy Aura"
+      },
+      {
+        "id": "enchantencore:ominous_aura",
+        "name": "Ominous Aura"
+      },
+      {
+        "id": "enchantencore:pale_aura",
+        "name": "Pale Aura"
+      },
+      {
+        "id": "enchantencore:sparking_aura",
+        "name": "Sparking Aura"
+      },
+      {
+        "id": "enchantencore:sticky_aura",
+        "name": "Sticky Aura"
+      },
+      {
+        "id": "enchantencore:trial_aura",
+        "name": "Trial Aura"
+      }
+    ],
+    "description": "Cosmetic aura: emits golden halo and glowing particles while idle, moving, or taking hits.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:heavenly_aura\":1}}] 1"
+  },
+  {
+    "id": "kattersstructures:heavy",
+    "namespace": "kattersstructures",
+    "raw_name": "heavy",
+    "name": "Heavy",
+    "name_vi": "Heavy",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 5,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Katters Structures v2.9",
+    "supported_items": "#minecraft:enchantable/weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "enchantencore:leech",
+        "name": "Leech"
+      },
+      {
+        "id": "enchantencore:levitation_aspect",
+        "name": "Levitation Aspect"
+      },
+      {
+        "id": "enchantencore:poppy_peace",
+        "name": "Poppy Peace"
+      },
+      {
+        "id": "enchantencore:wind_aspect",
+        "name": "Wind Aspect"
+      }
+    ],
+    "description": "Adds +2 damage (+0.75/lvl above I) and +0.5 knockback (+0.25/lvl above I), but adds +20% gravity and -50% attack speed.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:heavy\":5}}] 1"
+  },
+  {
+    "id": "expedition_fishing:heavy_sinker",
+    "namespace": "expedition_fishing",
+    "raw_name": "heavy_sinker",
+    "name": "Heavy Sinker",
+    "name_vi": "Heavy Sinker",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 3,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 18,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases average catch weight (kg) by +3% per level (up to +9% heavier catches at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:heavy_sinker\":3}}] 1"
+  },
+  {
+    "id": "enchantencore:hunger_aspect",
+    "namespace": "enchantencore",
+    "raw_name": "hunger_aspect",
+    "name": "Hunger Aspect",
+    "name_vi": "Hunger Aspect",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Aspect (Melee Status)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "enchantencore:guard",
+        "name": "Guard"
+      },
+      {
+        "id": "enchantencore:infested_aspect",
+        "name": "Infested Aspect"
+      },
+      {
+        "id": "enchantencore:levitation_aspect",
+        "name": "Levitation Aspect"
+      },
+      {
+        "id": "enchantencore:oozing_aspect",
+        "name": "Oozing Aspect"
+      },
+      {
+        "id": "enchantencore:pacifier",
+        "name": "Pacifier"
+      },
+      {
+        "id": "enchantencore:poison_aspect",
+        "name": "Poison Aspect"
+      },
+      {
+        "id": "enchantencore:slowness_aspect",
+        "name": "Slowness Aspect"
+      },
+      {
+        "id": "enchantencore:weakness_aspect",
+        "name": "Weakness Aspect"
+      },
+      {
+        "id": "enchantencore:weaving_aspect",
+        "name": "Weaving Aspect"
+      },
+      {
+        "id": "enchantencore:wind_aspect",
+        "name": "Wind Aspect"
+      },
+      {
+        "id": "enchantencore:wither_aspect",
+        "name": "Wither Aspect"
+      }
+    ],
+    "description": "Melee hits inflict Hunger for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hunger_aspect\":2}}] 1"
+  },
+  {
+    "id": "nova_structures:hydro_veil",
+    "namespace": "nova_structures",
+    "raw_name": "hydro_veil",
+    "name": "Hydro Veil",
+    "name_vi": "Hydro Veil",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 4,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Dungeons and Taverns v6.1.0",
+    "supported_items": "#minecraft:harnesses",
+    "gear_categories": [
+      "mount"
+    ],
+    "supported_display": "Happy Ghast Harnesses",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Grants Happy Ghast -25% burn time per level, +25% explosion knockback resistance per level, and +3.75 fire/blast protection EPF per level (up to +15 at Lv IV).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:hydro_veil\":4}}] 1"
+  },
+  {
+    "id": "mt:treasure/hypersonic",
+    "namespace": "mt",
+    "raw_name": "treasure/hypersonic",
+    "name": "Hypersonic Relic",
+    "name_vi": "Hypersonic Relic",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Relic Armor",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Technical Mine Treasure relic modifier: extreme movement speed.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:treasure/hypersonic\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:illumination",
+    "namespace": "enchantencore",
+    "raw_name": "illumination",
+    "name": "Illumination",
+    "name_vi": "Illumination",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [
+      "Helmet Utility"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:heroes_crown",
+        "name": "Hero's Crown"
+      },
+      {
+        "id": "enchantencore:night_vision",
+        "name": "Night Vision"
+      }
+    ],
+    "description": "Emits a dynamic light source around the wearer's head in dark areas.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:illumination\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:impale_rush",
+    "namespace": "enchantencore",
+    "raw_name": "impale_rush",
+    "name": "Impale Rush",
+    "name_vi": "Impale Rush",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/lunge",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Spears",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Spear charge attacks pierce targets with extra momentum and impact force.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:impale_rush\":1}}] 1"
+  },
+  {
+    "id": "minecraft:impaling",
+    "namespace": "minecraft",
+    "raw_name": "impaling",
+    "name": "Impaling",
+    "name_vi": "Impaling",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 5,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "minecraft (vanilla)",
+    "supported_items": "#minecraft:enchantable/trident",
+    "gear_categories": [
+      "ranged",
+      "weapon"
+    ],
+    "supported_display": "Tridents",
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)"
+    ],
+    "conflicts": [
+      {
+        "id": "nova_structures:aerials_bane",
+        "name": "Aerial's Bane"
+      },
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "nova_structures:function_only",
+        "name": "Bug Enchant"
+      },
+      {
+        "id": "stellarity:critical_strike",
+        "name": "Critical Strike"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "mt:technical/grenade",
+        "name": "Grenade Window"
+      },
+      {
+        "id": "mt:technical/kinetic_bomb",
+        "name": "Kinetic Bomb"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      }
+    ],
+    "description": "Increases trident damage against aquatic mobs by +2 per level (up to +10 at Lv V).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:impaling\":5}}] 1"
+  },
+  {
+    "id": "stellarity:_technical/infernal_infusion",
+    "namespace": "stellarity",
+    "raw_name": "_technical/infernal_infusion",
+    "name": "Infernal Infusion",
+    "name_vi": "Infernal Infusion",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "Stellarity-6.0.1",
+    "supported_items": "['minecraft:netherite_sword', 'minecraft:crossbow']",
+    "gear_categories": [
+      "weapon",
+      "ranged"
+    ],
+    "supported_display": "Netherite Swords & Crossbows",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "minecraft:flame",
+        "name": "Flame"
+      }
+    ],
+    "description": "Technical signature enchant: launches blazing infernal fireballs.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:_technical/infernal_infusion\":1}}] 1"
+  },
+  {
+    "id": "enchantencore:infested_aspect",
+    "namespace": "enchantencore",
+    "raw_name": "infested_aspect",
+    "name": "Infested Aspect",
+    "name_vi": "Infested Aspect",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Aspect (Melee Status)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:fire_aspect",
+        "name": "Fire Aspect"
+      },
+      {
+        "id": "enchantencore:guard",
+        "name": "Guard"
+      },
+      {
+        "id": "enchantencore:hunger_aspect",
+        "name": "Hunger Aspect"
+      },
+      {
+        "id": "enchantencore:levitation_aspect",
+        "name": "Levitation Aspect"
+      },
+      {
+        "id": "enchantencore:oozing_aspect",
+        "name": "Oozing Aspect"
+      },
+      {
+        "id": "enchantencore:pacifier",
+        "name": "Pacifier"
+      },
+      {
+        "id": "enchantencore:poison_aspect",
+        "name": "Poison Aspect"
+      },
+      {
+        "id": "enchantencore:slowness_aspect",
+        "name": "Slowness Aspect"
+      },
+      {
+        "id": "enchantencore:weakness_aspect",
+        "name": "Weakness Aspect"
+      },
+      {
+        "id": "enchantencore:weaving_aspect",
+        "name": "Weaving Aspect"
+      },
+      {
+        "id": "enchantencore:wind_aspect",
+        "name": "Wind Aspect"
+      },
+      {
+        "id": "enchantencore:wither_aspect",
+        "name": "Wither Aspect"
+      }
+    ],
+    "description": "Melee hits inflict Infested for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:infested_aspect\":2}}] 1"
+  },
+  {
+    "id": "mt:technical/kinetic_blast",
+    "namespace": "mt",
+    "raw_name": "technical/kinetic_blast",
+    "name": "Kinetic Blast",
+    "name_vi": "Kinetic Blast",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 255,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmets",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Technical Mine Treasure kinetic blast effect.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/kinetic_blast\":255}}] 1"
+  },
+  {
+    "id": "mt:technical/kinetic_bomb",
+    "namespace": "mt",
+    "raw_name": "technical/kinetic_bomb",
+    "name": "Kinetic Bomb",
+    "name_vi": "Kinetic Bomb",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "mine-treasure-1.6.5",
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "gear_categories": [
+      "weapon"
+    ],
+    "supported_display": "Melee Weapons",
+    "exclusive_groups": [
+      "Damage (Sharpness / Bane)"
+    ],
+    "conflicts": [
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "name": "Bane of Arthropods"
+      },
+      {
+        "id": "enchantencore:bane_of_bosses",
+        "name": "Bane of Bosses"
+      },
+      {
+        "id": "enchantencore:bane_of_endborn",
+        "name": "Bane of Endborn"
+      },
+      {
+        "id": "enchantencore:bane_of_netherborn",
+        "name": "Bane of Netherborn"
+      },
+      {
+        "id": "enchantencore:bane_of_raiders",
+        "name": "Bane of Raiders"
+      },
+      {
+        "id": "minecraft:breach",
+        "name": "Breach"
+      },
+      {
+        "id": "minecraft:density",
+        "name": "Density"
+      },
+      {
+        "id": "minecraft:impaling",
+        "name": "Impaling"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "name": "Sharpness"
+      },
+      {
+        "id": "minecraft:smite",
+        "name": "Smite"
+      }
+    ],
+    "description": "Technical pressurized kinetic blast wave on strike.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/kinetic_bomb\":1}}] 1"
+  },
+  {
+    "id": "minecraft:knockback",
+    "namespace": "minecraft",
+    "raw_name": "knockback",
+    "name": "Knockback",
+    "name_vi": "Knockback",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 10,
+    "tradeable": true,
     "loot": true,
     "source_pack": "minecraft (vanilla)",
     "supported_items": "#minecraft:enchantable/sword",
@@ -9815,8 +13958,72 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Swords",
     "exclusive_groups": [],
     "conflicts": [],
-    "description": "Increases mob loot drops by +1 max common drop and +1% rare drop chance per level (up to +3 at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:looting\":3}}] 1"
+    "description": "Increases melee knockback distance by +3 blocks per level (up to +6 blocks at Lv II).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:knockback\":2}}] 1"
+  },
+  {
+    "id": "enchantencore:leaf_jumper",
+    "namespace": "enchantencore",
+    "raw_name": "leaf_jumper",
+    "name": "Leaf Jumper",
+    "name_vi": "Leaf Jumper",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 1,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "enchantments_encore",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [
+      "Boots Movement"
+    ],
+    "conflicts": [
+      {
+        "id": "enchantencore:bounce",
+        "name": "Bounce"
+      },
+      {
+        "id": "bound:bound",
+        "name": "Bound"
+      },
+      {
+        "id": "enchantencore:end_speed",
+        "name": "End Speed"
+      },
+      {
+        "id": "enchantencore:invisibility_cloak",
+        "name": "Invisibility Cloak"
+      },
+      {
+        "id": "enchantencore:path_speed",
+        "name": "Path Speed"
+      },
+      {
+        "id": "enchantencore:sand_speed",
+        "name": "Sand Speed"
+      },
+      {
+        "id": "enchantencore:sonic",
+        "name": "Sonic"
+      },
+      {
+        "id": "minecraft:soul_speed",
+        "name": "Soul Speed"
+      },
+      {
+        "id": "enchantencore:strafe",
+        "name": "Strafe"
+      }
+    ],
+    "description": "Generates temporary leaf platforms beneath your feet when jumping mid-air.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:leaf_jumper\":1}}] 1"
   },
   {
     "id": "enchantencore:lovely_aura",
@@ -9825,7 +14032,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Lovely Aura",
     "name_vi": "Lovely Aura",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -9909,7 +14116,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Loyalty",
     "name_vi": "Loyalty",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -9962,7 +14169,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Luck of the Sea",
     "name_vi": "Luck of the Sea",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -9981,13 +14188,38 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:luck_of_the_sea\":3}}] 1"
   },
   {
+    "id": "expedition_fishing:luminous_bobber",
+    "namespace": "expedition_fishing",
+    "raw_name": "luminous_bobber",
+    "name": "Luminous Bobber",
+    "name_vi": "Luminous Bobber",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 15,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Causes the fishing bobber to emit a bright beacon glow in darkness, caves, Nether lava, and the End Void.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:luminous_bobber\":1}}] 1"
+  },
+  {
     "id": "minecraft:lure",
     "namespace": "minecraft",
     "raw_name": "lure",
     "name": "Lure",
     "name_vi": "Lure",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -10012,7 +14244,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Lush Aura",
     "name_vi": "Lush Aura",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -10090,274 +14322,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:lush_aura\":1}}] 1"
   },
   {
-    "id": "mt:armor/lush_leggings",
-    "namespace": "mt",
-    "raw_name": "armor/lush_leggings",
-    "name": "Lush Leggings (Deadly Thorns)",
-    "name_vi": "Lush Leggings (Deadly Thorns)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:leg_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Leggings",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Reflects lethal thorny damage back at melee attackers.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/lush_leggings\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:magic_protection",
-    "namespace": "enchantencore",
-    "raw_name": "magic_protection",
-    "name": "Magic Protection",
-    "name_vi": "Magic Protection",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 2,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Adds +0.4 magic damage protection EPF per level (up to +1.6 EPF per piece at Lv IV).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:magic_protection\":4}}] 1"
-  },
-  {
-    "id": "enchantencore:magma_walker",
-    "namespace": "enchantencore",
-    "raw_name": "magma_walker",
-    "name": "Magma Walker",
-    "name_vi": "Magma Walker",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Walker"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:crop_dance",
-        "name": "Crop Dance"
-      },
-      {
-        "id": "minecraft:depth_strider",
-        "name": "Depth Strider"
-      },
-      {
-        "id": "enchantencore:electric_walker",
-        "name": "Electric Walker"
-      },
-      {
-        "id": "minecraft:frost_walker",
-        "name": "Frost Walker"
-      },
-      {
-        "id": "enchantencore:grass_walker",
-        "name": "Grass Walker"
-      },
-      {
-        "id": "enchantencore:summer_walker",
-        "name": "Summer Walker"
-      }
-    ],
-    "description": "Freezes lava beneath the wearer's feet into temporary magma blocks and grants immunity to magma block damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:magma_walker\":1}}] 1"
-  },
-  {
-    "id": "minecraft:mending",
-    "namespace": "minecraft",
-    "raw_name": "mending",
-    "name": "Mending",
-    "name_vi": "Mending",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Durable Gear",
-    "exclusive_groups": [
-      "Auto-Repair / Durability",
-      "Bow (Infinity / Mending)"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:corrosion_curse",
-        "name": "Curse of Corrosion"
-      },
-      {
-        "id": "kattersstructures:crystal_curse",
-        "name": "Curse of Crystal"
-      },
-      {
-        "id": "enchantplus:durability/curse_of_enchant",
-        "name": "Curse of Enchant"
-      },
-      {
-        "id": "enchantencore:emberweave",
-        "name": "Emberweave"
-      },
-      {
-        "id": "enchantencore:handyman",
-        "name": "Handyman"
-      },
-      {
-        "id": "enchantencore:infinity_durability",
-        "name": "Infinite Durability"
-      },
-      {
-        "id": "minecraft:infinity",
-        "name": "Infinity"
-      },
-      {
-        "id": "enchantencore:moonweave",
-        "name": "Moonweave"
-      },
-      {
-        "id": "nova_structures:photosynthesis",
-        "name": "Photosynthesis"
-      },
-      {
-        "id": "enchantencore:rainweave",
-        "name": "Rainweave"
-      },
-      {
-        "id": "enchantencore:sacrifice",
-        "name": "Sacrifice"
-      },
-      {
-        "id": "enchantencore:tideweave",
-        "name": "Tideweave"
-      },
-      {
-        "id": "enchantencore:voidweave",
-        "name": "Voidweave"
-      }
-    ],
-    "description": "Repairs item durability using collected XP orbs (+2 durability per 1 XP point).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:mending\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:meteor",
-    "namespace": "enchantencore",
-    "raw_name": "meteor",
-    "name": "Meteor",
-    "name_vi": "Meteor",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "minecraft:mace",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Maces",
-    "exclusive_groups": [
-      "Mace Strike"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:boltbringer",
-        "name": "Boltbringer"
-      }
-    ],
-    "description": "Mace smash attacks from at least 8 blocks high ignite the surrounding area in fire.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:meteor\":1}}] 1"
-  },
-  {
-    "id": "nova_structures:power",
-    "namespace": "nova_structures",
-    "raw_name": "power",
-    "name": "Might",
-    "name_vi": "Might",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#minecraft:enchantable/crossbow",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Crossbows",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "nova_structures:aerials_bane",
-        "name": "Aerial's Bane"
-      },
-      {
-        "id": "nova_structures:ghasted",
-        "name": "Ghasted"
-      },
-      {
-        "id": "nova_structures:gravity",
-        "name": "Gravity"
-      },
-      {
-        "id": "minecraft:multishot",
-        "name": "Multishot"
-      },
-      {
-        "id": "minecraft:piercing",
-        "name": "Piercing"
-      }
-    ],
-    "description": "Increases Crossbow arrow damage by +1 base +0.5 per level above I (up to +3 bonus damage at Lv V).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:power\":5}}] 1"
-  },
-  {
     "id": "stellarity:_technical/mighty_wind",
     "namespace": "stellarity",
     "raw_name": "_technical/mighty_wind",
     "name": "Mighty Wind",
     "name_vi": "Mighty Wind",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -10390,114 +14361,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:_technical/mighty_wind\":1}}] 1"
   },
   {
-    "id": "enchantencore:moonwalk",
-    "namespace": "enchantencore",
-    "raw_name": "moonwalk",
-    "name": "Moonwalk",
-    "name_vi": "Moonwalk",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "['minecraft:elytra', 'minecraft:diamond_horse_armor', 'minecraft:golden_horse_armor', 'minecraft:iron_horse_armor', 'minecraft:leather_horse_armor', 'minecraft:netherite_horse_armor']",
-    "gear_categories": [
-      "armor",
-      "mount"
-    ],
-    "supported_display": "Elytra & Horse Armor",
-    "exclusive_groups": [
-      "Horse Armor"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:pegasus",
-        "name": "Pegasus"
-      },
-      {
-        "id": "enchantencore:refuel",
-        "name": "Refuel"
-      }
-    ],
-    "description": "Reduces gravity by -0.03 (-0.015 per level above I, up to -0.06 at Lv III) for higher jumps and slower falls.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:moonwalk\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:moonweave",
-    "namespace": "enchantencore",
-    "raw_name": "moonweave",
-    "name": "Moonweave",
-    "name_vi": "Moonweave",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Durable Gear",
-    "exclusive_groups": [
-      "Auto-Repair / Durability"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:corrosion_curse",
-        "name": "Curse of Corrosion"
-      },
-      {
-        "id": "enchantencore:emberweave",
-        "name": "Emberweave"
-      },
-      {
-        "id": "enchantencore:handyman",
-        "name": "Handyman"
-      },
-      {
-        "id": "minecraft:mending",
-        "name": "Mending"
-      },
-      {
-        "id": "nova_structures:photosynthesis",
-        "name": "Photosynthesis"
-      },
-      {
-        "id": "enchantencore:rainweave",
-        "name": "Rainweave"
-      },
-      {
-        "id": "enchantencore:sacrifice",
-        "name": "Sacrifice"
-      },
-      {
-        "id": "enchantencore:tideweave",
-        "name": "Tideweave"
-      },
-      {
-        "id": "enchantencore:voidweave",
-        "name": "Voidweave"
-      }
-    ],
-    "description": "Passively repairs item durability over time under open night sky.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:moonweave\":1}}] 1"
-  },
-  {
     "id": "enchantencore:muddy_aura",
     "namespace": "enchantencore",
     "raw_name": "muddy_aura",
     "name": "Muddy Aura",
     "name_vi": "Muddy Aura",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -10575,86 +14445,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:muddy_aura\":1}}] 1"
   },
   {
-    "id": "minecraft:multishot",
-    "namespace": "minecraft",
-    "raw_name": "multishot",
-    "name": "Multishot",
-    "name_vi": "Multishot",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/crossbow",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Crossbows",
-    "exclusive_groups": [
-      "Crossbow (Multishot / Piercing)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:ghasted",
-        "name": "Ghasted"
-      },
-      {
-        "id": "nova_structures:gravity",
-        "name": "Gravity"
-      },
-      {
-        "id": "nova_structures:power",
-        "name": "Might"
-      },
-      {
-        "id": "minecraft:piercing",
-        "name": "Piercing"
-      },
-      {
-        "id": "enchantplus:bow/rebound",
-        "name": "Rebound"
-      }
-    ],
-    "description": "Fires 3 arrows or firework rockets in a spread while consuming only 1 ammo.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:multishot\":1}}] 1"
-  },
-  {
-    "id": "mt:armor/mushroom_boots",
-    "namespace": "mt",
-    "raw_name": "armor/mushroom_boots",
-    "name": "Mushroom Boots",
-    "name_vi": "Mushroom Boots",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Reduces fall damage and adds a bouncy landing.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/mushroom_boots\":1}}] 1"
-  },
-  {
     "id": "mt:technical/necromancy",
     "namespace": "mt",
     "raw_name": "technical/necromancy",
     "name": "Necromancy",
     "name_vi": "Necromancy",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -10673,38 +14470,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/necromancy\":1}}] 1"
   },
   {
-    "id": "mt:armor/nether_leggings",
-    "namespace": "mt",
-    "raw_name": "armor/nether_leggings",
-    "name": "Nether Leggings",
-    "name_vi": "Nether Leggings",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#leg_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Leggings",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Provides comprehensive fire and lava resistance in the Nether.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/nether_leggings\":1}}] 1"
-  },
-  {
     "id": "enchantencore:nether_protection",
     "namespace": "enchantencore",
     "raw_name": "nether_protection",
     "name": "Nether Protection",
     "name_vi": "Nether Protection",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 4,
     "anvil_cost": 4,
     "table": true,
@@ -10780,7 +14552,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Night Protection",
     "name_vi": "Night Protection",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 5,
     "anvil_cost": 4,
     "table": true,
@@ -10856,7 +14628,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Night Vision",
     "name_vi": "Night Vision",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 4,
     "table": true,
@@ -10915,91 +14687,34 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:night_vision\":1}}] 1"
   },
   {
-    "id": "mt:armor/ocean_chestplate",
-    "namespace": "mt",
-    "raw_name": "armor/ocean_chestplate",
-    "name": "Ocean Chestplate (Ocean Blessing)",
-    "name_vi": "Ocean Chestplate (Ocean Blessing)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
+    "id": "expedition_fishing:night_fisher",
+    "namespace": "expedition_fishing",
+    "raw_name": "night_fisher",
+    "name": "Nocturnal Lure",
+    "name_vi": "Nocturnal Lure",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 14,
     "tradeable": false,
     "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:chest_armor",
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
     "gear_categories": [
-      "armor"
+      "tool"
     ],
-    "supported_display": "Chestplates",
+    "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Grants underwater breathing and faster swimming speed.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/ocean_chestplate\":1}}] 1"
-  },
-  {
-    "id": "kattersstructures:ocean_heart",
-    "namespace": "kattersstructures",
-    "raw_name": "ocean_heart",
-    "name": "Ocean Heart",
-    "name_vi": "Ocean Heart",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Katters Structures v2.9",
-    "supported_items": "#minecraft:enchantable/chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "exclusive_groups": [
-      "Chestplate Alloy"
-    ],
     "conflicts": [
       {
-        "id": "enchantencore:fire_alloy",
-        "name": "Fire Alloy"
-      },
-      {
-        "id": "enchantencore:ice_alloy",
-        "name": "Ice Alloy"
+        "id": "expedition_fishing:sunlit_cast",
+        "name": "Sunlit Cast"
       }
     ],
-    "description": "Grants Conduit Power effect continuously while underwater.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:ocean_heart\":1}}] 1"
-  },
-  {
-    "id": "mt:weapons/oceanic_spear",
-    "namespace": "mt",
-    "raw_name": "weapons/oceanic_spear",
-    "name": "Oceanic Spear",
-    "name_vi": "Oceanic Spear",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:trident",
-    "gear_categories": [
-      "ranged",
-      "weapon"
-    ],
-    "supported_display": "Tridents",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Deals overwhelming bonus damage while fighting in water.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/oceanic_spear\":1}}] 1"
+    "description": "Grants +5% / +10% Fishing Speed and +3% / +6% Sea Creature Chance during nighttime.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:night_fisher\":2}}] 1"
   },
   {
     "id": "enchantencore:ominous_aura",
@@ -11008,7 +14723,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Ominous Aura",
     "name_vi": "Ominous Aura",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -11086,106 +14801,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ominous_aura\":1}}] 1"
   },
   {
-    "id": "enchantencore:ominous_healing",
-    "namespace": "enchantencore",
-    "raw_name": "ominous_healing",
-    "name": "Ominous Healing",
-    "name_vi": "Ominous Healing",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "minecraft:shield",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Shields",
-    "exclusive_groups": [
-      "Shield"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:cleansing",
-        "name": "Cleansing"
-      },
-      {
-        "id": "enchantencore:crispbread",
-        "name": "Crispbread"
-      },
-      {
-        "id": "enchantencore:hardened",
-        "name": "Hardened"
-      },
-      {
-        "id": "enchantencore:rejuvenation",
-        "name": "Rejuvenation"
-      }
-    ],
-    "description": "Triggers healing effects when blocking or taking damage under ominous conditions.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ominous_healing\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:ominous_rain",
-    "namespace": "enchantencore",
-    "raw_name": "ominous_rain",
-    "name": "Ominous Rain",
-    "name_vi": "Ominous Rain",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/trident",
-    "gear_categories": [
-      "weapon",
-      "ranged"
-    ],
-    "supported_display": "Tridents",
-    "exclusive_groups": [
-      "Trident / Water Aura"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:channeling",
-        "name": "Channeling"
-      },
-      {
-        "id": "enchantencore:pufferfish",
-        "name": "Pufferfish"
-      },
-      {
-        "id": "minecraft:riptide",
-        "name": "Riptide"
-      },
-      {
-        "id": "enchantencore:sea_breeze",
-        "name": "Sea Breeze"
-      },
-      {
-        "id": "enchantencore:switch",
-        "name": "Switch"
-      }
-    ],
-    "description": "Thrown tridents summon ominous storm effects at the impact location.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ominous_rain\":1}}] 1"
-  },
-  {
     "id": "enchantencore:oozing_aspect",
     "namespace": "enchantencore",
     "raw_name": "oozing_aspect",
     "name": "Oozing Aspect",
     "name_vi": "Oozing Aspect",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 2,
     "anvil_cost": 2,
     "table": true,
@@ -11255,123 +14877,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:oozing_aspect\":2}}] 1"
   },
   {
-    "id": "nova_structures:outreach",
-    "namespace": "nova_structures",
-    "raw_name": "outreach",
-    "name": "Outreach",
-    "name_vi": "Outreach",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#minecraft:enchantable/chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Increases block interaction reach by +0.5 blocks per level (up to +2.0 blocks at Lv IV).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:outreach\":4}}] 1"
-  },
-  {
-    "id": "enchantencore:pacifier",
-    "namespace": "enchantencore",
-    "raw_name": "pacifier",
-    "name": "Pacifier",
-    "name_vi": "Pacifier",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/fire_aspect",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Aspect (Melee Status)",
-      "Pacifier / Poppy"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "enchantencore:guard",
-        "name": "Guard"
-      },
-      {
-        "id": "enchantencore:hunger_aspect",
-        "name": "Hunger Aspect"
-      },
-      {
-        "id": "enchantencore:infested_aspect",
-        "name": "Infested Aspect"
-      },
-      {
-        "id": "enchantencore:levitation_aspect",
-        "name": "Levitation Aspect"
-      },
-      {
-        "id": "enchantencore:oozing_aspect",
-        "name": "Oozing Aspect"
-      },
-      {
-        "id": "enchantencore:pickpocket",
-        "name": "Pickpocket"
-      },
-      {
-        "id": "enchantencore:poison_aspect",
-        "name": "Poison Aspect"
-      },
-      {
-        "id": "enchantencore:poppy_peace",
-        "name": "Poppy Peace"
-      },
-      {
-        "id": "enchantencore:slowness_aspect",
-        "name": "Slowness Aspect"
-      },
-      {
-        "id": "enchantencore:weakness_aspect",
-        "name": "Weakness Aspect"
-      },
-      {
-        "id": "enchantencore:weaving_aspect",
-        "name": "Weaving Aspect"
-      },
-      {
-        "id": "enchantencore:wind_aspect",
-        "name": "Wind Aspect"
-      },
-      {
-        "id": "enchantencore:wither_aspect",
-        "name": "Wither Aspect"
-      }
-    ],
-    "description": "30% chance on melee hit to inflict Weakness CCLV (1–3s), completely neutralizing target melee damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pacifier\":1}}] 1"
-  },
-  {
     "id": "enchantencore:pale_aura",
     "namespace": "enchantencore",
     "raw_name": "pale_aura",
     "name": "Pale Aura",
     "name_vi": "Pale Aura",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -11449,77 +14961,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pale_aura\":1}}] 1"
   },
   {
-    "id": "enchantencore:path_speed",
-    "namespace": "enchantencore",
-    "raw_name": "path_speed",
-    "name": "Path Speed",
-    "name_vi": "Path Speed",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 2,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Movement"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bounce",
-        "name": "Bounce"
-      },
-      {
-        "id": "bound:bound",
-        "name": "Bound"
-      },
-      {
-        "id": "enchantencore:end_speed",
-        "name": "End Speed"
-      },
-      {
-        "id": "enchantencore:invisibility_cloak",
-        "name": "Invisibility Cloak"
-      },
-      {
-        "id": "enchantencore:leaf_jumper",
-        "name": "Leaf Jumper"
-      },
-      {
-        "id": "enchantencore:sand_speed",
-        "name": "Sand Speed"
-      },
-      {
-        "id": "enchantencore:sonic",
-        "name": "Sonic"
-      },
-      {
-        "id": "minecraft:soul_speed",
-        "name": "Soul Speed"
-      },
-      {
-        "id": "enchantencore:strafe",
-        "name": "Strafe"
-      }
-    ],
-    "description": "Increases movement speed on Dirt Paths by +4.05% (+1.05% per level above I, up to +6.15% at Lv III) with a 4% wear chance.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:path_speed\":3}}] 1"
-  },
-  {
     "id": "enchantencore:pegasus",
     "namespace": "enchantencore",
     "raw_name": "pegasus",
     "name": "Pegasus",
     "name_vi": "Pegasus",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 6,
     "table": true,
@@ -11551,7 +14999,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Phantom Menace",
     "name_vi": "Phantom Menace",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -11570,77 +15018,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:phantom_menace\":3}}] 1"
   },
   {
-    "id": "nova_structures:photosynthesis",
-    "namespace": "nova_structures",
-    "raw_name": "photosynthesis",
-    "name": "Photosynthesis",
-    "name_vi": "Photosynthesis",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Durable Gear",
-    "exclusive_groups": [
-      "Auto-Repair / Durability"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:corrosion_curse",
-        "name": "Curse of Corrosion"
-      },
-      {
-        "id": "enchantencore:emberweave",
-        "name": "Emberweave"
-      },
-      {
-        "id": "enchantencore:handyman",
-        "name": "Handyman"
-      },
-      {
-        "id": "minecraft:mending",
-        "name": "Mending"
-      },
-      {
-        "id": "enchantencore:moonweave",
-        "name": "Moonweave"
-      },
-      {
-        "id": "enchantencore:rainweave",
-        "name": "Rainweave"
-      },
-      {
-        "id": "enchantencore:sacrifice",
-        "name": "Sacrifice"
-      },
-      {
-        "id": "enchantencore:tideweave",
-        "name": "Tideweave"
-      },
-      {
-        "id": "enchantencore:voidweave",
-        "name": "Voidweave"
-      }
-    ],
-    "description": "Gradually repairs item durability when exposed to direct daylight.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:photosynthesis\":1}}] 1"
-  },
-  {
     "id": "enchantencore:pickpocket",
     "namespace": "enchantencore",
     "raw_name": "pickpocket",
     "name": "Pickpocket",
     "name_vi": "Pickpocket",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -11676,7 +15060,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Piercing",
     "name_vi": "Piercing",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 4,
     "anvil_cost": 2,
     "table": true,
@@ -11724,7 +15108,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Ping Tag",
     "name_vi": "Ping Tag",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -11743,38 +15127,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ping_tag\":1}}] 1"
   },
   {
-    "id": "stellarity:plated",
-    "namespace": "stellarity",
-    "raw_name": "plated",
-    "name": "Plated",
-    "name_vi": "Plated",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Stellarity-6.0.1",
-    "supported_items": "#stellarity:enchantable/elytra",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Elytra",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Grants +2 Armor (+1 per level above I, up to +5 at Lv IV), +1 Toughness at Lv III–IV, and +4% (+3%/lvl) gravity.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:plated\":4}}] 1"
-  },
-  {
     "id": "enchantencore:plow",
     "namespace": "enchantencore",
     "raw_name": "plow",
     "name": "Plow",
     "name_vi": "Plow",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -11806,162 +15165,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:plow\":3}}] 1"
   },
   {
-    "id": "enchantencore:poison_aspect",
-    "namespace": "enchantencore",
-    "raw_name": "poison_aspect",
-    "name": "Poison Aspect",
-    "name_vi": "Poison Aspect",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/fire_aspect",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Aspect (Melee Status)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "enchantencore:guard",
-        "name": "Guard"
-      },
-      {
-        "id": "enchantencore:hunger_aspect",
-        "name": "Hunger Aspect"
-      },
-      {
-        "id": "enchantencore:infested_aspect",
-        "name": "Infested Aspect"
-      },
-      {
-        "id": "enchantencore:levitation_aspect",
-        "name": "Levitation Aspect"
-      },
-      {
-        "id": "enchantencore:oozing_aspect",
-        "name": "Oozing Aspect"
-      },
-      {
-        "id": "enchantencore:pacifier",
-        "name": "Pacifier"
-      },
-      {
-        "id": "enchantencore:slowness_aspect",
-        "name": "Slowness Aspect"
-      },
-      {
-        "id": "enchantencore:weakness_aspect",
-        "name": "Weakness Aspect"
-      },
-      {
-        "id": "enchantencore:weaving_aspect",
-        "name": "Weaving Aspect"
-      },
-      {
-        "id": "enchantencore:wind_aspect",
-        "name": "Wind Aspect"
-      },
-      {
-        "id": "enchantencore:wither_aspect",
-        "name": "Wither Aspect"
-      }
-    ],
-    "description": "Melee hits inflict Poison for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:poison_aspect\":2}}] 1"
-  },
-  {
-    "id": "enchantencore:poison_infused",
-    "namespace": "enchantencore",
-    "raw_name": "poison_infused",
-    "name": "Poison Infused",
-    "name_vi": "Poison Infused",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_bows",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows & Crossbows",
-    "exclusive_groups": [
-      "Bow Arrow Effects",
-      "Bow Infused Arrows"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bomber",
-        "name": "Bomber"
-      },
-      {
-        "id": "enchantplus:bow/echo_shot",
-        "name": "Echo Shot"
-      },
-      {
-        "id": "enchantencore:ender_shot",
-        "name": "Ender Shot"
-      },
-      {
-        "id": "enchantencore:evokers_wrath",
-        "name": "Evoker's Wrath"
-      },
-      {
-        "id": "enchantplus:bow/explosive_arrow",
-        "name": "Explosive Arrow"
-      },
-      {
-        "id": "enchantencore:flare",
-        "name": "Flare"
-      },
-      {
-        "id": "enchantencore:forge_shot",
-        "name": "Forge Shot"
-      },
-      {
-        "id": "enchantencore:implosion",
-        "name": "Implosion"
-      },
-      {
-        "id": "minecraft:infinity",
-        "name": "Infinity"
-      },
-      {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
-      },
-      {
-        "id": "enchantencore:lightning_bolt",
-        "name": "Lightning Bolt"
-      }
-    ],
-    "description": "Arrows inflict Poison I (4s) at Lv I, Poison II (3s) at Lv II, and Poison II (4s) at Lv III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:poison_infused\":3}}] 1"
-  },
-  {
     "id": "enchantencore:poppy_peace",
     "namespace": "enchantencore",
     "raw_name": "poppy_peace",
     "name": "Poppy Peace",
     "name_vi": "Poppy Peace",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -12001,7 +15211,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Power",
     "name_vi": "Power",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 5,
     "anvil_cost": 2,
     "table": true,
@@ -12041,7 +15251,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Precision",
     "name_vi": "Precision",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 2,
     "anvil_cost": 2,
     "table": true,
@@ -12066,7 +15276,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Prismatic Pearl Return",
     "name_vi": "Prismatic Pearl Return",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -12091,7 +15301,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Projectile Protection",
     "name_vi": "Projectile Protection",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 4,
     "anvil_cost": 2,
     "table": true,
@@ -12167,7 +15377,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Propeller",
     "name_vi": "Propeller",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 5,
     "anvil_cost": 2,
     "table": true,
@@ -12186,38 +15396,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:propeller\":5}}] 1"
   },
   {
-    "id": "enchantplus:elytra/propulsion",
-    "namespace": "enchantplus",
-    "raw_name": "elytra/propulsion",
-    "name": "Propulsion",
-    "name_vi": "Propulsion",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#voxel:enchantable/elytra",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Elytra",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Boosts forward flight thrust while gliding; thrust scales across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:elytra/propulsion\":3}}] 1"
-  },
-  {
     "id": "minecraft:protection",
     "namespace": "minecraft",
     "raw_name": "protection",
     "name": "Protection",
     "name_vi": "Protection",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 4,
     "anvil_cost": 2,
     "table": true,
@@ -12294,7 +15479,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Pufferfish",
     "name_vi": "Pufferfish",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -12343,7 +15528,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Punch",
     "name_vi": "Punch",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 2,
     "anvil_cost": 2,
     "table": true,
@@ -12368,7 +15553,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Purify Water",
     "name_vi": "Purify Water",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -12394,7 +15579,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Pyrolysis",
     "name_vi": "Pyrolysis",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 6,
     "table": true,
@@ -12413,13 +15598,38 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:pyrolysis\":1}}] 1"
   },
   {
+    "id": "expedition_fishing:quick_cast",
+    "namespace": "expedition_fishing",
+    "raw_name": "quick_cast",
+    "name": "Quick Cast",
+    "name_vi": "Quick Cast",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 3,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 20,
+    "tradeable": true,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases Fishing Speed by +5% per level (up to +15% faster bite time at Lv III).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:quick_cast\":3}}] 1"
+  },
+  {
     "id": "minecraft:quick_charge",
     "namespace": "minecraft",
     "raw_name": "quick_charge",
     "name": "Quick Charge",
     "name_vi": "Quick Charge",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -12472,7 +15682,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Rabbit's Foot",
     "name_vi": "Rabbit's Foot",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -12497,7 +15707,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Rainweave",
     "name_vi": "Rainweave",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -12555,310 +15765,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rainweave\":1}}] 1"
   },
   {
-    "id": "kattersstructures:raj_ambient",
-    "namespace": "kattersstructures",
-    "raw_name": "raj_ambient",
-    "name": "Raj Ambient",
-    "name_vi": "Raj Ambient",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Katters Structures v2.9",
-    "supported_items": "#minecraft:enchantable/chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boss Raj Gear",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Boss Raj ambient lightning aura mechanic in Ancient Temples.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:raj_ambient\":1}}] 1"
-  },
-  {
-    "id": "kattersstructures:raj_lightning",
-    "namespace": "kattersstructures",
-    "raw_name": "raj_lightning",
-    "name": "Raj Lightning",
-    "name_vi": "Raj Lightning",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Katters Structures v2.9",
-    "supported_items": "minecraft:crossbow",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Boss Raj Crossbow",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Boss Raj lightning barrage crossbow mechanic.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:raj_lightning\":1}}] 1"
-  },
-  {
-    "id": "kattersstructures:raj_minion",
-    "namespace": "kattersstructures",
-    "raw_name": "raj_minion",
-    "name": "Raj Minion",
-    "name_vi": "Raj Minion",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Katters Structures v2.9",
-    "supported_items": "#minecraft:enchantable/chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boss Raj Gear",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Boss Raj minion summoning mechanic.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:raj_minion\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:sword/reach",
-    "namespace": "enchantplus",
-    "raw_name": "sword/reach",
-    "name": "Reach",
-    "name_vi": "Reach",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/melee_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords & Melee Weapons",
-    "exclusive_groups": [
-      "Reach"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:crab_claw",
-        "name": "Crab Claw"
-      },
-      {
-        "id": "enchantencore:reach_curse",
-        "name": "Curse of Reach"
-      }
-    ],
-    "description": "Extends melee entity attack range by +1 block (+0.5 per level above I, up to +2.0 blocks at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/reach\":3}}] 1"
-  },
-  {
-    "id": "enchantplus:bow/rebound",
-    "namespace": "enchantplus",
-    "raw_name": "bow/rebound",
-    "name": "Rebound",
-    "name_vi": "Rebound",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#voxel:enchantable/range",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows & Crossbows",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "enchantplus:bow/explosive_arrow",
-        "name": "Explosive Arrow"
-      },
-      {
-        "id": "minecraft:multishot",
-        "name": "Multishot"
-      },
-      {
-        "id": "minecraft:piercing",
-        "name": "Piercing"
-      },
-      {
-        "id": "minecraft:quick_charge",
-        "name": "Quick Charge"
-      }
-    ],
-    "description": "Arrows bounce off solid walls and surfaces; max bounces scale across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:bow/rebound\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:refuel",
-    "namespace": "enchantencore",
-    "raw_name": "refuel",
-    "name": "Refuel",
-    "name_vi": "Refuel",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "minecraft:elytra",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Elytra",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "enchantencore:moonwalk",
-        "name": "Moonwalk"
-      }
-    ],
-    "description": "Automatically consumes firework fuel from inventory to sustain Elytra flight.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:refuel\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:regrowth",
-    "namespace": "enchantencore",
-    "raw_name": "regrowth",
-    "name": "Regrowth",
-    "name_vi": "Regrowth",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:hoes",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Hoes",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "minecraft:efficiency",
-        "name": "Efficiency"
-      },
-      {
-        "id": "enchantencore:plow",
-        "name": "Plow"
-      },
-      {
-        "id": "minecraft:silk_touch",
-        "name": "Silk Touch"
-      }
-    ],
-    "description": "Left-clicking mature wheat, carrots, potatoes, or beetroots harvests and replants them automatically (10 durability cost).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:regrowth\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:rejuvenation",
-    "namespace": "enchantencore",
-    "raw_name": "rejuvenation",
-    "name": "Rejuvenation",
-    "name_vi": "Rejuvenation",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "minecraft:shield",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Shields",
-    "exclusive_groups": [
-      "Shield"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:cleansing",
-        "name": "Cleansing"
-      },
-      {
-        "id": "enchantencore:crispbread",
-        "name": "Crispbread"
-      },
-      {
-        "id": "enchantencore:hardened",
-        "name": "Hardened"
-      },
-      {
-        "id": "enchantencore:ominous_healing",
-        "name": "Ominous Healing"
-      }
-    ],
-    "description": "Increases Max Health by +1 HP (+0.5 hearts) per level (up to +4 HP / +2 hearts at Lv IV) while equipped.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rejuvenation\":4}}] 1"
-  },
-  {
-    "id": "enchantencore:replenish",
-    "namespace": "enchantencore",
-    "raw_name": "replenish",
-    "name": "Replenish",
-    "name_vi": "Replenish",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_bows",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows & Crossbows",
-    "exclusive_groups": [
-      "Bow (Infinity / Replenish)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:infinity",
-        "name": "Infinity"
-      }
-    ],
-    "description": "Grants a 50% chance not to consume arrows, spectral arrows, or firework rockets when firing.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:replenish\":1}}] 1"
-  },
-  {
     "id": "minecraft:respiration",
     "namespace": "minecraft",
     "raw_name": "respiration",
     "name": "Respiration",
     "name_vi": "Respiration",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -12877,219 +15790,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:respiration\":3}}] 1"
   },
   {
-    "id": "enchantsplus:retrieval",
-    "namespace": "enchantsplus",
-    "raw_name": "retrieval",
-    "name": "Retrieval",
-    "name_vi": "Retrieval",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#minecraft:enchantable/chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Restores health upon defeating enemies; healing amount scales across Lv I–IV.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:retrieval\":4}}] 1"
-  },
-  {
-    "id": "mt:weapons/rift_axe",
-    "namespace": "mt",
-    "raw_name": "weapons/rift_axe",
-    "name": "Rift Axe (Soul Tearer)",
-    "name_vi": "Rift Axe (Soul Tearer)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:netherite_axe",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Netherite Axes",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Tears enemy souls, dealing armor-ignoring true damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/rift_axe\":1}}] 1"
-  },
-  {
-    "id": "minecraft:riptide",
-    "namespace": "minecraft",
-    "raw_name": "riptide",
-    "name": "Riptide",
-    "name_vi": "Riptide",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 2,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "minecraft (vanilla)",
-    "supported_items": "#minecraft:enchantable/trident",
-    "gear_categories": [
-      "ranged",
-      "weapon"
-    ],
-    "supported_display": "Tridents",
-    "exclusive_groups": [
-      "Trident (Riptide / Loyalty)",
-      "Trident / Water Aura"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:channeling",
-        "name": "Channeling"
-      },
-      {
-        "id": "minecraft:loyalty",
-        "name": "Loyalty"
-      },
-      {
-        "id": "stellarity:_technical/mighty_wind",
-        "name": "Mighty Wind"
-      },
-      {
-        "id": "enchantencore:neptune",
-        "name": "Neptune"
-      },
-      {
-        "id": "enchantencore:ominous_rain",
-        "name": "Ominous Rain"
-      },
-      {
-        "id": "enchantencore:poseidon",
-        "name": "Poseidon"
-      },
-      {
-        "id": "enchantencore:pufferfish",
-        "name": "Pufferfish"
-      },
-      {
-        "id": "enchantencore:sea_breeze",
-        "name": "Sea Breeze"
-      },
-      {
-        "id": "enchantencore:switch",
-        "name": "Switch"
-      },
-      {
-        "id": "enchantencore:warped_trident",
-        "name": "Warped Trident"
-      }
-    ],
-    "description": "Launches the player forward when thrown in water or rain; launch velocity scales with level (I–III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:riptide\":3}}] 1"
-  },
-  {
-    "id": "mt:weapons/rumble_axe",
-    "namespace": "mt",
-    "raw_name": "weapons/rumble_axe",
-    "name": "Rumble Axe (Rumble Tumble)",
-    "name_vi": "Rumble Axe (Rumble Tumble)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:golden_sword",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Golden Swords",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Creates ground tremors on hit that stun nearby enemies.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/rumble_axe\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:sword/runic_despair",
-    "namespace": "enchantplus",
-    "raw_name": "sword/runic_despair",
-    "name": "Runic Despair",
-    "name_vi": "Runic Despair",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/melee_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords & Melee Weapons",
-    "exclusive_groups": [
-      "Sword Attributes (Enchant+)"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantplus:sword/critical",
-        "name": "Critical"
-      },
-      {
-        "id": "enchantplus:sword/dimensional_hit",
-        "name": "Dimensional Hit"
-      }
-    ],
-    "description": "Multiplies melee damage dealt inside the Runic Dimension across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/runic_despair\":3}}] 1"
-  },
-  {
-    "id": "kattersstructures:rusta_shot",
-    "namespace": "kattersstructures",
-    "raw_name": "rusta_shot",
-    "name": "Rusta Shot",
-    "name_vi": "Rusta Shot",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Katters Structures v2.9",
-    "supported_items": "minecraft:crossbow",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows & Crossbows",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Fires arcane Rusta projectiles; impact damage/effects scale across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:rusta_shot\":3}}] 1"
-  },
-  {
     "id": "enchantencore:sacrifice",
     "namespace": "enchantencore",
     "raw_name": "sacrifice",
     "name": "Sacrifice",
     "name_vi": "Sacrifice",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -13161,7 +15868,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Safe Landing",
     "name_vi": "Safe Landing",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -13187,81 +15894,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:safe_landing\":3}}] 1"
   },
   {
-    "id": "enchantencore:sand_speed",
-    "namespace": "enchantencore",
-    "raw_name": "sand_speed",
-    "name": "Sand Speed",
-    "name_vi": "Sand Speed",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 2,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Movement"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bounce",
-        "name": "Bounce"
-      },
-      {
-        "id": "bound:bound",
-        "name": "Bound"
-      },
-      {
-        "id": "enchantencore:end_speed",
-        "name": "End Speed"
-      },
-      {
-        "id": "enchantencore:invisibility_cloak",
-        "name": "Invisibility Cloak"
-      },
-      {
-        "id": "enchantencore:leaf_jumper",
-        "name": "Leaf Jumper"
-      },
-      {
-        "id": "enchantencore:path_speed",
-        "name": "Path Speed"
-      },
-      {
-        "id": "enchantencore:sonic",
-        "name": "Sonic"
-      },
-      {
-        "id": "minecraft:soul_speed",
-        "name": "Soul Speed"
-      },
-      {
-        "id": "enchantencore:strafe",
-        "name": "Strafe"
-      },
-      {
-        "id": "kattersstructures:web_walker",
-        "name": "Web Walker"
-      }
-    ],
-    "description": "Increases movement speed on Sand by +4.05% (+1.05% per level above I, up to +6.15% at Lv III) with a 4% wear chance.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sand_speed\":3}}] 1"
-  },
-  {
     "id": "enchantencore:scent",
     "namespace": "enchantencore",
     "raw_name": "scent",
     "name": "Scent",
     "name_vi": "Scent",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -13287,191 +15926,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scent\":1}}] 1"
   },
   {
-    "id": "enchantencore:scholar_of_blocks",
-    "namespace": "enchantencore",
-    "raw_name": "scholar_of_blocks",
-    "name": "Scholar of Blocks",
-    "name_vi": "Scholar of Blocks",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:no_weapons",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Mining & Harvesting Tools",
-    "exclusive_groups": [
-      "XP Boost / Scholar"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:scholar_of_mobs",
-        "name": "Scholar of Mobs"
-      }
-    ],
-    "description": "Multiplies XP dropped from mining blocks by 1.5x (+1.0x per level above I, up to 3.5x at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scholar_of_blocks\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:scholar_of_fishing",
-    "namespace": "enchantencore",
-    "raw_name": "scholar_of_fishing",
-    "name": "Scholar of Fishing",
-    "name_vi": "Scholar of Fishing",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/fishing",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Fishing Rods",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Increases XP gained from fishing across levels I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scholar_of_fishing\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:scholar_of_mobs",
-    "namespace": "enchantencore",
-    "raw_name": "scholar_of_mobs",
-    "name": "Scholar of Mobs",
-    "name_vi": "Scholar of Mobs",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:weapons",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "XP Boost / Scholar"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:scholar_of_blocks",
-        "name": "Scholar of Blocks"
-      }
-    ],
-    "description": "Multiplies XP dropped by slain mobs by 1.5x (+1.0x per level above I, up to 3.5x at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scholar_of_mobs\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:scorpion_spirit",
-    "namespace": "enchantencore",
-    "raw_name": "scorpion_spirit",
-    "name": "Scorpion Spirit",
-    "name_vi": "Scorpion Spirit",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "minecraft:wolf_armor",
-    "gear_categories": [
-      "mount"
-    ],
-    "supported_display": "Wolf Armor",
-    "exclusive_groups": [
-      "Spirit Wolf"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bear_spirit",
-        "name": "Bear Spirit"
-      },
-      {
-        "id": "enchantencore:boar_spirit",
-        "name": "Boar Spirit"
-      },
-      {
-        "id": "enchantencore:ghost_spirit",
-        "name": "Ghost Spirit"
-      }
-    ],
-    "description": "Shrinks wolf by -50%, -5 Armor, +5 Attack Speed, -100 base damage, and 50% chance on hit to inflict Poison and Wither.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scorpion_spirit\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:sea_breeze",
-    "namespace": "enchantencore",
-    "raw_name": "sea_breeze",
-    "name": "Sea Breeze",
-    "name_vi": "Sea Breeze",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/trident",
-    "gear_categories": [
-      "weapon",
-      "ranged"
-    ],
-    "supported_display": "Tridents",
-    "exclusive_groups": [
-      "Trident / Water Aura"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:channeling",
-        "name": "Channeling"
-      },
-      {
-        "id": "enchantencore:ominous_rain",
-        "name": "Ominous Rain"
-      },
-      {
-        "id": "enchantencore:pufferfish",
-        "name": "Pufferfish"
-      },
-      {
-        "id": "minecraft:riptide",
-        "name": "Riptide"
-      },
-      {
-        "id": "enchantencore:switch",
-        "name": "Switch"
-      }
-    ],
-    "description": "Thrown tridents trigger a 3-block wind burst on impact, knocking back targets and triggering redstone.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sea_breeze\":1}}] 1"
-  },
-  {
     "id": "enchantencore:seeker",
     "namespace": "enchantencore",
     "raw_name": "seeker",
     "name": "Seeker",
     "name_vi": "Seeker",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -13496,7 +15957,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Seior's Oblivion",
     "name_vi": "Seior's Oblivion",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -13521,7 +15982,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Sense of Urgency",
     "name_vi": "Sense of Urgency",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -13540,38 +16001,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:technical/sense_of_urgency\":1}}] 1"
   },
   {
-    "id": "mt:weapons/sharpened_sword",
-    "namespace": "mt",
-    "raw_name": "weapons/sharpened_sword",
-    "name": "Sharpened Sword",
-    "name_vi": "Sharpened Sword",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:iron_sword",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Iron Swords",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Honed blade edge granting high flat bonus melee damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/sharpened_sword\":1}}] 1"
-  },
-  {
     "id": "minecraft:sharpness",
     "namespace": "minecraft",
     "raw_name": "sharpness",
     "name": "Sharpness",
     "name_vi": "Sharpness",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 5,
     "anvil_cost": 2,
     "table": true,
@@ -13653,93 +16089,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:sharpness\":5}}] 1"
   },
   {
-    "id": "enchantencore:shrinkage",
-    "namespace": "enchantencore",
-    "raw_name": "shrinkage",
-    "name": "Shrinkage",
-    "name_vi": "Shrinkage",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:valid_for_shrinkage",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates & Leggings",
-    "exclusive_groups": [
-      "Size / Height"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:growth",
-        "name": "Growth"
-      }
-    ],
-    "description": "Shrinks body scale and step height by -10%, but reduces Max Health by -23% (~+30% effective incoming damage from all sources).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shrinkage\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:shulker_shell",
-    "namespace": "enchantencore",
-    "raw_name": "shulker_shell",
-    "name": "Shulker Shell",
-    "name_vi": "Shulker Shell",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "exclusive_groups": [
-      "Chestplate Alloy"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bulletproof",
-        "name": "Bulletproof"
-      },
-      {
-        "id": "enchantencore:creeper_alloy",
-        "name": "Creeper Alloy"
-      },
-      {
-        "id": "enchantencore:darkness_alloy",
-        "name": "Darkness Alloy"
-      },
-      {
-        "id": "enchantencore:fire_alloy",
-        "name": "Fire Alloy"
-      },
-      {
-        "id": "enchantencore:ice_alloy",
-        "name": "Ice Alloy"
-      }
-    ],
-    "description": "Grants defensive shell protection while standing completely still.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shulker_shell\":1}}] 1"
-  },
-  {
     "id": "minecraft:silk_touch",
     "namespace": "minecraft",
     "raw_name": "silk_touch",
     "name": "Silk Touch",
     "name_vi": "Silk Touch",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 4,
     "table": true,
@@ -13779,7 +16135,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Skyguard",
     "name_vi": "Skyguard",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 4,
     "anvil_cost": 2,
     "table": true,
@@ -13804,7 +16160,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Sloth Curse",
     "name_vi": "Sloth Curse",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -13829,7 +16185,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Slow Relic",
     "name_vi": "Slow Relic",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -13848,89 +16204,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:treasure/slow\":1}}] 1"
   },
   {
-    "id": "enchantencore:slowness_aspect",
-    "namespace": "enchantencore",
-    "raw_name": "slowness_aspect",
-    "name": "Slowness Aspect",
-    "name_vi": "Slowness Aspect",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/fire_aspect",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Aspect (Melee Status)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "enchantencore:guard",
-        "name": "Guard"
-      },
-      {
-        "id": "enchantencore:hunger_aspect",
-        "name": "Hunger Aspect"
-      },
-      {
-        "id": "enchantencore:infested_aspect",
-        "name": "Infested Aspect"
-      },
-      {
-        "id": "enchantencore:levitation_aspect",
-        "name": "Levitation Aspect"
-      },
-      {
-        "id": "enchantencore:oozing_aspect",
-        "name": "Oozing Aspect"
-      },
-      {
-        "id": "enchantencore:pacifier",
-        "name": "Pacifier"
-      },
-      {
-        "id": "enchantencore:poison_aspect",
-        "name": "Poison Aspect"
-      },
-      {
-        "id": "enchantencore:weakness_aspect",
-        "name": "Weakness Aspect"
-      },
-      {
-        "id": "enchantencore:weaving_aspect",
-        "name": "Weaving Aspect"
-      },
-      {
-        "id": "enchantencore:wind_aspect",
-        "name": "Wind Aspect"
-      },
-      {
-        "id": "enchantencore:wither_aspect",
-        "name": "Wither Aspect"
-      }
-    ],
-    "description": "Melee hits inflict Slowness for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:slowness_aspect\":2}}] 1"
-  },
-  {
     "id": "minecraft:smite",
     "namespace": "minecraft",
     "raw_name": "smite",
     "name": "Smite",
     "name_vi": "Smite",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 5,
     "anvil_cost": 2,
     "table": true,
@@ -14012,81 +16292,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:smite\":5}}] 1"
   },
   {
-    "id": "enchantencore:sonic",
-    "namespace": "enchantencore",
-    "raw_name": "sonic",
-    "name": "Sonic",
-    "name_vi": "Sonic",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots Movement"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bounce",
-        "name": "Bounce"
-      },
-      {
-        "id": "bound:bound",
-        "name": "Bound"
-      },
-      {
-        "id": "enchantencore:end_speed",
-        "name": "End Speed"
-      },
-      {
-        "id": "enchantencore:invisibility_cloak",
-        "name": "Invisibility Cloak"
-      },
-      {
-        "id": "enchantencore:leaf_jumper",
-        "name": "Leaf Jumper"
-      },
-      {
-        "id": "enchantencore:path_speed",
-        "name": "Path Speed"
-      },
-      {
-        "id": "enchantencore:sand_speed",
-        "name": "Sand Speed"
-      },
-      {
-        "id": "minecraft:soul_speed",
-        "name": "Soul Speed"
-      },
-      {
-        "id": "enchantencore:strafe",
-        "name": "Strafe"
-      },
-      {
-        "id": "kattersstructures:web_walker",
-        "name": "Web Walker"
-      }
-    ],
-    "description": "Increases movement speed by +0.015 (+0.01 per level above I, up to +0.035 at Lv III), while reducing sneaking speed by -0.15.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sonic\":3}}] 1"
-  },
-  {
     "id": "stellarity:_technical/soul_harvest",
     "namespace": "stellarity",
     "raw_name": "_technical/soul_harvest",
     "name": "Soul Harvest",
     "name_vi": "Soul Harvest",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -14130,137 +16342,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:_technical/soul_harvest\":1}}] 1"
   },
   {
-    "id": "mt:weapons/soul_scythe",
-    "namespace": "mt",
-    "raw_name": "weapons/soul_scythe",
-    "name": "Soul Scythe (Life Steal)",
-    "name_vi": "Soul Scythe (Life Steal)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:netherite_hoe",
-    "gear_categories": [
-      "weapon",
-      "tool"
-    ],
-    "supported_display": "Netherite Hoes",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Drains health from struck targets to heal the wielder.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/soul_scythe\":1}}] 1"
-  },
-  {
-    "id": "minecraft:soul_speed",
-    "namespace": "minecraft",
-    "raw_name": "soul_speed",
-    "name": "Soul Speed",
-    "name_vi": "Soul Speed",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots (Soul Speed / Traveler)",
-      "Boots Movement"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bounce",
-        "name": "Bounce"
-      },
-      {
-        "id": "bound:bound",
-        "name": "Bound"
-      },
-      {
-        "id": "enchantencore:end_speed",
-        "name": "End Speed"
-      },
-      {
-        "id": "enchantencore:invisibility_cloak",
-        "name": "Invisibility Cloak"
-      },
-      {
-        "id": "enchantencore:leaf_jumper",
-        "name": "Leaf Jumper"
-      },
-      {
-        "id": "enchantencore:path_speed",
-        "name": "Path Speed"
-      },
-      {
-        "id": "enchantencore:sand_speed",
-        "name": "Sand Speed"
-      },
-      {
-        "id": "enchantencore:sonic",
-        "name": "Sonic"
-      },
-      {
-        "id": "enchantencore:strafe",
-        "name": "Strafe"
-      },
-      {
-        "id": "nova_structures:traveler",
-        "name": "Traveler"
-      },
-      {
-        "id": "kattersstructures:web_walker",
-        "name": "Web Walker"
-      }
-    ],
-    "description": "Increases movement speed on Soul Sand/Soil by +4.05% (+1.05% per level above I, up to +6.15% at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:soul_speed\":3}}] 1"
-  },
-  {
-    "id": "mt:armor/soul_valley_helmet",
-    "namespace": "mt",
-    "raw_name": "armor/soul_valley_helmet",
-    "name": "Soul Valley Helmet",
-    "name_vi": "Soul Valley Helmet",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:head_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Increases movement speed across Soul Sand and Soul Soil.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/soul_valley_helmet\":1}}] 1"
-  },
-  {
     "id": "enchantencore:sparking_aura",
     "namespace": "enchantencore",
     "raw_name": "sparking_aura",
     "name": "Sparking Aura",
     "name_vi": "Sparking Aura",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -14338,38 +16426,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sparking_aura\":1}}] 1"
   },
   {
-    "id": "nova_structures:spiteful",
-    "namespace": "nova_structures",
-    "raw_name": "spiteful",
-    "name": "Spiteful",
-    "name_vi": "Spiteful",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 2,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#nova_structures:enchantable/combat_weapons",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Deals +2 bonus damage per level (up to +6 at Lv III) at low health, with a chance to grant Strength I (3s).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:spiteful\":3}}] 1"
-  },
-  {
     "id": "mt:treasure/standard",
     "namespace": "mt",
     "raw_name": "treasure/standard",
     "name": "Standard Relic",
     "name_vi": "Standard Relic",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -14388,13 +16451,38 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:treasure/standard\":1}}] 1"
   },
   {
+    "id": "expedition_fishing:steady_hand",
+    "namespace": "expedition_fishing",
+    "raw_name": "steady_hand",
+    "name": "Steady Hand",
+    "name_vi": "Steady Hand",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 16,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Stabilizes the bobber during rain or thunderstorms and grants +4% / +8% Fishing Speed in wet weather.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:steady_hand\":2}}] 1"
+  },
+  {
     "id": "enchantplus:mounted/steel_fang",
     "namespace": "enchantplus",
     "raw_name": "mounted/steel_fang",
     "name": "Steel Fang",
     "name_vi": "Steel Fang",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 5,
     "anvil_cost": 2,
     "table": true,
@@ -14419,7 +16507,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Sticky Aura",
     "name_vi": "Sticky Aura",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -14503,7 +16591,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Sting",
     "name_vi": "Sting",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -14581,13 +16669,38 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sting\":1}}] 1"
   },
   {
+    "id": "expedition_fishing:storm_caller",
+    "namespace": "expedition_fishing",
+    "raw_name": "storm_caller",
+    "name": "Storm Caller",
+    "name_vi": "Storm Caller",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 12,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "During thunderstorms, increases Sea Creature Chance by +12% / +24% with a 15% chance to strike hooked creatures with lightning.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:storm_caller\":2}}] 1"
+  },
+  {
     "id": "enchantencore:strafe",
     "namespace": "enchantencore",
     "raw_name": "strafe",
     "name": "Strafe",
     "name_vi": "Strafe",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -14645,38 +16758,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:strafe\":1}}] 1"
   },
   {
-    "id": "mt:weapons/stray_bow",
-    "namespace": "mt",
-    "raw_name": "weapons/stray_bow",
-    "name": "Stray Bow (Gotta Go Slow)",
-    "name_vi": "Stray Bow (Gotta Go Slow)",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:bow",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Fires frostbitten arrows that inflict heavy Slowness.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/stray_bow\":1}}] 1"
-  },
-  {
     "id": "enchantsplus:stride",
     "namespace": "enchantsplus",
     "raw_name": "stride",
     "name": "Stride",
     "name_vi": "Stride",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -14695,38 +16783,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:stride\":3}}] 1"
   },
   {
-    "id": "enchantplus:mace/striker",
-    "namespace": "enchantplus",
-    "raw_name": "mace/striker",
-    "name": "Striker",
-    "name_vi": "Striker",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/mace",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Maces",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Summons lightning on Mace strikes during storms and grants lightning immunity.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mace/striker\":1}}] 1"
-  },
-  {
     "id": "enchantencore:summer_walker",
     "namespace": "enchantencore",
     "raw_name": "summer_walker",
     "name": "Summer Walker",
     "name_vi": "Summer Walker",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,
@@ -14772,13 +16835,73 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:summer_walker\":1}}] 1"
   },
   {
+    "id": "expedition_fishing:sunlit_cast",
+    "namespace": "expedition_fishing",
+    "raw_name": "sunlit_cast",
+    "name": "Sunlit Cast",
+    "name_vi": "Sunlit Cast",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 14,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:night_fisher",
+        "name": "Nocturnal Lure"
+      }
+    ],
+    "description": "Grants +5% / +10% Fishing Speed and +3% / +6% Treasure Chance during daytime.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:sunlit_cast\":2}}] 1"
+  },
+  {
+    "id": "expedition_fishing:surface_cast",
+    "namespace": "expedition_fishing",
+    "raw_name": "surface_cast",
+    "name": "Surface Skimmer",
+    "name_vi": "Surface Skimmer",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 14,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
+    "gear_categories": [
+      "tool"
+    ],
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:deep_water",
+        "name": "Deep Diver"
+      }
+    ],
+    "description": "Grants +5% / +10% Fishing Speed when fishing in surface rivers or highland lakes (Y >= 62).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:surface_cast\":2}}] 1"
+  },
+  {
     "id": "enchantencore:surfer",
     "namespace": "enchantencore",
     "raw_name": "surfer",
     "name": "Surfer",
     "name_vi": "Surfer",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -14804,38 +16927,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:surfer\":3}}] 1"
   },
   {
-    "id": "mt:armor/swamp_chestplate",
-    "namespace": "mt",
-    "raw_name": "armor/swamp_chestplate",
-    "name": "Swamp Chestplate",
-    "name_vi": "Swamp Chestplate",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Grants poison resistance and clears negative status effects.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/swamp_chestplate\":1}}] 1"
-  },
-  {
     "id": "minecraft:sweeping_edge",
     "namespace": "minecraft",
     "raw_name": "sweeping_edge",
     "name": "Sweeping Edge",
     "name_vi": "Sweeping Edge",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -14854,205 +16952,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:sweeping_edge\":3}}] 1"
   },
   {
-    "id": "minecraft:swift_sneak",
-    "namespace": "minecraft",
-    "raw_name": "swift_sneak",
-    "name": "Swift Sneak",
-    "name_vi": "Swift Sneak",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/leg_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Leggings",
-    "exclusive_groups": [
-      "Leggings Movement"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bunny_hop",
-        "name": "Bunny Hop"
-      },
-      {
-        "id": "enchantencore:enderscape",
-        "name": "Enderscape"
-      }
-    ],
-    "description": "Increases sneaking movement speed by +15% per level (up to +45% / 75% of walking speed at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:swift_sneak\":3}}] 1"
-  },
-  {
-    "id": "nova_structures:swift_soar",
-    "namespace": "nova_structures",
-    "raw_name": "swift_soar",
-    "name": "Swift Soar",
-    "name_vi": "Swift Soar",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#minecraft:harnesses",
-    "gear_categories": [
-      "mount"
-    ],
-    "supported_display": "Happy Ghast Harnesses",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Increases Happy Ghast flying speed by +10% (+5% per level above I, up to +20% at Lv III) while sprinting.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:swift_soar\":3}}] 1"
-  },
-  {
-    "id": "enchantsplus:swift_strike",
-    "namespace": "enchantsplus",
-    "raw_name": "swift_strike",
-    "name": "Swift Strike",
-    "name_vi": "Swift Strike",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 5,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#minecraft:enchantable/sharp_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Increases melee attack speed by +12.5% per level (up to +62.5% at Lv V).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:swift_strike\":5}}] 1"
-  },
-  {
-    "id": "enchantencore:switch",
-    "namespace": "enchantencore",
-    "raw_name": "switch",
-    "name": "Switch",
-    "name_vi": "Switch",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/trident",
-    "gear_categories": [
-      "weapon",
-      "ranged"
-    ],
-    "supported_display": "Tridents",
-    "exclusive_groups": [
-      "Trident / Water Aura"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:channeling",
-        "name": "Channeling"
-      },
-      {
-        "id": "enchantencore:ominous_rain",
-        "name": "Ominous Rain"
-      },
-      {
-        "id": "enchantencore:pufferfish",
-        "name": "Pufferfish"
-      },
-      {
-        "id": "minecraft:riptide",
-        "name": "Riptide"
-      },
-      {
-        "id": "enchantencore:sea_breeze",
-        "name": "Sea Breeze"
-      }
-    ],
-    "description": "Thrown tridents swap positions between the thrower and the struck target.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:switch\":1}}] 1"
-  },
-  {
-    "id": "mt:armor/taiga_pants",
-    "namespace": "mt",
-    "raw_name": "armor/taiga_pants",
-    "name": "Taiga Pants",
-    "name_vi": "Taiga Pants",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:leg_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Leggings",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Reduces hunger depletion while sprinting in cold biomes.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/taiga_pants\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:sword/tears_of_asflors",
-    "namespace": "enchantplus",
-    "raw_name": "sword/tears_of_asflors",
-    "name": "Tears of Asflors",
-    "name_vi": "Tears of Asflors",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/melee_weapon",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords & Melee Weapons",
-    "exclusive_groups": [
-      "Sword Effects (Enchant+)"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantplus:sword/death_touch",
-        "name": "Death Touch"
-      }
-    ],
-    "description": "Converts XP into +3 bonus damage (+1 per level above I, up to +5 at Lv III) on hit.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/tears_of_asflors\":3}}] 1"
-  },
-  {
     "id": "minecraft:thorns",
     "namespace": "minecraft",
     "raw_name": "thorns",
     "name": "Thorns",
     "name_vi": "Thorns",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -15071,165 +16977,29 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:thorns\":3}}] 1"
   },
   {
-    "id": "enchantencore:thorns_protection",
-    "namespace": "enchantencore",
-    "raw_name": "thorns_protection",
-    "name": "Thorns Protection",
-    "name_vi": "Thorns Protection",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 4,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 3,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Armor",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Adds +3.5 protection EPF (+3 per level above I, up to +12.5 EPF at Lv IV) against Thorns, cactus, and sweet berry damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:thorns_protection\":4}}] 1"
-  },
-  {
-    "id": "enchantencore:tideweave",
-    "namespace": "enchantencore",
-    "raw_name": "tideweave",
-    "name": "Tideweave",
-    "name_vi": "Tideweave",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Durable Gear",
-    "exclusive_groups": [
-      "Auto-Repair / Durability"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:corrosion_curse",
-        "name": "Curse of Corrosion"
-      },
-      {
-        "id": "enchantencore:emberweave",
-        "name": "Emberweave"
-      },
-      {
-        "id": "enchantencore:handyman",
-        "name": "Handyman"
-      },
-      {
-        "id": "minecraft:mending",
-        "name": "Mending"
-      },
-      {
-        "id": "enchantencore:moonweave",
-        "name": "Moonweave"
-      },
-      {
-        "id": "nova_structures:photosynthesis",
-        "name": "Photosynthesis"
-      },
-      {
-        "id": "enchantencore:rainweave",
-        "name": "Rainweave"
-      },
-      {
-        "id": "enchantencore:sacrifice",
-        "name": "Sacrifice"
-      },
-      {
-        "id": "enchantencore:voidweave",
-        "name": "Voidweave"
-      }
-    ],
-    "description": "Passively repairs item durability over time while submerged in water.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:tideweave\":1}}] 1"
-  },
-  {
-    "id": "nova_structures:traveler",
-    "namespace": "nova_structures",
-    "raw_name": "traveler",
-    "name": "Traveler",
-    "name_vi": "Traveler",
-    "tier": "epic",
-    "tier_order": 99,
+    "id": "expedition_fishing:tide_scavenger",
+    "namespace": "expedition_fishing",
+    "raw_name": "tide_scavenger",
+    "name": "Tide Scavenger",
+    "name_vi": "Tide Scavenger",
+    "tier": "common",
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
-    "table": false,
-    "table_weight": 1,
+    "table": true,
+    "table_weight": 16,
     "tradeable": false,
     "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#minecraft:enchantable/foot_armor",
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
     "gear_categories": [
-      "armor"
+      "tool"
     ],
-    "supported_display": "Boots",
-    "exclusive_groups": [
-      "Boots (Soul Speed / Traveler)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:soul_speed",
-        "name": "Soul Speed"
-      }
-    ],
-    "description": "Increases step height by +0.5 (+0.1 per level above I) and movement speed by +0.01 (+0.005 per level above I).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:traveler\":3}}] 1"
-  },
-  {
-    "id": "nova_structures:multishot",
-    "namespace": "nova_structures",
-    "raw_name": "multishot",
-    "name": "Tri-Shot",
-    "name_vi": "Tri-Shot",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#minecraft:enchantable/bow",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows",
-    "exclusive_groups": [
-      "Bow (Structure Multishot/Piercing)"
-    ],
-    "conflicts": [
-      {
-        "id": "nova_structures:piercing",
-        "name": "Blowthrough"
-      },
-      {
-        "id": "minecraft:infinity",
-        "name": "Infinity"
-      },
-      {
-        "id": "minecraft:power",
-        "name": "Power"
-      }
-    ],
-    "description": "Fires 3 arrows simultaneously from a Bow while consuming only 1 arrow.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:multishot\":1}}] 1"
+    "supported_display": "Fishing Rods",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Increases material drop quantities from Common and Uncommon Sea Creatures by +10% per level.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:tide_scavenger\":3}}] 1"
   },
   {
     "id": "enchantencore:trial_aura",
@@ -15238,7 +17008,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Trial Aura",
     "name_vi": "Trial Aura",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -15316,38 +17086,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:trial_aura\":1}}] 1"
   },
   {
-    "id": "enchantencore:trial_runner",
-    "namespace": "enchantencore",
-    "raw_name": "trial_runner",
-    "name": "Trial Runner",
-    "name_vi": "Trial Runner",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Grants Trial Omen I (15s refreshed) while worn.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:trial_runner\":1}}] 1"
-  },
-  {
     "id": "minecraft:unbreaking",
     "namespace": "minecraft",
     "raw_name": "unbreaking",
     "name": "Unbreaking",
     "name_vi": "Unbreaking",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -15377,7 +17122,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Updraft",
     "name_vi": "Updraft",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 2,
     "table": true,
@@ -15396,63 +17141,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:updraft\":3}}] 1"
   },
   {
-    "id": "veinminer-enchantment:veinminer",
-    "namespace": "veinminer-enchantment",
-    "raw_name": "veinminer",
-    "name": "Veinmine",
-    "name_vi": "Veinmine",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 8,
-    "table": true,
-    "table_weight": 3,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "veinminer-enchantment-1.3.6",
-    "supported_items": "#minecraft:pickaxes",
-    "gear_categories": [
-      "tool"
-    ],
-    "supported_display": "Pickaxes",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Automatically mines all connected ore blocks of the same type in a single break.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"veinminer-enchantment:veinminer\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:velocity",
-    "namespace": "enchantencore",
-    "raw_name": "velocity",
-    "name": "Velocity",
-    "name_vi": "Velocity",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "['minecraft:bow', 'minecraft:crossbow', 'minecraft:trident']",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows, Crossbows & Tridents",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Significantly boosts projectile launch speed and travel range.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:velocity\":1}}] 1"
-  },
-  {
     "id": "enchantplus:mounted/velocity",
     "namespace": "enchantplus",
     "raw_name": "mounted/velocity",
     "name": "Velocity",
     "name_vi": "Velocity",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 3,
     "anvil_cost": 4,
     "table": true,
@@ -15477,7 +17172,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Void Pendant (Amethyst)",
     "name_vi": "Void Pendant (Amethyst)",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -15502,7 +17197,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Void Pendant (Copper)",
     "name_vi": "Void Pendant (Copper)",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -15527,7 +17222,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Void Pendant (Diamond)",
     "name_vi": "Void Pendant (Diamond)",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -15552,7 +17247,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Void Pendant (Emerald)",
     "name_vi": "Void Pendant (Emerald)",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -15577,7 +17272,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Void Pendant (Gold)",
     "name_vi": "Void Pendant (Gold)",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -15602,7 +17297,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Void Pendant (Iron)",
     "name_vi": "Void Pendant (Iron)",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -15627,7 +17322,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Void Pendant (Lapis)",
     "name_vi": "Void Pendant (Lapis)",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -15652,7 +17347,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Void Pendant (Netherite)",
     "name_vi": "Void Pendant (Netherite)",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -15677,7 +17372,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Void Pendant (Quartz)",
     "name_vi": "Void Pendant (Quartz)",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": false,
@@ -15696,255 +17391,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:_technical/void_pendant/quartz\":1}}] 1"
   },
   {
-    "id": "enchantencore:voidweave",
-    "namespace": "enchantencore",
-    "raw_name": "voidweave",
-    "name": "Voidweave",
-    "name_vi": "Voidweave",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/durability",
-    "gear_categories": [
-      "universal"
-    ],
-    "supported_display": "All Durable Gear",
-    "exclusive_groups": [
-      "Auto-Repair / Durability"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:corrosion_curse",
-        "name": "Curse of Corrosion"
-      },
-      {
-        "id": "enchantencore:emberweave",
-        "name": "Emberweave"
-      },
-      {
-        "id": "enchantencore:handyman",
-        "name": "Handyman"
-      },
-      {
-        "id": "minecraft:mending",
-        "name": "Mending"
-      },
-      {
-        "id": "enchantencore:moonweave",
-        "name": "Moonweave"
-      },
-      {
-        "id": "nova_structures:photosynthesis",
-        "name": "Photosynthesis"
-      },
-      {
-        "id": "enchantencore:rainweave",
-        "name": "Rainweave"
-      },
-      {
-        "id": "enchantencore:sacrifice",
-        "name": "Sacrifice"
-      },
-      {
-        "id": "enchantencore:tideweave",
-        "name": "Tideweave"
-      }
-    ],
-    "description": "Passively repairs item durability over time while in The End dimension.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:voidweave\":1}}] 1"
-  },
-  {
-    "id": "mt:weapons/warden_killer",
-    "namespace": "mt",
-    "raw_name": "weapons/warden_killer",
-    "name": "Warden Killer",
-    "name_vi": "Warden Killer",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:echo_shard",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Echo Shards",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Ancient relic forged specifically to counter and slay the Warden.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/warden_killer\":1}}] 1"
-  },
-  {
-    "id": "mt:weapons/warped_bow",
-    "namespace": "mt",
-    "raw_name": "weapons/warped_bow",
-    "name": "Warped Bow",
-    "name_vi": "Warped Bow",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:bow",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Teleports the shooter or target upon arrow impact.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/warped_bow\":1}}] 1"
-  },
-  {
-    "id": "mt:armor/warped_helmet",
-    "namespace": "mt",
-    "raw_name": "armor/warped_helmet",
-    "name": "Warped Helmet",
-    "name_vi": "Warped Helmet",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Helmets",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Slows down nearby enemies approaching the wearer.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/warped_helmet\":1}}] 1"
-  },
-  {
-    "id": "nova_structures:wax_wings",
-    "namespace": "nova_structures",
-    "raw_name": "wax_wings",
-    "name": "Wax Wings",
-    "name_vi": "Wax Wings",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "minecraft:elytra",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Elytra",
-    "exclusive_groups": [
-      "Elytra"
-    ],
-    "conflicts": [],
-    "description": "Prevents Elytra durability loss when gliding slowly.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:wax_wings\":1}}] 1"
-  },
-  {
-    "id": "enchantencore:weakness_aspect",
-    "namespace": "enchantencore",
-    "raw_name": "weakness_aspect",
-    "name": "Weakness Aspect",
-    "name_vi": "Weakness Aspect",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/fire_aspect",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Aspect (Melee Status)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "enchantencore:guard",
-        "name": "Guard"
-      },
-      {
-        "id": "enchantencore:hunger_aspect",
-        "name": "Hunger Aspect"
-      },
-      {
-        "id": "enchantencore:infested_aspect",
-        "name": "Infested Aspect"
-      },
-      {
-        "id": "enchantencore:levitation_aspect",
-        "name": "Levitation Aspect"
-      },
-      {
-        "id": "enchantencore:oozing_aspect",
-        "name": "Oozing Aspect"
-      },
-      {
-        "id": "enchantencore:pacifier",
-        "name": "Pacifier"
-      },
-      {
-        "id": "enchantencore:poison_aspect",
-        "name": "Poison Aspect"
-      },
-      {
-        "id": "enchantencore:slowness_aspect",
-        "name": "Slowness Aspect"
-      },
-      {
-        "id": "enchantencore:weaving_aspect",
-        "name": "Weaving Aspect"
-      },
-      {
-        "id": "enchantencore:wind_aspect",
-        "name": "Wind Aspect"
-      },
-      {
-        "id": "enchantencore:wither_aspect",
-        "name": "Wither Aspect"
-      }
-    ],
-    "description": "Melee hits inflict Weakness for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:weakness_aspect\":2}}] 1"
-  },
-  {
     "id": "enchantencore:weaving_aspect",
     "namespace": "enchantencore",
     "raw_name": "weaving_aspect",
     "name": "Weaving Aspect",
     "name_vi": "Weaving Aspect",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 2,
     "anvil_cost": 2,
     "table": true,
@@ -16014,168 +17467,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:weaving_aspect\":2}}] 1"
   },
   {
-    "id": "enchantencore:web_infused",
-    "namespace": "enchantencore",
-    "raw_name": "web_infused",
-    "name": "Web Infused",
-    "name_vi": "Web Infused",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_bows",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows & Crossbows",
-    "exclusive_groups": [
-      "Bow Arrow Effects",
-      "Bow Infused Arrows"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bomber",
-        "name": "Bomber"
-      },
-      {
-        "id": "enchantplus:bow/echo_shot",
-        "name": "Echo Shot"
-      },
-      {
-        "id": "enchantencore:ender_shot",
-        "name": "Ender Shot"
-      },
-      {
-        "id": "enchantencore:evokers_wrath",
-        "name": "Evoker's Wrath"
-      },
-      {
-        "id": "enchantplus:bow/explosive_arrow",
-        "name": "Explosive Arrow"
-      },
-      {
-        "id": "enchantencore:flare",
-        "name": "Flare"
-      },
-      {
-        "id": "enchantencore:forge_shot",
-        "name": "Forge Shot"
-      },
-      {
-        "id": "enchantencore:implosion",
-        "name": "Implosion"
-      },
-      {
-        "id": "minecraft:infinity",
-        "name": "Infinity"
-      },
-      {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
-      },
-      {
-        "id": "enchantencore:lightning_bolt",
-        "name": "Lightning Bolt"
-      }
-    ],
-    "description": "Arrows trap targets in cobwebs and inflict Slowness II (5s) / III (4s) / IV (3s) across levels I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:web_infused\":3}}] 1"
-  },
-  {
-    "id": "kattersstructures:web_walker",
-    "namespace": "kattersstructures",
-    "raw_name": "web_walker",
-    "name": "Web Walker",
-    "name_vi": "Web Walker",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Katters Structures v2.9",
-    "supported_items": "#minecraft:enchantable/foot_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Boots",
-    "exclusive_groups": [],
-    "conflicts": [
-      {
-        "id": "minecraft:depth_strider",
-        "name": "Depth Strider"
-      },
-      {
-        "id": "enchantencore:end_speed",
-        "name": "End Speed"
-      },
-      {
-        "id": "enchantencore:sand_speed",
-        "name": "Sand Speed"
-      },
-      {
-        "id": "enchantencore:sonic",
-        "name": "Sonic"
-      },
-      {
-        "id": "minecraft:soul_speed",
-        "name": "Soul Speed"
-      }
-    ],
-    "description": "Grants Speed VI (2s) and Weaving (15s) to walk rapidly through cobwebs; effect scales across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"kattersstructures:web_walker\":3}}] 1"
-  },
-  {
-    "id": "enchantsplus:websnare",
-    "namespace": "enchantsplus",
-    "raw_name": "websnare",
-    "name": "Websnare",
-    "name_vi": "Websnare",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 2,
-    "table": true,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Enchants Plus v2.1 26.3",
-    "supported_items": "#minecraft:enchantable/fire_aspect",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Swords & Maces",
-    "exclusive_groups": [
-      "Sword Buffs (Fire / Ice / Web)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "enchantsplus:ice_aspect",
-        "name": "Icicle Impale"
-      }
-    ],
-    "description": "Traps hit targets in cobwebs; duration/effect scales across Lv I–II.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantsplus:websnare\":2}}] 1"
-  },
-  {
     "id": "enchantencore:wind_aspect",
     "namespace": "enchantencore",
     "raw_name": "wind_aspect",
     "name": "Wind Aspect",
     "name_vi": "Wind Aspect",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 2,
     "anvil_cost": 2,
     "table": true,
@@ -16249,277 +17547,13 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wind_aspect\":2}}] 1"
   },
   {
-    "id": "minecraft:wind_burst",
-    "namespace": "minecraft",
-    "raw_name": "wind_burst",
-    "name": "Wind Burst",
-    "name_vi": "Wind Burst",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/mace",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Maces",
-    "exclusive_groups": [
-      "Mace Strike"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantplus:mace/teluric_wave",
-        "name": "Teluric Wave"
-      }
-    ],
-    "description": "Triggers a wind explosion on Mace smash hits, launching the attacker upward (scales strongly across Levels I–III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:wind_burst\":3}}] 1"
-  },
-  {
-    "id": "mt:armor/wind_chestplate",
-    "namespace": "mt",
-    "raw_name": "armor/wind_chestplate",
-    "name": "Wind Chestplate",
-    "name_vi": "Wind Chestplate",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "#minecraft:chest_armor",
-    "gear_categories": [
-      "armor"
-    ],
-    "supported_display": "Chestplates",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Stores wind energy while falling and releases an upward burst on landing.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:armor/wind_chestplate\":1}}] 1"
-  },
-  {
-    "id": "enchantplus:mace/wind_propulsion",
-    "namespace": "enchantplus",
-    "raw_name": "mace/wind_propulsion",
-    "name": "Wind Propulsion",
-    "name_vi": "Wind Propulsion",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "NeoEnchant-5.16.0",
-    "supported_items": "#minecraft:enchantable/mace",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Maces",
-    "exclusive_groups": [],
-    "conflicts": [],
-    "description": "Creates a wind blast on ground impact, launching you upward; blast strength scales across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mace/wind_propulsion\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:wither_aspect",
-    "namespace": "enchantencore",
-    "raw_name": "wither_aspect",
-    "name": "Wither Aspect",
-    "name_vi": "Wither Aspect",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 2,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#minecraft:enchantable/fire_aspect",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Aspect (Melee Status)",
-      "Wither (Coated / Aspect)"
-    ],
-    "conflicts": [
-      {
-        "id": "minecraft:fire_aspect",
-        "name": "Fire Aspect"
-      },
-      {
-        "id": "enchantencore:hunger_aspect",
-        "name": "Hunger Aspect"
-      },
-      {
-        "id": "enchantencore:infested_aspect",
-        "name": "Infested Aspect"
-      },
-      {
-        "id": "enchantencore:levitation_aspect",
-        "name": "Levitation Aspect"
-      },
-      {
-        "id": "enchantencore:oozing_aspect",
-        "name": "Oozing Aspect"
-      },
-      {
-        "id": "enchantencore:pacifier",
-        "name": "Pacifier"
-      },
-      {
-        "id": "enchantencore:poison_aspect",
-        "name": "Poison Aspect"
-      },
-      {
-        "id": "enchantencore:slowness_aspect",
-        "name": "Slowness Aspect"
-      },
-      {
-        "id": "enchantencore:weakness_aspect",
-        "name": "Weakness Aspect"
-      },
-      {
-        "id": "enchantencore:weaving_aspect",
-        "name": "Weaving Aspect"
-      },
-      {
-        "id": "enchantencore:wind_aspect",
-        "name": "Wind Aspect"
-      },
-      {
-        "id": "nova_structures:wither_coated",
-        "name": "Wither Coated"
-      }
-    ],
-    "description": "Melee hits inflict Wither for 2s (Lv I, Amp I) or 4s (Lv II, Amp II) (+2s max duration and +1 level per level).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wither_aspect\":2}}] 1"
-  },
-  {
-    "id": "nova_structures:wither_coated",
-    "namespace": "nova_structures",
-    "raw_name": "wither_coated",
-    "name": "Wither Coated",
-    "name_vi": "Wither Coated",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "Dungeons and Taverns v6.1.0",
-    "supported_items": "#nova_structures:enchantable/wither_coated",
-    "gear_categories": [
-      "weapon"
-    ],
-    "supported_display": "Melee Weapons",
-    "exclusive_groups": [
-      "Wither (Coated / Aspect)"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:wither_aspect",
-        "name": "Wither Aspect"
-      }
-    ],
-    "description": "Inflicts Wither I / II / III (12s / 6s / 3s across Lv I–III) on hit at the cost of +1 extra durability.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"nova_structures:wither_coated\":3}}] 1"
-  },
-  {
-    "id": "enchantencore:wither_infused",
-    "namespace": "enchantencore",
-    "raw_name": "wither_infused",
-    "name": "Wither Infused",
-    "name_vi": "Wither Infused",
-    "tier": "rare",
-    "tier_order": 99,
-    "max_level": 3,
-    "anvil_cost": 4,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
-    "loot": true,
-    "source_pack": "enchantments_encore",
-    "supported_items": "#enchantencore:all_bows",
-    "gear_categories": [
-      "ranged"
-    ],
-    "supported_display": "Bows & Crossbows",
-    "exclusive_groups": [
-      "Bow Arrow Effects",
-      "Bow Infused Arrows"
-    ],
-    "conflicts": [
-      {
-        "id": "enchantencore:bomber",
-        "name": "Bomber"
-      },
-      {
-        "id": "enchantplus:bow/echo_shot",
-        "name": "Echo Shot"
-      },
-      {
-        "id": "enchantencore:ender_shot",
-        "name": "Ender Shot"
-      },
-      {
-        "id": "enchantencore:evokers_wrath",
-        "name": "Evoker's Wrath"
-      },
-      {
-        "id": "enchantplus:bow/explosive_arrow",
-        "name": "Explosive Arrow"
-      },
-      {
-        "id": "enchantencore:flare",
-        "name": "Flare"
-      },
-      {
-        "id": "enchantencore:forge_shot",
-        "name": "Forge Shot"
-      },
-      {
-        "id": "enchantencore:implosion",
-        "name": "Implosion"
-      },
-      {
-        "id": "minecraft:infinity",
-        "name": "Infinity"
-      },
-      {
-        "id": "stellarity:levitation_shot",
-        "name": "Levitation Shot"
-      },
-      {
-        "id": "enchantencore:lightning_bolt",
-        "name": "Lightning Bolt"
-      }
-    ],
-    "description": "Arrows inflict Wither I (3s) at Lv I, Wither II (4s) at Lv II, and Wither II (5s) at Lv III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wither_infused\":3}}] 1"
-  },
-  {
     "id": "enchantencore:wither_protection",
     "namespace": "enchantencore",
     "raw_name": "wither_protection",
     "name": "Wither Protection",
     "name_vi": "Wither Protection",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 4,
     "anvil_cost": 2,
     "table": true,
@@ -16585,29 +17619,29 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:wither_protection\":4}}] 1"
   },
   {
-    "id": "mt:weapons/wither_sword",
-    "namespace": "mt",
-    "raw_name": "weapons/wither_sword",
-    "name": "Wither Sword",
-    "name_vi": "Wither Sword",
-    "tier": "epic",
-    "tier_order": 99,
-    "max_level": 1,
-    "anvil_cost": 6,
-    "table": false,
-    "table_weight": 1,
-    "tradeable": false,
+    "id": "expedition_fishing:xp_magnet",
+    "namespace": "expedition_fishing",
+    "raw_name": "xp_magnet",
+    "name": "XP Magnet",
+    "name_vi": "XP Magnet",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 2,
+    "anvil_cost": 2,
+    "table": true,
+    "table_weight": 16,
+    "tradeable": true,
     "loot": true,
-    "source_pack": "mine-treasure-1.6.5",
-    "supported_items": "minecraft:stone_sword",
+    "source_pack": "expedition_fishing",
+    "supported_items": "#minecraft:enchantable/fishing",
     "gear_categories": [
-      "weapon"
+      "tool"
     ],
-    "supported_display": "Stone Swords",
+    "supported_display": "Fishing Rods",
     "exclusive_groups": [],
     "conflicts": [],
-    "description": "Inflicts continuous Wither decay damage on hit.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/wither_sword\":1}}] 1"
+    "description": "Automatically pulls fishing XP orbs and catch drops directly toward the angler from afar.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:xp_magnet\":2}}] 1"
   },
   {
     "id": "enchantencore:yoink",
@@ -16616,7 +17650,7 @@ window.ALL_ENCHANTMENTS = [
     "name": "Yoink",
     "name_vi": "Yoink",
     "tier": "common",
-    "tier_order": 99,
+    "tier_order": 4,
     "max_level": 1,
     "anvil_cost": 2,
     "table": true,

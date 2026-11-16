@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "expedition-fishing",
+  "version": "${version}",
+  "name": "Expedition Fishing",
+  "description": "RPG Fishing progression (Lv 1-50), Water/Lava/End-Void Sea Creatures, Baits, Artifacts, and Biome Pools (Terralith, Incendium, Stellarity, Nullscape).",
+  "authors": ["Expedition"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.expedition.fishing.ExpeditionFishingMod"
+    ]
+  },
+  "mixins": [
+    "expedition-fishing.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

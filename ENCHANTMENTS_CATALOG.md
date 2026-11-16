@@ -6,10 +6,10 @@
 
 | Tier | Màu sắc | Số lượng | Nguồn kiếm chính | Quy tắc đặc biệt |
 | :--- | :--- | :---: | :--- | :--- |
-| **Ultimate** | Yellow (`yellow`) | **42** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
-| **Epic** | Light Purple (`light_purple`) | **65** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
-| **Rare** | Aqua (`aqua`) | **104** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
-| **Common** | Gray (`gray`) | **136** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
+| **Ultimate** | Yellow (`yellow`) | **44** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
+| **Epic** | Light Purple (`light_purple`) | **73** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
+| **Rare** | Aqua (`aqua`) | **119** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
+| **Common** | Gray (`gray`) | **151** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
 | **Curses** | Red (`red`) | **31** | Rương kho báu / Curse | Lời nguyền |
 | **Filtered Duplicates** | — | **39** | Đã tắt | Lọc trùng giữa các pack |
 
@@ -28,7 +28,7 @@
 | **Leggings** | 19 | 127 | 4 | **7.09%** |
 | **Boots** | 35 | 186 | 8 | **7.53%** |
 
-## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (42)
+## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (44)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -69,13 +69,15 @@
 | `enchantplus:pickaxe/spawner_touch` | 1 | `NeoEnchant-5.16.0` | No | 1 | `#voxel:enchantable/pickaxes` |
 | `enchantplus:tools/miningplus` | 1 | `NeoEnchant-5.16.0` | No | 1 | `#minecraft:enchantable/mining_loot` |
 | `enchantplus:trident/gungnir_breath` | 3 | `NeoEnchant-5.16.0` | No | 1 | `#minecraft:enchantable/trident` |
+| `expedition_fishing:eternal_angler` | 1 | `expedition_fishing` | No | 2 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:poseidons_wrath` | 1 | `expedition_fishing` | No | 2 | `#minecraft:enchantable/fishing` |
 | `stellarity:critical_strike` | 3 | `Stellarity-6.0.1` | No | 1 | `#minecraft:enchantable/sharp_weapon` |
 | `stellarity:void_shot` | 1 | `Stellarity-6.0.1` | No | 1 | `#stellarity:enchantable/ranged` |
 | `stellarity:void_strike` | 1 | `Stellarity-6.0.1` | No | 1 | `#minecraft:enchantable/sharp_weapon` |
 | `wither:soul_siphon` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/weapon` |
 | `wither:witherbound` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/armor` |
 
-## 4. Epic Enchants (Chỉ kiếm từ Kho báu / Hầm ngục) (65)
+## 4. Epic Enchants (Chỉ kiếm từ Kho báu / Hầm ngục) (73)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -103,6 +105,14 @@
 | `enchantplus:sword/reach` | 3 | `NeoEnchant-5.16.0` | No | 5 | `#minecraft:enchantable/melee_weapon` |
 | `enchantsplus:ice_aspect` | 2 | `Enchants Plus v2.1 26.3` | No | 5 | `#minecraft:enchantable/fire_aspect` |
 | `enchantsplus:swift_strike` | 5 | `Enchants Plus v2.1 26.3` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
+| `expedition_fishing:abyssal_blessing` | 1 | `expedition_fishing` | No | 3 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:blood_in_the_water` | 2 | `expedition_fishing` | No | 3 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:boss_lure` | 2 | `expedition_fishing` | No | 3 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:chronos_line` | 2 | `expedition_fishing` | No | 3 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:dimensional_drift` | 1 | `expedition_fishing` | No | 3 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:frenzy_reel` | 1 | `expedition_fishing` | No | 3 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:mirror_cast` | 1 | `expedition_fishing` | No | 3 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:void_anchor` | 2 | `expedition_fishing` | No | 3 | `#minecraft:enchantable/fishing` |
 | `mt:armor/basalt_boots` | 1 | `mine-treasure-1.6.5` | No | 2 | `#minecraft:foot_armor` |
 | `mt:armor/boomproof_cap` | 1 | `mine-treasure-1.6.5` | No | 2 | `#minecraft:foot_armor` |
 | `mt:armor/dark_forest_chestplate` | 1 | `mine-treasure-1.6.5` | No | 2 | `#minecraft:chest_armor` |
@@ -145,7 +155,7 @@
 | `stellarity:ambush` | 3 | `Stellarity-6.0.1` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
 | `stellarity:plated` | 4 | `Stellarity-6.0.1` | No | 2 | `#stellarity:enchantable/elytra` |
 
-## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (104)
+## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (119)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -222,6 +232,21 @@
 | `enchantsplus:kinetic_protection` | 4 | `Enchants Plus v2.1 26.3` | Yes | 10 | `#minecraft:enchantable/head_armor` |
 | `enchantsplus:retrieval` | 4 | `Enchants Plus v2.1 26.3` | No | 5 | `#minecraft:enchantable/chest_armor` |
 | `enchantsplus:websnare` | 2 | `Enchants Plus v2.1 26.3` | Yes | 10 | `#minecraft:enchantable/fire_aspect` |
+| `expedition_fishing:biome_attunement` | 2 | `expedition_fishing` | No | 5 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:blazing_line` | 1 | `expedition_fishing` | Yes | 6 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:chain_catch` | 2 | `expedition_fishing` | No | 5 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:culling_line` | 2 | `expedition_fishing` | No | 5 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:double_hook` | 3 | `expedition_fishing` | Yes | 6 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:frostbite_hook` | 2 | `expedition_fishing` | Yes | 6 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:heat_channeling` | 2 | `expedition_fishing` | No | 5 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:lucky_clover` | 3 | `expedition_fishing` | No | 5 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:magma_tether` | 2 | `expedition_fishing` | No | 5 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:sea_creature_chance` | 3 | `expedition_fishing` | Yes | 6 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:slayer_hook` | 3 | `expedition_fishing` | Yes | 6 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:stunning_yank` | 2 | `expedition_fishing` | No | 5 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:thermal_cooling` | 3 | `expedition_fishing` | Yes | 6 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:treasure_hunter` | 3 | `expedition_fishing` | Yes | 6 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:trophy_hunter` | 3 | `expedition_fishing` | No | 5 | `#minecraft:enchantable/fishing` |
 | `kattersstructures:blunt` | 1 | `Katters Structures v2.9` | No | 5 | `#minecraft:enchantable/sharp_weapon` |
 | `kattersstructures:enlightning` | 1 | `Katters Structures v2.9` | No | 5 | `minecraft:blaze_rod` |
 | `kattersstructures:light` | 3 | `Katters Structures v2.9` | No | 5 | `#minecraft:enchantable/armor` |
@@ -254,7 +279,7 @@
 | `stellarity:levitation_shot` | 5 | `Stellarity-6.0.1` | No | 5 | `#minecraft:enchantable/bow` |
 | `veinminer-enchantment:veinminer` | 1 | `veinminer-enchantment-1.3.6` | Yes | 1 | `#minecraft:pickaxes` |
 
-## 6. Common Enchants (136)
+## 6. Common Enchants (151)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -334,6 +359,21 @@
 | `enchantsplus:pyrolysis` | 1 | `Enchants Plus v2.1 26.3` | Yes | 2 | `#minecraft:enchantable/mining_loot` |
 | `enchantsplus:skyguard` | 4 | `Enchants Plus v2.1 26.3` | Yes | 10 | `minecraft:elytra` |
 | `enchantsplus:stride` | 3 | `Enchants Plus v2.1 26.3` | Yes | 10 | `#minecraft:enchantable/leg_armor` |
+| `expedition_fishing:angler_instinct` | 2 | `expedition_fishing` | Yes | 10 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:bait_saver` | 3 | `expedition_fishing` | Yes | 10 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:deep_water` | 2 | `expedition_fishing` | Yes | 8 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:fishermans_feast` | 2 | `expedition_fishing` | Yes | 10 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:gentle_reel` | 2 | `expedition_fishing` | Yes | 10 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:heavy_sinker` | 3 | `expedition_fishing` | Yes | 10 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:luminous_bobber` | 1 | `expedition_fishing` | Yes | 10 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:night_fisher` | 2 | `expedition_fishing` | Yes | 8 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:quick_cast` | 3 | `expedition_fishing` | Yes | 10 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:steady_hand` | 2 | `expedition_fishing` | Yes | 10 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:storm_caller` | 2 | `expedition_fishing` | Yes | 8 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:sunlit_cast` | 2 | `expedition_fishing` | Yes | 8 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:surface_cast` | 2 | `expedition_fishing` | Yes | 8 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:tide_scavenger` | 3 | `expedition_fishing` | Yes | 10 | `#minecraft:enchantable/fishing` |
+| `expedition_fishing:xp_magnet` | 2 | `expedition_fishing` | Yes | 10 | `#minecraft:enchantable/fishing` |
 | `kattersstructures:heavy` | 5 | `Katters Structures v2.9` | Yes | 10 | `#minecraft:enchantable/weapon` |
 | `minecraft:aqua_affinity` | 1 | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/head_armor` |
 | `minecraft:bane_of_arthropods` | 5 | `minecraft (vanilla)` | Yes | 10 | `#minecraft:enchantable/weapon` |

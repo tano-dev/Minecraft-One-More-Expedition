@@ -1,0 +1,22 @@
+{
+  "description": {
+    "text": "Magma Tether"
+  },
+  "supported_items": "#minecraft:enchantable/fishing",
+  "weight": 1,
+  "max_level": 2,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 8
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {}
+}

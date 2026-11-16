@@ -699,6 +699,16 @@ def build_all():
     for d in ALL_DICTS:
         master.update(d)
     master["bound:bound"] = (3, 4, ["armor"], "Boots", "Bound", "Allows mid-air double jumping while wearing Boots; extra jumps scale across Lv I–III.")
+    for eid, entry in cfg["enchantments"].items():
+        if eid.startswith("expedition_fishing:"):
+            master[eid] = (
+                entry.get("max_level", 1),
+                entry.get("anvil_cost", 2),
+                ["tool"],
+                "Fishing Rods",
+                entry.get("name_vi", eid.split(":", 1)[1].replace("_", " ").title()),
+                entry.get("description", "Fishing enchantment.")
+            )
 
     enabled_ids = {eid for eid, entry in cfg["enchantments"].items() if entry.get("enabled", True)}
     names_by_id = {}
@@ -710,7 +720,7 @@ def build_all():
 
     exc_groups_map, exc_conflicts_map = compute_exclusive_metadata(base_dir, enabled_ids, names_by_id)
 
-    tier_order = {"ultimate": 1, "high": 2, "normal": 3, "low": 4, "curse": 5}
+    tier_order = {"ultimate": 1, "epic": 2, "rare": 3, "common": 4, "curse": 5, "high": 2, "normal": 3, "low": 4}
     final_list = []
     missing_ids = []
 
