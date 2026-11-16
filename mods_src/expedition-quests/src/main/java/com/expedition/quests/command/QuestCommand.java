@@ -207,9 +207,6 @@ public class QuestCommand {
             var choices = com.expedition.quests.generator.QuestDraftGenerator.generateDraftChoices(target, data, slot, 1);
             if (!choices.isEmpty()) {
                 QuestEntry q = choices.get(0);
-                if (q.isExploration()) {
-                    UnexploredStructureLocator.locateAndLockTarget(target.level().getServer(), target, q);
-                }
                 data.activeSlots.put(slot, q);
             }
         }

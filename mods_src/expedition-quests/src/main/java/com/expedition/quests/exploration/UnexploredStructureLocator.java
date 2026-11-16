@@ -106,8 +106,8 @@ public class UnexploredStructureLocator {
                 return;
             }
 
-            // Verify with level chunk generator that structure actually exists in terrain
-            BlockPos verifiedPos = locateStructureFast(targetLevel, new BlockPos(target.x, 64, target.z), target.targetId, 24);
+            // Instant local verification: check exact candidate chunk and immediate neighbors (radius 2)
+            BlockPos verifiedPos = locateStructureFast(targetLevel, new BlockPos(target.x, 64, target.z), target.targetId, 2);
             if (verifiedPos != null) {
                 quest.category = target.category;
                 quest.subType = target.targetId;

@@ -296,16 +296,29 @@ public class ExpeditionQuestsApi {
         if (amount <= 0 || player == null) return;
         try {
             MinecraftServer server = player.level().getServer();
-            // Correct class: com.reazip.economycraft.EconomyCraft (verified via javap)
-            Class<?> ecoClass = Class.forName("com.reazip.economycraft.EconomyCraft");
-            Object mgr = ecoClass.getMethod("getManager", MinecraftServer.class).invoke(null, server);
-            if (mgr != null) {
-                Class<?> mutClass = Class.forName("com.reazip.economycraft.api.v1.MutationSource");
-                Object src = mutClass.getMethod("of", String.class).invoke(null, "expedition_quests");
-                mgr.getClass().getMethod("addMoney", UUID.class, long.class, mutClass).invoke(mgr, player.getUUID(), amount, src);
+            // Official EconomyCraft v1 API: EconomyCraftApi.get(server).balances().addMoney(uuid, amount)
+            Class<?> apiClass = Class.forName("com.reazip.economycraft.api.v1.EconomyCraftApi");
+            Object api = apiClass.getMethod("get", MinecraftServer.class).invoke(null, server);
+            if (api != null) {
+                Object balances = api.getClass().getMethod("balances").invoke(api);
+                if (balances != null) {
+                    balances.getClass().getMethod("addMoney", UUID.class, long.class).invoke(balances, player.getUUID(), amount);
+                    return;
+                }
             }
         } catch (Throwable t) {
-            com.expedition.quests.ExpeditionQuestsMod.LOGGER.warn("[Expedition Quests] Failed to deposit {} coins for {}: {}", amount, player.getName().getString(), t.getMessage());
+            com.expedition.quests.ExpeditionQuestsMod.LOGGER.warn("[Expedition Quests] API deposit failed: {}", t.getMessage());
         }
+
+        // Fallback: execute server command silently
+        try {
+            MinecraftServer server = player.level().getServer();
+            if (server != null) {
+                server.getCommands().performPrefixedCommand(
+                        server.createCommandSourceStack().withSuppressedOutput(),
+                        "eco addmoney " + player.getName().getString() + " " + amount
+                );
+            }
+        } catch (Throwable ignored) {}
     }
 }
