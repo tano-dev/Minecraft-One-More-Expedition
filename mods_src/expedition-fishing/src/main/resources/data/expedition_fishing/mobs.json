@@ -3091,14 +3091,14 @@
       },
       "abilities": [
         {
-          "id": "DUNE_BEAM",
-          "cooldown_ticks": 120,
+          "id": "CRYSTAL_SHARD_VOLLEY",
+          "cooldown_ticks": 110,
           "weight": 2,
           "chance": 1.0
         },
         {
-          "id": "TIDAL_PULL",
-          "cooldown_ticks": 140,
+          "id": "PRISMATIC_REFRACTION",
+          "cooldown_ticks": 150,
           "weight": 1,
           "chance": 1.0
         }
@@ -3135,14 +3135,14 @@
       "damage": 14.0,
       "abilities": [
         {
-          "id": "MINI_BLAST",
-          "cooldown_ticks": 110,
+          "id": "CRYSTAL_SHARD_VOLLEY",
+          "cooldown_ticks": 100,
           "weight": 2,
           "chance": 1.0
         },
         {
-          "id": "RIFTBOUND_SNARE",
-          "cooldown_ticks": 150,
+          "id": "STARLIGHT_PILLAR",
+          "cooldown_ticks": 140,
           "weight": 1,
           "chance": 1.0
         }
@@ -3186,15 +3186,15 @@
       ],
       "abilities": [
         {
-          "id": "SOUL_RUPTURE",
-          "cooldown_ticks": 120,
+          "id": "VOID_CORRUPTION",
+          "cooldown_ticks": 115,
           "weight": 2,
           "chance": 1.0
         },
         {
-          "id": "INK_CLOUD",
-          "cooldown_ticks": 150,
-          "weight": 1,
+          "id": "DIMENSIONAL_SLASH",
+          "cooldown_ticks": 130,
+          "weight": 2,
           "chance": 1.0
         }
       ]
@@ -3231,20 +3231,20 @@
       "particle": "reverse_portal",
       "abilities": [
         {
+          "id": "DIMENSIONAL_SLASH",
+          "cooldown_ticks": 100,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
           "id": "RIFTBOUND_GAZE",
           "cooldown_ticks": 130,
           "weight": 2,
           "chance": 1.0
         },
         {
-          "id": "RIFTBOUND_SNARE",
-          "cooldown_ticks": 160,
-          "weight": 2,
-          "chance": 1.0
-        },
-        {
-          "id": "DARK_RITUAL",
-          "cooldown_ticks": 180,
+          "id": "VOID_CORRUPTION",
+          "cooldown_ticks": 150,
           "weight": 1,
           "chance": 1.0
         }
@@ -3287,13 +3287,13 @@
       },
       "abilities": [
         {
-          "id": "ABYSSAL_NOVA",
-          "cooldown_ticks": 140,
+          "id": "GRAVITY_SINGULARITY",
+          "cooldown_ticks": 130,
           "weight": 2,
           "chance": 1.0
         },
         {
-          "id": "TIDAL_PULL",
+          "id": "EVENT_HORIZON_PULL",
           "cooldown_ticks": 110,
           "weight": 2,
           "chance": 1.0
@@ -3337,27 +3337,21 @@
       },
       "abilities": [
         {
-          "id": "TORSO_TENTACLES",
-          "cooldown_ticks": 90,
+          "id": "GRAVITY_SINGULARITY",
+          "cooldown_ticks": 115,
           "weight": 3,
           "chance": 1.0
         },
         {
-          "id": "ABYSSAL_NOVA",
-          "cooldown_ticks": 150,
+          "id": "VOID_CORRUPTION",
+          "cooldown_ticks": 130,
           "weight": 2,
           "chance": 1.0
         },
         {
-          "id": "TIDAL_PULL",
+          "id": "EVENT_HORIZON_PULL",
           "cooldown_ticks": 100,
           "weight": 2,
-          "chance": 1.0
-        },
-        {
-          "id": "INK_CLOUD",
-          "cooldown_ticks": 140,
-          "weight": 1,
           "chance": 1.0
         }
       ]
@@ -3413,20 +3407,20 @@
       },
       "abilities": [
         {
-          "id": "GROUND_SLAM",
+          "id": "VOID_METEOR_SHOWER",
           "cooldown_ticks": 110,
           "weight": 3,
           "chance": 1.0
         },
         {
-          "id": "SOUL_GEYSERS",
-          "cooldown_ticks": 130,
+          "id": "DIMENSIONAL_SLASH",
+          "cooldown_ticks": 95,
           "weight": 2,
           "chance": 1.0
         },
         {
-          "id": "ABYSSAL_NOVA",
-          "cooldown_ticks": 160,
+          "id": "GRAVITY_SINGULARITY",
+          "cooldown_ticks": 140,
           "weight": 2,
           "chance": 1.0
         }
@@ -3469,26 +3463,480 @@
       },
       "abilities": [
         {
-          "id": "POSEIDON_STORM_WAVE",
-          "cooldown_ticks": 90,
+          "id": "STARLIGHT_PILLAR",
+          "cooldown_ticks": 85,
           "weight": 3,
           "chance": 1.0
         },
         {
-          "id": "ABYSSAL_NOVA",
+          "id": "VOID_METEOR_SHOWER",
+          "cooldown_ticks": 110,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
+          "id": "PRISMATIC_REFRACTION",
+          "cooldown_ticks": 140,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "TIME_DILATION_FIELD",
+          "cooldown_ticks": 150,
+          "weight": 2,
+          "chance": 1.0
+        }
+      ]
+    }
+  },
+  "chorus_jellyfish": {
+    "entity_type": "GLOW_SQUID",
+    "display_name": "Chorus Jellyfish",
+    "xp": 140.0,
+    "base_weight": 6.5,
+    "default_chance": 0.0,
+    "category": "HOSTILE",
+    "required_level": 35,
+    "rarity": "UNCOMMON",
+    "dimension": "END",
+    "drops": [
+      {
+        "item": "void_scale",
+        "chance": 0.9,
+        "min": 1,
+        "max": 3
+      },
+      {
+        "vanilla": "CHORUS_FRUIT",
+        "chance": 0.8,
+        "min": 1,
+        "max": 3
+      }
+    ],
+    "spawn": {
+      "scale": 1.4,
+      "health": 110.0,
+      "aggro": {
+        "speed": 1.15,
+        "damage": 11.0,
+        "range": 3.5,
+        "hit_interval": 25
+      },
+      "particle": "portal",
+      "abilities": [
+        {
+          "id": "EVENT_HORIZON_PULL",
+          "cooldown_ticks": 150,
+          "weight": 1,
+          "chance": 1.0
+        }
+      ]
+    }
+  },
+  "amethyst_crab": {
+    "entity_type": "ENDERMITE",
+    "display_name": "Crystal Carapace",
+    "xp": 160.0,
+    "base_weight": 12.0,
+    "default_chance": 0.0,
+    "category": "HOSTILE",
+    "required_level": 36,
+    "rarity": "UNCOMMON",
+    "dimension": "END",
+    "drops": [
+      {
+        "item": "ender_fragment",
+        "chance": 0.85,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "vanilla": "AMETHYST_SHARD",
+        "chance": 1.0,
+        "min": 2,
+        "max": 5
+      }
+    ],
+    "spawn": {
+      "type": "GROUP",
+      "spread": 2.0,
+      "members": [
+        {
+          "entity_type": "ENDERMITE",
+          "count": 3,
+          "scale": 1.7,
+          "health": 95.0,
+          "damage": 10.0
+        }
+      ]
+    }
+  },
+  "frosted_void_ray": {
+    "entity_type": "PHANTOM",
+    "display_name": "Frosted Void Ray",
+    "xp": 310.0,
+    "base_weight": 34.0,
+    "default_chance": 0.0,
+    "category": "HOSTILE",
+    "required_level": 38,
+    "rarity": "RARE",
+    "dimension": "END",
+    "drops": [
+      {
+        "item": "ice_wing",
+        "chance": 0.75,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "void_scale",
+        "chance": 1.0,
+        "min": 2,
+        "max": 4
+      }
+    ],
+    "spawn": {
+      "scale": 2.0,
+      "health": 280.0,
+      "aggro": {
+        "speed": 1.1,
+        "damage": 15.0,
+        "range": 4.5,
+        "hit_interval": 30
+      },
+      "abilities": [
+        {
+          "id": "FROST_BEAM",
+          "cooldown_ticks": 110,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "CRYSTAL_SHARD_VOLLEY",
+          "cooldown_ticks": 130,
+          "weight": 2,
+          "chance": 1.0
+        }
+      ]
+    }
+  },
+  "ashfall_behemoth": {
+    "entity_type": "MAGMA_CUBE",
+    "display_name": "Ashfall Magma Fiend",
+    "xp": 350.0,
+    "base_weight": 65.0,
+    "default_chance": 0.0,
+    "category": "HOSTILE",
+    "required_level": 39,
+    "rarity": "RARE",
+    "dimension": "END",
+    "drops": [
+      {
+        "item": "magma_residue",
+        "chance": 0.9,
+        "min": 2,
+        "max": 4
+      },
+      {
+        "item": "ender_fragment",
+        "chance": 0.8,
+        "min": 1,
+        "max": 3
+      }
+    ],
+    "spawn": {
+      "type": "SCALED",
+      "slime_size": 6,
+      "health": 380.0,
+      "damage": 17.0,
+      "abilities": [
+        {
+          "id": "FIRE_GEYSERS",
+          "cooldown_ticks": 120,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "VOID_METEOR_SHOWER",
+          "cooldown_ticks": 160,
+          "weight": 1,
+          "chance": 1.0
+        }
+      ]
+    }
+  },
+  "hallowed_seraph": {
+    "entity_type": "STRAY",
+    "display_name": "Hallowed Seraph",
+    "xp": 620.0,
+    "base_weight": 85.0,
+    "default_chance": 0.0,
+    "category": "HOSTILE",
+    "required_level": 41,
+    "rarity": "EPIC",
+    "dimension": "END",
+    "drops": [
+      {
+        "item": "abyssal_pearl",
+        "chance": 0.75,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "starlight_relic",
+        "chance": 0.25,
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "spawn": {
+      "type": "MOUNTED",
+      "mount": {
+        "entity_type": "PHANTOM",
+        "display_name": "Seraphic Wings",
+        "scale": 2.2,
+        "aggro": {
+          "speed": 1.25,
+          "damage": 16.0,
+          "range": 5.0,
+          "hit_interval": 30
+        }
+      },
+      "scale": 1.5,
+      "health": 620.0,
+      "damage": 20.0,
+      "equipment": {
+        "helmet": "voidweaver_helmet",
+        "chestplate": "dyed:LEATHER_CHESTPLATE:#F9A8D4",
+        "leggings": "dyed:LEATHER_LEGGINGS:#F9A8D4",
+        "boots": "dyed:LEATHER_BOOTS:#F9A8D4",
+        "mainhand": "enchanted:TRIDENT:IMPALING:5"
+      },
+      "abilities": [
+        {
+          "id": "STARLIGHT_PILLAR",
+          "cooldown_ticks": 100,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
+          "id": "PRISMATIC_REFRACTION",
+          "cooldown_ticks": 160,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "CRYSTAL_SHARD_VOLLEY",
+          "cooldown_ticks": 120,
+          "weight": 2,
+          "chance": 1.0
+        }
+      ]
+    }
+  },
+  "null_devourer": {
+    "entity_type": "RAVAGER",
+    "display_name": "Nullscape Devourer",
+    "xp": 740.0,
+    "base_weight": 190.0,
+    "default_chance": 0.0,
+    "category": "HOSTILE",
+    "required_level": 43,
+    "rarity": "EPIC",
+    "dimension": "END",
+    "drops": [
+      {
+        "item": "void_core",
+        "chance": 0.45,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "dread_soul",
+        "chance": 0.85,
+        "min": 1,
+        "max": 3
+      }
+    ],
+    "spawn": {
+      "scale": 1.8,
+      "health": 760.0,
+      "damage": 24.0,
+      "particle": "void_colossus",
+      "abilities": [
+        {
+          "id": "GRAVITY_SINGULARITY",
+          "cooldown_ticks": 140,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
+          "id": "VOID_CORRUPTION",
+          "cooldown_ticks": 120,
+          "weight": 2,
+          "chance": 1.0
+        },
+        {
+          "id": "DIMENSIONAL_SLASH",
+          "cooldown_ticks": 110,
+          "weight": 2,
+          "chance": 1.0
+        }
+      ]
+    }
+  },
+  "chronos_archon": {
+    "entity_type": "WITHER_SKELETON",
+    "display_name": "Chronos Archon",
+    "xp": 1400.0,
+    "base_weight": 260.0,
+    "default_chance": 0.0,
+    "category": "HOSTILE",
+    "required_level": 47,
+    "rarity": "LEGENDARY",
+    "dimension": "END",
+    "drops": [
+      {
+        "item": "void_core",
+        "chance": 0.8,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "starlight_relic",
+        "chance": 0.55,
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "spawn": {
+      "scale": 2.1,
+      "health": 1080.0,
+      "damage": 27.0,
+      "potion_effects": [
+        {
+          "type": "GLOWING",
+          "duration": -1,
+          "amplifier": 0
+        },
+        {
+          "type": "SPEED",
+          "duration": -1,
+          "amplifier": 1
+        }
+      ],
+      "equipment": {
+        "helmet": "voidweaver_helmet",
+        "chestplate": "dyed:LEATHER_CHESTPLATE:#FDE047",
+        "leggings": "dyed:LEATHER_LEGGINGS:#A855F7",
+        "boots": "dyed:LEATHER_BOOTS:#FDE047",
+        "mainhand": "hephaestean_trident"
+      },
+      "abilities": [
+        {
+          "id": "TIME_DILATION_FIELD",
           "cooldown_ticks": 130,
           "weight": 3,
           "chance": 1.0
         },
         {
-          "id": "WAILING_TWIN_LASER",
-          "cooldown_ticks": 80,
+          "id": "TEMPORAL_REWIND",
+          "cooldown_ticks": 180,
           "weight": 2,
           "chance": 1.0
         },
         {
-          "id": "VALLEY_DIRGE",
-          "cooldown_ticks": 150,
+          "id": "STARLIGHT_PILLAR",
+          "cooldown_ticks": 95,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
+          "id": "DIMENSIONAL_SLASH",
+          "cooldown_ticks": 110,
+          "weight": 2,
+          "chance": 1.0
+        }
+      ]
+    }
+  },
+  "void_emperor": {
+    "entity_type": "WITHER_SKELETON",
+    "display_name": "Emperor of the Nihility",
+    "xp": 2400.0,
+    "base_weight": 500.0,
+    "default_chance": 0.0,
+    "category": "HOSTILE",
+    "required_level": 50,
+    "rarity": "LEGENDARY",
+    "dimension": "END",
+    "drops": [
+      {
+        "item": "starlight_relic",
+        "chance": 1.0,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "void_core",
+        "chance": 1.0,
+        "min": 2,
+        "max": 3
+      }
+    ],
+    "spawn": {
+      "type": "MOUNTED",
+      "mount": {
+        "entity_type": "RAVAGER",
+        "display_name": "Nihility Behemoth",
+        "scale": 2.3,
+        "aggro": {
+          "speed": 1.3,
+          "damage": 25.0,
+          "range": 6.0,
+          "hit_interval": 28
+        }
+      },
+      "scale": 2.0,
+      "health": 1450.0,
+      "damage": 34.0,
+      "particle": "void_colossus",
+      "potion_effects": [
+        {
+          "type": "GLOWING",
+          "duration": -1,
+          "amplifier": 0
+        }
+      ],
+      "equipment": {
+        "helmet": "voidweaver_helmet",
+        "chestplate": "voidweaver_chestplate",
+        "leggings": "voidweaver_leggings",
+        "boots": "voidweaver_boots",
+        "mainhand": "hephaestean_trident"
+      },
+      "abilities": [
+        {
+          "id": "GRAVITY_SINGULARITY",
+          "cooldown_ticks": 120,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
+          "id": "EVENT_HORIZON_PULL",
+          "cooldown_ticks": 100,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
+          "id": "VOID_METEOR_SHOWER",
+          "cooldown_ticks": 130,
+          "weight": 3,
+          "chance": 1.0
+        },
+        {
+          "id": "DIMENSIONAL_SLASH",
+          "cooldown_ticks": 90,
           "weight": 2,
           "chance": 1.0
         }

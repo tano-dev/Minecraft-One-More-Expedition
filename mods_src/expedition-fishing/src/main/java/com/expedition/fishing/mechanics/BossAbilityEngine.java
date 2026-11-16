@@ -177,6 +177,28 @@ public class BossAbilityEngine {
             ServerPlayer target = findTarget(level, boss, ctrl.ownerUuid);
             if (target == null) continue;
 
+            // 3b. Anti-Void Spatial Recall (prevents End/Void Sea Creatures from falling into the Void and dying!)
+            Entity rootEnt = boss.getVehicle() != null ? boss.getVehicle() : boss;
+            if ((level.dimension() == Level.END || rootEnt.getY() < 5)
+                    && (rootEnt.getY() < target.getY() - 3.5 || rootEnt.getY() < 5)
+                    && !FishingEngine.hasSolidGroundBelow(level, rootEnt.blockPosition(), 6)) {
+                Vec3 safe = FishingEngine.findSafeLandingPos(level, target);
+                level.sendParticles(ParticleTypes.REVERSE_PORTAL, rootEnt.getX(), rootEnt.getY() + 0.5, rootEnt.getZ(), 30, 0.4, 0.5, 0.4, 0.15);
+                rootEnt.teleportTo(safe.x, safe.y, safe.z);
+                rootEnt.setDeltaMovement(0, 0.1, 0);
+                if (boss != rootEnt) {
+                    boss.teleportTo(safe.x, safe.y + 0.8, safe.z);
+                    boss.setDeltaMovement(0, 0.1, 0);
+                    boss.startRiding(rootEnt, true, true);
+                }
+                boss.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 120, 0, true, false));
+                if (rootEnt instanceof LivingEntity rLiv) {
+                    rLiv.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 120, 0, true, false));
+                }
+                level.sendParticles(ParticleTypes.REVERSE_PORTAL, safe.x, safe.y + 0.8, safe.z, 35, 0.5, 0.5, 0.5, 0.15);
+                level.playSound(null, target.blockPosition(), SoundEvents.ENDERMAN_TELEPORT, SoundSource.HOSTILE, 0.9f, 1.1f);
+            }
+
             if (boss instanceof Mob mob && mob.getTarget() != target) {
                 mob.setTarget(target);
             }
@@ -413,6 +435,104 @@ public class BossAbilityEngine {
                 boss.heal(25.0f);
                 boss.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 120, 0));
                 boss.addEffect(new MobEffectInstance(MobEffects.SPEED, 120, 0));
+            }
+            case "GRAVITY_SINGULARITY" -> {
+                Vec3 center = bPos.add(tPos).scale(0.5).add(0, 1.2, 0);
+                level.sendParticles(ParticleTypes.WITCH, center.x, center.y, center.z, 55, 1.2, 1.2, 1.2, 0.08);
+                level.sendParticles(ParticleTypes.REVERSE_PORTAL, center.x, center.y, center.z, 40, 0.8, 0.8, 0.8, 0.2);
+                level.playSound(null, target.blockPosition(), SoundEvents.END_PORTAL_SPAWN, SoundSource.HOSTILE, 0.6f, 1.5f);
+                Vec3 pull = center.subtract(tPos).normalize().scale(0.95);
+                target.setDeltaMovement(pull.x, Math.max(0.25, pull.y * 0.5), pull.z);
+                target.connection.send(new ClientboundSetEntityMotionPacket(target));
+                target.hurtServer(level, level.damageSources().indirectMagic(boss, boss), scaleAbDmg(15.0f));
+                target.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 60, 2));
+            }
+            case "STARLIGHT_PILLAR" -> {
+                for (int h = 0; h < 12; h++) {
+                    level.sendParticles(ParticleTypes.END_ROD, tPos.x, tPos.y + h * 0.7, tPos.z, 6, 0.35, 0.2, 0.35, 0.02);
+                }
+                level.sendParticles(ParticleTypes.FIREWORK, tPos.x, tPos.y + 1.0, tPos.z, 30, 0.6, 0.8, 0.6, 0.15);
+                level.playSound(null, target.blockPosition(), SoundEvents.TRIDENT_THUNDER.value(), SoundSource.HOSTILE, 0.9f, 1.4f);
+                target.hurtServer(level, level.damageSources().indirectMagic(boss, boss), scaleAbDmg(15.0f));
+                target.addEffect(new MobEffectInstance(MobEffects.GLOWING, 100, 0));
+            }
+            case "VOID_METEOR_SHOWER" -> {
+                level.playSound(null, target.blockPosition(), SoundEvents.GHAST_SHOOT, SoundSource.HOSTILE, 1.0f, 0.6f);
+                for (int m = -1; m <= 1; m++) {
+                    Vec3 mPos = tPos.add(m * 1.5, 0.5, (1 - Math.abs(m)) * 1.5);
+                    level.sendParticles(ParticleTypes.WITCH, mPos.x, mPos.y + 3.0, mPos.z, 25, 0.4, 1.5, 0.4, 0.1);
+                    level.sendParticles(ParticleTypes.EXPLOSION, mPos.x, mPos.y + 0.5, mPos.z, 3, 0.3, 0.3, 0.3, 0.02);
+                }
+                level.playSound(null, target.blockPosition(), SoundEvents.GENERIC_EXPLODE.value(), SoundSource.HOSTILE, 0.85f, 1.1f);
+                target.hurtServer(level, level.damageSources().mobAttack(boss), scaleAbDmg(16.0f));
+            }
+            case "CRYSTAL_SHARD_VOLLEY" -> {
+                Vec3 start = bPos.add(0, boss.getEyeHeight(), 0);
+                Vec3 end = tPos.add(0, 1.0, 0);
+                Vec3 diff = end.subtract(start);
+                for (int i = 0; i <= 14; i++) {
+                    Vec3 p = start.add(diff.scale(i / 14.0));
+                    level.sendParticles(ParticleTypes.END_ROD, p.x, p.y, p.z, 3, 0.15, 0.15, 0.15, 0.02);
+                    level.sendParticles(ParticleTypes.SNOWFLAKE, p.x, p.y, p.z, 2, 0.1, 0.1, 0.1, 0.01);
+                }
+                level.playSound(null, target.blockPosition(), SoundEvents.AMETHYST_BLOCK_BREAK, SoundSource.HOSTILE, 1.0f, 1.3f);
+                target.hurtServer(level, level.damageSources().indirectMagic(boss, boss), scaleAbDmg(13.0f));
+                target.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 80, 1));
+            }
+            case "TIME_DILATION_FIELD" -> {
+                level.sendParticles(ParticleTypes.ENCHANT, tPos.x, tPos.y + 1.2, tPos.z, 60, 2.0, 1.0, 2.0, 0.4);
+                level.sendParticles(ParticleTypes.PORTAL, bPos.x, bPos.y + 1.0, bPos.z, 40, 1.2, 1.0, 1.2, 0.2);
+                level.playSound(null, target.blockPosition(), SoundEvents.BEACON_DEACTIVATE, SoundSource.HOSTILE, 1.0f, 0.7f);
+                target.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 100, 2));
+                target.addEffect(new MobEffectInstance(MobEffects.MINING_FATIGUE, 100, 1));
+                boss.addEffect(new MobEffectInstance(MobEffects.SPEED, 120, 1));
+            }
+            case "TEMPORAL_REWIND" -> {
+                level.sendParticles(ParticleTypes.REVERSE_PORTAL, bPos.x, bPos.y + 1.0, bPos.z, 45, 0.6, 1.0, 0.6, 0.25);
+                level.playSound(null, boss.blockPosition(), SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.HOSTILE, 1.0f, 1.6f);
+                boss.heal(40.0f);
+                Vec3 safe = FishingEngine.findSafeLandingPos(level, target);
+                boss.teleportTo(safe.x, safe.y, safe.z);
+            }
+            case "DIMENSIONAL_SLASH" -> {
+                level.sendParticles(ParticleTypes.SWEEP_ATTACK, tPos.x, tPos.y + 1.0, tPos.z, 6, 0.6, 0.4, 0.6, 0.05);
+                level.sendParticles(ParticleTypes.REVERSE_PORTAL, tPos.x, tPos.y + 1.0, tPos.z, 35, 0.6, 0.8, 0.6, 0.15);
+                level.playSound(null, target.blockPosition(), SoundEvents.PLAYER_ATTACK_SWEEP, SoundSource.HOSTILE, 1.0f, 0.7f);
+                Vec3 safe = FishingEngine.findSafeLandingPos(level, target);
+                boss.teleportTo(safe.x, safe.y, safe.z);
+                target.hurtServer(level, level.damageSources().mobAttack(boss), scaleAbDmg(15.0f));
+            }
+            case "PRISMATIC_REFRACTION" -> {
+                level.sendParticles(ParticleTypes.END_ROD, bPos.x, bPos.y + 1.2, bPos.z, 50, 1.2, 1.2, 1.2, 0.25);
+                level.playSound(null, target.blockPosition(), SoundEvents.ILLUSIONER_MIRROR_MOVE, SoundSource.HOSTILE, 1.0f, 1.2f);
+                target.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 50, 0));
+                EntityType<?> miteType = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace("endermite"));
+                if (miteType != null) {
+                    Vec3 safe = FishingEngine.findSafeLandingPos(level, target);
+                    for (int i = 0; i < 2; i++) {
+                        Entity clone = miteType.create(level, EntitySpawnReason.EVENT);
+                        if (clone != null) {
+                            clone.setPos(safe.x + (i == 0 ? 0.8 : -0.8), safe.y, safe.z);
+                            clone.setCustomName(Component.literal("§dPrismatic Illusion"));
+                            clone.setCustomNameVisible(true);
+                            level.addFreshEntity(clone);
+                        }
+                    }
+                }
+            }
+            case "EVENT_HORIZON_PULL" -> {
+                level.sendParticles(ParticleTypes.WITCH, tPos.x, tPos.y + 0.5, tPos.z, 35, 0.7, 0.5, 0.7, 0.1);
+                level.playSound(null, target.blockPosition(), SoundEvents.SHULKER_SHOOT, SoundSource.HOSTILE, 1.0f, 0.7f);
+                target.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 25, 2));
+                target.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 60, 0));
+                target.hurtServer(level, level.damageSources().indirectMagic(boss, boss), scaleAbDmg(12.0f));
+            }
+            case "VOID_CORRUPTION" -> {
+                level.sendParticles(ParticleTypes.SCULK_SOUL, tPos.x, tPos.y + 1.0, tPos.z, 40, 1.2, 0.8, 1.2, 0.1);
+                level.playSound(null, target.blockPosition(), SoundEvents.WARDEN_HEARTBEAT, SoundSource.HOSTILE, 1.0f, 0.8f);
+                target.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 1));
+                target.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 90, 0));
+                target.hurtServer(level, level.damageSources().indirectMagic(boss, boss), scaleAbDmg(13.0f));
             }
             default -> {
                 // TORSO_TENTACLES, ABYSSAL_NOVA, MINI_BLAST, WARDEN_PHASE_TWO

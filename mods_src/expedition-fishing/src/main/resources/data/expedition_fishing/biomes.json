@@ -600,12 +600,15 @@
     },
     "hostile_weights": {
       "void_mite": 14.0,
+      "chorus_jellyfish": 11.0,
       "rift_phantom": 10.0,
-      "shadow_stalker": 3.5,
-      "abyssal_leviathan": 2.0,
-      "void_kraken": 0.8,
-      "ender_hydra": 0.5,
-      "starlight_wyrm": 0.25
+      "shadow_stalker": 4.0,
+      "null_devourer": 2.8,
+      "abyssal_leviathan": 2.2,
+      "void_kraken": 0.9,
+      "ender_hydra": 0.6,
+      "starlight_wyrm": 0.3,
+      "void_emperor": 0.2
     }
   },
   "END_CRYSTAL": {
@@ -614,11 +617,13 @@
       "chorus_puffer": 18.0
     },
     "hostile_weights": {
+      "amethyst_crab": 14.0,
       "crystal_shulker": 12.0,
       "prismatic_guardian": 8.0,
-      "rift_phantom": 8.0,
+      "hallowed_seraph": 4.5,
       "abyssal_leviathan": 2.5,
-      "starlight_wyrm": 0.4
+      "chronos_archon": 0.7,
+      "starlight_wyrm": 0.45
     }
   },
   "END_PRISMATIC": {
@@ -627,10 +632,13 @@
       "chorus_puffer": 22.0
     },
     "hostile_weights": {
+      "chorus_jellyfish": 14.0,
       "prismatic_guardian": 15.0,
       "crystal_shulker": 6.0,
+      "hallowed_seraph": 4.0,
       "abyssal_leviathan": 3.5,
-      "void_kraken": 1.0
+      "void_kraken": 1.0,
+      "chronos_archon": 0.65
     }
   },
   "END_SCULK": {
@@ -639,10 +647,41 @@
       "chorus_puffer": 15.0
     },
     "hostile_weights": {
+      "void_mite": 12.0,
       "sculk_lurker": 15.0,
-      "shadow_stalker": 6.0,
+      "shadow_stalker": 6.5,
+      "null_devourer": 5.0,
       "void_kraken": 0.9,
-      "ender_hydra": 0.6
+      "ender_hydra": 0.6,
+      "void_emperor": 0.35
+    }
+  },
+  "END_FROZEN": {
+    "passive_weights": {
+      "void_minnow": 24.0,
+      "chorus_puffer": 18.0
+    },
+    "hostile_weights": {
+      "frosted_void_ray": 16.0,
+      "crystal_shulker": 8.0,
+      "rift_phantom": 8.0,
+      "hallowed_seraph": 3.5,
+      "abyssal_leviathan": 2.5,
+      "starlight_wyrm": 0.4
+    }
+  },
+  "END_BLAZING": {
+    "passive_weights": {
+      "void_minnow": 20.0,
+      "chorus_puffer": 18.0
+    },
+    "hostile_weights": {
+      "ashfall_behemoth": 16.0,
+      "rift_phantom": 9.0,
+      "shadow_stalker": 4.5,
+      "null_devourer": 3.5,
+      "ender_hydra": 0.85,
+      "void_emperor": 0.3
     }
   }
 }

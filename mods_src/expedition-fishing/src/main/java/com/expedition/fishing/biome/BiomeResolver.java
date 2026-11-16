@@ -55,10 +55,10 @@ public class BiomeResolver {
                 return validProfile("END_SCULK", "END_VOID");
             }
             if (path.contains("frozen") || path.contains("frosted") || path.contains("tundra")) {
-                return validProfile("FROZEN_OCEAN", "END_VOID");
+                return validProfile("END_FROZEN", "END_VOID");
             }
             if (path.contains("blazing") || path.contains("fiery") || path.contains("ashfall")) {
-                return validProfile("BASALT_DELTAS", "END_VOID");
+                return validProfile("END_BLAZING", "END_VOID");
             }
             return validProfile("END_VOID", "NORMAL_OCEAN");
         }

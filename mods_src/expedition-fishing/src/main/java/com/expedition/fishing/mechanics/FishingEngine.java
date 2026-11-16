@@ -630,10 +630,52 @@ public class FishingEngine {
     }
 
     private static void spawnAndLaunchCreature(ServerPlayer player, FishingHook hook, String mobId, JsonObject mobCfg, String displayName, String rarity, double weightKg, double pendingXp, PlayerFishingStats stats) {
-        Vec3 spawnPos = hook.position().add(0, 0.4, 0);
-        Vec3 dir = player.position().add(0, 1.0, 0).subtract(spawnPos);
+        ServerLevel level = player.level();
+        Vec3 hookPos = hook.position().add(0, 0.4, 0);
+
+        // If fishing in The End / over the Void without solid ground beneath the bobber, pull the creature through a Void Rift directly onto safe ground near the player!
+        if (level.dimension() == Level.END || !hasSolidGroundBelow(level, hook.blockPosition(), 6)) {
+            level.sendParticles(net.minecraft.core.particles.ParticleTypes.REVERSE_PORTAL, hookPos.x, hookPos.y, hookPos.z, 35, 0.4, 0.4, 0.4, 0.15);
+            level.sendParticles(net.minecraft.core.particles.ParticleTypes.WITCH, hookPos.x, hookPos.y, hookPos.z, 20, 0.3, 0.3, 0.3, 0.05);
+            Vec3 safePos = findSafeLandingPos(level, player);
+            level.sendParticles(net.minecraft.core.particles.ParticleTypes.REVERSE_PORTAL, safePos.x, safePos.y + 0.8, safePos.z, 30, 0.4, 0.5, 0.4, 0.1);
+            spawnComplexCreature(player, level, safePos, new Vec3(0, 0.18, 0), mobId, mobCfg, displayName, rarity, weightKg, pendingXp, stats);
+            return;
+        }
+
+        Vec3 dir = player.position().add(0, 1.0, 0).subtract(hookPos);
         Vec3 vel = new Vec3(dir.x * 0.14, Math.min(0.65, Math.max(0.28, dir.y * 0.15 + 0.32)), dir.z * 0.14);
-        spawnComplexCreature(player, player.level(), spawnPos, vel, mobId, mobCfg, displayName, rarity, weightKg, pendingXp, stats);
+        spawnComplexCreature(player, level, hookPos, vel, mobId, mobCfg, displayName, rarity, weightKg, pendingXp, stats);
+    }
+
+    public static boolean hasSolidGroundBelow(ServerLevel level, BlockPos start, int maxDepth) {
+        for (int dy = 0; dy <= maxDepth; dy++) {
+            BlockPos check = start.below(dy);
+            if (!level.getBlockState(check).isAir() && level.getBlockState(check).isSolid()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static Vec3 findSafeLandingPos(ServerLevel level, ServerPlayer player) {
+        BlockPos pPos = player.blockPosition();
+        Vec3 look = player.getLookAngle();
+        BlockPos front = BlockPos.containing(player.getX() + look.x * 2.0, player.getY(), player.getZ() + look.z * 2.0);
+        if (hasSolidGroundBelow(level, front, 3) && level.getBlockState(front).isAir()) {
+            return new Vec3(front.getX() + 0.5, front.getY() + 0.5, front.getZ() + 0.5);
+        }
+        for (int r = 1; r <= 3; r++) {
+            for (int dx = -r; dx <= r; dx++) {
+                for (int dz = -r; dz <= r; dz++) {
+                    BlockPos cand = pPos.offset(dx, 0, dz);
+                    if (level.getBlockState(cand.below()).isSolid() && level.getBlockState(cand).isAir()) {
+                        return new Vec3(cand.getX() + 0.5, cand.getY() + 0.5, cand.getZ() + 0.5);
+                    }
+                }
+            }
+        }
+        return player.position().add(0, 0.5, 0);
     }
 
     private static void spawnComplexCreature(
