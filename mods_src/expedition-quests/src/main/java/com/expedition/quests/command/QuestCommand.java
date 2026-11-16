@@ -51,9 +51,10 @@ public class QuestCommand {
                         .then(Commands.literal("auto").executes(ctx -> {
                             ServerPlayer sp = ctx.getSource().getPlayerOrException();
                             QuestPlayerData data = QuestDataStorage.get(sp.getUUID());
+                            data.trackedSlot = -1;
                             data.trackedExplorationSlot = -1;
                             data.dirty = true;
-                            sp.sendSystemMessage(Component.literal("§a✔ Exploration navigation reset to §eAuto (Nearest Target)§a."));
+                            sp.sendSystemMessage(Component.literal("§a✔ Quest sidebar tracking reset to §eAuto§a."));
                             return 1;
                         }))
                         .then(Commands.argument("slot", IntegerArgumentType.integer(1, 10))
@@ -66,15 +67,11 @@ public class QuestCommand {
                                         sp.sendSystemMessage(Component.literal("§cSlot #" + (slot + 1) + " has no active quest!"));
                                         return 0;
                                     }
-                                    if (!q.isExploration()) {
-                                        sp.sendSystemMessage(Component.literal("§cSlot #" + (slot + 1) + " is not an exploration quest! Navigation only applies to exploration quests."));
-                                        return 0;
-                                    }
+                                    data.trackedSlot = slot;
                                     data.trackedExplorationSlot = slot;
                                     data.dirty = true;
                                     sp.sendSystemMessage(Component.literal(
-                                            "§a✔ Compass navigation locked to Slot #" + (slot + 1) + ": §f" + q.displayName +
-                                            " §7(" + q.targetX + ", " + q.targetZ + ")"
+                                            "§a✔ Now tracking on sidebar: §f" + q.displayName
                                     ));
                                     return 1;
                                 })))

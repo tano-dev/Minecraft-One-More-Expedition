@@ -207,15 +207,13 @@ public class QuestBoardGui {
                         if ("GATHER_SUBMIT".equals(existing.category)) {
                             submitItemsForQuest(sp, data, existing);
                             populate();
-                        } else if (existing.isExploration()) {
+                        } else {
+                            data.trackedSlot = qSlot;
                             data.trackedExplorationSlot = qSlot;
                             data.dirty = true;
-                            sp.sendSystemMessage(Component.literal("§a✔ Compass navigation locked to: §f" + existing.displayName + " §7(Slot #" + (qSlot + 1) + ")"));
+                            sp.sendSystemMessage(Component.literal("\u00a7a\u2714 Now tracking on sidebar: \u00a7f" + existing.displayName));
                             sp.level().playSound(null, sp.blockPosition(), SoundEvents.UI_BUTTON_CLICK.value(), SoundSource.PLAYERS, 0.8f, 1.4f);
                             populate();
-                        } else {
-                            sp.closeContainer();
-                            com.expedition.quests.command.QuestCommand.shareQuestToChat(sp, qSlot);
                         }
                     }
                 }

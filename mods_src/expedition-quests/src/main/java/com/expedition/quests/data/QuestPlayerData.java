@@ -21,7 +21,8 @@ public class QuestPlayerData {
     // Draft Choices per empty slot (3-5 choices)
     public Map<Integer, List<QuestEntry>> draftOffers = new ConcurrentHashMap<>();
 
-    // Explicitly tracked exploration quest slot index for compass navigation (-1 = auto nearest)
+    // Explicitly tracked quest slot index for sidebar display (-1 = auto)
+    public int trackedSlot = -1;
     public int trackedExplorationSlot = -1;
 
     public transient boolean dirty = false;
