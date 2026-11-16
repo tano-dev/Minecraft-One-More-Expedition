@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "expedition_fishing:chain_catch",
+    "expedition_fishing:double_hook",
+    "expedition_fishing:mirror_cast"
+  ]
+}

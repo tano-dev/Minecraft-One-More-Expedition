@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "expedition_fishing:angler_instinct",
+    "expedition_fishing:boss_lure",
+    "expedition_fishing:sea_creature_chance",
+    "expedition_fishing:treasure_hunter"
+  ]
+}

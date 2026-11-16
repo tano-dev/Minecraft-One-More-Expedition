@@ -20,7 +20,5 @@
     "offhand"
   ],
   "effects": {},
-  "exclusive_set": [
-    "expedition_fishing:sunlit_cast"
-  ]
+  "exclusive_set": "#expedition_fishing:exclusive_set/time"
 }

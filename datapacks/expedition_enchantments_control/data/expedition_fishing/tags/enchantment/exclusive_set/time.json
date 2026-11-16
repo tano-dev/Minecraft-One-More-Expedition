@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "expedition_fishing:night_fisher",
+    "expedition_fishing:sunlit_cast"
+  ]
+}

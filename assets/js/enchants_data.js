@@ -1814,7 +1814,20 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:angler_instinct",
+        "name": "Angler's Instinct"
+      },
+      {
+        "id": "expedition_fishing:sea_creature_chance",
+        "name": "Sea Creature Call"
+      },
+      {
+        "id": "expedition_fishing:treasure_hunter",
+        "name": "Sunken Fortune"
+      }
+    ],
     "description": "Increases encounter weight of EPIC and LEGENDARY Sea Creature bosses by +15% / +30%.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:boss_lure\":2}}] 1"
   },
@@ -3148,7 +3161,16 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:chain_catch",
+        "name": "Echoing Hook"
+      },
+      {
+        "id": "expedition_fishing:double_hook",
+        "name": "Twin Hook"
+      }
+    ],
     "description": "Grants a 12% chance to duplicate non-boss Treasure Chest or Artifact rewards upon reeling in.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:mirror_cast\":1}}] 1"
   },
@@ -4442,7 +4464,16 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:frostbite_hook",
+        "name": "Frostbite Hook"
+      },
+      {
+        "id": "expedition_fishing:stunning_yank",
+        "name": "Stunning Yank"
+      }
+    ],
     "description": "Automatically smelts common raw fish catches and grants +5% Sea Creature Chance in hot/volcanic biomes.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:blazing_line\":1}}] 1"
   },
@@ -5095,7 +5126,16 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:mirror_cast",
+        "name": "Mirror Cast"
+      },
+      {
+        "id": "expedition_fishing:double_hook",
+        "name": "Twin Hook"
+      }
+    ],
     "description": "Grants an 8% / 16% chance after a successful catch to cut the next cast's wait time by 50%.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:chain_catch\":2}}] 1"
   },
@@ -5944,7 +5984,16 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:blazing_line",
+        "name": "Blazing Line"
+      },
+      {
+        "id": "expedition_fishing:stunning_yank",
+        "name": "Stunning Yank"
+      }
+    ],
     "description": "Reeling in a Sea Creature inflicts Slowness II for 4s / 7s (doubled duration in Frozen/Cold biomes).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:frostbite_hook\":2}}] 1"
   },
@@ -8361,7 +8410,20 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:angler_instinct",
+        "name": "Angler's Instinct"
+      },
+      {
+        "id": "expedition_fishing:boss_lure",
+        "name": "Apex Predator"
+      },
+      {
+        "id": "expedition_fishing:treasure_hunter",
+        "name": "Sunken Fortune"
+      }
+    ],
     "description": "Increases Rare Sea Creature Chance by +4% per level (up to +12% at Lv III).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:sea_creature_chance\":3}}] 1"
   },
@@ -8708,7 +8770,16 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:blazing_line",
+        "name": "Blazing Line"
+      },
+      {
+        "id": "expedition_fishing:frostbite_hook",
+        "name": "Frostbite Hook"
+      }
+    ],
     "description": "Forcefully yanks hooked Sea Creatures and inflicts Weakness + Slowness for 3s / 5s.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:stunning_yank\":2}}] 1"
   },
@@ -8733,7 +8804,20 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:angler_instinct",
+        "name": "Angler's Instinct"
+      },
+      {
+        "id": "expedition_fishing:boss_lure",
+        "name": "Apex Predator"
+      },
+      {
+        "id": "expedition_fishing:sea_creature_chance",
+        "name": "Sea Creature Call"
+      }
+    ],
     "description": "Increases Treasure Chest tier upgrade chance and Artifact discovery rate by +3% per level (up to +9% at Lv III).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:treasure_hunter\":3}}] 1"
   },
@@ -8980,7 +9064,16 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:chain_catch",
+        "name": "Echoing Hook"
+      },
+      {
+        "id": "expedition_fishing:mirror_cast",
+        "name": "Mirror Cast"
+      }
+    ],
     "description": "Increases Double Catch Chance by +4% per level (up to +12% chance to hook two catches at once at Lv III).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:double_hook\":3}}] 1"
   },
@@ -9545,7 +9638,20 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Fishing Rods",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "expedition_fishing:boss_lure",
+        "name": "Apex Predator"
+      },
+      {
+        "id": "expedition_fishing:sea_creature_chance",
+        "name": "Sea Creature Call"
+      },
+      {
+        "id": "expedition_fishing:treasure_hunter",
+        "name": "Sunken Fortune"
+      }
+    ],
     "description": "Increases base Sea Creature Chance by +3% per level (+6% at Lv II).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:angler_instinct\":2}}] 1"
   },

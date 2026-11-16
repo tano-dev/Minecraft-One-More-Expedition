@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "expedition_fishing:deep_water",
+    "expedition_fishing:surface_cast"
+  ]
+}

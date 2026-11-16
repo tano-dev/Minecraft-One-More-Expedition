@@ -41,7 +41,12 @@
     "Pacifier / Poppy": "#enchantencore:exclusive_set/poppy",
     "Reach": "#enchantencore:exclusive_set/reach",
     "Tool Utility (Crab Claw / Gluttony)": "#enchantencore:exclusive_set/all_tools",
-    "Bow (Infinity / Replenish)": "#enchantencore:exclusive_set/replenish"
+    "Bow (Infinity / Replenish)": "#enchantencore:exclusive_set/replenish",
+    "Fishing (Day / Night)": "#expedition_fishing:exclusive_set/time",
+    "Fishing (Surface / Deep)": "#expedition_fishing:exclusive_set/depth",
+    "Fishing (Loot Specialization)": "#expedition_fishing:exclusive_set/specialization",
+    "Fishing (Hook Control)": "#expedition_fishing:exclusive_set/hook_control",
+    "Fishing (Duplication / Chain)": "#expedition_fishing:exclusive_set/duplication"
   },
   "enchant_overrides": {
     "stellarity:levitation_shot": {
@@ -97,6 +102,48 @@
         "#enchantplus:exclusive_set/durability",
         "#nova_structures:exclusive_set/elytra"
       ]
+    },
+    "expedition_fishing:sunlit_cast": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/time"
+    },
+    "expedition_fishing:night_fisher": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/time"
+    },
+    "expedition_fishing:surface_cast": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/depth"
+    },
+    "expedition_fishing:deep_water": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/depth"
+    },
+    "expedition_fishing:treasure_hunter": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/specialization"
+    },
+    "expedition_fishing:sea_creature_chance": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/specialization"
+    },
+    "expedition_fishing:angler_instinct": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/specialization"
+    },
+    "expedition_fishing:boss_lure": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/specialization"
+    },
+    "expedition_fishing:frostbite_hook": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/hook_control"
+    },
+    "expedition_fishing:stunning_yank": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/hook_control"
+    },
+    "expedition_fishing:blazing_line": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/hook_control"
+    },
+    "expedition_fishing:double_hook": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/duplication"
+    },
+    "expedition_fishing:mirror_cast": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/duplication"
+    },
+    "expedition_fishing:chain_catch": {
+      "exclusive_set": "#expedition_fishing:exclusive_set/duplication"
     }
   }
 }

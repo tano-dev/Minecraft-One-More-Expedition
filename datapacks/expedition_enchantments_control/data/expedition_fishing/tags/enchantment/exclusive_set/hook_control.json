@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "expedition_fishing:blazing_line",
+    "expedition_fishing:frostbite_hook",
+    "expedition_fishing:stunning_yank"
+  ]
+}
