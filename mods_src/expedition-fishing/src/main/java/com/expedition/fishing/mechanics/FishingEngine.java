@@ -76,6 +76,12 @@ public class FishingEngine {
         UUID entId = killedEntity.getUUID();
         BossAbilityEngine.removeController(entId);
         BroodmotherCosmeticsManager.cleanup(level.getServer(), entId);
+        if (killer != null) {
+            try {
+                Class<?> qApi = Class.forName("com.expedition.quests.api.ExpeditionQuestsApi");
+                qApi.getMethod("onFishingSeaCreatureKilled", ServerPlayer.class).invoke(null, killer);
+            } catch (Throwable ignored) {}
+        }
         TrackedCreature matched = null;
         for (TrackedCreature tc : TRACKED_CREATURES) {
             if (tc.entityUuid().equals(entId)) {
@@ -1108,6 +1114,11 @@ public class FishingEngine {
         }
 
         addEconomyCoins(player, coins);
+        try {
+            Class<?> qApi = Class.forName("com.expedition.quests.api.ExpeditionQuestsApi");
+            qApi.getMethod("onFishingCatch", ServerPlayer.class, boolean.class, boolean.class, boolean.class, boolean.class)
+                    .invoke(null, player, false, false, true, false);
+        } catch (Throwable ignored) {}
         player.sendSystemMessage(Component.literal(
                 "§6🎁 Treasure Catch! §8[" + tierColor + tierName + "§8] §7Added §6+" + String.format(Locale.US, "%,d", coins) + " Coins §7to your Purse!"
         ));

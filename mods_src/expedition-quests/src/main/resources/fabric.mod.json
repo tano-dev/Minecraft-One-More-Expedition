@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "expedition-quests",
+  "version": "${version}",
+  "name": "Expedition Quests & Adventure",
+  "description": "Daily 10-Quest Draft System (5 Easy, 3 Medium, 2 Hard), Adventure XP (Lv.1-50), Unexplored Biome/Structure/Dungeon Locator, Co-op Quest Sharing, and EconomyCraft Daily Scaling.",
+  "authors": ["Expedition"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.expedition.quests.ExpeditionQuestsMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

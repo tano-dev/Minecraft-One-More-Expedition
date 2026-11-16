@@ -709,6 +709,21 @@ def build_all():
                 entry.get("name_vi", eid.split(":", 1)[1].replace("_", " ").title()),
                 entry.get("description", "Fishing enchantment.")
             )
+        elif eid.startswith("expedition_quests:"):
+            sup = entry.get("supported_items", "")
+            g_disp = "Armor"
+            if "foot_armor" in sup:
+                g_disp = "Boots"
+            elif "head_armor" in sup:
+                g_disp = "Helmet"
+            master[eid] = (
+                entry.get("max_level", 1),
+                entry.get("anvil_cost", 4),
+                ["armor"],
+                g_disp,
+                entry.get("name_vi", eid.split(":", 1)[1].replace("_", " ").title()),
+                entry.get("description", "Adventure & Quest enchantment.")
+            )
 
     enabled_ids = {eid for eid, entry in cfg["enchantments"].items() if entry.get("enabled", True)}
     names_by_id = {}

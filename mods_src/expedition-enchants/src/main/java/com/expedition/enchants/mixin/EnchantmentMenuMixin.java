@@ -40,6 +40,10 @@ public class EnchantmentMenuMixin {
             ItemStack enchanted = this.enchantSlots.getItem(0);
             if (!enchanted.isEmpty()) {
                 RevealEnchantsMenu.open(sp, enchanted, isGodroll);
+                try {
+                    Class<?> qApi = Class.forName("com.expedition.quests.api.ExpeditionQuestsApi");
+                    qApi.getMethod("onItemEnchanted", ServerPlayer.class).invoke(null, sp);
+                } catch (Throwable ignored) {}
             }
         } finally {
             EnchantRigManager.setCurrentPlayer(null);

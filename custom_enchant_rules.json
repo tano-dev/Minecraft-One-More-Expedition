@@ -46,7 +46,8 @@
     "Fishing (Surface / Deep)": "#expedition_fishing:exclusive_set/depth",
     "Fishing (Loot Specialization)": "#expedition_fishing:exclusive_set/specialization",
     "Fishing (Hook Control)": "#expedition_fishing:exclusive_set/hook_control",
-    "Fishing (Duplication / Chain)": "#expedition_fishing:exclusive_set/duplication"
+    "Fishing (Duplication / Chain)": "#expedition_fishing:exclusive_set/duplication",
+    "Adventure Armor (XP / Bounty)": "#expedition_quests:exclusive_set/adventure_armor"
   },
   "enchant_overrides": {
     "stellarity:levitation_shot": {
@@ -144,6 +145,12 @@
     },
     "expedition_fishing:chain_catch": {
       "exclusive_set": "#expedition_fishing:exclusive_set/duplication"
+    },
+    "expedition_quests:adventurer": {
+      "exclusive_set": "#expedition_quests:exclusive_set/adventure_armor"
+    },
+    "expedition_quests:bounty_hunter": {
+      "exclusive_set": "#expedition_quests:exclusive_set/adventure_armor"
     }
   }
 }

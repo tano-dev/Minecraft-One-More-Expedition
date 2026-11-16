@@ -7,8 +7,8 @@
 | Tier | Màu sắc | Số lượng | Nguồn kiếm chính | Quy tắc đặc biệt |
 | :--- | :--- | :---: | :--- | :--- |
 | **Ultimate** | Yellow (`yellow`) | **44** | Rương kho báu / Hầm ngục hiếm | **Tối đa 1 Ultimate / vật phẩm** |
-| **Epic** | Light Purple (`light_purple`) | **73** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
-| **Rare** | Aqua (`aqua`) | **119** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
+| **Epic** | Light Purple (`light_purple`) | **75** | Rương kho báu / Hầm ngục | Không ra ở bàn phù phép / dân làng |
+| **Rare** | Aqua (`aqua`) | **121** | Hầm ngục + 2–5% ở Bàn phù phép | Không bán ở dân làng |
 | **Common** | Gray (`gray`) | **151** | Bàn phù phép, Dân làng, Rương | Phù phép cơ bản |
 | **Curses** | Red (`red`) | **31** | Rương kho báu / Curse | Lời nguyền |
 | **Filtered Duplicates** | — | **39** | Đã tắt | Lọc trùng giữa các pack |
@@ -23,10 +23,10 @@
 | **Bow** | 14 | 64 | 6 | **9.38%** |
 | **Crossbow** | 8 | 47 | 2 | **4.26%** |
 | **Trident** | 11 | 82 | 3 | **4.88%** |
-| **Helmet** | 24 | 175 | 4 | **11.43%** |
-| **Chestplate** | 18 | 113 | 3 | **5.31%** |
-| **Leggings** | 19 | 127 | 4 | **7.09%** |
-| **Boots** | 35 | 186 | 8 | **7.53%** |
+| **Helmet** | 26 | 179 | 6 | **13.41%** |
+| **Chestplate** | 20 | 117 | 5 | **8.55%** |
+| **Leggings** | 21 | 131 | 6 | **9.92%** |
+| **Boots** | 37 | 190 | 10 | **9.47%** |
 
 ## 3. Ultimate Enchants (Tối đa 1 / vật phẩm) (44)
 
@@ -77,7 +77,7 @@
 | `wither:soul_siphon` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/weapon` |
 | `wither:witherbound` | 1 | `[26.3-26.4]witherswrath-1.17` | No | 1 | `#minecraft:enchantable/armor` |
 
-## 4. Epic Enchants (Chỉ kiếm từ Kho báu / Hầm ngục) (73)
+## 4. Epic Enchants (Chỉ kiếm từ Kho báu / Hầm ngục) (75)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -113,6 +113,8 @@
 | `expedition_fishing:frenzy_reel` | 1 | `expedition_fishing` | No | 3 | `#minecraft:enchantable/fishing` |
 | `expedition_fishing:mirror_cast` | 1 | `expedition_fishing` | No | 3 | `#minecraft:enchantable/fishing` |
 | `expedition_fishing:void_anchor` | 2 | `expedition_fishing` | No | 3 | `#minecraft:enchantable/fishing` |
+| `expedition_quests:contract_master` | 1 | `expedition_quests` | No | 3 | `#minecraft:enchantable/head_armor` |
+| `expedition_quests:pathfinder` | 2 | `expedition_quests` | No | 3 | `#minecraft:enchantable/foot_armor` |
 | `mt:armor/basalt_boots` | 1 | `mine-treasure-1.6.5` | No | 2 | `#minecraft:foot_armor` |
 | `mt:armor/boomproof_cap` | 1 | `mine-treasure-1.6.5` | No | 2 | `#minecraft:foot_armor` |
 | `mt:armor/dark_forest_chestplate` | 1 | `mine-treasure-1.6.5` | No | 2 | `#minecraft:chest_armor` |
@@ -155,7 +157,7 @@
 | `stellarity:ambush` | 3 | `Stellarity-6.0.1` | No | 2 | `#minecraft:enchantable/sharp_weapon` |
 | `stellarity:plated` | 4 | `Stellarity-6.0.1` | No | 2 | `#stellarity:enchantable/elytra` |
 
-## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (119)
+## 5. Rare Enchants (Kho báu + 2–5% Bàn phù phép) (121)
 
 | Enchantment ID | Max Lv | Nguồn Pack | Table? | Loot Weight | Items áp dụng |
 | :--- | :---: | :--- | :---: | :---: | :--- |
@@ -247,6 +249,8 @@
 | `expedition_fishing:thermal_cooling` | 3 | `expedition_fishing` | Yes | 6 | `#minecraft:enchantable/fishing` |
 | `expedition_fishing:treasure_hunter` | 3 | `expedition_fishing` | Yes | 6 | `#minecraft:enchantable/fishing` |
 | `expedition_fishing:trophy_hunter` | 3 | `expedition_fishing` | No | 5 | `#minecraft:enchantable/fishing` |
+| `expedition_quests:adventurer` | 3 | `expedition_quests` | Yes | 4 | `#minecraft:enchantable/armor` |
+| `expedition_quests:bounty_hunter` | 3 | `expedition_quests` | Yes | 4 | `#minecraft:enchantable/armor` |
 | `kattersstructures:blunt` | 1 | `Katters Structures v2.9` | No | 5 | `#minecraft:enchantable/sharp_weapon` |
 | `kattersstructures:enlightning` | 1 | `Katters Structures v2.9` | No | 5 | `minecraft:blaze_rod` |
 | `kattersstructures:light` | 3 | `Katters Structures v2.9` | No | 5 | `#minecraft:enchantable/armor` |

@@ -1,0 +1,22 @@
+{
+  "description": {
+    "text": "Pathfinder",
+    "color": "light_purple"
+  },
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 2,
+  "max_level": 2,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 6,
+  "slots": [
+    "feet"
+  ],
+  "effects": {}
+}

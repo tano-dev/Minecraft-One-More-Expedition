@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "expedition_quests:adventurer",
+    "expedition_quests:bounty_hunter"
+  ]
+}

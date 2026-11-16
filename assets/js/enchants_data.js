@@ -2071,6 +2071,31 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_fishing:chronos_line\":2}}] 1"
   },
   {
+    "id": "expedition_quests:contract_master",
+    "namespace": "expedition_quests",
+    "raw_name": "contract_master",
+    "name": "Contract Master",
+    "name_vi": "Contract Master",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 1,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_quests",
+    "supported_items": "#minecraft:enchantable/head_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Helmet",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "When drafting a Daily Quest in /quest, offers +1 extra quest choice (5 instead of 4) and grants +1 free Daily Quest Reroll per day.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_quests:contract_master\":1}}] 1"
+  },
+  {
     "id": "enchantencore:crab_claw",
     "namespace": "enchantencore",
     "raw_name": "crab_claw",
@@ -3340,6 +3365,31 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"mt:weapons/oceanic_spear\":1}}] 1"
   },
   {
+    "id": "expedition_quests:pathfinder",
+    "namespace": "expedition_quests",
+    "raw_name": "pathfinder",
+    "name": "Pathfinder",
+    "name_vi": "Pathfinder",
+    "tier": "epic",
+    "tier_order": 2,
+    "max_level": 2,
+    "anvil_cost": 6,
+    "table": false,
+    "table_weight": 1,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_quests",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Boots",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "While an Exploration Quest is active, grants +8% / +15% Movement Speed and expands target arrival detection radius by +16 / +32 blocks.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_quests:pathfinder\":2}}] 1"
+  },
+  {
     "id": "nova_structures:photosynthesis",
     "namespace": "nova_structures",
     "raw_name": "photosynthesis",
@@ -4203,6 +4253,36 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:bow/accuracy_shot\":1}}] 1"
   },
   {
+    "id": "expedition_quests:adventurer",
+    "namespace": "expedition_quests",
+    "raw_name": "adventurer",
+    "name": "Adventurer",
+    "name_vi": "Adventurer",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_quests",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "expedition_quests:bounty_hunter",
+        "name": "Bounty Hunter"
+      }
+    ],
+    "description": "Grants +5% / +10% / +15% bonus Adventure XP per armor piece when completing Daily Quests and discovering new landmarks (up to +60% with a full set).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_quests:adventurer\":3}}] 1"
+  },
+  {
     "id": "nova_structures:aerials_bane",
     "namespace": "nova_structures",
     "raw_name": "aerials_bane",
@@ -4613,6 +4693,36 @@ window.ALL_ENCHANTMENTS = [
     ],
     "description": "Mace smash attacks from at least 8 blocks high summon a lightning bolt on the target.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:boltbringer\":1}}] 1"
+  },
+  {
+    "id": "expedition_quests:bounty_hunter",
+    "namespace": "expedition_quests",
+    "raw_name": "bounty_hunter",
+    "name": "Bounty Hunter",
+    "name_vi": "Bounty Hunter",
+    "tier": "rare",
+    "tier_order": 3,
+    "max_level": 3,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 2,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "expedition_quests",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [],
+    "conflicts": [
+      {
+        "id": "expedition_quests:adventurer",
+        "name": "Adventurer"
+      }
+    ],
+    "description": "Grants +4% / +8% / +12% bonus Purse Coins per armor piece when completing Daily Quests (up to +48% with a full set).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"expedition_quests:bounty_hunter\":3}}] 1"
   },
   {
     "id": "enchantencore:bulletproof",

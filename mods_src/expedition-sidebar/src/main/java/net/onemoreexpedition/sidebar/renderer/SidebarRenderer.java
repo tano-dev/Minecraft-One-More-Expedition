@@ -22,6 +22,7 @@ import net.minecraft.world.scores.criteria.ObjectiveCriteria;
 import net.onemoreexpedition.sidebar.config.SidebarConfig;
 import net.onemoreexpedition.sidebar.integration.EconomyIntegration;
 import net.onemoreexpedition.sidebar.integration.FishingIntegration;
+import net.onemoreexpedition.sidebar.integration.QuestIntegration;
 import net.onemoreexpedition.sidebar.integration.SkyblockIntegration;
 
 import java.text.NumberFormat;
@@ -263,6 +264,29 @@ public class SidebarRenderer {
                         .withStyle(ChatFormatting.GRAY)
                         .append(Component.literal(heat + "/100").withStyle(heatColor));
                 list.add(heatLine);
+            }
+        }
+
+        // 9c. Adventure Level & Active Quests (up to 3 uncompleted)
+        if (QuestIntegration.isAvailableFor(player)) {
+            int aLv = QuestIntegration.getAdventureLevel(player.getUUID());
+            double aPct = QuestIntegration.getXpProgressPercent(player.getUUID());
+            long curXp = QuestIntegration.getCurrentXp(player.getUUID());
+            long reqXp = QuestIntegration.getRequiredXp(player.getUUID());
+            String aDetail = aLv >= 50 ? " MAX" : String.format(Locale.US, " %.0f%% (%d/%d)", aPct, curXp, reqXp);
+            list.add(Component.literal(" 🧭 Adventure: ")
+                    .withStyle(ChatFormatting.GRAY)
+                    .append(Component.literal("Lv." + aLv).withStyle(ChatFormatting.GREEN))
+                    .append(Component.literal(aDetail).withStyle(ChatFormatting.YELLOW)));
+
+            List<String> qLines = QuestIntegration.getActiveQuestLines(player, 3);
+            if (!qLines.isEmpty()) {
+                int done = QuestIntegration.getCompletedToday(player.getUUID());
+                list.add(Component.literal(" 📜 Quests (" + done + "/10):")
+                        .withStyle(ChatFormatting.GOLD));
+                for (String ql : qLines) {
+                    list.add(Component.literal("  • " + ql).withStyle(ChatFormatting.WHITE));
+                }
             }
         }
 

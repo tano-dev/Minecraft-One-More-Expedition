@@ -9,6 +9,7 @@ import net.onemoreexpedition.sidebar.command.SidebarCommands;
 import net.onemoreexpedition.sidebar.config.SidebarConfig;
 import net.onemoreexpedition.sidebar.integration.EconomyIntegration;
 import net.onemoreexpedition.sidebar.integration.FishingIntegration;
+import net.onemoreexpedition.sidebar.integration.QuestIntegration;
 import net.onemoreexpedition.sidebar.integration.SkyblockIntegration;
 import net.onemoreexpedition.sidebar.renderer.SidebarRenderer;
 import org.slf4j.Logger;
@@ -28,6 +29,7 @@ public class ExpeditionSidebarMod implements ModInitializer {
         EconomyIntegration.init();
         SkyblockIntegration.init();
         FishingIntegration.init();
+        QuestIntegration.init();
 
         CommandRegistrationCallback.EVENT.register(SidebarCommands::register);
 

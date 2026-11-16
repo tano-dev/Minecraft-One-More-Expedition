@@ -1,0 +1,23 @@
+{
+  "description": {
+    "text": "Bounty Hunter",
+    "color": "aqua"
+  },
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 2,
+  "max_level": 3,
+  "min_cost": {
+    "base": 12,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 45,
+    "per_level_above_first": 8
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "armor"
+  ],
+  "effects": {},
+  "exclusive_set": "#expedition_quests:exclusive_set/adventure_armor"
+}
