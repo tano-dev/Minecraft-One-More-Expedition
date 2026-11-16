@@ -226,8 +226,8 @@ public class ExpeditionQuestsApi {
         int lvGained = data.addXp(finalXp);
 
         player.sendSystemMessage(Component.literal(
-                "搂a搂l鉁?QUEST COMPLETED! 搂f" + q.displayName +
-                " 搂7(搂6+" + finalCoins + " Coins搂7, 搂b+" + finalXp + " Adventure XP搂7)"
+                "\u00a7a\u00a7l\u2714 QUEST COMPLETED! \u00a7f" + q.displayName +
+                " \u00a77(\u00a76+" + finalCoins + " Coins\u00a77, \u00a7b+" + finalXp + " Adventure XP\u00a77)"
         ));
         player.level().playSound(null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.8f, 1.3f);
 
@@ -244,7 +244,7 @@ public class ExpeditionQuestsApi {
             int o2 = data.level;
             int g2 = data.addXp(bonusXp);
             player.sendSystemMessage(Component.literal(
-                    "搂6搂l鈽?ALL 10 DAILY QUESTS COMPLETED! 搂eBonus: 搂6+" + bonusCoins + " Coins 搂e& 搂b+" + bonusXp + " Adventure XP搂e!"
+                    "\u00a76\u00a7l\u2605 ALL 10 DAILY QUESTS COMPLETED! \u00a7eBonus: \u00a76+" + bonusCoins + " Coins \u00a7e& \u00a7b+" + bonusXp + " Adventure XP\u00a7e!"
             ));
             player.level().playSound(null, player.blockPosition(), SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, SoundSource.PLAYERS, 1.0f, 1.1f);
             if (g2 > 0) {
@@ -256,16 +256,16 @@ public class ExpeditionQuestsApi {
 
     private static void onAdventureLevelUp(ServerPlayer player, int oldLv, int newLv) {
         player.sendSystemMessage(Component.literal(
-                "搂b搂l鈻?ADVENTURE LEVEL UP! 搂eLv." + oldLv + " 搂7-> 搂bLv." + newLv +
-                " 搂7(搂6+" + newLv + "% Quest Coins Bonus搂7)"
+                "\u00a7b\u00a7l\u25b2 ADVENTURE LEVEL UP! \u00a7eLv." + oldLv + " \u00a77-> \u00a7bLv." + newLv +
+                " \u00a77(\u00a76+" + newLv + "% Quest Coins Bonus\u00a77)"
         ));
         int netherUnlock = QuestsConfig.getNetherUnlockLevel();
         int endUnlock = QuestsConfig.getEndUnlockLevel();
         if (oldLv < netherUnlock && newLv >= netherUnlock) {
-            player.sendSystemMessage(Component.literal("搂c搂l鉁?NETHER TIER UNLOCKED! 搂7Nether Quests (+20% Rewards) are now available in /quest!"));
+            player.sendSystemMessage(Component.literal("\u00a7c\u00a7l\u2714 NETHER TIER UNLOCKED! \u00a77Nether Quests (+20% Rewards) are now available in /quest!"));
         }
         if (oldLv < endUnlock && newLv >= endUnlock) {
-            player.sendSystemMessage(Component.literal("搂d搂l鉁?THE END TIER UNLOCKED! 搂7End & Elytra Quests (+40% Rewards) are now available in /quest!"));
+            player.sendSystemMessage(Component.literal("\u00a7d\u00a7l\u2714 THE END TIER UNLOCKED! \u00a77End & Elytra Quests (+40% Rewards) are now available in /quest!"));
         }
     }
 

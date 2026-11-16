@@ -79,11 +79,11 @@ public class SidebarRenderer {
         int onlineCount = server.getPlayerList().getPlayerCount();
         int maxPlayers = server.getPlayerList().getMaxPlayers();
 
-        Component title = Component.literal("✦ ")
+        Component title = Component.literal("\u2726 ")
                 .withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD)
                 .append(Component.literal("Online: " + onlineCount + "/" + maxPlayers)
                         .withStyle(ChatFormatting.YELLOW, ChatFormatting.BOLD))
-                .append(Component.literal(" ✦")
+                .append(Component.literal(" \u2726")
                         .withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD));
 
         for (ServerPlayer player : server.getPlayerList().getPlayers()) {
@@ -181,8 +181,8 @@ public class SidebarRenderer {
         String clock = formatMinecraftTime(timeOfDay);
         boolean isDay = timeOfDay < 13000L || timeOfDay > 23000L;
         Component timeIcon = isDay
-                ? Component.literal("☀ ").withStyle(ChatFormatting.YELLOW)
-                : Component.literal("☾ ").withStyle(ChatFormatting.AQUA);
+                ? Component.literal("\u2600 ").withStyle(ChatFormatting.YELLOW)
+                : Component.literal("\u263d ").withStyle(ChatFormatting.AQUA);
 
         Component dayClockLine = Component.literal(" Day " + dayCount)
                 .withStyle(ChatFormatting.GOLD)
@@ -197,7 +197,7 @@ public class SidebarRenderer {
 
         // 5. Live Coordinates (XYZ)
         BlockPos pos = player.blockPosition();
-        Component xyzLine = Component.literal(" ⌖ XYZ: ")
+        Component xyzLine = Component.literal(" \u2316 XYZ: ")
                 .withStyle(ChatFormatting.AQUA)
                 .append(Component.literal(pos.getX() + ", " + pos.getY() + ", " + pos.getZ())
                         .withStyle(ChatFormatting.WHITE));
@@ -219,8 +219,8 @@ public class SidebarRenderer {
             // 8. Daily Reward status
             boolean claimed = EconomyIntegration.hasClaimedDaily(server, player.getUUID());
             Component dailyStatus = claimed
-                    ? Component.literal("✔ Claimed").withStyle(ChatFormatting.GREEN)
-                    : Component.literal("✖ Available").withStyle(ChatFormatting.YELLOW);
+                    ? Component.literal("\u2714 Claimed").withStyle(ChatFormatting.GREEN)
+                    : Component.literal("\u2716 Available").withStyle(ChatFormatting.YELLOW);
             Component dailyLine = Component.literal(" Daily: ")
                     .withStyle(ChatFormatting.GRAY)
                     .append(dailyStatus);
@@ -231,10 +231,10 @@ public class SidebarRenderer {
         int pvpRemaining = SkyblockIntegration.getRemainingPvpSeconds(player.getUUID());
         Component combatStatus;
         if (pvpRemaining > 0) {
-            combatStatus = Component.literal("⚔ " + pvpRemaining + "s")
+            combatStatus = Component.literal("\u2694 " + pvpRemaining + "s")
                     .withStyle(ChatFormatting.RED, ChatFormatting.BOLD);
         } else {
-            combatStatus = Component.literal("🛡 Safe")
+            combatStatus = Component.literal("\u2726 Safe")
                     .withStyle(ChatFormatting.GREEN);
         }
         Component combatLine = Component.literal(" Combat: ")
@@ -251,7 +251,7 @@ public class SidebarRenderer {
             String detail = fLv >= 50
                     ? " MAX"
                     : String.format(Locale.US, " %.0f%% (%d/%d)", fPct, curXp, reqXp);
-            Component fishLine = Component.literal(" 🎣 Fishing: ")
+            Component fishLine = Component.literal(" \u25c6 Fishing: ")
                     .withStyle(ChatFormatting.GRAY)
                     .append(Component.literal("Lv." + fLv).withStyle(ChatFormatting.AQUA))
                     .append(Component.literal(detail).withStyle(ChatFormatting.YELLOW));
@@ -260,7 +260,7 @@ public class SidebarRenderer {
             if (FishingIntegration.shouldDisplayHeat(player)) {
                 int heat = FishingIntegration.getHeat(player.getUUID());
                 ChatFormatting heatColor = heat >= 90 ? ChatFormatting.RED : (heat >= 50 ? ChatFormatting.GOLD : ChatFormatting.YELLOW);
-                Component heatLine = Component.literal(" 🔥 Heat: ")
+                Component heatLine = Component.literal(" \u25b2 Heat: ")
                         .withStyle(ChatFormatting.GRAY)
                         .append(Component.literal(heat + "/100").withStyle(heatColor));
                 list.add(heatLine);
@@ -274,7 +274,7 @@ public class SidebarRenderer {
             long curXp = QuestIntegration.getCurrentXp(player.getUUID());
             long reqXp = QuestIntegration.getRequiredXp(player.getUUID());
             String aDetail = aLv >= 50 ? " MAX" : String.format(Locale.US, " %.0f%% (%d/%d)", aPct, curXp, reqXp);
-            list.add(Component.literal(" ✦ Adventure: ")
+            list.add(Component.literal(" \u2726 Adventure: ")
                     .withStyle(ChatFormatting.GRAY)
                     .append(Component.literal("Lv." + aLv).withStyle(ChatFormatting.GREEN))
                     .append(Component.literal(aDetail).withStyle(ChatFormatting.YELLOW)));
@@ -282,7 +282,7 @@ public class SidebarRenderer {
             List<String> qLines = QuestIntegration.getActiveQuestLines(player, 1);
             if (!qLines.isEmpty()) {
                 int done = QuestIntegration.getCompletedToday(player.getUUID());
-                list.add(Component.literal(" ⌖ Quests (" + done + "/10):")
+                list.add(Component.literal(" \u2316 Quest (" + done + "/10):")
                         .withStyle(ChatFormatting.GOLD));
                 for (String ql : qLines) {
                     list.add(Component.literal("  • " + ql).withStyle(ChatFormatting.WHITE));
@@ -297,7 +297,7 @@ public class SidebarRenderer {
         List<SidebarConfig.TipEntry> tips = SidebarConfig.get().tips;
         if (!tips.isEmpty()) {
             SidebarConfig.TipEntry tip = tips.get(currentTipIndex % tips.size());
-            list.add(Component.literal(" 💡 Tip: ")
+            list.add(Component.literal(" \u25b6 Tip: ")
                     .withStyle(ChatFormatting.YELLOW)
                     .append(Component.literal(tip.command).withStyle(ChatFormatting.GREEN)));
             list.add(Component.literal("    " + tip.description)
@@ -317,11 +317,11 @@ public class SidebarRenderer {
         String skyblockLoc = SkyblockIntegration.getIslandStatus(player);
         if (skyblockLoc != null) {
             if ("Your Island".equals(skyblockLoc)) {
-                return Component.literal(" ⏣ ")
+                return Component.literal(" \u23c5 ")
                         .withStyle(ChatFormatting.DARK_GREEN)
                         .append(Component.literal("Your Island").withStyle(ChatFormatting.GREEN));
             } else {
-                return Component.literal(" ⏣ ")
+                return Component.literal(" \u23c5 ")
                         .withStyle(ChatFormatting.AQUA)
                         .append(Component.literal("Visiting: " + skyblockLoc).withStyle(ChatFormatting.YELLOW));
             }
@@ -346,7 +346,7 @@ public class SidebarRenderer {
                 .map(k -> formatBiomeName(k.identifier().getPath()))
                 .orElse("Unknown");
 
-        return Component.literal(" ⏣ ")
+        return Component.literal(" \u23c5 ")
                 .withStyle(dimColor)
                 .append(Component.literal(dimName).withStyle(ChatFormatting.GREEN))
                 .append(Component.literal(" (" + biomeName + ")").withStyle(ChatFormatting.GRAY));
