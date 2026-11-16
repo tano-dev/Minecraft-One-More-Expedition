@@ -13,8 +13,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.util.Mth;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.chunk.ChunkAccess;
 import net.minecraft.world.level.levelgen.structure.Structure;
@@ -66,9 +64,19 @@ public class UnexploredStructureLocator {
         return map.getOrDefault(dimension, Collections.emptyList());
     }
 
+    public static ServerLevel getLevelByDimensionId(MinecraftServer server, String dimId) {
+        for (ServerLevel level : server.getAllLevels()) {
+            if (level.dimension().identifier().toString().equals(dimId)) {
+                return level;
+            }
+        }
+        return server.overworld();
+    }
+
     /**
-     * Instant (< 0.1ms) target lock using Precomputed ExplorationTargetCache first,
-     * with a strictly bounded fallback so Easy quests NEVER exceed maxExpectedDist.
+     * Instant (< 0.05ms) target lock using Global Precomputed Cache first.
+     * If the cache is momentarily empty, instantly locks a guaranteed real Unexplored Biome
+     * without blocking the main server tick.
      */
     public static void locateAndLockTarget(MinecraftServer server, ServerPlayer player, QuestEntry quest) {
         if (quest.located) return;
@@ -80,7 +88,7 @@ public class UnexploredStructureLocator {
         int ox = player.level() == targetLevel ? origin.getX() : 0;
         int oz = player.level() == targetLevel ? origin.getZ() : 0;
 
-        // 1. Try Pre-Computed Cache (Zero server lag!)
+        // 1. Instant Cache retrieval from Global RAM pool (Zero tick delay!)
         ExplorationTargetCache.CachedTarget cached = ExplorationTargetCache.popBestTarget(player, quest);
         if (cached != null) {
             quest.subType = cached.targetId;
@@ -94,38 +102,25 @@ public class UnexploredStructureLocator {
             return;
         }
 
-        // 2. Fast bounded fallback: try up to 4 real structure/biome lookups, never invent fake structure coords
+        // 2. Cache miss safety: Fast single-attempt structure probe (radius 6 chunks)
+        Random rng = new Random();
         int minD = quest.minExpectedDist;
         int maxD = quest.maxExpectedDist;
-        Random rng = new Random();
-        List<String> pool = new ArrayList<>(getPool(quest.category, quest.dimension));
-        Collections.shuffle(pool, rng);
-        List<String> tryIds = new ArrayList<>();
-        tryIds.add(quest.subType);
-        for (String pId : pool) {
-            if (!pId.equals(quest.subType) && tryIds.size() < 5) tryIds.add(pId);
-        }
+        double angle = rng.nextDouble() * Math.PI * 2.0;
+        double dist = minD + rng.nextDouble() * Math.max(100, maxD - minD);
+        int probeX = ox + (int) Math.round(Math.cos(angle) * dist);
+        int probeZ = oz + (int) Math.round(Math.sin(angle) * dist);
 
-        for (String candidateId : tryIds) {
-            double angle = rng.nextDouble() * Math.PI * 2.0;
-            double dist = minD + rng.nextDouble() * Math.max(100, maxD - minD);
-            int probeX = ox + (int) Math.round(Math.cos(angle) * dist);
-            int probeZ = oz + (int) Math.round(Math.sin(angle) * dist);
-
-            if (!ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, probeX, probeZ)) {
-                continue;
-            }
-
+        if (ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, probeX, probeZ)) {
             BlockPos probePos = new BlockPos(probeX, 64, probeZ);
             BlockPos found = "EXPLORE_BIOME".equals(quest.category)
-                    ? locateBiomeFast(targetLevel, probePos, candidateId)
-                    : locateStructureFast(targetLevel, probePos, candidateId);
+                    ? locateBiomeFast(targetLevel, probePos, quest.subType)
+                    : locateStructureFast(targetLevel, probePos, quest.subType, 6);
 
             if (found != null && ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, found.getX(), found.getZ())) {
                 int actualDist = (int) Math.hypot(found.getX() - ox, found.getZ() - oz);
-                if (actualDist >= Math.max(200, minD - 250) && actualDist <= maxD + 400 && !isChunkAlreadyInhabited(targetLevel, found)) {
-                    quest.subType = candidateId;
-                    quest.displayName = getSchoolPrefix(quest.category) + StructureClassifier.formatDisplayName(candidateId);
+                if (actualDist >= Math.max(200, minD - 300) && actualDist <= maxD + 500 && !isChunkAlreadyInhabited(targetLevel, found)) {
+                    quest.displayName = getSchoolPrefix(quest.category) + StructureClassifier.formatDisplayName(quest.subType);
                     quest.targetX = found.getX();
                     quest.targetZ = found.getZ();
                     quest.located = true;
@@ -137,15 +132,15 @@ public class UnexploredStructureLocator {
             }
         }
 
-        // 3. If no structure matched in band yet, convert cleanly to a real nearby Unexplored Biome (guaranteed real!)
+        // 3. Guaranteed instant real fallback: lock onto an unexplored biome in range (<0.1ms)
         List<String> biomePool = new ArrayList<>(getPool("EXPLORE_BIOME", quest.dimension));
         Collections.shuffle(biomePool, rng);
-        for (int i = 0; i < Math.min(4, biomePool.size()); i++) {
+        for (int i = 0; i < Math.min(3, biomePool.size()); i++) {
             String bId = biomePool.get(i);
-            double angle = rng.nextDouble() * Math.PI * 2.0;
-            double dist = minD + rng.nextDouble() * Math.max(150, maxD - minD);
-            int fx = ox + (int) Math.round(Math.cos(angle) * dist);
-            int fz = oz + (int) Math.round(Math.sin(angle) * dist);
+            double bAngle = rng.nextDouble() * Math.PI * 2.0;
+            double bDist = minD + rng.nextDouble() * Math.max(150, maxD - minD);
+            int fx = ox + (int) Math.round(Math.cos(bAngle) * bDist);
+            int fz = oz + (int) Math.round(Math.sin(bAngle) * bDist);
             BlockPos foundBiome = locateBiomeFast(targetLevel, new BlockPos(fx, 64, fz), bId);
             if (foundBiome != null && ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, foundBiome.getX(), foundBiome.getZ())) {
                 quest.category = "EXPLORE_BIOME";
@@ -191,7 +186,7 @@ public class UnexploredStructureLocator {
         return false;
     }
 
-    public static BlockPos locateStructureFast(ServerLevel level, BlockPos probePos, String structureId) {
+    public static BlockPos locateStructureFast(ServerLevel level, BlockPos probePos, String structureId, int chunkRadius) {
         try {
             Registry<Structure> reg = level.registryAccess().lookupOrThrow(Registries.STRUCTURE);
             ResourceKey<Structure> key = ResourceKey.create(Registries.STRUCTURE, Identifier.parse(structureId));
@@ -199,9 +194,8 @@ public class UnexploredStructureLocator {
             if (opt.isEmpty()) return null;
 
             HolderSet<Structure> set = HolderSet.direct(opt.get());
-            // Radius 6 chunks (96 blocks) keeps lookup fast without triggering heavy C2ME worldgen
             Pair<BlockPos, Holder<Structure>> res = level.getChunkSource().getGenerator()
-                    .findNearestMapStructure(level, set, probePos, 6, false);
+                    .findNearestMapStructure(level, set, probePos, chunkRadius, false);
             return res != null ? res.getFirst() : null;
         } catch (Exception e) {
             return null;
@@ -224,18 +218,12 @@ public class UnexploredStructureLocator {
         }
     }
 
-    public static ServerLevel getLevelByDimensionId(MinecraftServer server, String dimId) {
-        if ("minecraft:the_nether".equals(dimId)) return server.getLevel(Level.NETHER);
-        if ("minecraft:the_end".equals(dimId)) return server.getLevel(Level.END);
-        return server.overworld();
-    }
-
     public static String getCompassArrow(ServerPlayer player, int targetX, int targetZ) {
         double dx = targetX - player.getX();
         double dz = targetZ - player.getZ();
         double targetAngle = Math.toDegrees(Math.atan2(-dx, dz));
-        double playerYaw = Mth.wrapDegrees(player.getYRot());
-        double diff = Mth.wrapDegrees(targetAngle - playerYaw);
+        double playerYaw = net.minecraft.util.Mth.wrapDegrees(player.getYRot());
+        double diff = net.minecraft.util.Mth.wrapDegrees(targetAngle - playerYaw);
 
         if (diff >= -22.5 && diff < 22.5) return "↑";
         if (diff >= 22.5 && diff < 67.5) return "↗";

@@ -37,15 +37,18 @@ public class ExpeditionQuestsMod implements ModInitializer {
                     UnexploredStructureLocator.BIOMES_BY_DIM.values().stream().mapToInt(java.util.List::size).sum(),
                     UnexploredStructureLocator.STRUCTURES_BY_DIM.values().stream().mapToInt(java.util.List::size).sum(),
                     UnexploredStructureLocator.DUNGEONS_BY_DIM.values().stream().mapToInt(java.util.List::size).sum());
+            
+            // Start the asynchronous daemon preload worker
+            ExplorationTargetCache.startAsyncWorker(server);
         });
 
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             tickCounter++;
             QuestProgressListener.tickServer(server, tickCounter);
-            ExplorationTargetCache.tickBackgroundWarmup(server, tickCounter);
         });
 
         ServerLifecycleEvents.SERVER_STOPPING.register(server -> {
+            ExplorationTargetCache.stopAsyncWorker();
             QuestDataStorage.saveAllSync();
             ClaimedLocationsRegistry.saveIfDirty();
             ExplorationTargetCache.saveIfDirty();
