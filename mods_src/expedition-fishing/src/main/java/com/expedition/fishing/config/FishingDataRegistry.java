@@ -25,6 +25,7 @@ public class FishingDataRegistry {
     public static final Map<String, JsonObject> ARTIFACTS = new ConcurrentHashMap<>();
     public static final Map<String, JsonObject> RECIPES = new ConcurrentHashMap<>();
     public static final Map<String, JsonObject> BIOMES = new ConcurrentHashMap<>();
+    public static final Map<String, JsonObject> BALANCE = new ConcurrentHashMap<>();
 
     public static synchronized void loadAll() {
         try {
@@ -36,6 +37,17 @@ public class FishingDataRegistry {
         loadFile("artifacts.json", ARTIFACTS);
         loadFile("recipes.json", RECIPES);
         loadFile("biomes.json", BIOMES);
+        loadFile("enchants_balance.json", BALANCE);
+    }
+
+    public static double getEnchantBalance(String key, double def) {
+        JsonObject enchObj = BALANCE.get("enchantments");
+        return getDouble(enchObj, key, def);
+    }
+
+    public static int getAntiLagInt(String key, int def) {
+        JsonObject lagObj = BALANCE.get("anti_lag");
+        return getInt(lagObj, key, def);
     }
 
     private static void loadFile(String fileName, Map<String, JsonObject> target) {

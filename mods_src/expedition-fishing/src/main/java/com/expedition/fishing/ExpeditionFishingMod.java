@@ -46,10 +46,12 @@ public class ExpeditionFishingMod implements ModInitializer {
             }
         });
 
-        // Heat natural cooling & Overheat penalty (every 2 seconds = 40 ticks)
+        // Heat natural cooling, Overheat penalty & Sea Creature Auto-Despawn (every 2 seconds = 40 ticks)
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             tickCounter++;
             if (tickCounter % 40 != 0) return;
+
+            com.expedition.fishing.mechanics.FishingEngine.tickDespawnManager(server);
 
             for (ServerPlayer player : server.getPlayerList().getPlayers()) {
                 if (BiomeResolver.isSkyblockWorld(player.level())) continue;

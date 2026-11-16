@@ -41,6 +41,57 @@ import java.util.*;
 
 public class FishingEngine {
 
+    public record TrackedCreature(UUID entityUuid, UUID ownerUuid, net.minecraft.resources.ResourceKey<Level> dimension, long expireGameTime, boolean isBoss) {}
+
+    private static final List<TrackedCreature> TRACKED_CREATURES = new java.util.concurrent.CopyOnWriteArrayList<>();
+
+    public static void tickDespawnManager(net.minecraft.server.MinecraftServer server) {
+        if (TRACKED_CREATURES.isEmpty()) return;
+        for (TrackedCreature tc : TRACKED_CREATURES) {
+            ServerLevel lvl = server.getLevel(tc.dimension());
+            if (lvl == null) {
+                TRACKED_CREATURES.remove(tc);
+                continue;
+            }
+            Entity ent = lvl.getEntity(tc.entityUuid());
+            if (ent == null || !ent.isAlive()) {
+                TRACKED_CREATURES.remove(tc);
+                continue;
+            }
+            if (lvl.getGameTime() >= tc.expireGameTime()) {
+                ent.discard();
+                TRACKED_CREATURES.remove(tc);
+            }
+        }
+    }
+
+    private static void registerSpawnedCreature(ServerPlayer owner, ServerLevel level, Entity entity, boolean isBoss) {
+        int maxPerPlayer = FishingDataRegistry.getAntiLagInt("max_active_creatures_per_player", 12);
+        List<TrackedCreature> ownedNonBoss = new ArrayList<>();
+        for (TrackedCreature tc : TRACKED_CREATURES) {
+            if (tc.ownerUuid().equals(owner.getUUID()) && !tc.isBoss()) {
+                Entity e = level.getEntity(tc.entityUuid());
+                if (e != null && e.isAlive()) {
+                    ownedNonBoss.add(tc);
+                } else {
+                    TRACKED_CREATURES.remove(tc);
+                }
+            }
+        }
+        while (ownedNonBoss.size() >= maxPerPlayer) {
+            TrackedCreature oldest = ownedNonBoss.remove(0);
+            Entity oldEnt = level.getEntity(oldest.entityUuid());
+            if (oldEnt != null) oldEnt.discard();
+            TRACKED_CREATURES.remove(oldest);
+        }
+
+        int ttlSeconds = isBoss
+                ? FishingDataRegistry.getAntiLagInt("boss_despawn_seconds", 600)
+                : FishingDataRegistry.getAntiLagInt("normal_despawn_seconds", 240);
+        long expireAt = level.getGameTime() + (ttlSeconds * 20L);
+        TRACKED_CREATURES.add(new TrackedCreature(entity.getUUID(), owner.getUUID(), level.dimension(), expireAt, isBoss));
+    }
+
     public static class PlayerFishingStats {
         public double fishingSpeed = 0.0;
         public double seaCreatureChance = 15.0; // Base 15% SCC
@@ -173,128 +224,130 @@ public class FishingEngine {
         boolean isThundering = level.isThundering();
 
         int lure = enchs.getOrDefault("minecraft:lure", 0);
-        st.fishingSpeed += lure * 10.0;
+        st.fishingSpeed += lure * FishingDataRegistry.getEnchantBalance("lure_speed_per_level", 10.0);
 
         int lots = enchs.getOrDefault("minecraft:luck_of_the_sea", 0);
-        st.treasureChance += lots * 2.5;
-        st.rareCreatureBonus += lots * 1.0;
+        st.treasureChance += lots * FishingDataRegistry.getEnchantBalance("luck_of_the_sea_treasure_per_level", 2.5);
+        st.rareCreatureBonus += lots * FishingDataRegistry.getEnchantBalance("luck_of_the_sea_rare_per_level", 1.0);
 
         int scholar = enchs.getOrDefault("enchantencore:scholar_of_fishing", 0);
-        st.xpMultiplier += scholar * 0.15;
+        st.xpMultiplier += scholar * FishingDataRegistry.getEnchantBalance("scholar_of_fishing_xp_per_level", 0.15);
 
         if (enchs.getOrDefault("enchantencore:harpoon", 0) > 0) {
-            st.seaCreatureChance += 4.0;
+            st.seaCreatureChance += FishingDataRegistry.getEnchantBalance("harpoon_scc_bonus", 4.0);
         }
         if (enchs.getOrDefault("enchantencore:yoink", 0) > 0) {
-            st.doubleCatchChance += 6.0;
+            st.doubleCatchChance += FishingDataRegistry.getEnchantBalance("yoink_double_catch_bonus", 6.0);
         }
 
-        // 40 New Fishing Enchantments
-        st.fishingSpeed += enchs.getOrDefault("expedition_fishing:quick_cast", 0) * 5.0;
-        st.weightMultiplier += enchs.getOrDefault("expedition_fishing:heavy_sinker", 0) * 0.03;
-        st.baitSaveChance += enchs.getOrDefault("expedition_fishing:bait_saver", 0) * 0.15;
-        st.seaCreatureChance += enchs.getOrDefault("expedition_fishing:angler_instinct", 0) * 3.0;
-        st.scavBonus += enchs.getOrDefault("expedition_fishing:tide_scavenger", 0) * 0.10;
+        // 40 New Fishing Enchantments (Configurable via enchants_balance.json)
+        st.fishingSpeed += enchs.getOrDefault("expedition_fishing:quick_cast", 0) * FishingDataRegistry.getEnchantBalance("quick_cast_speed_per_level", 5.0);
+        st.weightMultiplier += enchs.getOrDefault("expedition_fishing:heavy_sinker", 0) * FishingDataRegistry.getEnchantBalance("heavy_sinker_weight_per_level", 0.03);
+        st.baitSaveChance += enchs.getOrDefault("expedition_fishing:bait_saver", 0) * FishingDataRegistry.getEnchantBalance("bait_saver_chance_per_level", 0.15);
+        st.seaCreatureChance += enchs.getOrDefault("expedition_fishing:angler_instinct", 0) * FishingDataRegistry.getEnchantBalance("angler_instinct_scc_per_level", 3.0);
+        st.scavBonus += enchs.getOrDefault("expedition_fishing:tide_scavenger", 0) * FishingDataRegistry.getEnchantBalance("tide_scavenger_drop_per_level", 0.10);
         if (isRaining) {
-            st.fishingSpeed += enchs.getOrDefault("expedition_fishing:steady_hand", 0) * 4.0;
+            st.fishingSpeed += enchs.getOrDefault("expedition_fishing:steady_hand", 0) * FishingDataRegistry.getEnchantBalance("steady_hand_rain_speed_per_level", 4.0);
         }
         if (isNight) {
             int nf = enchs.getOrDefault("expedition_fishing:night_fisher", 0);
-            st.fishingSpeed += nf * 5.0;
-            st.seaCreatureChance += nf * 3.0;
+            st.fishingSpeed += nf * FishingDataRegistry.getEnchantBalance("night_fisher_speed_per_level", 5.0);
+            st.seaCreatureChance += nf * FishingDataRegistry.getEnchantBalance("night_fisher_scc_per_level", 3.0);
         } else {
             int sc = enchs.getOrDefault("expedition_fishing:sunlit_cast", 0);
-            st.fishingSpeed += sc * 5.0;
-            st.treasureChance += sc * 3.0;
+            st.fishingSpeed += sc * FishingDataRegistry.getEnchantBalance("sunlit_cast_speed_per_level", 5.0);
+            st.treasureChance += sc * FishingDataRegistry.getEnchantBalance("sunlit_cast_treasure_per_level", 3.0);
         }
         if (pos.getY() < 40) {
             int dw = enchs.getOrDefault("expedition_fishing:deep_water", 0);
-            st.fishingSpeed += dw * 5.0;
-            st.rareCreatureBonus += dw * 3.0;
+            st.fishingSpeed += dw * FishingDataRegistry.getEnchantBalance("deep_water_speed_per_level", 5.0);
+            st.rareCreatureBonus += dw * FishingDataRegistry.getEnchantBalance("deep_water_rare_per_level", 3.0);
         } else if (pos.getY() >= 62) {
-            st.fishingSpeed += enchs.getOrDefault("expedition_fishing:surface_cast", 0) * 5.0;
+            st.fishingSpeed += enchs.getOrDefault("expedition_fishing:surface_cast", 0) * FishingDataRegistry.getEnchantBalance("surface_cast_speed_per_level", 5.0);
         }
         st.stormCallerLevel = enchs.getOrDefault("expedition_fishing:storm_caller", 0);
         if (isThundering && st.stormCallerLevel > 0) {
-            st.seaCreatureChance += st.stormCallerLevel * 12.0;
+            st.seaCreatureChance += st.stormCallerLevel * FishingDataRegistry.getEnchantBalance("storm_caller_scc_per_level", 12.0);
         }
         st.feastLevel = enchs.getOrDefault("expedition_fishing:fishermans_feast", 0);
 
         // Rare Enchants
         int sccLv = enchs.getOrDefault("expedition_fishing:sea_creature_chance", 0);
-        st.seaCreatureChance += sccLv * 4.0;
-        st.rareCreatureBonus += sccLv * 4.0;
+        double sccPerLv = FishingDataRegistry.getEnchantBalance("sea_creature_chance_per_level", 4.0);
+        st.seaCreatureChance += sccLv * sccPerLv;
+        st.rareCreatureBonus += sccLv * sccPerLv;
 
-        st.doubleCatchChance += enchs.getOrDefault("expedition_fishing:double_hook", 0) * 4.0;
+        st.doubleCatchChance += enchs.getOrDefault("expedition_fishing:double_hook", 0) * FishingDataRegistry.getEnchantBalance("double_hook_per_level", 4.0);
         int thLv = enchs.getOrDefault("expedition_fishing:treasure_hunter", 0);
-        st.treasureChance += thLv * 3.0;
-        st.artifactBonusChance += thLv * 1.5;
+        st.treasureChance += thLv * FishingDataRegistry.getEnchantBalance("treasure_hunter_treasure_per_level", 3.0);
+        st.artifactBonusChance += thLv * FishingDataRegistry.getEnchantBalance("treasure_hunter_artifact_per_level", 1.5);
 
-        st.heatReduction += enchs.getOrDefault("expedition_fishing:thermal_cooling", 0) * 0.20;
+        st.heatReduction += enchs.getOrDefault("expedition_fishing:thermal_cooling", 0) * FishingDataRegistry.getEnchantBalance("thermal_cooling_reduction_per_level", 0.20);
         int hcLv = enchs.getOrDefault("expedition_fishing:heat_channeling", 0);
         if (inLava && hcLv > 0) {
-            st.seaCreatureChance += (int) (data.heat / 20.0) * (hcLv * 3.0);
+            st.seaCreatureChance += (int) (data.heat / 20.0) * (hcLv * FishingDataRegistry.getEnchantBalance("heat_channeling_scc_per_20_heat_per_level", 3.0));
         }
         int slayerLv = enchs.getOrDefault("expedition_fishing:slayer_hook", 0);
         if (slayerLv > 0) {
             data.slayerBuffLevel = slayerLv;
         }
-        st.biomeWeightBonus += enchs.getOrDefault("expedition_fishing:biome_attunement", 0) * 0.05;
+        st.biomeWeightBonus += enchs.getOrDefault("expedition_fishing:biome_attunement", 0) * FishingDataRegistry.getEnchantBalance("biome_attunement_weight_per_level", 0.05);
         int trophyLv = enchs.getOrDefault("expedition_fishing:trophy_hunter", 0);
-        st.weightMultiplier += trophyLv * 0.08;
+        st.weightMultiplier += trophyLv * FishingDataRegistry.getEnchantBalance("trophy_hunter_weight_per_level", 0.08);
         st.frostbiteLevel = enchs.getOrDefault("expedition_fishing:frostbite_hook", 0);
         if (enchs.getOrDefault("expedition_fishing:blazing_line", 0) > 0) {
             st.autoSmeltFish = true;
-            if (inLava) st.seaCreatureChance += 5.0;
+            if (inLava) st.seaCreatureChance += FishingDataRegistry.getEnchantBalance("blazing_line_lava_scc_bonus", 5.0);
         }
         st.stunningYankLevel = enchs.getOrDefault("expedition_fishing:stunning_yank", 0);
         st.luckyCloverLevel = enchs.getOrDefault("expedition_fishing:lucky_clover", 0);
         st.chainCatchLevel = enchs.getOrDefault("expedition_fishing:chain_catch", 0);
-        st.xpMultiplier += enchs.getOrDefault("expedition_fishing:culling_line", 0) * 0.15;
+        st.xpMultiplier += enchs.getOrDefault("expedition_fishing:culling_line", 0) * FishingDataRegistry.getEnchantBalance("culling_line_xp_per_level", 0.15);
         if (inLava) {
-            st.rareCreatureBonus += enchs.getOrDefault("expedition_fishing:magma_tether", 0) * 4.0;
+            st.rareCreatureBonus += enchs.getOrDefault("expedition_fishing:magma_tether", 0) * FishingDataRegistry.getEnchantBalance("magma_tether_rare_per_level", 4.0);
         }
 
         // Epic Enchants
         int voidAnchor = enchs.getOrDefault("expedition_fishing:void_anchor", 0);
         if (inVoid || level.dimension() == Level.END) {
-            st.seaCreatureChance += voidAnchor * 6.0;
-            st.rareCreatureBonus += voidAnchor * 6.0;
+            double vaVal = voidAnchor * FishingDataRegistry.getEnchantBalance("void_anchor_scc_per_level", 6.0);
+            st.seaCreatureChance += vaVal;
+            st.rareCreatureBonus += vaVal;
         }
         if (enchs.getOrDefault("expedition_fishing:abyssal_blessing", 0) > 0) {
-            st.artifactBonusChance += 5.0;
+            st.artifactBonusChance += FishingDataRegistry.getEnchantBalance("abyssal_blessing_artifact_bonus", 5.0);
         }
-        st.bossWeightBonus += enchs.getOrDefault("expedition_fishing:boss_lure", 0) * 0.15;
+        st.bossWeightBonus += enchs.getOrDefault("expedition_fishing:boss_lure", 0) * FishingDataRegistry.getEnchantBalance("boss_lure_weight_per_level", 0.15);
         if (enchs.getOrDefault("expedition_fishing:frenzy_reel", 0) > 0) {
             int stacks = Math.min(5, data.frenzyStacks);
-            st.fishingSpeed += stacks * 3.0;
-            st.seaCreatureChance += stacks * 1.5;
+            st.fishingSpeed += stacks * FishingDataRegistry.getEnchantBalance("frenzy_reel_speed_per_stack", 3.0);
+            st.seaCreatureChance += stacks * FishingDataRegistry.getEnchantBalance("frenzy_reel_scc_per_stack", 1.5);
         }
         if (enchs.getOrDefault("expedition_fishing:mirror_cast", 0) > 0) {
-            st.mirrorCastChance = 0.12;
+            st.mirrorCastChance = FishingDataRegistry.getEnchantBalance("mirror_cast_duplicate_chance", 0.12);
         }
-        st.chronosBypassChance = enchs.getOrDefault("expedition_fishing:chronos_line", 0) * 0.35;
+        st.chronosBypassChance = enchs.getOrDefault("expedition_fishing:chronos_line", 0) * FishingDataRegistry.getEnchantBalance("chronos_line_bypass_per_level", 0.35);
         if (enchs.getOrDefault("expedition_fishing:dimensional_drift", 0) > 0) {
-            st.dimensionalDriftChance = 0.10;
+            st.dimensionalDriftChance = FishingDataRegistry.getEnchantBalance("dimensional_drift_chance", 0.10);
         }
         if (level.getGameTime() < data.bloodBuffUntilTick) {
             int bloodLv = Math.max(1, enchs.getOrDefault("expedition_fishing:blood_in_the_water", 1));
-            st.fishingSpeed += bloodLv * 6.0;
-            st.seaCreatureChance += bloodLv * 4.0;
+            st.fishingSpeed += bloodLv * FishingDataRegistry.getEnchantBalance("blood_in_the_water_speed_per_level", 6.0);
+            st.seaCreatureChance += bloodLv * FishingDataRegistry.getEnchantBalance("blood_in_the_water_scc_per_level", 4.0);
         }
 
         // Ultimate Enchants
         if (enchs.getOrDefault("expedition_fishing:poseidons_wrath", 0) > 0) {
             st.poseidonsWrath = true;
-            st.seaCreatureChance += 10.0;
-            st.fishingSpeed += 15.0;
-            st.doubleCatchChance += 10.0;
+            st.seaCreatureChance += FishingDataRegistry.getEnchantBalance("poseidons_wrath_scc", 10.0);
+            st.fishingSpeed += FishingDataRegistry.getEnchantBalance("poseidons_wrath_speed", 15.0);
+            st.doubleCatchChance += FishingDataRegistry.getEnchantBalance("poseidons_wrath_double_catch", 10.0);
         }
         if (enchs.getOrDefault("expedition_fishing:eternal_angler", 0) > 0) {
             st.eternalAngler = true;
-            st.xpMultiplier += 0.25;
-            st.baitSaveChance += 0.25;
-            st.treasureChance += 10.0;
+            st.xpMultiplier += FishingDataRegistry.getEnchantBalance("eternal_angler_xp_bonus", 0.25);
+            st.baitSaveChance += FishingDataRegistry.getEnchantBalance("eternal_angler_bait_save", 0.25);
+            st.treasureChance += FishingDataRegistry.getEnchantBalance("eternal_angler_treasure_bonus", 10.0);
         }
 
         // Heat Bonus in Lava
@@ -551,7 +604,9 @@ public class FishingEngine {
             }
         }
 
+        boolean isBoss = "EPIC".equalsIgnoreCase(rarity) || "LEGENDARY".equalsIgnoreCase(rarity);
         level.addFreshEntity(entity);
+        registerSpawnedCreature(player, level, entity, isBoss);
 
         // Handle MOUNTED bosses (e.g. Poseidon on 6x Dolphin Steed, Dead Rider on Elder Guardian)
         if (mobCfg.has("spawn") && mobCfg.get("spawn").isJsonObject()) {
@@ -573,6 +628,7 @@ public class FishingEngine {
                             }
                         }
                         level.addFreshEntity(mount);
+                        registerSpawnedCreature(player, level, mount, isBoss);
                         entity.startRiding(mount, true, true);
                     }
                 }
