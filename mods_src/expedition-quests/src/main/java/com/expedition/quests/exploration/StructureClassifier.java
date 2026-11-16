@@ -31,7 +31,8 @@ public class StructureClassifier {
             "red_coral", "sky_decor", "raft/", "small_pond", "muddy_water_hole", "frozen_pond",
             "very_small_blackstone", "very_small_nether_brick", "bridge_1", "bridge_2", "bridge_3",
             "bridge_4", "bridge_5", "bridge_6", "lava_pool", "warped_pool", "soul_fire", "leafy_rubble",
-            "rubble_", "rise"
+            "rubble_", "rise", "igloo", "tent", "wagon", "campfire", "statue", "decor",
+            "chimney", "fountain", "tombstone", "graveyard_small", "micro_"
     };
 
     // Keywords in structure path that identify a Combat Dungeon / Fortress / Lair / Citadel / Outpost

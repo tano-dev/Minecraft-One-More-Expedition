@@ -12,6 +12,7 @@ import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
+import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.HoverEvent;
@@ -110,9 +111,22 @@ public class QuestCommand {
                         .executes(ctx -> {
                             QuestsConfig.load();
                             UnexploredStructureLocator.scanRegistries(ctx.getSource().getServer());
-                            ctx.getSource().sendSuccess(() -> Component.literal("§a[Expedition Quests] Reloaded quests_config.json & structure registries!"), true);
+                            ctx.getSource().sendSuccess(() -> Component.literal("\u00a7a[Expedition Quests] Reloaded quests_config.json & structure registries!"), true);
                             return 1;
-                        }));
+                        }))
+                .then(Commands.literal("reset")
+                        .requires(src -> src.permissions().hasPermission(Permissions.COMMANDS_GAMEMASTER))
+                        .executes(ctx -> {
+                            ServerPlayer sp = ctx.getSource().getPlayerOrException();
+                            resetPlayerQuests(ctx.getSource(), sp);
+                            return 1;
+                        })
+                        .then(Commands.argument("target", EntityArgument.player())
+                                .executes(ctx -> {
+                                    ServerPlayer target = EntityArgument.getPlayer(ctx, "target");
+                                    resetPlayerQuests(ctx.getSource(), target);
+                                    return 1;
+                                })));
 
         dispatcher.register(root);
         dispatcher.register(Commands.literal("q").redirect(dispatcher.getRoot().getChild("quest")));
@@ -176,6 +190,32 @@ public class QuestCommand {
         data.draftOffers.remove(freeSlot);
         data.dirty = true;
         QuestDataStorage.saveAsync(sp.getUUID());
-        sp.sendSystemMessage(Component.literal("§a✔ Accepted co-op quest: §f" + copy.displayName));
+        sp.sendSystemMessage(Component.literal("\u00a7a\u2714 Accepted co-op quest: \u00a7f" + copy.displayName));
+    }
+
+    public static void resetPlayerQuests(CommandSourceStack source, ServerPlayer target) {
+        QuestPlayerData data = QuestDataStorage.get(target.getUUID());
+        data.activeSlots.clear();
+        data.draftOffers.clear();
+        data.rerollsUsedToday = 0;
+        data.all10BonusClaimedToday = false;
+        data.trackedSlot = -1;
+        data.trackedExplorationSlot = -1;
+        data.currentDayKey = java.time.LocalDate.now().toString();
+
+        for (int slot = 0; slot < 10; slot++) {
+            var choices = com.expedition.quests.generator.QuestDraftGenerator.generateDraftChoices(target, data, slot, 1);
+            if (!choices.isEmpty()) {
+                QuestEntry q = choices.get(0);
+                if (q.isExploration()) {
+                    UnexploredStructureLocator.locateAndLockTarget(target.level().getServer(), target, q);
+                }
+                data.activeSlots.put(slot, q);
+            }
+        }
+
+        data.dirty = true;
+        QuestDataStorage.saveAsync(target.getUUID());
+        source.sendSuccess(() -> Component.literal("\u00a7a\u2714 Reset and generated 10 fresh quests for \u00a7e" + target.getName().getString() + "\u00a7a! Ready for testing."), true);
     }
 }

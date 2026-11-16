@@ -96,17 +96,46 @@ public class MathStructureSolver {
                     // Test biome at candidate position
                     Holder<Biome> noiseBiome = level.getBiome(new BlockPos(bx, 64, bz));
 
-                    // Pick first matching structure in set
+                    // Pick matching, non-ignored structures in set with weighted RNG
+                    List<StructureSet.StructureSelectionEntry> validEntries = new ArrayList<>();
+                    int totalWeight = 0;
                     for (StructureSet.StructureSelectionEntry sEntry : set.structures()) {
                         Structure struct = sEntry.structure().value();
-                        if (struct.biomes().contains(noiseBiome)) {
-                            Identifier sId = level.registryAccess().lookupOrThrow(Registries.STRUCTURE).getKey(struct);
-                            String structId = sId != null ? sId.toString() : entry.getKey().identifier().toString();
-                            String cluster = StructureClassifier.formatDisplayName(structId);
-                            results.add(new SolvedStructure(structId, cluster, bx, bz));
+                        if (!struct.biomes().contains(noiseBiome)) continue;
+                        Identifier sId = level.registryAccess().lookupOrThrow(Registries.STRUCTURE).getKey(struct);
+                        String sKeyStr = sId != null ? sId.toString() : entry.getKey().identifier().toString();
+                        if (StructureClassifier.classifyStructure(sKeyStr) == StructureClassifier.School.IGNORED) continue;
+                        validEntries.add(sEntry);
+                        totalWeight += sEntry.weight();
+                    }
+
+                    if (validEntries.isEmpty() || totalWeight <= 0) continue;
+
+                    // Minecraft chunk-seed placement selection
+                    long chunkSeed = (((long) candidate.x() & 0xFFFFFFFFL) | (((long) candidate.z() & 0xFFFFFFFFL) << 32)) ^ seed;
+                    Random chunkRng = new Random(chunkSeed);
+                    int roll = chunkRng.nextInt(totalWeight);
+                    Structure chosenStruct = null;
+                    String chosenId = null;
+
+                    for (StructureSet.StructureSelectionEntry ve : validEntries) {
+                        roll -= ve.weight();
+                        if (roll < 0) {
+                            chosenStruct = ve.structure().value();
+                            Identifier sId = level.registryAccess().lookupOrThrow(Registries.STRUCTURE).getKey(chosenStruct);
+                            chosenId = sId != null ? sId.toString() : entry.getKey().identifier().toString();
                             break;
                         }
                     }
+
+                    if (chosenId == null) {
+                        chosenStruct = validEntries.get(0).structure().value();
+                        Identifier sId = level.registryAccess().lookupOrThrow(Registries.STRUCTURE).getKey(chosenStruct);
+                        chosenId = sId != null ? sId.toString() : entry.getKey().identifier().toString();
+                    }
+
+                    String cluster = StructureClassifier.formatDisplayName(chosenId);
+                    results.add(new SolvedStructure(chosenId, cluster, bx, bz));
                 }
             }
         }

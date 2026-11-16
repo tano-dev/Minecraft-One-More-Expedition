@@ -10,8 +10,12 @@ import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionResult;
@@ -25,6 +29,8 @@ import net.minecraft.world.entity.monster.Strider;
 import net.minecraft.world.entity.vehicle.boat.AbstractBoat;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.levelgen.structure.Structure;
+import net.minecraft.world.level.levelgen.structure.StructureStart;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.*;
@@ -130,7 +136,24 @@ public class QuestProgressListener {
                 int baseRadius = QuestsConfig.getExplorationCaptureRadius(q.category);
                 int totalRadius = baseRadius + extraRadius;
                 double distSq = Math.pow(player.getX() - q.targetX, 2) + Math.pow(player.getZ() - q.targetZ, 2);
-                if (distSq <= (double) totalRadius * totalRadius) {
+                boolean arrived = distSq <= (double) totalRadius * totalRadius;
+
+                // Check organic arrival inside structure bounding box if near target
+                if (!arrived && distSq <= 250.0 * 250.0 && !"EXPLORE_BIOME".equals(q.category)) {
+                    try {
+                        var reg = player.level().registryAccess().lookupOrThrow(Registries.STRUCTURE);
+                        ResourceKey<Structure> sKey = ResourceKey.create(Registries.STRUCTURE, Identifier.parse(q.subType));
+                        var opt = reg.get(sKey);
+                        if (opt.isPresent()) {
+                            StructureStart start = player.level().structureManager().getStructureWithPieceAt(player.blockPosition(), HolderSet.direct(opt.get()));
+                            if (start.isValid()) {
+                                arrived = true;
+                            }
+                        }
+                    } catch (Exception ignored) {}
+                }
+
+                if (arrived) {
                     ExpeditionQuestsApi.completeQuest(player, data, q);
                 }
             }

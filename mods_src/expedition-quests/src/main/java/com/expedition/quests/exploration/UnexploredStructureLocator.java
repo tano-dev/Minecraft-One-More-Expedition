@@ -90,19 +90,36 @@ public class UnexploredStructureLocator {
         int minD = quest.minExpectedDist > 0 ? quest.minExpectedDist : 500;
         int maxD = quest.maxExpectedDist > 0 ? quest.maxExpectedDist : 1500;
 
-        // 1. Query Tiered Spatial Grid Pool (< 0.005ms)
+        // 1. Query Tiered Spatial Grid Pool with In-World Structure Verification
         SpatialGridPool.GridTarget target = SpatialGridPool.findTargetInBand(player, quest, minD, maxD);
         if (target != null) {
-            quest.category = target.category;
-            quest.subType = target.targetId;
-            quest.displayName = getSchoolPrefix(target.category) + target.displayName;
-            quest.targetX = target.x;
-            quest.targetZ = target.z;
-            quest.located = true;
-            quest.actualDistance = (int) Math.hypot(target.x - ox, target.z - oz);
-            applyDistanceBonus(quest);
-            ClaimedLocationsRegistry.claimLocation(quest.dimension, quest.targetX, quest.targetZ);
-            return;
+            if ("EXPLORE_BIOME".equals(target.category)) {
+                quest.category = target.category;
+                quest.subType = target.targetId;
+                quest.displayName = getSchoolPrefix(target.category) + target.displayName;
+                quest.targetX = target.x;
+                quest.targetZ = target.z;
+                quest.located = true;
+                quest.actualDistance = (int) Math.hypot(target.x - ox, target.z - oz);
+                applyDistanceBonus(quest);
+                ClaimedLocationsRegistry.claimLocation(quest.dimension, quest.targetX, quest.targetZ);
+                return;
+            }
+
+            // Verify with level chunk generator that structure actually exists in terrain
+            BlockPos verifiedPos = locateStructureFast(targetLevel, new BlockPos(target.x, 64, target.z), target.targetId, 24);
+            if (verifiedPos != null) {
+                quest.category = target.category;
+                quest.subType = target.targetId;
+                quest.displayName = getSchoolPrefix(target.category) + target.displayName;
+                quest.targetX = verifiedPos.getX();
+                quest.targetZ = verifiedPos.getZ();
+                quest.located = true;
+                quest.actualDistance = (int) Math.hypot(quest.targetX - ox, quest.targetZ - oz);
+                applyDistanceBonus(quest);
+                ClaimedLocationsRegistry.claimLocation(quest.dimension, quest.targetX, quest.targetZ);
+                return;
+            }
         }
 
         // 2. Guaranteed instant noise biome ring fallback (< 0.01ms, 0 chunks loaded!)
