@@ -1116,6 +1116,7 @@
     <nav class="nav-tabs-pill">
       <a href="#" class="nav-tab-btn active">Main Page</a>
       <a href="enchants.html" class="nav-tab-btn" style="color: #f5c451; font-weight: 800; border-color: rgba(245, 196, 81, 0.4);">✨ Bách Khoa Phù Phép (400)</a>
+      <a href="fishing.html" class="nav-tab-btn" style="color: #38bdf8; font-weight: 800; border-color: rgba(56, 189, 248, 0.4);">🎣 Bách Khoa Câu Cá (112)</a>
       <a href="#" class="nav-tab-btn">Discussion</a>
       <a href="#" class="nav-tab-btn">View source</a>
       <a href="#" class="nav-tab-btn">History</a>
@@ -1422,7 +1423,7 @@
           { name: "Combat Skill", badge: "Skill Progression", rarity: "color-special", icon: "⚔️", desc: "Tăng thêm % sát thương lên mọi mob và tăng tỉ lệ Crit Chance cho nhân vật.", features: ["Mở khóa Slayer và khu vực chiến đấu mới", "Cày bằng cách tiêu diệt mob và chạy dungeon"] },
           { name: "Mining Skill", badge: "Skill Progression", rarity: "color-green", icon: "⛏️", desc: "Tăng lượng Defense và cơ hội nhận gấp đôi khoáng sản khi đào bới.", features: ["Khai phá tài nguyên trong hang động và Crystal Hollows"] },
           { name: "Farming Skill", badge: "Skill Progression", rarity: "color-gold", icon: "🌾", desc: "Tăng lượng Health dồi dào và tăng sản lượng nông sản khi thu hoạch.", features: ["Nguồn sinh tồn và kinh tế ổn định cho người chơi mới"] },
-          { name: "Fishing Skill", badge: "Skill Progression", rarity: "color-aqua", icon: "🎣", desc: "Mở khóa các sinh vật biển nguy hiểm (Sea Creatures) và tăng lượng Health.", features: ["Tương thích với datapack Fishing Expansion"] },
+          { name: "Fishing Skill (Bách Khoa Câu Cá)", badge: "FULL WIKI", rarity: "color-aqua", icon: "🎣", desc: "Hệ thống Expedition Fishing (Lv.1 → Lv.50) với 112 Thủy Quái & Bosses (Overworld, Nether Lava & End Void), 147 trang bị & mồi câu, 23 Cổ Vật và 45 Phù phép câu cá.", features: ["Tra cứu toàn bộ 112 Thủy Quái, HP, Sát thương, 49 Kỹ năng Boss", "94 công thức chế tạo 3x3 & 34 Biomes câu cá", "<a href='fishing.html' style='color:#38bdf8;font-weight:800;text-decoration:underline;'>Nhấp vào đây để mở Bách Khoa Câu Cá ngay →</a>"] },
           { name: "Enchanting Skill", badge: "Skill Progression", rarity: "color-mythic", icon: "✨", desc: "Tăng lượng Intelligence và tăng lượng điểm kinh nghiệm nhận được từ mọi nguồn.", features: ["Mở khóa minigame thử nghiệm phù phép cao cấp"] },
           { name: "Catacombs (Dungeoneering)", badge: "Skill Progression", rarity: "color-legendary", icon: "🗝️", desc: "Tăng chỉ số tổng thể của mọi vật phẩm dungeon lên nhiều lần khi ở trong dungeon.", features: ["Kỹ năng cốt lõi để chinh phục các tầng F1 đến F7"] }
         ]
@@ -1635,6 +1636,55 @@
           rarityText: "SLAYER TIER V",
           desc: "Thách thức trong các dungeon khổng lồ: Yggdrasil (hầm ngục khổng lồ do Voxel Team tạo), Dungeons+ v1.11.1 (mở rộng dungeon vanilla), Adventure Dungeons v1.3.1 (thêm cấu trúc dungeon mới), ddd (hầm tối kinh dị – Nightmare Fuel). Boss cổ điển: Revenant Horror, Tarantula Broodfather, Sven Packmaster, Voidgloom Seraph, Inferno Demonlord. Kết hợp Horde Nights để tăng độ thử thách đêm kinh hoàng."
         }
+      },
+      {
+        id: "fishing",
+        name: "Fishing",
+        img: "assets/icons/fishing_rod.png",
+        cdn: "https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/fishing_rod.png",
+        tooltip: {
+          name: "Bách Khoa Câu Cá & Thủy Quái (Expedition Fishing)",
+          rarity: "color-aqua",
+          rarityText: "112 SEA CREATURES & BOSSES",
+          desc: "Hệ thống câu cá RPG từ Lv.1 đến Lv.50 trải dài qua Overworld, Nether Lava và The End Void. Bao gồm 112 Thủy Quái & Bosses, 147 Cần câu/Vũ khí/Giáp, 23 Cổ Vật, 94 Công thức và 45 Phù phép câu cá!"
+        },
+        subItems: [
+          {
+            name: "🎣 MỞ BÁCH KHOA CÂU CÁ & THỦY QUÁI (FULL WIKI)",
+            badge: "FULL DATABASE",
+            rarity: "color-aqua",
+            icon: "🌊",
+            desc: "Trang tra cứu chuyên biệt đầy đủ 112 Thủy Quái & Bosses, 147 Vật Phẩm, 23 Cổ Vật, 94 Công Thức 3x3, 34 Biomes và 45 Phù Phép Câu Cá kèm nút copy lệnh /fish spawn & /fish give.",
+            features: [
+              "Chuyển đổi linh hoạt giữa Chế độ Thẻ (Cards) và Chế độ Bảng (Table 112 dòng)",
+              "Xem chi tiết 49 chiêu thức Boss, tỉ lệ rớt đồ và công thức chế tạo 3x3",
+              "<a href='fishing.html' style='color:#38bdf8;font-weight:800;text-decoration:underline;'>Nhấp vào đây để mở Bách Khoa Câu Cá (fishing.html) ngay →</a>"
+            ]
+          },
+          {
+            name: "🐙 112 Thủy Quái & Bosses (Overworld, Lava, Void)",
+            badge: "BESTIARY",
+            rarity: "color-legendary",
+            icon: "👑",
+            desc: "Từ các loài cá hiền lành, Rương Kho Báu (cộng thẳng tiền vào Purse) cho đến các đại Boss cưỡi thú chia máu 80/20 như Poseidon, Dead Rider, Ghast Broodmother, Starlight Wyrm và Void Emperor.",
+            features: [
+              "Overworld (Lv.0–26): King Slime, Temple Guardian, Vulture King, Great White",
+              "Nether Lava (Lv.27–45): Ghast Broodmother (41 xúc tu), Poseidon, The Warden, Nether Lord, The Cinder Eclipse",
+              "The End Void (Lv.35–50): Void Kraken, Chronos Archon, Ender Hydra, Starlight Wyrm, Void Emperor"
+            ]
+          },
+          {
+            name: "🔱 147 Trang Bị, Đinh Ba, Giáp & 23 Cổ Vật",
+            badge: "GEAR & ARTIFACTS",
+            rarity: "color-mythic",
+            icon: "🔱",
+            desc: "Cần câu Lava/Void, Đinh ba tăng sát thương Thủy Quái (SCA +35% → +100% kèm kỹ năng AoE), Bộ giáp câu cá (Scale, Ironclad, Dreadplate, Volcanic, Voidweaver) và Cọc chiến đấu Battle Totem.",
+            features: [
+              "Void Walker Rod (Lv.35) & Starlight Sovereign Rod (Lv.45) câu trực tiếp dưới vực The End",
+              "23 Cổ Vật (Artifacts) tự động kích hoạt nội tại khi để trong /fish bag"
+            ]
+          }
+        ]
       },
       {
         id: "achievements",
