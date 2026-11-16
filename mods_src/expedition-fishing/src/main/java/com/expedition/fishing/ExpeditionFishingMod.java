@@ -36,6 +36,8 @@ public class ExpeditionFishingMod implements ModInitializer {
             FishingCommand.register(dispatcher);
         });
 
+        com.expedition.fishing.mechanics.FishingCombatAndUtilityHandler.registerEvents();
+
         // Sea Creature kill reward (XP + Drops) & Blood in the Water enchant trigger
         ServerEntityCombatEvents.AFTER_KILLED_OTHER_ENTITY.register((world, entity, killedEntity, damageSource) -> {
             if (!BiomeResolver.isSkyblockWorld(world)) {
@@ -51,6 +53,8 @@ public class ExpeditionFishingMod implements ModInitializer {
         // Heat natural cooling, Overheat penalty & Sea Creature Auto-Despawn / Boss Abilities
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             com.expedition.fishing.mechanics.BossAbilityEngine.tickAll(server);
+            com.expedition.fishing.mechanics.BroodmotherCosmeticsManager.tick(server);
+            com.expedition.fishing.mechanics.FishingCombatAndUtilityHandler.tickTotemsAndAccessories(server);
 
             tickCounter++;
             if (tickCounter % 40 != 0) return;

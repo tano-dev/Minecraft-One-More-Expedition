@@ -58,9 +58,24 @@ public class FishingEngine {
 
     private static final List<TrackedCreature> TRACKED_CREATURES = new java.util.concurrent.CopyOnWriteArrayList<>();
 
+    public static boolean isTrackedCreature(UUID uuid) {
+        for (TrackedCreature tc : TRACKED_CREATURES) {
+            if (tc.entityUuid().equals(uuid)) return true;
+        }
+        return false;
+    }
+
+    public static boolean isTrackedPassiveCreature(UUID uuid) {
+        for (TrackedCreature tc : TRACKED_CREATURES) {
+            if (tc.entityUuid().equals(uuid) && tc.pendingXp() <= 0.0 && !tc.isBoss()) return true;
+        }
+        return false;
+    }
+
     public static void onSeaCreatureKilled(ServerLevel level, Entity killedEntity, ServerPlayer killer) {
         UUID entId = killedEntity.getUUID();
         BossAbilityEngine.removeController(entId);
+        BroodmotherCosmeticsManager.cleanup(level.getServer(), entId);
         TrackedCreature matched = null;
         for (TrackedCreature tc : TRACKED_CREATURES) {
             if (tc.entityUuid().equals(entId)) {
@@ -70,6 +85,13 @@ public class FishingEngine {
         }
         if (matched == null) return;
         TRACKED_CREATURES.remove(matched);
+
+        // If this was a Boss Rider that still had a live Mount, discard the orphaned Mount
+        if (killedEntity.getVehicle() != null && killedEntity.getVehicle().isAlive()) {
+            Entity v = killedEntity.getVehicle();
+            BossAbilityEngine.removeController(v.getUUID());
+            v.discard();
+        }
 
         if (matched.pendingXp() <= 0) return;
 
@@ -117,6 +139,8 @@ public class FishingEngine {
                 continue;
             }
             if (lvl.getGameTime() >= tc.expireGameTime()) {
+                BossAbilityEngine.removeController(tc.entityUuid());
+                BroodmotherCosmeticsManager.cleanup(server, tc.entityUuid());
                 ent.discard();
                 TRACKED_CREATURES.remove(tc);
             }
@@ -269,6 +293,12 @@ public class FishingEngine {
                     }
                 }
             }
+        }
+
+        // 4.5 Totem Bonus
+        st.treasureChance += FishingCombatAndUtilityHandler.getNearbyTreasureTotemBonus(player, level);
+        if (FishingCombatAndUtilityHandler.hasMagmaFilterBuff(player.getUUID(), level.getGameTime())) {
+            st.heatReduction += 0.50;
         }
 
         // 5. Off-hand Bait
@@ -737,7 +767,8 @@ public class FishingEngine {
             return;
         }
 
-        // 2. Handle SINGLE, SCALED, or MOUNTED spawns
+        // 2. Handle SINGLE, SCALED, or MOUNTED spawns (80% HP for Boss Rider, 20% HP for Mount!)
+        boolean isMountedSpawn = spCfg.has("mount") && spCfg.get("mount").isJsonObject();
         String mainTypeStr = spCfg.has("rider_entity_type")
                 ? FishingDataRegistry.getStr(spCfg, "rider_entity_type", "ZOMBIFIED_PIGLIN")
                 : FishingDataRegistry.getStr(mobCfg, "entity_type", "COD");
@@ -745,20 +776,56 @@ public class FishingEngine {
         Entity entity = createConfiguredEntity(level, spawnPos, vel, mainTypeStr, displayName, rarity, spCfg, stats);
         if (entity == null) return;
 
+        double totalBossHp = 100.0;
+        if (entity instanceof LivingEntity living) {
+            totalBossHp = living.getMaxHealth();
+            if (isMountedSpawn && totalBossHp > 10.0) {
+                // 80% of total HP goes to the Boss Rider
+                double riderHp = Math.max(10.0, totalBossHp * 0.80);
+                AttributeInstance hpAttr = living.getAttribute(Attributes.MAX_HEALTH);
+                if (hpAttr != null) {
+                    hpAttr.setBaseValue(riderHp);
+                    living.setHealth((float) riderHp);
+                }
+            }
+        }
+
+        String glowColor = FishingDataRegistry.getStr(spCfg, "glow_color", FishingDataRegistry.getStr(spCfg, "name_color", ""));
+        if (!glowColor.isEmpty()) {
+            BroodmotherCosmeticsManager.applyGlowColor(level, entity, glowColor);
+        }
+
         level.addFreshEntity(entity);
         registerSpawnedCreature(player, level, entity, isBoss, mobId, displayName, rarity, weightKg, pendingXp, scav, smelt);
         if (entity instanceof LivingEntity living) {
             BossAbilityEngine.registerController(player, level, living, mobId, displayName, rarity, spCfg, true);
+            if ("ghast_broodmother".equals(mobId)) {
+                BroodmotherCosmeticsManager.attachBroodmotherTentacles(level, living);
+            } else if ("sulfur_cube".equals(mobId)) {
+                BroodmotherCosmeticsManager.equipSulfurCubeVariant(living);
+            }
         }
 
-        if (spCfg.has("mount") && spCfg.get("mount").isJsonObject()) {
+        if (isMountedSpawn) {
             JsonObject mountCfg = spCfg.getAsJsonObject("mount");
             String mTypeStr = FishingDataRegistry.getStr(mountCfg, "entity_type", "DOLPHIN");
             String mName = FishingDataRegistry.getStr(mountCfg, "display_name", displayName + "'s Steed");
             Entity mount = createConfiguredEntity(level, spawnPos, vel, mTypeStr, mName, rarity, mountCfg, stats);
             if (mount != null) {
+                if (mount instanceof LivingEntity mLiving) {
+                    // 20% of total HP goes to the Mount!
+                    double mountHp = Math.max(8.0, totalBossHp * 0.20);
+                    AttributeInstance mHpAttr = mLiving.getAttribute(Attributes.MAX_HEALTH);
+                    if (mHpAttr != null) {
+                        mHpAttr.setBaseValue(mountHp);
+                        mLiving.setHealth((float) mountHp);
+                    }
+                }
                 if (!FishingDataRegistry.getBool(mountCfg, "show_name", false)) {
                     mount.setCustomNameVisible(false);
+                }
+                if (!glowColor.isEmpty()) {
+                    BroodmotherCosmeticsManager.applyGlowColor(level, mount, glowColor);
                 }
                 level.addFreshEntity(mount);
                 registerSpawnedCreature(player, level, mount, isBoss, mobId, mName, rarity, weightKg, 0.0, 0.0, false);

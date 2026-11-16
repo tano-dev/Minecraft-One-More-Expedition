@@ -44,6 +44,7 @@ public class BossAbilityEngine {
         public final ServerBossEvent bossBar;
         public final Map<String, Integer> abilityCooldowns = new HashMap<>();
         public int aggroHitCooldown = 0;
+        public int pullTicksRemaining = 50;
 
         public ActiveCreatureController(
                 UUID entityUuid,
@@ -173,9 +174,48 @@ public class BossAbilityEngine {
                 level.sendParticles(pType, boss.getX(), boss.getY() + boss.getBbHeight() * 0.5, boss.getZ(), 4, 0.35, 0.35, 0.35, 0.02);
             }
 
+            // 2b. Daylight Fire Immunity & Lava Buoyancy
+            boss.clearFire();
+            if (boss.isInLava()) {
+                Vec3 m = boss.getDeltaMovement();
+                boss.setDeltaMovement(m.x * 0.85, Math.max(0.02, m.y * 0.5 + 0.045), m.z * 0.85);
+            }
+            if ("vine_strangler".equals(ctrl.mobId) && boss instanceof net.minecraft.world.entity.monster.Creeper creeper) {
+                creeper.setSwellDir(-1);
+            }
+
             // 3. Find Target Player
             ServerPlayer target = findTarget(level, boss, ctrl.ownerUuid);
             if (target == null) continue;
+
+            // 3a. Initial 2.5s Pull Toward Angler (pullTowardPlayer from MobManager)
+            if (ctrl.pullTicksRemaining > 0) {
+                ctrl.pullTicksRemaining--;
+                if (ctrl.pullTicksRemaining % 5 == 0) {
+                    Entity pullEnt = boss.getVehicle() != null ? boss.getVehicle() : boss;
+                    double dist = pullEnt.distanceTo(target);
+                    if (dist > 2.4 && dist < 35.0) {
+                        Vec3 dir = target.position().add(0, 0.5, 0).subtract(pullEnt.position()).normalize();
+                        double spd = Math.min(0.85, dist * 0.13);
+                        pullEnt.setDeltaMovement(dir.x * spd, Math.max(0.18, dir.y * spd + 0.12), dir.z * spd);
+                    } else if (dist <= 2.4) {
+                        ctrl.pullTicksRemaining = 0;
+                    }
+                }
+            }
+
+            // 3aa. Warden Anti-Dig & Anger Lock (prevents The Warden from digging into the ground and vanishing!)
+            if (boss instanceof net.minecraft.world.entity.monster.warden.Warden warden) {
+                warden.getBrain().setMemoryWithExpiry(
+                        net.minecraft.world.entity.ai.memory.MemoryModuleType.DIG_COOLDOWN,
+                        net.minecraft.util.Unit.INSTANCE,
+                        1200L
+                );
+                if (level.getGameTime() % 20 == 0) {
+                    warden.increaseAngerAt(target, 150, true);
+                    warden.setAttackTarget(target);
+                }
+            }
 
             // 3b. Anti-Void Spatial Recall (prevents End/Void Sea Creatures from falling into the Void and dying!)
             Entity rootEnt = boss.getVehicle() != null ? boss.getVehicle() : boss;
