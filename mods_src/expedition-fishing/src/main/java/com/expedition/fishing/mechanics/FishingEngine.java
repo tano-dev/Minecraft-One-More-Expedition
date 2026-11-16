@@ -834,6 +834,85 @@ public class FishingEngine {
         }
     }
 
+    public static boolean spawnMobAtPlayer(ServerPlayer player, String mobId) {
+        JsonObject mobCfg = FishingDataRegistry.MOBS.get(mobId);
+        if (mobCfg == null) return false;
+        ServerLevel level = player.level();
+        String displayName = FishingDataRegistry.getStr(mobCfg, "display_name", FishingItemFactory.formatId(mobId));
+        String rarity = FishingDataRegistry.getStr(mobCfg, "rarity", "COMMON").toUpperCase(Locale.ROOT);
+        String category = FishingDataRegistry.getStr(mobCfg, "category", "HOSTILE").toUpperCase(Locale.ROOT);
+        double baseXp = FishingDataRegistry.getDouble(mobCfg, "xp", 25.0);
+        double baseWeight = Math.max(0.5, FishingDataRegistry.getDouble(mobCfg, "base_weight", 5.0));
+
+        String entityTypeStr = FishingDataRegistry.getStr(mobCfg, "entity_type", "COD").toLowerCase(Locale.ROOT);
+        EntityType<?> type = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace(entityTypeStr));
+        if (type == null) type = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace("cod"));
+        Entity entity = type.create(level, EntitySpawnReason.COMMAND);
+        if (entity == null) return false;
+
+        Vec3 look = player.getLookAngle();
+        Vec3 pos = player.position().add(look.x * 2.5, 0.5, look.z * 2.5);
+        entity.setPos(pos.x, pos.y, pos.z);
+        entity.setCustomName(Component.literal(FishingItemFactory.getRarityColor(rarity) + displayName));
+        entity.setCustomNameVisible(true);
+
+        if (entity instanceof LivingEntity living && mobCfg.has("spawn") && mobCfg.get("spawn").isJsonObject()) {
+            JsonObject spCfg = mobCfg.getAsJsonObject("spawn");
+            double scale = FishingDataRegistry.getDouble(spCfg, "scale", 1.0);
+            if (scale != 1.0 && scale > 0.1) {
+                AttributeInstance scaleAttr = living.getAttribute(Attributes.SCALE);
+                if (scaleAttr != null) scaleAttr.setBaseValue(scale);
+            }
+            double hp = FishingDataRegistry.getDouble(spCfg, "health", 0.0);
+            if (hp > 0.0) {
+                AttributeInstance hpAttr = living.getAttribute(Attributes.MAX_HEALTH);
+                if (hpAttr != null) {
+                    hpAttr.setBaseValue(hp);
+                    living.setHealth((float) hp);
+                }
+            }
+            if (spCfg.has("equipment") && spCfg.get("equipment").isJsonObject()) {
+                JsonObject eq = spCfg.getAsJsonObject("equipment");
+                equipSlot(living, EquipmentSlot.HEAD, FishingDataRegistry.getStr(eq, "helmet", ""));
+                equipSlot(living, EquipmentSlot.CHEST, FishingDataRegistry.getStr(eq, "chestplate", ""));
+                equipSlot(living, EquipmentSlot.LEGS, FishingDataRegistry.getStr(eq, "leggings", ""));
+                equipSlot(living, EquipmentSlot.FEET, FishingDataRegistry.getStr(eq, "boots", ""));
+                equipSlot(living, EquipmentSlot.MAINHAND, FishingDataRegistry.getStr(eq, "mainhand", ""));
+            }
+        }
+
+        boolean isBoss = "EPIC".equalsIgnoreCase(rarity) || "LEGENDARY".equalsIgnoreCase(rarity);
+        double pendingXp = "HOSTILE".equalsIgnoreCase(category) ? baseXp : 0.0;
+        level.addFreshEntity(entity);
+        registerSpawnedCreature(player, level, entity, isBoss, mobId, displayName, rarity, baseWeight, pendingXp, 0.0, false);
+
+        if (mobCfg.has("spawn") && mobCfg.get("spawn").isJsonObject()) {
+            JsonObject spCfg = mobCfg.getAsJsonObject("spawn");
+            if (spCfg.has("mount") && spCfg.get("mount").isJsonObject()) {
+                JsonObject mountCfg = spCfg.getAsJsonObject("mount");
+                String mTypeStr = FishingDataRegistry.getStr(mountCfg, "entity_type", "DOLPHIN").toLowerCase(Locale.ROOT);
+                EntityType<?> mType = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace(mTypeStr));
+                if (mType != null) {
+                    Entity mount = mType.create(level, EntitySpawnReason.COMMAND);
+                    if (mount != null) {
+                        mount.setPos(pos.x, pos.y, pos.z);
+                        if (mount instanceof LivingEntity mLiving) {
+                            double mScale = FishingDataRegistry.getDouble(mountCfg, "scale", 1.0);
+                            if (mScale != 1.0 && mScale > 0.1) {
+                                AttributeInstance sa = mLiving.getAttribute(Attributes.SCALE);
+                                if (sa != null) sa.setBaseValue(mScale);
+                            }
+                        }
+                        level.addFreshEntity(mount);
+                        registerSpawnedCreature(player, level, mount, isBoss, mobId, displayName, rarity, baseWeight, 0.0, 0.0, false);
+                        entity.startRiding(mount, true, true);
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
     public static Map<String, Integer> simulateRolls(String biomeGroup, int playerLevel, int iterations) {
         Map<String, Integer> results = new LinkedHashMap<>();
         PlayerFishingStats dummyStats = new PlayerFishingStats();
