@@ -245,10 +245,15 @@ public class SidebarRenderer {
         if (FishingIntegration.isAvailableFor(player)) {
             int fLv = FishingIntegration.getLevel(player.getUUID());
             double fPct = FishingIntegration.getXpProgressPercent(player.getUUID());
+            long curXp = FishingIntegration.getCurrentXp(player.getUUID());
+            long reqXp = FishingIntegration.getRequiredXp(player.getUUID());
+            String detail = fLv >= 50
+                    ? " MAX"
+                    : String.format(Locale.US, " %.0f%% (%d/%d)", fPct, curXp, reqXp);
             Component fishLine = Component.literal(" 🎣 Fishing: ")
                     .withStyle(ChatFormatting.GRAY)
                     .append(Component.literal("Lv." + fLv).withStyle(ChatFormatting.AQUA))
-                    .append(Component.literal(String.format(Locale.US, " (%.0f%%)", fPct)).withStyle(ChatFormatting.DARK_GRAY));
+                    .append(Component.literal(detail).withStyle(ChatFormatting.YELLOW));
             list.add(fishLine);
 
             if (FishingIntegration.shouldDisplayHeat(player)) {

@@ -41,9 +41,66 @@ import java.util.*;
 
 public class FishingEngine {
 
-    public record TrackedCreature(UUID entityUuid, UUID ownerUuid, net.minecraft.resources.ResourceKey<Level> dimension, long expireGameTime, boolean isBoss) {}
+    public record TrackedCreature(
+            UUID entityUuid,
+            UUID ownerUuid,
+            net.minecraft.resources.ResourceKey<Level> dimension,
+            long expireGameTime,
+            boolean isBoss,
+            String mobId,
+            String displayName,
+            String rarity,
+            double weightKg,
+            double pendingXp,
+            double scavBonus,
+            boolean autoSmeltFish
+    ) {}
 
     private static final List<TrackedCreature> TRACKED_CREATURES = new java.util.concurrent.CopyOnWriteArrayList<>();
+
+    public static void onSeaCreatureKilled(ServerLevel level, Entity killedEntity, ServerPlayer killer) {
+        UUID entId = killedEntity.getUUID();
+        TrackedCreature matched = null;
+        for (TrackedCreature tc : TRACKED_CREATURES) {
+            if (tc.entityUuid().equals(entId)) {
+                matched = tc;
+                break;
+            }
+        }
+        if (matched == null) return;
+        TRACKED_CREATURES.remove(matched);
+
+        if (matched.pendingXp() <= 0) return;
+
+        ServerPlayer recipient = level.getServer() != null
+                ? level.getServer().getPlayerList().getPlayer(matched.ownerUuid())
+                : null;
+        if (recipient == null) recipient = killer;
+        if (recipient == null) return;
+
+        FishingPlayerData data = PlayerDataStorage.get(recipient.getUUID());
+        int oldLv = data.level;
+        int gained = data.addXp(matched.pendingXp());
+
+        JsonObject mobCfg = FishingDataRegistry.MOBS.get(matched.mobId());
+        if (mobCfg != null) {
+            PlayerFishingStats dropStats = new PlayerFishingStats();
+            dropStats.scavBonus = matched.scavBonus();
+            dropStats.autoSmeltFish = matched.autoSmeltFish();
+            grantMobDrops(recipient, mobCfg, dropStats, level.getRandom());
+        }
+
+        String color = FishingItemFactory.getRarityColor(matched.rarity());
+        recipient.sendSystemMessage(Component.literal(
+                "§b⚔ Slain " + color + matched.displayName() + "§7! §3+" + Math.round(matched.pendingXp()) + " Fishing XP"
+        ));
+
+        if (gained > 0) {
+            onLevelUp(recipient, oldLv, data.level);
+        }
+        PlayerDataStorage.saveAsync(recipient.getUUID());
+        ExpeditionFishingApi.fireCatch(recipient, matched.mobId(), "HOSTILE", matched.rarity(), matched.weightKg(), matched.pendingXp());
+    }
 
     public static void tickDespawnManager(net.minecraft.server.MinecraftServer server) {
         if (TRACKED_CREATURES.isEmpty()) return;
@@ -65,7 +122,19 @@ public class FishingEngine {
         }
     }
 
-    private static void registerSpawnedCreature(ServerPlayer owner, ServerLevel level, Entity entity, boolean isBoss) {
+    private static void registerSpawnedCreature(
+            ServerPlayer owner,
+            ServerLevel level,
+            Entity entity,
+            boolean isBoss,
+            String mobId,
+            String displayName,
+            String rarity,
+            double weightKg,
+            double pendingXp,
+            double scavBonus,
+            boolean autoSmeltFish
+    ) {
         int maxPerPlayer = FishingDataRegistry.getAntiLagInt("max_active_creatures_per_player", 12);
         List<TrackedCreature> ownedNonBoss = new ArrayList<>();
         for (TrackedCreature tc : TRACKED_CREATURES) {
@@ -89,7 +158,10 @@ public class FishingEngine {
                 ? FishingDataRegistry.getAntiLagInt("boss_despawn_seconds", 600)
                 : FishingDataRegistry.getAntiLagInt("normal_despawn_seconds", 240);
         long expireAt = level.getGameTime() + (ttlSeconds * 20L);
-        TRACKED_CREATURES.add(new TrackedCreature(entity.getUUID(), owner.getUUID(), level.dimension(), expireAt, isBoss));
+        TRACKED_CREATURES.add(new TrackedCreature(
+                entity.getUUID(), owner.getUUID(), level.dimension(), expireAt, isBoss,
+                mobId, displayName, rarity, weightKg, pendingXp, scavBonus, autoSmeltFish
+        ));
     }
 
     public static class PlayerFishingStats {
@@ -462,20 +534,30 @@ public class FishingEngine {
         }
 
         boolean isRecord = data.recordMobCatch(mobId, weightKg);
-        int oldLevel = data.level;
-        int gainedLevels = data.addXp(xpEarned);
-
-        // Spawn Sea Creature at bobber & fling toward player
-        spawnAndLaunchCreature(player, hook, mobId, mobCfg, displayName, rarity, stats);
-
-        // Grant direct drops (so passive & hostile catches always reward materials cleanly)
-        grantMobDrops(player, mobCfg, stats, rng);
-
+        boolean isHostileCreature = "HOSTILE".equalsIgnoreCase(category);
         String color = FishingItemFactory.getRarityColor(rarity);
         String recordTag = isRecord ? " §6§l[NEW RECORD!]" : (isHeavyweight ? " §e[Heavyweight]" : "");
-        player.sendSystemMessage(Component.literal(
-                "§3🎣 Caught " + color + displayName + " §7(" + weightKg + " kg)" + recordTag + " §b+" + Math.round(xpEarned) + " Fishing XP"
-        ));
+
+        if (isHostileCreature) {
+            // Hostile Sea Creatures grant Fishing XP & drops when SLAIN!
+            spawnAndLaunchCreature(player, hook, mobId, mobCfg, displayName, rarity, weightKg, xpEarned, stats);
+            player.sendSystemMessage(Component.literal(
+                    "§3🎣 Hooked " + color + displayName + " §7(" + weightKg + " kg)" + recordTag + " §e— Slay it for Fishing XP & Loot!"
+            ));
+        } else {
+            // Passive fish grant Fishing XP & drops immediately upon catch
+            int oldLevel = data.level;
+            int gainedLevels = data.addXp(xpEarned);
+            spawnAndLaunchCreature(player, hook, mobId, mobCfg, displayName, rarity, weightKg, 0.0, stats);
+            grantMobDrops(player, mobCfg, stats, rng);
+            player.sendSystemMessage(Component.literal(
+                    "§3🎣 Caught " + color + displayName + " §7(" + weightKg + " kg)" + recordTag + " §b+" + Math.round(xpEarned) + " Fishing XP"
+            ));
+            if (gainedLevels > 0) {
+                onLevelUp(player, oldLevel, data.level);
+            }
+            ExpeditionFishingApi.fireCatch(player, mobId, category, rarity, weightKg, xpEarned);
+        }
 
         if ("EPIC".equals(rarity) || "LEGENDARY".equals(rarity)) {
             level.playSound(null, player.blockPosition(), SoundEvents.ENDER_DRAGON_GROWL, SoundSource.PLAYERS, 0.7f, 1.2f);
@@ -488,12 +570,6 @@ public class FishingEngine {
         } else {
             level.playSound(null, player.blockPosition(), SoundEvents.FISHING_BOBBER_RETRIEVE, SoundSource.PLAYERS, 1.0f, 1.0f);
         }
-
-        if (gainedLevels > 0) {
-            onLevelUp(player, oldLevel, data.level);
-        }
-
-        ExpeditionFishingApi.fireCatch(player, mobId, category, rarity, weightKg, xpEarned);
     }
 
     private static String selectMobFromBiomePool(String biomeGroup, int playerLevel, boolean wantHostile, PlayerFishingStats stats, RandomSource rng) {
@@ -552,7 +628,7 @@ public class FishingEngine {
         return candidates.get(candidates.size() - 1).getKey();
     }
 
-    private static void spawnAndLaunchCreature(ServerPlayer player, FishingHook hook, String mobId, JsonObject mobCfg, String displayName, String rarity, PlayerFishingStats stats) {
+    private static void spawnAndLaunchCreature(ServerPlayer player, FishingHook hook, String mobId, JsonObject mobCfg, String displayName, String rarity, double weightKg, double pendingXp, PlayerFishingStats stats) {
         ServerLevel level = player.level();
         String entityTypeStr = FishingDataRegistry.getStr(mobCfg, "entity_type", "COD").toLowerCase(Locale.ROOT);
         EntityType<?> type = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace(entityTypeStr));
@@ -606,7 +682,7 @@ public class FishingEngine {
 
         boolean isBoss = "EPIC".equalsIgnoreCase(rarity) || "LEGENDARY".equalsIgnoreCase(rarity);
         level.addFreshEntity(entity);
-        registerSpawnedCreature(player, level, entity, isBoss);
+        registerSpawnedCreature(player, level, entity, isBoss, mobId, displayName, rarity, weightKg, pendingXp, stats.scavBonus, stats.autoSmeltFish);
 
         // Handle MOUNTED bosses (e.g. Poseidon on 6x Dolphin Steed, Dead Rider on Elder Guardian)
         if (mobCfg.has("spawn") && mobCfg.get("spawn").isJsonObject()) {
@@ -628,7 +704,7 @@ public class FishingEngine {
                             }
                         }
                         level.addFreshEntity(mount);
-                        registerSpawnedCreature(player, level, mount, isBoss);
+                        registerSpawnedCreature(player, level, mount, isBoss, mobId, displayName, rarity, weightKg, 0.0, 0.0, false);
                         entity.startRiding(mount, true, true);
                     }
                 }

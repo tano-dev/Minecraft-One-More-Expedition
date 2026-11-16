@@ -36,11 +36,13 @@ public class ExpeditionFishingMod implements ModInitializer {
             FishingCommand.register(dispatcher);
         });
 
-        // Blood in the Water enchant trigger on Sea Creature kill
+        // Sea Creature kill reward (XP + Drops) & Blood in the Water enchant trigger
         ServerEntityCombatEvents.AFTER_KILLED_OTHER_ENTITY.register((world, entity, killedEntity, damageSource) -> {
-            if (entity instanceof ServerPlayer sp && !BiomeResolver.isSkyblockWorld(world)) {
-                if (killedEntity.hasCustomName()) {
-                    FishingPlayerData data = PlayerDataStorage.get(sp.getUUID());
+            if (!BiomeResolver.isSkyblockWorld(world)) {
+                ServerPlayer killer = entity instanceof ServerPlayer sp ? sp : null;
+                com.expedition.fishing.mechanics.FishingEngine.onSeaCreatureKilled(world, killedEntity, killer);
+                if (killer != null && killedEntity.hasCustomName()) {
+                    FishingPlayerData data = PlayerDataStorage.get(killer.getUUID());
                     data.bloodBuffUntilTick = world.getGameTime() + 300L; // 15 seconds
                 }
             }

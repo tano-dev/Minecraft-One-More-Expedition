@@ -60,6 +60,16 @@ public class ExpeditionFishingApi {
         return PlayerDataStorage.get(uuid).getXpProgressPercent();
     }
 
+    public static long getCurrentXp(UUID uuid) {
+        return Math.round(PlayerDataStorage.get(uuid).xp);
+    }
+
+    public static long getRequiredXp(UUID uuid) {
+        FishingPlayerData d = PlayerDataStorage.get(uuid);
+        if (d.level >= 50) return 0L;
+        return Math.round(FishingPlayerData.getXpForNextLevel(d.level));
+    }
+
     public static int getHeat(UUID uuid) {
         return (int) Math.round(PlayerDataStorage.get(uuid).heat);
     }
