@@ -776,22 +776,78 @@ public class FishingEngine {
         }
     }
 
+    private static boolean addEconomyCoins(ServerPlayer player, long amount) {
+        if (player == null || amount <= 0 || player.level().getServer() == null) return false;
+        try {
+            Class<?> ecoCraftClass = Class.forName("com.reazip.economycraft.EconomyCraft");
+            java.lang.reflect.Method getMgr = ecoCraftClass.getMethod("getManager", net.minecraft.server.MinecraftServer.class);
+            Object manager = getMgr.invoke(null, player.level().getServer());
+            if (manager == null) return false;
+
+            Class<?> mutSrcClass = Class.forName("com.reazip.economycraft.api.v1.MutationSource");
+            java.lang.reflect.Method ofMethod = mutSrcClass.getMethod("of", String.class);
+            Object source = ofMethod.invoke(null, "expedition_fishing:treasure");
+
+            java.lang.reflect.Method addMoney = manager.getClass().getMethod("addMoney", UUID.class, long.class, mutSrcClass, String.class);
+            addMoney.invoke(manager, player.getUUID(), amount, source, "Fishing Treasure Catch");
+            return true;
+        } catch (Throwable ignored) {
+            return false;
+        }
+    }
+
     private static void rollTreasureAndArtifact(ServerPlayer player, PlayerFishingStats stats, RandomSource rng) {
         FishingPlayerData data = PlayerDataStorage.get(player.getUUID());
         data.totalCatches++;
         data.treasuresCaught++;
 
-        // Pick a material reward from custom items
-        List<String> matKeys = new ArrayList<>(FishingDataRegistry.ITEMS.keySet());
-        if (!matKeys.isEmpty()) {
-            String pick = matKeys.get(rng.nextInt(matKeys.size()));
-            int qty = 1 + (stats.luckyCloverLevel > 0 && rng.nextDouble() < (stats.luckyCloverLevel * 0.02) ? 1 : 0);
-            ItemStack reward = FishingItemFactory.createCustomItem(pick, qty);
-            if (!reward.isEmpty()) {
-                giveOrDrop(player, reward);
-                player.sendSystemMessage(Component.literal("§6🎁 Treasure Catch! §7Found " + reward.getCount() + "x ").append(reward.getHoverName()));
-            }
+        // Roll Treasure Chest Rarity (boosted by Treasure Hunter enchant)
+        double r = rng.nextDouble() * 100.0 - (stats.artifactBonusChance * 1.5);
+        String tierName;
+        String tierColor;
+        int minCoins;
+        int maxCoins;
+        JsonObject coinCfg = FishingDataRegistry.BALANCE.get("treasure_purse_coins");
+
+        if (r < 2.0) {
+            tierName = "LEGENDARY";
+            tierColor = "§6§l";
+            minCoins = FishingDataRegistry.getInt(coinCfg, "legendary_min", 3000);
+            maxCoins = FishingDataRegistry.getInt(coinCfg, "legendary_max", 7500);
+        } else if (r < 9.0) {
+            tierName = "EPIC";
+            tierColor = "§d";
+            minCoins = FishingDataRegistry.getInt(coinCfg, "epic_min", 1000);
+            maxCoins = FishingDataRegistry.getInt(coinCfg, "epic_max", 2500);
+        } else if (r < 25.0) {
+            tierName = "RARE";
+            tierColor = "§b";
+            minCoins = FishingDataRegistry.getInt(coinCfg, "rare_min", 400);
+            maxCoins = FishingDataRegistry.getInt(coinCfg, "rare_max", 900);
+        } else if (r < 55.0) {
+            tierName = "UNCOMMON";
+            tierColor = "§a";
+            minCoins = FishingDataRegistry.getInt(coinCfg, "uncommon_min", 150);
+            maxCoins = FishingDataRegistry.getInt(coinCfg, "uncommon_max", 350);
+        } else {
+            tierName = "COMMON";
+            tierColor = "§f";
+            minCoins = FishingDataRegistry.getInt(coinCfg, "common_min", 50);
+            maxCoins = FishingDataRegistry.getInt(coinCfg, "common_max", 150);
         }
+
+        double lvScale = 1.0 + (data.level * FishingDataRegistry.getDouble(coinCfg, "level_scaling_per_level", 0.03));
+        long baseRoll = minCoins + (maxCoins > minCoins ? rng.nextInt(maxCoins - minCoins + 1) : 0);
+        long coins = Math.max(10L, Math.round(baseRoll * lvScale));
+        if (stats.luckyCloverLevel > 0 && rng.nextDouble() < (stats.luckyCloverLevel * 0.02)) {
+            coins *= 2L;
+        }
+
+        addEconomyCoins(player, coins);
+        player.sendSystemMessage(Component.literal(
+                "§6🎁 Treasure Catch! §8[" + tierColor + tierName + "§8] §7Added §6+" + String.format(Locale.US, "%,d", coins) + " Coins §7to your Purse!"
+        ));
+        player.level().playSound(null, player.blockPosition(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, 0.9f, 1.25f);
 
         // Check Artifact discovery (base 6% + bonus)
         double artChance = 6.0 + stats.artifactBonusChance;
@@ -804,8 +860,9 @@ public class FishingEngine {
             }
             ItemStack artStack = FishingItemFactory.createArtifactItem(artId);
             if (!artStack.isEmpty()) {
+                Component artName = artStack.getHoverName().copy();
                 giveOrDrop(player, artStack);
-                player.sendSystemMessage(Component.literal("§d§l✦ ARTIFACT DISCOVERED! §7You unearthed ").append(artStack.getHoverName()).append(Component.literal("§7!")));
+                player.sendSystemMessage(Component.literal("§d§l✦ ARTIFACT DISCOVERED! §7You unearthed ").append(artName).append(Component.literal("§7!")));
                 player.level().playSound(null, player.blockPosition(), SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, SoundSource.PLAYERS, 0.9f, 1.1f);
             }
         }

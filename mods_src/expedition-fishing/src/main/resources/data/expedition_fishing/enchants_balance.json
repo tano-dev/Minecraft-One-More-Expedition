@@ -4,6 +4,19 @@
     "boss_despawn_seconds": 600,
     "max_active_creatures_per_player": 12
   },
+  "treasure_purse_coins": {
+    "common_min": 50,
+    "common_max": 150,
+    "uncommon_min": 150,
+    "uncommon_max": 350,
+    "rare_min": 400,
+    "rare_max": 900,
+    "epic_min": 1000,
+    "epic_max": 2500,
+    "legendary_min": 3000,
+    "legendary_max": 7500,
+    "level_scaling_per_level": 0.03
+  },
   "enchantments": {
     "lure_speed_per_level": 10.0,
     "luck_of_the_sea_treasure_per_level": 2.5,
