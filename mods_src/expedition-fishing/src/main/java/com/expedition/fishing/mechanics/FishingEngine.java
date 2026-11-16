@@ -26,6 +26,8 @@ import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.projectile.FishingHook;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -516,6 +518,30 @@ public class FishingEngine {
         entity.setDeltaMovement(vel);
 
         if (entity instanceof LivingEntity living) {
+            if (mobCfg.has("spawn") && mobCfg.get("spawn").isJsonObject()) {
+                JsonObject spCfg = mobCfg.getAsJsonObject("spawn");
+                double scale = FishingDataRegistry.getDouble(spCfg, "scale", 1.0);
+                if (scale != 1.0 && scale > 0.1) {
+                    AttributeInstance scaleAttr = living.getAttribute(Attributes.SCALE);
+                    if (scaleAttr != null) scaleAttr.setBaseValue(scale);
+                }
+                double hp = FishingDataRegistry.getDouble(spCfg, "health", 0.0);
+                if (hp > 0.0) {
+                    AttributeInstance hpAttr = living.getAttribute(Attributes.MAX_HEALTH);
+                    if (hpAttr != null) {
+                        hpAttr.setBaseValue(hp);
+                        living.setHealth((float) hp);
+                    }
+                }
+                if (spCfg.has("equipment") && spCfg.get("equipment").isJsonObject()) {
+                    JsonObject eq = spCfg.getAsJsonObject("equipment");
+                    equipSlot(living, EquipmentSlot.HEAD, FishingDataRegistry.getStr(eq, "helmet", ""));
+                    equipSlot(living, EquipmentSlot.CHEST, FishingDataRegistry.getStr(eq, "chestplate", ""));
+                    equipSlot(living, EquipmentSlot.LEGS, FishingDataRegistry.getStr(eq, "leggings", ""));
+                    equipSlot(living, EquipmentSlot.FEET, FishingDataRegistry.getStr(eq, "boots", ""));
+                    equipSlot(living, EquipmentSlot.MAINHAND, FishingDataRegistry.getStr(eq, "mainhand", ""));
+                }
+            }
             if (stats.frostbiteLevel > 0) {
                 living.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, stats.frostbiteLevel * 80, 1));
             }
@@ -526,6 +552,54 @@ public class FishingEngine {
         }
 
         level.addFreshEntity(entity);
+
+        // Handle MOUNTED bosses (e.g. Poseidon on 6x Dolphin Steed, Dead Rider on Elder Guardian)
+        if (mobCfg.has("spawn") && mobCfg.get("spawn").isJsonObject()) {
+            JsonObject spCfg = mobCfg.getAsJsonObject("spawn");
+            if (spCfg.has("mount") && spCfg.get("mount").isJsonObject()) {
+                JsonObject mountCfg = spCfg.getAsJsonObject("mount");
+                String mTypeStr = FishingDataRegistry.getStr(mountCfg, "entity_type", "DOLPHIN").toLowerCase(Locale.ROOT);
+                EntityType<?> mType = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.withDefaultNamespace(mTypeStr));
+                if (mType != null) {
+                    Entity mount = mType.create(level, EntitySpawnReason.EVENT);
+                    if (mount != null) {
+                        mount.setPos(spawnPos.x, spawnPos.y, spawnPos.z);
+                        mount.setDeltaMovement(vel);
+                        if (mount instanceof LivingEntity mLiving) {
+                            double mScale = FishingDataRegistry.getDouble(mountCfg, "scale", 1.0);
+                            if (mScale != 1.0 && mScale > 0.1) {
+                                AttributeInstance sa = mLiving.getAttribute(Attributes.SCALE);
+                                if (sa != null) sa.setBaseValue(mScale);
+                            }
+                        }
+                        level.addFreshEntity(mount);
+                        entity.startRiding(mount, true, true);
+                    }
+                }
+            }
+        }
+    }
+
+    private static void equipSlot(LivingEntity entity, EquipmentSlot slot, String spec) {
+        if (spec == null || spec.isEmpty()) return;
+        ItemStack custom = FishingItemFactory.createCustomItem(spec, 1);
+        if (!custom.isEmpty()) {
+            entity.setItemSlot(slot, custom);
+            return;
+        }
+        String clean = spec;
+        if (clean.startsWith("dyed:") || clean.startsWith("enchanted:")) {
+            String[] parts = clean.split(":");
+            if (parts.length >= 2) clean = parts[1];
+        }
+        if (clean.startsWith("skull:")) {
+            entity.setItemSlot(slot, new ItemStack(Items.PLAYER_HEAD));
+            return;
+        }
+        Item van = BuiltInRegistries.ITEM.getValue(Identifier.withDefaultNamespace(clean.toLowerCase(Locale.ROOT)));
+        if (van != null && van != Items.AIR) {
+            entity.setItemSlot(slot, new ItemStack(van));
+        }
     }
 
     private static void grantMobDrops(ServerPlayer player, JsonObject mobCfg, PlayerFishingStats stats, RandomSource rng) {

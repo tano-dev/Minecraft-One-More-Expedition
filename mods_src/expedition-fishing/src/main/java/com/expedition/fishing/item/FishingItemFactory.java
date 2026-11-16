@@ -55,12 +55,23 @@ public class FishingItemFactory {
         double scc = FishingDataRegistry.getDouble(cfg, "scc", FishingDataRegistry.getDouble(cfg, "rare_creature_chance", 0.0));
         double speed = FishingDataRegistry.getDouble(cfg, "fishing_speed", FishingDataRegistry.getDouble(cfg, "fishing_speed_bonus", 0.0));
         double dbl = FishingDataRegistry.getDouble(cfg, "double_catch", 0.0);
+        double heatRes = FishingDataRegistry.getDouble(cfg, "heat_resistance", 0.0);
+        double sca = FishingDataRegistry.getDouble(cfg, "sea_creature_attack",
+                cfg.has("pdc") && cfg.get("pdc").isJsonObject() ? FishingDataRegistry.getDouble(cfg.getAsJsonObject("pdc"), "sea_creature_attack", 0.0) : 0.0);
         int reqLv = FishingDataRegistry.getInt(cfg, "required_level", 0);
+
+        String desc = FishingDataRegistry.getStr(cfg, "description", "");
+        if (!desc.isEmpty()) {
+            loreLines.add(Component.literal("§7" + desc));
+        }
 
         if (speed > 0) loreLines.add(Component.literal("§7Fishing Speed: §b+" + fmt(speed) + "%"));
         if (scc > 0) loreLines.add(Component.literal("§7Sea Creature Chance: §3+" + fmt(scc) + "%"));
         if (dbl > 0) loreLines.add(Component.literal("§7Double Catch: §a+" + fmt(dbl) + "%"));
-        if (FishingDataRegistry.getBool(cfg, "lava_capable", itemId.contains("lava") || itemId.contains("magma") || itemId.contains("inferno") || itemId.contains("hellfire"))) {
+        if (sca > 0) loreLines.add(Component.literal("§7Sea Creature Damage: §c+" + fmt(sca) + "%"));
+        if (heatRes > 0) loreLines.add(Component.literal("§7Heat Resistance: §6+" + fmt(heatRes) + "%"));
+        if (FishingDataRegistry.getBool(cfg, "lava_capable", FishingDataRegistry.getBool(cfg, "lava_rod",
+                itemId.contains("lava") || itemId.contains("magma") || itemId.contains("inferno") || itemId.contains("hellfire") || itemId.contains("ember") || itemId.contains("volcanic")))) {
             loreLines.add(Component.literal("§6🔥 Lava Fishing Capable"));
         }
         if (FishingDataRegistry.getBool(cfg, "void_capable", itemId.contains("void") || itemId.contains("starlight"))) {
@@ -72,7 +83,15 @@ public class FishingItemFactory {
 
         if (cfg.has("lore") && cfg.get("lore").isJsonArray()) {
             for (JsonElement el : cfg.getAsJsonArray("lore")) {
-                loreLines.add(Component.literal("§7" + el.getAsString()));
+                if (el.isJsonPrimitive()) {
+                    loreLines.add(Component.literal("§7" + el.getAsString()));
+                } else if (el.isJsonObject()) {
+                    JsonObject lo = el.getAsJsonObject();
+                    String txt = FishingDataRegistry.getStr(lo, "text", "");
+                    if (!txt.isEmpty()) {
+                        loreLines.add(Component.literal("§7" + txt));
+                    }
+                }
             }
         }
 
@@ -150,7 +169,8 @@ public class FishingItemFactory {
         if (id == null) return false;
         JsonObject cfg = FishingDataRegistry.ITEMS.get(id);
         return FishingDataRegistry.getBool(cfg, "lava_capable",
-                id.contains("lava") || id.contains("magma") || id.contains("inferno") || id.contains("hellfire") || id.contains("void") || id.contains("starlight"));
+                FishingDataRegistry.getBool(cfg, "lava_rod",
+                        id.contains("lava") || id.contains("magma") || id.contains("inferno") || id.contains("hellfire") || id.contains("ember") || id.contains("volcanic") || id.contains("void") || id.contains("starlight")));
     }
 
     public static boolean isVoidCapableRod(ItemStack rod) {
