@@ -202,17 +202,33 @@ public class UnexploredStructureLocator {
         }
     }
 
+    /**
+     * Locates a biome by sampling positions near the probe point.
+     * Checks an expanding radius from 32 blocks outward up to 2048 blocks.
+     * This handles Medium (1500m+) and Hard (3500m+) quests where the biome
+     * won't be within 480 blocks of the probe position.
+     */
     public static BlockPos locateBiomeFast(ServerLevel level, BlockPos probePos, String biomeId) {
         try {
             ResourceKey<Biome> key = ResourceKey.create(Registries.BIOME, Identifier.parse(biomeId));
-            Pair<BlockPos, Holder<Biome>> res = level.findClosestBiome3d(
+            // First try a local search near the probe (fast path - biome may already be there)
+            Pair<BlockPos, Holder<Biome>> nearby = level.findClosestBiome3d(
                     h -> h.is(key),
                     probePos,
-                    480,
-                    48,
+                    1024,
+                    32,
                     64
             );
-            return res != null ? res.getFirst() : null;
+            if (nearby != null) return nearby.getFirst();
+            // Wider search - sample in expanding rings around the probe
+            Pair<BlockPos, Holder<Biome>> wide = level.findClosestBiome3d(
+                    h -> h.is(key),
+                    probePos,
+                    4096,
+                    64,
+                    64
+            );
+            return wide != null ? wide.getFirst() : null;
         } catch (Exception e) {
             return null;
         }
@@ -225,13 +241,13 @@ public class UnexploredStructureLocator {
         double playerYaw = net.minecraft.util.Mth.wrapDegrees(player.getYRot());
         double diff = net.minecraft.util.Mth.wrapDegrees(targetAngle - playerYaw);
 
-        if (diff >= -22.5 && diff < 22.5) return "↑";
-        if (diff >= 22.5 && diff < 67.5) return "↗";
-        if (diff >= 67.5 && diff < 112.5) return "→";
-        if (diff >= 112.5 && diff < 157.5) return "↘";
-        if (diff >= -67.5 && diff < -22.5) return "↖";
-        if (diff >= -112.5 && diff < -67.5) return "←";
-        if (diff >= -157.5 && diff < -112.5) return "↙";
-        return "↓";
+        if (diff >= -22.5 && diff < 22.5)   return "^";
+        if (diff >= 22.5  && diff < 67.5)   return "^>";
+        if (diff >= 67.5  && diff < 112.5)  return ">";
+        if (diff >= 112.5 && diff < 157.5)  return "v>";
+        if (diff >= -67.5 && diff < -22.5)  return "<^";
+        if (diff >= -112.5 && diff < -67.5) return "<";
+        if (diff >= -157.5 && diff < -112.5) return "<v";
+        return "v";
     }
 }

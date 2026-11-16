@@ -183,8 +183,8 @@ public class ExpeditionQuestsApi {
         int lvGained = data.addXp(finalXp);
 
         player.sendSystemMessage(Component.literal(
-                "§a§l✔ QUEST COMPLETED! §f" + q.displayName +
-                " §7(§6+" + finalCoins + " Coins§7, §b+" + finalXp + " Adventure XP§7)"
+                "搂a搂l鉁?QUEST COMPLETED! 搂f" + q.displayName +
+                " 搂7(搂6+" + finalCoins + " Coins搂7, 搂b+" + finalXp + " Adventure XP搂7)"
         ));
         player.level().playSound(null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.8f, 1.3f);
 
@@ -201,7 +201,7 @@ public class ExpeditionQuestsApi {
             int o2 = data.level;
             int g2 = data.addXp(bonusXp);
             player.sendSystemMessage(Component.literal(
-                    "§6§l★ ALL 10 DAILY QUESTS COMPLETED! §eBonus: §6+" + bonusCoins + " Coins §e& §b+" + bonusXp + " Adventure XP§e!"
+                    "搂6搂l鈽?ALL 10 DAILY QUESTS COMPLETED! 搂eBonus: 搂6+" + bonusCoins + " Coins 搂e& 搂b+" + bonusXp + " Adventure XP搂e!"
             ));
             player.level().playSound(null, player.blockPosition(), SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, SoundSource.PLAYERS, 1.0f, 1.1f);
             if (g2 > 0) {
@@ -213,16 +213,16 @@ public class ExpeditionQuestsApi {
 
     private static void onAdventureLevelUp(ServerPlayer player, int oldLv, int newLv) {
         player.sendSystemMessage(Component.literal(
-                "§b§l▲ ADVENTURE LEVEL UP! §eLv." + oldLv + " §7-> §bLv." + newLv +
-                " §7(§6+" + newLv + "% Quest Coins Bonus§7)"
+                "搂b搂l鈻?ADVENTURE LEVEL UP! 搂eLv." + oldLv + " 搂7-> 搂bLv." + newLv +
+                " 搂7(搂6+" + newLv + "% Quest Coins Bonus搂7)"
         ));
         int netherUnlock = QuestsConfig.getNetherUnlockLevel();
         int endUnlock = QuestsConfig.getEndUnlockLevel();
         if (oldLv < netherUnlock && newLv >= netherUnlock) {
-            player.sendSystemMessage(Component.literal("§c§l✦ NETHER TIER UNLOCKED! §7Nether Quests (+20% Rewards) are now available in /quest!"));
+            player.sendSystemMessage(Component.literal("搂c搂l鉁?NETHER TIER UNLOCKED! 搂7Nether Quests (+20% Rewards) are now available in /quest!"));
         }
         if (oldLv < endUnlock && newLv >= endUnlock) {
-            player.sendSystemMessage(Component.literal("§d§l✦ THE END TIER UNLOCKED! §7End & Elytra Quests (+40% Rewards) are now available in /quest!"));
+            player.sendSystemMessage(Component.literal("搂d搂l鉁?THE END TIER UNLOCKED! 搂7End & Elytra Quests (+40% Rewards) are now available in /quest!"));
         }
     }
 
@@ -251,16 +251,16 @@ public class ExpeditionQuestsApi {
         if (amount <= 0 || player == null) return;
         try {
             MinecraftServer server = player.level().getServer();
-            Class<?> ecoClass = Class.forName("com.economycraft.EconomyManager");
-            Object mgr = ecoClass.getMethod("getInstance", MinecraftServer.class).invoke(null, server);
+            // Correct class: com.reazip.economycraft.EconomyCraft (verified via javap)
+            Class<?> ecoClass = Class.forName("com.reazip.economycraft.EconomyCraft");
+            Object mgr = ecoClass.getMethod("getManager", MinecraftServer.class).invoke(null, server);
             if (mgr != null) {
-                try {
-                    ecoClass.getMethod("addBalance", UUID.class, long.class).invoke(mgr, player.getUUID(), amount);
-                    return;
-                } catch (NoSuchMethodException ignored) {
-                    ecoClass.getMethod("deposit", UUID.class, double.class).invoke(mgr, player.getUUID(), (double) amount);
-                }
+                Class<?> mutClass = Class.forName("com.reazip.economycraft.api.v1.MutationSource");
+                Object src = mutClass.getMethod("of", String.class).invoke(null, "expedition_quests");
+                mgr.getClass().getMethod("addMoney", UUID.class, long.class, mutClass).invoke(mgr, player.getUUID(), amount, src);
             }
-        } catch (Throwable ignored) {}
+        } catch (Throwable t) {
+            com.expedition.quests.ExpeditionQuestsMod.LOGGER.warn("[Expedition Quests] Failed to deposit {} coins for {}: {}", amount, player.getName().getString(), t.getMessage());
+        }
     }
 }
