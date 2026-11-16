@@ -1050,37 +1050,59 @@ public class FishingEngine {
         int minCoins;
         int maxCoins;
         JsonObject coinCfg = FishingDataRegistry.BALANCE.get("treasure_purse_coins");
+        boolean scaleDaily = FishingDataRegistry.getBool(coinCfg, "scale_with_economy_daily", true);
+        double daily = scaleDaily ? FishingDataRegistry.getEconomyDailyReward() : 100.0;
 
         if (r < 2.0) {
             tierName = "LEGENDARY";
             tierColor = "§6§l";
-            minCoins = FishingDataRegistry.getInt(coinCfg, "legendary_min", 3000);
-            maxCoins = FishingDataRegistry.getInt(coinCfg, "legendary_max", 7500);
+            minCoins = scaleDaily
+                    ? (int) Math.max(1, Math.round(daily * FishingDataRegistry.getDouble(coinCfg, "legendary_daily_mult_min", 3.50)))
+                    : FishingDataRegistry.getInt(coinCfg, "legendary_min", 350);
+            maxCoins = scaleDaily
+                    ? (int) Math.max(minCoins, Math.round(daily * FishingDataRegistry.getDouble(coinCfg, "legendary_daily_mult_max", 6.00)))
+                    : FishingDataRegistry.getInt(coinCfg, "legendary_max", 600);
         } else if (r < 9.0) {
             tierName = "EPIC";
             tierColor = "§d";
-            minCoins = FishingDataRegistry.getInt(coinCfg, "epic_min", 1000);
-            maxCoins = FishingDataRegistry.getInt(coinCfg, "epic_max", 2500);
+            minCoins = scaleDaily
+                    ? (int) Math.max(1, Math.round(daily * FishingDataRegistry.getDouble(coinCfg, "epic_daily_mult_min", 1.50)))
+                    : FishingDataRegistry.getInt(coinCfg, "epic_min", 150);
+            maxCoins = scaleDaily
+                    ? (int) Math.max(minCoins, Math.round(daily * FishingDataRegistry.getDouble(coinCfg, "epic_daily_mult_max", 3.00)))
+                    : FishingDataRegistry.getInt(coinCfg, "epic_max", 300);
         } else if (r < 25.0) {
             tierName = "RARE";
             tierColor = "§b";
-            minCoins = FishingDataRegistry.getInt(coinCfg, "rare_min", 400);
-            maxCoins = FishingDataRegistry.getInt(coinCfg, "rare_max", 900);
+            minCoins = scaleDaily
+                    ? (int) Math.max(1, Math.round(daily * FishingDataRegistry.getDouble(coinCfg, "rare_daily_mult_min", 0.60)))
+                    : FishingDataRegistry.getInt(coinCfg, "rare_min", 60);
+            maxCoins = scaleDaily
+                    ? (int) Math.max(minCoins, Math.round(daily * FishingDataRegistry.getDouble(coinCfg, "rare_daily_mult_max", 1.25)))
+                    : FishingDataRegistry.getInt(coinCfg, "rare_max", 125);
         } else if (r < 55.0) {
             tierName = "UNCOMMON";
             tierColor = "§a";
-            minCoins = FishingDataRegistry.getInt(coinCfg, "uncommon_min", 150);
-            maxCoins = FishingDataRegistry.getInt(coinCfg, "uncommon_max", 350);
+            minCoins = scaleDaily
+                    ? (int) Math.max(1, Math.round(daily * FishingDataRegistry.getDouble(coinCfg, "uncommon_daily_mult_min", 0.25)))
+                    : FishingDataRegistry.getInt(coinCfg, "uncommon_min", 25);
+            maxCoins = scaleDaily
+                    ? (int) Math.max(minCoins, Math.round(daily * FishingDataRegistry.getDouble(coinCfg, "uncommon_daily_mult_max", 0.60)))
+                    : FishingDataRegistry.getInt(coinCfg, "uncommon_max", 60);
         } else {
             tierName = "COMMON";
             tierColor = "§f";
-            minCoins = FishingDataRegistry.getInt(coinCfg, "common_min", 50);
-            maxCoins = FishingDataRegistry.getInt(coinCfg, "common_max", 150);
+            minCoins = scaleDaily
+                    ? (int) Math.max(1, Math.round(daily * FishingDataRegistry.getDouble(coinCfg, "common_daily_mult_min", 0.10)))
+                    : FishingDataRegistry.getInt(coinCfg, "common_min", 10);
+            maxCoins = scaleDaily
+                    ? (int) Math.max(minCoins, Math.round(daily * FishingDataRegistry.getDouble(coinCfg, "common_daily_mult_max", 0.25)))
+                    : FishingDataRegistry.getInt(coinCfg, "common_max", 25);
         }
 
-        double lvScale = 1.0 + (data.level * FishingDataRegistry.getDouble(coinCfg, "level_scaling_per_level", 0.03));
+        double lvScale = 1.0 + (data.level * FishingDataRegistry.getDouble(coinCfg, "level_scaling_per_level", 0.01));
         long baseRoll = minCoins + (maxCoins > minCoins ? rng.nextInt(maxCoins - minCoins + 1) : 0);
-        long coins = Math.max(10L, Math.round(baseRoll * lvScale));
+        long coins = Math.max(1L, Math.round(baseRoll * lvScale));
         if (stats.luckyCloverLevel > 0 && rng.nextDouble() < (stats.luckyCloverLevel * 0.02)) {
             coins *= 2L;
         }

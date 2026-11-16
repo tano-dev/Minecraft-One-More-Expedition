@@ -55,6 +55,21 @@ public class FishingDataRegistry {
         return getDouble(mbObj, key, def);
     }
 
+    public static double getEconomyDailyReward() {
+        try {
+            Path econPath = FabricLoader.getInstance().getConfigDir().resolve("economycraft").resolve("config.json");
+            if (Files.exists(econPath)) {
+                try (Reader reader = Files.newBufferedReader(econPath, StandardCharsets.UTF_8)) {
+                    JsonObject root = JsonParser.parseReader(reader).getAsJsonObject();
+                    if (root.has("economy") && root.get("economy").isJsonObject()) {
+                        return Math.max(1.0, getDouble(root.getAsJsonObject("economy"), "daily_reward", 100.0));
+                    }
+                }
+            }
+        } catch (Exception ignored) {}
+        return 100.0;
+    }
+
     private static void loadFile(String fileName, Map<String, JsonObject> target) {
         target.clear();
         Path externalPath = CONFIG_DIR.resolve(fileName);

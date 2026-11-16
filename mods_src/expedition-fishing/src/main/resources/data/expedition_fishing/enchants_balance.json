@@ -12,17 +12,18 @@
     "max_boss_damage": 50.0
   },
   "treasure_purse_coins": {
-    "common_min": 50,
-    "common_max": 150,
-    "uncommon_min": 150,
-    "uncommon_max": 350,
-    "rare_min": 400,
-    "rare_max": 900,
-    "epic_min": 1000,
-    "epic_max": 2500,
-    "legendary_min": 3000,
-    "legendary_max": 7500,
-    "level_scaling_per_level": 0.03
+    "scale_with_economy_daily": true,
+    "common_daily_mult_min": 0.10,
+    "common_daily_mult_max": 0.25,
+    "uncommon_daily_mult_min": 0.25,
+    "uncommon_daily_mult_max": 0.60,
+    "rare_daily_mult_min": 0.60,
+    "rare_daily_mult_max": 1.25,
+    "epic_daily_mult_min": 1.50,
+    "epic_daily_mult_max": 3.00,
+    "legendary_daily_mult_min": 3.50,
+    "legendary_daily_mult_max": 6.00,
+    "level_scaling_per_level": 0.01
   },
   "enchantments": {
     "lure_speed_per_level": 10.0,
