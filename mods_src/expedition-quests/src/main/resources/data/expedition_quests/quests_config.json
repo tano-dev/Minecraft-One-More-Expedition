@@ -31,31 +31,31 @@
       "reward_multiplier": 1.35,
       "capture_radius_blocks": 64,
       "easy_min_blocks": 500,
-      "easy_max_blocks": 1400,
-      "medium_min_blocks": 1200,
-      "medium_max_blocks": 2400,
-      "hard_min_blocks": 2000,
-      "hard_max_blocks": 4000
+      "easy_max_blocks": 1200,
+      "medium_min_blocks": 1500,
+      "medium_max_blocks": 2800,
+      "hard_min_blocks": 3500,
+      "hard_max_blocks": 6000
     },
     "structure": {
       "reward_multiplier": 1.50,
       "capture_radius_blocks": 48,
       "easy_min_blocks": 600,
-      "easy_max_blocks": 1600,
-      "medium_min_blocks": 1400,
-      "medium_max_blocks": 2800,
-      "hard_min_blocks": 2200,
-      "hard_max_blocks": 4500
+      "easy_max_blocks": 1300,
+      "medium_min_blocks": 1600,
+      "medium_max_blocks": 3200,
+      "hard_min_blocks": 3800,
+      "hard_max_blocks": 6500
     },
     "dungeon": {
       "reward_multiplier": 1.75,
       "capture_radius_blocks": 40,
-      "easy_min_blocks": 800,
-      "easy_max_blocks": 1800,
-      "medium_min_blocks": 1500,
-      "medium_max_blocks": 3000,
-      "hard_min_blocks": 2400,
-      "hard_max_blocks": 5000
+      "easy_min_blocks": 700,
+      "easy_max_blocks": 1500,
+      "medium_min_blocks": 1800,
+      "medium_max_blocks": 3500,
+      "hard_min_blocks": 4200,
+      "hard_max_blocks": 7500
     }
   },
   "travel_action_distances": {

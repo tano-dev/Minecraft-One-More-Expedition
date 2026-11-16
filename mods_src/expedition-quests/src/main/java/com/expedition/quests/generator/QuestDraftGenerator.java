@@ -78,6 +78,11 @@ public class QuestDraftGenerator {
 
         switch (branch) {
             case "EXPLORE_BIOME", "EXPLORE_STRUCTURE", "EXPLORE_DUNGEON" -> {
+                // Keep Easy free of Hard Combat Dungeons; Hard prefers Dungeons
+                if ("EASY".equals(difficulty) && "EXPLORE_DUNGEON".equals(branch)) {
+                    branch = rng.nextBoolean() ? "EXPLORE_BIOME" : "EXPLORE_STRUCTURE";
+                    q.category = branch;
+                }
                 List<String> pool = UnexploredStructureLocator.getPool(branch, dim);
                 if (pool.isEmpty()) {
                     dim = "minecraft:overworld";

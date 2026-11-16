@@ -27,7 +27,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class ExplorationTargetCache {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final Path CACHE_FILE = QuestsConfig.CONFIG_DIR.resolve("precomputed_targets.json");
-    private static final int TARGET_CACHE_PER_BUCKET = 20;
+    private static final int TARGET_CACHE_PER_BUCKET = 45;
 
     public static class CachedTarget {
         public String category;   // EXPLORE_BIOME, EXPLORE_STRUCTURE, EXPLORE_DUNGEON
@@ -110,6 +110,21 @@ public class ExplorationTargetCache {
             ServerLevel level = UnexploredStructureLocator.getLevelByDimensionId(server, dim);
             if (level == null) continue;
 
+            // Pick an anchor: round-robin among online players in that dimension (or 0,0 if none)
+            int anchorX = 0;
+            int anchorZ = 0;
+            List<ServerPlayer> dimPlayers = new ArrayList<>();
+            for (ServerPlayer sp : server.getPlayerList().getPlayers()) {
+                if (sp.level().dimension().identifier().toString().equals(dim)) {
+                    dimPlayers.add(sp);
+                }
+            }
+            if (!dimPlayers.isEmpty()) {
+                ServerPlayer chosenAnchor = dimPlayers.get(RNG.nextInt(dimPlayers.size()));
+                anchorX = chosenAnchor.getBlockX();
+                anchorZ = chosenAnchor.getBlockZ();
+            }
+
             // Pick a distance band across EASY / MEDIUM / HARD ranges
             String[] diffs = {"EASY", "MEDIUM", "HARD"};
             String diff = diffs[RNG.nextInt(diffs.length)];
@@ -119,8 +134,8 @@ public class ExplorationTargetCache {
             String candidateId = pool.get(RNG.nextInt(pool.size()));
             double angle = RNG.nextDouble() * Math.PI * 2.0;
             double dist = minD + RNG.nextDouble() * Math.max(150, maxD - minD);
-            int probeX = (int) Math.round(Math.cos(angle) * dist);
-            int probeZ = (int) Math.round(Math.sin(angle) * dist);
+            int probeX = anchorX + (int) Math.round(Math.cos(angle) * dist);
+            int probeZ = anchorZ + (int) Math.round(Math.sin(angle) * dist);
 
             if (!ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(dim, probeX, probeZ)) {
                 return;
@@ -132,9 +147,8 @@ public class ExplorationTargetCache {
                     : UnexploredStructureLocator.locateStructureFast(level, probePos, candidateId);
 
             if (found != null && ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(dim, found.getX(), found.getZ())) {
-                int actualDist = (int) Math.hypot(found.getX(), found.getZ());
-                // Strictly reject outliers (e.g. 10,000m away for an Easy quest!)
-                if (actualDist >= Math.max(200, minD - 250) && actualDist <= maxD + 400) {
+                int actualDist = (int) Math.hypot(found.getX() - anchorX, found.getZ() - anchorZ);
+                if (actualDist >= minD && actualDist <= maxD) {
                     list.add(new CachedTarget(cat, dim, candidateId, found.getX(), found.getZ(), actualDist));
                     dirty = true;
                 }
