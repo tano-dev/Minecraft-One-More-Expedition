@@ -199,9 +199,9 @@ public class UnexploredStructureLocator {
             if (opt.isEmpty()) return null;
 
             HolderSet<Structure> set = HolderSet.direct(opt.get());
-            // Radius 10 chunks (160 blocks) keeps lookup fast and strictly near probePos
+            // Radius 6 chunks (96 blocks) keeps lookup fast without triggering heavy C2ME worldgen
             Pair<BlockPos, Holder<Structure>> res = level.getChunkSource().getGenerator()
-                    .findNearestMapStructure(level, set, probePos, 10, false);
+                    .findNearestMapStructure(level, set, probePos, 6, false);
             return res != null ? res.getFirst() : null;
         } catch (Exception e) {
             return null;

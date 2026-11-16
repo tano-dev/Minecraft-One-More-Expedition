@@ -27,7 +27,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class ExplorationTargetCache {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final Path CACHE_FILE = QuestsConfig.CONFIG_DIR.resolve("precomputed_targets.json");
-    private static final int TARGET_CACHE_PER_BUCKET = 45;
+    private static final int TARGET_CACHE_PER_BUCKET = 10;
 
     public static class CachedTarget {
         public String category;   // EXPLORE_BIOME, EXPLORE_STRUCTURE, EXPLORE_DUNGEON
@@ -92,7 +92,8 @@ public class ExplorationTargetCache {
      * has fewer than TARGET_CACHE_PER_BUCKET entries, keeping TPS at a steady 20.0.
      */
     public static void tickBackgroundWarmup(MinecraftServer server, int tickCounter) {
-        if (tickCounter % 20 != 0) return;
+        // Throttle to once every 5 seconds (100 ticks) and only when players are online to keep idle/startup TPS at 20.0
+        if (tickCounter % 100 != 0 || server.getPlayerList().getPlayerCount() == 0) return;
 
         int totalBuckets = CATEGORIES.length * DIMENSIONS.length;
         for (int attempt = 0; attempt < totalBuckets; attempt++) {
