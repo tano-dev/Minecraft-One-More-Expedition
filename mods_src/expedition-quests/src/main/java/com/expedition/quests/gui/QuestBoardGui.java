@@ -207,6 +207,12 @@ public class QuestBoardGui {
                         if ("GATHER_SUBMIT".equals(existing.category)) {
                             submitItemsForQuest(sp, data, existing);
                             populate();
+                        } else if (existing.isExploration()) {
+                            data.trackedExplorationSlot = qSlot;
+                            data.dirty = true;
+                            sp.sendSystemMessage(Component.literal("§a✔ Compass navigation locked to: §f" + existing.displayName + " §7(Slot #" + (qSlot + 1) + ")"));
+                            sp.level().playSound(null, sp.blockPosition(), SoundEvents.UI_BUTTON_CLICK.value(), SoundSource.PLAYERS, 0.8f, 1.4f);
+                            populate();
                         } else {
                             sp.closeContainer();
                             com.expedition.quests.command.QuestCommand.shareQuestToChat(sp, qSlot);

@@ -279,7 +279,7 @@ public class SidebarRenderer {
                     .append(Component.literal("Lv." + aLv).withStyle(ChatFormatting.GREEN))
                     .append(Component.literal(aDetail).withStyle(ChatFormatting.YELLOW)));
 
-            List<String> qLines = QuestIntegration.getActiveQuestLines(player, 3);
+            List<String> qLines = QuestIntegration.getActiveQuestLines(player, 10);
             if (!qLines.isEmpty()) {
                 int done = QuestIntegration.getCompletedToday(player.getUUID());
                 list.add(Component.literal(" ⌖ Quests (" + done + "/10):")

@@ -5,6 +5,7 @@ import com.expedition.quests.config.QuestsConfig;
 import com.expedition.quests.data.QuestDataStorage;
 import com.expedition.quests.exploration.ClaimedLocationsRegistry;
 import com.expedition.quests.exploration.ExplorationTargetCache;
+import com.expedition.quests.exploration.SpatialGridPool;
 import com.expedition.quests.exploration.UnexploredStructureLocator;
 import com.expedition.quests.tracker.QuestProgressListener;
 import net.fabricmc.api.ModInitializer;
@@ -33,13 +34,11 @@ public class ExpeditionQuestsMod implements ModInitializer {
 
         ServerLifecycleEvents.SERVER_STARTED.register(server -> {
             UnexploredStructureLocator.scanRegistries(server);
+            SpatialGridPool.init(server);
             LOGGER.info("[Expedition Quests] Indexed Biomes: {}, Structures: {}, Dungeons: {}",
                     UnexploredStructureLocator.BIOMES_BY_DIM.values().stream().mapToInt(java.util.List::size).sum(),
                     UnexploredStructureLocator.STRUCTURES_BY_DIM.values().stream().mapToInt(java.util.List::size).sum(),
                     UnexploredStructureLocator.DUNGEONS_BY_DIM.values().stream().mapToInt(java.util.List::size).sum());
-            
-            // Start the asynchronous daemon preload worker
-            ExplorationTargetCache.startAsyncWorker(server);
         });
 
         ServerTickEvents.END_SERVER_TICK.register(server -> {
@@ -49,6 +48,7 @@ public class ExpeditionQuestsMod implements ModInitializer {
 
         ServerLifecycleEvents.SERVER_STOPPING.register(server -> {
             ExplorationTargetCache.stopAsyncWorker();
+            SpatialGridPool.saveDirtyRegions();
             QuestDataStorage.saveAllSync();
             ClaimedLocationsRegistry.saveIfDirty();
             ExplorationTargetCache.saveIfDirty();

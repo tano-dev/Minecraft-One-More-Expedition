@@ -54,6 +54,8 @@ public class ExpeditionQuestsApi {
     /**
      * Returns up to maxCount active (uncompleted) quest lines formatted for the Sidebar.
      * Completed quests are automatically skipped!
+     * Exactly ONE exploration quest is designated for compass navigation & coordinates:
+     * - Either the player's manually tracked slot, or automatically the closest exploration quest.
      */
     public static List<String> getSidebarQuestLines(ServerPlayer player, int maxCount) {
         if (player == null || !isEnabledForPlayer(player)) return Collections.emptyList();
@@ -64,32 +66,85 @@ public class ExpeditionQuestsApi {
                 active.add(q);
             }
         }
-        // Prioritize Exploration quests first, then most recently progressed
+        if (active.isEmpty()) return Collections.emptyList();
+
+        String currentDim = player.level().dimension().identifier().toString();
+
+        // Ensure all exploration quests have their coordinates locked!
+        for (QuestEntry q : active) {
+            if (q.isExploration() && !q.located) {
+                UnexploredStructureLocator.locateAndLockTarget(player.level().getServer(), player, q);
+            }
+        }
+
+        // Determine the single primary exploration quest for compass navigation
+        QuestEntry primaryExploration = null;
+        if (data.trackedExplorationSlot >= 0) {
+            QuestEntry manual = data.activeSlots.get(data.trackedExplorationSlot);
+            if (manual != null && !manual.completed && manual.isExploration()) {
+                primaryExploration = manual;
+            }
+        }
+
+        // If not manually chosen or invalid, pick nearest in current dimension (or nearest overall)
+        if (primaryExploration == null) {
+            int bestDist = Integer.MAX_VALUE;
+            for (QuestEntry q : active) {
+                if (q.isExploration()) {
+                    boolean sameDim = currentDim.equals(q.dimension);
+                    int dist = sameDim ? (int) Math.hypot(q.targetX - player.getX(), q.targetZ - player.getZ()) : Integer.MAX_VALUE - 1000;
+                    if (dist < bestDist) {
+                        bestDist = dist;
+                        primaryExploration = q;
+                    }
+                }
+            }
+        }
+
+        final QuestEntry finalNavTarget = primaryExploration;
+
+        // Sort: Primary exploration first, then slotIndex
         active.sort((a, b) -> {
-            if (a.isExploration() != b.isExploration()) return a.isExploration() ? -1 : 1;
+            if (a == finalNavTarget) return -1;
+            if (b == finalNavTarget) return 1;
             return Integer.compare(a.slotIndex, b.slotIndex);
         });
 
         List<String> lines = new ArrayList<>();
-        for (int i = 0; i < Math.min(maxCount, active.size()); i++) {
+        int count = Math.min(maxCount, active.size());
+        for (int i = 0; i < count; i++) {
             QuestEntry q = active.get(i);
             String tag = switch (q.difficulty) {
                 case "EASY" -> "[E]";
                 case "MEDIUM" -> "[M]";
                 default -> "[H]";
             };
-            if (q.isExploration() && q.located) {
-                int dist = (int) Math.hypot(q.targetX - player.getX(), q.targetZ - player.getZ());
-                String arrow = UnexploredStructureLocator.getCompassArrow(player, q.targetX, q.targetZ);
+
+            if (q == finalNavTarget && q.located) {
+                boolean sameDim = currentDim.equals(q.dimension);
+                if (sameDim) {
+                    int dist = (int) Math.hypot(q.targetX - player.getX(), q.targetZ - player.getZ());
+                    String arrow = UnexploredStructureLocator.getCompassArrow(player, q.targetX, q.targetZ);
+                    String shortName = q.displayName
+                            .replace("Explore Biome: ", "")
+                            .replace("Explore Structure: ", "")
+                            .replace("Explore Dungeon: ", "");
+                    if (shortName.length() > 12) shortName = shortName.substring(0, 11) + "..";
+                    lines.add(tag + " " + arrow + " " + shortName + " " + dist + "m (" + q.targetX + "," + q.targetZ + ")");
+                } else {
+                    String dimTag = q.dimension.contains("nether") ? "Nether" : (q.dimension.contains("end") ? "The End" : "Overworld");
+                    lines.add(tag + " [" + dimTag + "] " + q.displayName);
+                }
+            } else if (q.isExploration()) {
                 String shortName = q.displayName
                         .replace("Explore Biome: ", "")
                         .replace("Explore Structure: ", "")
                         .replace("Explore Dungeon: ", "");
-                if (shortName.length() > 14) shortName = shortName.substring(0, 13) + "...";
-                lines.add(tag + " " + arrow + " " + shortName + " " + dist + "m (" + q.targetX + "," + q.targetZ + ")");
+                if (shortName.length() > 16) shortName = shortName.substring(0, 15) + "..";
+                lines.add(tag + " " + shortName + ": 0/1");
             } else {
                 String shortName = q.displayName;
-                if (shortName.length() > 20) shortName = shortName.substring(0, 19) + "...";
+                if (shortName.length() > 18) shortName = shortName.substring(0, 17) + "..";
                 lines.add(tag + " " + shortName + ": " + q.currentProgress + "/" + q.requiredProgress);
             }
         }

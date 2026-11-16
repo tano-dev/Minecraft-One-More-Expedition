@@ -47,6 +47,37 @@ public class QuestCommand {
                     ));
                     return 1;
                 }))
+                .then(Commands.literal("track")
+                        .then(Commands.literal("auto").executes(ctx -> {
+                            ServerPlayer sp = ctx.getSource().getPlayerOrException();
+                            QuestPlayerData data = QuestDataStorage.get(sp.getUUID());
+                            data.trackedExplorationSlot = -1;
+                            data.dirty = true;
+                            sp.sendSystemMessage(Component.literal("§a✔ Exploration navigation reset to §eAuto (Nearest Target)§a."));
+                            return 1;
+                        }))
+                        .then(Commands.argument("slot", IntegerArgumentType.integer(1, 10))
+                                .executes(ctx -> {
+                                    ServerPlayer sp = ctx.getSource().getPlayerOrException();
+                                    int slot = IntegerArgumentType.getInteger(ctx, "slot") - 1;
+                                    QuestPlayerData data = QuestDataStorage.get(sp.getUUID());
+                                    QuestEntry q = data.activeSlots.get(slot);
+                                    if (q == null || q.completed) {
+                                        sp.sendSystemMessage(Component.literal("§cSlot #" + (slot + 1) + " has no active quest!"));
+                                        return 0;
+                                    }
+                                    if (!q.isExploration()) {
+                                        sp.sendSystemMessage(Component.literal("§cSlot #" + (slot + 1) + " is not an exploration quest! Navigation only applies to exploration quests."));
+                                        return 0;
+                                    }
+                                    data.trackedExplorationSlot = slot;
+                                    data.dirty = true;
+                                    sp.sendSystemMessage(Component.literal(
+                                            "§a✔ Compass navigation locked to Slot #" + (slot + 1) + ": §f" + q.displayName +
+                                            " §7(" + q.targetX + ", " + q.targetZ + ")"
+                                    ));
+                                    return 1;
+                                })))
                 .then(Commands.literal("share")
                         .then(Commands.argument("slot", IntegerArgumentType.integer(1, 10))
                                 .executes(ctx -> {
