@@ -94,12 +94,19 @@ public class UnexploredStructureLocator {
             return;
         }
 
-        // 2. Fast bounded fallback (max 2 probes, strict distance check)
+        // 2. Fast bounded fallback: try up to 4 real structure/biome lookups, never invent fake structure coords
         int minD = quest.minExpectedDist;
         int maxD = quest.maxExpectedDist;
         Random rng = new Random();
+        List<String> pool = new ArrayList<>(getPool(quest.category, quest.dimension));
+        Collections.shuffle(pool, rng);
+        List<String> tryIds = new ArrayList<>();
+        tryIds.add(quest.subType);
+        for (String pId : pool) {
+            if (!pId.equals(quest.subType) && tryIds.size() < 5) tryIds.add(pId);
+        }
 
-        for (int attempt = 0; attempt < 2; attempt++) {
+        for (String candidateId : tryIds) {
             double angle = rng.nextDouble() * Math.PI * 2.0;
             double dist = minD + rng.nextDouble() * Math.max(100, maxD - minD);
             int probeX = ox + (int) Math.round(Math.cos(angle) * dist);
@@ -111,12 +118,14 @@ public class UnexploredStructureLocator {
 
             BlockPos probePos = new BlockPos(probeX, 64, probeZ);
             BlockPos found = "EXPLORE_BIOME".equals(quest.category)
-                    ? locateBiomeFast(targetLevel, probePos, quest.subType)
-                    : locateStructureFast(targetLevel, probePos, quest.subType);
+                    ? locateBiomeFast(targetLevel, probePos, candidateId)
+                    : locateStructureFast(targetLevel, probePos, candidateId);
 
             if (found != null && ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, found.getX(), found.getZ())) {
                 int actualDist = (int) Math.hypot(found.getX() - ox, found.getZ() - oz);
                 if (actualDist >= Math.max(200, minD - 250) && actualDist <= maxD + 400 && !isChunkAlreadyInhabited(targetLevel, found)) {
+                    quest.subType = candidateId;
+                    quest.displayName = getSchoolPrefix(quest.category) + StructureClassifier.formatDisplayName(candidateId);
                     quest.targetX = found.getX();
                     quest.targetZ = found.getZ();
                     quest.located = true;
@@ -128,19 +137,26 @@ public class UnexploredStructureLocator {
             }
         }
 
-        // 3. Guaranteed zero-lag coordinate inside [minD, maxD]
-        for (int i = 0; i < 16; i++) {
+        // 3. If no structure matched in band yet, convert cleanly to a real nearby Unexplored Biome (guaranteed real!)
+        List<String> biomePool = new ArrayList<>(getPool("EXPLORE_BIOME", quest.dimension));
+        Collections.shuffle(biomePool, rng);
+        for (int i = 0; i < Math.min(4, biomePool.size()); i++) {
+            String bId = biomePool.get(i);
             double angle = rng.nextDouble() * Math.PI * 2.0;
             double dist = minD + rng.nextDouble() * Math.max(150, maxD - minD);
             int fx = ox + (int) Math.round(Math.cos(angle) * dist);
             int fz = oz + (int) Math.round(Math.sin(angle) * dist);
-            if (ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, fx, fz)) {
-                quest.targetX = fx;
-                quest.targetZ = fz;
+            BlockPos foundBiome = locateBiomeFast(targetLevel, new BlockPos(fx, 64, fz), bId);
+            if (foundBiome != null && ClaimedLocationsRegistry.isLocationUnexploredAndUnclaimed(quest.dimension, foundBiome.getX(), foundBiome.getZ())) {
+                quest.category = "EXPLORE_BIOME";
+                quest.subType = bId;
+                quest.displayName = getSchoolPrefix("EXPLORE_BIOME") + StructureClassifier.formatDisplayName(bId);
+                quest.targetX = foundBiome.getX();
+                quest.targetZ = foundBiome.getZ();
                 quest.located = true;
-                quest.actualDistance = (int) Math.hypot(fx - ox, fz - oz);
+                quest.actualDistance = (int) Math.hypot(foundBiome.getX() - ox, foundBiome.getZ() - oz);
                 applyDistanceBonus(quest);
-                ClaimedLocationsRegistry.claimLocation(quest.dimension, fx, fz);
+                ClaimedLocationsRegistry.claimLocation(quest.dimension, quest.targetX, quest.targetZ);
                 return;
             }
         }
