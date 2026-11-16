@@ -725,7 +725,9 @@ public class FishingEngine {
             if (parts.length >= 2) clean = parts[1];
         }
         if (clean.startsWith("skull:")) {
-            entity.setItemSlot(slot, new ItemStack(Items.PLAYER_HEAD));
+            ItemStack head = new ItemStack(Items.PLAYER_HEAD);
+            FishingItemFactory.applyHeadTexture(head, clean.substring("skull:".length()));
+            entity.setItemSlot(slot, head);
             return;
         }
         Item van = BuiltInRegistries.ITEM.getValue(Identifier.withDefaultNamespace(clean.toLowerCase(Locale.ROOT)));

@@ -1,8 +1,10 @@
 package com.expedition.fishing.item;
 
 import com.expedition.fishing.config.FishingDataRegistry;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.mojang.serialization.JsonOps;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
@@ -13,10 +15,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.component.ItemLore;
+import net.minecraft.world.item.component.ResolvableProfile;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.UUID;
 
 public class FishingItemFactory {
     public static final String NBT_ITEM_ID = "expedition_fishing_id";
@@ -101,17 +106,46 @@ public class FishingItemFactory {
 
         stack.set(DataComponents.LORE, new ItemLore(loreLines));
 
+        String tex64 = FishingDataRegistry.getStr(cfg, "texture_base64", "");
+        if (!tex64.isEmpty()) {
+            applyHeadTexture(stack, tex64);
+        }
+
         CompoundTag tag = new CompoundTag();
         tag.putString(NBT_ITEM_ID, itemId);
         stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
         return stack;
     }
 
+    public static void applyHeadTexture(ItemStack stack, String base64) {
+        if (stack == null || stack.isEmpty() || base64 == null || base64.isEmpty()) return;
+        try {
+            UUID deterministicId = UUID.nameUUIDFromBytes(base64.getBytes(StandardCharsets.UTF_8));
+            JsonObject profileJson = new JsonObject();
+            profileJson.addProperty("id", deterministicId.toString());
+            JsonArray props = new JsonArray();
+            JsonObject texProp = new JsonObject();
+            texProp.addProperty("name", "textures");
+            texProp.addProperty("value", base64.trim());
+            props.add(texProp);
+            profileJson.add("properties", props);
+
+            ResolvableProfile.CODEC.parse(JsonOps.INSTANCE, profileJson)
+                    .result()
+                    .ifPresent(profile -> stack.set(DataComponents.PROFILE, profile));
+        } catch (Exception ignored) {}
+    }
+
     public static ItemStack createArtifactItem(String artifactId) {
         JsonObject cfg = FishingDataRegistry.ARTIFACTS.get(artifactId);
         if (cfg == null) return ItemStack.EMPTY;
 
-        ItemStack stack = new ItemStack(Items.HEART_OF_THE_SEA, 1);
+        String tex64 = FishingDataRegistry.getStr(cfg, "texture_base64", "");
+        Item baseItem = !tex64.isEmpty() ? Items.PLAYER_HEAD : Items.HEART_OF_THE_SEA;
+        ItemStack stack = new ItemStack(baseItem, 1);
+        if (!tex64.isEmpty()) {
+            applyHeadTexture(stack, tex64);
+        }
         String displayName = FishingDataRegistry.getStr(cfg, "display_name", formatId(artifactId));
         String rarity = FishingDataRegistry.getStr(cfg, "rarity", "RARE").toUpperCase(Locale.ROOT);
         String desc = FishingDataRegistry.getStr(cfg, "description", "A mysterious fishing artifact.");
