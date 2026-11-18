@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "expedition-dragon-e2e-gametest",
+  "version": "1.0.0",
+  "name": "Expedition Dragon E2E GameTest",
+  "description": "Headless Fabric GameTest entrypoint for expedition-dragon opaque-box E2E tests.",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-gametest": [
+      "net.onemoreexpedition.e2e.gametest.SelfCheckGameTest"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3-",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,4097 @@
+# Datapacks vs `_datapack_zip_backups` Diff Report
+
+- **Total backups (.zip)**: 44
+- **Total datapacks in `datapacks/`**: 51
+- **Matched pairs**: 39
+- **Backups without active datapack**: 5
+- **Active datapacks without backup**: 12
+
+## Backups without active datapack
+- `Aether-Ruined-Portals.zip`
+- `Epic Villages Standalone 1.0.0.jar.zip`
+- `Terralith_v2.6.5+26.3.zip`
+- `tectonic-datapack-3.0.29.zip`
+- `terratonic-datapack-3.0.31.zip`
+
+## Active datapacks without backup
+- `.gitkeep`
+- `Bound-v3.0.3`
+- `enchantments_encore`
+- `expedition_enchantments_control`
+- `expedition_scarce_ores`
+- `expedition_structure_void_cleaner`
+- `hopobettermineshaft-26-3-1-3-8`
+- `hopobetterunderwaterruins-26-3-1-2-9`
+- `medieval_buildings-1.2.0`
+- `medieval_end-1.2.1`
+- `medieval_nether-1.2.1`
+- `u_sea-1.2.5`
+
+## Summary: 39 Modified, 0 Unchanged
+
+## Detailed Changes
+
+### `ATi Structure V1.4.7 (26.3)` (added: 0, removed: 0, modified: 3)
+**Modified files:**
+- `~ data/ati_structures/worldgen/structure/ice_tribe.json`:
+  - `start_height.absolute`: `0` -> `-1`
+- `~ data/ati_structures/worldgen/structure/sinking_temple.json`:
+  - `start_height.absolute`: `0` -> `-1`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `<MISSING>` -> `94`
+  - `pack.min_format`: `<MISSING>` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `ATi Structures Vanilla V1.4.7 (26.3)` (added: 0, removed: 0, modified: 3)
+**Modified files:**
+- `~ data/ati_structures/worldgen/structure/ice_tribe.json`:
+  - `start_height.absolute`: `0` -> `-1`
+- `~ data/ati_structures/worldgen/structure/sinking_temple.json`:
+  - `start_height.absolute`: `0` -> `-1`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `<MISSING>` -> `94`
+  - `pack.min_format`: `<MISSING>` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Decubed Dungeons V1.13.1 [26.3]` (added: 0, removed: 0, modified: 1)
+**Modified files:**
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `DnT Ancient City Overhaul v4` (added: 0, removed: 0, modified: 2)
+**Modified files:**
+- `~ data/minecraft/worldgen/structure/ancient_city.json` (whitespace/formatting only)
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `DnT Desert Temple Overhaul v2.2` (added: 0, removed: 0, modified: 13)
+**Modified files:**
+- `~ data/nova_structures/structure/desert_temple/basement_1.nbt` (binary/non-JSON, size 2346 -> 2201)
+- `~ data/nova_structures/structure/desert_temple/basement_2.nbt` (binary/non-JSON, size 2516 -> 2369)
+- `~ data/nova_structures/structure/desert_temple/basement_3.nbt` (binary/non-JSON, size 2535 -> 2393)
+- `~ data/nova_structures/structure/desert_temple/basement_4.nbt` (binary/non-JSON, size 2542 -> 2399)
+- `~ data/nova_structures/structure/desert_temple/basement_5.nbt` (binary/non-JSON, size 2559 -> 2434)
+- `~ data/nova_structures/structure/desert_temple/basement_6.nbt` (binary/non-JSON, size 2559 -> 2437)
+- `~ data/nova_structures/structure/desert_temple/desert_temple_main_1.nbt` (binary/non-JSON, size 22483 -> 20366)
+- `~ data/nova_structures/structure/desert_temple/desert_temple_main_2.nbt` (binary/non-JSON, size 21194 -> 19172)
+- `~ data/nova_structures/structure/desert_temple/desert_temple_main_3.nbt` (binary/non-JSON, size 31378 -> 28433)
+- `~ data/nova_structures/structure/desert_temple/desert_temple_main_4.nbt` (binary/non-JSON, size 31822 -> 29277)
+- `~ data/nova_structures/structure/desert_temple/desert_temple_room_no_deco_1.nbt` (binary/non-JSON, size 2758 -> 2539)
+- `~ data/nova_structures/structure/desert_temple/mob_desert.nbt` (binary/non-JSON, size 844 -> 870)
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `DnT Jungle Temple Overhaul v2.2` (added: 0, removed: 0, modified: 10)
+**Modified files:**
+- `~ data/nova_structures/structure/jungle_temple/jungle_temple_start_1.nbt` (binary/non-JSON, size 4856 -> 4502)
+- `~ data/nova_structures/structure/jungle_temple/jungle_temple_start_1_basement.nbt` (binary/non-JSON, size 4656 -> 4341)
+- `~ data/nova_structures/structure/jungle_temple/jungle_temple_start_2.nbt` (binary/non-JSON, size 10288 -> 9665)
+- `~ data/nova_structures/structure/jungle_temple/jungle_temple_start_2_basement.nbt` (binary/non-JSON, size 7548 -> 7015)
+- `~ data/nova_structures/structure/jungle_temple/jungle_temple_start_3.nbt` (binary/non-JSON, size 13774 -> 12924)
+- `~ data/nova_structures/structure/jungle_temple/jungle_temple_start_3_basement.nbt` (binary/non-JSON, size 11992 -> 11303)
+- `~ data/nova_structures/structure/jungle_temple/jungle_temple_start_4.nbt` (binary/non-JSON, size 10302 -> 9669)
+- `~ data/nova_structures/structure/jungle_temple/jungle_temple_start_4_basement.nbt` (binary/non-JSON, size 11712 -> 10940)
+- `~ data/nova_structures/structure/jungle_temple/mob_jungle.nbt` (binary/non-JSON, size 744 -> 770)
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `DnT Mineshaft Overhaul 2.0.1` (added: 0, removed: 0, modified: 1)
+**Modified files:**
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `DnT Nether Fortress Overhaul 3.2.1` (added: 0, removed: 0, modified: 1)
+**Modified files:**
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `DnT Ocean Monument Overhaul v2.3` (added: 0, removed: 0, modified: 1)
+**Modified files:**
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `DnT Swamp Hut Overhaul v3` (added: 0, removed: 0, modified: 1)
+**Modified files:**
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Dungeons and Taverns v6.1.0` (added: 0, removed: 0, modified: 97)
+**Modified files:**
+- `~ data/nova_structures/enchantment/photosynthesis.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+- `~ data/nova_structures/enchantment/wax_wings.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+- `~ data/nova_structures/worldgen/structure/badlands_miner_outpost.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/dappled_townhall.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/dappled_witch_hut.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/desert_ruins.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/firewatch_tower_birch.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/firewatch_tower_cherry.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/firewatch_tower_dappled.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/firewatch_tower_dark_oak.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/firewatch_tower_forest.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/firewatch_tower_jungle.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/firewatch_tower_mangrove.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/firewatch_tower_pale.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/firewatch_tower_savanna.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/firewatch_tower_swamp.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/firewatch_tower_taiga.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/hamlet.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/illager_barracks.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/illager_treehouse.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/jungle_ruins.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/mangrove_witch_hut.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/nether_port.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/nether_skeleton_tower_crimson.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/nether_skeleton_tower_fort.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/nether_skeleton_tower_soul.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/nether_skeleton_tower_warped.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/pale_residence.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/piglin_outstation.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_bee_keeper.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_big_remnant.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_big_remnant_2.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_big_remnant_3.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_birch_graveyard.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_bundle_tent.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_bunny_base.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_creeper_homestead.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_desert_remnant.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_forest_smith.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_frog_ranch.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_graveyard.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_lone_shrine_sentinel.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_medium_remnant.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_medium_remnant_2.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_miner_hut.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_mud_brick_constructor.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_ominous_shop.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_ruin_farmer.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/remnant_ruin_smith.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/remnant_sawmill.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_school_remnant.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_shrine_research_station.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_shrine_sentinel_mass_grave.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_taiga_castle.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_tavern_classic.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_woodland_hud.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_youth_spring.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/remnant_zombie_horse_ranch.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/ruin_town.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/stray_fort.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/stray_outlook.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/surface_dungeon_default.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/surface_dungeon_desert.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/surface_dungeon_snowy.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/surface_dungeon_swamp.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/surface_trial_dungeon_default.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/surface_trial_dungeon_desert.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/surface_trial_dungeon_snowy.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/surface_trial_dungeon_swamp.json` (whitespace/formatting only)
+- `~ data/nova_structures/worldgen/structure/tavern_acacia.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_birch.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_cherry.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_dappled.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_dark_oak.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_desert.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_jungle.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_mangrove.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_oak.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_pale.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_snowy.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_spruce.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/tavern_swamp.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_birch.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_cherry.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_dappled.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_dark_oak.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_desert.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_jungle.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_mangrove.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_oak.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_pale.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_savanna.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_snowy.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_spruce.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/well_swamp.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/nova_structures/worldgen/structure/witch_villa.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Enchants Plus v2.1 26.3` (added: 0, removed: 0, modified: 4)
+**Modified files:**
+- `~ data/enchantsplus/enchantment/crabs_touch.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+- `~ data/enchantsplus/enchantment/graviole.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+- `~ data/minecraft/tags/item/enchantable/mining.json`:
+  - `values`: `list(len=1)` -> `list(len=0)`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `9999` -> `94`
+  - `pack.min_format`: `121` -> `94`
+  - `pack.pack_format`: `<MISSING>` -> `94`
+
+### `Epic Dungeons v1.2.7 (26.3)` (added: 0, removed: 0, modified: 1)
+**Modified files:**
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `<MISSING>` -> `94`
+  - `pack.min_format`: `<MISSING>` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Epic Jungle Temples v1.0.4 (26.3)` (added: 0, removed: 0, modified: 43)
+**Modified files:**
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin1.nbt` (binary/non-JSON, size 31042 -> 28742)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin10.nbt` (binary/non-JSON, size 6030 -> 5877)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin11.nbt` (binary/non-JSON, size 6841 -> 6422)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin12.nbt` (binary/non-JSON, size 8762 -> 8099)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin14.nbt` (binary/non-JSON, size 10886 -> 10262)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin2.nbt` (binary/non-JSON, size 19475 -> 18460)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin3.nbt` (binary/non-JSON, size 11002 -> 10398)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin4.nbt` (binary/non-JSON, size 22030 -> 20306)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin5.nbt` (binary/non-JSON, size 14031 -> 12866)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin6.nbt` (binary/non-JSON, size 5252 -> 5020)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin7.nbt` (binary/non-JSON, size 7926 -> 7511)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin8.nbt` (binary/non-JSON, size 17873 -> 16490)
+- `~ data/epic/structure/epic_jungle_temple/epic_temple_ruin/epic_temple_ruin9.nbt` (binary/non-JSON, size 4107 -> 4003)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_1.nbt` (binary/non-JSON, size 3622 -> 3528)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_10.nbt` (binary/non-JSON, size 12960 -> 11975)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_11.nbt` (binary/non-JSON, size 51980 -> 47516)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_12.nbt` (binary/non-JSON, size 10152 -> 9406)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_13.nbt` (binary/non-JSON, size 8250 -> 7703)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_14.nbt` (binary/non-JSON, size 28965 -> 26941)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_15.nbt` (binary/non-JSON, size 14644 -> 13736)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_16.nbt` (binary/non-JSON, size 6210 -> 5700)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_17.nbt` (binary/non-JSON, size 44330 -> 42191)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_18.nbt` (binary/non-JSON, size 2727 -> 2577)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_19.nbt` (binary/non-JSON, size 38826 -> 36400)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_2.nbt` (binary/non-JSON, size 5750 -> 5518)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_20.nbt` (binary/non-JSON, size 19133 -> 18056)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_21.nbt` (binary/non-JSON, size 7596 -> 7192)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_22.nbt` (binary/non-JSON, size 14302 -> 13366)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_23.nbt` (binary/non-JSON, size 784 -> 787)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_24.nbt` (binary/non-JSON, size 733 -> 728)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_25.nbt` (binary/non-JSON, size 4834 -> 4625)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_3.nbt` (binary/non-JSON, size 5201 -> 5101)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_4.nbt` (binary/non-JSON, size 2700 -> 2625)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_5.nbt` (binary/non-JSON, size 8319 -> 7829)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_6.nbt` (binary/non-JSON, size 13567 -> 12819)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_7.nbt` (binary/non-JSON, size 22356 -> 21244)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_8.nbt` (binary/non-JSON, size 17800 -> 16409)
+- `~ data/epic/structure/epic_jungle_temple/jungle_additions/addition_9.nbt` (binary/non-JSON, size 9452 -> 8901)
+- `~ data/epic/structure/epic_jungle_temple/temple1.nbt` (binary/non-JSON, size 295366 -> 278631)
+- `~ data/epic/structure/epic_jungle_temple/temple1_large.nbt` (binary/non-JSON, size 225853 -> 208459)
+- `~ data/epic/structure/epic_jungle_temple/temple2.nbt` (binary/non-JSON, size 304583 -> 285886)
+- `~ data/epic/structure/epic_jungle_temple/temple2_large.nbt` (binary/non-JSON, size 157322 -> 144129)
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `<MISSING>` -> `94`
+  - `pack.min_format`: `<MISSING>` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Epic Villages 2.0.0` (added: 0, removed: 0, modified: 1)
+**Modified files:**
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `<MISSING>` -> `94`
+  - `pack.min_format`: `<MISSING>` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Epic Witch Huts v1.3.2 (26.3)` (added: 0, removed: 0, modified: 13)
+**Modified files:**
+- `~ data/epic/structure/epic_witch_hut/additions/addition_1.nbt` (binary/non-JSON, size 32098 -> 30123)
+- `~ data/epic/structure/epic_witch_hut/additions/addition_10.nbt` (binary/non-JSON, size 33347 -> 30320)
+- `~ data/epic/structure/epic_witch_hut/additions/addition_12.nbt` (binary/non-JSON, size 3184 -> 3085)
+- `~ data/epic/structure/epic_witch_hut/additions/addition_2.nbt` (binary/non-JSON, size 46216 -> 44441)
+- `~ data/epic/structure/epic_witch_hut/additions/addition_3.nbt` (binary/non-JSON, size 32439 -> 30452)
+- `~ data/epic/structure/epic_witch_hut/additions/addition_5.nbt` (binary/non-JSON, size 852 -> 863)
+- `~ data/epic/structure/epic_witch_hut/additions/addition_8.nbt` (binary/non-JSON, size 2589 -> 2520)
+- `~ data/epic/structure/epic_witch_hut/additions/addition_9.nbt` (binary/non-JSON, size 5986 -> 5622)
+- `~ data/epic/structure/epic_witch_hut/base/base1.nbt` (binary/non-JSON, size 254696 -> 236373)
+- `~ data/epic/structure/epic_witch_hut/witch_hut.nbt` (binary/non-JSON, size 92502 -> 88205)
+- `~ data/epic/structure/epic_witch_hut/witch_hut2.nbt` (binary/non-JSON, size 243094 -> 227441)
+- `~ data/epic/structure/epic_witch_hut/witch_hut3.nbt` (binary/non-JSON, size 315877 -> 294329)
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `<MISSING>` -> `94`
+  - `pack.min_format`: `<MISSING>` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Explorify v1.6.6.dp` (added: 0, removed: 0, modified: 137)
+**Modified files:**
+- `~ data/explorify/structure/badlands_pyramid/whole.nbt` (binary/non-JSON, size 26103 -> 23664)
+- `~ data/explorify/structure/bastion_spiral/bridge/long.nbt` (binary/non-JSON, size 9686 -> 8678)
+- `~ data/explorify/structure/bastion_spiral/bridge/normal.nbt` (binary/non-JSON, size 3672 -> 3393)
+- `~ data/explorify/structure/bastion_spiral/bridge/ruined.nbt` (binary/non-JSON, size 1898 -> 1789)
+- `~ data/explorify/structure/bastion_spiral/bridge/whole.nbt` (binary/non-JSON, size 5064 -> 4762)
+- `~ data/explorify/structure/bastion_spiral/bridge_end/whole.nbt` (binary/non-JSON, size 2595 -> 2488)
+- `~ data/explorify/structure/bastion_spiral/tower/whole.nbt` (binary/non-JSON, size 19646 -> 19080)
+- `~ data/explorify/structure/campsite/main/01.nbt` (binary/non-JSON, size 1614 -> 1541)
+- `~ data/explorify/structure/campsite/main/02.nbt` (binary/non-JSON, size 1665 -> 1599)
+- `~ data/explorify/structure/campsite/main/03.nbt` (binary/non-JSON, size 1760 -> 1674)
+- `~ data/explorify/structure/campsite/main/04.nbt` (binary/non-JSON, size 1799 -> 1720)
+- `~ data/explorify/structure/campsite/main/05.nbt` (binary/non-JSON, size 1813 -> 1730)
+- `~ data/explorify/structure/campsite/tent/01.nbt` (binary/non-JSON, size 1885 -> 1739)
+- `~ data/explorify/structure/campsite/tent/02.nbt` (binary/non-JSON, size 1783 -> 1681)
+- `~ data/explorify/structure/campsite/tent/03.nbt` (binary/non-JSON, size 2593 -> 2437)
+- `~ data/explorify/structure/campsite/tent/04.nbt` (binary/non-JSON, size 1764 -> 1673)
+- `~ data/explorify/structure/campsite/tent/05.nbt` (binary/non-JSON, size 1243 -> 1173)
+- `~ data/explorify/structure/campsite/tent/06.nbt` (binary/non-JSON, size 1375 -> 1279)
+- `~ data/explorify/structure/campsite/tent/07.nbt` (binary/non-JSON, size 1378 -> 1300)
+- `~ data/explorify/structure/campsite/tent/08.nbt` (binary/non-JSON, size 1250 -> 1186)
+- `~ data/explorify/structure/campsite/tent/09.nbt` (binary/non-JSON, size 1987 -> 1897)
+- `~ data/explorify/structure/campsite/tent/10.nbt` (binary/non-JSON, size 2035 -> 1928)
+- `~ data/explorify/structure/dark_forest_settlement/centre/01.nbt` (binary/non-JSON, size 2384 -> 2239)
+- `~ data/explorify/structure/dark_forest_settlement/centre/02.nbt` (binary/non-JSON, size 4280 -> 4109)
+- `~ data/explorify/structure/dark_forest_settlement/house/01.nbt` (binary/non-JSON, size 2315 -> 2211)
+- `~ data/explorify/structure/dark_forest_settlement/house/02.nbt` (binary/non-JSON, size 2000 -> 1925)
+- `~ data/explorify/structure/dark_forest_settlement/house/03.nbt` (binary/non-JSON, size 2668 -> 2495)
+- `~ data/explorify/structure/dark_forest_settlement/house/04.nbt` (binary/non-JSON, size 2680 -> 2503)
+- `~ data/explorify/structure/dark_forest_settlement/house/05.nbt` (binary/non-JSON, size 3104 -> 2997)
+- `~ data/explorify/structure/dark_forest_settlement/house/06.nbt` (binary/non-JSON, size 4076 -> 3819)
+- `~ data/explorify/structure/dark_forest_settlement/house/07.nbt` (binary/non-JSON, size 2416 -> 2185)
+- `~ data/explorify/structure/dark_forest_settlement/house/08.nbt` (binary/non-JSON, size 3025 -> 2790)
+- `~ data/explorify/structure/dark_forest_settlement/house/09.nbt` (binary/non-JSON, size 3243 -> 3041)
+- `~ data/explorify/structure/dark_forest_settlement/house/10.nbt` (binary/non-JSON, size 2868 -> 2713)
+- `~ data/explorify/structure/dark_forest_settlement/house/11.nbt` (binary/non-JSON, size 2430 -> 2271)
+- `~ data/explorify/structure/dark_forest_settlement/house/12.nbt` (binary/non-JSON, size 2338 -> 2175)
+- `~ data/explorify/structure/dark_forest_settlement/house/13.nbt` (binary/non-JSON, size 1663 -> 1572)
+- `~ data/explorify/structure/farmstead/build/animal_pen.nbt` (binary/non-JSON, size 1205 -> 1144)
+- `~ data/explorify/structure/farmstead/build/animal_shelter.nbt` (binary/non-JSON, size 2470 -> 2302)
+- `~ data/explorify/structure/farmstead/build/bees.nbt` (binary/non-JSON, size 1866 -> 1789)
+- `~ data/explorify/structure/farmstead/build/potato_beetroot_farm.nbt` (binary/non-JSON, size 1603 -> 1514)
+- `~ data/explorify/structure/farmstead/build/pumpkin_farm.nbt` (binary/non-JSON, size 1141 -> 1102)
+- `~ data/explorify/structure/farmstead/build/road.nbt` (binary/non-JSON, size 392 -> 412)
+- `~ data/explorify/structure/farmstead/build/sugar_cane.nbt` (binary/non-JSON, size 1176 -> 1132)
+- `~ data/explorify/structure/farmstead/build/tree.nbt` (binary/non-JSON, size 4725 -> 4518)
+- `~ data/explorify/structure/farmstead/build/turn.nbt` (binary/non-JSON, size 540 -> 565)
+- `~ data/explorify/structure/farmstead/build/well.nbt` (binary/non-JSON, size 969 -> 965)
+- `~ data/explorify/structure/farmstead/build/wheat_farm.nbt` (binary/non-JSON, size 2168 -> 2037)
+- `~ data/explorify/structure/farmstead/build/wood.nbt` (binary/non-JSON, size 1369 -> 1290)
+- `~ data/explorify/structure/farmstead/main/01.nbt` (binary/non-JSON, size 6862 -> 6422)
+- `~ data/explorify/structure/farmstead/main/02.nbt` (binary/non-JSON, size 8689 -> 7946)
+- `~ data/explorify/structure/guide_post/cold/whole.nbt` (binary/non-JSON, size 4914 -> 4815)
+- `~ data/explorify/structure/guide_post/warm/whole.nbt` (binary/non-JSON, size 4884 -> 4790)
+- `~ data/explorify/structure/mangrove_hut/cat/01.nbt` (binary/non-JSON, size 884 -> 908)
+- `~ data/explorify/structure/mangrove_hut/main/01.nbt` (binary/non-JSON, size 7390 -> 6906)
+- `~ data/explorify/structure/mangrove_hut/witch/01.nbt` (binary/non-JSON, size 840 -> 868)
+- `~ data/explorify/structure/mausoleum/whole.nbt` (binary/non-JSON, size 5280 -> 4923)
+- `~ data/explorify/structure/mausoleum/whole_02.nbt` (binary/non-JSON, size 4764 -> 4494)
+- `~ data/explorify/structure/ruins/house/01.nbt` (binary/non-JSON, size 770 -> 772)
+- `~ data/explorify/structure/ruins/house/02.nbt` (binary/non-JSON, size 920 -> 898)
+- `~ data/explorify/structure/ruins/house/03.nbt` (binary/non-JSON, size 905 -> 902)
+- `~ data/explorify/structure/ruins/house/04.nbt` (binary/non-JSON, size 1657 -> 1557)
+- `~ data/explorify/structure/ruins/house/05.nbt` (binary/non-JSON, size 1071 -> 1054)
+- `~ data/explorify/structure/ruins/house/ruins_01.nbt` (binary/non-JSON, size 715 -> 721)
+- `~ data/explorify/structure/ruins/house/ruins_02.nbt` (binary/non-JSON, size 962 -> 963)
+- `~ data/explorify/structure/ruins/monument/01.nbt` (binary/non-JSON, size 2603 -> 2376)
+- `~ data/explorify/structure/ruins/monument/02.nbt` (binary/non-JSON, size 4491 -> 4064)
+- `~ data/explorify/structure/ruins/square/01.nbt` (binary/non-JSON, size 2577 -> 2538)
+- `~ data/explorify/structure/supply_cache/birch/01.nbt` (binary/non-JSON, size 566 -> 577)
+- `~ data/explorify/structure/supply_cache/dark/01.nbt` (binary/non-JSON, size 570 -> 581)
+- `~ data/explorify/structure/supply_cache/desert/01.nbt` (binary/non-JSON, size 545 -> 551)
+- `~ data/explorify/structure/supply_cache/forest/01.nbt` (binary/non-JSON, size 566 -> 576)
+- `~ data/explorify/structure/supply_cache/jungle/01.nbt` (binary/non-JSON, size 568 -> 578)
+- `~ data/explorify/structure/supply_cache/mangrove/01.nbt` (binary/non-JSON, size 580 -> 590)
+- `~ data/explorify/structure/supply_cache/taiga/01.nbt` (binary/non-JSON, size 567 -> 577)
+- `~ data/explorify/structure/tavern/back/01.nbt` (binary/non-JSON, size 1478 -> 1415)
+- `~ data/explorify/structure/tavern/back/02.nbt` (binary/non-JSON, size 2671 -> 2584)
+- `~ data/explorify/structure/tavern/back/03.nbt` (binary/non-JSON, size 3458 -> 3304)
+- `~ data/explorify/structure/tavern/back/04.nbt` (binary/non-JSON, size 3574 -> 3433)
+- `~ data/explorify/structure/tavern/back/05.nbt` (binary/non-JSON, size 6119 -> 5689)
+- `~ data/explorify/structure/tavern/back/06.nbt` (binary/non-JSON, size 6934 -> 6689)
+- `~ data/explorify/structure/tavern/front/01.nbt` (binary/non-JSON, size 867 -> 869)
+- `~ data/explorify/structure/tavern/front/02.nbt` (binary/non-JSON, size 1391 -> 1391)
+- `~ data/explorify/structure/tavern/front/03.nbt` (binary/non-JSON, size 1374 -> 1405)
+- `~ data/explorify/structure/tavern/front/04.nbt` (binary/non-JSON, size 2365 -> 2432)
+- `~ data/explorify/structure/tavern/front/05.nbt` (binary/non-JSON, size 983 -> 1002)
+- `~ data/explorify/structure/tavern/front/06.nbt` (binary/non-JSON, size 2364 -> 2178)
+- `~ data/explorify/structure/tavern/front/07.nbt` (binary/non-JSON, size 3279 -> 3004)
+- `~ data/explorify/structure/tavern/main/01.nbt` (binary/non-JSON, size 3661 -> 3456)
+- `~ data/explorify/structure/tavern/main/02.nbt` (binary/non-JSON, size 3843 -> 3636)
+- `~ data/explorify/structure/tavern/main/03.nbt` (binary/non-JSON, size 3625 -> 3443)
+- `~ data/explorify/structure/tavern/room/01.nbt` (binary/non-JSON, size 499 -> 519)
+- `~ data/explorify/structure/tavern/room/02.nbt` (binary/non-JSON, size 557 -> 579)
+- `~ data/explorify/structure/tavern/room/03.nbt` (binary/non-JSON, size 501 -> 522)
+- `~ data/explorify/structure/tavern/room/04.nbt` (binary/non-JSON, size 497 -> 517)
+- `~ data/explorify/structure/tavern/room/05.nbt` (binary/non-JSON, size 473 -> 494)
+- `~ data/explorify/structure/tavern/room/06.nbt` (binary/non-JSON, size 478 -> 499)
+- `~ data/explorify/structure/tavern/room/07.nbt` (binary/non-JSON, size 478 -> 502)
+- `~ data/explorify/structure/tavern/room/08.nbt` (binary/non-JSON, size 498 -> 521)
+- `~ data/explorify/structure/tavern/room/09.nbt` (binary/non-JSON, size 549 -> 571)
+- `~ data/explorify/structure/tavern/room/10.nbt` (binary/non-JSON, size 458 -> 477)
+- `~ data/explorify/structure/tavern/room/11.nbt` (binary/non-JSON, size 505 -> 529)
+- `~ data/explorify/structure/tavern/room/12.nbt` (binary/non-JSON, size 548 -> 569)
+- `~ data/explorify/structure/tavern/room/13.nbt` (binary/non-JSON, size 608 -> 628)
+- `~ data/explorify/structure/tavern/room/14.nbt` (binary/non-JSON, size 661 -> 684)
+- `~ data/explorify/structure/tavern/side/01.nbt` (binary/non-JSON, size 2377 -> 2293)
+- `~ data/explorify/structure/tavern/side/02.nbt` (binary/non-JSON, size 3641 -> 3552)
+- `~ data/explorify/structure/tavern/side/03.nbt` (binary/non-JSON, size 2349 -> 2328)
+- `~ data/explorify/structure/tavern/side/04.nbt` (binary/non-JSON, size 3741 -> 3483)
+- `~ data/explorify/structure/watchtower/plains/features/campfire.nbt` (binary/non-JSON, size 387 -> 413)
+- `~ data/explorify/structure/watchtower/plains/features/coal_pile.nbt` (binary/non-JSON, size 411 -> 432)
+- `~ data/explorify/structure/watchtower/plains/features/hay_pile.nbt` (binary/non-JSON, size 443 -> 469)
+- `~ data/explorify/structure/watchtower/plains/features/logs.nbt` (binary/non-JSON, size 411 -> 421)
+- `~ data/explorify/structure/watchtower/plains/features/resource_pile.nbt` (binary/non-JSON, size 444 -> 463)
+- `~ data/explorify/structure/watchtower/plains/main.nbt` (binary/non-JSON, size 6632 -> 6353)
+- `~ data/explorify/structure/watchtower/plains/tower/whole.nbt` (binary/non-JSON, size 6365 -> 6055)
+- `~ data/explorify/structure/watchtower/savanna/features/campfire.nbt` (binary/non-JSON, size 395 -> 420)
+- `~ data/explorify/structure/watchtower/savanna/features/coal_pile.nbt` (binary/non-JSON, size 412 -> 434)
+- `~ data/explorify/structure/watchtower/savanna/features/hay_pile.nbt` (binary/non-JSON, size 447 -> 470)
+- `~ data/explorify/structure/watchtower/savanna/features/logs.nbt` (binary/non-JSON, size 417 -> 432)
+- `~ data/explorify/structure/watchtower/savanna/features/resource_pile.nbt` (binary/non-JSON, size 446 -> 461)
+- `~ data/explorify/structure/watchtower/savanna/main.nbt` (binary/non-JSON, size 6691 -> 6432)
+- `~ data/explorify/structure/watchtower/savanna/tower/whole.nbt` (binary/non-JSON, size 6494 -> 6200)
+- `~ data/explorify/structure/watchtower/taiga/features/campfire.nbt` (binary/non-JSON, size 395 -> 421)
+- `~ data/explorify/structure/watchtower/taiga/features/coal_pile.nbt` (binary/non-JSON, size 411 -> 433)
+- `~ data/explorify/structure/watchtower/taiga/features/hay_pile.nbt` (binary/non-JSON, size 446 -> 469)
+- `~ data/explorify/structure/watchtower/taiga/features/logs.nbt` (binary/non-JSON, size 413 -> 423)
+- `~ data/explorify/structure/watchtower/taiga/features/resource_pile.nbt` (binary/non-JSON, size 444 -> 461)
+- `~ data/explorify/structure/watchtower/taiga/main.nbt` (binary/non-JSON, size 6799 -> 6540)
+- `~ data/explorify/structure/watchtower/taiga/tower/whole.nbt` (binary/non-JSON, size 6960 -> 6713)
+- `~ data/explorify/worldgen/structure/badlands_pyramid.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/explorify/worldgen/structure/black_spiral.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/explorify/worldgen/structure/desert_shrine.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/explorify/worldgen/structure/guide_post_cold.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/explorify/worldgen/structure/guide_post_warm.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/explorify/worldgen/structure/mangrove_hut.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `512` -> `94`
+  - `pack.min_format`: `15` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+  - `pack.version`: `1.6.6` -> `<REMOVED>`
+
+### `Grim kingdoms (1.21+ 26.2+)` (added: 0, removed: 0, modified: 119)
+**Modified files:**
+- `~ data/grim_kingdoms/structure/forest/gnome_tall_tower.nbt` (binary/non-JSON, size 43414 -> 42305)
+- `~ data/grim_kingdoms/structure/forest/gnome_tower.nbt` (binary/non-JSON, size 16442 -> 15793)
+- `~ data/grim_kingdoms/structure/forest/nordic_cabin1.nbt` (binary/non-JSON, size 6520 -> 6219)
+- `~ data/grim_kingdoms/structure/forest/nordic_cabin2.nbt` (binary/non-JSON, size 6691 -> 6423)
+- `~ data/grim_kingdoms/structure/forest/nordic_cabin3.nbt` (binary/non-JSON, size 9158 -> 8788)
+- `~ data/grim_kingdoms/structure/forest/nordic_cabin4.nbt` (binary/non-JSON, size 7640 -> 7331)
+- `~ data/grim_kingdoms/structure/plains/chillhall_plains_refuge.nbt` (binary/non-JSON, size 161935 -> 151879)
+- `~ data/grim_kingdoms/structure/plains/eldermoor.nbt` (binary/non-JSON, size 260258 -> 242046)
+- `~ data/grim_kingdoms/structure/plains/glacierfall_keep_plains.nbt` (binary/non-JSON, size 105323 -> 97840)
+- `~ data/grim_kingdoms/structure/plains/glimmervault_fortress_plains.nbt` (binary/non-JSON, size 269775 -> 251363)
+- `~ data/grim_kingdoms/structure/plains/grain_sack_fort.nbt` (binary/non-JSON, size 108852 -> 101226)
+- `~ data/grim_kingdoms/structure/plains/grain_sack_hold.nbt` (binary/non-JSON, size 28256 -> 26634)
+- `~ data/grim_kingdoms/structure/plains/grain_sack_keep.nbt` (binary/non-JSON, size 148681 -> 136566)
+- `~ data/grim_kingdoms/structure/plains/houses/house_1.nbt` (binary/non-JSON, size 14026 -> 13426)
+- `~ data/grim_kingdoms/structure/plains/houses/house_21.nbt` (binary/non-JSON, size 4563 -> 4463)
+- `~ data/grim_kingdoms/structure/plains/houses/house_22.nbt` (binary/non-JSON, size 4572 -> 4494)
+- `~ data/grim_kingdoms/structure/plains/houses/house_23.nbt` (binary/non-JSON, size 4659 -> 4587)
+- `~ data/grim_kingdoms/structure/plains/houses/house_24.nbt` (binary/non-JSON, size 4496 -> 4415)
+- `~ data/grim_kingdoms/structure/plains/houses/house_31.nbt` (binary/non-JSON, size 5795 -> 5613)
+- `~ data/grim_kingdoms/structure/plains/houses/house_32.nbt` (binary/non-JSON, size 5754 -> 5582)
+- `~ data/grim_kingdoms/structure/plains/houses/house_43.nbt` (binary/non-JSON, size 7494 -> 7059)
+- `~ data/grim_kingdoms/structure/plains/houses/house_44.nbt` (binary/non-JSON, size 8092 -> 7659)
+- `~ data/grim_kingdoms/structure/plains/houses/house_5.nbt` (binary/non-JSON, size 16574 -> 15859)
+- `~ data/grim_kingdoms/structure/plains/houses/roof.nbt` (binary/non-JSON, size 125281 -> 120828)
+- `~ data/grim_kingdoms/structure/plains/meadow_flower_ruin.nbt` (binary/non-JSON, size 142351 -> 132056)
+- `~ data/grim_kingdoms/structure/plains/meadow_ruin.nbt` (binary/non-JSON, size 71900 -> 66693)
+- `~ data/grim_kingdoms/structure/plains/mill_stone.nbt` (binary/non-JSON, size 14840 -> 14222)
+- `~ data/grim_kingdoms/structure/plains/sandfell_outpost.nbt` (binary/non-JSON, size 149086 -> 138637)
+- `~ data/grim_kingdoms/structure/plains/silentgale_citadel_plains.nbt` (binary/non-JSON, size 210205 -> 194634)
+- `~ data/grim_kingdoms/structure/plains/slate_needle.nbt` (binary/non-JSON, size 11513 -> 11140)
+- `~ data/grim_kingdoms/structure/plains/slate_thin_needle.nbt` (binary/non-JSON, size 6803 -> 6472)
+- `~ data/grim_kingdoms/structure/plains/stonyfell_outpost_plains.nbt` (binary/non-JSON, size 334893 -> 318381)
+- `~ data/grim_kingdoms/structure/plains/streets/1.nbt` (binary/non-JSON, size 3891 -> 3659)
+- `~ data/grim_kingdoms/structure/plains/streets/5.nbt` (binary/non-JSON, size 8684 -> 8371)
+- `~ data/grim_kingdoms/structure/plains/streets/8.nbt` (binary/non-JSON, size 9181 -> 8751)
+- `~ data/grim_kingdoms/structure/plains/thatch_roof.nbt` (binary/non-JSON, size 13314 -> 12826)
+- `~ data/grim_kingdoms/structure/plains/tor_tower.nbt` (binary/non-JSON, size 117395 -> 112087)
+- `~ data/grim_kingdoms/structure/plains/weathered_colosseum.nbt` (binary/non-JSON, size 216219 -> 200384)
+- `~ data/grim_kingdoms/structure/plains/zweiberg_plains.nbt` (binary/non-JSON, size 41188 -> 40489)
+- `~ data/grim_kingdoms/structure/snowy/blackridge_watch.nbt` (binary/non-JSON, size 237882 -> 224849)
+- `~ data/grim_kingdoms/structure/snowy/chill_hallmanor.nbt` (binary/non-JSON, size 317489 -> 304916)
+- `~ data/grim_kingdoms/structure/snowy/decrown_monolith.nbt` (binary/non-JSON, size 133145 -> 126386)
+- `~ data/grim_kingdoms/structure/snowy/frostbloom_bastion.nbt` (binary/non-JSON, size 236057 -> 217315)
+- `~ data/grim_kingdoms/structure/snowy/frozen_onion_fort.nbt` (binary/non-JSON, size 104236 -> 99376)
+- `~ data/grim_kingdoms/structure/snowy/frozen_onion_fort1.nbt` (binary/non-JSON, size 102613 -> 98471)
+- `~ data/grim_kingdoms/structure/snowy/frozen_onion_fort2.nbt` (binary/non-JSON, size 101982 -> 97647)
+- `~ data/grim_kingdoms/structure/snowy/glacierfall_keep.nbt` (binary/non-JSON, size 111548 -> 101694)
+- `~ data/grim_kingdoms/structure/snowy/glimmervault_fortress.nbt` (binary/non-JSON, size 269665 -> 251459)
+- `~ data/grim_kingdoms/structure/snowy/shardspire_castle.nbt` (binary/non-JSON, size 297886 -> 277073)
+- `~ data/grim_kingdoms/structure/snowy/silentgale_citadel.nbt` (binary/non-JSON, size 208072 -> 192542)
+- `~ data/grim_kingdoms/structure/snowy/snowgrave_citadel.nbt` (binary/non-JSON, size 196569 -> 180435)
+- `~ data/grim_kingdoms/structure/snowy/stonyfell_outpost.nbt` (binary/non-JSON, size 269009 -> 251928)
+- `~ data/grim_kingdoms/structure/snowy/travelers_lodge.nbt` (binary/non-JSON, size 30724 -> 29127)
+- `~ data/grim_kingdoms/structure/snowy/whitewarden_keep.nbt` (binary/non-JSON, size 317631 -> 297871)
+- `~ data/grim_kingdoms/structure/snowy/winterhold_citadel.nbt` (binary/non-JSON, size 307446 -> 291685)
+- `~ data/grim_kingdoms/structure/snowy/zweiberg.nbt` (binary/non-JSON, size 39959 -> 39190)
+- `~ data/grim_kingdoms/structure/taiga/blackridge_watch_taiga.nbt` (binary/non-JSON, size 235233 -> 222470)
+- `~ data/grim_kingdoms/structure/taiga/bramblepath.nbt` (binary/non-JSON, size 298408 -> 282581)
+- `~ data/grim_kingdoms/structure/taiga/decrown_monolith_taiga.nbt` (binary/non-JSON, size 154755 -> 146616)
+- `~ data/grim_kingdoms/structure/taiga/east_spur_tower.nbt` (binary/non-JSON, size 112793 -> 107107)
+- `~ data/grim_kingdoms/structure/taiga/frozen_onion_fort_taiga.nbt` (binary/non-JSON, size 106129 -> 101234)
+- `~ data/grim_kingdoms/structure/taiga/high_spur_tower.nbt` (binary/non-JSON, size 121191 -> 116870)
+- `~ data/grim_kingdoms/structure/taiga/houses/house_1.nbt` (binary/non-JSON, size 7854 -> 7580)
+- `~ data/grim_kingdoms/structure/taiga/houses/house_2.nbt` (binary/non-JSON, size 5237 -> 5132)
+- `~ data/grim_kingdoms/structure/taiga/houses/house_4.nbt` (binary/non-JSON, size 5919 -> 5733)
+- `~ data/grim_kingdoms/structure/taiga/houses/house_6.nbt` (binary/non-JSON, size 10965 -> 10376)
+- `~ data/grim_kingdoms/structure/taiga/houses/house_7.nbt` (binary/non-JSON, size 8756 -> 8360)
+- `~ data/grim_kingdoms/structure/taiga/houses/house_8.nbt` (binary/non-JSON, size 15160 -> 14358)
+- `~ data/grim_kingdoms/structure/taiga/long_pine_cabin.nbt` (binary/non-JSON, size 19673 -> 18572)
+- `~ data/grim_kingdoms/structure/taiga/north_spur_tower.nbt` (binary/non-JSON, size 84274 -> 79637)
+- `~ data/grim_kingdoms/structure/taiga/old_timber_watch.nbt` (binary/non-JSON, size 16645 -> 15722)
+- `~ data/grim_kingdoms/structure/taiga/pine_cabin.nbt` (binary/non-JSON, size 9126 -> 8727)
+- `~ data/grim_kingdoms/structure/taiga/secluded_cabin.nbt` (binary/non-JSON, size 10176 -> 9689)
+- `~ data/grim_kingdoms/structure/taiga/south_spur_tower.nbt` (binary/non-JSON, size 117437 -> 112976)
+- `~ data/grim_kingdoms/structure/taiga/spruce_needle.nbt` (binary/non-JSON, size 11384 -> 11022)
+- `~ data/grim_kingdoms/structure/taiga/spruce_thin_needle.nbt` (binary/non-JSON, size 6665 -> 6330)
+- `~ data/grim_kingdoms/structure/taiga/west_spur_tower.nbt` (binary/non-JSON, size 80274 -> 74885)
+- `~ data/grim_kingdoms/structure/taiga/winterhold_citadel_taiga.nbt` (binary/non-JSON, size 298128 -> 283061)
+- `~ data/grim_kingdoms/structure/taiga/zweiberg_taiga.nbt` (binary/non-JSON, size 40693 -> 39940)
+- `~ data/grim_kingdoms/structure/water/blackwater.nbt` (binary/non-JSON, size 62891 -> 60920)
+- `~ data/grim_kingdoms/worldgen/structure/blackridge_watch.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/blackridge_watch_taiga.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/chill_hallmanor.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/chillhall_plains_refuge.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/decrown_monolith.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/decrown_monolith_taiga.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/east_spur_tower.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/frostbloom_bastion.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/frozen_onion_fort.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/frozen_onion_fort_taiga.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/glacierfall_keep.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/glacierfall_keep_plains.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/glimmervault_fortress.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/glimmervault_fortress_plains.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/gnome_tall_tower.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/grain_sack_fort.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/grain_sack_keep.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/high_spur_tower.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/long_pine_cabin.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/meadow_flower_ruin.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/meadow_ruin.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/north_spur_tower.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/sandfell_outpost.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/shardspire_castle.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/silentgale_citadel.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/silentgale_citadel_plains.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/snowgrave_citadel.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/south_spur_tower.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/stonyfell_outpost.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/stonyfell_outpost_plains.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/tor_tower.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/travelers_lodge.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/weathered_colosseum.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/west_spur_tower.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/whitewarden_keep.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/winterhold_citadel.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/winterhold_citadel_taiga.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/grim_kingdoms/worldgen/structure/zweiberg.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `<MISSING>` -> `94`
+  - `pack.min_format`: `<MISSING>` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Incendium_Legacy_v5.5.4+26.3` (added: 0, removed: 0, modified: 2)
+**Modified files:**
+- `~ data/incendium/enchantment/poison_protection.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Katters Structures v2.9` (added: 0, removed: 0, modified: 505)
+**Modified files:**
+- `~ data/kattersstructures/structure/armory/armory_entrance.nbt` (binary/non-JSON, size 4642 -> 4333)
+- `~ data/kattersstructures/structure/armory/big_decor/armory_decor_big_01.nbt` (binary/non-JSON, size 845 -> 862)
+- `~ data/kattersstructures/structure/armory/big_decor/armory_decor_big_02.nbt` (binary/non-JSON, size 666 -> 703)
+- `~ data/kattersstructures/structure/armory/big_decor/armory_decor_big_03.nbt` (binary/non-JSON, size 551 -> 585)
+- `~ data/kattersstructures/structure/armory/big_decor/armory_decor_big_04.nbt` (binary/non-JSON, size 898 -> 907)
+- `~ data/kattersstructures/structure/armory/corridor/armory_corridor_01.nbt` (binary/non-JSON, size 1920 -> 1798)
+- `~ data/kattersstructures/structure/armory/corridor/armory_corridor_02.nbt` (binary/non-JSON, size 1875 -> 1740)
+- `~ data/kattersstructures/structure/armory/corridor/armory_corridor_03.nbt` (binary/non-JSON, size 1196 -> 1165)
+- `~ data/kattersstructures/structure/armory/corridor/armory_corridor_04.nbt` (binary/non-JSON, size 1879 -> 1744)
+- `~ data/kattersstructures/structure/armory/corridor/armory_corridor_connecter.nbt` (binary/non-JSON, size 896 -> 915)
+- `~ data/kattersstructures/structure/armory/corridor/armory_corridor_corner_01.nbt` (binary/non-JSON, size 920 -> 939)
+- `~ data/kattersstructures/structure/armory/corridor/armory_corridor_corner_02.nbt` (binary/non-JSON, size 900 -> 922)
+- `~ data/kattersstructures/structure/armory/corridor/armory_corridor_crossing.nbt` (binary/non-JSON, size 3569 -> 3373)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_01.nbt` (binary/non-JSON, size 462 -> 492)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_02.nbt` (binary/non-JSON, size 451 -> 484)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_03.nbt` (binary/non-JSON, size 404 -> 439)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_04.nbt` (binary/non-JSON, size 462 -> 493)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_05.nbt` (binary/non-JSON, size 460 -> 491)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_06.nbt` (binary/non-JSON, size 436 -> 467)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_07.nbt` (binary/non-JSON, size 452 -> 483)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_08.nbt` (binary/non-JSON, size 470 -> 502)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_09.nbt` (binary/non-JSON, size 452 -> 484)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_10.nbt` (binary/non-JSON, size 481 -> 513)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_11.nbt` (binary/non-JSON, size 560 -> 589)
+- `~ data/kattersstructures/structure/armory/corridor/decor/armory_decor_12.nbt` (binary/non-JSON, size 382 -> 415)
+- `~ data/kattersstructures/structure/armory/room/armory_room_leftside_01.nbt` (binary/non-JSON, size 774 -> 794)
+- `~ data/kattersstructures/structure/armory/room/armory_room_leftside_02.nbt` (binary/non-JSON, size 960 -> 972)
+- `~ data/kattersstructures/structure/armory/room/armory_room_normal_01.nbt` (binary/non-JSON, size 1073 -> 1064)
+- `~ data/kattersstructures/structure/armory/room/armory_room_normal_02.nbt` (binary/non-JSON, size 1293 -> 1272)
+- `~ data/kattersstructures/structure/armory/room/armory_room_normal_03.nbt` (binary/non-JSON, size 1188 -> 1176)
+- `~ data/kattersstructures/structure/armory/room/armory_room_rightside_01.nbt` (binary/non-JSON, size 791 -> 809)
+- `~ data/kattersstructures/structure/armory/room/armory_room_rightside_02.nbt` (binary/non-JSON, size 958 -> 980)
+- `~ data/kattersstructures/structure/armory/room/armory_room_twodoor_01.nbt` (binary/non-JSON, size 1773 -> 1686)
+- `~ data/kattersstructures/structure/armory/room/armory_room_twodoor_02.nbt` (binary/non-JSON, size 2011 -> 1901)
+- `~ data/kattersstructures/structure/armory/room/armory_room_twodoor_03.nbt` (binary/non-JSON, size 1486 -> 1403)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_armorstand_01.nbt` (binary/non-JSON, size 762 -> 802)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_armorstand_02.nbt` (binary/non-JSON, size 782 -> 825)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_armorstand_03.nbt` (binary/non-JSON, size 726 -> 764)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_armorstand_04.nbt` (binary/non-JSON, size 751 -> 786)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_armorstand_05.nbt` (binary/non-JSON, size 762 -> 799)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_armorstand_06.nbt` (binary/non-JSON, size 760 -> 796)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_armorstand_07.nbt` (binary/non-JSON, size 752 -> 789)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_armorstand_08.nbt` (binary/non-JSON, size 756 -> 793)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_armorstand_09.nbt` (binary/non-JSON, size 710 -> 748)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_armorstand_10.nbt` (binary/non-JSON, size 742 -> 778)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_room_decor_06.nbt` (binary/non-JSON, size 729 -> 765)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_room_decor_10.nbt` (binary/non-JSON, size 396 -> 433)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_room_decor_high_02.nbt` (binary/non-JSON, size 514 -> 556)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_room_decor_high_03.nbt` (binary/non-JSON, size 621 -> 651)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_room_decor_high_05.nbt` (binary/non-JSON, size 643 -> 682)
+- `~ data/kattersstructures/structure/armory/room/decor/armory_room_decor_high_06.nbt` (binary/non-JSON, size 688 -> 730)
+- `~ data/kattersstructures/structure/armory/stairs/armory_down_entrance.nbt` (binary/non-JSON, size 951 -> 969)
+- `~ data/kattersstructures/structure/armory/stairs/armory_down_exit.nbt` (binary/non-JSON, size 943 -> 954)
+- `~ data/kattersstructures/structure/armory/stairs/armory_stairs.nbt` (binary/non-JSON, size 1002 -> 1011)
+- `~ data/kattersstructures/structure/birch_tree/birch_camp.nbt` (binary/non-JSON, size 566 -> 578)
+- `~ data/kattersstructures/structure/birch_tree/birch_hut.nbt` (binary/non-JSON, size 1544 -> 1510)
+- `~ data/kattersstructures/structure/birch_tree/birch_logs_1.nbt` (binary/non-JSON, size 445 -> 458)
+- `~ data/kattersstructures/structure/birch_tree/birch_logs_2.nbt` (binary/non-JSON, size 469 -> 483)
+- `~ data/kattersstructures/structure/birch_tree/birch_logs_3.nbt` (binary/non-JSON, size 455 -> 471)
+- `~ data/kattersstructures/structure/cherry_tree/big_cherry_tree_gate.nbt` (binary/non-JSON, size 1907 -> 1889)
+- `~ data/kattersstructures/structure/dark_tree/allay_home_1.nbt` (binary/non-JSON, size 1623 -> 1646)
+- `~ data/kattersstructures/structure/dark_tree/allay_home_2.nbt` (binary/non-JSON, size 1520 -> 1532)
+- `~ data/kattersstructures/structure/dark_tree/allay_home_3.nbt` (binary/non-JSON, size 1584 -> 1602)
+- `~ data/kattersstructures/structure/dark_tree/allay_home_4.nbt` (binary/non-JSON, size 1524 -> 1547)
+- `~ data/kattersstructures/structure/dark_tree/big_dark_tree.nbt` (binary/non-JSON, size 58289 -> 54848)
+- `~ data/kattersstructures/structure/deep_blue/city/deep_blue_city_01.nbt` (binary/non-JSON, size 106958 -> 100987)
+- `~ data/kattersstructures/structure/deep_blue/city/deep_blue_city_02.nbt` (binary/non-JSON, size 107401 -> 99428)
+- `~ data/kattersstructures/structure/deep_blue/city/deep_blue_city_03.nbt` (binary/non-JSON, size 107798 -> 92472)
+- `~ data/kattersstructures/structure/deep_blue/city/deep_blue_city_04.nbt` (binary/non-JSON, size 106957 -> 102031)
+- `~ data/kattersstructures/structure/deep_blue/city/deep_blue_city_gate.nbt` (binary/non-JSON, size 797 -> 831)
+- `~ data/kattersstructures/structure/deep_blue/city/flower/deep_blue_city_flower_04.nbt` (binary/non-JSON, size 366 -> 405)
+- `~ data/kattersstructures/structure/deep_blue/city/flower/deep_blue_city_flower_05.nbt` (binary/non-JSON, size 366 -> 405)
+- `~ data/kattersstructures/structure/deep_blue/city/flower/deep_blue_city_flower_06.nbt` (binary/non-JSON, size 326 -> 368)
+- `~ data/kattersstructures/structure/deep_blue/city/flower/deep_blue_city_flower_07.nbt` (binary/non-JSON, size 336 -> 376)
+- `~ data/kattersstructures/structure/deep_blue/city/flower/deep_blue_city_flower_08.nbt` (binary/non-JSON, size 345 -> 385)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_01_01.nbt` (binary/non-JSON, size 1479 -> 1488)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_01_02.nbt` (binary/non-JSON, size 1096 -> 1118)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_01_03.nbt` (binary/non-JSON, size 1040 -> 1059)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_01_04.nbt` (binary/non-JSON, size 1024 -> 1067)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_01_05.nbt` (binary/non-JSON, size 1029 -> 1046)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_02_01.nbt` (binary/non-JSON, size 1142 -> 1165)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_02_03.nbt` (binary/non-JSON, size 1071 -> 1080)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_02_04.nbt` (binary/non-JSON, size 1003 -> 1026)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_02_05.nbt` (binary/non-JSON, size 1021 -> 1052)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_03_01.nbt` (binary/non-JSON, size 1354 -> 1365)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_03_02.nbt` (binary/non-JSON, size 1335 -> 1363)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_03_03.nbt` (binary/non-JSON, size 1221 -> 1222)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_03_04.nbt` (binary/non-JSON, size 1233 -> 1252)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_03_05.nbt` (binary/non-JSON, size 1259 -> 1250)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_04_01.nbt` (binary/non-JSON, size 1426 -> 1450)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_04_02.nbt` (binary/non-JSON, size 1391 -> 1395)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_04_03.nbt` (binary/non-JSON, size 1384 -> 1358)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_04_04.nbt` (binary/non-JSON, size 1304 -> 1321)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_04_05.nbt` (binary/non-JSON, size 1307 -> 1316)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_05_01.nbt` (binary/non-JSON, size 1196 -> 1214)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_05_02.nbt` (binary/non-JSON, size 1227 -> 1247)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_05_03.nbt` (binary/non-JSON, size 1241 -> 1237)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_05_04.nbt` (binary/non-JSON, size 1133 -> 1172)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_05_05.nbt` (binary/non-JSON, size 1311 -> 1326)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_06_01.nbt` (binary/non-JSON, size 548 -> 584)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_06_02.nbt` (binary/non-JSON, size 529 -> 567)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_06_03.nbt` (binary/non-JSON, size 461 -> 495)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_06_04.nbt` (binary/non-JSON, size 466 -> 501)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_07_03.nbt` (binary/non-JSON, size 573 -> 615)
+- `~ data/kattersstructures/structure/deep_blue/city/house/deep_blue_city_house_07_04.nbt` (binary/non-JSON, size 571 -> 615)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_01_01.nbt` (binary/non-JSON, size 975 -> 1011)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_01_02.nbt` (binary/non-JSON, size 782 -> 828)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_01_03.nbt` (binary/non-JSON, size 993 -> 998)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_01_04.nbt` (binary/non-JSON, size 850 -> 882)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_01_05.nbt` (binary/non-JSON, size 892 -> 929)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_01_06.nbt` (binary/non-JSON, size 691 -> 726)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_01_07.nbt` (binary/non-JSON, size 1816 -> 1843)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_01_08.nbt` (binary/non-JSON, size 802 -> 840)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_01_09.nbt` (binary/non-JSON, size 1015 -> 1028)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_02_01.nbt` (binary/non-JSON, size 1000 -> 1035)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_02_02.nbt` (binary/non-JSON, size 966 -> 998)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_02_03.nbt` (binary/non-JSON, size 1448 -> 1476)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_02_04.nbt` (binary/non-JSON, size 742 -> 769)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_02_05.nbt` (binary/non-JSON, size 756 -> 788)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_02_06.nbt` (binary/non-JSON, size 1483 -> 1499)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_03_01.nbt` (binary/non-JSON, size 1359 -> 1376)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_03_02.nbt` (binary/non-JSON, size 1120 -> 1115)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_03_03.nbt` (binary/non-JSON, size 1088 -> 1111)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_03_04.nbt` (binary/non-JSON, size 1088 -> 1105)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_03_06.nbt` (binary/non-JSON, size 1094 -> 1114)
+- `~ data/kattersstructures/structure/deep_blue/city/lab/deep_blue_city_lab_03_07.nbt` (binary/non-JSON, size 1004 -> 1029)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_01_01.nbt` (binary/non-JSON, size 503 -> 536)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_01_02.nbt` (binary/non-JSON, size 429 -> 472)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_01_03.nbt` (binary/non-JSON, size 467 -> 509)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_02_01.nbt` (binary/non-JSON, size 460 -> 501)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_02_02.nbt` (binary/non-JSON, size 386 -> 428)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_02_03.nbt` (binary/non-JSON, size 402 -> 446)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_02_04.nbt` (binary/non-JSON, size 438 -> 483)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_03_01.nbt` (binary/non-JSON, size 492 -> 528)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_03_02.nbt` (binary/non-JSON, size 423 -> 454)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_03_03.nbt` (binary/non-JSON, size 440 -> 471)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_03_04.nbt` (binary/non-JSON, size 476 -> 508)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_04_01.nbt` (binary/non-JSON, size 519 -> 554)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_04_02.nbt` (binary/non-JSON, size 445 -> 484)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_04_03.nbt` (binary/non-JSON, size 470 -> 504)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_04_04.nbt` (binary/non-JSON, size 506 -> 539)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_05_01.nbt` (binary/non-JSON, size 430 -> 473)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_05_02.nbt` (binary/non-JSON, size 360 -> 402)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_05_03.nbt` (binary/non-JSON, size 376 -> 419)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_05_04.nbt` (binary/non-JSON, size 410 -> 455)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_06_01.nbt` (binary/non-JSON, size 494 -> 536)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_06_02.nbt` (binary/non-JSON, size 428 -> 476)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_06_03.nbt` (binary/non-JSON, size 465 -> 506)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_07_01.nbt` (binary/non-JSON, size 491 -> 529)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_07_02.nbt` (binary/non-JSON, size 430 -> 472)
+- `~ data/kattersstructures/structure/deep_blue/city/pipe/deep_blue_city_pipe_07_03.nbt` (binary/non-JSON, size 462 -> 505)
+- `~ data/kattersstructures/structure/deep_blue/lab_ruin/deep_blue_labs_ruin_portal_01.nbt` (binary/non-JSON, size 594 -> 640)
+- `~ data/kattersstructures/structure/deep_blue/lab_ruin/deep_blue_labs_ruin_portal_02.nbt` (binary/non-JSON, size 592 -> 640)
+- `~ data/kattersstructures/structure/deep_blue/lab_ruin/deep_blue_labs_ruin_portal_03.nbt` (binary/non-JSON, size 610 -> 657)
+- `~ data/kattersstructures/structure/deep_blue/lab_ruin/deep_blue_labs_ruin_portal_04.nbt` (binary/non-JSON, size 599 -> 647)
+- `~ data/kattersstructures/structure/deep_blue/lab_ruin/deep_blue_labs_ruin_portal_05.nbt` (binary/non-JSON, size 498 -> 543)
+- `~ data/kattersstructures/structure/deep_blue/lab_ruin/deep_blue_labs_ruin_portal_06.nbt` (binary/non-JSON, size 511 -> 557)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_3x3_decor_01.nbt` (binary/non-JSON, size 790 -> 823)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_3x3_decor_02.nbt` (binary/non-JSON, size 1151 -> 1182)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_3x3_decor_03.nbt` (binary/non-JSON, size 548 -> 580)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_3x3_decor_04.nbt` (binary/non-JSON, size 439 -> 473)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_farm_01.nbt` (binary/non-JSON, size 1312 -> 1298)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_farm_02.nbt` (binary/non-JSON, size 1295 -> 1270)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_farm_03.nbt` (binary/non-JSON, size 1316 -> 1304)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_farm_04.nbt` (binary/non-JSON, size 1318 -> 1295)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_farm_05.nbt` (binary/non-JSON, size 1529 -> 1485)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_farm_06.nbt` (binary/non-JSON, size 2018 -> 2022)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_farm_07.nbt` (binary/non-JSON, size 2648 -> 2620)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_farm_08.nbt` (binary/non-JSON, size 2698 -> 2666)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_farm_09.nbt` (binary/non-JSON, size 1468 -> 1395)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_farm_10.nbt` (binary/non-JSON, size 2077 -> 2062)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_lab_tunnel.nbt` (binary/non-JSON, size 1044 -> 1089)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_midway_decor_01.nbt` (binary/non-JSON, size 372 -> 413)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_midway_decor_02.nbt` (binary/non-JSON, size 1151 -> 1185)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_midway_decor_03.nbt` (binary/non-JSON, size 537 -> 571)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_midway_decor_04.nbt` (binary/non-JSON, size 439 -> 476)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_nox_01.nbt` (binary/non-JSON, size 895 -> 921)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_nox_02.nbt` (binary/non-JSON, size 912 -> 938)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_nox_03.nbt` (binary/non-JSON, size 882 -> 908)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_redstone_01.nbt` (binary/non-JSON, size 622 -> 656)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_redstone_02.nbt` (binary/non-JSON, size 640 -> 671)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_redstone_03.nbt` (binary/non-JSON, size 573 -> 613)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_redstone_04.nbt` (binary/non-JSON, size 524 -> 563)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_redstone_05.nbt` (binary/non-JSON, size 943 -> 969)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_redstone_06.nbt` (binary/non-JSON, size 660 -> 695)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_redstone_07.nbt` (binary/non-JSON, size 647 -> 680)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_redstone_08.nbt` (binary/non-JSON, size 818 -> 853)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_wall_decor_01.nbt` (binary/non-JSON, size 799 -> 834)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_wall_decor_02.nbt` (binary/non-JSON, size 610 -> 650)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_wall_decor_03.nbt` (binary/non-JSON, size 452 -> 488)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_wall_decor_04.nbt` (binary/non-JSON, size 590 -> 623)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_wall_decor_05.nbt` (binary/non-JSON, size 490 -> 527)
+- `~ data/kattersstructures/structure/deep_blue/labs/deep_blue_wall_decor_06.nbt` (binary/non-JSON, size 503 -> 544)
+- `~ data/kattersstructures/structure/deep_blue/portal.nbt` (binary/non-JSON, size 679 -> 709)
+- `~ data/kattersstructures/structure/far_watch/far_watch_01.nbt` (binary/non-JSON, size 305708 -> 294643)
+- `~ data/kattersstructures/structure/far_watch/far_watch_02.nbt` (binary/non-JSON, size 305607 -> 294821)
+- `~ data/kattersstructures/structure/far_watch/far_watch_03.nbt` (binary/non-JSON, size 49731 -> 44630)
+- `~ data/kattersstructures/structure/far_watch/far_watch_04.nbt` (binary/non-JSON, size 308653 -> 293045)
+- `~ data/kattersstructures/structure/far_watch/far_watch_05.nbt` (binary/non-JSON, size 305387 -> 290848)
+- `~ data/kattersstructures/structure/far_watch/far_watch_06.nbt` (binary/non-JSON, size 50919 -> 45905)
+- `~ data/kattersstructures/structure/far_watch/far_watch_07.nbt` (binary/non-JSON, size 306857 -> 294502)
+- `~ data/kattersstructures/structure/far_watch/far_watch_08.nbt` (binary/non-JSON, size 306430 -> 294141)
+- `~ data/kattersstructures/structure/far_watch/far_watch_09.nbt` (binary/non-JSON, size 5252 -> 6445)
+- `~ data/kattersstructures/structure/graveyard/churche.nbt` (binary/non-JSON, size 35469 -> 32656)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_01.nbt` (binary/non-JSON, size 909 -> 929)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_02.nbt` (binary/non-JSON, size 818 -> 829)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_03.nbt` (binary/non-JSON, size 855 -> 874)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_04.nbt` (binary/non-JSON, size 707 -> 726)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_05.nbt` (binary/non-JSON, size 698 -> 716)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_06.nbt` (binary/non-JSON, size 539 -> 553)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_07.nbt` (binary/non-JSON, size 390 -> 404)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_08.nbt` (binary/non-JSON, size 572 -> 587)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_09.nbt` (binary/non-JSON, size 821 -> 837)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_10.nbt` (binary/non-JSON, size 596 -> 614)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_11.nbt` (binary/non-JSON, size 812 -> 824)
+- `~ data/kattersstructures/structure/graveyard/grave/grave_12.nbt` (binary/non-JSON, size 877 -> 897)
+- `~ data/kattersstructures/structure/graveyard/graveyard_cleric.nbt` (binary/non-JSON, size 1094 -> 1127)
+- `~ data/kattersstructures/structure/magic_tower/decor/magic_tower_banner_decor_01.nbt` (binary/non-JSON, size 403 -> 439)
+- `~ data/kattersstructures/structure/magic_tower/decor/magic_tower_banner_decor_02.nbt` (binary/non-JSON, size 373 -> 406)
+- `~ data/kattersstructures/structure/magic_tower/decor/magic_tower_banner_decor_03.nbt` (binary/non-JSON, size 416 -> 454)
+- `~ data/kattersstructures/structure/magic_tower/decor/magic_tower_banner_decor_04.nbt` (binary/non-JSON, size 407 -> 443)
+- `~ data/kattersstructures/structure/magic_tower/decor/magic_tower_banner_decor_05.nbt` (binary/non-JSON, size 421 -> 456)
+- `~ data/kattersstructures/structure/magic_tower/magic_tower_base.nbt` (binary/non-JSON, size 254502 -> 238608)
+- `~ data/kattersstructures/structure/magic_tower/magic_tower_base_2.nbt` (binary/non-JSON, size 308028 -> 293705)
+- `~ data/kattersstructures/structure/magic_tower/magic_tower_base_3.nbt` (binary/non-JSON, size 188474 -> 181732)
+- `~ data/kattersstructures/structure/mobs/mobs_pillager_01.nbt` (binary/non-JSON, size 745 -> 773)
+- `~ data/kattersstructures/structure/mobs/mobs_pillager_02.nbt` (binary/non-JSON, size 728 -> 758)
+- `~ data/kattersstructures/structure/mobs/mobs_pillager_03.nbt` (binary/non-JSON, size 730 -> 757)
+- `~ data/kattersstructures/structure/mobs/mobs_pillager_04.nbt` (binary/non-JSON, size 680 -> 708)
+- `~ data/kattersstructures/structure/mobs/mobs_pillager_05.nbt` (binary/non-JSON, size 719 -> 747)
+- `~ data/kattersstructures/structure/mobs/mobs_pillager_06.nbt` (binary/non-JSON, size 754 -> 783)
+- `~ data/kattersstructures/structure/pillager_village/building/pillager_village_building_big_01.nbt` (binary/non-JSON, size 13628 -> 12319)
+- `~ data/kattersstructures/structure/pillager_village/building/pillager_village_building_big_02.nbt` (binary/non-JSON, size 12750 -> 11888)
+- `~ data/kattersstructures/structure/pillager_village/building/pillager_village_building_small_01.nbt` (binary/non-JSON, size 3712 -> 3522)
+- `~ data/kattersstructures/structure/pillager_village/building/pillager_village_building_small_02.nbt` (binary/non-JSON, size 3709 -> 3519)
+- `~ data/kattersstructures/structure/pillager_village/building/pillager_village_building_small_03.nbt` (binary/non-JSON, size 5474 -> 5030)
+- `~ data/kattersstructures/structure/pillager_village/building/pillager_village_tower_01.nbt` (binary/non-JSON, size 18841 -> 18008)
+- `~ data/kattersstructures/structure/pillager_village/building/pillager_village_tower_02.nbt` (binary/non-JSON, size 2694 -> 2656)
+- `~ data/kattersstructures/structure/pillager_village/building/pillager_village_weapon_01.nbt` (binary/non-JSON, size 3243 -> 3235)
+- `~ data/kattersstructures/structure/pillager_village/building/pillager_village_weapon_02.nbt` (binary/non-JSON, size 3409 -> 3206)
+- `~ data/kattersstructures/structure/pillager_village/building/pillager_village_weapon_platform.nbt` (binary/non-JSON, size 9269 -> 8423)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_big_decor_01.nbt` (binary/non-JSON, size 1222 -> 1253)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_big_decor_02.nbt` (binary/non-JSON, size 768 -> 796)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_big_decor_03.nbt` (binary/non-JSON, size 644 -> 672)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_big_decor_04.nbt` (binary/non-JSON, size 646 -> 680)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_big_decor_05.nbt` (binary/non-JSON, size 418 -> 460)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_big_decor_06.nbt` (binary/non-JSON, size 536 -> 578)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_big_decor_07.nbt` (binary/non-JSON, size 1262 -> 1304)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_big_decor_08.nbt` (binary/non-JSON, size 494 -> 532)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_big_decor_09.nbt` (binary/non-JSON, size 854 -> 896)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_big_decor_10.nbt` (binary/non-JSON, size 1112 -> 1140)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_big_decor_11.nbt` (binary/non-JSON, size 592 -> 635)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_1x1_04.nbt` (binary/non-JSON, size 527 -> 575)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_1x1_05.nbt` (binary/non-JSON, size 819 -> 857)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_roof_01.nbt` (binary/non-JSON, size 621 -> 666)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_small_01.nbt` (binary/non-JSON, size 534 -> 581)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_small_02.nbt` (binary/non-JSON, size 983 -> 1020)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_small_03.nbt` (binary/non-JSON, size 791 -> 841)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_small_04.nbt` (binary/non-JSON, size 537 -> 583)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_wall_01.nbt` (binary/non-JSON, size 589 -> 628)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_wall_02.nbt` (binary/non-JSON, size 555 -> 602)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_wall_03.nbt` (binary/non-JSON, size 584 -> 631)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_wall_04.nbt` (binary/non-JSON, size 408 -> 454)
+- `~ data/kattersstructures/structure/pillager_village/decor/pillager_village_decor_wall_05.nbt` (binary/non-JSON, size 637 -> 679)
+- `~ data/kattersstructures/structure/pillager_village/pillager_village_boss.nbt` (binary/non-JSON, size 1284 -> 1289)
+- `~ data/kattersstructures/structure/pillager_village/pillager_village_main.nbt` (binary/non-JSON, size 282947 -> 274230)
+- `~ data/kattersstructures/structure/pillager_village/wall/pillager_village_wall_01.nbt` (binary/non-JSON, size 1920 -> 1776)
+- `~ data/kattersstructures/structure/pillager_village/wall/pillager_village_wall_02.nbt` (binary/non-JSON, size 1947 -> 1816)
+- `~ data/kattersstructures/structure/pillager_village/wall/pillager_village_wall_03.nbt` (binary/non-JSON, size 2430 -> 2215)
+- `~ data/kattersstructures/structure/ruined_village/center/ruined_center_1.nbt` (binary/non-JSON, size 2505 -> 2466)
+- `~ data/kattersstructures/structure/ruined_village/center/ruined_center_2.nbt` (binary/non-JSON, size 2528 -> 2488)
+- `~ data/kattersstructures/structure/ruined_village/center/ruined_center_3.nbt` (binary/non-JSON, size 2612 -> 2559)
+- `~ data/kattersstructures/structure/ruined_village/center/ruined_center_4.nbt` (binary/non-JSON, size 2280 -> 2214)
+- `~ data/kattersstructures/structure/ruined_village/mobs/mob_1.nbt` (binary/non-JSON, size 907 -> 928)
+- `~ data/kattersstructures/structure/ruined_village/mobs/mob_2.nbt` (binary/non-JSON, size 1215 -> 1243)
+- `~ data/kattersstructures/structure/ruined_village/mobs/mob_3.nbt` (binary/non-JSON, size 970 -> 992)
+- `~ data/kattersstructures/structure/ruined_village/mobs/mob_4.nbt` (binary/non-JSON, size 1104 -> 1126)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_1.nbt` (binary/non-JSON, size 5800 -> 5153)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_10.nbt` (binary/non-JSON, size 1183 -> 1157)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_11.nbt` (binary/non-JSON, size 3545 -> 3347)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_12.nbt` (binary/non-JSON, size 593 -> 609)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_13.nbt` (binary/non-JSON, size 1319 -> 1298)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_14.nbt` (binary/non-JSON, size 716 -> 734)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_2.nbt` (binary/non-JSON, size 1725 -> 1678)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_3.nbt` (binary/non-JSON, size 1682 -> 1627)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_4.nbt` (binary/non-JSON, size 3827 -> 3723)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_5.nbt` (binary/non-JSON, size 2132 -> 2032)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_6.nbt` (binary/non-JSON, size 2200 -> 2116)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_7.nbt` (binary/non-JSON, size 1088 -> 1091)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_8.nbt` (binary/non-JSON, size 1906 -> 1823)
+- `~ data/kattersstructures/structure/ruined_village/ruins/ruin_9.nbt` (binary/non-JSON, size 988 -> 1008)
+- `~ data/kattersstructures/structure/spider_den/spider_den_main.nbt` (binary/non-JSON, size 163169 -> 152392)
+- `~ data/kattersstructures/structure/trader_outposts/villager_01.nbt` (binary/non-JSON, size 895 -> 924)
+- `~ data/kattersstructures/structure/trader_outposts/villager_02.nbt` (binary/non-JSON, size 888 -> 917)
+- `~ data/kattersstructures/structure/trader_outposts/villager_03.nbt` (binary/non-JSON, size 894 -> 922)
+- `~ data/kattersstructures/structure/trader_outposts/villager_04.nbt` (binary/non-JSON, size 890 -> 919)
+- `~ data/kattersstructures/structure/trader_outposts/villager_05.nbt` (binary/non-JSON, size 892 -> 919)
+- `~ data/kattersstructures/structure/trader_outposts/villager_outpost_campsite.nbt` (binary/non-JSON, size 1215 -> 1216)
+- `~ data/kattersstructures/structure/trader_outposts/villager_outpost_tent_01.nbt` (binary/non-JSON, size 2541 -> 2419)
+- `~ data/kattersstructures/structure/trader_outposts/villager_outpost_tent_02.nbt` (binary/non-JSON, size 2535 -> 2436)
+- `~ data/kattersstructures/structure/trader_outposts/villager_outpost_tent_03.nbt` (binary/non-JSON, size 2661 -> 2569)
+- `~ data/kattersstructures/structure/trader_outposts/villager_outpost_tent_04.nbt` (binary/non-JSON, size 3260 -> 3105)
+- `~ data/kattersstructures/structure/trader_outposts/villager_outpost_tent_05.nbt` (binary/non-JSON, size 3276 -> 3122)
+- `~ data/kattersstructures/structure/trader_outposts/villager_outpost_tent_06.nbt` (binary/non-JSON, size 3261 -> 3125)
+- `~ data/kattersstructures/structure/trader_outposts/villager_outpost_wagon_01.nbt` (binary/non-JSON, size 2018 -> 1910)
+- `~ data/kattersstructures/structure/trader_outposts/villager_outpost_wagon_02.nbt` (binary/non-JSON, size 2024 -> 1924)
+- `~ data/kattersstructures/structure/trader_outposts/villager_outpost_wagon_03.nbt` (binary/non-JSON, size 2022 -> 1916)
+- `~ data/kattersstructures/structure/trader_outposts/villager_outpost_wagon_04.nbt` (binary/non-JSON, size 2068 -> 1964)
+- `~ data/kattersstructures/structure/trader_outposts/wagon_interior_01.nbt` (binary/non-JSON, size 679 -> 701)
+- `~ data/kattersstructures/structure/trader_outposts/wagon_interior_02.nbt` (binary/non-JSON, size 476 -> 500)
+- `~ data/kattersstructures/structure/trader_outposts/wagon_interior_03.nbt` (binary/non-JSON, size 1268 -> 1288)
+- `~ data/kattersstructures/structure/trader_outposts/wagon_interior_04.nbt` (binary/non-JSON, size 434 -> 459)
+- `~ data/kattersstructures/structure/trader_outposts/wagon_interior_05.nbt` (binary/non-JSON, size 536 -> 559)
+- `~ data/kattersstructures/structure/village_birch/center.nbt` (binary/non-JSON, size 3200 -> 2972)
+- `~ data/kattersstructures/structure/village_birch/decor/decor_04.nbt` (binary/non-JSON, size 404 -> 429)
+- `~ data/kattersstructures/structure/village_birch/house/armorer.nbt` (binary/non-JSON, size 703 -> 726)
+- `~ data/kattersstructures/structure/village_birch/house/house_1.nbt` (binary/non-JSON, size 6845 -> 6498)
+- `~ data/kattersstructures/structure/village_birch/house/house_2.nbt` (binary/non-JSON, size 11463 -> 10883)
+- `~ data/kattersstructures/structure/village_birch/house/house_3.nbt` (binary/non-JSON, size 6561 -> 6319)
+- `~ data/kattersstructures/structure/village_birch/house/house_4.nbt` (binary/non-JSON, size 6149 -> 5828)
+- `~ data/kattersstructures/structure/village_birch/house/house_5.nbt` (binary/non-JSON, size 3296 -> 3105)
+- `~ data/kattersstructures/structure/village_birch/house/house_6.nbt` (binary/non-JSON, size 3696 -> 3505)
+- `~ data/kattersstructures/structure/village_birch/house/house_7.nbt` (binary/non-JSON, size 5038 -> 4835)
+- `~ data/kattersstructures/structure/village_birch/house/house_8.nbt` (binary/non-JSON, size 8196 -> 7654)
+- `~ data/kattersstructures/structure/village_birch/house/house_9.nbt` (binary/non-JSON, size 12712 -> 12185)
+- `~ data/kattersstructures/structure/village_birch/house/house_special_beekeeper.nbt` (binary/non-JSON, size 20320 -> 19201)
+- `~ data/kattersstructures/structure/village_birch/house/house_special_cartographer.nbt` (binary/non-JSON, size 4819 -> 4608)
+- `~ data/kattersstructures/structure/village_birch/house/house_special_farmer.nbt` (binary/non-JSON, size 829 -> 836)
+- `~ data/kattersstructures/structure/village_birch/house/house_special_fisherman.nbt` (binary/non-JSON, size 7363 -> 7102)
+- `~ data/kattersstructures/structure/village_birch/house/house_special_leatherworker.nbt` (binary/non-JSON, size 8393 -> 7973)
+- `~ data/kattersstructures/structure/village_birch/house/house_special_librarian.nbt` (binary/non-JSON, size 5615 -> 5282)
+- `~ data/kattersstructures/structure/village_birch/house/house_special_shepherd.nbt` (binary/non-JSON, size 5697 -> 5443)
+- `~ data/kattersstructures/structure/village_birch/house/house_special_smith.nbt` (binary/non-JSON, size 7519 -> 7030)
+- `~ data/kattersstructures/structure/village_birch/house/toolsmith.nbt` (binary/non-JSON, size 667 -> 688)
+- `~ data/kattersstructures/structure/village_birch/house/weaponsmith.nbt` (binary/non-JSON, size 584 -> 613)
+- `~ data/kattersstructures/structure/village_cherry/animals/animal_cow_1.nbt` (binary/non-JSON, size 786 -> 809)
+- `~ data/kattersstructures/structure/village_cherry/animals/animal_horse_1.nbt` (binary/non-JSON, size 950 -> 972)
+- `~ data/kattersstructures/structure/village_cherry/animals/animal_horse_2.nbt` (binary/non-JSON, size 951 -> 973)
+- `~ data/kattersstructures/structure/village_cherry/animals/animal_horse_3.nbt` (binary/non-JSON, size 951 -> 973)
+- `~ data/kattersstructures/structure/village_cherry/animals/animal_horse_4.nbt` (binary/non-JSON, size 952 -> 974)
+- `~ data/kattersstructures/structure/village_cherry/animals/animal_horse_5.nbt` (binary/non-JSON, size 906 -> 931)
+- `~ data/kattersstructures/structure/village_cherry/animals/animal_horse_6.nbt` (binary/non-JSON, size 955 -> 977)
+- `~ data/kattersstructures/structure/village_cherry/animals/animal_pig_1.nbt` (binary/non-JSON, size 784 -> 809)
+- `~ data/kattersstructures/structure/village_cherry/animals/animal_pig_2.nbt` (binary/non-JSON, size 868 -> 893)
+- `~ data/kattersstructures/structure/village_cherry/animals/animal_sheep_1.nbt` (binary/non-JSON, size 790 -> 815)
+- `~ data/kattersstructures/structure/village_cherry/animals/animal_sheep_2.nbt` (binary/non-JSON, size 879 -> 904)
+- `~ data/kattersstructures/structure/village_cherry/decor/decor_bamboo.nbt` (binary/non-JSON, size 650 -> 678)
+- `~ data/kattersstructures/structure/village_cherry/decor/decor_fence.nbt` (binary/non-JSON, size 381 -> 408)
+- `~ data/kattersstructures/structure/village_cherry/decor/decor_hay.nbt` (binary/non-JSON, size 384 -> 409)
+- `~ data/kattersstructures/structure/village_cherry/decor/decor_light_1.nbt` (binary/non-JSON, size 601 -> 626)
+- `~ data/kattersstructures/structure/village_cherry/decor/decor_light_2.nbt` (binary/non-JSON, size 399 -> 425)
+- `~ data/kattersstructures/structure/village_cherry/farms/farm_5.nbt` (binary/non-JSON, size 1186 -> 1142)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_armorer.nbt` (binary/non-JSON, size 3439 -> 3304)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_butcher.nbt` (binary/non-JSON, size 3741 -> 3515)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_cartographer.nbt` (binary/non-JSON, size 3777 -> 3542)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_cleric.nbt` (binary/non-JSON, size 4544 -> 4215)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_farmer.nbt` (binary/non-JSON, size 820 -> 818)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_fisherman.nbt` (binary/non-JSON, size 3533 -> 3326)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_fletcher.nbt` (binary/non-JSON, size 2772 -> 2659)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_leatherworker.nbt` (binary/non-JSON, size 3223 -> 3038)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_librarian.nbt` (binary/non-JSON, size 4112 -> 3864)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_mason.nbt` (binary/non-JSON, size 2962 -> 2808)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_shepherd.nbt` (binary/non-JSON, size 2895 -> 2788)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_toolsmith.nbt` (binary/non-JSON, size 3474 -> 3264)
+- `~ data/kattersstructures/structure/village_cherry/house/profession/house_weaponsmith.nbt` (binary/non-JSON, size 3452 -> 3195)
+- `~ data/kattersstructures/structure/village_cherry/house/rare/house_pagode.nbt` (binary/non-JSON, size 11150 -> 10317)
+- `~ data/kattersstructures/structure/village_cherry/house/rare/house_rare.nbt` (binary/non-JSON, size 8517 -> 7757)
+- `~ data/kattersstructures/structure/village_cherry/house/residence/house_long.nbt` (binary/non-JSON, size 3277 -> 3035)
+- `~ data/kattersstructures/structure/village_cherry/house/residence/house_small.nbt` (binary/non-JSON, size 2241 -> 2151)
+- `~ data/kattersstructures/structure/village_cherry/house/residence/house_small_2.nbt` (binary/non-JSON, size 2123 -> 2039)
+- `~ data/kattersstructures/structure/village_cherry/house/residence/house_tiny.nbt` (binary/non-JSON, size 1819 -> 1765)
+- `~ data/kattersstructures/structure/village_cherry/house/residence/house_two_story.nbt` (binary/non-JSON, size 3537 -> 3338)
+- `~ data/kattersstructures/structure/village_cherry/streets/street_end.nbt` (binary/non-JSON, size 1575 -> 1567)
+- `~ data/kattersstructures/structure/village_cherry/town_centers/shrine_center.nbt` (binary/non-JSON, size 7134 -> 6948)
+- `~ data/kattersstructures/structure/village_jungle/decor/decor_fence.nbt` (binary/non-JSON, size 381 -> 408)
+- `~ data/kattersstructures/structure/village_jungle/decor/decor_hay.nbt` (binary/non-JSON, size 397 -> 418)
+- `~ data/kattersstructures/structure/village_jungle/decor/decor_light.nbt` (binary/non-JSON, size 463 -> 487)
+- `~ data/kattersstructures/structure/village_jungle/farms/farm_1.nbt` (binary/non-JSON, size 837 -> 828)
+- `~ data/kattersstructures/structure/village_jungle/house/profession/house_armorer.nbt` (binary/non-JSON, size 1867 -> 1862)
+- `~ data/kattersstructures/structure/village_jungle/house/profession/house_butcher.nbt` (binary/non-JSON, size 2484 -> 2416)
+- `~ data/kattersstructures/structure/village_jungle/house/profession/house_fisherman.nbt` (binary/non-JSON, size 2228 -> 2154)
+- `~ data/kattersstructures/structure/village_jungle/house/profession/house_fletcher.nbt` (binary/non-JSON, size 1656 -> 1643)
+- `~ data/kattersstructures/structure/village_jungle/house/profession/house_leatherworker.nbt` (binary/non-JSON, size 1499 -> 1504)
+- `~ data/kattersstructures/structure/village_jungle/house/profession/house_shepherd.nbt` (binary/non-JSON, size 1854 -> 1814)
+- `~ data/kattersstructures/structure/village_jungle/house/profession/house_toolsmith.nbt` (binary/non-JSON, size 1619 -> 1618)
+- `~ data/kattersstructures/structure/village_jungle/house/profession/house_weaponsmith.nbt` (binary/non-JSON, size 1633 -> 1614)
+- `~ data/kattersstructures/structure/village_jungle/house/residence/house_2.nbt` (binary/non-JSON, size 1659 -> 1615)
+- `~ data/kattersstructures/structure/village_jungle/house/residence/house_3.nbt` (binary/non-JSON, size 1642 -> 1605)
+- `~ data/kattersstructures/structure/village_jungle/house/residence/house_4.nbt` (binary/non-JSON, size 3270 -> 3091)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/bigdecor/tree_bigdecor_clear.nbt` (binary/non-JSON, size 1816 -> 1744)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/bigdecor/tree_bigdecor_honey.nbt` (binary/non-JSON, size 3707 -> 3632)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/bigdecor/tree_bigdecor_mushroom.nbt` (binary/non-JSON, size 1878 -> 1849)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_1/tree_branch_1_clear.nbt` (binary/non-JSON, size 3336 -> 3218)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_1/tree_branch_1_house_1.nbt` (binary/non-JSON, size 3728 -> 3586)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_1/tree_branch_1_house_2.nbt` (binary/non-JSON, size 3473 -> 3392)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_2/tree_branch_2_clear.nbt` (binary/non-JSON, size 3001 -> 2861)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_2/tree_branch_2_clear_2.nbt` (binary/non-JSON, size 7163 -> 6919)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_2/tree_branch_2_cleric.nbt` (binary/non-JSON, size 7773 -> 7521)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_2/tree_branch_2_house_1.nbt` (binary/non-JSON, size 3250 -> 3086)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_2/tree_branch_2_house_2.nbt` (binary/non-JSON, size 8132 -> 7861)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_2/tree_branch_2_librarian.nbt` (binary/non-JSON, size 3416 -> 3262)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_3/tree_branch_3.nbt` (binary/non-JSON, size 2351 -> 2242)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_4/tree_branch_4_clear.nbt` (binary/non-JSON, size 8054 -> 7669)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_4/tree_branch_4_house_1.nbt` (binary/non-JSON, size 8511 -> 8053)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_4/tree_branch_4_house_2.nbt` (binary/non-JSON, size 8756 -> 8298)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_4/tree_branch_4_lookout.nbt` (binary/non-JSON, size 8253 -> 7863)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_5/tree_branch_5_clear.nbt` (binary/non-JSON, size 4632 -> 4458)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_6/tree_branch_6_clear.nbt` (binary/non-JSON, size 982 -> 1000)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_7/tree_branch_7_clear.nbt` (binary/non-JSON, size 1151 -> 1139)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/branch_8/tree_branch_8_clear.nbt` (binary/non-JSON, size 903 -> 904)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/decor/tree_decor_lamp_4.nbt` (binary/non-JSON, size 492 -> 527)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/house_1/tree_house_1_clear.nbt` (binary/non-JSON, size 1601 -> 1559)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/house_1/tree_house_1_house_1.nbt` (binary/non-JSON, size 1988 -> 1926)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/house_1/tree_house_1_house_2.nbt` (binary/non-JSON, size 1884 -> 1823)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/house_1/tree_house_1_house_3.nbt` (binary/non-JSON, size 1915 -> 1863)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/house_2/tree_house_2_cartographer.nbt` (binary/non-JSON, size 2066 -> 2046)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/house_2/tree_house_2_clear.nbt` (binary/non-JSON, size 1449 -> 1413)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/house_2/tree_house_2_house_1.nbt` (binary/non-JSON, size 1755 -> 1723)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/house_3/tree_house_3_clear.nbt` (binary/non-JSON, size 2749 -> 2634)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/house_3/tree_house_3_disco.nbt` (binary/non-JSON, size 4605 -> 4476)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/house_3/tree_house_3_house_1.nbt` (binary/non-JSON, size 3001 -> 2884)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/house_3/tree_house_3_house_2.nbt` (binary/non-JSON, size 2859 -> 2742)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/tree_trunk_base.nbt` (binary/non-JSON, size 75772 -> 70965)
+- `~ data/kattersstructures/structure/village_jungle/main_tree/tree_trunk_top.nbt` (binary/non-JSON, size 24426 -> 22535)
+- `~ data/kattersstructures/structure/village_jungle/villager/villagers_jungle_baby.nbt` (binary/non-JSON, size 947 -> 981)
+- `~ data/kattersstructures/structure/village_jungle/villager/villagers_jungle_nitwit.nbt` (binary/non-JSON, size 789 -> 823)
+- `~ data/kattersstructures/structure/village_jungle/villager/villagers_jungle_unemployed.nbt` (binary/non-JSON, size 887 -> 926)
+- `~ data/kattersstructures/structure/village_mesa/barkeeper.nbt` (binary/non-JSON, size 900 -> 918)
+- `~ data/kattersstructures/structure/village_mesa/decor/water_tower.nbt` (binary/non-JSON, size 1614 -> 1596)
+- `~ data/kattersstructures/structure/village_mesa/house/armorer.nbt` (binary/non-JSON, size 605 -> 629)
+- `~ data/kattersstructures/structure/village_mesa/house/house_1.nbt` (binary/non-JSON, size 3778 -> 3596)
+- `~ data/kattersstructures/structure/village_mesa/house/house_2.nbt` (binary/non-JSON, size 2632 -> 2494)
+- `~ data/kattersstructures/structure/village_mesa/house/house_3.nbt` (binary/non-JSON, size 3076 -> 2963)
+- `~ data/kattersstructures/structure/village_mesa/house/house_4.nbt` (binary/non-JSON, size 2874 -> 2730)
+- `~ data/kattersstructures/structure/village_mesa/house/house_5.nbt` (binary/non-JSON, size 3061 -> 2902)
+- `~ data/kattersstructures/structure/village_mesa/house/house_6.nbt` (binary/non-JSON, size 2689 -> 2557)
+- `~ data/kattersstructures/structure/village_mesa/house/house_7.nbt` (binary/non-JSON, size 2927 -> 2798)
+- `~ data/kattersstructures/structure/village_mesa/house/house_8.nbt` (binary/non-JSON, size 2946 -> 2796)
+- `~ data/kattersstructures/structure/village_mesa/house/house_9.nbt` (binary/non-JSON, size 2952 -> 2834)
+- `~ data/kattersstructures/structure/village_mesa/house/house_special_fletcher.nbt` (binary/non-JSON, size 2607 -> 2530)
+- `~ data/kattersstructures/structure/village_mesa/house/house_special_prison.nbt` (binary/non-JSON, size 3502 -> 3356)
+- `~ data/kattersstructures/structure/village_mesa/house/house_special_saloon.nbt` (binary/non-JSON, size 3277 -> 3171)
+- `~ data/kattersstructures/structure/village_mesa/house/house_special_smith.nbt` (binary/non-JSON, size 2896 -> 2801)
+- `~ data/kattersstructures/structure/village_mesa/house/house_special_storage.nbt` (binary/non-JSON, size 2044 -> 1956)
+- `~ data/kattersstructures/structure/village_mesa/house/house_special_toilet.nbt` (binary/non-JSON, size 2389 -> 2322)
+- `~ data/kattersstructures/structure/village_mesa/house/toolsmith.nbt` (binary/non-JSON, size 574 -> 597)
+- `~ data/kattersstructures/structure/village_mesa/house/weaponsmith.nbt` (binary/non-JSON, size 614 -> 642)
+- `~ data/kattersstructures/structure/village_mesa/streets/end.nbt` (binary/non-JSON, size 3647 -> 3674)
+- `~ data/kattersstructures/structure/village_mesa/streets/street_normal.nbt` (binary/non-JSON, size 3355 -> 3243)
+- `~ data/kattersstructures/structure/village_mesa/streets/street_special.nbt` (binary/non-JSON, size 3388 -> 3280)
+- `~ data/kattersstructures/structure/village_mesa/streets/street_start.nbt` (binary/non-JSON, size 3598 -> 3508)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_armorer.nbt` (binary/non-JSON, size 3638 -> 3473)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_butcher.nbt` (binary/non-JSON, size 4587 -> 4310)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_cartographer.nbt` (binary/non-JSON, size 3180 -> 3043)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_cleric.nbt` (binary/non-JSON, size 1987 -> 1956)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_farmer.nbt` (binary/non-JSON, size 788 -> 783)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_fisherman.nbt` (binary/non-JSON, size 3107 -> 3027)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_fletcher.nbt` (binary/non-JSON, size 3690 -> 3514)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_leatherworker.nbt` (binary/non-JSON, size 3248 -> 3128)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_librarian.nbt` (binary/non-JSON, size 3730 -> 3519)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_mason.nbt` (binary/non-JSON, size 2984 -> 2832)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_shepherd.nbt` (binary/non-JSON, size 4286 -> 4048)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_toolsmith.nbt` (binary/non-JSON, size 3726 -> 3540)
+- `~ data/kattersstructures/structure/village_swamp/house/profession/house_weaponsmith.nbt` (binary/non-JSON, size 3559 -> 3374)
+- `~ data/kattersstructures/structure/village_swamp/house/rare/house_rare.nbt` (binary/non-JSON, size 4645 -> 4321)
+- `~ data/kattersstructures/structure/village_swamp/house/rare/house_rare_2.nbt` (binary/non-JSON, size 10220 -> 9486)
+- `~ data/kattersstructures/structure/village_swamp/house/rare/house_rare_3.nbt` (binary/non-JSON, size 875 -> 886)
+- `~ data/kattersstructures/structure/village_swamp/house/residence/house_1.nbt` (binary/non-JSON, size 2736 -> 2594)
+- `~ data/kattersstructures/structure/village_swamp/house/residence/house_2.nbt` (binary/non-JSON, size 3553 -> 3330)
+- `~ data/kattersstructures/structure/village_swamp/house/residence/house_3.nbt` (binary/non-JSON, size 4817 -> 4434)
+- `~ data/kattersstructures/structure/village_swamp/house/residence/house_4.nbt` (binary/non-JSON, size 5774 -> 5385)
+- `~ data/kattersstructures/structure/village_swamp/house/residence/house_5.nbt` (binary/non-JSON, size 4014 -> 3714)
+- `~ data/kattersstructures/structure/village_swamp/town_center/town_center.nbt` (binary/non-JSON, size 2166 -> 2139)
+- `~ data/kattersstructures/structure/village_swamp/villager/villagers_swamp_baby.nbt` (binary/non-JSON, size 921 -> 952)
+- `~ data/kattersstructures/structure/village_swamp/villager/villagers_swamp_nitwit.nbt` (binary/non-JSON, size 808 -> 842)
+- `~ data/kattersstructures/structure/village_swamp/villager/villagers_swamp_unemployed.nbt` (binary/non-JSON, size 893 -> 930)
+- `~ data/kattersstructures/structure/villager_desert/villager_desert.nbt` (binary/non-JSON, size 1549 -> 1511)
+- `~ data/kattersstructures/structure/villager_mountain/villager_mountain.nbt` (binary/non-JSON, size 2150 -> 2068)
+- `~ data/kattersstructures/structure/windmill/decor/hay_01.nbt` (binary/non-JSON, size 390 -> 416)
+- `~ data/kattersstructures/structure/windmill/decor/hay_02.nbt` (binary/non-JSON, size 420 -> 446)
+- `~ data/kattersstructures/structure/windmill/decor/scarecrow_01.nbt` (binary/non-JSON, size 510 -> 539)
+- `~ data/kattersstructures/structure/windmill/decor/scarecrow_02.nbt` (binary/non-JSON, size 508 -> 537)
+- `~ data/kattersstructures/structure/windmill/decor/scarecrow_03.nbt` (binary/non-JSON, size 569 -> 605)
+- `~ data/kattersstructures/structure/windmill/decor/scarecrow_04.nbt` (binary/non-JSON, size 542 -> 576)
+- `~ data/kattersstructures/structure/windmill/decor/stone_01.nbt` (binary/non-JSON, size 365 -> 393)
+- `~ data/kattersstructures/structure/windmill/windmill.nbt` (binary/non-JSON, size 23932 -> 23194)
+- `~ data/kattersstructures/structure/witch_circle/witch_1.nbt` (binary/non-JSON, size 774 -> 792)
+- `~ data/kattersstructures/structure/witch_circle/witch_2.nbt` (binary/non-JSON, size 838 -> 855)
+- `~ data/kattersstructures/structure/witch_circle/witch_3.nbt` (binary/non-JSON, size 914 -> 931)
+- `~ data/kattersstructures/structure/witch_circle/witch_circle.nbt` (binary/non-JSON, size 6162 -> 5726)
+- `~ data/kattersstructures/worldgen/structure/armory.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/kattersstructures/worldgen/structure/deep_blue_city.json` (whitespace/formatting only)
+- `~ data/kattersstructures/worldgen/structure/deep_blue_lab_ruin.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/kattersstructures/worldgen/structure/deep_blue_labs.json` (whitespace/formatting only)
+- `~ data/kattersstructures/worldgen/structure/far_watch.json` (whitespace/formatting only)
+- `~ data/kattersstructures/worldgen/structure/graveyard.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/kattersstructures/worldgen/structure/magic_tower.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/kattersstructures/worldgen/structure/pillager_village.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/kattersstructures/worldgen/structure/red_coral.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/kattersstructures/worldgen/structure/spider_den.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/kattersstructures/worldgen/structure/village_mesa.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/kattersstructures/worldgen/structure/villager_mountain.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/kattersstructures/worldgen/structure/windmill.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/kattersstructures/worldgen/structure/witch_circle.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `121.0` -> `94`
+  - `pack.min_format`: `121.0` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `NeoEnchant-5.16.0` (added: 2, removed: 0, modified: 43)
+**Added files:**
+- `+ data/enchantplus/worldgen/feature/seiors_oblivion.json`
+- `+ data/minecraft/tags/damage_type/fly_into_wall.json`
+**Modified files:**
+- `~ data/enchantplus/advancement/actions/bright_vision.json`:
+  - `criteria.inventory_check.conditions.player.entity`: `<MISSING>` -> `this`
+  - `criteria.inventory_check.conditions.player.periodic_tick`: `300` -> `<REMOVED>`
+  - `criteria.inventory_check.conditions.player.predicate`: `<MISSING>` -> `{"slots": {"armor.*": {"predicates": {"minecraft:enchantments": [{"enchantments": "enchantplus:helmet/bright_vision", "l...`
+  - `criteria.inventory_check.conditions.player.slots`: `{"armor.*": {"predicates": {"minecraft:enchantments": [{"enchantments": "enchantplus:helmet/bright_vision", "levels": {"...` -> `<REMOVED>`
+  - `criteria.inventory_check.conditions.player.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `criteria.on_change.conditions.player.entity`: `<MISSING>` -> `this`
+  - `criteria.on_change.conditions.player.predicate`: `<MISSING>` -> `{"slots": {"armor.*": {"predicates": {"minecraft:enchantments": [{"enchantments": "enchantplus:helmet/bright_vision", "l...`
+  - `criteria.on_change.conditions.player.slots`: `{"armor.*": {"predicates": {"minecraft:enchantments": [{"enchantments": "enchantplus:helmet/bright_vision", "levels": {"...` -> `<REMOVED>`
+  - `criteria.on_change.conditions.player.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/advancement/actions/harvest.json`:
+  - `criteria.requirements.conditions.location`: `[{"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:crops"}}}]` -> `{"type": "minecraft:match_block", "blocks": "#minecraft:crops"}`
+  - `criteria.requirements.conditions.player.entity`: `<MISSING>` -> `this`
+  - `criteria.requirements.conditions.player.equipment`: `{"offhand": {"predicates": {"minecraft:enchantments": [{"enchantments": "enchantplus:hoe/harvest", "levels": {"min": 1}}...` -> `<REMOVED>`
+  - `criteria.requirements.conditions.player.predicate`: `<MISSING>` -> `{"equipment": {"offhand": {"predicates": {"minecraft:enchantments": [{"enchantments": "enchantplus:hoe/harvest", "levels...`
+  - `criteria.requirements.conditions.player.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/advancement/root.json`:
+  - `criteria.requirement.conditions.location`: `[{"condition": "minecraft:location_check", "predicate": {"block": {"blocks": ["minecraft:enchanting_table"]}}}]` -> `{"type": "minecraft:match_block", "blocks": "minecraft:enchanting_table"}`
+- `~ data/enchantplus/enchantment/armor/venom_protection.json`:
+  - `effects.minecraft:tick[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:tick[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/axe/timber.json`:
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/boots/lava_walker.json`:
+  - `effects.minecraft:damage_immunity[0].requirements.condition`: `minecraft:damage_source_properties` -> `<REMOVED>`
+  - `effects.minecraft:damage_immunity[0].requirements.predicate.tags[0].id`: `minecraft:burn_from_stepping` -> `#minecraft:burn_from_stepping`
+  - `effects.minecraft:damage_immunity[0].requirements.predicate.tags[1].id`: `minecraft:bypasses_invulnerability` -> `#minecraft:bypasses_invulnerability`
+  - `effects.minecraft:damage_immunity[0].requirements.type`: `<MISSING>` -> `minecraft:damage_source_properties`
+  - `effects.minecraft:location_changed[0].effect.block_state.entries[0].data.Name`: `minecraft:magma_block` -> `<REMOVED>`
+  - `effects.minecraft:location_changed[0].effect.block_state.entries[0].data.id`: `<MISSING>` -> `minecraft:magma_block`
+  - `effects.minecraft:location_changed[0].effect.block_state.type`: `minecraft:weighted_state_provider` -> `minecraft:weighted`
+  - `effects.minecraft:location_changed[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:location_changed[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/boots/step_assist.json`:
+  - `effects.minecraft:location_changed[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:location_changed[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/bow/breezing_arrow.json`:
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:post_attack[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/bow/echo_shot.json`:
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[0].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[0].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].condition`: `minecraft:inverted` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].term.condition`: `minecraft:location_check` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].term.type`: `<MISSING>` -> `minecraft:location_check`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].type`: `<MISSING>` -> `minecraft:inverted`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:all_of`
+  - `effects.minecraft:post_attack[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/bow/eternal_frost.json`:
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:hit_block[1].effect.block_state.state.Name`: `minecraft:frosted_ice` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[1].effect.block_state.state.Properties`: `{"age": "0"}` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[1].effect.block_state.state.id`: `<MISSING>` -> `minecraft:frosted_ice`
+  - `effects.minecraft:hit_block[1].effect.block_state.state.properties`: `<MISSING>` -> `{"age": "0"}`
+  - `effects.minecraft:hit_block[1].effect.block_state.type`: `minecraft:simple_state_provider` -> `minecraft:simple`
+  - `effects.minecraft:hit_block[1].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[1].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:post_attack[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/bow/explosive_arrow.json`:
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[0].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[0].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].condition`: `minecraft:inverted` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].term.condition`: `minecraft:location_check` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].term.type`: `<MISSING>` -> `minecraft:location_check`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].type`: `<MISSING>` -> `minecraft:inverted`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:all_of`
+  - `effects.minecraft:post_attack[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/bow/storm_arrow.json`:
+  - `effects.minecraft:hit_block[0].requirements`: `[{"condition": "minecraft:weather_check", "thundering": true}, {"condition": "minecraft:entity_properties", "entity": "t...` -> `{"type": "minecraft:all_of", "terms": [{"type": "minecraft:weather_check", "thundering": true}, {"type": "minecraft:enti...`
+  - `effects.minecraft:hit_block[1].requirements`: `[{"condition": "minecraft:weather_check", "thundering": false}, {"condition": "minecraft:entity_properties", "entity": "...` -> `{"type": "minecraft:all_of", "terms": [{"type": "minecraft:weather_check", "thundering": false}, {"type": "minecraft:ent...`
+  - `effects.minecraft:post_attack[0].requirements`: `[{"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraft:location": {"can_see_sky": true...` -> `{"type": "minecraft:all_of", "terms": [{"type": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraf...`
+  - `effects.minecraft:post_attack[1].requirements`: `[{"condition": "minecraft:weather_check", "thundering": false}, {"condition": "minecraft:entity_properties", "entity": "...` -> `{"type": "minecraft:all_of", "terms": [{"type": "minecraft:weather_check", "thundering": false}, {"type": "minecraft:ent...`
+- `~ data/enchantplus/enchantment/chestplate/builder_arm.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+- `~ data/enchantplus/enchantment/durability/curse_of_breaking.json`:
+  - `effects.minecraft:item_damage[0].requirements.condition`: `minecraft:random_chance` -> `<REMOVED>`
+  - `effects.minecraft:item_damage[0].requirements.type`: `<MISSING>` -> `minecraft:random_chance`
+- `~ data/enchantplus/enchantment/elytra/armored.json`:
+  - `effects.minecraft:damage_protection[0].requirements.condition`: `minecraft:damage_source_properties` -> `<REMOVED>`
+  - `effects.minecraft:damage_protection[0].requirements.predicate.tags[0].id`: `minecraft:bypasses_invulnerability` -> `#minecraft:bypasses_invulnerability`
+  - `effects.minecraft:damage_protection[0].requirements.type`: `<MISSING>` -> `minecraft:damage_source_properties`
+- `~ data/enchantplus/enchantment/elytra/kinetic_protection.json`:
+  - `effects.minecraft:damage_protection[0].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:damage_protection[0].requirements.terms[0].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:damage_protection[0].requirements.terms[0].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:damage_protection[0].requirements.terms[1].condition`: `minecraft:damage_source_properties` -> `<REMOVED>`
+  - `effects.minecraft:damage_protection[0].requirements.terms[1].predicate.tags[0].id`: `minecraft:fly_into_wall` -> `#minecraft:fly_into_wall`
+  - `effects.minecraft:damage_protection[0].requirements.terms[1].type`: `<MISSING>` -> `minecraft:damage_source_properties`
+  - `effects.minecraft:damage_protection[0].requirements.type`: `<MISSING>` -> `minecraft:all_of`
+- `~ data/enchantplus/enchantment/elytra/propulsion.json`:
+  - `effects.minecraft:tick[0].requirements`: `[{"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraft:movement": {"speed": {"max": 35...` -> `{"type": "minecraft:all_of", "terms": [{"type": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraf...`
+- `~ data/enchantplus/enchantment/helmet/auto_feed.json`:
+  - `effects.minecraft:tick[0].requirements`: `[{"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraft:periodic_tick": 3600}}]` -> `{"type": "minecraft:all_of", "terms": [{"type": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraf...`
+- `~ data/enchantplus/enchantment/helmet/voidless.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+  - `effects.minecraft:location_changed[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:location_changed[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/hoe/scyther.json`:
+  - `effects.minecraft:hit_block[0].effect.block_state.state.Name`: `minecraft:farmland` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].effect.block_state.state.id`: `<MISSING>` -> `minecraft:farmland`
+  - `effects.minecraft:hit_block[0].effect.block_state.type`: `minecraft:simple_state_provider` -> `minecraft:simple`
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:location_check` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:location_check`
+- `~ data/enchantplus/enchantment/hoe/seiors_oblivion.json`:
+  - `effects.minecraft:location_changed[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:location_changed[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/leggings/fast_swim.json`:
+  - `effects.minecraft:tick[0].requirements`: `[{"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraft:flags": {"is_swimming": true}, ...` -> `{"type": "minecraft:all_of", "terms": [{"type": "minecraft:entity_properties", "entity": "this", "predicate": {"minecraf...`
+- `~ data/enchantplus/enchantment/mace/striker.json`:
+  - `effects.minecraft:damage_immunity[0].requirements.condition`: `minecraft:damage_source_properties` -> `<REMOVED>`
+  - `effects.minecraft:damage_immunity[0].requirements.predicate.tags[0].id`: `minecraft:is_lightning` -> `#minecraft:is_lightning`
+  - `effects.minecraft:damage_immunity[0].requirements.type`: `<MISSING>` -> `minecraft:damage_source_properties`
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[0].condition`: `minecraft:weather_check` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[0].type`: `<MISSING>` -> `minecraft:weather_check`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].condition`: `minecraft:location_check` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].type`: `<MISSING>` -> `minecraft:location_check`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:all_of`
+  - `effects.minecraft:post_attack[0].requirements.condition`: `minecraft:any_of` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.terms[0].condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.terms[0].terms[0].condition`: `minecraft:weather_check` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.terms[0].terms[0].type`: `<MISSING>` -> `minecraft:weather_check`
+  - `effects.minecraft:post_attack[0].requirements.terms[0].terms[1].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.terms[0].terms[1].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:post_attack[0].requirements.terms[0].type`: `<MISSING>` -> `minecraft:all_of`
+  - `effects.minecraft:post_attack[0].requirements.terms[1].condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.terms[1].terms[0].condition`: `minecraft:random_chance` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.terms[1].terms[0].type`: `<MISSING>` -> `minecraft:random_chance`
+  - `effects.minecraft:post_attack[0].requirements.terms[1].terms[1].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.terms[1].terms[1].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:post_attack[0].requirements.terms[1].type`: `<MISSING>` -> `minecraft:all_of`
+  - `effects.minecraft:post_attack[0].requirements.type`: `<MISSING>` -> `minecraft:any_of`
+  - `effects.minecraft:tick[0].requirements.condition`: `minecraft:weather_check` -> `<REMOVED>`
+  - `effects.minecraft:tick[0].requirements.type`: `<MISSING>` -> `minecraft:weather_check`
+- `~ data/enchantplus/enchantment/mace/teluric_wave.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[0].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[0].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].condition`: `minecraft:inverted` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].term.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].term.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:hit_block[0].requirements.terms[1].type`: `<MISSING>` -> `minecraft:inverted`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:all_of`
+  - `effects.minecraft:hit_block[1].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[1].requirements.terms[0].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[1].requirements.terms[0].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:hit_block[1].requirements.terms[1].condition`: `minecraft:inverted` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[1].requirements.terms[1].term.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[1].requirements.terms[1].term.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:hit_block[1].requirements.terms[1].type`: `<MISSING>` -> `minecraft:inverted`
+  - `effects.minecraft:hit_block[1].requirements.type`: `<MISSING>` -> `minecraft:all_of`
+  - `effects.minecraft:hit_block[2].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[2].requirements.terms[0].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[2].requirements.terms[0].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:hit_block[2].requirements.terms[1].condition`: `minecraft:inverted` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[2].requirements.terms[1].term.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[2].requirements.terms[1].term.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:hit_block[2].requirements.terms[1].type`: `<MISSING>` -> `minecraft:inverted`
+  - ... and 1 more key diffs
+- `~ data/enchantplus/enchantment/mace/wind_propulsion.json`:
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/midas_touch.json`:
+  - `effects.minecraft:hit_block[0].effect.block_state.entries[0].data.Name`: `minecraft:gold_block` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].effect.block_state.entries[0].data.id`: `<MISSING>` -> `minecraft:gold_block`
+  - `effects.minecraft:hit_block[0].effect.block_state.entries[1].data.Name`: `minecraft:gold_ore` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].effect.block_state.entries[1].data.id`: `<MISSING>` -> `minecraft:gold_ore`
+  - `effects.minecraft:hit_block[0].effect.block_state.type`: `minecraft:weighted_state_provider` -> `minecraft:weighted`
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/mounted/cavalier_egis.json`:
+  - `effects.minecraft:damage_protection[0].requirements.condition`: `minecraft:damage_source_properties` -> `<REMOVED>`
+  - `effects.minecraft:damage_protection[0].requirements.predicate.tags[0].id`: `minecraft:bypasses_invulnerability` -> `#minecraft:bypasses_invulnerability`
+  - `effects.minecraft:damage_protection[0].requirements.type`: `<MISSING>` -> `minecraft:damage_source_properties`
+- `~ data/enchantplus/enchantment/pickaxe/bedrock_breaker.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+  - `effects.minecraft:hit_block[1].effect.effects[2].block_state.state.Name`: `minecraft:air` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[1].effect.effects[2].block_state.state.id`: `<MISSING>` -> `minecraft:air`
+  - `effects.minecraft:hit_block[1].effect.effects[2].block_state.type`: `minecraft:simple_state_provider` -> `minecraft:simple`
+  - `effects.minecraft:hit_block[1].requirements`: `[{"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#enchantplus:bedrock_breaker"}}}]` -> `{"type": "minecraft:all_of", "terms": [{"type": "minecraft:location_check", "predicate": {"block": {"blocks": "#enchantp...`
+- `~ data/enchantplus/enchantment/pickaxe/spawner_touch.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+- `~ data/enchantplus/enchantment/pickaxe/vein_miner.json`:
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/sword/critical.json`:
+  - `effects.minecraft:armor_effectiveness[0].requirements.condition`: `minecraft:random_chance` -> `<REMOVED>`
+  - `effects.minecraft:armor_effectiveness[0].requirements.type`: `<MISSING>` -> `minecraft:random_chance`
+- `~ data/enchantplus/enchantment/sword/death_touch.json`:
+  - `effects.minecraft:post_attack[0].requirements.condition`: `minecraft:random_chance` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.type`: `<MISSING>` -> `minecraft:random_chance`
+- `~ data/enchantplus/enchantment/sword/dimensional_hit.json`:
+  - `effects.minecraft:damage[0].requirements.condition`: `minecraft:inverted` -> `<REMOVED>`
+  - `effects.minecraft:damage[0].requirements.term.condition`: `minecraft:location_check` -> `<REMOVED>`
+  - `effects.minecraft:damage[0].requirements.term.type`: `<MISSING>` -> `minecraft:location_check`
+  - `effects.minecraft:damage[0].requirements.type`: `<MISSING>` -> `minecraft:inverted`
+- `~ data/enchantplus/enchantment/sword/last_hope.json`:
+  - `effects.minecraft:damage[0].requirements.condition`: `minecraft:inverted` -> `<REMOVED>`
+  - `effects.minecraft:damage[0].requirements.term.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:damage[0].requirements.term.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:damage[0].requirements.type`: `<MISSING>` -> `minecraft:inverted`
+  - `effects.minecraft:post_attack[0].requirements.condition`: `minecraft:inverted` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.term.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.term.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:post_attack[0].requirements.type`: `<MISSING>` -> `minecraft:inverted`
+- `~ data/enchantplus/enchantment/sword/life_steal.json`:
+  - `effects.minecraft:post_attack[0].requirements.condition`: `minecraft:random_chance` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.type`: `<MISSING>` -> `minecraft:random_chance`
+- `~ data/enchantplus/enchantment/sword/poison_aspect.json`:
+  - `effects.minecraft:post_attack[0].requirements.condition`: `minecraft:inverted` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.term.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.term.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:post_attack[0].requirements.type`: `<MISSING>` -> `minecraft:inverted`
+  - `effects.minecraft:post_attack[1].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[1].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/sword/pull.json`:
+  - `effects.minecraft:post_attack[0].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.terms[0].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.terms[0].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:post_attack[0].requirements.terms[1].condition`: `minecraft:random_chance` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.terms[1].type`: `<MISSING>` -> `minecraft:random_chance`
+  - `effects.minecraft:post_attack[0].requirements.type`: `<MISSING>` -> `minecraft:all_of`
+  - `effects.minecraft:post_attack[1].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[1].requirements.terms[0].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[1].requirements.terms[0].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:post_attack[1].requirements.terms[1].condition`: `minecraft:random_chance` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[1].requirements.terms[1].type`: `<MISSING>` -> `minecraft:random_chance`
+  - `effects.minecraft:post_attack[1].requirements.type`: `<MISSING>` -> `minecraft:all_of`
+  - `effects.minecraft:post_attack[2].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[2].requirements.terms[0].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[2].requirements.terms[0].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:post_attack[2].requirements.terms[1].condition`: `minecraft:random_chance` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[2].requirements.terms[1].type`: `<MISSING>` -> `minecraft:random_chance`
+  - `effects.minecraft:post_attack[2].requirements.type`: `<MISSING>` -> `minecraft:all_of`
+  - `effects.minecraft:post_attack[3].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[3].requirements.terms[0].condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[3].requirements.terms[0].type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:post_attack[3].requirements.terms[1].condition`: `minecraft:random_chance` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[3].requirements.terms[1].type`: `<MISSING>` -> `minecraft:random_chance`
+  - `effects.minecraft:post_attack[3].requirements.type`: `<MISSING>` -> `minecraft:all_of`
+  - `effects.minecraft:post_attack[4].requirements.condition`: `minecraft:all_of` -> `<REMOVED>`
+  - ... and 467 more key diffs
+- `~ data/enchantplus/enchantment/sword/runic_despair.json`:
+  - `effects.minecraft:damage[0].requirements.condition`: `minecraft:location_check` -> `<REMOVED>`
+  - `effects.minecraft:damage[0].requirements.type`: `<MISSING>` -> `minecraft:location_check`
+- `~ data/enchantplus/enchantment/sword/tears_of_asflors.json`:
+  - `effects.minecraft:damage[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:damage[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:post_attack[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:post_attack[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/tools/miningplus.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/enchantment/trident/gungnir_breath.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+  - `effects.minecraft:hit_block[0].effect.block_state.state.Name`: `minecraft:frosted_ice` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].effect.block_state.state.Properties`: `{"age": "0"}` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].effect.block_state.state.id`: `<MISSING>` -> `minecraft:frosted_ice`
+  - `effects.minecraft:hit_block[0].effect.block_state.state.properties`: `<MISSING>` -> `{"age": "0"}`
+  - `effects.minecraft:hit_block[0].effect.block_state.type`: `minecraft:simple_state_provider` -> `minecraft:simple`
+  - `effects.minecraft:hit_block[0].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[0].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+  - `effects.minecraft:hit_block[1].requirements.condition`: `minecraft:entity_properties` -> `<REMOVED>`
+  - `effects.minecraft:hit_block[1].requirements.type`: `<MISSING>` -> `minecraft:entity_properties`
+- `~ data/enchantplus/worldgen/configured_feature/seiors_oblivion.json`:
+  - `config`: `{"features": [{"feature": {"type": "minecraft:simple_block", "config": {"to_place": {"type": "minecraft:weighted_state_p...` -> `<REMOVED>`
+  - `features`: `<MISSING>` -> `[{"feature": {"type": "minecraft:simple_block", "to_place": {"type": "minecraft:weighted", "entries": [{"weight": 2, "da...`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[107, 0]` -> `94`
+  - `pack.min_format`: `[107, 0]` -> `94`
+  - `pack.pack_format`: `107` -> `94`
+
+### `Nullscape_v2.0.1+26.3` (added: 0, removed: 0, modified: 1)
+**Modified files:**
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `121` -> `94`
+  - `pack.min_format`: `121` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Stellarity-6.0.1` (added: 0, removed: 0, modified: 2)
+**Modified files:**
+- `~ data/stellarity/worldgen/structure/village.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `999` -> `94`
+
+### `Structory_Towers_v1.0.19+26.3` (added: 0, removed: 0, modified: 23)
+**Modified files:**
+- `~ data/structory_towers/structure/ancient_temple.nbt` (binary/non-JSON, size 10682 -> 10986)
+- `~ data/structory_towers/structure/engineer_workshop.nbt` (binary/non-JSON, size 12245 -> 12224)
+- `~ data/structory_towers/structure/farmer_outpost.nbt` (binary/non-JSON, size 11623 -> 11469)
+- `~ data/structory_towers/structure/foraging_outpost.nbt` (binary/non-JSON, size 11737 -> 11567)
+- `~ data/structory_towers/structure/fortress_tower.nbt` (binary/non-JSON, size 10534 -> 10824)
+- `~ data/structory_towers/structure/frosted_outpost.nbt` (binary/non-JSON, size 13579 -> 13719)
+- `~ data/structory_towers/structure/frosted_outpost_v2.nbt` (binary/non-JSON, size 13679 -> 13803)
+- `~ data/structory_towers/structure/great_toadstool.nbt` (binary/non-JSON, size 15328 -> 14249)
+- `~ data/structory_towers/structure/mangrove_tower.nbt` (binary/non-JSON, size 11897 -> 11762)
+- `~ data/structory_towers/structure/mirage_outpost.nbt` (binary/non-JSON, size 16281 -> 16574)
+- `~ data/structory_towers/structure/nomad_outpost.nbt` (binary/non-JSON, size 11654 -> 11610)
+- `~ data/structory_towers/structure/pillager_lookout.nbt` (binary/non-JSON, size 10285 -> 10080)
+- `~ data/structory_towers/structure/quarter_outpost.nbt` (binary/non-JSON, size 15324 -> 15666)
+- `~ data/structory_towers/structure/sacred_relic_temple.nbt` (binary/non-JSON, size 13281 -> 13151)
+- `~ data/structory_towers/structure/small_firetower.nbt` (binary/non-JSON, size 11952 -> 11762)
+- `~ data/structory_towers/structure/strange_outpost.nbt` (binary/non-JSON, size 15195 -> 15157)
+- `~ data/structory_towers/structure/warped_greatsword.nbt` (binary/non-JSON, size 9789 -> 10363)
+- `~ data/structory_towers/structure/warped_outpost.nbt` (binary/non-JSON, size 5159 -> 4930)
+- `~ data/structory_towers/structure/wizard_tower.nbt` (binary/non-JSON, size 17361 -> 17524)
+- `~ data/structory_towers/worldgen/structure/nether/fortress_tower.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/structory_towers/worldgen/structure/nether/strange_outpost.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/structory_towers/worldgen/structure/warped_greatsword.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Structory_v1.3.18+26.3` (added: 0, removed: 0, modified: 184)
+**Modified files:**
+- `~ data/structory/structure/decoration/jungle_well.nbt` (binary/non-JSON, size 5320 -> 5127)
+- `~ data/structory/structure/entities/evoker.nbt` (binary/non-JSON, size 709 -> 738)
+- `~ data/structory/structure/entities/pillager.nbt` (binary/non-JSON, size 741 -> 770)
+- `~ data/structory/structure/entities/villager/bandit.nbt` (binary/non-JSON, size 1211 -> 1233)
+- `~ data/structory/structure/entities/villager/outlander.nbt` (binary/non-JSON, size 1139 -> 1168)
+- `~ data/structory/structure/entities/villager/vagabond.nbt` (binary/non-JSON, size 1337 -> 1365)
+- `~ data/structory/structure/entities/vindicator.nbt` (binary/non-JSON, size 755 -> 794)
+- `~ data/structory/structure/entities/waterlogged_creeper.nbt` (binary/non-JSON, size 699 -> 739)
+- `~ data/structory/structure/entities/witch.nbt` (binary/non-JSON, size 702 -> 730)
+- `~ data/structory/structure/harvest/brick_chimney_1.nbt` (binary/non-JSON, size 723 -> 744)
+- `~ data/structory/structure/harvest/brick_chimney_2.nbt` (binary/non-JSON, size 618 -> 643)
+- `~ data/structory/structure/harvest/brick_chimney_3.nbt` (binary/non-JSON, size 611 -> 644)
+- `~ data/structory/structure/harvest/camp/barrels.nbt` (binary/non-JSON, size 1170 -> 1149)
+- `~ data/structory/structure/harvest/camp/farm_1.nbt` (binary/non-JSON, size 3467 -> 3185)
+- `~ data/structory/structure/harvest/camp/scarecrow.nbt` (binary/non-JSON, size 862 -> 878)
+- `~ data/structory/structure/harvest/camp/tent.nbt` (binary/non-JSON, size 3836 -> 3641)
+- `~ data/structory/structure/harvest/camp/well.nbt` (binary/non-JSON, size 3222 -> 3054)
+- `~ data/structory/structure/harvest/chapel/bell.nbt` (binary/non-JSON, size 1214 -> 1211)
+- `~ data/structory/structure/harvest/chapel/church.nbt` (binary/non-JSON, size 15545 -> 14447)
+- `~ data/structory/structure/harvest/chapel/connector_long.nbt` (binary/non-JSON, size 451 -> 473)
+- `~ data/structory/structure/harvest/chapel/connector_short.nbt` (binary/non-JSON, size 396 -> 425)
+- `~ data/structory/structure/harvest/chapel/grave1.nbt` (binary/non-JSON, size 5536 -> 5429)
+- `~ data/structory/structure/harvest/chapel/graveyard1.nbt` (binary/non-JSON, size 10741 -> 9693)
+- `~ data/structory/structure/harvest/chapel/graveyard2.nbt` (binary/non-JSON, size 10303 -> 9343)
+- `~ data/structory/structure/harvest/cobble_chimney_1.nbt` (binary/non-JSON, size 759 -> 782)
+- `~ data/structory/structure/harvest/cobble_chimney_2.nbt` (binary/non-JSON, size 634 -> 668)
+- `~ data/structory/structure/harvest/cobble_chimney_3.nbt` (binary/non-JSON, size 560 -> 598)
+- `~ data/structory/structure/harvest/cobble_tower_ruin.nbt` (binary/non-JSON, size 30269 -> 27565)
+- `~ data/structory/structure/harvest/cobble_wash-house.nbt` (binary/non-JSON, size 1214 -> 1200)
+- `~ data/structory/structure/harvest/farm_1.nbt` (binary/non-JSON, size 3468 -> 3187)
+- `~ data/structory/structure/harvest/giant_pumpkin.nbt` (binary/non-JSON, size 584 -> 602)
+- `~ data/structory/structure/harvest/large_ruined_desert_house.nbt` (binary/non-JSON, size 2323 -> 2228)
+- `~ data/structory/structure/harvest/manor/connector2.nbt` (binary/non-JSON, size 310 -> 339)
+- `~ data/structory/structure/harvest/manor/large1.nbt` (binary/non-JSON, size 86605 -> 81188)
+- `~ data/structory/structure/harvest/manor/large2.nbt` (binary/non-JSON, size 99363 -> 92769)
+- `~ data/structory/structure/harvest/manor2/allay_cage.nbt` (binary/non-JSON, size 5063 -> 4940)
+- `~ data/structory/structure/harvest/manor2/amethyst_shrine.nbt` (binary/non-JSON, size 1994 -> 1945)
+- `~ data/structory/structure/harvest/manor2/graves.nbt` (binary/non-JSON, size 2770 -> 2665)
+- `~ data/structory/structure/harvest/manor2/graveyard_large.nbt` (binary/non-JSON, size 7697 -> 7166)
+- `~ data/structory/structure/harvest/manor2/pumpkins.nbt` (binary/non-JSON, size 3048 -> 2886)
+- `~ data/structory/structure/harvest/manor2/spider_spawner.nbt` (binary/non-JSON, size 5029 -> 4798)
+- `~ data/structory/structure/harvest/manor2/water.nbt` (binary/non-JSON, size 933 -> 901)
+- `~ data/structory/structure/harvest/manor2/well.nbt` (binary/non-JSON, size 6864 -> 6552)
+- `~ data/structory/structure/harvest/manor2/which_witch_is_which.nbt` (binary/non-JSON, size 14794 -> 13823)
+- `~ data/structory/structure/harvest/manor2/zombie.nbt` (binary/non-JSON, size 4337 -> 4115)
+- `~ data/structory/structure/harvest/old_manor/decor1.nbt` (binary/non-JSON, size 796 -> 823)
+- `~ data/structory/structure/harvest/old_manor/decor2.nbt` (binary/non-JSON, size 802 -> 803)
+- `~ data/structory/structure/harvest/old_manor/decor3.nbt` (binary/non-JSON, size 854 -> 854)
+- `~ data/structory/structure/harvest/old_manor/not_a_grave.nbt` (binary/non-JSON, size 749 -> 776)
+- `~ data/structory/structure/harvest/old_manor/old_manor.nbt` (binary/non-JSON, size 71818 -> 67570)
+- `~ data/structory/structure/harvest/old_manor/roof1.nbt` (binary/non-JSON, size 56890 -> 52675)
+- `~ data/structory/structure/harvest/old_manor/roof2.nbt` (binary/non-JSON, size 56780 -> 52504)
+- `~ data/structory/structure/harvest/old_manor/roof3.nbt` (binary/non-JSON, size 58403 -> 54232)
+- `~ data/structory/structure/harvest/old_manor/spider.nbt` (binary/non-JSON, size 822 -> 838)
+- `~ data/structory/structure/harvest/old_manor_roof1.nbt` (binary/non-JSON, size 54944 -> 50663)
+- `~ data/structory/structure/harvest/old_manor_roof2.nbt` (binary/non-JSON, size 54995 -> 50608)
+- `~ data/structory/structure/harvest/old_manor_roof3.nbt` (binary/non-JSON, size 55304 -> 51094)
+- `~ data/structory/structure/harvest/old_mansion.nbt` (binary/non-JSON, size 59536 -> 54000)
+- `~ data/structory/structure/harvest/red_mushroom_house.nbt` (binary/non-JSON, size 3202 -> 3136)
+- `~ data/structory/structure/harvest/ruined_big_brick_house.nbt` (binary/non-JSON, size 4564 -> 4356)
+- `~ data/structory/structure/harvest/ruined_brick_house.nbt` (binary/non-JSON, size 3010 -> 2874)
+- `~ data/structory/structure/harvest/ruined_cottage.nbt` (binary/non-JSON, size 5333 -> 5029)
+- `~ data/structory/structure/harvest/ruined_dark_oak_house.nbt` (binary/non-JSON, size 12964 -> 11834)
+- `~ data/structory/structure/harvest/ruined_large_snowy_spruce_house.nbt` (binary/non-JSON, size 7695 -> 7086)
+- `~ data/structory/structure/harvest/ruined_mossy_spruce_house.nbt` (binary/non-JSON, size 5173 -> 4788)
+- `~ data/structory/structure/harvest/ruined_oak_house.nbt` (binary/non-JSON, size 4074 -> 3979)
+- `~ data/structory/structure/harvest/ruined_snowy_spruce_house.nbt` (binary/non-JSON, size 4606 -> 4376)
+- `~ data/structory/structure/harvest/ruins/church.nbt` (binary/non-JSON, size 15519 -> 14422)
+- `~ data/structory/structure/harvest/ruins/graveyard2.nbt` (binary/non-JSON, size 10293 -> 9331)
+- `~ data/structory/structure/harvest/ruins/graveyard2www.nbt` (binary/non-JSON, size 2931 -> 2875)
+- `~ data/structory/structure/harvest/ruins/graveyard3.nbt` (binary/non-JSON, size 2931 -> 2872)
+- `~ data/structory/structure/harvest/small_ruined_desert_house.nbt` (binary/non-JSON, size 1800 -> 1732)
+- `~ data/structory/structure/harvest/small_ruined_oak_house.nbt` (binary/non-JSON, size 1469 -> 1490)
+- `~ data/structory/structure/harvest/stonebricks_tower_ruin.nbt` (binary/non-JSON, size 38344 -> 35745)
+- `~ data/structory/structure/harvest/wood_barn_ruin.nbt` (binary/non-JSON, size 7396 -> 6729)
+- `~ data/structory/structure/outcast_villager/barn1.nbt` (binary/non-JSON, size 43061 -> 40482)
+- `~ data/structory/structure/outcast_villager/camp1.nbt` (binary/non-JSON, size 4630 -> 4357)
+- `~ data/structory/structure/outcast_villager/desert/copper_house1.nbt` (binary/non-JSON, size 9445 -> 8577)
+- `~ data/structory/structure/outcast_villager/desert/copper_house2.nbt` (binary/non-JSON, size 6698 -> 6033)
+- `~ data/structory/structure/outcast_villager/desert/rock_house1.nbt` (binary/non-JSON, size 14846 -> 14162)
+- `~ data/structory/structure/outcast_villager/farm_ruin/connector.nbt` (binary/non-JSON, size 380 -> 408)
+- `~ data/structory/structure/outcast_villager/farm_ruin/main.nbt` (binary/non-JSON, size 31624 -> 29467)
+- `~ data/structory/structure/outcast_villager/farm_ruin/outer1.nbt` (binary/non-JSON, size 6394 -> 5841)
+- `~ data/structory/structure/outcast_villager/farm_ruin/outer2.nbt` (binary/non-JSON, size 7329 -> 7132)
+- `~ data/structory/structure/outcast_villager/farm_ruin/outer3.nbt` (binary/non-JSON, size 6800 -> 6207)
+- `~ data/structory/structure/outcast_villager/farm_ruin/outer4.nbt` (binary/non-JSON, size 10539 -> 9569)
+- `~ data/structory/structure/outcast_villager/farm_ruin/outer5.nbt` (binary/non-JSON, size 2507 -> 2409)
+- `~ data/structory/structure/outcast_villager/firetower.nbt` (binary/non-JSON, size 20087 -> 18630)
+- `~ data/structory/structure/outcast_villager/graveyard/main1.nbt` (binary/non-JSON, size 4516 -> 4099)
+- `~ data/structory/structure/outcast_villager/medium1.nbt` (binary/non-JSON, size 16144 -> 14934)
+- `~ data/structory/structure/outcast_villager/medium2.nbt` (binary/non-JSON, size 12855 -> 11634)
+- `~ data/structory/structure/outcast_villager/mine/secondary.nbt` (binary/non-JSON, size 7460 -> 6743)
+- `~ data/structory/structure/outcast_villager/mine/start.nbt` (binary/non-JSON, size 11762 -> 10724)
+- `~ data/structory/structure/outcast_villager/mossy_ruin/connector.nbt` (binary/non-JSON, size 380 -> 409)
+- `~ data/structory/structure/outcast_villager/mossy_ruin/main.nbt` (binary/non-JSON, size 6448 -> 5976)
+- `~ data/structory/structure/outcast_villager/mossy_ruin/outer1.nbt` (binary/non-JSON, size 1553 -> 1515)
+- `~ data/structory/structure/outcast_villager/mossy_ruin/outer2.nbt` (binary/non-JSON, size 3333 -> 3280)
+- `~ data/structory/structure/outcast_villager/mossy_ruin/outer3.nbt` (binary/non-JSON, size 1415 -> 1378)
+- `~ data/structory/structure/outcast_villager/ruin1.nbt` (binary/non-JSON, size 6820 -> 6225)
+- `~ data/structory/structure/outcast_villager/settlement_large.nbt` (binary/non-JSON, size 53063 -> 50070)
+- `~ data/structory/structure/outcast_villager/sundial.nbt` (binary/non-JSON, size 4024 -> 3689)
+- `~ data/structory/structure/outcast_villager/tower/badlands_small1.nbt` (binary/non-JSON, size 7490 -> 7446)
+- `~ data/structory/structure/outcast_villager/tower/desert_small1.nbt` (binary/non-JSON, size 7353 -> 7322)
+- `~ data/structory/structure/outcast_villager/tower/grassy_small1.nbt` (binary/non-JSON, size 7951 -> 7868)
+- `~ data/structory/structure/outcast_villager/tower/grassy_small2.nbt` (binary/non-JSON, size 7624 -> 7706)
+- `~ data/structory/structure/ruin/northern_ruins/castle1.nbt` (binary/non-JSON, size 1917 -> 1857)
+- `~ data/structory/structure/ruin/northern_ruins/castle2.nbt` (binary/non-JSON, size 2661 -> 2395)
+- `~ data/structory/structure/ruin/northern_ruins/circle_small.nbt` (binary/non-JSON, size 783 -> 767)
+- `~ data/structory/structure/ruin/northern_ruins/circle_tall.nbt` (binary/non-JSON, size 1060 -> 1048)
+- `~ data/structory/structure/ruin/northern_ruins/doorway.nbt` (binary/non-JSON, size 1179 -> 1098)
+- `~ data/structory/structure/ruin/northern_ruins/house1.nbt` (binary/non-JSON, size 1532 -> 1442)
+- `~ data/structory/structure/ruin/northern_ruins/house2.nbt` (binary/non-JSON, size 1675 -> 1566)
+- `~ data/structory/structure/ruin/northern_ruins/house3.nbt` (binary/non-JSON, size 2474 -> 2328)
+- `~ data/structory/structure/ruin/northern_ruins/mound1.nbt` (binary/non-JSON, size 804 -> 790)
+- `~ data/structory/structure/ruin/northern_ruins/mound_castle_small.nbt` (binary/non-JSON, size 978 -> 934)
+- `~ data/structory/structure/ruin/northern_ruins/mound_corner.nbt` (binary/non-JSON, size 479 -> 511)
+- `~ data/structory/structure/ruin/northern_ruins/mound_tabletwall.nbt` (binary/non-JSON, size 402 -> 434)
+- `~ data/structory/structure/ruin/northern_ruins/mound_watchtower.nbt` (binary/non-JSON, size 512 -> 542)
+- `~ data/structory/structure/ruin/swamp/fountain1.nbt` (binary/non-JSON, size 36183 -> 34055)
+- `~ data/structory/structure/ruin/swamp/frog_statue1.nbt` (binary/non-JSON, size 24528 -> 22285)
+- `~ data/structory/structure/ruin/swamp/frog_statue2.nbt` (binary/non-JSON, size 29919 -> 27874)
+- `~ data/structory/structure/ruin/swamp/frog_statue_small.nbt` (binary/non-JSON, size 11337 -> 10456)
+- `~ data/structory/structure/ruin/swamp/obelisk1.nbt` (binary/non-JSON, size 24528 -> 22503)
+- `~ data/structory/structure/ruin/swamp/pillar1.nbt` (binary/non-JSON, size 11923 -> 12577)
+- `~ data/structory/structure/ruin/swamp/pond1.nbt` (binary/non-JSON, size 30806 -> 28409)
+- `~ data/structory/structure/ruin/swamp/pond2.nbt` (binary/non-JSON, size 26433 -> 24242)
+- `~ data/structory/structure/ruin/swamp/pool1.nbt` (binary/non-JSON, size 21019 -> 19346)
+- `~ data/structory/structure/ruin/swamp/pool2.nbt` (binary/non-JSON, size 21102 -> 19389)
+- `~ data/structory/structure/ruin/swamp/pool3.nbt` (binary/non-JSON, size 22623 -> 21033)
+- `~ data/structory/structure/ruin/swamp/pool_small1.nbt` (binary/non-JSON, size 11134 -> 10898)
+- `~ data/structory/structure/ruin/swamp/pyramid1.nbt` (binary/non-JSON, size 21666 -> 19813)
+- `~ data/structory/structure/ruin/swamp/ring1.nbt` (binary/non-JSON, size 16534 -> 15413)
+- `~ data/structory/structure/ruin/swamp/ring2.nbt` (binary/non-JSON, size 10275 -> 10361)
+- `~ data/structory/structure/ruin/swamp/ruin1.nbt` (binary/non-JSON, size 6601 -> 6616)
+- `~ data/structory/structure/ruin/swamp/ruin2.nbt` (binary/non-JSON, size 5127 -> 5152)
+- `~ data/structory/structure/ruin/swamp/ruin3.nbt` (binary/non-JSON, size 7727 -> 7797)
+- `~ data/structory/structure/ruin/swamp/ruin4.nbt` (binary/non-JSON, size 3894 -> 3966)
+- `~ data/structory/structure/ruin/swamp/ruin5.nbt` (binary/non-JSON, size 13374 -> 11876)
+- `~ data/structory/structure/ruin/swamp/staircase1.nbt` (binary/non-JSON, size 13962 -> 13842)
+- `~ data/structory/structure/ruin/swamp/star1.nbt` (binary/non-JSON, size 14650 -> 13862)
+- `~ data/structory/structure/ruin/swamp/statue1.nbt` (binary/non-JSON, size 11053 -> 11143)
+- `~ data/structory/structure/ruin/swamp/t1.nbt` (binary/non-JSON, size 24362 -> 22017)
+- `~ data/structory/structure/ruin/swamp/table1.nbt` (binary/non-JSON, size 8152 -> 8166)
+- `~ data/structory/structure/ruin/swamp/table2.nbt` (binary/non-JSON, size 7079 -> 7412)
+- `~ data/structory/structure/ruin/taiga_surface/arch1.nbt` (binary/non-JSON, size 6923 -> 6467)
+- `~ data/structory/structure/ruin/taiga_surface/bridge1.nbt` (binary/non-JSON, size 4834 -> 4674)
+- `~ data/structory/structure/ruin/taiga_surface/ruin1.nbt` (binary/non-JSON, size 1074 -> 1069)
+- `~ data/structory/structure/ruin/taiga_surface/ruin2.nbt` (binary/non-JSON, size 4510 -> 4259)
+- `~ data/structory/structure/ruin/taiga_surface/ruin3.nbt` (binary/non-JSON, size 2635 -> 2537)
+- `~ data/structory/structure/ruin/taiga_surface/tower1.nbt` (binary/non-JSON, size 4009 -> 3845)
+- `~ data/structory/structure/ruin/taiga_surface/tower2.nbt` (binary/non-JSON, size 1069 -> 1057)
+- `~ data/structory/structure/ruin/taiga_surface/tower3.nbt` (binary/non-JSON, size 5479 -> 5344)
+- `~ data/structory/structure/temple/temple_ruin.nbt` (binary/non-JSON, size 16058 -> 14536)
+- `~ data/structory/structure/unsorted/brick_chimney_1.nbt` (binary/non-JSON, size 723 -> 744)
+- `~ data/structory/structure/unsorted/brick_chimney_2.nbt` (binary/non-JSON, size 618 -> 643)
+- `~ data/structory/structure/unsorted/brick_chimney_3.nbt` (binary/non-JSON, size 611 -> 644)
+- `~ data/structory/structure/unsorted/cobble_chimney_1.nbt` (binary/non-JSON, size 759 -> 782)
+- `~ data/structory/structure/unsorted/cobble_chimney_2.nbt` (binary/non-JSON, size 634 -> 667)
+- `~ data/structory/structure/unsorted/cobble_chimney_3.nbt` (binary/non-JSON, size 560 -> 598)
+- `~ data/structory/structure/unsorted/cobble_tower_ruin.nbt` (binary/non-JSON, size 30343 -> 27622)
+- `~ data/structory/structure/unsorted/cobble_wash-house.nbt` (binary/non-JSON, size 1215 -> 1201)
+- `~ data/structory/structure/unsorted/giant_pumpkin.nbt` (binary/non-JSON, size 545 -> 564)
+- `~ data/structory/structure/unsorted/giant_watermelon.nbt` (binary/non-JSON, size 541 -> 564)
+- `~ data/structory/structure/unsorted/nostalgic_ruin.nbt` (binary/non-JSON, size 1259 -> 1141)
+- `~ data/structory/structure/unsorted/ruined_dark_oak_house.nbt` (binary/non-JSON, size 12257 -> 11201)
+- `~ data/structory/structure/unsorted/stone_brick_pillars_ruins_1.nbt` (binary/non-JSON, size 4188 -> 3993)
+- `~ data/structory/structure/unsorted/stone_brick_pillars_ruins_2.nbt` (binary/non-JSON, size 3381 -> 3170)
+- `~ data/structory/structure/unsorted/stone_brick_pillars_ruins_3.nbt` (binary/non-JSON, size 4150 -> 3991)
+- `~ data/structory/structure/unsorted/stone_brick_pillars_ruins_4.nbt` (binary/non-JSON, size 8147 -> 7456)
+- `~ data/structory/structure/unsorted/stone_brick_sun_dial.nbt` (binary/non-JSON, size 4182 -> 3836)
+- `~ data/structory/structure/unsorted/stonebricks_tower_ruin.nbt` (binary/non-JSON, size 38344 -> 35745)
+- `~ data/structory/structure/unsorted/vc_camp_campfire.nbt` (binary/non-JSON, size 940 -> 965)
+- `~ data/structory/structure/unsorted/vc_camp_cw.nbt` (binary/non-JSON, size 1532 -> 1525)
+- `~ data/structory/structure/unsorted/vc_camp_haybale.nbt` (binary/non-JSON, size 841 -> 867)
+- `~ data/structory/structure/unsorted/vc_camp_storage.nbt` (binary/non-JSON, size 1018 -> 1035)
+- `~ data/structory/structure/unsorted/vc_camp_tracks.nbt` (binary/non-JSON, size 775 -> 797)
+- `~ data/structory/structure/unsorted/vc_camp_tracks_corner.nbt` (binary/non-JSON, size 582 -> 621)
+- `~ data/structory/structure/unsorted/vc_camp_tracks_small.nbt` (binary/non-JSON, size 561 -> 599)
+- `~ data/structory/structure/unsorted/vc_cart.nbt` (binary/non-JSON, size 963 -> 967)
+- `~ data/structory/structure/unsorted/vc_trackend.nbt` (binary/non-JSON, size 436 -> 466)
+- `~ data/structory/structure/unsorted/villager_outpost.nbt` (binary/non-JSON, size 29436 -> 25976)
+- `~ data/structory/structure/unsorted/wood_barn_ruin.nbt` (binary/non-JSON, size 6703 -> 6094)
+- `~ data/structory/worldgen/structure/old_manor.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Too Expensive Extractor v1.0.0 [26.3]` (added: 0, removed: 0, modified: 1)
+**Modified files:**
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Trek 26.3 B0.6.2.1` (added: 0, removed: 0, modified: 358)
+**Modified files:**
+- `~ data/trek/structure/mobs/hostile/blaze.nbt` (binary/non-JSON, size 772 -> 785)
+- `~ data/trek/structure/mobs/hostile/creeper.nbt` (binary/non-JSON, size 796 -> 813)
+- `~ data/trek/structure/mobs/hostile/creeper_charged.nbt` (binary/non-JSON, size 702 -> 726)
+- `~ data/trek/structure/mobs/hostile/drowned.nbt` (binary/non-JSON, size 955 -> 971)
+- `~ data/trek/structure/mobs/hostile/drowned_baby.nbt` (binary/non-JSON, size 723 -> 744)
+- `~ data/trek/structure/mobs/hostile/drowned_chicken_jockey.nbt` (binary/non-JSON, size 890 -> 921)
+- `~ data/trek/structure/mobs/hostile/enderman.nbt` (binary/non-JSON, size 785 -> 803)
+- `~ data/trek/structure/mobs/hostile/hoglin.nbt` (binary/non-JSON, size 813 -> 829)
+- `~ data/trek/structure/mobs/hostile/husk.nbt` (binary/non-JSON, size 919 -> 932)
+- `~ data/trek/structure/mobs/hostile/husk_baby.nbt` (binary/non-JSON, size 725 -> 743)
+- `~ data/trek/structure/mobs/hostile/husk_chicken_jockey.nbt` (binary/non-JSON, size 881 -> 910)
+- `~ data/trek/structure/mobs/hostile/magma_cube.nbt` (binary/non-JSON, size 851 -> 871)
+- `~ data/trek/structure/mobs/hostile/piglin_baby.nbt` (binary/non-JSON, size 831 -> 850)
+- `~ data/trek/structure/mobs/hostile/piglin_brute.nbt` (binary/non-JSON, size 885 -> 904)
+- `~ data/trek/structure/mobs/hostile/piglin_crossbow.nbt` (binary/non-JSON, size 861 -> 885)
+- `~ data/trek/structure/mobs/hostile/piglin_sword.nbt` (binary/non-JSON, size 876 -> 896)
+- `~ data/trek/structure/mobs/hostile/skeleton.nbt` (binary/non-JSON, size 812 -> 828)
+- `~ data/trek/structure/mobs/hostile/slime.nbt` (binary/non-JSON, size 821 -> 835)
+- `~ data/trek/structure/mobs/hostile/spider.nbt` (binary/non-JSON, size 772 -> 787)
+- `~ data/trek/structure/mobs/hostile/stray.nbt` (binary/non-JSON, size 793 -> 807)
+- `~ data/trek/structure/mobs/hostile/wither_skeleton.nbt` (binary/non-JSON, size 840 -> 864)
+- `~ data/trek/structure/mobs/hostile/zoglin.nbt` (binary/non-JSON, size 774 -> 789)
+- `~ data/trek/structure/mobs/hostile/zombie.nbt` (binary/non-JSON, size 903 -> 919)
+- `~ data/trek/structure/mobs/hostile/zombie_baby.nbt` (binary/non-JSON, size 731 -> 752)
+- `~ data/trek/structure/mobs/hostile/zombie_chicken_jockey.nbt` (binary/non-JSON, size 879 -> 908)
+- `~ data/trek/structure/mobs/hostile/zombified_piglin.nbt` (binary/non-JSON, size 967 -> 992)
+- `~ data/trek/structure/mobs/hostile/zombified_piglin_baby.nbt` (binary/non-JSON, size 727 -> 757)
+- `~ data/trek/structure/mobs/hostile/zombified_piglin_chicken_jockey.nbt` (binary/non-JSON, size 899 -> 939)
+- `~ data/trek/structure/mobs/passive/allay.nbt` (binary/non-JSON, size 861 -> 874)
+- `~ data/trek/structure/mobs/passive/bat.nbt` (binary/non-JSON, size 764 -> 777)
+- `~ data/trek/structure/mobs/passive/bat_3.nbt` (binary/non-JSON, size 944 -> 963)
+- `~ data/trek/structure/mobs/passive/cat.nbt` (binary/non-JSON, size 823 -> 836)
+- `~ data/trek/structure/mobs/passive/chicken.nbt` (binary/non-JSON, size 803 -> 821)
+- `~ data/trek/structure/mobs/passive/cow.nbt` (binary/non-JSON, size 789 -> 801)
+- `~ data/trek/structure/mobs/passive/donkey.nbt` (binary/non-JSON, size 844 -> 860)
+- `~ data/trek/structure/mobs/passive/fox.nbt` (binary/non-JSON, size 820 -> 838)
+- `~ data/trek/structure/mobs/passive/fox_snow.nbt` (binary/non-JSON, size 723 -> 742)
+- `~ data/trek/structure/mobs/passive/frog.nbt` (binary/non-JSON, size 825 -> 838)
+- `~ data/trek/structure/mobs/passive/goat.nbt` (binary/non-JSON, size 891 -> 905)
+- `~ data/trek/structure/mobs/passive/horse.nbt` (binary/non-JSON, size 900 -> 913)
+- `~ data/trek/structure/mobs/passive/iron_golem.nbt` (binary/non-JSON, size 793 -> 813)
+- `~ data/trek/structure/mobs/passive/liama.nbt` (binary/non-JSON, size 861 -> 877)
+- `~ data/trek/structure/mobs/passive/mooshrom.nbt` (binary/non-JSON, size 804 -> 820)
+- `~ data/trek/structure/mobs/passive/mule.nbt` (binary/non-JSON, size 850 -> 868)
+- `~ data/trek/structure/mobs/passive/ocelot.nbt` (binary/non-JSON, size 794 -> 808)
+- `~ data/trek/structure/mobs/passive/panda.nbt` (binary/non-JSON, size 823 -> 838)
+- `~ data/trek/structure/mobs/passive/parrot.nbt` (binary/non-JSON, size 802 -> 817)
+- `~ data/trek/structure/mobs/passive/polar_bear.nbt` (binary/non-JSON, size 801 -> 820)
+- `~ data/trek/structure/mobs/passive/sheep.nbt` (binary/non-JSON, size 800 -> 814)
+- `~ data/trek/structure/mobs/passive/strider.nbt` (binary/non-JSON, size 797 -> 813)
+- `~ data/trek/structure/mobs/passive/wolf.nbt` (binary/non-JSON, size 842 -> 856)
+- `~ data/trek/structure/mobs/pillagers/evoker.nbt` (binary/non-JSON, size 811 -> 829)
+- `~ data/trek/structure/mobs/pillagers/illusioner.nbt` (binary/non-JSON, size 868 -> 886)
+- `~ data/trek/structure/mobs/pillagers/pillager.nbt` (binary/non-JSON, size 846 -> 863)
+- `~ data/trek/structure/mobs/pillagers/ravager.nbt` (binary/non-JSON, size 830 -> 848)
+- `~ data/trek/structure/mobs/pillagers/vindicator.nbt` (binary/non-JSON, size 852 -> 871)
+- `~ data/trek/structure/mobs/pillagers/witch.nbt` (binary/non-JSON, size 796 -> 811)
+- `~ data/trek/structure/mobs/villagers/desert/baby.nbt` (binary/non-JSON, size 797 -> 810)
+- `~ data/trek/structure/mobs/villagers/desert/nitwit.nbt` (binary/non-JSON, size 788 -> 803)
+- `~ data/trek/structure/mobs/villagers/desert/unemployed.nbt` (binary/non-JSON, size 786 -> 805)
+- `~ data/trek/structure/mobs/villagers/jungle/baby.nbt` (binary/non-JSON, size 789 -> 802)
+- `~ data/trek/structure/mobs/villagers/jungle/nitwit.nbt` (binary/non-JSON, size 782 -> 797)
+- `~ data/trek/structure/mobs/villagers/jungle/unemployed.nbt` (binary/non-JSON, size 786 -> 804)
+- `~ data/trek/structure/mobs/villagers/mushroom/baby.nbt` (binary/non-JSON, size 750 -> 764)
+- `~ data/trek/structure/mobs/villagers/mushroom/nitwit.nbt` (binary/non-JSON, size 748 -> 763)
+- `~ data/trek/structure/mobs/villagers/mushroom/unemployed.nbt` (binary/non-JSON, size 748 -> 767)
+- `~ data/trek/structure/mobs/villagers/plains/baby.nbt` (binary/non-JSON, size 792 -> 805)
+- `~ data/trek/structure/mobs/villagers/plains/nitwit.nbt` (binary/non-JSON, size 787 -> 802)
+- `~ data/trek/structure/mobs/villagers/plains/unemployed.nbt` (binary/non-JSON, size 790 -> 809)
+- `~ data/trek/structure/mobs/villagers/savanna/baby.nbt` (binary/non-JSON, size 794 -> 807)
+- `~ data/trek/structure/mobs/villagers/savanna/nitwit.nbt` (binary/non-JSON, size 793 -> 808)
+- `~ data/trek/structure/mobs/villagers/savanna/unemployed.nbt` (binary/non-JSON, size 792 -> 811)
+- `~ data/trek/structure/mobs/villagers/snow/baby.nbt` (binary/non-JSON, size 786 -> 798)
+- `~ data/trek/structure/mobs/villagers/snow/nitwit.nbt` (binary/non-JSON, size 787 -> 802)
+- `~ data/trek/structure/mobs/villagers/snow/unemployed.nbt` (binary/non-JSON, size 783 -> 802)
+- `~ data/trek/structure/mobs/villagers/swamp/baby.nbt` (binary/non-JSON, size 794 -> 807)
+- `~ data/trek/structure/mobs/villagers/swamp/nitwit.nbt` (binary/non-JSON, size 786 -> 801)
+- `~ data/trek/structure/mobs/villagers/swamp/unemployed.nbt` (binary/non-JSON, size 784 -> 802)
+- `~ data/trek/structure/mobs/villagers/taiga/baby.nbt` (binary/non-JSON, size 792 -> 806)
+- `~ data/trek/structure/mobs/villagers/taiga/nitwit.nbt` (binary/non-JSON, size 791 -> 806)
+- `~ data/trek/structure/mobs/villagers/taiga/unemployed.nbt` (binary/non-JSON, size 784 -> 802)
+- `~ data/trek/structure/mobs/villagers/zombie_villager.nbt` (binary/non-JSON, size 771 -> 794)
+- `~ data/trek/structure/monster_room/lower/deep_dark.nbt` (binary/non-JSON, size 3148 -> 2930)
+- `~ data/trek/structure/overworld/common/mushroom_house.nbt` (binary/non-JSON, size 5090 -> 4877)
+- `~ data/trek/structure/overworld/medium/base_2.nbt` (binary/non-JSON, size 1454 -> 1451)
+- `~ data/trek/structure/overworld/medium/birch_trade.nbt` (binary/non-JSON, size 365342 -> 365918)
+- `~ data/trek/structure/overworld/medium/camp_3.nbt` (binary/non-JSON, size 997 -> 1014)
+- `~ data/trek/structure/overworld/medium/camp_4.nbt` (binary/non-JSON, size 3694 -> 3518)
+- `~ data/trek/structure/overworld/medium/claw_pillager.nbt` (binary/non-JSON, size 1766 -> 1781)
+- `~ data/trek/structure/overworld/medium/cold_hideout.nbt` (binary/non-JSON, size 9572 -> 9161)
+- `~ data/trek/structure/overworld/medium/desert_ranch.nbt` (binary/non-JSON, size 4863 -> 4665)
+- `~ data/trek/structure/overworld/medium/graveyard.nbt` (binary/non-JSON, size 2813 -> 2670)
+- `~ data/trek/structure/overworld/medium/hobbit_hole.nbt` (binary/non-JSON, size 1972 -> 1916)
+- `~ data/trek/structure/overworld/medium/ice_fort.nbt` (binary/non-JSON, size 4490 -> 4103)
+- `~ data/trek/structure/overworld/medium/pillager_old_camp.nbt` (binary/non-JSON, size 1885 -> 1818)
+- `~ data/trek/structure/overworld/medium/siege_tower_pillager.nbt` (binary/non-JSON, size 7106 -> 6669)
+- `~ data/trek/structure/overworld/medium/strange_house/house.nbt` (binary/non-JSON, size 5812 -> 5438)
+- `~ data/trek/structure/overworld/medium/tour_1.nbt` (binary/non-JSON, size 3082 -> 2931)
+- `~ data/trek/structure/overworld/medium/tour_2.nbt` (binary/non-JSON, size 6658 -> 6333)
+- `~ data/trek/structure/overworld/medium/tour_desert_1.nbt` (binary/non-JSON, size 5320 -> 5026)
+- `~ data/trek/structure/overworld/medium/tour_desert_2.nbt` (binary/non-JSON, size 5536 -> 5154)
+- `~ data/trek/structure/overworld/medium/wild_stone.nbt` (binary/non-JSON, size 1913 -> 1870)
+- `~ data/trek/structure/overworld/rare/abandoned_castle_pillager.nbt` (binary/non-JSON, size 78462 -> 73899)
+- `~ data/trek/structure/village/cherry/houses/cherry_big_house_1.nbt` (binary/non-JSON, size 9258 -> 8463)
+- `~ data/trek/structure/village/cherry/houses/cherry_cartographer_1.nbt` (binary/non-JSON, size 8309 -> 7749)
+- `~ data/trek/structure/village/cherry/houses/cherry_farm_1.nbt` (binary/non-JSON, size 1862 -> 1735)
+- `~ data/trek/structure/village/cherry/houses/cherry_farm_2.nbt` (binary/non-JSON, size 1812 -> 1716)
+- `~ data/trek/structure/village/cherry/houses/cherry_farm_3.nbt` (binary/non-JSON, size 2186 -> 2056)
+- `~ data/trek/structure/village/cherry/houses/cherry_fisher_1.nbt` (binary/non-JSON, size 3463 -> 3248)
+- `~ data/trek/structure/village/cherry/houses/cherry_library_1.nbt` (binary/non-JSON, size 8448 -> 7825)
+- `~ data/trek/structure/village/cherry/houses/cherry_shepherd_1.nbt` (binary/non-JSON, size 3020 -> 2894)
+- `~ data/trek/structure/village/cherry/houses/cherry_tannery_1.nbt` (binary/non-JSON, size 5714 -> 5364)
+- `~ data/trek/structure/village/cherry/houses/cherry_weaponsmith_1.nbt` (binary/non-JSON, size 6171 -> 5837)
+- `~ data/trek/structure/village/desert/houses/desert_armorer_1.nbt` (binary/non-JSON, size 2044 -> 2002)
+- `~ data/trek/structure/village/desert/houses/desert_big_house_1.nbt` (binary/non-JSON, size 4413 -> 4196)
+- `~ data/trek/structure/village/desert/houses/desert_butcher_1.nbt` (binary/non-JSON, size 2277 -> 2217)
+- `~ data/trek/structure/village/desert/houses/desert_cartographer_1.nbt` (binary/non-JSON, size 3297 -> 3134)
+- `~ data/trek/structure/village/desert/houses/desert_farm_1.nbt` (binary/non-JSON, size 2380 -> 2221)
+- `~ data/trek/structure/village/desert/houses/desert_farm_2.nbt` (binary/non-JSON, size 2030 -> 1891)
+- `~ data/trek/structure/village/desert/houses/desert_farm_3.nbt` (binary/non-JSON, size 2330 -> 2194)
+- `~ data/trek/structure/village/desert/houses/desert_fletcher_1.nbt` (binary/non-JSON, size 3227 -> 3018)
+- `~ data/trek/structure/village/desert/houses/desert_library_1.nbt` (binary/non-JSON, size 2051 -> 1996)
+- `~ data/trek/structure/village/desert/houses/desert_medium_house_1.nbt` (binary/non-JSON, size 2140 -> 2072)
+- `~ data/trek/structure/village/desert/houses/desert_medium_house_2.nbt` (binary/non-JSON, size 2139 -> 2068)
+- `~ data/trek/structure/village/desert/houses/desert_shepherd_1.nbt` (binary/non-JSON, size 1725 -> 1695)
+- `~ data/trek/structure/village/desert/houses/desert_temple_1.nbt` (binary/non-JSON, size 3069 -> 3004)
+- `~ data/trek/structure/village/desert/houses/desert_toolsmith_1.nbt` (binary/non-JSON, size 1918 -> 1925)
+- `~ data/trek/structure/village/desert/houses/desert_weaponsmith_1.nbt` (binary/non-JSON, size 3729 -> 3550)
+- `~ data/trek/structure/village/desert/town_centers/desert_market_1.nbt` (binary/non-JSON, size 2301 -> 2195)
+- `~ data/trek/structure/village/jungle/jungle_village_1.nbt` (binary/non-JSON, size 22769 -> 21239)
+- `~ data/trek/structure/village/jungle/jungle_village_10.nbt` (binary/non-JSON, size 22835 -> 21099)
+- `~ data/trek/structure/village/jungle/jungle_village_11.nbt` (binary/non-JSON, size 7528 -> 7475)
+- `~ data/trek/structure/village/jungle/jungle_village_12.nbt` (binary/non-JSON, size 3254 -> 3246)
+- `~ data/trek/structure/village/jungle/jungle_village_13.nbt` (binary/non-JSON, size 3318 -> 3256)
+- `~ data/trek/structure/village/jungle/jungle_village_14.nbt` (binary/non-JSON, size 5659 -> 5442)
+- `~ data/trek/structure/village/jungle/jungle_village_15.nbt` (binary/non-JSON, size 5983 -> 5961)
+- `~ data/trek/structure/village/jungle/jungle_village_16.nbt` (binary/non-JSON, size 9171 -> 8943)
+- `~ data/trek/structure/village/jungle/jungle_village_17.nbt` (binary/non-JSON, size 6947 -> 7046)
+- `~ data/trek/structure/village/jungle/jungle_village_18.nbt` (binary/non-JSON, size 5652 -> 5403)
+- `~ data/trek/structure/village/jungle/jungle_village_19.nbt` (binary/non-JSON, size 3184 -> 3294)
+- `~ data/trek/structure/village/jungle/jungle_village_2.nbt` (binary/non-JSON, size 7514 -> 7325)
+- `~ data/trek/structure/village/jungle/jungle_village_20.nbt` (binary/non-JSON, size 3255 -> 3338)
+- `~ data/trek/structure/village/jungle/jungle_village_3.nbt` (binary/non-JSON, size 3281 -> 3278)
+- `~ data/trek/structure/village/jungle/jungle_village_4.nbt` (binary/non-JSON, size 7088 -> 7212)
+- `~ data/trek/structure/village/jungle/jungle_village_5.nbt` (binary/non-JSON, size 6731 -> 6641)
+- `~ data/trek/structure/village/jungle/jungle_village_6.nbt` (binary/non-JSON, size 3231 -> 3273)
+- `~ data/trek/structure/village/jungle/jungle_village_7.nbt` (binary/non-JSON, size 3171 -> 3189)
+- `~ data/trek/structure/village/jungle/jungle_village_8.nbt` (binary/non-JSON, size 5990 -> 6068)
+- `~ data/trek/structure/village/jungle/jungle_village_9.nbt` (binary/non-JSON, size 3866 -> 3827)
+- `~ data/trek/structure/village/jungle/jungle_village_flowers.nbt` (binary/non-JSON, size 556 -> 594)
+- `~ data/trek/structure/village/jungle/jungle_village_lantern.nbt` (binary/non-JSON, size 672 -> 712)
+- `~ data/trek/structure/village/jungle/jungle_village_trashbin.nbt` (binary/non-JSON, size 678 -> 728)
+- `~ data/trek/structure/village/jungle/jungle_village_well_1.nbt` (binary/non-JSON, size 1825 -> 1827)
+- `~ data/trek/structure/village/jungle/jungle_village_well_2.nbt` (binary/non-JSON, size 873 -> 907)
+- `~ data/trek/structure/village/mushroom/decor/decor_g_1.nbt` (binary/non-JSON, size 5548 -> 5193)
+- `~ data/trek/structure/village/mushroom/decor/decor_g_2.nbt` (binary/non-JSON, size 4911 -> 4514)
+- `~ data/trek/structure/village/mushroom/decor/decor_g_3.nbt` (binary/non-JSON, size 5256 -> 4875)
+- `~ data/trek/structure/village/mushroom/decor/decor_g_4.nbt` (binary/non-JSON, size 4913 -> 4552)
+- `~ data/trek/structure/village/mushroom/decor/decor_g_5.nbt` (binary/non-JSON, size 7611 -> 7103)
+- `~ data/trek/structure/village/mushroom/decor/decor_g_6.nbt` (binary/non-JSON, size 7467 -> 6978)
+- `~ data/trek/structure/village/mushroom/decor/decor_g_7.nbt` (binary/non-JSON, size 5105 -> 4707)
+- `~ data/trek/structure/village/mushroom/decor/decor_g_8.nbt` (binary/non-JSON, size 2344 -> 2128)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_1.nbt` (binary/non-JSON, size 741 -> 769)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_10.nbt` (binary/non-JSON, size 738 -> 730)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_11.nbt` (binary/non-JSON, size 707 -> 705)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_12.nbt` (binary/non-JSON, size 3220 -> 3164)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_13.nbt` (binary/non-JSON, size 3520 -> 3489)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_14.nbt` (binary/non-JSON, size 1054 -> 1061)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_15.nbt` (binary/non-JSON, size 1788 -> 1765)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_16.nbt` (binary/non-JSON, size 549 -> 578)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_17.nbt` (binary/non-JSON, size 751 -> 782)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_18.nbt` (binary/non-JSON, size 1587 -> 1616)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_19.nbt` (binary/non-JSON, size 876 -> 878)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_2.nbt` (binary/non-JSON, size 771 -> 798)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_20.nbt` (binary/non-JSON, size 1010 -> 1020)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_21.nbt` (binary/non-JSON, size 903 -> 904)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_22.nbt` (binary/non-JSON, size 1376 -> 1386)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_23.nbt` (binary/non-JSON, size 1373 -> 1383)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_24.nbt` (binary/non-JSON, size 1181 -> 1195)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_3.nbt` (binary/non-JSON, size 828 -> 856)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_4.nbt` (binary/non-JSON, size 810 -> 844)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_5.nbt` (binary/non-JSON, size 794 -> 822)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_6.nbt` (binary/non-JSON, size 826 -> 852)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_7.nbt` (binary/non-JSON, size 599 -> 628)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_8.nbt` (binary/non-JSON, size 577 -> 604)
+- `~ data/trek/structure/village/mushroom/decor/decor_v_9.nbt` (binary/non-JSON, size 770 -> 788)
+- `~ data/trek/structure/village/mushroom/houses/barrel.nbt` (binary/non-JSON, size 14280 -> 13547)
+- `~ data/trek/structure/village/mushroom/houses/blust_furnace.nbt` (binary/non-JSON, size 17772 -> 16623)
+- `~ data/trek/structure/village/mushroom/houses/brewing_stand.nbt` (binary/non-JSON, size 31473 -> 29844)
+- `~ data/trek/structure/village/mushroom/houses/cartography_table.nbt` (binary/non-JSON, size 27731 -> 25462)
+- `~ data/trek/structure/village/mushroom/houses/cauldron.nbt` (binary/non-JSON, size 22363 -> 21075)
+- `~ data/trek/structure/village/mushroom/houses/composter.nbt` (binary/non-JSON, size 16012 -> 15024)
+- `~ data/trek/structure/village/mushroom/houses/fletching_table.nbt` (binary/non-JSON, size 25084 -> 23695)
+- `~ data/trek/structure/village/mushroom/houses/grindstone.nbt` (binary/non-JSON, size 22331 -> 20999)
+- `~ data/trek/structure/village/mushroom/houses/lectern.nbt` (binary/non-JSON, size 28399 -> 25783)
+- `~ data/trek/structure/village/mushroom/houses/loom.nbt` (binary/non-JSON, size 15357 -> 14302)
+- `~ data/trek/structure/village/mushroom/houses/none.nbt` (binary/non-JSON, size 18567 -> 17234)
+- `~ data/trek/structure/village/mushroom/houses/smithing_table.nbt` (binary/non-JSON, size 20055 -> 18943)
+- `~ data/trek/structure/village/mushroom/houses/smoker.nbt` (binary/non-JSON, size 18500 -> 17331)
+- `~ data/trek/structure/village/mushroom/houses/stonecutter.nbt` (binary/non-JSON, size 22849 -> 21539)
+- `~ data/trek/structure/village/mushroom/streets/street_1.nbt` (binary/non-JSON, size 30022 -> 29009)
+- `~ data/trek/structure/village/mushroom/streets/street_2.nbt` (binary/non-JSON, size 29987 -> 28989)
+- `~ data/trek/structure/village/mushroom/streets/street_3.nbt` (binary/non-JSON, size 30773 -> 29438)
+- `~ data/trek/structure/village/mushroom/streets/street_4.nbt` (binary/non-JSON, size 30617 -> 29316)
+- `~ data/trek/structure/village/mushroom/streets/street_5.nbt` (binary/non-JSON, size 30408 -> 29210)
+- `~ data/trek/structure/village/mushroom/streets/street_6.nbt` (binary/non-JSON, size 30308 -> 29131)
+- `~ data/trek/structure/village/mushroom/streets/street_7.nbt` (binary/non-JSON, size 2222 -> 2125)
+- `~ data/trek/structure/village/mushroom/terminators/terminator_01.nbt` (binary/non-JSON, size 794 -> 811)
+- `~ data/trek/structure/village/mushroom/terminators/terminator_02.nbt` (binary/non-JSON, size 1125 -> 1141)
+- `~ data/trek/structure/village/mushroom/terminators/terminator_03.nbt` (binary/non-JSON, size 566 -> 582)
+- `~ data/trek/structure/village/mushroom/terminators/terminator_04.nbt` (binary/non-JSON, size 771 -> 782)
+- `~ data/trek/structure/village/mushroom/town_centers/center_1_down.nbt` (binary/non-JSON, size 3846 -> 3513)
+- `~ data/trek/structure/village/mushroom/town_centers/center_1_up.nbt` (binary/non-JSON, size 9715 -> 9076)
+- `~ data/trek/structure/village/mushroom/town_centers/center_2.nbt` (binary/non-JSON, size 7270 -> 6771)
+- `~ data/trek/structure/village/mushroom/town_centers/center_3.nbt` (binary/non-JSON, size 7392 -> 6949)
+- `~ data/trek/structure/village/plains/houses/plains_armorer_1.nbt` (binary/non-JSON, size 6087 -> 5791)
+- `~ data/trek/structure/village/plains/houses/plains_big_house_1.nbt` (binary/non-JSON, size 9169 -> 8397)
+- `~ data/trek/structure/village/plains/houses/plains_butcher_1.nbt` (binary/non-JSON, size 6197 -> 5832)
+- `~ data/trek/structure/village/plains/houses/plains_farm_1.nbt` (binary/non-JSON, size 2179 -> 2010)
+- `~ data/trek/structure/village/plains/houses/plains_farm_2.nbt` (binary/non-JSON, size 1395 -> 1343)
+- `~ data/trek/structure/village/plains/houses/plains_fletcher_1.nbt` (binary/non-JSON, size 8074 -> 7545)
+- `~ data/trek/structure/village/plains/houses/plains_mason_1.nbt` (binary/non-JSON, size 6262 -> 5887)
+- `~ data/trek/structure/village/plains/houses/plains_shepherd_1.nbt` (binary/non-JSON, size 5591 -> 5107)
+- `~ data/trek/structure/village/plains/houses/plains_small_house_1.nbt` (binary/non-JSON, size 2064 -> 2034)
+- `~ data/trek/structure/village/plains/houses/plains_small_house_2.nbt` (binary/non-JSON, size 2292 -> 2275)
+- `~ data/trek/structure/village/plains/houses/plains_small_house_3.nbt` (binary/non-JSON, size 1928 -> 1905)
+- `~ data/trek/structure/village/plains/houses/plains_small_house_4.nbt` (binary/non-JSON, size 2479 -> 2436)
+- `~ data/trek/structure/village/plains/houses/plains_stable_1.nbt` (binary/non-JSON, size 2076 -> 1985)
+- `~ data/trek/structure/village/savanna/houses/savanna_armorer_1.nbt` (binary/non-JSON, size 6380 -> 5814)
+- `~ data/trek/structure/village/savanna/houses/savanna_big_house_1.nbt` (binary/non-JSON, size 6280 -> 5766)
+- `~ data/trek/structure/village/savanna/houses/savanna_butcher_1.nbt` (binary/non-JSON, size 3570 -> 3412)
+- `~ data/trek/structure/village/savanna/houses/savanna_cartographer_1.nbt` (binary/non-JSON, size 3679 -> 3458)
+- `~ data/trek/structure/village/savanna/houses/savanna_farm_1.nbt` (binary/non-JSON, size 2385 -> 2214)
+- `~ data/trek/structure/village/savanna/houses/savanna_farm_2.nbt` (binary/non-JSON, size 2282 -> 2149)
+- `~ data/trek/structure/village/savanna/houses/savanna_library_1.nbt` (binary/non-JSON, size 5930 -> 5503)
+- `~ data/trek/structure/village/savanna/houses/savanna_medium_house_1.nbt` (binary/non-JSON, size 4829 -> 4513)
+- `~ data/trek/structure/village/savanna/houses/savanna_medium_house_2.nbt` (binary/non-JSON, size 5000 -> 4683)
+- `~ data/trek/structure/village/savanna/houses/savanna_shepherd_1.nbt` (binary/non-JSON, size 4700 -> 4351)
+- `~ data/trek/structure/village/savanna/houses/savanna_tannery_1.nbt` (binary/non-JSON, size 2330 -> 2243)
+- `~ data/trek/structure/village/savanna/houses/savanna_teepee_1.nbt` (binary/non-JSON, size 2078 -> 2015)
+- `~ data/trek/structure/village/savanna/houses/savanna_teepee_2.nbt` (binary/non-JSON, size 2044 -> 1991)
+- `~ data/trek/structure/village/savanna/houses/savanna_teepee_3.nbt` (binary/non-JSON, size 2112 -> 2051)
+- `~ data/trek/structure/village/savanna/houses/savanna_temple_1.nbt` (binary/non-JSON, size 8605 -> 7970)
+- `~ data/trek/structure/village/savanna/houses/savanna_toolsmith_1.nbt` (binary/non-JSON, size 3120 -> 3010)
+- `~ data/trek/structure/village/savanna/houses/savanna_weaponsmith_1.nbt` (binary/non-JSON, size 1114 -> 1128)
+- `~ data/trek/structure/village/savanna/town_centers/savanna_market_1.nbt` (binary/non-JSON, size 2307 -> 2211)
+- `~ data/trek/structure/village/snowy/houses/snowy_animal_pen_1.nbt` (binary/non-JSON, size 2059 -> 1937)
+- `~ data/trek/structure/village/snowy/houses/snowy_animal_pen_2.nbt` (binary/non-JSON, size 2541 -> 2360)
+- `~ data/trek/structure/village/snowy/houses/snowy_butcher_1.nbt` (binary/non-JSON, size 2343 -> 2278)
+- `~ data/trek/structure/village/snowy/houses/snowy_chicken_coop_1.nbt` (binary/non-JSON, size 2001 -> 1970)
+- `~ data/trek/structure/village/snowy/houses/snowy_fletcher_1.nbt` (binary/non-JSON, size 2200 -> 2145)
+- `~ data/trek/structure/village/snowy/houses/snowy_library_1.nbt` (binary/non-JSON, size 5026 -> 4722)
+- `~ data/trek/structure/village/snowy/houses/snowy_mason_1.nbt` (binary/non-JSON, size 2217 -> 2136)
+- `~ data/trek/structure/village/snowy/houses/snowy_shepherd_1.nbt` (binary/non-JSON, size 3866 -> 3690)
+- `~ data/trek/structure/village/snowy/houses/snowy_small_house_1.nbt` (binary/non-JSON, size 1480 -> 1460)
+- `~ data/trek/structure/village/snowy/houses/snowy_small_house_2.nbt` (binary/non-JSON, size 1050 -> 1067)
+- `~ data/trek/structure/village/snowy/houses/snowy_small_house_3.nbt` (binary/non-JSON, size 1372 -> 1379)
+- `~ data/trek/structure/village/snowy/houses/snowy_small_house_5.nbt` (binary/non-JSON, size 1544 -> 1539)
+- `~ data/trek/structure/village/snowy/houses/snowy_tannery_1.nbt` (binary/non-JSON, size 1571 -> 1552)
+- `~ data/trek/structure/village/snowy/houses/snowy_temple_1.nbt` (binary/non-JSON, size 14299 -> 13300)
+- `~ data/trek/structure/village/swamp/houses/swamp_armorer_1.nbt` (binary/non-JSON, size 5035 -> 4813)
+- `~ data/trek/structure/village/swamp/houses/swamp_big_house_1.nbt` (binary/non-JSON, size 10030 -> 9448)
+- `~ data/trek/structure/village/swamp/houses/swamp_butcher_1.nbt` (binary/non-JSON, size 4372 -> 4181)
+- `~ data/trek/structure/village/swamp/houses/swamp_cartographer_1.nbt` (binary/non-JSON, size 5446 -> 5182)
+- `~ data/trek/structure/village/swamp/houses/swamp_farm_1.nbt` (binary/non-JSON, size 2691 -> 2542)
+- `~ data/trek/structure/village/swamp/houses/swamp_farm_2.nbt` (binary/non-JSON, size 2459 -> 2355)
+- `~ data/trek/structure/village/swamp/houses/swamp_fisher_1.nbt` (binary/non-JSON, size 5269 -> 4786)
+- `~ data/trek/structure/village/swamp/houses/swamp_fletcher_1.nbt` (binary/non-JSON, size 8160 -> 7700)
+- `~ data/trek/structure/village/swamp/houses/swamp_library_1.nbt` (binary/non-JSON, size 6654 -> 6321)
+- `~ data/trek/structure/village/swamp/houses/swamp_mason_1.nbt` (binary/non-JSON, size 3440 -> 3349)
+- `~ data/trek/structure/village/swamp/houses/swamp_medium_house_1.nbt` (binary/non-JSON, size 5957 -> 5617)
+- `~ data/trek/structure/village/swamp/houses/swamp_medium_house_2.nbt` (binary/non-JSON, size 6780 -> 6398)
+- `~ data/trek/structure/village/swamp/houses/swamp_shepherd_1.nbt` (binary/non-JSON, size 3973 -> 3748)
+- `~ data/trek/structure/village/swamp/houses/swamp_small_house_1.nbt` (binary/non-JSON, size 2277 -> 2257)
+- `~ data/trek/structure/village/swamp/houses/swamp_small_house_2.nbt` (binary/non-JSON, size 2841 -> 2779)
+- `~ data/trek/structure/village/swamp/houses/swamp_small_house_3.nbt` (binary/non-JSON, size 2210 -> 2188)
+- `~ data/trek/structure/village/swamp/houses/swamp_small_house_4.nbt` (binary/non-JSON, size 2359 -> 2336)
+- `~ data/trek/structure/village/swamp/houses/swamp_tannery_1.nbt` (binary/non-JSON, size 5142 -> 4852)
+- `~ data/trek/structure/village/swamp/houses/swamp_toolsmith_1.nbt` (binary/non-JSON, size 2789 -> 2719)
+- `~ data/trek/structure/village/swamp/houses/swamp_weaponsmith_1.nbt` (binary/non-JSON, size 4916 -> 4711)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_animal_pen_1.nbt` (binary/non-JSON, size 1223 -> 1213)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_armorer_1.nbt` (binary/non-JSON, size 1376 -> 1371)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_butcher_1.nbt` (binary/non-JSON, size 2890 -> 2750)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_cartographer_1.nbt` (binary/non-JSON, size 2020 -> 2005)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_fisher_1.nbt` (binary/non-JSON, size 1410 -> 1419)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_fletcher_1.nbt` (binary/non-JSON, size 1592 -> 1602)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_large_farm_1.nbt` (binary/non-JSON, size 1488 -> 1462)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_large_farm_2.nbt` (binary/non-JSON, size 1571 -> 1534)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_library_1.nbt` (binary/non-JSON, size 1833 -> 1779)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_medium_house_2.nbt` (binary/non-JSON, size 2361 -> 2294)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_medium_house_3.nbt` (binary/non-JSON, size 1990 -> 1943)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_medium_house_4.nbt` (binary/non-JSON, size 1672 -> 1672)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_shepherd_1.nbt` (binary/non-JSON, size 2596 -> 2484)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_small_house_1.nbt` (binary/non-JSON, size 1531 -> 1519)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_small_house_2.nbt` (binary/non-JSON, size 1975 -> 1964)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_small_house_3.nbt` (binary/non-JSON, size 1185 -> 1208)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_small_house_4.nbt` (binary/non-JSON, size 1530 -> 1529)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_small_house_5.nbt` (binary/non-JSON, size 1394 -> 1405)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_small_house_6.nbt` (binary/non-JSON, size 1864 -> 1870)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_small_house_7.nbt` (binary/non-JSON, size 1611 -> 1618)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_tannery_1.nbt` (binary/non-JSON, size 1709 -> 1670)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_temple_1.nbt` (binary/non-JSON, size 2664 -> 2597)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_toolsmith_1.nbt` (binary/non-JSON, size 1492 -> 1496)
+- `~ data/trek/structure/village/swamp_vanilla/houses/swamp_weaponsmith_1.nbt` (binary/non-JSON, size 1814 -> 1807)
+- `~ data/trek/structure/village/swamp_vanilla/town_centers/swamp_meeting_point_1.nbt` (binary/non-JSON, size 2606 -> 2521)
+- `~ data/trek/structure/village/swamp_vanilla/town_centers/swamp_meeting_point_2.nbt` (binary/non-JSON, size 7154 -> 6635)
+- `~ data/trek/structure/village/taiga/houses/taiga_armorer_1.nbt` (binary/non-JSON, size 6850 -> 6506)
+- `~ data/trek/structure/village/taiga/houses/taiga_butcher_1.nbt` (binary/non-JSON, size 7017 -> 6628)
+- `~ data/trek/structure/village/taiga/houses/taiga_church_1.nbt` (binary/non-JSON, size 6541 -> 6191)
+- `~ data/trek/structure/village/taiga/houses/taiga_farm_1.nbt` (binary/non-JSON, size 2384 -> 2210)
+- `~ data/trek/structure/village/taiga/houses/taiga_farm_2.nbt` (binary/non-JSON, size 1638 -> 1531)
+- `~ data/trek/structure/village/taiga/houses/taiga_farm_3.nbt` (binary/non-JSON, size 2756 -> 2604)
+- `~ data/trek/structure/village/taiga/houses/taiga_library_1.nbt` (binary/non-JSON, size 3110 -> 3008)
+- `~ data/trek/structure/village/taiga/houses/taiga_medium_house_1.nbt` (binary/non-JSON, size 2827 -> 2779)
+- `~ data/trek/structure/village/taiga/houses/taiga_medium_house_2.nbt` (binary/non-JSON, size 2690 -> 2619)
+- `~ data/trek/structure/village/taiga/houses/taiga_shepherd_1.nbt` (binary/non-JSON, size 3163 -> 2994)
+- `~ data/trek/structure/village/taiga/houses/taiga_small_house_4.nbt` (binary/non-JSON, size 2218 -> 2185)
+- `~ data/trek/structure/village/taiga/houses/taiga_tannery_1.nbt` (binary/non-JSON, size 3225 -> 3051)
+- `~ data/trek/structure/village/taiga/houses/taiga_toolsmith_1.nbt` (binary/non-JSON, size 4005 -> 3800)
+- `~ data/trek/worldgen/structure/overworld/common/cooking_pork.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/common/elven_pillars.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/common/ruins.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/common/small_desert_ruins.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/common/small_swamp_ruins.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/common/smoldering_altar.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/common/termite_hill.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/common/two_woods.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/common/well.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/common/well_pillager_small.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/medium/birch_trade.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/medium/camp_2.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/medium/claw_spike.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/medium/cold_red_trade.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/medium/dark_oak_trade.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/medium/frozen_tree.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/medium/jungle_trade.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/medium/oasis.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/medium/offshore_platform_pillager.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/medium/small_pyramide.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/medium/small_red_trade.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/medium/snow_cottage.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/medium/spruce_cottage.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/medium/star_spike.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/medium/three_finger_ice.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/medium/well_pillager_medium.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/medium/wild_stone.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/rare/castle.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/rare/elven_tree.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/rare/pillager_mansion.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/rare/portal_sword.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/rare/villager_castle.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/rare/villager_fortress.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/rare/wooden_manor.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/very_common/plains.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ data/trek/worldgen/structure/overworld/very_common/rocks.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/overworld/very_rare/coves.json` (whitespace/formatting only)
+- `~ data/trek/worldgen/structure/village/swamp_vanilla.json`:
+  - `terrain_adaptation`: `none` -> `beard_thin`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `121` -> `94`
+  - `pack.min_format`: `121` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+  - `pack.version`: `B0.6.2.1` -> `<REMOVED>`
+
+### `Wabi-Sabi Structures-3.0.5-1.21.11 Datapack` (added: 0, removed: 0, modified: 321)
+**Modified files:**
+- `~ data/wabi_sabi_structures/structure/abandoned_small_castle/abandoned_small_castle.nbt` (binary/non-JSON, size 61651 -> 56838)
+- `~ data/wabi_sabi_structures/structure/badlands_dwelling/small_badlands_dwelling.nbt` (binary/non-JSON, size 7378 -> 7238)
+- `~ data/wabi_sabi_structures/structure/bamboo_firework_site/bamboo_firework_site_carts.nbt` (binary/non-JSON, size 9312 -> 8933)
+- `~ data/wabi_sabi_structures/structure/bamboo_firework_site/bamboo_firework_site_hut.nbt` (binary/non-JSON, size 8887 -> 8724)
+- `~ data/wabi_sabi_structures/structure/bamboo_firework_site/bamboo_firework_site_range.nbt` (binary/non-JSON, size 8307 -> 8005)
+- `~ data/wabi_sabi_structures/structure/basalt_castle/basalt_castle.nbt` (binary/non-JSON, size 137013 -> 128950)
+- `~ data/wabi_sabi_structures/structure/basalt_factory_ruin/basalt_factory_ruin.nbt` (binary/non-JSON, size 20987 -> 20053)
+- `~ data/wabi_sabi_structures/structure/bat_monolith/bat_monolith_big.nbt` (binary/non-JSON, size 7255 -> 7182)
+- `~ data/wabi_sabi_structures/structure/bat_monolith/bat_monolith_small.nbt` (binary/non-JSON, size 2099 -> 2082)
+- `~ data/wabi_sabi_structures/structure/bat_monolith/bat_monolith_tall.nbt` (binary/non-JSON, size 9644 -> 9831)
+- `~ data/wabi_sabi_structures/structure/bee_farm/bee_farm_cherry.nbt` (binary/non-JSON, size 10168 -> 9896)
+- `~ data/wabi_sabi_structures/structure/bee_farm/bee_farm_forest.nbt` (binary/non-JSON, size 8886 -> 8443)
+- `~ data/wabi_sabi_structures/structure/beetroot_patch/beetroot_patch_huge_39.nbt` (binary/non-JSON, size 4438 -> 4193)
+- `~ data/wabi_sabi_structures/structure/candlemaker_house/candlemaker_house.nbt` (binary/non-JSON, size 12908 -> 12084)
+- `~ data/wabi_sabi_structures/structure/carrot_patch/carrot_field_variant_1.nbt` (binary/non-JSON, size 5327 -> 4979)
+- `~ data/wabi_sabi_structures/structure/carrot_patch/carrot_field_variant_2.nbt` (binary/non-JSON, size 6819 -> 6390)
+- `~ data/wabi_sabi_structures/structure/chorus_orchard/chorus_orchard.nbt` (binary/non-JSON, size 91019 -> 87535)
+- `~ data/wabi_sabi_structures/structure/concrete_mill_ruins/concrete_mill_ruins_shore.nbt` (binary/non-JSON, size 33810 -> 31612)
+- `~ data/wabi_sabi_structures/structure/concrete_mill_ruins/desert/concrete_mill_ruins_desert.nbt` (binary/non-JSON, size 41275 -> 39718)
+- `~ data/wabi_sabi_structures/structure/concrete_mill_ruins/desert/roads/desert_road_1_1.nbt` (binary/non-JSON, size 566 -> 582)
+- `~ data/wabi_sabi_structures/structure/concrete_mill_ruins/desert/roads/desert_road_1_2.nbt` (binary/non-JSON, size 552 -> 568)
+- `~ data/wabi_sabi_structures/structure/concrete_mill_ruins/desert/roads/desert_road_1_3.nbt` (binary/non-JSON, size 568 -> 585)
+- `~ data/wabi_sabi_structures/structure/concrete_mill_ruins/desert/roads/desert_road_2_1.nbt` (binary/non-JSON, size 576 -> 590)
+- `~ data/wabi_sabi_structures/structure/concrete_mill_ruins/desert/roads/desert_road_2_2.nbt` (binary/non-JSON, size 552 -> 568)
+- `~ data/wabi_sabi_structures/structure/concrete_mill_ruins/desert/roads/desert_t_intersect_road_1.nbt` (binary/non-JSON, size 754 -> 744)
+- `~ data/wabi_sabi_structures/structure/concrete_mill_ruins/desert/roads/desert_t_intersect_road_2.nbt` (binary/non-JSON, size 736 -> 736)
+- `~ data/wabi_sabi_structures/structure/concrete_mill_ruins/desert/roads/desert_t_intersect_road_3.nbt` (binary/non-JSON, size 733 -> 727)
+- `~ data/wabi_sabi_structures/structure/concrete_mill_ruins/desert/roads/mill_addition_4.nbt` (binary/non-JSON, size 3444 -> 3382)
+- `~ data/wabi_sabi_structures/structure/dark_witch_keep/dark_witch_keep.nbt` (binary/non-JSON, size 17242 -> 17669)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_hunter.nbt` (binary/non-JSON, size 1717 -> 1715)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_jungle_hunter.nbt` (binary/non-JSON, size 2102 -> 2111)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_jungle_naturalist.nbt` (binary/non-JSON, size 1838 -> 1847)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_jungle_sentinel.nbt` (binary/non-JSON, size 1989 -> 1990)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_jungle_soothsayer.nbt` (binary/non-JSON, size 1480 -> 1491)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_mushroom_hunter.nbt` (binary/non-JSON, size 1984 -> 1988)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_mushroom_naturalist.nbt` (binary/non-JSON, size 1752 -> 1751)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_mushroom_sentinel.nbt` (binary/non-JSON, size 1921 -> 1916)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_mushroom_soothsayer.nbt` (binary/non-JSON, size 1570 -> 1577)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_naturalist.nbt` (binary/non-JSON, size 1507 -> 1488)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_savanna_hunter.nbt` (binary/non-JSON, size 1908 -> 1912)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_savanna_naturalist.nbt` (binary/non-JSON, size 1584 -> 1597)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_savanna_sentinel.nbt` (binary/non-JSON, size 1777 -> 1793)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_savanna_soothsayer.nbt` (binary/non-JSON, size 1358 -> 1368)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_sentinel.nbt` (binary/non-JSON, size 1712 -> 1713)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_soothsayer.nbt` (binary/non-JSON, size 1241 -> 1243)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_swamp_hunter.nbt` (binary/non-JSON, size 1947 -> 1954)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_swamp_naturalist.nbt` (binary/non-JSON, size 1723 -> 1728)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_swamp_sentinel.nbt` (binary/non-JSON, size 1918 -> 1930)
+- `~ data/wabi_sabi_structures/structure/effigy_patch/effigy_patch_swamp_soothsayer.nbt` (binary/non-JSON, size 1357 -> 1367)
+- `~ data/wabi_sabi_structures/structure/firewatch_tower/large_firewatch_tower.nbt` (binary/non-JSON, size 16734 -> 16001)
+- `~ data/wabi_sabi_structures/structure/firewatch_tower/small_firewatch_tower.nbt` (binary/non-JSON, size 15569 -> 14548)
+- `~ data/wabi_sabi_structures/structure/forgotten_remnants/forgotten_remnants_altar.nbt` (binary/non-JSON, size 6934 -> 6682)
+- `~ data/wabi_sabi_structures/structure/forgotten_remnants/forgotten_remnants_bones.nbt` (binary/non-JSON, size 6447 -> 6233)
+- `~ data/wabi_sabi_structures/structure/forgotten_remnants/forgotten_remnants_broken_portal.nbt` (binary/non-JSON, size 8265 -> 7890)
+- `~ data/wabi_sabi_structures/structure/forgotten_remnants/forgotten_remnants_camp.nbt` (binary/non-JSON, size 8610 -> 8293)
+- `~ data/wabi_sabi_structures/structure/forgotten_remnants/forgotten_remnants_ice_house.nbt` (binary/non-JSON, size 7481 -> 7264)
+- `~ data/wabi_sabi_structures/structure/frost_reactor_plant/core.nbt` (binary/non-JSON, size 22671 -> 20577)
+- `~ data/wabi_sabi_structures/structure/frost_reactor_plant/frost_reactor_plant.nbt` (binary/non-JSON, size 35831 -> 34677)
+- `~ data/wabi_sabi_structures/structure/frost_reactor_plant/tower.nbt` (binary/non-JSON, size 1242 -> 1244)
+- `~ data/wabi_sabi_structures/structure/gallows/gallows.nbt` (binary/non-JSON, size 2025 -> 1975)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_1.nbt` (binary/non-JSON, size 716 -> 739)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_10.nbt` (binary/non-JSON, size 732 -> 756)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_11.nbt` (binary/non-JSON, size 748 -> 770)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_12.nbt` (binary/non-JSON, size 750 -> 774)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_13.nbt` (binary/non-JSON, size 754 -> 779)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_14.nbt` (binary/non-JSON, size 751 -> 774)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_15.nbt` (binary/non-JSON, size 734 -> 758)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_16.nbt` (binary/non-JSON, size 754 -> 777)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_17.nbt` (binary/non-JSON, size 753 -> 776)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_18.nbt` (binary/non-JSON, size 721 -> 744)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_19.nbt` (binary/non-JSON, size 741 -> 764)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_2.nbt` (binary/non-JSON, size 731 -> 755)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_20.nbt` (binary/non-JSON, size 740 -> 764)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_21.nbt` (binary/non-JSON, size 730 -> 755)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_22.nbt` (binary/non-JSON, size 718 -> 744)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_23.nbt` (binary/non-JSON, size 766 -> 790)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_24.nbt` (binary/non-JSON, size 721 -> 745)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_25.nbt` (binary/non-JSON, size 738 -> 761)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_26.nbt` (binary/non-JSON, size 721 -> 746)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_27.nbt` (binary/non-JSON, size 768 -> 792)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_28.nbt` (binary/non-JSON, size 735 -> 758)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_29.nbt` (binary/non-JSON, size 731 -> 756)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_3.nbt` (binary/non-JSON, size 712 -> 736)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_30.nbt` (binary/non-JSON, size 769 -> 792)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_4.nbt` (binary/non-JSON, size 731 -> 755)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_5.nbt` (binary/non-JSON, size 747 -> 771)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_6.nbt` (binary/non-JSON, size 732 -> 754)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_7.nbt` (binary/non-JSON, size 734 -> 757)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_8.nbt` (binary/non-JSON, size 737 -> 760)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/chain_armor/chain_armor_9.nbt` (binary/non-JSON, size 717 -> 741)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/empty_left_armor_stand.nbt` (binary/non-JSON, size 656 -> 689)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/empty_right_armor_stand.nbt` (binary/non-JSON, size 658 -> 691)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/empty_straight_armor_stand.nbt` (binary/non-JSON, size 652 -> 688)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_1.nbt` (binary/non-JSON, size 744 -> 768)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_10.nbt` (binary/non-JSON, size 727 -> 754)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_11.nbt` (binary/non-JSON, size 747 -> 772)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_12.nbt` (binary/non-JSON, size 723 -> 748)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_13.nbt` (binary/non-JSON, size 735 -> 760)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_14.nbt` (binary/non-JSON, size 761 -> 785)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_15.nbt` (binary/non-JSON, size 730 -> 754)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_16.nbt` (binary/non-JSON, size 719 -> 744)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_17.nbt` (binary/non-JSON, size 717 -> 742)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_18.nbt` (binary/non-JSON, size 735 -> 760)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_19.nbt` (binary/non-JSON, size 752 -> 776)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_2.nbt` (binary/non-JSON, size 752 -> 777)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_20.nbt` (binary/non-JSON, size 752 -> 777)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_21.nbt` (binary/non-JSON, size 738 -> 763)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_22.nbt` (binary/non-JSON, size 733 -> 758)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_23.nbt` (binary/non-JSON, size 746 -> 770)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_24.nbt` (binary/non-JSON, size 729 -> 754)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_25.nbt` (binary/non-JSON, size 734 -> 758)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_26.nbt` (binary/non-JSON, size 718 -> 742)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_27.nbt` (binary/non-JSON, size 714 -> 739)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_28.nbt` (binary/non-JSON, size 752 -> 779)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_29.nbt` (binary/non-JSON, size 748 -> 772)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_3.nbt` (binary/non-JSON, size 742 -> 765)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_30.nbt` (binary/non-JSON, size 734 -> 760)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_4.nbt` (binary/non-JSON, size 732 -> 758)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_5.nbt` (binary/non-JSON, size 756 -> 780)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_6.nbt` (binary/non-JSON, size 717 -> 738)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_7.nbt` (binary/non-JSON, size 740 -> 767)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_8.nbt` (binary/non-JSON, size 729 -> 754)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/golden_armor/golden_armor_9.nbt` (binary/non-JSON, size 733 -> 758)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_1.nbt` (binary/non-JSON, size 729 -> 751)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_10.nbt` (binary/non-JSON, size 739 -> 763)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_11.nbt` (binary/non-JSON, size 715 -> 738)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_12.nbt` (binary/non-JSON, size 729 -> 753)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_13.nbt` (binary/non-JSON, size 733 -> 754)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_14.nbt` (binary/non-JSON, size 742 -> 765)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_15.nbt` (binary/non-JSON, size 727 -> 750)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_16.nbt` (binary/non-JSON, size 763 -> 784)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_17.nbt` (binary/non-JSON, size 733 -> 755)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_18.nbt` (binary/non-JSON, size 748 -> 770)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_19.nbt` (binary/non-JSON, size 732 -> 755)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_2.nbt` (binary/non-JSON, size 741 -> 763)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_20.nbt` (binary/non-JSON, size 714 -> 737)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_21.nbt` (binary/non-JSON, size 714 -> 737)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_22.nbt` (binary/non-JSON, size 731 -> 753)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_23.nbt` (binary/non-JSON, size 727 -> 751)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_24.nbt` (binary/non-JSON, size 725 -> 748)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_25.nbt` (binary/non-JSON, size 730 -> 753)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_26.nbt` (binary/non-JSON, size 731 -> 754)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_27.nbt` (binary/non-JSON, size 760 -> 780)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_28.nbt` (binary/non-JSON, size 727 -> 751)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_29.nbt` (binary/non-JSON, size 731 -> 754)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_3.nbt` (binary/non-JSON, size 712 -> 733)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_30.nbt` (binary/non-JSON, size 745 -> 769)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_4.nbt` (binary/non-JSON, size 733 -> 756)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_5.nbt` (binary/non-JSON, size 744 -> 767)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_6.nbt` (binary/non-JSON, size 722 -> 745)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_7.nbt` (binary/non-JSON, size 725 -> 749)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_8.nbt` (binary/non-JSON, size 708 -> 731)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/iron_armor/iron_armor_9.nbt` (binary/non-JSON, size 710 -> 731)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_1.nbt` (binary/non-JSON, size 731 -> 757)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_10.nbt` (binary/non-JSON, size 708 -> 734)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_11.nbt` (binary/non-JSON, size 734 -> 759)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_12.nbt` (binary/non-JSON, size 744 -> 771)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_13.nbt` (binary/non-JSON, size 736 -> 762)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_14.nbt` (binary/non-JSON, size 749 -> 775)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_15.nbt` (binary/non-JSON, size 732 -> 758)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_16.nbt` (binary/non-JSON, size 746 -> 771)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_17.nbt` (binary/non-JSON, size 731 -> 756)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_18.nbt` (binary/non-JSON, size 737 -> 761)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_19.nbt` (binary/non-JSON, size 730 -> 755)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_2.nbt` (binary/non-JSON, size 745 -> 770)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_20.nbt` (binary/non-JSON, size 736 -> 761)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_21.nbt` (binary/non-JSON, size 742 -> 769)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_22.nbt` (binary/non-JSON, size 711 -> 738)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_23.nbt` (binary/non-JSON, size 736 -> 763)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_24.nbt` (binary/non-JSON, size 748 -> 774)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_25.nbt` (binary/non-JSON, size 758 -> 784)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_26.nbt` (binary/non-JSON, size 717 -> 743)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_27.nbt` (binary/non-JSON, size 730 -> 756)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_28.nbt` (binary/non-JSON, size 725 -> 751)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_29.nbt` (binary/non-JSON, size 757 -> 783)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_3.nbt` (binary/non-JSON, size 727 -> 754)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_30.nbt` (binary/non-JSON, size 744 -> 769)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_4.nbt` (binary/non-JSON, size 759 -> 784)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_5.nbt` (binary/non-JSON, size 728 -> 753)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_6.nbt` (binary/non-JSON, size 748 -> 773)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_7.nbt` (binary/non-JSON, size 725 -> 752)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_8.nbt` (binary/non-JSON, size 731 -> 756)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/armor_stands/leather_armor/leather_armor_9.nbt` (binary/non-JSON, size 753 -> 778)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/exotic_animals/baby_sniffer.nbt` (binary/non-JSON, size 703 -> 728)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/exotic_animals/cold_frog.nbt` (binary/non-JSON, size 843 -> 864)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/exotic_animals/persistent_baby_llama.nbt` (binary/non-JSON, size 835 -> 856)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/exotic_animals/temperate_frog.nbt` (binary/non-JSON, size 842 -> 867)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/exotic_animals/warm_frog.nbt` (binary/non-JSON, size 840 -> 863)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/hostiles/persistent_witch.nbt` (binary/non-JSON, size 755 -> 774)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/pets/persistent_cat.nbt` (binary/non-JSON, size 775 -> 801)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/pets/persistent_fox.nbt` (binary/non-JSON, size 894 -> 920)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/pets/persistent_fox_with_berry.nbt` (binary/non-JSON, size 861 -> 894)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/pets/persistent_parrot.nbt` (binary/non-JSON, size 831 -> 860)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/villagers/baby_villager.nbt` (binary/non-JSON, size 980 -> 1002)
+- `~ data/wabi_sabi_structures/structure/generic_jigsaws/entities/villagers/nitwit_villager.nbt` (binary/non-JSON, size 901 -> 926)
+- `~ data/wabi_sabi_structures/structure/hellish_orphanage/hellish_orphanage.nbt` (binary/non-JSON, size 42371 -> 39369)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/cherry/hide_tannery_cherry.nbt` (binary/non-JSON, size 11387 -> 10956)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/additions/armor_stand.nbt` (binary/non-JSON, size 363 -> 381)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/additions/chopped_oak_tree.nbt` (binary/non-JSON, size 667 -> 669)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/additions/cow.nbt` (binary/non-JSON, size 360 -> 371)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/additions/wood_pile_1.nbt` (binary/non-JSON, size 470 -> 473)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/additions/wood_pile_2.nbt` (binary/non-JSON, size 492 -> 497)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/hide_tannery_oak.nbt` (binary/non-JSON, size 8487 -> 8075)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/path/path_armadillo_pen.nbt` (binary/non-JSON, size 2079 -> 2008)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/path/path_curve_left.nbt` (binary/non-JSON, size 484 -> 497)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/path/path_curve_right.nbt` (binary/non-JSON, size 502 -> 513)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/path/path_straight.nbt` (binary/non-JSON, size 481 -> 492)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/path/path_turn_left.nbt` (binary/non-JSON, size 469 -> 486)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/path/path_turn_right.nbt` (binary/non-JSON, size 482 -> 496)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/path/path_water_tower.nbt` (binary/non-JSON, size 1477 -> 1471)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/tanning_racks/oak_tanning_rack_1.nbt` (binary/non-JSON, size 1001 -> 1018)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/tanning_racks/oak_tanning_rack_2.nbt` (binary/non-JSON, size 819 -> 845)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/tanning_racks/oak_tanning_rack_3.nbt` (binary/non-JSON, size 885 -> 907)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/tanning_racks/oak_tanning_rack_4.nbt` (binary/non-JSON, size 922 -> 950)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/tanning_racks/oak_tanning_rack_5.nbt` (binary/non-JSON, size 1030 -> 1055)
+- `~ data/wabi_sabi_structures/structure/hide_tannery/oak/tanning_racks/oak_tanning_rack_6.nbt` (binary/non-JSON, size 729 -> 755)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/additions/crude_light.nbt` (binary/non-JSON, size 468 -> 489)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/additions/empty_rack.nbt` (binary/non-JSON, size 398 -> 420)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/additions/howler_bone_1.nbt` (binary/non-JSON, size 345 -> 369)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/additions/howler_bone_2.nbt` (binary/non-JSON, size 366 -> 387)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/additions/howler_bone_banner.nbt` (binary/non-JSON, size 497 -> 524)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/additions/howler_rock_1.nbt` (binary/non-JSON, size 383 -> 407)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/additions/howler_rock_2.nbt` (binary/non-JSON, size 397 -> 421)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/additions/howler_rock_3.nbt` (binary/non-JSON, size 453 -> 476)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/additions/supplies.nbt` (binary/non-JSON, size 512 -> 529)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/howlers_garrison.nbt` (binary/non-JSON, size 9317 -> 8661)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/kennels/kennel.nbt` (binary/non-JSON, size 2342 -> 2266)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/kennels/pen_kennel.nbt` (binary/non-JSON, size 1968 -> 1944)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/kennels/tower_kennel.nbt` (binary/non-JSON, size 3063 -> 3014)
+- `~ data/wabi_sabi_structures/structure/howlers_garrison/kennels/traitors_hut.nbt` (binary/non-JSON, size 1750 -> 1725)
+- `~ data/wabi_sabi_structures/structure/ice_shanty/ice_shanty.nbt` (binary/non-JSON, size 2858 -> 2752)
+- `~ data/wabi_sabi_structures/structure/llama_sanctuary/llama_sanctuary_hills.nbt` (binary/non-JSON, size 40810 -> 37868)
+- `~ data/wabi_sabi_structures/structure/llama_sanctuary/llama_sanctuary_plateau.nbt` (binary/non-JSON, size 24920 -> 22962)
+- `~ data/wabi_sabi_structures/structure/lost_foot/lost_foot.nbt` (binary/non-JSON, size 30843 -> 28951)
+- `~ data/wabi_sabi_structures/structure/lumpy_tower/lumpy_tower.nbt` (binary/non-JSON, size 17448 -> 16995)
+- `~ data/wabi_sabi_structures/structure/marine_observation_hub/marine_observation_hub.nbt` (binary/non-JSON, size 52114 -> 48795)
+- `~ data/wabi_sabi_structures/structure/monster_egg_banquet/monster_egg_banquet.nbt` (binary/non-JSON, size 26223 -> 24440)
+- `~ data/wabi_sabi_structures/structure/mossy_roof_shed/mossy_roof_shed.nbt` (binary/non-JSON, size 3468 -> 3317)
+- `~ data/wabi_sabi_structures/structure/muddy_badlands_well/clean_badlands_well.nbt` (binary/non-JSON, size 5160 -> 5186)
+- `~ data/wabi_sabi_structures/structure/muddy_badlands_well/muddy_badlands_well.nbt` (binary/non-JSON, size 5255 -> 5322)
+- `~ data/wabi_sabi_structures/structure/mushroom_house/mushroom_house.nbt` (binary/non-JSON, size 6928 -> 6622)
+- `~ data/wabi_sabi_structures/structure/old_fort/old_fort.nbt` (binary/non-JSON, size 3977 -> 3802)
+- `~ data/wabi_sabi_structures/structure/old_stable/decaying_stable.nbt` (binary/non-JSON, size 4762 -> 4492)
+- `~ data/wabi_sabi_structures/structure/old_stable/new_stable.nbt` (binary/non-JSON, size 5196 -> 4835)
+- `~ data/wabi_sabi_structures/structure/old_stable/new_stalls/new_stall_1.nbt` (binary/non-JSON, size 751 -> 768)
+- `~ data/wabi_sabi_structures/structure/old_stable/new_stalls/new_stall_2.nbt` (binary/non-JSON, size 743 -> 762)
+- `~ data/wabi_sabi_structures/structure/old_stable/old_stable.nbt` (binary/non-JSON, size 5324 -> 5066)
+- `~ data/wabi_sabi_structures/structure/old_stable/old_stalls/old_stall_1.nbt` (binary/non-JSON, size 767 -> 785)
+- `~ data/wabi_sabi_structures/structure/old_stable/old_stalls/old_stall_2.nbt` (binary/non-JSON, size 784 -> 798)
+- `~ data/wabi_sabi_structures/structure/old_stable/old_stalls/old_stall_3.nbt` (binary/non-JSON, size 740 -> 759)
+- `~ data/wabi_sabi_structures/structure/old_tiny_house/old_tiny_house.nbt` (binary/non-JSON, size 4464 -> 4337)
+- `~ data/wabi_sabi_structures/structure/potato_patch/potato_field_variant_1.nbt` (binary/non-JSON, size 4005 -> 3855)
+- `~ data/wabi_sabi_structures/structure/potato_patch/potato_field_variant_2.nbt` (binary/non-JSON, size 5294 -> 4980)
+- `~ data/wabi_sabi_structures/structure/rot_tree/rot_tree_1.nbt` (binary/non-JSON, size 5711 -> 5874)
+- `~ data/wabi_sabi_structures/structure/rot_tree/rot_tree_2.nbt` (binary/non-JSON, size 4668 -> 4526)
+- `~ data/wabi_sabi_structures/structure/rot_tree/rot_tree_3.nbt` (binary/non-JSON, size 4762 -> 4843)
+- `~ data/wabi_sabi_structures/structure/shrine_of_preservation/shrine_of_preservation.nbt` (binary/non-JSON, size 23916 -> 22445)
+- `~ data/wabi_sabi_structures/structure/sphinx_hidey_hole/sphinx_hidey_hole_icy.nbt` (binary/non-JSON, size 5752 -> 5638)
+- `~ data/wabi_sabi_structures/structure/spruce_berry_farm/spruce_berry_farm.nbt` (binary/non-JSON, size 1740 -> 1651)
+- `~ data/wabi_sabi_structures/structure/spruce_cabin/roads/well.nbt` (binary/non-JSON, size 901 -> 890)
+- `~ data/wabi_sabi_structures/structure/spruce_cabin/spruce_cabin.nbt` (binary/non-JSON, size 4405 -> 4301)
+- `~ data/wabi_sabi_structures/structure/strider_stable/strider_stable.nbt` (binary/non-JSON, size 15147 -> 14071)
+- `~ data/wabi_sabi_structures/structure/tall_birch_house/tall_birch_house.nbt` (binary/non-JSON, size 14906 -> 13823)
+- `~ data/wabi_sabi_structures/structure/tree_cage/tree_cage.nbt` (binary/non-JSON, size 17105 -> 16126)
+- `~ data/wabi_sabi_structures/structure/turtle_soup_kitchen/turtle_soup_kitchen.nbt` (binary/non-JSON, size 25113 -> 23598)
+- `~ data/wabi_sabi_structures/structure/vigilante_fort/vigilante_fort.nbt` (binary/non-JSON, size 6193 -> 6007)
+- `~ data/wabi_sabi_structures/structure/wandering_trader_cart/temperate_additions/animal_transport_1.nbt` (binary/non-JSON, size 1790 -> 1763)
+- `~ data/wabi_sabi_structures/structure/wandering_trader_cart/temperate_additions/animal_transport_2.nbt` (binary/non-JSON, size 1782 -> 1778)
+- `~ data/wabi_sabi_structures/structure/wandering_trader_cart/temperate_additions/hay_wagon_1.nbt` (binary/non-JSON, size 1225 -> 1239)
+- `~ data/wabi_sabi_structures/structure/wandering_trader_cart/temperate_additions/hay_wagon_2.nbt` (binary/non-JSON, size 1078 -> 1096)
+- `~ data/wabi_sabi_structures/structure/wandering_trader_cart/temperate_additions/passenger_wagon_1.nbt` (binary/non-JSON, size 2048 -> 1963)
+- `~ data/wabi_sabi_structures/structure/wandering_trader_cart/temperate_additions/passenger_wagon_2.nbt` (binary/non-JSON, size 2083 -> 2058)
+- `~ data/wabi_sabi_structures/structure/wandering_trader_cart/temperate_additions/storage_cart_1.nbt` (binary/non-JSON, size 1799 -> 1787)
+- `~ data/wabi_sabi_structures/structure/wandering_trader_cart/temperate_additions/storage_cart_2.nbt` (binary/non-JSON, size 1539 -> 1527)
+- `~ data/wabi_sabi_structures/structure/wandering_trader_cart/wandering_trader_cart_cold.nbt` (binary/non-JSON, size 3584 -> 3521)
+- `~ data/wabi_sabi_structures/structure/wandering_trader_cart/wandering_trader_cart_temperate.nbt` (binary/non-JSON, size 3074 -> 3114)
+- `~ data/wabi_sabi_structures/structure/wandering_trader_cart/wandering_trader_cart_temperate_cargo.nbt` (binary/non-JSON, size 1431 -> 1468)
+- `~ data/wabi_sabi_structures/structure/warped_ender_claw/warped_ender_claw.nbt` (binary/non-JSON, size 8491 -> 8422)
+- `~ data/wabi_sabi_structures/structure/water_tower/water_tower_dark_oak.nbt` (binary/non-JSON, size 3044 -> 2946)
+- `~ data/wabi_sabi_structures/structure/water_tower/water_tower_forest.nbt` (binary/non-JSON, size 1926 -> 1855)
+- `~ data/wabi_sabi_structures/structure/water_tower/water_tower_oak.nbt` (binary/non-JSON, size 2450 -> 2401)
+- `~ data/wabi_sabi_structures/structure/water_tower/water_tower_savanna.nbt` (binary/non-JSON, size 1774 -> 1708)
+- `~ data/wabi_sabi_structures/structure/water_tower/water_tower_spruce.nbt` (binary/non-JSON, size 2222 -> 2152)
+- `~ data/wabi_sabi_structures/structure/wheat_patch/wheat_field.nbt` (binary/non-JSON, size 4521 -> 4224)
+- `~ data/wabi_sabi_structures/structure/woody_camp/camp_medium_caged_golem.nbt` (binary/non-JSON, size 2952 -> 2873)
+- `~ data/wabi_sabi_structures/structure/woody_camp/camp_medium_oak_tower.nbt` (binary/non-JSON, size 4509 -> 4415)
+- `~ data/wabi_sabi_structures/structure/woody_camp/camp_small_abandoned.nbt` (binary/non-JSON, size 890 -> 895)
+- `~ data/wabi_sabi_structures/structure/woody_camp/camp_small_donkey.nbt` (binary/non-JSON, size 1471 -> 1475)
+- `~ data/wabi_sabi_structures/structure/woody_camp/camp_small_fallen_tree.nbt` (binary/non-JSON, size 1238 -> 1235)
+- `~ data/wabi_sabi_structures/structure/woody_camp/camp_small_mossy.nbt` (binary/non-JSON, size 936 -> 942)
+- `~ data/wabi_sabi_structures/structure/woody_camp/camp_small_tent.nbt` (binary/non-JSON, size 1755 -> 1731)
+- `~ data/wabi_sabi_structures/structure/xocolatl_farm/xocolatl_farm.nbt` (binary/non-JSON, size 13771 -> 12801)
+- `~ data/wabi_sabi_structures/structure/zen_chair_museum/zen_chair_museum.nbt` (binary/non-JSON, size 108078 -> 103720)
+- `~ data/wabi_sabi_structures/worldgen/structure/abandoned_small_castle.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/beetroot_patch.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/carrot_patch.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/dark_witch_keep.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/effigy_patch_forest.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/effigy_patch_jungle.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/effigy_patch_mushroom.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/effigy_patch_savanna.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/effigy_patch_swamp.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/ender_claw.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/ice_shanty.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/lighthouse.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/lost_foot.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/lumpy_tower.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/melon_patch.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/monster_egg.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/moss_blob.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/muddy_badlands_well.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/obsidian_egg.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/potato_patch.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/pumpkin_patch.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/sphinx_hidey_hole_icy.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/sphinx_hidey_hole_sandy.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/tree_cage.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/wheat_patch.json`:
+  - `terrain_adaptation`: `<MISSING>` -> `none`
+- `~ data/wabi_sabi_structures/worldgen/structure/xocolatl_farm.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/wabi_sabi_structures/worldgen/structure/zen_chair_museum.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `94.1` -> `94`
+  - `pack.min_format`: `89.0` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `Yggdrasil-7.1.0` (added: 3, removed: 27, modified: 259)
+**Added files:**
+- `+ data/yggdrasil/worldgen/feature/peak.json`
+- `+ data/yggdrasil/worldgen/feature/peak_pillar.json`
+- `+ data/yggdrasil/worldgen/feature/runic_light.json`
+**Removed files:**
+- `- data/yggdrasil/advancement/era_fruit.json`
+- `- data/yggdrasil/advancement/explore/alfheim.json`
+- `- data/yggdrasil/advancement/explore/asflors.json`
+- `- data/yggdrasil/advancement/explore/asgard.json`
+- `- data/yggdrasil/advancement/explore/cuboid.json`
+- `- data/yggdrasil/advancement/explore/dokkalfar_ruins.json`
+- `- data/yggdrasil/advancement/explore/folkvangr.json`
+- `- data/yggdrasil/advancement/explore/glaosheimr.json`
+- `- data/yggdrasil/advancement/explore/helblom.json`
+- `- data/yggdrasil/advancement/explore/helheim.json`
+- `- data/yggdrasil/advancement/explore/lifblom.json`
+- `- data/yggdrasil/advancement/explore/neogard.json`
+- `- data/yggdrasil/advancement/explore/root.json`
+- `- data/yggdrasil/advancement/explore/runic_island.json`
+- `- data/yggdrasil/advancement/explore/runic_labyrinth.json`
+- `- data/yggdrasil/advancement/explore/vanaheim.json`
+- `- data/yggdrasil/advancement/explore/voroblom.json`
+- `- data/yggdrasil/advancement/explore/zenflors.json`
+- `- data/yggdrasil/advancement/obtain/dark_elven_bow.json`
+- `- data/yggdrasil/advancement/obtain/gungnir.json`
+- `- data/yggdrasil/advancement/obtain/rune_of_reva.json`
+- `- data/yggdrasil/advancement/obtain/twilight_of_yggdrasil_bow.json`
+- `- data/yggdrasil/advancement/obtain/vanir_blessing.json`
+- `- data/yggdrasil/advancement/ran_fruit.json`
+- `- data/yggdrasil/advancement/runic/fracture.json`
+- `- data/yggdrasil/advancement/runic/ruins.json`
+- `- data/yggdrasil/advancement/runic_fracture_door.json`
+**Modified files:**
+- `~ data/yggdrasil/loot_table/generic/reward/normal/equipement.json`:
+  - `pools[0].entries[0].items`: `<MISSING>` -> `#yggdrasil:equipement`
+  - `pools[0].entries[0].name`: `yggdrasil:equipement` -> `<REMOVED>`
+- `~ data/yggdrasil/loot_table/generic/reward/normal/weak_equipement.json`:
+  - `pools[0].entries[0].items`: `<MISSING>` -> `#yggdrasil:weak_equipement`
+  - `pools[0].entries[0].name`: `yggdrasil:weak_equipement` -> `<REMOVED>`
+- `~ data/yggdrasil/loot_table/generic/reward/rare/enchanted_item_10.json`:
+  - `pools[0].entries[0].items`: `<MISSING>` -> `#yggdrasil:weak_equipement`
+  - `pools[0].entries[0].name`: `yggdrasil:weak_equipement` -> `<REMOVED>`
+- `~ data/yggdrasil/loot_table/generic/reward/rare/enchanted_item_25.json`:
+  - `pools[0].entries[0].items`: `<MISSING>` -> `#yggdrasil:common_equipement`
+  - `pools[0].entries[0].name`: `yggdrasil:common_equipement` -> `<REMOVED>`
+- `~ data/yggdrasil/loot_table/generic/reward/rare/enchanted_item_50.json`:
+  - `pools[0].entries[0].items`: `<MISSING>` -> `#yggdrasil:equipement`
+  - `pools[0].entries[0].name`: `yggdrasil:equipement` -> `<REMOVED>`
+- `~ data/yggdrasil/structure/alfheim_tree/bridge/adapter.nbt` (binary/non-JSON, size 2516 -> 2378)
+- `~ data/yggdrasil/structure/alfheim_tree/bridge/bottom.nbt` (binary/non-JSON, size 2642 -> 2660)
+- `~ data/yggdrasil/structure/alfheim_tree/bridge/connector.nbt` (binary/non-JSON, size 1677 -> 1629)
+- `~ data/yggdrasil/structure/alfheim_tree/bridge/straight.nbt` (binary/non-JSON, size 4155 -> 3999)
+- `~ data/yggdrasil/structure/alfheim_tree/bridge/terminator.nbt` (binary/non-JSON, size 835 -> 867)
+- `~ data/yggdrasil/structure/alfheim_tree/bridge/terminator_reward.nbt` (binary/non-JSON, size 813 -> 846)
+- `~ data/yggdrasil/structure/alfheim_tree/bridge/terminator_small.nbt` (binary/non-JSON, size 586 -> 630)
+- `~ data/yggdrasil/structure/alfheim_tree/bridge/top.nbt` (binary/non-JSON, size 2612 -> 2558)
+- `~ data/yggdrasil/structure/alfheim_tree/bridge/well.nbt` (binary/non-JSON, size 3382 -> 3217)
+- `~ data/yggdrasil/structure/alfheim_tree/corridor/crossroads.nbt` (binary/non-JSON, size 35251 -> 32610)
+- `~ data/yggdrasil/structure/alfheim_tree/corridor/double_up_bottom.nbt` (binary/non-JSON, size 23892 -> 23072)
+- `~ data/yggdrasil/structure/alfheim_tree/corridor/endless.nbt` (binary/non-JSON, size 31967 -> 29188)
+- `~ data/yggdrasil/structure/alfheim_tree/corridor/jump.nbt` (binary/non-JSON, size 9957 -> 9198)
+- `~ data/yggdrasil/structure/alfheim_tree/corridor/lunar.nbt` (binary/non-JSON, size 24713 -> 23216)
+- `~ data/yggdrasil/structure/alfheim_tree/corridor/rounded.nbt` (binary/non-JSON, size 17812 -> 16318)
+- `~ data/yggdrasil/structure/alfheim_tree/corridor/small_terminator.nbt` (binary/non-JSON, size 777 -> 812)
+- `~ data/yggdrasil/structure/alfheim_tree/corridor/straight.nbt` (binary/non-JSON, size 10134 -> 9294)
+- `~ data/yggdrasil/structure/alfheim_tree/corridor/terminator.nbt` (binary/non-JSON, size 1867 -> 1797)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/bogged.nbt` (binary/non-JSON, size 484 -> 510)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/breeze.nbt` (binary/non-JSON, size 475 -> 500)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/drowned.nbt` (binary/non-JSON, size 477 -> 502)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/enderman.nbt` (binary/non-JSON, size 478 -> 503)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/evoker.nbt` (binary/non-JSON, size 478 -> 501)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/husk.nbt` (binary/non-JSON, size 475 -> 496)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/magma_cube.nbt` (binary/non-JSON, size 470 -> 498)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/phantom.nbt` (binary/non-JSON, size 539 -> 562)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/piglin_brute.nbt` (binary/non-JSON, size 496 -> 527)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/pigman.nbt` (binary/non-JSON, size 495 -> 521)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/skeleton.nbt` (binary/non-JSON, size 480 -> 508)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/slime.nbt` (binary/non-JSON, size 473 -> 496)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/spider.nbt` (binary/non-JSON, size 481 -> 503)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/stray.nbt` (binary/non-JSON, size 471 -> 494)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/warden.nbt` (binary/non-JSON, size 474 -> 498)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/witch.nbt` (binary/non-JSON, size 479 -> 502)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/wither_skeleton.nbt` (binary/non-JSON, size 496 -> 530)
+- `~ data/yggdrasil/structure/alfheim_tree/feature/spawner/zombie.nbt` (binary/non-JSON, size 467 -> 492)
+- `~ data/yggdrasil/structure/alfheim_tree/tree/base.nbt` (binary/non-JSON, size 14125 -> 13348)
+- `~ data/yggdrasil/structure/alfheim_tree/tree/bottom.nbt` (binary/non-JSON, size 23092 -> 22565)
+- `~ data/yggdrasil/structure/alfheim_tree/tree/corner.nbt` (binary/non-JSON, size 4324 -> 3976)
+- `~ data/yggdrasil/structure/alfheim_tree/tree/main/1.nbt` (binary/non-JSON, size 109736 -> 102220)
+- `~ data/yggdrasil/structure/alfheim_tree/tree/main/2.nbt` (binary/non-JSON, size 108773 -> 100753)
+- `~ data/yggdrasil/structure/alfheim_tree/tree/main/3.nbt` (binary/non-JSON, size 107464 -> 100545)
+- `~ data/yggdrasil/structure/alfheim_tree/tree/main/4.nbt` (binary/non-JSON, size 121923 -> 114442)
+- `~ data/yggdrasil/structure/alfheim_tree/tree/main/5.nbt` (binary/non-JSON, size 59867 -> 56143)
+- `~ data/yggdrasil/structure/alfheim_tree/tree/middle.nbt` (binary/non-JSON, size 17967 -> 17042)
+- `~ data/yggdrasil/structure/asflors/altar/simple.nbt` (binary/non-JSON, size 9135 -> 8552)
+- `~ data/yggdrasil/structure/asflors/altar/table.nbt` (binary/non-JSON, size 5252 -> 5092)
+- `~ data/yggdrasil/structure/asflors/decors/bush.nbt` (binary/non-JSON, size 566 -> 581)
+- `~ data/yggdrasil/structure/asflors/decors/farm.nbt` (binary/non-JSON, size 757 -> 752)
+- `~ data/yggdrasil/structure/asflors/decors/forest_portal.nbt` (binary/non-JSON, size 1178 -> 1186)
+- `~ data/yggdrasil/structure/asflors/decors/fountain.nbt` (binary/non-JSON, size 2016 -> 1934)
+- `~ data/yggdrasil/structure/asflors/decors/honey.nbt` (binary/non-JSON, size 465 -> 486)
+- `~ data/yggdrasil/structure/asflors/decors/hut.nbt` (binary/non-JSON, size 1170 -> 1159)
+- `~ data/yggdrasil/structure/asflors/decors/light.nbt` (binary/non-JSON, size 1146 -> 1177)
+- `~ data/yggdrasil/structure/asflors/decors/mob.nbt` (binary/non-JSON, size 602 -> 615)
+- `~ data/yggdrasil/structure/asflors/decors/well.nbt` (binary/non-JSON, size 802 -> 805)
+- `~ data/yggdrasil/structure/asflors/decors/wheat.nbt` (binary/non-JSON, size 464 -> 483)
+- `~ data/yggdrasil/structure/asflors/house/flower_house.nbt` (binary/non-JSON, size 9320 -> 8731)
+- `~ data/yggdrasil/structure/asflors/house/forest_house.nbt` (binary/non-JSON, size 13815 -> 13046)
+- `~ data/yggdrasil/structure/asflors/house/huge_house.nbt` (binary/non-JSON, size 51009 -> 47115)
+- `~ data/yggdrasil/structure/asflors/house/miner.nbt` (binary/non-JSON, size 17130 -> 15754)
+- `~ data/yggdrasil/structure/asflors/house/slyphe.nbt` (binary/non-JSON, size 13703 -> 13025)
+- `~ data/yggdrasil/structure/asflors/house/small_house.nbt` (binary/non-JSON, size 3868 -> 3622)
+- `~ data/yggdrasil/structure/asflors/house/temple.nbt` (binary/non-JSON, size 11399 -> 10718)
+- `~ data/yggdrasil/structure/asflors/lake/small.nbt` (binary/non-JSON, size 7320 -> 6852)
+- `~ data/yggdrasil/structure/asflors/lake/tree.nbt` (binary/non-JSON, size 6134 -> 5754)
+- `~ data/yggdrasil/structure/asflors/main.nbt` (binary/non-JSON, size 19849 -> 18387)
+- `~ data/yggdrasil/structure/asflors/road/crossroad/hardcoded.nbt` (binary/non-JSON, size 3780 -> 3615)
+- `~ data/yggdrasil/structure/asflors/road/crossroad/large.nbt` (binary/non-JSON, size 3682 -> 3495)
+- `~ data/yggdrasil/structure/asflors/road/crossroad/large_turn.nbt` (binary/non-JSON, size 1461 -> 1399)
+- `~ data/yggdrasil/structure/asflors/road/crossroad/rounded.nbt` (binary/non-JSON, size 2547 -> 2387)
+- `~ data/yggdrasil/structure/asflors/road/crossroad/turn.nbt` (binary/non-JSON, size 3237 -> 3098)
+- `~ data/yggdrasil/structure/asflors/road/straight/dirty.nbt` (binary/non-JSON, size 1127 -> 1077)
+- `~ data/yggdrasil/structure/asflors/road/straight/extra_large.nbt` (binary/non-JSON, size 1995 -> 1887)
+- `~ data/yggdrasil/structure/asflors/road/terminator/lite.nbt` (binary/non-JSON, size 348 -> 371)
+- `~ data/yggdrasil/structure/asgard/bridge/crossroad.nbt` (binary/non-JSON, size 7758 -> 7048)
+- `~ data/yggdrasil/structure/asgard/bridge/crossroad_ceiling.nbt` (binary/non-JSON, size 21369 -> 19232)
+- `~ data/yggdrasil/structure/asgard/bridge/crossroad_ceiling_wall.nbt` (binary/non-JSON, size 22271 -> 20368)
+- `~ data/yggdrasil/structure/asgard/bridge/lush/crossroad.nbt` (binary/non-JSON, size 12497 -> 11646)
+- `~ data/yggdrasil/structure/asgard/bridge/lush/road_1.nbt` (binary/non-JSON, size 20348 -> 18980)
+- `~ data/yggdrasil/structure/asgard/bridge/lush/square.nbt` (binary/non-JSON, size 23457 -> 21909)
+- `~ data/yggdrasil/structure/asgard/bridge/lush/triroad.nbt` (binary/non-JSON, size 9098 -> 8637)
+- `~ data/yggdrasil/structure/asgard/bridge/square.nbt` (binary/non-JSON, size 18835 -> 17589)
+- `~ data/yggdrasil/structure/asgard/bridge/square_ceiling.nbt` (binary/non-JSON, size 46352 -> 42524)
+- `~ data/yggdrasil/structure/asgard/bridge/square_ceiling_wall.nbt` (binary/non-JSON, size 39841 -> 36502)
+- `~ data/yggdrasil/structure/asgard/bridge/square_fountain.nbt` (binary/non-JSON, size 21689 -> 20053)
+- `~ data/yggdrasil/structure/asgard/bridge/square_fountain_ceiling.nbt` (binary/non-JSON, size 38728 -> 36025)
+- `~ data/yggdrasil/structure/asgard/bridge/straight.nbt` (binary/non-JSON, size 18231 -> 16590)
+- `~ data/yggdrasil/structure/asgard/bridge/straight_ease.nbt` (binary/non-JSON, size 24066 -> 22071)
+- `~ data/yggdrasil/structure/asgard/bridge/straight_ease_ceiling.nbt` (binary/non-JSON, size 30857 -> 27826)
+- `~ data/yggdrasil/structure/asgard/bridge/straight_ease_ceiling_wall.nbt` (binary/non-JSON, size 31663 -> 28495)
+- `~ data/yggdrasil/structure/asgard/bridge/straight_hole.nbt` (binary/non-JSON, size 34520 -> 31545)
+- `~ data/yggdrasil/structure/asgard/bridge/straight_hole_ceiling.nbt` (binary/non-JSON, size 50667 -> 46916)
+- `~ data/yggdrasil/structure/asgard/bridge/straight_hole_ceiling_wall.nbt` (binary/non-JSON, size 52308 -> 48175)
+- `~ data/yggdrasil/structure/asgard/bridge/terminator/ceiling.nbt` (binary/non-JSON, size 1720 -> 1718)
+- `~ data/yggdrasil/structure/asgard/bridge/terminator/moss.nbt` (binary/non-JSON, size 1003 -> 1006)
+- `~ data/yggdrasil/structure/asgard/bridge/terminator/moss_ceiling.nbt` (binary/non-JSON, size 1766 -> 1782)
+- `~ data/yggdrasil/structure/asgard/bridge/terminator/normal.nbt` (binary/non-JSON, size 969 -> 964)
+- `~ data/yggdrasil/structure/asgard/bridge/terminator/small_moss.nbt` (binary/non-JSON, size 841 -> 867)
+- `~ data/yggdrasil/structure/asgard/bridge/terminator/small_moss_ceiling.nbt` (binary/non-JSON, size 1264 -> 1304)
+- `~ data/yggdrasil/structure/asgard/bridge/terminator/tiny.nbt` (binary/non-JSON, size 846 -> 865)
+- `~ data/yggdrasil/structure/asgard/bridge/terminator/tiny_ceiling.nbt` (binary/non-JSON, size 1354 -> 1392)
+- `~ data/yggdrasil/structure/asgard/bridge/triway.nbt` (binary/non-JSON, size 6109 -> 5580)
+- `~ data/yggdrasil/structure/asgard/bridge/triway_ceiling.nbt` (binary/non-JSON, size 16432 -> 14877)
+- `~ data/yggdrasil/structure/asgard/bridge/triway_ceiling_rounded.nbt` (binary/non-JSON, size 17901 -> 16334)
+- `~ data/yggdrasil/structure/asgard/bridge/triway_ceiling_wall.nbt` (binary/non-JSON, size 17047 -> 15602)
+- `~ data/yggdrasil/structure/asgard/bridge/triway_ceiling_wall_rounded.nbt` (binary/non-JSON, size 18780 -> 17323)
+- `~ data/yggdrasil/structure/asgard/bridge/triway_rounded.nbt` (binary/non-JSON, size 6106 -> 5610)
+- `~ data/yggdrasil/structure/asgard/bridge/turn.nbt` (binary/non-JSON, size 5979 -> 5444)
+- `~ data/yggdrasil/structure/asgard/bridge/turn_ceiling.nbt` (binary/non-JSON, size 12496 -> 11339)
+- `~ data/yggdrasil/structure/asgard/bridge/turn_ceiling_wall.nbt` (binary/non-JSON, size 13205 -> 12040)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/ground/andesite.nbt` (binary/non-JSON, size 3732 -> 3520)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/ground/moss.nbt` (binary/non-JSON, size 3940 -> 3708)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/ground/normal.nbt` (binary/non-JSON, size 3664 -> 3473)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/ground/royal.nbt` (binary/non-JSON, size 3837 -> 3602)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/ground/runic.nbt` (binary/non-JSON, size 3748 -> 3578)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/ground/snow.nbt` (binary/non-JSON, size 3778 -> 3599)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/ground/tree.nbt` (binary/non-JSON, size 3946 -> 3799)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/ground/wild.nbt` (binary/non-JSON, size 3814 -> 3651)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/inner/fountain.nbt` (binary/non-JSON, size 7870 -> 7443)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/inner/fox.nbt` (binary/non-JSON, size 5437 -> 5234)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/inner/garden.nbt` (binary/non-JSON, size 7799 -> 7394)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/inner/house.nbt` (binary/non-JSON, size 17534 -> 16354)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/inner/laby.nbt` (binary/non-JSON, size 8392 -> 8130)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/inner/ruins.nbt` (binary/non-JSON, size 10079 -> 9538)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/inner/runic.nbt` (binary/non-JSON, size 9630 -> 8940)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/inner/tree.nbt` (binary/non-JSON, size 5843 -> 5591)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/main.nbt` (binary/non-JSON, size 49127 -> 45291)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/outer/fallback/andesite.nbt` (binary/non-JSON, size 5575 -> 5235)
+- `~ data/yggdrasil/structure/asgard/infinity_tower/outer/tree.nbt` (binary/non-JSON, size 45753 -> 41970)
+- `~ data/yggdrasil/structure/asgard/tower/01.nbt` (binary/non-JSON, size 11008 -> 11532)
+- `~ data/yggdrasil/structure/asgard/tower/02.nbt` (binary/non-JSON, size 10488 -> 11000)
+- `~ data/yggdrasil/structure/asgard/tower/03.nbt` (binary/non-JSON, size 9998 -> 10556)
+- `~ data/yggdrasil/structure/asgard/tower/04.nbt` (binary/non-JSON, size 11175 -> 11821)
+- `~ data/yggdrasil/structure/cubeoid/main.nbt` (binary/non-JSON, size 27121 -> 24519)
+- `~ data/yggdrasil/structure/dokkalfar_ruins/grass.nbt` (binary/non-JSON, size 5439 -> 5101)
+- `~ data/yggdrasil/structure/dokkalfar_ruins/plate.nbt` (binary/non-JSON, size 22877 -> 21809)
+- `~ data/yggdrasil/structure/dokkalfar_ruins/portal.nbt` (binary/non-JSON, size 71765 -> 66445)
+- `~ data/yggdrasil/structure/folkvangr/artefact.nbt` (binary/non-JSON, size 27408 -> 25693)
+- `~ data/yggdrasil/structure/folkvangr/corridor.nbt` (binary/non-JSON, size 1760 -> 1743)
+- `~ data/yggdrasil/structure/folkvangr/hole.nbt` (binary/non-JSON, size 11619 -> 11086)
+- `~ data/yggdrasil/structure/folkvangr/plate.nbt` (binary/non-JSON, size 22877 -> 21809)
+- `~ data/yggdrasil/structure/folkvangr/room.nbt` (binary/non-JSON, size 139571 -> 127990)
+- `~ data/yggdrasil/structure/glaosheimr/fountain.nbt` (binary/non-JSON, size 1340 -> 1292)
+- `~ data/yggdrasil/structure/glaosheimr/house.nbt` (binary/non-JSON, size 10922 -> 9776)
+- `~ data/yggdrasil/structure/glaosheimr/library.nbt` (binary/non-JSON, size 30832 -> 28020)
+- `~ data/yggdrasil/structure/glaosheimr/road.nbt` (binary/non-JSON, size 1372 -> 1280)
+- `~ data/yggdrasil/structure/glaosheimr/terminator.nbt` (binary/non-JSON, size 612 -> 632)
+- `~ data/yggdrasil/structure/helblom/sanctuary.nbt` (binary/non-JSON, size 33134 -> 30407)
+- `~ data/yggdrasil/structure/helheim/road/accessor.nbt` (binary/non-JSON, size 7046 -> 6523)
+- `~ data/yggdrasil/structure/helheim/road/connector.nbt` (binary/non-JSON, size 10201 -> 9871)
+- `~ data/yggdrasil/structure/helheim/road/corner.nbt` (binary/non-JSON, size 27582 -> 24630)
+- `~ data/yggdrasil/structure/helheim/road/crossroad.nbt` (binary/non-JSON, size 38009 -> 34468)
+- `~ data/yggdrasil/structure/helheim/road/pipe.nbt` (binary/non-JSON, size 6321 -> 5938)
+- `~ data/yggdrasil/structure/helheim/road/secret_straight.nbt` (binary/non-JSON, size 33335 -> 30624)
+- `~ data/yggdrasil/structure/helheim/road/straight.nbt` (binary/non-JSON, size 21467 -> 18562)
+- `~ data/yggdrasil/structure/helheim/road/terminator.nbt` (binary/non-JSON, size 2074 -> 2106)
+- `~ data/yggdrasil/structure/helheim/room/cube.nbt` (binary/non-JSON, size 253968 -> 235809)
+- `~ data/yggdrasil/structure/helheim/room/fake.nbt` (binary/non-JSON, size 65498 -> 59825)
+- `~ data/yggdrasil/structure/helheim/room/jar.nbt` (binary/non-JSON, size 163577 -> 151959)
+- `~ data/yggdrasil/structure/helheim/room/quarter.nbt` (binary/non-JSON, size 118283 -> 109386)
+- `~ data/yggdrasil/structure/helheim/room/sanctuary.nbt` (binary/non-JSON, size 72838 -> 66963)
+- `~ data/yggdrasil/structure/helheim/room/spiral.nbt` (binary/non-JSON, size 68498 -> 62296)
+- `~ data/yggdrasil/structure/helheim/room/terminator.nbt` (binary/non-JSON, size 2074 -> 2106)
+- `~ data/yggdrasil/structure/helheim/room/tower.nbt` (binary/non-JSON, size 53907 -> 48601)
+- `~ data/yggdrasil/structure/lifblom/garden.nbt` (binary/non-JSON, size 12231 -> 11332)
+- `~ data/yggdrasil/structure/runic_fracture/main.nbt` (binary/non-JSON, size 228680 -> 215051)
+- `~ data/yggdrasil/structure/runic_labyrinth/access.nbt` (binary/non-JSON, size 13210 -> 13323)
+- `~ data/yggdrasil/structure/runic_labyrinth/arena/plateform.nbt` (binary/non-JSON, size 1392 -> 1299)
+- `~ data/yggdrasil/structure/runic_labyrinth/challenge/corner/edge.nbt` (binary/non-JSON, size 551 -> 563)
+- `~ data/yggdrasil/structure/runic_labyrinth/challenge/corner/ladder.nbt` (binary/non-JSON, size 1516 -> 1448)
+- `~ data/yggdrasil/structure/runic_labyrinth/challenge/corner/ladder_reception.nbt` (binary/non-JSON, size 683 -> 688)
+- `~ data/yggdrasil/structure/runic_labyrinth/challenge/corner/loot.nbt` (binary/non-JSON, size 1434 -> 1418)
+- `~ data/yggdrasil/structure/runic_labyrinth/challenge/ladder.nbt` (binary/non-JSON, size 1145 -> 1105)
+- `~ data/yggdrasil/structure/runic_labyrinth/challenge/middle/altar.nbt` (binary/non-JSON, size 1171 -> 1158)
+- `~ data/yggdrasil/structure/runic_labyrinth/challenge/middle/stairs.nbt` (binary/non-JSON, size 1408 -> 1357)
+- `~ data/yggdrasil/structure/runic_labyrinth/challenge/plateform.nbt` (binary/non-JSON, size 2054 -> 1951)
+- `~ data/yggdrasil/structure/runic_labyrinth/challenge/receptor/case.nbt` (binary/non-JSON, size 1237 -> 1190)
+- `~ data/yggdrasil/structure/runic_labyrinth/challenge/receptor/stairs.nbt` (binary/non-JSON, size 794 -> 799)
+- `~ data/yggdrasil/structure/runic_labyrinth/link_to_the_portal.nbt` (binary/non-JSON, size 44343 -> 41980)
+- `~ data/yggdrasil/structure/runic_labyrinth/main_room.nbt` (binary/non-JSON, size 29030 -> 26218)
+- `~ data/yggdrasil/structure/runic_labyrinth/portal/bottom_left.nbt` (binary/non-JSON, size 70502 -> 66423)
+- `~ data/yggdrasil/structure/runic_labyrinth/portal/bottom_right.nbt` (binary/non-JSON, size 69059 -> 65509)
+- `~ data/yggdrasil/structure/runic_labyrinth/portal/main_left.nbt` (binary/non-JSON, size 30582 -> 29331)
+- `~ data/yggdrasil/structure/runic_labyrinth/portal/top_left.nbt` (binary/non-JSON, size 67470 -> 63656)
+- `~ data/yggdrasil/structure/runic_labyrinth/portal/top_right.nbt` (binary/non-JSON, size 70465 -> 66746)
+- `~ data/yggdrasil/structure/runic_labyrinth/road/crossroad.nbt` (binary/non-JSON, size 17927 -> 15776)
+- `~ data/yggdrasil/structure/runic_labyrinth/road/next_floor.nbt` (binary/non-JSON, size 13026 -> 12968)
+- `~ data/yggdrasil/structure/runic_labyrinth/road/rounded.nbt` (binary/non-JSON, size 8375 -> 7368)
+- `~ data/yggdrasil/structure/runic_labyrinth/road/stairs.nbt` (binary/non-JSON, size 6183 -> 5774)
+- `~ data/yggdrasil/structure/runic_labyrinth/road/straight.nbt` (binary/non-JSON, size 5419 -> 4761)
+- `~ data/yggdrasil/structure/runic_labyrinth/road/turn.nbt` (binary/non-JSON, size 20035 -> 17575)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/arena.nbt` (binary/non-JSON, size 34715 -> 31582)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/challenge.nbt` (binary/non-JSON, size 38328 -> 34039)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/crossroad/variant_1.nbt` (binary/non-JSON, size 2329 -> 2235)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/crossroad/variant_2.nbt` (binary/non-JSON, size 3450 -> 3277)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/crossroad/variant_3.nbt` (binary/non-JSON, size 2808 -> 2646)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/crossroad/variant_4.nbt` (binary/non-JSON, size 2609 -> 2448)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/crossroad/variant_5.nbt` (binary/non-JSON, size 2507 -> 2352)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/cubeoid.nbt` (binary/non-JSON, size 28950 -> 26749)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/light_and_shadow.nbt` (binary/non-JSON, size 35560 -> 31842)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/pillar.nbt` (binary/non-JSON, size 48274 -> 44166)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/rounded/variant_1.nbt` (binary/non-JSON, size 3304 -> 3125)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/rounded/variant_2.nbt` (binary/non-JSON, size 3323 -> 3152)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/splited/link/variant_1.nbt` (binary/non-JSON, size 13641 -> 13380)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/splited/link/variant_2.nbt` (binary/non-JSON, size 14113 -> 13703)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/splited/link/variant_3.nbt` (binary/non-JSON, size 14394 -> 13387)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/splited/side/huge.nbt` (binary/non-JSON, size 10117 -> 9107)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/splited/side/medium.nbt` (binary/non-JSON, size 3183 -> 2893)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/splited/side/small.nbt` (binary/non-JSON, size 2117 -> 1940)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/splited/variant_1.nbt` (binary/non-JSON, size 21894 -> 19640)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/splited/variant_2.nbt` (binary/non-JSON, size 22258 -> 20103)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/splited/variant_3.nbt` (binary/non-JSON, size 24285 -> 21395)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/training.nbt` (binary/non-JSON, size 55959 -> 50849)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/turn/variant_1.nbt` (binary/non-JSON, size 4888 -> 4643)
+- `~ data/yggdrasil/structure/runic_labyrinth/room/turn/variant_2.nbt` (binary/non-JSON, size 5619 -> 5301)
+- `~ data/yggdrasil/structure/runic_labyrinth/training/cage.nbt` (binary/non-JSON, size 881 -> 886)
+- `~ data/yggdrasil/structure/runic_labyrinth/training/extension.nbt` (binary/non-JSON, size 601 -> 623)
+- `~ data/yggdrasil/structure/runic_labyrinth/training/plateform.nbt` (binary/non-JSON, size 1420 -> 1390)
+- `~ data/yggdrasil/structure/runic_labyrinth/training/tower.nbt` (binary/non-JSON, size 1462 -> 1417)
+- `~ data/yggdrasil/structure/runic_labyrinth/training/under.nbt` (binary/non-JSON, size 1162 -> 1142)
+- `~ data/yggdrasil/structure/runic_labyrinth/villager.nbt` (binary/non-JSON, size 1383 -> 1409)
+- `~ data/yggdrasil/structure/vanaheim/corridor.nbt` (binary/non-JSON, size 18567 -> 16593)
+- `~ data/yggdrasil/structure/vanaheim/entry.nbt` (binary/non-JSON, size 22990 -> 21283)
+- `~ data/yggdrasil/structure/vanaheim/laby.nbt` (binary/non-JSON, size 94234 -> 86524)
+- `~ data/yggdrasil/structure/vanaheim/main/1.nbt` (binary/non-JSON, size 197007 -> 182356)
+- `~ data/yggdrasil/structure/vanaheim/main/2.nbt` (binary/non-JSON, size 192920 -> 180381)
+- `~ data/yggdrasil/structure/vanaheim/main/3.nbt` (binary/non-JSON, size 188825 -> 175760)
+- `~ data/yggdrasil/structure/vanaheim/main/4.nbt` (binary/non-JSON, size 193158 -> 177783)
+- `~ data/yggdrasil/structure/vanaheim/room/camp.nbt` (binary/non-JSON, size 91276 -> 83423)
+- `~ data/yggdrasil/structure/vanaheim/room/lake.nbt` (binary/non-JSON, size 90302 -> 82377)
+- `~ data/yggdrasil/structure/vanaheim/room/library.nbt` (binary/non-JSON, size 91094 -> 83148)
+- `~ data/yggdrasil/structure/vanaheim/room/pillar.nbt` (binary/non-JSON, size 139591 -> 128015)
+- `~ data/yggdrasil/structure/vanaheim/room/runic.nbt` (binary/non-JSON, size 90368 -> 82634)
+- `~ data/yggdrasil/structure/vanaheim/tunnel.nbt` (binary/non-JSON, size 13945 -> 12426)
+- `~ data/yggdrasil/structure/voroblom/main.nbt` (binary/non-JSON, size 6421 -> 5953)
+- `~ data/yggdrasil/structure/zenflors/room.nbt` (binary/non-JSON, size 4647 -> 4199)
+- `~ data/yggdrasil/worldgen/configured_feature/peak.json`:
+  - `config`: `{"surface": "floor", "depth": 2, "vertical_range": 5, "extra_bottom_block_chance": 0.2, "extra_edge_column_chance": 0.4,...` -> `<REMOVED>`
+  - `depth`: `<MISSING>` -> `2`
+  - `extra_bottom_block_chance`: `<MISSING>` -> `0.2`
+  - `extra_edge_column_chance`: `<MISSING>` -> `0.4`
+  - `ground_state`: `<MISSING>` -> `{"type": "minecraft:simple", "state": {"id": "minecraft:black_concrete"}}`
+  - `replaceable`: `<MISSING>` -> `#yggdrasil:peak_replaceable`
+  - `surface`: `<MISSING>` -> `floor`
+  - `vegetation_chance`: `<MISSING>` -> `0.6`
+  - `vegetation_feature`: `<MISSING>` -> `{"feature": "yggdrasil:peak_pillar", "placement": []}`
+  - `vertical_range`: `<MISSING>` -> `5`
+  - `xz_radius`: `<MISSING>` -> `{"type": "minecraft:uniform", "min_inclusive": 3, "max_inclusive": 16}`
+- `~ data/yggdrasil/worldgen/configured_feature/peak_pillar.json`:
+  - `allowed_placement`: `<MISSING>` -> `{"type": "minecraft:matching_blocks", "blocks": ["minecraft:air"]}`
+  - `config`: `{"direction": "up", "allowed_placement": {"type": "minecraft:matching_blocks", "blocks": ["minecraft:air"]}, "prioritize...` -> `<REMOVED>`
+  - `direction`: `<MISSING>` -> `up`
+  - `layers`: `<MISSING>` -> `[{"height": {"type": "minecraft:biased_to_bottom", "min_inclusive": 1, "max_inclusive": 2}, "provider": {"type": "minecr...`
+  - `prioritize_tip`: `<MISSING>` -> `false`
+- `~ data/yggdrasil/worldgen/configured_feature/runic_light.json`:
+  - `config`: `{"to_place": {"type": "minecraft:simple_state_provider", "state": {"Name": "minecraft:light", "Properties": {"level": "1...` -> `<REMOVED>`
+  - `to_place`: `<MISSING>` -> `{"type": "minecraft:simple", "state": {"id": "minecraft:light", "properties": {"level": "15"}}}`
+- `~ data/yggdrasil/worldgen/noise/runic_hills.json`:
+  - `base_octave`: `<MISSING>` -> `-6`
+  - `firstOctave`: `-6` -> `<REMOVED>`
+- `~ data/yggdrasil/worldgen/noise_settings/runic.json`:
+  - `default_block.Name`: `minecraft:black_concrete` -> `<REMOVED>`
+  - `default_block.id`: `<MISSING>` -> `minecraft:black_concrete`
+  - `default_fluid.Name`: `minecraft:air` -> `<REMOVED>`
+  - `default_fluid.id`: `<MISSING>` -> `minecraft:air`
+  - `material_rule`: `<MISSING>` -> `{"type": "minecraft:condition", "if_true": {"type": "minecraft:stone_depth", "offset": 0, "surface_type": "floor", "add_...`
+  - `noise_router.chunk_surface_level`: `<MISSING>` -> `0.0`
+  - `noise_router.final_density.argument1`: `{"type": "minecraft:y_clamped_gradient", "from_y": -64, "to_y": 320, "from_value": 64.0, "to_value": -320.0}` -> `<REMOVED>`
+  - `noise_router.final_density.argument2`: `{"type": "minecraft:mul", "argument1": 56.0, "argument2": {"type": "minecraft:range_choice", "input": {"type": "minecraf...` -> `<REMOVED>`
+  - `noise_router.final_density.axis`: `<MISSING>` -> `y`
+  - `noise_router.final_density.from_coordinate`: `<MISSING>` -> `-64`
+  - `noise_router.final_density.from_value`: `<MISSING>` -> `64.0`
+  - `noise_router.final_density.to_coordinate`: `<MISSING>` -> `320`
+  - `noise_router.final_density.to_value`: `<MISSING>` -> `-320.0`
+  - `noise_router.final_density.type`: `minecraft:add` -> `minecraft:gradient`
+  - `surface_rule`: `{"type": "minecraft:condition", "if_true": {"type": "minecraft:stone_depth", "offset": 0, "surface_type": "floor", "add_...` -> `<REMOVED>`
+- `~ data/yggdrasil/worldgen/processor_list/alfheim_tree/azaela.json`:
+  - `processors[0].rules[0].output_state.Name`: `minecraft:flowering_azalea_leaves` -> `<REMOVED>`
+  - `processors[0].rules[0].output_state.id`: `<MISSING>` -> `minecraft:flowering_azalea_leaves`
+- `~ data/yggdrasil/worldgen/processor_list/asflors/dirty_road.json`:
+  - `processors[0].rules[0].output_state.Name`: `minecraft:dirt_path` -> `<REMOVED>`
+  - `processors[0].rules[0].output_state.id`: `<MISSING>` -> `minecraft:dirt_path`
+  - `processors[0].rules[1].output_state.Name`: `minecraft:air` -> `<REMOVED>`
+  - `processors[0].rules[1].output_state.id`: `<MISSING>` -> `minecraft:air`
+  - `processors[0].rules[2].output_state.Name`: `minecraft:water` -> `<REMOVED>`
+  - `processors[0].rules[2].output_state.id`: `<MISSING>` -> `minecraft:water`
+  - `processors[0].rules[3].output_state.Name`: `minecraft:water` -> `<REMOVED>`
+  - `processors[0].rules[3].output_state.id`: `<MISSING>` -> `minecraft:water`
+  - `processors[1].rules[0].output_state.Name`: `minecraft:grass_block` -> `<REMOVED>`
+  - `processors[1].rules[0].output_state.id`: `<MISSING>` -> `minecraft:grass_block`
+  - `processors[1].rules[1].output_state.Name`: `minecraft:air` -> `<REMOVED>`
+  - `processors[1].rules[1].output_state.id`: `<MISSING>` -> `minecraft:air`
+  - `processors[1].rules[2].output_state.Name`: `minecraft:air` -> `<REMOVED>`
+  - `processors[1].rules[2].output_state.id`: `<MISSING>` -> `minecraft:air`
+  - `processors[1].rules[3].output_state.Name`: `minecraft:dirt_path` -> `<REMOVED>`
+  - `processors[1].rules[3].output_state.id`: `<MISSING>` -> `minecraft:dirt_path`
+- `~ data/yggdrasil/worldgen/processor_list/asflors/street.json`:
+  - `processors[0].rules[0].output_state.Name`: `minecraft:dirt_path` -> `<REMOVED>`
+  - `processors[0].rules[0].output_state.id`: `<MISSING>` -> `minecraft:dirt_path`
+  - `processors[0].rules[1].output_state.Name`: `minecraft:air` -> `<REMOVED>`
+  - `processors[0].rules[1].output_state.id`: `<MISSING>` -> `minecraft:air`
+  - `processors[0].rules[2].output_state.Name`: `minecraft:water` -> `<REMOVED>`
+  - `processors[0].rules[2].output_state.id`: `<MISSING>` -> `minecraft:water`
+  - `processors[0].rules[3].output_state.Name`: `minecraft:water` -> `<REMOVED>`
+  - `processors[0].rules[3].output_state.id`: `<MISSING>` -> `minecraft:water`
+  - `processors[1].rules[0].output_state.Name`: `minecraft:grass_block` -> `<REMOVED>`
+  - `processors[1].rules[0].output_state.id`: `<MISSING>` -> `minecraft:grass_block`
+  - `processors[1].rules[1].output_state.Name`: `minecraft:cracked_stone_bricks` -> `<REMOVED>`
+  - `processors[1].rules[1].output_state.id`: `<MISSING>` -> `minecraft:cracked_stone_bricks`
+  - `processors[1].rules[2].output_state.Name`: `minecraft:mossy_stone_bricks` -> `<REMOVED>`
+  - `processors[1].rules[2].output_state.id`: `<MISSING>` -> `minecraft:mossy_stone_bricks`
+- `~ data/yggdrasil/worldgen/processor_list/glaosheimr/street.json`:
+  - `processors[0].rules[0].output_state.Name`: `minecraft:cherry_planks` -> `<REMOVED>`
+  - `processors[0].rules[0].output_state.id`: `<MISSING>` -> `minecraft:cherry_planks`
+  - `processors[0].rules[1].output_state.Name`: `minecraft:water` -> `<REMOVED>`
+  - `processors[0].rules[1].output_state.id`: `<MISSING>` -> `minecraft:water`
+  - `processors[0].rules[2].output_state.Name`: `minecraft:water` -> `<REMOVED>`
+  - `processors[0].rules[2].output_state.id`: `<MISSING>` -> `minecraft:water`
+  - `processors[1].rules[0].output_state.Name`: `minecraft:grass_block` -> `<REMOVED>`
+  - `processors[1].rules[0].output_state.id`: `<MISSING>` -> `minecraft:grass_block`
+  - `processors[1].rules[1].output_state.Name`: `minecraft:grass_block` -> `<REMOVED>`
+  - `processors[1].rules[1].output_state.id`: `<MISSING>` -> `minecraft:grass_block`
+- `~ data/yggdrasil/worldgen/structure/alfheim_tree.json` (whitespace/formatting only)
+- `~ data/yggdrasil/worldgen/structure/asgard.json` (whitespace/formatting only)
+- `~ data/yggdrasil/worldgen/structure/cubeoid.json` (whitespace/formatting only)
+- `~ data/yggdrasil/worldgen/structure/neogard.json` (whitespace/formatting only)
+- `~ data/yggdrasil/worldgen/structure/proto_fracture.json` (whitespace/formatting only)
+- `~ data/yggdrasil/worldgen/structure/runic_crystal.json` (whitespace/formatting only)
+- `~ data/yggdrasil/worldgen/structure/runic_fracture.json` (whitespace/formatting only)
+- `~ pack.mcmeta`:
+  - `pack.description.text`: `Add majestic, gigantic dungeons - By Voxel Team` -> `Add majestic, gigantic dungeons - By Voxel Team (Patched for 26.3)`
+  - `pack.max_format`: `[107, 0]` -> `94`
+  - `pack.min_format`: `[107, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `[26.3-26.4]witherswrath-1.17` (added: 0, removed: 0, modified: 246)
+**Modified files:**
+- `~ data/wither/advancement/wither/swift_wrath.json` (whitespace/formatting only)
+- `~ data/wither/advancement/wither/untouchable.json` (whitespace/formatting only)
+- `~ data/wither/enchantment/soul_siphon.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `dark_aqua` -> `gold`
+- `~ data/wither/enchantment/witherbound.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `dark_gray` -> `gold`
+- `~ data/wither/function/5tick_fight.mcfunction` (binary/non-JSON, size 4080 -> 4127)
+- `~ data/wither/function/dialog/advanced.mcfunction` (binary/non-JSON, size 555 -> 561)
+- `~ data/wither/function/dialog/main.mcfunction` (binary/non-JSON, size 135 -> 139)
+- `~ data/wither/function/nether_star/tick_star.mcfunction` (binary/non-JSON, size 319 -> 326)
+- `~ data/wither/function/reset.mcfunction` (binary/non-JSON, size 1381 -> 1409)
+- `~ data/wither/function/spawn/all.mcfunction` (binary/non-JSON, size 793 -> 801)
+- `~ data/wither/function/spawn/bone_knight.mcfunction` (binary/non-JSON, size 328 -> 333)
+- `~ data/wither/function/spawn/clear.mcfunction` (binary/non-JSON, size 161 -> 164)
+- `~ data/wither/function/spawn/death_rider.mcfunction` (binary/non-JSON, size 343 -> 348)
+- `~ data/wither/function/spawn/hexbinder.mcfunction` (binary/non-JSON, size 324 -> 329)
+- `~ data/wither/function/spawn/random.mcfunction` (binary/non-JSON, size 269 -> 273)
+- `~ data/wither/function/spawn/shade_reaper.mcfunction` (binary/non-JSON, size 333 -> 338)
+- `~ data/wither/function/spawn/soul_archer.mcfunction` (binary/non-JSON, size 329 -> 334)
+- `~ data/wither/function/spawn/triskull.mcfunction` (binary/non-JSON, size 316 -> 321)
+- `~ data/wither/function/stats/best_line.mcfunction` (binary/non-JSON, size 978 -> 987)
+- `~ data/wither/function/stats/rank_line.mcfunction` (binary/non-JSON, size 540 -> 543)
+- `~ data/wither/function/stats/rank_loop.mcfunction` (binary/non-JSON, size 598 -> 610)
+- `~ data/wither/function/stats/show.mcfunction` (binary/non-JSON, size 2957 -> 2998)
+- `~ data/wither/function/stats/start.mcfunction` (binary/non-JSON, size 665 -> 679)
+- `~ data/wither/function/tick_fight.mcfunction` (binary/non-JSON, size 218 -> 221)
+- `~ data/wither/function/tick_idle.mcfunction` (binary/non-JSON, size 245 -> 250)
+- `~ data/wither/function/uninstall.mcfunction` (binary/non-JSON, size 8551 -> 8736)
+- `~ data/wither/function/wither/bedrock/death/deadbedrock.mcfunction` (binary/non-JSON, size 1024 -> 1043)
+- `~ data/wither/function/wither/bedrock/death/deadbedrock1t.mcfunction` (binary/non-JSON, size 522 -> 528)
+- `~ data/wither/function/wither/bedrock/death/deadbedrock2t.mcfunction` (binary/non-JSON, size 257 -> 261)
+- `~ data/wither/function/wither/bedrock/death/deadbedrock3t.mcfunction` (binary/non-JSON, size 402 -> 407)
+- `~ data/wither/function/wither/bedrock/death/deadbedrock4t.mcfunction` (binary/non-JSON, size 408 -> 413)
+- `~ data/wither/function/wither/bedrock/death/deadbedrock5t.mcfunction` (binary/non-JSON, size 406 -> 411)
+- `~ data/wither/function/wither/bedrock/death/deadbedrockcry.mcfunction` (binary/non-JSON, size 243 -> 245)
+- `~ data/wither/function/wither/bedrock/death/deadbedrockendloop.mcfunction` (binary/non-JSON, size 1747 -> 1765)
+- `~ data/wither/function/wither/bedrock/death/deadbedrockscale.mcfunction` (binary/non-JSON, size 345 -> 349)
+- `~ data/wither/function/wither/bedrock/death/deadbedrockscale_set.mcfunction` (binary/non-JSON, size 102 -> 103)
+- `~ data/wither/function/wither/crumble.mcfunction` (binary/non-JSON, size 1319 -> 1329)
+- `~ data/wither/function/wither/fight_start.mcfunction` (binary/non-JSON, size 3048 -> 3079)
+- `~ data/wither/function/wither/fight_start/bedrock.mcfunction` (binary/non-JSON, size 463 -> 475)
+- `~ data/wither/function/wither/fight_start/bedrock_1t.mcfunction` (binary/non-JSON, size 263 -> 270)
+- `~ data/wither/function/wither/fight_start/init.mcfunction` (binary/non-JSON, size 9341 -> 9343)
+- `~ data/wither/function/wither/fight_start/showcase/add_block.mcfunction` (binary/non-JSON, size 1570 -> 1589)
+- `~ data/wither/function/wither/fight_start/showcase/altitude_ring.mcfunction` (binary/non-JSON, size 1707 -> 1724)
+- `~ data/wither/function/wither/fight_start/showcase/crumb.mcfunction` (binary/non-JSON, size 137 -> 139)
+- `~ data/wither/function/wither/fight_start/showcase/erupt.mcfunction` (binary/non-JSON, size 383 -> 387)
+- `~ data/wither/function/wither/fight_start/showcase/erupt_at.mcfunction` (binary/non-JSON, size 126 -> 128)
+- `~ data/wither/function/wither/fight_start/showcase/erupt_fx.mcfunction` (binary/non-JSON, size 451 -> 457)
+- `~ data/wither/function/wither/fight_start/showcase/finale.mcfunction` (binary/non-JSON, size 469 -> 474)
+- `~ data/wither/function/wither/fight_start/showcase/frame.mcfunction` (binary/non-JSON, size 166 -> 168)
+- `~ data/wither/function/wither/fight_start/showcase/frames/1.mcfunction` (binary/non-JSON, size 78 -> 80)
+- `~ data/wither/function/wither/fight_start/showcase/frames/10.mcfunction` (binary/non-JSON, size 515 -> 522)
+- `~ data/wither/function/wither/fight_start/showcase/frames/100.mcfunction` (binary/non-JSON, size 2430 -> 2463)
+- `~ data/wither/function/wither/fight_start/showcase/frames/101.mcfunction` (binary/non-JSON, size 2424 -> 2457)
+- `~ data/wither/function/wither/fight_start/showcase/frames/102.mcfunction` (binary/non-JSON, size 2436 -> 2469)
+- `~ data/wither/function/wither/fight_start/showcase/frames/103.mcfunction` (binary/non-JSON, size 2429 -> 2462)
+- `~ data/wither/function/wither/fight_start/showcase/frames/104.mcfunction` (binary/non-JSON, size 2429 -> 2462)
+- `~ data/wither/function/wither/fight_start/showcase/frames/105.mcfunction` (binary/non-JSON, size 2424 -> 2457)
+- `~ data/wither/function/wither/fight_start/showcase/frames/106.mcfunction` (binary/non-JSON, size 2428 -> 2461)
+- `~ data/wither/function/wither/fight_start/showcase/frames/107.mcfunction` (binary/non-JSON, size 2427 -> 2460)
+- `~ data/wither/function/wither/fight_start/showcase/frames/108.mcfunction` (binary/non-JSON, size 2423 -> 2456)
+- `~ data/wither/function/wither/fight_start/showcase/frames/11.mcfunction` (binary/non-JSON, size 518 -> 525)
+- `~ data/wither/function/wither/fight_start/showcase/frames/12.mcfunction` (binary/non-JSON, size 590 -> 598)
+- `~ data/wither/function/wither/fight_start/showcase/frames/13.mcfunction` (binary/non-JSON, size 589 -> 597)
+- `~ data/wither/function/wither/fight_start/showcase/frames/14.mcfunction` (binary/non-JSON, size 589 -> 597)
+- `~ data/wither/function/wither/fight_start/showcase/frames/15.mcfunction` (binary/non-JSON, size 659 -> 668)
+- `~ data/wither/function/wither/fight_start/showcase/frames/16.mcfunction` (binary/non-JSON, size 665 -> 674)
+- `~ data/wither/function/wither/fight_start/showcase/frames/17.mcfunction` (binary/non-JSON, size 657 -> 666)
+- `~ data/wither/function/wither/fight_start/showcase/frames/18.mcfunction` (binary/non-JSON, size 735 -> 745)
+- `~ data/wither/function/wither/fight_start/showcase/frames/19.mcfunction` (binary/non-JSON, size 738 -> 748)
+- `~ data/wither/function/wither/fight_start/showcase/frames/2.mcfunction` (binary/non-JSON, size 78 -> 80)
+- `~ data/wither/function/wither/fight_start/showcase/frames/20.mcfunction` (binary/non-JSON, size 737 -> 747)
+- `~ data/wither/function/wither/fight_start/showcase/frames/21.mcfunction` (binary/non-JSON, size 811 -> 822)
+- `~ data/wither/function/wither/fight_start/showcase/frames/22.mcfunction` (binary/non-JSON, size 809 -> 820)
+- `~ data/wither/function/wither/fight_start/showcase/frames/23.mcfunction` (binary/non-JSON, size 809 -> 820)
+- `~ data/wither/function/wither/fight_start/showcase/frames/24.mcfunction` (binary/non-JSON, size 879 -> 891)
+- `~ data/wither/function/wither/fight_start/showcase/frames/25.mcfunction` (binary/non-JSON, size 877 -> 889)
+- `~ data/wither/function/wither/fight_start/showcase/frames/26.mcfunction` (binary/non-JSON, size 878 -> 890)
+- `~ data/wither/function/wither/fight_start/showcase/frames/27.mcfunction` (binary/non-JSON, size 957 -> 970)
+- `~ data/wither/function/wither/fight_start/showcase/frames/28.mcfunction` (binary/non-JSON, size 955 -> 968)
+- `~ data/wither/function/wither/fight_start/showcase/frames/29.mcfunction` (binary/non-JSON, size 952 -> 965)
+- `~ data/wither/function/wither/fight_start/showcase/frames/3.mcfunction` (binary/non-JSON, size 370 -> 375)
+- `~ data/wither/function/wither/fight_start/showcase/frames/30.mcfunction` (binary/non-JSON, size 1027 -> 1041)
+- `~ data/wither/function/wither/fight_start/showcase/frames/31.mcfunction` (binary/non-JSON, size 1030 -> 1044)
+- `~ data/wither/function/wither/fight_start/showcase/frames/32.mcfunction` (binary/non-JSON, size 1030 -> 1044)
+- `~ data/wither/function/wither/fight_start/showcase/frames/33.mcfunction` (binary/non-JSON, size 1103 -> 1118)
+- `~ data/wither/function/wither/fight_start/showcase/frames/34.mcfunction` (binary/non-JSON, size 1104 -> 1119)
+- `~ data/wither/function/wither/fight_start/showcase/frames/35.mcfunction` (binary/non-JSON, size 1107 -> 1122)
+- `~ data/wither/function/wither/fight_start/showcase/frames/36.mcfunction` (binary/non-JSON, size 1178 -> 1194)
+- `~ data/wither/function/wither/fight_start/showcase/frames/37.mcfunction` (binary/non-JSON, size 1178 -> 1194)
+- `~ data/wither/function/wither/fight_start/showcase/frames/38.mcfunction` (binary/non-JSON, size 1181 -> 1197)
+- `~ data/wither/function/wither/fight_start/showcase/frames/39.mcfunction` (binary/non-JSON, size 1251 -> 1268)
+- `~ data/wither/function/wither/fight_start/showcase/frames/4.mcfunction` (binary/non-JSON, size 367 -> 372)
+- `~ data/wither/function/wither/fight_start/showcase/frames/40.mcfunction` (binary/non-JSON, size 1254 -> 1271)
+- `~ data/wither/function/wither/fight_start/showcase/frames/41.mcfunction` (binary/non-JSON, size 1249 -> 1266)
+- `~ data/wither/function/wither/fight_start/showcase/frames/42.mcfunction` (binary/non-JSON, size 1322 -> 1340)
+- `~ data/wither/function/wither/fight_start/showcase/frames/43.mcfunction` (binary/non-JSON, size 1323 -> 1341)
+- `~ data/wither/function/wither/fight_start/showcase/frames/44.mcfunction` (binary/non-JSON, size 1322 -> 1340)
+- `~ data/wither/function/wither/fight_start/showcase/frames/45.mcfunction` (binary/non-JSON, size 1395 -> 1414)
+- `~ data/wither/function/wither/fight_start/showcase/frames/46.mcfunction` (binary/non-JSON, size 1396 -> 1415)
+- `~ data/wither/function/wither/fight_start/showcase/frames/47.mcfunction` (binary/non-JSON, size 1394 -> 1413)
+- `~ data/wither/function/wither/fight_start/showcase/frames/48.mcfunction` (binary/non-JSON, size 1471 -> 1491)
+- `~ data/wither/function/wither/fight_start/showcase/frames/49.mcfunction` (binary/non-JSON, size 1475 -> 1495)
+- `~ data/wither/function/wither/fight_start/showcase/frames/5.mcfunction` (binary/non-JSON, size 368 -> 373)
+- `~ data/wither/function/wither/fight_start/showcase/frames/50.mcfunction` (binary/non-JSON, size 1470 -> 1490)
+- `~ data/wither/function/wither/fight_start/showcase/frames/51.mcfunction` (binary/non-JSON, size 1547 -> 1568)
+- `~ data/wither/function/wither/fight_start/showcase/frames/52.mcfunction` (binary/non-JSON, size 1546 -> 1567)
+- `~ data/wither/function/wither/fight_start/showcase/frames/53.mcfunction` (binary/non-JSON, size 1541 -> 1562)
+- `~ data/wither/function/wither/fight_start/showcase/frames/54.mcfunction` (binary/non-JSON, size 1621 -> 1643)
+- `~ data/wither/function/wither/fight_start/showcase/frames/55.mcfunction` (binary/non-JSON, size 1617 -> 1639)
+- `~ data/wither/function/wither/fight_start/showcase/frames/56.mcfunction` (binary/non-JSON, size 1613 -> 1635)
+- `~ data/wither/function/wither/fight_start/showcase/frames/57.mcfunction` (binary/non-JSON, size 1688 -> 1711)
+- `~ data/wither/function/wither/fight_start/showcase/frames/58.mcfunction` (binary/non-JSON, size 1696 -> 1719)
+- `~ data/wither/function/wither/fight_start/showcase/frames/59.mcfunction` (binary/non-JSON, size 1691 -> 1714)
+- `~ data/wither/function/wither/fight_start/showcase/frames/6.mcfunction` (binary/non-JSON, size 443 -> 449)
+- `~ data/wither/function/wither/fight_start/showcase/frames/60.mcfunction` (binary/non-JSON, size 1765 -> 1789)
+- `~ data/wither/function/wither/fight_start/showcase/frames/61.mcfunction` (binary/non-JSON, size 1766 -> 1790)
+- `~ data/wither/function/wither/fight_start/showcase/frames/62.mcfunction` (binary/non-JSON, size 1755 -> 1779)
+- `~ data/wither/function/wither/fight_start/showcase/frames/63.mcfunction` (binary/non-JSON, size 1838 -> 1863)
+- `~ data/wither/function/wither/fight_start/showcase/frames/64.mcfunction` (binary/non-JSON, size 1836 -> 1861)
+- `~ data/wither/function/wither/fight_start/showcase/frames/65.mcfunction` (binary/non-JSON, size 1842 -> 1867)
+- `~ data/wither/function/wither/fight_start/showcase/frames/66.mcfunction` (binary/non-JSON, size 1913 -> 1939)
+- `~ data/wither/function/wither/fight_start/showcase/frames/67.mcfunction` (binary/non-JSON, size 1909 -> 1935)
+- `~ data/wither/function/wither/fight_start/showcase/frames/68.mcfunction` (binary/non-JSON, size 1915 -> 1941)
+- `~ data/wither/function/wither/fight_start/showcase/frames/69.mcfunction` (binary/non-JSON, size 1985 -> 2012)
+- `~ data/wither/function/wither/fight_start/showcase/frames/7.mcfunction` (binary/non-JSON, size 443 -> 449)
+- `~ data/wither/function/wither/fight_start/showcase/frames/70.mcfunction` (binary/non-JSON, size 1990 -> 2017)
+- `~ data/wither/function/wither/fight_start/showcase/frames/71.mcfunction` (binary/non-JSON, size 1981 -> 2008)
+- `~ data/wither/function/wither/fight_start/showcase/frames/72.mcfunction` (binary/non-JSON, size 2058 -> 2086)
+- `~ data/wither/function/wither/fight_start/showcase/frames/73.mcfunction` (binary/non-JSON, size 2058 -> 2086)
+- `~ data/wither/function/wither/fight_start/showcase/frames/74.mcfunction` (binary/non-JSON, size 2060 -> 2088)
+- `~ data/wither/function/wither/fight_start/showcase/frames/75.mcfunction` (binary/non-JSON, size 2135 -> 2164)
+- `~ data/wither/function/wither/fight_start/showcase/frames/76.mcfunction` (binary/non-JSON, size 2133 -> 2162)
+- `~ data/wither/function/wither/fight_start/showcase/frames/77.mcfunction` (binary/non-JSON, size 2135 -> 2164)
+- `~ data/wither/function/wither/fight_start/showcase/frames/78.mcfunction` (binary/non-JSON, size 2198 -> 2228)
+- `~ data/wither/function/wither/fight_start/showcase/frames/79.mcfunction` (binary/non-JSON, size 2211 -> 2241)
+- `~ data/wither/function/wither/fight_start/showcase/frames/8.mcfunction` (binary/non-JSON, size 443 -> 449)
+- `~ data/wither/function/wither/fight_start/showcase/frames/80.mcfunction` (binary/non-JSON, size 2213 -> 2243)
+- `~ data/wither/function/wither/fight_start/showcase/frames/81.mcfunction` (binary/non-JSON, size 2277 -> 2308)
+- `~ data/wither/function/wither/fight_start/showcase/frames/82.mcfunction` (binary/non-JSON, size 2280 -> 2311)
+- `~ data/wither/function/wither/fight_start/showcase/frames/83.mcfunction` (binary/non-JSON, size 2280 -> 2311)
+- `~ data/wither/function/wither/fight_start/showcase/frames/84.mcfunction` (binary/non-JSON, size 2355 -> 2387)
+- `~ data/wither/function/wither/fight_start/showcase/frames/85.mcfunction` (binary/non-JSON, size 2359 -> 2391)
+- `~ data/wither/function/wither/fight_start/showcase/frames/86.mcfunction` (binary/non-JSON, size 2355 -> 2387)
+- `~ data/wither/function/wither/fight_start/showcase/frames/87.mcfunction` (binary/non-JSON, size 2430 -> 2463)
+- `~ data/wither/function/wither/fight_start/showcase/frames/88.mcfunction` (binary/non-JSON, size 2424 -> 2457)
+- `~ data/wither/function/wither/fight_start/showcase/frames/89.mcfunction` (binary/non-JSON, size 2423 -> 2456)
+- `~ data/wither/function/wither/fight_start/showcase/frames/9.mcfunction` (binary/non-JSON, size 514 -> 521)
+- `~ data/wither/function/wither/fight_start/showcase/frames/90.mcfunction` (binary/non-JSON, size 2420 -> 2453)
+- `~ data/wither/function/wither/fight_start/showcase/frames/91.mcfunction` (binary/non-JSON, size 2426 -> 2459)
+- `~ data/wither/function/wither/fight_start/showcase/frames/92.mcfunction` (binary/non-JSON, size 2434 -> 2467)
+- `~ data/wither/function/wither/fight_start/showcase/frames/93.mcfunction` (binary/non-JSON, size 2427 -> 2460)
+- `~ data/wither/function/wither/fight_start/showcase/frames/94.mcfunction` (binary/non-JSON, size 2430 -> 2463)
+- `~ data/wither/function/wither/fight_start/showcase/frames/95.mcfunction` (binary/non-JSON, size 2432 -> 2465)
+- `~ data/wither/function/wither/fight_start/showcase/frames/96.mcfunction` (binary/non-JSON, size 2426 -> 2459)
+- `~ data/wither/function/wither/fight_start/showcase/frames/97.mcfunction` (binary/non-JSON, size 2422 -> 2455)
+- `~ data/wither/function/wither/fight_start/showcase/frames/98.mcfunction` (binary/non-JSON, size 2421 -> 2454)
+- `~ data/wither/function/wither/fight_start/showcase/frames/99.mcfunction` (binary/non-JSON, size 2428 -> 2461)
+- `~ data/wither/function/wither/fight_start/showcase/ground_at.mcfunction` (binary/non-JSON, size 150 -> 152)
+- `~ data/wither/function/wither/fight_start/showcase/implode.mcfunction` (binary/non-JSON, size 563 -> 567)
+- `~ data/wither/function/wither/fight_start/showcase/loop.mcfunction` (binary/non-JSON, size 5195 -> 5255)
+- `~ data/wither/function/wither/fight_start/showcase/pick_ground.mcfunction` (binary/non-JSON, size 12893 -> 12989)
+- `~ data/wither/function/wither/fight_start/showcase/pillar_fx.mcfunction` (binary/non-JSON, size 138 -> 140)
+- `~ data/wither/function/wither/fight_start/showcase/pillars.mcfunction` (binary/non-JSON, size 853 -> 859)
+- `~ data/wither/function/wither/fight_start/showcase/ring.mcfunction` (binary/non-JSON, size 3160 -> 3185)
+- `~ data/wither/function/wither/fight_start/showcase/rise.mcfunction` (binary/non-JSON, size 1125 -> 1136)
+- `~ data/wither/function/wither/fight_start/showcase/rise_one.mcfunction` (binary/non-JSON, size 184 -> 187)
+- `~ data/wither/function/wither/fight_start/showcase/spawn_block.mcfunction` (binary/non-JSON, size 398 -> 400)
+- `~ data/wither/function/wither/fight_start/showcase/start.mcfunction` (binary/non-JSON, size 1230 -> 1247)
+- `~ data/wither/function/wither/fight_start/showcase/summon.mcfunction` (binary/non-JSON, size 5379 -> 5387)
+- `~ data/wither/function/wither/fight_start/showcase/tumble.mcfunction` (binary/non-JSON, size 763 -> 768)
+- `~ data/wither/function/wither/fix.mcfunction` (binary/non-JSON, size 7684 -> 7860)
+- `~ data/wither/function/wither/hit/checks/150hp.mcfunction` (binary/non-JSON, size 1423 -> 1456)
+- `~ data/wither/function/wither/hit/hit4.mcfunction` (binary/non-JSON, size 477 -> 482)
+- `~ data/wither/function/wither/hit/hit5.mcfunction` (binary/non-JSON, size 284 -> 289)
+- `~ data/wither/function/wither/hit/prehit.mcfunction` (binary/non-JSON, size 1932 -> 1941)
+- `~ data/wither/function/wither/hit/process_damage.mcfunction` (binary/non-JSON, size 1492 -> 1519)
+- `~ data/wither/function/wither/hit/scaling.mcfunction` (binary/non-JSON, size 1555 -> 1581)
+- `~ data/wither/function/wither/lifecycle/cleanup.mcfunction` (binary/non-JSON, size 2644 -> 2645)
+- `~ data/wither/function/wither/lifecycle/death.mcfunction` (binary/non-JSON, size 509 -> 523)
+- `~ data/wither/function/wither/lifecycle/lost.mcfunction` (binary/non-JSON, size 505 -> 509)
+- `~ data/wither/function/wither/lifecycle/track.mcfunction` (binary/non-JSON, size 588 -> 595)
+- `~ data/wither/function/wither/lifecycle/vanished.mcfunction` (binary/non-JSON, size 1155 -> 1170)
+- `~ data/wither/function/wither/passive/convert_skeleton.mcfunction` (binary/non-JSON, size 833 -> 836)
+- `~ data/wither/function/wither/passive/convert_zombie.mcfunction` (binary/non-JSON, size 630 -> 633)
+- `~ data/wither/function/wither/passive/golem.mcfunction` (binary/non-JSON, size 142 -> 145)
+- `~ data/wither/function/wither/passive/skull_black.mcfunction` (binary/non-JSON, size 499 -> 504)
+- `~ data/wither/function/wither/passive/skull_blue.mcfunction` (binary/non-JSON, size 604 -> 610)
+- `~ data/wither/function/wither/passive/skull_sort.mcfunction` (binary/non-JSON, size 111 -> 114)
+- `~ data/wither/function/wither/passive/variants/aim_vector.mcfunction` (binary/non-JSON, size 1613 -> 1635)
+- `~ data/wither/function/wither/passive/variants/archer_arrow_check.mcfunction` (binary/non-JSON, size 2657 -> 2701)
+- `~ data/wither/function/wither/passive/variants/archer_arrow_spawn.mcfunction` (binary/non-JSON, size 742 -> 750)
+- `~ data/wither/function/wither/passive/variants/archer_arrows.mcfunction` (binary/non-JSON, size 337 -> 340)
+- `~ data/wither/function/wither/passive/variants/bone_knight.mcfunction` (binary/non-JSON, size 1347 -> 1350)
+- `~ data/wither/function/wither/passive/variants/chance.mcfunction` (binary/non-JSON, size 729 -> 739)
+- `~ data/wither/function/wither/passive/variants/death_rider.mcfunction` (binary/non-JSON, size 1597 -> 1601)
+- `~ data/wither/function/wither/passive/variants/hexbinder.mcfunction` (binary/non-JSON, size 1130 -> 1133)
+- `~ data/wither/function/wither/passive/variants/lifesteal.mcfunction` (binary/non-JSON, size 317 -> 322)
+- `~ data/wither/function/wither/passive/variants/magus_calm.mcfunction` (binary/non-JSON, size 183 -> 187)
+- `~ data/wither/function/wither/passive/variants/magus_extinguish.mcfunction` (binary/non-JSON, size 147 -> 151)
+- `~ data/wither/function/wither/passive/variants/magus_fire.mcfunction` (binary/non-JSON, size 233 -> 235)
+- `~ data/wither/function/wither/passive/variants/magus_fireball.mcfunction` (binary/non-JSON, size 558 -> 565)
+- `~ data/wither/function/wither/passive/variants/magus_ignite.mcfunction` (binary/non-JSON, size 199 -> 203)
+- `~ data/wither/function/wither/passive/variants/magus_step.mcfunction` (binary/non-JSON, size 914 -> 924)
+- `~ data/wither/function/wither/passive/variants/miniskull_burst.mcfunction` (binary/non-JSON, size 858 -> 871)
+- `~ data/wither/function/wither/passive/variants/miniskull_damage.mcfunction` (binary/non-JSON, size 534 -> 542)
+- `~ data/wither/function/wither/passive/variants/miniskull_step.mcfunction` (binary/non-JSON, size 1197 -> 1209)
+- `~ data/wither/function/wither/passive/variants/miniskull_tick.mcfunction` (binary/non-JSON, size 329 -> 332)
+- `~ data/wither/function/wither/passive/variants/pick.mcfunction` (binary/non-JSON, size 1603 -> 1620)
+- `~ data/wither/function/wither/passive/variants/plain.mcfunction` (binary/non-JSON, size 639 -> 641)
+- `~ data/wither/function/wither/passive/variants/reaper_arrive.mcfunction` (binary/non-JSON, size 670 -> 678)
+- `~ data/wither/function/wither/passive/variants/reaper_blink.mcfunction` (binary/non-JSON, size 376 -> 383)
+- `~ data/wither/function/wither/passive/variants/reaper_spot.mcfunction` (binary/non-JSON, size 280 -> 282)
+- `~ data/wither/function/wither/passive/variants/reaper_try.mcfunction` (binary/non-JSON, size 489 -> 495)
+- `~ data/wither/function/wither/passive/variants/shade_reaper.mcfunction` (binary/non-JSON, size 1133 -> 1136)
+- `~ data/wither/function/wither/passive/variants/soul_archer.mcfunction` (binary/non-JSON, size 1121 -> 1124)
+- `~ data/wither/function/wither/passive/variants/spawn_loop.mcfunction` (binary/non-JSON, size 514 -> 523)
+- `~ data/wither/function/wither/passive/variants/steed_crumble.mcfunction` (binary/non-JSON, size 159 -> 162)
+- `~ data/wither/function/wither/passive/variants/tick.mcfunction` (binary/non-JSON, size 2692 -> 2721)
+- `~ data/wither/function/wither/passive/variants/triskull.mcfunction` (binary/non-JSON, size 1087 -> 1090)
+- `~ data/wither/function/wither/passive/variants/triskull_fire.mcfunction` (binary/non-JSON, size 747 -> 757)
+- `~ data/wither/function/wither/passive/variants/triskull_shot_center.mcfunction` (binary/non-JSON, size 731 -> 736)
+- `~ data/wither/function/wither/passive/variants/triskull_shot_left.mcfunction` (binary/non-JSON, size 317 -> 319)
+- `~ data/wither/function/wither/passive/variants/triskull_shot_right.mcfunction` (binary/non-JSON, size 361 -> 364)
+- `~ data/wither/function/wither/phase1/homing/homing_boom.mcfunction` (binary/non-JSON, size 179 -> 181)
+- `~ data/wither/function/wither/phase1/homing/homing_step.mcfunction` (binary/non-JSON, size 745 -> 754)
+- `~ data/wither/function/wither/phase2/enraged/skulls/explode.mcfunction` (binary/non-JSON, size 34 -> 36)
+- `~ data/wither/function/wither/rubble.mcfunction` (binary/non-JSON, size 295 -> 299)
+- `~ data/wither/function/wither/skeleton.mcfunction` (binary/non-JSON, size 262 -> 263)
+- `~ data/wither/function/wither/skull/aim.mcfunction` (binary/non-JSON, size 1443 -> 1464)
+- `~ data/wither/function/wither/skull/aim_launch.mcfunction` (binary/non-JSON, size 165 -> 169)
+- `~ data/wither/function/wither/skull/cache_player.mcfunction` (binary/non-JSON, size 426 -> 432)
+- `~ data/wither/function/wither/skull/cache_players.mcfunction` (binary/non-JSON, size 223 -> 225)
+- `~ data/wither/function/wither/team.mcfunction` (binary/non-JSON, size 173 -> 177)
+- `~ data/wither/function/wither/toggle/tbedrock.mcfunction` (binary/non-JSON, size 352 -> 359)
+- `~ data/wither/function/wither/toggle/tbedrockoff.mcfunction` (binary/non-JSON, size 181 -> 184)
+- `~ data/wither/function/wither/toggle/tscaling.mcfunction` (binary/non-JSON, size 289 -> 294)
+- `~ data/wither/function/wither/toggle/tscalingoff.mcfunction` (binary/non-JSON, size 175 -> 179)
+- `~ data/wither/function/wither/toggle/tscalingon.mcfunction` (binary/non-JSON, size 174 -> 178)
+- `~ data/wither/predicate/has_bad_omen.json` (whitespace/formatting only)
+- `~ data/wither/predicate/has_rider.json` (whitespace/formatting only)
+- `~ data/wither/predicate/on_ground.json` (whitespace/formatting only)
+- `~ data/wither/tags/block/dash_blockers.json` (whitespace/formatting only)
+- `~ data/wither/tags/block/destructible.json` (whitespace/formatting only)
+- `~ data/wither/tags/block/passable.json` (whitespace/formatting only)
+- `~ data/wither/tags/item/rubble.json` (whitespace/formatting only)
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `127` -> `94`
+  - `pack.min_format`: `108` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `ddd-v.1.0.6-MC-26.3` (added: 0, removed: 0, modified: 33)
+**Modified files:**
+- `~ data/ddd/structure/tower/monolithic/main/monolithic_tower.nbt` (binary/non-JSON, size 64566 -> 60835)
+- `~ data/ddd/structure/tower/wizard/main/wizard_tower_base.nbt` (binary/non-JSON, size 47424 -> 43769)
+- `~ data/ddd/structure/tower/wizard/main/wizard_tower_center.nbt` (binary/non-JSON, size 83042 -> 76548)
+- `~ data/ddd/structure/tower/wizard/main/wizard_tower_top.nbt` (binary/non-JSON, size 145357 -> 134477)
+- `~ data/ddd/structure/tower/wizard/rooms_liv1/wizard_room_1_liv1.nbt` (binary/non-JSON, size 27788 -> 25435)
+- `~ data/ddd/structure/tower/wizard/rooms_liv1/wizard_room_2_liv1.nbt` (binary/non-JSON, size 26880 -> 24417)
+- `~ data/ddd/structure/tower/wizard/rooms_liv1/wizard_room_3_liv1.nbt` (binary/non-JSON, size 28118 -> 25807)
+- `~ data/ddd/structure/tower/wizard/rooms_liv1/wizard_room_4_liv1.nbt` (binary/non-JSON, size 26263 -> 23666)
+- `~ data/ddd/structure/tower/wizard/rooms_liv1/wizard_room_5_liv1.nbt` (binary/non-JSON, size 26709 -> 24184)
+- `~ data/ddd/structure/tower/wizard/rooms_liv1/wizard_room_6_liv1.nbt` (binary/non-JSON, size 25510 -> 23223)
+- `~ data/ddd/structure/tower/wizard/rooms_liv1/wizard_room_7_liv1.nbt` (binary/non-JSON, size 27292 -> 24747)
+- `~ data/ddd/structure/tower/wizard/rooms_liv2/wizard_room_1_liv2.nbt` (binary/non-JSON, size 27787 -> 25420)
+- `~ data/ddd/structure/tower/wizard/rooms_liv2/wizard_room_2_liv2.nbt` (binary/non-JSON, size 26885 -> 24424)
+- `~ data/ddd/structure/tower/wizard/rooms_liv2/wizard_room_3_liv2.nbt` (binary/non-JSON, size 28915 -> 26669)
+- `~ data/ddd/structure/tower/wizard/rooms_liv2/wizard_room_4_liv2.nbt` (binary/non-JSON, size 26257 -> 23667)
+- `~ data/ddd/structure/tower/wizard/rooms_liv2/wizard_room_5_liv2.nbt` (binary/non-JSON, size 26712 -> 24196)
+- `~ data/ddd/structure/tower/wizard/rooms_liv2/wizard_room_6_liv2.nbt` (binary/non-JSON, size 25506 -> 23225)
+- `~ data/ddd/structure/tower/wizard/rooms_liv2/wizard_room_7_liv2.nbt` (binary/non-JSON, size 27286 -> 24750)
+- `~ data/ddd/structure/tower/wizard/rooms_liv3/wizard_room_1_liv3.nbt` (binary/non-JSON, size 27831 -> 25455)
+- `~ data/ddd/structure/tower/wizard/rooms_liv3/wizard_room_2_liv3.nbt` (binary/non-JSON, size 26921 -> 24447)
+- `~ data/ddd/structure/tower/wizard/rooms_liv3/wizard_room_3_liv3.nbt` (binary/non-JSON, size 28966 -> 26721)
+- `~ data/ddd/structure/tower/wizard/rooms_liv3/wizard_room_4_liv3.nbt` (binary/non-JSON, size 26318 -> 23713)
+- `~ data/ddd/structure/tower/wizard/rooms_liv3/wizard_room_5_liv3.nbt` (binary/non-JSON, size 26754 -> 24205)
+- `~ data/ddd/structure/tower/wizard/rooms_liv3/wizard_room_6_liv3.nbt` (binary/non-JSON, size 25565 -> 23259)
+- `~ data/ddd/structure/tower/wizard/rooms_liv3/wizard_room_7_liv3.nbt` (binary/non-JSON, size 27324 -> 24789)
+- `~ data/ddd/structure/tower/wizard/rooms_liv4/wizard_room_1_liv4.nbt` (binary/non-JSON, size 35789 -> 33239)
+- `~ data/ddd/structure/tower/wizard/rooms_liv4/wizard_room_2_liv4.nbt` (binary/non-JSON, size 34731 -> 32008)
+- `~ data/ddd/structure/tower/wizard/rooms_liv4/wizard_room_3_liv4.nbt` (binary/non-JSON, size 36347 -> 33287)
+- `~ data/ddd/structure/tower/wizard/rooms_liv4/wizard_room_4_liv4.nbt` (binary/non-JSON, size 34224 -> 31169)
+- `~ data/ddd/structure/tower/wizard/rooms_liv4/wizard_room_5_liv4.nbt` (binary/non-JSON, size 34809 -> 31906)
+- `~ data/ddd/structure/tower/wizard/rooms_liv4/wizard_room_6_liv4.nbt` (binary/non-JSON, size 33318 -> 30651)
+- `~ data/ddd/structure/tower/wizard/rooms_liv4/wizard_room_7_liv4.nbt` (binary/non-JSON, size 35268 -> 32362)
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `900` -> `94`
+  - `pack.min_format`: `81` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `hopobetterruinedportals-26-3-1-5-2` (added: 0, removed: 0, modified: 48)
+**Modified files:**
+- `~ data/hopo/structure/mobs/allays_3.nbt` (binary/non-JSON, size 1090 -> 1123)
+- `~ data/hopo/structure/mobs/allays_6.nbt` (binary/non-JSON, size 1437 -> 1464)
+- `~ data/hopo/structure/mobs/piglin_brutes.nbt` (binary/non-JSON, size 1002 -> 1036)
+- `~ data/hopo/structure/mobs/piglin_crossbow.nbt` (binary/non-JSON, size 945 -> 981)
+- `~ data/hopo/structure/mobs/piglin_sword.nbt` (binary/non-JSON, size 1068 -> 1102)
+- `~ data/hopo/structure/mobs/zombified_piglin.nbt` (binary/non-JSON, size 781 -> 820)
+- `~ data/hopo/structure/piglin_ruin/path/1.nbt` (binary/non-JSON, size 2514 -> 2466)
+- `~ data/hopo/structure/piglin_ruin/path/2.nbt` (binary/non-JSON, size 3358 -> 3350)
+- `~ data/hopo/structure/piglin_ruin/path/3.nbt` (binary/non-JSON, size 3075 -> 3007)
+- `~ data/hopo/structure/piglin_ruin/portal1.nbt` (binary/non-JSON, size 18069 -> 16632)
+- `~ data/hopo/structure/piglin_ruin/portal2.nbt` (binary/non-JSON, size 26593 -> 23741)
+- `~ data/hopo/structure/piglin_ruin/portal3.nbt` (binary/non-JSON, size 22715 -> 20848)
+- `~ data/hopo/structure/piglin_ruin/portal4.nbt` (binary/non-JSON, size 9395 -> 9812)
+- `~ data/hopo/structure/piglin_ruin/ruins/1.nbt` (binary/non-JSON, size 2823 -> 2620)
+- `~ data/hopo/structure/piglin_ruin/ruins/10.nbt` (binary/non-JSON, size 2829 -> 2772)
+- `~ data/hopo/structure/piglin_ruin/ruins/11.nbt` (binary/non-JSON, size 2221 -> 2136)
+- `~ data/hopo/structure/piglin_ruin/ruins/2.nbt` (binary/non-JSON, size 1324 -> 1296)
+- `~ data/hopo/structure/piglin_ruin/ruins/3.nbt` (binary/non-JSON, size 3886 -> 3609)
+- `~ data/hopo/structure/piglin_ruin/ruins/4.nbt` (binary/non-JSON, size 2932 -> 2670)
+- `~ data/hopo/structure/piglin_ruin/ruins/5.nbt` (binary/non-JSON, size 2372 -> 2227)
+- `~ data/hopo/structure/piglin_ruin/ruins/6.nbt` (binary/non-JSON, size 1346 -> 1294)
+- `~ data/hopo/structure/piglin_ruin/ruins/7.nbt` (binary/non-JSON, size 6138 -> 5612)
+- `~ data/hopo/structure/piglin_ruin/ruins/8.nbt` (binary/non-JSON, size 880 -> 879)
+- `~ data/hopo/structure/piglin_ruin/ruins/9.nbt` (binary/non-JSON, size 5508 -> 5132)
+- `~ data/hopo/structure/portal1.nbt` (binary/non-JSON, size 12495 -> 11682)
+- `~ data/hopo/structure/portal10.nbt` (binary/non-JSON, size 15783 -> 14850)
+- `~ data/hopo/structure/portal11.nbt` (binary/non-JSON, size 16557 -> 15575)
+- `~ data/hopo/structure/portal12.nbt` (binary/non-JSON, size 13899 -> 12929)
+- `~ data/hopo/structure/portal13.nbt` (binary/non-JSON, size 17404 -> 16319)
+- `~ data/hopo/structure/portal14.nbt` (binary/non-JSON, size 11394 -> 10571)
+- `~ data/hopo/structure/portal2.nbt` (binary/non-JSON, size 13178 -> 12289)
+- `~ data/hopo/structure/portal3.nbt` (binary/non-JSON, size 13139 -> 12316)
+- `~ data/hopo/structure/portal4.nbt` (binary/non-JSON, size 13725 -> 12813)
+- `~ data/hopo/structure/portal5.nbt` (binary/non-JSON, size 14498 -> 13532)
+- `~ data/hopo/structure/portal6.nbt` (binary/non-JSON, size 11942 -> 11062)
+- `~ data/hopo/structure/portal7.nbt` (binary/non-JSON, size 12606 -> 11696)
+- `~ data/hopo/structure/portal8.nbt` (binary/non-JSON, size 16210 -> 15227)
+- `~ data/hopo/structure/portal9.nbt` (binary/non-JSON, size 14811 -> 13931)
+- `~ data/hopo/structure/portal_deepslate.nbt` (binary/non-JSON, size 12741 -> 11916)
+- `~ data/hopo/structure/portal_dripstone.nbt` (binary/non-JSON, size 16766 -> 15527)
+- `~ data/hopo/structure/portal_lush.nbt` (binary/non-JSON, size 14151 -> 13139)
+- `~ data/hopo/structure/tentacles/1.nbt` (binary/non-JSON, size 1431 -> 1382)
+- `~ data/hopo/worldgen/structure/portal/nether/piglin_ruin.json` (whitespace/formatting only)
+- `~ data/hopo/worldgen/structure/portal/overworld/portal_deepslate.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/hopo/worldgen/structure/portal/overworld/portal_dripstone.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/hopo/worldgen/structure/portal/overworld/portal_lush.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ data/hopo/worldgen/structure/portal/overworld/portal_ruined.json` (whitespace/formatting only)
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 0]` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `mine-treasure-1.6.5` (added: 0, removed: 0, modified: 2)
+**Modified files:**
+- `~ data/mt/structure/portal_room.nbt` (binary/non-JSON, size 6223 -> 5724)
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `[121, 1]` -> `94`
+  - `pack.min_format`: `[121, 1]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `more_mobs-v1.5.11-mc1.14-26.3.9-datapack` (added: 0, removed: 0, modified: 1)
+**Modified files:**
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `121` -> `94`
+  - `pack.min_format`: `4` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `sunken_spires_1.20` (added: 0, removed: 0, modified: 2)
+**Modified files:**
+- `~ data/joshie/worldgen/structure/sunken_spires/sunken_city.json`:
+  - `terrain_adaptation`: `beard_box` -> `beard_thin`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `<MISSING>` -> `94`
+  - `pack.min_format`: `<MISSING>` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `t_and_t-datapack-26.3` (added: 0, removed: 0, modified: 752)
+**Modified files:**
+- `~ data/kaisyn/structure/other/desert_temple_mimic/passages/passage_1.nbt` (binary/non-JSON, size 2221 -> 2179)
+- `~ data/kaisyn/structure/other/desert_temple_mimic/passages/passage_2.nbt` (binary/non-JSON, size 2574 -> 2467)
+- `~ data/kaisyn/structure/other/desert_temple_mimic/pyramid_main.nbt` (binary/non-JSON, size 15265 -> 14066)
+- `~ data/kaisyn/structure/outpost/camps/beach/base_plate.nbt` (binary/non-JSON, size 18141 -> 16526)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/base_plate.nbt` (binary/non-JSON, size 2190 -> 2140)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/kitchen.nbt` (binary/non-JSON, size 5340 -> 5012)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tent_savanna_plateau_1.nbt` (binary/non-JSON, size 1978 -> 1942)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tent_savanna_plateau_2.nbt` (binary/non-JSON, size 1856 -> 1820)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tent_savanna_plateau_3.nbt` (binary/non-JSON, size 1935 -> 1880)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tent_savanna_plateau_4.nbt` (binary/non-JSON, size 4532 -> 4923)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tent_savanna_plateau_5.nbt` (binary/non-JSON, size 9516 -> 10405)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_1.nbt` (binary/non-JSON, size 993 -> 1011)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_2.nbt` (binary/non-JSON, size 943 -> 961)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_3.nbt` (binary/non-JSON, size 940 -> 957)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_4.nbt` (binary/non-JSON, size 1004 -> 1015)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_5.nbt` (binary/non-JSON, size 979 -> 996)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_6.nbt` (binary/non-JSON, size 1106 -> 1130)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_7.nbt` (binary/non-JSON, size 1012 -> 1030)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_8.nbt` (binary/non-JSON, size 1106 -> 1130)
+- `~ data/kaisyn/structure/outpost/camps/savanna_plateau/side/workshop.nbt` (binary/non-JSON, size 12178 -> 12743)
+- `~ data/kaisyn/structure/outpost/camps/snowy_beach/base_plate.nbt` (binary/non-JSON, size 18077 -> 16445)
+- `~ data/kaisyn/structure/outpost/camps/sparse_jungle/base_plate.nbt` (binary/non-JSON, size 2193 -> 2128)
+- `~ data/kaisyn/structure/outpost/camps/sparse_jungle/side/kitchen.nbt` (binary/non-JSON, size 5348 -> 5019)
+- `~ data/kaisyn/structure/outpost/camps/sparse_jungle/side/tent_sparse_jungle.nbt` (binary/non-JSON, size 1394 -> 1392)
+- `~ data/kaisyn/structure/outpost/camps/sparse_jungle/side/workshop.nbt` (binary/non-JSON, size 5073 -> 4914)
+- `~ data/kaisyn/structure/outpost/camps/wooded_badlands/base_plate.nbt` (binary/non-JSON, size 2192 -> 2141)
+- `~ data/kaisyn/structure/outpost/camps/wooded_badlands/side/kitchen.nbt` (binary/non-JSON, size 5348 -> 5019)
+- `~ data/kaisyn/structure/outpost/camps/wooded_badlands/side/tent_wooded_badlands.nbt` (binary/non-JSON, size 2045 -> 1962)
+- `~ data/kaisyn/structure/outpost/camps/wooded_badlands/side/workshop.nbt` (binary/non-JSON, size 5073 -> 4913)
+- `~ data/kaisyn/structure/outpost/forts/badlands/base_plate.nbt` (binary/non-JSON, size 20734 -> 19507)
+- `~ data/kaisyn/structure/outpost/forts/desert/base_plate.nbt` (binary/non-JSON, size 59854 -> 55447)
+- `~ data/kaisyn/structure/outpost/forts/exclusives/classic/base_plate.nbt` (binary/non-JSON, size 23607 -> 21532)
+- `~ data/kaisyn/structure/outpost/forts/exclusives/iberian/base_plate.nbt` (binary/non-JSON, size 54030 -> 49381)
+- `~ data/kaisyn/structure/outpost/forts/exclusives/mediterranean/base_plate.nbt` (binary/non-JSON, size 18119 -> 16699)
+- `~ data/kaisyn/structure/outpost/forts/exclusives/mediterranean/fields/field_1.nbt` (binary/non-JSON, size 3775 -> 3418)
+- `~ data/kaisyn/structure/outpost/forts/exclusives/mediterranean/fields/field_2.nbt` (binary/non-JSON, size 4395 -> 4019)
+- `~ data/kaisyn/structure/outpost/forts/exclusives/rustic/base_plate.nbt` (binary/non-JSON, size 80763 -> 75445)
+- `~ data/kaisyn/structure/outpost/forts/grove/base_plate.nbt` (binary/non-JSON, size 35986 -> 33465)
+- `~ data/kaisyn/structure/outpost/forts/jungle/base_plate.nbt` (binary/non-JSON, size 90266 -> 85020)
+- `~ data/kaisyn/structure/outpost/forts/old_growth_taiga/base_plate.nbt` (binary/non-JSON, size 66492 -> 62206)
+- `~ data/kaisyn/structure/outpost/pillagers/captive_jungle.nbt` (binary/non-JSON, size 753 -> 790)
+- `~ data/kaisyn/structure/outpost/pillagers/captive_snow.nbt` (binary/non-JSON, size 753 -> 787)
+- `~ data/kaisyn/structure/outpost/pillagers/outpost_captain.nbt` (binary/non-JSON, size 978 -> 1015)
+- `~ data/kaisyn/structure/outpost/pillagers/pillager.nbt` (binary/non-JSON, size 778 -> 807)
+- `~ data/kaisyn/structure/outpost/pillagers/vindicator.nbt` (binary/non-JSON, size 769 -> 800)
+- `~ data/kaisyn/structure/outpost/towers/birch/base_plate.nbt` (binary/non-JSON, size 42952 -> 40403)
+- `~ data/kaisyn/structure/outpost/towers/exclusives/nilotic/base_plate.nbt` (binary/non-JSON, size 58785 -> 55047)
+- `~ data/kaisyn/structure/outpost/towers/exclusives/oriental/base_plate.nbt` (binary/non-JSON, size 92333 -> 85392)
+- `~ data/kaisyn/structure/outpost/towers/exclusives/swedish/base_plate.nbt` (binary/non-JSON, size 40792 -> 38862)
+- `~ data/kaisyn/structure/outpost/towers/exclusives/tudor/base_plate.nbt` (binary/non-JSON, size 29471 -> 28465)
+- `~ data/kaisyn/structure/outpost/towers/flower_forest/base_plate.nbt` (binary/non-JSON, size 20214 -> 20229)
+- `~ data/kaisyn/structure/outpost/towers/forest/base_plate.nbt` (binary/non-JSON, size 51306 -> 48134)
+- `~ data/kaisyn/structure/outpost/towers/meadow/base_plate.nbt` (binary/non-JSON, size 22089 -> 22103)
+- `~ data/kaisyn/structure/outpost/towers/mushroom_fields/base_plate.nbt` (binary/non-JSON, size 55243 -> 52465)
+- `~ data/kaisyn/structure/outpost/towers/savanna/base_plate.nbt` (binary/non-JSON, size 20840 -> 20489)
+- `~ data/kaisyn/structure/outpost/towers/snowy_plains/base_plate.nbt` (binary/non-JSON, size 60884 -> 57264)
+- `~ data/kaisyn/structure/outpost/towers/snowy_slopes/base_plate.nbt` (binary/non-JSON, size 59575 -> 57199)
+- `~ data/kaisyn/structure/outpost/towers/snowy_taiga/base_plate.nbt` (binary/non-JSON, size 21470 -> 21127)
+- `~ data/kaisyn/structure/outpost/towers/sunflower_plains/base_plate.nbt` (binary/non-JSON, size 73414 -> 67951)
+- `~ data/kaisyn/structure/outpost/towers/swamp/base_plate.nbt` (binary/non-JSON, size 37685 -> 35260)
+- `~ data/kaisyn/structure/outpost/towers/taiga/base_plate.nbt` (binary/non-JSON, size 38124 -> 35400)
+- `~ data/kaisyn/structure/village/badlands_pueblo/badlands_lamp_2.nbt` (binary/non-JSON, size 349 -> 384)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_armorer_1.nbt` (binary/non-JSON, size 1903 -> 1856)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_cartographer_1.nbt` (binary/non-JSON, size 2248 -> 2223)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_large_house_1.nbt` (binary/non-JSON, size 3301 -> 3100)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_large_house_2.nbt` (binary/non-JSON, size 3816 -> 3654)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_large_house_3.nbt` (binary/non-JSON, size 5323 -> 5029)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_large_house_4.nbt` (binary/non-JSON, size 3223 -> 3082)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_library_1.nbt` (binary/non-JSON, size 2260 -> 2153)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_mason_1.nbt` (binary/non-JSON, size 2132 -> 2041)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_medium_house_1_l.nbt` (binary/non-JSON, size 1731 -> 1733)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_medium_house_1_r.nbt` (binary/non-JSON, size 1740 -> 1743)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_medium_house_2_l.nbt` (binary/non-JSON, size 1700 -> 1704)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_medium_house_2_r.nbt` (binary/non-JSON, size 1770 -> 1793)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_misc_professions_1.nbt` (binary/non-JSON, size 990 -> 1023)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_1_l.nbt` (binary/non-JSON, size 1591 -> 1617)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_1_r.nbt` (binary/non-JSON, size 1596 -> 1612)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_2_l.nbt` (binary/non-JSON, size 1415 -> 1431)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_2_r.nbt` (binary/non-JSON, size 1405 -> 1414)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_3_l.nbt` (binary/non-JSON, size 1642 -> 1642)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_3_r.nbt` (binary/non-JSON, size 1620 -> 1626)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_4_l.nbt` (binary/non-JSON, size 1474 -> 1480)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_4_r.nbt` (binary/non-JSON, size 1459 -> 1458)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_5_l.nbt` (binary/non-JSON, size 1374 -> 1385)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_5_r.nbt` (binary/non-JSON, size 1367 -> 1372)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_6_l.nbt` (binary/non-JSON, size 1425 -> 1441)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_small_house_6_r.nbt` (binary/non-JSON, size 1432 -> 1439)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_temple_1.nbt` (binary/non-JSON, size 5258 -> 5074)
+- `~ data/kaisyn/structure/village/badlands_pueblo/houses/badlands_toolsmith_and_weaponsmith_1.nbt` (binary/non-JSON, size 2184 -> 2101)
+- `~ data/kaisyn/structure/village/badlands_pueblo/professions_misc/badlands_butcher_1.nbt` (binary/non-JSON, size 527 -> 561)
+- `~ data/kaisyn/structure/village/badlands_pueblo/professions_misc/badlands_farmer_1.nbt` (binary/non-JSON, size 356 -> 397)
+- `~ data/kaisyn/structure/village/badlands_pueblo/professions_misc/badlands_fisher_1.nbt` (binary/non-JSON, size 450 -> 486)
+- `~ data/kaisyn/structure/village/badlands_pueblo/professions_misc/badlands_fletcher_1.nbt` (binary/non-JSON, size 450 -> 488)
+- `~ data/kaisyn/structure/village/badlands_pueblo/professions_misc/badlands_leatherworker_1.nbt` (binary/non-JSON, size 496 -> 538)
+- `~ data/kaisyn/structure/village/badlands_pueblo/professions_misc/badlands_shepherd_1.nbt` (binary/non-JSON, size 385 -> 424)
+- `~ data/kaisyn/structure/village/badlands_pueblo/streets/crossroad_01.nbt` (binary/non-JSON, size 878 -> 838)
+- `~ data/kaisyn/structure/village/badlands_pueblo/streets/crossroad_02.nbt` (binary/non-JSON, size 475 -> 481)
+- `~ data/kaisyn/structure/village/badlands_pueblo/streets/crossroad_03.nbt` (binary/non-JSON, size 1470 -> 1343)
+- `~ data/kaisyn/structure/village/badlands_pueblo/streets/straight_01.nbt` (binary/non-JSON, size 617 -> 635)
+- `~ data/kaisyn/structure/village/badlands_pueblo/terminators/terminator_01.nbt` (binary/non-JSON, size 308 -> 332)
+- `~ data/kaisyn/structure/village/badlands_pueblo/terminators/terminator_02.nbt` (binary/non-JSON, size 308 -> 334)
+- `~ data/kaisyn/structure/village/badlands_pueblo/town_centers/badlands_meeting_point_1.nbt` (binary/non-JSON, size 29044 -> 26246)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/birch_forest_decor_1.nbt` (binary/non-JSON, size 543 -> 581)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/birch_forest_decor_2.nbt` (binary/non-JSON, size 486 -> 530)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/birch_forest_decor_3.nbt` (binary/non-JSON, size 462 -> 500)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_armorer_and_toolsmith_1.nbt` (binary/non-JSON, size 4384 -> 4246)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_butcher_and_leatherworker_1.nbt` (binary/non-JSON, size 6032 -> 5795)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_cartographer_and_library_1.nbt` (binary/non-JSON, size 8115 -> 7745)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_fisher_1.nbt` (binary/non-JSON, size 2068 -> 1972)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_fletcher_1.nbt` (binary/non-JSON, size 1464 -> 1453)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_large_house_1.nbt` (binary/non-JSON, size 6526 -> 6188)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_mason_1.nbt` (binary/non-JSON, size 1408 -> 1400)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_medium_house_1.nbt` (binary/non-JSON, size 6520 -> 6214)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_medium_house_2.nbt` (binary/non-JSON, size 5249 -> 5095)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_shepherd_1.nbt` (binary/non-JSON, size 3478 -> 3394)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_small_farm_1.nbt` (binary/non-JSON, size 1805 -> 1724)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_small_house_1.nbt` (binary/non-JSON, size 3132 -> 3038)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_small_house_2.nbt` (binary/non-JSON, size 2297 -> 2255)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_small_house_3.nbt` (binary/non-JSON, size 2225 -> 2167)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_small_house_4.nbt` (binary/non-JSON, size 2748 -> 2682)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_small_house_5.nbt` (binary/non-JSON, size 2279 -> 2215)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_small_house_6.nbt` (binary/non-JSON, size 2390 -> 2357)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/houses/birch_forest_weaponsmith_1.nbt` (binary/non-JSON, size 3658 -> 3598)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/corner_01.nbt` (binary/non-JSON, size 1959 -> 1759)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/corner_02.nbt` (binary/non-JSON, size 1851 -> 1654)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/corner_03.nbt` (binary/non-JSON, size 412 -> 422)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/crossroad_01.nbt` (binary/non-JSON, size 1969 -> 1766)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/crossroad_02.nbt` (binary/non-JSON, size 1933 -> 1724)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/crossroad_03.nbt` (binary/non-JSON, size 1981 -> 1778)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/crossroad_04.nbt` (binary/non-JSON, size 444 -> 454)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/crossroad_05.nbt` (binary/non-JSON, size 482 -> 487)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/crossroad_06.nbt` (binary/non-JSON, size 535 -> 544)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/straight_01.nbt` (binary/non-JSON, size 1861 -> 1699)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/straight_02.nbt` (binary/non-JSON, size 1801 -> 1642)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/straight_03.nbt` (binary/non-JSON, size 1175 -> 1080)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/straight_04.nbt` (binary/non-JSON, size 920 -> 887)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/straight_05.nbt` (binary/non-JSON, size 2252 -> 2079)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/straight_06.nbt` (binary/non-JSON, size 2686 -> 2428)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/streets/turn_01.nbt` (binary/non-JSON, size 1213 -> 1166)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/terminators/terminator_01.nbt` (binary/non-JSON, size 296 -> 320)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/terminators/terminator_03.nbt` (binary/non-JSON, size 310 -> 334)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/terminators/terminator_04.nbt` (binary/non-JSON, size 360 -> 383)
+- `~ data/kaisyn/structure/village/birch_forest_romanian/town_centers/birch_forest_meeting_point_1.nbt` (binary/non-JSON, size 62837 -> 58989)
+- `~ data/kaisyn/structure/village/exclusives/classic/classic_lamp_post_1.nbt` (binary/non-JSON, size 425 -> 465)
+- `~ data/kaisyn/structure/village/exclusives/classic/houses/classic_blacksmith_1.nbt` (binary/non-JSON, size 2556 -> 2391)
+- `~ data/kaisyn/structure/village/exclusives/classic/houses/classic_butcher_1.nbt` (binary/non-JSON, size 3284 -> 3048)
+- `~ data/kaisyn/structure/village/exclusives/classic/houses/classic_church_1.nbt` (binary/non-JSON, size 3008 -> 2949)
+- `~ data/kaisyn/structure/village/exclusives/classic/houses/classic_large_farm_1.nbt` (binary/non-JSON, size 2245 -> 2148)
+- `~ data/kaisyn/structure/village/exclusives/classic/houses/classic_large_house_1.nbt` (binary/non-JSON, size 3399 -> 3111)
+- `~ data/kaisyn/structure/village/exclusives/classic/houses/classic_library_1.nbt` (binary/non-JSON, size 3018 -> 2786)
+- `~ data/kaisyn/structure/village/exclusives/classic/houses/classic_medium_house_1.nbt` (binary/non-JSON, size 1122 -> 1101)
+- `~ data/kaisyn/structure/village/exclusives/classic/houses/classic_medium_house_2.nbt` (binary/non-JSON, size 1329 -> 1291)
+- `~ data/kaisyn/structure/village/exclusives/classic/houses/classic_small_farm_1.nbt` (binary/non-JSON, size 1591 -> 1531)
+- `~ data/kaisyn/structure/village/exclusives/classic/houses/classic_small_house_1.nbt` (binary/non-JSON, size 1163 -> 1153)
+- `~ data/kaisyn/structure/village/exclusives/classic/houses/classic_small_house_2.nbt` (binary/non-JSON, size 1200 -> 1193)
+- `~ data/kaisyn/structure/village/exclusives/classic/streets/crossroad_01.nbt` (binary/non-JSON, size 1332 -> 1207)
+- `~ data/kaisyn/structure/village/exclusives/classic/streets/crossroad_02.nbt` (binary/non-JSON, size 3498 -> 3132)
+- `~ data/kaisyn/structure/village/exclusives/classic/streets/crossroad_03.nbt` (binary/non-JSON, size 4057 -> 3687)
+- `~ data/kaisyn/structure/village/exclusives/classic/streets/straight_01.nbt` (binary/non-JSON, size 3265 -> 2977)
+- `~ data/kaisyn/structure/village/exclusives/classic/streets/straight_02.nbt` (binary/non-JSON, size 4243 -> 3815)
+- `~ data/kaisyn/structure/village/exclusives/classic/streets/straight_03.nbt` (binary/non-JSON, size 5315 -> 4873)
+- `~ data/kaisyn/structure/village/exclusives/classic/town_centers/classic_meeting_point_1/well_top.nbt` (binary/non-JSON, size 1075 -> 1047)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_garden_1.nbt` (binary/non-JSON, size 1348 -> 1315)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_large_house_1.nbt` (binary/non-JSON, size 9489 -> 8698)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_large_house_2.nbt` (binary/non-JSON, size 7349 -> 6874)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_medium_house_1.nbt` (binary/non-JSON, size 4248 -> 4031)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_medium_house_2.nbt` (binary/non-JSON, size 5966 -> 5682)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_medium_house_3.nbt` (binary/non-JSON, size 4240 -> 4079)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_medium_house_4.nbt` (binary/non-JSON, size 7645 -> 7344)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_medium_house_5.nbt` (binary/non-JSON, size 6005 -> 5672)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_medium_house_6.nbt` (binary/non-JSON, size 6275 -> 5960)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_medium_house_7.nbt` (binary/non-JSON, size 5131 -> 4938)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_medium_house_8.nbt` (binary/non-JSON, size 3870 -> 3685)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_small_house_1.nbt` (binary/non-JSON, size 2137 -> 2074)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_small_house_2.nbt` (binary/non-JSON, size 1859 -> 1825)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_small_house_3.nbt` (binary/non-JSON, size 2241 -> 2142)
+- `~ data/kaisyn/structure/village/exclusives/iberian/houses/iberian_temple_1.nbt` (binary/non-JSON, size 9501 -> 9352)
+- `~ data/kaisyn/structure/village/exclusives/iberian/iberian_lamp_post_1.nbt` (binary/non-JSON, size 357 -> 397)
+- `~ data/kaisyn/structure/village/exclusives/iberian/iberian_plants_1.nbt` (binary/non-JSON, size 585 -> 618)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_armorer_1.nbt` (binary/non-JSON, size 517 -> 542)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_butcher_1.nbt` (binary/non-JSON, size 566 -> 591)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_cartographer_1.nbt` (binary/non-JSON, size 412 -> 444)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_farmer_1.nbt` (binary/non-JSON, size 353 -> 379)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_fisher_1.nbt` (binary/non-JSON, size 443 -> 469)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_fletcher_1.nbt` (binary/non-JSON, size 749 -> 775)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_leatherworker_1.nbt` (binary/non-JSON, size 472 -> 504)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_librarian_1.nbt` (binary/non-JSON, size 407 -> 435)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_mason_1.nbt` (binary/non-JSON, size 485 -> 508)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_shepherd_1.nbt` (binary/non-JSON, size 420 -> 447)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_toolsmith_1.nbt` (binary/non-JSON, size 417 -> 445)
+- `~ data/kaisyn/structure/village/exclusives/iberian/professions_misc/iberian_weaponsmith_1.nbt` (binary/non-JSON, size 868 -> 896)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/corner_01.nbt` (binary/non-JSON, size 1886 -> 1714)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/corner_02.nbt` (binary/non-JSON, size 1884 -> 1713)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/corner_03.nbt` (binary/non-JSON, size 1884 -> 1714)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/corner_04.nbt` (binary/non-JSON, size 1865 -> 1697)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/crossroad_01.nbt` (binary/non-JSON, size 5170 -> 4772)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/crossroad_02.nbt` (binary/non-JSON, size 5155 -> 4746)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/crossroad_03.nbt` (binary/non-JSON, size 7270 -> 6934)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/crossroad_04.nbt` (binary/non-JSON, size 7272 -> 6916)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/straight_01.nbt` (binary/non-JSON, size 1014 -> 988)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/straight_02.nbt` (binary/non-JSON, size 5291 -> 4830)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/straight_03.nbt` (binary/non-JSON, size 3541 -> 3196)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/straight_04.nbt` (binary/non-JSON, size 3549 -> 3213)
+- `~ data/kaisyn/structure/village/exclusives/iberian/streets/straight_05.nbt` (binary/non-JSON, size 6023 -> 5542)
+- `~ data/kaisyn/structure/village/exclusives/iberian/terminators/terminator_01.nbt` (binary/non-JSON, size 317 -> 338)
+- `~ data/kaisyn/structure/village/exclusives/iberian/terminators/terminator_02.nbt` (binary/non-JSON, size 299 -> 323)
+- `~ data/kaisyn/structure/village/exclusives/iberian/terminators/terminator_03.nbt` (binary/non-JSON, size 284 -> 306)
+- `~ data/kaisyn/structure/village/exclusives/iberian/terminators/terminator_04.nbt` (binary/non-JSON, size 328 -> 349)
+- `~ data/kaisyn/structure/village/exclusives/iberian/terminators/terminator_05.nbt` (binary/non-JSON, size 311 -> 335)
+- `~ data/kaisyn/structure/village/exclusives/iberian/terminators/terminator_06.nbt` (binary/non-JSON, size 295 -> 317)
+- `~ data/kaisyn/structure/village/exclusives/iberian/town_centers/iberian_meeting_point_1.nbt` (binary/non-JSON, size 5185 -> 4764)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/corner/med_small_garden_1.nbt` (binary/non-JSON, size 828 -> 860)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/corner/med_small_house_1.nbt` (binary/non-JSON, size 1156 -> 1163)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/corner/med_small_house_2.nbt` (binary/non-JSON, size 1078 -> 1085)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/corner/med_small_stall_1.nbt` (binary/non-JSON, size 940 -> 953)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_armorer_and_weaponsmith_1.nbt` (binary/non-JSON, size 4230 -> 4011)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_butcher_1.nbt` (binary/non-JSON, size 2887 -> 2891)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_cartographer_1.nbt` (binary/non-JSON, size 2747 -> 2761)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_farmer_and_mason_1.nbt` (binary/non-JSON, size 3866 -> 3739)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_fisher_1.nbt` (binary/non-JSON, size 2447 -> 2360)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_fletcher_and_toolsmith_1.nbt` (binary/non-JSON, size 2754 -> 2669)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_large_house_1.nbt` (binary/non-JSON, size 4190 -> 4032)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_large_house_2.nbt` (binary/non-JSON, size 2208 -> 2140)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_large_house_3.nbt` (binary/non-JSON, size 2686 -> 2700)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_leatherworker_1.nbt` (binary/non-JSON, size 3940 -> 3722)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_library_1.nbt` (binary/non-JSON, size 4506 -> 4274)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_medium_house_1.nbt` (binary/non-JSON, size 1497 -> 1492)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_medium_house_2.nbt` (binary/non-JSON, size 2308 -> 2236)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_shepherd_1.nbt` (binary/non-JSON, size 2274 -> 2261)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_small_house_1.nbt` (binary/non-JSON, size 1732 -> 1735)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_small_house_2.nbt` (binary/non-JSON, size 1281 -> 1299)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_small_house_3.nbt` (binary/non-JSON, size 1362 -> 1373)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_small_house_4.nbt` (binary/non-JSON, size 1275 -> 1281)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/houses/regular/med_small_house_5.nbt` (binary/non-JSON, size 1336 -> 1338)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/med_lamp_1.nbt` (binary/non-JSON, size 364 -> 394)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/med_planter_1.nbt` (binary/non-JSON, size 703 -> 730)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/streets/avenue/avenue_01.nbt` (binary/non-JSON, size 573 -> 590)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/streets/avenue/avenue_02.nbt` (binary/non-JSON, size 484 -> 503)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/streets/avenue/avenue_03.nbt` (binary/non-JSON, size 1462 -> 1346)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/streets/avenue/avenue_04.nbt` (binary/non-JSON, size 602 -> 600)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/streets/avenue/avenue_05.nbt` (binary/non-JSON, size 503 -> 517)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/streets/promenade/promenade_01.nbt` (binary/non-JSON, size 772 -> 757)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/streets/promenade/promenade_02.nbt` (binary/non-JSON, size 602 -> 612)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/streets/promenade/promenade_03.nbt` (binary/non-JSON, size 1677 -> 1542)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/town_centers/med_meeting_point_1.nbt` (binary/non-JSON, size 29164 -> 27509)
+- `~ data/kaisyn/structure/village/exclusives/mediterranean/villagers/bishop.nbt` (binary/non-JSON, size 240 -> 267)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/base_plate.nbt` (binary/non-JSON, size 18295 -> 18529)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_armorer_1.nbt` (binary/non-JSON, size 2884 -> 2839)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_butcher_and_fisher_1.nbt` (binary/non-JSON, size 2754 -> 2707)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_cartographer_1.nbt` (binary/non-JSON, size 1466 -> 1449)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_farmer_1.nbt` (binary/non-JSON, size 2282 -> 2202)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_fletcher_1.nbt` (binary/non-JSON, size 2348 -> 2246)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_large_house_1.nbt` (binary/non-JSON, size 2312 -> 2242)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_leatherworker_and_shepherd_1.nbt` (binary/non-JSON, size 2372 -> 2329)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_mason_1.nbt` (binary/non-JSON, size 2354 -> 2295)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_small_house_1.nbt` (binary/non-JSON, size 1590 -> 1569)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_small_house_2.nbt` (binary/non-JSON, size 1875 -> 1846)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_temple_1.nbt` (binary/non-JSON, size 1262 -> 1252)
+- `~ data/kaisyn/structure/village/exclusives/nilotic/houses/nilotic_toolsmith_and_weaponsmith_1.nbt` (binary/non-JSON, size 2588 -> 2522)
+- `~ data/kaisyn/structure/village/exclusives/piglin/animals/hoglin.nbt` (binary/non-JSON, size 1220 -> 1246)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_animal_pen_1.nbt` (binary/non-JSON, size 2379 -> 2287)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_butchery_1.nbt` (binary/non-JSON, size 2947 -> 2816)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_butchery_2.nbt` (binary/non-JSON, size 8857 -> 8405)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_butchery_3.nbt` (binary/non-JSON, size 3085 -> 3014)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_large_house_1.nbt` (binary/non-JSON, size 3936 -> 3802)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_large_house_2.nbt` (binary/non-JSON, size 3345 -> 3208)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_large_house_3.nbt` (binary/non-JSON, size 4098 -> 3966)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_large_house_4.nbt` (binary/non-JSON, size 3301 -> 3142)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_mine_1.nbt` (binary/non-JSON, size 5838 -> 5597)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_mine_2.nbt` (binary/non-JSON, size 13390 -> 12718)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_skul_tent_1.nbt` (binary/non-JSON, size 6735 -> 6251)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_skull_tent_1.nbt` (binary/non-JSON, size 6727 -> 6249)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_small_house_1.nbt` (binary/non-JSON, size 1913 -> 1873)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_small_house_2.nbt` (binary/non-JSON, size 2420 -> 2360)
+- `~ data/kaisyn/structure/village/exclusives/piglin/houses/piglin_storage_1.nbt` (binary/non-JSON, size 7109 -> 6680)
+- `~ data/kaisyn/structure/village/exclusives/piglin/piglin_watchtower_1.nbt` (binary/non-JSON, size 1974 -> 1985)
+- `~ data/kaisyn/structure/village/exclusives/piglin/streets/corner_01.nbt` (binary/non-JSON, size 12944 -> 12073)
+- `~ data/kaisyn/structure/village/exclusives/piglin/streets/crossroad_01.nbt` (binary/non-JSON, size 21755 -> 20439)
+- `~ data/kaisyn/structure/village/exclusives/piglin/streets/crossroad_02.nbt` (binary/non-JSON, size 38118 -> 36105)
+- `~ data/kaisyn/structure/village/exclusives/piglin/streets/straight_01.nbt` (binary/non-JSON, size 4665 -> 4772)
+- `~ data/kaisyn/structure/village/exclusives/piglin/streets/straight_02.nbt` (binary/non-JSON, size 9274 -> 8167)
+- `~ data/kaisyn/structure/village/exclusives/piglin/streets/turn_01.nbt` (binary/non-JSON, size 9380 -> 8549)
+- `~ data/kaisyn/structure/village/exclusives/piglin/terminators/terminator_01.nbt` (binary/non-JSON, size 487 -> 485)
+- `~ data/kaisyn/structure/village/exclusives/piglin/town_centers/piglin_meeting_point_1.nbt` (binary/non-JSON, size 49024 -> 44786)
+- `~ data/kaisyn/structure/village/exclusives/rustic/houses/rustic_barn_professions_1.nbt` (binary/non-JSON, size 5462 -> 5344)
+- `~ data/kaisyn/structure/village/exclusives/rustic/houses/rustic_large_house_1.nbt` (binary/non-JSON, size 2877 -> 2760)
+- `~ data/kaisyn/structure/village/exclusives/rustic/houses/rustic_large_house_2.nbt` (binary/non-JSON, size 2747 -> 2634)
+- `~ data/kaisyn/structure/village/exclusives/rustic/houses/rustic_large_house_3.nbt` (binary/non-JSON, size 3127 -> 3002)
+- `~ data/kaisyn/structure/village/exclusives/rustic/houses/rustic_large_house_4.nbt` (binary/non-JSON, size 2834 -> 2736)
+- `~ data/kaisyn/structure/village/exclusives/rustic/houses/rustic_small_house_1.nbt` (binary/non-JSON, size 2287 -> 2215)
+- `~ data/kaisyn/structure/village/exclusives/rustic/houses/rustic_small_house_2.nbt` (binary/non-JSON, size 2352 -> 2275)
+- `~ data/kaisyn/structure/village/exclusives/rustic/houses/rustic_small_house_3.nbt` (binary/non-JSON, size 2292 -> 2223)
+- `~ data/kaisyn/structure/village/exclusives/rustic/houses/rustic_small_house_4.nbt` (binary/non-JSON, size 2292 -> 2223)
+- `~ data/kaisyn/structure/village/exclusives/rustic/houses/rustic_temple_1.nbt` (binary/non-JSON, size 4750 -> 4666)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_armorer_1.nbt` (binary/non-JSON, size 1677 -> 1689)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_butcher_1.nbt` (binary/non-JSON, size 1724 -> 1743)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_cartographer_1.nbt` (binary/non-JSON, size 1523 -> 1554)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_empty_piece_1.nbt` (binary/non-JSON, size 1142 -> 1199)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_farmer_1.nbt` (binary/non-JSON, size 1534 -> 1577)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_fisher_1.nbt` (binary/non-JSON, size 1569 -> 1619)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_fletcher_1.nbt` (binary/non-JSON, size 1724 -> 1759)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_leatherworker_1.nbt` (binary/non-JSON, size 1516 -> 1558)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_librarian_1.nbt` (binary/non-JSON, size 1467 -> 1513)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_mason_1.nbt` (binary/non-JSON, size 1565 -> 1605)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_shepherd_1.nbt` (binary/non-JSON, size 1484 -> 1527)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_toolsmith_1.nbt` (binary/non-JSON, size 1482 -> 1525)
+- `~ data/kaisyn/structure/village/exclusives/rustic/professions_misc/rustic_weaponsmith_1.nbt` (binary/non-JSON, size 1652 -> 1706)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/corner_01.nbt` (binary/non-JSON, size 2170 -> 1997)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/corner_02.nbt` (binary/non-JSON, size 2789 -> 2553)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/corner_03.nbt` (binary/non-JSON, size 509 -> 517)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/crossroad_01.nbt` (binary/non-JSON, size 2713 -> 2451)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/crossroad_02.nbt` (binary/non-JSON, size 497 -> 505)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/crossroad_03.nbt` (binary/non-JSON, size 1738 -> 1599)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/crossroad_04.nbt` (binary/non-JSON, size 3335 -> 3025)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/straight_01.nbt` (binary/non-JSON, size 657 -> 652)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/straight_02.nbt` (binary/non-JSON, size 799 -> 775)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/straight_03.nbt` (binary/non-JSON, size 691 -> 681)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/straight_04.nbt` (binary/non-JSON, size 580 -> 578)
+- `~ data/kaisyn/structure/village/exclusives/rustic/streets/straight_05.nbt` (binary/non-JSON, size 1329 -> 1261)
+- `~ data/kaisyn/structure/village/exclusives/rustic/terminators/terminator_01.nbt` (binary/non-JSON, size 310 -> 334)
+- `~ data/kaisyn/structure/village/exclusives/rustic/terminators/terminator_02.nbt` (binary/non-JSON, size 282 -> 304)
+- `~ data/kaisyn/structure/village/exclusives/rustic/town_centers/rustic_meeting_point_1.nbt` (binary/non-JSON, size 7797 -> 7200)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_armorer_1.nbt` (binary/non-JSON, size 4148 -> 4027)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_butcher_1.nbt` (binary/non-JSON, size 4114 -> 3908)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_cartographer_1.nbt` (binary/non-JSON, size 4001 -> 3813)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_farmer_and_fisher_1.nbt` (binary/non-JSON, size 3604 -> 3491)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_fletcher_1.nbt` (binary/non-JSON, size 2836 -> 2749)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_leatherworker_1.nbt` (binary/non-JSON, size 3581 -> 3433)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_library_and_temple_1.nbt` (binary/non-JSON, size 7978 -> 8189)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_mason_1.nbt` (binary/non-JSON, size 2969 -> 2858)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_shepherd_1.nbt` (binary/non-JSON, size 2743 -> 2644)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_small_house_1.nbt` (binary/non-JSON, size 2484 -> 2398)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_small_house_2.nbt` (binary/non-JSON, size 2203 -> 2141)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_small_house_3.nbt` (binary/non-JSON, size 2854 -> 2735)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_small_house_4.nbt` (binary/non-JSON, size 2229 -> 2172)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_small_house_5.nbt` (binary/non-JSON, size 2793 -> 2693)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_small_house_6.nbt` (binary/non-JSON, size 2608 -> 2496)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_small_house_7.nbt` (binary/non-JSON, size 1734 -> 1733)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_toolsmith_1.nbt` (binary/non-JSON, size 2640 -> 2518)
+- `~ data/kaisyn/structure/village/exclusives/swedish/houses/swedish_weaponsmith_1.nbt` (binary/non-JSON, size 2771 -> 2699)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/corner_01.nbt` (binary/non-JSON, size 2138 -> 1943)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/corner_02.nbt` (binary/non-JSON, size 2802 -> 2550)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/corner_03.nbt` (binary/non-JSON, size 478 -> 489)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/crossroad_01.nbt` (binary/non-JSON, size 2706 -> 2435)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/crossroad_02.nbt` (binary/non-JSON, size 499 -> 506)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/crossroad_03.nbt` (binary/non-JSON, size 1674 -> 1511)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/crossroad_04.nbt` (binary/non-JSON, size 3304 -> 2981)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/straight_01.nbt` (binary/non-JSON, size 700 -> 694)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/straight_02.nbt` (binary/non-JSON, size 839 -> 800)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/straight_03.nbt` (binary/non-JSON, size 735 -> 723)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/straight_04.nbt` (binary/non-JSON, size 605 -> 608)
+- `~ data/kaisyn/structure/village/exclusives/swedish/streets/straight_05.nbt` (binary/non-JSON, size 1356 -> 1287)
+- `~ data/kaisyn/structure/village/exclusives/swedish/terminators/terminator_01.nbt` (binary/non-JSON, size 329 -> 349)
+- `~ data/kaisyn/structure/village/exclusives/swedish/town_centers/swedish_meeting_point_1.nbt` (binary/non-JSON, size 1976 -> 1929)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_butcher_and_armorer_1.nbt` (binary/non-JSON, size 5517 -> 5223)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_cartographer_and_fletcher_1.nbt` (binary/non-JSON, size 3671 -> 3469)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_farmer_1.nbt` (binary/non-JSON, size 3179 -> 2974)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_fisher_1.nbt` (binary/non-JSON, size 3571 -> 3386)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_large_house_1.nbt` (binary/non-JSON, size 4805 -> 4554)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_leatherworker_1.nbt` (binary/non-JSON, size 3560 -> 3415)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_library_1.nbt` (binary/non-JSON, size 3727 -> 3522)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_mason_1.nbt` (binary/non-JSON, size 3204 -> 3052)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_shepherd_1.nbt` (binary/non-JSON, size 2766 -> 2668)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_small_house_1.nbt` (binary/non-JSON, size 2698 -> 2599)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_small_house_2.nbt` (binary/non-JSON, size 2222 -> 2155)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_small_house_3.nbt` (binary/non-JSON, size 2939 -> 2801)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_small_house_4.nbt` (binary/non-JSON, size 3527 -> 3400)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_temple_1.nbt` (binary/non-JSON, size 6153 -> 5859)
+- `~ data/kaisyn/structure/village/exclusives/tudor/houses/tudor_toolsmith_and_weaponsmith_1.nbt` (binary/non-JSON, size 3764 -> 3596)
+- `~ data/kaisyn/structure/village/exclusives/tudor/streets/corner_01.nbt` (binary/non-JSON, size 344 -> 361)
+- `~ data/kaisyn/structure/village/exclusives/tudor/streets/corner_02.nbt` (binary/non-JSON, size 3161 -> 2843)
+- `~ data/kaisyn/structure/village/exclusives/tudor/streets/crossroad_01.nbt` (binary/non-JSON, size 1869 -> 1690)
+- `~ data/kaisyn/structure/village/exclusives/tudor/streets/crossroad_02.nbt` (binary/non-JSON, size 3601 -> 3219)
+- `~ data/kaisyn/structure/village/exclusives/tudor/streets/straight_01.nbt` (binary/non-JSON, size 2203 -> 2041)
+- `~ data/kaisyn/structure/village/exclusives/tudor/streets/straight_02.nbt` (binary/non-JSON, size 1569 -> 1471)
+- `~ data/kaisyn/structure/village/exclusives/tudor/terminators/terminator_01.nbt` (binary/non-JSON, size 289 -> 312)
+- `~ data/kaisyn/structure/village/exclusives/tudor/terminators/terminator_02.nbt` (binary/non-JSON, size 306 -> 329)
+- `~ data/kaisyn/structure/village/exclusives/tudor/town_centers/tudor_meeting_point_1.nbt` (binary/non-JSON, size 3054 -> 2878)
+- `~ data/kaisyn/structure/village/exclusives/tudor/tudor_lamp_1.nbt` (binary/non-JSON, size 590 -> 620)
+- `~ data/kaisyn/structure/village/exclusives/tudor/tudor_table_1.nbt` (binary/non-JSON, size 555 -> 582)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/side/trader_llama_pen_1.nbt` (binary/non-JSON, size 2038 -> 2055)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/side/trader_llama_pen_2.nbt` (binary/non-JSON, size 915 -> 939)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/side/trader_llama_pen_3.nbt` (binary/non-JSON, size 1629 -> 1647)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/side/trader_tent_blue_1.nbt` (binary/non-JSON, size 2128 -> 2080)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/side/trader_tent_red_1.nbt` (binary/non-JSON, size 2137 -> 2088)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/town_centers/trader_meeting_point_1.nbt` (binary/non-JSON, size 1375 -> 1359)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/villagers/trader_0.nbt` (binary/non-JSON, size 1029 -> 1046)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/villagers/trader_1.nbt` (binary/non-JSON, size 1042 -> 1058)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/villagers/trader_2.nbt` (binary/non-JSON, size 1026 -> 1044)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/villagers/trader_3.nbt` (binary/non-JSON, size 1035 -> 1053)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/villagers/trader_4.nbt` (binary/non-JSON, size 1044 -> 1060)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/villagers/trader_5.nbt` (binary/non-JSON, size 1036 -> 1052)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/villagers/trader_6.nbt` (binary/non-JSON, size 1039 -> 1056)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/villagers/trader_7.nbt` (binary/non-JSON, size 1049 -> 1067)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/villagers/trader_8.nbt` (binary/non-JSON, size 1034 -> 1052)
+- `~ data/kaisyn/structure/village/exclusives/wandering_trader_camp/villagers/trader_9.nbt` (binary/non-JSON, size 1028 -> 1045)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/flower_forest_gate_1.nbt` (binary/non-JSON, size 1289 -> 1253)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/flower_forest_gate_2.nbt` (binary/non-JSON, size 1212 -> 1180)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/flower_forest_lamp_1.nbt` (binary/non-JSON, size 607 -> 641)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/flower_forest_planter_1.nbt` (binary/non-JSON, size 477 -> 507)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_animal_pen_1.nbt` (binary/non-JSON, size 1003 -> 1016)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_animal_pen_2.nbt` (binary/non-JSON, size 840 -> 871)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_animal_pen_3.nbt` (binary/non-JSON, size 2037 -> 1989)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_armorer_1.nbt` (binary/non-JSON, size 3454 -> 3254)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_butcher_1.nbt` (binary/non-JSON, size 4382 -> 4043)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_cartographer_1.nbt` (binary/non-JSON, size 2580 -> 2491)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_fisher_1.nbt` (binary/non-JSON, size 4151 -> 3937)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_fletcher_1.nbt` (binary/non-JSON, size 2756 -> 2612)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_large_farm_1.nbt` (binary/non-JSON, size 2178 -> 2019)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_large_house_1.nbt` (binary/non-JSON, size 8881 -> 8234)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_leatherworker_1.nbt` (binary/non-JSON, size 4777 -> 4417)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_library_1.nbt` (binary/non-JSON, size 3454 -> 3253)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_mason_1.nbt` (binary/non-JSON, size 3198 -> 3000)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_medium_house_1.nbt` (binary/non-JSON, size 4531 -> 4195)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_park_1.nbt` (binary/non-JSON, size 2803 -> 2714)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_park_2.nbt` (binary/non-JSON, size 3545 -> 3442)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_shepherd_1.nbt` (binary/non-JSON, size 3822 -> 3569)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_small_farm_1.nbt` (binary/non-JSON, size 1341 -> 1290)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_small_house_1.nbt` (binary/non-JSON, size 2349 -> 2299)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_small_house_2.nbt` (binary/non-JSON, size 2269 -> 2220)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_small_house_3.nbt` (binary/non-JSON, size 2841 -> 2679)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_small_house_4.nbt` (binary/non-JSON, size 3844 -> 3634)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_small_house_5.nbt` (binary/non-JSON, size 4246 -> 4013)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_small_house_6.nbt` (binary/non-JSON, size 2170 -> 2143)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_stable_1.nbt` (binary/non-JSON, size 2072 -> 1990)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_temple_1.nbt` (binary/non-JSON, size 4269 -> 4059)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_toolsmith_1.nbt` (binary/non-JSON, size 4099 -> 3861)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/houses/flower_forest_weaponsmith_1.nbt` (binary/non-JSON, size 4800 -> 4458)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/corner_01.nbt` (binary/non-JSON, size 1999 -> 1805)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/corner_02.nbt` (binary/non-JSON, size 1942 -> 1750)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/corner_03.nbt` (binary/non-JSON, size 407 -> 424)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/crossroad_01.nbt` (binary/non-JSON, size 1999 -> 1803)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/crossroad_02.nbt` (binary/non-JSON, size 2006 -> 1798)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/crossroad_03.nbt` (binary/non-JSON, size 2009 -> 1813)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/crossroad_04.nbt` (binary/non-JSON, size 441 -> 451)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/crossroad_05.nbt` (binary/non-JSON, size 481 -> 489)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/crossroad_06.nbt` (binary/non-JSON, size 527 -> 535)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/straight_01.nbt` (binary/non-JSON, size 1918 -> 1735)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/straight_02.nbt` (binary/non-JSON, size 3032 -> 2834)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/straight_03.nbt` (binary/non-JSON, size 1266 -> 1168)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/straight_04.nbt` (binary/non-JSON, size 1625 -> 1521)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/straight_05.nbt` (binary/non-JSON, size 2359 -> 2171)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/straight_06.nbt` (binary/non-JSON, size 2643 -> 2397)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/streets/turn_01.nbt` (binary/non-JSON, size 1296 -> 1239)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/terminators/terminator_01.nbt` (binary/non-JSON, size 300 -> 322)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/terminators/terminator_03.nbt` (binary/non-JSON, size 380 -> 403)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/terminators/terminator_04.nbt` (binary/non-JSON, size 429 -> 450)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/town_centers/flower_forest_meeting_point_1.nbt` (binary/non-JSON, size 4906 -> 4643)
+- `~ data/kaisyn/structure/village/flower_forest_japanese/town_centers/flower_forest_meeting_point_2.nbt` (binary/non-JSON, size 9842 -> 8877)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_animal_pen_1.nbt` (binary/non-JSON, size 650 -> 665)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_animal_pen_2.nbt` (binary/non-JSON, size 1213 -> 1149)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_animal_pen_3.nbt` (binary/non-JSON, size 1028 -> 997)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_armorer_1.nbt` (binary/non-JSON, size 2313 -> 2258)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_butcher_1.nbt` (binary/non-JSON, size 3607 -> 3494)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_butcher_2.nbt` (binary/non-JSON, size 2676 -> 2562)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_cartographer_1.nbt` (binary/non-JSON, size 1419 -> 1357)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_fisher_1.nbt` (binary/non-JSON, size 2683 -> 2484)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_fletcher_1.nbt` (binary/non-JSON, size 1858 -> 1761)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_large_farm_1.nbt` (binary/non-JSON, size 2268 -> 2250)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_large_house_1.nbt` (binary/non-JSON, size 1599 -> 1503)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_leatherworker_1.nbt` (binary/non-JSON, size 1641 -> 1583)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_library_1.nbt` (binary/non-JSON, size 2679 -> 2529)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_mason_1.nbt` (binary/non-JSON, size 576 -> 586)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_medium_house_1.nbt` (binary/non-JSON, size 2469 -> 2289)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_medium_house_2.nbt` (binary/non-JSON, size 1435 -> 1339)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_shepherd_1.nbt` (binary/non-JSON, size 1285 -> 1222)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_small_farm_1.nbt` (binary/non-JSON, size 1385 -> 1353)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_small_house_1.nbt` (binary/non-JSON, size 718 -> 696)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_small_house_2.nbt` (binary/non-JSON, size 438 -> 449)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_small_house_3.nbt` (binary/non-JSON, size 750 -> 730)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_small_house_4.nbt` (binary/non-JSON, size 962 -> 929)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_small_house_5.nbt` (binary/non-JSON, size 1609 -> 1558)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_small_house_6.nbt` (binary/non-JSON, size 501 -> 511)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_small_house_7.nbt` (binary/non-JSON, size 1247 -> 1199)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_small_house_8.nbt` (binary/non-JSON, size 1908 -> 1791)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_stable_1.nbt` (binary/non-JSON, size 3004 -> 2759)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_temple_1.nbt` (binary/non-JSON, size 2927 -> 2844)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_toolsmith_1.nbt` (binary/non-JSON, size 1408 -> 1339)
+- `~ data/kaisyn/structure/village/forest_ruins/houses/forest_weaponsmith_1.nbt` (binary/non-JSON, size 2745 -> 2599)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/corner_01.nbt` (binary/non-JSON, size 1944 -> 1757)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/corner_02.nbt` (binary/non-JSON, size 1852 -> 1663)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/corner_03.nbt` (binary/non-JSON, size 409 -> 426)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/crossroad_01.nbt` (binary/non-JSON, size 1953 -> 1762)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/crossroad_02.nbt` (binary/non-JSON, size 1911 -> 1715)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/crossroad_03.nbt` (binary/non-JSON, size 1965 -> 1777)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/crossroad_04.nbt` (binary/non-JSON, size 443 -> 457)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/crossroad_05.nbt` (binary/non-JSON, size 484 -> 492)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/crossroad_06.nbt` (binary/non-JSON, size 529 -> 538)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/straight_01.nbt` (binary/non-JSON, size 1848 -> 1672)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/straight_02.nbt` (binary/non-JSON, size 1801 -> 1650)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/straight_03.nbt` (binary/non-JSON, size 1181 -> 1090)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/straight_04.nbt` (binary/non-JSON, size 926 -> 898)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/straight_05.nbt` (binary/non-JSON, size 2268 -> 2087)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/straight_06.nbt` (binary/non-JSON, size 2638 -> 2396)
+- `~ data/kaisyn/structure/village/forest_ruins/streets/turn_01.nbt` (binary/non-JSON, size 1214 -> 1175)
+- `~ data/kaisyn/structure/village/forest_ruins/terminators/terminator_01.nbt` (binary/non-JSON, size 310 -> 331)
+- `~ data/kaisyn/structure/village/forest_ruins/terminators/terminator_03.nbt` (binary/non-JSON, size 323 -> 346)
+- `~ data/kaisyn/structure/village/forest_ruins/terminators/terminator_04.nbt` (binary/non-JSON, size 373 -> 396)
+- `~ data/kaisyn/structure/village/forest_ruins/town_centers/forest_meeting_point_1.nbt` (binary/non-JSON, size 2472 -> 2383)
+- `~ data/kaisyn/structure/village/forest_ruins/town_centers/forest_meeting_point_2.nbt` (binary/non-JSON, size 1311 -> 1242)
+- `~ data/kaisyn/structure/village/grove_villager_outpost/grove_table_1.nbt` (binary/non-JSON, size 2163 -> 2135)
+- `~ data/kaisyn/structure/village/grove_villager_outpost/town_centers/grove_meeting_point_1.nbt` (binary/non-JSON, size 26806 -> 23880)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_animal_pen_1.nbt` (binary/non-JSON, size 1706 -> 1651)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_armorer_1.nbt` (binary/non-JSON, size 1625 -> 1626)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_butcher_1.nbt` (binary/non-JSON, size 2972 -> 2907)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_cartographer_1.nbt` (binary/non-JSON, size 11760 -> 11918)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_fisher_1.nbt` (binary/non-JSON, size 3685 -> 3487)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_fletcher_1.nbt` (binary/non-JSON, size 2675 -> 2498)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_large_house_1.nbt` (binary/non-JSON, size 2199 -> 2125)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_leatherworker_1.nbt` (binary/non-JSON, size 7914 -> 7643)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_library_1.nbt` (binary/non-JSON, size 6257 -> 5848)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_mason_1.nbt` (binary/non-JSON, size 2199 -> 2116)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_shepherd_1.nbt` (binary/non-JSON, size 2745 -> 2594)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_small_farm_1.nbt` (binary/non-JSON, size 2888 -> 2788)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_small_house_1.nbt` (binary/non-JSON, size 1931 -> 1880)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_small_house_2.nbt` (binary/non-JSON, size 1931 -> 1891)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_small_house_3.nbt` (binary/non-JSON, size 1698 -> 1674)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_small_house_4.nbt` (binary/non-JSON, size 1710 -> 1683)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_temple_1.nbt` (binary/non-JSON, size 4086 -> 3834)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_toolsmith_1.nbt` (binary/non-JSON, size 3081 -> 2910)
+- `~ data/kaisyn/structure/village/jungle_tribal/houses/jungle_weaponsmith_1.nbt` (binary/non-JSON, size 2730 -> 2630)
+- `~ data/kaisyn/structure/village/jungle_tribal/jungle_decor_1.nbt` (binary/non-JSON, size 605 -> 626)
+- `~ data/kaisyn/structure/village/jungle_tribal/jungle_lamp_1.nbt` (binary/non-JSON, size 472 -> 503)
+- `~ data/kaisyn/structure/village/jungle_tribal/jungle_lamp_2.nbt` (binary/non-JSON, size 473 -> 504)
+- `~ data/kaisyn/structure/village/jungle_tribal/jungle_lamp_3.nbt` (binary/non-JSON, size 587 -> 621)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/corner_01.nbt` (binary/non-JSON, size 1909 -> 1747)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/corner_02.nbt` (binary/non-JSON, size 1829 -> 1657)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/corner_03.nbt` (binary/non-JSON, size 414 -> 433)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/crossroad_01.nbt` (binary/non-JSON, size 1954 -> 1784)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/crossroad_02.nbt` (binary/non-JSON, size 1881 -> 1725)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/crossroad_03.nbt` (binary/non-JSON, size 1925 -> 1768)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/crossroad_04.nbt` (binary/non-JSON, size 448 -> 463)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/crossroad_05.nbt` (binary/non-JSON, size 484 -> 496)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/crossroad_06.nbt` (binary/non-JSON, size 538 -> 549)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/straight_01.nbt` (binary/non-JSON, size 1865 -> 1697)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/straight_02.nbt` (binary/non-JSON, size 1806 -> 1657)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/straight_03.nbt` (binary/non-JSON, size 1186 -> 1098)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/straight_04.nbt` (binary/non-JSON, size 929 -> 903)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/straight_05.nbt` (binary/non-JSON, size 2273 -> 2092)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/straight_06.nbt` (binary/non-JSON, size 2633 -> 2424)
+- `~ data/kaisyn/structure/village/jungle_tribal/streets/turn_01.nbt` (binary/non-JSON, size 1212 -> 1181)
+- `~ data/kaisyn/structure/village/jungle_tribal/terminators/terminator_01.nbt` (binary/non-JSON, size 303 -> 325)
+- `~ data/kaisyn/structure/village/jungle_tribal/terminators/terminator_03.nbt` (binary/non-JSON, size 320 -> 342)
+- `~ data/kaisyn/structure/village/jungle_tribal/terminators/terminator_04.nbt` (binary/non-JSON, size 373 -> 386)
+- `~ data/kaisyn/structure/village/jungle_tribal/town_centers/jungle_meeting_point_1.nbt` (binary/non-JSON, size 2972 -> 2934)
+- `~ data/kaisyn/structure/village/jungle_tribal/town_centers/jungle_meeting_point_2.nbt` (binary/non-JSON, size 3411 -> 3242)
+- `~ data/kaisyn/structure/village/jungle_tribal/town_centers/jungle_meeting_point_3.nbt` (binary/non-JSON, size 2877 -> 2780)
+- `~ data/kaisyn/structure/village/jungle_tribal/villagers/baby.nbt` (binary/non-JSON, size 811 -> 826)
+- `~ data/kaisyn/structure/village/jungle_tribal/villagers/nitwit.nbt` (binary/non-JSON, size 798 -> 819)
+- `~ data/kaisyn/structure/village/jungle_tribal/villagers/unemployed.nbt` (binary/non-JSON, size 805 -> 823)
+- `~ data/kaisyn/structure/village/meadow_swiss/animals/dog.nbt` (binary/non-JSON, size 915 -> 927)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_armorer_and_leatherworker_1.nbt` (binary/non-JSON, size 4848 -> 4646)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_butcher_and_mason_1.nbt` (binary/non-JSON, size 5728 -> 5417)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_cartographer_and_library_1.nbt` (binary/non-JSON, size 7707 -> 7402)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_farmer_1.nbt` (binary/non-JSON, size 2501 -> 2501)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_fisher_1.nbt` (binary/non-JSON, size 4793 -> 4543)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_fletcher_1.nbt` (binary/non-JSON, size 5858 -> 5590)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_large_house_1.nbt` (binary/non-JSON, size 9841 -> 9271)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_medium_house_1.nbt` (binary/non-JSON, size 4851 -> 4557)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_medium_house_2.nbt` (binary/non-JSON, size 7119 -> 6776)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_medium_house_3.nbt` (binary/non-JSON, size 5611 -> 5326)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_medium_house_4.nbt` (binary/non-JSON, size 5807 -> 5496)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_medium_house_5.nbt` (binary/non-JSON, size 5197 -> 4987)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_shepherd_1.nbt` (binary/non-JSON, size 3489 -> 3495)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_small_house_1.nbt` (binary/non-JSON, size 3579 -> 3443)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_small_house_2.nbt` (binary/non-JSON, size 3538 -> 3392)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_temple_1.nbt` (binary/non-JSON, size 6224 -> 5997)
+- `~ data/kaisyn/structure/village/meadow_swiss/houses/meadow_toolsmith_and_weaponsmith_1.nbt` (binary/non-JSON, size 6047 -> 5736)
+- `~ data/kaisyn/structure/village/meadow_swiss/meadow_lamp_1.nbt` (binary/non-JSON, size 517 -> 545)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/corner_01.nbt` (binary/non-JSON, size 2190 -> 1990)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/corner_02.nbt` (binary/non-JSON, size 2814 -> 2531)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/corner_03.nbt` (binary/non-JSON, size 485 -> 509)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/crossroad_01.nbt` (binary/non-JSON, size 2700 -> 2442)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/crossroad_02.nbt` (binary/non-JSON, size 460 -> 478)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/crossroad_03.nbt` (binary/non-JSON, size 1732 -> 1569)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/crossroad_04.nbt` (binary/non-JSON, size 3618 -> 3222)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/straight_01.nbt` (binary/non-JSON, size 647 -> 633)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/straight_02.nbt` (binary/non-JSON, size 832 -> 806)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/straight_03.nbt` (binary/non-JSON, size 683 -> 663)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/straight_04.nbt` (binary/non-JSON, size 560 -> 561)
+- `~ data/kaisyn/structure/village/meadow_swiss/streets/straight_05.nbt` (binary/non-JSON, size 1403 -> 1310)
+- `~ data/kaisyn/structure/village/meadow_swiss/terminators/terminator_01.nbt` (binary/non-JSON, size 302 -> 334)
+- `~ data/kaisyn/structure/village/meadow_swiss/terminators/terminator_02.nbt` (binary/non-JSON, size 299 -> 331)
+- `~ data/kaisyn/structure/village/meadow_swiss/town_centers/meadow_meeting_point_1.nbt` (binary/non-JSON, size 2459 -> 2350)
+- `~ data/kaisyn/structure/village/modded/waystones/waystone_default.nbt` (binary/non-JSON, size 126 -> 164)
+- `~ data/kaisyn/structure/village/modded/waystones/waystone_desert.nbt` (binary/non-JSON, size 126 -> 163)
+- `~ data/kaisyn/structure/village/modded/waystones/waystone_mossy.nbt` (binary/non-JSON, size 126 -> 162)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/animals/mooshroom_brown.nbt` (binary/non-JSON, size 672 -> 710)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/animals/mooshroom_red.nbt` (binary/non-JSON, size 739 -> 775)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/houses/mushroom_butcher_1.nbt` (binary/non-JSON, size 1698 -> 1692)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/houses/mushroom_heavy_professions_gazebo.nbt` (binary/non-JSON, size 1501 -> 1474)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/houses/mushroom_large_house_1.nbt` (binary/non-JSON, size 2725 -> 2674)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/houses/mushroom_large_house_2.nbt` (binary/non-JSON, size 3062 -> 3015)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/houses/mushroom_leatherworker_1.nbt` (binary/non-JSON, size 1747 -> 1709)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/houses/mushroom_light_professions_gazebo.nbt` (binary/non-JSON, size 1282 -> 1269)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/houses/mushroom_small_farm_1.nbt` (binary/non-JSON, size 1360 -> 1327)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/houses/mushroom_small_house_1.nbt` (binary/non-JSON, size 2487 -> 2406)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/houses/mushroom_small_house_2.nbt` (binary/non-JSON, size 2526 -> 2478)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/professions_misc/heavy_professions/mushroom_armorer_1.nbt` (binary/non-JSON, size 551 -> 588)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/professions_misc/heavy_professions/mushroom_mason_1.nbt` (binary/non-JSON, size 401 -> 435)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/professions_misc/heavy_professions/mushroom_toolsmith_1.nbt` (binary/non-JSON, size 434 -> 470)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/professions_misc/heavy_professions/mushroom_weaponsmith_1.nbt` (binary/non-JSON, size 414 -> 457)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/professions_misc/light_professions/mushroom_cartographer_1.nbt` (binary/non-JSON, size 376 -> 417)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/professions_misc/light_professions/mushroom_fisher_1.nbt` (binary/non-JSON, size 373 -> 414)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/professions_misc/light_professions/mushroom_fletcher_1.nbt` (binary/non-JSON, size 381 -> 419)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/professions_misc/light_professions/mushroom_shepherd_1.nbt` (binary/non-JSON, size 377 -> 416)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/streets/crossroad_01.nbt` (binary/non-JSON, size 1190 -> 1109)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/streets/straight_01.nbt` (binary/non-JSON, size 708 -> 686)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/streets/straight_02.nbt` (binary/non-JSON, size 1269 -> 1171)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/streets/straight_03.nbt` (binary/non-JSON, size 1065 -> 995)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/streets/turn_01.nbt` (binary/non-JSON, size 1236 -> 1149)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/terminators/terminator_01.nbt` (binary/non-JSON, size 330 -> 351)
+- `~ data/kaisyn/structure/village/mushroom_fields_fantasy/town_centers/mushroom_meeting_point_1.nbt` (binary/non-JSON, size 13538 -> 12976)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_armorer_and_butcher_1.nbt` (binary/non-JSON, size 5127 -> 4950)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_cartographer_1.nbt` (binary/non-JSON, size 4436 -> 4268)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_fisher_1.nbt` (binary/non-JSON, size 6164 -> 5876)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_fletcher_1.nbt` (binary/non-JSON, size 3396 -> 3269)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_leatherworker_1.nbt` (binary/non-JSON, size 3421 -> 3269)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_library_1.nbt` (binary/non-JSON, size 5648 -> 5381)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_mason_1.nbt` (binary/non-JSON, size 4246 -> 4054)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_medium_house_1.nbt` (binary/non-JSON, size 3112 -> 3002)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_medium_house_2.nbt` (binary/non-JSON, size 3358 -> 3258)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_shepherd_1.nbt` (binary/non-JSON, size 4487 -> 4282)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_small_farm_1.nbt` (binary/non-JSON, size 1096 -> 1127)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_small_house_1.nbt` (binary/non-JSON, size 2663 -> 2593)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_small_house_2.nbt` (binary/non-JSON, size 2553 -> 2493)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_small_house_3.nbt` (binary/non-JSON, size 3026 -> 2910)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_small_house_4.nbt` (binary/non-JSON, size 2625 -> 2555)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_small_house_5.nbt` (binary/non-JSON, size 2892 -> 2791)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_small_house_6.nbt` (binary/non-JSON, size 2948 -> 2861)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_temple_1.nbt` (binary/non-JSON, size 3566 -> 3357)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/houses/old_growth_taiga_toolsmith_and_weaponsmith_1.nbt` (binary/non-JSON, size 4700 -> 4520)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/old_growth_taiga_planter_1.nbt` (binary/non-JSON, size 502 -> 548)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/streets/corner_01.nbt` (binary/non-JSON, size 896 -> 844)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/streets/corner_02.nbt` (binary/non-JSON, size 482 -> 494)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/streets/crossroad_01.nbt` (binary/non-JSON, size 2164 -> 1938)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/streets/crossroad_02.nbt` (binary/non-JSON, size 1702 -> 1573)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/streets/straight_01.nbt` (binary/non-JSON, size 583 -> 601)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/streets/straight_02.nbt` (binary/non-JSON, size 680 -> 700)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/terminators/terminator_01.nbt` (binary/non-JSON, size 328 -> 349)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/terminators/terminator_02.nbt` (binary/non-JSON, size 311 -> 332)
+- `~ data/kaisyn/structure/village/old_growth_taiga_polish/town_centers/old_growth_taiga_meeting_point_1.nbt` (binary/non-JSON, size 3582 -> 3544)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_piece_2.nbt` (binary/non-JSON, size 943 -> 961)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_piece_3.nbt` (binary/non-JSON, size 941 -> 954)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_piece_4.nbt` (binary/non-JSON, size 1005 -> 1015)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_piece_5.nbt` (binary/non-JSON, size 981 -> 998)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_piece_6.nbt` (binary/non-JSON, size 1097 -> 1125)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_piece_7.nbt` (binary/non-JSON, size 1003 -> 1022)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_piece_8.nbt` (binary/non-JSON, size 1097 -> 1125)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_top_1.nbt` (binary/non-JSON, size 993 -> 1010)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_top_2.nbt` (binary/non-JSON, size 651 -> 693)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_top_3.nbt` (binary/non-JSON, size 655 -> 696)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_top_4.nbt` (binary/non-JSON, size 570 -> 615)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_top_5.nbt` (binary/non-JSON, size 516 -> 563)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_top_6.nbt` (binary/non-JSON, size 530 -> 571)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/tower_pieces/savanna_plateau_tower_top_7.nbt` (binary/non-JSON, size 476 -> 516)
+- `~ data/kaisyn/structure/village/savanna_plateau_ramshackled/town_centers/savanna_plateau_meeting_point_1.nbt` (binary/non-JSON, size 26529 -> 24383)
+- `~ data/kaisyn/structure/village/snowy_slopes_inn/snowy_slopes_table_1.nbt` (binary/non-JSON, size 1323 -> 1314)
+- `~ data/kaisyn/structure/village/snowy_slopes_inn/town_centers/snowy_slopes_meeting_point_1.nbt` (binary/non-JSON, size 14188 -> 13311)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_armorer_1.nbt` (binary/non-JSON, size 3263 -> 3180)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_butcher_1.nbt` (binary/non-JSON, size 2667 -> 2576)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_cartographer_1.nbt` (binary/non-JSON, size 2506 -> 2454)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_fisher_1.nbt` (binary/non-JSON, size 2906 -> 2847)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_fletcher_1.nbt` (binary/non-JSON, size 1725 -> 1689)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_large_farm_1.nbt` (binary/non-JSON, size 1836 -> 1815)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_leatherworker_1.nbt` (binary/non-JSON, size 2751 -> 2699)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_library_1.nbt` (binary/non-JSON, size 3130 -> 2940)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_mason_1.nbt` (binary/non-JSON, size 1573 -> 1531)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_shepherd_1.nbt` (binary/non-JSON, size 2479 -> 2398)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_small_farm_1.nbt` (binary/non-JSON, size 1339 -> 1326)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_small_house_1.nbt` (binary/non-JSON, size 2146 -> 2084)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_small_house_2.nbt` (binary/non-JSON, size 2344 -> 2266)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_small_house_3.nbt` (binary/non-JSON, size 2401 -> 2309)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_small_house_4.nbt` (binary/non-JSON, size 3787 -> 3585)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_small_house_5.nbt` (binary/non-JSON, size 1887 -> 1849)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_temple_1.nbt` (binary/non-JSON, size 3297 -> 3291)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_toolsmith_1.nbt` (binary/non-JSON, size 3288 -> 3174)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/houses/snowy_taiga_weaponsmith_1.nbt` (binary/non-JSON, size 1569 -> 1551)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/snowy_taiga_drakkar_1.nbt` (binary/non-JSON, size 518 -> 556)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/snowy_taiga_wood_pile_1.nbt` (binary/non-JSON, size 360 -> 400)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/corner_01.nbt` (binary/non-JSON, size 1977 -> 1804)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/corner_02.nbt` (binary/non-JSON, size 1856 -> 1674)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/corner_03.nbt` (binary/non-JSON, size 432 -> 444)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/crossroad_01.nbt` (binary/non-JSON, size 1997 -> 1808)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/crossroad_02.nbt` (binary/non-JSON, size 1948 -> 1765)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/crossroad_03.nbt` (binary/non-JSON, size 1975 -> 1791)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/crossroad_04.nbt` (binary/non-JSON, size 470 -> 479)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/crossroad_05.nbt` (binary/non-JSON, size 510 -> 514)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/crossroad_06.nbt` (binary/non-JSON, size 510 -> 514)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/straight_01.nbt` (binary/non-JSON, size 1905 -> 1723)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/straight_02.nbt` (binary/non-JSON, size 1822 -> 1672)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/straight_03.nbt` (binary/non-JSON, size 1208 -> 1115)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/straight_04.nbt` (binary/non-JSON, size 942 -> 914)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/straight_05.nbt` (binary/non-JSON, size 2296 -> 2111)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/straight_06.nbt` (binary/non-JSON, size 2680 -> 2449)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/streets/turn_01.nbt` (binary/non-JSON, size 1197 -> 1166)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/terminators/terminator_01.nbt` (binary/non-JSON, size 321 -> 344)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/terminators/terminator_03.nbt` (binary/non-JSON, size 341 -> 362)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/terminators/terminator_04.nbt` (binary/non-JSON, size 391 -> 405)
+- `~ data/kaisyn/structure/village/snowy_taiga_viking/town_centers/snowy_taiga_meeting_point_1.nbt` (binary/non-JSON, size 9472 -> 8728)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_armorer_and_mason_1.nbt` (binary/non-JSON, size 2109 -> 2043)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_butcher_and_shepherd_1.nbt` (binary/non-JSON, size 2865 -> 2744)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_cartographer_and_library_1.nbt` (binary/non-JSON, size 3108 -> 3039)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_fisher_and_fletcher_1.nbt` (binary/non-JSON, size 1969 -> 1970)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_large_farm_1.nbt` (binary/non-JSON, size 2775 -> 2615)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_large_house_1.nbt` (binary/non-JSON, size 6593 -> 6202)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_leatherworker_1.nbt` (binary/non-JSON, size 1148 -> 1174)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_medium_house_1.nbt` (binary/non-JSON, size 3846 -> 3581)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_medium_house_2.nbt` (binary/non-JSON, size 4166 -> 3975)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_medium_house_3.nbt` (binary/non-JSON, size 4617 -> 4410)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_small_farm_1.nbt` (binary/non-JSON, size 1310 -> 1327)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_small_house_1.nbt` (binary/non-JSON, size 1887 -> 1846)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_small_house_2.nbt` (binary/non-JSON, size 2201 -> 2122)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_small_house_3.nbt` (binary/non-JSON, size 1979 -> 1924)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_small_house_4.nbt` (binary/non-JSON, size 1936 -> 1892)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/houses/sparse_jungle_toolsmith_and_weaponsmith_1.nbt` (binary/non-JSON, size 3135 -> 3058)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/streets/corner_01.nbt` (binary/non-JSON, size 1120 -> 1068)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/streets/corner_02.nbt` (binary/non-JSON, size 456 -> 477)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/streets/crossroad_01.nbt` (binary/non-JSON, size 1739 -> 1559)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/streets/crossroad_02.nbt` (binary/non-JSON, size 517 -> 535)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/streets/crossroad_03.nbt` (binary/non-JSON, size 1521 -> 1412)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/streets/straight_01.nbt` (binary/non-JSON, size 551 -> 578)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/streets/straight_02.nbt` (binary/non-JSON, size 638 -> 639)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/streets/straight_03.nbt` (binary/non-JSON, size 1331 -> 1271)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/streets/straight_04.nbt` (binary/non-JSON, size 2307 -> 2091)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/terminators/terminator_01.nbt` (binary/non-JSON, size 1899 -> 1729)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/town_centers/sparse_jungle_meeting_point_1.nbt` (binary/non-JSON, size 11494 -> 10501)
+- `~ data/kaisyn/structure/village/sparse_jungle_polynesian/villagers/village_chief.nbt` (binary/non-JSON, size 241 -> 276)
+- `~ data/kaisyn/structure/village/sunflower_plains_farm/side/sunflower_plains_farm_beetroot_1.nbt` (binary/non-JSON, size 5327 -> 4921)
+- `~ data/kaisyn/structure/village/sunflower_plains_farm/side/sunflower_plains_farm_pumpkin_1.nbt` (binary/non-JSON, size 6691 -> 6346)
+- `~ data/kaisyn/structure/village/sunflower_plains_farm/side/sunflower_plains_farm_wheat_1.nbt` (binary/non-JSON, size 5292 -> 4886)
+- `~ data/kaisyn/structure/village/sunflower_plains_farm/side/sunflower_plains_windmill_1.nbt` (binary/non-JSON, size 23991 -> 22318)
+- `~ data/kaisyn/structure/village/sunflower_plains_farm/streets/turn_01.nbt` (binary/non-JSON, size 533 -> 561)
+- `~ data/kaisyn/structure/village/sunflower_plains_farm/sunflower_plains_scarecrow_1.nbt` (binary/non-JSON, size 685 -> 731)
+- `~ data/kaisyn/structure/village/sunflower_plains_farm/sunflower_plains_scarecrow_2.nbt` (binary/non-JSON, size 542 -> 588)
+- `~ data/kaisyn/structure/village/sunflower_plains_farm/town_centers/sunflower_plains_meeting_point_1.nbt` (binary/non-JSON, size 17456 -> 16172)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/large_huts/wooded_badlands_large_hut_black_1.nbt` (binary/non-JSON, size 2518 -> 2454)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/large_huts/wooded_badlands_large_hut_blue_1.nbt` (binary/non-JSON, size 2519 -> 2453)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/large_huts/wooded_badlands_large_hut_brown_1.nbt` (binary/non-JSON, size 2519 -> 2454)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/large_huts/wooded_badlands_large_hut_green_1.nbt` (binary/non-JSON, size 2520 -> 2457)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/large_huts/wooded_badlands_large_hut_red_1.nbt` (binary/non-JSON, size 2522 -> 2457)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/large_huts/wooded_badlands_large_hut_yellow_1.nbt` (binary/non-JSON, size 2520 -> 2458)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/small_huts/wooded_badlands_small_hut_black_1.nbt` (binary/non-JSON, size 2186 -> 2143)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/small_huts/wooded_badlands_small_hut_blue_1.nbt` (binary/non-JSON, size 2184 -> 2144)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/small_huts/wooded_badlands_small_hut_brown_1.nbt` (binary/non-JSON, size 2183 -> 2143)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/small_huts/wooded_badlands_small_hut_green_1.nbt` (binary/non-JSON, size 2187 -> 2146)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/small_huts/wooded_badlands_small_hut_red_1.nbt` (binary/non-JSON, size 2189 -> 2144)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/houses/small_huts/wooded_badlands_small_hut_yellow_1.nbt` (binary/non-JSON, size 2192 -> 2151)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/town_centers/wooded_badlands_meeting_point_1.nbt` (binary/non-JSON, size 1275 -> 1290)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/town_centers/wooded_badlands_meeting_point_2.nbt` (binary/non-JSON, size 1522 -> 1531)
+- `~ data/kaisyn/structure/village/wooded_badlands_tipi/town_centers/wooded_badlands_meeting_point_3.nbt` (binary/non-JSON, size 1453 -> 1456)
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `1000` -> `94`
+  - `pack.min_format`: `88` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `tidal_towns_2.0_1.20-26.3` (added: 0, removed: 0, modified: 1)
+**Modified files:**
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `121` -> `94`
+  - `pack.min_format`: `15` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `tru.e-ending-1.1.4d` (added: 0, removed: 3, modified: 4)
+**Removed files:**
+- `- data/true_ending/advancement/enter_the_end.json`
+- `- data/true_ending/advancement/kill_dragon.json`
+- `- data/true_ending/advancement/place_end_crystal_on_bedrock.json`
+**Modified files:**
+- `~ data/true_ending/item_modifier/count_-1.json`:
+  - `<root>`: `[{"function": "minecraft:set_count", "count": -1, "add": true}]` -> `{"function": "minecraft:set_count", "count": -1, "add": true}`
+- `~ data/true_ending/predicate/time/200.json`:
+  - `clock`: `<MISSING>` -> `minecraft:overworld`
+- `~ data/true_ending/predicate/time/daytime.json`:
+  - `clock`: `<MISSING>` -> `minecraft:overworld`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `9999` -> `94`
+  - `pack.min_format`: `71` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`
+
+### `veinminer-enchantment-1.3.6` (added: 0, removed: 0, modified: 2)
+**Modified files:**
+- `~ data/veinminer-enchantment/enchantment/veinminer.json`:
+  - `description.bold`: `<MISSING>` -> `true`
+  - `description.color`: `<MISSING>` -> `gold`
+- `~ pack.mcmeta`:
+  - `pack.max_format`: `121` -> `94`
+  - `pack.min_format`: `[121, 0]` -> `94`
+  - `pack.supported_formats`: `{"min_inclusive": 15, "max_inclusive": 94}` -> `<REMOVED>`

@@ -1,13 +1,11 @@
-# breeze burst
-execute as @e[type=minecraft:arrow,tag=enchantsplus.bb,nbt={inGround:true}] at @s run function enchantsplus:breezeburst/bb_wc
+# breeze burst (disabled in enchantments_config.json)
+# execute as @e[type=minecraft:arrow,tag=enchantsplus.bb,nbt={inGround:true}] at @s run function enchantsplus:breezeburst/bb_wc
 
-# gluttony
-execute at @a[nbt={SelectedItem:{components:{"minecraft:enchantments":{"enchantsplus:gluttony":1}}}}] as @e[type=item,distance=..2.5,nbt={Age:0s}] run function enchantsplus:gluttony/gluttonize
-
-execute at @a[nbt={SelectedItem:{components:{"minecraft:enchantments":{"enchantsplus:gluttony":2}}}}] as @e[type=item,distance=..9,nbt={Age:0s}] run function enchantsplus:gluttony/gluttonize
-
-execute at @a[nbt={SelectedItem:{components:{"minecraft:enchantments":{"enchantsplus:gluttony":3}}}}] as @e[type=item,distance=..9,nbt={Age:0s}] run function enchantsplus:gluttony/gluttonize
-execute as @a[nbt={SelectedItem:{components:{"minecraft:enchantments":{"enchantsplus:gluttony":3}}}}] at @s run tp @e[type=experience_orb,distance=..6,nbt={Age:0s}] @s
+# gluttony (disabled in enchantments_config.json)
+# execute at @a[nbt={SelectedItem:{components:{"minecraft:enchantments":{"enchantsplus:gluttony":1}}}}] as @e[type=item,distance=..2.5,nbt={Age:0s}] run function enchantsplus:gluttony/gluttonize
+# execute at @a[nbt={SelectedItem:{components:{"minecraft:enchantments":{"enchantsplus:gluttony":2}}}}] as @e[type=item,distance=..9,nbt={Age:0s}] run function enchantsplus:gluttony/gluttonize
+# execute at @a[nbt={SelectedItem:{components:{"minecraft:enchantments":{"enchantsplus:gluttony":3}}}}] as @e[type=item,distance=..9,nbt={Age:0s}] run function enchantsplus:gluttony/gluttonize
+# execute as @a[nbt={SelectedItem:{components:{"minecraft:enchantments":{"enchantsplus:gluttony":3}}}}] at @s run tp @e[type=experience_orb,distance=..6,nbt={Age:0s}] @s
 
 # luminosity
 #tag @e[type=minecraft:marker,tag=ep.light.mark] add ep.expiredlight
@@ -37,9 +35,9 @@ execute as @a[tag=ep.entity.frozen] at @s at @n[type=block_display,tag=ep.frozen
 execute as @a[tag=ep.entity.frozen] unless entity @s[nbt={active_effects:[{id:"minecraft:slowness",amplifier:9b}]}] at @s run function enchantsplus:ice_aspect/unfreeze
 execute as @a[tag=ep.entity.frozen] if predicate enchantsplus:onfire at @s run function enchantsplus:ice_aspect/extinguish
 
-# harvest
-execute as @a[scores={ep.mined_wheat=1..}] at @s run function enchantsplus:harvest/wheat
-execute as @a[scores={ep.mined_carrot=1..}] at @s run function enchantsplus:harvest/carrot
-execute as @a[scores={ep.mined_potato=1..}] at @s run function enchantsplus:harvest/potato
-execute as @a[scores={ep.mined_beet=1..}] at @s run function enchantsplus:harvest/beetroot
-execute as @a[scores={ep.mined_wart=1..}] at @s run function enchantsplus:harvest/nether_wart
+# harvest (disabled in enchantments_config.json)
+# execute as @a[scores={ep.mined_wheat=1..}] at @s run function enchantsplus:harvest/wheat
+# execute as @a[scores={ep.mined_carrot=1..}] at @s run function enchantsplus:harvest/carrot
+# execute as @a[scores={ep.mined_potato=1..}] at @s run function enchantsplus:harvest/potato
+# execute as @a[scores={ep.mined_beet=1..}] at @s run function enchantsplus:harvest/beetroot
+# execute as @a[scores={ep.mined_wart=1..}] at @s run function enchantsplus:harvest/nether_wart

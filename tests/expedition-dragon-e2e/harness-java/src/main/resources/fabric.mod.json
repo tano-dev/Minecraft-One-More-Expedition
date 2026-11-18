@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "expedition-dragon-e2e",
+  "version": "1.0.0",
+  "name": "Expedition Dragon E2E Harness",
+  "description": "Opaque-box E2E test harness for expedition-dragon.",
+  "license": "MIT",
+  "environment": "*",
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3-",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

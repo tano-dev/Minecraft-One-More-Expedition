@@ -1,0 +1,173 @@
+{
+  "enforceStellarityDragonDisabled": true,
+  "variants": {
+    "infernal": {
+      "enabled": true,
+      "weight": 0.2,
+      "baseHp": 1500.0,
+      "damageMultiplier": 1.0,
+      "cooldownMultiplier": 1.0,
+      "bossBarTitle": "§c§lInfernal Dragon",
+      "bossBarColor": "RED"
+    },
+    "voidgloom": {
+      "enabled": true,
+      "weight": 0.2,
+      "baseHp": 1400.0,
+      "damageMultiplier": 1.0,
+      "cooldownMultiplier": 1.0,
+      "bossBarTitle": "§5§lVoidgloom Dragon",
+      "bossBarColor": "PURPLE"
+    },
+    "revenant": {
+      "enabled": true,
+      "weight": 0.2,
+      "baseHp": 1600.0,
+      "damageMultiplier": 1.0,
+      "cooldownMultiplier": 1.0,
+      "bossBarTitle": "§a§lRevenant Dragon",
+      "bossBarColor": "GREEN"
+    },
+    "enlightened": {
+      "enabled": true,
+      "weight": 0.2,
+      "baseHp": 1800.0,
+      "damageMultiplier": 1.0,
+      "cooldownMultiplier": 1.0,
+      "bossBarTitle": "§e§lEnlightened Dragon",
+      "bossBarColor": "YELLOW"
+    },
+    "chronos": {
+      "enabled": true,
+      "weight": 0.2,
+      "baseHp": 2000.0,
+      "damageMultiplier": 1.0,
+      "cooldownMultiplier": 1.0,
+      "bossBarTitle": "§9§lChronos Dragon",
+      "bossBarColor": "BLUE"
+    }
+  },
+  "movesets": {
+    "diveCooldownTicks": 260,
+    "diveImpactDamage": 18.0,
+    "diveShockwaveRadius": 12.0,
+    "tripleDiveHpThreshold": 0.75,
+    "tripleDiveCooldownTicks": 360,
+    "laserCooldownTicks": 320,
+    "laserDamage": 14.0,
+    "chainFireballCooldownTicks": 180,
+    "chainFireballCount": 4
+  },
+  "minions": {
+    "endermanCallRadius": 150.0,
+    "shadowPhantomsPerCrystal": 2,
+    "revenantShadowPhantomsPerCrystal": 5,
+    "shadowPhantomDamage": 15.0,
+    "shadowPhantomKnockbackMultiplier": 3.0,
+    "antiTunnelCheckIntervalTicks": 40,
+    "altarAntiFlightVexCount": 5,
+    "altarAntiFlightAirborneTicks": 60,
+    "noElytraZoneRadius": 180.0,
+    "spawnPullRadius": 250.0
+  },
+  "rewards": {
+    "minDamagePercent": 0.01,
+    "minDamageFlat": 20.0,
+    "baseRolls": 2,
+    "maxDamageBonusRolls": 6,
+    "guaranteedCoins": 500,
+    "bonusCoinsPerRoll": 250,
+    "baseLoot": [
+      {
+        "itemId": "minecraft:dragon_breath",
+        "minCount": 2,
+        "maxCount": 6,
+        "chance": 1.0
+      },
+      {
+        "itemId": "minecraft:experience_bottle",
+        "minCount": 8,
+        "maxCount": 16,
+        "chance": 1.0
+      },
+      {
+        "itemId": "minecraft:ender_pearl",
+        "minCount": 4,
+        "maxCount": 12,
+        "chance": 0.75
+      }
+    ],
+    "variantBonusLoot": {
+      "infernal": [
+        {
+          "itemId": "minecraft:blaze_rod",
+          "minCount": 3,
+          "maxCount": 6,
+          "chance": 0.85
+        },
+        {
+          "itemId": "minecraft:fire_charge",
+          "minCount": 4,
+          "maxCount": 8,
+          "chance": 1.0
+        }
+      ],
+      "voidgloom": [
+        {
+          "itemId": "minecraft:chorus_fruit",
+          "minCount": 6,
+          "maxCount": 12,
+          "chance": 1.0
+        },
+        {
+          "itemId": "minecraft:shulker_shell",
+          "minCount": 1,
+          "maxCount": 2,
+          "chance": 0.65
+        }
+      ],
+      "revenant": [
+        {
+          "itemId": "minecraft:phantom_membrane",
+          "minCount": 3,
+          "maxCount": 6,
+          "chance": 1.0
+        },
+        {
+          "itemId": "minecraft:ender_eye",
+          "minCount": 2,
+          "maxCount": 4,
+          "chance": 0.75
+        }
+      ],
+      "enlightened": [
+        {
+          "itemId": "minecraft:prismarine_crystals",
+          "minCount": 6,
+          "maxCount": 12,
+          "chance": 1.0
+        },
+        {
+          "itemId": "minecraft:heart_of_the_sea",
+          "minCount": 1,
+          "maxCount": 1,
+          "chance": 0.35
+        }
+      ],
+      "chronos": [
+        {
+          "itemId": "minecraft:echo_shard",
+          "minCount": 2,
+          "maxCount": 5,
+          "chance": 0.85
+        },
+        {
+          "itemId": "minecraft:nether_star",
+          "minCount": 1,
+          "maxCount": 1,
+          "chance": 0.25
+        }
+      ]
+    }
+  }
+}

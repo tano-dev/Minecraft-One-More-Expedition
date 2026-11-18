@@ -1,0 +1,92 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version '1.18.1'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    maven {
+        name = 'LocalIntermediary'
+        url = uri("${projectDir}/local-repo")
+    }
+    mavenCentral()
+    maven {
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    testImplementation "org.junit.jupiter:junit-jupiter:${project.junit_version}"
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+def workspaceRootDir = file("../../..").canonicalFile
+def defaultModJar = new File(workspaceRootDir, "mods/expedition-dragon-1.0.0.jar")
+def defaultReportFile = layout.buildDirectory.file("test-results/gametest/TEST-gametest.xml").get().asFile
+
+fabricApi {
+    configureTests {
+        createSourceSet = true
+        modId = "expedition-dragon-e2e"
+        enableGameTests = true
+        enableClientGameTests = false
+        eula = false
+    }
+}
+
+loom {
+    runs {
+        gameTest {
+            def addModsProp = project.hasProperty("e2eAddMods") ? project.property("e2eAddMods").toString() : defaultModJar.absolutePath
+            def reportFileProp = project.findProperty("e2eGameTestReport")?.toString() ?: defaultReportFile.absolutePath
+            if (addModsProp) {
+                vmArg "-Dfabric.addMods=${addModsProp}"
+            }
+            property "fabric-api.gametest.report-file", reportFileProp
+            property "e2e.workspaceRoot", workspaceRootDir.absolutePath
+            property "e2e.modJar", defaultModJar.absolutePath
+            property "e2e.allayOpsDir", "D:\\AllayOps"
+            if (project.hasProperty("e2eGameTestFilter")) {
+                property "fabric-api.gametest.filter", project.property("e2eGameTestFilter").toString()
+            }
+        }
+    }
+}
+
+test {
+    useJUnitPlatform {
+        if (project.hasProperty("e2eTag")) {
+            includeTags(project.property("e2eTag").toString())
+        }
+    }
+    systemProperty "e2e.workspaceRoot", workspaceRootDir.absolutePath
+    systemProperty "e2e.modJar", defaultModJar.absolutePath
+    systemProperty "e2e.allayOpsDir", "D:\\AllayOps"
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 25
+    it.options.encoding = "UTF-8"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}

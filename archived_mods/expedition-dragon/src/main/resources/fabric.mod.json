@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "expedition-dragon",
+  "version": "${version}",
+  "name": "Expedition Dragon",
+  "description": "Standalone zero-lag Hypixel Skyblock-style 5-variant Ender Dragon Boss system with custom movesets, minions, anti-cheese zones, and EconomyCraft /orders overflow.",
+  "authors": [
+    "OneMoreExpedition Team"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.onemoreexpedition.dragon.ExpeditionDragonMod"
+    ]
+  },
+  "mixins": [
+    "expedition-dragon.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

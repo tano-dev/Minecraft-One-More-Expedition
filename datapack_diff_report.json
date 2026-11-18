@@ -1,0 +1,2032 @@
+[
+  {
+    "name": "ATi Structure V1.4.7 (26.3).zip",
+    "status": "ACTIVE",
+    "diff_json_count": 36,
+    "diff_nbt_count": 53,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/ancient_temple.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/arachnid_dwelling.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/ati_stoneworks.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/castillo.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/catalonian_castle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/dark_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/dark_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/deepslate_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/desert_outpost.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/dojo.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/fortified_temple.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/granite_fort.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/herobrine_stronghold.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/ice_tribe.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/illager_homestead.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/illager_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/jungle_grotto.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/manor.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/marble_chateau.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/monastery_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/mud_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/old_fort.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/old_home.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/old_residence.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/overgrown_outpost.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/rotting_temple.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/ruined_castle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/sinking_temple.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/small_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/steam_house.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/tavern.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/villager_inn.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/warden_monument.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/wither_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/woodland_keep.json",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "ATi Structures Vanilla V1.4.7 (26.3).zip",
+    "status": "ACTIVE",
+    "diff_json_count": 36,
+    "diff_nbt_count": 55,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/ancient_temple.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/arachnid_dwelling.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/ati_stoneworks.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/castillo.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/catalonian_castle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/dark_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/dark_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/deepslate_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/desert_outpost.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/dojo.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/fortified_temple.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/granite_fort.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/herobrine_stronghold.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/ice_tribe.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/illager_homestead.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/illager_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/jungle_grotto.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/manor.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/marble_chateau.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/monastery_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/mud_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/old_fort.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/old_home.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/old_residence.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/overgrown_outpost.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/rotting_temple.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/ruined_castle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/sinking_temple.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/small_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/steam_house.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/tavern.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/villager_inn.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/warden_monument.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/wither_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/ati_structures/worldgen/structure/woodland_keep.json",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Aether-Ruined-Portals.zip",
+    "status": "NOT_IN_ACTIVE_DATAPACKS",
+    "notes": "Datapack was deleted or converted to mod"
+  },
+  {
+    "name": "Decubed Dungeons V1.13.1 [26.3].zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "DnT Ancient City Overhaul v4.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "DnT Desert Temple Overhaul v2.2.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 12,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "DnT Jungle Temple Overhaul v2.2.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 9,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "DnT Mineshaft Overhaul 2.0.1.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "DnT Nether Fortress Overhaul 3.2.1.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "DnT Ocean Monument Overhaul v2.3.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "DnT Swamp Hut Overhaul v3.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Dungeons and Taverns v6.1.0.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 84,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "data/nova_structures/enchantment/photosynthesis.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/enchantment/wax_wings.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/badlands_miner_outpost.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/dappled_townhall.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/dappled_witch_hut.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/firewatch_tower_birch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/firewatch_tower_cherry.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/firewatch_tower_dappled.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/firewatch_tower_dark_oak.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/firewatch_tower_forest.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/firewatch_tower_jungle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/firewatch_tower_mangrove.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/firewatch_tower_pale.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/firewatch_tower_savanna.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/firewatch_tower_swamp.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/firewatch_tower_taiga.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/hamlet.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/illager_barracks.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/illager_treehouse.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/mangrove_witch_hut.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/nether_port.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/nether_skeleton_tower_crimson.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/nether_skeleton_tower_fort.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/nether_skeleton_tower_soul.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/nether_skeleton_tower_warped.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/pale_residence.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/piglin_outstation.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_bee_keeper.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_big_remnant.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_big_remnant_2.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_big_remnant_3.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_birch_graveyard.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_bundle_tent.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_bunny_base.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_creeper_homestead.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_desert_remnant.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_forest_smith.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_frog_ranch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_graveyard.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_lone_shrine_sentinel.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_medium_remnant.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_medium_remnant_2.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_miner_hut.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_mud_brick_constructor.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_ominous_shop.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_sawmill.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_school_remnant.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_shrine_research_station.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_shrine_sentinel_mass_grave.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_taiga_castle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_tavern_classic.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_woodland_hud.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_youth_spring.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/remnant_zombie_horse_ranch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/stray_fort.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/stray_outlook.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_acacia.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_birch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_cherry.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_dappled.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_dark_oak.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_desert.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_jungle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_mangrove.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_oak.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_pale.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_snowy.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_spruce.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/tavern_swamp.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_birch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_cherry.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_dappled.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_dark_oak.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_desert.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_jungle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_mangrove.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_oak.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_pale.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_savanna.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_snowy.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_spruce.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/well_swamp.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/nova_structures/worldgen/structure/witch_villa.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Enchants Plus v2.1 26.3.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 4,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "data/enchantsplus/enchantment/crabs_touch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantsplus/enchantment/graviole.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/minecraft/tags/item/enchantable/mining.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Epic Dungeons v1.2.7 (26.3).zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Epic Jungle Temples v1.0.4 (26.3).zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 42,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Epic Villages 2.0.0.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Epic Villages Standalone 1.0.0.jar.zip",
+    "status": "NOT_IN_ACTIVE_DATAPACKS",
+    "notes": "Datapack was deleted or converted to mod"
+  },
+  {
+    "name": "Epic Witch Huts v1.3.2 (26.3).zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 12,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Explorify v1.6.6.dp.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 7,
+    "diff_nbt_count": 129,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ],
+      [
+        "data/explorify/worldgen/structure/badlands_pyramid.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/explorify/worldgen/structure/black_spiral.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/explorify/worldgen/structure/desert_shrine.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/explorify/worldgen/structure/guide_post_cold.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/explorify/worldgen/structure/guide_post_warm.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/explorify/worldgen/structure/mangrove_hut.json",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Grim kingdoms (1.21+ 26.2+).zip",
+    "status": "ACTIVE",
+    "diff_json_count": 39,
+    "diff_nbt_count": 80,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "data/grim_kingdoms/worldgen/structure/blackridge_watch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/blackridge_watch_taiga.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/chillhall_plains_refuge.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/chill_hallmanor.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/decrown_monolith.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/decrown_monolith_taiga.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/east_spur_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/frostbloom_bastion.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/frozen_onion_fort.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/frozen_onion_fort_taiga.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/glacierfall_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/glacierfall_keep_plains.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/glimmervault_fortress.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/glimmervault_fortress_plains.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/gnome_tall_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/grain_sack_fort.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/grain_sack_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/high_spur_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/long_pine_cabin.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/meadow_flower_ruin.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/meadow_ruin.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/north_spur_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/sandfell_outpost.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/shardspire_castle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/silentgale_citadel.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/silentgale_citadel_plains.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/snowgrave_citadel.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/south_spur_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/stonyfell_outpost.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/stonyfell_outpost_plains.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/tor_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/travelers_lodge.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/weathered_colosseum.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/west_spur_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/whitewarden_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/winterhold_citadel.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/winterhold_citadel_taiga.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/grim_kingdoms/worldgen/structure/zweiberg.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Incendium_Legacy_v5.5.4+26.3.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 2,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "data/incendium/enchantment/poison_protection.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Katters Structures v2.9.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 16,
+    "diff_nbt_count": 490,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "data/kattersstructures/worldgen/structure/armory.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/birch_tree.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/cherry_tree.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/deep_blue_lab_ruin.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/deep_blue_labs.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/far_watch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/graveyard.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/magic_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/pillager_village.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/red_coral.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/spider_den.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/village_mesa.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/villager_mountain.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/windmill.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/kattersstructures/worldgen/structure/witch_circle.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "NeoEnchant-5.16.0.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 43,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 2,
+    "json_diffs": [
+      [
+        "data/enchantplus/worldgen/configured_feature/seiors_oblivion.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/advancement/root.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/advancement/actions/bright_vision.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/advancement/actions/harvest.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/chestplate/builder_arm.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/durability/curse_of_breaking.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/leggings/fast_swim.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/armor/venom_protection.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/elytra/armored.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/elytra/kinetic_protection.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/elytra/propulsion.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/helmet/auto_feed.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/helmet/voidless.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/boots/lava_walker.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/boots/step_assist.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/bow/eternal_frost.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/bow/echo_shot.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/bow/storm_arrow.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/bow/breezing_arrow.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/bow/explosive_arrow.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/sword/pull.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/sword/last_hope.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/sword/poison_aspect.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/sword/critical.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/sword/tears_of_asflors.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/sword/runic_despair.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/sword/death_touch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/sword/life_steal.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/sword/dimensional_hit.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/mace/wind_propulsion.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/mace/striker.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/mace/teluric_wave.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/trident/gungnir_breath.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/tools/miningplus.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/mounted/cavalier_egis.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/axe/timber.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/hoe/seiors_oblivion.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/hoe/scyther.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/pickaxe/bedrock_breaker.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/pickaxe/vein_miner.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/pickaxe/spawner_touch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/enchantplus/enchantment/midas_touch.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Nullscape_v2.0.1+26.3.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Stellarity-6.0.1.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 2,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "data/stellarity/worldgen/structure/village.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Structory_Towers_v1.0.19+26.3.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 4,
+    "diff_nbt_count": 19,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "data/structory_towers/worldgen/structure/warped_greatsword.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/structory_towers/worldgen/structure/nether/fortress_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/structory_towers/worldgen/structure/nether/strange_outpost.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Structory_v1.3.18+26.3.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 2,
+    "diff_nbt_count": 181,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "data/structory/worldgen/structure/old_manor.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Terralith_v2.6.5+26.3.zip",
+    "status": "NOT_IN_ACTIVE_DATAPACKS",
+    "notes": "Datapack was deleted or converted to mod"
+  },
+  {
+    "name": "Too Expensive Extractor v1.0.0 [26.3].zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Trek 26.3 B0.6.2.1.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 38,
+    "diff_nbt_count": 318,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/common/cooking_pork.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/common/elven_pillars.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/common/ruins.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/common/small_desert_ruins.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/common/small_swamp_ruins.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/common/smoldering_altar.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/common/termite_hill.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/common/two_woods.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/common/well.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/common/well_pillager_small.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/birch_trade.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/camp_2.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/claw_spike.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/cold_red_trade.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/dark_oak_trade.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/frozen_tree.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/jungle_trade.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/oasis.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/offshore_platform_pillager.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/small_pyramide.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/small_red_trade.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/snow_cottage.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/spruce_cottage.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/star_spike.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/three_finger_ice.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/well_pillager_medium.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/medium/wild_stone.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/rare/castle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/rare/elven_tree.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/rare/pillager_mansion.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/rare/portal_sword.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/rare/villager_castle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/rare/villager_fortress.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/rare/wooden_manor.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/very_common/plains.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/overworld/very_common/rocks.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/trek/worldgen/structure/village/swamp_vanilla.json",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Wabi-Sabi Structures-3.0.5-1.21.11 Datapack.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 28,
+    "diff_nbt_count": 292,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "data/wabi_sabi_structures/worldgen/structure/abandoned_small_castle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/beetroot_patch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/carrot_patch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/dark_witch_keep.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/effigy_patch_forest.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/effigy_patch_jungle.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/effigy_patch_mushroom.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/effigy_patch_savanna.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/effigy_patch_swamp.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/ender_claw.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/ice_shanty.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/lighthouse.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/lost_foot.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/lumpy_tower.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/melon_patch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/monster_egg.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/moss_blob.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/muddy_badlands_well.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/obsidian_egg.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/potato_patch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/pumpkin_patch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/sphinx_hidey_hole_icy.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/sphinx_hidey_hole_sandy.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/tree_cage.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/wheat_patch.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/xocolatl_farm.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wabi_sabi_structures/worldgen/structure/zen_chair_museum.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "Yggdrasil-7.1.0.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 19,
+    "diff_nbt_count": 237,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 27,
+    "extra_in_folder_count": 3,
+    "json_diffs": [
+      [
+        "data/yggdrasil/worldgen/configured_feature/peak_pillar.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/configured_feature/peak.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/configured_feature/runic_light.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/noise_settings/runic.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/processor_list/glaosheimr/street.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/processor_list/alfheim_tree/azaela.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/processor_list/asflors/street.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/processor_list/asflors/dirty_road.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/structure/runic_fracture.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/structure/proto_fracture.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/structure/cubeoid.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/structure/neogard.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/worldgen/noise/runic_hills.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/loot_table/generic/reward/normal/weak_equipement.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/loot_table/generic/reward/normal/equipement.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/loot_table/generic/reward/rare/enchanted_item_10.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/loot_table/generic/reward/rare/enchanted_item_50.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/yggdrasil/loot_table/generic/reward/rare/enchanted_item_25.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "[26.3-26.4]witherswrath-1.17.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 3,
+    "diff_nbt_count": 0,
+    "diff_other_count": 234,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ],
+      [
+        "data/wither/enchantment/soul_siphon.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/wither/enchantment/witherbound.json",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "ddd-v.1.0.6-MC-26.3.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 32,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "hopobetterruinedportals-26-3-1-5-2.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 4,
+    "diff_nbt_count": 42,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ],
+      [
+        "data/hopo/worldgen/structure/portal/overworld/portal_deepslate.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/hopo/worldgen/structure/portal/overworld/portal_dripstone.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/hopo/worldgen/structure/portal/overworld/portal_lush.json",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "mine-treasure-1.6.5.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 1,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "more_mobs-v1.5.11-mc1.14-26.3.9-datapack.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "sunken_spires_1.20.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 2,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "data/joshie/worldgen/structure/sunken_spires/sunken_city.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "t_and_t-datapack-26.3.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 749,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "tectonic-datapack-3.0.29.zip",
+    "status": "NOT_IN_ACTIVE_DATAPACKS",
+    "notes": "Datapack was deleted or converted to mod"
+  },
+  {
+    "name": "terratonic-datapack-3.0.31.zip",
+    "status": "NOT_IN_ACTIVE_DATAPACKS",
+    "notes": "Datapack was deleted or converted to mod"
+  },
+  {
+    "name": "tidal_towns_2.0_1.20-26.3.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 1,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "tru.e-ending-1.1.4d.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 4,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 3,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "data/true_ending/item_modifier/count_-1.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/true_ending/predicate/time/200.json",
+        "DIFFERENT"
+      ],
+      [
+        "data/true_ending/predicate/time/daytime.json",
+        "DIFFERENT"
+      ],
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ]
+    ]
+  },
+  {
+    "name": "veinminer-enchantment-1.3.6.zip",
+    "status": "ACTIVE",
+    "diff_json_count": 2,
+    "diff_nbt_count": 0,
+    "diff_other_count": 0,
+    "missing_in_folder_count": 0,
+    "extra_in_folder_count": 0,
+    "json_diffs": [
+      [
+        "pack.mcmeta",
+        "DIFFERENT"
+      ],
+      [
+        "data/veinminer-enchantment/enchantment/veinminer.json",
+        "DIFFERENT"
+      ]
+    ]
+  }
+]
