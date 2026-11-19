@@ -1,8 +1,6 @@
 {
-  "pack": {
-    "description": "Makes Default Villages Beautiful",
-    "pack_format": 94,
-    "min_format": 94,
-    "max_format": 94
-  }
+    "pack": {
+        "description": "Makes Default Villages Beautiful",
+        "pack_format": 15
+    }
 }
