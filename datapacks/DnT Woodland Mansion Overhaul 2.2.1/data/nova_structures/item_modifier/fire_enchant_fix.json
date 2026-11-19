@@ -1,0 +1,165 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "nova_structures:mansion_function_only",
+              "levels": 4
+            }
+          ]
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_enchantments",
+        "enchantments": {
+          "nova_structures:mansion_function_only": 0,
+          "minecraft:fire_protection": 4
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:stored_enchantments": [
+            {
+              "enchantments": "nova_structures:mansion_function_only",
+              "levels": 4
+            }
+          ]
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_enchantments",
+        "enchantments": {
+          "nova_structures:mansion_function_only": 0,
+          "minecraft:fire_protection": 4
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "nova_structures:mansion_function_only",
+              "levels": 3
+            }
+          ]
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_enchantments",
+        "enchantments": {
+          "nova_structures:mansion_function_only": 0,
+          "minecraft:fire_protection": 3
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:stored_enchantments": [
+            {
+              "enchantments": "nova_structures:mansion_function_only",
+              "levels": 3
+            }
+          ]
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_enchantments",
+        "enchantments": {
+          "nova_structures:mansion_function_only": 0,
+          "minecraft:fire_protection": 3
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "nova_structures:mansion_function_only",
+              "levels": 2
+            }
+          ]
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_enchantments",
+        "enchantments": {
+          "nova_structures:mansion_function_only": 0,
+          "minecraft:fire_protection": 2
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:stored_enchantments": [
+            {
+              "enchantments": "nova_structures:mansion_function_only",
+              "levels": 2
+            }
+          ]
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_enchantments",
+        "enchantments": {
+          "nova_structures:mansion_function_only": 0,
+          "minecraft:fire_protection": 2
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "nova_structures:mansion_function_only",
+              "levels": 1
+            }
+          ]
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_enchantments",
+        "enchantments": {
+          "nova_structures:mansion_function_only": 0,
+          "minecraft:fire_protection": 1
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:stored_enchantments": [
+            {
+              "enchantments": "nova_structures:mansion_function_only",
+              "levels": 1
+            }
+          ]
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_enchantments",
+        "enchantments": {
+          "nova_structures:mansion_function_only": 0,
+          "minecraft:fire_protection": 1
+        }
+      }
+    }
+  ]
+}

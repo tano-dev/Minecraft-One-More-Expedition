@@ -1,0 +1,57 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.dnt.mansion_function_only",
+    "fallback": "Fire Enchant"
+  },
+  "exclusive_set": "#nova_structures:exclusive_set/loot_table_fire_bug",
+  "supported_items": [
+    "minecraft:stick",
+    "minecraft:flint"
+  ],
+  "weight": 20,
+  "max_level": 4,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 100,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:prevent_equipment_drop": {},
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nova_structures:jockey/chicken_mansion_spawn"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:armor_stand",
+                "minecraft:entity_tags": {
+                  "any_of": [
+                    "dnt_spawn_chicken_jockey_mansion"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:enchantment_active_check",
+              "active": false
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
