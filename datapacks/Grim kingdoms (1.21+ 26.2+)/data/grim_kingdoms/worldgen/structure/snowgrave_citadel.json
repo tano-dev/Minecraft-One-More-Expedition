@@ -10,6 +10,6 @@
     },
     "start_pool": "grim_kingdoms:snowgrave_citadel",
     "step": "surface_structures",
-    "terrain_adaptation": "beard_thin",
+    "terrain_adaptation": "none",
     "use_expansion_hack": true
 }
