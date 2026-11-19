@@ -1,0 +1,51 @@
+{
+    "name": "epic:addon",
+    "fallback": "epic:addon",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "epic:epic_igloo/addon/addon_1"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "epic:epic_igloo/addon/addon_2"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "epic:epic_igloo/addon/addon_3"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "epic:epic_igloo/addon/addon_4"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "terrain_matching",
+                "processors": "minecraft:empty",
+                "location": "epic:epic_igloo/addon/addon_5"
+            },
+            "weight": 1
+        }
+    ]
+}

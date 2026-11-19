@@ -1,0 +1,51 @@
+{
+    "name": "epic:large_igloo",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:epic_igloo/large/large_igloo"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:epic_igloo/large/large_igloo2"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:epic_igloo/large/large_igloo3"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:epic_igloo/large/large_igloo4"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:mossify_20_percent",
+                "location": "epic:epic_igloo/large/large_igloo5"
+            },
+            "weight": 1
+        }
+    ]
+}
