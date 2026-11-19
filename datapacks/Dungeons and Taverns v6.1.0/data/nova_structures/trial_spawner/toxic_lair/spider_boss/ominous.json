@@ -24,19 +24,19 @@
               "equipment": {
                 "feet": {
                   "count": 1,
-                  "id": "iron_boots"
+                  "id": "diamond_boots"
                 },
                 "legs": {
                   "count": 1,
-                  "id": "iron_leggings"
+                  "id": "diamond_leggings"
                 },
                 "chest": {
                   "count": 1,
-                  "id": "iron_chestplate"
+                  "id": "diamond_chestplate"
                 },
                 "head": {
                   "count": 1,
-                  "id": "iron_helmet"
+                  "id": "diamond_helmet"
                 },
                 "mainhand": {
                   "components": {

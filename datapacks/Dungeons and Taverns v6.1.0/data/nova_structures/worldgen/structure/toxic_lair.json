@@ -120,7 +120,7 @@
   },
   "start_pool": "nova_structures:toxic_lair/start",
   "start_jigsaw_name": "nova_structures:toxic_lair_anchor",
-  "size": 6,
+  "size": 9,
   "start_height": {
 		"absolute": 67
 	},

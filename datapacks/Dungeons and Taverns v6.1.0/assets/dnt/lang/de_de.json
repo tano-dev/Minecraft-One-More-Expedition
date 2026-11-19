@@ -146,7 +146,6 @@
     "advancement.dnt.story.librarian_traveler.title": "Reisetagebuch des Wanderers",
     "advancement.dnt.story.librarian_witch_villa": "Handle mit einem Bibliothekaranfänger in einer Hexenvilla und erhalte sein exklusives Buch",
     "advancement.dnt.story.librarian_witch_villa.title": "Rezepte der Hexen",
-
     "enchantment.dnt.aerials_bane": "Nemesis der Haltlosen",
     "enchantment.dnt.aerials_bane.desc": "Erhöht den Schaden gegen Gegner in der Luft",
     "enchantment.dnt.antidote": "Gegengift",
@@ -185,7 +184,6 @@
     "enchantment.dnt.wax_wings.desc": "Elytren verlieren beim langsamen Gleiten keine Haltbarkeit",
     "enchantment.dnt.wither_coated": "Verdorrung",
     "enchantment.dnt.wither_coated.desc": "Fügt Gegnern auf Kosten von Haltbarkeit den Wither Effekt bei",
-
     "item.dnt.boss_sealing_key": "Versiegelungsboss-Schlüssel",
     "item.dnt.cave_chamber_key": "Höhlenkammer-Schlüssel",
     "item.dnt.citadel_boss_key": "Zitadellenboss-Schlüssel",
@@ -207,7 +205,6 @@
     "item.dnt.toxic_key": "Gift-Schlüssel",
     "item.dnt.trident_trial_boss_key": "Dreizackprüfungsboss-Schlüssel",
     "item.dnt.trident_trial_key": "Dreizackprüfungsschlüssel",
-
     "title.dnt.chart_unfold": "Die Entdeckerkarte wird auseinandergefaltet...",
     "title.dnt.chart_dimension_failstate": "Die Entdeckerkarte kann in dieser Dimension nicht auseinandergefaltet werden...",
     "item.dnt.chart.description": "Interagiere, um eine Entdeckerkarte zu generieren.",
@@ -300,7 +297,9 @@
     "item.dnt.chart.village_swamp": "Gefaltete Entdeckerkarte zum Sumpfdorf",
     "item.dnt.chart.village_taiga": "Gefaltete Entdeckerkarte zum Taigadorf",
     "item.dnt.chart.witch_villa": "Gefaltete Entdeckerkarte zur Hexenvilla",
-
+    "item.dnt.chart.dappled_witch_hut": "Gefaltete Entdeckerkarte zur Hexenhütte des Herbstwaldes",
+    "item.dnt.chart.swamp_hut": "Gefaltete Entdeckerkarte zur Sumpfhütte",
+    "item.dnt.chart.igloo": "Gefaltete Entdeckerkarte zum Iglu",
     "item.dnt.filled_map.any_tavern": "Entdeckerkarte zur Taverne",
     "item.dnt.filled_map.any_village": "Entdeckerkarte zum Dorf",
     "item.dnt.filled_map.any_well": "Entdeckerkarte zum Brunnen",
@@ -376,9 +375,10 @@
     "item.dnt.filled_map.village_jungle": "Entdeckerkarte zum Dschungeldorf",
     "item.dnt.filled_map.village_swamp": "Entdeckerkarte zum Sumpfdorf",
     "item.dnt.filled_map.witch_villa": "Entdeckerkarte zur Hexenvilla",
-
+    "item.dnt.filled_map.dappled_witch_hut": "Entdeckerkarte zur Hexenhütte des Herbstwaldes",
+    "item.dnt.filled_map.swamp_hut": "Entdeckerkarte zur Sumpfhütte",
+    "item.dnt.filled_map.igloo": "Entdeckerkarte zum Iglu",
     "search_structure.dnt.function_unknown": "Keine Minecraft- oder DnT-Struktur gefunden...",
-
     "structure.dnt.badlands_miner_outpost": "Bergbauposten der Tafelberge",
     "structure.dnt.bogged_camp": "Lager der Sumpfskelette",
     "structure.dnt.bunker": "Bunker",
@@ -529,7 +529,7 @@
     "structure.dnt.well_swamp": "Sumpfbrunnen",
     "structure.dnt.wild_ruin": "Wildnisruine",
     "structure.dnt.witch_villa": "Hexenvilla",
-
+    "structure.dnt.dappled_witch_hut": "Hexenhütte des Herbstwaldes",
     "structure.nova_structures.badlands_miner_outpost": "Bergbauposten der Tafelberge",
     "structure.nova_structures.bogged_camp": "Lager der Sumpfskelette",
     "structure.nova_structures.bunker": "Bunker",
@@ -679,5 +679,6 @@
     "structure.nova_structures.well_spruce": "Fichtenbrunnen",
     "structure.nova_structures.well_swamp": "Sumpfbrunnen",
     "structure.nova_structures.wild_ruin": "Wildnisruine",
-    "structure.nova_structures.witch_villa": "Hexenvilla"
+    "structure.nova_structures.witch_villa": "Hexenvilla",
+    "structure.nova_structures.dappled_witch_hut": "Hexenhütte des Herbstwaldes"
 }

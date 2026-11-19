@@ -165,16 +165,8 @@
                   }
                 ],
                 "rolls": 1
-              }
-            ]
-          },
-          "weight": 2
-        },
-        {
-          "type": "minecraft:loot_table",
-          "value": {
-            "pools": [
-              {
+              },
+			  {
                 "bonus_rolls": 0,
                 "condition": {
                     "chance": 0.8,
@@ -194,12 +186,12 @@
                         "type": "minecraft:set_components"
                       }
                     ],
-                    "name": "minecraft:diamond_helmet"
+                    "name": "minecraft:iron_leggings"
                   }
                 ],
                 "rolls": 1
               },
-              {
+			  {
                 "bonus_rolls": 0,
                 "condition": {
                     "chance": 0.8,
@@ -219,13 +211,14 @@
                         "type": "minecraft:set_components"
                       }
                     ],
-                    "name": "minecraft:diamond_chestplate"
+                    "name": "minecraft:iron_boots"
                   }
                 ],
                 "rolls": 1
               }
             ]
-          }
+          },
+          "weight": 2
         }
       ],
       "rolls": 1

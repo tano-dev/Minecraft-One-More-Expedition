@@ -180,6 +180,56 @@
                 ],
                 "rolls": 1
               },
+			  {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:emerald",
+                            "pattern": "minecraft:wild"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      }
+                    ],
+                    "name": "minecraft:iron_leggings"
+                  }
+                ],
+                "rolls": 1
+              },
+			  {
+                "bonus_rolls": 0,
+                "condition": {
+                    "chance": 0.8,
+                    "type": "minecraft:random_chance"
+                  },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "modifier": [
+                      {
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:emerald",
+                            "pattern": "minecraft:wild"
+                          }
+                        },
+                        "type": "minecraft:set_components"
+                      }
+                    ],
+                    "name": "minecraft:iron_boots"
+                  }
+                ],
+                "rolls": 1
+              },
               {
                 "bonus_rolls": 0,
                 "condition": {
@@ -197,77 +247,6 @@
             ]
           },
           "weight": 2
-        },
-        {
-          "type": "minecraft:loot_table",
-          "value": {
-            "pools": [
-              {
-                "bonus_rolls": 0,
-                "condition": {
-                    "chance": 0.8,
-                    "type": "minecraft:random_chance"
-                  },
-                "entries": [
-                  {
-                    "type": "minecraft:item",
-                    "modifier": [
-                      {
-                        "components": {
-                          "minecraft:trim": {
-                            "material": "minecraft:emerald",
-                            "pattern": "minecraft:wild"
-                          }
-                        },
-                        "type": "minecraft:set_components"
-                      }
-                    ],
-                    "name": "minecraft:diamond_helmet"
-                  }
-                ],
-                "rolls": 1
-              },
-              {
-                "bonus_rolls": 0,
-                "condition": {
-                    "chance": 0.8,
-                    "type": "minecraft:random_chance"
-                  },
-                "entries": [
-                  {
-                    "type": "minecraft:item",
-                    "modifier": [
-                      {
-                        "components": {
-                          "minecraft:trim": {
-                            "material": "minecraft:emerald",
-                            "pattern": "minecraft:wild"
-                          }
-                        },
-                        "type": "minecraft:set_components"
-                      }
-                    ],
-                    "name": "minecraft:diamond_chestplate"
-                  }
-                ],
-                "rolls": 1
-              },
-              {
-                "bonus_rolls": 0,
-                "condition": {
-                    "chance": 1,
-                    "type": "minecraft:random_chance"
-                  },
-                "entries": [
-                  {
-                    "type": "minecraft:item",
-                    "name": "minecraft:diamond_sword"
-                  }
-                ],
-                "rolls": 1
-              }
-            ]
-          }
         }
       ],
       "rolls": 1

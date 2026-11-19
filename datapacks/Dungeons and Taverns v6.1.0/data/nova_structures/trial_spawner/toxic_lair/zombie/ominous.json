@@ -20,7 +20,7 @@
       "data": {
         "equipment": {
           "slot_drop_chances": 0,
-          "loot_table": "nova_structures:equipment/toxic_lair/normal"
+          "loot_table": "nova_structures:equipment/toxic_lair/ominous"
         },
         "entity": {
           "id": "minecraft:zombie",

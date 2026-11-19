@@ -20,7 +20,7 @@
       "data": {
         "equipment": {
           "slot_drop_chances": 0,
-          "loot_table": "nova_structures:equipment/toxic_lair/ranged"
+          "loot_table": "nova_structures:equipment/toxic_lair/ranged_ominous"
         },
         "entity": {
           "id": "minecraft:bogged",

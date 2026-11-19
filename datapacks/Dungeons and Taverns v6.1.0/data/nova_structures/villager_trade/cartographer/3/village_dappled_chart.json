@@ -49,7 +49,7 @@
   ],
   "max_uses": 3,
   "reputation_discount": 0.05,
-  "xp": 15,
+  "xp": 50,
   "merchant_predicate": {
     "type": "minecraft:entity_properties",
           "entity": "this",
