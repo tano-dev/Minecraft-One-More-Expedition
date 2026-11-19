@@ -1,0 +1,636 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 3,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 6
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spectral_arrow",
+          "weight": 3,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 6
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raw_iron",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 6
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 6
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_lazuli",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 6,
+                "max": 10
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 6,
+                "max": 12
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "modifier": [
+            {
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 1807251,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:unluck",
+                      "duration": 9600
+                    },
+                    {
+                      "id": "minecraft:hunger",
+                      "duration": 1600
+                    },
+                    {
+                      "id": "minecraft:weakness",
+                      "duration": 800
+                    }
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "Unethically Forged Arrow",
+                  "color": "#0e5658"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "name": {
+                "translate": "BroadHead Arrow",
+                "color": "#169a9a",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 5,
+                "max": 10
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "modifier": [
+            {
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 6684672,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:darkness",
+                      "amplifier": 1,
+                      "duration": 800
+                    },
+                    {
+                      "id": "minecraft:blindness",
+                      "amplifier": 1,
+                      "duration": 800
+                    }
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "THE FOG IS COMING",
+                  "color": "#7a0000"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "name": {
+                "translate": "Arrow of Darkness",
+                "color": "#6d2727",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 5,
+                "max": 10
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 5,
+                "max": 10
+              },
+              "type": "minecraft:set_count"
+            },
+            {
+              "name": {
+                "text": "Floater arrow",
+                "color": "#faf5f7",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "text": "fly high",
+                  "color": "#758e95"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 16709366,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:levitation",
+                      "amplifier": 1,
+                      "duration": 50
+                    }
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "condition": {
+            "chance": 0.2,
+            "type": "minecraft:random_chance"
+          },
+          "modifier": [
+            {
+              "name": {
+                "translate": "Shrek's Swamp Water",
+                "color": "#5d7b16",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "Includes Brain eating Amoeba",
+                  "color": "#3c500e"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 6126358,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:night_vision",
+                      "duration": 9600
+                    },
+                    {
+                      "id": "minecraft:resistance",
+                      "duration": 9600
+                    }
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_sword",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 100
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 100
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:goat_horn",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 20,
+                "max": 100
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 20,
+                "max": 100
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_helmet",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 10,
+                "max": 30
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 5
+              },
+              "type": "minecraft:set_count"
+            },
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 10,
+                "max": 30
+              },
+              "condition": {
+                "chance": 0.5,
+                "type": "minecraft:random_chance"
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "condition": {
+            "chance": 0.1,
+            "type": "minecraft:random_chance"
+          },
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 10,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "condition": {
+            "chance": 0.2,
+            "type": "minecraft:random_chance"
+          },
+          "modifier": [
+            {
+              "name": {
+                "text": "Bosnian Liquid",
+                "color": "#fca800",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "Sourced from the Bosnian Pyramids",
+                  "color": "#6d5c08"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 15900928,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:health_boost",
+                      "amplifier": 1,
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:strength",
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:glowing",
+                      "duration": 2400
+                    }
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_pickaxe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_shovel"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword"
+        }
+      ],
+      "condition": {
+        "chance": 0.3,
+        "type": "minecraft:random_chance"
+      },
+      "modifier": [
+        {
+          "levels": {
+            "type": "minecraft:uniform",
+            "min": 5,
+            "max": 10
+          },
+          "type": "minecraft:enchant_with_levels"
+        }
+      ]
+    }
+  ]
+}

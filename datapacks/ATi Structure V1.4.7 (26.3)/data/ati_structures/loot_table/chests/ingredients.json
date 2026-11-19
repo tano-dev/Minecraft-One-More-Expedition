@@ -1,0 +1,410 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 3,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 20
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 20
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glowstone_dust",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 20
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sugar",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 20
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear",
+          "weight": 3,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fermented_spider_eye",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 6
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spider_eye",
+          "weight": 5,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 10
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_wart",
+          "weight": 4,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 8
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_powder",
+          "weight": 2,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 6
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "modifier": [
+            {
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 16228769,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:nausea",
+                      "hidden_effect": {
+                        "id": "minecraft:speed",
+                        "amplifier": 9,
+                        "duration": 100,
+                        "hidden_effect": {
+                          "id": "minecraft:nausea",
+                          "amplifier": 9,
+                          "duration": 100,
+                          "hidden_effect": {
+                            "id": "minecraft:bad_omen",
+                            "amplifier": 9,
+                            "duration": 100
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            },
+            {
+              "lore": [
+                {
+                  "text": "Fun time!",
+                  "color": "#a47474"
+                }
+              ],
+              "mode": "append",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "name": {
+                "text": "Arrow of Lobotomy",
+                "color": "#fbd0d0",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 8
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "modifier": [
+            {
+              "name": {
+                "text": "Skibidi Elixir",
+                "color": "#cd62fe",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "text": "Just as Amazing as it looks",
+                  "color": "#9b3fc6"
+                }
+              ],
+              "mode": "append",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 10436300,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:invisibility",
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:glowing",
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:night_vision",
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:jump_boost",
+                      "amplifier": 2,
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:speed",
+                      "duration": 1200
+                    }
+                  ]
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_chestplate",
+          "modifier": [
+            {
+              "lore": [
+                {
+                  "text": "I love GOLD!",
+                  "color": "#e3be35"
+                }
+              ],
+              "mode": "append",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "name": {
+                "text": "Gold plated Tunic",
+                "color": "#fbce50",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "enchantments": {
+                "minecraft:protection": 2,
+                "minecraft:projectile_protection": 2,
+                "minecraft:unbreaking": 5
+              },
+              "type": "minecraft:set_enchantments"
+            },
+            {
+              "components": {
+                "minecraft:trim": {
+                  "material": "minecraft:copper",
+                  "pattern": "minecraft:host"
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_leggings",
+          "modifier": [
+            {
+              "name": {
+                "text": "Gucci Shorts",
+                "color": "#549672",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "text": "Cost: 22.5 Serbian Dinar",
+                  "color": "#558b72"
+                }
+              ],
+              "mode": "append",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "enchantments": {
+                "minecraft:mending": 0,
+                "minecraft:blast_protection": 5
+              },
+              "type": "minecraft:set_enchantments"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "chance": 0.5,
+        "type": "minecraft:random_chance"
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:popped_chorus_fruit",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 8
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit_hide",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 12
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glass_bottle",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 6
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ink_sac",
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 12
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

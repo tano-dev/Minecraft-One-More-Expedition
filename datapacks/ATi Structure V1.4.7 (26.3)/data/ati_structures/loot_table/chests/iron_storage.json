@@ -1,0 +1,528 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ore",
+          "weight": 6,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 10
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 6,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 12
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:deepslate_iron_ore",
+          "weight": 6,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 10
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_block",
+          "weight": 1,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 4
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tuff",
+          "weight": 3,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 10,
+                "max": 15
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobbled_deepslate",
+          "weight": 3,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 10,
+                "max": 15
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "weight": 3,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 10,
+                "max": 15
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget",
+          "weight": 8,
+          "modifier": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 25
+              },
+              "type": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "modifier": [
+            {
+              "name": {
+                "translate": "Ancient Mesopotamian Trident",
+                "color": "#5bb88c",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "Found in the Euphrates river",
+                  "color": "#1a5f38"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "enchantments": {
+                "minecraft:impaling": 8,
+                "minecraft:loyalty": 5,
+                "minecraft:unbreaking": 2
+              },
+              "type": "minecraft:set_enchantments"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet",
+          "modifier": [
+            {
+              "name": {
+                "translate": "Galvanized Iron Helmet",
+                "color": "#a7b8fb",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "Galvanized Square Steel",
+                  "color": "#747f9a"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:unbreaking": 4
+              },
+              "type": "minecraft:set_enchantments"
+            },
+            {
+              "components": {
+                "minecraft:trim": {
+                  "material": "minecraft:quartz",
+                  "pattern": "minecraft:silence"
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "modifier": [
+            {
+              "name": {
+                "translate": "The Excalibur",
+                "color": "#7aff8a",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "The one and only...",
+                  "color": "#449760"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "enchantments": {
+                "minecraft:sharpness": 5
+              },
+              "type": "minecraft:set_enchantments"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "chance": 0.3,
+        "type": "minecraft:random_chance"
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "modifier": [
+            {
+              "name": {
+                "translate": "Tinky Winky's Blade",
+                "color": "#fa01fe",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "The Greatest Weapon",
+                  "color": "#7c467c"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "enchantments": {
+                "minecraft:sharpness": 8,
+                "minecraft:knockback": 2,
+                "minecraft:silk_touch": 1
+              },
+              "type": "minecraft:set_enchantments"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots",
+          "modifier": [
+            {
+              "name": {
+                "translate": "Reinforced Iron Boots",
+                "color": "#fe5858",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "5x30/5",
+                  "color": "#b65858"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "enchantments": {
+                "minecraft:blast_protection": 1,
+                "minecraft:fire_protection": 1,
+                "minecraft:projectile_protection": 1,
+                "minecraft:protection": 1,
+                "minecraft:unbreaking": 3
+              },
+              "type": "minecraft:set_enchantments"
+            },
+            {
+              "components": {
+                "minecraft:trim": {
+                  "material": "minecraft:redstone",
+                  "pattern": "minecraft:shaper"
+                }
+              },
+              "type": "minecraft:set_components"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "modifier": [
+            {
+              "name": {
+                "translate": "Monsieur Yoro's Crossbow",
+                "color": "#9379fb",
+                "bold": true,
+                "italic": false
+              },
+              "type": "minecraft:set_name"
+            },
+            {
+              "lore": [
+                {
+                  "translate": "Je suis Madagascar",
+                  "color": "#6140b0"
+                }
+              ],
+              "mode": "insert",
+              "type": "minecraft:set_lore"
+            },
+            {
+              "enchantments": {
+                "minecraft:piercing": 5,
+                "minecraft:quick_charge": 2,
+                "minecraft:unbreaking": 2
+              },
+              "type": "minecraft:set_enchantments"
+            }
+          ]
+        }
+      ],
+      "condition": {
+        "chance": 0.3,
+        "type": "minecraft:random_chance"
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_leggings",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_helmet",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_leggings",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_boots",
+          "modifier": [
+            {
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 20
+              },
+              "type": "minecraft:enchant_with_levels"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_pickaxe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_shovel"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_hoe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bucket"
+        }
+      ],
+      "modifier": [
+        {
+          "levels": {
+            "type": "minecraft:uniform",
+            "min": 0,
+            "max": 30
+          },
+          "type": "minecraft:enchant_with_levels"
+        }
+      ]
+    }
+  ]
+}
