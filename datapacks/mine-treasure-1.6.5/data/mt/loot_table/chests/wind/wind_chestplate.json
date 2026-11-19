@@ -10,37 +10,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -72,8 +42,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -118,7 +86,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -130,37 +99,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -192,8 +131,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -238,7 +175,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -250,37 +188,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -312,8 +220,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -358,7 +264,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -370,37 +277,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -432,8 +309,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -478,7 +353,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -490,37 +366,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -552,8 +398,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -598,7 +442,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -610,37 +455,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -672,8 +487,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -718,7 +531,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -730,37 +544,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -792,8 +576,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -838,7 +620,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -850,37 +633,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -912,8 +665,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -958,7 +709,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -970,37 +722,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -1032,8 +754,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -1078,7 +798,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -1090,37 +811,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -1152,8 +843,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -1198,7 +887,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -1210,37 +900,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -1272,8 +932,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -1318,7 +976,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -1330,37 +989,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -1392,8 +1021,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -1438,7 +1065,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -1450,37 +1078,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -1512,8 +1110,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -1558,7 +1154,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -1570,37 +1167,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -1632,8 +1199,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -1678,7 +1243,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -1690,37 +1256,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -1752,8 +1288,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -1798,7 +1332,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -1810,37 +1345,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -1872,8 +1377,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -1918,7 +1421,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -1930,37 +1434,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -1992,8 +1466,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -2038,7 +1510,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -2050,37 +1523,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -2112,8 +1555,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -2158,7 +1599,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -2170,37 +1612,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -2232,8 +1644,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -2278,7 +1688,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -2290,37 +1701,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -2352,8 +1733,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -2398,7 +1777,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -2410,37 +1790,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -2472,8 +1822,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -2518,7 +1866,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -2530,37 +1879,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -2592,8 +1911,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -2638,7 +1955,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -2650,37 +1968,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -2712,8 +2000,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -2758,7 +2044,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -2770,37 +2057,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -2832,8 +2089,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -2878,7 +2133,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -2890,37 +2146,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -2952,8 +2178,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -2998,7 +2222,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -3010,37 +2235,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -3072,8 +2267,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -3118,7 +2311,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -3130,37 +2324,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -3192,8 +2356,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -3238,7 +2400,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -3250,37 +2413,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -3312,8 +2445,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -3358,7 +2489,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -3370,37 +2502,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -3432,8 +2534,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -3478,7 +2578,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -3490,37 +2591,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -3552,8 +2623,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -3598,7 +2667,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -3610,37 +2680,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -3672,8 +2712,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -3718,7 +2756,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]
@@ -3730,37 +2769,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/wind_chestplate": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/wind_chestplate": 1
               }
             },
             {
@@ -3792,8 +2801,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Wind Chestplate",
                   "color": "gold",
@@ -3838,7 +2845,8 @@
                 "minecraft:custom_data": {
                   "armor": "wind_chestplate",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 592
               }
             }
           ]

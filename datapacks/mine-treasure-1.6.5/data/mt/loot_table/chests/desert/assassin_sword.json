@@ -11,8 +11,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -79,27 +77,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -137,8 +115,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -205,27 +181,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -263,8 +219,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -331,27 +285,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -389,8 +323,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -457,27 +389,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -515,8 +427,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -583,27 +493,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -641,8 +531,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -709,27 +597,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -767,8 +635,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -835,27 +701,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -893,8 +739,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -961,27 +805,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -1019,8 +843,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -1087,27 +909,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -1145,8 +947,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -1213,27 +1013,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -1271,8 +1051,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -1339,27 +1117,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -1397,8 +1155,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -1465,27 +1221,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -1523,8 +1259,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -1591,27 +1325,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -1649,8 +1363,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -1717,27 +1429,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -1775,8 +1467,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -1843,27 +1533,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -1901,8 +1571,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -1969,27 +1637,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -2027,8 +1675,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -2095,27 +1741,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -2153,8 +1779,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -2221,27 +1845,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -2279,8 +1883,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -2347,27 +1949,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -2405,8 +1987,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -2473,27 +2053,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -2531,8 +2091,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -2599,27 +2157,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -2657,8 +2195,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -2725,27 +2261,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -2783,8 +2299,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -2851,27 +2365,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },
@@ -2909,8 +2403,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Assassin's Blade",
                   "color": "gold",
@@ -2977,27 +2469,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/assassin_blade": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:bane_of_arthropods": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/assassin_blade": 1
               },
               "add": true
             },

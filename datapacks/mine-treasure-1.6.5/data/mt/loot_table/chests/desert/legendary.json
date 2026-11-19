@@ -372,16 +372,6 @@
             {
               "type": "minecraft:enchant_with_levels",
               "levels": 50
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 20
-                }
-              }
             }
           ]
         },
@@ -402,16 +392,6 @@
             {
               "type": "minecraft:enchant_with_levels",
               "levels": 50
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 20
-                }
-              }
             }
           ]
         },
@@ -432,16 +412,6 @@
             {
               "type": "minecraft:enchant_with_levels",
               "levels": 50
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 20
-                }
-              }
             }
           ]
         },
@@ -493,16 +463,6 @@
             {
               "type": "minecraft:enchant_with_levels",
               "levels": 50
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 20
-                }
-              }
             }
           ]
         }

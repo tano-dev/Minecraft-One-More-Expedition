@@ -11,8 +11,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -42,48 +40,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -122,8 +86,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -153,48 +115,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -233,8 +161,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -264,48 +190,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -344,8 +236,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -375,48 +265,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -455,8 +311,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -486,48 +340,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -566,8 +386,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -597,48 +415,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -677,8 +461,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -708,48 +490,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -788,8 +536,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -819,48 +565,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -899,8 +611,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -930,48 +640,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -1010,8 +686,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -1041,48 +715,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -1121,8 +761,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -1152,48 +790,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -1232,8 +836,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -1263,48 +865,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -1343,8 +911,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -1374,48 +940,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -1454,8 +986,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -1485,48 +1015,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -1565,8 +1061,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -1596,48 +1090,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -1676,8 +1136,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -1707,48 +1165,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -1787,8 +1211,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -1818,48 +1240,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -1898,8 +1286,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -1929,48 +1315,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -2009,8 +1361,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -2040,48 +1390,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -2120,8 +1436,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -2151,48 +1465,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -2231,8 +1511,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -2262,48 +1540,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -2342,8 +1586,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -2373,48 +1615,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -2453,8 +1661,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -2484,48 +1690,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -2564,8 +1736,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -2595,48 +1765,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -2675,8 +1811,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -2706,48 +1840,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -2786,8 +1886,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -2817,48 +1915,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -2897,8 +1961,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -2928,48 +1990,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -3008,8 +2036,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -3039,48 +2065,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -3119,8 +2111,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -3150,48 +2140,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -3230,8 +2186,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -3261,48 +2215,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -3341,8 +2261,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -3372,48 +2290,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -3452,8 +2336,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -3483,48 +2365,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -3563,8 +2411,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -3594,48 +2440,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -3674,8 +2486,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -3705,48 +2515,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -3785,8 +2561,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -3816,48 +2590,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -3896,8 +2636,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -3927,48 +2665,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -4007,8 +2711,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -4038,48 +2740,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -4118,8 +2786,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -4149,48 +2815,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -4229,8 +2861,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -4260,48 +2890,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -4340,8 +2936,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -4371,48 +2965,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -4451,8 +3011,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -4482,48 +3040,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {
@@ -4562,8 +3086,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Taiga Pants",
                   "color": "gold",
@@ -4593,48 +3115,14 @@
                 "minecraft:custom_data": {
                   "armor": "taiga_pants",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/taiga_pants": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:thorns": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 2
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:armor/taiga_pants": 1
               }
             },
             {

@@ -372,26 +372,6 @@
               ]
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              }
-            },
-            {
               "type": "minecraft:toggle_tooltips",
               "toggles": {
                 "minecraft:attribute_modifiers": false

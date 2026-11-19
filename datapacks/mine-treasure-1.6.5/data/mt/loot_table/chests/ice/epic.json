@@ -136,52 +136,7 @@
               }
             ]
           },
-          "modifier": [
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 3
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 6
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 4,
-                  "max": 10
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            }
-          ]
+          "modifier": []
         },
         {
           "type": "minecraft:item",

@@ -143,36 +143,6 @@
           "weight": 1,
           "modifier": [
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 3
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 3
-                }
-              }
-            },
-            {
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": {
@@ -278,36 +248,6 @@
             ]
           },
           "modifier": [
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 6
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 3
-                }
-              }
-            },
             {
               "type": "minecraft:set_attributes",
               "modifiers": [

@@ -6,8 +6,8 @@ particle explosion ~ ~1 ~ 0 0 0 0 1 force @a[distance=..128]
 particle end_rod ~ ~1 ~ 0 0 0 1 30 force @a[distance=..128]
 particle end_rod ~ ~1 ~ 0 0 0 .5 30 force @a[distance=..128]
 particle end_rod ~ ~1 ~ 0 0 0 .25 30 force @a[distance=..128]
-particle flash ~ ~1 ~ 0 0 0 .25 6 force @a[distance=..128]
+particle campfire_signal_smoke ~ ~1 ~ 0 0 0 0.1 5 force @a[distance=..128]
 
-particle dragon_breath ~ ~1 ~ 0 0 0 .3 10 normal
+particle dragon_breath ~ ~1 ~ 0 0 0 .3 10 force @a[distance=..128]
 
 damage @s 24 true_ending:mob_attack_pierce_shield by @e[sort=nearest,limit=1,type=ender_dragon]

@@ -11,8 +11,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mushroom Shield",
                   "color": "gold",
@@ -170,8 +168,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mushroom Shield",
                   "color": "gold",
@@ -329,8 +325,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mushroom Shield",
                   "color": "gold",
@@ -488,8 +482,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mushroom Shield",
                   "color": "gold",
@@ -647,8 +639,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mushroom Shield",
                   "color": "gold",
@@ -806,8 +796,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mushroom Shield",
                   "color": "gold",
@@ -965,8 +953,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mushroom Shield",
                   "color": "gold",
@@ -1124,8 +1110,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mushroom Shield",
                   "color": "gold",
@@ -1283,8 +1267,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mushroom Shield",
                   "color": "gold",

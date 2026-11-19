@@ -16,8 +16,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -75,27 +73,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -134,8 +111,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -193,27 +168,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -252,8 +206,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -311,27 +263,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -370,8 +301,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -429,27 +358,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -488,8 +396,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -547,27 +453,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -606,8 +491,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -665,27 +548,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -724,8 +586,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -783,27 +643,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -842,8 +681,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -901,27 +738,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -960,8 +776,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -1019,27 +833,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -1078,8 +871,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -1137,27 +928,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -1196,8 +966,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -1255,27 +1023,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -1314,8 +1061,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -1373,27 +1118,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -1432,8 +1156,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -1491,27 +1213,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -1550,8 +1251,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -1609,27 +1308,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -1668,8 +1346,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -1727,27 +1403,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -1786,8 +1441,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -1845,27 +1498,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -1904,8 +1536,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -1963,27 +1593,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -2022,8 +1631,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -2081,27 +1688,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -2140,8 +1726,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -2199,27 +1783,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -2258,8 +1821,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -2317,27 +1878,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -2376,8 +1916,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -2433,27 +1971,6 @@
               "toggles": {
                 "minecraft:attribute_modifiers": false
               }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
             },
             {
               "type": "minecraft:set_lore",
@@ -2494,8 +2011,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -2553,27 +2068,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -2612,8 +2106,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -2671,27 +2163,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
-            },
-            {
               "type": "minecraft:set_lore",
               "lore": [
                 {
@@ -2730,8 +2201,6 @@
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Toxic Machette",
                   "color": "gold",
@@ -2787,27 +2256,6 @@
               "toggles": {
                 "minecraft:attribute_modifiers": false
               }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              "add": true
             },
             {
               "type": "minecraft:set_lore",

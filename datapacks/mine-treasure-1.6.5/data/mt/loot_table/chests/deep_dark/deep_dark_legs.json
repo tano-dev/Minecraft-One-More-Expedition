@@ -11,39 +11,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -53,7 +26,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -136,39 +110,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -178,7 +125,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -261,39 +209,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -303,7 +224,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -386,39 +308,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -428,7 +323,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -511,39 +407,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -553,7 +422,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -636,39 +506,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -678,7 +521,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -761,39 +605,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -803,7 +620,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -886,39 +704,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -928,7 +719,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -1011,39 +803,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -1053,7 +818,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -1136,39 +902,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -1178,7 +917,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -1261,39 +1001,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -1303,7 +1016,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -1386,39 +1100,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -1428,7 +1115,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -1511,39 +1199,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -1553,7 +1214,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -1636,39 +1298,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -1678,7 +1313,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -1761,39 +1397,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -1803,7 +1412,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -1886,39 +1496,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -1928,7 +1511,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -2011,39 +1595,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -2053,7 +1610,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -2136,39 +1694,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -2178,7 +1709,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -2261,39 +1793,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -2303,7 +1808,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -2386,39 +1892,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -2428,7 +1907,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -2511,39 +1991,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -2553,7 +2006,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -2636,39 +2090,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -2678,7 +2105,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -2761,39 +2189,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -2803,7 +2204,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -2886,39 +2288,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -2928,7 +2303,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -3011,39 +2387,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -3053,7 +2402,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -3136,39 +2486,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -3178,7 +2501,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -3261,39 +2585,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -3303,7 +2600,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -3386,39 +2684,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -3428,7 +2699,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -3511,39 +2783,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -3553,7 +2798,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -3636,39 +2882,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -3678,7 +2897,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -3761,39 +2981,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -3803,7 +2996,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -3886,39 +3080,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -3928,7 +3095,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -4011,39 +3179,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -4053,7 +3194,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -4136,39 +3278,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -4178,7 +3293,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -4261,39 +3377,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -4303,7 +3392,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -4386,39 +3476,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -4428,7 +3491,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -4511,39 +3575,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -4553,7 +3590,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -4636,39 +3674,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -4678,7 +3689,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -4761,39 +3773,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -4803,7 +3788,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -4886,39 +3872,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -4928,7 +3887,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -5011,39 +3971,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -5053,7 +3986,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -5136,39 +4070,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -5178,7 +4085,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
@@ -5261,39 +4169,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/deep_dark_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:swift_sneak": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/deep_dark_leggings": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:dyed_color": 722516,
                 "minecraft:tooltip_display": {
                   "hidden_components": [
@@ -5303,7 +4184,8 @@
                 "minecraft:custom_data": {
                   "armor": "deep_dark_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {

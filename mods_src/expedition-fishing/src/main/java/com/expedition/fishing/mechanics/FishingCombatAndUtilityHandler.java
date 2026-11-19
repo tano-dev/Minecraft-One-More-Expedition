@@ -7,7 +7,9 @@ import com.expedition.fishing.data.PlayerDataStorage;
 import com.expedition.fishing.gui.FishingGui;
 import com.expedition.fishing.item.FishingItemFactory;
 import com.google.gson.JsonObject;
+import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
+import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
 import net.minecraft.core.BlockPos;
@@ -56,6 +58,11 @@ public class FishingCombatAndUtilityHandler {
             ItemStack stack = sp.getItemInHand(hand);
             String customId = FishingItemFactory.getCustomItemId(stack);
             if (customId == null) return InteractionResult.PASS;
+
+            // Block any accidental interaction with passive Artifacts
+            if (FishingDataRegistry.ARTIFACTS.containsKey(customId)) {
+                return InteractionResult.FAIL;
+            }
 
             FishingPlayerData data = PlayerDataStorage.get(sp.getUUID());
 
@@ -142,6 +149,38 @@ public class FishingCombatAndUtilityHandler {
 
             return InteractionResult.PASS;
         });
+
+        // 4. Prevent placing Artifacts on blocks
+        UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
+            ItemStack stack = player.getItemInHand(hand);
+            String customId = FishingItemFactory.getCustomItemId(stack);
+            if (customId != null && FishingDataRegistry.ARTIFACTS.containsKey(customId)) {
+                return InteractionResult.FAIL;
+            }
+            return InteractionResult.PASS;
+        });
+
+        // 5. Abyssal Protection: reduce damage taken from Sea Creatures
+        ServerLivingEntityEvents.AFTER_DAMAGE.register((entity, source, baseDamageTaken, damageTaken, blocked) -> {
+            if (!(entity instanceof ServerPlayer sp) || !sp.isAlive() || damageTaken <= 0.0f) return;
+            Entity attacker = source.getEntity();
+            if (attacker == null || !FishingEngine.isTrackedCreature(attacker.getUUID())) return;
+
+            int totalProtLv = 0;
+            EquipmentSlot[] armorSlots = {EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET};
+            for (EquipmentSlot slot : armorSlots) {
+                totalProtLv += FishingEngine.getRodEnchants(sp.getItemBySlot(slot))
+                        .getOrDefault("expedition_fishing:abyssal_protection", 0);
+            }
+            if (totalProtLv > 0) {
+                double perLv = FishingDataRegistry.getEnchantBalance("abyssal_protection_reduction_per_level", 0.08);
+                double reduction = Math.min(0.60, totalProtLv * perLv);
+                float healBack = (float) (damageTaken * reduction);
+                if (healBack > 0.05f) {
+                    sp.heal(healBack);
+                }
+            }
+        });
     }
 
     private static double computePlayerScaBonus(ServerPlayer player, ServerLevel level) {
@@ -157,6 +196,11 @@ public class FishingCombatAndUtilityHandler {
         Map<String, Integer> enchs = FishingEngine.getRodEnchants(main);
         if (enchs.getOrDefault("enchantencore:harpoon", 0) > 0) sca += 15.0;
         sca += enchs.getOrDefault("expedition_fishing:slayer_hook", 0) * 15.0;
+        int abyssalSlayerLv = enchs.getOrDefault("expedition_fishing:abyssal_slayer", 0);
+        if (abyssalSlayerLv > 0) {
+            double dmgPerLv = FishingDataRegistry.getEnchantBalance("abyssal_slayer_damage_per_level", 1.5);
+            sca += abyssalSlayerLv * dmgPerLv * 15.0;
+        }
 
         // Nearby Battle Totems
         for (ActiveTotem t : ACTIVE_TOTEMS) {

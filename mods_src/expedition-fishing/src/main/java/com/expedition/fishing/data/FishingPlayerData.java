@@ -12,8 +12,18 @@ public class FishingPlayerData {
     public int treasuresCaught = 0;
     public Map<String, Integer> mobCatches = new ConcurrentHashMap<>();
     public Map<String, Double> bestWeights = new ConcurrentHashMap<>();
+    public Map<String, Long> essences = new ConcurrentHashMap<>();
     public Set<String> discoveredArtifacts = ConcurrentHashMap.newKeySet();
     public List<String> artifactBag = new ArrayList<>();
+
+    public long getEssenceAmount(String type) {
+        return essences.getOrDefault(type.toUpperCase(Locale.ROOT), 0L);
+    }
+
+    public void addEssence(String type, long amount) {
+        essences.merge(type.toUpperCase(Locale.ROOT), amount, Long::sum);
+        dirty = true;
+    }
 
     // Transient runtime states (not persisted)
     public transient int frenzyStacks = 0;

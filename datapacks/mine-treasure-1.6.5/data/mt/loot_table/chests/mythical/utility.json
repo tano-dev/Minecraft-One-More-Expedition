@@ -32,15 +32,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "minecraft:efficiency": 10,
                 "mt:technical/giga_bore": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Giga Bore",
                   "color": "gold",

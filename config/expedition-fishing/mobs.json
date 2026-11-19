@@ -18,7 +18,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "salmon": {
     "entity_type": "SALMON",
@@ -39,7 +40,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "squid": {
     "entity_type": "SQUID",
@@ -60,7 +62,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "pufferfish": {
     "entity_type": "PUFFERFISH",
@@ -81,7 +84,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "drowned": {
     "entity_type": "DROWNED",
@@ -107,7 +111,8 @@
       "health_multiplier": 1.0,
       "damage_multiplier": 0.7,
       "aggro_players": true
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "guardian": {
     "entity_type": "GUARDIAN",
@@ -135,7 +140,8 @@
       "aggro": {
         "speed": 0.25
       }
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "sulfur_cube": {
     "entity_type": "SULFUR_CUBE",
@@ -161,7 +167,8 @@
       "health": 42.0,
       "name_color": "YELLOW",
       "glow_color": "YELLOW"
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "elder_guardian": {
     "entity_type": "ELDER_GUARDIAN",
@@ -186,7 +193,8 @@
     "spawn": {
       "health_multiplier": 0.84,
       "damage_multiplier": 2.2
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "dead_rider": {
     "entity_type": "STRAY",
@@ -256,7 +264,8 @@
           "chance": 0.8
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "iron_golem_aggro": {
     "entity_type": "IRON_GOLEM",
@@ -290,7 +299,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "pillager_trio": {
     "entity_type": "PILLAGER",
@@ -330,7 +340,8 @@
           "damage_multiplier": 1.4
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "pillager_quartet": {
     "entity_type": "PILLAGER",
@@ -376,7 +387,8 @@
           "damage_multiplier": 1.4
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "pillager_quintet": {
     "entity_type": "PILLAGER",
@@ -434,7 +446,8 @@
           }
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "husk": {
     "entity_type": "HUSK",
@@ -458,7 +471,8 @@
     ],
     "spawn": {
       "damage_multiplier": 1.5
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "parched": {
     "entity_type": "PARCHED",
@@ -486,7 +500,8 @@
       "equipment": {
         "mainhand": "enchanted:BOW:POWER:3"
       }
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "dune_rider": {
     "entity_type": "CAMEL_HUSK",
@@ -527,7 +542,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "bogged": {
     "entity_type": "BOGGED",
@@ -548,7 +564,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "slime": {
     "entity_type": "SLIME",
@@ -575,7 +592,8 @@
       "slime_size": 4,
       "damage_multiplier": 2.1,
       "group_kill_all": true
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "witch": {
     "entity_type": "WITCH",
@@ -606,7 +624,8 @@
         "hit_interval": 19
       },
       "particle": "potion"
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "king_slime": {
     "entity_type": "SLIME",
@@ -643,7 +662,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "hyena": {
     "entity_type": "WOLF",
@@ -674,7 +694,8 @@
     "spawn": {
       "health_multiplier": 2.0,
       "damage_multiplier": 0.7
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "stampede_bull": {
     "entity_type": "RAVAGER",
@@ -699,7 +720,8 @@
     "spawn": {
       "health_multiplier": 1.3,
       "damage_multiplier": 1.65
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "vulture_king": {
     "entity_type": "PHANTOM",
@@ -733,7 +755,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "jungle_spider": {
     "entity_type": "SPIDER",
@@ -757,7 +780,8 @@
     ],
     "spawn": {
       "particle": "venom_purple"
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "vine_strangler": {
     "entity_type": "CREEPER",
@@ -788,7 +812,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "temple_guardian": {
     "entity_type": "EVOKER",
@@ -830,7 +855,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "zombie_nautilus": {
     "enabled": true,
@@ -863,7 +889,8 @@
       "health": 60.0,
       "damage_multiplier": 1.4,
       "name_color": "DARK_AQUA"
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "great_white": {
     "entity_type": "DOLPHIN",
@@ -894,7 +921,8 @@
         "range": 5.0,
         "hit_interval": 40
       }
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "megalodon": {
     "entity_type": "DOLPHIN",
@@ -940,7 +968,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "poseidon": {
     "entity_type": "DROWNED",
@@ -1013,7 +1042,8 @@
         "boots": "dyed:LEATHER_BOOTS:#005064",
         "mainhand": "enchanted:TRIDENT:IMPALING:5"
       }
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "stray": {
     "entity_type": "STRAY",
@@ -1037,7 +1067,8 @@
     ],
     "spawn": {
       "damage_multiplier": 2.0
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "angry_polar_bear": {
     "entity_type": "POLAR_BEAR",
@@ -1063,7 +1094,8 @@
       "health_multiplier": 1.5,
       "damage_multiplier": 2.1,
       "particle": "blood_light"
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "frost_phantom": {
     "entity_type": "PHANTOM",
@@ -1097,7 +1129,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "glow_squid_of_death": {
     "entity_type": "GLOW_SQUID",
@@ -1127,7 +1160,8 @@
         "range": 2.5,
         "hit_interval": 30
       }
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "silverfish": {
     "entity_type": "SILVERFISH",
@@ -1152,7 +1186,8 @@
     "spawn": {
       "health_multiplier": 3.0,
       "damage_multiplier": 2.1
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "cave_spider": {
     "entity_type": "CAVE_SPIDER",
@@ -1178,7 +1213,8 @@
       "health_multiplier": 2.0,
       "damage_multiplier": 1.5,
       "particle": "venom_green"
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "spider_jockey": {
     "entity_type": "SPIDER",
@@ -1234,7 +1270,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "mooshroom_angry": {
     "entity_type": "MOOSHROOM",
@@ -1256,7 +1293,8 @@
         "range": 2.5,
         "hit_interval": 25
       }
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "warden": {
     "entity_type": "WARDEN",
@@ -1295,7 +1333,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "creaking": {
     "entity_type": "CREAKING",
@@ -1335,7 +1374,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "creaking_gang": {
     "entity_type": "CREAKING",
@@ -1388,7 +1428,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "treasure_common": {
     "entity_type": "ARMOR_STAND",
@@ -1409,7 +1450,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "treasure_uncommon": {
     "entity_type": "ARMOR_STAND",
@@ -1430,7 +1472,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "treasure_rare": {
     "entity_type": "ARMOR_STAND",
@@ -1451,7 +1494,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "treasure_epic": {
     "entity_type": "ARMOR_STAND",
@@ -1472,7 +1516,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "treasure_legendary": {
     "entity_type": "ARMOR_STAND",
@@ -1493,7 +1538,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "tropical_fish": {
     "entity_type": "TROPICAL_FISH",
@@ -1514,7 +1560,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "glow_squid": {
     "entity_type": "GLOW_SQUID",
@@ -1535,7 +1582,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "dolphin": {
     "entity_type": "DOLPHIN",
@@ -1556,7 +1604,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "frog": {
     "entity_type": "FROG",
@@ -1577,7 +1626,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "axolotl": {
     "entity_type": "AXOLOTL",
@@ -1598,7 +1648,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "turtle": {
     "entity_type": "TURTLE",
@@ -1619,7 +1670,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "nautilus": {
     "enabled": true,
@@ -1641,7 +1693,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "chicken": {
     "entity_type": "CHICKEN",
@@ -1668,7 +1721,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "cow": {
     "entity_type": "COW",
@@ -1695,7 +1749,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "pig": {
     "entity_type": "PIG",
@@ -1716,7 +1771,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "sheep": {
     "entity_type": "SHEEP",
@@ -1743,7 +1799,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "wolf": {
     "entity_type": "WOLF",
@@ -1756,7 +1813,8 @@
     "boost_by_rare_creature": false,
     "collection_icon": "WOLF_SPAWN_EGG",
     "collection_name": "Wild Wolf",
-    "rarity": "UNCOMMON"
+    "rarity": "UNCOMMON",
+    "essence_drop": "WATER_ESSENCE"
   },
   "fox": {
     "entity_type": "FOX",
@@ -1769,7 +1827,8 @@
     "boost_by_rare_creature": false,
     "collection_icon": "FOX_SPAWN_EGG",
     "collection_name": "Sly Fox",
-    "rarity": "UNCOMMON"
+    "rarity": "UNCOMMON",
+    "essence_drop": "WATER_ESSENCE"
   },
   "rabbit": {
     "entity_type": "RABBIT",
@@ -1796,7 +1855,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "polar_bear": {
     "entity_type": "POLAR_BEAR",
@@ -1817,7 +1877,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "ocelot": {
     "entity_type": "OCELOT",
@@ -1830,7 +1891,8 @@
     "boost_by_rare_creature": false,
     "collection_icon": "OCELOT_SPAWN_EGG",
     "collection_name": "Jungle Ocelot",
-    "rarity": "UNCOMMON"
+    "rarity": "UNCOMMON",
+    "essence_drop": "WATER_ESSENCE"
   },
   "goat": {
     "entity_type": "GOAT",
@@ -1843,7 +1905,8 @@
     "boost_by_rare_creature": false,
     "collection_icon": "GOAT_SPAWN_EGG",
     "collection_name": "Mountain Goat",
-    "rarity": "UNCOMMON"
+    "rarity": "UNCOMMON",
+    "essence_drop": "WATER_ESSENCE"
   },
   "llama": {
     "entity_type": "LLAMA",
@@ -1864,7 +1927,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "panda": {
     "entity_type": "PANDA",
@@ -1885,7 +1949,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "parrot": {
     "entity_type": "PARROT",
@@ -1906,7 +1971,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "mooshroom": {
     "entity_type": "MOOSHROOM",
@@ -1927,7 +1993,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "armadillo": {
     "entity_type": "ARMADILLO",
@@ -1948,7 +2015,8 @@
         "min": 1,
         "max": 1
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "magma_tadpole": {
     "entity_type": "MAGMA_CUBE",
@@ -1975,7 +2043,8 @@
       "slime_size": 1,
       "damage_multiplier": 3.0,
       "health_multiplier": 2.0
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "lava_cod": {
     "entity_type": "COD",
@@ -2006,7 +2075,8 @@
         "hit_interval": 15
       },
       "particle": "flame"
-    }
+    },
+    "essence_drop": "MAGMA_ESSENCE"
   },
   "blaze_fisher": {
     "entity_type": "BLAZE",
@@ -2046,7 +2116,8 @@
         }
       ],
       "scale": 1.5
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "magma_swimmer": {
     "entity_type": "MAGMA_CUBE",
@@ -2094,7 +2165,8 @@
         }
       ],
       "health_multiplier": 4.0
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "ghastling": {
     "entity_type": "GHAST",
@@ -2126,7 +2198,8 @@
         "hit_interval": 35
       },
       "particle": "soul"
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "piglin_floater": {
     "entity_type": "ZOMBIFIED_PIGLIN",
@@ -2151,7 +2224,8 @@
     "spawn": {
       "health_multiplier": 2.5,
       "damage_multiplier": 2.5
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "wither_angler": {
     "entity_type": "WITHER_SKELETON",
@@ -2183,7 +2257,8 @@
         "leggings": "enchanted:GOLDEN_LEGGINGS:PROTECTION:3",
         "boots": "enchanted:GOLDEN_BOOTS:PROTECTION:3"
       }
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "ghast_broodmother": {
     "entity_type": "GHAST",
@@ -2232,7 +2307,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "crimson_minnow": {
     "entity_type": "SALMON",
@@ -2263,7 +2339,8 @@
         "hit_interval": 20
       },
       "particle": "damage_indicator"
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "fungal_strider": {
     "entity_type": "STRIDER",
@@ -2294,7 +2371,8 @@
         "hit_interval": 25
       },
       "particle": "ash"
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "hoglin_brute": {
     "entity_type": "HOGLIN",
@@ -2333,7 +2411,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "piglin_war_party": {
     "entity_type": "PIGLIN",
@@ -2379,7 +2458,8 @@
           "damage_multiplier": 2.1
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "crimson_abomination": {
     "entity_type": "HOGLIN",
@@ -2446,7 +2526,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "warped_jellyfish": {
     "entity_type": "TROPICAL_FISH",
@@ -2477,7 +2558,8 @@
         "hit_interval": 20
       },
       "particle": "reverse_portal"
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "ender_minnow": {
     "entity_type": "ENDERMITE",
@@ -2503,7 +2585,8 @@
       "health_multiplier": 2.5,
       "damage_multiplier": 2.5,
       "scale": 1.2
-    }
+    },
+    "essence_drop": "VOID_ESSENCE"
   },
   "warped_enderman": {
     "entity_type": "ENDERMAN",
@@ -2549,7 +2632,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "VOID_ESSENCE"
   },
   "ender_angler": {
     "entity_type": "ENDERMAN",
@@ -2609,7 +2693,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "VOID_ESSENCE"
   },
   "lost_soul": {
     "entity_type": "VEX",
@@ -2634,7 +2719,8 @@
     "spawn": {
       "particle": "soul",
       "health_multiplier": 2.0
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "soul_warden": {
     "entity_type": "WITHER_SKELETON",
@@ -2686,7 +2772,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "wailing_ghast_duo": {
     "entity_type": "GHAST",
@@ -2742,7 +2829,8 @@
           "health": 455.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "basalt_crab": {
     "entity_type": "SILVERFISH",
@@ -2767,7 +2855,8 @@
     "spawn": {
       "health_multiplier": 3.0,
       "damage_multiplier": 2.5
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "magma_golem": {
     "entity_type": "IRON_GOLEM",
@@ -2807,7 +2896,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "the_wither": {
     "entity_type": "WITHER",
@@ -2867,7 +2957,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "nether_lord": {
     "entity_type": "WITHER_SKELETON",
@@ -2934,7 +3025,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "MAGMA_ESSENCE"
   },
   "void_minnow": {
     "entity_type": "COD",
@@ -2959,7 +3051,8 @@
         "min": 1,
         "max": 2
       }
-    ]
+    ],
+    "essence_drop": "VOID_ESSENCE"
   },
   "chorus_puffer": {
     "entity_type": "PUFFERFISH",
@@ -2984,7 +3077,8 @@
         "min": 1,
         "max": 2
       }
-    ]
+    ],
+    "essence_drop": "WATER_ESSENCE"
   },
   "void_mite": {
     "entity_type": "ENDERMITE",
@@ -3009,7 +3103,8 @@
       "health": 80.0,
       "damage": 9.0,
       "particle": "portal"
-    }
+    },
+    "essence_drop": "VOID_ESSENCE"
   },
   "rift_phantom": {
     "entity_type": "PHANTOM",
@@ -3053,7 +3148,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "prismatic_guardian": {
     "entity_type": "GUARDIAN",
@@ -3103,7 +3199,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "crystal_shulker": {
     "entity_type": "SHULKER",
@@ -3147,7 +3244,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "sculk_lurker": {
     "entity_type": "ENDERMAN",
@@ -3198,7 +3296,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "shadow_stalker": {
     "entity_type": "ENDERMAN",
@@ -3249,7 +3348,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "abyssal_leviathan": {
     "entity_type": "ELDER_GUARDIAN",
@@ -3299,7 +3399,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "void_kraken": {
     "entity_type": "ELDER_GUARDIAN",
@@ -3355,7 +3456,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "VOID_ESSENCE"
   },
   "ender_hydra": {
     "entity_type": "RAVAGER",
@@ -3425,7 +3527,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "VOID_ESSENCE"
   },
   "starlight_wyrm": {
     "entity_type": "PHANTOM",
@@ -3487,7 +3590,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "chorus_jellyfish": {
     "entity_type": "GLOW_SQUID",
@@ -3531,7 +3635,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "amethyst_crab": {
     "entity_type": "ENDERMITE",
@@ -3569,7 +3674,8 @@
           "damage": 10.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "frosted_void_ray": {
     "entity_type": "PHANTOM",
@@ -3618,7 +3724,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "VOID_ESSENCE"
   },
   "ashfall_behemoth": {
     "entity_type": "MAGMA_CUBE",
@@ -3663,7 +3770,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "hallowed_seraph": {
     "entity_type": "STRAY",
@@ -3732,7 +3840,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "null_devourer": {
     "entity_type": "RAVAGER",
@@ -3783,7 +3892,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "chronos_archon": {
     "entity_type": "WITHER_SKELETON",
@@ -3858,7 +3968,8 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "WATER_ESSENCE"
   },
   "void_emperor": {
     "entity_type": "WITHER_SKELETON",
@@ -3941,6 +4052,7 @@
           "chance": 1.0
         }
       ]
-    }
+    },
+    "essence_drop": "VOID_ESSENCE"
   }
 }

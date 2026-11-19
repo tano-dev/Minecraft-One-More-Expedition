@@ -115,7 +115,7 @@
     "enchantsplus:stride",
     "enchantsplus:websnare",
     "expedition_fishing:angler_instinct",
-    "expedition_fishing:bait_saver",
+    "expedition_fishing:essence_siphon",
     "expedition_fishing:blazing_line",
     "expedition_fishing:deep_water",
     "expedition_fishing:double_hook",
@@ -210,6 +210,11 @@
     "stellarity:_technical/void_pendant/lapis",
     "stellarity:_technical/void_pendant/netherite",
     "stellarity:_technical/void_pendant/quartz",
-    "veinminer-enchantment:veinminer"
+    "veinminer-enchantment:veinminer",
+    "expedition_fishing:abyssal_protection",
+    "expedition_fishing:abyssal_slayer",
+    "keepinv:deathlock",
+    "keepinv:gravehold",
+    "keepinv:safekeep"
   ]
 }

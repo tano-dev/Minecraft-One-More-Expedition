@@ -11,8 +11,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -72,22 +70,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -125,8 +108,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -186,22 +167,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -239,8 +205,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -300,22 +264,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -353,8 +302,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -414,22 +361,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -467,8 +399,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -528,22 +458,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -581,8 +496,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -642,22 +555,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -695,8 +593,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -756,22 +652,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -809,8 +690,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -870,22 +749,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -923,8 +787,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -984,22 +846,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -1037,8 +884,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -1098,22 +943,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -1151,8 +981,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -1212,22 +1040,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -1265,8 +1078,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -1326,22 +1137,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -1379,8 +1175,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -1440,22 +1234,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -1493,8 +1272,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -1554,22 +1331,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -1607,8 +1369,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -1668,22 +1428,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -1721,8 +1466,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -1782,22 +1525,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -1835,8 +1563,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -1896,22 +1622,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -1949,8 +1660,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -2010,22 +1719,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -2063,8 +1757,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -2124,22 +1816,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -2177,8 +1854,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -2238,22 +1913,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -2291,8 +1951,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -2352,22 +2010,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -2405,8 +2048,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -2466,22 +2107,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -2519,8 +2145,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -2580,22 +2204,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },
@@ -2633,8 +2242,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Sword",
                   "color": "gold",
@@ -2694,22 +2301,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/ice_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                }
+                "mt:weapons/ice_sword": 1
               },
               "add": true
             },

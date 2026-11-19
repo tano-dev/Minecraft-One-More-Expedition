@@ -21,55 +21,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -97,8 +48,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -148,55 +97,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -224,8 +124,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -275,55 +173,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -351,8 +200,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -402,55 +249,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -478,8 +276,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -529,55 +325,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -605,8 +352,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -656,55 +401,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -732,8 +428,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -783,55 +477,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -859,8 +504,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -910,55 +553,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -986,8 +580,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -1037,55 +629,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -1113,8 +656,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -1164,55 +705,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -1240,8 +732,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -1291,55 +781,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -1367,8 +808,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -1418,55 +857,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -1494,8 +884,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }
@@ -1545,55 +933,6 @@
               "count": 1
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:riptide": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 5
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.7
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 8
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -1621,8 +960,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "mt": "weapon"
                 }

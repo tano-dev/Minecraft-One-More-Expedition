@@ -1,28 +1,28 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:chorus_fruit",
-                    "modifier": {
-                        "type": "minecraft:set_components",
-                        "components": {
-                            "minecraft:enchantment_glint_override": true,
-                            "minecraft:custom_name": {
-                                "text": "Enchanted Chorus Fruit",
-                                "color": "light_purple",
-                                "italic": false
-                            },
-                            "minecraft:custom_data": {
-                                "food": "enchanted_chorus_fruit"
-                            }
-                        }
-                    }
-                }
-            ]
+          "type": "minecraft:item",
+          "name": "minecraft:chorus_fruit",
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:enchantment_glint_override": true,
+              "minecraft:custom_name": {
+                "text": "Enchanted Chorus Fruit",
+                "color": "light_purple",
+                "italic": false
+              },
+              "minecraft:custom_data": {
+                "food": "enchanted_chorus_fruit"
+              }
+            }
+          }
         }
-    ],
-    "modifier": []
+      ]
+    }
+  ],
+  "modifier": []
 }

@@ -11,8 +11,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -77,27 +75,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -135,8 +113,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -201,27 +177,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -259,8 +215,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -325,27 +279,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -383,8 +317,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -449,27 +381,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -507,8 +419,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -573,27 +483,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -631,8 +521,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -697,27 +585,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -755,8 +623,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -821,27 +687,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -879,8 +725,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -945,27 +789,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -1003,8 +827,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -1069,27 +891,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -1127,8 +929,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -1193,27 +993,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -1251,8 +1031,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -1317,27 +1095,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -1375,8 +1133,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -1441,27 +1197,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -1499,8 +1235,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -1565,27 +1299,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -1623,8 +1337,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -1689,27 +1401,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -1747,8 +1439,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -1813,27 +1503,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -1871,8 +1541,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -1937,27 +1605,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -1995,8 +1643,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -2061,27 +1707,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -2119,8 +1745,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -2185,27 +1809,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -2243,8 +1847,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -2309,27 +1911,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -2367,8 +1949,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -2433,27 +2013,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -2491,8 +2051,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -2557,27 +2115,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -2615,8 +2153,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -2681,27 +2217,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -2739,8 +2255,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -2805,27 +2319,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },
@@ -2863,8 +2357,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Hurricane Sword",
                   "color": "gold",
@@ -2929,27 +2421,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/hurricane_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:sweeping_edge": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:weapons/hurricane_sword": 1
               },
               "add": true
             },

@@ -10,8 +10,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -46,33 +44,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -103,8 +82,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -139,33 +116,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -196,8 +154,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -232,33 +188,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -289,8 +226,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -325,33 +260,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -382,8 +298,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -418,33 +332,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -475,8 +370,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -511,33 +404,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -568,8 +442,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -604,33 +476,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -661,8 +514,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -697,33 +548,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -754,8 +586,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -790,33 +620,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -847,8 +658,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -883,33 +692,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -940,8 +730,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -976,33 +764,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -1033,8 +802,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -1069,33 +836,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -1126,8 +874,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -1162,33 +908,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -1219,8 +946,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -1255,33 +980,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -1312,8 +1018,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -1348,33 +1052,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -1405,8 +1090,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -1441,33 +1124,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -1498,8 +1162,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -1534,33 +1196,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -1591,8 +1234,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -1627,33 +1268,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -1684,8 +1306,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -1720,33 +1340,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -1777,8 +1378,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -1813,33 +1412,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -1870,8 +1450,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -1906,33 +1484,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -1963,8 +1522,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -1999,33 +1556,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -2056,8 +1594,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -2092,33 +1628,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -2149,8 +1666,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -2185,33 +1700,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -2242,8 +1738,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -2278,33 +1772,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -2335,8 +1810,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -2371,33 +1844,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -2428,8 +1882,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -2464,33 +1916,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -2521,8 +1954,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -2557,33 +1988,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -2614,8 +2026,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -2650,33 +2060,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -2707,8 +2098,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -2743,33 +2132,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -2800,8 +2170,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -2836,33 +2204,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -2893,8 +2242,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -2929,33 +2276,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -2986,8 +2314,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -3022,33 +2348,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -3079,8 +2386,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -3115,33 +2420,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -3172,8 +2458,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -3208,33 +2492,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -3265,8 +2530,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -3301,33 +2564,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {
@@ -3358,8 +2602,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Dripstone Helmet",
                   "color": "gold",
@@ -3394,33 +2636,14 @@
                 "minecraft:custom_data": {
                   "armor": "dripstone_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/dripstone_helmet": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
+                "mt:armor/dripstone_helmet": 1
               }
             },
             {

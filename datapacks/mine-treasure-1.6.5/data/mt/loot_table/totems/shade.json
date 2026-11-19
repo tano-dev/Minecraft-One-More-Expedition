@@ -1,65 +1,65 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:totem_of_undying",
+          "modifier": [
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
                 {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:totem_of_undying",
-                    "modifier": [
-                        {
-                            "type": "minecraft:set_lore",
-                            "lore": [
-                                {
-                                    "text": "When activated teleports the user a short ",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "distance away, replacing them with Jo-. ",
-                                    "color": "gray",
-                                    "italic": false
-                                }
-                            ],
-                            "mode": "replace_all"
-                        },
-                        {
-                            "type": "set_name",
-                            "name": [
-                                {
-                                    "text": "Totem of Shade",
-                                    "color": "gold",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "type": "minecraft:set_components",
-                            "components": {
-                                "minecraft:enchantment_glint_override": true,
-                                "minecraft:custom_data": {
-                                    "weapon": "totemshade",
-                                    "mt": "weapon"
-                                }
-                            }
-                        },
-                        {
-                            "type": "minecraft:set_attributes",
-                            "modifiers": [
-                                {
-                                    "id": "shade",
-                                    "attribute": "minecraft:attack_speed",
-                                    "amount": 0.05,
-                                    "operation": "add_multiplied_total",
-                                    "slot": "offhand"
-                                }
-                            ]
-                        }
-                    ]
+                  "text": "When activated teleports the user a short ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "distance away, replacing them with Jo-. ",
+                  "color": "gray",
+                  "italic": false
                 }
-            ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "set_name",
+              "name": [
+                {
+                  "text": "Totem of Shade",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "weapon": "totemshade",
+                  "mt": "weapon"
+                }
+              }
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "shade",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": 0.05,
+                  "operation": "add_multiplied_total",
+                  "slot": "offhand"
+                }
+              ]
+            }
+          ]
         }
-    ],
-    "modifier": []
+      ]
+    }
+  ],
+  "modifier": []
 }

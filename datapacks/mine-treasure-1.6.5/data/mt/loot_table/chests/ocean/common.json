@@ -379,11 +379,19 @@
               }
             ]
           },
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": 30,
-            "options": "#minecraft:in_enchanting_table"
-          }
+          "modifier": [
+            {
+              "type": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "options": "#minecraft:in_enchanting_table"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:max_damage": 407
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -407,11 +415,19 @@
               }
             ]
           },
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": 30,
-            "options": "#minecraft:in_enchanting_table"
-          }
+          "modifier": [
+            {
+              "type": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "options": "#minecraft:in_enchanting_table"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:max_damage": 555
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",

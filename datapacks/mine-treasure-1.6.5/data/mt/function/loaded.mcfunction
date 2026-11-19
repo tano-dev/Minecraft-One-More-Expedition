@@ -2,9 +2,9 @@
 
 execute store result score $difficulty mt.var run difficulty
 
-function mt:settings/progression/standard
+function mt:settings/progression/high
 
-function mt:settings/frequency/standard
+function mt:settings/frequency/low
 
 data modify storage mt:settings 3 set value {type:"minecraft:number_range",key:"3",width:200,label:{text:"Loot Table Rolls"},start:5,end:50,step:1,initial:20}
 
@@ -38,7 +38,7 @@ data modify storage mt:settings 17 set value {type:"minecraft:boolean",key:"17",
 
 scoreboard players set $vanilla_mode mt.var 0
 
-scoreboard players set $progression mt.var 2
-scoreboard players set $frequency mt.var 2
+scoreboard players set $progression mt.var 3
+scoreboard players set $frequency mt.var 1
 
 scoreboard players set #load165 mt.var 1

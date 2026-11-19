@@ -1,1 +1,0 @@
-execute unless data entity @s item{components:{"minecraft:potion_contents":{}}} run data merge entity @s {item:{components:{"minecraft:intangible_projectile":{},"minecraft:potion_contents":{potion:"minecraft:long_poison"}},count:1,id:"minecraft:tipped_arrow"}}

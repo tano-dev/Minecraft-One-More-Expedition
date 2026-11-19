@@ -493,17 +493,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/wither_sword": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 6
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                }
+                "mt:weapons/wither_sword": 1
               }
             }
           ]

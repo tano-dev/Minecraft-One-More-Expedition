@@ -35,7 +35,7 @@
                         "score": "mt.common_chance"
                       }
                     },
-                    7.5E-7
+                    7.5e-07
                   ]
                 }
               }
@@ -73,7 +73,7 @@
                         "score": "mt.rare_chance"
                       }
                     },
-                    7.5E-7
+                    7.5e-07
                   ]
                 }
               }
@@ -111,7 +111,7 @@
                         "score": "mt.epic_chance"
                       }
                     },
-                    7.5E-7
+                    7.5e-07
                   ]
                 }
               }
@@ -149,7 +149,7 @@
                         "score": "mt.legendary_chance"
                       }
                     },
-                    7.5E-7
+                    7.5e-07
                   ]
                 }
               }
@@ -187,7 +187,7 @@
                         "score": "mt.mythical_chance"
                       }
                     },
-                    7.5E-7
+                    7.5e-07
                   ]
                 }
               }

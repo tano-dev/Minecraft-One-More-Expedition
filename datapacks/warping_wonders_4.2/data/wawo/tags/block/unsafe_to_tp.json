@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#minecraft:air",
+    "#minecraft:fire",
+    "minecraft:cobweb",
+    "minecraft:ladder",
+    "minecraft:lava",
+    "minecraft:pointed_dripstone",
+    "minecraft:potent_sulfur",
+    "minecraft:powder_snow",
+    "minecraft:sulfur_spike",
+    "minecraft:vine"
+  ]
+}

@@ -102,13 +102,52 @@ public class FishingCommand {
                     return 1;
                 }))
                 .then(Commands.literal("recipe").executes(ctx -> {
-                    FishingGui.open(ctx.getSource().getPlayerOrException(), FishingGui.PageType.RECIPES, 0);
+                    FishingGui.open(ctx.getSource().getPlayerOrException(), FishingGui.PageType.TRADE, 0);
                     return 1;
                 }))
                 .then(Commands.literal("recipes").executes(ctx -> {
-                    FishingGui.open(ctx.getSource().getPlayerOrException(), FishingGui.PageType.RECIPES, 0);
+                    FishingGui.open(ctx.getSource().getPlayerOrException(), FishingGui.PageType.TRADE, 0);
                     return 1;
                 }))
+                .then(Commands.literal("trade").executes(ctx -> {
+                    FishingGui.open(ctx.getSource().getPlayerOrException(), FishingGui.PageType.TRADE, 0);
+                    return 1;
+                }))
+                .then(Commands.literal("addessence")
+                        .requires(Commands.hasPermission(Commands.LEVEL_ADMINS))
+                        .then(Commands.argument("type", StringArgumentType.word())
+                                .then(Commands.argument("amount", IntegerArgumentType.integer(-1000000, 1000000))
+                                        .executes(ctx -> {
+                                            ServerPlayer target = ctx.getSource().getPlayerOrException();
+                                            String type = StringArgumentType.getString(ctx, "type").toUpperCase(Locale.ROOT);
+                                            int amount = IntegerArgumentType.getInteger(ctx, "amount");
+                                            if (!type.equals("WATER") && !type.equals("MAGMA") && !type.equals("VOID")) {
+                                                ctx.getSource().sendFailure(Component.literal("§cInvalid essence type! Use: water, magma, or void."));
+                                                return 0;
+                                            }
+                                            FishingPlayerData d = PlayerDataStorage.get(target.getUUID());
+                                            d.addEssence(type, amount);
+                                            PlayerDataStorage.saveAsync(target.getUUID());
+                                            ctx.getSource().sendSuccess(() -> Component.literal("§a✔ Added §e" + amount + " " + type + " Essence §ato §f" + target.getName().getString() + " §7(New balance: §b" + d.getEssenceAmount(type) + "§7)"), true);
+                                            return 1;
+                                        })))
+                        .then(Commands.argument("target", EntityArgument.player())
+                                .then(Commands.argument("type", StringArgumentType.word())
+                                        .then(Commands.argument("amount", IntegerArgumentType.integer(-1000000, 1000000))
+                                                .executes(ctx -> {
+                                                    ServerPlayer target = EntityArgument.getPlayer(ctx, "target");
+                                                    String type = StringArgumentType.getString(ctx, "type").toUpperCase(Locale.ROOT);
+                                                    int amount = IntegerArgumentType.getInteger(ctx, "amount");
+                                                    if (!type.equals("WATER") && !type.equals("MAGMA") && !type.equals("VOID")) {
+                                                        ctx.getSource().sendFailure(Component.literal("§cInvalid essence type! Use: water, magma, or void."));
+                                                        return 0;
+                                                    }
+                                                    FishingPlayerData d = PlayerDataStorage.get(target.getUUID());
+                                                    d.addEssence(type, amount);
+                                                    PlayerDataStorage.saveAsync(target.getUUID());
+                                                    ctx.getSource().sendSuccess(() -> Component.literal("§a✔ Added §e" + amount + " " + type + " Essence §ato §f" + target.getName().getString() + " §7(New balance: §b" + d.getEssenceAmount(type) + "§7)"), true);
+                                                    return 1;
+                                                })))))
                 .then(Commands.literal("bag").executes(ctx -> {
                     FishingGui.open(ctx.getSource().getPlayerOrException(), FishingGui.PageType.BAG, 0);
                     return 1;

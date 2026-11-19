@@ -140,15 +140,18 @@ public class FishingItemFactory {
         JsonObject cfg = FishingDataRegistry.ARTIFACTS.get(artifactId);
         if (cfg == null) return ItemStack.EMPTY;
 
-        String tex64 = FishingDataRegistry.getStr(cfg, "texture_base64", "");
-        Item baseItem = !tex64.isEmpty() ? Items.PLAYER_HEAD : Items.HEART_OF_THE_SEA;
-        ItemStack stack = new ItemStack(baseItem, 1);
-        if (!tex64.isEmpty()) {
-            applyHeadTexture(stack, tex64);
-        }
         String displayName = FishingDataRegistry.getStr(cfg, "display_name", formatId(artifactId));
         String rarity = FishingDataRegistry.getStr(cfg, "rarity", "RARE").toUpperCase(Locale.ROOT);
         String desc = FishingDataRegistry.getStr(cfg, "description", "A mysterious fishing artifact.");
+
+        // Always use non-placeable vanilla Minecraft items so Artifacts can never be placed or accidentally consumed
+        Item baseItem = switch (rarity) {
+            case "LEGENDARY" -> Items.HEART_OF_THE_SEA;
+            case "EPIC" -> Items.NETHER_STAR;
+            case "RARE" -> Items.PRISMARINE_CRYSTALS;
+            default -> Items.NAUTILUS_SHELL;
+        };
+        ItemStack stack = new ItemStack(baseItem, 1);
 
         stack.set(DataComponents.CUSTOM_NAME, Component.literal(getRarityColor(rarity) + "✦ " + displayName));
         stack.set(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true);

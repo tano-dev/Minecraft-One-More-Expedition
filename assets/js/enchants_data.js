@@ -12093,6 +12093,31 @@ window.ALL_ENCHANTMENTS = [
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"stellarity:_technical/daybroken\":1}}] 1"
   },
   {
+    "id": "keepinv:deathlock",
+    "namespace": "keepinv",
+    "raw_name": "deathlock",
+    "name": "Deathlock",
+    "name_vi": "Deathlock",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 8,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "nice_keep_inventory_4.2",
+    "supported_items": "#minecraft:chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Items lost or graves created upon death can only be retrieved by yourself. Incompatible with Safekeep and Gravehold.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"keepinv:deathlock\":1}}] 1"
+  },
+  {
     "id": "expedition_fishing:deep_water",
     "namespace": "expedition_fishing",
     "raw_name": "deep_water",
@@ -13261,6 +13286,31 @@ window.ALL_ENCHANTMENTS = [
     ],
     "description": "Converts nearby dirt beneath the wearer into grass blocks while walking and grants immunity to sweet berry bush damage.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:grass_walker\":1}}] 1"
+  },
+  {
+    "id": "keepinv:gravehold",
+    "namespace": "keepinv",
+    "raw_name": "gravehold",
+    "name": "Gravehold",
+    "name_vi": "Gravehold",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 8,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "nice_keep_inventory_4.2",
+    "supported_items": "#minecraft:chest_armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Chestplates",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Doubles the duration that dropped items or graves remain before despawning upon death. Incompatible with Safekeep and Deathlock.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"keepinv:gravehold\":1}}] 1"
   },
   {
     "id": "mt:technical/grenade",
@@ -16108,6 +16158,31 @@ window.ALL_ENCHANTMENTS = [
     ],
     "description": "Increases safe fall distance by +2 blocks (+2.5 per level above I, up to +7 blocks at Lv III).",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:safe_landing\":3}}] 1"
+  },
+  {
+    "id": "keepinv:safekeep",
+    "namespace": "keepinv",
+    "raw_name": "safekeep",
+    "name": "Safekeep",
+    "name_vi": "Safekeep",
+    "tier": "common",
+    "tier_order": 4,
+    "max_level": 1,
+    "anvil_cost": 4,
+    "table": true,
+    "table_weight": 8,
+    "tradeable": false,
+    "loot": true,
+    "source_pack": "nice_keep_inventory_4.2",
+    "supported_items": "#minecraft:enchantable/armor",
+    "gear_categories": [
+      "armor"
+    ],
+    "supported_display": "Armor",
+    "exclusive_groups": [],
+    "conflicts": [],
+    "description": "Keep all items in your inventory upon death at the cost of 33% item durability. Incompatible with Deathlock, Gravehold, Mending, Sacrifice, and Handyman.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"keepinv:safekeep\":1}}] 1"
   },
   {
     "id": "enchantencore:scent",

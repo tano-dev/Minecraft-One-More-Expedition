@@ -73,19 +73,21 @@ public abstract class FishingHookMixin extends Entity {
             self.setGlowingTag(true);
         }
 
+        FishingPlayerData pData = PlayerDataStorage.get(player.getUUID());
         boolean lavaFluid = sLevel.getFluidState(self.blockPosition()).is(FluidTags.LAVA) || self.isInLava();
         boolean endVoidMedium = sLevel.dimension() == Level.END
                 && !sLevel.getFluidState(self.blockPosition()).is(FluidTags.WATER)
                 && self.tickCount >= 14;
 
-        if (lavaFluid && FishingItemFactory.isLavaCapableRod(rod)) {
+        // Auto-enable Magma (Lv.27+) and Void (Lv.35+) fishing for any Fishing Rod once player reaches the required level
+        if (lavaFluid && pData.level >= 27) {
             this.expInLava = true;
             self.clearFire();
             self.setGlowingTag(true);
             Vec3 m = self.getDeltaMovement();
             self.setDeltaMovement(m.x * 0.65, Math.max(0.0, m.y * 0.15 + 0.025), m.z * 0.65);
             tickCustomMediumBite(player, sLevel, rod, true, false);
-        } else if (endVoidMedium && FishingItemFactory.isVoidCapableRod(rod)) {
+        } else if (endVoidMedium && pData.level >= 35) {
             this.expInVoid = true;
             self.setNoGravity(true);
             self.setGlowingTag(true);
@@ -96,7 +98,6 @@ public abstract class FishingHookMixin extends Entity {
             this.expSpeedApplied = true;
             FishingEngine.PlayerFishingStats st = FishingEngine.computeStats(player, rod, false, false);
             double factor = 100.0 / (100.0 + Math.max(0.0, st.fishingSpeed));
-            FishingPlayerData pData = PlayerDataStorage.get(player.getUUID());
             if (pData.nextCastFast) {
                 pData.nextCastFast = false;
                 factor *= 0.5;

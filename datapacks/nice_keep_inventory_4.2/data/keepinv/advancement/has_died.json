@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "has_died": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "nbt": "{Health:0f}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "keepinv:has_died/init"
+  }
+}

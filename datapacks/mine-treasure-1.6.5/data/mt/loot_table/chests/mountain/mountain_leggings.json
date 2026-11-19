@@ -15,8 +15,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -52,42 +50,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -131,8 +93,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -168,42 +128,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -247,8 +171,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -284,42 +206,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -363,8 +249,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -400,42 +284,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -479,8 +327,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -516,42 +362,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -595,8 +405,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -632,42 +440,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -711,8 +483,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -748,42 +518,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -827,8 +561,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -864,42 +596,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -943,8 +639,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -980,42 +674,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -1059,8 +717,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -1096,42 +752,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -1175,8 +795,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -1212,42 +830,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -1291,8 +873,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -1328,42 +908,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -1407,8 +951,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -1444,42 +986,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -1523,8 +1029,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -1560,42 +1064,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -1639,8 +1107,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -1676,42 +1142,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -1755,8 +1185,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -1792,42 +1220,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -1871,8 +1263,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -1908,42 +1298,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -1987,8 +1341,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -2024,42 +1376,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -2103,8 +1419,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -2140,42 +1454,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -2219,8 +1497,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -2256,42 +1532,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -2335,8 +1575,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -2372,42 +1610,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -2451,8 +1653,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -2488,42 +1688,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -2567,8 +1731,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -2604,42 +1766,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -2683,8 +1809,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -2720,42 +1844,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -2799,8 +1887,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -2836,42 +1922,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -2915,8 +1965,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -2952,42 +2000,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -3031,8 +2043,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -3068,42 +2078,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -3147,8 +2121,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -3184,42 +2156,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -3263,8 +2199,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -3300,42 +2234,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -3379,8 +2277,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -3416,42 +2312,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -3495,8 +2355,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -3532,42 +2390,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -3611,8 +2433,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -3648,42 +2468,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -3727,8 +2511,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -3764,42 +2546,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -3843,8 +2589,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -3880,42 +2624,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -3959,8 +2667,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -3996,42 +2702,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -4075,8 +2745,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -4112,42 +2780,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -4191,8 +2823,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -4228,42 +2858,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -4307,8 +2901,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -4344,42 +2936,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -4423,8 +2979,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -4460,42 +3014,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },
@@ -4539,8 +3057,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Mountain Leggings",
                   "color": "gold",
@@ -4576,42 +3092,6 @@
                 "minecraft:custom_data": {
                   "armor": "mountain_leggings",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
                 }
               }
             },

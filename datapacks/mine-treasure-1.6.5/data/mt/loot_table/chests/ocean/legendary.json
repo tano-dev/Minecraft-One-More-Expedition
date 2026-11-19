@@ -276,47 +276,7 @@
             },
             "test": 0
           },
-          "modifier": [
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:luck_of_the_sea": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              },
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.5
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:lure": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 10
-                }
-              }
-            }
-          ]
+          "modifier": []
         },
         {
           "type": "minecraft:item",
@@ -352,18 +312,6 @@
             ]
           },
           "modifier": [
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 4,
-                  "max": 10
-                },
-                "minecraft:mending": 1
-              },
-              "add": false
-            },
             {
               "type": "minecraft:set_components",
               "components": {

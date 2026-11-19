@@ -11,7 +11,6 @@
     "enchantsplus:precision",
     "enchantsplus:pyrolysis",
     "enchantsplus:scorch_walker",
-    "enchantsplus:toxic",
     "enchantsplus:stride",
     "enchantsplus:retrieval",
     "enchantsplus:breaking_curse",
@@ -20,6 +19,5 @@
     "enchantsplus:kickback",
     "enchantsplus:compassion_curse",
     "enchantsplus:harvest"
-
   ]
 }

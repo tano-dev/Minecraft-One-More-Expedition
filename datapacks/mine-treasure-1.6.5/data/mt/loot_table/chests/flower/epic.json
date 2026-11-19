@@ -96,21 +96,6 @@
               "score": "mt.var"
             },
             "test": 0
-          },
-          "modifier": {
-            "type": "minecraft:set_enchantments",
-            "enchantments": {
-              "minecraft:unbreaking": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 10
-              },
-              "minecraft:mending": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 1
-              }
-            }
           }
         },
         {

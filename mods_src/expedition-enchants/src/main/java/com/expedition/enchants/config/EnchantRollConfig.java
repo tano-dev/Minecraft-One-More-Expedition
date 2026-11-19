@@ -9,7 +9,9 @@ import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 public class EnchantRollConfig {
@@ -47,6 +49,35 @@ public class EnchantRollConfig {
 
     // Optional manual overrides: enchantment_id -> "common" | "rare" | "epic" | "ultimate" | "curse"
     public Map<String, String> tierOverrides = new LinkedHashMap<>();
+
+    // Structure Chest Enchanted Gear -> Enchanted Book replacement
+    public boolean enableStructureChestBookReplacement = true;
+    public double chestBookGodrollChance = 0.008;
+    public Map<String, Integer> chestBookCountWeights = new LinkedHashMap<>(Map.of(
+        "1", 30,
+        "2", 25,
+        "3", 20,
+        "4", 15,
+        "5", 10
+    ));
+    public double chestBookCommonChance = 0.60;
+    public double chestBookRareChance = 0.25;
+    public double chestBookEpicChance = 0.05;
+    // Curse slot chance per enchant (Common = remainder). Godroll books use the godroll value instead.
+    public double chestBookCurseChance = 0.10;
+    public double chestBookGodrollCurseChance = 0.0;
+    // Only curses from these namespaces may appear on chest books
+    public List<String> chestBookCurseNamespaces = new ArrayList<>(List.of("minecraft", "enchantencore"));
+    public double chestBookGodrollRareMultiplier = 3.0;
+    public double chestBookGodrollEpicMultiplier = 3.0;
+    public List<String> chestBookExcludedNamespaces = new ArrayList<>(List.of(
+        "mt", "wither", "stellarity", "player_motion", "kattersstructures", "incendium", "bound"
+    ));
+    public List<String> chestBookWhitelistedEnchants = new ArrayList<>(List.of(
+        "stellarity:ambush",
+        "stellarity:plated",
+        "stellarity:levitation_shot"
+    ));
 
     private static Map<String, Map<String, Integer>> defaultLevelCurves() {
         Map<String, Map<String, Integer>> m = new LinkedHashMap<>();

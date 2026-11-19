@@ -10,8 +10,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -46,7 +44,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -67,41 +66,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -112,8 +76,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -148,7 +110,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -169,41 +132,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -214,8 +142,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -250,7 +176,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -271,41 +198,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -316,8 +208,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -352,7 +242,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -373,41 +264,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -418,8 +274,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -454,7 +308,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -475,41 +330,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -520,8 +340,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -556,7 +374,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -577,41 +396,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -622,8 +406,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -658,7 +440,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -679,41 +462,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -724,8 +472,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -760,7 +506,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -781,41 +528,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -826,8 +538,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -862,7 +572,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -883,41 +594,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -928,8 +604,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -964,7 +638,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -985,41 +660,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -1030,8 +670,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -1066,7 +704,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -1087,41 +726,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -1132,8 +736,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -1168,7 +770,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -1189,41 +792,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -1234,8 +802,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -1270,7 +836,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -1291,41 +858,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -1336,8 +868,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -1372,7 +902,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -1393,41 +924,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -1438,8 +934,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -1474,7 +968,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -1495,41 +990,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -1540,8 +1000,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -1576,7 +1034,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -1597,41 +1056,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -1642,8 +1066,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -1678,7 +1100,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -1699,41 +1122,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -1744,8 +1132,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -1780,7 +1166,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -1801,41 +1188,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -1846,8 +1198,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -1882,7 +1232,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -1903,41 +1254,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -1948,8 +1264,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -1984,7 +1298,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -2005,41 +1320,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -2050,8 +1330,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -2086,7 +1364,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -2107,41 +1386,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -2152,8 +1396,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -2188,7 +1430,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -2209,41 +1452,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -2254,8 +1462,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -2290,7 +1496,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -2311,41 +1518,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -2356,8 +1528,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -2392,7 +1562,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -2413,41 +1584,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -2458,8 +1594,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -2494,7 +1628,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -2515,41 +1650,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -2560,8 +1660,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -2596,7 +1694,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -2617,41 +1716,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -2662,8 +1726,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -2698,7 +1760,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -2719,41 +1782,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -2764,8 +1792,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -2800,7 +1826,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -2821,41 +1848,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -2866,8 +1858,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -2902,7 +1892,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -2923,41 +1914,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -2968,8 +1924,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -3004,7 +1958,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -3025,41 +1980,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -3070,8 +1990,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -3106,7 +2024,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -3127,41 +2046,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -3172,8 +2056,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -3208,7 +2090,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -3229,41 +2112,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -3274,8 +2122,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -3310,7 +2156,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -3331,41 +2178,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -3376,8 +2188,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -3412,7 +2222,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -3433,41 +2244,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -3478,8 +2254,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -3514,7 +2288,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -3535,41 +2310,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -3580,8 +2320,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -3616,7 +2354,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -3637,41 +2376,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },
@@ -3682,8 +2386,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Savanna Helmet",
                   "color": "gold",
@@ -3718,7 +2420,8 @@
                 "minecraft:custom_data": {
                   "armor": "savanna_helmet",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 407
               }
             },
             {
@@ -3739,41 +2442,6 @@
                   "slot": "head"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 9
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:respiration": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:aqua_affinity": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         }

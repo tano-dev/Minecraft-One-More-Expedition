@@ -10,8 +10,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -45,7 +43,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -70,22 +69,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -97,8 +81,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -132,7 +114,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -157,22 +140,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -184,8 +152,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -219,7 +185,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -244,22 +211,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -271,8 +223,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -306,7 +256,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -331,22 +282,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -358,8 +294,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -393,7 +327,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -418,22 +353,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -445,8 +365,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -480,7 +398,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -505,22 +424,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -532,8 +436,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -567,7 +469,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -592,22 +495,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -619,8 +507,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -654,7 +540,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -679,22 +566,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -706,8 +578,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -741,7 +611,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -766,22 +637,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -793,8 +649,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -828,7 +682,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -853,22 +708,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -880,8 +720,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -915,7 +753,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -940,22 +779,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -967,8 +791,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1002,7 +824,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1027,22 +850,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -1054,8 +862,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1089,7 +895,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1114,22 +921,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -1141,8 +933,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1176,7 +966,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1201,22 +992,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -1228,8 +1004,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1263,7 +1037,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1288,22 +1063,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -1315,8 +1075,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1350,7 +1108,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1375,22 +1134,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -1402,8 +1146,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1437,7 +1179,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1462,22 +1205,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -1489,8 +1217,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1524,7 +1250,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1549,22 +1276,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -1576,8 +1288,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1611,7 +1321,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1636,22 +1347,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -1663,8 +1359,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1698,7 +1392,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1723,22 +1418,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -1750,8 +1430,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1785,7 +1463,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1810,22 +1489,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -1837,8 +1501,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1872,7 +1534,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1897,22 +1560,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -1924,8 +1572,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -1959,7 +1605,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1984,22 +1631,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2011,8 +1643,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -2046,7 +1676,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2071,22 +1702,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2098,8 +1714,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -2133,7 +1747,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2158,22 +1773,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2185,8 +1785,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -2220,7 +1818,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2245,22 +1844,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2272,8 +1856,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -2307,7 +1889,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2332,22 +1915,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2359,8 +1927,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -2394,7 +1960,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2419,22 +1986,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2446,8 +1998,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -2481,7 +2031,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2506,22 +2057,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2533,8 +2069,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -2568,7 +2102,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2593,22 +2128,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2620,8 +2140,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -2655,7 +2173,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2680,22 +2199,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2707,8 +2211,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -2742,7 +2244,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2767,22 +2270,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2794,8 +2282,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -2829,7 +2315,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2854,22 +2341,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2881,8 +2353,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -2916,7 +2386,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2941,22 +2412,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -2968,8 +2424,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -3003,7 +2457,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3028,22 +2483,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]
@@ -3055,8 +2495,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Basalt Deltas Boots",
                   "color": "gold",
@@ -3090,7 +2528,8 @@
                 },
                 "minecraft:custom_data": {
                   "armor": "basalt_deltas_boots"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3115,22 +2554,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/basalt_boots": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:armor/basalt_boots": 1
               }
             }
           ]

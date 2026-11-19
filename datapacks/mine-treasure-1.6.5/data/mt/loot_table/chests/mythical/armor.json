@@ -1,155 +1,155 @@
 {
-    "pools": [
-        {
-            "rolls": {
-                "type": "minecraft:binomial",
-                "n": {
-                    "type": "minecraft:storage",
-                    "storage": "mt:settings",
-                    "path": "3.initial"
-                },
-                "p": {
-                    "type": "minecraft:mul",
-                    "inputs": [
-                        {
-                            "type": "minecraft:from_int",
-                            "input": {
-                                "type": "score",
-                                "target": "this",
-                                "score": "mt.total"
-                            }
-                        },
-                        3.5e-07
-                    ]
-                }
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": {
+          "type": "minecraft:storage",
+          "storage": "mt:settings",
+          "path": "3.initial"
+        },
+        "p": {
+          "type": "minecraft:mul",
+          "inputs": [
+            {
+              "type": "minecraft:from_int",
+              "input": {
+                "type": "score",
+                "target": "this",
+                "score": "mt.total"
+              }
             },
-            "entries": [
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/badlands/badlands_helmet",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/basalt/basalt_boots",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/crimson/crimson_chestplate",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/dark_forest/dark_forest_chestplate",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/deep_dark/deep_dark_legs",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/default/refined_boots",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/default/refined_chestplate",
-                    "weight": 2
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/default/refined_leggings",
-                    "weight": 2
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/default/refined_helmet",
-                    "weight": 2
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/desert/desert_chestplate",
-                    "weight": 2
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/dripstone/dripstone_helmet",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/end/end_boots",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/flower/flower_helmet",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/ice/ice_boots",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/jungle/jungle_shoes",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/lush_caves/lush_caves_leggings",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/mountain/mountain_leggings",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/mushroom/mushroom_boots",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/nether/nether_leggings",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/ocean/ocean_chestplate",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/savanna/savanna_helmet",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/swamp/swamp_chestplate",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/taiga/taiga_pants",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/warped/warped_helmet",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "mt:chests/wind/wind_chestplate",
-                    "weight": 1
-                }
-            ]
+            3.5e-07
+          ]
         }
-    ]
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/badlands/badlands_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/basalt/basalt_boots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/crimson/crimson_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/dark_forest/dark_forest_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/deep_dark/deep_dark_legs",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/default/refined_boots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/default/refined_chestplate",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/default/refined_leggings",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/default/refined_helmet",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/desert/desert_chestplate",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/dripstone/dripstone_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/end/end_boots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/flower/flower_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/ice/ice_boots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/jungle/jungle_shoes",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/lush_caves/lush_caves_leggings",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/mountain/mountain_leggings",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/mushroom/mushroom_boots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/nether/nether_leggings",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/ocean/ocean_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/savanna/savanna_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/swamp/swamp_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/taiga/taiga_pants",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/warped/warped_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mt:chests/wind/wind_chestplate",
+          "weight": 1
+        }
+      ]
+    }
+  ]
 }

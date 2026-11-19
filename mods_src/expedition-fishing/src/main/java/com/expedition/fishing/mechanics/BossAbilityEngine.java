@@ -485,14 +485,16 @@ public class BossAbilityEngine {
                 }
             }
             case "WARPED_ENDERMAN_GAZE", "WARPED_ENDERMAN_SNARE", "RIFTBOUND_GAZE", "RIFTBOUND_SNARE" -> {
-                level.sendParticles(ParticleTypes.PORTAL, bPos.x, bPos.y + 1.0, bPos.z, 40, 0.6, 1.0, 0.6, 0.3);
-                Vec3 behind = tPos.subtract(target.getLookAngle().scale(1.8));
-                boss.teleportTo(behind.x, tPos.y, behind.z);
-                level.sendParticles(ParticleTypes.REVERSE_PORTAL, behind.x, tPos.y + 1.0, behind.z, 40, 0.6, 1.0, 0.6, 0.2);
-                level.playSound(null, target.blockPosition(), SoundEvents.ENDERMAN_TELEPORT, SoundSource.HOSTILE, 1.0f, 0.8f);
-                target.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 70, 3));
-                target.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 60, 0));
-                target.hurtServer(level, level.damageSources().mobAttack(boss), scaleAbDmg(13.0f));
+                if (level.dimension() == Level.END) {
+                    level.sendParticles(ParticleTypes.PORTAL, bPos.x, bPos.y + 1.0, bPos.z, 40, 0.6, 1.0, 0.6, 0.3);
+                    Vec3 behind = tPos.subtract(target.getLookAngle().scale(4.0)); // 3-5 blocks away
+                    boss.teleportTo(behind.x, tPos.y, behind.z);
+                    level.sendParticles(ParticleTypes.REVERSE_PORTAL, behind.x, tPos.y + 1.0, behind.z, 40, 0.6, 1.0, 0.6, 0.2);
+                    level.playSound(null, target.blockPosition(), SoundEvents.ENDERMAN_TELEPORT, SoundSource.HOSTILE, 1.0f, 0.8f);
+                    target.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 70, 3));
+                    target.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 60, 0));
+                    target.hurtServer(level, level.damageSources().mobAttack(boss), scaleAbDmg(13.0f));
+                }
             }
             case "TEMPLE_RITUAL", "DARK_RITUAL", "VALLEY_DIRGE" -> {
                 level.playSound(null, target.blockPosition(), SoundEvents.EVOKER_PREPARE_ATTACK, SoundSource.HOSTILE, 1.0f, 0.9f);
@@ -562,19 +564,23 @@ public class BossAbilityEngine {
                 boss.addEffect(new MobEffectInstance(MobEffects.SPEED, 120, 1));
             }
             case "TEMPORAL_REWIND" -> {
-                level.sendParticles(ParticleTypes.REVERSE_PORTAL, bPos.x, bPos.y + 1.0, bPos.z, 45, 0.6, 1.0, 0.6, 0.25);
-                level.playSound(null, boss.blockPosition(), SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.HOSTILE, 1.0f, 1.6f);
-                boss.heal(40.0f);
-                Vec3 safe = FishingEngine.findSafeLandingPos(level, target);
-                boss.teleportTo(safe.x, safe.y, safe.z);
+                if (level.dimension() == Level.END) {
+                    level.sendParticles(ParticleTypes.REVERSE_PORTAL, bPos.x, bPos.y + 1.0, bPos.z, 45, 0.6, 1.0, 0.6, 0.25);
+                    level.playSound(null, boss.blockPosition(), SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.HOSTILE, 1.0f, 1.6f);
+                    boss.heal(40.0f);
+                    Vec3 safe = FishingEngine.findSafeLandingPos(level, target);
+                    boss.teleportTo(safe.x, safe.y, safe.z);
+                }
             }
             case "DIMENSIONAL_SLASH" -> {
-                level.sendParticles(ParticleTypes.SWEEP_ATTACK, tPos.x, tPos.y + 1.0, tPos.z, 6, 0.6, 0.4, 0.6, 0.05);
-                level.sendParticles(ParticleTypes.REVERSE_PORTAL, tPos.x, tPos.y + 1.0, tPos.z, 35, 0.6, 0.8, 0.6, 0.15);
-                level.playSound(null, target.blockPosition(), SoundEvents.PLAYER_ATTACK_SWEEP, SoundSource.HOSTILE, 1.0f, 0.7f);
-                Vec3 safe = FishingEngine.findSafeLandingPos(level, target);
-                boss.teleportTo(safe.x, safe.y, safe.z);
-                target.hurtServer(level, level.damageSources().mobAttack(boss), scaleAbDmg(15.0f));
+                if (level.dimension() == Level.END) {
+                    level.sendParticles(ParticleTypes.SWEEP_ATTACK, tPos.x, tPos.y + 1.0, tPos.z, 6, 0.6, 0.4, 0.6, 0.05);
+                    level.sendParticles(ParticleTypes.REVERSE_PORTAL, tPos.x, tPos.y + 1.0, tPos.z, 35, 0.6, 0.8, 0.6, 0.15);
+                    level.playSound(null, target.blockPosition(), SoundEvents.PLAYER_ATTACK_SWEEP, SoundSource.HOSTILE, 1.0f, 0.7f);
+                    Vec3 safe = FishingEngine.findSafeLandingPos(level, target);
+                    boss.teleportTo(safe.x, safe.y, safe.z);
+                    target.hurtServer(level, level.damageSources().mobAttack(boss), scaleAbDmg(15.0f));
+                }
             }
             case "PRISMATIC_REFRACTION" -> {
                 level.sendParticles(ParticleTypes.END_ROD, bPos.x, bPos.y + 1.2, bPos.z, 50, 1.2, 1.2, 1.2, 0.25);

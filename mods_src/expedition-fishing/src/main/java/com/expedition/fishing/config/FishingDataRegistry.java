@@ -26,6 +26,7 @@ public class FishingDataRegistry {
     public static final Map<String, JsonObject> RECIPES = new ConcurrentHashMap<>();
     public static final Map<String, JsonObject> BIOMES = new ConcurrentHashMap<>();
     public static final Map<String, JsonObject> BALANCE = new ConcurrentHashMap<>();
+    public static final Map<String, JsonObject> SHOP = new ConcurrentHashMap<>();
 
     public static synchronized void loadAll() {
         try {
@@ -38,6 +39,7 @@ public class FishingDataRegistry {
         loadFile("recipes.json", RECIPES);
         loadFile("biomes.json", BIOMES);
         loadFile("enchants_balance.json", BALANCE);
+        loadFile("shop_config.json", SHOP);
     }
 
     public static double getEnchantBalance(String key, double def) {

@@ -53,7 +53,8 @@ public class FishingEngine {
             double weightKg,
             double pendingXp,
             double scavBonus,
-            boolean autoSmeltFish
+            boolean autoSmeltFish,
+            double essenceMultiplier
     ) {}
 
     private static final List<TrackedCreature> TRACKED_CREATURES = new java.util.concurrent.CopyOnWriteArrayList<>();
@@ -116,6 +117,7 @@ public class FishingEngine {
             PlayerFishingStats dropStats = new PlayerFishingStats();
             dropStats.scavBonus = matched.scavBonus();
             dropStats.autoSmeltFish = matched.autoSmeltFish();
+            dropStats.essenceMultiplier = matched.essenceMultiplier();
             grantMobDrops(recipient, mobCfg, dropStats, level.getRandom());
         }
 
@@ -164,7 +166,8 @@ public class FishingEngine {
             double weightKg,
             double pendingXp,
             double scavBonus,
-            boolean autoSmeltFish
+            boolean autoSmeltFish,
+            double essenceMultiplier
     ) {
         int maxPerPlayer = FishingDataRegistry.getAntiLagInt("max_active_creatures_per_player", 12);
         List<TrackedCreature> ownedNonBoss = new ArrayList<>();
@@ -191,7 +194,7 @@ public class FishingEngine {
         long expireAt = level.getGameTime() + (ttlSeconds * 20L);
         TRACKED_CREATURES.add(new TrackedCreature(
                 entity.getUUID(), owner.getUUID(), level.dimension(), expireAt, isBoss,
-                mobId, displayName, rarity, weightKg, pendingXp, scavBonus, autoSmeltFish
+                mobId, displayName, rarity, weightKg, pendingXp, scavBonus, autoSmeltFish, essenceMultiplier
         ));
     }
 
@@ -202,6 +205,7 @@ public class FishingEngine {
         public double treasureChance = 5.0;     // Base 5% Treasure
         public double doubleCatchChance = 0.0;
         public double xpMultiplier = 1.0;
+        public double essenceMultiplier = 1.0;
         public double weightMultiplier = 1.0;
         public double heatReduction = 0.0;
         public double baitSaveChance = 0.0;
@@ -352,7 +356,7 @@ public class FishingEngine {
         // 40 New Fishing Enchantments (Configurable via enchants_balance.json)
         st.fishingSpeed += enchs.getOrDefault("expedition_fishing:quick_cast", 0) * FishingDataRegistry.getEnchantBalance("quick_cast_speed_per_level", 5.0);
         st.weightMultiplier += enchs.getOrDefault("expedition_fishing:heavy_sinker", 0) * FishingDataRegistry.getEnchantBalance("heavy_sinker_weight_per_level", 0.03);
-        st.baitSaveChance += enchs.getOrDefault("expedition_fishing:bait_saver", 0) * FishingDataRegistry.getEnchantBalance("bait_saver_chance_per_level", 0.15);
+        st.essenceMultiplier += enchs.getOrDefault("expedition_fishing:essence_siphon", 0) * FishingDataRegistry.getEnchantBalance("essence_siphon_bonus_per_level", 0.10);
         st.seaCreatureChance += enchs.getOrDefault("expedition_fishing:angler_instinct", 0) * FishingDataRegistry.getEnchantBalance("angler_instinct_scc_per_level", 3.0);
         st.scavBonus += enchs.getOrDefault("expedition_fishing:tide_scavenger", 0) * FishingDataRegistry.getEnchantBalance("tide_scavenger_drop_per_level", 0.10);
         if (isRaining) {
@@ -669,8 +673,8 @@ public class FishingEngine {
         ServerLevel level = player.level();
         Vec3 hookPos = hook.position().add(0, 0.4, 0);
 
-        // If fishing in The End / over the Void without solid ground beneath the bobber, pull the creature through a Void Rift directly onto safe ground near the player!
-        if (level.dimension() == Level.END || !hasSolidGroundBelow(level, hook.blockPosition(), 6)) {
+        // Only pull creatures through a Void Rift onto safe ground when fishing in The End (never teleport in Overworld/Nether)
+        if (level.dimension() == Level.END) {
             level.sendParticles(net.minecraft.core.particles.ParticleTypes.REVERSE_PORTAL, hookPos.x, hookPos.y, hookPos.z, 35, 0.4, 0.4, 0.4, 0.15);
             level.sendParticles(net.minecraft.core.particles.ParticleTypes.WITCH, hookPos.x, hookPos.y, hookPos.z, 20, 0.3, 0.3, 0.3, 0.05);
             Vec3 safePos = findSafeLandingPos(level, player);
@@ -734,6 +738,7 @@ public class FishingEngine {
         boolean isBoss = "EPIC".equalsIgnoreCase(rarity) || "LEGENDARY".equalsIgnoreCase(rarity);
         double scav = stats != null ? stats.scavBonus : 0.0;
         boolean smelt = stats != null && stats.autoSmeltFish;
+        double essMult = stats != null ? stats.essenceMultiplier : 1.0;
 
         // 1. Handle GROUP spawns (e.g. Pillager Trio/Quartet/Quintet, Wailing Ghast Duo, Piglin Squad)
         if ("GROUP".equals(spType) && spCfg.has("members") && spCfg.get("members").isJsonArray()) {
@@ -752,7 +757,7 @@ public class FishingEngine {
                     if (memberEnt != null) {
                         level.addFreshEntity(memberEnt);
                         double xpForThis = firstMember ? pendingXp : 0.0;
-                        registerSpawnedCreature(player, level, memberEnt, isBoss, mobId, displayName, rarity, weightKg, xpForThis, scav, smelt);
+                        registerSpawnedCreature(player, level, memberEnt, isBoss, mobId, displayName, rarity, weightKg, xpForThis, scav, smelt, essMult);
                         if (memberEnt instanceof LivingEntity mLiv) {
                             BossAbilityEngine.registerController(player, level, mLiv, mobId, displayName, rarity, spCfg, firstMember);
                         }
@@ -762,7 +767,7 @@ public class FishingEngine {
                             Entity riderEnt = createConfiguredEntity(level, mPos, vel, rType, displayName, rarity, riderCfg, stats);
                             if (riderEnt != null) {
                                 level.addFreshEntity(riderEnt);
-                                registerSpawnedCreature(player, level, riderEnt, isBoss, mobId, displayName, rarity, weightKg, 0.0, 0.0, false);
+                                registerSpawnedCreature(player, level, riderEnt, isBoss, mobId, displayName, rarity, weightKg, 0.0, 0.0, false, 1.0);
                                 riderEnt.startRiding(memberEnt, true, true);
                             }
                         }
@@ -802,7 +807,7 @@ public class FishingEngine {
         }
 
         level.addFreshEntity(entity);
-        registerSpawnedCreature(player, level, entity, isBoss, mobId, displayName, rarity, weightKg, pendingXp, scav, smelt);
+        registerSpawnedCreature(player, level, entity, isBoss, mobId, displayName, rarity, weightKg, pendingXp, scav, smelt, essMult);
         if (entity instanceof LivingEntity living) {
             BossAbilityEngine.registerController(player, level, living, mobId, displayName, rarity, spCfg, true);
             if ("ghast_broodmother".equals(mobId)) {
@@ -834,7 +839,7 @@ public class FishingEngine {
                     BroodmotherCosmeticsManager.applyGlowColor(level, mount, glowColor);
                 }
                 level.addFreshEntity(mount);
-                registerSpawnedCreature(player, level, mount, isBoss, mobId, mName, rarity, weightKg, 0.0, 0.0, false);
+                registerSpawnedCreature(player, level, mount, isBoss, mobId, mName, rarity, weightKg, 0.0, 0.0, false, 1.0);
                 if (mount instanceof LivingEntity mLiving) {
                     BossAbilityEngine.registerController(player, level, mLiving, mobId, mName, rarity, mountCfg, false);
                 }
@@ -985,28 +990,21 @@ public class FishingEngine {
     }
 
     private static void grantMobDrops(ServerPlayer player, JsonObject mobCfg, PlayerFishingStats stats, RandomSource rng) {
-        if (!mobCfg.has("drops") || !mobCfg.get("drops").isJsonArray()) return;
-        String rarity = FishingDataRegistry.getStr(mobCfg, "rarity", "COMMON").toUpperCase(Locale.ROOT);
-        boolean isCommonTier = "COMMON".equals(rarity) || "UNCOMMON".equals(rarity);
+        String category = FishingDataRegistry.getStr(mobCfg, "category", "PASSIVE").toUpperCase(Locale.ROOT);
+        boolean isHostile = "HOSTILE".equals(category);
 
-        for (JsonElement el : mobCfg.getAsJsonArray("drops")) {
-            if (!el.isJsonObject()) continue;
-            JsonObject d = el.getAsJsonObject();
-            double chance = FishingDataRegistry.getDouble(d, "chance", 1.0);
-            if (rng.nextDouble() > chance) continue;
-
-            int min = FishingDataRegistry.getInt(d, "min", 1);
-            int max = Math.max(min, FishingDataRegistry.getInt(d, "max", min));
-            int count = min + (max > min ? rng.nextInt(max - min + 1) : 0);
-            if (isCommonTier && stats.scavBonus > 0 && rng.nextDouble() < stats.scavBonus) {
-                count += 1;
-            }
-
-            ItemStack dropStack = ItemStack.EMPTY;
-            if (d.has("item")) {
-                String customId = d.get("item").getAsString();
-                dropStack = FishingItemFactory.createCustomItem(customId, count);
-            } else if (d.has("vanilla")) {
+        // 1. Passive fish: drop only vanilla fish (no custom items, no essence)
+        if (!isHostile) {
+            if (!mobCfg.has("drops") || !mobCfg.get("drops").isJsonArray()) return;
+            for (JsonElement el : mobCfg.getAsJsonArray("drops")) {
+                if (!el.isJsonObject()) continue;
+                JsonObject d = el.getAsJsonObject();
+                if (!d.has("vanilla")) continue;
+                double chance = FishingDataRegistry.getDouble(d, "chance", 1.0);
+                if (rng.nextDouble() > chance) continue;
+                int min = FishingDataRegistry.getInt(d, "min", 1);
+                int max = Math.max(min, FishingDataRegistry.getInt(d, "max", min));
+                int count = min + (max > min ? rng.nextInt(max - min + 1) : 0);
                 String vanName = d.get("vanilla").getAsString().toLowerCase(Locale.ROOT);
                 if (stats.autoSmeltFish) {
                     if ("cod".equals(vanName)) vanName = "cooked_cod";
@@ -1014,12 +1012,56 @@ public class FishingEngine {
                 }
                 Item vanItem = BuiltInRegistries.ITEM.getValue(Identifier.withDefaultNamespace(vanName));
                 if (vanItem != null && vanItem != Items.AIR) {
-                    dropStack = new ItemStack(vanItem, count);
+                    giveOrDrop(player, new ItemStack(vanItem, count));
                 }
             }
+            return;
+        }
 
-            if (!dropStack.isEmpty()) {
-                giveOrDrop(player, dropStack);
+        // 2. Hostile Sea Creatures: drop Essence = round(required_level^2 * rarityMultiplier) (and keep Artifact drops only)
+        int reqLv = Math.max(1, FishingDataRegistry.getInt(mobCfg, "required_level", 1));
+        String rarity = FishingDataRegistry.getStr(mobCfg, "rarity", "COMMON").toUpperCase(Locale.ROOT);
+        double rarityMult = switch (rarity) {
+            case "UNCOMMON" -> 1.25;
+            case "RARE" -> 1.5;
+            case "EPIC" -> 2.0;
+            case "LEGENDARY" -> 3.0;
+            default -> 1.0;
+        };
+        double essBonusMult = (stats != null && stats.essenceMultiplier > 0.0) ? stats.essenceMultiplier : 1.0;
+        long essenceAmount = Math.max(1L, Math.round((double) reqLv * (double) reqLv * rarityMult * essBonusMult));
+
+        String essenceType;
+        String essenceDisplay;
+        if (player.level().dimension() == Level.END || reqLv >= 35) {
+            essenceType = "VOID";
+            essenceDisplay = "§5✨ +" + essenceAmount + " Void Essence";
+        } else if (player.level().dimension() == Level.NETHER || reqLv >= 27) {
+            essenceType = "MAGMA";
+            essenceDisplay = "§c🔥 +" + essenceAmount + " Magma Essence";
+        } else {
+            essenceType = "WATER";
+            essenceDisplay = "§b💧 +" + essenceAmount + " Water Essence";
+        }
+
+        FishingPlayerData recipientData = PlayerDataStorage.get(player.getUUID());
+        recipientData.addEssence(essenceType, essenceAmount);
+        player.sendSystemMessage(Component.literal(essenceDisplay));
+
+        if (mobCfg.has("drops") && mobCfg.get("drops").isJsonArray()) {
+            for (JsonElement el : mobCfg.getAsJsonArray("drops")) {
+                if (!el.isJsonObject()) continue;
+                JsonObject d = el.getAsJsonObject();
+                if (d.has("item")) {
+                    String itemId = d.get("item").getAsString();
+                    if (FishingDataRegistry.ARTIFACTS.containsKey(itemId)) {
+                        double chance = FishingDataRegistry.getDouble(d, "chance", 1.0);
+                        if (rng.nextDouble() < chance) {
+                            ItemStack art = FishingItemFactory.createArtifactItem(itemId);
+                            if (!art.isEmpty()) giveOrDrop(player, art);
+                        }
+                    }
+                }
             }
         }
     }

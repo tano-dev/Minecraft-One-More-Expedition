@@ -1,0 +1,6 @@
+{
+  "values": [
+    "wawo:database/portal_horn/init",
+    "wawo:database/waypoint_icons/init"
+  ]
+}

@@ -10,8 +10,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -51,7 +49,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -76,32 +75,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -113,8 +87,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -154,7 +126,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -179,32 +152,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -216,8 +164,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -257,7 +203,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -282,32 +229,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -319,8 +241,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -360,7 +280,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -385,32 +306,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -422,8 +318,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -463,7 +357,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -488,32 +383,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -525,8 +395,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -566,7 +434,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -591,32 +460,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -628,8 +472,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -669,7 +511,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -694,32 +537,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -731,8 +549,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -772,7 +588,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -797,32 +614,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -834,8 +626,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -875,7 +665,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -900,32 +691,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -937,8 +703,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -978,7 +742,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1003,32 +768,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -1040,8 +780,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -1081,7 +819,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1106,32 +845,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -1143,8 +857,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -1184,7 +896,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1209,32 +922,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -1246,8 +934,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -1287,7 +973,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1312,32 +999,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -1349,8 +1011,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -1390,7 +1050,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1415,32 +1076,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -1452,8 +1088,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -1493,7 +1127,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1518,32 +1153,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -1555,8 +1165,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -1596,7 +1204,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1621,32 +1230,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -1658,8 +1242,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -1699,7 +1281,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1724,32 +1307,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -1761,8 +1319,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -1802,7 +1358,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1827,32 +1384,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -1864,8 +1396,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -1905,7 +1435,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1930,32 +1461,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -1967,8 +1473,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -2008,7 +1512,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2033,32 +1538,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -2070,8 +1550,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -2111,7 +1589,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2136,32 +1615,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -2173,8 +1627,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -2214,7 +1666,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2239,32 +1692,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -2276,8 +1704,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -2317,7 +1743,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2342,32 +1769,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -2379,8 +1781,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -2420,7 +1820,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2445,32 +1846,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -2482,8 +1858,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -2523,7 +1897,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2548,32 +1923,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -2585,8 +1935,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -2626,7 +1974,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2651,32 +2000,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -2688,8 +2012,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -2729,7 +2051,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2754,32 +2077,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -2791,8 +2089,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -2832,7 +2128,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2857,32 +2154,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -2894,8 +2166,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -2935,7 +2205,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2960,32 +2231,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -2997,8 +2243,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -3038,7 +2282,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3063,32 +2308,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -3100,8 +2320,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -3141,7 +2359,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3166,32 +2385,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -3203,8 +2397,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -3244,7 +2436,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3269,32 +2462,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -3306,8 +2474,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -3347,7 +2513,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3372,32 +2539,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -3409,8 +2551,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -3450,7 +2590,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3475,32 +2616,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -3512,8 +2628,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -3553,7 +2667,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3578,32 +2693,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]
@@ -3615,8 +2705,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Ice Shoes",
                   "color": "gold",
@@ -3656,7 +2744,8 @@
                 "minecraft:custom_data": {
                   "armor": "ice_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3681,32 +2770,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/ice_shoes": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/ice_shoes": 1
               }
             }
           ]

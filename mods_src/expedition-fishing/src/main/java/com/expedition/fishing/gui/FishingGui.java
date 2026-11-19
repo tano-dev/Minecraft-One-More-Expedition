@@ -6,12 +6,17 @@ import com.expedition.fishing.data.FishingPlayerData;
 import com.expedition.fishing.data.PlayerDataStorage;
 import com.expedition.fishing.item.FishingItemFactory;
 import com.expedition.fishing.mechanics.FishingEngine;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import net.minecraft.core.Holder;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -27,12 +32,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.ItemLore;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.ItemEnchantments;
 
 import java.util.*;
 
 public class FishingGui extends ChestMenu {
     public enum PageType {
-        MAIN, ENCYCLOPEDIA, ARTIFACTS, BAG, RECIPES, CHANCES
+        MAIN, ENCYCLOPEDIA, ARTIFACTS, BAG, TRADE, CHANCES
     }
 
     private static final int ROWS = 6;
@@ -50,7 +57,7 @@ public class FishingGui extends ChestMenu {
             case ENCYCLOPEDIA -> "§8[§b📖 Sea Creature Encyclopedia p." + (page + 1) + "§8]";
             case ARTIFACTS -> "§8[§d✦ Artifacts Collection§8]";
             case BAG -> "§8[§6🎒 Equipped Artifact Bag§8]";
-            case RECIPES -> "§8[§a⚒ Fishing Crafting & Upgrades p." + (page + 1) + "§8]";
+            case TRADE -> "§8[§6✦ Essence Enchantment Trade§8]";
             case CHANCES -> "§8[§e📊 Biome Pool Chances§8]";
         };
         player.openMenu(new SimpleMenuProvider(
@@ -84,7 +91,7 @@ public class FishingGui extends ChestMenu {
             case ENCYCLOPEDIA -> renderEncyclopedia();
             case ARTIFACTS -> renderArtifacts();
             case BAG -> renderBag();
-            case RECIPES -> renderRecipes();
+            case TRADE -> renderTradeShop();
             case CHANCES -> renderChances();
         }
     }
@@ -95,6 +102,12 @@ public class FishingGui extends ChestMenu {
 
         box.setItem(13, makeIcon(Items.FISHING_ROD, "§b§lAngler Profile: §f" + viewer.getName().getString(), List.of(
                 "§7Fishing Level: §aLv." + d.level + " §8(" + String.format(Locale.US, "%.1f%%", d.getXpProgressPercent()) + ")",
+                "",
+                "§6§lEssences Held:",
+                "§b💧 Water: " + d.getEssenceAmount("WATER"),
+                "§c🔥 Magma: " + d.getEssenceAmount("MAGMA"),
+                "§5✨ Void: " + d.getEssenceAmount("VOID"),
+                "",
                 "§7Current Heat: §6" + Math.round(d.heat) + "/100 🔥",
                 "§7Total Catches: §e" + d.totalCatches,
                 "§7Unique Creatures: §b" + d.mobCatches.size() + " / " + FishingDataRegistry.MOBS.size(),
@@ -112,11 +125,12 @@ public class FishingGui extends ChestMenu {
                 "§eClick to open!"
         )), () -> open(viewer, PageType.ENCYCLOPEDIA, 0));
 
-        setBtn(22, makeIcon(Items.CRAFTING_TABLE, "§a§l⚒ Fishing Recipes & Upgrades", List.of(
-                "§7Browse and craft custom Rods, Armor Sets,",
-                "§7Baits, and Enchanted Materials directly!",
+        setBtn(22, makeIcon(Items.ENCHANTED_BOOK, "§6§l✦ Essence Enchantment Trade", List.of(
+                "§7Trade §bWater§7, §cMagma§7, and §5Void Essence",
+                "§7for random §dLevel 1 Enchanted Books§7!",
+                "§8(Exclusive non-table modpack & fishing enchants)",
                 "§eClick to open!"
-        )), () -> open(viewer, PageType.RECIPES, 0));
+        )), () -> open(viewer, PageType.TRADE, 0));
 
         setBtn(24, makeIcon(Items.HEART_OF_THE_SEA, "§d§l✦ Artifacts & Bag", List.of(
                 "§7View discovered Artifacts and manage",
@@ -134,8 +148,7 @@ public class FishingGui extends ChestMenu {
     private void renderEncyclopedia() {
         FishingPlayerData d = PlayerDataStorage.get(viewer.getUUID());
         List<String> keys = new ArrayList<>(FishingDataRegistry.MOBS.keySet());
-        Collections.sort(keys);
-
+        
         int perPage = 45;
         int start = pageIndex * perPage;
         for (int i = 0; i < perPage && (start + i) < keys.size(); i++) {
@@ -162,8 +175,7 @@ public class FishingGui extends ChestMenu {
     private void renderArtifacts() {
         FishingPlayerData d = PlayerDataStorage.get(viewer.getUUID());
         List<String> keys = new ArrayList<>(FishingDataRegistry.ARTIFACTS.keySet());
-        Collections.sort(keys);
-
+        
         for (int i = 0; i < Math.min(45, keys.size()); i++) {
             String artId = keys.get(i);
             boolean unlocked = d.discoveredArtifacts.contains(artId);
@@ -218,114 +230,167 @@ public class FishingGui extends ChestMenu {
         setBtn(49, makeIcon(Items.ARROW, "§e← Back to Main Menu", List.of()), () -> open(viewer, PageType.MAIN, 0));
     }
 
-    private void renderRecipes() {
+    private void renderTradeShop() {
         FishingPlayerData d = PlayerDataStorage.get(viewer.getUUID());
-        List<String> keys = new ArrayList<>(FishingDataRegistry.RECIPES.keySet());
-        Collections.sort(keys);
 
-        int perPage = 45;
-        int start = pageIndex * perPage;
-        for (int i = 0; i < perPage && (start + i) < keys.size(); i++) {
-            String recId = keys.get(start + i);
-            JsonObject rec = FishingDataRegistry.RECIPES.get(recId);
-            String resId = FishingDataRegistry.getStr(rec, "result", recId.replace("_recipe", ""));
-            int reqLv = FishingDataRegistry.getInt(rec, "level", 1);
+        // Top Center: Live Essence Balance display
+        box.setItem(4, makeIcon(Items.NETHER_STAR, "§6§l✦ Your Essence Balance", List.of(
+                "§b💧 Water Essence (Overworld): §f" + d.getEssenceAmount("WATER"),
+                "§c🔥 Magma Essence (Nether): §f" + d.getEssenceAmount("MAGMA"),
+                "§5✨ Void Essence (The End): §f" + d.getEssenceAmount("VOID"),
+                "",
+                "§7Slay hostile Sea Creatures to earn",
+                "§7Essence equal to §e(Required Level)²§7!"
+        )));
 
-            ItemStack preview = FishingItemFactory.createCustomItem(resId, 1);
-            if (preview.isEmpty()) preview = makeIcon(Items.CRAFTING_TABLE, "§a" + FishingItemFactory.formatId(resId), List.of());
+        // Row 1 (Water): 1 random enchant, Lv.1
+        box.setItem(10, makeIcon(Items.HEART_OF_THE_SEA, "§b§l💧 Water Essence Shop", List.of(
+                "§7Currency: §bWater Essence",
+                "§7Reward: §f1 Random Enchant §8(Lv.1)",
+                "§7Your Balance: §f" + d.getEssenceAmount("WATER")
+        )));
+        renderTradeRow(d, "water", "WATER", "§b💧 Water Essence", 1, "FIXED_1", 50, 150, 300, 12, 14, 16);
 
-            Map<String, Integer> reqMaterials = extractIngredients(rec);
-            List<Component> lore = new ArrayList<>();
-            lore.add(Component.literal("§7Required Fishing Level: " + (d.level >= reqLv ? "§aLv." + reqLv : "§cLv." + reqLv)));
-            lore.add(Component.literal("§6Ingredients:"));
-            for (Map.Entry<String, Integer> ing : reqMaterials.entrySet()) {
-                lore.add(Component.literal(" §7- §f" + ing.getValue() + "x §e" + FishingItemFactory.formatId(ing.getKey())));
-            }
-            lore.add(Component.empty());
-            lore.add(Component.literal("§a▶ Click to Craft directly from Inventory!"));
-            preview.set(DataComponents.LORE, new ItemLore(lore));
+        // Row 2 (Magma): 2 random enchants, random levels [1..max]
+        box.setItem(19, makeIcon(Items.MAGMA_CREAM, "§c§l🔥 Magma Essence Shop", List.of(
+                "§7Currency: §cMagma Essence",
+                "§7Reward: §f2 Random Enchants §8(Random Lv. 1~Max)",
+                "§7Your Balance: §f" + d.getEssenceAmount("MAGMA")
+        )));
+        renderTradeRow(d, "magma", "MAGMA", "§c🔥 Magma Essence", 2, "RANDOM_ANY", 50, 150, 300, 21, 23, 25);
 
-            final String targetItemId = resId;
-            setBtn(i, preview, () -> attemptCraft(d, reqLv, targetItemId, reqMaterials));
-        }
+        // Row 3 (Void): 3 random enchants, high levels [max-1..max]
+        box.setItem(28, makeIcon(Items.ENDER_EYE, "§5§l✨ Void Essence Shop", List.of(
+                "§7Currency: §5Void Essence",
+                "§7Reward: §f3 Random Enchants §8(Lv. Max-1 ~ Max)",
+                "§7Your Balance: §f" + d.getEssenceAmount("VOID")
+        )));
+        renderTradeRow(d, "void", "VOID", "§5✨ Void Essence", 3, "HIGH_MAX", 100, 300, 600, 30, 32, 34);
 
-        addNavButtons(keys.size(), perPage);
+        setBtn(49, makeIcon(Items.ARROW, "§e← Back to Main Menu", List.of()), () -> open(viewer, PageType.MAIN, 0));
     }
 
-    private Map<String, Integer> extractIngredients(JsonObject rec) {
-        Map<String, Integer> map = new LinkedHashMap<>();
-        if (rec.has("ingredients") && rec.get("ingredients").isJsonObject()) {
-            JsonObject ingObj = rec.getAsJsonObject("ingredients");
-            for (Map.Entry<String, JsonElement> e : ingObj.entrySet()) {
-                if (e.getValue().isJsonPrimitive() && e.getValue().getAsJsonPrimitive().isNumber()) {
-                    map.put(e.getKey(), e.getValue().getAsInt());
-                } else if (e.getValue().isJsonPrimitive()) {
-                    map.merge(e.getValue().getAsString(), 1, Integer::sum);
+    private void renderTradeRow(FishingPlayerData d, String shopKey, String essenceKey, String essenceLabel,
+                                int defCount, String defLevelMode, int defCommon, int defRare, int defEpic,
+                                int slotCommon, int slotRare, int slotEpic) {
+        JsonObject shopsRoot = FishingDataRegistry.SHOP.get("shops");
+        JsonObject shopCfg = (shopsRoot != null && shopsRoot.has(shopKey) && shopsRoot.get(shopKey).isJsonObject())
+                ? shopsRoot.getAsJsonObject(shopKey)
+                : null;
+
+        int enchCount = shopCfg != null ? FishingDataRegistry.getInt(shopCfg, "enchant_count", defCount) : defCount;
+        String levelMode = shopCfg != null ? FishingDataRegistry.getStr(shopCfg, "level_mode", defLevelMode) : defLevelMode;
+        int cCost = shopCfg != null ? FishingDataRegistry.getInt(shopCfg, "common_cost", defCommon) : defCommon;
+        int rCost = shopCfg != null ? FishingDataRegistry.getInt(shopCfg, "rare_cost", defRare) : defRare;
+        int eCost = shopCfg != null ? FishingDataRegistry.getInt(shopCfg, "epic_cost", defEpic) : defEpic;
+
+        addTradeButton(d, "common", "COMMON", "§7§lCommon", essenceKey, essenceLabel, cCost, enchCount, levelMode, slotCommon);
+        addTradeButton(d, "rare", "RARE", "§b§lRare", essenceKey, essenceLabel, rCost, enchCount, levelMode, slotRare);
+        addTradeButton(d, "epic", "EPIC", "§d§lEpic", essenceKey, essenceLabel, eCost, enchCount, levelMode, slotEpic);
+    }
+
+    private List<String> getRarityPoolIds(String rarityKey) {
+        List<String> poolIds = new ArrayList<>();
+        JsonObject poolsRoot = FishingDataRegistry.SHOP.get("rarity_pools");
+        if (poolsRoot != null && poolsRoot.has(rarityKey) && poolsRoot.get(rarityKey).isJsonObject()) {
+            JsonObject pObj = poolsRoot.getAsJsonObject(rarityKey);
+            if (pObj.has("items") && pObj.get("items").isJsonArray()) {
+                JsonArray arr = pObj.getAsJsonArray("items");
+                for (JsonElement el : arr) {
+                    if (el.isJsonPrimitive()) poolIds.add(el.getAsString());
                 }
             }
-        } else if (rec.has("input")) {
-            String inp = FishingDataRegistry.getStr(rec, "input", "cod");
-            int amt = FishingDataRegistry.getInt(rec, "amount", 16);
-            map.put(inp, amt);
         }
-        return map;
+        return poolIds;
     }
 
-    private void attemptCraft(FishingPlayerData d, int reqLv, String resultId, Map<String, Integer> reqMaterials) {
-        if (d.level < reqLv) {
-            viewer.sendSystemMessage(Component.literal("§cRequires Fishing Level " + reqLv + " to craft this item!"));
+    private void addTradeButton(FishingPlayerData d, String rarityKey, String rarityLabel, String colorTitle,
+                                String essenceKey, String essenceLabel, int cost, int enchCount, String levelMode, int slot) {
+        List<String> poolIds = getRarityPoolIds(rarityKey);
+        long balance = d.getEssenceAmount(essenceKey);
+        boolean canAfford = balance >= cost;
+
+        String lvDesc = switch (levelMode.toUpperCase(Locale.ROOT)) {
+            case "RANDOM_ANY" -> "Random Level (1 ~ Max)";
+            case "HIGH_MAX" -> "High Level (Max-1 ~ Max)";
+            default -> "Level I";
+        };
+
+        ItemStack icon = makeIcon(Items.ENCHANTED_BOOK, colorTitle + " §fEnchanted Book §8(" + enchCount + "x)", List.of(
+                "§8" + rarityLabel + " RARITY POOL",
+                "§7Enchants: §e" + enchCount + " Random " + colorTitle,
+                "§7Level Roll: §b" + lvDesc,
+                "§7Cost: " + (canAfford ? "§a" : "§c") + cost + "x " + essenceLabel,
+                "§7Your Balance: §f" + balance,
+                "§7Pool Size: §e" + poolIds.size() + " exclusive enchants",
+                "",
+                canAfford ? "§a▶ Click to Trade!" : "§c✖ Not enough " + essenceKey + " Essence!"
+        ));
+        icon.set(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true);
+
+        setBtn(slot, icon, () -> attemptTrade(d, essenceKey, essenceLabel, cost, rarityLabel, enchCount, levelMode, poolIds));
+    }
+
+    private void attemptTrade(FishingPlayerData d, String essenceKey, String essenceLabel, int cost,
+                              String rarityLabel, int enchCount, String levelMode, List<String> poolIds) {
+        if (d.getEssenceAmount(essenceKey) < cost) {
+            viewer.sendSystemMessage(Component.literal("§c✖ You need " + cost + "x " + essenceLabel + " §c(Have: " + d.getEssenceAmount(essenceKey) + ")!"));
+            viewer.level().playSound(null, viewer.blockPosition(), SoundEvents.VILLAGER_NO, SoundSource.PLAYERS, 0.8f, 1.0f);
             return;
         }
-        for (Map.Entry<String, Integer> entry : reqMaterials.entrySet()) {
-            if (countInInventory(viewer, entry.getKey()) < entry.getValue()) {
-                viewer.sendSystemMessage(Component.literal("§cMissing ingredient: " + entry.getValue() + "x " + FishingItemFactory.formatId(entry.getKey())));
-                return;
-            }
-        }
-        for (Map.Entry<String, Integer> entry : reqMaterials.entrySet()) {
-            consumeFromInventory(viewer, entry.getKey(), entry.getValue());
-        }
-        ItemStack crafted = FishingItemFactory.createCustomItem(resultId, 1);
-        if (!crafted.isEmpty()) {
-            FishingEngine.giveOrDrop(viewer, crafted);
-            viewer.level().playSound(null, viewer.blockPosition(), SoundEvents.ANVIL_USE, SoundSource.PLAYERS, 0.8f, 1.2f);
-            viewer.sendSystemMessage(Component.literal("§a✦ Crafted ").append(crafted.getHoverName()).append(Component.literal("§a!")));
-        }
-    }
 
-    private int countInInventory(ServerPlayer player, String id) {
-        int total = 0;
-        Inventory inv = player.getInventory();
-        for (int i = 0; i < inv.getContainerSize(); i++) {
-            ItemStack st = inv.getItem(i);
-            if (matchesIngredient(st, id)) {
-                total += st.getCount();
-            }
+        HolderLookup.RegistryLookup<Enchantment> enchLookup = viewer.level().registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
+        List<Holder.Reference<Enchantment>> validHolders = new ArrayList<>();
+        for (String idStr : poolIds) {
+            Identifier id = Identifier.tryParse(idStr);
+            if (id == null) continue;
+            ResourceKey<Enchantment> rk = ResourceKey.create(Registries.ENCHANTMENT, id);
+            enchLookup.get(rk).ifPresent(validHolders::add);
         }
-        return total;
-    }
 
-    private void consumeFromInventory(ServerPlayer player, String id, int amount) {
-        int rem = amount;
-        Inventory inv = player.getInventory();
-        for (int i = 0; i < inv.getContainerSize() && rem > 0; i++) {
-            ItemStack st = inv.getItem(i);
-            if (matchesIngredient(st, id)) {
-                int take = Math.min(rem, st.getCount());
-                st.shrink(take);
-                rem -= take;
-            }
+        if (validHolders.isEmpty()) {
+            viewer.sendSystemMessage(Component.literal("§c✖ No valid enchantments found in this pool! Check shop_config.json."));
+            return;
         }
-    }
 
-    private boolean matchesIngredient(ItemStack st, String id) {
-        if (st == null || st.isEmpty()) return false;
-        String customId = FishingItemFactory.getCustomItemId(st);
-        if (customId != null) {
-            return customId.equalsIgnoreCase(id);
+        net.minecraft.util.RandomSource rng = viewer.level().getRandom();
+        Collections.shuffle(validHolders, new java.util.Random(rng.nextLong()));
+        int picks = Math.min(Math.max(1, enchCount), validHolders.size());
+
+        ItemStack book = new ItemStack(Items.ENCHANTED_BOOK, 1);
+        ItemEnchantments.Mutable mut = new ItemEnchantments.Mutable(ItemEnchantments.EMPTY);
+        List<Component> rolledNames = new ArrayList<>();
+
+        for (int i = 0; i < picks; i++) {
+            Holder.Reference<Enchantment> chosen = validHolders.get(i);
+            int maxLv = Math.max(1, chosen.value().getMaxLevel());
+            int rolledLv = switch (levelMode.toUpperCase(Locale.ROOT)) {
+                case "RANDOM_ANY" -> 1 + rng.nextInt(maxLv);
+                case "HIGH_MAX" -> {
+                    int minLv = Math.max(1, maxLv - 1);
+                    yield minLv + rng.nextInt(maxLv - minLv + 1);
+                }
+                default -> 1;
+            };
+            mut.set(chosen, rolledLv);
+            rolledNames.add(Enchantment.getFullname(chosen, rolledLv));
         }
-        String vanKey = BuiltInRegistries.ITEM.getKey(st.getItem()).getPath();
-        return vanKey.equalsIgnoreCase(id);
+        book.set(DataComponents.STORED_ENCHANTMENTS, mut.toImmutable());
+
+        d.addEssence(essenceKey, -cost);
+        PlayerDataStorage.saveAsync(viewer.getUUID());
+        FishingEngine.giveOrDrop(viewer, book);
+
+        viewer.level().playSound(null, viewer.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 0.9f, 1.2f);
+        net.minecraft.network.chat.MutableComponent msg = Component.literal("§a✦ Traded §e" + cost + "x " + essenceLabel + " §afor §8[" + rarityLabel + "§8] ");
+        for (int i = 0; i < rolledNames.size(); i++) {
+            if (i > 0) msg.append(Component.literal("§7, "));
+            msg.append(rolledNames.get(i));
+        }
+        viewer.sendSystemMessage(msg);
+
+        // Refresh GUI immediately to show updated Essence balance
+        render();
     }
 
     private void renderChances() {

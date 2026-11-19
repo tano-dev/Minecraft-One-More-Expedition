@@ -10,8 +10,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -46,7 +44,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -81,52 +80,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -137,8 +90,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -173,7 +124,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -208,52 +160,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -264,8 +170,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -300,7 +204,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -335,52 +240,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -391,8 +250,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -427,7 +284,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -462,52 +320,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -518,8 +330,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -554,7 +364,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -589,52 +400,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -645,8 +410,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -681,7 +444,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -716,52 +480,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -772,8 +490,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -808,7 +524,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -843,52 +560,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -899,8 +570,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -935,7 +604,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -970,52 +640,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -1026,8 +650,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -1062,7 +684,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1097,52 +720,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -1153,8 +730,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -1189,7 +764,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1224,52 +800,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -1280,8 +810,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -1316,7 +844,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1351,52 +880,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -1407,8 +890,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -1443,7 +924,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1478,52 +960,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -1534,8 +970,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -1570,7 +1004,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1605,52 +1040,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -1661,8 +1050,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -1697,7 +1084,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1732,52 +1120,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -1788,8 +1130,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -1824,7 +1164,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1859,52 +1200,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -1915,8 +1210,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -1951,7 +1244,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -1986,52 +1280,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -2042,8 +1290,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -2078,7 +1324,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2113,52 +1360,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -2169,8 +1370,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -2205,7 +1404,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2240,52 +1440,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -2296,8 +1450,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -2332,7 +1484,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2367,52 +1520,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -2423,8 +1530,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -2459,7 +1564,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2494,52 +1600,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -2550,8 +1610,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -2586,7 +1644,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2621,52 +1680,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -2677,8 +1690,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -2713,7 +1724,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2748,52 +1760,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -2804,8 +1770,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -2840,7 +1804,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2861,52 +1826,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -2917,8 +1836,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -2953,7 +1870,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -2988,52 +1906,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -3044,8 +1916,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -3080,7 +1950,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3115,52 +1986,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -3171,8 +1996,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -3207,7 +2030,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3242,52 +2066,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -3298,8 +2076,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -3334,7 +2110,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3369,52 +2146,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -3425,8 +2156,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -3461,7 +2190,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3496,52 +2226,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -3552,8 +2236,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -3588,7 +2270,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3623,52 +2306,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -3679,8 +2316,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -3715,7 +2350,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3750,52 +2386,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -3806,8 +2396,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -3842,7 +2430,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -3877,52 +2466,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -3933,8 +2476,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -3969,7 +2510,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -4004,52 +2546,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -4060,8 +2556,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -4096,7 +2590,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -4131,52 +2626,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -4187,8 +2636,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -4223,7 +2670,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -4258,52 +2706,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -4314,8 +2716,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -4350,7 +2750,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -4385,52 +2786,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 7
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 3
-                },
-                "minecraft:soul_speed": {
-                  "type": "minecraft:uniform",
-                  "min": {
-                    "type": "minecraft:constant",
-                    "value": 1
-                  },
-                  "max": {
-                    "type": "minecraft:constant",
-                    "value": 3
-                  }
-                }
-              }
             }
           ]
         },
@@ -4441,8 +2796,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Jungle Shoes",
                   "color": "gold",
@@ -4477,7 +2830,8 @@
                 "minecraft:custom_data": {
                   "armor": "jungle_shoes",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 481
               }
             },
             {
@@ -4512,36 +2866,6 @@
                   "slot": "feet"
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 10
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:frost_walker": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
-              }
             }
           ]
         }

@@ -259,31 +259,6 @@
                   }
                 }
               }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 3
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 3
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 3
-                }
-              }
             }
           ]
         },
@@ -359,31 +334,6 @@
                   }
                 }
               }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 3
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 3
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 3
-                }
-              }
             }
           ]
         },
@@ -407,41 +357,6 @@
               "min": 1,
               "max": 1
             }
-          }
-        },
-        {
-          "type": "minecraft:loot_table",
-          "value": "mt:hacks/panda",
-          "weight": 1,
-          "condition": {
-            "type": "minecraft:all_of",
-            "terms": [
-              {
-                "type": "minecraft:random_chance",
-                "chance": 0.2
-              },
-              {
-                "type": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": {
-                  "mt.total": {
-                    "min": 700000
-                  }
-                }
-              },
-              {
-                "type": "minecraft:int_value_check",
-                "value": {
-                  "type": "score",
-                  "target": {
-                    "type": "minecraft:fixed",
-                    "name": "$vanilla_mode"
-                  },
-                  "score": "mt.var"
-                },
-                "test": 0
-              }
-            ]
           }
         },
         {

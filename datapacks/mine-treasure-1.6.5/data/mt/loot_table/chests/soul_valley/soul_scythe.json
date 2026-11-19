@@ -11,8 +11,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -81,22 +79,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -139,8 +122,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -209,22 +190,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -267,8 +233,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -337,22 +301,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -395,8 +344,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -465,22 +412,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -523,8 +455,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -593,22 +523,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -651,8 +566,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -721,22 +634,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -779,8 +677,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -849,22 +745,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -907,8 +788,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -977,22 +856,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -1035,8 +899,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -1105,22 +967,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -1163,8 +1010,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -1233,22 +1078,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -1291,8 +1121,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -1361,22 +1189,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -1419,8 +1232,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -1489,22 +1300,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -1547,8 +1343,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -1617,22 +1411,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -1675,8 +1454,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -1745,22 +1522,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -1803,8 +1565,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -1873,22 +1633,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -1931,8 +1676,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -2001,22 +1744,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -2059,8 +1787,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -2129,22 +1855,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -2187,8 +1898,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -2257,22 +1966,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -2315,8 +2009,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -2385,22 +2077,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -2443,8 +2120,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -2513,22 +2188,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -2571,8 +2231,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -2641,22 +2299,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -2699,8 +2342,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -2769,22 +2410,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -2827,8 +2453,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -2897,22 +2521,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },
@@ -2955,8 +2564,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Scythe of Souls",
                   "color": "gold",
@@ -3025,22 +2632,7 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/soul_scythe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                },
-                "minecraft:smite": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 10,
-                  "max": 10
-                }
+                "mt:weapons/soul_scythe": 1
               },
               "add": true
             },

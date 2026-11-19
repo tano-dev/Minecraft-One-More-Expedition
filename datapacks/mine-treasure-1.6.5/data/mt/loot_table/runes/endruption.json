@@ -1,97 +1,97 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:globe_banner_pattern",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            },
+            {
+              "type": "minecraft:set_name",
+              "name": [
                 {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "minecraft:globe_banner_pattern",
-                    "modifier": [
-                        {
-                            "type": "minecraft:set_count",
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "min": 2,
-                                "max": 4
-                            }
-                        },
-                        {
-                            "type": "minecraft:set_name",
-                            "name": [
-                                {
-                                    "text": "Endruption",
-                                    "color": "gold",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "type": "minecraft:set_lore",
-                            "lore": [
-                                {
-                                    "text": "RUNE",
-                                    "color": "gold",
-                                    "bold": true,
-                                    "italic": false
-                                },
-                                {
-                                    "text": " ",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "Ability:",
-                                    "color": "green",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "When used the user takes no knockback ",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "and has damage increased by 10% for ",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "8 seconds. Ender Pearls are disabled ",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "in a 8x8 area around the user. ",
-                                    "color": "gray",
-                                    "italic": false
-                                }
-                            ],
-                            "mode": "replace_all"
-                        },
-                        {
-                            "type": "minecraft:set_components",
-                            "components": {
-                                "max_stack_size": 16,
-                                "minecraft:consumable": {
-                                    "consume_seconds": 0,
-                                    "sound": "intentionally_empty",
-                                    "has_consume_particles": false
-                                },
-                                "minecraft:use_cooldown": {
-                                    "seconds": 5,
-                                    "cooldown_group": "mt:rune"
-                                },
-                                "minecraft:enchantment_glint_override": true,
-                                "minecraft:custom_data": {
-                                    "rune": "mt.end",
-                                    "mt": "rune"
-                                }
-                            }
-                        }
-                    ]
+                  "text": "Endruption",
+                  "color": "gold",
+                  "italic": false
                 }
-            ]
+              ]
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "RUNE",
+                  "color": "gold",
+                  "bold": true,
+                  "italic": false
+                },
+                {
+                  "text": " ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Ability:",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "When used the user takes no knockback ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "and has damage increased by 10% for ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "8 seconds. Ender Pearls are disabled ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "in a 8x8 area around the user. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "max_stack_size": 16,
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "sound": "intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 5,
+                  "cooldown_group": "mt:rune"
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "rune": "mt.end",
+                  "mt": "rune"
+                }
+              }
+            }
+          ]
         }
-    ],
-    "modifier": []
+      ]
+    }
+  ],
+  "modifier": []
 }

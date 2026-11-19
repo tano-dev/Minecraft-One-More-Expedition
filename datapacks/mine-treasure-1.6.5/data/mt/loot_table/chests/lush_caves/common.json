@@ -237,26 +237,6 @@
                 "value": 5
               },
               "add": true
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 4
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 5,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         },

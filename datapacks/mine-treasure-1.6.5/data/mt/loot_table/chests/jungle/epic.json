@@ -244,31 +244,6 @@
                   "italic": false
                 }
               ]
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                }
-              }
             }
           ]
         },
@@ -387,31 +362,6 @@
               "components": {
                 "minecraft:custom_data": {
                   "armor": "wither"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:fire_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
                 }
               }
             }

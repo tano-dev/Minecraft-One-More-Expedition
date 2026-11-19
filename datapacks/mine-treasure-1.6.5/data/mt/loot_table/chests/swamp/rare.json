@@ -247,38 +247,9 @@
               ]
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:feather_falling": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:depth_strider": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 3
-                }
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:max_damage": 481
               }
             }
           ]

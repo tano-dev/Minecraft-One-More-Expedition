@@ -105,9 +105,11 @@ ENCHANTSPLUS_EN = {
     "enchantsplus:skyguard": (4, 4, ["armor"], "Elytra", "Skyguard", "Grants +0.75 damage protection EPF per level (up to +3 EPF at Lv IV) while gliding with Elytra."),
     "enchantsplus:stride": (3, 4, ["armor"], "Leggings", "Stride", "Increases step height by +30% per level (up to +90% at Lv III) for effortless terrain traversal."),
     "enchantsplus:swift_strike": (5, 4, ["weapon"], "Melee Weapons", "Swift Strike", "Increases melee attack speed by +12.5% per level (up to +62.5% at Lv V)."),
-    "enchantsplus:toxic": (1, 4, ["ranged"], "Bows", "Toxic", "Arrows inflict Poison on hit targets."),
     "enchantsplus:vitality": (3, 4, ["armor"], "Chestplates", "Vitality", "Increases max health by +2 HP (+1 heart) per level (up to +6 HP / +3 hearts at Lv III)."),
-    "enchantsplus:websnare": (2, 4, ["weapon"], "Swords & Maces", "Websnare", "Traps hit targets in cobwebs; duration/effect scales across Lv I–II.")
+    "enchantsplus:websnare": (2, 4, ["weapon"], "Swords & Maces", "Websnare", "Traps hit targets in cobwebs; duration/effect scales across Lv I–II."),
+    "keepinv:deathlock": (1, 4, ["armor"], "Chestplates", "Deathlock", "Items lost or graves created upon death can only be retrieved by yourself. Incompatible with Safekeep and Gravehold."),
+    "keepinv:gravehold": (1, 4, ["armor"], "Chestplates", "Gravehold", "Doubles the duration that dropped items or graves remain before despawning upon death. Incompatible with Safekeep and Deathlock."),
+    "keepinv:safekeep": (1, 4, ["armor"], "Armor", "Safekeep", "Keep all items in your inventory upon death at the cost of 33% item durability. Incompatible with Deathlock, Gravehold, Mending, Sacrifice, and Handyman.")
 }
 
 STELLARITY_EN = {

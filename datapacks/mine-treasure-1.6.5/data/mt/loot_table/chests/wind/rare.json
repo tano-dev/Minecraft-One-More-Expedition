@@ -415,31 +415,6 @@
                 "test": 0
               }
             ]
-          },
-          "modifier": {
-            "type": "minecraft:set_enchantments",
-            "enchantments": {
-              "minecraft:efficiency": {
-                "type": "minecraft:uniform",
-                "min": 3,
-                "max": 6
-              },
-              "minecraft:unbreaking": {
-                "type": "minecraft:uniform",
-                "min": 3,
-                "max": 6
-              },
-              "minecraft:mending": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 1
-              },
-              "minecraft:silk_touch": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 1
-              }
-            }
           }
         },
         {
@@ -471,31 +446,6 @@
                 "test": 0
               }
             ]
-          },
-          "modifier": {
-            "type": "minecraft:set_enchantments",
-            "enchantments": {
-              "minecraft:efficiency": {
-                "type": "minecraft:uniform",
-                "min": 3,
-                "max": 6
-              },
-              "minecraft:unbreaking": {
-                "type": "minecraft:uniform",
-                "min": 3,
-                "max": 6
-              },
-              "minecraft:mending": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 1
-              },
-              "minecraft:silk_touch": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 1
-              }
-            }
           }
         },
         {
@@ -527,31 +477,6 @@
                 "test": 0
               }
             ]
-          },
-          "modifier": {
-            "type": "minecraft:set_enchantments",
-            "enchantments": {
-              "minecraft:efficiency": {
-                "type": "minecraft:uniform",
-                "min": 3,
-                "max": 6
-              },
-              "minecraft:unbreaking": {
-                "type": "minecraft:uniform",
-                "min": 3,
-                "max": 6
-              },
-              "minecraft:mending": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 1
-              },
-              "minecraft:silk_touch": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 1
-              }
-            }
           }
         }
       ]

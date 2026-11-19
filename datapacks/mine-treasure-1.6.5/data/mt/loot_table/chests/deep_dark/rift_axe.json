@@ -10,39 +10,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -158,39 +131,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -306,39 +252,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -454,39 +373,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -602,39 +494,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -750,39 +615,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -898,39 +736,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -1046,39 +857,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -1194,39 +978,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -1342,39 +1099,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -1490,39 +1220,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -1638,39 +1341,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -1786,39 +1462,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -1934,39 +1583,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -2082,39 +1704,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -2230,39 +1825,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -2378,39 +1946,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -2526,39 +2067,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -2674,39 +2188,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -2822,39 +2309,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -2970,39 +2430,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -3118,39 +2551,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"
@@ -3266,39 +2672,12 @@
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:weapons/rift_axe": 1,
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:looting": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 5
-                },
-                "minecraft:knockback": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
+                "mt:weapons/rift_axe": 1
               }
             },
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 9999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_data": {
                   "weapon": "riftaxe",
                   "mt": "weapon"

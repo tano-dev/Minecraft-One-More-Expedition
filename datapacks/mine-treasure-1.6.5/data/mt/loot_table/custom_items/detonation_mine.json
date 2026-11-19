@@ -1,54 +1,54 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:fire_charge",
-                    "modifier": [
-                        {
-                            "type": "minecraft:set_components",
-                            "components": {
-                                "minecraft:custom_data": {
-                                    "weapon": "mt.deto_mine"
-                                }
-                            }
-                        },
-                        {
-                            "type": "minecraft:set_lore",
-                            "lore": [
-                                {
-                                    "text": "Right click on a block to put a ",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "ticking time bomb detonating in ",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "5 seconds after placement.  ",
-                                    "color": "gray",
-                                    "italic": false
-                                }
-                            ],
-                            "mode": "replace_all"
-                        },
-                        {
-                            "type": "minecraft:set_name",
-                            "name": [
-                                {
-                                    "text": "Detonation Mine",
-                                    "color": "light_purple",
-                                    "italic": false
-                                }
-                            ]
-                        }
-                    ]
+          "type": "minecraft:item",
+          "name": "minecraft:fire_charge",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "weapon": "mt.deto_mine"
                 }
-            ]
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Right click on a block to put a ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "ticking time bomb detonating in ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "5 seconds after placement.  ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Detonation Mine",
+                  "color": "light_purple",
+                  "italic": false
+                }
+              ]
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

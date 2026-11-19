@@ -457,36 +457,6 @@
                 }
               ],
               "mode": "replace_all"
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:efficiency": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:silk_touch": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
             }
           ]
         }

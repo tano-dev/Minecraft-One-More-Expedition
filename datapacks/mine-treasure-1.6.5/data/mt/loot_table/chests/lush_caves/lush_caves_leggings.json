@@ -11,8 +11,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -57,28 +55,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -110,8 +94,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -156,28 +138,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -209,8 +177,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -255,28 +221,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -308,8 +260,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -354,28 +304,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -407,8 +343,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -453,28 +387,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -506,8 +426,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -552,28 +470,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -605,8 +509,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -651,28 +553,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -704,8 +592,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -750,28 +636,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -803,8 +675,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -849,28 +719,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -902,8 +758,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -948,28 +802,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -1001,8 +841,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -1047,28 +885,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -1100,8 +924,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -1146,28 +968,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -1199,8 +1007,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -1245,28 +1051,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -1298,8 +1090,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -1344,28 +1134,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -1397,8 +1173,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -1443,28 +1217,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -1496,8 +1256,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -1542,28 +1300,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -1595,8 +1339,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -1641,28 +1383,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -1694,8 +1422,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -1740,28 +1466,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -1793,8 +1505,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -1839,28 +1549,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -1892,8 +1588,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -1938,28 +1632,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -1991,8 +1671,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -2037,28 +1715,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -2090,8 +1754,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -2136,28 +1798,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -2189,8 +1837,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -2235,28 +1881,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -2288,8 +1920,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -2334,28 +1964,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -2387,8 +2003,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -2433,28 +2047,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -2486,8 +2086,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -2532,28 +2130,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -2585,8 +2169,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -2631,28 +2213,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -2684,8 +2252,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -2730,28 +2296,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -2783,8 +2335,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -2829,28 +2379,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -2882,8 +2418,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -2928,28 +2462,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -2981,8 +2501,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -3027,28 +2545,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -3080,8 +2584,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -3126,28 +2628,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -3179,8 +2667,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -3225,28 +2711,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -3278,8 +2750,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -3324,28 +2794,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -3377,8 +2833,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -3423,28 +2877,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -3476,8 +2916,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -3522,28 +2960,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -3575,8 +2999,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -3621,28 +3043,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -3674,8 +3082,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -3720,28 +3126,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -3773,8 +3165,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -3819,28 +3209,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -3872,8 +3248,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -3918,28 +3292,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -3971,8 +3331,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -4017,28 +3375,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -4070,8 +3414,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -4116,28 +3458,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {
@@ -4169,8 +3497,6 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:repair_cost": 99999,
-                "minecraft:unbreakable": {},
                 "minecraft:custom_name": {
                   "text": "Lush Cave Pants",
                   "color": "gold",
@@ -4215,28 +3541,14 @@
                 "minecraft:custom_data": {
                   "armor": "lush_cave_leggings",
                   "mt": "armor"
-                }
+                },
+                "minecraft:max_damage": 555
               }
             },
             {
               "type": "minecraft:set_enchantments",
               "enchantments": {
-                "mt:armor/lush_leggings": 1,
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:projectile_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                },
-                "minecraft:blast_protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 5
-                }
+                "mt:armor/lush_leggings": 1
               }
             },
             {

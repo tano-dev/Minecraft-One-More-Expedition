@@ -1,0 +1,9 @@
+execute if items entity @s hotbar.0 minecraft:clock run function wawo:clock/modify/exec {slot:"hotbar.0"}
+execute if items entity @s hotbar.1 minecraft:clock run function wawo:clock/modify/exec {slot:"hotbar.1"}
+execute if items entity @s hotbar.2 minecraft:clock run function wawo:clock/modify/exec {slot:"hotbar.2"}
+execute if items entity @s hotbar.3 minecraft:clock run function wawo:clock/modify/exec {slot:"hotbar.3"}
+execute if items entity @s hotbar.4 minecraft:clock run function wawo:clock/modify/exec {slot:"hotbar.4"}
+execute if items entity @s hotbar.5 minecraft:clock run function wawo:clock/modify/exec {slot:"hotbar.5"}
+execute if items entity @s hotbar.6 minecraft:clock run function wawo:clock/modify/exec {slot:"hotbar.6"}
+execute if items entity @s hotbar.7 minecraft:clock run function wawo:clock/modify/exec {slot:"hotbar.7"}
+execute if items entity @s hotbar.8 minecraft:clock run function wawo:clock/modify/exec {slot:"hotbar.8"}

@@ -47,26 +47,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -136,26 +116,6 @@
                   "mt": "armor"
                 }
               }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
-              }
             }
           ]
         },
@@ -199,26 +159,6 @@
                 "minecraft:custom_data": {
                   "armor": "rn_boots",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
                 }
               }
             },
@@ -294,26 +234,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -381,26 +301,6 @@
                 "minecraft:custom_data": {
                   "armor": "rn_boots",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
                 }
               }
             },
@@ -476,26 +376,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -563,26 +443,6 @@
                 "minecraft:custom_data": {
                   "armor": "rn_boots",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
                 }
               }
             },
@@ -658,26 +518,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -745,26 +585,6 @@
                 "minecraft:custom_data": {
                   "armor": "rn_boots",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
                 }
               }
             },
@@ -840,26 +660,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -927,26 +727,6 @@
                 "minecraft:custom_data": {
                   "armor": "rn_boots",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
                 }
               }
             },
@@ -1022,26 +802,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -1109,26 +869,6 @@
                 "minecraft:custom_data": {
                   "armor": "rn_boots",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
                 }
               }
             },
@@ -1204,26 +944,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -1291,26 +1011,6 @@
                 "minecraft:custom_data": {
                   "armor": "rn_boots",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
                 }
               }
             },
@@ -1386,26 +1086,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -1477,26 +1157,6 @@
               }
             },
             {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
-                }
-              }
-            },
-            {
               "type": "minecraft:set_attributes",
               "modifiers": [
                 {
@@ -1564,26 +1224,6 @@
                 "minecraft:custom_data": {
                   "armor": "rn_boots",
                   "mt": "armor"
-                }
-              }
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:protection": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 6
-                },
-                "minecraft:mending": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "minecraft:unbreaking": {
-                  "type": "minecraft:uniform",
-                  "min": 1,
-                  "max": 10
                 }
               }
             },

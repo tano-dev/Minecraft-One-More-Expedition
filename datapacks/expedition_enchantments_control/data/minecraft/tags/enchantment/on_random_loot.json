@@ -238,7 +238,7 @@
     "enchantsplus:websnare",
     "expedition_fishing:abyssal_blessing",
     "expedition_fishing:angler_instinct",
-    "expedition_fishing:bait_saver",
+    "expedition_fishing:essence_siphon",
     "expedition_fishing:biome_attunement",
     "expedition_fishing:blazing_line",
     "expedition_fishing:blood_in_the_water",
@@ -420,6 +420,11 @@
     "stellarity:void_strike",
     "veinminer-enchantment:veinminer",
     "wither:soul_siphon",
-    "wither:witherbound"
+    "wither:witherbound",
+    "expedition_fishing:abyssal_protection",
+    "expedition_fishing:abyssal_slayer",
+    "keepinv:deathlock",
+    "keepinv:gravehold",
+    "keepinv:safekeep"
   ]
 }
