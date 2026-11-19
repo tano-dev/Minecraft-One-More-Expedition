@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "nova_structures:charts/any_village",
+      "required": false
+    },
+    {
+      "id": "nova_structures:charts/illager_camp",
+      "required": false
+    }
+  ]
+}

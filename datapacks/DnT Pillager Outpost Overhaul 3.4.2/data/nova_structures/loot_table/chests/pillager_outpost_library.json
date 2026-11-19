@@ -1,0 +1,129 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spyglass",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bundle",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sentry_armor_trim_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:comparator",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "quality": 40,
+          "modifier": {
+            "options": "#nova_structures:structure/illager_outpost",
+            "levels": 20,
+            "type": "minecraft:enchant_with_levels"
+          }
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0,
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "modifier": {
+            "count": {
+              "min": 2,
+              "max": 4,
+              "type": "minecraft:uniform"
+            },
+            "type": "set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 6
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ink_sac",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 3
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 3
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 2
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gray_candle",
+          "modifier": {
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 2,
+              "max": 6
+            },
+            "add": false,
+            "type": "minecraft:set_count"
+          }
+        }
+      ]
+    }
+  ],
+  "modifier": "nova_structures:loot_modifier"
+}

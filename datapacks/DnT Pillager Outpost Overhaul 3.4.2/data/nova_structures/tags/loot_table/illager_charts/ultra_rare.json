@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "nova_structures:charts/illager_hideout",
+      "required": false
+    },
+    {
+      "id": "nova_structures:charts/woodland_explorer",
+      "required": false
+    },
+    {
+      "id": "nova_structures:charts/illager_manor",
+      "required": false
+    },
+    {
+      "id": "nova_structures:charts/ancient_city",
+      "required": false
+    },
+    {
+      "id": "nova_structures:charts/witch_villa",
+      "required": false
+    }
+  ]
+}
