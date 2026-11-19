@@ -1,7 +1,7 @@
 # End Crystal stuff
   scoreboard players reset #crystal_count stellarity.misc
   # Count Crystals (any End Crystal on obsidian pillars, excluding the exit portal)
-    execute in minecraft:the_end positioned 0 80 0 as @e[type=end_crystal,nbt={ShowBottom:1b},distance=0..250,tag=!stellarity.respawn_crystal,predicate=!stellarity:entity/dragon/exit_portal_crystal] at @s run function stellarity:entity/dragon/crystal/loop
+    execute in minecraft:the_end positioned 0 80 0 as @e[distance=0..250,type=end_crystal,tag=!stellarity.respawn_crystal,predicate=!stellarity:entity/dragon/exit_portal_crystal,nbt={ShowBottom:1b}] at @s run function stellarity:entity/dragon/crystal/loop
     # Make Dragon invulnerable if there is more than 1 Crystal
       execute if score #crystal_count stellarity.misc matches 1.. run function stellarity:entity/dragon/crystal/update_bossbar
       execute unless score #crystal_count stellarity.misc matches 1.. run function stellarity:entity/dragon/crystal/hide_bossbar

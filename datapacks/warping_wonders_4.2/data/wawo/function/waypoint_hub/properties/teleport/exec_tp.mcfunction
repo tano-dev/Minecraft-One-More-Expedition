@@ -13,7 +13,7 @@ $execute unless data storage eden:database waypoints.hubs.$(id).profile{name:"$(
         ]
 
 $execute if data storage eden:settings warping_wonders.waypoint_hub{mob_teleport:"enabled"} \
-    as @e[nbt={leash: {UUID:$(uuid)}}] \
+    as @e[distance=..24,type=!player,nbt={leash: {UUID:$(uuid)}}] \
     in $(dimension) positioned $(x) $(y) $(z) \
         run tp @s $(relative_coords)
 

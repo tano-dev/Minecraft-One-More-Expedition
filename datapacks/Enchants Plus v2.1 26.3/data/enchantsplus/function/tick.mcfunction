@@ -20,16 +20,16 @@
 #execute as @e[type=minecraft:marker,tag=ep.expiredlight] at @s run function enchantsplus:luminosity/del
 # precision
 
-execute as @e[type=arrow,tag=ep.ng1,nbt={inGround:true}] run function enchantsplus:precision/normalize
-execute as @e[type=arrow,tag=ep.ng2,nbt={inGround:true}] run function enchantsplus:precision/normalize
+execute as @e[tag=ep.ng1,type=arrow,nbt={inGround:true}] run function enchantsplus:precision/normalize
+execute as @e[tag=ep.ng2,type=arrow,nbt={inGround:true}] run function enchantsplus:precision/normalize
 
-execute as @e[type=arrow,tag=ep.ng1] if predicate enchantsplus:notsoslow run function enchantsplus:precision/normalize
-execute as @e[type=arrow,tag=ep.ng2] if predicate enchantsplus:slow run function enchantsplus:precision/normalize
+execute as @e[tag=ep.ng1,type=arrow] if predicate enchantsplus:notsoslow run function enchantsplus:precision/normalize
+execute as @e[tag=ep.ng2,type=arrow] if predicate enchantsplus:slow run function enchantsplus:precision/normalize
 
 # ice aspect
-execute as @e[type=block_display,tag=ep.frozen] at @s unless entity @e[nbt={active_effects:[{id:"minecraft:slowness",amplifier:9b}]},distance=..2] run kill @s
-execute as @e[type=!player,nbt={NoAI:true},tag=ep.entity.frozen] unless entity @s[nbt={active_effects:[{id:"minecraft:slowness",amplifier:9b}]}] at @s run function enchantsplus:ice_aspect/unfreeze
-execute as @e[type=armor_stand,tag=ep.entity.frozen] unless entity @s[nbt={active_effects:[{id:"minecraft:slowness",amplifier:9b}]}] at @s run function enchantsplus:ice_aspect/unfreeze
+execute as @e[tag=ep.frozen,type=block_display] at @s unless entity @e[tag=ep.entity.frozen,distance=..2.5,nbt={active_effects:[{id:"minecraft:slowness",amplifier:9b}]}] run kill @s
+execute as @e[tag=ep.entity.frozen,type=!player] unless entity @s[nbt={active_effects:[{id:"minecraft:slowness",amplifier:9b}]}] at @s run function enchantsplus:ice_aspect/unfreeze
+execute as @e[tag=ep.entity.frozen,type=armor_stand] unless entity @s[nbt={active_effects:[{id:"minecraft:slowness",amplifier:9b}]}] at @s run function enchantsplus:ice_aspect/unfreeze
 
 execute as @a[tag=ep.entity.frozen] at @s at @n[type=block_display,tag=ep.frozen] rotated as @s run tp @s ~ ~ ~
 execute as @a[tag=ep.entity.frozen] unless entity @s[nbt={active_effects:[{id:"minecraft:slowness",amplifier:9b}]}] at @s run function enchantsplus:ice_aspect/unfreeze

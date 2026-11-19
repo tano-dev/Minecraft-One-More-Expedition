@@ -1,4 +1,4 @@
-$execute if data storage eden:settings warping_wonders.portal_horn{mob_teleport:"enabled"} as @e[nbt={leash: {UUID:$(uuid)}},distance=..36] run tp @s $(player)
+$execute if data storage eden:settings warping_wonders.portal_horn{mob_teleport:"enabled"} as @e[distance=..36,type=!player,nbt={leash: {UUID:$(uuid)}}] run tp @s $(player)
 $execute at @s unless predicate wawo:entity/is_riding run tp @s $(player)
 $execute at @s if predicate wawo:entity/is_riding run tp @n[type=#wawo:is_mount] $(player)
 

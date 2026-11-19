@@ -11,7 +11,7 @@ anchored eyes facing entity @n[type=!#kohara:invalid_targets_with_player,distanc
 
 execute store result storage stellarity:temp spectral_fury.damage float 0.01 run scoreboard players get @s stellarity.item.spectral_fury.damage
 
-execute as @e[type=!#kohara:invalid_targets_with_player,dx=0,nbt=!{HurtTime:10s}] at @s run \
+execute as @e[distance=..2,type=!#kohara:invalid_targets_with_player,dx=0,nbt=!{HurtTime:10s}] at @s run \
 function stellarity:item/spectral_fury/wisp/damage with storage stellarity:temp spectral_fury
 
 # Player damage
