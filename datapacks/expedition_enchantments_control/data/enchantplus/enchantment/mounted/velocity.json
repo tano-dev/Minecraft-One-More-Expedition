@@ -6,7 +6,7 @@
   },
   "supported_items": "#enchantplus:enchantable/mounted",
   "weight": 1,
-  "max_level": 3,
+  "max_level": 4,
   "min_cost": {
     "base": 2,
     "per_level_above_first": 11

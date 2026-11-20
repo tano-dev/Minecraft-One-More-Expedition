@@ -1257,7 +1257,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Teluric Wave",
     "tier": "ultimate",
     "tier_order": 1,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 8,
     "table": false,
     "table_weight": 1,
@@ -1280,7 +1280,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Crouch-striking the ground unleashes seismic waves and inflicts Slowness (5s); wave power scales across Lv I–III. [ULTIMATE]",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mace/teluric_wave\":3}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mace/teluric_wave\":1}}] 1"
   },
   {
     "id": "enchantencore:vitality",
@@ -2193,7 +2193,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Critical",
     "tier": "epic",
     "tier_order": 2,
-    "max_level": 3,
+    "max_level": 4,
     "anvil_cost": 6,
     "table": false,
     "table_weight": 1,
@@ -2219,7 +2219,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Increases chance to bypass armor and deal true critical damage across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/critical\":3}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/critical\":4}}] 1"
   },
   {
     "id": "mt:armor/dark_forest_chestplate",
@@ -3703,7 +3703,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Striker",
     "tier": "epic",
     "tier_order": 2,
-    "max_level": 1,
+    "max_level": 2,
     "anvil_cost": 6,
     "table": false,
     "table_weight": 1,
@@ -3718,7 +3718,7 @@ window.ALL_ENCHANTMENTS = [
     "exclusive_groups": [],
     "conflicts": [],
     "description": "Summons lightning on Mace strikes during storms and grants lightning immunity.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mace/striker\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mace/striker\":2}}] 1"
   },
   {
     "id": "mt:armor/swamp_chestplate",
@@ -5050,7 +5050,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Death Touch",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 4,
     "table": false,
     "table_weight": 1,
@@ -5072,7 +5072,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Inflicts Darkness on hit targets; duration scales across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/death_touch\":3}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/death_touch\":1}}] 1"
   },
   {
     "id": "enchantplus:sword/dimensional_hit",
@@ -5082,7 +5082,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Dimensional Hit",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 5,
     "anvil_cost": 4,
     "table": true,
     "table_weight": 1,
@@ -5108,7 +5108,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Deals +2 bonus damage (+1 per level above I, up to +4 at Lv III) in Nether or End dimensions.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/dimensional_hit\":3}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/dimensional_hit\":5}}] 1"
   },
   {
     "id": "enchantplus:bow/echo_shot",
@@ -5539,7 +5539,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Ethereal Leap",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 5,
     "anvil_cost": 4,
     "table": true,
     "table_weight": 1,
@@ -5554,7 +5554,7 @@ window.ALL_ENCHANTMENTS = [
     "exclusive_groups": [],
     "conflicts": [],
     "description": "Increases mount jump strength by +50% (+25%/lvl above I, up to +100%) and safe fall distance by +50% per level.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/ethereal_leap\":3}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/ethereal_leap\":5}}] 1"
   },
   {
     "id": "enchantencore:evokers_wrath",
@@ -5807,7 +5807,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Fear",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 1,
     "anvil_cost": 2,
     "table": false,
     "table_weight": 1,
@@ -5822,7 +5822,7 @@ window.ALL_ENCHANTMENTS = [
     "exclusive_groups": [],
     "conflicts": [],
     "description": "Delays Creeper fuse explosions on hit; delay scales across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/fear\":3}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/fear\":1}}] 1"
   },
   {
     "id": "enchantencore:fire_alloy",
@@ -8204,7 +8204,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Runic Despair",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 3,
+    "max_level": 5,
     "anvil_cost": 4,
     "table": false,
     "table_weight": 1,
@@ -8230,7 +8230,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Multiplies melee damage dealt inside the Runic Dimension across Lv I–III.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/runic_despair\":3}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:sword/runic_despair\":5}}] 1"
   },
   {
     "id": "kattersstructures:rusta_shot",
@@ -10719,7 +10719,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Cavalier Egis",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 3,
+    "max_level": 5,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 12,
@@ -10734,7 +10734,7 @@ window.ALL_ENCHANTMENTS = [
     "exclusive_groups": [],
     "conflicts": [],
     "description": "Grants +0.75 damage protection EPF per level (up to +2.25 EPF at Lv III) while riding a mount.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/cavalier_egis\":3}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/cavalier_egis\":5}}] 1"
   },
   {
     "id": "enchantencore:cleansing",
@@ -16843,7 +16843,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Steel Fang",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 5,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 12,
@@ -16858,7 +16858,7 @@ window.ALL_ENCHANTMENTS = [
     "exclusive_groups": [],
     "conflicts": [],
     "description": "Increases Wolf attack damage by +0.5 per level (up to +2.5 bonus damage at Lv V).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/steel_fang\":5}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/steel_fang\":3}}] 1"
   },
   {
     "id": "enchantencore:sticky_aura",
@@ -17508,7 +17508,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Velocity",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 3,
+    "max_level": 4,
     "anvil_cost": 4,
     "table": true,
     "table_weight": 1,
@@ -17523,7 +17523,7 @@ window.ALL_ENCHANTMENTS = [
     "exclusive_groups": [],
     "conflicts": [],
     "description": "Increases mount movement speed by +55% (+30%/lvl above I, up to +115% at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/velocity\":3}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantplus:mounted/velocity\":4}}] 1"
   },
   {
     "id": "stellarity:_technical/void_pendant/amethyst",
