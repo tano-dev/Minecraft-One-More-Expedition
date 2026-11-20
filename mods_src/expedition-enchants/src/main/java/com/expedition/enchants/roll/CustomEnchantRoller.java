@@ -31,6 +31,10 @@ public class CustomEnchantRoller {
     }
 
     public static Tier detectTier(Holder<Enchantment> holder) {
+        if (holder.is(net.minecraft.tags.EnchantmentTags.CURSE)) {
+            return Tier.CURSE;
+        }
+
         String id = holder.unwrapKey().map(k -> k.identifier().toString()).orElse("");
         String override = EnchantRollConfig.get().tierOverrides.get(id);
         if (override != null) {

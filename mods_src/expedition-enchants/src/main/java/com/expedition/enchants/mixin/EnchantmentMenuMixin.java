@@ -39,6 +39,7 @@ public class EnchantmentMenuMixin {
 
             ItemStack enchanted = this.enchantSlots.getItem(0);
             if (!enchanted.isEmpty()) {
+                com.expedition.enchants.tooltip.EnchantTooltipFormatter.applyToItemStack(enchanted);
                 RevealEnchantsMenu.open(sp, enchanted, isGodroll);
                 try {
                     Class<?> qApi = Class.forName("com.expedition.quests.api.ExpeditionQuestsApi");

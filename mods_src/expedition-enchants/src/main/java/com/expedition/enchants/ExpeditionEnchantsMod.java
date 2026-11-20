@@ -37,6 +37,27 @@ public class ExpeditionEnchantsMod implements ModInitializer {
             );
 
             dispatcher.register(
+                Commands.literal("enchantsformat")
+                    .requires(Commands.hasPermission(Commands.LEVEL_ADMINS))
+                    .executes(ctx -> {
+                        ServerPlayer sp = ctx.getSource().getPlayerOrException();
+                        net.minecraft.world.item.ItemStack mainHand = sp.getMainHandItem();
+                        if (mainHand.isEmpty()) {
+                            ctx.getSource().sendFailure(Component.literal("§cHold an enchanted item or book in your main hand."));
+                            return 0;
+                        }
+                        boolean ok = com.expedition.enchants.tooltip.EnchantTooltipFormatter.applyToItemStack(mainHand);
+                        if (ok) {
+                            ctx.getSource().sendSuccess(() -> Component.literal("§a[ExpeditionEnchants] Formatted enchantments on held item!"), false);
+                            return 1;
+                        } else {
+                            ctx.getSource().sendFailure(Component.literal("§cItem has no enchantments to format or lore sync is disabled."));
+                            return 0;
+                        }
+                    })
+            );
+
+            dispatcher.register(
                 Commands.literal("enchantrig")
                     .requires(Commands.hasPermission(Commands.LEVEL_ADMINS))
                     .then(Commands.argument("target", EntityArgument.player())

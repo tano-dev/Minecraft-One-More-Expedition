@@ -22,6 +22,25 @@ public class EnchantRollConfig {
     public boolean enabled = true;
     public boolean enableRevealUi = true;
 
+    public static class TooltipConfig {
+        public boolean enabled = true;
+        public String maxLevelSymbol = "✦";
+        public boolean symbolBeforeName = true;
+        public int maxEnchantsPerLine = 3;
+        public int maxLineLength = 38;
+        public boolean showCurseAtBottom = true;
+        public boolean enableServerLoreSync = true;
+        public Map<String, String> tierColors = new LinkedHashMap<>(Map.of(
+            "ultimate", "gold",
+            "epic", "light_purple",
+            "rare", "aqua",
+            "common", "gray",
+            "curse", "red"
+        ));
+    }
+
+    public TooltipConfig tooltip = new TooltipConfig();
+
     // Chance per enchanting roll at Lv 30 (scaled linearly for lower table levels)
     public Map<String, Double> tierChances = new LinkedHashMap<>(Map.of(
         "ultimate", 0.00,

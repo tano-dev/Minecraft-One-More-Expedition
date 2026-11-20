@@ -182,6 +182,7 @@ public class StructureChestBookRoller {
         }
 
         book.set(DataComponents.STORED_ENCHANTMENTS, mut.toImmutable());
+        com.expedition.enchants.tooltip.EnchantTooltipFormatter.applyToItemStack(book);
         return new RollResult(book, isGodroll);
     }
 

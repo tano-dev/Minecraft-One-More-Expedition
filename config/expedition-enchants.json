@@ -76,5 +76,21 @@
     "enchantencore",
     "enchantsplus",
     "nova_structures"
-  ]
+  ],
+  "tooltip": {
+    "enabled": true,
+    "maxLevelSymbol": "✦",
+    "symbolBeforeName": true,
+    "maxEnchantsPerLine": 3,
+    "maxLineLength": 38,
+    "showCurseAtBottom": true,
+    "enableServerLoreSync": true,
+    "tierColors": {
+      "ultimate": "gold",
+      "epic": "light_purple",
+      "rare": "aqua",
+      "common": "gray",
+      "curse": "red"
+    }
+  }
 }

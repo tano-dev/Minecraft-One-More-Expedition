@@ -4,8 +4,11 @@
   "package": "com.expedition.enchants.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
+    "AnvilMenuMixin",
     "EnchantmentHelperMixin",
     "EnchantmentMenuMixin",
+    "GrindstoneMenuMixin",
+    "ItemEnchantmentsMixin",
     "LootTableMixin"
   ],
   "injectors": {
