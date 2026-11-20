@@ -160,7 +160,7 @@ public class EnchantTargetDetector {
             case TRIDENT -> "🔱";
             case MACE -> "🔨";
             case FISHING_ROD -> "🎣";
-            case ELYTRA -> "🪽";
+            case ELYTRA -> "🦋";
             case SHEARS -> "✂";
             case CURSE -> "☠";
             case UNKNOWN -> "✦";

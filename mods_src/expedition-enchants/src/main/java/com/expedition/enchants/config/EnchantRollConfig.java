@@ -57,7 +57,7 @@ public class EnchantRollConfig {
             Map.entry("trident", "🔱"),
             Map.entry("mace", "🔨"),
             Map.entry("fishing_rod", "🎣"),
-            Map.entry("elytra", "🪽"),
+            Map.entry("elytra", "🦋"),
             Map.entry("curse", "☠")
         ));
         public Map<String, String> tierColors = new LinkedHashMap<>(Map.of(
