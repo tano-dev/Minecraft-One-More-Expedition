@@ -24,13 +24,38 @@ public class EnchantRollConfig {
 
     public static class TooltipConfig {
         public boolean enabled = true;
+        public boolean useTargetIcons = true;
+        public boolean boldMaxIcon = true;
+        public boolean targetIconsOnBooksOnly = false;
         public String maxLevelSymbol = "✦";
         public boolean symbolBeforeName = true;
         public boolean sortMaxFirst = true;
+        public boolean singleLinePerEnchantOnBooks = true;
         public int maxEnchantsPerLine = 3;
         public int maxLineLength = 38;
         public boolean showCurseAtBottom = true;
         public boolean enableServerLoreSync = true;
+        public Map<String, String> targetIcons = new LinkedHashMap<>(Map.ofEntries(
+            Map.entry("all", "✦"),
+            Map.entry("armor", "🛡"),
+            Map.entry("helmet", "🪖"),
+            Map.entry("chestplate", "🦺"),
+            Map.entry("leggings", "👖"),
+            Map.entry("boots", "🥾"),
+            Map.entry("sword", "⚔"),
+            Map.entry("axe", "🪓"),
+            Map.entry("melee", "⚔🪓"),
+            Map.entry("tools", "⛏🪓"),
+            Map.entry("mining", "⛏"),
+            Map.entry("ranged", "🏹🎯"),
+            Map.entry("bow", "🏹"),
+            Map.entry("crossbow", "🎯"),
+            Map.entry("trident", "🔱"),
+            Map.entry("mace", "🔨"),
+            Map.entry("fishing_rod", "🎣"),
+            Map.entry("elytra", "🪽"),
+            Map.entry("curse", "☠")
+        ));
         public Map<String, String> tierColors = new LinkedHashMap<>(Map.of(
             "ultimate", "gold",
             "epic", "light_purple",

@@ -11,6 +11,7 @@ import net.minecraft.network.chat.Style;
 import net.minecraft.network.chat.TextColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.ItemLore;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -32,13 +33,17 @@ public class EnchantTooltipFormatter {
     ) {}
 
     public static boolean formatTooltip(ItemEnchantments enchantments, Item.TooltipContext context, Consumer<Component> tooltip) {
+        return formatTooltip(enchantments, context, tooltip, false);
+    }
+
+    public static boolean formatTooltip(ItemEnchantments enchantments, Item.TooltipContext context, Consumer<Component> tooltip, boolean isBook) {
         if (!EnchantRollConfig.get().tooltip.enabled) {
             return false;
         }
         if (enchantments == null || enchantments.isEmpty()) {
             return false;
         }
-        List<Component> lines = buildTooltipLines(enchantments);
+        List<Component> lines = buildTooltipLines(enchantments, isBook);
         if (lines.isEmpty()) {
             return false;
         }
@@ -54,6 +59,7 @@ public class EnchantTooltipFormatter {
         if (!cfg.enabled || !cfg.enableServerLoreSync) return false;
 
         ItemEnchantments enchants = stack.get(DataComponents.STORED_ENCHANTMENTS);
+        boolean isBook = (enchants != null && !enchants.isEmpty()) || stack.is(Items.ENCHANTED_BOOK);
         if (enchants == null || enchants.isEmpty()) {
             enchants = stack.get(DataComponents.ENCHANTMENTS);
         }
@@ -61,7 +67,7 @@ public class EnchantTooltipFormatter {
             return false;
         }
 
-        List<Component> lines = buildTooltipLines(enchants);
+        List<Component> lines = buildTooltipLines(enchants, isBook);
         if (lines.isEmpty()) return false;
 
         TooltipDisplay display = stack.getOrDefault(DataComponents.TOOLTIP_DISPLAY, TooltipDisplay.DEFAULT)
@@ -73,6 +79,10 @@ public class EnchantTooltipFormatter {
     }
 
     public static List<Component> buildTooltipLines(ItemEnchantments enchantments) {
+        return buildTooltipLines(enchantments, false);
+    }
+
+    public static List<Component> buildTooltipLines(ItemEnchantments enchantments, boolean isBook) {
         List<Component> result = new ArrayList<>();
         if (enchantments == null || enchantments.isEmpty()) {
             return result;
@@ -98,30 +108,38 @@ public class EnchantTooltipFormatter {
             MutableComponent comp = Component.empty().withStyle(style);
             int estLen = 0;
 
-            String symbol = cfg.maxLevelSymbol != null ? cfg.maxLevelSymbol : "";
-            if (isMax && cfg.symbolBeforeName && !symbol.isEmpty()) {
-                comp.append(Component.literal(symbol + " ").withStyle(style));
-                estLen += symbol.length() + 1;
+            boolean showTargetIcon = cfg.useTargetIcons && (!cfg.targetIconsOnBooksOnly || isBook);
+            if (showTargetIcon) {
+                String targetIcon = EnchantTargetDetector.getIcon(holder);
+                Style iconStyle = (isMax && cfg.boldMaxIcon) ? style.withBold(true) : style.withBold(false);
+                comp.append(Component.literal(targetIcon + " ").withStyle(iconStyle));
+                estLen += targetIcon.length() + 1;
+            } else {
+                String symbol = cfg.maxLevelSymbol != null ? cfg.maxLevelSymbol : "";
+                if (isMax && cfg.symbolBeforeName && !symbol.isEmpty()) {
+                    comp.append(Component.literal(symbol + " ").withStyle(style));
+                    estLen += symbol.length() + 1;
+                }
             }
 
             // Name
             Component desc = holder.value().description();
-            comp.append(desc.copy().withStyle(style));
+            comp.append(desc.copy().withStyle(style.withBold(false)));
             estLen += desc.getString().length();
 
             // Level (omit if level == 1 and maxLevel == 1, matching vanilla behavior)
             if (level != 1 || holder.value().getMaxLevel() != 1) {
-                comp.append(Component.literal(" ").withStyle(style));
+                comp.append(Component.literal(" ").withStyle(style.withBold(false)));
                 Component levelComp = (level >= 1 && level <= 10)
-                    ? Component.translatable("enchantment.level." + level).withStyle(style)
-                    : Component.literal(toRoman(level)).withStyle(style);
+                    ? Component.translatable("enchantment.level." + level).withStyle(style.withBold(false))
+                    : Component.literal(toRoman(level)).withStyle(style.withBold(false));
                 comp.append(levelComp);
                 estLen += 1 + (level <= 10 ? levelRomanApprox(level) : toRoman(level).length());
             }
 
-            if (isMax && !cfg.symbolBeforeName && !symbol.isEmpty()) {
-                comp.append(Component.literal(" " + symbol).withStyle(style));
-                estLen += 1 + symbol.length();
+            if (!showTargetIcon && isMax && !cfg.symbolBeforeName && cfg.maxLevelSymbol != null && !cfg.maxLevelSymbol.isEmpty()) {
+                comp.append(Component.literal(" " + cfg.maxLevelSymbol).withStyle(style));
+                estLen += 1 + cfg.maxLevelSymbol.length();
             }
 
             String sortName = desc.getString().toLowerCase(Locale.ROOT);
@@ -138,8 +156,15 @@ public class EnchantTooltipFormatter {
             tierOrder.add(CustomEnchantRoller.Tier.CURSE);
         }
 
-        int maxPerLine = Math.max(1, cfg.maxEnchantsPerLine);
-        int maxLineLen = Math.max(15, cfg.maxLineLength);
+        int maxPerLine;
+        int maxLineLen;
+        if (isBook && cfg.singleLinePerEnchantOnBooks) {
+            maxPerLine = 1;
+            maxLineLen = 999;
+        } else {
+            maxPerLine = Math.max(1, cfg.maxEnchantsPerLine);
+            maxLineLen = Math.max(15, cfg.maxLineLength);
+        }
 
         for (CustomEnchantRoller.Tier t : tierOrder) {
             List<EnchantEntry> entries = byTier.get(t);

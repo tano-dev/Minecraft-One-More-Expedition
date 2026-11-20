@@ -31,7 +31,8 @@ public class ItemEnchantmentsMixin {
         if (self.isEmpty()) {
             return;
         }
-        if (EnchantTooltipFormatter.formatTooltip(self, context, tooltip)) {
+        boolean isBook = (dataComponentGetter != null && dataComponentGetter.get(net.minecraft.core.component.DataComponents.STORED_ENCHANTMENTS) != null);
+        if (EnchantTooltipFormatter.formatTooltip(self, context, tooltip, isBook)) {
             ci.cancel();
         }
     }
