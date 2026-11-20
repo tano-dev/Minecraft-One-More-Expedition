@@ -20,6 +20,8 @@ public class EnchantTargetDetector {
         CHESTPLATE,
         LEGGINGS,
         BOOTS,
+        SHIELD,
+        PET,
         MELEE,
         SWORD,
         AXE,
@@ -33,6 +35,7 @@ public class EnchantTargetDetector {
         MACE,
         FISHING_ROD,
         ELYTRA,
+        SHEARS,
         CURSE,
         UNKNOWN
     }
@@ -52,6 +55,9 @@ public class EnchantTargetDetector {
         boolean legs = ench.isSupportedItem(new ItemStack(Items.DIAMOND_LEGGINGS));
         boolean boots = ench.isSupportedItem(new ItemStack(Items.DIAMOND_BOOTS));
 
+        boolean shield = ench.isSupportedItem(new ItemStack(Items.SHIELD));
+        boolean pet = ench.isSupportedItem(new ItemStack(Items.WOLF_ARMOR)) || ench.isSupportedItem(new ItemStack(Items.DIAMOND_HORSE_ARMOR));
+
         boolean sword = ench.isSupportedItem(new ItemStack(Items.DIAMOND_SWORD));
         boolean axe = ench.isSupportedItem(new ItemStack(Items.DIAMOND_AXE));
         boolean spear = ench.isSupportedItem(new ItemStack(Items.DIAMOND_SPEAR));
@@ -66,6 +72,7 @@ public class EnchantTargetDetector {
 
         boolean fishing = ench.isSupportedItem(new ItemStack(Items.FISHING_ROD));
         boolean elytra = ench.isSupportedItem(new ItemStack(Items.ELYTRA));
+        boolean shears = ench.isSupportedItem(new ItemStack(Items.SHEARS));
 
         boolean allArmor = helmet && chest && legs && boots;
         boolean hasArmor = helmet || chest || legs || boots;
@@ -77,17 +84,20 @@ public class EnchantTargetDetector {
             return TargetType.ALL;
         }
 
-        // Armor
+        // Armor & Defense
         if (allArmor && !hasWeapons && !hasMining) return TargetType.ARMOR;
         if (helmet && !chest && !legs && !boots) return TargetType.HELMET;
         if (chest && !helmet && !legs && !boots) return TargetType.CHESTPLATE;
         if (legs && !helmet && !chest && !boots) return TargetType.LEGGINGS;
         if (boots && !helmet && !chest && !legs) return TargetType.BOOTS;
+        if (shield && !hasArmor && !hasWeapons && !hasMining) return TargetType.SHIELD;
+        if (pet && !hasArmor && !hasWeapons) return TargetType.PET;
         if (hasArmor && !hasWeapons && !hasMining) return TargetType.ARMOR;
 
         // Tools
         if (hasMining && axe) return TargetType.TOOLS; // Efficiency, Fortune, Silk Touch
         if (hasMining) return TargetType.MINING;
+        if (shears && !hasMining && !hasWeapons) return TargetType.SHEARS;
 
         // Ranged Weapons
         if (bow && crossbow) return TargetType.RANGED;
@@ -131,6 +141,8 @@ public class EnchantTargetDetector {
             case CHESTPLATE -> "🦺";
             case LEGGINGS -> "👖";
             case BOOTS -> "🥾";
+            case SHIELD -> "🛡";
+            case PET -> "🐾";
             case MELEE -> "⚔🪓";
             case SWORD -> "⚔";
             case AXE -> "🪓";
@@ -144,6 +156,7 @@ public class EnchantTargetDetector {
             case MACE -> "🔨";
             case FISHING_ROD -> "🎣";
             case ELYTRA -> "🪽";
+            case SHEARS -> "✂";
             case CURSE -> "☠";
             case UNKNOWN -> "✦";
         };
