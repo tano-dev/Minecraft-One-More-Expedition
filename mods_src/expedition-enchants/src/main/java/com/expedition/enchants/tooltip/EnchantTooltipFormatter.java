@@ -25,6 +25,7 @@ public class EnchantTooltipFormatter {
         Holder<Enchantment> holder,
         int level,
         CustomEnchantRoller.Tier tier,
+        boolean isMax,
         MutableComponent component,
         int estimatedLength,
         String sortName
@@ -124,7 +125,7 @@ public class EnchantTooltipFormatter {
             }
 
             String sortName = desc.getString().toLowerCase(Locale.ROOT);
-            byTier.get(tier).add(new EnchantEntry(holder, level, tier, comp, estLen, sortName));
+            byTier.get(tier).add(new EnchantEntry(holder, level, tier, isMax, comp, estLen, sortName));
         }
 
         // Ordered tiers: ULTIMATE -> EPIC -> RARE -> COMMON -> CURSE
@@ -144,8 +145,13 @@ public class EnchantTooltipFormatter {
             List<EnchantEntry> entries = byTier.get(t);
             if (entries == null || entries.isEmpty()) continue;
 
-            // Sort alphabetically within the tier
-            entries.sort(Comparator.comparing(EnchantEntry::sortName));
+            // Sort: maxed enchants first (alphabetically), then non-maxed enchants (alphabetically)
+            if (cfg.sortMaxFirst) {
+                entries.sort(Comparator.comparing((EnchantEntry e) -> !e.isMax())
+                    .thenComparing(EnchantEntry::sortName));
+            } else {
+                entries.sort(Comparator.comparing(EnchantEntry::sortName));
+            }
 
             // Wrap into lines
             MutableComponent currentLine = Component.empty();

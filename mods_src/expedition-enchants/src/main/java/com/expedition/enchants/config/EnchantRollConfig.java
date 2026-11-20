@@ -26,6 +26,7 @@ public class EnchantRollConfig {
         public boolean enabled = true;
         public String maxLevelSymbol = "✦";
         public boolean symbolBeforeName = true;
+        public boolean sortMaxFirst = true;
         public int maxEnchantsPerLine = 3;
         public int maxLineLength = 38;
         public boolean showCurseAtBottom = true;

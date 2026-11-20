@@ -81,6 +81,7 @@
     "enabled": true,
     "maxLevelSymbol": "✦",
     "symbolBeforeName": true,
+    "sortMaxFirst": true,
     "maxEnchantsPerLine": 3,
     "maxLineLength": 38,
     "showCurseAtBottom": true,
