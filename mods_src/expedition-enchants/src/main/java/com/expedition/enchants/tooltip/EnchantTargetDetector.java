@@ -85,24 +85,31 @@ public class EnchantTargetDetector {
         if (boots && !helmet && !chest && !legs) return TargetType.BOOTS;
         if (hasArmor && !hasWeapons && !hasMining) return TargetType.ARMOR;
 
-        // Weapons
-        if (spear && !sword && !axe && !bow && !crossbow && !trident && !mace) return TargetType.SPEAR;
-        if (sword && axe && !bow && !crossbow && !trident && !mace && !hasMining) return TargetType.MELEE;
-        if (sword && !axe && !bow && !crossbow && !trident && !mace && !hasMining) return TargetType.SWORD;
-        if (axe && !sword && !bow && !crossbow && !trident && !mace && !hasMining) return TargetType.AXE;
-        if (bow && crossbow) return TargetType.RANGED;
-        if (bow) return TargetType.BOW;
-        if (crossbow) return TargetType.CROSSBOW;
-        if (trident) return TargetType.TRIDENT;
-        if (mace) return TargetType.MACE;
-
         // Tools
         if (hasMining && axe) return TargetType.TOOLS; // Efficiency, Fortune, Silk Touch
         if (hasMining) return TargetType.MINING;
 
+        // Ranged Weapons
+        if (bow && crossbow) return TargetType.RANGED;
+        if (bow && !sword) return TargetType.BOW;
+        if (crossbow && !sword) return TargetType.CROSSBOW;
+
+        // Unique Weapons (Exclusive to specific weapon type)
+        if (trident && !sword) return TargetType.TRIDENT;
+        if (mace && !sword && !axe && !spear) return TargetType.MACE; // Density, Breach, Wind Burst
+        if (spear && !sword && !axe && !mace) return TargetType.SPEAR; // Lunge, Impale Rush
+
+        // Melee Weapons (Swords, Axes, and hybrid weapons that also accept Mace/Spear like Fire Aspect, Smite)
+        if (sword && axe) return TargetType.MELEE;
+        if (sword) return TargetType.SWORD; // Fire Aspect, Oozing Aspect, Looting, Sweeping Edge
+        if (axe) return TargetType.AXE;
+
         // Misc
         if (fishing) return TargetType.FISHING_ROD;
         if (elytra) return TargetType.ELYTRA;
+
+        if (mace) return TargetType.MACE;
+        if (spear) return TargetType.SPEAR;
 
         if (holder.is(EnchantmentTags.CURSE)) return TargetType.CURSE;
 
