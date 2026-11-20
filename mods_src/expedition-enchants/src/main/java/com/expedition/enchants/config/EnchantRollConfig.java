@@ -44,6 +44,7 @@ public class EnchantRollConfig {
             Map.entry("boots", "🥾"),
             Map.entry("sword", "⚔"),
             Map.entry("axe", "🪓"),
+            Map.entry("spear", "🗡"),
             Map.entry("melee", "⚔🪓"),
             Map.entry("tools", "⛏🪓"),
             Map.entry("mining", "⛏"),

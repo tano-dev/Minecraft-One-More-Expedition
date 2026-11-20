@@ -23,6 +23,7 @@ public class EnchantTargetDetector {
         MELEE,
         SWORD,
         AXE,
+        SPEAR,
         TOOLS,
         MINING,
         BOW,
@@ -53,6 +54,7 @@ public class EnchantTargetDetector {
 
         boolean sword = ench.isSupportedItem(new ItemStack(Items.DIAMOND_SWORD));
         boolean axe = ench.isSupportedItem(new ItemStack(Items.DIAMOND_AXE));
+        boolean spear = ench.isSupportedItem(new ItemStack(Items.DIAMOND_SPEAR));
         boolean bow = ench.isSupportedItem(new ItemStack(Items.BOW));
         boolean crossbow = ench.isSupportedItem(new ItemStack(Items.CROSSBOW));
         boolean trident = ench.isSupportedItem(new ItemStack(Items.TRIDENT));
@@ -67,7 +69,7 @@ public class EnchantTargetDetector {
 
         boolean allArmor = helmet && chest && legs && boots;
         boolean hasArmor = helmet || chest || legs || boots;
-        boolean hasWeapons = sword || axe || bow || crossbow || trident || mace;
+        boolean hasWeapons = sword || axe || spear || bow || crossbow || trident || mace;
         boolean hasMining = pickaxe || shovel || hoe;
 
         // Universal (Unbreaking, Mending, Curse of Vanishing...)
@@ -84,6 +86,7 @@ public class EnchantTargetDetector {
         if (hasArmor && !hasWeapons && !hasMining) return TargetType.ARMOR;
 
         // Weapons
+        if (spear && !sword && !axe && !bow && !crossbow && !trident && !mace) return TargetType.SPEAR;
         if (sword && axe && !bow && !crossbow && !trident && !mace && !hasMining) return TargetType.MELEE;
         if (sword && !axe && !bow && !crossbow && !trident && !mace && !hasMining) return TargetType.SWORD;
         if (axe && !sword && !bow && !crossbow && !trident && !mace && !hasMining) return TargetType.AXE;
@@ -124,6 +127,7 @@ public class EnchantTargetDetector {
             case MELEE -> "⚔🪓";
             case SWORD -> "⚔";
             case AXE -> "🪓";
+            case SPEAR -> "🗡";
             case TOOLS -> "⛏🪓";
             case MINING -> "⛏";
             case RANGED -> "🏹🎯";
