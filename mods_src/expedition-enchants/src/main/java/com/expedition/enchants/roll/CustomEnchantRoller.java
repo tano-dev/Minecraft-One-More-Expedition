@@ -1,6 +1,7 @@
 package com.expedition.enchants.roll;
 
 import com.expedition.enchants.command.EnchantRigManager;
+import com.expedition.enchants.config.EnchantDatabaseLoader;
 import com.expedition.enchants.config.EnchantRollConfig;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.TextColor;
@@ -31,31 +32,49 @@ public class CustomEnchantRoller {
     }
 
     public static Tier detectTier(Holder<Enchantment> holder) {
+        // 1. Curse tag check (highest priority — catches vanilla curses not in our DB)
         if (holder.is(net.minecraft.tags.EnchantmentTags.CURSE)) {
             return Tier.CURSE;
         }
 
         String id = holder.unwrapKey().map(k -> k.identifier().toString()).orElse("");
+
+        // 2. Manual override in expedition-enchants.json (admin override wins over database)
         String override = EnchantRollConfig.get().tierOverrides.get(id);
         if (override != null) {
             return switch (override.toLowerCase(Locale.ROOT)) {
-                case "rare" -> Tier.RARE;
-                case "epic" -> Tier.EPIC;
+                case "rare"     -> Tier.RARE;
+                case "epic"     -> Tier.EPIC;
                 case "ultimate" -> Tier.ULTIMATE;
-                case "curse" -> Tier.CURSE;
-                default -> Tier.COMMON;
+                case "curse"    -> Tier.CURSE;
+                default         -> Tier.COMMON;
             };
         }
 
+        // 3. enchantments_config.json database (primary source of truth)
+        if (EnchantDatabaseLoader.isLoaded()) {
+            String dbTier = EnchantDatabaseLoader.getTier(id);
+            if (dbTier != null) {
+                return switch (dbTier) {
+                    case "rare"     -> Tier.RARE;
+                    case "epic"     -> Tier.EPIC;
+                    case "ultimate" -> Tier.ULTIMATE;
+                    case "curse"    -> Tier.CURSE;
+                    default         -> Tier.COMMON;
+                };
+            }
+        }
+
+        // 4. Fallback: description text color (for enchants not in our database)
         TextColor color = holder.value().description().getStyle().getColor();
         if (color != null) {
             String name = color.serialize();
             return switch (name) {
-                case "aqua" -> Tier.RARE;
+                case "aqua"         -> Tier.RARE;
                 case "light_purple" -> Tier.EPIC;
                 case "yellow", "gold" -> Tier.ULTIMATE;
-                case "red" -> Tier.CURSE;
-                default -> Tier.COMMON;
+                case "red"          -> Tier.CURSE;
+                default             -> Tier.COMMON;
             };
         }
         return Tier.COMMON;

@@ -1,6 +1,7 @@
 package com.expedition.enchants;
 
 import com.expedition.enchants.command.EnchantRigManager;
+import com.expedition.enchants.config.EnchantDatabaseLoader;
 import com.expedition.enchants.config.EnchantRollConfig;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.arguments.StringArgumentType;
@@ -22,12 +23,14 @@ public class ExpeditionEnchantsMod implements ModInitializer {
     @Override
     public void onInitialize() {
         EnchantRollConfig.load();
+        EnchantDatabaseLoader.load();
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             dispatcher.register(
                 Commands.literal("enchantsreload")
                     .requires(Commands.hasPermission(Commands.LEVEL_ADMINS))
                     .executes(ctx -> {
                         EnchantRollConfig.load();
+                        EnchantDatabaseLoader.load();
                         ctx.getSource().sendSuccess(
                             () -> Component.literal("§a[ExpeditionEnchants] Reloaded config/expedition-enchants.json"),
                             false
