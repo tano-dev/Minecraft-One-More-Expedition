@@ -114,6 +114,10 @@ public class EnchantTooltipFormatter {
                 Style iconStyle = (isMax && cfg.boldMaxIcon) ? style.withBold(true) : style.withBold(false);
                 comp.append(Component.literal(targetIcon + " ").withStyle(iconStyle));
                 estLen += targetIcon.length() + 1;
+            } else if (isCurse) {
+                String curseIcon = cfg.targetIcons != null ? cfg.targetIcons.getOrDefault("curse", "☠") : "☠";
+                comp.append(Component.literal(curseIcon + " ").withStyle(style.withBold(false)));
+                estLen += curseIcon.length() + 1;
             } else {
                 String symbol = cfg.maxLevelSymbol != null ? cfg.maxLevelSymbol : "";
                 if (isMax && cfg.symbolBeforeName && !symbol.isEmpty()) {

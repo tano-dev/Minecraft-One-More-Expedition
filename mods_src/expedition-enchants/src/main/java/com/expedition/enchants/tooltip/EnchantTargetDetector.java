@@ -1,6 +1,7 @@
 package com.expedition.enchants.tooltip;
 
 import com.expedition.enchants.config.EnchantRollConfig;
+import com.expedition.enchants.roll.CustomEnchantRoller;
 import net.minecraft.core.Holder;
 import net.minecraft.tags.EnchantmentTags;
 import net.minecraft.world.item.ItemStack;
@@ -48,6 +49,10 @@ public class EnchantTargetDetector {
     }
 
     private static TargetType compute(Holder<Enchantment> holder) {
+        if (holder.is(EnchantmentTags.CURSE) || CustomEnchantRoller.detectTier(holder) == CustomEnchantRoller.Tier.CURSE) {
+            return TargetType.CURSE;
+        }
+
         Enchantment ench = holder.value();
 
         boolean helmet = ench.isSupportedItem(new ItemStack(Items.DIAMOND_HELMET));
