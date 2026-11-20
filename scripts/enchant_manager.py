@@ -624,7 +624,6 @@ def _apply_custom_overrides(eid, raw, color, bold):
             },
         }]
     elif eid == "enchantencore:shrinkage":
-        raw["max_level"] = 1
         attrs = raw.setdefault("effects", {}).setdefault("minecraft:attributes", [])
         if not any(a.get("id") == "enchantencore:shrinkage_fragile" for a in attrs):
             attrs.append({

@@ -6,7 +6,7 @@
   },
   "supported_items": "#enchantencore:all_bows",
   "weight": 12,
-  "max_level": 3,
+  "max_level": 5,
   "min_cost": {
     "base": 12,
     "per_level_above_first": 9

@@ -7,7 +7,7 @@
   "exclusive_set": "#enchantencore:exclusive_set/helmet",
   "supported_items": "#minecraft:enchantable/head_armor",
   "weight": 12,
-  "max_level": 1,
+  "max_level": 3,
   "min_cost": {
     "base": 21,
     "per_level_above_first": 8

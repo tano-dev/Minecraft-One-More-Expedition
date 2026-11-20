@@ -7,7 +7,7 @@
   "exclusive_set": "#enchantencore:exclusive_set/repair",
   "supported_items": "#enchantencore:all_enchantable_wolf_armor",
   "weight": 1,
-  "max_level": 3,
+  "max_level": 5,
   "min_cost": {
     "base": 20,
     "per_level_above_first": 8

@@ -7,7 +7,7 @@
   "exclusive_set": "#enchantencore:exclusive_set/shield",
   "supported_items": "minecraft:shield",
   "weight": 1,
-  "max_level": 3,
+  "max_level": 5,
   "min_cost": {
     "base": 10,
     "per_level_above_first": 20

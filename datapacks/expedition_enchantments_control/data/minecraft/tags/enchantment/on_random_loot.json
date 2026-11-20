@@ -238,7 +238,7 @@
     "enchantsplus:websnare",
     "expedition_fishing:abyssal_blessing",
     "expedition_fishing:angler_instinct",
-    "expedition_fishing:essence_siphon",
+    "expedition_fishing:bait_saver",
     "expedition_fishing:biome_attunement",
     "expedition_fishing:blazing_line",
     "expedition_fishing:blood_in_the_water",
@@ -291,6 +291,9 @@
     "kattersstructures:raj_minion",
     "kattersstructures:rusta_shot",
     "kattersstructures:web_walker",
+    "keepinv:deathlock",
+    "keepinv:gravehold",
+    "keepinv:safekeep",
     "minecraft:aqua_affinity",
     "minecraft:bane_of_arthropods",
     "minecraft:binding_curse",
@@ -420,11 +423,6 @@
     "stellarity:void_strike",
     "veinminer-enchantment:veinminer",
     "wither:soul_siphon",
-    "wither:witherbound",
-    "expedition_fishing:abyssal_protection",
-    "expedition_fishing:abyssal_slayer",
-    "keepinv:deathlock",
-    "keepinv:gravehold",
-    "keepinv:safekeep"
+    "wither:witherbound"
   ]
 }

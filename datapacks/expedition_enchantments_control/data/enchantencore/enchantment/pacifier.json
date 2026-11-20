@@ -8,7 +8,7 @@
   "supported_items": "#minecraft:enchantable/fire_aspect",
   "primary_items": "#minecraft:enchantable/melee_weapon",
   "weight": 5,
-  "max_level": 1,
+  "max_level": 3,
   "min_cost": {
     "base": 21,
     "per_level_above_first": 20

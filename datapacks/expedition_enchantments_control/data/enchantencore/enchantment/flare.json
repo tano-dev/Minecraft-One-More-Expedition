@@ -7,7 +7,7 @@
   "exclusive_set": "#enchantencore:exclusive_set/shot_arrow",
   "supported_items": "#enchantencore:all_bows",
   "weight": 1,
-  "max_level": 1,
+  "max_level": 5,
   "min_cost": {
     "base": 10,
     "per_level_above_first": 10

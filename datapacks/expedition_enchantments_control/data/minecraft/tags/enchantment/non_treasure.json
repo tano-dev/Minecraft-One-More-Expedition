@@ -115,7 +115,7 @@
     "enchantsplus:stride",
     "enchantsplus:websnare",
     "expedition_fishing:angler_instinct",
-    "expedition_fishing:essence_siphon",
+    "expedition_fishing:bait_saver",
     "expedition_fishing:blazing_line",
     "expedition_fishing:deep_water",
     "expedition_fishing:double_hook",
@@ -140,6 +140,9 @@
     "expedition_quests:bounty_hunter",
     "kattersstructures:heavy",
     "kattersstructures:web_walker",
+    "keepinv:deathlock",
+    "keepinv:gravehold",
+    "keepinv:safekeep",
     "minecraft:aqua_affinity",
     "minecraft:bane_of_arthropods",
     "minecraft:blast_protection",
@@ -210,11 +213,6 @@
     "stellarity:_technical/void_pendant/lapis",
     "stellarity:_technical/void_pendant/netherite",
     "stellarity:_technical/void_pendant/quartz",
-    "veinminer-enchantment:veinminer",
-    "expedition_fishing:abyssal_protection",
-    "expedition_fishing:abyssal_slayer",
-    "keepinv:deathlock",
-    "keepinv:gravehold",
-    "keepinv:safekeep"
+    "veinminer-enchantment:veinminer"
   ]
 }

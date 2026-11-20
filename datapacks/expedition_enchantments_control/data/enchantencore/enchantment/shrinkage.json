@@ -7,7 +7,7 @@
   "exclusive_set": "#enchantencore:exclusive_set/height",
   "supported_items": "#enchantencore:valid_for_shrinkage",
   "weight": 10,
-  "max_level": 1,
+  "max_level": 5,
   "min_cost": {
     "base": 12,
     "per_level_above_first": 21

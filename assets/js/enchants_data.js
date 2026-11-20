@@ -2145,7 +2145,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Creeper Alloy",
     "tier": "epic",
     "tier_order": 2,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": false,
     "table_weight": 12,
@@ -2183,7 +2183,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Triggers a non-destructive blast (0.5 radius, 0.5x knockback) against attackers when the wearer is hit.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_alloy\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:creeper_alloy\":3}}] 1"
   },
   {
     "id": "enchantplus:sword/critical",
@@ -2379,7 +2379,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Emberweave",
     "tier": "epic",
     "tier_order": 2,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 6,
     "table": false,
     "table_weight": 1,
@@ -2433,7 +2433,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Passively repairs durability over time while in the Nether dimension.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:emberweave\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:emberweave\":3}}] 1"
   },
   {
     "id": "mt:armor/experient_trousers",
@@ -2468,7 +2468,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Flare",
     "tier": "epic",
     "tier_order": 2,
-    "max_level": 1,
+    "max_level": 5,
     "anvil_cost": 4,
     "table": true,
     "table_weight": 1,
@@ -2571,7 +2571,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Arrows emit bright flare light and ignite targets on impact.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:flare\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:flare\":5}}] 1"
   },
   {
     "id": "mt:armor/flower_helmet",
@@ -2679,7 +2679,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Hardened",
     "tier": "epic",
     "tier_order": 2,
-    "max_level": 3,
+    "max_level": 5,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 1,
@@ -2712,8 +2712,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Rejuvenation"
       }
     ],
-    "description": "Grants +2 Armor (+1 per level above I, up to +4 Armor at Lv III) while equipped.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hardened\":3}}] 1"
+    "description": "Grants +2 Armor (+1 per level above I, up to +6 Armor at Lv V) while equipped.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:hardened\":5}}] 1"
   },
   {
     "id": "enchantencore:haste",
@@ -3121,7 +3121,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Magma Walker",
     "tier": "epic",
     "tier_order": 2,
-    "max_level": 1,
+    "max_level": 2,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 1,
@@ -3163,7 +3163,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Freezes lava beneath the wearer's feet into temporary magma blocks and grants immunity to magma block damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:magma_walker\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:magma_walker\":2}}] 1"
   },
   {
     "id": "expedition_fishing:mirror_cast",
@@ -3207,7 +3207,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Moonweave",
     "tier": "epic",
     "tier_order": 2,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 6,
     "table": true,
     "table_weight": 1,
@@ -3261,7 +3261,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Passively repairs item durability over time under open night sky.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:moonweave\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:moonweave\":3}}] 1"
   },
   {
     "id": "mt:armor/mushroom_boots",
@@ -3803,7 +3803,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Tideweave",
     "tier": "epic",
     "tier_order": 2,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": false,
     "table_weight": 1,
@@ -3857,7 +3857,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Passively repairs item durability over time while submerged in water.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:tideweave\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:tideweave\":3}}] 1"
   },
   {
     "id": "nova_structures:traveler",
@@ -3989,7 +3989,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Voidweave",
     "tier": "epic",
     "tier_order": 2,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 6,
     "table": false,
     "table_weight": 1,
@@ -4043,7 +4043,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Passively repairs item durability over time while in The End dimension.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:voidweave\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:voidweave\":3}}] 1"
   },
   {
     "id": "mt:weapons/warden_killer",
@@ -5002,7 +5002,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Darkness Alloy",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 1,
@@ -5040,7 +5040,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Inflicts Darkness for 5s on attackers who strike the wearer.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:darkness_alloy\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:darkness_alloy\":3}}] 1"
   },
   {
     "id": "enchantplus:sword/death_touch",
@@ -5832,7 +5832,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Fire Alloy",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": false,
     "table_weight": 1,
@@ -5874,7 +5874,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Ignites attackers for 5s whenever they strike the wearer.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:fire_alloy\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:fire_alloy\":3}}] 1"
   },
   {
     "id": "enchantencore:forge_shot",
@@ -6431,7 +6431,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Ice Alloy",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": false,
     "table_weight": 1,
@@ -6473,7 +6473,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Freezes attackers for 1–2 damage and inflicts heavy Slowness for up to 3s when struck.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ice_alloy\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:ice_alloy\":3}}] 1"
   },
   {
     "id": "nova_structures:illagers_bane",
@@ -7215,6 +7215,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Sacrifice"
       },
       {
+        "id": "keepinv:safekeep",
+        "name": "Safekeep"
+      },
+      {
         "id": "enchantencore:tideweave",
         "name": "Tideweave"
       },
@@ -7551,7 +7555,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Pacifier",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 4,
     "table": false,
     "table_weight": 1,
@@ -7626,7 +7630,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "30% chance on melee hit to inflict Weakness CCLV (1–3s), completely neutralizing target melee damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pacifier\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:pacifier\":3}}] 1"
   },
   {
     "id": "enchantencore:path_speed",
@@ -8458,7 +8462,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Sea Breeze",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 1,
@@ -8497,7 +8501,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Thrown tridents trigger a 3-block wind burst on impact, knocking back targets and triggering redstone.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sea_breeze\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sea_breeze\":3}}] 1"
   },
   {
     "id": "expedition_fishing:sea_creature_chance",
@@ -8545,7 +8549,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Shrinkage",
     "tier": "rare",
     "tier_order": 3,
-    "max_level": 1,
+    "max_level": 5,
     "anvil_cost": 2,
     "table": false,
     "table_weight": 1,
@@ -8566,8 +8570,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Growth"
       }
     ],
-    "description": "Shrinks body scale and step height by -10%, but reduces Max Health by -23% (~+30% effective incoming damage from all sources).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shrinkage\":1}}] 1"
+    "description": "Shrinks body scale and step height by -10% per level (up to -50% at Lv V), but reduces Max Health by -23% (~+30% effective incoming damage).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:shrinkage\":5}}] 1"
   },
   {
     "id": "enchantencore:shulker_shell",
@@ -10501,7 +10505,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Bounce",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 12,
@@ -10555,7 +10559,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Grants +2 bounciness, +2.5 safe fall distance, and -0.2 air drag and friction modifiers.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bounce\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:bounce\":3}}] 1"
   },
   {
     "id": "minecraft:breach",
@@ -10784,7 +10788,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Crispbread",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 12,
@@ -10818,7 +10822,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Grants Saturation I for 2s while moving with the shield equipped.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crispbread\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:crispbread\":3}}] 1"
   },
   {
     "id": "enchantencore:crop_dance",
@@ -11759,7 +11763,12 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Tools & Weapons",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "keepinv:safekeep",
+        "name": "Safekeep"
+      }
+    ],
     "description": "Prevents normal death or alters item behavior unpredictably on fatal triggers.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:undying_curse\":1}}] 1"
   },
@@ -11784,7 +11793,12 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "All Gear",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "keepinv:safekeep",
+        "name": "Safekeep"
+      }
+    ],
     "description": "Causes the enchanted item to vanish permanently upon player death instead of dropping.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"minecraft:vanishing_curse\":1}}] 1"
   },
@@ -12113,7 +12127,16 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Chestplates",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "keepinv:gravehold",
+        "name": "Gravehold"
+      },
+      {
+        "id": "keepinv:safekeep",
+        "name": "Safekeep"
+      }
+    ],
     "description": "Items lost or graves created upon death can only be retrieved by yourself. Incompatible with Safekeep and Gravehold.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"keepinv:deathlock\":1}}] 1"
   },
@@ -13243,7 +13266,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Grass Walker",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 1,
+    "max_level": 2,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 1,
@@ -13285,7 +13308,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Converts nearby dirt beneath the wearer into grass blocks while walking and grants immunity to sweet berry bush damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:grass_walker\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:grass_walker\":2}}] 1"
   },
   {
     "id": "keepinv:gravehold",
@@ -13308,7 +13331,16 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Chestplates",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "keepinv:deathlock",
+        "name": "Deathlock"
+      },
+      {
+        "id": "keepinv:safekeep",
+        "name": "Safekeep"
+      }
+    ],
     "description": "Doubles the duration that dropped items or graves remain before despawning upon death. Incompatible with Safekeep and Deathlock.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"keepinv:gravehold\":1}}] 1"
   },
@@ -13514,6 +13546,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Sacrifice"
       },
       {
+        "id": "keepinv:safekeep",
+        "name": "Safekeep"
+      },
+      {
         "id": "enchantencore:tideweave",
         "name": "Tideweave"
       },
@@ -13533,7 +13569,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Harpoon",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 12,
@@ -13548,7 +13584,7 @@ window.ALL_ENCHANTMENTS = [
     "exclusive_groups": [],
     "conflicts": [],
     "description": "Reeling in hooked entities pulls them forcefully toward the angler with extra force.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:harpoon\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:harpoon\":3}}] 1"
   },
   {
     "id": "mt:technical/healing_flower",
@@ -13860,7 +13896,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Illumination",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 12,
@@ -13886,7 +13922,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Emits a dynamic light source around the wearer's head in dark areas.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:illumination\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:illumination\":3}}] 1"
   },
   {
     "id": "enchantencore:impale_rush",
@@ -13896,7 +13932,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Impale Rush",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 12,
@@ -13911,7 +13947,7 @@ window.ALL_ENCHANTMENTS = [
     "exclusive_groups": [],
     "conflicts": [],
     "description": "Spear charge attacks pierce targets with extra momentum and impact force.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:impale_rush\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:impale_rush\":3}}] 1"
   },
   {
     "id": "minecraft:impaling",
@@ -15266,7 +15302,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Phantom Menace",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 3,
+    "max_level": 5,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 12,
@@ -15280,8 +15316,8 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Bows & Crossbows",
     "exclusive_groups": [],
     "conflicts": [],
-    "description": "Arrows deal +2.5 bonus damage per level (up to +7.5 at Lv III) against airborne Phantoms.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:phantom_menace\":3}}] 1"
+    "description": "Arrows deal +2.5 bonus damage per level (up to +12.5 at Lv V) against airborne Phantoms.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:phantom_menace\":5}}] 1"
   },
   {
     "id": "enchantencore:pickpocket",
@@ -15949,7 +15985,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Rabbit's Foot",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 3,
+    "max_level": 5,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 12,
@@ -15963,8 +15999,8 @@ window.ALL_ENCHANTMENTS = [
     "supported_display": "Boots",
     "exclusive_groups": [],
     "conflicts": [],
-    "description": "Grants +0.5 Luck per level (up to +1.5 Luck at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rabbit_foot\":3}}] 1"
+    "description": "Grants +0.5 Luck per level (up to +2.5 Luck at Lv V).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rabbit_foot\":5}}] 1"
   },
   {
     "id": "enchantencore:rainweave",
@@ -15974,7 +16010,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Rainweave",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 1,
@@ -16028,7 +16064,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Passively repairs item durability over time while standing in Overworld rain.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rainweave\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:rainweave\":3}}] 1"
   },
   {
     "id": "minecraft:respiration",
@@ -16063,7 +16099,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Sacrifice",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 3,
+    "max_level": 5,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 1,
@@ -16116,6 +16152,10 @@ window.ALL_ENCHANTMENTS = [
         "name": "Rainweave"
       },
       {
+        "id": "keepinv:safekeep",
+        "name": "Safekeep"
+      },
+      {
         "id": "enchantencore:tideweave",
         "name": "Tideweave"
       },
@@ -16124,8 +16164,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Voidweave"
       }
     ],
-    "description": "Repairs 1.0 (+0.5 per level above I, up to 2.0 at Lv III) wolf armor durability whenever the wolf is attacked.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sacrifice\":3}}] 1"
+    "description": "Repairs 1.0 (+0.5 per level above I, up to 3.0 at Lv V) wolf armor durability whenever the wolf is attacked.",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:sacrifice\":5}}] 1"
   },
   {
     "id": "enchantencore:safe_landing",
@@ -16135,7 +16175,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Safe Landing",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 3,
+    "max_level": 5,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 12,
@@ -16156,8 +16196,8 @@ window.ALL_ENCHANTMENTS = [
         "name": "Cushion"
       }
     ],
-    "description": "Increases safe fall distance by +2 blocks (+2.5 per level above I, up to +7 blocks at Lv III).",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:safe_landing\":3}}] 1"
+    "description": "Increases safe fall distance by +2 blocks (+2.5 per level above I, up to +12 blocks at Lv V).",
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:safe_landing\":5}}] 1"
   },
   {
     "id": "keepinv:safekeep",
@@ -16180,7 +16220,36 @@ window.ALL_ENCHANTMENTS = [
     ],
     "supported_display": "Armor",
     "exclusive_groups": [],
-    "conflicts": [],
+    "conflicts": [
+      {
+        "id": "enchantencore:undying_curse",
+        "name": "Curse of Undying"
+      },
+      {
+        "id": "minecraft:vanishing_curse",
+        "name": "Curse of Vanishing"
+      },
+      {
+        "id": "keepinv:deathlock",
+        "name": "Deathlock"
+      },
+      {
+        "id": "keepinv:gravehold",
+        "name": "Gravehold"
+      },
+      {
+        "id": "enchantencore:handyman",
+        "name": "Handyman"
+      },
+      {
+        "id": "minecraft:mending",
+        "name": "Mending"
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "name": "Sacrifice"
+      }
+    ],
     "description": "Keep all items in your inventory upon death at the cost of 33% item durability. Incompatible with Deathlock, Gravehold, Mending, Sacrifice, and Handyman.",
     "give_command": "/give @p enchanted_book[enchantments={levels:{\"keepinv:safekeep\":1}}] 1"
   },
@@ -16192,7 +16261,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Scent",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 1,
@@ -16214,7 +16283,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Emits tracking scent indicators that reveal nearby targets to the armored wolf.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scent\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:scent\":3}}] 1"
   },
   {
     "id": "enchantencore:seeker",
@@ -17081,7 +17150,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Summer Walker",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 1,
+    "max_level": 2,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 1,
@@ -17123,7 +17192,7 @@ window.ALL_ENCHANTMENTS = [
       }
     ],
     "description": "Transforms water/lava edges or foliage safely underfoot and grants immunity to cactus/sweet berry damage.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:summer_walker\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:summer_walker\":2}}] 1"
   },
   {
     "id": "expedition_fishing:sunlit_cast",
@@ -17942,7 +18011,7 @@ window.ALL_ENCHANTMENTS = [
     "name_vi": "Yoink",
     "tier": "common",
     "tier_order": 4,
-    "max_level": 1,
+    "max_level": 3,
     "anvil_cost": 2,
     "table": true,
     "table_weight": 12,
@@ -17957,6 +18026,6 @@ window.ALL_ENCHANTMENTS = [
     "exclusive_groups": [],
     "conflicts": [],
     "description": "Pulls hooked mobs and items much harder toward the angler when reeling in.",
-    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:yoink\":1}}] 1"
+    "give_command": "/give @p enchanted_book[enchantments={levels:{\"enchantencore:yoink\":3}}] 1"
   }
 ];
