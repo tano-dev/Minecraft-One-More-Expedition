@@ -26,7 +26,7 @@ public class EnchantRollConfig {
         public boolean enabled = true;
         public boolean useTargetIcons = true;
         public boolean boldMaxIcon = true;
-        public boolean targetIconsOnBooksOnly = false;
+        public boolean targetIconsOnBooksOnly = true;
         public String maxLevelSymbol = "✦";
         public boolean symbolBeforeName = true;
         public boolean sortMaxFirst = true;

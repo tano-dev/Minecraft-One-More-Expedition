@@ -81,7 +81,7 @@
     "enabled": true,
     "useTargetIcons": true,
     "boldMaxIcon": true,
-    "targetIconsOnBooksOnly": false,
+    "targetIconsOnBooksOnly": true,
     "maxLevelSymbol": "✦",
     "symbolBeforeName": true,
     "sortMaxFirst": true,
