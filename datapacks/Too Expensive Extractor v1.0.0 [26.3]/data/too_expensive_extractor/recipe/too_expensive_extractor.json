@@ -3,11 +3,12 @@
     "category": "misc",
     "pattern": [
         "AAA",
-        "APA",
+        "EPE",
         "AAA"
     ],
     "key": {
         "A": "minecraft:amethyst_shard",
+        "E": "minecraft:echo_shard",
         "P": "minecraft:paper"
     },
     "result": {
