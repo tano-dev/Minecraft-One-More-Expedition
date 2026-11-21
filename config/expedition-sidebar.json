@@ -1,9 +1,73 @@
 {
   "enabled": true,
   "updateIntervalTicks": 20,
-  "tipRotationSeconds": 8,
+  "tipRotationSeconds": 4,
   "serverAddress": "mckhtn.redirectme.net:2026",
   "tips": [
+    {
+      "command": "/sidebar toggle",
+      "description": "Toggle or hide this sidebar HUD"
+    },
+    {
+      "command": "/fish",
+      "description": "Open main Fishing Hub menu"
+    },
+    {
+      "command": "/fish bag",
+      "description": "Open your 9-slot Artifact Bag"
+    },
+    {
+      "command": "/fish stats",
+      "description": "View fishing level, XP & stats"
+    },
+    {
+      "command": "/fish recipe",
+      "description": "Craft custom rods, gear & baits"
+    },
+    {
+      "command": "/shop",
+      "description": "Server shop to buy & sell items"
+    },
+    {
+      "command": "/sell hand",
+      "description": "Quick sell held item in hand"
+    },
+    {
+      "command": "/worth",
+      "description": "Check sell value of held item"
+    },
+    {
+      "command": "/daily",
+      "description": "Claim your daily coin rewards"
+    },
+    {
+      "command": "/ah",
+      "description": "Browse player auction house"
+    },
+    {
+      "command": "/eco balance",
+      "description": "Check your current coins balance"
+    },
+    {
+      "command": "/pay <player> <amount>",
+      "description": "Send coins to another player"
+    },
+    {
+      "command": "/wits",
+      "description": "Identify structures at your spot"
+    },
+    {
+      "command": "/flex",
+      "description": "Showcase held item in chat"
+    },
+    {
+      "command": "/trigger mt_stats",
+      "description": "View your mine treasure stats"
+    },
+    {
+      "command": "/quest",
+      "description": "Daily quests, co-op & rewards"
+    },
     {
       "command": "/is",
       "description": "Return to your Skyblock island"
@@ -15,22 +79,6 @@
     {
       "command": "/return",
       "description": "Return from visiting an island"
-    },
-    {
-      "command": "/daily",
-      "description": "Claim your daily coin rewards"
-    },
-    {
-      "command": "/shop",
-      "description": "Buy and sell items anytime"
-    },
-    {
-      "command": "/ah",
-      "description": "Browse player auction house"
-    },
-    {
-      "command": "/eco balance",
-      "description": "Check your current coins balance"
     }
   ]
 }
