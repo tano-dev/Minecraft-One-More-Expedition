@@ -1,9 +1,9 @@
 {
   "economy": {
-    "starting_balance": 1000,
+    "starting_balance": 200,
     "max_balance": 1000000000000000000,
     "daily_reward": 100,
-    "tax_rate": 0.15
+    "tax_rate": 0.05
   },
   "display": {
     "balance_separator": ".",
@@ -21,13 +21,13 @@
   },
   "selling": {
     "enabled": true,
-    "daily_limit": 10000,
+    "daily_limit": 5000,
     "worth_enabled": true
   },
   "dynamic_prices": {
-    "enabled": false,
+    "enabled": true,
     "min_multiplier": 0.5,
-    "max_multiplier": 5.0,
+    "max_multiplier": 15.0,
     "min_active_days": 30,
     "update_minutes": 60
   },

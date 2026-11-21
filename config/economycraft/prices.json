@@ -5246,7 +5246,7 @@
   "minecraft:ender_chest": {
     "category": "blocks.end",
     "stack": 64,
-    "unit_buy": 231,
+    "unit_buy": 0,
     "unit_sell": 69
   },
   "minecraft:purpur_block": {
@@ -6429,7 +6429,7 @@
     "category": "ores",
     "stack": 64,
     "unit_buy": 10,
-    "unit_sell": 3
+    "unit_sell": 5
   },
   "minecraft:amethyst_block": {
     "category": "ores",
@@ -6537,7 +6537,7 @@
     "category": "ores",
     "stack": 64,
     "unit_buy": 100,
-    "unit_sell": 30
+    "unit_sell": 1
   },
   "minecraft:emerald_ore": {
     "category": "ores",
@@ -9384,10 +9384,11 @@
     "unit_sell": 201
   },
   "minecraft:ender_eye": {
-    "category": "utility",
+    "category": "teleport",
     "stack": 64,
     "unit_buy": 31,
-    "unit_sell": 9
+    "unit_sell": 9,
+    "removed": true
   },
   "minecraft:fire_charge": {
     "category": "utility",
@@ -9576,9 +9577,9 @@
     "unit_sell": 16
   },
   "minecraft:totem_of_undying": {
-    "category": "utility",
-    "stack": 0,
-    "unit_buy": 500,
+    "category": "utilities",
+    "stack": 1,
+    "unit_buy": 1000,
     "unit_sell": 150
   },
   "minecraft:water_bucket": {
@@ -10894,5 +10895,1458 @@
     "stack": 64,
     "unit_buy": 10,
     "unit_sell": 3
+  },
+  "minecraft:armor_stand#custom": {
+    "category": "utility",
+    "stack": 1,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/acacia",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.acacia_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.acacia"
+        ]
+      }
+    },
+    "removed": true
+  },
+  "minecraft:gray_dye#custom": {
+    "category": "utilities",
+    "stack": 16,
+    "unit_buy": 20,
+    "unit_sell": 10,
+    "components": {
+      "minecraft:item_name": {
+        "text": "Common Charm",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Right click to increase ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "treasure spawning for ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "30 seconds ",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "minecraft:use_cooldown": {
+        "seconds": 0.5,
+        "cooldown_group": "mt:charms"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:consumable": {
+        "consume_seconds": 0.0,
+        "sound": "minecraft:intentionally_empty",
+        "has_consume_particles": false,
+        "on_consume_effects": [
+          {
+            "sound": "minecraft:entity.player.levelup",
+            "type": "minecraft:play_sound"
+          }
+        ]
+      },
+      "minecraft:custom_data": {
+        "mt": "common_charm"
+      },
+      "minecraft:max_stack_size": 16
+    }
+  },
+  "minecraft:blue_dye#custom": {
+    "category": "utilities",
+    "stack": 16,
+    "unit_buy": 200,
+    "unit_sell": 100,
+    "components": {
+      "minecraft:item_name": {
+        "text": "Rare Charm",
+        "color": "blue",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Right click to increase ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "treasure spawning for ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "2 minutes ",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "minecraft:use_cooldown": {
+        "seconds": 0.5,
+        "cooldown_group": "mt:charms"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:consumable": {
+        "consume_seconds": 0.0,
+        "sound": "minecraft:intentionally_empty",
+        "has_consume_particles": false,
+        "on_consume_effects": [
+          {
+            "sound": "minecraft:entity.player.levelup",
+            "type": "minecraft:play_sound"
+          }
+        ]
+      },
+      "minecraft:custom_data": {
+        "mt": "rare_charm"
+      },
+      "minecraft:max_stack_size": 16
+    }
+  },
+  "minecraft:red_dye#custom": {
+    "category": "utilities",
+    "stack": 16,
+    "unit_buy": 1000,
+    "unit_sell": 500,
+    "components": {
+      "minecraft:item_name": {
+        "text": "Epic Charm",
+        "color": "red",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Right click to increase ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "treasure spawning for ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "5 minutes ",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "minecraft:use_cooldown": {
+        "seconds": 0.5,
+        "cooldown_group": "mt:charms"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:consumable": {
+        "consume_seconds": 0.0,
+        "sound": "minecraft:intentionally_empty",
+        "has_consume_particles": false,
+        "on_consume_effects": [
+          {
+            "sound": "minecraft:entity.player.levelup",
+            "type": "minecraft:play_sound"
+          }
+        ]
+      },
+      "minecraft:custom_data": {
+        "mt": "epic_charm"
+      },
+      "minecraft:max_stack_size": 16
+    }
+  },
+  "minecraft:yellow_dye#custom": {
+    "category": "utilities",
+    "stack": 16,
+    "unit_buy": 15000,
+    "unit_sell": 5000,
+    "components": {
+      "minecraft:item_name": {
+        "text": "Legendary Charm",
+        "color": "gold",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Right click to increase ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "treasure spawning for ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "10 minutes ",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "minecraft:use_cooldown": {
+        "seconds": 0.5,
+        "cooldown_group": "mt:charms"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:consumable": {
+        "consume_seconds": 0.0,
+        "sound": "minecraft:intentionally_empty",
+        "has_consume_particles": false,
+        "on_consume_effects": [
+          {
+            "sound": "minecraft:entity.player.levelup",
+            "type": "minecraft:play_sound"
+          }
+        ]
+      },
+      "minecraft:custom_data": {
+        "mt": "legendary_charm"
+      },
+      "minecraft:max_stack_size": 16
+    }
+  },
+  "minecraft:armor_stand#custom_2": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/jungle",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.jungle_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.jungle"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_3": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/hay",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.hay_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.hay"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_4": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/acacia",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.acacia_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.acacia"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_5": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/obsidian",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.obsidian_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.obsidian"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_6": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/pale_oak",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.pale_oak_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.pale_oak"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_7": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/tuff",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.tuff_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.tuff"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_8": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/deepslate",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.deepslate_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.deepslate"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_9": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/crimson",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.crimson_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.crimson"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_10": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/sandstone",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.sandstone_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.sandstone"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_11": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/end_stone",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.end_stone_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.end_stone"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_12": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/quartz",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.quartz_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.quartz"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_13": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/warped",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.warped_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.warped"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_14": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/diorite",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.diorite_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.diorite"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_15": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/basalt",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.basalt_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.basalt"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_16": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/oak",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.oak_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.oak"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_17": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/pumpkin",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.pumpkin_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.pumpkin"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_18": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/cherry",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.cherry_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.cherry"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_19": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/packed_mud",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.packed_mud_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.packed_mud"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_20": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/granite",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.granite_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.granite"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_21": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/bamboo",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.bamboo_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.bamboo"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_22": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/spruce",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.spruce_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.spruce"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_23": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/melon",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.melon_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.melon"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_24": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/red_sandstone",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.red_sandstone_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.red_sandstone"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_25": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/andesite",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.andesite_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.andesite"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_26": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/birch",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.birch_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.birch"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_27": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/purpur",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.purpur_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.purpur"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_28": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/sculk",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.sculk_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.sculk"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_29": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/blackstone",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.blackstone_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.blackstone"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_30": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/mangrove",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.mangrove_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.mangrove"
+        ]
+      }
+    }
+  },
+  "minecraft:armor_stand#custom_31": {
+    "category": "teleport",
+    "stack": 16,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:item_model": "wawo:waypoint_hub/dark_oak",
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.dark_oak_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "Invulnerable": 1,
+        "Small": 1,
+        "ShowArms": 1,
+        "Invisible": 1,
+        "NoBasePlate": 1,
+        "id": "minecraft:armor_stand",
+        "Marker": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.dark_oak"
+        ]
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enchantencore:scholar_of_mobs": 1
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_2": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 200,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enchantencore:scholar_of_mobs": 2
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_3": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 400,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enchantencore:scholar_of_mobs": 3
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_4": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "minecraft:looting": 1
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_5": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 200,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "minecraft:looting": 2
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_6": {
+    "category": "misc",
+    "stack": 1,
+    "unit_buy": 400,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "minecraft:looting": 3
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_7": {
+    "category": "misc",
+    "stack": 1,
+    "unit_buy": 200,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enchantencore:scholar_of_fishing": 2
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_8": {
+    "category": "misc",
+    "stack": 1,
+    "unit_buy": 200,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enchantencore:scholar_of_blocks": 2
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_9": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 400,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "minecraft:looting": 3
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_10": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 200,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enchantencore:scholar_of_fishing": 2
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_11": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 200,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enchantencore:scholar_of_blocks": 2
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_12": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 400,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "minecraft:fortune": 3
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_13": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "minecraft:fortune": 1
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_14": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 400,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enchantencore:scholar_of_fishing": 3
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_15": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 200,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "minecraft:fortune": 2
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_16": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enchantencore:scholar_of_fishing": 1
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_17": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 100,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enchantencore:scholar_of_blocks": 1
+      }
+    }
+  },
+  "minecraft:enchanted_book#custom_18": {
+    "category": "enchants",
+    "stack": 1,
+    "unit_buy": 400,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enchantencore:scholar_of_blocks": 3
+      }
+    }
+  },
+  "minecraft:structure_block#too_expensive_extractor": {
+    "category": "enchants",
+    "stack": 64,
+    "unit_buy": 1200,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_model": "minecraft:paper",
+      "minecraft:custom_name": {
+        "text": "Too Expensive Extractor",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Remove Too Expensive from items in the smithing table",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    }
+  },
+  "minecraft:structure_block#too_expensive_extractor_2": {
+    "category": "utilities",
+    "stack": 64,
+    "unit_buy": 1200,
+    "unit_sell": 25,
+    "components": {
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_model": "minecraft:paper",
+      "minecraft:custom_name": {
+        "text": "Too Expensive Extractor",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Remove Too Expensive from items in the smithing table",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    }
+  },
+  "_categories": {
+    "armor": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "weapons": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "ores": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "brewing": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "food": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "drops": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "ice": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "ocean": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "transport": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "tools": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "discs": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "redstone": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "plants": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "utility": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "utilities": {
+      "color": "yellow",
+      "icon": "minecraft:totem_of_undying",
+      "enabled": true,
+      "dynamic_price_enabled": true
+    },
+    "teleport": {
+      "color": "dark_purple",
+      "enabled": true,
+      "dynamic_price_enabled": true
+    },
+    "enchantments": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    },
+    "enchants": {
+      "color": "light_purple",
+      "icon": "minecraft:enchanted_book",
+      "enabled": true,
+      "dynamic_price_enabled": true
+    },
+    "misc": {
+      "enabled": false,
+      "dynamic_price_enabled": true
+    }
   }
 }
