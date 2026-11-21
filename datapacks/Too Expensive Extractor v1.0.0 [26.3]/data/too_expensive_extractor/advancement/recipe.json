@@ -1,18 +1,7 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:paper",
-              "minecraft:amethyst_shard",
-              "minecraft:iron_ingot"
-            ]
-          }
-        ]
-      }
+      "trigger": "minecraft:tick"
     }
   },
   "rewards": {
