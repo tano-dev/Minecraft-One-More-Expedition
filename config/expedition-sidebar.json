@@ -9,6 +9,26 @@
       "description": "Toggle or hide this sidebar HUD"
     },
     {
+      "command": "/rtp",
+      "description": "Random teleport to wilderness"
+    },
+    {
+      "command": "/skin set <name>",
+      "description": "Change your player skin"
+    },
+    {
+      "command": "/skin url <url>",
+      "description": "Set skin directly from image URL"
+    },
+    {
+      "command": "/quest",
+      "description": "Daily quests, co-op & rewards"
+    },
+    {
+      "command": "/quest share",
+      "description": "Share co-op quest with friends"
+    },
+    {
       "command": "/fish",
       "description": "Open main Fishing Hub menu"
     },
@@ -63,10 +83,6 @@
     {
       "command": "/trigger mt_stats",
       "description": "View your mine treasure stats"
-    },
-    {
-      "command": "/quest",
-      "description": "Daily quests, co-op & rewards"
     },
     {
       "command": "/is",
