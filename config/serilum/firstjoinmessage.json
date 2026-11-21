@@ -1,0 +1,23 @@
+{
+	"//": "These settings are easier to change in-game! Mod List -> First Join Message -> Config",
+	"Enable First Join Message": {
+		"//": "Whether First Join Message is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart.",
+		"value": true
+	},
+	"firstJoinMessage": {
+		"//": "The message players will receive when they join a world for the first time. To disable, leave it empty. %s can be used in place of the player name.",
+		"value": "§6§l✦ Welcome to One More Expedition, §e§l%s§6§l! ✦§r\n§8━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n§e§lAccount & Profile:§r\n §b/register <pass> <pass> §7- Register new account\n §b/login <pass> §7- Log in to your account\n §b/skin set <name> §7- Change your player skin\n§a§lAdventure & Gameplay:§r\n §b/quest §7- View & claim Daily Quests\n §b/fish §7| §b/fish bag §7- Custom Fishing & Artifact Bag\n §b/rtp §7- Random Teleport to explore\n §b/is §7- Skyblock Island menu\n §b/wits §7- Identify nearby structure\n§6§lEconomy & Shop:§r\n §b/shop §7- Open Server Shop\n §b/daily §7- Claim daily coin reward\n §b/ah §7- Open Auction House\n §b/eco balance §7- Check your balance\n §b/pay <player> <amount> §7- Send coins to a player\n§d§lUtilities:§r\n §b/flex §7- Show off your held item in chat\n §b/sidebar toggle §7- Toggle sidebar HUD\n §b/trigger mt_stats §7- View Mine Treasure stats\n§8━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n§aHave fun and enjoy your expedition!"
+	},
+	"firstJoinMessageTextFormattingColourIndex": {
+		"//": "The colour of the message. The possible values are; 0: black, 1: dark_blue, 2: dark_green, 3: dark_aqua, 4: dark_red, 5: dark_purple, 6: gold, 7: gray, 8: dark_gray, 9: blue, 10: green, 11: aqua, 12: red, 13: light_purple, 14: yellow, 15: white. min: 0, max: 15",
+		"value": 15
+	},
+	"serverBroadcastMessage": {
+		"//": "A message that's broadcasted to the server when a player joins for the first time. To disable, leave it empty. %s can be used in place of the player name.",
+		"value": "§6✦ §e%s §6has joined §lOne More Expedition§r§6 for the first time! Say hello!"
+	},
+	"serverBroadcastMessageTextFormattingColourIndex": {
+		"//": "The colour of the message. The possible values are; 0: black, 1: dark_blue, 2: dark_green, 3: dark_aqua, 4: dark_red, 5: dark_purple, 6: gold, 7: gray, 8: dark_gray, 9: blue, 10: green, 11: aqua, 12: red, 13: light_purple, 14: yellow, 15: white. min: 0, max: 15",
+		"value": 14
+	}
+}
