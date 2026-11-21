@@ -154,6 +154,7 @@ public final class SkyblockCommands {
         );
 
         player.sendSystemMessage(Component.literal("§aTeleported to your island home."));
+        player.sendSystemMessage(Component.literal("§7Tip: Use §e/return §7to go back, or §e/visit <player> §7to visit another player's island."));
         return 1;
     }
 
