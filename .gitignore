@@ -31,5 +31,6 @@ config/expedition-quests/explored_locations.json
 config/expedition-quests/precomputed_targets.json
 config/expedition-fishing/playerdata/
 config/Veinminer/update/
+resource_pack/Expedition_Server_Resource_Pack/
 a.md
 a.pdf
