@@ -2,7 +2,7 @@
 'chest' : '{count:1,id:"minecraft:leather_chestplate"}',
 'legs' : '{count:1,id:"minecraft:leather_leggings"}',
 'feet' : '{count:1,id:"minecraft:leather_boots"}',
-'offhand' : '{count:1,id:"minecraft:shield"}',
+'offhand' : '',
 0 : '{count:1,id:"minecraft:wooden_sword"}',
 1 : '{count:1,id:"minecraft:wooden_pickaxe"}',
 2 : '{count:1,id:"minecraft:wooden_axe"}',
