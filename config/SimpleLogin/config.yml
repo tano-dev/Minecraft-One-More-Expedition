@@ -15,12 +15,12 @@ block-chat-before-login: true # Prevent unlogged/unregistered players from chatt
 message: # Configurable messages
 
   # --- Registration ---
-  register: "§cUsage: /register <password> <password> (Passwords must match)"
-  register_mismatch: "§cPasswords do not match."
+  register: "§6✦ New player? Please register an account to play! ✦\n§eUsage: §b/register <password> <confirm_password>\n§7Example: §a/register pass1234 pass1234 §8(min 8 characters)"
+  register_mismatch: "§cPasswords do not match. Example: §e/register pass1234 pass1234"
   register_success: "§aSuccessfully registered and logged in."
   already_registered: "§cYou are already registered."
-  not_registered: "§cYou are not registered."
-  too_short: "§cPassword must be at least 8 characters long."
+  not_registered: "§cYou are not registered. Please use: §e/register pass1234 pass1234"
+  too_short: "§cPassword must be at least 8 characters long. Example: §e/register pass1234 pass1234"
 
   # --- Login ---
   login: "§ePlease log in to continue. Use /login <password>"
