@@ -1,5 +1,6 @@
 ##stagger the repeating loops so they do not all run on the same tick
 schedule function wawo:waypoint_hub/properties/teleport/init 4t
+schedule function wawo:waypoint_hub/tick_5t 5t
 schedule function wawo:portal_horn/accept/init 6t
 schedule function wawo:portal_horn/send/init 6t
 schedule function wawo:waypoint_hub/properties/lock/init 6t
