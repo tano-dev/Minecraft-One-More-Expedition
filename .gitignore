@@ -22,6 +22,7 @@ config/**/logs/
 config/**/data/
 config/**/tmp/
 config/skinrestorer/mojang_profile_cache.json
+config/SimpleLogin/passwords.db
 
 
 # Modpack runtime & player data

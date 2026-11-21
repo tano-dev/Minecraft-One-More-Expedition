@@ -50,7 +50,7 @@ defaultGlobalExecutorParallelismExpression = "default"
 # 
 # Please preserve quotes so the config don't break
 # 
-threadPoolPriorityPreset = "default"
+threadPoolPriorityPreset = "UNSET"
 # ================================================================
 # (Default: true) Whether to attempt to apply boosting for the render thread on the client
 # 
@@ -61,7 +61,7 @@ threadPoolPriorityPreset = "default"
 applyBoostingForRenderThread = "default"
 # ================================================================
 # (Default: 6) Configures the parallelism of global executor
-globalExecutorParallelism = "default"
+globalExecutorParallelism = 10
 
 [fixes]
 	# ================================================================
@@ -82,13 +82,13 @@ globalExecutorParallelism = "default"
 	# It is generally not recommended to disable this settings unless you know what you are doing  
 	# 
 	# 
-	enforceSafeWorldRandomAccess = "default"
+	enforceSafeWorldRandomAccess = false
 
 [noTickViewDistance]
 	# ================================================================
-	# (Default: 18) No-tick view distance max concurrent chunk loads 
+	# (Default: 30) No-tick view distance max concurrent chunk loads 
 	#  Lower this for a better latency and higher this for a faster loading
-	maxConcurrentChunkLoads = "default"
+	maxConcurrentChunkLoads = 18
 	# ================================================================
 	# (Default: true) Enable server-side support for extended render distance protocol (c2me:ext_render_distance_v1)
 	# This allows requesting render distances higher than 127 chunks from the server
@@ -106,15 +106,15 @@ globalExecutorParallelism = "default"
 	# 
 	# Defaults to 200, which is 200%
 	# 
-	chunkSendingSpeedMultiplierPercentage = "default"
+	chunkSendingSpeedMultiplierPercentage = 400
 
 [ioSystem]
 	# ================================================================
 	# (Default: 8192) Soft limit for io worker nbt cache
-	chunkDataCacheSoftLimit = "default"
+	chunkDataCacheSoftLimit = 16384
 	# ================================================================
 	# (Default: 32678) Hard limit for io worker nbt cache
-	chunkDataCacheLimit = "default"
+	chunkDataCacheLimit = 65536
 	# ================================================================
 	# (Default: false) EXPERIMENTAL FEATURE
 	# This replaces the way your chunks are saved.
@@ -124,7 +124,7 @@ globalExecutorParallelism = "default"
 	# Whether to use the fast reduced allocation chunk serializer
 	# (may cause incompatibility with other mods)
 	# 
-	gcFreeChunkSerializer = "default"
+	gcFreeChunkSerializer = true
 	# ================================================================
 	# (Default: true) Whether to use the optimized implementation of IO system
 	replaceImpl = "default"
@@ -166,7 +166,7 @@ globalExecutorParallelism = "default"
 	#  
 	# Incompatible with Dimensional Threading (dimthread)
 	# 
-	midTickChunkTasksInterval = "default"
+	midTickChunkTasksInterval = 1000000
 
 	[generalOptimizations.autoSave]
 		# ================================================================

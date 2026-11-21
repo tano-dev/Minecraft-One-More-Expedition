@@ -26,7 +26,7 @@
   },
   "dynamic_prices": {
     "enabled": true,
-    "min_multiplier": 0.5,
+    "min_multiplier": 0.8,
     "max_multiplier": 15.0,
     "min_active_days": 30,
     "update_minutes": 60
@@ -34,12 +34,12 @@
   "auction": {
     "enabled": true,
     "expiration_hours": 168,
-    "max_active_per_player": 0
+    "max_active_per_player": 8
   },
   "orders": {
     "enabled": true,
     "expiration_hours": 168,
-    "max_active_per_player": 0
+    "max_active_per_player": 5
   },
   "transaction_log": {
     "enabled": true,

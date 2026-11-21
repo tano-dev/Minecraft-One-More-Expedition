@@ -2,7 +2,7 @@
 {
   // Global spread factor: 2 keeps overworld surface structures nicely spaced.
   // Underground sets below override this with lower (denser) factors.
-  "spreadFactor": 2,
+  "spreadFactor": 1.8,
 
   // Gives each structure_set its own salt to prevent overlapping placement patterns.
   "idBasedSalt": true,
