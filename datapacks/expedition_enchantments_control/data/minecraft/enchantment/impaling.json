@@ -1,6 +1,7 @@
 {
   "description": {
-    "translate": "enchantment.minecraft.impaling"
+    "translate": "enchantment.minecraft.impaling",
+    "color": "gray"
   },
   "supported_items": "#minecraft:enchantable/trident",
   "exclusive_set": "#minecraft:exclusive_set/damage",

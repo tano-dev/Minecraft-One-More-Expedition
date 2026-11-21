@@ -2,7 +2,6 @@
   "values": [
     "stellarity:void_strike",
     "stellarity:void_shot",
-    "stellarity:critical_strike",
-    "stellarity:dune_speed"
+    "stellarity:critical_strike"
   ]
 }

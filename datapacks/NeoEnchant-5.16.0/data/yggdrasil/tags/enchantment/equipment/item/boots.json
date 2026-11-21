@@ -1,4 +1,6 @@
 {
-	"replace": false,
-	"values": ["enchantplus:boots/agility", "enchantplus:boots/step_assist"]
+  "replace": false,
+  "values": [
+    "enchantplus:boots/agility"
+  ]
 }

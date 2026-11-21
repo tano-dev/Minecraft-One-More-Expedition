@@ -1,13 +1,10 @@
 {
-	"values": [
-		"#minecraft:non_treasure",
-		"#minecraft:treasure",
-		"enchantplus:tools/auto_smelt",
-		"enchantplus:mace/teluric_wave",
-		"enchantplus:bow/rebound",
-		"enchantplus:bow/echo_shot",
-		"enchantplus:pickaxe/vein_miner",
-		"enchantplus:pickaxe/spawner_touch",
-		"enchantplus:sword/pull"
-	]
+  "values": [
+    "#minecraft:non_treasure",
+    "#minecraft:treasure",
+    "enchantplus:mace/teluric_wave",
+    "enchantplus:bow/rebound",
+    "enchantplus:bow/echo_shot",
+    "enchantplus:pickaxe/spawner_touch"
+  ]
 }

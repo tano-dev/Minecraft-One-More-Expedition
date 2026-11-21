@@ -21,6 +21,20 @@ public class CustomEnchantRoller {
         COMMON, RARE, EPIC, ULTIMATE, CURSE
     }
 
+    private static final Set<String> VANILLA_RARES = Set.of(
+        "minecraft:channeling",
+        "minecraft:fortune",
+        "minecraft:frost_walker",
+        "minecraft:infinity",
+        "minecraft:looting",
+        "minecraft:mending",
+        "minecraft:multishot",
+        "minecraft:riptide",
+        "minecraft:soul_speed",
+        "minecraft:swift_sneak",
+        "minecraft:wind_burst"
+    );
+
     private static final int HISTORY_WINDOW = 15;
     private static final Map<UUID, Deque<Integer>> PLAYER_COUNT_HISTORY = new ConcurrentHashMap<>();
     private static final ThreadLocal<Boolean> LAST_ROLL_GODROLL = ThreadLocal.withInitial(() -> false);
@@ -65,7 +79,12 @@ public class CustomEnchantRoller {
             }
         }
 
-        // 4. Fallback: description text color (for enchants not in our database)
+        // 4. Fallback: vanilla rares (safety net in case description has no color and database uninitialized)
+        if (VANILLA_RARES.contains(id)) {
+            return Tier.RARE;
+        }
+
+        // 5. Fallback: description text color (for enchants not in our database)
         TextColor color = holder.value().description().getStyle().getColor();
         if (color != null) {
             String name = color.serialize();

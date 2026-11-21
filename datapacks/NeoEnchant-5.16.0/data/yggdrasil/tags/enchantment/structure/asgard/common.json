@@ -1,10 +1,9 @@
 {
-	"values": [
-		"#minecraft:non_treasure",
-		"enchantplus:durability/curse_of_breaking",
-		"enchantplus:mounted/velocity",
-		"enchantplus:mounted/ethereal_leap",
-		"enchantplus:mounted/steel_fang",
-		"enchantplus:mounted/cavalier_egis"
-	]
+  "values": [
+    "#minecraft:non_treasure",
+    "enchantplus:mounted/velocity",
+    "enchantplus:mounted/ethereal_leap",
+    "enchantplus:mounted/steel_fang",
+    "enchantplus:mounted/cavalier_egis"
+  ]
 }

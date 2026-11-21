@@ -1,5 +1,6 @@
 package com.expedition.enchants.roll;
 
+import com.expedition.enchants.config.EnchantDatabaseLoader;
 import com.expedition.enchants.config.EnchantRollConfig;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
@@ -65,6 +66,12 @@ public class StructureChestBookRoller {
         // Curses: only minecraft + enchantencore are allowed
         if (isCurse(holder)) {
             return !isAllowedCurseNamespace(ns);
+        }
+
+        // Exclude enchantments disabled in master database (e.g. duplicate enchants like Happy Boost)
+        String fullId = holder.unwrapKey().map(k -> k.identifier().toString()).orElse("");
+        if (EnchantDatabaseLoader.isLoaded() && !EnchantDatabaseLoader.isEnabled(fullId)) {
+            return true;
         }
 
         if (cfg.chestBookExcludedNamespaces != null) {

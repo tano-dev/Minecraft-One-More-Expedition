@@ -85,15 +85,7 @@
       "required": false
     },
     {
-      "id": "enchantplus:bow/breezing_arrow",
-      "required": false
-    },
-    {
       "id": "enchantplus:bow/explosive_arrow",
-      "required": false
-    },
-    {
-      "id": "enchantplus:bow/storm_arrow",
       "required": false
     },
     {

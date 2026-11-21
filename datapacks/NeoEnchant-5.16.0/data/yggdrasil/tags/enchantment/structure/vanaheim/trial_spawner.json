@@ -1,11 +1,8 @@
 {
-	"replace": false,
-	"values": [
-		"#minecraft:non_treasure",
-		"minecraft:fortune",
-		"enchantplus:helmet/bright_vision",
-		"enchantplus:bow/breezing_arrow",
-		"enchantplus:armor/lifeplus",
-		"enchantplus:leggings/leaping"
-	]
+  "replace": false,
+  "values": [
+    "#minecraft:non_treasure",
+    "minecraft:fortune",
+    "enchantplus:armor/lifeplus"
+  ]
 }

@@ -1,16 +1,12 @@
 {
-	"replace": false,
-	"values": [
-		"minecraft:fortune",
-		"enchantplus:hoe/harvest",
-		"enchantplus:axe/timber",
-		"enchantplus:pickaxe/vein_miner",
-		"enchantplus:sword/tears_of_asflors",
-		"enchantplus:armor/lifeplus",
-		"enchantplus:helmet/bright_vision",
-		"enchantplus:bow/eternal_frost",
-		"enchantplus:mace/teluric_wave",
-		"enchantplus:mounted/ethereal_leap",
-		"enchantplus:midas_touch"
-	]
+  "replace": false,
+  "values": [
+    "minecraft:fortune",
+    "enchantplus:sword/tears_of_asflors",
+    "enchantplus:armor/lifeplus",
+    "enchantplus:bow/eternal_frost",
+    "enchantplus:mace/teluric_wave",
+    "enchantplus:mounted/ethereal_leap",
+    "enchantplus:midas_touch"
+  ]
 }

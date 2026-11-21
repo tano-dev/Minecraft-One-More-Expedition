@@ -25,10 +25,6 @@
       "required": false
     },
     {
-      "id": "enchantencore:sunweave",
-      "required": false
-    },
-    {
       "id": "enchantencore:tideweave",
       "required": false
     },
