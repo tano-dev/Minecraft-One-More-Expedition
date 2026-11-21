@@ -2,6 +2,8 @@ package com.expedition.enchants.mixin;
 
 import com.expedition.enchants.config.EnchantRollConfig;
 import com.expedition.enchants.roll.StructureChestBookRoller;
+import com.expedition.enchants.tooltip.EnchantTooltipFormatter;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -11,6 +13,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
@@ -38,6 +41,8 @@ public abstract class LootTableMixin {
 
         for (int i = 0; i < container.getContainerSize(); i++) {
             ItemStack stack = container.getItem(i);
+            if (stack == null || stack.isEmpty()) continue;
+
             if (StructureChestBookRoller.shouldReplaceInStructureChest(stack)) {
                 StructureChestBookRoller.RollResult res = StructureChestBookRoller.rollChestEnchantedBook(level, random);
                 if (!res.book().isEmpty()) {
@@ -46,6 +51,8 @@ public abstract class LootTableMixin {
                         godrollCount++;
                     }
                 }
+            } else if (stack.is(Items.ENCHANTED_BOOK) || stack.has(DataComponents.STORED_ENCHANTMENTS) || stack.has(DataComponents.ENCHANTMENTS)) {
+                EnchantTooltipFormatter.applyToItemStack(stack);
             }
         }
 

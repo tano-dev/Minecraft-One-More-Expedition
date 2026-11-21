@@ -3,6 +3,7 @@ package com.expedition.enchants.tooltip;
 import com.expedition.enchants.config.EnchantRollConfig;
 import com.expedition.enchants.roll.CustomEnchantRoller;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -12,6 +13,8 @@ import net.minecraft.network.chat.TextColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.component.CustomModelData;
 import net.minecraft.world.item.component.ItemLore;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -75,7 +78,64 @@ public class EnchantTooltipFormatter {
             .withHidden(DataComponents.STORED_ENCHANTMENTS, true);
         stack.set(DataComponents.TOOLTIP_DISPLAY, display);
         stack.set(DataComponents.LORE, new ItemLore(lines));
+
+        if (isBook) {
+            applyBookCosmetics(stack, enchants);
+        }
+
         return true;
+    }
+
+    public static CustomEnchantRoller.Tier getHighestBookTier(ItemEnchantments enchants) {
+        if (enchants == null || enchants.isEmpty()) return CustomEnchantRoller.Tier.COMMON;
+        boolean hasUltimate = false;
+        boolean hasEpic = false;
+        boolean hasRare = false;
+        for (Holder<Enchantment> holder : enchants.keySet()) {
+            CustomEnchantRoller.Tier tier = CustomEnchantRoller.detectTier(holder);
+            if (tier == CustomEnchantRoller.Tier.ULTIMATE) hasUltimate = true;
+            else if (tier == CustomEnchantRoller.Tier.EPIC) hasEpic = true;
+            else if (tier == CustomEnchantRoller.Tier.RARE) hasRare = true;
+        }
+        if (hasUltimate) return CustomEnchantRoller.Tier.ULTIMATE;
+        if (hasEpic) return CustomEnchantRoller.Tier.EPIC;
+        if (hasRare) return CustomEnchantRoller.Tier.RARE;
+        return CustomEnchantRoller.Tier.COMMON;
+    }
+
+    public static void applyBookCosmetics(ItemStack stack, ItemEnchantments enchants) {
+        CustomEnchantRoller.Tier highestTier = getHighestBookTier(enchants);
+
+        // 1. Set colored item name: Ultimate (Bold Gold), Epic (Purple), Rare (Aqua), Common/Curse (White)
+        Style style = switch (highestTier) {
+            case ULTIMATE -> Style.EMPTY.withColor(ChatFormatting.GOLD).withBold(true).withItalic(false);
+            case EPIC -> Style.EMPTY.withColor(ChatFormatting.LIGHT_PURPLE).withItalic(false);
+            case RARE -> Style.EMPTY.withColor(ChatFormatting.AQUA).withItalic(false);
+            default -> Style.EMPTY.withColor(ChatFormatting.WHITE).withItalic(false);
+        };
+        stack.set(DataComponents.ITEM_NAME, Component.translatable("item.minecraft.enchanted_book").withStyle(style));
+
+        // 2. Set CustomModelData (Vanilla 1.21 item model predicates)
+        float cmdFloat = switch (highestTier) {
+            case ULTIMATE -> 1004.0f;
+            case EPIC -> 1003.0f;
+            case RARE -> 1002.0f;
+            default -> 1001.0f;
+        };
+        String tierName = highestTier.name().toLowerCase(Locale.ROOT);
+        stack.set(DataComponents.CUSTOM_MODEL_DATA, new CustomModelData(
+            List.of(cmdFloat),
+            List.of(),
+            List.of(tierName),
+            List.of()
+        ));
+
+        // 3. Set CustomData (CIT Resewn, OptiFine CIT, Chime resource packs)
+        CustomData.update(DataComponents.CUSTOM_DATA, stack, tag -> {
+            tag.putString("expedition_tier", tierName);
+            tag.putString("expedition_book_texture", "enchanted_book_" + tierName);
+            tag.putInt("CustomModelData", (int) cmdFloat);
+        });
     }
 
     public static List<Component> buildTooltipLines(ItemEnchantments enchantments) {

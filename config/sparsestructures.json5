@@ -12,7 +12,7 @@
   "customSpreadFactors": [
 
     // ── Surface structures – keep rare / well-spaced ─────────────────────────
-    { "structure": "minecraft:mansion",           "factor": 2   },
+    { "structure": "minecraft:mansion",           "factor": 1   },
 
     // ── Vanilla underground – denser than global x2 ──────────────────────────
     { "structure": "minecraft:mineshafts",        "factor": 0.6 },
